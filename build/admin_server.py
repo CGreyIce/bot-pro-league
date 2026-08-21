@@ -24,6 +24,30 @@ def regenerate():
                        capture_output=True, text=True)
     return r.returncode == 0, (r.stderr or r.stdout)[-500:]
 
+def git_publish():
+    """Stage all changes, commit, and push to GitHub (which auto-deploys the site).
+    Returns (ok, human-readable message)."""
+    def run(args):
+        return subprocess.run(["git"] + args, cwd=ROOT, capture_output=True, text=True)
+    try:
+        add = run(["add", "-A"])
+        if add.returncode != 0:
+            return False, "Couldn't stage changes: " + (add.stderr or add.stdout)[-300:]
+        status = run(["status", "--porcelain"])
+        if not status.stdout.strip():
+            return True, "Nothing new to publish — the live site is already up to date."
+        commit = run(["commit", "-m", "Update stats (via admin)"])
+        if commit.returncode != 0:
+            return False, "Commit failed: " + (commit.stderr or commit.stdout)[-300:]
+        push = run(["push"])
+        if push.returncode != 0:
+            return False, "Saved locally, but upload to GitHub failed: " + (push.stderr or push.stdout)[-300:]
+        return True, "Published! The live site will update in about a minute."
+    except FileNotFoundError:
+        return False, "git is not installed or not on PATH — can't publish from here."
+    except Exception as e:
+        return False, "Publish error: " + str(e)
+
 def team_names():
     try:
         d = json.load(open(os.path.join(SITE, "data.json"), encoding="utf-8"))
@@ -108,6 +132,9 @@ class Handler(SimpleHTTPRequestHandler):
                 return self._json(200, {"ok": ok, "msg": msg})
             elif path == "/api/delete":
                 manual.delete(b["slug"]); ok, msg = regenerate()
+                return self._json(200, {"ok": ok, "msg": msg})
+            elif path == "/api/publish":
+                ok, msg = git_publish()
                 return self._json(200, {"ok": ok, "msg": msg})
             else:
                 return self._json(404, {"ok": False, "error": "unknown endpoint"})

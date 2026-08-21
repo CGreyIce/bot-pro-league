@@ -1188,6 +1188,14 @@ async function renderAdmin(){
 
   app.innerHTML = `
     <h2 class="section-title"><span class="accent-bar"></span>Admin <span class="muted" style="font-size:11px">· editing enabled</span></h2>
+    <div class="adm-publish">
+      <div>
+        <div class="adm-pub-t">⬆ Publish to the live site</div>
+        <div class="muted" style="font-size:12px">Push all your latest edits to GitHub — the public site updates about a minute later.</div>
+        <div id="adm-pubmsg" style="font-size:12px;margin-top:6px"></div>
+      </div>
+      <button id="adm-publish" class="adm-btn adm-pub-btn">Publish to GitHub</button>
+    </div>
     <div class="profile-grid" style="grid-template-columns:300px 1fr">
       <div class="infobox" style="padding:14px">
         <div class="ib-title" style="margin:-14px -14px 12px">New Tournament</div>
@@ -1209,6 +1217,14 @@ async function renderAdmin(){
       </div>
     </div>`;
 
+  $("#adm-publish").onclick = async ()=>{
+    const btn=$("#adm-publish"), msg=$("#adm-pubmsg");
+    btn.disabled=true; const orig=btn.textContent; btn.textContent="Publishing…"; msg.textContent="";
+    const r = await apiPost("/api/publish",{});
+    btn.disabled=false; btn.textContent=orig;
+    msg.textContent = r.msg || (r.ok?"Published.":"Publish failed.");
+    msg.style.color = r.ok ? "var(--good)" : "var(--accent2, #ff6b6b)";
+  };
   $("#adm-create").onclick = async ()=>{
     const name = $("#adm-name").value.trim();
     if(!name){ $("#adm-msg").textContent = "Enter a name."; return; }

@@ -354,6 +354,10 @@ table.data td.name-cell{font-weight:600}
 .adm-in:focus{border-color:var(--border2)}
 textarea.adm-in{resize:vertical}
 .adm-btn{margin-top:12px;width:100%;background:var(--accent-grad);color:#0b1120;border:0;border-radius:7px;padding:10px;font-family:'Rajdhani';font-weight:700;font-size:15px;cursor:pointer}
+.adm-publish{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin-bottom:16px}
+.adm-pub-t{font-family:'Rajdhani';font-weight:700;font-size:16px;margin-bottom:2px}
+.adm-pub-btn{margin-top:0;width:auto;white-space:nowrap;padding:10px 20px}
+.adm-pub-btn:disabled{opacity:.6;cursor:default}
 .adm-list{display:flex;flex-direction:column;gap:6px}
 .adm-trow{display:flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:8px 12px}
 .adm-trow .adm-name{font-weight:600;font-family:'Rajdhani';font-size:15px}
