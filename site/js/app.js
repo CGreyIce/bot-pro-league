@@ -636,12 +636,14 @@ function renderMatches(){
           <a href="#/tournament/${ev.slug}"><span class="event-tier ${TIER_CLASS[ev.tier]}">${esc(ev.tierLabel.toUpperCase())}</span> ${esc(ev.name)}</a>
           ${ev.ongoing?'<span class="live-dot">● LIVE</span>':`<span class="muted" style="font-size:11px">${fmtDate(ev.date)}</span>`}
         </div>
-        ${ev.items.map(u=>`<a class="mt-row" href="${u.ref?`#/match/${u.eventSlug}/${u.ref}`:`#/tournament/${u.eventSlug}`}">
+        ${ev.items.map(u=>`<div class="mt-row" data-href="#/match/${u.eventSlug}/${u.ref||''}" data-fallback="#/tournament/${u.eventSlug}">
           <span class="mt-stage">${esc((u.stage?u.stage+' · ':'')+u.round)}</span>
-          <span class="mt-a">${teamSide(u.a,u.aTeam)}</span>
-          <span class="mt-vs">vs</span>
-          <span class="mt-b">${teamSide(u.b,u.bTeam)}</span>
-        </a>`).join("")}
+          <span class="mt-teams">
+            <span class="mt-a">${teamSide(u.a,u.aTeam)}</span>
+            <span class="mt-vs">vs</span>
+            <span class="mt-b">${teamSide(u.b,u.bTeam)}</span>
+          </span>
+        </div>`).join("")}
       </div>`).join("") : '<p class="muted">No upcoming or live matches right now — everything on record is finished. Check <a href="#/results">Results</a>.</p>';
   const recent = allMatches().slice(0,12);
   const recentHtml = recent.map(m=>`<tr>
@@ -658,6 +660,11 @@ function renderMatches(){
     <h3 class="rec-group" style="margin-top:26px">Recent Results</h3>
     <div class="tablewrap"><table class="data results-table"><tbody>${recentHtml}</tbody></table></div>
     <div style="margin-top:10px"><a href="#/results" class="muted">View all results →</a></div>`;
+  app.querySelectorAll(".mt-row[data-href]").forEach(el=>el.addEventListener("click",e=>{
+    if(e.target.closest("a")) return;               // let team links work
+    const ref = el.dataset.href.endsWith("/") ? el.dataset.fallback : el.dataset.href;
+    location.hash = ref;
+  }));
 }
 
 // ---------- Awards ----------
@@ -924,7 +931,27 @@ function renderStats(){
       <div class="bar-track"><div class="bar-fill" style="width:${Math.max(2,Math.round(n/max*100))}%${color?';background:'+color:''}"></div></div>
       <span class="bar-val">${n}</span></div>`;
   const natMax=Math.max(1,...natList.map(x=>x.n));
-  const natBars=natList.slice(0,14).map(x=>bar(`${flag(x.iso)}${esc(x.nat)}`,x.n,natMax)).join("");
+  // highest-rated player per nationality (for the flag hover tooltip).
+  // prefer the top PRO player; fall back to amateur/solo only if the country has no pro.
+  const topByNat={};
+  DATA.players.pro.forEach(p=>{
+    if(p.rating==null||!p.nat) return;
+    const cur=topByNat[p.nat];
+    if(!cur||p.rating>cur.rating) topByNat[p.nat]={name:p.name,rating:p.rating,team:p.team,slug:p.slug,pro:true};
+  });
+  ["amateur","solo"].forEach(pk=>DATA.players[pk].forEach(p=>{
+    if(p.rating==null||!p.nat) return;
+    const cur=topByNat[p.nat];
+    if(cur&&cur.pro) return;                         // a pro from this country already wins
+    if(!cur||p.rating>cur.rating) topByNat[p.nat]={name:p.name,rating:p.rating,team:p.team,slug:p.slug,pro:false};
+  }));
+  const natBars=natList.slice(0,14).map(x=>{
+    const tp=topByNat[x.nat];
+    const fl = tp ? `<span class="flag-tip">${flag(x.iso)}<span class="ftbox"><span class="ftlabel">Top player</span><b>${esc(tp.name)}</b><span class="ftmeta">${tp.rating.toFixed(2)} rating${tp.team?' · '+esc(tp.team):''}</span></span></span>` : flag(x.iso);
+    return `<div class="bar-row"><span class="bar-label">${fl}<span class="bar-cty">${esc(x.nat)}</span></span>
+      <div class="bar-track"><div class="bar-fill" style="width:${Math.max(2,Math.round(x.n/natMax*100))}%"></div></div>
+      <span class="bar-val">${x.n}</span></div>`;
+  }).join("");
   const tierBars=tiers.map(t=>tierCount[t]?bar(`<span class="dot" style="background:${tierColor(t)}"></span>${esc(t)}`,tierCount[t],tierMax,tierColor(t)):'').join("");
   const poolMax=Math.max(...pools.map(pk=>DATA.players[pk].length));
   const poolBars=pools.map(pk=>bar(pk==='pro'?'Pro':pk==='amateur'?'Amateur':'Solo Queue',DATA.players[pk].length,poolMax)).join("");
