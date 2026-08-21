@@ -295,5 +295,302 @@
     }
    ]
   }
+ },
+ "audax-esse-bpl-invitational-2026": {
+  "5-10": {
+   "maps": [
+    {
+     "map": "Dust2",
+     "scoreA": 1,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Raven Song",
+       "name": "treblest",
+       "k": 8,
+       "a": 2,
+       "d": 13,
+       "mvp": 0,
+       "score": 19
+      },
+      {
+       "team": "Raven Song",
+       "name": "ebi",
+       "k": 8,
+       "a": 0,
+       "d": 12,
+       "mvp": 0,
+       "score": 17
+      },
+      {
+       "team": "Raven Song",
+       "name": "des506",
+       "k": 4,
+       "a": 2,
+       "d": 13,
+       "mvp": 1,
+       "score": 12
+      },
+      {
+       "team": "Raven Song",
+       "name": "CRex",
+       "k": 5,
+       "a": 1,
+       "d": 13,
+       "mvp": 0,
+       "score": 12
+      },
+      {
+       "team": "Raven Song",
+       "name": "koen",
+       "k": 2,
+       "a": 0,
+       "d": 13,
+       "mvp": 0,
+       "score": 5
+      },
+      {
+       "team": "Infernum E-Sports",
+       "name": "siddnely",
+       "k": 20,
+       "a": 1,
+       "d": 4,
+       "mvp": 2,
+       "score": 45
+      },
+      {
+       "team": "Infernum E-Sports",
+       "name": "Historia",
+       "k": 16,
+       "a": 1,
+       "d": 5,
+       "mvp": 4,
+       "score": 43
+      },
+      {
+       "team": "Infernum E-Sports",
+       "name": "Dirfun",
+       "k": 11,
+       "a": 0,
+       "d": 4,
+       "mvp": 2,
+       "score": 29
+      },
+      {
+       "team": "Infernum E-Sports",
+       "name": "chiyoriinn",
+       "k": 9,
+       "a": 1,
+       "d": 5,
+       "mvp": 2,
+       "score": 24
+      },
+      {
+       "team": "Infernum E-Sports",
+       "name": "soapdax",
+       "k": 8,
+       "a": 0,
+       "d": 9,
+       "mvp": 3,
+       "score": 20
+      }
+     ]
+    },
+    {
+     "map": "Inferno",
+     "scoreA": 13,
+     "scoreB": 8,
+     "players": [
+      {
+       "team": "Raven Song",
+       "name": "CRex",
+       "k": 20,
+       "a": 1,
+       "d": 11,
+       "mvp": 3,
+       "score": 47
+      },
+      {
+       "team": "Raven Song",
+       "name": "treblest",
+       "k": 13,
+       "a": 3,
+       "d": 13,
+       "mvp": 3,
+       "score": 45
+      },
+      {
+       "team": "Raven Song",
+       "name": "koen",
+       "k": 18,
+       "a": 1,
+       "d": 13,
+       "mvp": 2,
+       "score": 44
+      },
+      {
+       "team": "Raven Song",
+       "name": "des506",
+       "k": 17,
+       "a": 1,
+       "d": 14,
+       "mvp": 3,
+       "score": 43
+      },
+      {
+       "team": "Raven Song",
+       "name": "ebi",
+       "k": 13,
+       "a": 2,
+       "d": 14,
+       "mvp": 2,
+       "score": 31
+      },
+      {
+       "team": "Infernum E-Sports",
+       "name": "Historia",
+       "k": 14,
+       "a": 3,
+       "d": 16,
+       "mvp": 4,
+       "score": 38
+      },
+      {
+       "team": "Infernum E-Sports",
+       "name": "chiyoriinn",
+       "k": 15,
+       "a": 1,
+       "d": 16,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "Infernum E-Sports",
+       "name": "siddnely",
+       "k": 14,
+       "a": 1,
+       "d": 16,
+       "mvp": 1,
+       "score": 31
+      },
+      {
+       "team": "Infernum E-Sports",
+       "name": "Dirfun",
+       "k": 10,
+       "a": 4,
+       "d": 15,
+       "mvp": 0,
+       "score": 29
+      },
+      {
+       "team": "Infernum E-Sports",
+       "name": "soapdax",
+       "k": 12,
+       "a": 1,
+       "d": 18,
+       "mvp": 1,
+       "score": 26
+      }
+     ]
+    },
+    {
+     "map": "Tuscan",
+     "scoreA": 13,
+     "scoreB": 5,
+     "players": [
+      {
+       "team": "Raven Song",
+       "name": "ebi",
+       "k": 17,
+       "a": 4,
+       "d": 11,
+       "mvp": 4,
+       "score": 45
+      },
+      {
+       "team": "Raven Song",
+       "name": "des506",
+       "k": 18,
+       "a": 1,
+       "d": 11,
+       "mvp": 2,
+       "score": 45
+      },
+      {
+       "team": "Raven Song",
+       "name": "CRex",
+       "k": 17,
+       "a": 1,
+       "d": 13,
+       "mvp": 3,
+       "score": 41
+      },
+      {
+       "team": "Raven Song",
+       "name": "treblest",
+       "k": 14,
+       "a": 0,
+       "d": 8,
+       "mvp": 3,
+       "score": 34
+      },
+      {
+       "team": "Raven Song",
+       "name": "koen",
+       "k": 10,
+       "a": 1,
+       "d": 14,
+       "mvp": 1,
+       "score": 26
+      },
+      {
+       "team": "Infernum E-Sports",
+       "name": "Dirfun",
+       "k": 18,
+       "a": 1,
+       "d": 13,
+       "mvp": 4,
+       "score": 44
+      },
+      {
+       "team": "Infernum E-Sports",
+       "name": "Historia",
+       "k": 14,
+       "a": 1,
+       "d": 15,
+       "mvp": 1,
+       "score": 31
+      },
+      {
+       "team": "Infernum E-Sports",
+       "name": "siddnely",
+       "k": 11,
+       "a": 1,
+       "d": 16,
+       "mvp": 0,
+       "score": 26
+      },
+      {
+       "team": "Infernum E-Sports",
+       "name": "chiyoriinn",
+       "k": 9,
+       "a": 1,
+       "d": 15,
+       "mvp": 0,
+       "score": 21
+      },
+      {
+       "team": "Infernum E-Sports",
+       "name": "soapdax",
+       "k": 5,
+       "a": 0,
+       "d": 17,
+       "mvp": 0,
+       "score": 10
+      }
+     ]
+    }
+   ]
+  }
  }
 }
