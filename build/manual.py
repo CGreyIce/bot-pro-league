@@ -299,6 +299,19 @@ def del_stage(slug, sid):
 
 # ---------- per-match player scoreboards ----------
 MSFILE = os.path.join(ROOT, "data", "match_stats.json")
+def _derive_match_score(maps):
+    """From the per-map scoreboards, return (sa, sb) for the match, or None.
+    1 map  -> that map's round score (Bo1, e.g. 13-8).
+    2+ maps -> maps won by each side (Bo3/Bo5, e.g. 2-1)."""
+    scored = [m for m in maps if m.get("scoreA") is not None and m.get("scoreB") is not None]
+    if not scored:
+        return None
+    if len(scored) == 1:
+        return int(scored[0]["scoreA"]), int(scored[0]["scoreB"])
+    sa = sum(1 for m in scored if int(m["scoreA"]) > int(m["scoreB"]))
+    sb = sum(1 for m in scored if int(m["scoreB"]) > int(m["scoreA"]))
+    return sa, sb
+
 def save_match_stats(slug, ref, maps):
     data = json.load(open(MSFILE, encoding="utf-8")) if os.path.exists(MSFILE) else {}
     data.setdefault(slug, {})
@@ -310,3 +323,12 @@ def save_match_stats(slug, ref, maps):
         if not data[slug]:
             data.pop(slug, None)
     json.dump(data, open(MSFILE, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    # auto-set the match result from the scoreboards (manual "stageId-matchId" refs only)
+    if maps and "-" in str(ref):
+        derived = _derive_match_score(maps)
+        if derived is not None:
+            try:
+                sid, mid = str(ref).split("-", 1)
+                set_score(slug, int(sid), int(mid), derived[0], derived[1])
+            except (ValueError, TypeError):
+                pass
