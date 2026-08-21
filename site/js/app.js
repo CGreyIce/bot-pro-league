@@ -477,6 +477,7 @@ function allMatches(){
   const out = [];
   (DATA.tournaments||[]).forEach(tr=>tr.bracket.forEach(rd=>rd.matches.forEach(m=>{
     if(m.w!==1 && m.w!==2) return;
+    if(m.a==="(bye)" || m.b==="(bye)") return;      // a bye isn't a played match
     out.push({date:tr.date, event:tr.name, eventSlug:tr.slug, tier:tr.tier, tierLabel:tr.tierLabel,
       round:rd.title, a:m.a, aTeam:m.aTeam, sa:m.sa, b:m.b, bTeam:m.bTeam, sb:m.sb, w:m.w, ts:m.ts});
   })));

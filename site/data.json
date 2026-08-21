@@ -4366,6 +4366,16 @@
      "date": "2025-10-10",
      "event": "BPL Legends Stage 2025",
      "eventSlug": "BPLLStage25",
+     "opp": "Moonlit Tempo",
+     "oppSlug": "moonlit-tempo",
+     "result": "L",
+     "sf": 3,
+     "sa": 13
+    },
+    {
+     "date": "2025-10-10",
+     "event": "BPL Legends Stage 2025",
+     "eventSlug": "BPLLStage25",
      "opp": "Unforgettable",
      "oppSlug": "unforgettable",
      "result": "W",
@@ -4451,19 +4461,9 @@
      "result": "W",
      "sf": 2,
      "sa": 1
-    },
-    {
-     "date": "2026-08-21",
-     "event": "Audax Esse BPL Invitational 2026",
-     "eventSlug": "audax-esse-bpl-invitational-2026",
-     "opp": "(bye)",
-     "oppSlug": null,
-     "result": "W",
-     "sf": null,
-     "sa": null
     }
    ],
-   "streak": "W6"
+   "streak": "W5"
   },
   {
    "name": "Artisian",
@@ -46425,6 +46425,16 @@
      "date": "2025-10-10",
      "event": "BPL Legends Stage 2025",
      "eventSlug": "BPLLStage25",
+     "opp": "Astral Bloom",
+     "oppSlug": "astral-bloom",
+     "result": "L",
+     "sf": 5,
+     "sa": 13
+    },
+    {
+     "date": "2025-10-10",
+     "event": "BPL Legends Stage 2025",
+     "eventSlug": "BPLLStage25",
      "opp": "0v3",
      "oppSlug": "0v3",
      "result": "W",
@@ -46510,19 +46520,9 @@
      "result": "W",
      "sf": 2,
      "sa": 0
-    },
-    {
-     "date": "2026-08-21",
-     "event": "Audax Esse BPL Invitational 2026",
-     "eventSlug": "audax-esse-bpl-invitational-2026",
-     "opp": "(bye)",
-     "oppSlug": null,
-     "result": "W",
-     "sf": null,
-     "sa": null
     }
    ],
-   "streak": "W2"
+   "streak": "W1"
   },
   {
    "name": "Caelum Scala",
@@ -68276,6 +68276,16 @@
      "date": "2026-06-21",
      "event": "Bot Pro Minor League 14",
      "eventSlug": "BotProLeague14",
+     "opp": "ByteSized",
+     "oppSlug": null,
+     "result": "W",
+     "sf": 2,
+     "sa": 0
+    },
+    {
+     "date": "2026-06-21",
+     "event": "Bot Pro Minor League 14",
+     "eventSlug": "BotProLeague14",
      "opp": "Hako's Angels",
      "oppSlug": null,
      "result": "W",
@@ -68361,19 +68371,9 @@
      "result": "W",
      "sf": 2,
      "sa": 0
-    },
-    {
-     "date": "2026-08-21",
-     "event": "Audax Esse BPL Invitational 2026",
-     "eventSlug": "audax-esse-bpl-invitational-2026",
-     "opp": "(bye)",
-     "oppSlug": null,
-     "result": "W",
-     "sf": null,
-     "sa": null
     }
    ],
-   "streak": "W4"
+   "streak": "W3"
   },
   {
    "name": "Bloom E-Sports",
@@ -71858,6 +71858,16 @@
      "date": "2026-07-12",
      "event": "Bot Pro Minor League 15",
      "eventSlug": "BotProLeague15",
+     "opp": "Gloria Mundi",
+     "oppSlug": null,
+     "result": "W",
+     "sf": 13,
+     "sa": 8
+    },
+    {
+     "date": "2026-07-12",
+     "event": "Bot Pro Minor League 15",
+     "eventSlug": "BotProLeague15",
      "opp": "Withered Rose",
      "oppSlug": null,
      "result": "W",
@@ -71943,19 +71953,9 @@
      "result": "W",
      "sf": 2,
      "sa": 1
-    },
-    {
-     "date": "2026-08-21",
-     "event": "Audax Esse BPL Invitational 2026",
-     "eventSlug": "audax-esse-bpl-invitational-2026",
-     "opp": "(bye)",
-     "oppSlug": null,
-     "result": "W",
-     "sf": null,
-     "sa": null
     }
    ],
-   "streak": "W2"
+   "streak": "W1"
   },
   {
    "name": "5PERCENT",

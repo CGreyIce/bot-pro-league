@@ -632,6 +632,8 @@ def main():
                 a, b, w = m.get("aTeam"), m.get("bTeam"), m.get("w")
                 if w not in (1, 2):
                     continue
+                if m.get("a") == "(bye)" or m.get("b") == "(bye)":
+                    continue                 # a bye isn't a played match — no win, no form entry
                 if a and b:  # both current teams -> head-to-head
                     if w == 1:
                         h2h[a][b]["w"] += 1; h2h[b][a]["l"] += 1
