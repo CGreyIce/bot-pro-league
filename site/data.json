@@ -185191,7 +185191,8 @@
        "w": 1,
        "aTeam": "aimpunch",
        "bTeam": "5percent",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 2,
@@ -185202,7 +185203,8 @@
        "w": 2,
        "aTeam": "aetherline",
        "bTeam": "moonlit-tempo",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 3,
@@ -185213,7 +185215,8 @@
        "w": 2,
        "aTeam": "masmark",
        "bTeam": "fruit-basket",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -185230,7 +185233,8 @@
        "w": 2,
        "aTeam": "fruit-basket",
        "bTeam": "aimpunch",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 5,
@@ -185241,7 +185245,8 @@
        "w": 1,
        "aTeam": "moonlit-tempo",
        "bTeam": "round-loss-bonus",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 6,
@@ -185252,7 +185257,8 @@
        "w": 1,
        "aTeam": "aetherline",
        "bTeam": "masmark",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -185269,7 +185275,8 @@
        "w": 1,
        "aTeam": "aimpunch",
        "bTeam": "moonlit-tempo",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 8,
@@ -185280,7 +185287,8 @@
        "w": 1,
        "aTeam": "aetherline",
        "bTeam": "fruit-basket",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 9,
@@ -185291,7 +185299,8 @@
        "w": 1,
        "aTeam": "5percent",
        "bTeam": "round-loss-bonus",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -185308,7 +185317,8 @@
        "w": 2,
        "aTeam": "aetherline",
        "bTeam": "aimpunch",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 11,
@@ -185319,7 +185329,8 @@
        "w": 2,
        "aTeam": "moonlit-tempo",
        "bTeam": "5percent",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 12,
@@ -185330,7 +185341,8 @@
        "w": 2,
        "aTeam": "masmark",
        "bTeam": "round-loss-bonus",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -185347,7 +185359,8 @@
        "w": 1,
        "aTeam": "aimpunch",
        "bTeam": "masmark",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 14,
@@ -185358,7 +185371,8 @@
        "w": 2,
        "aTeam": "5percent",
        "bTeam": "aetherline",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 15,
@@ -185369,7 +185383,8 @@
        "w": 1,
        "aTeam": "fruit-basket",
        "bTeam": "round-loss-bonus",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -185386,7 +185401,8 @@
        "w": 2,
        "aTeam": "opal",
        "bTeam": "flood-flashers",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 2,
@@ -185397,7 +185413,8 @@
        "w": 1,
        "aTeam": "the-gigarage",
        "bTeam": "alcheministry",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 3,
@@ -185408,7 +185425,8 @@
        "w": 2,
        "aTeam": "artisian",
        "bTeam": "cyanide",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -185425,7 +185443,8 @@
        "w": 2,
        "aTeam": "cyanide",
        "bTeam": "the-gigarage",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 5,
@@ -185436,7 +185455,8 @@
        "w": 1,
        "aTeam": "flood-flashers",
        "bTeam": "bloom-e-sports",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 6,
@@ -185447,7 +185467,8 @@
        "w": 1,
        "aTeam": "opal",
        "bTeam": "artisian",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -185464,7 +185485,8 @@
        "w": 2,
        "aTeam": "the-gigarage",
        "bTeam": "flood-flashers",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 8,
@@ -185475,7 +185497,8 @@
        "w": 2,
        "aTeam": "opal",
        "bTeam": "cyanide",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 9,
@@ -185486,7 +185509,8 @@
        "w": 2,
        "aTeam": "alcheministry",
        "bTeam": "bloom-e-sports",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -185503,7 +185527,8 @@
        "w": 2,
        "aTeam": "flood-flashers",
        "bTeam": "artisian",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 11,
@@ -185514,7 +185539,8 @@
        "w": 2,
        "aTeam": "the-gigarage",
        "bTeam": "bloom-e-sports",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 12,
@@ -185525,7 +185551,8 @@
        "w": 2,
        "aTeam": "cyanide",
        "bTeam": "alcheministry",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -185542,7 +185569,8 @@
        "w": 1,
        "aTeam": "flood-flashers",
        "bTeam": "alcheministry",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 14,
@@ -185553,7 +185581,8 @@
        "w": 1,
        "aTeam": "bloom-e-sports",
        "bTeam": "artisian",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 15,
@@ -185564,7 +185593,8 @@
        "w": 1,
        "aTeam": "the-gigarage",
        "bTeam": "opal",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -185581,7 +185611,8 @@
        "w": 2,
        "aTeam": "unforgettable",
        "bTeam": "xplosiv",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 2,
@@ -185592,7 +185623,8 @@
        "w": 1,
        "aTeam": "99lives",
        "bTeam": "cosmos",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 3,
@@ -185603,7 +185635,8 @@
        "w": 2,
        "aTeam": "degree",
        "bTeam": "aeternum",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -185620,7 +185653,8 @@
        "w": 1,
        "aTeam": "aeternum",
        "bTeam": "99lives",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 5,
@@ -185631,7 +185665,8 @@
        "w": 2,
        "aTeam": "xplosiv",
        "bTeam": "team-neverseen",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 6,
@@ -185642,7 +185677,8 @@
        "w": 2,
        "aTeam": "unforgettable",
        "bTeam": "degree",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -185659,7 +185695,8 @@
        "w": 1,
        "aTeam": "aeternum",
        "bTeam": "team-neverseen",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 8,
@@ -185670,7 +185707,8 @@
        "w": 2,
        "aTeam": "99lives",
        "bTeam": "xplosiv",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 9,
@@ -185681,7 +185719,8 @@
        "w": 1,
        "aTeam": "degree",
        "bTeam": "cosmos",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -185698,7 +185737,8 @@
        "w": 2,
        "aTeam": "aeternum",
        "bTeam": "cosmos",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 11,
@@ -185709,7 +185749,8 @@
        "w": 2,
        "aTeam": "degree",
        "bTeam": "xplosiv",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 12,
@@ -185720,7 +185761,8 @@
        "w": 1,
        "aTeam": "team-neverseen",
        "bTeam": "unforgettable",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -185737,7 +185779,8 @@
        "w": 1,
        "aTeam": "xplosiv",
        "bTeam": "aeternum",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 14,
@@ -185748,7 +185791,8 @@
        "w": 2,
        "aTeam": "team-neverseen",
        "bTeam": "cosmos",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 15,
@@ -185759,7 +185803,8 @@
        "w": 1,
        "aTeam": "99lives",
        "bTeam": "unforgettable",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -185776,7 +185821,8 @@
        "w": 2,
        "aTeam": "divide-conquer",
        "bTeam": "ukiyo",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 2,
@@ -185787,7 +185833,8 @@
        "w": 2,
        "aTeam": "entity",
        "bTeam": "aspire",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 3,
@@ -185798,7 +185845,8 @@
        "w": 1,
        "aTeam": "setting-sun",
        "bTeam": "caelum-scala",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -185815,7 +185863,8 @@
        "w": 2,
        "aTeam": "aspire",
        "bTeam": "setting-sun",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 5,
@@ -185826,7 +185875,8 @@
        "w": 2,
        "aTeam": "ukiyo",
        "bTeam": "division20",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 6,
@@ -185837,7 +185887,8 @@
        "w": 2,
        "aTeam": "divide-conquer",
        "bTeam": "entity",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -185854,7 +185905,8 @@
        "w": 1,
        "aTeam": "setting-sun",
        "bTeam": "division20",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 8,
@@ -185865,7 +185917,8 @@
        "w": 2,
        "aTeam": "aspire",
        "bTeam": "ukiyo",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 9,
@@ -185876,7 +185929,8 @@
        "w": 1,
        "aTeam": "entity",
        "bTeam": "caelum-scala",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -185893,7 +185947,8 @@
        "w": 2,
        "aTeam": "setting-sun",
        "bTeam": "entity",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 11,
@@ -185904,7 +185959,8 @@
        "w": 1,
        "aTeam": "ukiyo",
        "bTeam": "caelum-scala",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 12,
@@ -185915,7 +185971,8 @@
        "w": 1,
        "aTeam": "division20",
        "bTeam": "divide-conquer",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -185932,7 +185989,8 @@
        "w": 1,
        "aTeam": "setting-sun",
        "bTeam": "divide-conquer",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 14,
@@ -185943,7 +186001,8 @@
        "w": 2,
        "aTeam": "entity",
        "bTeam": "division20",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 15,
@@ -185954,7 +186013,8 @@
        "w": 1,
        "aTeam": "aspire",
        "bTeam": "caelum-scala",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -185971,7 +186031,8 @@
        "w": 2,
        "aTeam": "infernum-e-sports",
        "bTeam": "lemon-tree",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 2,
@@ -185982,7 +186043,8 @@
        "w": 2,
        "aTeam": "kiedz",
        "bTeam": "technomancy",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 3,
@@ -185993,7 +186055,8 @@
        "w": 2,
        "aTeam": "the-nomads",
        "bTeam": "pepegax",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -186010,7 +186073,8 @@
        "w": 2,
        "aTeam": "lemon-tree",
        "bTeam": "pepegax",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 5,
@@ -186021,7 +186085,8 @@
        "w": 2,
        "aTeam": "technomancy",
        "bTeam": "raven-song",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 6,
@@ -186032,7 +186097,8 @@
        "w": 2,
        "aTeam": "infernum-e-sports",
        "bTeam": "kiedz",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -186049,7 +186115,8 @@
        "w": 2,
        "aTeam": "pepegax",
        "bTeam": "raven-song",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 8,
@@ -186060,7 +186127,8 @@
        "w": 1,
        "aTeam": "technomancy",
        "bTeam": "the-nomads",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 9,
@@ -186071,7 +186139,8 @@
        "w": 1,
        "aTeam": "kiedz",
        "bTeam": "lemon-tree",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -186089,6 +186158,7 @@
        "aTeam": "raven-song",
        "bTeam": "infernum-e-sports",
        "bo": 1,
+       "ts": 1787354759,
        "stats": {
         "maps": [
          {
@@ -186454,7 +186524,8 @@
        "w": 0,
        "aTeam": "technomancy",
        "bTeam": "pepegax",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 12,
@@ -186465,7 +186536,8 @@
        "w": 0,
        "aTeam": "kiedz",
        "bTeam": "the-nomads",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -186482,7 +186554,8 @@
        "w": 2,
        "aTeam": "0v3",
        "bTeam": "bluebird",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 2,
@@ -186493,7 +186566,8 @@
        "w": 1,
        "aTeam": "neverland",
        "bTeam": "diamondones",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 3,
@@ -186504,7 +186578,8 @@
        "w": 1,
        "aTeam": "new-jade",
        "bTeam": "sacred-raven",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -186521,7 +186596,8 @@
        "w": 1,
        "aTeam": "neverland",
        "bTeam": "bluebird",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 5,
@@ -186532,7 +186608,8 @@
        "w": 2,
        "aTeam": "new-jade",
        "bTeam": "astral-bloom",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 6,
@@ -186543,7 +186620,8 @@
        "w": 2,
        "aTeam": "0v3",
        "bTeam": "diamondones",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -186560,7 +186638,8 @@
        "w": 1,
        "aTeam": "neverland",
        "bTeam": "astral-bloom",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 8,
@@ -186571,7 +186650,8 @@
        "w": 2,
        "aTeam": "new-jade",
        "bTeam": "diamondones",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 9,
@@ -186582,7 +186662,8 @@
        "w": 2,
        "aTeam": "bluebird",
        "bTeam": "sacred-raven",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -186599,7 +186680,8 @@
        "w": 0,
        "aTeam": "neverland",
        "bTeam": "new-jade",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 11,
@@ -186610,7 +186692,8 @@
        "w": 0,
        "aTeam": "diamondones",
        "bTeam": "sacred-raven",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       },
       {
        "i": 12,
@@ -186621,7 +186704,8 @@
        "w": 0,
        "aTeam": "astral-bloom",
        "bTeam": "0v3",
-       "bo": 1
+       "bo": 1,
+       "ts": null
       }
      ]
     },
@@ -186638,7 +186722,8 @@
        "w": 1,
        "aTeam": "aimpunch",
        "bTeam": null,
-       "bo": 3
+       "bo": 3,
+       "ts": null
       },
       {
        "i": 2,
@@ -186649,7 +186734,8 @@
        "w": 0,
        "aTeam": "bloom-e-sports",
        "bTeam": "aeternum",
-       "bo": 3
+       "bo": 3,
+       "ts": null
       },
       {
        "i": 3,
@@ -186660,7 +186746,8 @@
        "w": 1,
        "aTeam": "setting-sun",
        "bTeam": null,
-       "bo": 3
+       "bo": 3,
+       "ts": null
       },
       {
        "i": 4,
@@ -186671,7 +186758,8 @@
        "w": 0,
        "aTeam": "neverland",
        "bTeam": "pepegax",
-       "bo": 3
+       "bo": 3,
+       "ts": null
       },
       {
        "i": 5,
@@ -186682,7 +186770,8 @@
        "w": 1,
        "aTeam": "flood-flashers",
        "bTeam": null,
-       "bo": 3
+       "bo": 3,
+       "ts": null
       },
       {
        "i": 6,
@@ -186693,7 +186782,8 @@
        "w": 0,
        "aTeam": "division20",
        "bTeam": "aetherline",
-       "bo": 3
+       "bo": 3,
+       "ts": null
       },
       {
        "i": 7,
@@ -186704,7 +186794,8 @@
        "w": 1,
        "aTeam": "xplosiv",
        "bTeam": null,
-       "bo": 3
+       "bo": 3,
+       "ts": null
       },
       {
        "i": 8,
@@ -186715,7 +186806,8 @@
        "w": 0,
        "aTeam": "raven-song",
        "bTeam": "diamondones",
-       "bo": 3
+       "bo": 3,
+       "ts": null
       }
      ]
     },
@@ -186732,7 +186824,8 @@
        "w": 0,
        "aTeam": "aimpunch",
        "bTeam": null,
-       "bo": 3
+       "bo": 3,
+       "ts": null
       },
       {
        "i": 10,
@@ -186743,7 +186836,8 @@
        "w": 0,
        "aTeam": "setting-sun",
        "bTeam": null,
-       "bo": 3
+       "bo": 3,
+       "ts": null
       },
       {
        "i": 11,
@@ -186754,7 +186848,8 @@
        "w": 0,
        "aTeam": "flood-flashers",
        "bTeam": null,
-       "bo": 3
+       "bo": 3,
+       "ts": null
       },
       {
        "i": 12,
@@ -186765,7 +186860,8 @@
        "w": 0,
        "aTeam": "xplosiv",
        "bTeam": null,
-       "bo": 3
+       "bo": 3,
+       "ts": null
       }
      ]
     },
@@ -186782,7 +186878,8 @@
        "w": 0,
        "aTeam": null,
        "bTeam": null,
-       "bo": 3
+       "bo": 3,
+       "ts": null
       },
       {
        "i": 14,
@@ -186793,7 +186890,8 @@
        "w": 0,
        "aTeam": null,
        "bTeam": null,
-       "bo": 3
+       "bo": 3,
+       "ts": null
       }
      ]
     },
@@ -186810,7 +186908,8 @@
        "w": 0,
        "aTeam": null,
        "bTeam": null,
-       "bo": 3
+       "bo": 3,
+       "ts": null
       }
      ]
     }
@@ -186835,7 +186934,8 @@
          "w": 1,
          "aTeam": "aimpunch",
          "bTeam": "5percent",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 2,
@@ -186846,7 +186946,8 @@
          "w": 2,
          "aTeam": "aetherline",
          "bTeam": "moonlit-tempo",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 3,
@@ -186857,7 +186958,8 @@
          "w": 2,
          "aTeam": "masmark",
          "bTeam": "fruit-basket",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       },
@@ -186874,7 +186976,8 @@
          "w": 2,
          "aTeam": "fruit-basket",
          "bTeam": "aimpunch",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 5,
@@ -186885,7 +186988,8 @@
          "w": 1,
          "aTeam": "moonlit-tempo",
          "bTeam": "round-loss-bonus",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 6,
@@ -186896,7 +187000,8 @@
          "w": 1,
          "aTeam": "aetherline",
          "bTeam": "masmark",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       },
@@ -186913,7 +187018,8 @@
          "w": 1,
          "aTeam": "aimpunch",
          "bTeam": "moonlit-tempo",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 8,
@@ -186924,7 +187030,8 @@
          "w": 1,
          "aTeam": "aetherline",
          "bTeam": "fruit-basket",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 9,
@@ -186935,7 +187042,8 @@
          "w": 1,
          "aTeam": "5percent",
          "bTeam": "round-loss-bonus",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       },
@@ -186952,7 +187060,8 @@
          "w": 2,
          "aTeam": "aetherline",
          "bTeam": "aimpunch",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 11,
@@ -186963,7 +187072,8 @@
          "w": 2,
          "aTeam": "moonlit-tempo",
          "bTeam": "5percent",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 12,
@@ -186974,7 +187084,8 @@
          "w": 2,
          "aTeam": "masmark",
          "bTeam": "round-loss-bonus",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       },
@@ -186991,7 +187102,8 @@
          "w": 1,
          "aTeam": "aimpunch",
          "bTeam": "masmark",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 14,
@@ -187002,7 +187114,8 @@
          "w": 2,
          "aTeam": "5percent",
          "bTeam": "aetherline",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 15,
@@ -187013,7 +187126,8 @@
          "w": 1,
          "aTeam": "fruit-basket",
          "bTeam": "round-loss-bonus",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       }
@@ -187089,7 +187203,8 @@
          "w": 2,
          "aTeam": "opal",
          "bTeam": "flood-flashers",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 2,
@@ -187100,7 +187215,8 @@
          "w": 1,
          "aTeam": "the-gigarage",
          "bTeam": "alcheministry",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 3,
@@ -187111,7 +187227,8 @@
          "w": 2,
          "aTeam": "artisian",
          "bTeam": "cyanide",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       },
@@ -187128,7 +187245,8 @@
          "w": 2,
          "aTeam": "cyanide",
          "bTeam": "the-gigarage",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 5,
@@ -187139,7 +187257,8 @@
          "w": 1,
          "aTeam": "flood-flashers",
          "bTeam": "bloom-e-sports",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 6,
@@ -187150,7 +187269,8 @@
          "w": 1,
          "aTeam": "opal",
          "bTeam": "artisian",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       },
@@ -187167,7 +187287,8 @@
          "w": 2,
          "aTeam": "the-gigarage",
          "bTeam": "flood-flashers",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 8,
@@ -187178,7 +187299,8 @@
          "w": 2,
          "aTeam": "opal",
          "bTeam": "cyanide",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 9,
@@ -187189,7 +187311,8 @@
          "w": 2,
          "aTeam": "alcheministry",
          "bTeam": "bloom-e-sports",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       },
@@ -187206,7 +187329,8 @@
          "w": 2,
          "aTeam": "flood-flashers",
          "bTeam": "artisian",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 11,
@@ -187217,7 +187341,8 @@
          "w": 2,
          "aTeam": "the-gigarage",
          "bTeam": "bloom-e-sports",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 12,
@@ -187228,7 +187353,8 @@
          "w": 2,
          "aTeam": "cyanide",
          "bTeam": "alcheministry",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       },
@@ -187245,7 +187371,8 @@
          "w": 1,
          "aTeam": "flood-flashers",
          "bTeam": "alcheministry",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 14,
@@ -187256,7 +187383,8 @@
          "w": 1,
          "aTeam": "bloom-e-sports",
          "bTeam": "artisian",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 15,
@@ -187267,7 +187395,8 @@
          "w": 1,
          "aTeam": "the-gigarage",
          "bTeam": "opal",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       }
@@ -187343,7 +187472,8 @@
          "w": 2,
          "aTeam": "unforgettable",
          "bTeam": "xplosiv",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 2,
@@ -187354,7 +187484,8 @@
          "w": 1,
          "aTeam": "99lives",
          "bTeam": "cosmos",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 3,
@@ -187365,7 +187496,8 @@
          "w": 2,
          "aTeam": "degree",
          "bTeam": "aeternum",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       },
@@ -187382,7 +187514,8 @@
          "w": 1,
          "aTeam": "aeternum",
          "bTeam": "99lives",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 5,
@@ -187393,7 +187526,8 @@
          "w": 2,
          "aTeam": "xplosiv",
          "bTeam": "team-neverseen",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 6,
@@ -187404,7 +187538,8 @@
          "w": 2,
          "aTeam": "unforgettable",
          "bTeam": "degree",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       },
@@ -187421,7 +187556,8 @@
          "w": 1,
          "aTeam": "aeternum",
          "bTeam": "team-neverseen",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 8,
@@ -187432,7 +187568,8 @@
          "w": 2,
          "aTeam": "99lives",
          "bTeam": "xplosiv",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 9,
@@ -187443,7 +187580,8 @@
          "w": 1,
          "aTeam": "degree",
          "bTeam": "cosmos",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       },
@@ -187460,7 +187598,8 @@
          "w": 2,
          "aTeam": "aeternum",
          "bTeam": "cosmos",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 11,
@@ -187471,7 +187610,8 @@
          "w": 2,
          "aTeam": "degree",
          "bTeam": "xplosiv",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 12,
@@ -187482,7 +187622,8 @@
          "w": 1,
          "aTeam": "team-neverseen",
          "bTeam": "unforgettable",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       },
@@ -187499,7 +187640,8 @@
          "w": 1,
          "aTeam": "xplosiv",
          "bTeam": "aeternum",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 14,
@@ -187510,7 +187652,8 @@
          "w": 2,
          "aTeam": "team-neverseen",
          "bTeam": "cosmos",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 15,
@@ -187521,7 +187664,8 @@
          "w": 1,
          "aTeam": "99lives",
          "bTeam": "unforgettable",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       }
@@ -187597,7 +187741,8 @@
          "w": 2,
          "aTeam": "divide-conquer",
          "bTeam": "ukiyo",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 2,
@@ -187608,7 +187753,8 @@
          "w": 2,
          "aTeam": "entity",
          "bTeam": "aspire",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 3,
@@ -187619,7 +187765,8 @@
          "w": 1,
          "aTeam": "setting-sun",
          "bTeam": "caelum-scala",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       },
@@ -187636,7 +187783,8 @@
          "w": 2,
          "aTeam": "aspire",
          "bTeam": "setting-sun",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 5,
@@ -187647,7 +187795,8 @@
          "w": 2,
          "aTeam": "ukiyo",
          "bTeam": "division20",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 6,
@@ -187658,7 +187807,8 @@
          "w": 2,
          "aTeam": "divide-conquer",
          "bTeam": "entity",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       },
@@ -187675,7 +187825,8 @@
          "w": 1,
          "aTeam": "setting-sun",
          "bTeam": "division20",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 8,
@@ -187686,7 +187837,8 @@
          "w": 2,
          "aTeam": "aspire",
          "bTeam": "ukiyo",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 9,
@@ -187697,7 +187849,8 @@
          "w": 1,
          "aTeam": "entity",
          "bTeam": "caelum-scala",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       },
@@ -187714,7 +187867,8 @@
          "w": 2,
          "aTeam": "setting-sun",
          "bTeam": "entity",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 11,
@@ -187725,7 +187879,8 @@
          "w": 1,
          "aTeam": "ukiyo",
          "bTeam": "caelum-scala",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 12,
@@ -187736,7 +187891,8 @@
          "w": 1,
          "aTeam": "division20",
          "bTeam": "divide-conquer",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       },
@@ -187753,7 +187909,8 @@
          "w": 1,
          "aTeam": "setting-sun",
          "bTeam": "divide-conquer",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 14,
@@ -187764,7 +187921,8 @@
          "w": 2,
          "aTeam": "entity",
          "bTeam": "division20",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 15,
@@ -187775,7 +187933,8 @@
          "w": 1,
          "aTeam": "aspire",
          "bTeam": "caelum-scala",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       }
@@ -187851,7 +188010,8 @@
          "w": 2,
          "aTeam": "infernum-e-sports",
          "bTeam": "lemon-tree",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 2,
@@ -187862,7 +188022,8 @@
          "w": 2,
          "aTeam": "kiedz",
          "bTeam": "technomancy",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 3,
@@ -187873,7 +188034,8 @@
          "w": 2,
          "aTeam": "the-nomads",
          "bTeam": "pepegax",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       },
@@ -187890,7 +188052,8 @@
          "w": 2,
          "aTeam": "lemon-tree",
          "bTeam": "pepegax",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 5,
@@ -187901,7 +188064,8 @@
          "w": 2,
          "aTeam": "technomancy",
          "bTeam": "raven-song",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 6,
@@ -187912,7 +188076,8 @@
          "w": 2,
          "aTeam": "infernum-e-sports",
          "bTeam": "kiedz",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       },
@@ -187929,7 +188094,8 @@
          "w": 2,
          "aTeam": "pepegax",
          "bTeam": "raven-song",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 8,
@@ -187940,7 +188106,8 @@
          "w": 1,
          "aTeam": "technomancy",
          "bTeam": "the-nomads",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 9,
@@ -187951,7 +188118,8 @@
          "w": 1,
          "aTeam": "kiedz",
          "bTeam": "lemon-tree",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       },
@@ -187969,6 +188137,7 @@
          "aTeam": "raven-song",
          "bTeam": "infernum-e-sports",
          "bo": 1,
+         "ts": 1787354759,
          "stats": {
           "maps": [
            {
@@ -188334,7 +188503,8 @@
          "w": 0,
          "aTeam": "technomancy",
          "bTeam": "pepegax",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 12,
@@ -188345,7 +188515,8 @@
          "w": 0,
          "aTeam": "kiedz",
          "bTeam": "the-nomads",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       }
@@ -188421,7 +188592,8 @@
          "w": 2,
          "aTeam": "0v3",
          "bTeam": "bluebird",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 2,
@@ -188432,7 +188604,8 @@
          "w": 1,
          "aTeam": "neverland",
          "bTeam": "diamondones",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 3,
@@ -188443,7 +188616,8 @@
          "w": 1,
          "aTeam": "new-jade",
          "bTeam": "sacred-raven",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       },
@@ -188460,7 +188634,8 @@
          "w": 1,
          "aTeam": "neverland",
          "bTeam": "bluebird",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 5,
@@ -188471,7 +188646,8 @@
          "w": 2,
          "aTeam": "new-jade",
          "bTeam": "astral-bloom",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 6,
@@ -188482,7 +188658,8 @@
          "w": 2,
          "aTeam": "0v3",
          "bTeam": "diamondones",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       },
@@ -188499,7 +188676,8 @@
          "w": 1,
          "aTeam": "neverland",
          "bTeam": "astral-bloom",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 8,
@@ -188510,7 +188688,8 @@
          "w": 2,
          "aTeam": "new-jade",
          "bTeam": "diamondones",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 9,
@@ -188521,7 +188700,8 @@
          "w": 2,
          "aTeam": "bluebird",
          "bTeam": "sacred-raven",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       },
@@ -188538,7 +188718,8 @@
          "w": 0,
          "aTeam": "neverland",
          "bTeam": "new-jade",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 11,
@@ -188549,7 +188730,8 @@
          "w": 0,
          "aTeam": "diamondones",
          "bTeam": "sacred-raven",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         },
         {
          "i": 12,
@@ -188560,7 +188742,8 @@
          "w": 0,
          "aTeam": "astral-bloom",
          "bTeam": "0v3",
-         "bo": 1
+         "bo": 1,
+         "ts": null
         }
        ]
       }
@@ -188636,7 +188819,8 @@
          "w": 1,
          "aTeam": "aimpunch",
          "bTeam": null,
-         "bo": 3
+         "bo": 3,
+         "ts": null
         },
         {
          "i": 2,
@@ -188647,7 +188831,8 @@
          "w": 0,
          "aTeam": "bloom-e-sports",
          "bTeam": "aeternum",
-         "bo": 3
+         "bo": 3,
+         "ts": null
         },
         {
          "i": 3,
@@ -188658,7 +188843,8 @@
          "w": 1,
          "aTeam": "setting-sun",
          "bTeam": null,
-         "bo": 3
+         "bo": 3,
+         "ts": null
         },
         {
          "i": 4,
@@ -188669,7 +188855,8 @@
          "w": 0,
          "aTeam": "neverland",
          "bTeam": "pepegax",
-         "bo": 3
+         "bo": 3,
+         "ts": null
         },
         {
          "i": 5,
@@ -188680,7 +188867,8 @@
          "w": 1,
          "aTeam": "flood-flashers",
          "bTeam": null,
-         "bo": 3
+         "bo": 3,
+         "ts": null
         },
         {
          "i": 6,
@@ -188691,7 +188879,8 @@
          "w": 0,
          "aTeam": "division20",
          "bTeam": "aetherline",
-         "bo": 3
+         "bo": 3,
+         "ts": null
         },
         {
          "i": 7,
@@ -188702,7 +188891,8 @@
          "w": 1,
          "aTeam": "xplosiv",
          "bTeam": null,
-         "bo": 3
+         "bo": 3,
+         "ts": null
         },
         {
          "i": 8,
@@ -188713,7 +188903,8 @@
          "w": 0,
          "aTeam": "raven-song",
          "bTeam": "diamondones",
-         "bo": 3
+         "bo": 3,
+         "ts": null
         }
        ]
       },
@@ -188730,7 +188921,8 @@
          "w": 0,
          "aTeam": "aimpunch",
          "bTeam": null,
-         "bo": 3
+         "bo": 3,
+         "ts": null
         },
         {
          "i": 10,
@@ -188741,7 +188933,8 @@
          "w": 0,
          "aTeam": "setting-sun",
          "bTeam": null,
-         "bo": 3
+         "bo": 3,
+         "ts": null
         },
         {
          "i": 11,
@@ -188752,7 +188945,8 @@
          "w": 0,
          "aTeam": "flood-flashers",
          "bTeam": null,
-         "bo": 3
+         "bo": 3,
+         "ts": null
         },
         {
          "i": 12,
@@ -188763,7 +188957,8 @@
          "w": 0,
          "aTeam": "xplosiv",
          "bTeam": null,
-         "bo": 3
+         "bo": 3,
+         "ts": null
         }
        ]
       },
@@ -188780,7 +188975,8 @@
          "w": 0,
          "aTeam": null,
          "bTeam": null,
-         "bo": 3
+         "bo": 3,
+         "ts": null
         },
         {
          "i": 14,
@@ -188791,7 +188987,8 @@
          "w": 0,
          "aTeam": null,
          "bTeam": null,
-         "bo": 3
+         "bo": 3,
+         "ts": null
         }
        ]
       },
@@ -188808,7 +189005,8 @@
          "w": 0,
          "aTeam": null,
          "bTeam": null,
-         "bo": 3
+         "bo": 3,
+         "ts": null
         }
        ]
       }

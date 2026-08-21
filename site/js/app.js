@@ -478,9 +478,10 @@ function allMatches(){
   (DATA.tournaments||[]).forEach(tr=>tr.bracket.forEach(rd=>rd.matches.forEach(m=>{
     if(m.w!==1 && m.w!==2) return;
     out.push({date:tr.date, event:tr.name, eventSlug:tr.slug, tier:tr.tier, tierLabel:tr.tierLabel,
-      round:rd.title, a:m.a, aTeam:m.aTeam, sa:m.sa, b:m.b, bTeam:m.bTeam, sb:m.sb, w:m.w});
+      round:rd.title, a:m.a, aTeam:m.aTeam, sa:m.sa, b:m.b, bTeam:m.bTeam, sb:m.sb, w:m.w, ts:m.ts});
   })));
-  out.sort((x,y)=> x.date<y.date?1 : x.date>y.date?-1 : 0);
+  // newest event date first; within the same date, most recently recorded (ts) first
+  out.sort((x,y)=> x.date<y.date?1 : x.date>y.date?-1 : (y.ts||0)-(x.ts||0));
   _allMatches = out; return out;
 }
 let resultsFilter = {tier:"all", q:""}, resultsShown = 100;

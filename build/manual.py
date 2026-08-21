@@ -10,7 +10,7 @@ Group stage + playoffs = e.g. two round_robin stages ("Group A/B") + a
 single_elim stage ("Playoffs"). Editable master: data/manual/<slug>.json.
 On save we also write the standard data/tournaments/<slug>.json for parse.py.
 """
-import json, math, os, re
+import json, math, os, re, time
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MANUAL = os.path.join(ROOT, "data", "manual")
@@ -150,7 +150,7 @@ def stage_to_standard(stage):
                             "b": b or ("(bye)" if rr.get("bye") else ""),
                             "sc": [m.get("sa"), m.get("sb")] if m.get("sa") is not None else "",
                             "w": rr["w"], "st": "complete" if rr["w"] else "pending",
-                            "grp": False, "bo": stage.get("bestOf", 1)})
+                            "grp": False, "bo": stage.get("bestOf", 1), "ts": m.get("ts")})
     return {
         "id": stage["id"], "name": stage["name"], "format": stage["format"],
         "bestOf": stage.get("bestOf", 1), "roundTitles": stage.get("roundTitles", {}),
@@ -244,6 +244,10 @@ def set_score(slug, sid, mid, sa, sb):
         if m["id"] == int(mid):
             m["sa"] = None if sa in ("", None) else int(sa)
             m["sb"] = None if sb in ("", None) else int(sb)
+            if m["sa"] is not None and m["sb"] is not None:
+                m["ts"] = int(time.time())      # when this result was recorded (surfaces recent matches)
+            else:
+                m.pop("ts", None)
     save(man); return man
 
 def add_match(slug, sid, rnd, a, b):
