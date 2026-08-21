@@ -1,0 +1,422 @@
+[
+ {
+  "oldName": "Snyxxel",
+  "count": 14,
+  "teams": [
+   "infernum-e-sports"
+  ],
+  "contexts": [
+   {
+    "slug": "BPLCONQ2023",
+    "team": "Infernum E-Sports",
+    "captain": false,
+    "name": "Snyxxel"
+   },
+   {
+    "slug": "BPLCONQ2022",
+    "team": "Infinity E-Sports",
+    "captain": false,
+    "name": "Snyxxel"
+   },
+   {
+    "slug": "BotProCup2023",
+    "team": "Infernum E-Sports",
+    "captain": false,
+    "name": "Snyxxel"
+   },
+   {
+    "slug": "AuxEBPL2023",
+    "team": "Infernum E-Sports",
+    "captain": false,
+    "name": "Snyxxel"
+   },
+   {
+    "slug": "AuxEBPL2022",
+    "team": "Infinity E-Sports",
+    "captain": false,
+    "name": "Snyxxel"
+   },
+   {
+    "slug": "BPLSRR",
+    "team": "Infinity E-Sports",
+    "captain": true,
+    "name": "Snyxxel"
+   }
+  ],
+  "targetHints": []
+ },
+ {
+  "oldName": "clueby",
+  "count": 12,
+  "teams": [
+   "setting-sun"
+  ],
+  "contexts": [
+   {
+    "slug": "BPLLStage24",
+    "team": "Setting Sun",
+    "captain": false,
+    "name": "clueby"
+   },
+   {
+    "slug": "BPLLStage23",
+    "team": "Setting Sun",
+    "captain": false,
+    "name": "clueby"
+   },
+   {
+    "slug": "BPLCONQ2022",
+    "team": "Setting Sun",
+    "captain": false,
+    "name": "clueby"
+   },
+   {
+    "slug": "BotProCup2023",
+    "team": "Setting Sun",
+    "captain": false,
+    "name": "clueby"
+   },
+   {
+    "slug": "AuxEBPL2023",
+    "team": "Setting Sun",
+    "captain": false,
+    "name": "clueby"
+   },
+   {
+    "slug": "AuxEBPL2022",
+    "team": "Setting Sun",
+    "captain": false,
+    "name": "clueby"
+   }
+  ],
+  "targetHints": []
+ },
+ {
+  "oldName": "shion",
+  "count": 4,
+  "teams": [
+   "neverland"
+  ],
+  "contexts": [
+   {
+    "slug": "BotProLeague4",
+    "team": "CasualGaming",
+    "captain": false,
+    "name": "shion"
+   },
+   {
+    "slug": "BotProLeague3",
+    "team": "Zyaxis",
+    "captain": false,
+    "name": "Shion"
+   },
+   {
+    "slug": "BotProLeague2",
+    "team": "Neverland",
+    "captain": false,
+    "name": "shion"
+   },
+   {
+    "slug": "BotProLeague1",
+    "team": "Break the Circuit",
+    "captain": false,
+    "name": "shion"
+   }
+  ],
+  "targetHints": []
+ },
+ {
+  "oldName": "Hyoon",
+  "count": 2,
+  "teams": [
+   "neverland"
+  ],
+  "contexts": [
+   {
+    "slug": "BotProLeague2",
+    "team": "Neverland",
+    "captain": false,
+    "name": "Hyoon"
+   },
+   {
+    "slug": "BotProLeague1",
+    "team": "TeamRNG",
+    "captain": false,
+    "name": "Hyoon"
+   }
+  ],
+  "targetHints": []
+ },
+ {
+  "oldName": "mxzero",
+  "count": 1,
+  "teams": [
+   "fruit-basket"
+  ],
+  "contexts": [
+   {
+    "slug": "BotProLeague2",
+    "team": "Fruit Basket",
+    "captain": false,
+    "name": "mxzero"
+   }
+  ],
+  "targetHints": [
+   "mango"
+  ]
+ },
+ {
+  "oldName": "martin",
+  "count": 5,
+  "teams": [],
+  "contexts": [
+   {
+    "slug": "BPLChallengerStage",
+    "team": "Alliance",
+    "captain": false,
+    "name": "martin"
+   },
+   {
+    "slug": "BotProCup2022",
+    "team": "Lethality",
+    "captain": false,
+    "name": "martin"
+   },
+   {
+    "slug": "BotProLeague12",
+    "team": "Rain Factory",
+    "captain": false,
+    "name": "martin"
+   },
+   {
+    "slug": "BotProLeague11",
+    "team": "Infamous",
+    "captain": false,
+    "name": "martin"
+   },
+   {
+    "slug": "BotProLeague10",
+    "team": "Distinction",
+    "captain": false,
+    "name": "martin"
+   }
+  ],
+  "targetHints": []
+ },
+ {
+  "oldName": "Fuslie",
+  "count": 2,
+  "teams": [],
+  "contexts": [
+   {
+    "slug": "BotProLeague2",
+    "team": "Midknight",
+    "captain": false,
+    "name": "Fuslie"
+   },
+   {
+    "slug": "BotProLeague1",
+    "team": "12Punch",
+    "captain": false,
+    "name": "Fuslie"
+   }
+  ],
+  "targetHints": []
+ },
+ {
+  "oldName": "iGUMDROP",
+  "count": 2,
+  "teams": [],
+  "contexts": [
+   {
+    "slug": "BotProLeague2",
+    "team": "Midknight",
+    "captain": false,
+    "name": "iGUMDROP"
+   },
+   {
+    "slug": "BotProLeague1",
+    "team": "2Out",
+    "captain": false,
+    "name": "iGUMDROP"
+   }
+  ],
+  "targetHints": []
+ },
+ {
+  "oldName": "ju5t_v",
+  "count": 2,
+  "teams": [],
+  "contexts": [
+   {
+    "slug": "BPLChalS2024",
+    "team": "Team Sunder",
+    "captain": false,
+    "name": "ju5t_v"
+   },
+   {
+    "slug": "BPLLStage24",
+    "team": "Team Sunder",
+    "captain": false,
+    "name": "ju5t_v"
+   }
+  ],
+  "targetHints": []
+ },
+ {
+  "oldName": "KogiRumie",
+  "count": 2,
+  "teams": [],
+  "contexts": [
+   {
+    "slug": "BPLChalS2024",
+    "team": "Savant",
+    "captain": false,
+    "name": "KogiRumie"
+   },
+   {
+    "slug": "BotProLeague13",
+    "team": "Entropy Plus",
+    "captain": false,
+    "name": "KogiRumie"
+   }
+  ],
+  "targetHints": []
+ },
+ {
+  "oldName": "Lilypichu",
+  "count": 2,
+  "teams": [],
+  "contexts": [
+   {
+    "slug": "BotProLeague2",
+    "team": "Midknight",
+    "captain": false,
+    "name": "Lilypichu"
+   },
+   {
+    "slug": "BotProLeague1",
+    "team": "AllKnights",
+    "captain": false,
+    "name": "Lilypichu"
+   }
+  ],
+  "targetHints": []
+ },
+ {
+  "oldName": "Pokimane",
+  "count": 2,
+  "teams": [],
+  "contexts": [
+   {
+    "slug": "BotProLeague2",
+    "team": "Zero7",
+    "captain": true,
+    "name": "Pokimane"
+   },
+   {
+    "slug": "BotProLeague1",
+    "team": "Dropdead",
+    "captain": false,
+    "name": "Pokimane"
+   }
+  ],
+  "targetHints": []
+ },
+ {
+  "oldName": "QuarterJade",
+  "count": 2,
+  "teams": [],
+  "contexts": [
+   {
+    "slug": "BotProLeague2",
+    "team": "6-Down",
+    "captain": false,
+    "name": "QuarterJade"
+   },
+   {
+    "slug": "BotProLeague1",
+    "team": "Counter League",
+    "captain": false,
+    "name": "QuarterJade"
+   }
+  ],
+  "targetHints": []
+ },
+ {
+  "oldName": "Valkyrae",
+  "count": 2,
+  "teams": [],
+  "contexts": [
+   {
+    "slug": "BotProLeague2",
+    "team": "6-Down",
+    "captain": false,
+    "name": "Valkyrae"
+   },
+   {
+    "slug": "BotProLeague1",
+    "team": "AllKnights",
+    "captain": false,
+    "name": "Valkyrae"
+   }
+  ],
+  "targetHints": []
+ },
+ {
+  "oldName": "7dwarf",
+  "count": 1,
+  "teams": [],
+  "contexts": [
+   {
+    "slug": "BotProLeague10",
+    "team": "Snow White",
+    "captain": true,
+    "name": "7dwarf"
+   }
+  ],
+  "targetHints": []
+ },
+ {
+  "oldName": "doullan",
+  "count": 1,
+  "teams": [],
+  "contexts": [
+   {
+    "slug": "BotProLeague13",
+    "team": "Viceroy",
+    "captain": false,
+    "name": "doullan"
+   }
+  ],
+  "targetHints": []
+ },
+ {
+  "oldName": "Sen Ikuiku",
+  "count": 1,
+  "teams": [],
+  "contexts": [
+   {
+    "slug": "BPLLStage25",
+    "team": "VSPO!",
+    "captain": false,
+    "name": "Sen Ikuiku"
+   }
+  ],
+  "targetHints": []
+ },
+ {
+  "oldName": "Sykkuno",
+  "count": 1,
+  "teams": [],
+  "contexts": [
+   {
+    "slug": "BotProLeague1",
+    "team": "2Out",
+    "captain": false,
+    "name": "Sykkuno"
+   }
+  ],
+  "targetHints": []
+ }
+]

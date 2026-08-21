@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# temp / build scratch
+*.b64
+*.log
+build/_*.b64
+
+# OS
+.DS_Store
+Thumbs.db
+
+# local tooling / Claude Code
+.claude/

@@ -1,0 +1,29 @@
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bot Pro League">
+  <defs>
+    <linearGradient id="bplHex" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a3550"/>
+      <stop offset="1" stop-color="#151b2e"/>
+    </linearGradient>
+    <linearGradient id="bplAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff7a3d"/>
+      <stop offset="1" stop-color="#ff3d64"/>
+    </linearGradient>
+  </defs>
+  <!-- hex shield -->
+  <path d="M80 6 L140 40 L140 120 L80 154 L20 120 L20 40 Z"
+        fill="url(#bplHex)" stroke="url(#bplAccent)" stroke-width="4" stroke-linejoin="round"/>
+  <!-- antenna (kept within the narrow top point) -->
+  <line x1="80" y1="46" x2="80" y2="30" stroke="#3a465f" stroke-width="3"/>
+  <circle cx="80" cy="27" r="4" fill="url(#bplAccent)"/>
+  <!-- bot visor: centered in the wide middle band (y 40-120) -->
+  <rect x="44" y="50" width="72" height="30" rx="8" fill="#0e1424" stroke="#3a465f" stroke-width="2"/>
+  <circle cx="61" cy="65" r="6.5" fill="url(#bplAccent)"/>
+  <circle cx="99" cy="65" r="6.5" fill="url(#bplAccent)"/>
+  <!-- crosshair between the eyes -->
+  <path d="M80 57 v5 M80 68 v5 M74 65 h-4.5 M86 65 h4.5" stroke="#e8ecf4" stroke-width="2" stroke-linecap="round"/>
+  <!-- wordmark, sitting inside the wide band -->
+  <text x="80" y="106" text-anchor="middle" font-family="'Rajdhani','Segoe UI',sans-serif"
+        font-size="27" font-weight="700" letter-spacing="3" fill="#e8ecf4">BPL</text>
+  <text x="80" y="118" text-anchor="middle" font-family="'Rajdhani','Segoe UI',sans-serif"
+        font-size="7" font-weight="600" letter-spacing="1.2" fill="#8a95ad">BOT PRO LEAGUE</text>
+</svg>

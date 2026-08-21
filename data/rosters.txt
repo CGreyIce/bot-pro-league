@@ -1,0 +1,174 @@
+bot_kick; mp_friendlyfire 0; mp_limitteams 32; mp_overtime_enable 1; mp_freezetime 6; mp_defuser_allocation 2; bot_defer_to_human_items 0;bot_defer_to_human_goals 0; bot_allow_grenades 0;
+
+mp_autoteambalance 0; mp_forcecamera 0; mp_match_restart_delay 9999; mp_maxrounds 24; mp_ct_default_secondary weapon_usp_silencer; mp_c4timer 47; mp_damage_headshot_only 1
+
+☆ for one major win
+------------------------------------------------------------------------------------------------------------------------
+
+0v3 (BPL12 Winners) [Navikuun switches with yumezukiyomi, zenn1sm takes reigns of 0v3]
+bot_add "0v3 zenn1sm"; bot_add "0v3 Pearlim"; bot_add "0v3 Navikuun"; bot_add "0v3 potatodepresso"; bot_add "0v3 milkenut";
+bot_add_ct "0v3 zenn1sm"; bot_add_ct "0v3 Pearlim"; bot_add_ct "0v3 Navikuun"; bot_add_ct "0v3 potatodepresso"; bot_add_ct "0v3 milkenut";
+
+5PERCENT (BPL13 Winners)
+bot_add "5P dumbo"; bot_add "5P TortillaRoll"; bot_add "5P AngelXAim"; bot_add "5P Kisaragi Ren"; bot_add "5P Solaonix"
+bot_add_ct "5P dumbo"; bot_add_ct "5P TortillaRoll"; bot_add_ct "5P AngelXAim"; bot_add_ct "5P Kisaragi Ren"; bot_add_ct "5P Solaonix"
+
+99Lives (Bot Pro Cup 2023)
+bot_add "99L Sheep"; bot_add "99L m0wmeow"; bot_add "99L minMaXXer"; bot_add "99L BluBear"; bot_add "99L y1jingg"
+bot_add_ct "99L Sheep"; bot_add_ct "99L m0wmeow"; bot_add_ct "99L minMaXXer"; bot_add_ct "99L BluBear"; bot_add_ct "99L y1jingg"
+
+Aeternum (BPL6 Winners) [ehsten switched to drip, sashimi switched to marsinss, zhizyii switched to suzu]
+bot_add "AET CrimsynFlames"; bot_add "AET Marsinss"; bot_add "AET drip"; bot_add "AET Applezxc"; bot_add "AET Suzuyunn"; 
+bot_add_ct "AET CrimsynFlames"; bot_add_ct "AET Marsinss"; bot_add_ct "AET drip"; bot_add_ct "AET Applezxc"; bot_add_ct "AET Suzuyunn"; 
+
+Aetherline (BPL Legends Stage 2025)
+bot_add "aTL NipNip"; bot_add "aTL BaBaYaGa"; bot_add "aTL EfreetsZ"; bot_add "aTL awtoh"; bot_add "aTL Anndreika";
+bot_add_ct "aTL NipNip"; bot_add_ct "aTL BaBaYaGa"; bot_add_ct "aTL EfreetsZ"; bot_add_ct "aTL awtoh"; bot_add_ct "aTL Anndreika";
+
+Aimpunch ☆ (BPL1 Winners) [xmeijixx switch to baililmao, yuuki_ps switched to chiai]
+bot_add "AP Sketch"; bot_add "AP [Idiot] Angelcrutcher"; bot_add "AP mond33__"; bot_add "AP balililmao"; bot_add "AP Chiai Fujikawa";
+bot_add_ct "AP Sketch"; bot_add_ct "AP [Idiot] Angelcrutcher"; bot_add_ct "AP mond33__"; bot_add_ct "AP balililmao"; bot_add_ct "AP Chiai Fujikawa";
+
+Alcheministry (Bot Pro Cup 2023)
+bot_add "Alc NekoSoji"; bot_add "Alc tanykeat"; bot_add "Alc d.chong"; bot_add "Alc EviKuroneko"; bot_add "Alc hikopiko_"
+bot_add_ct "Alc NekoSoji"; bot_add_ct "Alc tanykeat"; bot_add_ct "Alc d.chong"; bot_add_ct "Alc EviKuroneko"; bot_add_ct "Alc hikopiko_"
+
+Artisian (BPL Legends Stage 2022)
+bot_add "Art SanCtuary"; bot_add "Art rebellioniite"; bot_add "Art Yixl"; bot_add "Art Skyllabtw"; bot_add "Art KTenshi";
+bot_add_ct "Art SanCtuary"; bot_add_ct "Art rebellioniite"; bot_add_ct "Art Yixl"; bot_add_ct "Art Skyllabtw"; bot_add_ct "Art KTenshi";
+
+Aspire (BPL Legends 2024 Stage)
+bot_add "ASP Hanarisu"; bot_add "ASP TuxedoCat"; bot_add "ASP Moira"; bot_add "ASP Stylus"; bot_add "ASP caarrietan";
+bot_add_ct "ASP Hanarisu"; bot_add_ct "ASP TuxedoCat"; bot_add_ct "ASP Moira"; bot_add_ct "ASP Stylus"; bot_add_ct "ASP caarrietan";
+
+Astral Bloom (BPL Roster Change 2025) [used to be VSPO! flagship team]
+bot_add "ABM Tachibana Hinano"; bot_add "ABM Remia Aotsuki"; bot_add "ABM Tsumugi Kokage"; bot_add "ABM Shiranami Ramune"; bot_add "ABM Eris Suzukami"
+bot_add_ct "ABM Tachibana Hinano"; bot_add_ct "ABM Remia Aotsuki"; bot_add_ct "ABM Tsumugi Kokage"; bot_add_ct "ABM Shiranami Ramune"; bot_add_ct "ABM Eris Suzukami"
+
+Bloom E-Sports (BPL Legends 2024 Stage)
+bot_add "BLOOM fleurcoz"; bot_add "BLOOM winda"; bot_add "BLOOM lumpydayo"; bot_add "BLOOM plainyingying"; bot_add "BLOOM VeniceC";
+bot_add_ct "BLOOM fleurcoz"; bot_add_ct "BLOOM winda"; bot_add_ct "BLOOM lumpydayo"; bot_add_ct "BLOOM plainyingying"; bot_add_ct "BLOOM VeniceC";
+
+Bluebird (BPL Legends Stage 2022)
+bot_add "Bb l1feless"; bot_add "Bb AppleOrangePear"; bot_add "Bb beyouna"; bot_add "Bb Volatus"; bot_add "Bb Nutzeru";
+bot_add_ct "Bb l1feless"; bot_add_ct "Bb AppleOrangePear"; bot_add_ct "Bb beyouna"; bot_add_ct "Bb Volatus"; bot_add_ct "Bb Nutzeru";
+
+Caelum Scala (BPL10 Winners) [yinnzx to irosuico]
+bot_add "CaeSC Nyuii"; bot_add "CaeSC Baer"; bot_add "CaeSC lenette"; bot_add "CaeSC kyyltn"; bot_add "CaeSC 4_naru";
+bot_add_ct "CaeSC Nyuii"; bot_add_ct "CaeSC Baer"; bot_add_ct "CaeSC lenette"; bot_add_ct "CaeSC kyyltn"; bot_add_ct "CaeSC 4_naru";
+
+Cosmos ☆ (BPL Legends 2024 Stage) [cherri -> delphoxluna]
+bot_add "CsM inaxho"; bot_add "CsM DelphoxLuna"; bot_add "CsM sneakyyyyy"; bot_add "CsM azzuto"; bot_add "CsM kokushi_vampir";
+bot_add_ct "CsM inaxho"; bot_add_ct "CsM DelphoxLuna"; bot_add_ct "CsM sneakyyyyy"; bot_add_ct "CsM azzuto"; bot_add_ct "CsM kokushi_vampir";
+
+Cyanide (BPL Legends Stage 2022) [leachubby to haniikyu (heavenweeps)]
+bot_add "Cyn miorine"; bot_add "Cyn Ziweiv"; bot_add "Cyn Soozy"; bot_add "Cyn heavenweeps"; bot_add "Cyn Decrease";
+bot_add_ct "Cyn miorine"; bot_add_ct "Cyn Ziweiv"; bot_add_ct "Cyn Soozy"; bot_add_ct "Cyn haniikyu"; bot_add_ct "Cyn Decrease";
+
+degree (BPL Legends Stage 2023) [thea and bluenerd8 swap]
+bot_add "dgr Anony"; bot_add "dgr AltheaVT"; bot_add "dgr VanixEvans"; bot_add "dgr Zoweya"; bot_add "dgr airawwr";
+bot_add_ct "dgr Anony"; bot_add_ct "dgr AltheaVT"; bot_add_ct "dgr VanixEvans"; bot_add_ct "dgr Zoweya"; bot_add_ct "dgr airawwr";
+
+DiamondOnes (BPL Legends Stage 2023)
+bot_add "D1 lilraxxx"; bot_add "D1 notccillia"; bot_add "D1 xolalotl"; bot_add "D1 midorissi"; bot_add "D1 emiiiyu";
+bot_add_ct "D1 lilraxxx"; bot_add_ct "D1 notccillia"; bot_add_ct "D1 xolalotl"; bot_add_ct "D1 midorissi"; bot_add_ct "D1 emiiiyu";
+
+Divide&Conquer (BPL9 Winners) 
+bot_add "DNC Solec"; bot_add "DNC InfiniteBreaker"; bot_add "DNC chreyll"; bot_add "DNC LITA"; bot_add "DNC laavv._";
+bot_add_ct "DNC Solec"; bot_add_ct "DNC InfiniteBreaker"; bot_add_ct "DNC chreyll"; bot_add_ct "DNC LITA"; bot_add_ct "DNC laavv._";
+
+division20 (2023 Promotional Team)
+bot_add "d20 Spoods"; bot_add "d20 laburi"; bot_add "d20 y.uuno"; bot_add "d20 kitties258"; bot_add "d20 Eroxis";
+bot_add_ct "d20 Spoods"; bot_add_ct "d20 laburi"; bot_add_ct "d20 y.uuno"; bot_add_ct "d20 kitties258"; bot_add_ct "d20 Eroxis";
+
+entity (BPL Legends 2024 Stage) [Rebrand from n/tt]
+bot_add "n/tt yerm"; bot_add "n/tt Xrela"; bot_add "n/tt Mike"; bot_add "n/tt xJavyz"; bot_add "n/tt Ryker_Sterling";
+bot_add_ct "n/tt yerm"; bot_add_ct "n/tt Xrela"; bot_add_ct "n/tt Mike"; bot_add_ct "n/tt xJavyz"; bot_add_ct "n/tt Ryker_Sterling";
+
+Flood Flashers (BPL15 Winners)
+bot_add "FF cassiopeiarawr"; bot_add "FF Emily_melody"; bot_add "FF Shinomiya Runa"; bot_add "FF Komori Met"; bot_add "FF ShizuyaUmiko";
+bot_add_ct "FF cassiopeiarawr"; bot_add_ct "FF Emily_melody"; bot_add_ct "FF Shinomiya Runa"; bot_add_ct "FF Komori Met"; bot_add_ct "FF ShizuyaUmiko";
+
+Fruit Basket (BPL 2 Winners) [Sykkuno switched with Hakase, skysbeautylai switched to cshhp]
+bot_add "FRUIT Mango"; bot_add "FRUIT Phxebe"; bot_add "FRUIT yuuschan"; bot_add "FRUIT cshhp"; bot_add "FRUIT Hakase";
+bot_add_ct "FRUIT Mango"; bot_add_ct "FRUIT Phxebe"; bot_add_ct "FRUIT yuuschan"; bot_add_ct "FRUIT cshhp"; bot_add_ct "FRUIT Hakase";
+
+Infernum E-Sports ☆ (BPL7 Winners) [Rebrand] Snyxxel replaced with soapdax
+bot_add "INF Historia"; bot_add "INF soapdax"; bot_add "INF Dirfun"; bot_add "INF chiyoriinn"; bot_add "INF siddnely"; 
+bot_add_ct "INF Historia"; bot_add_ct "INF soapdax"; bot_add_ct "INF Dirfun"; bot_add_ct "INF chiyoriinn"; bot_add_ct "INF siddnely"; 
+
+Kiedz (BPL5 Winners)
+bot_add "KIEDZ Kairi";  bot_add "KIEDZ Illus";  bot_add "KIEDZ Elfy Mint";  bot_add "KIEDZ declaration__";  bot_add "KIEDZ zuann_"; 
+bot_add_ct "KIEDZ Kairi";  bot_add_ct "KIEDZ Illus";  bot_add_ct "KIEDZ Elfy Mint";  bot_add_ct "KIEDZ declaration__";  bot_add_ct "KIEDZ zuann_"; 
+
+Lemon Tree ☆ (Bot Pro Cup 2022)
+bot_add "LMN luminichi"; bot_add "LMN JWQI"; bot_add "LMN MoonRaika"; bot_add "LMN meowcolmz"; bot_add "LMN kkayyteeee";
+bot_add_ct "LMN luminichi"; bot_add_ct "LMN JWQI"; bot_add_ct "LMN MoonRaika"; bot_add_ct "LMN meowcolmz"; bot_add_ct "LMN kkayyteeee";
+
+Masmark (BPL Legends Stage 2023)
+bot_add "M Xyrolizea"; bot_add "M XuehuaVT"; bot_add "M urnisa_"; bot_add "M kn"; bot_add "M estellyy.";
+bot_add_ct "M Xyrolizea"; bot_add_ct "M XuehuaVT"; bot_add_ct "M urnisa_"; bot_add_ct "M kn"; bot_add_ct "M estellyy.";
+
+Moonlit Tempo (BPL Legends Stage 2025) [Celtsm from RV, Sashimi from AET]
+bot_add "MLT Celtsm"; bot_add "MLT Kyan"; bot_add "MLT GoddessAkane"; bot_add "MLT SashimiGoesBloop"; bot_add "MLT FeatBri";
+bot_add_ct "MLT Celtsm"; bot_add_ct "MLT Kyan"; bot_add_ct "MLT GoddessAkane"; bot_add_ct "MLT SashimiGoesBloop"; bot_add_ct "MLT FeatBri";
+
+Neverland (BPL3 Winners) [S.GT switched with Ice, ostc.x switched with Sayucchi]
+bot_add "Neverland Resent"; bot_add "Neverland simply_perezoso"; bot_add "Neverland Ice"; bot_add "Neverland adrina.ii"; bot_add "Neverland Sayucchi";
+bot_add_ct "Neverland Resent"; bot_add_ct "Neverland simply_perezoso"; bot_add_ct "Neverland Ice"; bot_add_ct "Neverland adrina.ii"; bot_add_ct "Neverland Sayucchi";
+
+New Jade (BPL Legends Stage 2022)
+bot_add "NJ VPLH"; bot_add "NJ Jeribean"; bot_add "NJ Astro_Ruckus"; bot_add "NJ jenapoppins"; bot_add "NJ crazywhoopies";
+bot_add_ct "NJ VPLH"; bot_add_ct "NJ Jeribean"; bot_add_ct "NJ Astro_Ruckus"; bot_add_ct "NJ jenapoppins"; bot_add_ct "NJ crazywhoopies";
+
+Opal (Bot Pro Cup 2022)
+bot_add "OPAL Scorpium"; bot_add "OPAL Seireiix"; bot_add "OPAL joyyy_cheng"; bot_add "OPAL kuro_mi"; bot_add "OPAL lumi.nyaa";
+bot_add_ct "OPAL Scorpium"; bot_add_ct "OPAL Seireiix"; bot_add_ct "OPAL joyyy_cheng"; bot_add_ct "OPAL kuro_mi"; bot_add_ct "OPAL lumi.nyaa";
+
+PepegaX (BPL Legends Stage 2023) [Nifela from UNF, ehsten from AET, yuuki_ps from AP]
+bot_add "PPX Reffelexx"; bot_add "PPX Nifela"; bot_add "PPX AcroBlaze"; bot_add "PPX ehsten"; bot_add "PPX yuuki_ps";
+bot_add_ct "PPX Reffelexx"; bot_add_ct "PPX Nifela"; bot_add_ct "PPX AcroBlaze"; bot_add_ct "PPX ehsten"; bot_add_ct "PPX yuuki_ps";
+
+Raven Song (Bot Pro Cup 2022) [caturteer to koen, celtsm to c.rex, rach.elx to des506]
+bot_add "RV ebi"; bot_add "RV koen"; bot_add "RV CRex";  bot_add "RV des506"; bot_add "RV treblest";
+bot_add_ct "RV ebi"; bot_add_ct "RV koen"; bot_add_ct "RV CRex";  bot_add_ct "RV des506"; bot_add_ct "RV treblest";
+
+Round Loss Bonus (BPL Legends Stage 2025) [caturteer from RV]
+bot_add "RLB le_pyrrhic"; bot_add "RLB caturteer"; bot_add "RLB murasakibara_tsuki1"; bot_add "RLB TiF2"; bot_add "RLB daifuku.wu";
+bot_add_ct "RLB le_pyrrhic"; bot_add_ct "RLB caturteer"; bot_add_ct "RLB murasakibara_tsuki1"; bot_add_ct "RLB TiF2"; bot_add_ct "RLB daifuku.wu";
+
+Sacred Raven (BPL Legends Stage 2023) [skysbeautylai from FRUIT]
+bot_add "SR capplecrow"; bot_add "SR matcha"; bot_add "SR Asterisks"; bot_add "SR skysbeautylai"; bot_add "SR Wellson111";
+bot_add_ct "SR capplecrow"; bot_add_ct "SR matcha"; bot_add_ct "SR Asterisks"; bot_add_ct "SR skysbeautylai"; bot_add_ct "SR Wellson111";
+
+Setting Sun (BPL4 Winners) Clueby replaced with Uzuhii
+bot_add "SS Leveti";  bot_add "SS rc_ia";  bot_add "SS Uzuhii";  bot_add "SS jaelyo";  bot_add "SS zhiweiingg"; 
+bot_add_ct "SS Leveti";  bot_add_ct "SS rc_ia";  bot_add_ct "SS Uzuhii";  bot_add_ct "SS jaelyo";  bot_add_ct "SS zhiweiingg"; 
+
+Team Neverseen (BPL Legends Stage 2022)
+bot_add "NsN pashionfruit18"; bot_add "NsN Niito"; bot_add "NsN jhjj80"; bot_add "NsN HeyImKaiWen"; bot_add "NsN S.GT";
+bot_add_ct "NsN pashionfruit18"; bot_add_ct "NsN Niito"; bot_add_ct "NsN jhjj80"; bot_add_ct "NsN HeyImKaiWen"; bot_add_ct "NsN S.GT";
+
+Technomancy (BPL Legends 2024 Stage)
+bot_add "TCMY teckiyo"; bot_add "TCMY SkuxxNinja44"; bot_add "TCMY OchakoKiyomi"; bot_add "TCMY carv"; bot_add "TCMY nicsman";
+bot_add_ct "TCMY teckiyo"; bot_add_ct "TCMY SkuxxNinja44"; bot_add_ct "TCMY OchakoKiyomi"; bot_add_ct "TCMY carv"; bot_add_ct "TCMY nicsman";
+
+The Gigarage (BPL Legends Stage 2023) [thea and bluenerd8 swap]
+bot_add "GGR gigichiii_"; bot_add "GGR bluenerd8"; bot_add "GGR yunaeyo"; bot_add "GGR mmirawr_"; bot_add "GGR YoJareddo";
+bot_add_ct "GGR gigichiii_"; bot_add_ct "GGR bluenerd8"; bot_add_ct "GGR yunaeyomedia"; bot_add_ct "GGR mmirawr_"; bot_add_ct "GGR YoJareddo";
+
+The Nomads (BPL11 Winners)
+bot_add "Tnm Rethnap"; bot_add "Tnm luciddoob"; bot_add "Tnm Redandb1ue"; bot_add "Tnm mominichi"; bot_add "Tnm Nikorasu";
+bot_add_ct "Tnm Rethnap"; bot_add_ct "Tnm luciddoob"; bot_add_ct "Tnm Redandb1ue"; bot_add_ct "Tnm mominichi"; bot_add_ct "Tnm Nikorasu";
+
+Ukiyo (BPL10 Runners-up Special) [XueQiii switched with Acryii_]
+bot_add "uKy Kai"; bot_add "uKy MugCowPayLucky"; bot_add "uKy Acryii_"; bot_add "uKy nattyuwus"; bot_add "uKy kael";
+bot_add_ct "uKy Kai"; bot_add_ct "uKy MugCowPayLucky"; bot_add_ct "uKy Acryii_"; bot_add_ct "uKy nattyuwus"; bot_add_ct "uKy kael";
+
+Unforgettable (BPL 8 Winners) [Nifela -> Airizu -> dudriduo_, Ryujin -> WO4TK]
+bot_add "UNF Sakami"; bot_add "UNF dudriduo_"; bot_add "UNF joshiwahhh"; bot_add "UNF _kellyxleox_"; bot_add "UNF WO4TK";
+bot_add_ct "UNF Sakami"; bot_add_ct "UNF dudriduo_"; bot_add_ct "UNF joshiwahhh"; bot_add_ct "UNF _kellyxleox_"; bot_add_ct "UNF WO4TK";
+
+xPlosiv (BPL 14 Winners)
+bot_add "XPLO Cursiffe"; bot_add "XPLO TokieShepherdVT"; bot_add "XPLO tapiyokaaa"; bot_add "XPLO 88EXP"; bot_add "XPLO StrigidaeVT";
+bot_add_ct "XPLO Cursiffe"; bot_add_ct "XPLO TokieShepherdVT"; bot_add_ct "XPLO tapiyokaaa"; bot_add_ct "XPLO 88EXP"; bot_add_ct "XPLO StrigidaeVT";
