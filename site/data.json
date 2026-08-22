@@ -57,6 +57,7 @@
      "tier": "Grandmaster",
      "level": 9,
      "kpm": 16.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Team widepeepoHappy",
@@ -422,6 +423,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 15.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Bloodlust",
@@ -922,6 +924,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 13.6,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Fullburst",
@@ -1377,6 +1380,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 13.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "2Out",
@@ -1922,6 +1926,7 @@
      "tier": "Iron",
      "level": 2,
      "kpm": 11.7,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Love&Stuff",
@@ -2820,6 +2825,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 16.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Team Phoenix",
@@ -2976,6 +2982,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 14.2,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Aimpunch",
@@ -3107,6 +3114,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 14.2,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Break the Circuit",
@@ -3716,6 +3724,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 13.3,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Aimpunch",
@@ -3844,6 +3853,7 @@
      "tier": "Bronze",
      "level": 3,
      "kpm": 12.6,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Aimpunch",
@@ -4547,6 +4557,7 @@
      "tier": "Grandmaster",
      "level": 9,
      "kpm": 17.9,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Artisian",
@@ -4634,6 +4645,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 16.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "ForTheWin",
@@ -4856,6 +4868,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 17.6,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "PixIgnite",
@@ -5168,6 +5181,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 16.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Vamprix",
@@ -5705,6 +5719,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 16.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Artisian",
@@ -6347,6 +6362,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 15.0,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Lost Pavilion",
@@ -6526,6 +6542,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 14.6,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "The Gigarage",
@@ -6618,6 +6635,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Lost Pavilion",
@@ -6794,6 +6812,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 14.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "The Gigarage",
@@ -6880,6 +6899,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 13.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Detoxify",
@@ -7884,6 +7904,7 @@
      "tier": "Grandmaster",
      "level": 9,
      "kpm": 17.3,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Pr1sm",
@@ -8377,6 +8398,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 15.5,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Colonize",
@@ -8507,6 +8529,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 15.9,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Force of Nature",
@@ -8817,6 +8840,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 14.5,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Shadow Run",
@@ -9082,6 +9106,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 14.9,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Cosmos",
@@ -9523,6 +9548,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 16.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Reflex Storm",
@@ -9708,6 +9734,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 14.9,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "TeamSolid",
@@ -9893,6 +9920,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 15.6,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "NumbersClub",
@@ -10162,6 +10190,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 14.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Break the Circuit",
@@ -10347,6 +10376,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 14.3,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Neverland",
@@ -11017,6 +11047,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 16.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "N3XuS",
@@ -11193,6 +11224,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 14.0,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Durendal",
@@ -11504,6 +11536,7 @@
      "tier": "Bronze",
      "level": 3,
      "kpm": 13.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Pariah",
@@ -11683,6 +11716,7 @@
      "tier": "Bronze",
      "level": 3,
      "kpm": 14.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Reflex Storm",
@@ -12309,6 +12343,7 @@
      "tier": "Bronze",
      "level": 3,
      "kpm": 14.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "New Legends",
@@ -12966,6 +13001,7 @@
      "tier": "Master",
      "level": 8,
      "kpm": 17.5,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Aeternum",
@@ -13106,6 +13142,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 16.3,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "TSM Clan",
@@ -13417,6 +13454,7 @@
      "tier": "Platinum",
      "level": 5,
      "kpm": 14.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Team widepeepoHappy",
@@ -14086,6 +14124,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 13.7,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Moonlit Tempo",
@@ -14170,6 +14209,7 @@
      "tier": "Iron",
      "level": 2,
      "kpm": 12.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Nameless",
@@ -14745,6 +14785,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 15.6,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Lemon Tree",
@@ -14840,6 +14881,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 15.9,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Unorthodox",
@@ -15160,6 +15202,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 15.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "MixTrix",
@@ -15528,6 +15571,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 15.3,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "AllKnights",
@@ -16031,6 +16075,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 15.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Bloodlust",
@@ -17054,6 +17099,7 @@
      "tier": "Master",
      "level": 8,
      "kpm": 16.5,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "SkyHigh",
@@ -17547,6 +17593,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 15.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "AllKnights",
@@ -18274,6 +18321,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 16.2,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Midnight Gankers",
@@ -18495,6 +18543,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 15.2,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Marauders of Oblivion",
@@ -18716,6 +18765,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 14.5,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "OCIFR",
@@ -19573,6 +19623,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 17.3,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "TeamSolid",
@@ -19943,6 +19994,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 16.2,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Dropdead",
@@ -20309,6 +20361,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 15.5,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "12Punch",
@@ -20678,6 +20731,7 @@
      "tier": "Gold",
      "level": 4,
      "kpm": 14.2,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "TBreezy",
@@ -20954,6 +21008,7 @@
      "tier": "Gold",
      "level": 4,
      "kpm": 15.6,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Infernum E-Sports",
@@ -21556,6 +21611,7 @@
      "tier": "Grandmaster",
      "level": 8,
      "kpm": 19.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Whiteout",
@@ -21903,6 +21959,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 17.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Bluebird",
@@ -21980,6 +22037,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 16.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Just4Fun",
@@ -22507,6 +22565,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 15.5,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Syzygy",
@@ -22630,6 +22689,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 14.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Bluebird",
@@ -23227,6 +23287,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 16.3,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Ornate Garden",
@@ -23392,6 +23453,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 15.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "BlackCats",
@@ -23647,6 +23709,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 16.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Chaos Children",
@@ -23815,6 +23878,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 15.0,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "WKeyOnly",
@@ -23980,6 +24044,7 @@
      "tier": "Bronze",
      "level": 3,
      "kpm": 14.0,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Colonize",
@@ -24478,6 +24543,7 @@
      "tier": "Master",
      "level": 8,
      "kpm": 18.3,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "RabbitLeap",
@@ -25048,6 +25114,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 17.0,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Warlords",
@@ -25213,6 +25280,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 16.5,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Rain Factory",
@@ -25378,6 +25446,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 16.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Kyatt",
@@ -25498,6 +25567,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 14.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "entity",
@@ -26074,6 +26144,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 15.9,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Tidal Wave",
@@ -26555,6 +26626,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 13.9,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Third Wing",
@@ -26811,6 +26883,7 @@
      "tier": "Gold",
      "level": 4,
      "kpm": 14.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "degree",
@@ -26887,6 +26960,7 @@
      "tier": "Silver",
      "level": 3,
      "kpm": 13.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Cyclone",
@@ -27188,6 +27262,7 @@
      "tier": "Bronze",
      "level": 3,
      "kpm": 12.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Last Dance",
@@ -27975,6 +28050,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 15.9,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Masmark",
@@ -28051,6 +28127,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 15.0,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Masmark",
@@ -28127,6 +28204,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 14.7,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Angel Wings",
@@ -28293,6 +28371,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 13.9,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "RabbitLeap",
@@ -28774,6 +28853,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 13.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Masmark",
@@ -29322,6 +29402,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 17.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Just4Fun",
@@ -29804,6 +29885,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 16.5,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Gothic Storm",
@@ -30061,6 +30143,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 16.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "RabbitLeap",
@@ -30363,6 +30446,7 @@
      "tier": "Platinum",
      "level": 5,
      "kpm": 15.9,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Opal",
@@ -30440,6 +30524,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 15.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "FateChanger",
@@ -31155,6 +31240,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 15.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Aetherline",
@@ -31229,6 +31315,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 17.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Aetherline",
@@ -31303,6 +31390,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.7,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Murder of the Universe",
@@ -31512,6 +31600,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 14.7,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Kyatt",
@@ -31676,6 +31765,7 @@
      "tier": "Bronze",
      "level": 3,
      "kpm": 13.2,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "BananaRama",
@@ -32346,6 +32436,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 16.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Behemoth",
@@ -32737,6 +32828,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 15.9,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Lost Pavilion",
@@ -32903,6 +32995,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.9,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "PrettySus",
@@ -33522,6 +33615,7 @@
      "tier": "Platinum",
      "level": 5,
      "kpm": 15.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "eniteo",
@@ -33688,6 +33782,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 13.6,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "DiamondOnes",
@@ -34253,6 +34348,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 16.2,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Reflex Storm",
@@ -34666,6 +34762,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 15.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Syzygy",
@@ -34802,6 +34899,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 15.7,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Just4Fun",
@@ -35161,6 +35259,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.2,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "2Bit4",
@@ -35474,6 +35573,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.3,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Bloodlust",
@@ -36421,6 +36521,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 17.9,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Ornate Garden",
@@ -36624,6 +36725,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 16.0,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Unforgettable",
@@ -36805,6 +36907,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 14.5,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "WKeyOnly",
@@ -37008,6 +37111,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 13.7,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "TeamSolid",
@@ -37187,6 +37291,7 @@
      "tier": "Iron",
      "level": 1,
      "kpm": 12.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "NCL",
@@ -38249,6 +38354,7 @@
      "tier": "Master",
      "level": 8,
      "kpm": 16.7,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Kiedz",
@@ -38337,6 +38443,7 @@
      "tier": "Master",
      "level": 8,
      "kpm": 17.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Kiedz",
@@ -38425,6 +38532,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Kiedz",
@@ -38513,6 +38621,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.3,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Bloodlust",
@@ -38781,6 +38890,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 15.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Kiedz",
@@ -39418,6 +39528,7 @@
      "tier": "Master",
      "level": 8,
      "kpm": 17.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Syzygy",
@@ -39730,6 +39841,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 16.6,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "entity",
@@ -40041,6 +40153,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 16.5,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Alcheministry",
@@ -40127,6 +40240,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 15.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "BlackCats",
@@ -40351,6 +40465,7 @@
      "tier": "Bronze",
      "level": 3,
      "kpm": 13.5,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Ornate Garden",
@@ -40806,6 +40921,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 16.8,
+     "rankDelta": 8,
      "teamHistory": [
       {
        "team": "Caelum",
@@ -41369,6 +41485,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.4,
+     "rankDelta": 44,
      "teamHistory": [
       {
        "team": "Delirium",
@@ -41590,6 +41707,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 15.1,
+     "rankDelta": 12,
      "teamHistory": [
       {
        "team": "eximius",
@@ -41721,6 +41839,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 14.3,
+     "rankDelta": -36,
      "teamHistory": [
       {
        "team": "MixTrix",
@@ -42257,6 +42376,7 @@
      "tier": "Iron",
      "level": 2,
      "kpm": 12.8,
+     "rankDelta": 1,
      "teamHistory": [
       {
        "team": "MILK",
@@ -43163,6 +43283,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 16.0,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Detoxify",
@@ -43555,6 +43676,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 16.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "SussyBaka?",
@@ -43812,6 +43934,7 @@
      "tier": "Gold",
      "level": 4,
      "kpm": 15.6,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "NoSecondChances",
@@ -43934,6 +44057,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 14.6,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "12Punch",
@@ -44465,6 +44589,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 14.5,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Bloodlust",
@@ -45481,6 +45606,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 17.2,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Vamprix",
@@ -45704,6 +45830,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 17.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Setting Sun",
@@ -45779,6 +45906,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 15.5,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "TeamSolid",
@@ -46006,6 +46134,7 @@
      "tier": "Platinum",
      "level": 5,
      "kpm": 15.0,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Dropdead",
@@ -46229,6 +46358,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 14.3,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "TeamRNG",
@@ -47027,6 +47157,7 @@
      "tier": "Platinum",
      "level": 5,
      "kpm": 14.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "AllKnights",
@@ -47609,6 +47740,7 @@
      "tier": "Platinum",
      "level": 5,
      "kpm": 13.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Caelum Scala",
@@ -47696,6 +47828,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 12.5,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "NumbersClub",
@@ -48284,6 +48417,7 @@
      "tier": "Bronze",
      "level": 3,
      "kpm": 12.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "2Out",
@@ -48869,6 +49003,7 @@
      "tier": "Iron",
      "level": 3,
      "kpm": 12.2,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Caelitis",
@@ -49631,6 +49766,7 @@
      "tier": "Master",
      "level": 8,
      "kpm": 17.3,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Heart of Cards",
@@ -49842,6 +49978,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 17.2,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Syzygy",
@@ -49964,6 +50101,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 14.7,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Syzygy",
@@ -50311,6 +50449,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 15.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "New Legends",
@@ -50700,6 +50839,7 @@
      "tier": "Bronze",
      "level": 3,
      "kpm": 13.9,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Devil's Don't Die",
@@ -51231,6 +51371,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 15.7,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Unorthodox",
@@ -51640,6 +51781,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 15.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "SkyHigh",
@@ -52042,6 +52184,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 15.0,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "PepegaX",
@@ -52118,6 +52261,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 13.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Counter League",
@@ -52779,6 +52923,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 13.2,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Aimpunch",
@@ -53477,6 +53622,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 17.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "WKeyOnly",
@@ -53686,6 +53832,7 @@
      "tier": "Emerald",
      "level": 7,
      "kpm": 17.5,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Love&Stuff",
@@ -53822,6 +53969,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 15.9,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Detoxify",
@@ -54045,6 +54193,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 16.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Dragon's Breath",
@@ -54167,6 +54316,7 @@
      "tier": "Platinum",
      "level": 5,
      "kpm": 16.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "WKeyOnly",
@@ -54899,6 +55049,7 @@
      "tier": "Master",
      "level": 8,
      "kpm": 17.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Luminescence",
@@ -55428,6 +55579,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 16.0,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "BananaRama",
@@ -55729,6 +55881,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Pariah",
@@ -55850,6 +56003,7 @@
      "tier": "Platinum",
      "level": 5,
      "kpm": 15.7,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "99Lives",
@@ -55929,6 +56083,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 14.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Dark Matter",
@@ -56780,6 +56935,7 @@
      "tier": "Grandmaster",
      "level": 9,
      "kpm": 20.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Ukiyo",
@@ -56848,6 +57004,7 @@
      "tier": "Master",
      "level": 8,
      "kpm": 19.5,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Team OMEGALUL",
@@ -57240,6 +57397,7 @@
      "tier": "Master",
      "level": 8,
      "kpm": 18.6,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "NumbersClub",
@@ -57815,6 +57973,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 17.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Tokyo Rain",
@@ -58162,6 +58321,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 15.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Ukiyo",
@@ -58693,6 +58853,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 16.7,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Break the Circuit",
@@ -59220,6 +59381,7 @@
      "tier": "Platinum",
      "level": 5,
      "kpm": 16.7,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Trailblaze United",
@@ -59522,6 +59684,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 15.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Savant",
@@ -59644,6 +59807,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 15.2,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Trailblaze United",
@@ -59946,6 +60110,7 @@
      "tier": "Bronze",
      "level": 3,
      "kpm": 13.6,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Unforgettable",
@@ -60644,6 +60809,7 @@
      "tier": "Master",
      "level": 8,
      "kpm": 17.7,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Fruit Basket",
@@ -60721,6 +60887,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.9,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Vamprix",
@@ -60853,6 +61020,7 @@
      "tier": "Platinum",
      "level": 5,
      "kpm": 15.5,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "12Punch",
@@ -60985,6 +61153,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 15.2,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Reflex Storm",
@@ -61106,6 +61275,7 @@
      "tier": "Gold",
      "level": 4,
      "kpm": 14.7,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "NumbersClub",
@@ -61794,6 +61964,7 @@
      "tier": "Grandmaster",
      "level": 9,
      "kpm": 18.0,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "RabbitLeap",
@@ -62185,6 +62356,7 @@
      "tier": "Grandmaster",
      "level": 9,
      "kpm": 16.9,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Team OMEGALUL",
@@ -62576,6 +62748,7 @@
      "tier": "Master",
      "level": 8,
      "kpm": 18.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Pariah",
@@ -62697,6 +62870,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 16.7,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Break the Circuit",
@@ -63178,6 +63352,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 14.3,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "ZeroTempo",
@@ -64034,6 +64209,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 15.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Sanctuary",
@@ -64198,6 +64374,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 13.7,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "BattleBuds",
@@ -64500,6 +64677,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 13.9,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Seasonic",
@@ -64619,6 +64797,7 @@
      "tier": "Bronze",
      "level": 3,
      "kpm": 13.4,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Kingsmen",
@@ -65008,6 +65187,7 @@
      "tier": "Iron",
      "level": 2,
      "kpm": 11.9,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Royal Path",
@@ -65846,6 +66026,7 @@
      "tier": "Platinum",
      "level": 5,
      "kpm": 14.9,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "AcT1",
@@ -66011,6 +66192,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 15.0,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Warlords",
@@ -66132,6 +66314,7 @@
      "tier": "Gold",
      "level": 4,
      "kpm": 14.3,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Dropdead",
@@ -66927,6 +67110,7 @@
      "tier": "Gold",
      "level": 4,
      "kpm": 14.5,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "2Out",
@@ -67633,6 +67817,7 @@
      "tier": "Iron",
      "level": 1,
      "kpm": 11.5,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "D3V14NT",
@@ -68143,6 +68328,7 @@
      "tier": "Master",
      "level": 8,
      "kpm": 18.5,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Kirin",
@@ -68316,6 +68502,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 17.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "xPlosiv",
@@ -68399,6 +68586,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 16.9,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "xPlosiv",
@@ -68482,6 +68670,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 17.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "gamermoment420",
@@ -68655,6 +68844,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 14.2,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "DownUnder E-Sports",
@@ -69035,6 +69225,7 @@
      "tier": "Master",
      "level": 8,
      "kpm": 18.7,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Counter League",
@@ -69785,6 +69976,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 16.6,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Caelitis",
@@ -70088,6 +70280,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 16.3,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Force of Nature",
@@ -70388,6 +70581,7 @@
      "tier": "Platinum",
      "level": 5,
      "kpm": 15.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "RabbitLeap",
@@ -71003,6 +71197,7 @@
      "tier": "Gold",
      "level": 4,
      "kpm": 15.7,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "entity",
@@ -71516,6 +71711,7 @@
      "tier": "Master",
      "level": 8,
      "kpm": 17.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "VamosAmigo",
@@ -71644,6 +71840,7 @@
      "tier": "Emerald",
      "level": 7,
      "kpm": 16.2,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Skyloom",
@@ -71817,6 +72014,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.3,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Azure Phantasm Games",
@@ -71990,6 +72188,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 15.3,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "D3V14NT",
@@ -72298,6 +72497,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 12.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "VisualClarity",
@@ -72623,6 +72823,7 @@
      "tier": "Master",
      "level": 8,
      "kpm": 17.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "ZeroTempo",
@@ -73474,6 +73675,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 16.6,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "5hellshockers",
@@ -73737,6 +73939,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.6,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "5PERCENT",
@@ -73820,6 +74023,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 14.8,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "5PERCENT",
@@ -73903,6 +74107,7 @@
      "tier": "Bronze",
      "level": 3,
      "kpm": 12.1,
+     "rankDelta": 0,
      "teamHistory": [
       {
        "team": "Lucky Foot",
@@ -74441,6 +74646,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 18.0,
+     "rankDelta": -1,
      "teamHistory": [
       {
        "team": "Astral Bloom",
@@ -74515,6 +74721,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 16.7,
+     "rankDelta": 1,
      "teamHistory": [
       {
        "team": "Astral Bloom",
@@ -74589,6 +74796,7 @@
      "tier": "Platinum",
      "level": 6,
      "kpm": 16.3,
+     "rankDelta": -13,
      "teamHistory": [
       {
        "team": "Astral Bloom",
@@ -74657,6 +74865,7 @@
      "tier": "Platinum",
      "level": 5,
      "kpm": 16.7,
+     "rankDelta": 15,
      "teamHistory": [
       {
        "team": "Astral Bloom",
@@ -74731,6 +74940,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 16.4,
+     "rankDelta": -16,
      "teamHistory": [
       {
        "team": "Astral Bloom",
@@ -75030,6 +75240,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 16.8,
+    "rankDelta": 8,
     "teamHistory": [
      {
       "team": "Caelum",
@@ -75593,6 +75804,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.4,
+    "rankDelta": 44,
     "teamHistory": [
      {
       "team": "Delirium",
@@ -75814,6 +76026,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 15.1,
+    "rankDelta": 12,
     "teamHistory": [
      {
       "team": "eximius",
@@ -75945,6 +76158,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 14.3,
+    "rankDelta": -36,
     "teamHistory": [
      {
       "team": "MixTrix",
@@ -76481,6 +76695,7 @@
     "tier": "Iron",
     "level": 2,
     "kpm": 12.8,
+    "rankDelta": 1,
     "teamHistory": [
      {
       "team": "MILK",
@@ -76930,6 +77145,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 17.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "ZeroTempo",
@@ -77781,6 +77997,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "5PERCENT",
@@ -77864,6 +78081,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 16.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "5hellshockers",
@@ -78127,6 +78345,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "5PERCENT",
@@ -78210,6 +78429,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 12.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Lucky Foot",
@@ -78566,6 +78786,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 16.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "BananaRama",
@@ -78867,6 +79088,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 17.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Luminescence",
@@ -79396,6 +79618,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Pariah",
@@ -79517,6 +79740,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Dark Matter",
@@ -80043,6 +80267,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 15.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "99Lives",
@@ -80122,6 +80347,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 17.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "WKeyOnly",
@@ -80331,6 +80557,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Detoxify",
@@ -80554,6 +80781,7 @@
     "tier": "Emerald",
     "level": 7,
     "kpm": 17.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Love&Stuff",
@@ -80690,6 +80918,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 16.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "WKeyOnly",
@@ -80858,6 +81087,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 16.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Dragon's Breath",
@@ -80980,6 +81210,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 15.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Aetherline",
@@ -81054,6 +81285,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 17.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Aetherline",
@@ -81128,6 +81360,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Murder of the Universe",
@@ -81337,6 +81570,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 14.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Kyatt",
@@ -81501,6 +81735,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 13.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "BananaRama",
@@ -81890,6 +82125,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 16.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Team Phoenix",
@@ -82046,6 +82282,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Aimpunch",
@@ -82177,6 +82414,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Break the Circuit",
@@ -82786,6 +83024,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Aimpunch",
@@ -82914,6 +83153,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 12.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Aimpunch",
@@ -83042,6 +83282,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 17.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Syzygy",
@@ -83354,6 +83595,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 16.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "entity",
@@ -83665,6 +83907,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 16.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Alcheministry",
@@ -83751,6 +83994,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 15.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "BlackCats",
@@ -83975,6 +84219,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 13.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Ornate Garden",
@@ -84106,6 +84351,7 @@
     "tier": "Grandmaster",
     "level": 9,
     "kpm": 17.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Artisian",
@@ -84193,6 +84439,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 16.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "ForTheWin",
@@ -84415,6 +84662,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 17.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "PixIgnite",
@@ -84727,6 +84975,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 16.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Artisian",
@@ -84814,6 +85063,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 16.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Vamprix",
@@ -85351,6 +85601,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 14.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "AcT1",
@@ -85516,6 +85767,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 15.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Warlords",
@@ -85637,6 +85889,7 @@
     "tier": "Gold",
     "level": 4,
     "kpm": 14.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "2Out",
@@ -86343,6 +86596,7 @@
     "tier": "Gold",
     "level": 4,
     "kpm": 14.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Dropdead",
@@ -87138,6 +87392,7 @@
     "tier": "Iron",
     "level": 1,
     "kpm": 11.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "D3V14NT",
@@ -87258,6 +87513,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 18.0,
+    "rankDelta": -1,
     "teamHistory": [
      {
       "team": "Astral Bloom",
@@ -87332,6 +87588,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 16.4,
+    "rankDelta": -16,
     "teamHistory": [
      {
       "team": "Astral Bloom",
@@ -87406,6 +87663,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 16.7,
+    "rankDelta": 1,
     "teamHistory": [
      {
       "team": "Astral Bloom",
@@ -87480,6 +87738,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 16.7,
+    "rankDelta": 15,
     "teamHistory": [
      {
       "team": "Astral Bloom",
@@ -87554,6 +87813,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 16.3,
+    "rankDelta": -13,
     "teamHistory": [
      {
       "team": "Astral Bloom",
@@ -87622,6 +87882,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 18.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Counter League",
@@ -88372,6 +88633,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 16.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Force of Nature",
@@ -88672,6 +88934,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 15.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "RabbitLeap",
@@ -89287,6 +89550,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 16.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Caelitis",
@@ -89590,6 +89854,7 @@
     "tier": "Gold",
     "level": 4,
     "kpm": 15.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "entity",
@@ -89755,6 +90020,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 17.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Bluebird",
@@ -89832,6 +90098,7 @@
     "tier": "Grandmaster",
     "level": 8,
     "kpm": 19.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Whiteout",
@@ -90179,6 +90446,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 16.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Just4Fun",
@@ -90706,6 +90974,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Bluebird",
@@ -90786,6 +91055,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 15.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Syzygy",
@@ -90909,6 +91179,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 14.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "AllKnights",
@@ -91491,6 +91762,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 13.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Caelum Scala",
@@ -91578,6 +91850,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 12.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "NumbersClub",
@@ -92166,6 +92439,7 @@
     "tier": "Iron",
     "level": 3,
     "kpm": 12.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Caelitis",
@@ -92514,6 +92788,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 12.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "2Out",
@@ -93099,6 +93374,7 @@
     "tier": "Grandmaster",
     "level": 9,
     "kpm": 17.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Pr1sm",
@@ -93592,6 +93868,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Colonize",
@@ -93722,6 +93999,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Force of Nature",
@@ -94032,6 +94310,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Shadow Run",
@@ -94297,6 +94576,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Cosmos",
@@ -94381,6 +94661,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 16.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Break the Circuit",
@@ -94908,6 +95189,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 16.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Trailblaze United",
@@ -95210,6 +95492,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 15.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Savant",
@@ -95332,6 +95615,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 13.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Unforgettable",
@@ -95503,6 +95787,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 15.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Trailblaze United",
@@ -95805,6 +96090,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 12.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Last Dance",
@@ -96020,6 +96306,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Tidal Wave",
@@ -96501,6 +96788,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 13.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Third Wing",
@@ -96757,6 +97045,7 @@
     "tier": "Gold",
     "level": 4,
     "kpm": 14.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "degree",
@@ -96833,6 +97122,7 @@
     "tier": "Silver",
     "level": 3,
     "kpm": 13.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Cyclone",
@@ -97134,6 +97424,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 16.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Behemoth",
@@ -97525,6 +97816,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 15.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "eniteo",
@@ -97691,6 +97983,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "PrettySus",
@@ -98310,6 +98603,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Lost Pavilion",
@@ -98476,6 +98770,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "DiamondOnes",
@@ -98552,6 +98847,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 16.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Reflex Storm",
@@ -98965,6 +99261,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Just4Fun",
@@ -99324,6 +99621,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "2Bit4",
@@ -99637,6 +99935,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Bloodlust",
@@ -100043,6 +100342,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Syzygy",
@@ -100179,6 +100479,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 16.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Break the Circuit",
@@ -100660,6 +100961,7 @@
     "tier": "Grandmaster",
     "level": 9,
     "kpm": 16.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Team OMEGALUL",
@@ -101051,6 +101353,7 @@
     "tier": "Grandmaster",
     "level": 9,
     "kpm": 18.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "RabbitLeap",
@@ -101442,6 +101745,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 18.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Pariah",
@@ -101563,6 +101867,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 14.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "ZeroTempo",
@@ -102044,6 +102349,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 18.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "RabbitLeap",
@@ -102614,6 +102920,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 16.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Rain Factory",
@@ -102779,6 +103086,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 16.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Kyatt",
@@ -102899,6 +103207,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "entity",
@@ -102974,6 +103283,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 17.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Warlords",
@@ -103139,6 +103449,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 17.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "VamosAmigo",
@@ -103267,6 +103578,7 @@
     "tier": "Emerald",
     "level": 7,
     "kpm": 16.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Skyloom",
@@ -103440,6 +103752,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Azure Phantasm Games",
@@ -103613,6 +103926,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 15.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "D3V14NT",
@@ -103921,6 +104235,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 12.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "VisualClarity",
@@ -104049,6 +104364,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 17.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Fruit Basket",
@@ -104126,6 +104442,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Vamprix",
@@ -104258,6 +104575,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 15.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "12Punch",
@@ -104390,6 +104708,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 15.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Reflex Storm",
@@ -104511,6 +104830,7 @@
     "tier": "Gold",
     "level": 4,
     "kpm": 14.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "NumbersClub",
@@ -104646,6 +104966,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 17.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "TeamSolid",
@@ -105016,6 +105337,7 @@
     "tier": "Gold",
     "level": 4,
     "kpm": 15.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Infernum E-Sports",
@@ -105091,6 +105413,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 15.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "12Punch",
@@ -105460,6 +105783,7 @@
     "tier": "Gold",
     "level": 4,
     "kpm": 14.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "TBreezy",
@@ -105736,6 +106060,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 16.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Dropdead",
@@ -106102,6 +106427,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 17.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Kiedz",
@@ -106190,6 +106516,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 16.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Kiedz",
@@ -106278,6 +106605,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Kiedz",
@@ -106366,6 +106694,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 15.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Kiedz",
@@ -106454,6 +106783,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Bloodlust",
@@ -106722,6 +107052,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 15.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Lemon Tree",
@@ -106817,6 +107148,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 15.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Unorthodox",
@@ -107137,6 +107469,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 15.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "MixTrix",
@@ -107505,6 +107838,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 15.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "AllKnights",
@@ -108008,6 +108342,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 15.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Bloodlust",
@@ -108508,6 +108843,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 15.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Masmark",
@@ -108584,6 +108920,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 14.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Angel Wings",
@@ -108750,6 +109087,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Masmark",
@@ -108826,6 +109164,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "RabbitLeap",
@@ -109307,6 +109646,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Masmark",
@@ -109386,6 +109726,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 16.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "TSM Clan",
@@ -109697,6 +110038,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 17.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Aeternum",
@@ -109837,6 +110179,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 14.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Team widepeepoHappy",
@@ -110506,6 +110849,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Moonlit Tempo",
@@ -110590,6 +110934,7 @@
     "tier": "Iron",
     "level": 2,
     "kpm": 12.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Nameless",
@@ -110903,6 +111248,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 16.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Reflex Storm",
@@ -111088,6 +111434,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "TeamSolid",
@@ -111273,6 +111620,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 15.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "NumbersClub",
@@ -111542,6 +111890,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 14.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Break the Circuit",
@@ -111727,6 +112076,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 14.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Neverland",
@@ -111801,6 +112151,7 @@
     "tier": "Grandmaster",
     "level": 9,
     "kpm": 16.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Team widepeepoHappy",
@@ -112166,6 +112517,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Bloodlust",
@@ -112666,6 +113018,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "2Out",
@@ -113211,6 +113564,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Fullburst",
@@ -113666,6 +114020,7 @@
     "tier": "Iron",
     "level": 2,
     "kpm": 11.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Love&Stuff",
@@ -114031,6 +114386,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 17.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Just4Fun",
@@ -114513,6 +114869,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 16.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Gothic Storm",
@@ -114770,6 +115127,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 16.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "RabbitLeap",
@@ -115072,6 +115430,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 15.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "FateChanger",
@@ -115284,6 +115643,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 15.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Opal",
@@ -115361,6 +115721,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 15.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "PepegaX",
@@ -115437,6 +115798,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 15.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Unorthodox",
@@ -115846,6 +116208,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 13.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Counter League",
@@ -116507,6 +116870,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "SkyHigh",
@@ -116909,6 +117273,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Aimpunch",
@@ -117184,6 +117549,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 13.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "BattleBuds",
@@ -117486,6 +117852,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 13.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Kingsmen",
@@ -117875,6 +118242,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Sanctuary",
@@ -118039,6 +118407,7 @@
     "tier": "Iron",
     "level": 2,
     "kpm": 11.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Royal Path",
@@ -118341,6 +118710,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Seasonic",
@@ -118460,6 +118830,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 17.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Heart of Cards",
@@ -118671,6 +119042,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 17.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Syzygy",
@@ -118793,6 +119165,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Syzygy",
@@ -119140,6 +119513,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 15.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "New Legends",
@@ -119529,6 +119903,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 13.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Devil's Don't Die",
@@ -119783,6 +120158,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 16.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "SkyHigh",
@@ -120276,6 +120652,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Marauders of Oblivion",
@@ -120497,6 +120874,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "AllKnights",
@@ -121224,6 +121602,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 16.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Midnight Gankers",
@@ -121445,6 +121824,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "OCIFR",
@@ -121891,6 +122271,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "TeamSolid",
@@ -122118,6 +122499,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 17.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Vamprix",
@@ -122341,6 +122723,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 17.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Setting Sun",
@@ -122416,6 +122799,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 14.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "TeamRNG",
@@ -122639,6 +123023,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 15.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Dropdead",
@@ -122862,6 +123247,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 16.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Detoxify",
@@ -123254,6 +123640,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 16.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "SussyBaka?",
@@ -123511,6 +123898,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 14.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "12Punch",
@@ -124042,6 +124430,7 @@
     "tier": "Gold",
     "level": 4,
     "kpm": 15.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "NoSecondChances",
@@ -124164,6 +124553,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 14.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Bloodlust",
@@ -124656,6 +125046,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 16.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Ornate Garden",
@@ -124821,6 +125212,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 15.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "BlackCats",
@@ -125076,6 +125468,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 16.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Chaos Children",
@@ -125244,6 +125637,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 14.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Colonize",
@@ -125364,6 +125758,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 15.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "WKeyOnly",
@@ -125529,6 +125924,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 15.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Lost Pavilion",
@@ -125708,6 +126104,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 14.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "The Gigarage",
@@ -125800,6 +126197,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Lost Pavilion",
@@ -125976,6 +126374,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "The Gigarage",
@@ -126062,6 +126461,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Detoxify",
@@ -126627,6 +127027,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 16.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "N3XuS",
@@ -126803,6 +127204,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 14.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Durendal",
@@ -127114,6 +127516,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 13.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Pariah",
@@ -127293,6 +127696,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 14.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Reflex Storm",
@@ -127919,6 +128323,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 14.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "New Legends",
@@ -128140,6 +128545,7 @@
     "tier": "Grandmaster",
     "level": 9,
     "kpm": 20.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Ukiyo",
@@ -128208,6 +128614,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 18.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "NumbersClub",
@@ -128783,6 +129190,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 19.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Team OMEGALUL",
@@ -129175,6 +129583,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 17.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Tokyo Rain",
@@ -129522,6 +129931,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 15.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Ukiyo",
@@ -129599,6 +130009,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "WKeyOnly",
@@ -129802,6 +130213,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 16.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Unforgettable",
@@ -129983,6 +130395,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "TeamSolid",
@@ -130162,6 +130575,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 17.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Ornate Garden",
@@ -130365,6 +130779,7 @@
     "tier": "Iron",
     "level": 1,
     "kpm": 12.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "NCL",
@@ -130543,6 +130958,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 18.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Kirin",
@@ -130716,6 +131132,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 17.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "xPlosiv",
@@ -130799,6 +131216,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 16.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "xPlosiv",
@@ -130882,6 +131300,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 14.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "DownUnder E-Sports",
@@ -131010,6 +131429,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 17.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "gamermoment420",
@@ -131185,6 +131605,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "BeeHyve",
@@ -131258,6 +131679,7 @@
     "tier": "Iron",
     "level": 2,
     "kpm": 10.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "BeeHyve",
@@ -131331,6 +131753,7 @@
     "tier": "Grandmaster",
     "level": 8,
     "kpm": 16.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Sanctuary",
@@ -131584,6 +132007,7 @@
     "tier": "Champion",
     "level": 9,
     "kpm": 15.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Vitrix E-Sports",
@@ -131702,6 +132126,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 14.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Eiromancers",
@@ -131775,6 +132200,7 @@
     "tier": "Gold",
     "level": 4,
     "kpm": 13.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Syzygy",
@@ -132168,6 +132594,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Hako's Angels",
@@ -132286,6 +132713,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 14.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Cross-X",
@@ -132404,6 +132832,7 @@
     "tier": "Champion",
     "level": 10,
     "kpm": 18.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Aquia",
@@ -132567,6 +132996,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 15.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "gamermoment420",
@@ -132688,6 +133118,7 @@
     "tier": "Champion",
     "level": 10,
     "kpm": 15.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Paper Tigers",
@@ -132851,6 +133282,7 @@
     "tier": "Grandmaster",
     "level": 9,
     "kpm": 16.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Ignis Pactum",
@@ -133014,6 +133446,7 @@
     "tier": "Diamond",
     "level": 8,
     "kpm": 16.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Alias",
@@ -133447,6 +133880,7 @@
     "tier": "Champion",
     "level": 10,
     "kpm": 20.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "ZeroTempo",
@@ -134375,6 +134809,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 14.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Eiromancers",
@@ -134493,6 +134928,7 @@
     "tier": "Champion",
     "level": 10,
     "kpm": 19.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Chaos Children",
@@ -134836,6 +135272,7 @@
     "tier": "Grandmaster",
     "level": 9,
     "kpm": 16.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Aimpunch",
@@ -135378,6 +135815,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Sapphiric",
@@ -135541,6 +135979,7 @@
     "tier": "Champion",
     "level": 9,
     "kpm": 18.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Lightborne",
@@ -135704,6 +136143,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 13.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Eiromancers",
@@ -135777,6 +136217,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Extinction Bay",
@@ -135940,6 +136381,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 16.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Neptune's Grace",
@@ -136148,6 +136590,7 @@
     "tier": "Champion",
     "level": 10,
     "kpm": 19.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Scarlet Rot",
@@ -136266,6 +136709,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 15.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "ZeroTempo",
@@ -136971,6 +137415,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 14.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Eiromancers",
@@ -137089,6 +137534,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Pariah",
@@ -137432,6 +137878,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 15.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Phantom Tea Party",
@@ -137595,6 +138042,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 16.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Idle Gains",
@@ -137758,6 +138206,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Entropy Plus",
@@ -137921,6 +138370,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 14.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Viceroy",
@@ -138084,6 +138534,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 17.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "colosSUS",
@@ -138472,6 +138923,7 @@
     "tier": "Champion",
     "level": 9,
     "kpm": 18.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "DownUnder E-Sports",
@@ -138635,6 +139087,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 17.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "MoreSoap",
@@ -138798,6 +139251,7 @@
     "tier": "Grandmaster",
     "level": 9,
     "kpm": 18.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "MoreSoap",
@@ -138961,6 +139415,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 12.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "xPlosiv",
@@ -139124,6 +139579,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 14.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Savant",
@@ -139422,6 +139878,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 17.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Team widepeepoHappy",
@@ -139916,6 +140373,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 14.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Whisk",
@@ -140172,6 +140630,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "HydroHomies",
@@ -140605,6 +141064,7 @@
     "tier": "Grandmaster",
     "level": 9,
     "kpm": 17.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "TeamSolid",
@@ -141533,6 +141993,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "False Heart",
@@ -141696,6 +142157,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Veritas",
@@ -141814,6 +142276,7 @@
     "tier": "Grandmaster",
     "level": 9,
     "kpm": 17.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Sugarcrash Protocol",
@@ -141977,6 +142440,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 14.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Enter The Dungeon",
@@ -142275,6 +142739,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Love&Stuff",
@@ -142438,6 +142903,7 @@
     "tier": "Iron",
     "level": 3,
     "kpm": 11.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "VamosAmigo",
@@ -142601,6 +143067,7 @@
     "tier": "Grandmaster",
     "level": 8,
     "kpm": 18.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Sapphiric",
@@ -142719,6 +143186,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 12.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "KaleidnoScope",
@@ -142927,6 +143395,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 16.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Vamprix",
@@ -143246,6 +143715,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 14.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "royalAim",
@@ -143454,6 +143924,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "We Don't Eco",
@@ -143662,6 +144133,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 14.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "TSM Clan",
@@ -144188,6 +144660,7 @@
     "tier": "Champion",
     "level": 9,
     "kpm": 19.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "colosSUS",
@@ -144621,6 +145094,7 @@
     "tier": "Grandmaster",
     "level": 8,
     "kpm": 18.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "TeamRNG",
@@ -145597,6 +146071,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 15.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "metanoia",
@@ -146030,6 +146505,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 12.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Project Jellyfish",
@@ -146241,6 +146717,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "False Heart",
@@ -146404,6 +146881,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 16.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Nemesis10",
@@ -146702,6 +147180,7 @@
     "tier": "Grandmaster",
     "level": 9,
     "kpm": 19.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "WKeyOnly",
@@ -147048,6 +147527,7 @@
     "tier": "Gold",
     "level": 4,
     "kpm": 14.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Alias",
@@ -147481,6 +147961,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Sugarcrash Protocol",
@@ -147644,6 +148125,7 @@
     "tier": "Champion",
     "level": 9,
     "kpm": 19.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Just4Fun",
@@ -148572,6 +149054,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Lightborne",
@@ -148735,6 +149218,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Divinity E-Sports",
@@ -149258,6 +149742,7 @@
     "tier": "Gold",
     "level": 4,
     "kpm": 13.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Savant",
@@ -149466,6 +149951,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 11.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Team Turntables",
@@ -149629,6 +150115,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 13.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Infamous",
@@ -150017,6 +150504,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 17.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "5hellshockers",
@@ -150315,6 +150803,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "BeeHyve",
@@ -150433,6 +150922,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "KaleidnoScope",
@@ -150641,6 +151131,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 18.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "TBreezy",
@@ -151434,6 +151925,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 18.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "KaleidnoScope",
@@ -151597,6 +152089,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 16.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Idle Gains",
@@ -151760,6 +152253,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Aurum Core",
@@ -151968,6 +152462,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "xPlosiv",
@@ -152086,6 +152581,7 @@
     "tier": "Iron",
     "level": 2,
     "kpm": 10.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Umingu Warriors",
@@ -152204,6 +152700,7 @@
     "tier": "Grandmaster",
     "level": 9,
     "kpm": 19.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "MoreSoap",
@@ -152322,6 +152819,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 16.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "We Don't Eco",
@@ -152530,6 +153028,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 15.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Just4Fun",
@@ -153458,6 +153957,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 19.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "12Punch",
@@ -154342,6 +154842,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "eniteo",
@@ -154778,6 +155279,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 14.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "PixIgnite",
@@ -155135,6 +155637,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 16.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Kirin",
@@ -155343,6 +155846,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Hollowpoint",
@@ -155506,6 +156010,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 18.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Ursa Majoris",
@@ -155762,6 +156267,7 @@
     "tier": "Silver",
     "level": 3,
     "kpm": 12.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "ScreenTime",
@@ -155973,6 +156479,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Ether",
@@ -156182,6 +156689,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 13.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "HydroHomies",
@@ -156615,6 +157123,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 17.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Ursa Majoris",
@@ -156823,6 +157332,7 @@
     "tier": "Gold",
     "level": 4,
     "kpm": 14.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Azure Phantasm Games",
@@ -156941,6 +157451,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 12.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Azure Phantasm Games",
@@ -157104,6 +157615,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 14.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "yinYang",
@@ -157222,6 +157734,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 16.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Sapphiric",
@@ -157430,6 +157943,7 @@
     "tier": "Emerald",
     "level": 7,
     "kpm": 16.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Dropdead",
@@ -158358,6 +158872,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 17.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "TeamRNG",
@@ -158760,6 +159275,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 16.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "movemint",
@@ -159058,6 +159574,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 17.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Counter League",
@@ -159674,6 +160191,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Azure Phantasm Games",
@@ -159837,6 +160355,7 @@
     "tier": "Gold",
     "level": 4,
     "kpm": 12.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Reflex Storm",
@@ -160552,6 +161071,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Aurum Core",
@@ -160760,6 +161280,7 @@
     "tier": "Iron",
     "level": 3,
     "kpm": 11.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Counter League",
@@ -161598,6 +162119,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 12.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Sapphiric",
@@ -161806,6 +162328,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 13.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "5hellshockers",
@@ -162104,6 +162627,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 17.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Colonize",
@@ -162402,6 +162926,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Ryhope",
@@ -163150,6 +163675,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "CharacterLimit",
@@ -163313,6 +163839,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Destination2",
@@ -163431,6 +163958,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Aces High",
@@ -163594,6 +164122,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Fluff N' Stuff",
@@ -164252,6 +164781,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 17.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Tempest Deluxe",
@@ -164370,6 +164900,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 14.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Sanctuary",
@@ -165163,6 +165694,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 16.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Lunaris",
@@ -165371,6 +165903,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 18.6,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "CharacterLimit",
@@ -165489,6 +166022,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 16.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Love&Stuff",
@@ -165652,6 +166186,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 17.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "BattleBuds",
@@ -166445,6 +166980,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 13.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "DownUnder E-Sports",
@@ -166563,6 +167099,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 15.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "N3XuS",
@@ -167086,6 +167623,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Never Give Up",
@@ -167203,7 +167741,8 @@
     "rating": 0.97,
     "tier": "Gold",
     "level": 5,
-    "kpm": 15.2
+    "kpm": 15.2,
+    "rankDelta": 0
    },
    {
     "name": "AyanOwOT",
@@ -167230,6 +167769,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 12.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Syzygy",
@@ -167483,6 +168023,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "MoreSoap",
@@ -167601,6 +168142,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 13.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Eclipsed",
@@ -167764,6 +168306,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 13.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Melodica",
@@ -168017,6 +168560,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 12.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Sanctuary",
@@ -168270,6 +168814,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 15.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Extinction Bay",
@@ -168388,6 +168933,7 @@
     "tier": "Iron",
     "level": 2,
     "kpm": 11.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Summer Days",
@@ -168506,6 +169052,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 15.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Extinction Bay",
@@ -168669,6 +169216,7 @@
     "tier": "Iron",
     "level": 3,
     "kpm": 12.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Escape Velocity",
@@ -168877,6 +169425,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Clan Frostfire",
@@ -169040,6 +169589,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 12.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Killswitch",
@@ -169293,6 +169843,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 15.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Hollowpoint",
@@ -169501,6 +170052,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "VamosAmigo",
@@ -169619,6 +170171,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 15.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Love&Stuff",
@@ -169785,6 +170338,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 15.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "VamosAmigo",
@@ -169903,6 +170457,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 14.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Idle Gains",
@@ -170111,6 +170666,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 14.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Gloria Mundi",
@@ -170184,6 +170740,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "StrikeForce",
@@ -170752,6 +171309,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 12.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Skyloom",
@@ -170870,6 +171428,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Stars Bore Witness",
@@ -170988,6 +171547,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 15.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Sanctuary",
@@ -171514,6 +172074,7 @@
     "tier": "Iron",
     "level": 1,
     "kpm": 10.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "royalAim",
@@ -171722,6 +172283,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 12.9,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Summer Days",
@@ -171840,6 +172402,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 15.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Kirin",
@@ -172048,6 +172611,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "TeamRNG",
@@ -173021,6 +173585,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 15.1,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Gridlocked",
@@ -173139,6 +173704,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 16.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "DownUnder E-Sports",
@@ -173302,6 +173868,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 13.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "BeeHyve",
@@ -173465,6 +174032,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 12.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Bloodrush",
@@ -173673,6 +174241,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 13.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Sapphiric",
@@ -173881,6 +174450,7 @@
     "tier": "Silver",
     "level": 3,
     "kpm": 11.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Gloria Mundi",
@@ -173954,6 +174524,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.2,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "ZeroTempo",
@@ -174930,6 +175501,7 @@
     "tier": "Iron",
     "level": 1,
     "kpm": 9.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "degree",
@@ -175363,6 +175935,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 12.3,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Clan Astra",
@@ -175526,6 +176099,7 @@
     "tier": "Iron",
     "level": 2,
     "kpm": 9.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Kabar",
@@ -175689,6 +176263,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 12.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Summer Days",
@@ -175852,6 +176427,7 @@
     "tier": "Iron",
     "level": 2,
     "kpm": 10.7,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Azure Phantasm Games",
@@ -176015,6 +176591,7 @@
     "tier": "Iron",
     "level": 2,
     "kpm": 9.8,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Clan Astra",
@@ -176178,6 +176755,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 21.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "BeeHyve",
@@ -176251,6 +176829,7 @@
     "tier": "Platinum",
     "level": 6,
     "kpm": 20.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "BeeHyve",
@@ -176324,6 +176903,7 @@
     "tier": "Iron",
     "level": 2,
     "kpm": 3.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "Heavenswept",
@@ -176398,7 +176978,8 @@
     "rating": 1.221,
     "tier": "Champion",
     "level": 10,
-    "kpm": 18.2
+    "kpm": 18.2,
+    "rankDelta": 0
    },
    {
     "name": "Eroxis",
@@ -176424,7 +177005,8 @@
     "rating": 1.219,
     "tier": "Champion",
     "level": 10,
-    "kpm": 18.6
+    "kpm": 18.6,
+    "rankDelta": 0
    },
    {
     "name": "Navikuun",
@@ -176450,7 +177032,8 @@
     "rating": 1.197,
     "tier": "Champion",
     "level": 10,
-    "kpm": 18.6
+    "kpm": 18.6,
+    "rankDelta": 0
    },
    {
     "name": "Tachibana Hinano",
@@ -176476,7 +177059,8 @@
     "rating": 1.104,
     "tier": "Master",
     "level": 8,
-    "kpm": 17.3
+    "kpm": 17.3,
+    "rankDelta": 0
    },
    {
     "name": "EXaCT",
@@ -176502,7 +177086,8 @@
     "rating": 1.159,
     "tier": "Champion",
     "level": 9,
-    "kpm": 18.9
+    "kpm": 18.9,
+    "rankDelta": 0
    },
    {
     "name": "Leveti",
@@ -176528,7 +177113,8 @@
     "rating": 1.168,
     "tier": "Champion",
     "level": 9,
-    "kpm": 19.9
+    "kpm": 19.9,
+    "rankDelta": 0
    },
    {
     "name": "zuann_",
@@ -176554,7 +177140,8 @@
     "rating": 1.158,
     "tier": "Champion",
     "level": 9,
-    "kpm": 17.4
+    "kpm": 17.4,
+    "rankDelta": 0
    },
    {
     "name": "Eris Suzukami",
@@ -176580,7 +177167,8 @@
     "rating": 1.125,
     "tier": "Grandmaster",
     "level": 8,
-    "kpm": 18.6
+    "kpm": 18.6,
+    "rankDelta": 0
    },
    {
     "name": "Laburi",
@@ -176606,7 +177194,8 @@
     "rating": 1.115,
     "tier": "Master",
     "level": 8,
-    "kpm": 17.8
+    "kpm": 17.8,
+    "rankDelta": 0
    },
    {
     "name": "zhiweiingg",
@@ -176632,7 +177221,8 @@
     "rating": 1.03,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 14.5
+    "kpm": 14.5,
+    "rankDelta": 0
    },
    {
     "name": "winda",
@@ -176658,7 +177248,8 @@
     "rating": 1.093,
     "tier": "Master",
     "level": 8,
-    "kpm": 17.3
+    "kpm": 17.3,
+    "rankDelta": 0
    },
    {
     "name": "Nataleste",
@@ -176684,7 +177275,8 @@
     "rating": 1.076,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 16.7
+    "kpm": 16.7,
+    "rankDelta": 0
    },
    {
     "name": "Baer",
@@ -176710,7 +177302,8 @@
     "rating": 1.062,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 17.1
+    "kpm": 17.1,
+    "rankDelta": 0
    },
    {
     "name": "Remia Aotsuki",
@@ -176736,7 +177329,8 @@
     "rating": 1.014,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 15.6
+    "kpm": 15.6,
+    "rankDelta": 0
    },
    {
     "name": "Nikorasu",
@@ -176762,7 +177356,8 @@
     "rating": 1.013,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 15.7
+    "kpm": 15.7,
+    "rankDelta": 0
    },
    {
     "name": "xolalotl",
@@ -176788,7 +177383,8 @@
     "rating": 0.93,
     "tier": "Silver",
     "level": 4,
-    "kpm": 11.0
+    "kpm": 11.0,
+    "rankDelta": 0
    },
    {
     "name": "JigglyPingu",
@@ -176814,7 +177410,8 @@
     "rating": 1.026,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 14.0
+    "kpm": 14.0,
+    "rankDelta": 0
    },
    {
     "name": "Spoods",
@@ -176840,7 +177437,8 @@
     "rating": 1.194,
     "tier": "Champion",
     "level": 10,
-    "kpm": 20.9
+    "kpm": 20.9,
+    "rankDelta": 0
    },
    {
     "name": "yinnzx",
@@ -176866,7 +177464,8 @@
     "rating": 1.108,
     "tier": "Master",
     "level": 8,
-    "kpm": 18.1
+    "kpm": 18.1,
+    "rankDelta": 0
    },
    {
     "name": "ShizuyaUmiko",
@@ -176892,7 +177491,8 @@
     "rating": 1.146,
     "tier": "Grandmaster",
     "level": 9,
-    "kpm": 19.2
+    "kpm": 19.2,
+    "rankDelta": 0
    },
    {
     "name": "YoJareddo",
@@ -176918,7 +177518,8 @@
     "rating": 0.998,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 14.9
+    "kpm": 14.9,
+    "rankDelta": 0
    },
    {
     "name": "Tatsumaki Chise",
@@ -176944,7 +177545,8 @@
     "rating": 1.044,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 15.7
+    "kpm": 15.7,
+    "rankDelta": 0
    },
    {
     "name": "caarrietan",
@@ -176970,7 +177572,8 @@
     "rating": 1.034,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 16.2
+    "kpm": 16.2,
+    "rankDelta": 0
    },
    {
     "name": "Codiant",
@@ -176996,7 +177599,8 @@
     "rating": 1.037,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 16.6
+    "kpm": 16.6,
+    "rankDelta": 0
    },
    {
     "name": "OchakoKiyomi",
@@ -177022,7 +177626,8 @@
     "rating": 1.075,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 15.7
+    "kpm": 15.7,
+    "rankDelta": 0
    },
    {
     "name": "Jenakai",
@@ -177048,7 +177653,8 @@
     "rating": 0.964,
     "tier": "Gold",
     "level": 5,
-    "kpm": 13.0
+    "kpm": 13.0,
+    "rankDelta": 0
    },
    {
     "name": "TortillaRoll",
@@ -177074,7 +177680,8 @@
     "rating": 0.976,
     "tier": "Gold",
     "level": 5,
-    "kpm": 13.6
+    "kpm": 13.6,
+    "rankDelta": 0
    },
    {
     "name": "Illus",
@@ -177100,7 +177707,8 @@
     "rating": 0.998,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 14.9
+    "kpm": 14.9,
+    "rankDelta": 0
    },
    {
     "name": "tiger.lark",
@@ -177126,7 +177734,8 @@
     "rating": 0.987,
     "tier": "Gold",
     "level": 5,
-    "kpm": 13.4
+    "kpm": 13.4,
+    "rankDelta": 0
    },
    {
     "name": "[Idiot] AngelCrutcher",
@@ -177152,7 +177761,8 @@
     "rating": 1.116,
     "tier": "Master",
     "level": 8,
-    "kpm": 17.0
+    "kpm": 17.0,
+    "rankDelta": 0
    },
    {
     "name": "daifuku.wu",
@@ -177178,7 +177788,8 @@
     "rating": 1.006,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 14.6
+    "kpm": 14.6,
+    "rankDelta": 0
    },
    {
     "name": "CrimsynFlames",
@@ -177204,7 +177815,8 @@
     "rating": 1.055,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 14.8
+    "kpm": 14.8,
+    "rankDelta": 0
    },
    {
     "name": "nyxcatto",
@@ -177230,7 +177842,8 @@
     "rating": 1.038,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 16.5
+    "kpm": 16.5,
+    "rankDelta": 0
    },
    {
     "name": "Ice",
@@ -177256,7 +177869,8 @@
     "rating": 0.985,
     "tier": "Gold",
     "level": 5,
-    "kpm": 15.6
+    "kpm": 15.6,
+    "rankDelta": 0
    },
    {
     "name": "Xrela",
@@ -177282,7 +177896,8 @@
     "rating": 1.037,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 15.7
+    "kpm": 15.7,
+    "rankDelta": 0
    },
    {
     "name": "carv",
@@ -177308,7 +177923,8 @@
     "rating": 0.988,
     "tier": "Gold",
     "level": 5,
-    "kpm": 15.4
+    "kpm": 15.4,
+    "rankDelta": 0
    },
    {
     "name": "Acryii_",
@@ -177334,7 +177950,8 @@
     "rating": 1.101,
     "tier": "Master",
     "level": 8,
-    "kpm": 17.4
+    "kpm": 17.4,
+    "rankDelta": 0
    },
    {
     "name": "arcimoon",
@@ -177360,7 +177977,8 @@
     "rating": 1.005,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 15.8
+    "kpm": 15.8,
+    "rankDelta": 0
    },
    {
     "name": "stitchkyui",
@@ -177386,7 +178004,8 @@
     "rating": 0.964,
     "tier": "Gold",
     "level": 5,
-    "kpm": 14.2
+    "kpm": 14.2,
+    "rankDelta": 0
    },
    {
     "name": "NipNip",
@@ -177412,7 +178031,8 @@
     "rating": 0.97,
     "tier": "Gold",
     "level": 5,
-    "kpm": 14.2
+    "kpm": 14.2,
+    "rankDelta": 0
    },
    {
     "name": "lenette",
@@ -177438,7 +178058,8 @@
     "rating": 1.055,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 16.2
+    "kpm": 16.2,
+    "rankDelta": 0
    },
    {
     "name": "siddnely",
@@ -177464,7 +178085,8 @@
     "rating": 1.186,
     "tier": "Champion",
     "level": 10,
-    "kpm": 20.8
+    "kpm": 20.8,
+    "rankDelta": 0
    },
    {
     "name": "kael",
@@ -177490,7 +178112,8 @@
     "rating": 0.914,
     "tier": "Silver",
     "level": 4,
-    "kpm": 14.6
+    "kpm": 14.6,
+    "rankDelta": 0
    },
    {
     "name": "dumbo",
@@ -177516,7 +178139,8 @@
     "rating": 0.993,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 14.8
+    "kpm": 14.8,
+    "rankDelta": 0
    },
    {
     "name": "treblest",
@@ -177542,7 +178166,8 @@
     "rating": 0.987,
     "tier": "Gold",
     "level": 5,
-    "kpm": 14.0
+    "kpm": 14.0,
+    "rankDelta": 0
    },
    {
     "name": "Resent",
@@ -177568,7 +178193,8 @@
     "rating": 1.056,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 15.9
+    "kpm": 15.9,
+    "rankDelta": 0
    },
    {
     "name": "drip",
@@ -177594,7 +178220,8 @@
     "rating": 1.007,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 16.2
+    "kpm": 16.2,
+    "rankDelta": 0
    },
    {
     "name": "rebellioniite",
@@ -177620,7 +178247,8 @@
     "rating": 0.986,
     "tier": "Gold",
     "level": 5,
-    "kpm": 15.0
+    "kpm": 15.0,
+    "rankDelta": 0
    },
    {
     "name": "Joshiwahhh",
@@ -177646,7 +178274,8 @@
     "rating": 0.905,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 13.0
+    "kpm": 13.0,
+    "rankDelta": 0
    },
    {
     "name": "candybar_isblue",
@@ -177672,7 +178301,8 @@
     "rating": 1.084,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 18.3
+    "kpm": 18.3,
+    "rankDelta": 0
    },
    {
     "name": "Pearlim",
@@ -177698,7 +178328,8 @@
     "rating": 0.898,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 12.1
+    "kpm": 12.1,
+    "rankDelta": 0
    },
    {
     "name": "Sheep",
@@ -177724,7 +178355,8 @@
     "rating": 1.016,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 13.8
+    "kpm": 13.8,
+    "rankDelta": 0
    },
    {
     "name": "Vyphogrid",
@@ -177750,7 +178382,8 @@
     "rating": 1.049,
     "tier": "Emerald",
     "level": 7,
-    "kpm": 17.0
+    "kpm": 17.0,
+    "rankDelta": 0
    },
    {
     "name": "rc_ia",
@@ -177776,7 +178409,8 @@
     "rating": 1.09,
     "tier": "Diamond",
     "level": 8,
-    "kpm": 15.9
+    "kpm": 15.9,
+    "rankDelta": 0
    },
    {
     "name": "ItzMaigo",
@@ -177802,7 +178436,8 @@
     "rating": 1.048,
     "tier": "Emerald",
     "level": 7,
-    "kpm": 18.3
+    "kpm": 18.3,
+    "rankDelta": 0
    },
    {
     "name": "GoddessAkane",
@@ -177828,7 +178463,8 @@
     "rating": 0.944,
     "tier": "Silver",
     "level": 4,
-    "kpm": 14.6
+    "kpm": 14.6,
+    "rankDelta": 0
    },
    {
     "name": "Kyu",
@@ -177854,7 +178490,8 @@
     "rating": 1.089,
     "tier": "Diamond",
     "level": 8,
-    "kpm": 19.6
+    "kpm": 19.6,
+    "rankDelta": 0
    },
    {
     "name": "l1feless",
@@ -177880,7 +178517,8 @@
     "rating": 0.894,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 13.2
+    "kpm": 13.2,
+    "rankDelta": 0
    },
    {
     "name": "rittan0x0",
@@ -177906,7 +178544,8 @@
     "rating": 1.008,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 14.4
+    "kpm": 14.4,
+    "rankDelta": 0
    },
    {
     "name": "VanixEvans",
@@ -177932,7 +178571,8 @@
     "rating": 1.001,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 15.0
+    "kpm": 15.0,
+    "rankDelta": 0
    },
    {
     "name": "Applezxc",
@@ -177958,7 +178598,8 @@
     "rating": 0.971,
     "tier": "Gold",
     "level": 5,
-    "kpm": 14.4
+    "kpm": 14.4,
+    "rankDelta": 0
    },
    {
     "name": "Jasticar",
@@ -177984,7 +178625,8 @@
     "rating": 1.048,
     "tier": "Emerald",
     "level": 7,
-    "kpm": 16.7
+    "kpm": 16.7,
+    "rankDelta": 0
    },
    {
     "name": "Sadgeboi",
@@ -178010,7 +178652,8 @@
     "rating": 1.023,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 15.7
+    "kpm": 15.7,
+    "rankDelta": 0
    },
    {
     "name": "ebi",
@@ -178036,7 +178679,8 @@
     "rating": 1.141,
     "tier": "Grandmaster",
     "level": 9,
-    "kpm": 17.8
+    "kpm": 17.8,
+    "rankDelta": 0
    },
    {
     "name": "plainyingying",
@@ -178062,7 +178706,8 @@
     "rating": 1.078,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 18.0
+    "kpm": 18.0,
+    "rankDelta": 0
    },
    {
     "name": "nicsman",
@@ -178088,7 +178733,8 @@
     "rating": 1.081,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 19.5
+    "kpm": 19.5,
+    "rankDelta": 0
    },
    {
     "name": "y1jingg",
@@ -178114,7 +178760,8 @@
     "rating": 0.981,
     "tier": "Gold",
     "level": 5,
-    "kpm": 15.4
+    "kpm": 15.4,
+    "rankDelta": 0
    },
    {
     "name": "yerm",
@@ -178140,7 +178787,8 @@
     "rating": 0.998,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 16.0
+    "kpm": 16.0,
+    "rankDelta": 0
    },
    {
     "name": "YinghuVT",
@@ -178166,7 +178814,8 @@
     "rating": 1.073,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 17.1
+    "kpm": 17.1,
+    "rankDelta": 0
    },
    {
     "name": "capplecrow",
@@ -178192,7 +178841,8 @@
     "rating": 1.065,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 17.1
+    "kpm": 17.1,
+    "rankDelta": 0
    },
    {
     "name": "azzuto",
@@ -178218,7 +178868,8 @@
     "rating": 1.149,
     "tier": "Grandmaster",
     "level": 9,
-    "kpm": 20.2
+    "kpm": 20.2,
+    "rankDelta": 0
    },
    {
     "name": "Spinafex",
@@ -178244,7 +178895,8 @@
     "rating": 0.957,
     "tier": "Gold",
     "level": 5,
-    "kpm": 14.4
+    "kpm": 14.4,
+    "rankDelta": 0
    },
    {
     "name": "Kuro_mi",
@@ -178270,7 +178922,8 @@
     "rating": 1.002,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 16.1
+    "kpm": 16.1,
+    "rankDelta": 0
    },
    {
     "name": "thehidz",
@@ -178296,7 +178949,8 @@
     "rating": 1.042,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 16.1
+    "kpm": 16.1,
+    "rankDelta": 0
    },
    {
     "name": "Kisaragi Ren",
@@ -178322,7 +178976,8 @@
     "rating": 1.114,
     "tier": "Master",
     "level": 8,
-    "kpm": 17.0
+    "kpm": 17.0,
+    "rankDelta": 0
    },
    {
     "name": "lumi.nyaa",
@@ -178348,7 +179003,8 @@
     "rating": 1.068,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 18.0
+    "kpm": 18.0,
+    "rankDelta": 0
    },
    {
     "name": "Hyvred",
@@ -178374,7 +179030,8 @@
     "rating": 0.937,
     "tier": "Silver",
     "level": 4,
-    "kpm": 14.0
+    "kpm": 14.0,
+    "rankDelta": 0
    },
    {
     "name": "mominichi",
@@ -178400,7 +179057,8 @@
     "rating": 1.033,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 15.4
+    "kpm": 15.4,
+    "rankDelta": 0
    },
    {
     "name": "swoopsy",
@@ -178426,7 +179084,8 @@
     "rating": 0.99,
     "tier": "Gold",
     "level": 5,
-    "kpm": 13.9
+    "kpm": 13.9,
+    "rankDelta": 0
    },
    {
     "name": "KTenshi",
@@ -178452,7 +179111,8 @@
     "rating": 1.086,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 20.1
+    "kpm": 20.1,
+    "rankDelta": 0
    },
    {
     "name": "ehsten",
@@ -178478,7 +179138,8 @@
     "rating": 0.937,
     "tier": "Silver",
     "level": 4,
-    "kpm": 12.1
+    "kpm": 12.1,
+    "rankDelta": 0
    },
    {
     "name": "beyouna",
@@ -178504,7 +179165,8 @@
     "rating": 1.07,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 16.9
+    "kpm": 16.9,
+    "rankDelta": 0
    },
    {
     "name": "Solec",
@@ -178530,7 +179192,8 @@
     "rating": 1.049,
     "tier": "Emerald",
     "level": 7,
-    "kpm": 15.9
+    "kpm": 15.9,
+    "rankDelta": 0
    },
    {
     "name": "rebebx",
@@ -178556,7 +179219,8 @@
     "rating": 0.994,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 14.8
+    "kpm": 14.8,
+    "rankDelta": 0
    },
    {
     "name": "UtsuhoNull",
@@ -178582,7 +179246,8 @@
     "rating": 1.078,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 17.6
+    "kpm": 17.6,
+    "rankDelta": 0
    },
    {
     "name": "leachubby",
@@ -178608,7 +179273,8 @@
     "rating": 1.128,
     "tier": "Grandmaster",
     "level": 8,
-    "kpm": 17.5
+    "kpm": 17.5,
+    "rankDelta": 0
    },
    {
     "name": "notccillia",
@@ -178634,7 +179300,8 @@
     "rating": 1.15,
     "tier": "Grandmaster",
     "level": 9,
-    "kpm": 23.2
+    "kpm": 23.2,
+    "rankDelta": 0
    },
    {
     "name": "AltheaVT",
@@ -178660,7 +179327,8 @@
     "rating": 1.039,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 15.6
+    "kpm": 15.6,
+    "rankDelta": 0
    },
    {
     "name": "AkanersVT",
@@ -178686,7 +179354,8 @@
     "rating": 0.932,
     "tier": "Silver",
     "level": 4,
-    "kpm": 11.4
+    "kpm": 11.4,
+    "rankDelta": 0
    },
    {
     "name": "kanarivt",
@@ -178712,7 +179381,8 @@
     "rating": 0.914,
     "tier": "Silver",
     "level": 4,
-    "kpm": 12.0
+    "kpm": 12.0,
+    "rankDelta": 0
    },
    {
     "name": "Hakase",
@@ -178738,7 +179408,8 @@
     "rating": 1.046,
     "tier": "Emerald",
     "level": 7,
-    "kpm": 16.1
+    "kpm": 16.1,
+    "rankDelta": 0
    },
    {
     "name": "Astro_Ruckus",
@@ -178764,7 +179435,8 @@
     "rating": 1.049,
     "tier": "Emerald",
     "level": 7,
-    "kpm": 16.3
+    "kpm": 16.3,
+    "rankDelta": 0
    },
    {
     "name": "skysbeautylai",
@@ -178790,7 +179462,8 @@
     "rating": 1.09,
     "tier": "Master",
     "level": 8,
-    "kpm": 17.9
+    "kpm": 17.9,
+    "rankDelta": 0
    },
    {
     "name": "kaikaijins",
@@ -178816,7 +179489,8 @@
     "rating": 1.002,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 16.9
+    "kpm": 16.9,
+    "rankDelta": 0
    },
    {
     "name": "CRex",
@@ -178842,7 +179516,8 @@
     "rating": 0.964,
     "tier": "Gold",
     "level": 5,
-    "kpm": 14.0
+    "kpm": 14.0,
+    "rankDelta": 0
    },
    {
     "name": "okjustsmd",
@@ -178868,7 +179543,8 @@
     "rating": 1.003,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 16.2
+    "kpm": 16.2,
+    "rankDelta": 0
    },
    {
     "name": "Skyllabtw",
@@ -178894,7 +179570,8 @@
     "rating": 0.984,
     "tier": "Gold",
     "level": 5,
-    "kpm": 13.7
+    "kpm": 13.7,
+    "rankDelta": 0
    },
    {
     "name": "Luneforrune",
@@ -178920,7 +179597,8 @@
     "rating": 0.995,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 14.6
+    "kpm": 14.6,
+    "rankDelta": 0
    },
    {
     "name": "djsalty_",
@@ -178946,7 +179624,8 @@
     "rating": 0.917,
     "tier": "Silver",
     "level": 4,
-    "kpm": 13.2
+    "kpm": 13.2,
+    "rankDelta": 0
    },
    {
     "name": "sneakyyyyy",
@@ -178972,7 +179651,8 @@
     "rating": 1.116,
     "tier": "Master",
     "level": 8,
-    "kpm": 20.3
+    "kpm": 20.3,
+    "rankDelta": 0
    },
    {
     "name": "Dirfun",
@@ -178998,7 +179678,8 @@
     "rating": 0.986,
     "tier": "Gold",
     "level": 5,
-    "kpm": 13.8
+    "kpm": 13.8,
+    "rankDelta": 0
    },
    {
     "name": "NekoSoji",
@@ -179024,7 +179705,8 @@
     "rating": 0.999,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 14.0
+    "kpm": 14.0,
+    "rankDelta": 0
    },
    {
     "name": "lumpydayo",
@@ -179050,7 +179732,8 @@
     "rating": 1.018,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 15.0
+    "kpm": 15.0,
+    "rankDelta": 0
    },
    {
     "name": "Nightveil Lycoris",
@@ -179076,7 +179759,8 @@
     "rating": 1.07,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 20.1
+    "kpm": 20.1,
+    "rankDelta": 0
    },
    {
     "name": "Efreetsz",
@@ -179102,7 +179786,8 @@
     "rating": 0.949,
     "tier": "Silver",
     "level": 4,
-    "kpm": 14.1
+    "kpm": 14.1,
+    "rankDelta": 0
    },
    {
     "name": "airawwr",
@@ -179128,7 +179813,8 @@
     "rating": 1.104,
     "tier": "Master",
     "level": 8,
-    "kpm": 16.2
+    "kpm": 16.2,
+    "rankDelta": 0
    },
    {
     "name": "Riko Solari",
@@ -179154,7 +179840,8 @@
     "rating": 1.113,
     "tier": "Master",
     "level": 8,
-    "kpm": 18.0
+    "kpm": 18.0,
+    "rankDelta": 0
    },
    {
     "name": "Ichinose Uruha",
@@ -179180,7 +179867,8 @@
     "rating": 1.057,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 18.5
+    "kpm": 18.5,
+    "rankDelta": 0
    },
    {
     "name": "Nyuii",
@@ -179206,7 +179894,8 @@
     "rating": 1.018,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 15.3
+    "kpm": 15.3,
+    "rankDelta": 0
    },
    {
     "name": "NOTORIOUS47",
@@ -179232,7 +179921,8 @@
     "rating": 0.932,
     "tier": "Silver",
     "level": 4,
-    "kpm": 12.0
+    "kpm": 12.0,
+    "rankDelta": 0
    },
    {
     "name": "sURF",
@@ -179258,7 +179948,8 @@
     "rating": 1.095,
     "tier": "Master",
     "level": 8,
-    "kpm": 15.0
+    "kpm": 15.0,
+    "rankDelta": 0
    },
    {
     "name": "EviKuroneko",
@@ -179284,7 +179975,8 @@
     "rating": 1.065,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 14.8
+    "kpm": 14.8,
+    "rankDelta": 0
    },
    {
     "name": "Komori Met",
@@ -179310,7 +180002,8 @@
     "rating": 1.05,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 16.3
+    "kpm": 16.3,
+    "rankDelta": 0
    },
    {
     "name": "awtoh",
@@ -179336,7 +180029,8 @@
     "rating": 1.081,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 19.3
+    "kpm": 19.3,
+    "rankDelta": 0
    },
    {
     "name": "WO4TK",
@@ -179362,7 +180056,8 @@
     "rating": 1.085,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 18.2
+    "kpm": 18.2,
+    "rankDelta": 0
    },
    {
     "name": "VPLH",
@@ -179388,7 +180083,8 @@
     "rating": 0.99,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 14.3
+    "kpm": 14.3,
+    "rankDelta": 0
    },
    {
     "name": "laavv._",
@@ -179414,7 +180110,8 @@
     "rating": 0.91,
     "tier": "Silver",
     "level": 3,
-    "kpm": 12.9
+    "kpm": 12.9,
+    "rankDelta": 0
    },
    {
     "name": "miorine",
@@ -179440,7 +180137,8 @@
     "rating": 0.961,
     "tier": "Gold",
     "level": 5,
-    "kpm": 13.7
+    "kpm": 13.7,
+    "rankDelta": 0
    },
    {
     "name": "luciddoob",
@@ -179466,7 +180164,8 @@
     "rating": 1.018,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 15.7
+    "kpm": 15.7,
+    "rankDelta": 0
    },
    {
     "name": "keikatamori",
@@ -179492,7 +180191,8 @@
     "rating": 0.953,
     "tier": "Gold",
     "level": 4,
-    "kpm": 13.0
+    "kpm": 13.0,
+    "rankDelta": 0
    },
    {
     "name": "y.uuno",
@@ -179518,7 +180218,8 @@
     "rating": 1.052,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 15.4
+    "kpm": 15.4,
+    "rankDelta": 0
    },
    {
     "name": "SashimiGoesBloop",
@@ -179544,7 +180245,8 @@
     "rating": 1.077,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 16.2
+    "kpm": 16.2,
+    "rankDelta": 0
    },
    {
     "name": "Solaonix",
@@ -179570,7 +180272,8 @@
     "rating": 1.082,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 16.6
+    "kpm": 16.6,
+    "rankDelta": 0
    },
    {
     "name": "SanCtuary",
@@ -179596,7 +180299,8 @@
     "rating": 1.075,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 19.8
+    "kpm": 19.8,
+    "rankDelta": 0
    },
    {
     "name": "JustYoong",
@@ -179622,7 +180326,8 @@
     "rating": 1.07,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 16.2
+    "kpm": 16.2,
+    "rankDelta": 0
    },
    {
     "name": "rattecs",
@@ -179648,7 +180353,8 @@
     "rating": 1.109,
     "tier": "Master",
     "level": 8,
-    "kpm": 19.8
+    "kpm": 19.8,
+    "rankDelta": 0
    },
    {
     "name": "fleurcoz",
@@ -179674,7 +180380,8 @@
     "rating": 1.045,
     "tier": "Emerald",
     "level": 7,
-    "kpm": 18.2
+    "kpm": 18.2,
+    "rankDelta": 0
    },
    {
     "name": "SkuxxNinja44",
@@ -179700,7 +180407,8 @@
     "rating": 1.104,
     "tier": "Master",
     "level": 8,
-    "kpm": 20.2
+    "kpm": 20.2,
+    "rankDelta": 0
    },
    {
     "name": "Kyan",
@@ -179726,7 +180434,8 @@
     "rating": 1.115,
     "tier": "Master",
     "level": 8,
-    "kpm": 18.0
+    "kpm": 18.0,
+    "rankDelta": 0
    },
    {
     "name": "Mike",
@@ -179752,7 +180461,8 @@
     "rating": 1.0,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 14.0
+    "kpm": 14.0,
+    "rankDelta": 0
    },
    {
     "name": "S.GT",
@@ -179778,7 +180488,8 @@
     "rating": 1.0,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 14.3
+    "kpm": 14.3,
+    "rankDelta": 0
    },
    {
     "name": "Skiazelle",
@@ -179804,7 +180515,8 @@
     "rating": 1.021,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 16.2
+    "kpm": 16.2,
+    "rankDelta": 0
    },
    {
     "name": "KrinoJ",
@@ -179830,7 +180542,8 @@
     "rating": 0.996,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 15.3
+    "kpm": 15.3,
+    "rankDelta": 0
    },
    {
     "name": "FumishiroYummy",
@@ -179856,7 +180569,8 @@
     "rating": 0.97,
     "tier": "Gold",
     "level": 5,
-    "kpm": 13.9
+    "kpm": 13.9,
+    "rankDelta": 0
    },
    {
     "name": "djassaulty",
@@ -179883,6 +180597,7 @@
     "tier": "Master",
     "level": 8,
     "kpm": 18.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "The Weekend Bois",
@@ -179955,7 +180670,8 @@
     "rating": 0.945,
     "tier": "Silver",
     "level": 4,
-    "kpm": 11.9
+    "kpm": 11.9,
+    "rankDelta": 0
    },
    {
     "name": "joyyy_cheng",
@@ -179981,7 +180697,8 @@
     "rating": 0.955,
     "tier": "Gold",
     "level": 4,
-    "kpm": 13.6
+    "kpm": 13.6,
+    "rankDelta": 0
    },
    {
     "name": "Dianya",
@@ -180007,7 +180724,8 @@
     "rating": 0.979,
     "tier": "Gold",
     "level": 5,
-    "kpm": 14.2
+    "kpm": 14.2,
+    "rankDelta": 0
    },
    {
     "name": "Kaga Nazuna",
@@ -180033,7 +180751,8 @@
     "rating": 0.996,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 14.3
+    "kpm": 14.3,
+    "rankDelta": 0
    },
    {
     "name": "caturteer",
@@ -180059,7 +180778,8 @@
     "rating": 1.059,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 16.8
+    "kpm": 16.8,
+    "rankDelta": 0
    },
    {
     "name": "yunaeyo",
@@ -180085,7 +180805,8 @@
     "rating": 1.082,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 15.6
+    "kpm": 15.6,
+    "rankDelta": 0
    },
    {
     "name": "Redandb1ue",
@@ -180111,7 +180832,8 @@
     "rating": 0.979,
     "tier": "Gold",
     "level": 5,
-    "kpm": 14.9
+    "kpm": 14.9,
+    "rankDelta": 0
    },
    {
     "name": "StrigidaeVT",
@@ -180137,7 +180859,8 @@
     "rating": 0.96,
     "tier": "Gold",
     "level": 5,
-    "kpm": 13.4
+    "kpm": 13.4,
+    "rankDelta": 0
    },
    {
     "name": "TearsofDeath",
@@ -180163,7 +180886,8 @@
     "rating": 1.062,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 18.0
+    "kpm": 18.0,
+    "rankDelta": 0
    },
    {
     "name": "CryingNutz",
@@ -180189,7 +180913,8 @@
     "rating": 1.004,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 15.8
+    "kpm": 15.8,
+    "rankDelta": 0
    },
    {
     "name": "Emily_melody",
@@ -180215,7 +180940,8 @@
     "rating": 0.995,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 14.0
+    "kpm": 14.0,
+    "rankDelta": 0
    },
    {
     "name": "matcha",
@@ -180241,7 +180967,8 @@
     "rating": 0.858,
     "tier": "Iron",
     "level": 2,
-    "kpm": 11.4
+    "kpm": 11.4,
+    "rankDelta": 0
    },
    {
     "name": "HiguVT",
@@ -180267,7 +180994,8 @@
     "rating": 1.053,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 14.4
+    "kpm": 14.4,
+    "rankDelta": 0
    },
    {
     "name": "yuuschan",
@@ -180293,7 +181021,8 @@
     "rating": 1.162,
     "tier": "Champion",
     "level": 9,
-    "kpm": 23.2
+    "kpm": 23.2,
+    "rankDelta": 0
    },
    {
     "name": "Karasu",
@@ -180319,7 +181048,8 @@
     "rating": 1.044,
     "tier": "Emerald",
     "level": 7,
-    "kpm": 17.4
+    "kpm": 17.4,
+    "rankDelta": 0
    },
    {
     "name": "midorissi",
@@ -180345,7 +181075,8 @@
     "rating": 0.937,
     "tier": "Silver",
     "level": 4,
-    "kpm": 11.6
+    "kpm": 11.6,
+    "rankDelta": 0
    },
    {
     "name": "kkayyteeee",
@@ -180371,7 +181102,8 @@
     "rating": 1.016,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 17.3
+    "kpm": 17.3,
+    "rankDelta": 0
    },
    {
     "name": "kimmixd",
@@ -180397,7 +181129,8 @@
     "rating": 1.046,
     "tier": "Emerald",
     "level": 7,
-    "kpm": 15.2
+    "kpm": 15.2,
+    "rankDelta": 0
    },
    {
     "name": "4_naru",
@@ -180423,7 +181156,8 @@
     "rating": 0.95,
     "tier": "Silver",
     "level": 4,
-    "kpm": 13.2
+    "kpm": 13.2,
+    "rankDelta": 0
    },
    {
     "name": "Niito",
@@ -180449,7 +181183,8 @@
     "rating": 0.996,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 14.0
+    "kpm": 14.0,
+    "rankDelta": 0
    },
    {
     "name": "briant",
@@ -180475,7 +181210,8 @@
     "rating": 1.002,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 15.1
+    "kpm": 15.1,
+    "rankDelta": 0
    },
    {
     "name": "JWQI",
@@ -180501,7 +181237,8 @@
     "rating": 1.028,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 15.5
+    "kpm": 15.5,
+    "rankDelta": 0
    },
    {
     "name": "TRPaki",
@@ -180527,7 +181264,8 @@
     "rating": 0.997,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 13.2
+    "kpm": 13.2,
+    "rankDelta": 0
    },
    {
     "name": "Kairi",
@@ -180553,7 +181291,8 @@
     "rating": 0.996,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 16.0
+    "kpm": 16.0,
+    "rankDelta": 0
    },
    {
     "name": "Spectrum Gabriel",
@@ -180580,6 +181319,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 17.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "The Weekend Bois",
@@ -180652,7 +181392,8 @@
     "rating": 0.923,
     "tier": "Silver",
     "level": 4,
-    "kpm": 14.8
+    "kpm": 14.8,
+    "rankDelta": 0
    },
    {
     "name": "Nerfox",
@@ -180678,7 +181419,8 @@
     "rating": 1.023,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 15.3
+    "kpm": 15.3,
+    "rankDelta": 0
    },
    {
     "name": "Nutzeru",
@@ -180704,7 +181446,8 @@
     "rating": 1.055,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 18.2
+    "kpm": 18.2,
+    "rankDelta": 0
    },
    {
     "name": "MugCowPayLucky",
@@ -180730,7 +181473,8 @@
     "rating": 1.044,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 16.4
+    "kpm": 16.4,
+    "rankDelta": 0
    },
    {
     "name": "xmeijixx",
@@ -180756,7 +181500,8 @@
     "rating": 1.016,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 14.7
+    "kpm": 14.7,
+    "rankDelta": 0
    },
    {
     "name": "Yaekia",
@@ -180782,7 +181527,8 @@
     "rating": 1.025,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 14.6
+    "kpm": 14.6,
+    "rankDelta": 0
    },
    {
     "name": "mmirawr_",
@@ -180808,7 +181554,8 @@
     "rating": 0.98,
     "tier": "Gold",
     "level": 5,
-    "kpm": 15.3
+    "kpm": 15.3,
+    "rankDelta": 0
    },
    {
     "name": "inaxho",
@@ -180834,7 +181581,8 @@
     "rating": 1.054,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 18.0
+    "kpm": 18.0,
+    "rankDelta": 0
    },
    {
     "name": "DelphoxLuna",
@@ -180860,7 +181608,8 @@
     "rating": 0.987,
     "tier": "Gold",
     "level": 5,
-    "kpm": 14.5
+    "kpm": 14.5,
+    "rankDelta": 0
    },
    {
     "name": "Soozy",
@@ -180886,7 +181635,8 @@
     "rating": 1.035,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 13.2
+    "kpm": 13.2,
+    "rankDelta": 0
    },
    {
     "name": "voxslefthorn",
@@ -180912,7 +181662,8 @@
     "rating": 1.068,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 17.8
+    "kpm": 17.8,
+    "rankDelta": 0
    },
    {
     "name": "ProPHOcy_",
@@ -180938,7 +181689,8 @@
     "rating": 1.0,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 13.4
+    "kpm": 13.4,
+    "rankDelta": 0
    },
    {
     "name": "AyanOwOT",
@@ -180964,7 +181716,8 @@
     "rating": 0.945,
     "tier": "Silver",
     "level": 4,
-    "kpm": 11.8
+    "kpm": 11.8,
+    "rankDelta": 0
    },
    {
     "name": "Hanarisu",
@@ -180990,7 +181743,8 @@
     "rating": 0.94,
     "tier": "Silver",
     "level": 4,
-    "kpm": 12.7
+    "kpm": 12.7,
+    "rankDelta": 0
    },
    {
     "name": "Scorpium",
@@ -181016,7 +181770,8 @@
     "rating": 0.943,
     "tier": "Silver",
     "level": 4,
-    "kpm": 12.2
+    "kpm": 12.2,
+    "rankDelta": 0
    },
    {
     "name": "Kai",
@@ -181042,7 +181797,8 @@
     "rating": 0.919,
     "tier": "Silver",
     "level": 4,
-    "kpm": 13.5
+    "kpm": 13.5,
+    "rankDelta": 0
    },
    {
     "name": "FeatBri",
@@ -181068,7 +181824,8 @@
     "rating": 0.99,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 13.6
+    "kpm": 13.6,
+    "rankDelta": 0
    },
    {
     "name": "potatodepresso",
@@ -181094,7 +181851,8 @@
     "rating": 0.976,
     "tier": "Gold",
     "level": 5,
-    "kpm": 13.8
+    "kpm": 13.8,
+    "rankDelta": 0
    },
    {
     "name": "Suzuyunn",
@@ -181120,7 +181878,8 @@
     "rating": 0.895,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 13.1
+    "kpm": 13.1,
+    "rankDelta": 0
    },
    {
     "name": "Dazeido",
@@ -181146,7 +181905,8 @@
     "rating": 1.024,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 17.7
+    "kpm": 17.7,
+    "rankDelta": 0
    },
    {
     "name": "jhjj80",
@@ -181172,7 +181932,8 @@
     "rating": 1.097,
     "tier": "Master",
     "level": 8,
-    "kpm": 18.8
+    "kpm": 18.8,
+    "rankDelta": 0
    },
    {
     "name": "AppleOrangePear",
@@ -181198,7 +181959,8 @@
     "rating": 0.91,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 11.0
+    "kpm": 11.0,
+    "rankDelta": 0
    },
    {
     "name": "kimonra",
@@ -181224,7 +181986,8 @@
     "rating": 0.972,
     "tier": "Gold",
     "level": 5,
-    "kpm": 14.3
+    "kpm": 14.3,
+    "rankDelta": 0
    },
    {
     "name": "Ryker_Sterling",
@@ -181250,7 +182013,8 @@
     "rating": 0.976,
     "tier": "Gold",
     "level": 5,
-    "kpm": 16.0
+    "kpm": 16.0,
+    "rankDelta": 0
    },
    {
     "name": "bluenerd8",
@@ -181276,7 +182040,8 @@
     "rating": 0.962,
     "tier": "Gold",
     "level": 5,
-    "kpm": 13.4
+    "kpm": 13.4,
+    "rankDelta": 0
    },
    {
     "name": "Hamzyy",
@@ -181302,7 +182067,8 @@
     "rating": 1.036,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 15.2
+    "kpm": 15.2,
+    "rankDelta": 0
    },
    {
     "name": "Anony",
@@ -181328,7 +182094,8 @@
     "rating": 0.899,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 10.3
+    "kpm": 10.3,
+    "rankDelta": 0
    },
    {
     "name": "Kaito_Oshino",
@@ -181354,7 +182121,8 @@
     "rating": 1.041,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 15.0
+    "kpm": 15.0,
+    "rankDelta": 0
    },
    {
     "name": "Just_Ansel",
@@ -181380,7 +182148,8 @@
     "rating": 0.839,
     "tier": "Iron",
     "level": 2,
-    "kpm": 8.0
+    "kpm": 8.0,
+    "rankDelta": 0
    },
    {
     "name": "Aweberry",
@@ -181406,7 +182175,8 @@
     "rating": 0.906,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 12.3
+    "kpm": 12.3,
+    "rankDelta": 0
    },
    {
     "name": "Nifela",
@@ -181432,7 +182202,8 @@
     "rating": 0.969,
     "tier": "Gold",
     "level": 5,
-    "kpm": 15.2
+    "kpm": 15.2,
+    "rankDelta": 0
    },
    {
     "name": "Tsumugi Kokage",
@@ -181458,7 +182229,8 @@
     "rating": 1.001,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 15.2
+    "kpm": 15.2,
+    "rankDelta": 0
    },
    {
     "name": "Rethnap",
@@ -181484,7 +182256,8 @@
     "rating": 0.934,
     "tier": "Silver",
     "level": 4,
-    "kpm": 10.8
+    "kpm": 10.8,
+    "rankDelta": 0
    },
    {
     "name": "TiF2",
@@ -181510,7 +182283,8 @@
     "rating": 1.007,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 16.5
+    "kpm": 16.5,
+    "rankDelta": 0
    },
    {
     "name": "Mango",
@@ -181536,7 +182310,8 @@
     "rating": 0.973,
     "tier": "Gold",
     "level": 5,
-    "kpm": 14.2
+    "kpm": 14.2,
+    "rankDelta": 0
    },
    {
     "name": "le_pyrrhic",
@@ -181562,7 +182337,8 @@
     "rating": 0.988,
     "tier": "Gold",
     "level": 5,
-    "kpm": 13.8
+    "kpm": 13.8,
+    "rankDelta": 0
    },
    {
     "name": "Ginjo Saine",
@@ -181588,7 +182364,8 @@
     "rating": 1.057,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 16.5
+    "kpm": 16.5,
+    "rankDelta": 0
    },
    {
     "name": "murasakibara_tsuki1",
@@ -181614,7 +182391,8 @@
     "rating": 1.12,
     "tier": "Master",
     "level": 8,
-    "kpm": 22.5
+    "kpm": 22.5,
+    "rankDelta": 0
    },
    {
     "name": "RaviasEir",
@@ -181640,7 +182418,8 @@
     "rating": 1.017,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 14.6
+    "kpm": 14.6,
+    "rankDelta": 0
    },
    {
     "name": "Phxebe",
@@ -181666,7 +182445,8 @@
     "rating": 1.03,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 16.8
+    "kpm": 16.8,
+    "rankDelta": 0
    },
    {
     "name": "XueHuaVT",
@@ -181692,7 +182472,8 @@
     "rating": 1.039,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 17.8
+    "kpm": 17.8,
+    "rankDelta": 0
    },
    {
     "name": "Laurel",
@@ -181718,7 +182499,8 @@
     "rating": 0.889,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 10.8
+    "kpm": 10.8,
+    "rankDelta": 0
    },
    {
     "name": "anju_o",
@@ -181744,7 +182526,8 @@
     "rating": 0.906,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 12.7
+    "kpm": 12.7,
+    "rankDelta": 0
    },
    {
     "name": "zhizyii",
@@ -181770,7 +182553,8 @@
     "rating": 0.984,
     "tier": "Gold",
     "level": 5,
-    "kpm": 14.2
+    "kpm": 14.2,
+    "rankDelta": 0
    },
    {
     "name": "XueQiii",
@@ -181796,7 +182580,8 @@
     "rating": 0.949,
     "tier": "Silver",
     "level": 4,
-    "kpm": 13.8
+    "kpm": 13.8,
+    "rankDelta": 0
    },
    {
     "name": "kn",
@@ -181822,7 +182607,8 @@
     "rating": 1.039,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 15.8
+    "kpm": 15.8,
+    "rankDelta": 0
    },
    {
     "name": "kyyltn",
@@ -181848,7 +182634,8 @@
     "rating": 0.995,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 12.0
+    "kpm": 12.0,
+    "rankDelta": 0
    },
    {
     "name": "m0wmeow",
@@ -181874,7 +182661,8 @@
     "rating": 0.964,
     "tier": "Gold",
     "level": 5,
-    "kpm": 15.0
+    "kpm": 15.0,
+    "rankDelta": 0
    },
    {
     "name": "akuluvr",
@@ -181900,7 +182688,8 @@
     "rating": 1.12,
     "tier": "Master",
     "level": 8,
-    "kpm": 21.5
+    "kpm": 21.5,
+    "rankDelta": 0
    },
    {
     "name": "Asterisks",
@@ -181926,7 +182715,8 @@
     "rating": 0.964,
     "tier": "Gold",
     "level": 5,
-    "kpm": 13.6
+    "kpm": 13.6,
+    "rankDelta": 0
    },
    {
     "name": "minMaXXer",
@@ -181952,7 +182742,8 @@
     "rating": 0.971,
     "tier": "Gold",
     "level": 5,
-    "kpm": 15.3
+    "kpm": 15.3,
+    "rankDelta": 0
    },
    {
     "name": "chreyll",
@@ -181978,7 +182769,8 @@
     "rating": 0.843,
     "tier": "Iron",
     "level": 2,
-    "kpm": 9.8
+    "kpm": 9.8,
+    "rankDelta": 0
    },
    {
     "name": "Volatus",
@@ -182004,7 +182796,8 @@
     "rating": 0.995,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 16.8
+    "kpm": 16.8,
+    "rankDelta": 0
    },
    {
     "name": "yuuki_PS",
@@ -182030,7 +182823,8 @@
     "rating": 0.996,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 15.4
+    "kpm": 15.4,
+    "rankDelta": 0
    },
    {
     "name": "AcroBlaze",
@@ -182056,7 +182850,8 @@
     "rating": 1.019,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 17.6
+    "kpm": 17.6,
+    "rankDelta": 0
    },
    {
     "name": "MoonRaika",
@@ -182082,7 +182877,8 @@
     "rating": 0.988,
     "tier": "Gold",
     "level": 5,
-    "kpm": 13.8
+    "kpm": 13.8,
+    "rankDelta": 0
    },
    {
     "name": "wushii",
@@ -182108,7 +182904,8 @@
     "rating": 1.128,
     "tier": "Grandmaster",
     "level": 8,
-    "kpm": 24.5
+    "kpm": 24.5,
+    "rankDelta": 0
    },
    {
     "name": "mond33__",
@@ -182134,7 +182931,8 @@
     "rating": 0.871,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 10.0
+    "kpm": 10.0,
+    "rankDelta": 0
    },
    {
     "name": "Yarimell",
@@ -182160,7 +182958,8 @@
     "rating": 0.977,
     "tier": "Gold",
     "level": 5,
-    "kpm": 15.6
+    "kpm": 15.6,
+    "rankDelta": 0
    },
    {
     "name": "RumiRumi",
@@ -182186,7 +182985,8 @@
     "rating": 0.978,
     "tier": "Gold",
     "level": 5,
-    "kpm": 15.0
+    "kpm": 15.0,
+    "rankDelta": 0
    },
    {
     "name": "Pattsuu",
@@ -182212,7 +183012,8 @@
     "rating": 1.084,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 20.5
+    "kpm": 20.5,
+    "rankDelta": 0
    },
    {
     "name": "MizukiiMoon",
@@ -182238,7 +183039,8 @@
     "rating": 1.025,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 19.2
+    "kpm": 19.2,
+    "rankDelta": 0
    },
    {
     "name": "emmabutnormal",
@@ -182264,7 +183066,8 @@
     "rating": 1.042,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 21.0
+    "kpm": 21.0,
+    "rankDelta": 0
    },
    {
     "name": "Nekota Tsuna",
@@ -182290,7 +183093,8 @@
     "rating": 1.115,
     "tier": "Master",
     "level": 8,
-    "kpm": 21.0
+    "kpm": 21.0,
+    "rankDelta": 0
    },
    {
     "name": "gigichiii_",
@@ -182316,7 +183120,8 @@
     "rating": 0.954,
     "tier": "Gold",
     "level": 4,
-    "kpm": 13.6
+    "kpm": 13.6,
+    "rankDelta": 0
    },
    {
     "name": "Asumi Sena",
@@ -182342,7 +183147,8 @@
     "rating": 1.058,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 20.5
+    "kpm": 20.5,
+    "rankDelta": 0
    },
    {
     "name": "Elfy Mint",
@@ -182368,7 +183174,8 @@
     "rating": 1.039,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 17.2
+    "kpm": 17.2,
+    "rankDelta": 0
    },
    {
     "name": "twentyrosie",
@@ -182394,7 +183201,8 @@
     "rating": 1.061,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 19.0
+    "kpm": 19.0,
+    "rankDelta": 0
    },
    {
     "name": "Shinomiya Runa",
@@ -182420,7 +183228,8 @@
     "rating": 1.033,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 18.0
+    "kpm": 18.0,
+    "rankDelta": 0
    },
    {
     "name": "Choya Hanabi",
@@ -182446,7 +183255,8 @@
     "rating": 1.052,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 16.3
+    "kpm": 16.3,
+    "rankDelta": 0
    },
    {
     "name": "kokushi_vampir",
@@ -182472,7 +183282,8 @@
     "rating": 1.01,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 15.5
+    "kpm": 15.5,
+    "rankDelta": 0
    },
    {
     "name": "TuxedoCat",
@@ -182498,7 +183309,8 @@
     "rating": 0.891,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 12.0
+    "kpm": 12.0,
+    "rankDelta": 0
    },
    {
     "name": "Historia",
@@ -182524,7 +183336,8 @@
     "rating": 1.084,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 18.2
+    "kpm": 18.2,
+    "rankDelta": 0
    },
    {
     "name": "BaBaYaGa",
@@ -182550,7 +183363,8 @@
     "rating": 0.964,
     "tier": "Gold",
     "level": 5,
-    "kpm": 16.0
+    "kpm": 16.0,
+    "rankDelta": 0
    },
    {
     "name": "Ziweiv",
@@ -182576,7 +183390,8 @@
     "rating": 1.028,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 14.0
+    "kpm": 14.0,
+    "rankDelta": 0
    },
    {
     "name": "JStarWolf",
@@ -182602,7 +183417,8 @@
     "rating": 0.898,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 12.9
+    "kpm": 12.9,
+    "rankDelta": 0
    },
    {
     "name": "Niamocha",
@@ -182628,7 +183444,8 @@
     "rating": 0.994,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 16.0
+    "kpm": 16.0,
+    "rankDelta": 0
    },
    {
     "name": "Yumeno Akari",
@@ -182654,7 +183471,8 @@
     "rating": 0.998,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 13.5
+    "kpm": 13.5,
+    "rankDelta": 0
    },
    {
     "name": "Meowcolmz",
@@ -182680,7 +183498,8 @@
     "rating": 0.973,
     "tier": "Gold",
     "level": 5,
-    "kpm": 14.8
+    "kpm": 14.8,
+    "rankDelta": 0
    },
    {
     "name": "simply_perezoso",
@@ -182706,7 +183525,8 @@
     "rating": 1.009,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 15.5
+    "kpm": 15.5,
+    "rankDelta": 0
    },
    {
     "name": "PenguChi",
@@ -182732,7 +183552,8 @@
     "rating": 0.9,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 10.2
+    "kpm": 10.2,
+    "rankDelta": 0
    },
    {
     "name": "bodexx",
@@ -182758,7 +183579,8 @@
     "rating": 1.054,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 16.7
+    "kpm": 16.7,
+    "rankDelta": 0
    },
    {
     "name": "Moira",
@@ -182784,7 +183606,8 @@
     "rating": 0.989,
     "tier": "Gold",
     "level": 5,
-    "kpm": 12.0
+    "kpm": 12.0,
+    "rankDelta": 0
    },
    {
     "name": "Goonuyun",
@@ -182811,6 +183634,7 @@
     "tier": "Iron",
     "level": 2,
     "kpm": 11.4,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "The Weekend Bois",
@@ -182883,7 +183707,8 @@
     "rating": 1.005,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 13.2
+    "kpm": 13.2,
+    "rankDelta": 0
    },
    {
     "name": "Kamito",
@@ -182909,7 +183734,8 @@
     "rating": 0.871,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 10.7
+    "kpm": 10.7,
+    "rankDelta": 0
    },
    {
     "name": "Marsinss",
@@ -182935,7 +183761,8 @@
     "rating": 0.951,
     "tier": "Gold",
     "level": 4,
-    "kpm": 13.6
+    "kpm": 13.6,
+    "rankDelta": 0
    },
    {
     "name": "xyrolizea",
@@ -182961,7 +183788,8 @@
     "rating": 0.934,
     "tier": "Silver",
     "level": 4,
-    "kpm": 9.8
+    "kpm": 9.8,
+    "rankDelta": 0
    },
    {
     "name": "urnisa_",
@@ -182987,7 +183815,8 @@
     "rating": 0.982,
     "tier": "Gold",
     "level": 5,
-    "kpm": 15.0
+    "kpm": 15.0,
+    "rankDelta": 0
    },
    {
     "name": "Zarlard",
@@ -183013,7 +183842,8 @@
     "rating": 1.136,
     "tier": "Grandmaster",
     "level": 9,
-    "kpm": 29.3
+    "kpm": 29.3,
+    "rankDelta": 0
    },
    {
     "name": "Sayucchi",
@@ -183039,7 +183869,8 @@
     "rating": 1.002,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 15.0
+    "kpm": 15.0,
+    "rankDelta": 0
    },
    {
     "name": "ErineRurie",
@@ -183065,7 +183896,8 @@
     "rating": 1.017,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 19.2
+    "kpm": 19.2,
+    "rankDelta": 0
    },
    {
     "name": "BluBEAR",
@@ -183091,7 +183923,8 @@
     "rating": 0.968,
     "tier": "Gold",
     "level": 5,
-    "kpm": 13.8
+    "kpm": 13.8,
+    "rankDelta": 0
    },
    {
     "name": "Anndreika",
@@ -183117,7 +183950,8 @@
     "rating": 0.977,
     "tier": "Gold",
     "level": 5,
-    "kpm": 11.8
+    "kpm": 11.8,
+    "rankDelta": 0
    },
    {
     "name": "Kurumi Noah",
@@ -183143,7 +183977,8 @@
     "rating": 1.049,
     "tier": "Emerald",
     "level": 7,
-    "kpm": 19.0
+    "kpm": 19.0,
+    "rankDelta": 0
    },
    {
     "name": "chiyoriinn",
@@ -183169,7 +184004,8 @@
     "rating": 0.96,
     "tier": "Gold",
     "level": 5,
-    "kpm": 14.8
+    "kpm": 14.8,
+    "rankDelta": 0
    },
    {
     "name": "dudriduo_",
@@ -183195,7 +184031,8 @@
     "rating": 1.02,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 14.0
+    "kpm": 14.0,
+    "rankDelta": 0
    },
    {
     "name": "Syrrith",
@@ -183221,7 +184058,8 @@
     "rating": 0.955,
     "tier": "Gold",
     "level": 4,
-    "kpm": 11.8
+    "kpm": 11.8,
+    "rankDelta": 0
    },
    {
     "name": "Aranionja",
@@ -183247,7 +184085,8 @@
     "rating": 0.981,
     "tier": "Gold",
     "level": 5,
-    "kpm": 15.8
+    "kpm": 15.8,
+    "rankDelta": 0
    },
    {
     "name": "Stylus",
@@ -183273,7 +184112,8 @@
     "rating": 0.935,
     "tier": "Silver",
     "level": 4,
-    "kpm": 13.6
+    "kpm": 13.6,
+    "rankDelta": 0
    },
    {
     "name": "shirou_kitakami",
@@ -183299,7 +184139,8 @@
     "rating": 0.973,
     "tier": "Gold",
     "level": 5,
-    "kpm": 16.2
+    "kpm": 16.2,
+    "rankDelta": 0
    },
    {
     "name": "Airizu",
@@ -183325,7 +184166,8 @@
     "rating": 0.989,
     "tier": "Gold",
     "level": 5,
-    "kpm": 15.8
+    "kpm": 15.8,
+    "rankDelta": 0
    },
    {
     "name": "ostc.x",
@@ -183351,7 +184193,8 @@
     "rating": 0.882,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 11.2
+    "kpm": 11.2,
+    "rankDelta": 0
    },
    {
     "name": "dla.wo",
@@ -183377,7 +184220,8 @@
     "rating": 1.0,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 12.7
+    "kpm": 12.7,
+    "rankDelta": 0
    },
    {
     "name": "VSSMB",
@@ -183403,7 +184247,8 @@
     "rating": 0.979,
     "tier": "Gold",
     "level": 5,
-    "kpm": 11.3
+    "kpm": 11.3,
+    "rankDelta": 0
    },
    {
     "name": "VeniceC",
@@ -183429,7 +184274,8 @@
     "rating": 0.986,
     "tier": "Gold",
     "level": 5,
-    "kpm": 15.8
+    "kpm": 15.8,
+    "rankDelta": 0
    },
    {
     "name": "Shuvimo",
@@ -183455,7 +184301,8 @@
     "rating": 1.046,
     "tier": "Emerald",
     "level": 7,
-    "kpm": 17.0
+    "kpm": 17.0,
+    "rankDelta": 0
    },
    {
     "name": "Michimouto",
@@ -183481,7 +184328,8 @@
     "rating": 0.916,
     "tier": "Silver",
     "level": 4,
-    "kpm": 10.8
+    "kpm": 10.8,
+    "rankDelta": 0
    },
    {
     "name": "Bajiru_EN",
@@ -183507,7 +184355,8 @@
     "rating": 1.055,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 19.0
+    "kpm": 19.0,
+    "rankDelta": 0
    },
    {
     "name": "Juno Umezono",
@@ -183533,7 +184382,8 @@
     "rating": 1.087,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 21.0
+    "kpm": 21.0,
+    "rankDelta": 0
    },
    {
     "name": "Airizu",
@@ -183559,7 +184409,8 @@
     "rating": 0.939,
     "tier": "Silver",
     "level": 4,
-    "kpm": 8.3
+    "kpm": 8.3,
+    "rankDelta": 0
    },
    {
     "name": "MilliannaVT",
@@ -183585,7 +184436,8 @@
     "rating": 0.948,
     "tier": "Silver",
     "level": 4,
-    "kpm": 12.5
+    "kpm": 12.5,
+    "rankDelta": 0
    },
    {
     "name": "yumezukiyomi",
@@ -183611,7 +184463,8 @@
     "rating": 0.929,
     "tier": "Silver",
     "level": 4,
-    "kpm": 15.0
+    "kpm": 15.0,
+    "rankDelta": 0
    },
    {
     "name": "obvMX",
@@ -183637,7 +184490,8 @@
     "rating": 0.956,
     "tier": "Gold",
     "level": 5,
-    "kpm": 14.5
+    "kpm": 14.5,
+    "rankDelta": 0
    },
    {
     "name": "ruamamiya",
@@ -183663,7 +184517,8 @@
     "rating": 1.025,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 16.0
+    "kpm": 16.0,
+    "rankDelta": 0
    },
    {
     "name": "kitties258",
@@ -183689,7 +184544,8 @@
     "rating": 0.894,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 9.2
+    "kpm": 9.2,
+    "rankDelta": 0
    },
    {
     "name": "declaration__",
@@ -183715,7 +184571,8 @@
     "rating": 1.061,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 20.7
+    "kpm": 20.7,
+    "rankDelta": 0
    },
    {
     "name": "Celtsm",
@@ -183741,7 +184598,8 @@
     "rating": 1.03,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 15.0
+    "kpm": 15.0,
+    "rankDelta": 0
    },
    {
     "name": "StrandedPond",
@@ -183767,7 +184625,8 @@
     "rating": 1.032,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 13.7
+    "kpm": 13.7,
+    "rankDelta": 0
    },
    {
     "name": "rach.elx_",
@@ -183793,7 +184652,8 @@
     "rating": 0.98,
     "tier": "Gold",
     "level": 5,
-    "kpm": 14.3
+    "kpm": 14.3,
+    "rankDelta": 0
    },
    {
     "name": "HakoP",
@@ -183819,7 +184679,8 @@
     "rating": 1.087,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 23.7
+    "kpm": 23.7,
+    "rankDelta": 0
    },
    {
     "name": "hikopiko_",
@@ -183845,7 +184706,8 @@
     "rating": 0.96,
     "tier": "Gold",
     "level": 5,
-    "kpm": 13.2
+    "kpm": 13.2,
+    "rankDelta": 0
    },
    {
     "name": "adrina.ii",
@@ -183871,7 +184733,8 @@
     "rating": 1.064,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 18.0
+    "kpm": 18.0,
+    "rankDelta": 0
    },
    {
     "name": "ItzMaigo",
@@ -183897,7 +184760,8 @@
     "rating": 0.905,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 9.2
+    "kpm": 9.2,
+    "rankDelta": 0
    },
    {
     "name": "KiokoCheiko",
@@ -183923,7 +184787,8 @@
     "rating": 0.976,
     "tier": "Gold",
     "level": 5,
-    "kpm": 11.7
+    "kpm": 11.7,
+    "rankDelta": 0
    },
    {
     "name": "lilraxxx",
@@ -183949,7 +184814,8 @@
     "rating": 0.958,
     "tier": "Gold",
     "level": 5,
-    "kpm": 14.2
+    "kpm": 14.2,
+    "rankDelta": 0
    },
    {
     "name": "zenn1sm",
@@ -183975,7 +184841,8 @@
     "rating": 0.927,
     "tier": "Silver",
     "level": 4,
-    "kpm": 12.8
+    "kpm": 12.8,
+    "rankDelta": 0
    },
    {
     "name": "estellyy.",
@@ -184001,7 +184868,8 @@
     "rating": 0.925,
     "tier": "Silver",
     "level": 4,
-    "kpm": 10.5
+    "kpm": 10.5,
+    "rankDelta": 0
    },
    {
     "name": "Yixl",
@@ -184027,7 +184895,8 @@
     "rating": 0.875,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 9.8
+    "kpm": 9.8,
+    "rankDelta": 0
    },
    {
     "name": "tanykeat",
@@ -184053,7 +184922,8 @@
     "rating": 0.931,
     "tier": "Silver",
     "level": 4,
-    "kpm": 12.4
+    "kpm": 12.4,
+    "rankDelta": 0
    },
    {
     "name": "LeilaMayadah",
@@ -184079,7 +184949,8 @@
     "rating": 0.951,
     "tier": "Gold",
     "level": 4,
-    "kpm": 12.3
+    "kpm": 12.3,
+    "rankDelta": 0
    },
    {
     "name": "ssseiso",
@@ -184105,7 +184976,8 @@
     "rating": 1.033,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 17.7
+    "kpm": 17.7,
+    "rankDelta": 0
    },
    {
     "name": "balililmao",
@@ -184131,7 +185003,8 @@
     "rating": 1.024,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 13.0
+    "kpm": 13.0,
+    "rankDelta": 0
    },
    {
     "name": "cshhp",
@@ -184157,7 +185030,8 @@
     "rating": 0.989,
     "tier": "Gold",
     "level": 5,
-    "kpm": 14.7
+    "kpm": 14.7,
+    "rankDelta": 0
    },
    {
     "name": "Hanabusa Lisa",
@@ -184183,7 +185057,8 @@
     "rating": 0.914,
     "tier": "Silver",
     "level": 4,
-    "kpm": 11.5
+    "kpm": 11.5,
+    "rankDelta": 0
    },
    {
     "name": "Loonatic",
@@ -184209,7 +185084,8 @@
     "rating": 0.909,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 11.0
+    "kpm": 11.0,
+    "rankDelta": 0
    },
    {
     "name": "Reffelexx",
@@ -184235,7 +185111,8 @@
     "rating": 0.974,
     "tier": "Gold",
     "level": 5,
-    "kpm": 11.3
+    "kpm": 11.3,
+    "rankDelta": 0
    },
    {
     "name": "Amayui Moka",
@@ -184261,7 +185138,8 @@
     "rating": 0.893,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 11.2
+    "kpm": 11.2,
+    "rankDelta": 0
    },
    {
     "name": "heavenweeps",
@@ -184287,7 +185165,8 @@
     "rating": 0.929,
     "tier": "Silver",
     "level": 4,
-    "kpm": 12.8
+    "kpm": 12.8,
+    "rankDelta": 0
    },
    {
     "name": "Kaminari Qpi",
@@ -184313,7 +185192,8 @@
     "rating": 0.98,
     "tier": "Gold",
     "level": 5,
-    "kpm": 14.7
+    "kpm": 14.7,
+    "rankDelta": 0
    },
    {
     "name": "crazywhoopies",
@@ -184339,7 +185219,8 @@
     "rating": 0.935,
     "tier": "Silver",
     "level": 4,
-    "kpm": 15.2
+    "kpm": 15.2,
+    "rankDelta": 0
    },
    {
     "name": "itswendy_",
@@ -184365,7 +185246,8 @@
     "rating": 0.899,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 11.5
+    "kpm": 11.5,
+    "rankDelta": 0
    },
    {
     "name": "tiniibee",
@@ -184391,7 +185273,8 @@
     "rating": 0.991,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 14.7
+    "kpm": 14.7,
+    "rankDelta": 0
    },
    {
     "name": "Kaga Sumire",
@@ -184417,7 +185300,8 @@
     "rating": 0.903,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 10.5
+    "kpm": 10.5,
+    "rankDelta": 0
    },
    {
     "name": "HeyImKaiWen",
@@ -184443,7 +185327,8 @@
     "rating": 1.004,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 15.0
+    "kpm": 15.0,
+    "rankDelta": 0
    },
    {
     "name": "d.chong",
@@ -184469,7 +185354,8 @@
     "rating": 0.935,
     "tier": "Silver",
     "level": 4,
-    "kpm": 10.3
+    "kpm": 10.3,
+    "rankDelta": 0
    },
    {
     "name": "boopydoopy",
@@ -184495,7 +185381,8 @@
     "rating": 0.989,
     "tier": "Gold",
     "level": 5,
-    "kpm": 20.0
+    "kpm": 20.0,
+    "rankDelta": 0
    },
    {
     "name": "kenzieyii",
@@ -184521,7 +185408,8 @@
     "rating": 0.955,
     "tier": "Gold",
     "level": 4,
-    "kpm": 16.0
+    "kpm": 16.0,
+    "rankDelta": 0
    },
    {
     "name": "vixi",
@@ -184547,7 +185435,8 @@
     "rating": 1.011,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 17.7
+    "kpm": 17.7,
+    "rankDelta": 0
    },
    {
     "name": "soapdax",
@@ -184573,7 +185462,8 @@
     "rating": 0.985,
     "tier": "Gold",
     "level": 5,
-    "kpm": 15.3
+    "kpm": 15.3,
+    "rankDelta": 0
    },
    {
     "name": "tapiyokaaa",
@@ -184599,7 +185489,8 @@
     "rating": 0.949,
     "tier": "Silver",
     "level": 4,
-    "kpm": 12.7
+    "kpm": 12.7,
+    "rankDelta": 0
    },
    {
     "name": "Tosaki Mimi",
@@ -184625,7 +185516,8 @@
     "rating": 0.979,
     "tier": "Gold",
     "level": 5,
-    "kpm": 15.3
+    "kpm": 15.3,
+    "rankDelta": 0
    },
    {
     "name": "Sakami",
@@ -184651,7 +185543,8 @@
     "rating": 0.929,
     "tier": "Silver",
     "level": 4,
-    "kpm": 12.0
+    "kpm": 12.0,
+    "rankDelta": 0
    },
    {
     "name": "Ryujin",
@@ -184677,7 +185570,8 @@
     "rating": 0.962,
     "tier": "Gold",
     "level": 5,
-    "kpm": 11.3
+    "kpm": 11.3,
+    "rankDelta": 0
    },
    {
     "name": "Seireiix",
@@ -184703,7 +185597,8 @@
     "rating": 0.876,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 9.0
+    "kpm": 9.0,
+    "rankDelta": 0
    },
    {
     "name": "Wellson111",
@@ -184729,7 +185624,8 @@
     "rating": 0.916,
     "tier": "Silver",
     "level": 4,
-    "kpm": 11.8
+    "kpm": 11.8,
+    "rankDelta": 0
    },
    {
     "name": "Uzuhii",
@@ -184755,7 +185651,8 @@
     "rating": 1.043,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 13.5
+    "kpm": 13.5,
+    "rankDelta": 0
    },
    {
     "name": "xJavyz",
@@ -184781,7 +185678,8 @@
     "rating": 0.933,
     "tier": "Silver",
     "level": 4,
-    "kpm": 13.0
+    "kpm": 13.0,
+    "rankDelta": 0
    },
    {
     "name": "yukihimeowo",
@@ -184807,7 +185705,8 @@
     "rating": 1.037,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 17.0
+    "kpm": 17.0,
+    "rankDelta": 0
    },
    {
     "name": "Kojadayo",
@@ -184833,7 +185732,8 @@
     "rating": 0.984,
     "tier": "Gold",
     "level": 5,
-    "kpm": 15.0
+    "kpm": 15.0,
+    "rankDelta": 0
    },
    {
     "name": "AngelXAim",
@@ -184859,7 +185759,8 @@
     "rating": 0.986,
     "tier": "Gold",
     "level": 5,
-    "kpm": 12.7
+    "kpm": 12.7,
+    "rankDelta": 0
    },
    {
     "name": "Xyrren",
@@ -184885,7 +185786,8 @@
     "rating": 0.814,
     "tier": "Iron",
     "level": 1,
-    "kpm": 9.6
+    "kpm": 9.6,
+    "rankDelta": 0
    },
    {
     "name": "Narin Mikure",
@@ -184911,7 +185813,8 @@
     "rating": 0.964,
     "tier": "Gold",
     "level": 5,
-    "kpm": 16.0
+    "kpm": 16.0,
+    "rankDelta": 0
    },
    {
     "name": "nattyuwus",
@@ -184937,7 +185840,8 @@
     "rating": 0.942,
     "tier": "Silver",
     "level": 4,
-    "kpm": 12.8
+    "kpm": 12.8,
+    "rankDelta": 0
    },
    {
     "name": "des506",
@@ -184963,7 +185867,8 @@
     "rating": 0.992,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 15.3
+    "kpm": 15.3,
+    "rankDelta": 0
    },
    {
     "name": "Yakumo Beni",
@@ -184989,7 +185894,8 @@
     "rating": 1.036,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 16.0
+    "kpm": 16.0,
+    "rankDelta": 0
    },
    {
     "name": "KurmitSuicidal",
@@ -185015,7 +185921,8 @@
     "rating": 0.995,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 14.0
+    "kpm": 14.0,
+    "rankDelta": 0
    },
    {
     "name": "SachiMizora",
@@ -185041,7 +185948,8 @@
     "rating": 0.89,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 11.2
+    "kpm": 11.2,
+    "rankDelta": 0
    },
    {
     "name": "InfiniteBreaker",
@@ -185067,7 +185975,8 @@
     "rating": 1.001,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 13.5
+    "kpm": 13.5,
+    "rankDelta": 0
    },
    {
     "name": "L2Strike",
@@ -185093,7 +186002,8 @@
     "rating": 1.022,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 19.5
+    "kpm": 19.5,
+    "rankDelta": 0
    },
    {
     "name": "LITA",
@@ -185119,7 +186029,8 @@
     "rating": 0.905,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 10.8
+    "kpm": 10.8,
+    "rankDelta": 0
    },
    {
     "name": "Xevaria",
@@ -185145,7 +186056,8 @@
     "rating": 0.963,
     "tier": "Gold",
     "level": 5,
-    "kpm": 16.3
+    "kpm": 16.3,
+    "rankDelta": 0
    },
    {
     "name": "Icington the third",
@@ -185172,6 +186084,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 13.5,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "The Weekend Bois",
@@ -185244,7 +186157,8 @@
     "rating": 0.978,
     "tier": "Gold",
     "level": 5,
-    "kpm": 12.0
+    "kpm": 12.0,
+    "rankDelta": 0
    },
    {
     "name": "ItzMaigay",
@@ -185271,6 +186185,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.0,
+    "rankDelta": 0,
     "teamHistory": [
      {
       "team": "The Weekend Bois",
@@ -185343,7 +186258,8 @@
     "rating": 0.912,
     "tier": "Silver",
     "level": 4,
-    "kpm": 9.7
+    "kpm": 9.7,
+    "rankDelta": 0
    },
    {
     "name": "pashionfruit18",
@@ -185369,7 +186285,8 @@
     "rating": 0.967,
     "tier": "Gold",
     "level": 5,
-    "kpm": 16.3
+    "kpm": 16.3,
+    "rankDelta": 0
    },
    {
     "name": "Sendo Yuuhi",
@@ -185395,7 +186312,8 @@
     "rating": 0.902,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 9.3
+    "kpm": 9.3,
+    "rankDelta": 0
    },
    {
     "name": "Jira Jisaki",
@@ -185421,7 +186339,8 @@
     "rating": 0.974,
     "tier": "Gold",
     "level": 5,
-    "kpm": 11.5
+    "kpm": 11.5,
+    "rankDelta": 0
    },
    {
     "name": "jaelyo",
@@ -185447,7 +186366,8 @@
     "rating": 0.91,
     "tier": "Silver",
     "level": 3,
-    "kpm": 12.0
+    "kpm": 12.0,
+    "rankDelta": 0
    },
    {
     "name": "kyomikoo",
@@ -185473,7 +186393,8 @@
     "rating": 1.011,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 17.5
+    "kpm": 17.5,
+    "rankDelta": 0
    },
    {
     "name": "PSYSTRA",
@@ -185499,7 +186420,8 @@
     "rating": 0.924,
     "tier": "Silver",
     "level": 4,
-    "kpm": 13.0
+    "kpm": 13.0,
+    "rankDelta": 0
    },
    {
     "name": "koen",
@@ -185525,7 +186447,8 @@
     "rating": 0.898,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 8.0
+    "kpm": 8.0,
+    "rankDelta": 0
    },
    {
     "name": "Zoweya",
@@ -185551,7 +186474,8 @@
     "rating": 0.993,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 15.5
+    "kpm": 15.5,
+    "rankDelta": 0
    },
    {
     "name": "jenapoppins",
@@ -185577,7 +186501,8 @@
     "rating": 0.91,
     "tier": "Silver",
     "level": 3,
-    "kpm": 10.7
+    "kpm": 10.7,
+    "rankDelta": 0
    },
    {
     "name": "voidnw",
@@ -185603,7 +186528,8 @@
     "rating": 1.057,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 20.0
+    "kpm": 20.0,
+    "rankDelta": 0
    },
    {
     "name": "Decrease",
@@ -185629,7 +186555,8 @@
     "rating": 0.947,
     "tier": "Silver",
     "level": 4,
-    "kpm": 13.7
+    "kpm": 13.7,
+    "rankDelta": 0
    },
    {
     "name": "Shiranami Ramune",
@@ -185655,7 +186582,8 @@
     "rating": 0.958,
     "tier": "Gold",
     "level": 5,
-    "kpm": 12.5
+    "kpm": 12.5,
+    "rankDelta": 0
    },
    {
     "name": "Cursiffe",
@@ -185681,7 +186609,8 @@
     "rating": 1.062,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 25.0
+    "kpm": 25.0,
+    "rankDelta": 0
    },
    {
     "name": "afayctionate",
@@ -185707,7 +186636,8 @@
     "rating": 0.943,
     "tier": "Silver",
     "level": 4,
-    "kpm": 9.0
+    "kpm": 9.0,
+    "rankDelta": 0
    },
    {
     "name": "emiiiyu",
@@ -185733,7 +186663,8 @@
     "rating": 0.911,
     "tier": "Silver",
     "level": 3,
-    "kpm": 10.7
+    "kpm": 10.7,
+    "rankDelta": 0
    },
    {
     "name": "SoapiiSereia",
@@ -185759,7 +186690,8 @@
     "rating": 1.01,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 14.0
+    "kpm": 14.0,
+    "rankDelta": 0
    },
    {
     "name": "_froggiee",
@@ -185785,7 +186717,8 @@
     "rating": 1.003,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 11.0
+    "kpm": 11.0,
+    "rankDelta": 0
    },
    {
     "name": "Shuvimo",
@@ -185811,7 +186744,8 @@
     "rating": 1.029,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 15.0
+    "kpm": 15.0,
+    "rankDelta": 0
    },
    {
     "name": "Jeribean",
@@ -185837,7 +186771,8 @@
     "rating": 0.931,
     "tier": "Silver",
     "level": 4,
-    "kpm": 10.0
+    "kpm": 10.0,
+    "rankDelta": 0
    },
    {
     "name": "CodedEcho",
@@ -185863,7 +186798,8 @@
     "rating": 0.996,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 15.0
+    "kpm": 15.0,
+    "rankDelta": 0
    },
    {
     "name": "bloodbane",
@@ -185889,7 +186825,8 @@
     "rating": 0.953,
     "tier": "Gold",
     "level": 4,
-    "kpm": 12.5
+    "kpm": 12.5,
+    "rankDelta": 0
    },
    {
     "name": "miruaamaochi",
@@ -185915,7 +186852,8 @@
     "rating": 1.001,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 16.0
+    "kpm": 16.0,
+    "rankDelta": 0
    },
    {
     "name": "cwstalVT",
@@ -185941,7 +186879,8 @@
     "rating": 1.06,
     "tier": "Diamond",
     "level": 7,
-    "kpm": 27.0
+    "kpm": 27.0,
+    "rankDelta": 0
    },
    {
     "name": "AuraSinVT",
@@ -185967,7 +186906,8 @@
     "rating": 1.018,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 22.0
+    "kpm": 22.0,
+    "rankDelta": 0
    },
    {
     "name": "88EXP",
@@ -185993,7 +186933,8 @@
     "rating": 0.979,
     "tier": "Gold",
     "level": 5,
-    "kpm": 10.0
+    "kpm": 10.0,
+    "rankDelta": 0
    },
    {
     "name": "moricorovt",
@@ -186019,7 +186960,8 @@
     "rating": 0.987,
     "tier": "Gold",
     "level": 5,
-    "kpm": 15.0
+    "kpm": 15.0,
+    "rankDelta": 0
    },
    {
     "name": "MKAkili",
@@ -186045,7 +186987,8 @@
     "rating": 1.013,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 17.0
+    "kpm": 17.0,
+    "rankDelta": 0
    },
    {
     "name": "Aizawa Ema",
@@ -186071,7 +187014,8 @@
     "rating": 1.007,
     "tier": "Platinum",
     "level": 6,
-    "kpm": 21.0
+    "kpm": 21.0,
+    "rankDelta": 0
    },
    {
     "name": "Arya Kuroha",
@@ -186097,7 +187041,8 @@
     "rating": 0.993,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 22.0
+    "kpm": 22.0,
+    "rankDelta": 0
    },
    {
     "name": "_kellyxleox_",
@@ -186123,7 +187068,8 @@
     "rating": 0.965,
     "tier": "Gold",
     "level": 5,
-    "kpm": 8.0
+    "kpm": 8.0,
+    "rankDelta": 0
    },
    {
     "name": "Karoni",
@@ -186149,7 +187095,8 @@
     "rating": 0.963,
     "tier": "Gold",
     "level": 5,
-    "kpm": 11.0
+    "kpm": 11.0,
+    "rankDelta": 0
    },
    {
     "name": "pastellows",
@@ -186175,7 +187122,8 @@
     "rating": 0.962,
     "tier": "Gold",
     "level": 5,
-    "kpm": 13.0
+    "kpm": 13.0,
+    "rankDelta": 0
    },
    {
     "name": "luminichi",
@@ -186201,7 +187149,8 @@
     "rating": 0.94,
     "tier": "Silver",
     "level": 4,
-    "kpm": 8.0
+    "kpm": 8.0,
+    "rankDelta": 0
    },
    {
     "name": "TokieShepherdVT",
@@ -186227,7 +187176,8 @@
     "rating": 0.928,
     "tier": "Silver",
     "level": 4,
-    "kpm": 8.0
+    "kpm": 8.0,
+    "rankDelta": 0
    }
   ]
  },

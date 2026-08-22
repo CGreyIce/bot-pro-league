@@ -215,6 +215,47 @@ def compute_ratings(players):
         p["kpm"] = round(kpm, 1)
     return {"kdr": a_kdr, "kpm": a_kpm, "mvp": a_mvp, "apm": a_apm, "wr": a_wr}
 
+def _rating_value(kills, deaths, assists, mvp, wins, losses, avg):
+    """The same rating formula as compute_ratings, for arbitrary totals — used to
+    recompute a player's rating for a 'before the last match' snapshot."""
+    maps = wins + losses
+    if maps <= 0 or deaths <= 0:
+        return None
+    n = maps; K = 8.0
+    def shrink(ratio):
+        return (n * ratio + K * 1.0) / (n + K)
+    r_kdr = shrink((kills / deaths) / avg["kdr"] if avg["kdr"] else 1)
+    r_kpm = shrink((kills / n) / avg["kpm"] if avg["kpm"] else 1)
+    r_mvp = shrink((mvp / n) / avg["mvp"] if avg["mvp"] else 1)
+    r_apm = shrink((assists / n) / avg["apm"] if avg["apm"] else 1)
+    r_wr  = shrink((wins / maps) / avg["wr"] if avg["wr"] else 1)
+    return (WEIGHTS["kdr"] * r_kdr + WEIGHTS["kpm"] * r_kpm +
+            WEIGHTS["mvppm"] * r_mvp + WEIGHTS["apm"] * r_apm + WEIGHTS["wr"] * r_wr)
+
+def compute_player_deltas(players, avg, contrib):
+    """Set p['rankDelta'] = places moved in the pool's rating order vs. before the most
+    recent recorded match (whose per-player stat contributions are in `contrib`)."""
+    rated = [p for p in players if p.get("rating") is not None]
+    if not rated:
+        return
+    cur_order = sorted(rated, key=lambda p: -p["rating"])
+    cur_rank = {p["slug"]: i + 1 for i, p in enumerate(cur_order)}
+    prev_val = {}
+    for p in rated:
+        c = contrib.get(p["slug"])
+        if not c:
+            prev_val[p["slug"]] = p["rating"]        # not in the last match -> unchanged
+        else:
+            r = _rating_value(p["kills"] - c["k"], p["deaths"] - c["d"], p["assists"] - c["a"],
+                              p["mvp"] - c["mvp"], p["wins"] - c["w"], p["losses"] - c["l"], avg)
+            prev_val[p["slug"]] = r if r is not None else p["rating"]
+    prev_order = sorted(rated, key=lambda p: (-prev_val[p["slug"]], cur_rank[p["slug"]]))
+    prev_rank = {p["slug"]: i + 1 for i, p in enumerate(prev_order)}
+    # only the players who actually played the most recent match show a movement arrow
+    for p in players:
+        p["rankDelta"] = (prev_rank[p["slug"]] - cur_rank[p["slug"]]) \
+            if (p.get("rating") is not None and p["slug"] in contrib) else 0
+
 # ---------- team ranking points (computed from tournament results) ----------
 # BPL Rank Points are computed live from the events on the site, so recording/editing
 # a result updates the ladder automatically. Each event awards placement points scaled
@@ -436,6 +477,7 @@ def main():
                     continue
                 tgt["wins"] += 1 if won else 0
                 tgt["losses"] += 0 if won else 1
+    sb_matches = []   # (recorded_ts, match) for every match that has a scoreboard
     for tr in tournaments:
         smap = match_stats.get(tr["slug"], {})
         if not smap:
@@ -446,11 +488,13 @@ def main():
                     ref = f"{st['id']}-{m.get('i')}"
                     if ref in smap:
                         m["stats"] = resolve_sb(smap[ref]); merge_scoreboard(m)
+                        sb_matches.append((m.get("ts") or 0, m))
         for rd in tr.get("bracket", []):
             for m in rd["matches"]:
                 ref = str(m.get("i"))
                 if m.get("i") is not None and ref in smap:
                     m["stats"] = resolve_sb(smap[ref]); merge_scoreboard(m)
+                    sb_matches.append((m.get("ts") or 0, m))
 
     # ---- team map record from site-run (manual) events, on top of the sheet base ----
     # Scraped/historical events are already baked into the sheet, so only add the events
@@ -487,6 +531,33 @@ def main():
 
     # ---- ratings (computed AFTER scoreboards are merged into totals) ----
     pro_avg = compute_ratings(pro); am_avg = compute_ratings(amateur); solo_avg = compute_ratings(solo)
+
+    # ---- player rank movement vs. before the most recent recorded match ----
+    def scoreboard_contrib(m):
+        """Per-player stat totals this match's scoreboard added: {slug:{k,a,d,mvp,w,l}}."""
+        out = defaultdict(lambda: {"k": 0, "a": 0, "d": 0, "mvp": 0, "w": 0, "l": 0})
+        for mp in m["stats"]["maps"]:
+            sa, sb = mp.get("scoreA"), mp.get("scoreB")
+            for pl in mp["players"]:
+                s = pl.get("slug")
+                if not s:
+                    continue
+                o = out[s]
+                o["k"] += int(pl.get("k", 0)); o["d"] += int(pl.get("d", 0))
+                o["a"] += int(pl.get("a", 0)); o["mvp"] += int(pl.get("mvp", 0))
+                on_a = norm_key(pl.get("team", "")) == norm_key(m.get("a", ""))
+                if sa is not None and sb is not None and sa != sb:
+                    won = (sa > sb) if on_a else (sb > sa)
+                elif m.get("w") in (1, 2):
+                    won = (m["w"] == 1) if on_a else (m["w"] == 2)
+                else:
+                    continue
+                o["w"] += 1 if won else 0; o["l"] += 0 if won else 1
+        return out
+    latest_contrib = scoreboard_contrib(max(sb_matches, key=lambda x: x[0])[1]) if sb_matches else {}
+    compute_player_deltas(pro, pro_avg, latest_contrib)
+    compute_player_deltas(amateur, am_avg, latest_contrib)
+    compute_player_deltas(solo, solo_avg, latest_contrib)
 
     # attach pro players to teams (sorted by rating)
     roster = defaultdict(list)

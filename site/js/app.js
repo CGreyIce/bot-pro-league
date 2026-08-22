@@ -23,10 +23,10 @@ function ratingBadge(r){ if(r==null) return '<span class="muted">—</span>'; re
 function teamLogo(t){ return t && t.logo ? `<img src="${esc(t.logo)}" alt="">` : ''; }
 function teamCell(name){ const t=teamByName(name); if(!t) return `<span class="team-inline"><span class="muted">${esc(name||"—")}</span></span>`;
   return `<a class="team-inline" href="#/team/${t.slug}">${teamLogo(t)}<span>${esc(t.name)}</span></a>`; }
-function rankDeltaBadge(t){
+function rankDeltaBadge(t, since){
   const d = t.rankDelta||0; if(!d) return '';
   const up = d>0, n = Math.abs(d);
-  return ` <span class="rank-delta ${up?'up':'down'}" title="${up?'Up':'Down'} ${n} place${n>1?'s':''} since the last event">${up?'▲':'▼'}${n}</span>`;
+  return ` <span class="rank-delta ${up?'up':'down'}" title="${up?'Up':'Down'} ${n} place${n>1?'s':''} since ${since||'the last event'}">${up?'▲':'▼'}${n}</span>`;
 }
 function flag(iso){
   if(!iso) return '';
@@ -334,7 +334,7 @@ function renderPlayers(){
   const players = DATA.players[pool];
   const cols = [
     ["#", (p,i)=>i+1, "rankcol"],
-    ["Player", p=>playerLink(p), "name-cell", p=>p.name],
+    ["Player", p=>`<span class="tm-rank">${playerLink(p)}${playersSort.key==="Rating"?rankDeltaBadge(p,"their last match"):''}</span>`, "name-cell", p=>p.name],
     ["Team", p=>teamCell(p.team), "", p=>p.team],
     ["Role", p=>p.role?`<span class="pill role-pill">${esc(p.role)}</span>`:'—', "", p=>p.role],
     ["Rating", p=>ratingBadge(p.rating), "mono", p=>p.rating==null?-1:p.rating],
@@ -449,9 +449,9 @@ function ratingRankInPool(p){
 
 function renderRankings(){
   const pro = DATA.players.pro.filter(p=>p.rating!=null);
-  const board = (title, arr, fmt) => {
+  const board = (title, arr, fmt, delta=false) => {
     const rows = arr.map((p,i)=>`<tr><td class="rankcol">${i+1}</td>
-      <td class="name-cell">${playerLink(p)}</td><td>${teamCell(p.team)}</td>
+      <td class="name-cell"><span class="tm-rank">${playerLink(p)}${delta?rankDeltaBadge(p,"their last match"):''}</span></td><td>${teamCell(p.team)}</td>
       <td class="mono" style="color:var(--accent);font-weight:700">${fmt(p)}</td></tr>`).join("");
     return `<div class="panel" style="padding:0;overflow:hidden">
       <div class="ib-title" style="padding:10px 14px">${title}</div>
@@ -468,7 +468,7 @@ function renderRankings(){
         <td class="mono">${t.major_wins||'–'}</td><td class="mono">${t.s_tier_wins||'–'}</td><td class="mono">${t.events_played}</td></tr>`).join("")}</tbody></table></div>
     <h2 class="section-title" style="margin-top:26px"><span class="accent-bar"></span>Player Leaderboards <span class="muted" style="font-size:11px">(pro)</span></h2>
     <div class="grid" style="grid-template-columns:repeat(2,1fr)">
-      ${board("BPL Rating", top("rating"), p=>p.rating.toFixed(2))}
+      ${board("BPL Rating", top("rating"), p=>p.rating.toFixed(2), true)}
       ${board("Total Kills", top("kills"), p=>p.kills)}
       ${board("K/D Ratio", top("kdr"), p=>p.kdr.toFixed(2))}
       ${board("MVPs", top("mvp"), p=>p.mvp)}
