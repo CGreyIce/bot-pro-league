@@ -46580,7 +46580,7 @@
      "date": "2026-08-21",
      "tier": "s",
      "tierLabel": "S-Tier",
-     "placement": 3,
+     "placement": 4,
      "isChampion": false
     },
     {
@@ -65483,6 +65483,15 @@
    "originCountry": "Malaysia",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 3,
+     "isChampion": false
+    },
+    {
      "slug": "BPLLStage25",
      "name": "BPL Legends Stage 2025",
      "date": "2025-10-10",
@@ -68965,15 +68974,6 @@
    "originIso": "sg",
    "originCountry": "Singapore",
    "events": [
-    {
-     "slug": "audax-esse-bpl-invitational-2026",
-     "name": "Audax Esse BPL Invitational 2026",
-     "date": "2026-08-21",
-     "tier": "s",
-     "tierLabel": "S-Tier",
-     "placement": 4,
-     "isChampion": false
-    },
     {
      "slug": "BotProLeague14",
      "name": "Bot Pro Minor League 14",
@@ -187267,15 +187267,15 @@
     },
     {
      "rank": 3,
-     "name": "Setting Sun",
-     "teamSlug": "setting-sun",
+     "name": "Raven Song",
+     "teamSlug": "raven-song",
      "w": 1,
      "l": 0
     },
     {
      "rank": 4,
-     "name": "xPlosiv",
-     "teamSlug": "xplosiv",
+     "name": "Setting Sun",
+     "teamSlug": "setting-sun",
      "w": 1,
      "l": 0
     },
@@ -191891,12 +191891,12 @@
       {
        "i": 2,
        "a": "Bloom E-Sports",
-       "b": "Aeternum",
+       "b": "Sacred Raven",
        "sa": null,
        "sb": null,
        "w": 0,
        "aTeam": "bloom-e-sports",
-       "bTeam": "aeternum",
+       "bTeam": "sacred-raven",
        "bo": 3,
        "ts": null
       },
@@ -191914,18 +191914,42 @@
       },
       {
        "i": 4,
-       "a": "Neverland",
+       "a": "xPlosiv",
        "b": "PepegaX",
        "sa": null,
        "sb": null,
        "w": 0,
-       "aTeam": "neverland",
+       "aTeam": "xplosiv",
        "bTeam": "pepegax",
        "bo": 3,
        "ts": null
       },
       {
        "i": 5,
+       "a": "Raven Song",
+       "b": "(bye)",
+       "sa": null,
+       "sb": null,
+       "w": 1,
+       "aTeam": "raven-song",
+       "bTeam": null,
+       "bo": 3,
+       "ts": null
+      },
+      {
+       "i": 6,
+       "a": "division20",
+       "b": "Aeternum",
+       "sa": null,
+       "sb": null,
+       "w": 0,
+       "aTeam": "division20",
+       "bTeam": "aeternum",
+       "bo": 3,
+       "ts": null
+      },
+      {
+       "i": 7,
        "a": "Flood Flashers",
        "b": "(bye)",
        "sa": null,
@@ -191937,38 +191961,14 @@
        "ts": null
       },
       {
-       "i": 6,
-       "a": "division20",
+       "i": 8,
+       "a": "Neverland",
        "b": "Aetherline",
        "sa": null,
        "sb": null,
        "w": 0,
-       "aTeam": "division20",
+       "aTeam": "neverland",
        "bTeam": "aetherline",
-       "bo": 3,
-       "ts": null
-      },
-      {
-       "i": 7,
-       "a": "xPlosiv",
-       "b": "(bye)",
-       "sa": null,
-       "sb": null,
-       "w": 1,
-       "aTeam": "xplosiv",
-       "bTeam": null,
-       "bo": 3,
-       "ts": null
-      },
-      {
-       "i": 8,
-       "a": "Raven Song",
-       "b": "DiamondOnes",
-       "sa": null,
-       "sb": null,
-       "w": 0,
-       "aTeam": "raven-song",
-       "bTeam": "diamondones",
        "bo": 3,
        "ts": null
       }
@@ -192004,24 +192004,24 @@
       },
       {
        "i": 11,
-       "a": "Flood Flashers",
+       "a": "Raven Song",
        "b": "",
        "sa": null,
        "sb": null,
        "w": 0,
-       "aTeam": "flood-flashers",
+       "aTeam": "raven-song",
        "bTeam": null,
        "bo": 3,
        "ts": null
       },
       {
        "i": 12,
-       "a": "xPlosiv",
+       "a": "Flood Flashers",
        "b": "",
        "sa": null,
        "sb": null,
        "w": 0,
-       "aTeam": "xplosiv",
+       "aTeam": "flood-flashers",
        "bTeam": null,
        "bo": 3,
        "ts": null
@@ -197041,12 +197041,12 @@
         {
          "i": 2,
          "a": "Bloom E-Sports",
-         "b": "Aeternum",
+         "b": "Sacred Raven",
          "sa": null,
          "sb": null,
          "w": 0,
          "aTeam": "bloom-e-sports",
-         "bTeam": "aeternum",
+         "bTeam": "sacred-raven",
          "bo": 3,
          "ts": null
         },
@@ -197064,18 +197064,42 @@
         },
         {
          "i": 4,
-         "a": "Neverland",
+         "a": "xPlosiv",
          "b": "PepegaX",
          "sa": null,
          "sb": null,
          "w": 0,
-         "aTeam": "neverland",
+         "aTeam": "xplosiv",
          "bTeam": "pepegax",
          "bo": 3,
          "ts": null
         },
         {
          "i": 5,
+         "a": "Raven Song",
+         "b": "(bye)",
+         "sa": null,
+         "sb": null,
+         "w": 1,
+         "aTeam": "raven-song",
+         "bTeam": null,
+         "bo": 3,
+         "ts": null
+        },
+        {
+         "i": 6,
+         "a": "division20",
+         "b": "Aeternum",
+         "sa": null,
+         "sb": null,
+         "w": 0,
+         "aTeam": "division20",
+         "bTeam": "aeternum",
+         "bo": 3,
+         "ts": null
+        },
+        {
+         "i": 7,
          "a": "Flood Flashers",
          "b": "(bye)",
          "sa": null,
@@ -197087,38 +197111,14 @@
          "ts": null
         },
         {
-         "i": 6,
-         "a": "division20",
+         "i": 8,
+         "a": "Neverland",
          "b": "Aetherline",
          "sa": null,
          "sb": null,
          "w": 0,
-         "aTeam": "division20",
+         "aTeam": "neverland",
          "bTeam": "aetherline",
-         "bo": 3,
-         "ts": null
-        },
-        {
-         "i": 7,
-         "a": "xPlosiv",
-         "b": "(bye)",
-         "sa": null,
-         "sb": null,
-         "w": 1,
-         "aTeam": "xplosiv",
-         "bTeam": null,
-         "bo": 3,
-         "ts": null
-        },
-        {
-         "i": 8,
-         "a": "Raven Song",
-         "b": "DiamondOnes",
-         "sa": null,
-         "sb": null,
-         "w": 0,
-         "aTeam": "raven-song",
-         "bTeam": "diamondones",
          "bo": 3,
          "ts": null
         }
@@ -197154,24 +197154,24 @@
         },
         {
          "i": 11,
-         "a": "Flood Flashers",
+         "a": "Raven Song",
          "b": "",
          "sa": null,
          "sb": null,
          "w": 0,
-         "aTeam": "flood-flashers",
+         "aTeam": "raven-song",
          "bTeam": null,
          "bo": 3,
          "ts": null
         },
         {
          "i": 12,
-         "a": "xPlosiv",
+         "a": "Flood Flashers",
          "b": "",
          "sa": null,
          "sb": null,
          "w": 0,
-         "aTeam": "xplosiv",
+         "aTeam": "flood-flashers",
          "bTeam": null,
          "bo": 3,
          "ts": null
@@ -197244,15 +197244,15 @@
       },
       {
        "rank": 3,
-       "name": "Setting Sun",
-       "teamSlug": "setting-sun",
+       "name": "Raven Song",
+       "teamSlug": "raven-song",
        "w": 1,
        "l": 0
       },
       {
        "rank": 4,
-       "name": "xPlosiv",
-       "teamSlug": "xplosiv",
+       "name": "Setting Sun",
+       "teamSlug": "setting-sun",
        "w": 1,
        "l": 0
       },
