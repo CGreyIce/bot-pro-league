@@ -405,7 +405,9 @@ def main():
         maps = rec["maps"] if "maps" in rec else [{"map": rec.get("map", ""), "players": rec.get("players", [])}]
         return {"maps": [{"map": mp.get("map", ""), "scoreA": mp.get("scoreA"), "scoreB": mp.get("scoreB"),
                           "players": resolve_sb_players(mp.get("players", []))} for mp in maps]}
+    slug_to_team = {t["slug"]: t for t in teams}
     def merge_scoreboard(m):
+        ta = slug_to_team.get(m.get("aTeam")); tb = slug_to_team.get(m.get("bTeam"))
         for mp in m["stats"]["maps"]:
             sa, sb = mp.get("scoreA"), mp.get("scoreB")
             for pl in mp["players"]:
@@ -423,6 +425,14 @@ def main():
                     continue
                 tgt["wins"] += 1 if won else 0
                 tgt["losses"] += 0 if won else 1
+            # team map record from this recorded map (adds on top of the sheet base)
+            if ta and tb and sa is not None and sb is not None:
+                if sa > sb:
+                    ta["map_wins"] += 1; tb["map_losses"] += 1
+                elif sb > sa:
+                    tb["map_wins"] += 1; ta["map_losses"] += 1
+                else:
+                    ta["map_ties"] += 1; tb["map_ties"] += 1
     for tr in tournaments:
         smap = match_stats.get(tr["slug"], {})
         if not smap:
@@ -438,6 +448,13 @@ def main():
                 ref = str(m.get("i"))
                 if m.get("i") is not None and ref in smap:
                     m["stats"] = resolve_sb(smap[ref]); merge_scoreboard(m)
+
+    # team totals reflect the (sheet base + recorded scoreboards) map record
+    for t in teams:
+        t["total_maps"] = t["map_wins"] + t["map_losses"] + t["map_ties"]
+        denom = t["map_wins"] + t["map_losses"]
+        if denom:
+            t["wlr"] = round(t["map_wins"] / denom, 3)
 
     # ---- ratings (computed AFTER scoreboards are merged into totals) ----
     pro_avg = compute_ratings(pro); am_avg = compute_ratings(amateur); solo_avg = compute_ratings(solo)

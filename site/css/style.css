@@ -371,6 +371,7 @@ table.data td.name-cell{font-weight:600}
 .sb-head{display:flex;align-items:center;gap:8px;font-family:'Rajdhani';font-size:16px;margin-bottom:6px}
 .sb-head img{height:22px;width:22px;object-fit:contain}
 .sb-table th,.sb-table td{padding:7px 8px}
+.sb-table .sb-rtg{font-weight:700}
 .sb-table th{text-align:right}.sb-table th:first-child{text-align:left}
 .sb-table td{text-align:right}.sb-table td:first-child{text-align:left}
 .sb-table tbody tr:first-child td{color:var(--text)}

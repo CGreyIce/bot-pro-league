@@ -1071,11 +1071,26 @@ function aggregateMaps(maps){
   }));
   return Object.values(by);
 }
+function matchRating(k,a,d,score,R){
+  // HLTV-style per-match rating from K/A/D/score over the map's rounds; ~1.00 = average.
+  if(!R) return null;
+  const kpr=k/R, surv=(R-d)/R, apr=a/R, spr=score/R;
+  return 0.44*(kpr/0.707) + 0.25*(surv/0.293) + 0.24*(spr/1.793) + 0.07*(apr/0.108);
+}
+function rtgColor(r){
+  if(r==null) return 'var(--muted)';
+  if(r>=1.10) return 'var(--good)';
+  if(r<0.90)  return 'var(--accent2, #ff6b6b)';
+  return 'var(--text)';
+}
 function renderScoreboard(){
   const match = _sbMatch; if(!match) return;
   const c = document.getElementById("sb-container"); if(!c) return;
   const maps = match.stats.maps;
   const view = _sbTab === 'all' ? aggregateMaps(maps) : maps[_sbTab].players;
+  const rounds = _sbTab === 'all'
+    ? maps.reduce((s,mp)=>s+((mp.scoreA||0)+(mp.scoreB||0)),0)
+    : ((maps[_sbTab].scoreA||0)+(maps[_sbTab].scoreB||0));
   const block = (teamName, teamSlug)=>{
     const players = view.filter(p=>normKey(p.team)===normKey(teamName)).sort((a,b)=>b.score-a.score);
     if(!players.length) return '';
@@ -1084,12 +1099,14 @@ function renderScoreboard(){
       <div class="sb-head">${t&&t.logo?`<img src="${esc(t.logo)}" alt="">`:''}<strong>${esc(teamName)}</strong></div>
       <div class="tablewrap"><table class="data sb-table">
         <thead><tr><th class="no-sort">Player</th><th class="no-sort">K</th><th class="no-sort">A</th><th class="no-sort">D</th>
-          <th class="no-sort">+/–</th><th class="no-sort">MVP</th><th class="no-sort">Score</th></tr></thead>
-        <tbody>${players.map(p=>{const pm=p.k-p.d; return `<tr>
+          <th class="no-sort">+/–</th><th class="no-sort">MVP</th><th class="no-sort">Score</th>
+          <th class="no-sort" title="BPL match rating (HLTV-style, ~1.00 = average)">RTG</th></tr></thead>
+        <tbody>${players.map(p=>{const pm=p.k-p.d; const rtg=matchRating(p.k,p.a,p.d,p.score,rounds); return `<tr>
           <td class="name-cell">${flag(p.iso)}${p.slug?`<a href="#/player/${p.slug}">${esc(p.name)}</a>`:esc(p.name)}</td>
           <td class="mono">${p.k}</td><td class="mono">${p.a}</td><td class="mono">${p.d}</td>
           <td class="mono" style="color:${pm>0?'var(--good)':pm<0?'var(--accent2)':'var(--muted)'}">${pm>0?'+':''}${pm}</td>
-          <td class="mono">${p.mvp?'★'+p.mvp:'–'}</td><td class="mono" style="font-weight:700">${p.score}</td></tr>`;}).join("")}</tbody>
+          <td class="mono">${p.mvp?'★'+p.mvp:'–'}</td><td class="mono">${p.score}</td>
+          <td class="mono sb-rtg" style="color:${rtgColor(rtg)}">${rtg!=null?rtg.toFixed(2):'–'}</td></tr>`;}).join("")}</tbody>
       </table></div></div>`;
   };
   const tabs = maps.length > 1 ? `<div class="tabs" style="margin-bottom:10px">

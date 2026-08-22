@@ -721,8 +721,9 @@
      "round": 5,
      "a": "PepegaX",
      "b": "Infernum E-Sports",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1787390480
     }
    ],
    "roundTitles": {
@@ -826,8 +827,9 @@
      "round": 4,
      "a": "Neverland",
      "b": "New Jade",
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1787391276
     },
     {
      "id": 11,
