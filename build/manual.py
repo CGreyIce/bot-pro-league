@@ -73,6 +73,91 @@ def gen_round_robin(teams):
     titles = {str(r + 1): f"Round {r + 1}" for r in range(rounds)}
     return matches, titles
 
+# ---------------- swiss auto-pairing ----------------
+SWISS_DEFAULT_ROUNDS = 5
+def swiss_records(stage):
+    """Per-team W/L/round-diff, opponents already faced, and bye count — from played matches.
+    A bye is a team not appearing in any match of a round; it grants no win (matches the league)."""
+    rec = {t: {"w": 0, "l": 0, "diff": 0, "opps": set(), "byes": 0} for t in stage["teams"]}
+    for m in stage["matches"]:
+        a, b = m.get("a"), m.get("b")
+        if a in rec and b in rec:
+            rec[a]["opps"].add(b); rec[b]["opps"].add(a)
+        sa, sb = m.get("sa"), m.get("sb")
+        if sa is None or sb is None:
+            continue
+        d = sa - sb
+        if d > 0:
+            if a in rec: rec[a]["w"] += 1; rec[a]["diff"] += d
+            if b in rec: rec[b]["l"] += 1; rec[b]["diff"] -= d
+        elif d < 0:
+            if b in rec: rec[b]["w"] += 1; rec[b]["diff"] -= d
+            if a in rec: rec[a]["l"] += 1; rec[a]["diff"] += d
+    for r in {m["round"] for m in stage["matches"]}:
+        playing = {x for m in stage["matches"] if m["round"] == r for x in (m.get("a"), m.get("b"))}
+        for t in stage["teams"]:
+            if t not in playing:
+                rec[t]["byes"] += 1
+    return rec
+
+def swiss_next_pairs(stage):
+    """Pairings for the next Swiss round, or None if not applicable (round still in
+    progress, next round already drafted, or the Swiss has reached its round limit)."""
+    if stage.get("format") != "swiss":
+        return None
+    total = stage.get("rounds", SWISS_DEFAULT_ROUNDS)
+    present = [m["round"] for m in stage["matches"]]
+    cur = max(present) if present else 0
+    if cur >= total:
+        return None                                   # swiss finished
+    if cur >= 1:                                       # current round must be fully scored
+        cm = [m for m in stage["matches"] if m["round"] == cur]
+        if not cm or any(m.get("sa") is None or m.get("sb") is None for m in cm):
+            return None
+    nxt = cur + 1
+    if any(m["round"] == nxt for m in stage["matches"]):
+        return None                                   # already drafted
+    rec = swiss_records(stage)
+    teams = sorted(stage["teams"], key=lambda t: (-rec[t]["w"], -rec[t]["diff"], rec[t]["l"], t.lower()))
+    played = {frozenset((m.get("a"), m.get("b"))) for m in stage["matches"] if m.get("a") and m.get("b")}
+    bye = None
+    if len(teams) % 2 == 1:                            # odd -> lowest-ranked team without a prior bye sits out
+        bye = next((t for t in reversed(teams) if rec[t]["byes"] == 0), teams[-1])
+        teams = [t for t in teams if t != bye]
+    pairs = _swiss_match(teams, played)
+    if pairs is None:                                  # no rematch-free matching exists -> allow rematches
+        pool, pairs = list(teams), []
+        while len(pool) >= 2:
+            a = pool.pop(0); pairs.append((a, pool.pop(0)))
+    return {"round": nxt, "pairs": pairs, "bye": bye}
+
+def _swiss_match(teams, played):
+    """Backtracking perfect matching that avoids rematches; teams are standing-sorted so the
+    first solution found keeps pairings as close to the standings as possible. None if impossible."""
+    if not teams:
+        return []
+    a = teams[0]
+    for i in range(1, len(teams)):
+        b = teams[i]
+        if frozenset((a, b)) in played:
+            continue
+        sub = _swiss_match(teams[1:i] + teams[i + 1:], played)
+        if sub is not None:
+            return [(a, b)] + sub
+    return None
+
+def auto_draft_swiss(stage):
+    """If the current Swiss round is complete, append the next round's matches (in place)."""
+    res = swiss_next_pairs(stage)
+    if not res or not res["pairs"]:
+        return False
+    nid = max([m["id"] for m in stage["matches"]], default=0)
+    for a, b in res["pairs"]:
+        nid += 1
+        stage["matches"].append({"id": nid, "round": res["round"], "a": a, "b": b, "sa": None, "sb": None})
+    stage["roundTitles"].setdefault(str(res["round"]), f"Round {res['round']}")
+    return True
+
 # ---------------- stage resolution ----------------
 def _elim_resolved(stage):
     teams = stage["teams"]; n = len(teams)
@@ -248,6 +333,8 @@ def set_score(slug, sid, mid, sa, sb):
                 m["ts"] = int(time.time())      # when this result was recorded (surfaces recent matches)
             else:
                 m.pop("ts", None)
+    if st.get("format") == "swiss":
+        auto_draft_swiss(st)                    # completing a round auto-drafts the next one
     save(man); return man
 
 def add_match(slug, sid, rnd, a, b):
