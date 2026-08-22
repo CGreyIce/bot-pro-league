@@ -380,6 +380,7 @@ function renderPlayer(slug){
       </div>
       <div class="ph-rank"><div class="big">${p.rating!=null?p.rating.toFixed(2):'—'}</div><div class="lbl">BPL Rating</div></div>
     </div>
+    ${p.bio?`<div class="player-bio">${esc(p.bio)}</div>`:''}
     <div class="profile-grid">
       <div class="profile-side">
       <div class="infobox">

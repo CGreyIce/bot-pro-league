@@ -1,0 +1,1510 @@
+{
+ "navikuun": {
+  "gender": "M",
+  "bio": "Navikuun is a Singaporean rifler for 0v3, rated 1.06 (Diamond). He has racked up 55 MVP rounds over his career."
+ },
+ "zenn1sm": {
+  "gender": "M",
+  "bio": "zenn1sm is a Singaporean in-game leader for 0v3, rated 0.97 (Gold). He won the Bot Pro League Minor 12. He has racked up 48 MVP rounds over his career."
+ },
+ "potatodepresso": {
+  "gender": "F",
+  "bio": "potatodepresso is a Malaysian rifler for 0v3, rated 0.94 (Silver). She won the Bot Pro League Minor 12. She has racked up 46 MVP rounds over her career."
+ },
+ "pearlim": {
+  "gender": "M",
+  "bio": "Pearlim is a Singaporean AWPer for 0v3, rated 0.89 (Bronze). He won the Bot Pro League Minor 12. He previously represented degree."
+ },
+ "milkenut": {
+  "gender": "F",
+  "bio": "milkenut is a Singaporean rifler for 0v3, rated 0.88 (Bronze). She won the Bot Pro League Minor 12. She previously represented entity."
+ },
+ "solaonix": {
+  "gender": "F",
+  "bio": "Solaonix is a Master-tier rifler for 5PERCENT and one of the pool's most efficient fraggers, a Singaporean player carrying a standout 1.29 K/D. She claimed silverware at Bot Pro Minor League 13 and has the individual ceiling to trouble anyone."
+ },
+ "dumbo": {
+  "gender": "M",
+  "bio": "dumbo is a Singaporean in-game leader for 5PERCENT, rated 0.97 (Gold). He won the Bot Pro Minor League 13."
+ },
+ "tortillaroll": {
+  "gender": "M",
+  "bio": "TortillaRoll is a Singaporean rifler for 5PERCENT, rated 1.03 (Emerald). He won the Bot Pro Minor League 13."
+ },
+ "kisaragiren": {
+  "gender": "F",
+  "bio": "Kisaragi Ren is a Japanese rifler for 5PERCENT, rated 1.01 (Platinum). She won the Bot Pro Minor League 13."
+ },
+ "angelxaim": {
+  "gender": "M",
+  "bio": "AngelxAim is a Singaporean AWPer for 5PERCENT, rated 0.90 (Bronze). He won the Bot Pro Minor League 13."
+ },
+ "sheep": {
+  "gender": "M",
+  "bio": "Sheep is a Filipino AWPer for 99Lives, rated 1.05 (Diamond). He has racked up 55 MVP rounds over his career."
+ },
+ "y1jingg": {
+  "gender": "F",
+  "bio": "y1jingg is a Singaporean in-game leader for 99Lives, a Master-tier standout rated 1.10. She backs it up with a 1.15 career K/D."
+ },
+ "minmaxxer": {
+  "gender": "M",
+  "bio": "minMaXXer is a Filipino rifler for 99Lives, rated 1.01 (Platinum)."
+ },
+ "m0wmeow": {
+  "gender": "M",
+  "bio": "m0wmeow is a Singaporean rifler for 99Lives, rated 0.98 (Gold)."
+ },
+ "blubear": {
+  "gender": "M",
+  "bio": "BluBEAR is a Malaysian AWPer for 99Lives, rated 1.00 (Platinum)."
+ },
+ "marsinss": {
+  "gender": "M",
+  "bio": "Marsinss is a Singaporean AWPer for Aeternum, rated 1.07 (Diamond). He has racked up 47 MVP rounds over his career."
+ },
+ "applezxc": {
+  "gender": "M",
+  "bio": "Applezxc is a Singaporean support player for Aeternum, rated 1.03 (Emerald). He won the BPL Tournament Minor 6."
+ },
+ "crimsynflames": {
+  "gender": "F",
+  "bio": "CrimsynFlames is a Singaporean rifler for Aeternum, rated 1.05 (Emerald). She won the BPL Tournament Minor 6."
+ },
+ "suzuyunn": {
+  "gender": "M",
+  "bio": "Suzuyunn is a Singaporean in-game leader for Aeternum, rated 1.00 (Platinum)."
+ },
+ "drip": {
+  "gender": "M",
+  "bio": "drip is a Singaporean AWPer for Aeternum, rated 1.00 (Platinum)."
+ },
+ "nipnip": {
+  "gender": "M",
+  "bio": "NipNip is a Singaporean in-game leader for Aetherline, rated 1.07 (Diamond). He has racked up 95 MVP rounds over his career."
+ },
+ "efreetsz": {
+  "gender": "M",
+  "bio": "EfreetsZ is a Singaporean rifler for Aetherline, rated 1.07 (Diamond). He backs it up with a 1.18 career K/D."
+ },
+ "anndreika": {
+  "gender": "M",
+  "bio": "Anndreika is a rifler for Aetherline, rated 1.00 (Platinum)."
+ },
+ "awtoh": {
+  "gender": "M",
+  "bio": "awtoh is a Singaporean rifler for Aetherline, rated 0.95 (Silver)."
+ },
+ "babayaga": {
+  "gender": "M",
+  "bio": "BaBaYaGa is a Malaysian AWPer for Aetherline, rated 0.90 (Bronze)."
+ },
+ "chiaifujikawa": {
+  "gender": "M",
+  "bio": "The voice behind Aimpunch's championship run, Chiai Fujikawa is a Malaysian in-game leader who calls the shots for one of BPL's most successful sides. A four-time champion — headlined by the 2023 BPL Conquerors Major — he pairs a tactical mind with real firepower, carrying a Diamond-tier 1.07 rating and a 1.13 K/D that few IGLs can match."
+ },
+ "sketch": {
+  "gender": "M",
+  "bio": "One of the most decorated names in BPL history, Sketch is a Singaporean rifler who has been a constant through Aimpunch's championship era. His six trophies span the club's entire run — from the 2020 opener at BPL Tournament Minor 1 to the 2023 BPL Conquerors Major — and few players can match that longevity at the top. A steady, no-frills fragger, he has always let his consistency do the talking."
+ },
+ "balililmao": {
+  "gender": "F",
+  "bio": "balililmao is a Singaporean rifler and a four-time BPL champion with Aimpunch, a dependable presence across the club's 2022–2023 title haul. Steady rather than spectacular, she has been a trusted piece of the rotation through some of the league's biggest matches, including the 2023 Conquerors Major."
+ },
+ "idiotangelcrutcher": {
+  "gender": "M",
+  "bio": "AngelCrutcher is the utility man of Aimpunch's dynasty, a Singaporean flex player who has slotted into whatever role the roster demanded across six title runs. His numbers rarely top the scoreboard, but his willingness to play the thankless positions was a quiet cornerstone of one of the league's great teams."
+ },
+ "mond33": {
+  "gender": "F",
+  "bio": "mond33__ has held the AWP for Aimpunch through all six of the club's championships, a Singaporean sniper whose composure on the big rounds helped define their dynasty. Her raw rating sits modestly, but a résumé that includes the 2023 BPL Conquerors Major speaks to a player who delivers when the trophies are on the line."
+ },
+ "tanykeat": {
+  "gender": "M",
+  "bio": "tanykeat is a Master-tier in-game leader for Alcheministry, a Singaporean caller who backs his tactics with a healthy 1.13 K/D. A winner of the 2025 BPL Ranking Reshuffle, he sits among the higher-rated leaders in the pool."
+ },
+ "dchong": {
+  "gender": "M",
+  "bio": "d.chong is a Singaporean rifler for Alcheministry, rated 1.07 (Diamond). He won the BPL Ranking Reshuffle 2025. He has racked up 57 MVP rounds over his career."
+ },
+ "hikopiko": {
+  "gender": "F",
+  "bio": "hikopiko_ is a Singaporean AWPer for Alcheministry, rated 1.01 (Platinum). She won the BPL Ranking Reshuffle 2025."
+ },
+ "evikuroneko": {
+  "gender": "M",
+  "bio": "EviKuroneko is a Singaporean rifler for Alcheministry, rated 0.97 (Gold). He won the BPL Ranking Reshuffle 2025."
+ },
+ "nekosoji": {
+  "gender": "M",
+  "bio": "NekoSoji is a Malaysian AWPer for Alcheministry, rated 0.91 (Silver). He won the BPL Ranking Reshuffle 2025."
+ },
+ "sanctuary": {
+  "gender": "M",
+  "bio": "SanCtuary is the highest-rated player in the pro pool, a Singaporean in-game leader who has turned Artisian into a genuine contender. A Grandmaster at 1.15, he marries elite individual form with the responsibility of calling — a rare combination — and already owns a BPL Challengers Stage title from 2022."
+ },
+ "rebellioniite": {
+  "gender": "F",
+  "bio": "rebellioniite is a Singaporean rifler for Artisian, rated 1.05 (Diamond). She won the BPL Challengers Stage 2022. She has racked up 74 MVP rounds over her career."
+ },
+ "skyllabtw": {
+  "gender": "F",
+  "bio": "Skyllabtw is a Singaporean rifler for Artisian, rated 1.05 (Diamond). She won the BPL Challengers Stage 2022. She has racked up 59 MVP rounds over her career."
+ },
+ "yixl": {
+  "gender": "M",
+  "bio": "Yixl is a Malaysian AWPer for Artisian, rated 1.01 (Platinum). He won the BPL Challengers Stage 2022. He has racked up 65 MVP rounds over his career."
+ },
+ "ktenshi": {
+  "gender": "M",
+  "bio": "KTenshi is a Singaporean rifler for Artisian, rated 1.02 (Emerald). He won the BPL Challengers Stage 2022. He has racked up 61 MVP rounds over his career."
+ },
+ "tuxedocat": {
+  "gender": "M",
+  "bio": "TuxedoCat is a Singaporean rifler for Aspire, rated 0.99 (Platinum)."
+ },
+ "hanarisu": {
+  "gender": "F",
+  "bio": "Hanarisu is a Singaporean in-game leader for Aspire, rated 0.98 (Gold)."
+ },
+ "moira": {
+  "gender": "F",
+  "bio": "Moira is a Singaporean rifler for Aspire, rated 0.95 (Gold)."
+ },
+ "caarrietan": {
+  "gender": "F",
+  "bio": "caarrietan is a Singaporean rifler for Aspire, rated 0.95 (Gold)."
+ },
+ "stylus": {
+  "gender": "M",
+  "bio": "Stylus is a Singaporean AWPer for Aspire, rated 0.81 (Iron)."
+ },
+ "tachibanahinano": {
+  "gender": "F",
+  "bio": "Tachibana Hinano is a Japanese rifler for Astral Bloom, rated 1.05 (Diamond). She has racked up 58 MVP rounds over her career."
+ },
+ "shiranamiramune": {
+  "gender": "F",
+  "bio": "Shiranami Ramune is a Japanese AWPer for Astral Bloom, rated 0.96 (Gold)."
+ },
+ "remiaaotsuki": {
+  "gender": "F",
+  "bio": "Remia Aotsuki is a Japanese in-game leader for Astral Bloom, rated 1.00 (Platinum)."
+ },
+ "tsumugikokage": {
+  "gender": "F",
+  "bio": "Tsumugi Kokage is a Japanese rifler for Astral Bloom, rated 0.97 (Gold)."
+ },
+ "erissuzukami": {
+  "gender": "F",
+  "bio": "Eris Suzukami is a Japanese rifler for Astral Bloom, rated 1.02 (Emerald)."
+ },
+ "plainyingying": {
+  "gender": "F",
+  "bio": "plainyingying is a Singaporean rifler for BLOOM E-Sports, a Master-tier standout rated 1.11. She has racked up 61 MVP rounds over her career."
+ },
+ "fleurcoz": {
+  "gender": "F",
+  "bio": "fleurcoz is a Singaporean rifler for BLOOM E-Sports, rated 1.01 (Platinum)."
+ },
+ "winda": {
+  "gender": "M",
+  "bio": "winda is a Singaporean in-game leader for BLOOM E-Sports, rated 1.00 (Platinum)."
+ },
+ "lumpydayo": {
+  "gender": "F",
+  "bio": "lumpydayo is a Singaporean rifler for BLOOM E-Sports, rated 1.03 (Emerald)."
+ },
+ "venicec": {
+  "gender": "F",
+  "bio": "VeniceC is a Malaysian rifler for BLOOM E-Sports, rated 0.95 (Gold)."
+ },
+ "beyouna": {
+  "gender": "F",
+  "bio": "beyouna is a Singaporean rifler for Bluebird, rated 1.05 (Diamond). She has racked up 54 MVP rounds over her career."
+ },
+ "nutzeru": {
+  "gender": "F",
+  "bio": "Nutzeru is a Singaporean rifler for Bluebird, a Master-tier standout rated 1.12. On the server she pairs that with a 1.20 K/D."
+ },
+ "appleorangepear": {
+  "gender": "F",
+  "bio": "AppleOrangePear is a Singaporean rifler for Bluebird, rated 1.02 (Platinum)."
+ },
+ "l1feless": {
+  "gender": "M",
+  "bio": "l1feless is a Indonesian AWPer for Bluebird, rated 0.95 (Silver)."
+ },
+ "volatus": {
+  "gender": "F",
+  "bio": "Volatus is a Singaporean in-game leader for Bluebird, rated 0.97 (Gold)."
+ },
+ "lenette": {
+  "gender": "F",
+  "bio": "lenette is a Singaporean AWPer for Caelum Scala, rated 1.00 (Platinum). She won the Bot Pro League Minor 10. She has racked up 60 MVP rounds over her career."
+ },
+ "nyuii": {
+  "gender": "F",
+  "bio": "Nyuii is a Singaporean rifler for Caelum Scala, rated 0.99 (Platinum). She won the Bot Pro League Minor 10. She has racked up 59 MVP rounds over her career."
+ },
+ "baer": {
+  "gender": "M",
+  "bio": "Baer is a Singaporean in-game leader for Caelum Scala, rated 0.93 (Silver). He won the Bot Pro League Minor 10. He has racked up 51 MVP rounds over his career."
+ },
+ "4naru": {
+  "gender": "F",
+  "bio": "4_naru is a Singaporean AWPer for Caelum Scala, rated 0.87 (Iron)."
+ },
+ "kyyltn": {
+  "gender": "F",
+  "bio": "kyyltn is a Singaporean rifler for Caelum Scala, rated 0.90 (Bronze). She won the Bot Pro League Minor 10. She previously represented Unforgettable."
+ },
+ "sneakyyyyy": {
+  "gender": "M",
+  "bio": "sneakyyyyy is one of the sharpest fraggers in the league, a Singaporean rifler for Cosmos whose Grandmaster 1.14 rating is built on a punishing 1.25 K/D. He announced himself with a Major run at the 2025 BPL Conquerors Stage and remains one of the most dangerous individual players in any given match."
+ },
+ "inaxho": {
+  "gender": "M",
+  "bio": "inaxho is a British in-game leader for Cosmos, rated 1.04 (Emerald). He won the BPL Conquerors Stage 2025. He has racked up 75 MVP rounds over his career."
+ },
+ "azzuto": {
+  "gender": "M",
+  "bio": "azzuto is a Singaporean rifler for Cosmos, rated 1.03 (Emerald). He won the BPL Conquerors Stage 2025. He has racked up 58 MVP rounds over his career."
+ },
+ "kokushivampir": {
+  "gender": "M",
+  "bio": "kokushi_vampir is a Singaporean rifler for Cosmos, rated 0.98 (Gold). He won the BPL Conquerors Stage 2025. He has racked up 55 MVP rounds over his career."
+ },
+ "delphoxluna": {
+  "gender": "F",
+  "bio": "DelphoxLuna is a Malaysian rifler for Cosmos, rated 0.98 (Gold). She won the BPL Conquerors Stage 2025."
+ },
+ "ziweiv": {
+  "gender": "F",
+  "bio": "Ziweiv is a Singaporean support player for Cyanide, rated 1.02 (Emerald)."
+ },
+ "soozy": {
+  "gender": "M",
+  "bio": "Soozy is a Malaysian in-game leader for Cyanide, rated 0.99 (Platinum)."
+ },
+ "heavenweeps": {
+  "gender": "F",
+  "bio": "heavenweeps is a American AWPer for Cyanide, rated 0.95 (Silver)."
+ },
+ "miorine": {
+  "gender": "M",
+  "bio": "miorine is a Singaporean AWPer for Cyanide, rated 0.90 (Bronze)."
+ },
+ "decrease": {
+  "gender": "M",
+  "bio": "Decrease is a American rifler for Cyanide, rated 0.92 (Silver)."
+ },
+ "altheavt": {
+  "gender": "F",
+  "bio": "AltheaVT is a Taiwanese AWPer for degree, rated 0.88 (Bronze). She won the BPL Legends Stage 2023. She has racked up 45 MVP rounds over her career."
+ },
+ "zoweya": {
+  "gender": "F",
+  "bio": "Zoweya is a Singaporean rifler for degree, rated 1.03 (Emerald)."
+ },
+ "anony": {
+  "gender": "M",
+  "bio": "Anony is a Thai AWPer for degree, rated 0.98 (Gold)."
+ },
+ "vanixevans": {
+  "gender": "M",
+  "bio": "VanixEvans is a Singaporean in-game leader for degree, rated 0.95 (Gold)."
+ },
+ "airawwr": {
+  "gender": "F",
+  "bio": "airawwr is a Singaporean rifler for degree, rated 0.91 (Silver)."
+ },
+ "notccillia": {
+  "gender": "F",
+  "bio": "notccillia is a Singaporean in-game leader for DiamondOnes, rated 1.07 (Diamond). She has racked up 86 MVP rounds over her career."
+ },
+ "xolalotl": {
+  "gender": "F",
+  "bio": "xolalotl is a Singaporean AWPer for DiamondOnes, rated 0.99 (Gold)."
+ },
+ "lilraxxx": {
+  "gender": "M",
+  "bio": "lilraxxx is a Singaporean AWPer for DiamondOnes, rated 1.01 (Platinum)."
+ },
+ "midorissi": {
+  "gender": "F",
+  "bio": "midorissi is a Singaporean rifler for DiamondOnes, rated 1.03 (Emerald)."
+ },
+ "emiiiyu": {
+  "gender": "F",
+  "bio": "emiiiyu is a Australian rifler for DiamondOnes, rated 0.95 (Gold)."
+ },
+ "chreyll": {
+  "gender": "F",
+  "bio": "chreyll is a Singaporean AWPer for Divide&Conquer, rated 1.07 (Diamond). She won the Bot Pro League Minor 9. She has also been named an event MVP."
+ },
+ "laavv": {
+  "gender": "F",
+  "bio": "laavv._ is a Singaporean AWPer for Divide&Conquer, rated 1.02 (Emerald). She won the Bot Pro League Minor 9. She has racked up 78 MVP rounds over her career."
+ },
+ "infinitebreaker": {
+  "gender": "M",
+  "bio": "InfiniteBreaker is a Singaporean support player for Divide&Conquer, rated 1.02 (Platinum). He won the Bot Pro League Minor 9. He has racked up 63 MVP rounds over his career."
+ },
+ "solec": {
+  "gender": "M",
+  "bio": "Solec is a Singaporean in-game leader for Divide&Conquer, rated 1.01 (Platinum). He won the Bot Pro League Minor 9. He has racked up 65 MVP rounds over his career."
+ },
+ "lita": {
+  "gender": "F",
+  "bio": "LITA is a German rifler for Divide&Conquer, rated 1.04 (Emerald). She won the Bot Pro League Minor 9. She has racked up 62 MVP rounds over her career."
+ },
+ "yuuno": {
+  "gender": "F",
+  "bio": "y.uuno is a Singaporean AWPer for division20, rated 1.09 (Diamond). She backs it up with a 1.22 career K/D."
+ },
+ "spoods": {
+  "gender": "M",
+  "bio": "Spoods is a Singaporean rifler for division20, one of the pool's elite at 1.14 (Grandmaster). He has racked up 59 MVP rounds over his career."
+ },
+ "laburi": {
+  "gender": "M",
+  "bio": "Laburi is a Singaporean in-game leader for division20, one of the pool's elite at 1.15 (Grandmaster). He backs it up with a 1.15 career K/D."
+ },
+ "eroxis": {
+  "gender": "M",
+  "bio": "Eroxis is a Malaysian rifler for division20, a Master-tier standout rated 1.12. He backs it up with a 1.24 career K/D."
+ },
+ "kitties258": {
+  "gender": "F",
+  "bio": "kitties258 is a Singaporean AWPer for division20, rated 0.93 (Silver)."
+ },
+ "mike": {
+  "gender": "M",
+  "bio": "Mike is a Singaporean in-game leader for entity, a Master-tier standout rated 1.10. He has racked up 54 MVP rounds over his career."
+ },
+ "rykersterling": {
+  "gender": "F",
+  "bio": "Ryker_Sterling is a Singaporean rifler for entity, rated 1.04 (Emerald)."
+ },
+ "yerm": {
+  "gender": "M",
+  "bio": "yerm is a Malaysian AWPer for entity, rated 1.02 (Emerald)."
+ },
+ "xrela": {
+  "gender": "M",
+  "bio": "Xrela is a Singaporean rifler for entity, rated 0.99 (Platinum)."
+ },
+ "xjavyz": {
+  "gender": "M",
+  "bio": "xJavyz is a Malaysian rifler for entity, rated 1.07 (Diamond). He has racked up 56 MVP rounds over his career."
+ },
+ "cassiopeiarawr": {
+  "gender": "F",
+  "bio": "cassiopeiarawr is a Australian rifler for Flood Flashers, a Master-tier standout rated 1.11. She won the Bot Pro Minor League 15. She backs it up with a 1.29 career K/D."
+ },
+ "emilymelody": {
+  "gender": "F",
+  "bio": "Emily_melody is a Taiwanese rifler for Flood Flashers, rated 1.05 (Emerald). She won the Bot Pro Minor League 15. On the server she pairs that with a 1.18 K/D."
+ },
+ "komorimet": {
+  "gender": "F",
+  "bio": "Komori Met is a Japanese rifler for Flood Flashers, rated 1.00 (Platinum). She won the Bot Pro Minor League 15."
+ },
+ "shizuyaumiko": {
+  "gender": "F",
+  "bio": "ShizuyaUmiko is a Malaysian in-game leader for Flood Flashers, rated 0.97 (Gold). She won the Bot Pro Minor League 15."
+ },
+ "shinomiyaruna": {
+  "gender": "F",
+  "bio": "Shinomiya Runa is a Japanese rifler for Flood Flashers, rated 0.92 (Silver). She won the Bot Pro Minor League 15."
+ },
+ "hakase": {
+  "gender": "M",
+  "bio": "Hakase is a Singaporean in-game leader for Fruit Basket, a Master-tier standout rated 1.12. He has racked up 57 MVP rounds over his career."
+ },
+ "phxebe": {
+  "gender": "F",
+  "bio": "Phxebe is a Singaporean AWPer for Fruit Basket, rated 1.01 (Platinum). She won the BPL Tournament Minor 2."
+ },
+ "yuuschan": {
+  "gender": "F",
+  "bio": "yuuschan is a Singaporean rifler for Fruit Basket, rated 0.99 (Platinum). She won the BPL Tournament Minor 2."
+ },
+ "cshhp": {
+  "gender": "F",
+  "bio": "cshhp is a Singaporean rifler for Fruit Basket, rated 0.97 (Gold)."
+ },
+ "mango": {
+  "gender": "M",
+  "bio": "Mango is a Singaporean support player for Fruit Basket, rated 0.95 (Gold). He won the BPL Tournament Minor 2."
+ },
+ "historia": {
+  "gender": "M",
+  "bio": "Historia is a two-time BPL champion and a Diamond-tier flex player for Infernum E-Sports, a Singaporean whose titles bookend several years — from Bot Pro League Minor 7 in 2021 to the 2022 Conquerors Stage. Versatile and experienced, he remains a reliable veteran presence for the club."
+ },
+ "soapdax": {
+  "gender": "F",
+  "bio": "soapdax is a British AWPer for Infernum E-Sports, rated 0.95 (Gold)."
+ },
+ "chiyoriinn": {
+  "gender": "F",
+  "bio": "chiyoriinn is a Singaporean AWPer for Infernum E-Sports, rated 0.96 (Gold). A two-time BPL champion, her honours include the BPL Conquerors Stage 2022."
+ },
+ "dirfun": {
+  "gender": "M",
+  "bio": "Dirfun is a Singaporean rifler for Infernum E-Sports, rated 0.95 (Gold). A two-time BPL champion, his honours include the BPL Conquerors Stage 2022."
+ },
+ "siddnely": {
+  "gender": "F",
+  "bio": "siddnely is a Singaporean in-game leader for Infernum E-Sports, rated 0.96 (Gold). A two-time BPL champion, her honours include the BPL Conquerors Stage 2022. She previously represented Unforgettable."
+ },
+ "elfymint": {
+  "gender": "F",
+  "bio": "Elfy Mint is a Singaporean AWPer for Kiedz, a Master-tier standout rated 1.09. She won the BPL Tournament Minor 5. She backs it up with a 1.18 career K/D."
+ },
+ "illus": {
+  "gender": "M",
+  "bio": "Illus is a American in-game leader for Kiedz, a Master-tier standout rated 1.10. He won the BPL Tournament Minor 5. He has racked up 60 MVP rounds over his career."
+ },
+ "kairi": {
+  "gender": "M",
+  "bio": "Kairi is a American support player for Kiedz, rated 1.02 (Platinum). He won the BPL Tournament Minor 5. He has racked up 55 MVP rounds over his career."
+ },
+ "declaration": {
+  "gender": "F",
+  "bio": "declaration__ is a Singaporean AWPer for Kiedz, rated 0.99 (Gold). She won the BPL Tournament Minor 5. She has racked up 48 MVP rounds over her career."
+ },
+ "zuann": {
+  "gender": "F",
+  "bio": "zuann_ is a Singaporean rifler for Kiedz, rated 1.01 (Platinum). She won the BPL Tournament Minor 5."
+ },
+ "luminichi": {
+  "gender": "F",
+  "bio": "luminichi is a Singaporean AWPer for Lemon Tree, rated 0.98 (Gold). A two-time BPL champion, her honours include the BPL Conquerors Stage 2024. She has racked up 46 MVP rounds over her career."
+ },
+ "meowcolmz": {
+  "gender": "M",
+  "bio": "Meowcolmz is a Singaporean in-game leader for Lemon Tree, rated 0.97 (Gold). A two-time BPL champion, his honours include the BPL Conquerors Stage 2024."
+ },
+ "moonraika": {
+  "gender": "M",
+  "bio": "MoonRaika is a Malaysian AWPer for Lemon Tree, rated 0.94 (Silver). A two-time BPL champion, his honours include the BPL Conquerors Stage 2024."
+ },
+ "kkayyteeee": {
+  "gender": "F",
+  "bio": "kkayyteeee is a Singaporean rifler for Lemon Tree, rated 0.93 (Silver). She is a two-time BPL champion, with the BPL Conquerors Stage 2024 among the highlights."
+ },
+ "jwqi": {
+  "gender": "F",
+  "bio": "JWQI is a Singaporean rifler for Lemon Tree, rated 0.93 (Silver). She is a two-time BPL champion, with the BPL Conquerors Stage 2024 among the highlights. She previously represented Unforgettable."
+ },
+ "xyrolizea": {
+  "gender": "M",
+  "bio": "Xyrolizea is a Singaporean AWPer for Masmark, rated 1.06 (Diamond). He has racked up 63 MVP rounds over his career."
+ },
+ "xuehuavt": {
+  "gender": "F",
+  "bio": "XueHuaVT is a American in-game leader for Masmark, rated 1.03 (Emerald)."
+ },
+ "urnisa": {
+  "gender": "F",
+  "bio": "urnisa_ is a Malaysian rifler for Masmark, rated 1.03 (Emerald)."
+ },
+ "kn": {
+  "gender": "M",
+  "bio": "kn is a Malaysian rifler for Masmark, rated 0.94 (Silver)."
+ },
+ "estellyy": {
+  "gender": "F",
+  "bio": "estellyy. is a Singaporean AWPer for Masmark, rated 0.94 (Silver)."
+ },
+ "celtsm": {
+  "gender": "F",
+  "bio": "Celtsm is a Singaporean in-game leader for Moonlit Tempo, rated 1.07 (Diamond). She won the BPL Challengers Stage 2025. She has racked up 69 MVP rounds over her career."
+ },
+ "sashimigoesbloop": {
+  "gender": "M",
+  "bio": "SashimiGoesBloop is a Singaporean rifler for Moonlit Tempo, a Master-tier standout rated 1.09. A two-time BPL champion, his honours include the BPL Challengers Stage 2025. He backs it up with a 1.22 career K/D."
+ },
+ "kyan": {
+  "gender": "F",
+  "bio": "Kyan is a Malaysian rifler for Moonlit Tempo, rated 0.99 (Platinum). She won the BPL Challengers Stage 2025. She has racked up 53 MVP rounds over her career."
+ },
+ "goddessakane": {
+  "gender": "F",
+  "bio": "GoddessAkane is a French AWPer for Moonlit Tempo, rated 0.92 (Silver). She won the BPL Challengers Stage 2025."
+ },
+ "featbri": {
+  "gender": "F",
+  "bio": "FeatBri is a American rifler for Moonlit Tempo, rated 0.86 (Iron). She won the BPL Challengers Stage 2025."
+ },
+ "simplyperezoso": {
+  "gender": "F",
+  "bio": "simply_perezoso is a Singaporean rifler for Neverland, rated 1.04 (Emerald). A two-time BPL champion, her honours include the BPL Legends Stage 2024. She has racked up 54 MVP rounds over her career."
+ },
+ "resent": {
+  "gender": "M",
+  "bio": "Resent is a Singaporean in-game leader for Neverland, rated 0.97 (Gold). A two-time BPL champion, his honours include the BPL Legends Stage 2024. He has racked up 52 MVP rounds over his career."
+ },
+ "ice": {
+  "gender": "M",
+  "bio": "Ice is a Malaysian rifler for Neverland, rated 1.01 (Platinum). He won the BPL Legends Stage 2024. He has racked up 53 MVP rounds over his career."
+ },
+ "adrinaii": {
+  "gender": "F",
+  "bio": "adrina.ii is a Singaporean AWPer for Neverland, rated 0.92 (Silver). A two-time BPL champion, her honours include the BPL Legends Stage 2024."
+ },
+ "sayucchi": {
+  "gender": "F",
+  "bio": "Sayucchi is a Dutch rifler for Neverland, rated 0.92 (Silver)."
+ },
+ "vplh": {
+  "gender": "F",
+  "bio": "VPLH captains New Jade and ranks among the elite of the pool, a Singaporean in-game leader who leads from the front. A two-time BPL Legends Stage champion — first in 2022, again in 2025 — she blends her calling with a rare fragging output for an IGL, backing a Grandmaster 1.14 rating with a 1.24 K/D."
+ },
+ "jenapoppins": {
+  "gender": "F",
+  "bio": "jenapoppins is a two-time BPL Legends Stage champion with New Jade, a Singaporean rifler who has been part of the club's title-winning core in both 2022 and 2025. An Emerald-tier fragger with a tidy 1.15 K/D, she is a steady contributor on one of the league's decorated sides."
+ },
+ "jeribean": {
+  "gender": "F",
+  "bio": "Jeribean is a Singaporean AWPer for New Jade, rated 0.92 (Silver). A two-time BPL champion, her honours include the BPL Legends Stage 2025."
+ },
+ "astroruckus": {
+  "gender": "M",
+  "bio": "Astro_Ruckus is a Singaporean rifler for New Jade, rated 0.93 (Silver). He is a two-time BPL champion, with the BPL Legends Stage 2025 among the highlights. He previously represented Unforgettable."
+ },
+ "crazywhoopies": {
+  "gender": "F",
+  "bio": "crazywhoopies is a Singaporean AWPer for New Jade, rated 0.82 (Iron). A two-time BPL champion, her honours include the BPL Legends Stage 2025."
+ },
+ "joyyycheng": {
+  "gender": "F",
+  "bio": "joyyy_cheng is a Singaporean in-game leader for Opal, rated 1.07 (Diamond). She has racked up 46 MVP rounds over her career."
+ },
+ "seireiix": {
+  "gender": "M",
+  "bio": "Seireiix is a Singaporean AWPer for Opal, rated 1.01 (Platinum)."
+ },
+ "scorpium": {
+  "gender": "M",
+  "bio": "Scorpium is a Malaysian AWPer for Opal, rated 1.01 (Platinum)."
+ },
+ "kuromi": {
+  "gender": "M",
+  "bio": "kuro_mi is a Singaporean rifler for Opal, rated 0.97 (Gold)."
+ },
+ "luminyaa": {
+  "gender": "F",
+  "bio": "lumi.nyaa is a Singaporean rifler for Opal, rated 0.99 (Platinum)."
+ },
+ "reffelexx": {
+  "gender": "M",
+  "bio": "Reffelexx is a Malaysian AWPer for PepegaX, rated 0.99 (Gold)."
+ },
+ "nifela": {
+  "gender": "M",
+  "bio": "Nifela is a American in-game leader for PepegaX, rated 1.06 (Diamond). He won the Bot Pro League Minor 8. He has also been named an event MVP. He previously represented Unforgettable."
+ },
+ "acroblaze": {
+  "gender": "M",
+  "bio": "AcroBlaze is a Singaporean support player for PepegaX, rated 0.98 (Gold)."
+ },
+ "ehsten": {
+  "gender": "M",
+  "bio": "ehsten is a Singaporean rifler for PepegaX, rated 1.04 (Emerald). He won the BPL Tournament Minor 6. He has racked up 77 MVP rounds over his career."
+ },
+ "yuukips": {
+  "gender": "F",
+  "bio": "yuuki_PS is a Singaporean rifler for PepegaX, rated 0.94 (Silver). She is a two-time BPL champion, with the BPL Major SRR among the highlights. She has racked up 71 MVP rounds over her career."
+ },
+ "ebi": {
+  "gender": "M",
+  "bio": "ebi is a Malaysian in-game leader for Raven Song, rated 0.98 (Gold)."
+ },
+ "koen": {
+  "gender": "M",
+  "bio": "koen is a Malaysian AWPer for Raven Song, rated 0.90 (Bronze)."
+ },
+ "crex": {
+  "gender": "M",
+  "bio": "CRex is a Malaysian rifler for Raven Song, rated 1.03 (Emerald)."
+ },
+ "treblest": {
+  "gender": "M",
+  "bio": "treblest is a Singaporean AWPer for Raven Song, rated 0.85 (Iron)."
+ },
+ "des506": {
+  "gender": "M",
+  "bio": "des506 is a Singaporean rifler for Raven Song, rated 0.93 (Silver)."
+ },
+ "caturteer": {
+  "gender": "F",
+  "bio": "caturteer is a Singaporean in-game leader for Round Loss Bonus, a Master-tier standout rated 1.10. She backs it up with a 1.15 career K/D."
+ },
+ "murasakibaratsuki1": {
+  "gender": "M",
+  "bio": "murasakibara_tsuki1 is a Taiwanese rifler for Round Loss Bonus, rated 1.04 (Emerald)."
+ },
+ "lepyrrhic": {
+  "gender": "M",
+  "bio": "le_pyrrhic is a Singaporean AWPer for Round Loss Bonus, rated 0.97 (Gold)."
+ },
+ "daifukuwu": {
+  "gender": "F",
+  "bio": "daifuku.wu is a Singaporean rifler for Round Loss Bonus, rated 0.97 (Gold)."
+ },
+ "tif2": {
+  "gender": "F",
+  "bio": "TiF2 is a Singaporean rifler for Round Loss Bonus, rated 0.91 (Bronze)."
+ },
+ "capplecrow": {
+  "gender": "M",
+  "bio": "capplecrow is a Singaporean in-game leader for Sacred Raven, a Master-tier standout rated 1.11. He won the BPL Challengers Stage 2023. He backs it up with a 1.15 career K/D."
+ },
+ "wellson111": {
+  "gender": "M",
+  "bio": "Wellson111 is a Singaporean rifler for Sacred Raven, rated 1.02 (Emerald). He won the BPL Challengers Stage 2023. He has racked up 54 MVP rounds over his career."
+ },
+ "skysbeautylai": {
+  "gender": "F",
+  "bio": "skysbeautylai is a Singaporean rifler for Sacred Raven, rated 1.05 (Emerald). A two-time BPL champion, her honours include the BPL Challengers Stage 2023. She has racked up 48 MVP rounds over her career."
+ },
+ "matcha": {
+  "gender": "M",
+  "bio": "matcha is a Australian rifler for Sacred Raven, rated 1.04 (Emerald). He won the BPL Challengers Stage 2023. He has racked up 54 MVP rounds over his career."
+ },
+ "asterisks": {
+  "gender": "M",
+  "bio": "Asterisks is a Singaporean rifler for Sacred Raven, rated 0.98 (Gold). He won the BPL Challengers Stage 2023."
+ },
+ "leveti": {
+  "gender": "M",
+  "bio": "Leveti is a Singaporean in-game leader for Setting Sun, rated 1.04 (Emerald). He won the BPL Tournament Minor 4. He has racked up 64 MVP rounds over his career."
+ },
+ "jaelyo": {
+  "gender": "F",
+  "bio": "jaelyo is a Singaporean rifler for Setting Sun, rated 1.07 (Diamond). She won the BPL Tournament Minor 4. She has racked up 58 MVP rounds over her career."
+ },
+ "uzuhii": {
+  "gender": "M",
+  "bio": "Uzuhii is a Filipino rifler for Setting Sun, rated 1.05 (Diamond). He has racked up 53 MVP rounds over his career."
+ },
+ "rcia": {
+  "gender": "F",
+  "bio": "rc_ia is a Singaporean AWPer for Setting Sun, rated 0.94 (Silver). She won the BPL Tournament Minor 4. She has racked up 48 MVP rounds over her career."
+ },
+ "zhiweiingg": {
+  "gender": "F",
+  "bio": "zhiweiingg is a Singaporean rifler for Setting Sun, rated 0.99 (Platinum). She won the BPL Tournament Minor 4. She has racked up 50 MVP rounds over her career."
+ },
+ "niito": {
+  "gender": "M",
+  "bio": "Niito is a Singaporean support player for Team Neverseen, rated 1.02 (Emerald)."
+ },
+ "jhjj80": {
+  "gender": "M",
+  "bio": "jhjj80 is a Singaporean in-game leader for Team Neverseen, rated 1.01 (Platinum)."
+ },
+ "pashionfruit18": {
+  "gender": "F",
+  "bio": "pashionfruit18 is a Singaporean rifler for Team Neverseen, rated 0.93 (Silver)."
+ },
+ "heyimkaiwen": {
+  "gender": "M",
+  "bio": "HeyImKaiWen is a Singaporean AWPer for Team Neverseen, rated 0.95 (Gold)."
+ },
+ "sgt": {
+  "gender": "F",
+  "bio": "S.GT is a Singaporean AWPer for Team Neverseen, rated 0.92 (Silver). She won the BPL Tournament Minor 3. She previously represented Neverland."
+ },
+ "skuxxninja44": {
+  "gender": "M",
+  "bio": "SkuxxNinja44 is a New Zealand rifler for Technomancy, rated 1.07 (Diamond). He has racked up 62 MVP rounds over his career."
+ },
+ "teckiyo": {
+  "gender": "M",
+  "bio": "teckiyo is a Singaporean in-game leader for Technomancy, rated 1.06 (Diamond). He has racked up 63 MVP rounds over his career."
+ },
+ "ochakokiyomi": {
+  "gender": "F",
+  "bio": "OchakoKiyomi is a Singaporean rifler for Technomancy, rated 1.04 (Emerald)."
+ },
+ "carv": {
+  "gender": "M",
+  "bio": "carv is a Malaysian AWPer for Technomancy, rated 0.88 (Bronze)."
+ },
+ "nicsman": {
+  "gender": "M",
+  "bio": "nicsman is a Malaysian rifler for Technomancy, rated 0.96 (Gold)."
+ },
+ "gigichiii": {
+  "gender": "F",
+  "bio": "gigichiii_ is a Australian in-game leader for The Gigarage, rated 1.06 (Diamond). She won the BPL Legends Stage 2023. She has racked up 83 MVP rounds over her career."
+ },
+ "yunaeyo": {
+  "gender": "F",
+  "bio": "yunaeyo is a American rifler for The Gigarage, rated 1.02 (Platinum). She won the BPL Legends Stage 2023. She has racked up 66 MVP rounds over her career."
+ },
+ "mmirawr": {
+  "gender": "F",
+  "bio": "mmirawr_ is a Malaysian rifler for The Gigarage, rated 1.01 (Platinum). She won the BPL Legends Stage 2023. She has racked up 59 MVP rounds over her career."
+ },
+ "yojareddo": {
+  "gender": "M",
+  "bio": "YoJareddo is a American rifler for The Gigarage, rated 0.97 (Gold). He won the BPL Legends Stage 2023. He has racked up 54 MVP rounds over his career."
+ },
+ "bluenerd8": {
+  "gender": "M",
+  "bio": "bluenerd8 is a Singaporean AWPer for The Gigarage, rated 0.94 (Silver)."
+ },
+ "rethnap": {
+  "gender": "M",
+  "bio": "Rethnap is a Singaporean in-game leader for The Nomads, rated 1.03 (Emerald). He won the Bot Pro League Minor 11. He has racked up 58 MVP rounds over his career."
+ },
+ "luciddoob": {
+  "gender": "F",
+  "bio": "luciddoob is a Singaporean rifler for The Nomads, rated 0.93 (Silver). She won the Bot Pro League Minor 11. She has racked up 45 MVP rounds over her career."
+ },
+ "nikorasu": {
+  "gender": "M",
+  "bio": "Nikorasu is a Malaysian rifler for The Nomads, rated 0.91 (Bronze). He won the Bot Pro League Minor 11. He has racked up 47 MVP rounds over his career."
+ },
+ "redandb1ue": {
+  "gender": "M",
+  "bio": "Redandb1ue is a Singaporean rifler for The Nomads, rated 0.90 (Bronze). He won the Bot Pro League Minor 11."
+ },
+ "mominichi": {
+  "gender": "F",
+  "bio": "mominichi is a Singaporean rifler for The Nomads, rated 0.90 (Bronze). She won the Bot Pro League Minor 11."
+ },
+ "acryii": {
+  "gender": "M",
+  "bio": "Acryii_ is a Singaporean rifler for Ukiyo, one of the pool's elite at 1.14 (Grandmaster). He backs it up with a 1.18 career K/D."
+ },
+ "kai": {
+  "gender": "M",
+  "bio": "Kai is a Singaporean in-game leader for Ukiyo, a Master-tier standout rated 1.10. He has racked up 58 MVP rounds over his career."
+ },
+ "nattyuwus": {
+  "gender": "F",
+  "bio": "nattyuwus is a Singaporean rifler for Ukiyo, a Master-tier standout rated 1.10."
+ },
+ "mugcowpaylucky": {
+  "gender": "M",
+  "bio": "MugCowPayLucky is a Singaporean AWPer for Ukiyo, rated 1.00 (Platinum)."
+ },
+ "kael": {
+  "gender": "M",
+  "bio": "kael is a Malaysian AWPer for Ukiyo, rated 0.92 (Silver)."
+ },
+ "dudriduo": {
+  "gender": "M",
+  "bio": "dudriduo_ is a Malaysian rifler for Unforgettable, rated 0.97 (Gold)."
+ },
+ "kellyxleox": {
+  "gender": "F",
+  "bio": "_kellyxleox_ is a Malaysian rifler for Unforgettable, rated 0.98 (Gold). She won the Bot Pro League Minor 8. She has racked up 50 MVP rounds over her career."
+ },
+ "sakami": {
+  "gender": "F",
+  "bio": "Sakami is a Singaporean AWPer for Unforgettable, rated 0.92 (Silver). She won the Bot Pro League Minor 8. She has racked up 55 MVP rounds over her career."
+ },
+ "wo4tk": {
+  "gender": "M",
+  "bio": "WO4TK is a Singaporean in-game leader for Unforgettable, rated 1.03 (Emerald)."
+ },
+ "joshiwahhh": {
+  "gender": "M",
+  "bio": "Joshiwahhh is a Singaporean AWPer for Unforgettable, rated 0.82 (Iron). He won the Bot Pro League Minor 8."
+ },
+ "tapiyokaaa": {
+  "gender": "F",
+  "bio": "tapiyokaaa is a Singaporean rifler for xPlosiv, a Master-tier standout rated 1.12. She won the Bot Pro Minor League 14. On the server she pairs that with a 1.31 K/D."
+ },
+ "tokieshepherdvt": {
+  "gender": "F",
+  "bio": "TokieShepherdVT is a American rifler for xPlosiv, rated 1.07 (Diamond). She won the Bot Pro Minor League 14."
+ },
+ "cursiffe": {
+  "gender": "M",
+  "bio": "Cursiffe is a Australian rifler for xPlosiv, rated 1.06 (Diamond). He won the Bot Pro Minor League 14. On the server he pairs that with a 1.19 K/D."
+ },
+ "88exp": {
+  "gender": "M",
+  "bio": "88EXP is a Australian in-game leader for xPlosiv, rated 1.01 (Platinum). He won the Bot Pro Minor League 14."
+ },
+ "strigidaevt": {
+  "gender": "M",
+  "bio": "StrigidaeVT is a Singaporean rifler for xPlosiv, rated 1.03 (Emerald). He won the Bot Pro Minor League 14. He backs it up with a 1.28 career K/D."
+ },
+ "hyvred": {
+  "gender": "F",
+  "bio": "Hyvred is a Singaporean rifler for BeeHyve, rated 1.03 (Emerald) in the amateur pool."
+ },
+ "tiniibee": {
+  "gender": "F",
+  "bio": "TiniiBee is a Australian rifler for BeeHyve, rated 0.86 (Iron) in the amateur pool."
+ },
+ "kanarivt": {
+  "gender": "F",
+  "bio": "kanarivt is a Singaporean rifler for Eiromancers, rated 1.13 (Grandmaster) in the amateur pool. She has racked up 86 MVP rounds over her career."
+ },
+ "raviaseir": {
+  "gender": "F",
+  "bio": "RaviasEir is a Singaporean rifler for Eiromancers, rated 1.16 (Champion) in the amateur pool. On the server she pairs that with a 1.25 K/D."
+ },
+ "skiazelle": {
+  "gender": "F",
+  "bio": "Skiazelle is a Singaporean in-game leader for Eiromancers, rated 1.05 (Diamond) in the amateur pool. She has racked up 63 MVP rounds over her career."
+ },
+ "xyrren": {
+  "gender": "M",
+  "bio": "Xyrren is a Singaporean in-game leader for Syzygy, rated 0.95 (Gold) in the amateur pool."
+ },
+ "mizukiimoon": {
+  "gender": "F",
+  "bio": "MizukiiMoon is a Italian rifler, rated 1.04 (Emerald) in the amateur pool."
+ },
+ "choyahanabi": {
+  "gender": "F",
+  "bio": "Choya Hanabi is a Japanese rifler, rated 1.00 (Platinum) in the amateur pool."
+ },
+ "karasu": {
+  "gender": "M",
+  "bio": "Karasu is a Malaysian rifler, rated 1.22 (Champion) in the amateur pool. He has racked up 126 MVP rounds over his career."
+ },
+ "hakop": {
+  "gender": "M",
+  "bio": "HakoP is a Taiwanese in-game leader, rated 1.09 (Master) in the amateur pool. He has racked up 114 MVP rounds over his career."
+ },
+ "codiant": {
+  "gender": "M",
+  "bio": "Codiant is a Kazakh rifler, rated 1.18 (Champion) in the amateur pool. On the server he pairs that with a 1.29 K/D."
+ },
+ "pastellows": {
+  "gender": "F",
+  "bio": "pastellows is a American rifler, rated 1.13 (Grandmaster) in the amateur pool. On the server she pairs that with a 1.18 K/D."
+ },
+ "obvmx": {
+  "gender": "M",
+  "bio": "obvMX is a Singaporean rifler, rated 1.09 (Diamond) in the amateur pool. He has racked up 85 MVP rounds over his career."
+ },
+ "rebebx": {
+  "gender": "F",
+  "bio": "rebebx is a Singaporean rifler, rated 1.30 (Champion) in the amateur pool. On the server she pairs that with a 1.44 K/D."
+ },
+ "kaikaijins": {
+  "gender": "F",
+  "bio": "kaikaijins is a Singaporean rifler, rated 1.03 (Emerald) in the amateur pool."
+ },
+ "sadgeboi": {
+  "gender": "M",
+  "bio": "Sadgeboi is a Malaysian in-game leader, rated 1.25 (Champion) in the amateur pool. On the server he pairs that with a 1.32 K/D."
+ },
+ "xmeijixx": {
+  "gender": "F",
+  "bio": "xmeijixx is a Singaporean in-game leader, rated 1.14 (Grandmaster) in the amateur pool. She is a two-time BPL champion, with the BPL Major SRR among the highlights. She has racked up 67 MVP rounds over her career."
+ },
+ "emmabutnormal": {
+  "gender": "F",
+  "bio": "emmabutnormal is a American AWPer, rated 0.95 (Silver) in the amateur pool."
+ },
+ "mkakili": {
+  "gender": "M",
+  "bio": "MKakili is a Australian rifler, rated 1.18 (Champion) in the amateur pool. He has racked up 73 MVP rounds over his career."
+ },
+ "asumisena": {
+  "gender": "F",
+  "bio": "Asumi Sena is a Japanese rifler, rated 1.01 (Platinum) in the amateur pool."
+ },
+ "tosakimimi": {
+  "gender": "F",
+  "bio": "Tosaki Mimi is a Japanese AWPer, rated 0.94 (Silver) in the amateur pool."
+ },
+ "akanersvt": {
+  "gender": "F",
+  "bio": "AkanersVT is a Singaporean rifler, rated 1.09 (Master) in the amateur pool. On the server she pairs that with a 1.15 K/D."
+ },
+ "candybarisblue": {
+  "gender": "F",
+  "bio": "candybar_isblue is a Singaporean rifler, rated 1.22 (Champion) in the amateur pool. She backs it up with a 1.22 career K/D."
+ },
+ "leachubby": {
+  "gender": "F",
+  "bio": "leachubby is a Singaporean rifler, rated 1.07 (Diamond) in the amateur pool. She has racked up 66 MVP rounds over her career."
+ },
+ "kogaratoto": {
+  "gender": "F",
+  "bio": "Kogara Toto is a Japanese rifler, rated 1.07 (Diamond) in the amateur pool. On the server she pairs that with a 1.15 K/D."
+ },
+ "aranionja": {
+  "gender": "F",
+  "bio": "Aranionja is a Singaporean AWPer, rated 0.98 (Gold) in the amateur pool."
+ },
+ "rittan0x0": {
+  "gender": "F",
+  "bio": "rittan0x0 is a Malaysian rifler, rated 1.06 (Diamond) in the amateur pool. She has racked up 52 MVP rounds over her career."
+ },
+ "justyoong": {
+  "gender": "M",
+  "bio": "JustYoong is a Singaporean rifler, rated 1.11 (Master) in the amateur pool. On the server he pairs that with a 1.16 K/D."
+ },
+ "boopydoopy": {
+  "gender": "F",
+  "bio": "boopydoopy is a Singaporean AWPer, rated 0.98 (Gold) in the amateur pool."
+ },
+ "xevaria": {
+  "gender": "M",
+  "bio": "Xevaria is a Malaysian rifler, rated 1.04 (Emerald) in the amateur pool."
+ },
+ "kiokocheiko": {
+  "gender": "F",
+  "bio": "KiokoCheiko is a Filipino rifler, rated 1.12 (Master) in the amateur pool. She has racked up 52 MVP rounds over her career."
+ },
+ "niamocha": {
+  "gender": "F",
+  "bio": "Niamocha is a Canadian in-game leader, rated 1.16 (Champion) in the amateur pool. She has racked up 53 MVP rounds over her career."
+ },
+ "soapiisereia": {
+  "gender": "F",
+  "bio": "SoapiiSereia is a New Zealand rifler, rated 1.09 (Master) in the amateur pool. She has racked up 51 MVP rounds over her career."
+ },
+ "bloodbane": {
+  "gender": "M",
+  "bio": "bloodbane is a Australian rifler, rated 1.14 (Grandmaster) in the amateur pool. He has racked up 50 MVP rounds over his career."
+ },
+ "zarlard": {
+  "gender": "M",
+  "bio": "Zarlard is a Swedish in-game leader, rated 0.97 (Gold) in the amateur pool."
+ },
+ "dianya": {
+  "gender": "F",
+  "bio": "Dianya is a American rifler, rated 1.01 (Platinum) in the amateur pool."
+ },
+ "yumezukiyomi": {
+  "gender": "F",
+  "bio": "yumezukiyomi is a Singaporean in-game leader, rated 1.06 (Diamond) in the amateur pool. She won the Bot Pro League Minor 12."
+ },
+ "itswendy": {
+  "gender": "F",
+  "bio": "itswendy_ is a Singaporean in-game leader, rated 1.04 (Emerald) in the amateur pool."
+ },
+ "laurel": {
+  "gender": "M",
+  "bio": "Laurel is a Filipino rifler, rated 1.03 (Emerald) in the amateur pool."
+ },
+ "kurmitsuicidal": {
+  "gender": "M",
+  "bio": "KurmitSuicidal is a Singaporean in-game leader, rated 1.14 (Grandmaster) in the amateur pool. He has racked up 48 MVP rounds over his career."
+ },
+ "kuruminoah": {
+  "gender": "F",
+  "bio": "Kurumi Noah is a Japanese rifler, rated 0.99 (Gold) in the amateur pool."
+ },
+ "milliannavt": {
+  "gender": "M",
+  "bio": "MilliannaVT is a Dutch AWPer, rated 0.93 (Silver) in the amateur pool."
+ },
+ "fumishiroyummy": {
+  "gender": "M",
+  "bio": "FumishiroYummy is a Japanese rifler, rated 1.15 (Grandmaster) in the amateur pool. He backs it up with a 1.31 career K/D."
+ },
+ "prophocy": {
+  "gender": "M",
+  "bio": "ProPHOcy_ is a American AWPer, rated 0.92 (Silver) in the amateur pool."
+ },
+ "yakumobeni": {
+  "gender": "F",
+  "bio": "Yakumo Beni is a Japanese rifler, rated 1.01 (Platinum) in the amateur pool."
+ },
+ "froggiee": {
+  "gender": "F",
+  "bio": "_froggiee is a Australian AWPer, rated 0.87 (Iron) in the amateur pool."
+ },
+ "vixi": {
+  "gender": "F",
+  "bio": "vixi is a Australian rifler, rated 1.13 (Grandmaster) in the amateur pool. She backs it up with a 1.18 career K/D."
+ },
+ "psystra": {
+  "gender": "F",
+  "bio": "PSYSTRA is a British AWPer, rated 0.89 (Bronze) in the amateur pool."
+ },
+ "ostcx": {
+  "gender": "F",
+  "bio": "ostc.x is a Singaporean rifler, rated 1.08 (Diamond) in the amateur pool. A two-time BPL champion, her honours include the BPL Legends Stage 2024."
+ },
+ "kaitooshino": {
+  "gender": "M",
+  "bio": "Kaito_Oshino is a Australian rifler, rated 1.03 (Emerald) in the amateur pool."
+ },
+ "ruamamiya": {
+  "gender": "F",
+  "bio": "ruamamiya is a Singaporean AWPer, rated 0.94 (Silver) in the amateur pool."
+ },
+ "xueqiii": {
+  "gender": "F",
+  "bio": "XueQiii is a Singaporean in-game leader, rated 1.02 (Platinum) in the amateur pool."
+ },
+ "utsuhonull": {
+  "gender": "M",
+  "bio": "UtsuhoNull is a Singaporean rifler, rated 1.17 (Champion) in the amateur pool. On the server he pairs that with a 1.24 K/D."
+ },
+ "dlawo": {
+  "gender": "F",
+  "bio": "dla.wo is a Singaporean rifler, rated 1.13 (Grandmaster) in the amateur pool. She has racked up 47 MVP rounds over her career."
+ },
+ "higuvt": {
+  "gender": "F",
+  "bio": "HiguVT is a Australian rifler, rated 1.08 (Diamond) in the amateur pool. She has racked up 46 MVP rounds over her career."
+ },
+ "justansel": {
+  "gender": "M",
+  "bio": "Just_Ansel is a Malaysian in-game leader, rated 0.91 (Bronze) in the amateur pool."
+ },
+ "kimonra": {
+  "gender": "F",
+  "bio": "kimonra is a Singaporean rifler, rated 1.04 (Emerald) in the amateur pool."
+ },
+ "trpaki": {
+  "gender": "F",
+  "bio": "TRPaki is a Singaporean rifler, rated 1.07 (Diamond) in the amateur pool. She has racked up 50 MVP rounds over her career."
+ },
+ "wushii": {
+  "gender": "F",
+  "bio": "wushii is a Malaysian rifler, rated 1.14 (Grandmaster) in the amateur pool."
+ },
+ "nightveillycoris": {
+  "gender": "M",
+  "bio": "Nightveil Lycoris is a Malaysian in-game leader, rated 0.95 (Gold) in the amateur pool."
+ },
+ "arcimoon": {
+  "gender": "F",
+  "bio": "arcimoon is a Canadian AWPer, rated 0.94 (Silver) in the amateur pool."
+ },
+ "kenzieyii": {
+  "gender": "F",
+  "bio": "kenzieyii is a Singaporean rifler, rated 1.16 (Champion) in the amateur pool. She backs it up with a 1.23 career K/D."
+ },
+ "vssmb": {
+  "gender": "M",
+  "bio": "VSSMB is a Singaporean in-game leader, rated 0.98 (Gold) in the amateur pool."
+ },
+ "akuluvr": {
+  "gender": "F",
+  "bio": "akuluvr is a Singaporean rifler, rated 1.02 (Platinum) in the amateur pool."
+ },
+ "jasticar": {
+  "gender": "F",
+  "bio": "Jasticar is a Singaporean rifler, rated 0.95 (Gold) in the amateur pool."
+ },
+ "dazeido": {
+  "gender": "M",
+  "bio": "Dazeido is a Indonesian rifler, rated 0.91 (Bronze) in the amateur pool."
+ },
+ "notorious47": {
+  "gender": "M",
+  "bio": "NOTORIOUS47 is a Malaysian AWPer, rated 0.97 (Gold) in the amateur pool."
+ },
+ "vyphogrid": {
+  "gender": "M",
+  "bio": "Vyphogrid is a Filipino in-game leader, rated 1.09 (Master) in the amateur pool."
+ },
+ "aleaka": {
+  "gender": "F",
+  "bio": "Aleaka is a British rifler, rated 0.97 (Gold) in the amateur pool."
+ },
+ "karoni": {
+  "gender": "F",
+  "bio": "Karoni is a Polish rifler, rated 1.00 (Platinum) in the amateur pool."
+ },
+ "tearsofdeath": {
+  "gender": "M",
+  "bio": "TearsofDeath is a Singaporean in-game leader, rated 1.10 (Master) in the amateur pool."
+ },
+ "rumirumi": {
+  "gender": "F",
+  "bio": "RumiRumi is a Singaporean rifler, rated 1.09 (Master) in the amateur pool."
+ },
+ "shiroukitakami": {
+  "gender": "M",
+  "bio": "shirou_kitakami is a American rifler, rated 1.04 (Emerald) in the amateur pool."
+ },
+ "twentyrosie": {
+  "gender": "F",
+  "bio": "twentyrosie is a Singaporean rifler, rated 1.02 (Platinum) in the amateur pool."
+ },
+ "yukihimeowo": {
+  "gender": "F",
+  "bio": "yukihimeowo is a American rifler, rated 0.94 (Silver) in the amateur pool."
+ },
+ "yanokuromu": {
+  "gender": "F",
+  "bio": "Yano Kuromu is a Japanese AWPer, rated 0.83 (Iron) in the amateur pool."
+ },
+ "cwstalvt": {
+  "gender": "F",
+  "bio": "cwstalVT is a American in-game leader, rated 1.15 (Grandmaster) in the amateur pool. She backs it up with a 1.16 career K/D."
+ },
+ "yaekia": {
+  "gender": "F",
+  "bio": "Yaekia is a Australian rifler, rated 1.07 (Diamond) in the amateur pool. She backs it up with a 1.15 career K/D."
+ },
+ "luneforrune": {
+  "gender": "F",
+  "bio": "Luneforrune is a Singaporean rifler, rated 1.00 (Platinum) in the amateur pool."
+ },
+ "okjustsmd": {
+  "gender": "F",
+  "bio": "okjustsmd is a Singaporean in-game leader, rated 1.09 (Master) in the amateur pool."
+ },
+ "cryingnutz": {
+  "gender": "M",
+  "bio": "CryingNutz is a Malaysian rifler, rated 1.03 (Emerald) in the amateur pool."
+ },
+ "ryujin": {
+  "gender": "M",
+  "bio": "Ryujin is a Malaysian in-game leader, rated 1.01 (Platinum) in the amateur pool. He won the Bot Pro League Minor 8."
+ },
+ "anjuo": {
+  "gender": "F",
+  "bio": "anju_o is a Filipino rifler, rated 1.03 (Emerald) in the amateur pool."
+ },
+ "spinafex": {
+  "gender": "M",
+  "bio": "Spinafex is a Australian rifler, rated 1.03 (Emerald) in the amateur pool."
+ },
+ "yinghuvt": {
+  "gender": "F",
+  "bio": "YinghuVT is a Singaporean rifler, rated 1.10 (Master) in the amateur pool."
+ },
+ "aurasinvt": {
+  "gender": "F",
+  "bio": "AuraSinVT is a American in-game leader, rated 0.91 (Silver) in the amateur pool."
+ },
+ "cherrivt": {
+  "gender": "F",
+  "bio": "cherri_vt is a Australian rifler, rated 0.97 (Gold) in the amateur pool."
+ },
+ "afayctionate": {
+  "gender": "F",
+  "bio": "afayctionate is a Singaporean in-game leader, rated 0.99 (Gold) in the amateur pool."
+ },
+ "syrrith": {
+  "gender": "M",
+  "bio": "Syrrith is a Singaporean rifler, rated 1.07 (Diamond) in the amateur pool."
+ },
+ "sendoyuuhi": {
+  "gender": "F",
+  "bio": "Sendo Yuuhi is a Japanese rifler, rated 0.95 (Gold) in the amateur pool."
+ },
+ "kaganazuna": {
+  "gender": "F",
+  "bio": "Kaga Nazuna is a Japanese rifler, rated 0.90 (Bronze) in the amateur pool."
+ },
+ "kamito": {
+  "gender": "M",
+  "bio": "Kamito is a Japanese AWPer, rated 0.95 (Silver) in the amateur pool."
+ },
+ "bajiruen": {
+  "gender": "F",
+  "bio": "Bajiru_EN is a American rifler, rated 1.02 (Platinum) in the amateur pool."
+ },
+ "exact": {
+  "gender": "F",
+  "bio": "EXaCT is a Singaporean support player, rated 1.05 (Emerald) in the amateur pool."
+ },
+ "zhizyii": {
+  "gender": "F",
+  "bio": "zhizyii is a Singaporean in-game leader, rated 1.06 (Diamond) in the amateur pool. She won the BPL Tournament Minor 6."
+ },
+ "surf": {
+  "gender": "M",
+  "bio": "sURF is a Singaporean in-game leader, rated 1.04 (Emerald) in the amateur pool."
+ },
+ "rachelx": {
+  "gender": "F",
+  "bio": "rach.elx_ is a Singaporean rifler, rated 1.09 (Master) in the amateur pool. She backs it up with a 1.21 career K/D."
+ },
+ "aizawaema": {
+  "gender": "F",
+  "bio": "Aizawa Ema is a Japanese rifler, rated 1.01 (Platinum) in the amateur pool."
+ },
+ "yinnzx": {
+  "gender": "F",
+  "bio": "yinnzx is a Singaporean rifler, rated 0.95 (Gold) in the amateur pool. She won the Bot Pro League Minor 10."
+ },
+ "keikatamori": {
+  "gender": "M",
+  "bio": "keikatamori is a Australian rifler, rated 1.01 (Platinum) in the amateur pool."
+ },
+ "tigerlark": {
+  "gender": "F",
+  "bio": "tiger.lark is a Singaporean rifler, rated 0.87 (Iron) in the amateur pool."
+ },
+ "strandedpond": {
+  "gender": "M",
+  "bio": "StrandedPond is a Malaysian rifler, rated 0.98 (Gold) in the amateur pool."
+ },
+ "ssseiso": {
+  "gender": "M",
+  "bio": "ssseiso is a Australian rifler, rated 0.99 (Gold) in the amateur pool."
+ },
+ "shuvimo": {
+  "gender": "M",
+  "bio": "Shuvimo is a Japanese rifler, rated 1.04 (Emerald) in the amateur pool."
+ },
+ "jenakai": {
+  "gender": "M",
+  "bio": "Jenakai is a Singaporean AWPer, rated 0.94 (Silver) in the amateur pool."
+ },
+ "yumenoakari": {
+  "gender": "F",
+  "bio": "Yumeno Akari is a Japanese AWPer, rated 0.94 (Silver) in the amateur pool."
+ },
+ "voxslefthorn": {
+  "gender": "F",
+  "bio": "voxslefthorn is a American rifler, rated 1.00 (Platinum) in the amateur pool."
+ },
+ "bodexx": {
+  "gender": "M",
+  "bio": "bodexx is a Singaporean rifler, rated 0.96 (Gold) in the amateur pool."
+ },
+ "briant": {
+  "gender": "M",
+  "bio": "briant is a Singaporean in-game leader, rated 1.04 (Emerald) in the amateur pool."
+ },
+ "kojadayo": {
+  "gender": "F",
+  "bio": "Kojadayo is a Icelandic rifler, rated 1.06 (Diamond) in the amateur pool."
+ },
+ "thehidz": {
+  "gender": "M",
+  "bio": "thehidz is a Singaporean rifler, rated 1.00 (Platinum) in the amateur pool."
+ },
+ "sachimizora": {
+  "gender": "F",
+  "bio": "SachiMizora is a Australian rifler, rated 0.99 (Platinum) in the amateur pool."
+ },
+ "hanabusalisa": {
+  "gender": "F",
+  "bio": "Hanabusa Lisa is a Japanese in-game leader, rated 1.10 (Master) in the amateur pool."
+ },
+ "jirajisaki": {
+  "gender": "F",
+  "bio": "Jira Jisaki is a American rifler, rated 1.07 (Diamond) in the amateur pool. On the server she pairs that with a 1.15 K/D."
+ },
+ "nataleste": {
+  "gender": "F",
+  "bio": "Nataleste is a Singaporean rifler, rated 1.04 (Emerald) in the amateur pool."
+ },
+ "l2strike": {
+  "gender": "M",
+  "bio": "L2Strike is a Singaporean in-game leader, rated 0.96 (Gold) in the amateur pool."
+ },
+ "swoopsy": {
+  "gender": "F",
+  "bio": "swoopsy is a Singaporean AWPer, rated 0.97 (Gold) in the amateur pool."
+ },
+ "aryakuroha": {
+  "gender": "F",
+  "bio": "Arya Kuroha is a American rifler, rated 0.94 (Silver) in the amateur pool."
+ },
+ "pattsuu": {
+  "gender": "F",
+  "bio": "Pattsuu is a Canadian in-game leader, rated 0.97 (Gold) in the amateur pool."
+ },
+ "ayanowot": {
+  "gender": "M",
+  "bio": "AyanOwOT is a Singaporean AWPer, rated 0.92 (Silver) in the amateur pool."
+ },
+ "moricorovt": {
+  "gender": "M",
+  "bio": "moricorovt is a American AWPer, rated 0.94 (Silver) in the amateur pool."
+ },
+ "loonatic": {
+  "gender": "M",
+  "bio": "Loonatic is a Malaysian AWPer, rated 0.90 (Bronze) in the amateur pool."
+ },
+ "yarimell": {
+  "gender": "F",
+  "bio": "Yarimell is a Malaysian AWPer, rated 0.91 (Bronze) in the amateur pool."
+ },
+ "kimmixd": {
+  "gender": "F",
+  "bio": "kimmixd is a Malaysian AWPer, rated 0.90 (Bronze) in the amateur pool."
+ },
+ "nekotatsuna": {
+  "gender": "F",
+  "bio": "Nekota Tsuna is a Korean rifler, rated 0.99 (Platinum) in the amateur pool."
+ },
+ "kagasumire": {
+  "gender": "F",
+  "bio": "Kaga Sumire is a Japanese AWPer, rated 0.84 (Iron) in the amateur pool."
+ },
+ "ginjosaine": {
+  "gender": "F",
+  "bio": "Ginjo Saine is a Japanese rifler, rated 0.99 (Platinum) in the amateur pool."
+ },
+ "nerfox": {
+  "gender": "M",
+  "bio": "Nerfox is a Polish rifler, rated 0.87 (Iron) in the amateur pool."
+ },
+ "hamzyy": {
+  "gender": "M",
+  "bio": "Hamzyy is a Singaporean rifler, rated 0.96 (Gold) in the amateur pool."
+ },
+ "aweberry": {
+  "gender": "M",
+  "bio": "Aweberry is a Singaporean AWPer, rated 0.93 (Silver) in the amateur pool."
+ },
+ "stitchkyui": {
+  "gender": "F",
+  "bio": "stitchkyui is a American rifler, rated 1.00 (Platinum) in the amateur pool."
+ },
+ "voidnw": {
+  "gender": "M",
+  "bio": "voidnw is a American rifler, rated 0.94 (Silver) in the amateur pool."
+ },
+ "michimouto": {
+  "gender": "F",
+  "bio": "Michimouto is a Singaporean rifler, rated 1.00 (Platinum) in the amateur pool."
+ },
+ "itswinter": {
+  "gender": "F",
+  "bio": "itswinter__ is a American rifler, rated 1.00 (Platinum) in the amateur pool."
+ },
+ "jigglypingu": {
+  "gender": "M",
+  "bio": "JigglyPingu is a Singaporean rifler, rated 0.94 (Silver) in the amateur pool."
+ },
+ "scorn": {
+  "gender": "M",
+  "bio": "scorn is a Singaporean rifler, rated 1.01 (Platinum) in the amateur pool."
+ },
+ "jstarwolf": {
+  "gender": "M",
+  "bio": "JStarWolf is a Singaporean in-game leader, rated 1.04 (Emerald) in the amateur pool."
+ },
+ "rattecs": {
+  "gender": "M",
+  "bio": "rattecs is a Finnish rifler, rated 0.93 (Silver) in the amateur pool."
+ },
+ "amayuimoka": {
+  "gender": "F",
+  "bio": "Amayui Moka is a Japanese rifler, rated 0.96 (Gold) in the amateur pool."
+ },
+ "airizu": {
+  "gender": "M",
+  "bio": "Airizu is a Austrian in-game leader, rated 0.97 (Gold) in the amateur pool."
+ },
+ "leilamayadah": {
+  "gender": "F",
+  "bio": "LeilaMayadah is a Canadian AWPer, rated 0.82 (Iron) in the amateur pool."
+ },
+ "rikosolari": {
+  "gender": "F",
+  "bio": "Riko Solari is a Belgian rifler, rated 0.92 (Silver) in the amateur pool."
+ },
+ "penguchi": {
+  "gender": "F",
+  "bio": "PenguChi is a Filipino rifler, rated 0.97 (Gold) in the amateur pool."
+ },
+ "kyu": {
+  "gender": "M",
+  "bio": "Kyu is a Singaporean in-game leader, rated 0.93 (Silver) in the amateur pool."
+ },
+ "erinerurie": {
+  "gender": "F",
+  "bio": "ErineRurie is a Malaysian rifler, rated 0.99 (Platinum) in the amateur pool."
+ },
+ "tigeraxd": {
+  "gender": "M",
+  "bio": "Tigeraxd is a Australian in-game leader, rated 1.02 (Platinum) in the amateur pool."
+ },
+ "junoumezono": {
+  "gender": "F",
+  "bio": "Juno Umezono is a Japanese rifler, rated 0.91 (Bronze) in the amateur pool."
+ },
+ "djsalty": {
+  "gender": "M",
+  "bio": "djsalty_ is a Singaporean rifler, rated 0.88 (Bronze) in the amateur pool."
+ },
+ "itzmaigo": {
+  "gender": "M",
+  "bio": "ItzMaigo is a Singaporean rifler, rated 0.96 (Gold) in the amateur pool."
+ },
+ "kydasana": {
+  "gender": "F",
+  "bio": "KydaSana is a Singaporean AWPer, rated 0.91 (Silver) in the amateur pool."
+ },
+ "krinoj": {
+  "gender": "F",
+  "bio": "KrinoJ is a Singaporean support player, rated 0.98 (Gold) in the amateur pool."
+ },
+ "nyxcatto": {
+  "gender": "F",
+  "bio": "nyxcatto is a Singaporean rifler, rated 0.80 (Iron) in the amateur pool."
+ },
+ "narinmikure": {
+  "gender": "F",
+  "bio": "Narin Mikure is a Korean AWPer, rated 0.92 (Silver) in the amateur pool."
+ },
+ "kyomikoo": {
+  "gender": "F",
+  "bio": "kyomikoo is a Singaporean rifler, rated 0.85 (Iron) in the amateur pool."
+ },
+ "tatsumakichise": {
+  "gender": "F",
+  "bio": "Tatsumaki Chise is a Japanese rifler, rated 0.88 (Bronze) in the amateur pool."
+ },
+ "ichinoseuruha": {
+  "gender": "F",
+  "bio": "Ichinose Uruha is a Japanese rifler, rated 0.84 (Iron) in the amateur pool."
+ },
+ "kaminariqpi": {
+  "gender": "F",
+  "bio": "Kaminari Qpi is a Japanese rifler, rated 0.83 (Iron) in the amateur pool."
+ },
+ "miyaleile": {
+  "gender": "F",
+  "bio": "MiyaLeile is a Dutch rifler, rated 1.06 (Diamond) in the amateur pool. She backs it up with a 1.19 career K/D."
+ },
+ "qebo": {
+  "gender": "M",
+  "bio": "qebo is a Malaysian in-game leader, rated 1.02 (Platinum) in the amateur pool."
+ },
+ "hanyachi": {
+  "gender": "F",
+  "bio": "Hanyachi is a German rifler, rated 0.84 (Iron) in the amateur pool."
+ },
+ "djassaulty": {
+  "gender": "M",
+  "bio": "djassaulty is a na, rated 1.09 (Master) in the solo-queue pool. On the server he pairs that with a 1.19 K/D."
+ },
+ "spectrumgabriel": {
+  "gender": "M",
+  "bio": "Spectrum Gabriel is a na, rated 1.05 (Diamond) in the solo-queue pool."
+ },
+ "goonuyun": {
+  "gender": "M",
+  "bio": "Goonuyun is a na, rated 0.85 (Iron) in the solo-queue pool."
+ },
+ "icingtonthethird": {
+  "gender": "M",
+  "bio": "Icington the third is a na, rated 0.98 (Gold) in the solo-queue pool."
+ },
+ "itzmaigay": {
+  "gender": "M",
+  "bio": "ItzMaigay is a na, rated 0.98 (Gold) in the solo-queue pool."
+ },
+ "codedecho": {
+  "gender": "F",
+  "bio": "CodedEcho is a Singaporean na, rated 1.00 (Platinum) in the solo-queue pool."
+ },
+ "miruaamaochi": {
+  "gender": "F",
+  "bio": "miruaamaochi is a Japanese na, rated 1.00 (Platinum) in the solo-queue pool."
+ }
+}

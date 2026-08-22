@@ -143,6 +143,7 @@ table.data td.name-cell{font-weight:600}
 .th-flag{display:inline-flex;vertical-align:middle;margin-right:6px}
 .th-flag .flag{height:24px;width:auto;border-radius:3px}
 .th-region{display:inline-block;background:var(--panel);border:1px solid var(--border2);border-radius:5px;padding:1px 8px;font-size:11px;font-weight:700;letter-spacing:.6px;color:var(--accent);text-transform:uppercase}
+.player-bio{background:var(--panel);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:10px;padding:14px 18px;margin-bottom:18px;font-size:15px;line-height:1.65}
 .ib-row .flag{height:14px;width:auto;border-radius:2px;vertical-align:middle;margin-right:2px}
 .tm-rank{display:inline-flex;align-items:center;gap:6px}
 .rank-delta{font-size:11px;font-weight:700;white-space:nowrap}

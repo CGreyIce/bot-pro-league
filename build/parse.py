@@ -559,6 +559,18 @@ def main():
     compute_player_deltas(amateur, am_avg, latest_contrib)
     compute_player_deltas(solo, solo_avg, latest_contrib)
 
+    # ---- player bios (broadcast descriptions; data/player_bios.json from gen_bios.py) ----
+    bios_path = os.path.join(DATA, "player_bios.json")
+    if os.path.exists(bios_path):
+        bios = json.load(open(bios_path, encoding="utf-8"))
+        for pool in (pro, amateur, solo):
+            for p in pool:
+                b = bios.get(norm_key(p["name"]))
+                if b:
+                    p["bio"] = b.get("bio", "")
+                    if b.get("gender") in ("M", "F"):
+                        p["gender"] = b["gender"]
+
     # attach pro players to teams (sorted by rating)
     roster = defaultdict(list)
     for p in pro:
