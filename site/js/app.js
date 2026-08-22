@@ -1618,11 +1618,23 @@ async function loadData(tries){          // the local server can reset the big d
     catch(e){ if(i===tries-1) throw e; await new Promise(x=>setTimeout(x, 300*(i+1))); }
   }
 }
+function setupNav(){
+  const btn = $("#navtoggle"), menu = $("#navcollapse");
+  if(!btn || !menu) return;
+  const close = ()=>{ menu.classList.remove("open"); btn.setAttribute("aria-expanded","false"); };
+  btn.addEventListener("click", ()=>{
+    const open = menu.classList.toggle("open");
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  menu.addEventListener("click", e=>{ if(e.target.closest("a")) close(); });   // close after picking a link
+  window.addEventListener("hashchange", close);                                 // and on any route change
+}
 loadData().then(async d=>{
   DATA = d;
   try{ _adminOn = ((await (await fetch("/api/state")).json()).admin === true); }catch(e){ _adminOn = false; }
   setupSearch();
   setupRosterPop();
+  setupNav();
   window.addEventListener("hashchange", router);
   router();
 }).catch(e=>{ app.innerHTML = `<div class="notice"><h2>Couldn't load data</h2><p>${esc(e.message)}</p>

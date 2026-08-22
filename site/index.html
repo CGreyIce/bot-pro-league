@@ -17,23 +17,26 @@
       <img src="assets/bpl-logo.svg" alt="BPL" class="brand-logo">
       <span class="brand-text">BOT PRO<span class="brand-accent">LEAGUE</span></span>
     </a>
-    <nav class="mainnav" id="mainnav">
-      <a href="#/" data-route="home">Home</a>
-      <a href="#/teams" data-route="teams">Teams</a>
-      <a href="#/players" data-route="players">Players</a>
-      <a href="#/tournaments" data-route="tournaments">Tournaments</a>
-      <a href="#/matches" data-route="matches">Matches</a>
-      <a href="#/results" data-route="results">Results</a>
-      <a href="#/rankings" data-route="rankings">Rankings</a>
-      <a href="#/transfers" data-route="transfers">Transfers</a>
-      <a href="#/records" data-route="records">Records</a>
-      <a href="#/awards" data-route="awards">Awards</a>
-      <a href="#/maps" data-route="maps">Maps</a>
-      <a href="#/stats" data-route="stats">Stats</a>
-    </nav>
-    <div class="search">
-      <input id="search" type="text" placeholder="Search teams &amp; players…" autocomplete="off">
-      <div id="search-results" class="search-results"></div>
+    <button class="navtoggle" id="navtoggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <div class="nav-collapse" id="navcollapse">
+      <nav class="mainnav" id="mainnav">
+        <a href="#/" data-route="home">Home</a>
+        <a href="#/teams" data-route="teams">Teams</a>
+        <a href="#/players" data-route="players">Players</a>
+        <a href="#/tournaments" data-route="tournaments">Tournaments</a>
+        <a href="#/matches" data-route="matches">Matches</a>
+        <a href="#/results" data-route="results">Results</a>
+        <a href="#/rankings" data-route="rankings">Rankings</a>
+        <a href="#/transfers" data-route="transfers">Transfers</a>
+        <a href="#/records" data-route="records">Records</a>
+        <a href="#/awards" data-route="awards">Awards</a>
+        <a href="#/maps" data-route="maps">Maps</a>
+        <a href="#/stats" data-route="stats">Stats</a>
+      </nav>
+      <div class="search">
+        <input id="search" type="text" placeholder="Search teams &amp; players…" autocomplete="off">
+        <div id="search-results" class="search-results"></div>
+      </div>
     </div>
   </div>
 </header>

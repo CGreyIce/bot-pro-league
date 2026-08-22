@@ -510,6 +510,26 @@ def main():
                 if tr["year"]:
                     e["years"].add(tr["year"])
                 e["roster"] = row["players"]  # loop is date-ascending, so this ends as the latest lineup
+    # ensure each pro player's CURRENT team (from the roster/sheet) is in their career history,
+    # even if no historical line-up captured it (e.g. a 2026 move into a manual event)
+    cur_year = max((t["year"] for t in tournaments if t.get("year")), default="")
+    cur_date = max((t["date"] for t in tournaments if t.get("date")), default="")
+    for p in pro:
+        tn = p.get("team")
+        tm = team_by_key.get(norm_key(tn)) if tn else None
+        if not tm:
+            continue                                  # teamless / not a known pro team
+        existing = next((v for v in player_teams[p["slug"]].values()
+                         if v["teamSlug"] == tm["slug"]), None)
+        if existing:
+            if cur_year:
+                existing["years"].add(cur_year)       # already known — ensure current year present
+        else:
+            player_teams[p["slug"]][tm["name"]] = {
+                "teamSlug": tm["slug"], "isPro": True, "first": cur_date,
+                "years": {cur_year} if cur_year else set(),
+                "roster": [{"name": rp["name"], "slug": rp["slug"], "iso": rp.get("iso", ""),
+                            "captain": False} for rp in tm.get("roster", [])]}
     slug_to_player = {}
     for pool in (pro, amateur, solo):
         for p in pool:
