@@ -54,7 +54,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.088,
-     "tier": "Emerald",
+     "tier": "Diamond",
      "level": 7,
      "kpm": 15.9,
      "teamHistory": [
@@ -1373,7 +1373,7 @@
      "slug": "jeribean",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.909,
+     "rating": 0.908,
      "tier": "Bronze",
      "level": 3,
      "kpm": 13.5,
@@ -2815,8 +2815,8 @@
      "slug": "chiai-fujikawa",
      "nat": "Malaysia",
      "iso": "my",
-     "rating": 1.071,
-     "tier": "Emerald",
+     "rating": 1.07,
+     "tier": "Diamond",
      "level": 7,
      "kpm": 16.1,
      "teamHistory": [
@@ -2971,7 +2971,7 @@
      "slug": "sketch",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.989,
+     "rating": 0.988,
      "tier": "Gold",
      "level": 5,
      "kpm": 14.2,
@@ -4629,7 +4629,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.054,
-     "tier": "Emerald",
+     "tier": "Diamond",
      "level": 7,
      "kpm": 16.8,
      "teamHistory": [
@@ -4851,7 +4851,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.052,
-     "tier": "Emerald",
+     "tier": "Diamond",
      "level": 7,
      "kpm": 17.6,
      "teamHistory": [
@@ -5163,7 +5163,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.022,
-     "tier": "Diamond",
+     "tier": "Emerald",
      "level": 6,
      "kpm": 16.4,
      "teamHistory": [
@@ -5699,7 +5699,7 @@
      "slug": "yixl",
      "nat": "Malaysia",
      "iso": "my",
-     "rating": 1.006,
+     "rating": 1.005,
      "tier": "Platinum",
      "level": 6,
      "kpm": 16.4,
@@ -6340,8 +6340,8 @@
      "slug": "gigichiii",
      "nat": "Australia",
      "iso": "au",
-     "rating": 1.057,
-     "tier": "Emerald",
+     "rating": 1.056,
+     "tier": "Diamond",
      "level": 7,
      "kpm": 15.0,
      "teamHistory": [
@@ -6519,7 +6519,7 @@
      "slug": "yunaeyo",
      "nat": "USA",
      "iso": "us",
-     "rating": 1.018,
+     "rating": 1.017,
      "tier": "Platinum",
      "level": 6,
      "kpm": 14.6,
@@ -8370,7 +8370,7 @@
      "nat": "United Kingdom",
      "iso": "gb",
      "rating": 1.041,
-     "tier": "Diamond",
+     "tier": "Emerald",
      "level": 6,
      "kpm": 15.5,
      "teamHistory": [
@@ -8500,7 +8500,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.031,
-     "tier": "Diamond",
+     "tier": "Emerald",
      "level": 6,
      "kpm": 15.9,
      "teamHistory": [
@@ -9515,7 +9515,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.065,
-     "tier": "Emerald",
+     "tier": "Diamond",
      "level": 7,
      "kpm": 16.9,
      "teamHistory": [
@@ -10153,7 +10153,7 @@
      "slug": "adrina-ii",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.97,
+     "rating": 0.969,
      "tier": "Gold",
      "level": 5,
      "kpm": 15.2,
@@ -10338,7 +10338,7 @@
      "slug": "sayucchi",
      "nat": "Netherlands",
      "iso": "nl",
-     "rating": 0.96,
+     "rating": 0.959,
      "tier": "Gold",
      "level": 5,
      "kpm": 15.1,
@@ -11008,7 +11008,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.031,
-     "tier": "Diamond",
+     "tier": "Emerald",
      "level": 6,
      "kpm": 16.4,
      "teamHistory": [
@@ -12956,7 +12956,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.09,
-     "tier": "Master",
+     "tier": "Diamond",
      "level": 8,
      "kpm": 17.5,
      "teamHistory": [
@@ -13096,7 +13096,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.07,
-     "tier": "Emerald",
+     "tier": "Diamond",
      "level": 7,
      "kpm": 16.3,
      "teamHistory": [
@@ -13406,7 +13406,7 @@
      "slug": "kyan",
      "nat": "Malaysia",
      "iso": "my",
-     "rating": 0.991,
+     "rating": 0.99,
      "tier": "Platinum",
      "level": 5,
      "kpm": 14.8,
@@ -14716,27 +14716,27 @@
      "name": "luminichi",
      "team": "Lemon Tree",
      "pool": "pro",
-     "kills": 271,
-     "assists": 53,
-     "deaths": 288,
-     "mvp": 43,
-     "kdr": 0.94,
-     "wins": 5,
+     "kills": 296,
+     "assists": 60,
+     "deaths": 320,
+     "mvp": 46,
+     "kdr": 0.93,
+     "wins": 7,
      "losses": 12,
-     "winrate": 0.294,
+     "winrate": 0.368,
      "ot": 2,
      "role": "Awper",
-     "maps": 17,
+     "maps": 19,
      "orig_rank": "Bronze",
      "orig_level": "Level 3",
      "orig_rating": 1299.0,
      "slug": "luminichi",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.991,
-     "tier": "Platinum",
+     "rating": 0.983,
+     "tier": "Gold",
      "level": 5,
-     "kpm": 15.9,
+     "kpm": 15.6,
      "teamHistory": [
       {
        "team": "Lemon Tree",
@@ -14811,27 +14811,27 @@
      "name": "Meowcolmz",
      "team": "Lemon Tree",
      "pool": "pro",
-     "kills": 262,
-     "assists": 56,
-     "deaths": 289,
-     "mvp": 32,
-     "kdr": 0.91,
-     "wins": 5,
+     "kills": 302,
+     "assists": 64,
+     "deaths": 326,
+     "mvp": 37,
+     "kdr": 0.93,
+     "wins": 7,
      "losses": 12,
-     "winrate": 0.294,
+     "winrate": 0.368,
      "ot": 2,
      "role": "IGL",
-     "maps": 17,
+     "maps": 19,
      "orig_rank": "Iron",
      "orig_level": "Level 3",
      "orig_rating": 1159.0,
      "slug": "meowcolmz",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.95,
-     "tier": "Silver",
-     "level": 4,
-     "kpm": 15.4,
+     "rating": 0.97,
+     "tier": "Gold",
+     "level": 5,
+     "kpm": 15.9,
      "teamHistory": [
       {
        "team": "Unorthodox",
@@ -15131,27 +15131,27 @@
      "name": "MoonRaika",
      "team": "Lemon Tree",
      "pool": "pro",
-     "kills": 259,
-     "assists": 48,
-     "deaths": 286,
-     "mvp": 30,
-     "kdr": 0.91,
-     "wins": 5,
+     "kills": 293,
+     "assists": 51,
+     "deaths": 318,
+     "mvp": 36,
+     "kdr": 0.92,
+     "wins": 7,
      "losses": 12,
-     "winrate": 0.294,
+     "winrate": 0.368,
      "ot": 2,
      "role": "Awper",
-     "maps": 17,
+     "maps": 19,
      "orig_rank": "Iron",
      "orig_level": "Level 3",
      "orig_rating": 1133.0,
      "slug": "moonraika",
      "nat": "Malaysia",
      "iso": "my",
-     "rating": 0.931,
+     "rating": 0.942,
      "tier": "Silver",
      "level": 4,
-     "kpm": 15.2,
+     "kpm": 15.4,
      "teamHistory": [
       {
        "team": "MixTrix",
@@ -15496,530 +15496,30 @@
      ]
     },
     {
-     "name": "JWQI",
-     "team": "Lemon Tree",
-     "pool": "pro",
-     "kills": 248,
-     "assists": 47,
-     "deaths": 288,
-     "mvp": 23,
-     "kdr": 0.86,
-     "wins": 5,
-     "losses": 12,
-     "winrate": 0.294,
-     "ot": 2,
-     "role": "Rifler",
-     "maps": 17,
-     "orig_rank": "Iron",
-     "orig_level": "Level 3",
-     "orig_rating": 1035.0,
-     "slug": "jwqi",
-     "nat": "Singapore",
-     "iso": "sg",
-     "rating": 0.889,
-     "tier": "Bronze",
-     "level": 3,
-     "kpm": 14.6,
-     "teamHistory": [
-      {
-       "team": "Bloodlust",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2020"
-       ],
-       "roster": [
-        {
-         "hist": "JWQI",
-         "name": "JWQI",
-         "slug": "jwqi",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "jenapoppins",
-         "name": "jenapoppins",
-         "slug": "jenapoppins",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "S.GT",
-         "name": "S.GT",
-         "slug": "s-gt",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "zuann_",
-         "name": "zuann_",
-         "slug": "zuann",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Keyboard Rage",
-         "name": "Solec",
-         "slug": "solec",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "6-Down",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2020"
-       ],
-       "roster": [
-        {
-         "hist": "AcroBlaze",
-         "name": "AcroBlaze",
-         "slug": "acroblaze",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "JWQI",
-         "name": "JWQI",
-         "slug": "jwqi",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "tiger.lark",
-         "name": "tiger.lark",
-         "slug": "tiger-lark-amateur",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Valkyrae",
-         "name": "Valkyrae",
-         "slug": null,
-         "iso": "",
-         "captain": false
-        },
-        {
-         "hist": "QuarterJade",
-         "name": "QuarterJade",
-         "slug": null,
-         "iso": "",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "MixTrix",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2020"
-       ],
-       "roster": [
-        {
-         "hist": "JWQI",
-         "name": "JWQI",
-         "slug": "jwqi",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "Pearlim",
-         "name": "Pearlim",
-         "slug": "pearlim",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "KurmitSuicidal",
-         "name": "KurmitSuicidal",
-         "slug": "kurmitsuicidal-amateur",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "AshaZ",
-         "name": "MoonRaika",
-         "slug": "moonraika",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "Moira",
-         "name": "Moira",
-         "slug": "moira",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Colourfilled",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2020"
-       ],
-       "roster": [
-        {
-         "hist": "Redandb1ue",
-         "name": "Redandb1ue",
-         "slug": "redandb1ue",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "JWQI",
-         "name": "JWQI",
-         "slug": "jwqi",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Blendette",
-         "name": "Historia",
-         "slug": "historia",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "yinnzx",
-         "name": "yinnzx",
-         "slug": "yinnzx-amateur",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "ehsten",
-         "name": "ehsten",
-         "slug": "ehsten",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Unforgettable",
-       "teamSlug": "unforgettable",
-       "isPro": true,
-       "years": [
-        "2021"
-       ],
-       "roster": [
-        {
-         "hist": "Sakami",
-         "name": "Sakami",
-         "slug": "sakami",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "Astro_Ruckus",
-         "name": "Astro_Ruckus",
-         "slug": "astro-ruckus",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Kelly0",
-         "name": "_kellyxleox_",
-         "slug": "kellyxleox",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "tiger.lark",
-         "name": "tiger.lark",
-         "slug": "tiger-lark-amateur",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "JWQI",
-         "name": "JWQI",
-         "slug": "jwqi",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Ryhope",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2021"
-       ],
-       "roster": [
-        {
-         "hist": "Jenakai",
-         "name": "Jenakai",
-         "slug": "jenakai-amateur",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "Laburi",
-         "name": "Laburi",
-         "slug": "laburi",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "thehidz",
-         "name": "thehidz",
-         "slug": "thehidz-amateur",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "balililmao",
-         "name": "balililmao",
-         "slug": "balililmao",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "JWQI",
-         "name": "JWQI",
-         "slug": "jwqi",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Senior J-Cubed",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2021"
-       ],
-       "roster": [
-        {
-         "hist": "Spoods",
-         "name": "Spoods",
-         "slug": "spoods",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "Ryujin",
-         "name": "Ryujin",
-         "slug": "ryujin-amateur",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "jenapoppins",
-         "name": "jenapoppins",
-         "slug": "jenapoppins",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "JWQI",
-         "name": "JWQI",
-         "slug": "jwqi",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "j_lim02",
-         "name": "dla.wo",
-         "slug": "dla-wo-amateur",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Coarse Air",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2021"
-       ],
-       "roster": [
-        {
-         "hist": "jhjj80",
-         "name": "jhjj80",
-         "slug": "jhjj80",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "JWQI",
-         "name": "JWQI",
-         "slug": "jwqi",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "kylie.tn",
-         "name": "kyyltn",
-         "slug": "kyyltn",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "j_lim02",
-         "name": "dla.wo",
-         "slug": "dla-wo-amateur",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Decrease",
-         "name": "Decrease",
-         "slug": "decrease",
-         "iso": "us",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Team F&S",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2021"
-       ],
-       "roster": [
-        {
-         "hist": "azukihoshi",
-         "name": "yumezukiyomi",
-         "slug": "yumezukiyomi-amateur",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "JWQI",
-         "name": "JWQI",
-         "slug": "jwqi",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "balililmao",
-         "name": "balililmao",
-         "slug": "balililmao",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "VPLH",
-         "name": "VPLH",
-         "slug": "vplh",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Scorpium",
-         "name": "Scorpium",
-         "slug": "scorpium",
-         "iso": "my",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Lemon Tree",
-       "teamSlug": "lemon-tree",
-       "isPro": true,
-       "years": [
-        "2022",
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "luminichi",
-         "name": "luminichi",
-         "slug": "luminichi",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "JWQI",
-         "name": "JWQI",
-         "slug": "jwqi",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "MoonRaika",
-         "name": "MoonRaika",
-         "slug": "moonraika",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "meowcolmz",
-         "name": "Meowcolmz",
-         "slug": "meowcolmz",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "kkayyteeee",
-         "name": "kkayyteeee",
-         "slug": "kkayyteeee",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      }
-     ],
-     "titles": [
-      {
-       "event": "BPL Conquerors Stage 2024",
-       "slug": "BPLCStage24",
-       "tier": "major",
-       "tierLabel": "Major",
-       "year": "2024",
-       "team": "Lemon Tree"
-      },
-      {
-       "event": "Bot Pro Cup 2022",
-       "slug": "BotProCup2022",
-       "tier": "s",
-       "tierLabel": "S-Tier",
-       "year": "2022",
-       "team": "Lemon Tree"
-      }
-     ]
-    },
-    {
      "name": "kkayyteeee",
      "team": "Lemon Tree",
      "pool": "pro",
-     "kills": 244,
-     "assists": 50,
-     "deaths": 296,
-     "mvp": 26,
-     "kdr": 0.82,
-     "wins": 5,
+     "kills": 290,
+     "assists": 52,
+     "deaths": 326,
+     "mvp": 33,
+     "kdr": 0.89,
+     "wins": 7,
      "losses": 12,
-     "winrate": 0.294,
+     "winrate": 0.368,
      "ot": 2,
      "role": "Rifler",
-     "maps": 17,
+     "maps": 19,
      "orig_rank": "Iron",
      "orig_level": "Level 3",
      "orig_rating": 1059.0,
      "slug": "kkayyteeee",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.887,
-     "tier": "Bronze",
-     "level": 3,
-     "kpm": 14.4,
+     "rating": 0.925,
+     "tier": "Silver",
+     "level": 4,
+     "kpm": 15.3,
      "teamHistory": [
       {
        "team": "AllKnights",
@@ -16497,6 +15997,506 @@
        "team": "Lemon Tree"
       }
      ]
+    },
+    {
+     "name": "JWQI",
+     "team": "Lemon Tree",
+     "pool": "pro",
+     "kills": 292,
+     "assists": 50,
+     "deaths": 322,
+     "mvp": 31,
+     "kdr": 0.91,
+     "wins": 7,
+     "losses": 12,
+     "winrate": 0.368,
+     "ot": 2,
+     "role": "Rifler",
+     "maps": 19,
+     "orig_rank": "Iron",
+     "orig_level": "Level 3",
+     "orig_rating": 1035.0,
+     "slug": "jwqi",
+     "nat": "Singapore",
+     "iso": "sg",
+     "rating": 0.925,
+     "tier": "Silver",
+     "level": 4,
+     "kpm": 15.4,
+     "teamHistory": [
+      {
+       "team": "Bloodlust",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2020"
+       ],
+       "roster": [
+        {
+         "hist": "JWQI",
+         "name": "JWQI",
+         "slug": "jwqi",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "jenapoppins",
+         "name": "jenapoppins",
+         "slug": "jenapoppins",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "S.GT",
+         "name": "S.GT",
+         "slug": "s-gt",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "zuann_",
+         "name": "zuann_",
+         "slug": "zuann",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Keyboard Rage",
+         "name": "Solec",
+         "slug": "solec",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "6-Down",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2020"
+       ],
+       "roster": [
+        {
+         "hist": "AcroBlaze",
+         "name": "AcroBlaze",
+         "slug": "acroblaze",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "JWQI",
+         "name": "JWQI",
+         "slug": "jwqi",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "tiger.lark",
+         "name": "tiger.lark",
+         "slug": "tiger-lark-amateur",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Valkyrae",
+         "name": "Valkyrae",
+         "slug": null,
+         "iso": "",
+         "captain": false
+        },
+        {
+         "hist": "QuarterJade",
+         "name": "QuarterJade",
+         "slug": null,
+         "iso": "",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "MixTrix",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2020"
+       ],
+       "roster": [
+        {
+         "hist": "JWQI",
+         "name": "JWQI",
+         "slug": "jwqi",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "Pearlim",
+         "name": "Pearlim",
+         "slug": "pearlim",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "KurmitSuicidal",
+         "name": "KurmitSuicidal",
+         "slug": "kurmitsuicidal-amateur",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "AshaZ",
+         "name": "MoonRaika",
+         "slug": "moonraika",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "Moira",
+         "name": "Moira",
+         "slug": "moira",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Colourfilled",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2020"
+       ],
+       "roster": [
+        {
+         "hist": "Redandb1ue",
+         "name": "Redandb1ue",
+         "slug": "redandb1ue",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "JWQI",
+         "name": "JWQI",
+         "slug": "jwqi",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Blendette",
+         "name": "Historia",
+         "slug": "historia",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "yinnzx",
+         "name": "yinnzx",
+         "slug": "yinnzx-amateur",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "ehsten",
+         "name": "ehsten",
+         "slug": "ehsten",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Unforgettable",
+       "teamSlug": "unforgettable",
+       "isPro": true,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "Sakami",
+         "name": "Sakami",
+         "slug": "sakami",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "Astro_Ruckus",
+         "name": "Astro_Ruckus",
+         "slug": "astro-ruckus",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Kelly0",
+         "name": "_kellyxleox_",
+         "slug": "kellyxleox",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "tiger.lark",
+         "name": "tiger.lark",
+         "slug": "tiger-lark-amateur",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "JWQI",
+         "name": "JWQI",
+         "slug": "jwqi",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Ryhope",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "Jenakai",
+         "name": "Jenakai",
+         "slug": "jenakai-amateur",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "Laburi",
+         "name": "Laburi",
+         "slug": "laburi",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "thehidz",
+         "name": "thehidz",
+         "slug": "thehidz-amateur",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "balililmao",
+         "name": "balililmao",
+         "slug": "balililmao",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "JWQI",
+         "name": "JWQI",
+         "slug": "jwqi",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Senior J-Cubed",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "Spoods",
+         "name": "Spoods",
+         "slug": "spoods",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "Ryujin",
+         "name": "Ryujin",
+         "slug": "ryujin-amateur",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "jenapoppins",
+         "name": "jenapoppins",
+         "slug": "jenapoppins",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "JWQI",
+         "name": "JWQI",
+         "slug": "jwqi",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "j_lim02",
+         "name": "dla.wo",
+         "slug": "dla-wo-amateur",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Coarse Air",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "jhjj80",
+         "name": "jhjj80",
+         "slug": "jhjj80",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "JWQI",
+         "name": "JWQI",
+         "slug": "jwqi",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "kylie.tn",
+         "name": "kyyltn",
+         "slug": "kyyltn",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "j_lim02",
+         "name": "dla.wo",
+         "slug": "dla-wo-amateur",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Decrease",
+         "name": "Decrease",
+         "slug": "decrease",
+         "iso": "us",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Team F&S",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "azukihoshi",
+         "name": "yumezukiyomi",
+         "slug": "yumezukiyomi-amateur",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "JWQI",
+         "name": "JWQI",
+         "slug": "jwqi",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "balililmao",
+         "name": "balililmao",
+         "slug": "balililmao",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "VPLH",
+         "name": "VPLH",
+         "slug": "vplh",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Scorpium",
+         "name": "Scorpium",
+         "slug": "scorpium",
+         "iso": "my",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Lemon Tree",
+       "teamSlug": "lemon-tree",
+       "isPro": true,
+       "years": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "luminichi",
+         "name": "luminichi",
+         "slug": "luminichi",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "JWQI",
+         "name": "JWQI",
+         "slug": "jwqi",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "MoonRaika",
+         "name": "MoonRaika",
+         "slug": "moonraika",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "meowcolmz",
+         "name": "Meowcolmz",
+         "slug": "meowcolmz",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "kkayyteeee",
+         "name": "kkayyteeee",
+         "slug": "kkayyteeee",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      }
+     ],
+     "titles": [
+      {
+       "event": "BPL Conquerors Stage 2024",
+       "slug": "BPLCStage24",
+       "tier": "major",
+       "tierLabel": "Major",
+       "year": "2024",
+       "team": "Lemon Tree"
+      },
+      {
+       "event": "Bot Pro Cup 2022",
+       "slug": "BotProCup2022",
+       "tier": "s",
+       "tierLabel": "S-Tier",
+       "year": "2022",
+       "team": "Lemon Tree"
+      }
+     ]
     }
    ],
    "region": "SEA",
@@ -16809,6 +16809,12 @@
      "l": 2
     },
     {
+     "opp": "technomancy",
+     "oppName": "Technomancy",
+     "w": 1,
+     "l": 0
+    },
+    {
      "opp": "99lives",
      "oppName": "99Lives",
      "w": 1,
@@ -16882,16 +16888,6 @@
     }
    ],
    "recentResults": [
-    {
-     "date": "2025-10-10",
-     "event": "BPL Legends Stage 2025",
-     "eventSlug": "BPLLStage25",
-     "opp": "The Nomads",
-     "oppSlug": "the-nomads",
-     "result": "L",
-     "sf": 5,
-     "sa": 13
-    },
     {
      "date": "2025-10-10",
      "event": "BPL Legends Stage 2025",
@@ -16981,9 +16977,19 @@
      "result": "L",
      "sf": 0,
      "sa": 2
+    },
+    {
+     "date": "2026-08-21",
+     "event": "Audax Esse BPL Invitational 2026",
+     "eventSlug": "audax-esse-bpl-invitational-2026",
+     "opp": "Technomancy",
+     "oppSlug": "technomancy",
+     "result": "W",
+     "sf": 2,
+     "sa": 0
     }
    ],
-   "streak": "L2"
+   "streak": "W1"
   },
   {
    "name": "Sacred Raven",
@@ -17528,8 +17534,8 @@
      "slug": "skysbeautylai",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.055,
-     "tier": "Emerald",
+     "rating": 1.054,
+     "tier": "Diamond",
      "level": 7,
      "kpm": 16.2,
      "teamHistory": [
@@ -18256,7 +18262,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.043,
-     "tier": "Diamond",
+     "tier": "Emerald",
      "level": 6,
      "kpm": 15.8,
      "teamHistory": [
@@ -18476,7 +18482,7 @@
      "slug": "matcha",
      "nat": "Australia",
      "iso": "au",
-     "rating": 1.014,
+     "rating": 1.013,
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.9,
@@ -19553,7 +19559,7 @@
      "slug": "historia",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.101,
+     "rating": 1.1,
      "tier": "Master",
      "level": 8,
      "kpm": 17.5,
@@ -21535,7 +21541,7 @@
      "slug": "nutzeru",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.128,
+     "rating": 1.127,
      "tier": "Grandmaster",
      "level": 8,
      "kpm": 19.1,
@@ -21882,8 +21888,8 @@
      "slug": "beyouna",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.088,
-     "tier": "Emerald",
+     "rating": 1.087,
+     "tier": "Diamond",
      "level": 7,
      "kpm": 17.8,
      "teamHistory": [
@@ -23188,27 +23194,27 @@
      "name": "SkuxxNinja44",
      "team": "Technomancy",
      "pool": "pro",
-     "kills": 349,
-     "assists": 51,
-     "deaths": 293,
-     "mvp": 58,
-     "kdr": 1.19,
+     "kills": 376,
+     "assists": 53,
+     "deaths": 331,
+     "mvp": 62,
+     "kdr": 1.14,
      "wins": 14,
-     "losses": 7,
-     "winrate": 0.667,
+     "losses": 9,
+     "winrate": 0.609,
      "ot": 0,
      "role": "Rifler",
-     "maps": 21,
+     "maps": 23,
      "orig_rank": "Emerald",
      "orig_level": "Level 5",
      "orig_rating": 2030.0,
      "slug": "skuxxninja44",
      "nat": "New Zealand",
      "iso": "nz",
-     "rating": 1.093,
-     "tier": "Master",
-     "level": 8,
-     "kpm": 16.6,
+     "rating": 1.066,
+     "tier": "Diamond",
+     "level": 7,
+     "kpm": 16.3,
      "teamHistory": [
       {
        "team": "Ornate Garden",
@@ -23353,27 +23359,27 @@
      "name": "teckiyo",
      "team": "Technomancy",
      "pool": "pro",
-     "kills": 326,
-     "assists": 57,
-     "deaths": 284,
-     "mvp": 57,
-     "kdr": 1.15,
+     "kills": 364,
+     "assists": 59,
+     "deaths": 324,
+     "mvp": 63,
+     "kdr": 1.12,
      "wins": 14,
-     "losses": 7,
-     "winrate": 0.667,
+     "losses": 9,
+     "winrate": 0.609,
      "ot": 0,
      "role": "IGL",
-     "maps": 21,
+     "maps": 23,
      "orig_rank": "Platinum",
      "orig_level": "Level 4",
      "orig_rating": 1988.0,
      "slug": "teckiyo",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.071,
-     "tier": "Emerald",
+     "rating": 1.061,
+     "tier": "Diamond",
      "level": 7,
-     "kpm": 15.5,
+     "kpm": 15.8,
      "teamHistory": [
       {
        "team": "BlackCats",
@@ -23608,27 +23614,27 @@
      "name": "OchakoKiyomi",
      "team": "Technomancy",
      "pool": "pro",
-     "kills": 331,
-     "assists": 48,
-     "deaths": 290,
-     "mvp": 50,
-     "kdr": 1.14,
+     "kills": 370,
+     "assists": 51,
+     "deaths": 328,
+     "mvp": 54,
+     "kdr": 1.13,
      "wins": 14,
-     "losses": 7,
-     "winrate": 0.667,
+     "losses": 9,
+     "winrate": 0.609,
      "ot": 0,
      "role": "Rifler",
-     "maps": 21,
+     "maps": 23,
      "orig_rank": "Platinum",
      "orig_level": "Level 4",
      "orig_rating": 1974.0,
      "slug": "ochakokiyomi",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.044,
-     "tier": "Diamond",
-     "level": 7,
-     "kpm": 15.8,
+     "rating": 1.039,
+     "tier": "Emerald",
+     "level": 6,
+     "kpm": 16.1,
      "teamHistory": [
       {
        "team": "Chaos Children",
@@ -23776,27 +23782,27 @@
      "name": "nicsman",
      "team": "Technomancy",
      "pool": "pro",
-     "kills": 310,
-     "assists": 50,
-     "deaths": 294,
-     "mvp": 31,
-     "kdr": 1.05,
+     "kills": 346,
+     "assists": 52,
+     "deaths": 332,
+     "mvp": 35,
+     "kdr": 1.04,
      "wins": 14,
-     "losses": 7,
-     "winrate": 0.667,
+     "losses": 9,
+     "winrate": 0.609,
      "ot": 0,
      "role": "Rifler",
-     "maps": 21,
+     "maps": 23,
      "orig_rank": "Gold",
      "orig_level": "Level 4",
      "orig_rating": 1694.0,
      "slug": "nicsman",
      "nat": "Malaysia",
      "iso": "my",
-     "rating": 0.962,
+     "rating": 0.957,
      "tier": "Gold",
      "level": 5,
-     "kpm": 14.8,
+     "kpm": 15.0,
      "teamHistory": [
       {
        "team": "WKeyOnly",
@@ -23941,27 +23947,27 @@
      "name": "carv",
      "team": "Technomancy",
      "pool": "pro",
-     "kills": 296,
-     "assists": 42,
-     "deaths": 368,
-     "mvp": 39,
+     "kills": 321,
+     "assists": 43,
+     "deaths": 403,
+     "mvp": 43,
      "kdr": 0.8,
      "wins": 14,
-     "losses": 7,
-     "winrate": 0.667,
+     "losses": 9,
+     "winrate": 0.609,
      "ot": 0,
      "role": "Awper",
-     "maps": 21,
+     "maps": 23,
      "orig_rank": "Gold",
      "orig_level": "Level 4",
      "orig_rating": 1746.0,
      "slug": "carv",
      "nat": "Malaysia",
      "iso": "my",
-     "rating": 0.891,
+     "rating": 0.879,
      "tier": "Bronze",
      "level": 3,
-     "kpm": 14.1,
+     "kpm": 14.0,
      "teamHistory": [
       {
        "team": "Colonize",
@@ -24240,6 +24246,12 @@
      "l": 0
     },
     {
+     "opp": "lemon-tree",
+     "oppName": "Lemon Tree",
+     "w": 0,
+     "l": 1
+    },
+    {
      "opp": "cosmos",
      "oppName": "Cosmos",
      "w": 0,
@@ -24295,16 +24307,6 @@
     }
    ],
    "recentResults": [
-    {
-     "date": "2025-10-10",
-     "event": "BPL Legends Stage 2025",
-     "eventSlug": "BPLLStage25",
-     "opp": "Sugarcrash Protocol",
-     "oppSlug": null,
-     "result": "W",
-     "sf": 13,
-     "sa": 9
-    },
     {
      "date": "2025-10-10",
      "event": "BPL Legends Stage 2025",
@@ -24394,9 +24396,19 @@
      "result": "W",
      "sf": 2,
      "sa": 0
+    },
+    {
+     "date": "2026-08-21",
+     "event": "Audax Esse BPL Invitational 2026",
+     "eventSlug": "audax-esse-bpl-invitational-2026",
+     "opp": "Lemon Tree",
+     "oppSlug": "lemon-tree",
+     "result": "L",
+     "sf": 0,
+     "sa": 2
     }
    ],
-   "streak": "W2"
+   "streak": "L1"
   },
   {
    "name": "entity",
@@ -25020,7 +25032,7 @@
      "nat": "Malaysia",
      "iso": "my",
      "rating": 1.072,
-     "tier": "Emerald",
+     "tier": "Diamond",
      "level": 7,
      "kpm": 17.0,
      "teamHistory": [
@@ -25185,7 +25197,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.043,
-     "tier": "Diamond",
+     "tier": "Emerald",
      "level": 6,
      "kpm": 16.5,
      "teamHistory": [
@@ -25350,7 +25362,7 @@
      "nat": "Malaysia",
      "iso": "my",
      "rating": 1.023,
-     "tier": "Diamond",
+     "tier": "Emerald",
      "level": 6,
      "kpm": 16.4,
      "teamHistory": [
@@ -26045,7 +26057,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.029,
-     "tier": "Diamond",
+     "tier": "Emerald",
      "level": 6,
      "kpm": 15.9,
      "teamHistory": [
@@ -27158,7 +27170,7 @@
      "slug": "altheavt",
      "nat": "Taiwan",
      "iso": "tw",
-     "rating": 0.875,
+     "rating": 0.874,
      "tier": "Bronze",
      "level": 3,
      "kpm": 12.4,
@@ -27945,7 +27957,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.061,
-     "tier": "Emerald",
+     "tier": "Diamond",
      "level": 7,
      "kpm": 15.9,
      "teamHistory": [
@@ -28020,8 +28032,8 @@
      "slug": "urnisa",
      "nat": "Malaysia",
      "iso": "my",
-     "rating": 1.033,
-     "tier": "Diamond",
+     "rating": 1.032,
+     "tier": "Emerald",
      "level": 6,
      "kpm": 15.0,
      "teamHistory": [
@@ -28097,7 +28109,7 @@
      "nat": "USA",
      "iso": "us",
      "rating": 1.026,
-     "tier": "Diamond",
+     "tier": "Emerald",
      "level": 6,
      "kpm": 14.7,
      "teamHistory": [
@@ -29291,7 +29303,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.071,
-     "tier": "Emerald",
+     "tier": "Diamond",
      "level": 7,
      "kpm": 17.4,
      "teamHistory": [
@@ -29772,7 +29784,7 @@
      "slug": "seireiix",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.01,
+     "rating": 1.009,
      "tier": "Platinum",
      "level": 6,
      "kpm": 16.5,
@@ -31123,7 +31135,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.074,
-     "tier": "Emerald",
+     "tier": "Diamond",
      "level": 7,
      "kpm": 15.8,
      "teamHistory": [
@@ -31197,7 +31209,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.073,
-     "tier": "Emerald",
+     "tier": "Diamond",
      "level": 7,
      "kpm": 17.1,
      "teamHistory": [
@@ -31270,7 +31282,7 @@
      "slug": "anndreika",
      "nat": "Ukraine",
      "iso": "ua",
-     "rating": 1.005,
+     "rating": 1.004,
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.7,
@@ -31479,7 +31491,7 @@
      "slug": "awtoh",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.949,
+     "rating": 0.948,
      "tier": "Silver",
      "level": 4,
      "kpm": 14.7,
@@ -32313,7 +32325,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.066,
-     "tier": "Emerald",
+     "tier": "Diamond",
      "level": 7,
      "kpm": 16.4,
      "teamHistory": [
@@ -32704,7 +32716,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.034,
-     "tier": "Diamond",
+     "tier": "Emerald",
      "level": 6,
      "kpm": 16.0,
      "teamHistory": [
@@ -32869,7 +32881,7 @@
      "slug": "lilraxxx",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.019,
+     "rating": 1.018,
      "tier": "Platinum",
      "level": 6,
      "kpm": 16.2,
@@ -33488,7 +33500,7 @@
      "slug": "xolalotl",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.014,
+     "rating": 1.013,
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.6,
@@ -34219,7 +34231,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.07,
-     "tier": "Emerald",
+     "tier": "Diamond",
      "level": 7,
      "kpm": 16.2,
      "teamHistory": [
@@ -34632,7 +34644,7 @@
      "nat": "Germany",
      "iso": "de",
      "rating": 1.042,
-     "tier": "Diamond",
+     "tier": "Emerald",
      "level": 6,
      "kpm": 15.8,
      "teamHistory": [
@@ -36386,7 +36398,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.029,
-     "tier": "Diamond",
+     "tier": "Emerald",
      "level": 6,
      "kpm": 17.9,
      "teamHistory": [
@@ -38476,7 +38488,7 @@
      "slug": "zuann",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.008,
+     "rating": 1.007,
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.3,
@@ -39380,7 +39392,7 @@
      "slug": "tanykeat",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.122,
+     "rating": 1.121,
      "tier": "Master",
      "level": 8,
      "kpm": 17.8,
@@ -39693,7 +39705,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.07,
-     "tier": "Emerald",
+     "tier": "Diamond",
      "level": 7,
      "kpm": 16.6,
      "teamHistory": [
@@ -40313,7 +40325,7 @@
      "slug": "nekosoji",
      "nat": "Malaysia",
      "iso": "my",
-     "rating": 0.91,
+     "rating": 0.909,
      "tier": "Bronze",
      "level": 3,
      "kpm": 13.5,
@@ -40768,7 +40780,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.053,
-     "tier": "Emerald",
+     "tier": "Diamond",
      "level": 7,
      "kpm": 16.1,
      "teamHistory": [
@@ -41551,7 +41563,7 @@
      "slug": "pearlim",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.957,
+     "rating": 0.956,
      "tier": "Gold",
      "level": 5,
      "kpm": 15.3,
@@ -42218,7 +42230,7 @@
      "slug": "milkenut",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.833,
+     "rating": 0.832,
      "tier": "Iron",
      "level": 2,
      "kpm": 12.2,
@@ -43118,7 +43130,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.021,
-     "tier": "Diamond",
+     "tier": "Emerald",
      "level": 6,
      "kpm": 16.0,
      "teamHistory": [
@@ -45435,7 +45447,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.071,
-     "tier": "Emerald",
+     "tier": "Diamond",
      "level": 7,
      "kpm": 17.2,
      "teamHistory": [
@@ -45658,7 +45670,7 @@
      "nat": "Philippines",
      "iso": "ph",
      "rating": 1.052,
-     "tier": "Emerald",
+     "tier": "Diamond",
      "level": 7,
      "kpm": 17.1,
      "teamHistory": [
@@ -45733,7 +45745,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.039,
-     "tier": "Diamond",
+     "tier": "Emerald",
      "level": 6,
      "kpm": 15.5,
      "teamHistory": [
@@ -49582,7 +49594,7 @@
      "slug": "caturteer",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.097,
+     "rating": 1.096,
      "tier": "Master",
      "level": 8,
      "kpm": 17.3,
@@ -49793,8 +49805,8 @@
      "slug": "murasakibara-tsuki1",
      "nat": "Taiwan",
      "iso": "tw",
-     "rating": 1.042,
-     "tier": "Diamond",
+     "rating": 1.041,
+     "tier": "Emerald",
      "level": 6,
      "kpm": 17.2,
      "teamHistory": [
@@ -51181,8 +51193,8 @@
      "slug": "nifela",
      "nat": "USA",
      "iso": "us",
-     "rating": 1.025,
-     "tier": "Diamond",
+     "rating": 1.024,
+     "tier": "Emerald",
      "level": 6,
      "kpm": 15.1,
      "teamHistory": [
@@ -51583,7 +51595,7 @@
      "slug": "ehsten",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.011,
+     "rating": 1.01,
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.1,
@@ -51985,7 +51997,7 @@
      "slug": "reffelexx",
      "nat": "Malaysia",
      "iso": "my",
-     "rating": 1.003,
+     "rating": 1.002,
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.2,
@@ -52061,7 +52073,7 @@
      "slug": "acroblaze",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.95,
+     "rating": 0.949,
      "tier": "Silver",
      "level": 4,
      "kpm": 13.1,
@@ -52722,7 +52734,7 @@
      "slug": "yuuki-ps",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.932,
+     "rating": 0.931,
      "tier": "Silver",
      "level": 4,
      "kpm": 12.8,
@@ -53420,7 +53432,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.065,
-     "tier": "Emerald",
+     "tier": "Diamond",
      "level": 7,
      "kpm": 17.1,
      "teamHistory": [
@@ -53629,7 +53641,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.047,
-     "tier": "Diamond",
+     "tier": "Emerald",
      "level": 7,
      "kpm": 17.5,
      "teamHistory": [
@@ -53765,7 +53777,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.027,
-     "tier": "Diamond",
+     "tier": "Emerald",
      "level": 6,
      "kpm": 15.9,
      "teamHistory": [
@@ -53987,7 +53999,7 @@
      "slug": "drip",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.003,
+     "rating": 1.002,
      "tier": "Platinum",
      "level": 6,
      "kpm": 16.4,
@@ -54109,7 +54121,7 @@
      "slug": "suzuyunn",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.997,
+     "rating": 0.996,
      "tier": "Platinum",
      "level": 5,
      "kpm": 16.1,
@@ -54840,7 +54852,7 @@
      "slug": "y1jingg",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.102,
+     "rating": 1.101,
      "tier": "Master",
      "level": 8,
      "kpm": 17.8,
@@ -55370,7 +55382,7 @@
      "nat": "Phillipines",
      "iso": "ph",
      "rating": 1.051,
-     "tier": "Emerald",
+     "tier": "Diamond",
      "level": 7,
      "kpm": 16.0,
      "teamHistory": [
@@ -55670,7 +55682,7 @@
      "slug": "minmaxxer",
      "nat": "Philippines",
      "iso": "ph",
-     "rating": 1.012,
+     "rating": 1.011,
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.1,
@@ -56788,7 +56800,7 @@
      "slug": "nattyuwus",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.102,
+     "rating": 1.101,
      "tier": "Master",
      "level": 8,
      "kpm": 19.5,
@@ -57180,7 +57192,7 @@
      "slug": "kai",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.098,
+     "rating": 1.097,
      "tier": "Master",
      "level": 8,
      "kpm": 18.6,
@@ -57755,7 +57767,7 @@
      "slug": "mugcowpaylucky",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.004,
+     "rating": 1.003,
      "tier": "Platinum",
      "level": 6,
      "kpm": 17.4,
@@ -58632,7 +58644,7 @@
      "slug": "ziweiv",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.02,
+     "rating": 1.019,
      "tier": "Platinum",
      "level": 6,
      "kpm": 16.7,
@@ -60582,7 +60594,7 @@
      "slug": "hakase",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.119,
+     "rating": 1.118,
      "tier": "Master",
      "level": 8,
      "kpm": 17.7,
@@ -61044,7 +61056,7 @@
      "slug": "mango",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.95,
+     "rating": 0.949,
      "tier": "Silver",
      "level": 4,
      "kpm": 14.7,
@@ -61731,7 +61743,7 @@
      "slug": "laburi",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.145,
+     "rating": 1.144,
      "tier": "Grandmaster",
      "level": 9,
      "kpm": 18.0,
@@ -62513,7 +62525,7 @@
      "slug": "eroxis",
      "nat": "Malaysia",
      "iso": "my",
-     "rating": 1.119,
+     "rating": 1.118,
      "tier": "Master",
      "level": 8,
      "kpm": 18.1,
@@ -62635,7 +62647,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.087,
-     "tier": "Emerald",
+     "tier": "Diamond",
      "level": 7,
      "kpm": 16.7,
      "teamHistory": [
@@ -63115,7 +63127,7 @@
      "slug": "kitties258",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.93,
+     "rating": 0.929,
      "tier": "Silver",
      "level": 4,
      "kpm": 14.3,
@@ -63970,8 +63982,8 @@
      "slug": "crex",
      "nat": "Malaysia",
      "iso": "my",
-     "rating": 1.029,
-     "tier": "Diamond",
+     "rating": 1.028,
+     "tier": "Emerald",
      "level": 6,
      "kpm": 15.8,
      "teamHistory": [
@@ -68084,7 +68096,7 @@
      "slug": "tapiyokaaa",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.116,
+     "rating": 1.115,
      "tier": "Master",
      "level": 8,
      "kpm": 18.5,
@@ -68258,7 +68270,7 @@
      "nat": "USA",
      "iso": "us",
      "rating": 1.073,
-     "tier": "Emerald",
+     "tier": "Diamond",
      "level": 7,
      "kpm": 17.1,
      "teamHistory": [
@@ -68341,7 +68353,7 @@
      "nat": "Australia",
      "iso": "au",
      "rating": 1.059,
-     "tier": "Emerald",
+     "tier": "Diamond",
      "level": 7,
      "kpm": 16.9,
      "teamHistory": [
@@ -68423,8 +68435,8 @@
      "slug": "strigidaevt",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.031,
-     "tier": "Diamond",
+     "rating": 1.03,
+     "tier": "Emerald",
      "level": 6,
      "kpm": 17.1,
      "teamHistory": [
@@ -68975,7 +68987,7 @@
      "slug": "plainyingying",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.108,
+     "rating": 1.107,
      "tier": "Master",
      "level": 8,
      "kpm": 18.7,
@@ -69726,7 +69738,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.029,
-     "tier": "Diamond",
+     "tier": "Emerald",
      "level": 6,
      "kpm": 16.6,
      "teamHistory": [
@@ -70943,7 +70955,7 @@
      "slug": "venicec",
      "nat": "Malaysia",
      "iso": "my",
-     "rating": 0.952,
+     "rating": 0.951,
      "tier": "Gold",
      "level": 4,
      "kpm": 15.7,
@@ -71584,7 +71596,7 @@
      "nat": "Taiwan",
      "iso": "tw",
      "rating": 1.047,
-     "tier": "Diamond",
+     "tier": "Emerald",
      "level": 7,
      "kpm": 16.2,
      "teamHistory": [
@@ -73413,7 +73425,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "rating": 1.028,
-     "tier": "Diamond",
+     "tier": "Emerald",
      "level": 6,
      "kpm": 16.6,
      "teamHistory": [
@@ -74379,7 +74391,7 @@
      "nat": "Japan",
      "iso": "jp",
      "rating": 1.057,
-     "tier": "Emerald",
+     "tier": "Diamond",
      "level": 7,
      "kpm": 18.1,
      "teamHistory": [
@@ -74453,7 +74465,7 @@
      "nat": "Japan",
      "iso": "jp",
      "rating": 1.023,
-     "tier": "Diamond",
+     "tier": "Emerald",
      "level": 6,
      "kpm": 16.5,
      "teamHistory": [
@@ -74520,7 +74532,7 @@
      "slug": "remia-aotsuki",
      "nat": "Japan",
      "iso": "jp",
-     "rating": 1.018,
+     "rating": 1.017,
      "tier": "Platinum",
      "level": 6,
      "kpm": 16.7,
@@ -74961,7 +74973,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.053,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.1,
     "teamHistory": [
@@ -75875,7 +75887,7 @@
     "slug": "pearlim",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.957,
+    "rating": 0.956,
     "tier": "Gold",
     "level": 5,
     "kpm": 15.3,
@@ -76411,7 +76423,7 @@
     "slug": "milkenut",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.833,
+    "rating": 0.832,
     "tier": "Iron",
     "level": 2,
     "kpm": 12.2,
@@ -77795,7 +77807,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.028,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 16.6,
     "teamHistory": [
@@ -78497,7 +78509,7 @@
     "nat": "Phillipines",
     "iso": "ph",
     "rating": 1.051,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.0,
     "teamHistory": [
@@ -78797,7 +78809,7 @@
     "slug": "y1jingg",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.102,
+    "rating": 1.101,
     "tier": "Master",
     "level": 8,
     "kpm": 17.8,
@@ -79326,7 +79338,7 @@
     "slug": "minmaxxer",
     "nat": "Philippines",
     "iso": "ph",
-    "rating": 1.012,
+    "rating": 1.011,
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.1,
@@ -80053,7 +80065,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.065,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 17.1,
     "teamHistory": [
@@ -80262,7 +80274,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.027,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.9,
     "teamHistory": [
@@ -80485,7 +80497,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.047,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 7,
     "kpm": 17.5,
     "teamHistory": [
@@ -80620,7 +80632,7 @@
     "slug": "suzuyunn",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.997,
+    "rating": 0.996,
     "tier": "Platinum",
     "level": 5,
     "kpm": 16.1,
@@ -80788,7 +80800,7 @@
     "slug": "drip",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.003,
+    "rating": 1.002,
     "tier": "Platinum",
     "level": 6,
     "kpm": 16.4,
@@ -80911,7 +80923,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.074,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 15.8,
     "teamHistory": [
@@ -80985,7 +80997,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.073,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 17.1,
     "teamHistory": [
@@ -81058,7 +81070,7 @@
     "slug": "anndreika",
     "nat": "Ukraine",
     "iso": "ua",
-    "rating": 1.005,
+    "rating": 1.004,
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.7,
@@ -81267,7 +81279,7 @@
     "slug": "awtoh",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.949,
+    "rating": 0.948,
     "tier": "Silver",
     "level": 4,
     "kpm": 14.7,
@@ -81820,8 +81832,8 @@
     "slug": "chiai-fujikawa",
     "nat": "Malaysia",
     "iso": "my",
-    "rating": 1.071,
-    "tier": "Emerald",
+    "rating": 1.07,
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.1,
     "teamHistory": [
@@ -81976,7 +81988,7 @@
     "slug": "sketch",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.989,
+    "rating": 0.988,
     "tier": "Gold",
     "level": 5,
     "kpm": 14.2,
@@ -82972,7 +82984,7 @@
     "slug": "tanykeat",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.122,
+    "rating": 1.121,
     "tier": "Master",
     "level": 8,
     "kpm": 17.8,
@@ -83285,7 +83297,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.07,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.6,
     "teamHistory": [
@@ -83905,7 +83917,7 @@
     "slug": "nekosoji",
     "nat": "Malaysia",
     "iso": "my",
-    "rating": 0.91,
+    "rating": 0.909,
     "tier": "Bronze",
     "level": 3,
     "kpm": 13.5,
@@ -84124,7 +84136,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.054,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.8,
     "teamHistory": [
@@ -84346,7 +84358,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.052,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 17.6,
     "teamHistory": [
@@ -84657,7 +84669,7 @@
     "slug": "yixl",
     "nat": "Malaysia",
     "iso": "my",
-    "rating": 1.006,
+    "rating": 1.005,
     "tier": "Platinum",
     "level": 6,
     "kpm": 16.4,
@@ -84745,7 +84757,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.022,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 16.4,
     "teamHistory": [
@@ -87189,7 +87201,7 @@
     "nat": "Japan",
     "iso": "jp",
     "rating": 1.057,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 18.1,
     "teamHistory": [
@@ -87336,7 +87348,7 @@
     "slug": "remia-aotsuki",
     "nat": "Japan",
     "iso": "jp",
-    "rating": 1.018,
+    "rating": 1.017,
     "tier": "Platinum",
     "level": 6,
     "kpm": 16.7,
@@ -87485,7 +87497,7 @@
     "nat": "Japan",
     "iso": "jp",
     "rating": 1.023,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 16.5,
     "teamHistory": [
@@ -87552,7 +87564,7 @@
     "slug": "plainyingying",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.108,
+    "rating": 1.107,
     "tier": "Master",
     "level": 8,
     "kpm": 18.7,
@@ -89218,7 +89230,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.029,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 16.6,
     "teamHistory": [
@@ -89520,7 +89532,7 @@
     "slug": "venicec",
     "nat": "Malaysia",
     "iso": "my",
-    "rating": 0.952,
+    "rating": 0.951,
     "tier": "Gold",
     "level": 4,
     "kpm": 15.7,
@@ -89685,8 +89697,8 @@
     "slug": "beyouna",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.088,
-    "tier": "Emerald",
+    "rating": 1.087,
+    "tier": "Diamond",
     "level": 7,
     "kpm": 17.8,
     "teamHistory": [
@@ -89762,7 +89774,7 @@
     "slug": "nutzeru",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.128,
+    "rating": 1.127,
     "tier": "Grandmaster",
     "level": 8,
     "kpm": 19.1,
@@ -93523,7 +93535,7 @@
     "nat": "United Kingdom",
     "iso": "gb",
     "rating": 1.041,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.5,
     "teamHistory": [
@@ -93653,7 +93665,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.031,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.9,
     "teamHistory": [
@@ -94311,7 +94323,7 @@
     "slug": "ziweiv",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.02,
+    "rating": 1.019,
     "tier": "Platinum",
     "level": 6,
     "kpm": 16.7,
@@ -95735,7 +95747,7 @@
     "slug": "altheavt",
     "nat": "Taiwan",
     "iso": "tw",
-    "rating": 0.875,
+    "rating": 0.874,
     "tier": "Bronze",
     "level": 3,
     "kpm": 12.4,
@@ -95951,7 +95963,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.029,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.9,
     "teamHistory": [
@@ -97065,7 +97077,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.066,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.4,
     "teamHistory": [
@@ -97455,7 +97467,7 @@
     "slug": "xolalotl",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.014,
+    "rating": 1.013,
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.6,
@@ -97621,7 +97633,7 @@
     "slug": "lilraxxx",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.019,
+    "rating": 1.018,
     "tier": "Platinum",
     "level": 6,
     "kpm": 16.2,
@@ -98241,7 +98253,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.034,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 16.0,
     "teamHistory": [
@@ -98483,7 +98495,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.07,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.2,
     "teamHistory": [
@@ -99974,7 +99986,7 @@
     "nat": "Germany",
     "iso": "de",
     "rating": 1.042,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.8,
     "teamHistory": [
@@ -100110,7 +100122,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.087,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.7,
     "teamHistory": [
@@ -100981,7 +100993,7 @@
     "slug": "laburi",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.145,
+    "rating": 1.144,
     "tier": "Grandmaster",
     "level": 9,
     "kpm": 18.0,
@@ -101372,7 +101384,7 @@
     "slug": "eroxis",
     "nat": "Malaysia",
     "iso": "my",
-    "rating": 1.119,
+    "rating": 1.118,
     "tier": "Master",
     "level": 8,
     "kpm": 18.1,
@@ -101493,7 +101505,7 @@
     "slug": "kitties258",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.93,
+    "rating": 0.929,
     "tier": "Silver",
     "level": 4,
     "kpm": 14.3,
@@ -102545,7 +102557,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.043,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 16.5,
     "teamHistory": [
@@ -102710,7 +102722,7 @@
     "nat": "Malaysia",
     "iso": "my",
     "rating": 1.023,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 16.4,
     "teamHistory": [
@@ -102905,7 +102917,7 @@
     "nat": "Malaysia",
     "iso": "my",
     "rating": 1.072,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 17.0,
     "teamHistory": [
@@ -103198,7 +103210,7 @@
     "nat": "Taiwan",
     "iso": "tw",
     "rating": 1.047,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 7,
     "kpm": 16.2,
     "teamHistory": [
@@ -103979,7 +103991,7 @@
     "slug": "hakase",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.119,
+    "rating": 1.118,
     "tier": "Master",
     "level": 8,
     "kpm": 17.7,
@@ -104441,7 +104453,7 @@
     "slug": "mango",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.95,
+    "rating": 0.949,
     "tier": "Silver",
     "level": 4,
     "kpm": 14.7,
@@ -104576,7 +104588,7 @@
     "slug": "historia",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.101,
+    "rating": 1.1,
     "tier": "Master",
     "level": 8,
     "kpm": 17.5,
@@ -106384,7 +106396,7 @@
     "slug": "zuann",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.008,
+    "rating": 1.007,
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.3,
@@ -106635,27 +106647,27 @@
     "name": "luminichi",
     "team": "Lemon Tree",
     "pool": "pro",
-    "kills": 271,
-    "assists": 53,
-    "deaths": 288,
-    "mvp": 43,
-    "kdr": 0.94,
-    "wins": 5,
+    "kills": 296,
+    "assists": 60,
+    "deaths": 320,
+    "mvp": 46,
+    "kdr": 0.93,
+    "wins": 7,
     "losses": 12,
-    "winrate": 0.294,
+    "winrate": 0.368,
     "ot": 2,
     "role": "Awper",
-    "maps": 17,
+    "maps": 19,
     "orig_rank": "Bronze",
     "orig_level": "Level 3",
     "orig_rating": 1299.0,
     "slug": "luminichi",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.991,
-    "tier": "Platinum",
+    "rating": 0.983,
+    "tier": "Gold",
     "level": 5,
-    "kpm": 15.9,
+    "kpm": 15.6,
     "teamHistory": [
      {
       "team": "Lemon Tree",
@@ -106730,27 +106742,27 @@
     "name": "Meowcolmz",
     "team": "Lemon Tree",
     "pool": "pro",
-    "kills": 262,
-    "assists": 56,
-    "deaths": 289,
-    "mvp": 32,
-    "kdr": 0.91,
-    "wins": 5,
+    "kills": 302,
+    "assists": 64,
+    "deaths": 326,
+    "mvp": 37,
+    "kdr": 0.93,
+    "wins": 7,
     "losses": 12,
-    "winrate": 0.294,
+    "winrate": 0.368,
     "ot": 2,
     "role": "IGL",
-    "maps": 17,
+    "maps": 19,
     "orig_rank": "Iron",
     "orig_level": "Level 3",
     "orig_rating": 1159.0,
     "slug": "meowcolmz",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.95,
-    "tier": "Silver",
-    "level": 4,
-    "kpm": 15.4,
+    "rating": 0.97,
+    "tier": "Gold",
+    "level": 5,
+    "kpm": 15.9,
     "teamHistory": [
      {
       "team": "Unorthodox",
@@ -107050,27 +107062,27 @@
     "name": "MoonRaika",
     "team": "Lemon Tree",
     "pool": "pro",
-    "kills": 259,
-    "assists": 48,
-    "deaths": 286,
-    "mvp": 30,
-    "kdr": 0.91,
-    "wins": 5,
+    "kills": 293,
+    "assists": 51,
+    "deaths": 318,
+    "mvp": 36,
+    "kdr": 0.92,
+    "wins": 7,
     "losses": 12,
-    "winrate": 0.294,
+    "winrate": 0.368,
     "ot": 2,
     "role": "Awper",
-    "maps": 17,
+    "maps": 19,
     "orig_rank": "Iron",
     "orig_level": "Level 3",
     "orig_rating": 1133.0,
     "slug": "moonraika",
     "nat": "Malaysia",
     "iso": "my",
-    "rating": 0.931,
+    "rating": 0.942,
     "tier": "Silver",
     "level": 4,
-    "kpm": 15.2,
+    "kpm": 15.4,
     "teamHistory": [
      {
       "team": "MixTrix",
@@ -107418,27 +107430,27 @@
     "name": "kkayyteeee",
     "team": "Lemon Tree",
     "pool": "pro",
-    "kills": 244,
-    "assists": 50,
-    "deaths": 296,
-    "mvp": 26,
-    "kdr": 0.82,
-    "wins": 5,
+    "kills": 290,
+    "assists": 52,
+    "deaths": 326,
+    "mvp": 33,
+    "kdr": 0.89,
+    "wins": 7,
     "losses": 12,
-    "winrate": 0.294,
+    "winrate": 0.368,
     "ot": 2,
     "role": "Rifler",
-    "maps": 17,
+    "maps": 19,
     "orig_rank": "Iron",
     "orig_level": "Level 3",
     "orig_rating": 1059.0,
     "slug": "kkayyteeee",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.887,
-    "tier": "Bronze",
-    "level": 3,
-    "kpm": 14.4,
+    "rating": 0.925,
+    "tier": "Silver",
+    "level": 4,
+    "kpm": 15.3,
     "teamHistory": [
      {
       "team": "AllKnights",
@@ -107921,27 +107933,27 @@
     "name": "JWQI",
     "team": "Lemon Tree",
     "pool": "pro",
-    "kills": 248,
-    "assists": 47,
-    "deaths": 288,
-    "mvp": 23,
-    "kdr": 0.86,
-    "wins": 5,
+    "kills": 292,
+    "assists": 50,
+    "deaths": 322,
+    "mvp": 31,
+    "kdr": 0.91,
+    "wins": 7,
     "losses": 12,
-    "winrate": 0.294,
+    "winrate": 0.368,
     "ot": 2,
     "role": "Rifler",
-    "maps": 17,
+    "maps": 19,
     "orig_rank": "Iron",
     "orig_level": "Level 3",
     "orig_rating": 1035.0,
     "slug": "jwqi",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.889,
-    "tier": "Bronze",
-    "level": 3,
-    "kpm": 14.6,
+    "rating": 0.925,
+    "tier": "Silver",
+    "level": 4,
+    "kpm": 15.4,
     "teamHistory": [
      {
       "team": "Bloodlust",
@@ -108439,7 +108451,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.061,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 15.9,
     "teamHistory": [
@@ -108515,7 +108527,7 @@
     "nat": "USA",
     "iso": "us",
     "rating": 1.026,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 14.7,
     "teamHistory": [
@@ -108680,8 +108692,8 @@
     "slug": "urnisa",
     "nat": "Malaysia",
     "iso": "my",
-    "rating": 1.033,
-    "tier": "Diamond",
+    "rating": 1.032,
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.0,
     "teamHistory": [
@@ -109317,7 +109329,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.07,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.3,
     "teamHistory": [
@@ -109628,7 +109640,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.09,
-    "tier": "Master",
+    "tier": "Diamond",
     "level": 8,
     "kpm": 17.5,
     "teamHistory": [
@@ -109767,7 +109779,7 @@
     "slug": "kyan",
     "nat": "Malaysia",
     "iso": "my",
-    "rating": 0.991,
+    "rating": 0.99,
     "tier": "Platinum",
     "level": 5,
     "kpm": 14.8,
@@ -110834,7 +110846,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.065,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.9,
     "teamHistory": [
@@ -111472,7 +111484,7 @@
     "slug": "adrina-ii",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.97,
+    "rating": 0.969,
     "tier": "Gold",
     "level": 5,
     "kpm": 15.2,
@@ -111657,7 +111669,7 @@
     "slug": "sayucchi",
     "nat": "Netherlands",
     "iso": "nl",
-    "rating": 0.96,
+    "rating": 0.959,
     "tier": "Gold",
     "level": 5,
     "kpm": 15.1,
@@ -111732,7 +111744,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.088,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 15.9,
     "teamHistory": [
@@ -112596,7 +112608,7 @@
     "slug": "jeribean",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.909,
+    "rating": 0.908,
     "tier": "Bronze",
     "level": 3,
     "kpm": 13.5,
@@ -113962,7 +113974,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.071,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 17.4,
     "teamHistory": [
@@ -114443,7 +114455,7 @@
     "slug": "seireiix",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.01,
+    "rating": 1.009,
     "tier": "Platinum",
     "level": 6,
     "kpm": 16.5,
@@ -115291,7 +115303,7 @@
     "slug": "reffelexx",
     "nat": "Malaysia",
     "iso": "my",
-    "rating": 1.003,
+    "rating": 1.002,
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.2,
@@ -115367,8 +115379,8 @@
     "slug": "nifela",
     "nat": "USA",
     "iso": "us",
-    "rating": 1.025,
-    "tier": "Diamond",
+    "rating": 1.024,
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.1,
     "teamHistory": [
@@ -115769,7 +115781,7 @@
     "slug": "acroblaze",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.95,
+    "rating": 0.949,
     "tier": "Silver",
     "level": 4,
     "kpm": 13.1,
@@ -116430,7 +116442,7 @@
     "slug": "ehsten",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.011,
+    "rating": 1.01,
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.1,
@@ -116832,7 +116844,7 @@
     "slug": "yuuki-ps",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.932,
+    "rating": 0.931,
     "tier": "Silver",
     "level": 4,
     "kpm": 12.8,
@@ -117798,8 +117810,8 @@
     "slug": "crex",
     "nat": "Malaysia",
     "iso": "my",
-    "rating": 1.029,
-    "tier": "Diamond",
+    "rating": 1.028,
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.8,
     "teamHistory": [
@@ -118390,7 +118402,7 @@
     "slug": "caturteer",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.097,
+    "rating": 1.096,
     "tier": "Master",
     "level": 8,
     "kpm": 17.3,
@@ -118601,8 +118613,8 @@
     "slug": "murasakibara-tsuki1",
     "nat": "Taiwan",
     "iso": "tw",
-    "rating": 1.042,
-    "tier": "Diamond",
+    "rating": 1.041,
+    "tier": "Emerald",
     "level": 6,
     "kpm": 17.2,
     "teamHistory": [
@@ -120207,7 +120219,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.043,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.8,
     "teamHistory": [
@@ -120427,8 +120439,8 @@
     "slug": "skysbeautylai",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.055,
-    "tier": "Emerald",
+    "rating": 1.054,
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.2,
     "teamHistory": [
@@ -121154,7 +121166,7 @@
     "slug": "matcha",
     "nat": "Australia",
     "iso": "au",
-    "rating": 1.014,
+    "rating": 1.013,
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.9,
@@ -121822,7 +121834,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.039,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.5,
     "teamHistory": [
@@ -122049,7 +122061,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.071,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 17.2,
     "teamHistory": [
@@ -122272,7 +122284,7 @@
     "nat": "Philippines",
     "iso": "ph",
     "rating": 1.052,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 17.1,
     "teamHistory": [
@@ -122793,7 +122805,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.021,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 16.0,
     "teamHistory": [
@@ -124569,27 +124581,27 @@
     "name": "SkuxxNinja44",
     "team": "Technomancy",
     "pool": "pro",
-    "kills": 349,
-    "assists": 51,
-    "deaths": 293,
-    "mvp": 58,
-    "kdr": 1.19,
+    "kills": 376,
+    "assists": 53,
+    "deaths": 331,
+    "mvp": 62,
+    "kdr": 1.14,
     "wins": 14,
-    "losses": 7,
-    "winrate": 0.667,
+    "losses": 9,
+    "winrate": 0.609,
     "ot": 0,
     "role": "Rifler",
-    "maps": 21,
+    "maps": 23,
     "orig_rank": "Emerald",
     "orig_level": "Level 5",
     "orig_rating": 2030.0,
     "slug": "skuxxninja44",
     "nat": "New Zealand",
     "iso": "nz",
-    "rating": 1.093,
-    "tier": "Master",
-    "level": 8,
-    "kpm": 16.6,
+    "rating": 1.066,
+    "tier": "Diamond",
+    "level": 7,
+    "kpm": 16.3,
     "teamHistory": [
      {
       "team": "Ornate Garden",
@@ -124734,27 +124746,27 @@
     "name": "teckiyo",
     "team": "Technomancy",
     "pool": "pro",
-    "kills": 326,
-    "assists": 57,
-    "deaths": 284,
-    "mvp": 57,
-    "kdr": 1.15,
+    "kills": 364,
+    "assists": 59,
+    "deaths": 324,
+    "mvp": 63,
+    "kdr": 1.12,
     "wins": 14,
-    "losses": 7,
-    "winrate": 0.667,
+    "losses": 9,
+    "winrate": 0.609,
     "ot": 0,
     "role": "IGL",
-    "maps": 21,
+    "maps": 23,
     "orig_rank": "Platinum",
     "orig_level": "Level 4",
     "orig_rating": 1988.0,
     "slug": "teckiyo",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.071,
-    "tier": "Emerald",
+    "rating": 1.061,
+    "tier": "Diamond",
     "level": 7,
-    "kpm": 15.5,
+    "kpm": 15.8,
     "teamHistory": [
      {
       "team": "BlackCats",
@@ -124989,27 +125001,27 @@
     "name": "OchakoKiyomi",
     "team": "Technomancy",
     "pool": "pro",
-    "kills": 331,
-    "assists": 48,
-    "deaths": 290,
-    "mvp": 50,
-    "kdr": 1.14,
+    "kills": 370,
+    "assists": 51,
+    "deaths": 328,
+    "mvp": 54,
+    "kdr": 1.13,
     "wins": 14,
-    "losses": 7,
-    "winrate": 0.667,
+    "losses": 9,
+    "winrate": 0.609,
     "ot": 0,
     "role": "Rifler",
-    "maps": 21,
+    "maps": 23,
     "orig_rank": "Platinum",
     "orig_level": "Level 4",
     "orig_rating": 1974.0,
     "slug": "ochakokiyomi",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.044,
-    "tier": "Diamond",
-    "level": 7,
-    "kpm": 15.8,
+    "rating": 1.039,
+    "tier": "Emerald",
+    "level": 6,
+    "kpm": 16.1,
     "teamHistory": [
      {
       "team": "Chaos Children",
@@ -125157,27 +125169,27 @@
     "name": "carv",
     "team": "Technomancy",
     "pool": "pro",
-    "kills": 296,
-    "assists": 42,
-    "deaths": 368,
-    "mvp": 39,
+    "kills": 321,
+    "assists": 43,
+    "deaths": 403,
+    "mvp": 43,
     "kdr": 0.8,
     "wins": 14,
-    "losses": 7,
-    "winrate": 0.667,
+    "losses": 9,
+    "winrate": 0.609,
     "ot": 0,
     "role": "Awper",
-    "maps": 21,
+    "maps": 23,
     "orig_rank": "Gold",
     "orig_level": "Level 4",
     "orig_rating": 1746.0,
     "slug": "carv",
     "nat": "Malaysia",
     "iso": "my",
-    "rating": 0.891,
+    "rating": 0.879,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 14.1,
+    "kpm": 14.0,
     "teamHistory": [
      {
       "team": "Colonize",
@@ -125277,27 +125289,27 @@
     "name": "nicsman",
     "team": "Technomancy",
     "pool": "pro",
-    "kills": 310,
-    "assists": 50,
-    "deaths": 294,
-    "mvp": 31,
-    "kdr": 1.05,
+    "kills": 346,
+    "assists": 52,
+    "deaths": 332,
+    "mvp": 35,
+    "kdr": 1.04,
     "wins": 14,
-    "losses": 7,
-    "winrate": 0.667,
+    "losses": 9,
+    "winrate": 0.609,
     "ot": 0,
     "role": "Rifler",
-    "maps": 21,
+    "maps": 23,
     "orig_rank": "Gold",
     "orig_level": "Level 4",
     "orig_rating": 1694.0,
     "slug": "nicsman",
     "nat": "Malaysia",
     "iso": "my",
-    "rating": 0.962,
+    "rating": 0.957,
     "tier": "Gold",
     "level": 5,
-    "kpm": 14.8,
+    "kpm": 15.0,
     "teamHistory": [
      {
       "team": "WKeyOnly",
@@ -125459,8 +125471,8 @@
     "slug": "gigichiii",
     "nat": "Australia",
     "iso": "au",
-    "rating": 1.057,
-    "tier": "Emerald",
+    "rating": 1.056,
+    "tier": "Diamond",
     "level": 7,
     "kpm": 15.0,
     "teamHistory": [
@@ -125638,7 +125650,7 @@
     "slug": "yunaeyo",
     "nat": "USA",
     "iso": "us",
-    "rating": 1.018,
+    "rating": 1.017,
     "tier": "Platinum",
     "level": 6,
     "kpm": 14.6,
@@ -126558,7 +126570,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.031,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 16.4,
     "teamHistory": [
@@ -128138,7 +128150,7 @@
     "slug": "kai",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.098,
+    "rating": 1.097,
     "tier": "Master",
     "level": 8,
     "kpm": 18.6,
@@ -128713,7 +128725,7 @@
     "slug": "nattyuwus",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.102,
+    "rating": 1.101,
     "tier": "Master",
     "level": 8,
     "kpm": 19.5,
@@ -129105,7 +129117,7 @@
     "slug": "mugcowpaylucky",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.004,
+    "rating": 1.003,
     "tier": "Platinum",
     "level": 6,
     "kpm": 17.4,
@@ -130093,7 +130105,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.029,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 17.9,
     "teamHistory": [
@@ -130473,7 +130485,7 @@
     "slug": "tapiyokaaa",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.116,
+    "rating": 1.115,
     "tier": "Master",
     "level": 8,
     "kpm": 18.5,
@@ -130647,7 +130659,7 @@
     "nat": "USA",
     "iso": "us",
     "rating": 1.073,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 17.1,
     "teamHistory": [
@@ -130730,7 +130742,7 @@
     "nat": "Australia",
     "iso": "au",
     "rating": 1.059,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.9,
     "teamHistory": [
@@ -130940,8 +130952,8 @@
     "slug": "strigidaevt",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.031,
-    "tier": "Diamond",
+    "rating": 1.03,
+    "tier": "Emerald",
     "level": 6,
     "kpm": 17.1,
     "teamHistory": [
@@ -131116,7 +131128,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.033,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.9,
     "teamHistory": [
@@ -131633,7 +131645,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.054,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 14.6,
     "teamHistory": [
@@ -132099,7 +132111,7 @@
     "nat": "Italy",
     "iso": "it",
     "rating": 1.037,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.4,
     "teamHistory": [
@@ -132945,7 +132957,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.089,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 8,
     "kpm": 16.8,
     "teamHistory": [
@@ -134306,7 +134318,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.029,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 14.2,
     "teamHistory": [
@@ -136197,7 +136209,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.072,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 15.5,
     "teamHistory": [
@@ -136902,7 +136914,7 @@
     "nat": "Japan",
     "iso": "jp",
     "rating": 1.074,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 14.8,
     "teamHistory": [
@@ -137363,7 +137375,7 @@
     "nat": "Malaysia",
     "iso": "my",
     "rating": 1.056,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 15.0,
     "teamHistory": [
@@ -137852,7 +137864,7 @@
     "nat": "Malaysia",
     "iso": "my",
     "rating": 1.04,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 14.0,
     "teamHistory": [
@@ -139353,7 +139365,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.064,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 17.2,
     "teamHistory": [
@@ -139847,7 +139859,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.039,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 14.6,
     "teamHistory": [
@@ -140103,7 +140115,7 @@
     "nat": "Philippines",
     "iso": "ph",
     "rating": 1.026,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.8,
     "teamHistory": [
@@ -142858,7 +142870,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.08,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.8,
     "teamHistory": [
@@ -143177,7 +143189,7 @@
     "nat": "Australia",
     "iso": "au",
     "rating": 1.026,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 14.7,
     "teamHistory": [
@@ -145528,7 +145540,7 @@
     "nat": "Australia",
     "iso": "au",
     "rating": 1.083,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 15.3,
     "teamHistory": [
@@ -146172,7 +146184,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.037,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.1,
     "teamHistory": [
@@ -146335,7 +146347,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.074,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.5,
     "teamHistory": [
@@ -151528,7 +151540,7 @@
     "nat": "USA",
     "iso": "us",
     "rating": 1.042,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 16.8,
     "teamHistory": [
@@ -152253,7 +152265,7 @@
     "nat": "Australia",
     "iso": "au",
     "rating": 1.073,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.4,
     "teamHistory": [
@@ -154273,7 +154285,7 @@
     "nat": "Malaysia",
     "iso": "my",
     "rating": 1.035,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.9,
     "teamHistory": [
@@ -155066,7 +155078,7 @@
     "nat": "Philippines",
     "iso": "ph",
     "rating": 1.035,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 16.9,
     "teamHistory": [
@@ -155274,7 +155286,7 @@
     "nat": "Australia",
     "iso": "au",
     "rating": 1.03,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.7,
     "teamHistory": [
@@ -156546,7 +156558,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.07,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 17.8,
     "teamHistory": [
@@ -157361,7 +157373,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.048,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 7,
     "kpm": 16.8,
     "teamHistory": [
@@ -158289,7 +158301,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.063,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 17.5,
     "teamHistory": [
@@ -158691,7 +158703,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.044,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 16.8,
     "teamHistory": [
@@ -162035,7 +162047,7 @@
     "nat": "Japan",
     "iso": "jp",
     "rating": 1.04,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 17.0,
     "teamHistory": [
@@ -163525,7 +163537,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.038,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.9,
     "teamHistory": [
@@ -164183,7 +164195,7 @@
     "nat": "Iceland",
     "iso": "is",
     "rating": 1.056,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 17.5,
     "teamHistory": [
@@ -165420,7 +165432,7 @@
     "nat": "USA",
     "iso": "us",
     "rating": 1.066,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.0,
     "teamHistory": [
@@ -165583,7 +165595,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.039,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 17.1,
     "teamHistory": [
@@ -170115,7 +170127,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.037,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.3,
     "teamHistory": [
@@ -176109,7 +176121,7 @@
     "nat": "Netherlands",
     "iso": "nl",
     "rating": 1.062,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 21.5,
     "teamHistory": [
@@ -176564,7 +176576,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.03,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 14.5
    },
@@ -176616,7 +176628,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.076,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.7
    },
@@ -176642,7 +176654,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.062,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 17.1
    },
@@ -176746,7 +176758,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.026,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 14.0
    },
@@ -176876,7 +176888,7 @@
     "nat": "Japan",
     "iso": "jp",
     "rating": 1.044,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.7
    },
@@ -176902,7 +176914,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.034,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 16.2
    },
@@ -176928,7 +176940,7 @@
     "nat": "Kazakhstan",
     "iso": "kz",
     "rating": 1.037,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 16.6
    },
@@ -176954,7 +176966,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.075,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 15.7
    },
@@ -177136,7 +177148,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.055,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 14.8
    },
@@ -177162,7 +177174,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.038,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 16.5
    },
@@ -177214,7 +177226,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.037,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.7
    },
@@ -177370,7 +177382,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.055,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.2
    },
@@ -177500,7 +177512,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.056,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 15.9
    },
@@ -177604,7 +177616,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.084,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 18.3
    },
@@ -177682,7 +177694,7 @@
     "nat": "Philippines",
     "iso": "ph",
     "rating": 1.049,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 7,
     "kpm": 17.0
    },
@@ -177708,7 +177720,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.09,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 8,
     "kpm": 15.9
    },
@@ -177734,7 +177746,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.048,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 7,
     "kpm": 18.3
    },
@@ -177786,7 +177798,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.089,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 8,
     "kpm": 19.6
    },
@@ -177916,7 +177928,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.048,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 7,
     "kpm": 16.7
    },
@@ -177942,7 +177954,7 @@
     "nat": "Malaysia",
     "iso": "my",
     "rating": 1.023,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.7
    },
@@ -177994,7 +178006,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.078,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 18.0
    },
@@ -178020,7 +178032,7 @@
     "nat": "Malaysia",
     "iso": "my",
     "rating": 1.081,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 19.5
    },
@@ -178098,7 +178110,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.073,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 17.1
    },
@@ -178124,7 +178136,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.065,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 17.1
    },
@@ -178228,7 +178240,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.042,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 16.1
    },
@@ -178280,7 +178292,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.068,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 18.0
    },
@@ -178332,7 +178344,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.033,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.4
    },
@@ -178384,7 +178396,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.086,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 20.1
    },
@@ -178436,7 +178448,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.07,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.9
    },
@@ -178462,7 +178474,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.049,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 7,
     "kpm": 15.9
    },
@@ -178514,7 +178526,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.078,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 17.6
    },
@@ -178592,7 +178604,7 @@
     "nat": "Taiwan",
     "iso": "tw",
     "rating": 1.039,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.6
    },
@@ -178670,7 +178682,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.046,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 7,
     "kpm": 16.1
    },
@@ -178696,7 +178708,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.049,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 7,
     "kpm": 16.3
    },
@@ -179008,7 +179020,7 @@
     "nat": "Malaysia",
     "iso": "my",
     "rating": 1.07,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 20.1
    },
@@ -179112,7 +179124,7 @@
     "nat": "Japan",
     "iso": "jp",
     "rating": 1.057,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 18.5
    },
@@ -179216,7 +179228,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.065,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 14.8
    },
@@ -179242,7 +179254,7 @@
     "nat": "Japan",
     "iso": "jp",
     "rating": 1.05,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.3
    },
@@ -179268,7 +179280,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.081,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 19.3
    },
@@ -179294,7 +179306,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.085,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 18.2
    },
@@ -179450,7 +179462,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.052,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 15.4
    },
@@ -179476,7 +179488,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.077,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.2
    },
@@ -179502,7 +179514,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.082,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.6
    },
@@ -179528,7 +179540,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.075,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 19.8
    },
@@ -179554,7 +179566,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.07,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.2
    },
@@ -179606,7 +179618,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.045,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 7,
     "kpm": 18.2
    },
@@ -179736,7 +179748,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.021,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 16.2
    },
@@ -179991,7 +180003,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.059,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.8
    },
@@ -180017,7 +180029,7 @@
     "nat": "USA",
     "iso": "us",
     "rating": 1.082,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 15.6
    },
@@ -180095,7 +180107,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.062,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 18.0
    },
@@ -180199,7 +180211,7 @@
     "nat": "Australia",
     "iso": "au",
     "rating": 1.053,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 14.4
    },
@@ -180251,7 +180263,7 @@
     "nat": "Malaysia",
     "iso": "my",
     "rating": 1.044,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 7,
     "kpm": 17.4
    },
@@ -180329,7 +180341,7 @@
     "nat": "Malaysia",
     "iso": "my",
     "rating": 1.046,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 7,
     "kpm": 15.2
    },
@@ -180433,7 +180445,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.028,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.5
    },
@@ -180511,7 +180523,7 @@
     "nat": "Land of Make Believe",
     "iso": "neutral",
     "rating": 1.05,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 17.0,
     "teamHistory": [
@@ -180610,7 +180622,7 @@
     "nat": "Poland",
     "iso": "pl",
     "rating": 1.023,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.3
    },
@@ -180636,7 +180648,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.055,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 18.2
    },
@@ -180662,7 +180674,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.044,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 16.4
    },
@@ -180714,7 +180726,7 @@
     "nat": "Australia",
     "iso": "au",
     "rating": 1.025,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 14.6
    },
@@ -180766,7 +180778,7 @@
     "nat": "United Kingdom",
     "iso": "gb",
     "rating": 1.054,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 18.0
    },
@@ -180818,7 +180830,7 @@
     "nat": "Malaysia",
     "iso": "my",
     "rating": 1.035,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 13.2
    },
@@ -180844,7 +180856,7 @@
     "nat": "USA",
     "iso": "us",
     "rating": 1.068,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 17.8
    },
@@ -181078,7 +181090,7 @@
     "nat": "Indonesia",
     "iso": "id",
     "rating": 1.024,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 17.7
    },
@@ -181234,7 +181246,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.036,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.2
    },
@@ -181286,7 +181298,7 @@
     "nat": "Australia",
     "iso": "au",
     "rating": 1.041,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.0
    },
@@ -181520,7 +181532,7 @@
     "nat": "Japan",
     "iso": "jp",
     "rating": 1.057,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.5
    },
@@ -181598,7 +181610,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.03,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 16.8
    },
@@ -181624,7 +181636,7 @@
     "nat": "USA",
     "iso": "us",
     "rating": 1.039,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 17.8
    },
@@ -181754,7 +181766,7 @@
     "nat": "Malaysia",
     "iso": "my",
     "rating": 1.039,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.8
    },
@@ -182144,7 +182156,7 @@
     "nat": "Canada",
     "iso": "ca",
     "rating": 1.084,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 20.5
    },
@@ -182170,7 +182182,7 @@
     "nat": "Italy",
     "iso": "it",
     "rating": 1.025,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 19.2
    },
@@ -182196,7 +182208,7 @@
     "nat": "USA",
     "iso": "us",
     "rating": 1.042,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 21.0
    },
@@ -182274,7 +182286,7 @@
     "nat": "Japan",
     "iso": "jp",
     "rating": 1.058,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 20.5
    },
@@ -182300,7 +182312,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.039,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 17.2
    },
@@ -182326,7 +182338,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.061,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 19.0
    },
@@ -182352,7 +182364,7 @@
     "nat": "Japan",
     "iso": "jp",
     "rating": 1.033,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 18.0
    },
@@ -182378,7 +182390,7 @@
     "nat": "Japan",
     "iso": "jp",
     "rating": 1.052,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.3
    },
@@ -182456,7 +182468,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.084,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 18.2
    },
@@ -182508,7 +182520,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.028,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 14.0
    },
@@ -182690,7 +182702,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.054,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 16.7
    },
@@ -183075,7 +183087,7 @@
     "nat": "Japan",
     "iso": "jp",
     "rating": 1.049,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 7,
     "kpm": 19.0
    },
@@ -183387,7 +183399,7 @@
     "nat": "Japan",
     "iso": "jp",
     "rating": 1.046,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 7,
     "kpm": 17.0
    },
@@ -183439,7 +183451,7 @@
     "nat": "USA",
     "iso": "us",
     "rating": 1.055,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 19.0
    },
@@ -183465,7 +183477,7 @@
     "nat": "Japan",
     "iso": "jp",
     "rating": 1.087,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 21.0
    },
@@ -183595,7 +183607,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.025,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 16.0
    },
@@ -183647,7 +183659,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.061,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 20.7
    },
@@ -183673,7 +183685,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.03,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.0
    },
@@ -183699,7 +183711,7 @@
     "nat": "Malaysia",
     "iso": "my",
     "rating": 1.032,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 13.7
    },
@@ -183751,7 +183763,7 @@
     "nat": "Taiwan",
     "iso": "tw",
     "rating": 1.087,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 23.7
    },
@@ -183803,7 +183815,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.064,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 18.0
    },
@@ -184037,7 +184049,7 @@
     "nat": "Australia",
     "iso": "au",
     "rating": 1.033,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 17.7
    },
@@ -184063,7 +184075,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.024,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 13.0
    },
@@ -184687,7 +184699,7 @@
     "nat": "Philippines",
     "iso": "ph",
     "rating": 1.043,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 13.5
    },
@@ -184739,7 +184751,7 @@
     "nat": "USA",
     "iso": "us",
     "rating": 1.037,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 17.0
    },
@@ -184921,7 +184933,7 @@
     "nat": "Japan",
     "iso": "jp",
     "rating": 1.036,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 16.0
    },
@@ -185025,7 +185037,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "rating": 1.022,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 19.5
    },
@@ -185535,7 +185547,7 @@
     "nat": "USA",
     "iso": "us",
     "rating": 1.057,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 20.0
    },
@@ -185613,7 +185625,7 @@
     "nat": "Australia",
     "iso": "au",
     "rating": 1.062,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 25.0
    },
@@ -185743,7 +185755,7 @@
     "nat": "Japan",
     "iso": "jp",
     "rating": 1.029,
-    "tier": "Diamond",
+    "tier": "Emerald",
     "level": 6,
     "kpm": 15.0
    },
@@ -185873,7 +185885,7 @@
     "nat": "USA",
     "iso": "us",
     "rating": 1.06,
-    "tier": "Emerald",
+    "tier": "Diamond",
     "level": 7,
     "kpm": 27.0
    },
@@ -186167,11 +186179,11 @@
  },
  "pool_avg": {
   "pro": {
-   "kdr": 1.01,
-   "kpm": 15.483779024312502,
-   "mvp": 2.1936787124788055,
-   "apm": 3.0178836838446372,
-   "wr": 0.5051857142857142
+   "kdr": 1.0101904761904763,
+   "kpm": 15.49566411397003,
+   "mvp": 2.1963272471024187,
+   "apm": 3.013339104762051,
+   "wr": 0.5055666666666666
   },
   "amateur": {
    "kdr": 0.9751875,
@@ -186199,8 +186211,8 @@
   "Champion",
   "Grandmaster",
   "Master",
-  "Emerald",
   "Diamond",
+  "Emerald",
   "Platinum",
   "Gold",
   "Silver",
@@ -188357,13 +188369,251 @@
        "i": 14,
        "a": "Technomancy",
        "b": "Lemon Tree",
-       "sa": null,
-       "sb": null,
-       "w": 0,
+       "sa": 0,
+       "sb": 2,
+       "w": 2,
        "aTeam": "technomancy",
        "bTeam": "lemon-tree",
        "bo": 1,
-       "ts": null
+       "ts": 1787388931,
+       "stats": {
+        "maps": [
+         {
+          "map": "Vertigo",
+          "scoreA": 12,
+          "scoreB": 16,
+          "players": [
+           {
+            "team": "Technomancy",
+            "name": "teckiyo",
+            "k": 22,
+            "a": 2,
+            "d": 22,
+            "mvp": 3,
+            "score": 52,
+            "slug": "teckiyo",
+            "iso": "sg"
+           },
+           {
+            "team": "Technomancy",
+            "name": "nicsman",
+            "k": 20,
+            "a": 1,
+            "d": 19,
+            "mvp": 2,
+            "score": 52,
+            "slug": "nicsman",
+            "iso": "my"
+           },
+           {
+            "team": "Technomancy",
+            "name": "OchakoKiyomi",
+            "k": 23,
+            "a": 2,
+            "d": 22,
+            "mvp": 3,
+            "score": 48,
+            "slug": "ochakokiyomi",
+            "iso": "sg"
+           },
+           {
+            "team": "Technomancy",
+            "name": "carv",
+            "k": 18,
+            "a": 1,
+            "d": 19,
+            "mvp": 2,
+            "score": 40,
+            "slug": "carv",
+            "iso": "my"
+           },
+           {
+            "team": "Technomancy",
+            "name": "SkuxxNinja44",
+            "k": 16,
+            "a": 0,
+            "d": 21,
+            "mvp": 2,
+            "score": 36,
+            "slug": "skuxxninja44",
+            "iso": "nz"
+           },
+           {
+            "team": "Lemon Tree",
+            "name": "Meowcolmz",
+            "k": 29,
+            "a": 6,
+            "d": 21,
+            "mvp": 5,
+            "score": 75,
+            "slug": "meowcolmz",
+            "iso": "sg"
+           },
+           {
+            "team": "Lemon Tree",
+            "name": "JWQI",
+            "k": 26,
+            "a": 0,
+            "d": 19,
+            "mvp": 5,
+            "score": 62,
+            "slug": "jwqi",
+            "iso": "sg"
+           },
+           {
+            "team": "Lemon Tree",
+            "name": "MoonRaika",
+            "k": 20,
+            "a": 2,
+            "d": 19,
+            "mvp": 3,
+            "score": 50,
+            "slug": "moonraika",
+            "iso": "my"
+           },
+           {
+            "team": "Lemon Tree",
+            "name": "luminichi",
+            "k": 16,
+            "a": 1,
+            "d": 20,
+            "mvp": 2,
+            "score": 40,
+            "slug": "luminichi",
+            "iso": "sg"
+           },
+           {
+            "team": "Lemon Tree",
+            "name": "kkayyteeee",
+            "k": 12,
+            "a": 1,
+            "d": 20,
+            "mvp": 1,
+            "score": 34,
+            "slug": "kkayyteeee",
+            "iso": "sg"
+           }
+          ]
+         },
+         {
+          "map": "Inferno",
+          "scoreA": 10,
+          "scoreB": 13,
+          "players": [
+           {
+            "team": "Technomancy",
+            "name": "teckiyo",
+            "k": 16,
+            "a": 0,
+            "d": 18,
+            "mvp": 3,
+            "score": 45,
+            "slug": "teckiyo",
+            "iso": "sg"
+           },
+           {
+            "team": "Technomancy",
+            "name": "OchakoKiyomi",
+            "k": 16,
+            "a": 1,
+            "d": 16,
+            "mvp": 1,
+            "score": 42,
+            "slug": "ochakokiyomi",
+            "iso": "sg"
+           },
+           {
+            "team": "Technomancy",
+            "name": "nicsman",
+            "k": 16,
+            "a": 1,
+            "d": 19,
+            "mvp": 2,
+            "score": 36,
+            "slug": "nicsman",
+            "iso": "my"
+           },
+           {
+            "team": "Technomancy",
+            "name": "SkuxxNinja44",
+            "k": 11,
+            "a": 2,
+            "d": 17,
+            "mvp": 2,
+            "score": 28,
+            "slug": "skuxxninja44",
+            "iso": "nz"
+           },
+           {
+            "team": "Technomancy",
+            "name": "carv",
+            "k": 7,
+            "a": 0,
+            "d": 16,
+            "mvp": 2,
+            "score": 21,
+            "slug": "carv",
+            "iso": "my"
+           },
+           {
+            "team": "Lemon Tree",
+            "name": "kkayyteeee",
+            "k": 34,
+            "a": 1,
+            "d": 10,
+            "mvp": 6,
+            "score": 80,
+            "slug": "kkayyteeee",
+            "iso": "sg"
+           },
+           {
+            "team": "Lemon Tree",
+            "name": "JWQI",
+            "k": 18,
+            "a": 3,
+            "d": 15,
+            "mvp": 3,
+            "score": 45,
+            "slug": "jwqi",
+            "iso": "sg"
+           },
+           {
+            "team": "Lemon Tree",
+            "name": "MoonRaika",
+            "k": 14,
+            "a": 1,
+            "d": 13,
+            "mvp": 3,
+            "score": 37,
+            "slug": "moonraika",
+            "iso": "my"
+           },
+           {
+            "team": "Lemon Tree",
+            "name": "luminichi",
+            "k": 9,
+            "a": 6,
+            "d": 12,
+            "mvp": 1,
+            "score": 31,
+            "slug": "luminichi",
+            "iso": "sg"
+           },
+           {
+            "team": "Lemon Tree",
+            "name": "Meowcolmz",
+            "k": 11,
+            "a": 2,
+            "d": 16,
+            "mvp": 0,
+            "score": 24,
+            "slug": "meowcolmz",
+            "iso": "sg"
+           }
+          ]
+         }
+        ]
+       }
       },
       {
        "i": 15,
@@ -191092,13 +191342,251 @@
          "i": 14,
          "a": "Technomancy",
          "b": "Lemon Tree",
-         "sa": null,
-         "sb": null,
-         "w": 0,
+         "sa": 0,
+         "sb": 2,
+         "w": 2,
          "aTeam": "technomancy",
          "bTeam": "lemon-tree",
          "bo": 1,
-         "ts": null
+         "ts": 1787388931,
+         "stats": {
+          "maps": [
+           {
+            "map": "Vertigo",
+            "scoreA": 12,
+            "scoreB": 16,
+            "players": [
+             {
+              "team": "Technomancy",
+              "name": "teckiyo",
+              "k": 22,
+              "a": 2,
+              "d": 22,
+              "mvp": 3,
+              "score": 52,
+              "slug": "teckiyo",
+              "iso": "sg"
+             },
+             {
+              "team": "Technomancy",
+              "name": "nicsman",
+              "k": 20,
+              "a": 1,
+              "d": 19,
+              "mvp": 2,
+              "score": 52,
+              "slug": "nicsman",
+              "iso": "my"
+             },
+             {
+              "team": "Technomancy",
+              "name": "OchakoKiyomi",
+              "k": 23,
+              "a": 2,
+              "d": 22,
+              "mvp": 3,
+              "score": 48,
+              "slug": "ochakokiyomi",
+              "iso": "sg"
+             },
+             {
+              "team": "Technomancy",
+              "name": "carv",
+              "k": 18,
+              "a": 1,
+              "d": 19,
+              "mvp": 2,
+              "score": 40,
+              "slug": "carv",
+              "iso": "my"
+             },
+             {
+              "team": "Technomancy",
+              "name": "SkuxxNinja44",
+              "k": 16,
+              "a": 0,
+              "d": 21,
+              "mvp": 2,
+              "score": 36,
+              "slug": "skuxxninja44",
+              "iso": "nz"
+             },
+             {
+              "team": "Lemon Tree",
+              "name": "Meowcolmz",
+              "k": 29,
+              "a": 6,
+              "d": 21,
+              "mvp": 5,
+              "score": 75,
+              "slug": "meowcolmz",
+              "iso": "sg"
+             },
+             {
+              "team": "Lemon Tree",
+              "name": "JWQI",
+              "k": 26,
+              "a": 0,
+              "d": 19,
+              "mvp": 5,
+              "score": 62,
+              "slug": "jwqi",
+              "iso": "sg"
+             },
+             {
+              "team": "Lemon Tree",
+              "name": "MoonRaika",
+              "k": 20,
+              "a": 2,
+              "d": 19,
+              "mvp": 3,
+              "score": 50,
+              "slug": "moonraika",
+              "iso": "my"
+             },
+             {
+              "team": "Lemon Tree",
+              "name": "luminichi",
+              "k": 16,
+              "a": 1,
+              "d": 20,
+              "mvp": 2,
+              "score": 40,
+              "slug": "luminichi",
+              "iso": "sg"
+             },
+             {
+              "team": "Lemon Tree",
+              "name": "kkayyteeee",
+              "k": 12,
+              "a": 1,
+              "d": 20,
+              "mvp": 1,
+              "score": 34,
+              "slug": "kkayyteeee",
+              "iso": "sg"
+             }
+            ]
+           },
+           {
+            "map": "Inferno",
+            "scoreA": 10,
+            "scoreB": 13,
+            "players": [
+             {
+              "team": "Technomancy",
+              "name": "teckiyo",
+              "k": 16,
+              "a": 0,
+              "d": 18,
+              "mvp": 3,
+              "score": 45,
+              "slug": "teckiyo",
+              "iso": "sg"
+             },
+             {
+              "team": "Technomancy",
+              "name": "OchakoKiyomi",
+              "k": 16,
+              "a": 1,
+              "d": 16,
+              "mvp": 1,
+              "score": 42,
+              "slug": "ochakokiyomi",
+              "iso": "sg"
+             },
+             {
+              "team": "Technomancy",
+              "name": "nicsman",
+              "k": 16,
+              "a": 1,
+              "d": 19,
+              "mvp": 2,
+              "score": 36,
+              "slug": "nicsman",
+              "iso": "my"
+             },
+             {
+              "team": "Technomancy",
+              "name": "SkuxxNinja44",
+              "k": 11,
+              "a": 2,
+              "d": 17,
+              "mvp": 2,
+              "score": 28,
+              "slug": "skuxxninja44",
+              "iso": "nz"
+             },
+             {
+              "team": "Technomancy",
+              "name": "carv",
+              "k": 7,
+              "a": 0,
+              "d": 16,
+              "mvp": 2,
+              "score": 21,
+              "slug": "carv",
+              "iso": "my"
+             },
+             {
+              "team": "Lemon Tree",
+              "name": "kkayyteeee",
+              "k": 34,
+              "a": 1,
+              "d": 10,
+              "mvp": 6,
+              "score": 80,
+              "slug": "kkayyteeee",
+              "iso": "sg"
+             },
+             {
+              "team": "Lemon Tree",
+              "name": "JWQI",
+              "k": 18,
+              "a": 3,
+              "d": 15,
+              "mvp": 3,
+              "score": 45,
+              "slug": "jwqi",
+              "iso": "sg"
+             },
+             {
+              "team": "Lemon Tree",
+              "name": "MoonRaika",
+              "k": 14,
+              "a": 1,
+              "d": 13,
+              "mvp": 3,
+              "score": 37,
+              "slug": "moonraika",
+              "iso": "my"
+             },
+             {
+              "team": "Lemon Tree",
+              "name": "luminichi",
+              "k": 9,
+              "a": 6,
+              "d": 12,
+              "mvp": 1,
+              "score": 31,
+              "slug": "luminichi",
+              "iso": "sg"
+             },
+             {
+              "team": "Lemon Tree",
+              "name": "Meowcolmz",
+              "k": 11,
+              "a": 2,
+              "d": 16,
+              "mvp": 0,
+              "score": 24,
+              "slug": "meowcolmz",
+              "iso": "sg"
+             }
+            ]
+           }
+          ]
+         }
         },
         {
          "i": 15,
@@ -191128,7 +191616,7 @@
        "name": "Technomancy",
        "teamSlug": "technomancy",
        "w": 3,
-       "l": 1
+       "l": 2
       },
       {
        "rank": 3,
@@ -191148,7 +191636,7 @@
        "rank": 5,
        "name": "Lemon Tree",
        "teamSlug": "lemon-tree",
-       "w": 1,
+       "w": 2,
        "l": 2
       },
       {

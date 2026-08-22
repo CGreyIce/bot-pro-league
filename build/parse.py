@@ -113,7 +113,7 @@ def find_logo(team_name):
 # ---------- rating ----------
 TIERS = [  # (min_rating_inclusive, tier name) — calibrated to the shrunk rating scale (~0.81..1.18, mean 1.00)
     (1.155, "Champion"), (1.125, "Grandmaster"), (1.090, "Master"),
-    (1.050, "Emerald"), (1.020, "Diamond"), (0.990, "Platinum"),
+    (1.050, "Diamond"), (1.020, "Emerald"), (0.990, "Platinum"),
     (0.950, "Gold"), (0.910, "Silver"), (0.870, "Bronze"), (0.0, "Iron"),
 ]
 def tier_for(rating):
