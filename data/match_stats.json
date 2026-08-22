@@ -987,6 +987,204 @@
      ]
     }
    ]
+  },
+  "5-13": {
+   "maps": [
+    {
+     "map": "Dust2",
+     "scoreA": 13,
+     "scoreB": 2,
+     "players": [
+      {
+       "team": "Raven Song",
+       "name": "CRex",
+       "k": 27,
+       "a": 0,
+       "d": 8,
+       "mvp": 4,
+       "score": 60
+      },
+      {
+       "team": "Raven Song",
+       "name": "ebi",
+       "k": 11,
+       "a": 1,
+       "d": 8,
+       "mvp": 4,
+       "score": 31
+      },
+      {
+       "team": "Raven Song",
+       "name": "des506",
+       "k": 11,
+       "a": 0,
+       "d": 7,
+       "mvp": 2,
+       "score": 27
+      },
+      {
+       "team": "Raven Song",
+       "name": "koen",
+       "k": 8,
+       "a": 1,
+       "d": 8,
+       "mvp": 2,
+       "score": 23
+      },
+      {
+       "team": "Raven Song",
+       "name": "treblest",
+       "k": 8,
+       "a": 0,
+       "d": 12,
+       "mvp": 1,
+       "score": 20
+      },
+      {
+       "team": "The Nomads",
+       "name": "Redandb1ue",
+       "k": 13,
+       "a": 1,
+       "d": 13,
+       "mvp": 0,
+       "score": 32
+      },
+      {
+       "team": "The Nomads",
+       "name": "Nikorasu",
+       "k": 11,
+       "a": 1,
+       "d": 13,
+       "mvp": 1,
+       "score": 23
+      },
+      {
+       "team": "The Nomads",
+       "name": "luciddoob",
+       "k": 7,
+       "a": 0,
+       "d": 13,
+       "mvp": 0,
+       "score": 16
+      },
+      {
+       "team": "The Nomads",
+       "name": "Rethnap",
+       "k": 6,
+       "a": 2,
+       "d": 13,
+       "mvp": 1,
+       "score": 14
+      },
+      {
+       "team": "The Nomads",
+       "name": "mominichi",
+       "k": 6,
+       "a": 2,
+       "d": 13,
+       "mvp": 0,
+       "score": 14
+      }
+     ]
+    },
+    {
+     "map": "Anubis",
+     "scoreA": 13,
+     "scoreB": 9,
+     "players": [
+      {
+       "team": "Raven Song",
+       "name": "CRex",
+       "k": 28,
+       "a": 3,
+       "d": 12,
+       "mvp": 7,
+       "score": 65
+      },
+      {
+       "team": "Raven Song",
+       "name": "des506",
+       "k": 21,
+       "a": 1,
+       "d": 16,
+       "mvp": 3,
+       "score": 54
+      },
+      {
+       "team": "Raven Song",
+       "name": "ebi",
+       "k": 16,
+       "a": 1,
+       "d": 13,
+       "mvp": 2,
+       "score": 45
+      },
+      {
+       "team": "Raven Song",
+       "name": "treblest",
+       "k": 14,
+       "a": 2,
+       "d": 12,
+       "mvp": 0,
+       "score": 35
+      },
+      {
+       "team": "Raven Song",
+       "name": "koen",
+       "k": 9,
+       "a": 0,
+       "d": 14,
+       "mvp": 1,
+       "score": 28
+      },
+      {
+       "team": "The Nomads",
+       "name": "Nikorasu",
+       "k": 22,
+       "a": 2,
+       "d": 15,
+       "mvp": 5,
+       "score": 60
+      },
+      {
+       "team": "The Nomads",
+       "name": "mominichi",
+       "k": 15,
+       "a": 1,
+       "d": 16,
+       "mvp": 2,
+       "score": 37
+      },
+      {
+       "team": "The Nomads",
+       "name": "Redandb1ue",
+       "k": 12,
+       "a": 4,
+       "d": 20,
+       "mvp": 1,
+       "score": 35
+      },
+      {
+       "team": "The Nomads",
+       "name": "Rethnap",
+       "k": 11,
+       "a": 2,
+       "d": 18,
+       "mvp": 1,
+       "score": 28
+      },
+      {
+       "team": "The Nomads",
+       "name": "luciddoob",
+       "k": 7,
+       "a": 4,
+       "d": 19,
+       "mvp": 0,
+       "score": 23
+      }
+     ]
+    }
+   ]
   }
  }
 }

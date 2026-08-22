@@ -2263,6 +2263,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLCStage25",
@@ -3944,6 +3947,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "audax-esse-bpl-invitational-2026",
@@ -5760,6 +5766,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLCStage25",
@@ -6510,7 +6519,7 @@
      "slug": "yunaeyo",
      "nat": "USA",
      "iso": "us",
-     "rating": 1.017,
+     "rating": 1.018,
      "tier": "Platinum",
      "level": 6,
      "kpm": 14.6,
@@ -7409,6 +7418,9 @@
      ]
     }
    ],
+   "region": "North America",
+   "originIso": "us",
+   "originCountry": "USA",
    "events": [
     {
      "slug": "BPLCStage25",
@@ -9126,6 +9138,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLCStage25",
@@ -10138,7 +10153,7 @@
      "slug": "adrina-ii",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.969,
+     "rating": 0.97,
      "tier": "Gold",
      "level": 5,
      "kpm": 15.2,
@@ -10377,6 +10392,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLLStage25",
@@ -10972,27 +10990,27 @@
      "name": "Rethnap",
      "team": "The Nomads",
      "pool": "pro",
-     "kills": 361,
-     "assists": 60,
-     "deaths": 324,
-     "mvp": 56,
-     "kdr": 1.11,
+     "kills": 378,
+     "assists": 64,
+     "deaths": 355,
+     "mvp": 58,
+     "kdr": 1.06,
      "wins": 9,
-     "losses": 12,
-     "winrate": 0.429,
+     "losses": 14,
+     "winrate": 0.391,
      "ot": 0,
      "role": "IGL",
-     "maps": 21,
+     "maps": 23,
      "orig_rank": "Silver",
      "orig_level": "Level 3",
      "orig_rating": 1490.0,
      "slug": "rethnap",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.067,
-     "tier": "Emerald",
-     "level": 7,
-     "kpm": 17.2,
+     "rating": 1.031,
+     "tier": "Diamond",
+     "level": 6,
+     "kpm": 16.4,
      "teamHistory": [
       {
        "team": "N3XuS",
@@ -11133,13 +11151,6 @@
        ]
       }
      ],
-     "mvpAwards": [
-      {
-       "event": "Audax Esse BPL Invitational 2026",
-       "slug": "audax-esse-bpl-invitational-2026",
-       "year": "2026"
-      }
-     ],
      "titles": [
       {
        "event": "Bot Pro League Minor 11",
@@ -11155,27 +11166,27 @@
      "name": "luciddoob",
      "team": "The Nomads",
      "pool": "pro",
-     "kills": 308,
-     "assists": 63,
-     "deaths": 316,
+     "kills": 322,
+     "assists": 67,
+     "deaths": 348,
      "mvp": 45,
-     "kdr": 0.97,
+     "kdr": 0.93,
      "wins": 9,
-     "losses": 12,
-     "winrate": 0.429,
+     "losses": 14,
+     "winrate": 0.391,
      "ot": 0,
      "role": "Rifler",
-     "maps": 21,
+     "maps": 23,
      "orig_rank": "Bronze",
      "orig_level": "Level 3",
      "orig_rating": 1376.0,
      "slug": "luciddoob",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.969,
-     "tier": "Gold",
-     "level": 5,
-     "kpm": 14.7,
+     "rating": 0.932,
+     "tier": "Silver",
+     "level": 4,
+     "kpm": 14.0,
      "teamHistory": [
       {
        "team": "Durendal",
@@ -11463,30 +11474,209 @@
      ]
     },
     {
+     "name": "Nikorasu",
+     "team": "The Nomads",
+     "pool": "pro",
+     "kills": 317,
+     "assists": 48,
+     "deaths": 347,
+     "mvp": 47,
+     "kdr": 0.91,
+     "wins": 9,
+     "losses": 14,
+     "winrate": 0.391,
+     "ot": 0,
+     "role": "Rifler",
+     "maps": 23,
+     "orig_rank": "Bronze",
+     "orig_level": "Level 3",
+     "orig_rating": 1350.0,
+     "slug": "nikorasu",
+     "nat": "Malaysia",
+     "iso": "my",
+     "rating": 0.907,
+     "tier": "Bronze",
+     "level": 3,
+     "kpm": 13.8,
+     "teamHistory": [
+      {
+       "team": "Pariah",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2022"
+       ],
+       "roster": [
+        {
+         "hist": "Eroxis",
+         "name": "Eroxis",
+         "slug": "eroxis",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "Mike",
+         "name": "Mike",
+         "slug": "mike",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Mashiro",
+         "name": "Nikorasu",
+         "slug": "nikorasu",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "livingitupbt",
+         "name": "Solaonix",
+         "slug": "solaonix",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "caarrietan",
+         "name": "caarrietan",
+         "slug": "caarrietan",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Iterum E-Sports",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2022"
+       ],
+       "roster": [
+        {
+         "hist": "Navikuun",
+         "name": "Navikuun",
+         "slug": "navikuun",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "Mashiro",
+         "name": "Nikorasu",
+         "slug": "nikorasu",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "caarrietan",
+         "name": "caarrietan",
+         "slug": "caarrietan",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "xmeijixx",
+         "name": "xmeijixx",
+         "slug": "xmeijixx-amateur",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "TearsofDeath",
+         "name": "TearsofDeath",
+         "slug": "tearsofdeath-amateur",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "The Nomads",
+       "teamSlug": "the-nomads",
+       "isPro": true,
+       "years": [
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Rethnap",
+         "name": "Rethnap",
+         "slug": "rethnap",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "luciddoob",
+         "name": "luciddoob",
+         "slug": "luciddoob",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Redandb1ue",
+         "name": "Redandb1ue",
+         "slug": "redandb1ue",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "mominichi",
+         "name": "mominichi",
+         "slug": "mominichi",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Nikorasu",
+         "name": "Nikorasu",
+         "slug": "nikorasu",
+         "iso": "my",
+         "captain": false
+        }
+       ]
+      }
+     ],
+     "aka": [
+      "Mashiro"
+     ],
+     "titles": [
+      {
+       "event": "Bot Pro League Minor 11",
+       "slug": "BotProLeague11",
+       "tier": "a",
+       "tierLabel": "A-Tier",
+       "year": "2023",
+       "team": "The Nomads"
+      }
+     ]
+    },
+    {
      "name": "Redandb1ue",
      "team": "The Nomads",
      "pool": "pro",
-     "kills": 299,
-     "assists": 59,
-     "deaths": 323,
-     "mvp": 34,
-     "kdr": 0.93,
+     "kills": 324,
+     "assists": 64,
+     "deaths": 356,
+     "mvp": 35,
+     "kdr": 0.91,
      "wins": 9,
-     "losses": 12,
-     "winrate": 0.429,
+     "losses": 14,
+     "winrate": 0.391,
      "ot": 0,
      "role": "Rifler",
-     "maps": 21,
+     "maps": 23,
      "orig_rank": "Bronze",
      "orig_level": "Level 3",
      "orig_rating": 1281.0,
      "slug": "redandb1ue",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.921,
-     "tier": "Silver",
-     "level": 4,
-     "kpm": 14.2,
+     "rating": 0.902,
+     "tier": "Bronze",
+     "level": 3,
+     "kpm": 14.1,
      "teamHistory": [
       {
        "team": "Reflex Storm",
@@ -12092,27 +12282,27 @@
      "name": "mominichi",
      "team": "The Nomads",
      "pool": "pro",
-     "kills": 310,
-     "assists": 54,
-     "deaths": 335,
-     "mvp": 33,
-     "kdr": 0.93,
+     "kills": 331,
+     "assists": 57,
+     "deaths": 364,
+     "mvp": 35,
+     "kdr": 0.91,
      "wins": 9,
-     "losses": 12,
-     "winrate": 0.429,
+     "losses": 14,
+     "winrate": 0.391,
      "ot": 0,
      "role": "Rifler",
-     "maps": 21,
+     "maps": 23,
      "orig_rank": "Iron",
      "orig_level": "Level 3",
      "orig_rating": 1250.0,
      "slug": "mominichi",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.92,
-     "tier": "Silver",
-     "level": 4,
-     "kpm": 14.8,
+     "rating": 0.899,
+     "tier": "Bronze",
+     "level": 3,
+     "kpm": 14.4,
      "teamHistory": [
       {
        "team": "New Legends",
@@ -12308,187 +12498,11 @@
        "team": "The Nomads"
       }
      ]
-    },
-    {
-     "name": "Nikorasu",
-     "team": "The Nomads",
-     "pool": "pro",
-     "kills": 284,
-     "assists": 45,
-     "deaths": 319,
-     "mvp": 41,
-     "kdr": 0.89,
-     "wins": 9,
-     "losses": 12,
-     "winrate": 0.429,
-     "ot": 0,
-     "role": "Rifler",
-     "maps": 21,
-     "orig_rank": "Bronze",
-     "orig_level": "Level 3",
-     "orig_rating": 1350.0,
-     "slug": "nikorasu",
-     "nat": "Malaysia",
-     "iso": "my",
-     "rating": 0.9,
-     "tier": "Bronze",
-     "level": 3,
-     "kpm": 13.5,
-     "teamHistory": [
-      {
-       "team": "Pariah",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2022"
-       ],
-       "roster": [
-        {
-         "hist": "Eroxis",
-         "name": "Eroxis",
-         "slug": "eroxis",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "Mike",
-         "name": "Mike",
-         "slug": "mike",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Mashiro",
-         "name": "Nikorasu",
-         "slug": "nikorasu",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "livingitupbt",
-         "name": "Solaonix",
-         "slug": "solaonix",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "caarrietan",
-         "name": "caarrietan",
-         "slug": "caarrietan",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Iterum E-Sports",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2022"
-       ],
-       "roster": [
-        {
-         "hist": "Navikuun",
-         "name": "Navikuun",
-         "slug": "navikuun",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "Mashiro",
-         "name": "Nikorasu",
-         "slug": "nikorasu",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "caarrietan",
-         "name": "caarrietan",
-         "slug": "caarrietan",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "xmeijixx",
-         "name": "xmeijixx",
-         "slug": "xmeijixx-amateur",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "TearsofDeath",
-         "name": "TearsofDeath",
-         "slug": "tearsofdeath-amateur",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "The Nomads",
-       "teamSlug": "the-nomads",
-       "isPro": true,
-       "years": [
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "Rethnap",
-         "name": "Rethnap",
-         "slug": "rethnap",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "luciddoob",
-         "name": "luciddoob",
-         "slug": "luciddoob",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Redandb1ue",
-         "name": "Redandb1ue",
-         "slug": "redandb1ue",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "mominichi",
-         "name": "mominichi",
-         "slug": "mominichi",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Nikorasu",
-         "name": "Nikorasu",
-         "slug": "nikorasu",
-         "iso": "my",
-         "captain": false
-        }
-       ]
-      }
-     ],
-     "aka": [
-      "Mashiro"
-     ],
-     "titles": [
-      {
-       "event": "Bot Pro League Minor 11",
-       "slug": "BotProLeague11",
-       "tier": "a",
-       "tierLabel": "A-Tier",
-       "year": "2023",
-       "team": "The Nomads"
-      }
-     ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLCStage25",
@@ -12679,6 +12693,12 @@
      "l": 2
     },
     {
+     "opp": "raven-song",
+     "oppName": "Raven Song",
+     "w": 0,
+     "l": 3
+    },
+    {
      "opp": "kiedz",
      "oppName": "Kiedz",
      "w": 2,
@@ -12701,12 +12721,6 @@
      "oppName": "Technomancy",
      "w": 1,
      "l": 1
-    },
-    {
-     "opp": "raven-song",
-     "oppName": "Raven Song",
-     "w": 0,
-     "l": 2
     },
     {
      "opp": "artisian",
@@ -12788,16 +12802,6 @@
     }
    ],
    "recentResults": [
-    {
-     "date": "2025-10-10",
-     "event": "BPL Conquerors Stage 2025",
-     "eventSlug": "BPLCStage25",
-     "opp": "entity",
-     "oppSlug": "entity",
-     "result": "L",
-     "sf": 0,
-     "sa": 2
-    },
     {
      "date": "2025-10-10",
      "event": "BPL Legends Stage 2025",
@@ -12887,9 +12891,19 @@
      "result": "W",
      "sf": 2,
      "sa": 0
+    },
+    {
+     "date": "2026-08-21",
+     "event": "Audax Esse BPL Invitational 2026",
+     "eventSlug": "audax-esse-bpl-invitational-2026",
+     "opp": "Raven Song",
+     "oppSlug": "raven-song",
+     "result": "L",
+     "sf": 0,
+     "sa": 2
     }
    ],
-   "streak": "W1"
+   "streak": "L1"
   },
   {
    "name": "Moonlit Tempo",
@@ -14438,6 +14452,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLChalS2025",
@@ -16482,6 +16499,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLLStage25",
@@ -19103,6 +19123,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLLStage25",
@@ -19530,7 +19553,7 @@
      "slug": "historia",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.1,
+     "rating": 1.101,
      "tier": "Master",
      "level": 8,
      "kpm": 17.5,
@@ -20966,6 +20989,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLLStage25",
@@ -21509,7 +21535,7 @@
      "slug": "nutzeru",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.127,
+     "rating": 1.128,
      "tier": "Grandmaster",
      "level": 8,
      "kpm": 19.1,
@@ -21856,7 +21882,7 @@
      "slug": "beyouna",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.087,
+     "rating": 1.088,
      "tier": "Emerald",
      "level": 7,
      "kpm": 17.8,
@@ -22643,6 +22669,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLCStage25",
@@ -23598,7 +23627,7 @@
      "iso": "sg",
      "rating": 1.044,
      "tier": "Diamond",
-     "level": 6,
+     "level": 7,
      "kpm": 15.8,
      "teamHistory": [
       {
@@ -24029,6 +24058,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLCStage25",
@@ -25492,6 +25524,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLCStage25",
@@ -27123,7 +27158,7 @@
      "slug": "altheavt",
      "nat": "Taiwan",
      "iso": "tw",
-     "rating": 0.874,
+     "rating": 0.875,
      "tier": "Bronze",
      "level": 3,
      "kpm": 12.4,
@@ -27318,6 +27353,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLLStage25",
@@ -27982,7 +28020,7 @@
      "slug": "urnisa",
      "nat": "Malaysia",
      "iso": "my",
-     "rating": 1.032,
+     "rating": 1.033,
      "tier": "Diamond",
      "level": 6,
      "kpm": 15.0,
@@ -28764,6 +28802,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLCStage25",
@@ -30559,6 +30600,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLLStage25",
@@ -31226,7 +31270,7 @@
      "slug": "anndreika",
      "nat": "Ukraine",
      "iso": "ua",
-     "rating": 1.004,
+     "rating": 1.005,
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.7,
@@ -31435,7 +31479,7 @@
      "slug": "awtoh",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.948,
+     "rating": 0.949,
      "tier": "Silver",
      "level": 4,
      "kpm": 14.7,
@@ -31968,6 +32012,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLChalS2025",
@@ -32822,7 +32869,7 @@
      "slug": "lilraxxx",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.018,
+     "rating": 1.019,
      "tier": "Platinum",
      "level": 6,
      "kpm": 16.2,
@@ -33663,6 +33710,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLLStage25",
@@ -35775,6 +35825,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLLStage25",
@@ -37256,6 +37309,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLLStage25",
@@ -38420,7 +38476,7 @@
      "slug": "zuann",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.007,
+     "rating": 1.008,
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.3,
@@ -38756,6 +38812,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLLStage25",
@@ -39321,7 +39380,7 @@
      "slug": "tanykeat",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.121,
+     "rating": 1.122,
      "tier": "Master",
      "level": 8,
      "kpm": 17.8,
@@ -40254,7 +40313,7 @@
      "slug": "nekosoji",
      "nat": "Malaysia",
      "iso": "my",
-     "rating": 0.909,
+     "rating": 0.91,
      "tier": "Bronze",
      "level": 3,
      "kpm": 13.5,
@@ -40365,6 +40424,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLCStage25",
@@ -42585,6 +42647,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLLStage25",
@@ -44826,6 +44891,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLLStage25",
@@ -46317,6 +46385,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "audax-esse-bpl-invitational-2026",
@@ -49078,6 +49149,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLCStage25",
@@ -49719,7 +49793,7 @@
      "slug": "murasakibara-tsuki1",
      "nat": "Taiwan",
      "iso": "tw",
-     "rating": 1.041,
+     "rating": 1.042,
      "tier": "Diamond",
      "level": 6,
      "kpm": 17.2,
@@ -50811,6 +50885,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLChalS2025",
@@ -51104,7 +51181,7 @@
      "slug": "nifela",
      "nat": "USA",
      "iso": "us",
-     "rating": 1.024,
+     "rating": 1.025,
      "tier": "Diamond",
      "level": 6,
      "kpm": 15.1,
@@ -51506,7 +51583,7 @@
      "slug": "ehsten",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.01,
+     "rating": 1.011,
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.1,
@@ -51908,7 +51985,7 @@
      "slug": "reffelexx",
      "nat": "Malaysia",
      "iso": "my",
-     "rating": 1.002,
+     "rating": 1.003,
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.2,
@@ -51984,7 +52061,7 @@
      "slug": "acroblaze",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.949,
+     "rating": 0.95,
      "tier": "Silver",
      "level": 4,
      "kpm": 13.1,
@@ -52645,7 +52722,7 @@
      "slug": "yuuki-ps",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.931,
+     "rating": 0.932,
      "tier": "Silver",
      "level": 4,
      "kpm": 12.8,
@@ -52900,6 +52977,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLLStage25",
@@ -53907,7 +53987,7 @@
      "slug": "drip",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.002,
+     "rating": 1.003,
      "tier": "Platinum",
      "level": 6,
      "kpm": 16.4,
@@ -54029,7 +54109,7 @@
      "slug": "suzuyunn",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.996,
+     "rating": 0.997,
      "tier": "Platinum",
      "level": 5,
      "kpm": 16.1,
@@ -54177,6 +54257,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLCStage25",
@@ -54757,7 +54840,7 @@
      "slug": "y1jingg",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.101,
+     "rating": 1.102,
      "tier": "Master",
      "level": 8,
      "kpm": 17.8,
@@ -55587,7 +55670,7 @@
      "slug": "minmaxxer",
      "nat": "Philippines",
      "iso": "ph",
-     "rating": 1.011,
+     "rating": 1.012,
      "tier": "Platinum",
      "level": 6,
      "kpm": 15.1,
@@ -56293,6 +56376,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLLStage25",
@@ -56702,7 +56788,7 @@
      "slug": "nattyuwus",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.101,
+     "rating": 1.102,
      "tier": "Master",
      "level": 8,
      "kpm": 19.5,
@@ -57094,7 +57180,7 @@
      "slug": "kai",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.097,
+     "rating": 1.098,
      "tier": "Master",
      "level": 8,
      "kpm": 18.6,
@@ -58073,6 +58159,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLLStage25",
@@ -59947,6 +60036,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "us",
+   "originCountry": "USA",
    "events": [
     {
      "slug": "BPLLStage25",
@@ -60490,7 +60582,7 @@
      "slug": "hakase",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 1.118,
+     "rating": 1.119,
      "tier": "Master",
      "level": 8,
      "kpm": 17.7,
@@ -60952,7 +61044,7 @@
      "slug": "mango",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.949,
+     "rating": 0.95,
      "tier": "Silver",
      "level": 4,
      "kpm": 14.7,
@@ -61067,6 +61159,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLLStage25",
@@ -62418,7 +62513,7 @@
      "slug": "eroxis",
      "nat": "Malaysia",
      "iso": "my",
-     "rating": 1.118,
+     "rating": 1.119,
      "tier": "Master",
      "level": 8,
      "kpm": 18.1,
@@ -63020,7 +63115,7 @@
      "slug": "kitties258",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.929,
+     "rating": 0.93,
      "tier": "Silver",
      "level": 4,
      "kpm": 14.3,
@@ -63481,6 +63576,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLCStage25",
@@ -63852,27 +63950,198 @@
    "rank": 36,
    "roster": [
     {
+     "name": "CRex",
+     "team": "Raven Song",
+     "pool": "pro",
+     "kills": 363,
+     "assists": 69,
+     "deaths": 323,
+     "mvp": 45,
+     "kdr": 1.12,
+     "wins": 13,
+     "losses": 10,
+     "winrate": 0.565,
+     "ot": 0,
+     "role": "Rifler",
+     "maps": 23,
+     "orig_rank": "Silver",
+     "orig_level": "Level 3",
+     "orig_rating": 1491.0,
+     "slug": "crex",
+     "nat": "Malaysia",
+     "iso": "my",
+     "rating": 1.029,
+     "tier": "Diamond",
+     "level": 6,
+     "kpm": 15.8,
+     "teamHistory": [
+      {
+       "team": "Sanctuary",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2023"
+       ],
+       "roster": [
+        {
+         "hist": "kimmixd",
+         "name": "kimmixd",
+         "slug": "kimmixd-amateur",
+         "iso": "my",
+         "captain": true
+        },
+        {
+         "hist": "kenzieyii",
+         "name": "kenzieyii",
+         "slug": "kenzieyii-amateur",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "bonkersdeedy",
+         "name": "AngelxAim",
+         "slug": "angelxaim",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "kanarivt",
+         "name": "kanarivt",
+         "slug": "kanarivt-amateur",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "C.Rex",
+         "name": "CRex",
+         "slug": "crex",
+         "iso": "my",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "nostalgia",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2024"
+       ],
+       "roster": [
+        {
+         "hist": "ssseiso",
+         "name": "ssseiso",
+         "slug": "ssseiso-amateur",
+         "iso": "au",
+         "captain": true
+        },
+        {
+         "hist": "nyxcatto",
+         "name": "nyxcatto",
+         "slug": "nyxcatto-amateur",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "C.Rex",
+         "name": "CRex",
+         "slug": "crex",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "ProPHocy_",
+         "name": "ProPHOcy_",
+         "slug": "prophocy-amateur",
+         "iso": "us",
+         "captain": false
+        },
+        {
+         "hist": "thehidz",
+         "name": "thehidz",
+         "slug": "thehidz-amateur",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Raven Song",
+       "teamSlug": "raven-song",
+       "isPro": true,
+       "years": [
+        "2025",
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "ebi",
+         "name": "ebi",
+         "slug": "ebi",
+         "iso": "my",
+         "captain": true
+        },
+        {
+         "hist": "koen",
+         "name": "koen",
+         "slug": "koen",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "C.Rex",
+         "name": "CRex",
+         "slug": "crex",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "des506",
+         "name": "des506",
+         "slug": "des506",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "treblest",
+         "name": "treblest",
+         "slug": "treblest",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      }
+     ],
+     "mvpAwards": [
+      {
+       "event": "Audax Esse BPL Invitational 2026",
+       "slug": "audax-esse-bpl-invitational-2026",
+       "year": "2026"
+      }
+     ]
+    },
+    {
      "name": "ebi",
      "team": "Raven Song",
      "pool": "pro",
-     "kills": 287,
-     "assists": 67,
-     "deaths": 314,
-     "mvp": 53,
-     "kdr": 0.91,
-     "wins": 11,
+     "kills": 314,
+     "assists": 69,
+     "deaths": 335,
+     "mvp": 59,
+     "kdr": 0.94,
+     "wins": 13,
      "losses": 10,
-     "winrate": 0.524,
+     "winrate": 0.565,
      "ot": 0,
      "role": "IGL",
-     "maps": 21,
+     "maps": 23,
      "orig_rank": "Silver",
      "orig_level": "Level 4",
      "orig_rating": 1667.0,
      "slug": "ebi",
      "nat": "Malaysia",
      "iso": "my",
-     "rating": 0.968,
+     "rating": 0.976,
      "tier": "Gold",
      "level": 5,
      "kpm": 13.7,
@@ -64154,194 +64423,30 @@
      ]
     },
     {
-     "name": "CRex",
-     "team": "Raven Song",
-     "pool": "pro",
-     "kills": 308,
-     "assists": 66,
-     "deaths": 303,
-     "mvp": 34,
-     "kdr": 1.02,
-     "wins": 11,
-     "losses": 10,
-     "winrate": 0.524,
-     "ot": 0,
-     "role": "Rifler",
-     "maps": 21,
-     "orig_rank": "Silver",
-     "orig_level": "Level 3",
-     "orig_rating": 1491.0,
-     "slug": "crex",
-     "nat": "Malaysia",
-     "iso": "my",
-     "rating": 0.967,
-     "tier": "Gold",
-     "level": 5,
-     "kpm": 14.7,
-     "teamHistory": [
-      {
-       "team": "Sanctuary",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2023"
-       ],
-       "roster": [
-        {
-         "hist": "kimmixd",
-         "name": "kimmixd",
-         "slug": "kimmixd-amateur",
-         "iso": "my",
-         "captain": true
-        },
-        {
-         "hist": "kenzieyii",
-         "name": "kenzieyii",
-         "slug": "kenzieyii-amateur",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "bonkersdeedy",
-         "name": "AngelxAim",
-         "slug": "angelxaim",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "kanarivt",
-         "name": "kanarivt",
-         "slug": "kanarivt-amateur",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "C.Rex",
-         "name": "CRex",
-         "slug": "crex",
-         "iso": "my",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "nostalgia",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2024"
-       ],
-       "roster": [
-        {
-         "hist": "ssseiso",
-         "name": "ssseiso",
-         "slug": "ssseiso-amateur",
-         "iso": "au",
-         "captain": true
-        },
-        {
-         "hist": "nyxcatto",
-         "name": "nyxcatto",
-         "slug": "nyxcatto-amateur",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "C.Rex",
-         "name": "CRex",
-         "slug": "crex",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "ProPHocy_",
-         "name": "ProPHOcy_",
-         "slug": "prophocy-amateur",
-         "iso": "us",
-         "captain": false
-        },
-        {
-         "hist": "thehidz",
-         "name": "thehidz",
-         "slug": "thehidz-amateur",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Raven Song",
-       "teamSlug": "raven-song",
-       "isPro": true,
-       "years": [
-        "2025",
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "ebi",
-         "name": "ebi",
-         "slug": "ebi",
-         "iso": "my",
-         "captain": true
-        },
-        {
-         "hist": "koen",
-         "name": "koen",
-         "slug": "koen",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "C.Rex",
-         "name": "CRex",
-         "slug": "crex",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "des506",
-         "name": "des506",
-         "slug": "des506",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "treblest",
-         "name": "treblest",
-         "slug": "treblest",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      }
-     ]
-    },
-    {
      "name": "des506",
      "team": "Raven Song",
      "pool": "pro",
-     "kills": 288,
-     "assists": 68,
-     "deaths": 312,
-     "mvp": 29,
-     "kdr": 0.92,
-     "wins": 11,
+     "kills": 320,
+     "assists": 69,
+     "deaths": 335,
+     "mvp": 34,
+     "kdr": 0.96,
+     "wins": 13,
      "losses": 10,
-     "winrate": 0.524,
+     "winrate": 0.565,
      "ot": 0,
      "role": "Rifler",
-     "maps": 21,
+     "maps": 23,
      "orig_rank": "Bronze",
      "orig_level": "Level 3",
      "orig_rating": 1405.0,
      "slug": "des506",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.916,
+     "rating": 0.93,
      "tier": "Silver",
      "level": 4,
-     "kpm": 13.7,
+     "kpm": 13.9,
      "teamHistory": [
       {
        "team": "Seasonic",
@@ -64440,27 +64545,27 @@
      "name": "koen",
      "team": "Raven Song",
      "pool": "pro",
-     "kills": 291,
-     "assists": 38,
-     "deaths": 317,
-     "mvp": 40,
-     "kdr": 0.92,
-     "wins": 11,
+     "kills": 308,
+     "assists": 39,
+     "deaths": 339,
+     "mvp": 43,
+     "kdr": 0.91,
+     "wins": 13,
      "losses": 10,
-     "winrate": 0.524,
+     "winrate": 0.565,
      "ot": 0,
      "role": "Awper",
-     "maps": 21,
+     "maps": 23,
      "orig_rank": "Silver",
      "orig_level": "Level 4",
      "orig_rating": 1561.0,
      "slug": "koen",
      "nat": "Malaysia",
      "iso": "my",
-     "rating": 0.909,
+     "rating": 0.896,
      "tier": "Bronze",
      "level": 3,
-     "kpm": 13.9,
+     "kpm": 13.4,
      "teamHistory": [
       {
        "team": "Kingsmen",
@@ -64829,27 +64934,27 @@
      "name": "treblest",
      "team": "Raven Song",
      "pool": "pro",
-     "kills": 252,
-     "assists": 56,
-     "deaths": 313,
-     "mvp": 35,
+     "kills": 274,
+     "assists": 58,
+     "deaths": 337,
+     "mvp": 36,
      "kdr": 0.81,
-     "wins": 11,
+     "wins": 13,
      "losses": 10,
-     "winrate": 0.524,
+     "winrate": 0.565,
      "ot": 0,
      "role": "Awper",
-     "maps": 21,
+     "maps": 23,
      "orig_rank": "Bronze",
      "orig_level": "Level 3",
      "orig_rating": 1423.0,
      "slug": "treblest",
      "nat": "Singapore",
      "iso": "sg",
-     "rating": 0.86,
+     "rating": 0.85,
      "tier": "Iron",
      "level": 2,
-     "kpm": 12.0,
+     "kpm": 11.9,
      "teamHistory": [
       {
        "team": "Royal Path",
@@ -65128,6 +65233,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "my",
+   "originCountry": "Malaysia",
    "events": [
     {
      "slug": "BPLLStage25",
@@ -65388,6 +65496,12 @@
      "l": 4
     },
     {
+     "opp": "the-nomads",
+     "oppName": "The Nomads",
+     "w": 3,
+     "l": 0
+    },
+    {
      "opp": "cyanide",
      "oppName": "Cyanide",
      "w": 2,
@@ -65408,12 +65522,6 @@
     {
      "opp": "infernum-e-sports",
      "oppName": "Infernum E-Sports",
-     "w": 2,
-     "l": 0
-    },
-    {
-     "opp": "the-nomads",
-     "oppName": "The Nomads",
      "w": 2,
      "l": 0
     },
@@ -65531,16 +65639,6 @@
      "date": "2025-10-10",
      "event": "BPL Legends Stage 2025",
      "eventSlug": "BPLLStage25",
-     "opp": "Aetherline",
-     "oppSlug": "aetherline",
-     "result": "L",
-     "sf": 1,
-     "sa": 13
-    },
-    {
-     "date": "2025-10-10",
-     "event": "BPL Legends Stage 2025",
-     "eventSlug": "BPLLStage25",
      "opp": "Divide&Conquer",
      "oppSlug": "divide-conquer",
      "result": "W",
@@ -65626,9 +65724,19 @@
      "result": "W",
      "sf": 2,
      "sa": 1
+    },
+    {
+     "date": "2026-08-21",
+     "event": "Audax Esse BPL Invitational 2026",
+     "eventSlug": "audax-esse-bpl-invitational-2026",
+     "opp": "The Nomads",
+     "oppSlug": "the-nomads",
+     "result": "W",
+     "sf": 2,
+     "sa": 0
     }
    ],
-   "streak": "W3"
+   "streak": "W4"
   },
   {
    "name": "Aspire",
@@ -67567,6 +67675,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLLStage25",
@@ -68593,6 +68704,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "audax-esse-bpl-invitational-2026",
@@ -70829,7 +70943,7 @@
      "slug": "venicec",
      "nat": "Malaysia",
      "iso": "my",
-     "rating": 0.951,
+     "rating": 0.952,
      "tier": "Gold",
      "level": 4,
      "kpm": 15.7,
@@ -70974,6 +71088,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BPLLStage25",
@@ -72228,6 +72345,9 @@
      ]
     }
    ],
+   "region": "East Asia",
+   "originIso": "jp",
+   "originCountry": "Japan",
    "events": [
     {
      "slug": "audax-esse-bpl-invitational-2026",
@@ -74057,6 +74177,9 @@
      ]
     }
    ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
    "events": [
     {
      "slug": "BotProLeague13",
@@ -74397,7 +74520,7 @@
      "slug": "remia-aotsuki",
      "nat": "Japan",
      "iso": "jp",
-     "rating": 1.017,
+     "rating": 1.018,
      "tier": "Platinum",
      "level": 6,
      "kpm": 16.7,
@@ -74599,6 +74722,9 @@
      ]
     }
    ],
+   "region": "East Asia",
+   "originIso": "jp",
+   "originCountry": "Japan",
    "events": [
     {
      "slug": "BPLLStage25",
@@ -78671,7 +78797,7 @@
     "slug": "y1jingg",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.101,
+    "rating": 1.102,
     "tier": "Master",
     "level": 8,
     "kpm": 17.8,
@@ -79200,7 +79326,7 @@
     "slug": "minmaxxer",
     "nat": "Philippines",
     "iso": "ph",
-    "rating": 1.011,
+    "rating": 1.012,
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.1,
@@ -80494,7 +80620,7 @@
     "slug": "suzuyunn",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.996,
+    "rating": 0.997,
     "tier": "Platinum",
     "level": 5,
     "kpm": 16.1,
@@ -80662,7 +80788,7 @@
     "slug": "drip",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.002,
+    "rating": 1.003,
     "tier": "Platinum",
     "level": 6,
     "kpm": 16.4,
@@ -80932,7 +81058,7 @@
     "slug": "anndreika",
     "nat": "Ukraine",
     "iso": "ua",
-    "rating": 1.004,
+    "rating": 1.005,
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.7,
@@ -81141,7 +81267,7 @@
     "slug": "awtoh",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.948,
+    "rating": 0.949,
     "tier": "Silver",
     "level": 4,
     "kpm": 14.7,
@@ -82846,7 +82972,7 @@
     "slug": "tanykeat",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.121,
+    "rating": 1.122,
     "tier": "Master",
     "level": 8,
     "kpm": 17.8,
@@ -83779,7 +83905,7 @@
     "slug": "nekosoji",
     "nat": "Malaysia",
     "iso": "my",
-    "rating": 0.909,
+    "rating": 0.91,
     "tier": "Bronze",
     "level": 3,
     "kpm": 13.5,
@@ -87210,7 +87336,7 @@
     "slug": "remia-aotsuki",
     "nat": "Japan",
     "iso": "jp",
-    "rating": 1.017,
+    "rating": 1.018,
     "tier": "Platinum",
     "level": 6,
     "kpm": 16.7,
@@ -89394,7 +89520,7 @@
     "slug": "venicec",
     "nat": "Malaysia",
     "iso": "my",
-    "rating": 0.951,
+    "rating": 0.952,
     "tier": "Gold",
     "level": 4,
     "kpm": 15.7,
@@ -89559,7 +89685,7 @@
     "slug": "beyouna",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.087,
+    "rating": 1.088,
     "tier": "Emerald",
     "level": 7,
     "kpm": 17.8,
@@ -89636,7 +89762,7 @@
     "slug": "nutzeru",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.127,
+    "rating": 1.128,
     "tier": "Grandmaster",
     "level": 8,
     "kpm": 19.1,
@@ -95609,7 +95735,7 @@
     "slug": "altheavt",
     "nat": "Taiwan",
     "iso": "tw",
-    "rating": 0.874,
+    "rating": 0.875,
     "tier": "Bronze",
     "level": 3,
     "kpm": 12.4,
@@ -97495,7 +97621,7 @@
     "slug": "lilraxxx",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.018,
+    "rating": 1.019,
     "tier": "Platinum",
     "level": 6,
     "kpm": 16.2,
@@ -101246,7 +101372,7 @@
     "slug": "eroxis",
     "nat": "Malaysia",
     "iso": "my",
-    "rating": 1.118,
+    "rating": 1.119,
     "tier": "Master",
     "level": 8,
     "kpm": 18.1,
@@ -101367,7 +101493,7 @@
     "slug": "kitties258",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.929,
+    "rating": 0.93,
     "tier": "Silver",
     "level": 4,
     "kpm": 14.3,
@@ -103853,7 +103979,7 @@
     "slug": "hakase",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.118,
+    "rating": 1.119,
     "tier": "Master",
     "level": 8,
     "kpm": 17.7,
@@ -104315,7 +104441,7 @@
     "slug": "mango",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.949,
+    "rating": 0.95,
     "tier": "Silver",
     "level": 4,
     "kpm": 14.7,
@@ -104450,7 +104576,7 @@
     "slug": "historia",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.1,
+    "rating": 1.101,
     "tier": "Master",
     "level": 8,
     "kpm": 17.5,
@@ -106258,7 +106384,7 @@
     "slug": "zuann",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.007,
+    "rating": 1.008,
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.3,
@@ -108554,7 +108680,7 @@
     "slug": "urnisa",
     "nat": "Malaysia",
     "iso": "my",
-    "rating": 1.032,
+    "rating": 1.033,
     "tier": "Diamond",
     "level": 6,
     "kpm": 15.0,
@@ -111346,7 +111472,7 @@
     "slug": "adrina-ii",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.969,
+    "rating": 0.97,
     "tier": "Gold",
     "level": 5,
     "kpm": 15.2,
@@ -115165,7 +115291,7 @@
     "slug": "reffelexx",
     "nat": "Malaysia",
     "iso": "my",
-    "rating": 1.002,
+    "rating": 1.003,
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.2,
@@ -115241,7 +115367,7 @@
     "slug": "nifela",
     "nat": "USA",
     "iso": "us",
-    "rating": 1.024,
+    "rating": 1.025,
     "tier": "Diamond",
     "level": 6,
     "kpm": 15.1,
@@ -115643,7 +115769,7 @@
     "slug": "acroblaze",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.949,
+    "rating": 0.95,
     "tier": "Silver",
     "level": 4,
     "kpm": 13.1,
@@ -116304,7 +116430,7 @@
     "slug": "ehsten",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.01,
+    "rating": 1.011,
     "tier": "Platinum",
     "level": 6,
     "kpm": 15.1,
@@ -116706,7 +116832,7 @@
     "slug": "yuuki-ps",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.931,
+    "rating": 0.932,
     "tier": "Silver",
     "level": 4,
     "kpm": 12.8,
@@ -116964,24 +117090,24 @@
     "name": "ebi",
     "team": "Raven Song",
     "pool": "pro",
-    "kills": 287,
-    "assists": 67,
-    "deaths": 314,
-    "mvp": 53,
-    "kdr": 0.91,
-    "wins": 11,
+    "kills": 314,
+    "assists": 69,
+    "deaths": 335,
+    "mvp": 59,
+    "kdr": 0.94,
+    "wins": 13,
     "losses": 10,
-    "winrate": 0.524,
+    "winrate": 0.565,
     "ot": 0,
     "role": "IGL",
-    "maps": 21,
+    "maps": 23,
     "orig_rank": "Silver",
     "orig_level": "Level 4",
     "orig_rating": 1667.0,
     "slug": "ebi",
     "nat": "Malaysia",
     "iso": "my",
-    "rating": 0.968,
+    "rating": 0.976,
     "tier": "Gold",
     "level": 5,
     "kpm": 13.7,
@@ -117266,27 +117392,27 @@
     "name": "koen",
     "team": "Raven Song",
     "pool": "pro",
-    "kills": 291,
-    "assists": 38,
-    "deaths": 317,
-    "mvp": 40,
-    "kdr": 0.92,
-    "wins": 11,
+    "kills": 308,
+    "assists": 39,
+    "deaths": 339,
+    "mvp": 43,
+    "kdr": 0.91,
+    "wins": 13,
     "losses": 10,
-    "winrate": 0.524,
+    "winrate": 0.565,
     "ot": 0,
     "role": "Awper",
-    "maps": 21,
+    "maps": 23,
     "orig_rank": "Silver",
     "orig_level": "Level 4",
     "orig_rating": 1561.0,
     "slug": "koen",
     "nat": "Malaysia",
     "iso": "my",
-    "rating": 0.909,
+    "rating": 0.896,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 13.9,
+    "kpm": 13.4,
     "teamHistory": [
      {
       "team": "Kingsmen",
@@ -117655,27 +117781,27 @@
     "name": "CRex",
     "team": "Raven Song",
     "pool": "pro",
-    "kills": 308,
-    "assists": 66,
-    "deaths": 303,
-    "mvp": 34,
-    "kdr": 1.02,
-    "wins": 11,
+    "kills": 363,
+    "assists": 69,
+    "deaths": 323,
+    "mvp": 45,
+    "kdr": 1.12,
+    "wins": 13,
     "losses": 10,
-    "winrate": 0.524,
+    "winrate": 0.565,
     "ot": 0,
     "role": "Rifler",
-    "maps": 21,
+    "maps": 23,
     "orig_rank": "Silver",
     "orig_level": "Level 3",
     "orig_rating": 1491.0,
     "slug": "crex",
     "nat": "Malaysia",
     "iso": "my",
-    "rating": 0.967,
-    "tier": "Gold",
-    "level": 5,
-    "kpm": 14.7,
+    "rating": 1.029,
+    "tier": "Diamond",
+    "level": 6,
+    "kpm": 15.8,
     "teamHistory": [
      {
       "team": "Sanctuary",
@@ -117813,33 +117939,40 @@
        }
       ]
      }
+    ],
+    "mvpAwards": [
+     {
+      "event": "Audax Esse BPL Invitational 2026",
+      "slug": "audax-esse-bpl-invitational-2026",
+      "year": "2026"
+     }
     ]
    },
    {
     "name": "treblest",
     "team": "Raven Song",
     "pool": "pro",
-    "kills": 252,
-    "assists": 56,
-    "deaths": 313,
-    "mvp": 35,
+    "kills": 274,
+    "assists": 58,
+    "deaths": 337,
+    "mvp": 36,
     "kdr": 0.81,
-    "wins": 11,
+    "wins": 13,
     "losses": 10,
-    "winrate": 0.524,
+    "winrate": 0.565,
     "ot": 0,
     "role": "Awper",
-    "maps": 21,
+    "maps": 23,
     "orig_rank": "Bronze",
     "orig_level": "Level 3",
     "orig_rating": 1423.0,
     "slug": "treblest",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.86,
+    "rating": 0.85,
     "tier": "Iron",
     "level": 2,
-    "kpm": 12.0,
+    "kpm": 11.9,
     "teamHistory": [
      {
       "team": "Royal Path",
@@ -118121,27 +118254,27 @@
     "name": "des506",
     "team": "Raven Song",
     "pool": "pro",
-    "kills": 288,
-    "assists": 68,
-    "deaths": 312,
-    "mvp": 29,
-    "kdr": 0.92,
-    "wins": 11,
+    "kills": 320,
+    "assists": 69,
+    "deaths": 335,
+    "mvp": 34,
+    "kdr": 0.96,
+    "wins": 13,
     "losses": 10,
-    "winrate": 0.524,
+    "winrate": 0.565,
     "ot": 0,
     "role": "Rifler",
-    "maps": 21,
+    "maps": 23,
     "orig_rank": "Bronze",
     "orig_level": "Level 3",
     "orig_rating": 1405.0,
     "slug": "des506",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.916,
+    "rating": 0.93,
     "tier": "Silver",
     "level": 4,
-    "kpm": 13.7,
+    "kpm": 13.9,
     "teamHistory": [
      {
       "team": "Seasonic",
@@ -118468,7 +118601,7 @@
     "slug": "murasakibara-tsuki1",
     "nat": "Taiwan",
     "iso": "tw",
-    "rating": 1.041,
+    "rating": 1.042,
     "tier": "Diamond",
     "level": 6,
     "kpm": 17.2,
@@ -124875,7 +125008,7 @@
     "iso": "sg",
     "rating": 1.044,
     "tier": "Diamond",
-    "level": 6,
+    "level": 7,
     "kpm": 15.8,
     "teamHistory": [
      {
@@ -125505,7 +125638,7 @@
     "slug": "yunaeyo",
     "nat": "USA",
     "iso": "us",
-    "rating": 1.017,
+    "rating": 1.018,
     "tier": "Platinum",
     "level": 6,
     "kpm": 14.6,
@@ -126407,27 +126540,27 @@
     "name": "Rethnap",
     "team": "The Nomads",
     "pool": "pro",
-    "kills": 361,
-    "assists": 60,
-    "deaths": 324,
-    "mvp": 56,
-    "kdr": 1.11,
+    "kills": 378,
+    "assists": 64,
+    "deaths": 355,
+    "mvp": 58,
+    "kdr": 1.06,
     "wins": 9,
-    "losses": 12,
-    "winrate": 0.429,
+    "losses": 14,
+    "winrate": 0.391,
     "ot": 0,
     "role": "IGL",
-    "maps": 21,
+    "maps": 23,
     "orig_rank": "Silver",
     "orig_level": "Level 3",
     "orig_rating": 1490.0,
     "slug": "rethnap",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.067,
-    "tier": "Emerald",
-    "level": 7,
-    "kpm": 17.2,
+    "rating": 1.031,
+    "tier": "Diamond",
+    "level": 6,
+    "kpm": 16.4,
     "teamHistory": [
      {
       "team": "N3XuS",
@@ -126568,13 +126701,6 @@
       ]
      }
     ],
-    "mvpAwards": [
-     {
-      "event": "Audax Esse BPL Invitational 2026",
-      "slug": "audax-esse-bpl-invitational-2026",
-      "year": "2026"
-     }
-    ],
     "titles": [
      {
       "event": "Bot Pro League Minor 11",
@@ -126590,27 +126716,27 @@
     "name": "luciddoob",
     "team": "The Nomads",
     "pool": "pro",
-    "kills": 308,
-    "assists": 63,
-    "deaths": 316,
+    "kills": 322,
+    "assists": 67,
+    "deaths": 348,
     "mvp": 45,
-    "kdr": 0.97,
+    "kdr": 0.93,
     "wins": 9,
-    "losses": 12,
-    "winrate": 0.429,
+    "losses": 14,
+    "winrate": 0.391,
     "ot": 0,
     "role": "Rifler",
-    "maps": 21,
+    "maps": 23,
     "orig_rank": "Bronze",
     "orig_level": "Level 3",
     "orig_rating": 1376.0,
     "slug": "luciddoob",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.969,
-    "tier": "Gold",
-    "level": 5,
-    "kpm": 14.7,
+    "rating": 0.932,
+    "tier": "Silver",
+    "level": 4,
+    "kpm": 14.0,
     "teamHistory": [
      {
       "team": "Durendal",
@@ -126901,27 +127027,27 @@
     "name": "Nikorasu",
     "team": "The Nomads",
     "pool": "pro",
-    "kills": 284,
-    "assists": 45,
-    "deaths": 319,
-    "mvp": 41,
-    "kdr": 0.89,
+    "kills": 317,
+    "assists": 48,
+    "deaths": 347,
+    "mvp": 47,
+    "kdr": 0.91,
     "wins": 9,
-    "losses": 12,
-    "winrate": 0.429,
+    "losses": 14,
+    "winrate": 0.391,
     "ot": 0,
     "role": "Rifler",
-    "maps": 21,
+    "maps": 23,
     "orig_rank": "Bronze",
     "orig_level": "Level 3",
     "orig_rating": 1350.0,
     "slug": "nikorasu",
     "nat": "Malaysia",
     "iso": "my",
-    "rating": 0.9,
+    "rating": 0.907,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 13.5,
+    "kpm": 13.8,
     "teamHistory": [
      {
       "team": "Pariah",
@@ -127080,27 +127206,27 @@
     "name": "Redandb1ue",
     "team": "The Nomads",
     "pool": "pro",
-    "kills": 299,
-    "assists": 59,
-    "deaths": 323,
-    "mvp": 34,
-    "kdr": 0.93,
+    "kills": 324,
+    "assists": 64,
+    "deaths": 356,
+    "mvp": 35,
+    "kdr": 0.91,
     "wins": 9,
-    "losses": 12,
-    "winrate": 0.429,
+    "losses": 14,
+    "winrate": 0.391,
     "ot": 0,
     "role": "Rifler",
-    "maps": 21,
+    "maps": 23,
     "orig_rank": "Bronze",
     "orig_level": "Level 3",
     "orig_rating": 1281.0,
     "slug": "redandb1ue",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.921,
-    "tier": "Silver",
-    "level": 4,
-    "kpm": 14.2,
+    "rating": 0.902,
+    "tier": "Bronze",
+    "level": 3,
+    "kpm": 14.1,
     "teamHistory": [
      {
       "team": "Reflex Storm",
@@ -127706,27 +127832,27 @@
     "name": "mominichi",
     "team": "The Nomads",
     "pool": "pro",
-    "kills": 310,
-    "assists": 54,
-    "deaths": 335,
-    "mvp": 33,
-    "kdr": 0.93,
+    "kills": 331,
+    "assists": 57,
+    "deaths": 364,
+    "mvp": 35,
+    "kdr": 0.91,
     "wins": 9,
-    "losses": 12,
-    "winrate": 0.429,
+    "losses": 14,
+    "winrate": 0.391,
     "ot": 0,
     "role": "Rifler",
-    "maps": 21,
+    "maps": 23,
     "orig_rank": "Iron",
     "orig_level": "Level 3",
     "orig_rating": 1250.0,
     "slug": "mominichi",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 0.92,
-    "tier": "Silver",
-    "level": 4,
-    "kpm": 14.8,
+    "rating": 0.899,
+    "tier": "Bronze",
+    "level": 3,
+    "kpm": 14.4,
     "teamHistory": [
      {
       "team": "New Legends",
@@ -128012,7 +128138,7 @@
     "slug": "kai",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.097,
+    "rating": 1.098,
     "tier": "Master",
     "level": 8,
     "kpm": 18.6,
@@ -128587,7 +128713,7 @@
     "slug": "nattyuwus",
     "nat": "Singapore",
     "iso": "sg",
-    "rating": 1.101,
+    "rating": 1.102,
     "tier": "Master",
     "level": 8,
     "kpm": 19.5,
@@ -186041,11 +186167,11 @@
  },
  "pool_avg": {
   "pro": {
-   "kdr": 1.0097619047619049,
-   "kpm": 15.488245158592301,
-   "mvp": 2.19390546984842,
-   "apm": 3.023444168908228,
-   "wr": 0.5051142857142857
+   "kdr": 1.01,
+   "kpm": 15.483779024312502,
+   "mvp": 2.1936787124788055,
+   "apm": 3.0178836838446372,
+   "wr": 0.5051857142857142
   },
   "amateur": {
    "kdr": 0.9751875,
@@ -187981,13 +188107,251 @@
        "i": 13,
        "a": "Raven Song",
        "b": "The Nomads",
-       "sa": null,
-       "sb": null,
-       "w": 0,
+       "sa": 2,
+       "sb": 0,
+       "w": 1,
        "aTeam": "raven-song",
        "bTeam": "the-nomads",
        "bo": 1,
-       "ts": null
+       "ts": 1787386175,
+       "stats": {
+        "maps": [
+         {
+          "map": "Dust2",
+          "scoreA": 13,
+          "scoreB": 2,
+          "players": [
+           {
+            "team": "Raven Song",
+            "name": "CRex",
+            "k": 27,
+            "a": 0,
+            "d": 8,
+            "mvp": 4,
+            "score": 60,
+            "slug": "crex",
+            "iso": "my"
+           },
+           {
+            "team": "Raven Song",
+            "name": "ebi",
+            "k": 11,
+            "a": 1,
+            "d": 8,
+            "mvp": 4,
+            "score": 31,
+            "slug": "ebi",
+            "iso": "my"
+           },
+           {
+            "team": "Raven Song",
+            "name": "des506",
+            "k": 11,
+            "a": 0,
+            "d": 7,
+            "mvp": 2,
+            "score": 27,
+            "slug": "des506",
+            "iso": "sg"
+           },
+           {
+            "team": "Raven Song",
+            "name": "koen",
+            "k": 8,
+            "a": 1,
+            "d": 8,
+            "mvp": 2,
+            "score": 23,
+            "slug": "koen",
+            "iso": "my"
+           },
+           {
+            "team": "Raven Song",
+            "name": "treblest",
+            "k": 8,
+            "a": 0,
+            "d": 12,
+            "mvp": 1,
+            "score": 20,
+            "slug": "treblest",
+            "iso": "sg"
+           },
+           {
+            "team": "The Nomads",
+            "name": "Redandb1ue",
+            "k": 13,
+            "a": 1,
+            "d": 13,
+            "mvp": 0,
+            "score": 32,
+            "slug": "redandb1ue",
+            "iso": "sg"
+           },
+           {
+            "team": "The Nomads",
+            "name": "Nikorasu",
+            "k": 11,
+            "a": 1,
+            "d": 13,
+            "mvp": 1,
+            "score": 23,
+            "slug": "nikorasu",
+            "iso": "my"
+           },
+           {
+            "team": "The Nomads",
+            "name": "luciddoob",
+            "k": 7,
+            "a": 0,
+            "d": 13,
+            "mvp": 0,
+            "score": 16,
+            "slug": "luciddoob",
+            "iso": "sg"
+           },
+           {
+            "team": "The Nomads",
+            "name": "Rethnap",
+            "k": 6,
+            "a": 2,
+            "d": 13,
+            "mvp": 1,
+            "score": 14,
+            "slug": "rethnap",
+            "iso": "sg"
+           },
+           {
+            "team": "The Nomads",
+            "name": "mominichi",
+            "k": 6,
+            "a": 2,
+            "d": 13,
+            "mvp": 0,
+            "score": 14,
+            "slug": "mominichi",
+            "iso": "sg"
+           }
+          ]
+         },
+         {
+          "map": "Anubis",
+          "scoreA": 13,
+          "scoreB": 9,
+          "players": [
+           {
+            "team": "Raven Song",
+            "name": "CRex",
+            "k": 28,
+            "a": 3,
+            "d": 12,
+            "mvp": 7,
+            "score": 65,
+            "slug": "crex",
+            "iso": "my"
+           },
+           {
+            "team": "Raven Song",
+            "name": "des506",
+            "k": 21,
+            "a": 1,
+            "d": 16,
+            "mvp": 3,
+            "score": 54,
+            "slug": "des506",
+            "iso": "sg"
+           },
+           {
+            "team": "Raven Song",
+            "name": "ebi",
+            "k": 16,
+            "a": 1,
+            "d": 13,
+            "mvp": 2,
+            "score": 45,
+            "slug": "ebi",
+            "iso": "my"
+           },
+           {
+            "team": "Raven Song",
+            "name": "treblest",
+            "k": 14,
+            "a": 2,
+            "d": 12,
+            "mvp": 0,
+            "score": 35,
+            "slug": "treblest",
+            "iso": "sg"
+           },
+           {
+            "team": "Raven Song",
+            "name": "koen",
+            "k": 9,
+            "a": 0,
+            "d": 14,
+            "mvp": 1,
+            "score": 28,
+            "slug": "koen",
+            "iso": "my"
+           },
+           {
+            "team": "The Nomads",
+            "name": "Nikorasu",
+            "k": 22,
+            "a": 2,
+            "d": 15,
+            "mvp": 5,
+            "score": 60,
+            "slug": "nikorasu",
+            "iso": "my"
+           },
+           {
+            "team": "The Nomads",
+            "name": "mominichi",
+            "k": 15,
+            "a": 1,
+            "d": 16,
+            "mvp": 2,
+            "score": 37,
+            "slug": "mominichi",
+            "iso": "sg"
+           },
+           {
+            "team": "The Nomads",
+            "name": "Redandb1ue",
+            "k": 12,
+            "a": 4,
+            "d": 20,
+            "mvp": 1,
+            "score": 35,
+            "slug": "redandb1ue",
+            "iso": "sg"
+           },
+           {
+            "team": "The Nomads",
+            "name": "Rethnap",
+            "k": 11,
+            "a": 2,
+            "d": 18,
+            "mvp": 1,
+            "score": 28,
+            "slug": "rethnap",
+            "iso": "sg"
+           },
+           {
+            "team": "The Nomads",
+            "name": "luciddoob",
+            "k": 7,
+            "a": 4,
+            "d": 19,
+            "mvp": 0,
+            "score": 23,
+            "slug": "luciddoob",
+            "iso": "sg"
+           }
+          ]
+         }
+        ]
+       }
       },
       {
        "i": 14,
@@ -190478,13 +190842,251 @@
          "i": 13,
          "a": "Raven Song",
          "b": "The Nomads",
-         "sa": null,
-         "sb": null,
-         "w": 0,
+         "sa": 2,
+         "sb": 0,
+         "w": 1,
          "aTeam": "raven-song",
          "bTeam": "the-nomads",
          "bo": 1,
-         "ts": null
+         "ts": 1787386175,
+         "stats": {
+          "maps": [
+           {
+            "map": "Dust2",
+            "scoreA": 13,
+            "scoreB": 2,
+            "players": [
+             {
+              "team": "Raven Song",
+              "name": "CRex",
+              "k": 27,
+              "a": 0,
+              "d": 8,
+              "mvp": 4,
+              "score": 60,
+              "slug": "crex",
+              "iso": "my"
+             },
+             {
+              "team": "Raven Song",
+              "name": "ebi",
+              "k": 11,
+              "a": 1,
+              "d": 8,
+              "mvp": 4,
+              "score": 31,
+              "slug": "ebi",
+              "iso": "my"
+             },
+             {
+              "team": "Raven Song",
+              "name": "des506",
+              "k": 11,
+              "a": 0,
+              "d": 7,
+              "mvp": 2,
+              "score": 27,
+              "slug": "des506",
+              "iso": "sg"
+             },
+             {
+              "team": "Raven Song",
+              "name": "koen",
+              "k": 8,
+              "a": 1,
+              "d": 8,
+              "mvp": 2,
+              "score": 23,
+              "slug": "koen",
+              "iso": "my"
+             },
+             {
+              "team": "Raven Song",
+              "name": "treblest",
+              "k": 8,
+              "a": 0,
+              "d": 12,
+              "mvp": 1,
+              "score": 20,
+              "slug": "treblest",
+              "iso": "sg"
+             },
+             {
+              "team": "The Nomads",
+              "name": "Redandb1ue",
+              "k": 13,
+              "a": 1,
+              "d": 13,
+              "mvp": 0,
+              "score": 32,
+              "slug": "redandb1ue",
+              "iso": "sg"
+             },
+             {
+              "team": "The Nomads",
+              "name": "Nikorasu",
+              "k": 11,
+              "a": 1,
+              "d": 13,
+              "mvp": 1,
+              "score": 23,
+              "slug": "nikorasu",
+              "iso": "my"
+             },
+             {
+              "team": "The Nomads",
+              "name": "luciddoob",
+              "k": 7,
+              "a": 0,
+              "d": 13,
+              "mvp": 0,
+              "score": 16,
+              "slug": "luciddoob",
+              "iso": "sg"
+             },
+             {
+              "team": "The Nomads",
+              "name": "Rethnap",
+              "k": 6,
+              "a": 2,
+              "d": 13,
+              "mvp": 1,
+              "score": 14,
+              "slug": "rethnap",
+              "iso": "sg"
+             },
+             {
+              "team": "The Nomads",
+              "name": "mominichi",
+              "k": 6,
+              "a": 2,
+              "d": 13,
+              "mvp": 0,
+              "score": 14,
+              "slug": "mominichi",
+              "iso": "sg"
+             }
+            ]
+           },
+           {
+            "map": "Anubis",
+            "scoreA": 13,
+            "scoreB": 9,
+            "players": [
+             {
+              "team": "Raven Song",
+              "name": "CRex",
+              "k": 28,
+              "a": 3,
+              "d": 12,
+              "mvp": 7,
+              "score": 65,
+              "slug": "crex",
+              "iso": "my"
+             },
+             {
+              "team": "Raven Song",
+              "name": "des506",
+              "k": 21,
+              "a": 1,
+              "d": 16,
+              "mvp": 3,
+              "score": 54,
+              "slug": "des506",
+              "iso": "sg"
+             },
+             {
+              "team": "Raven Song",
+              "name": "ebi",
+              "k": 16,
+              "a": 1,
+              "d": 13,
+              "mvp": 2,
+              "score": 45,
+              "slug": "ebi",
+              "iso": "my"
+             },
+             {
+              "team": "Raven Song",
+              "name": "treblest",
+              "k": 14,
+              "a": 2,
+              "d": 12,
+              "mvp": 0,
+              "score": 35,
+              "slug": "treblest",
+              "iso": "sg"
+             },
+             {
+              "team": "Raven Song",
+              "name": "koen",
+              "k": 9,
+              "a": 0,
+              "d": 14,
+              "mvp": 1,
+              "score": 28,
+              "slug": "koen",
+              "iso": "my"
+             },
+             {
+              "team": "The Nomads",
+              "name": "Nikorasu",
+              "k": 22,
+              "a": 2,
+              "d": 15,
+              "mvp": 5,
+              "score": 60,
+              "slug": "nikorasu",
+              "iso": "my"
+             },
+             {
+              "team": "The Nomads",
+              "name": "mominichi",
+              "k": 15,
+              "a": 1,
+              "d": 16,
+              "mvp": 2,
+              "score": 37,
+              "slug": "mominichi",
+              "iso": "sg"
+             },
+             {
+              "team": "The Nomads",
+              "name": "Redandb1ue",
+              "k": 12,
+              "a": 4,
+              "d": 20,
+              "mvp": 1,
+              "score": 35,
+              "slug": "redandb1ue",
+              "iso": "sg"
+             },
+             {
+              "team": "The Nomads",
+              "name": "Rethnap",
+              "k": 11,
+              "a": 2,
+              "d": 18,
+              "mvp": 1,
+              "score": 28,
+              "slug": "rethnap",
+              "iso": "sg"
+             },
+             {
+              "team": "The Nomads",
+              "name": "luciddoob",
+              "k": 7,
+              "a": 4,
+              "d": 19,
+              "mvp": 0,
+              "score": 23,
+              "slug": "luciddoob",
+              "iso": "sg"
+             }
+            ]
+           }
+          ]
+         }
         },
         {
          "i": 14,
@@ -190518,7 +191120,7 @@
        "rank": 1,
        "name": "Raven Song",
        "teamSlug": "raven-song",
-       "w": 3,
+       "w": 4,
        "l": 0
       },
       {
@@ -190554,7 +191156,7 @@
        "name": "The Nomads",
        "teamSlug": "the-nomads",
        "w": 1,
-       "l": 2
+       "l": 3
       },
       {
        "rank": 7,

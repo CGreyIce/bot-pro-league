@@ -247,8 +247,8 @@ function renderTeam(slug){
     <div class="profile-head">
       ${t.logo?`<img class="crest" src="${esc(t.logo)}" alt="">`:''}
       <div class="ph-main">
-        <h1>${esc(t.name)} ${t.star?'<span class="star" title="Major winner">★</span>':''} ${t.tag?`<span class="tag">${esc(t.tag)}</span>`:''}</h1>
-        <div class="ph-sub">${t.origin?('Earned pro status: '+esc(t.origin)):''}${t.notes?` · <span class="muted">${esc(t.notes)}</span>`:''}</div>
+        <h1>${t.originIso?`<span class="th-flag" title="${esc(t.originCountry||'')}">${flag(t.originIso)}</span>`:''}${esc(t.name)} ${t.star?'<span class="star" title="Major winner">★</span>':''} ${t.tag?`<span class="tag">${esc(t.tag)}</span>`:''}</h1>
+        <div class="ph-sub">${t.region?`<span class="th-region">${esc(t.region)}</span>`:''}${t.origin?(' · Earned pro status: '+esc(t.origin)):''}${t.notes?` · <span class="muted">${esc(t.notes)}</span>`:''}</div>
       </div>
       <div class="ph-rank"><div class="big">#${t.rank}</div><div class="lbl">BPL Rank</div></div>
       <div class="ph-rank"><div class="big">${t.rank_points}</div><div class="lbl">Points</div></div>
@@ -259,6 +259,8 @@ function renderTeam(slug){
         <div class="ib-title">Team Info</div>
         <div class="ib-row"><span class="k">Tag</span><span class="v">${esc(t.tag||'—')}</span></div>
         <div class="ib-row"><span class="k">BPL Rank</span><span class="v">#${t.rank} · ${t.rank_points} pts</span></div>
+        <div class="ib-row"><span class="k">Region</span><span class="v">${t.region?esc(t.region):'—'}</span></div>
+        <div class="ib-row"><span class="k">Country</span><span class="v">${t.originIso?`${flag(t.originIso)} ${esc(t.originCountry||'')}`:'—'}</span></div>
         <div class="ib-row"><span class="k">Origin</span><span class="v">${esc(t.origin||'—')}</span></div>
         <div class="ib-row"><span class="k">Map record</span><span class="v">${t.map_wins}-${t.map_losses}-${t.map_ties}</span></div>
         <div class="ib-row"><span class="k">Win rate</span><span class="v">${pct(t.wlr)}</span></div>

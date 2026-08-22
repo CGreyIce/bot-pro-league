@@ -59,6 +59,16 @@ COUNTRY_ISO = {
     "belgium":"be","iceland":"is","sweden":"se","kazakhstan":"kz","hong kong":"hk",
     "russia":"neutral","russian":"neutral","land of make believe":"neutral",  # neutral (flagless) flag
 }
+# ISO alpha-2 -> region label (for the region shown on a team profile)
+REGION_BY_ISO = {
+    "sg":"SEA","my":"SEA","ph":"SEA","id":"SEA","th":"SEA","vn":"SEA",
+    "jp":"East Asia","kr":"East Asia","tw":"East Asia","hk":"East Asia","cn":"East Asia",
+    "au":"Oceania","nz":"Oceania",
+    "us":"North America","ca":"North America",
+    "gb":"Europe","fr":"Europe","de":"Europe","nl":"Europe","be":"Europe","at":"Europe",
+    "pl":"Europe","fi":"Europe","it":"Europe","is":"Europe","se":"Europe","ua":"Europe",
+    "kz":"Central Asia",
+}
 def load_nat():
     d = {}
     path = os.path.join(DATA, "allplayer.txt")
@@ -440,6 +450,26 @@ def main():
             roster[tk].append(p)
     for t in teams:
         t["roster"] = sorted(roster.get(t["key"], []), key=lambda p: -(p["rating"] or 0))
+    # ---- team region + origin country, derived from the roster's nationalities ----
+    for t in teams:
+        isos = [p.get("iso") for p in t.get("roster", []) if p.get("iso") and p["iso"] != "neutral"]
+        if not isos:
+            t["region"] = ""; t["originIso"] = ""; t["originCountry"] = ""
+            continue
+        iso_count = defaultdict(int)
+        for i in isos:
+            iso_count[i] += 1
+        origin_iso = max(iso_count, key=lambda i: (iso_count[i], i))   # most common country
+        reg_count = defaultdict(int)
+        for i in isos:
+            reg_count[REGION_BY_ISO.get(i, "Other")] += 1
+        top = max(reg_count.values())
+        tied = [r for r, c in reg_count.items() if c == top]
+        origin_region = REGION_BY_ISO.get(origin_iso, "Other")
+        # plurality region; ties resolve toward the origin country's region so the two agree
+        t["region"] = origin_region if origin_region in tied else sorted(tied)[0]
+        t["originIso"] = origin_iso
+        t["originCountry"] = next((p.get("nat", "") for p in t["roster"] if p.get("iso") == origin_iso), "")
     # attach each team's event history (matched by teamSlug)
     slug_to_team = {t["slug"]: t for t in teams}
     for t in teams:
