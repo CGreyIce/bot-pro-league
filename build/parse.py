@@ -407,7 +407,6 @@ def main():
                           "players": resolve_sb_players(mp.get("players", []))} for mp in maps]}
     slug_to_team = {t["slug"]: t for t in teams}
     def merge_scoreboard(m):
-        ta = slug_to_team.get(m.get("aTeam")); tb = slug_to_team.get(m.get("bTeam"))
         for mp in m["stats"]["maps"]:
             sa, sb = mp.get("scoreA"), mp.get("scoreB")
             for pl in mp["players"]:
@@ -425,14 +424,6 @@ def main():
                     continue
                 tgt["wins"] += 1 if won else 0
                 tgt["losses"] += 0 if won else 1
-            # team map record from this recorded map (adds on top of the sheet base)
-            if ta and tb and sa is not None and sb is not None:
-                if sa > sb:
-                    ta["map_wins"] += 1; tb["map_losses"] += 1
-                elif sb > sa:
-                    tb["map_wins"] += 1; ta["map_losses"] += 1
-                else:
-                    ta["map_ties"] += 1; tb["map_ties"] += 1
     for tr in tournaments:
         smap = match_stats.get(tr["slug"], {})
         if not smap:
@@ -449,7 +440,33 @@ def main():
                 if m.get("i") is not None and ref in smap:
                     m["stats"] = resolve_sb(smap[ref]); merge_scoreboard(m)
 
-    # team totals reflect the (sheet base + recorded scoreboards) map record
+    # ---- team map record from site-run (manual) events, on top of the sheet base ----
+    # Scraped/historical events are already baked into the sheet, so only add the events
+    # the league runs on the site (data/manual/*). Derive per-map wins from each match's
+    # score: a round score (>=13) is one map (Bo1); small numbers are maps-won (Bo3/Bo5).
+    mdir = os.path.join(DATA, "manual")
+    manual_slugs = {os.path.splitext(f)[0] for f in os.listdir(mdir)} if os.path.isdir(mdir) else set()
+    for tr in tournaments:
+        if tr["slug"] not in manual_slugs:
+            continue
+        for rd in tr.get("bracket", []):
+            for m in rd["matches"]:
+                if m.get("w") not in (1, 2):
+                    continue
+                if m.get("a") == "(bye)" or m.get("b") == "(bye)":
+                    continue
+                ta = slug_to_team.get(m.get("aTeam")); tb = slug_to_team.get(m.get("bTeam"))
+                sa, sb = m.get("sa"), m.get("sb")
+                if sa is not None and sb is not None:
+                    wa, wb = ((1, 0) if sa > sb else (0, 1)) if max(sa, sb) >= 13 else (sa, sb)
+                else:
+                    wa, wb = (1, 0) if m["w"] == 1 else (0, 1)
+                if ta:
+                    ta["map_wins"] += wa; ta["map_losses"] += wb
+                if tb:
+                    tb["map_wins"] += wb; tb["map_losses"] += wa
+
+    # team totals reflect the (sheet base + site-run events) map record
     for t in teams:
         t["total_maps"] = t["map_wins"] + t["map_losses"] + t["map_ties"]
         denom = t["map_wins"] + t["map_losses"]
