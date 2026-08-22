@@ -1529,6 +1529,7 @@ function renderTournament(slug){
       <div>${wallSection || (tr.manual?'':'<div class="muted">No roster data.</div>')}</div>
     </div>
     <h2 class="section-title" style="margin-top:24px"><span class="accent-bar"></span>${isElim?'Bracket':'Match Results'}</h2>`}
+    ${tr.stages ? wallSection : ''}
     ${bracketBlock}`;
 
   // draw bracket connector lines once laid out

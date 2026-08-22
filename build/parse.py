@@ -618,6 +618,9 @@ def main():
     hist_path = os.path.join(DATA, "hist_rosters.json")
     hist_rosters = json.load(open(hist_path, encoding="utf-8")) if os.path.exists(hist_path) else {}
     team_by_key2 = {t["key"]: t for t in teams}
+    mdir_a = os.path.join(DATA, "manual")
+    manual_slugs_a = {os.path.splitext(f)[0] for f in os.listdir(mdir_a)} if os.path.isdir(mdir_a) else set()
+    slug_to_team_a = {t["slug"]: t for t in teams}
     for tr in tournaments:
         att = []
         for row in hist_rosters.get(tr["slug"], []):
@@ -641,6 +644,25 @@ def main():
                 "teamSlug": tm["slug"] if tm else None,
                 "players": pls,
             })
+        # site-run (manual) events have no scraped line-ups — build the attending list
+        # from every participating team's current roster so the module still shows.
+        if not att and tr["slug"] in manual_slugs_a:
+            standings = [s for st in tr["stages"] for s in st.get("standings", [])] \
+                if tr.get("stages") else tr["standings"]
+            seen_t = set()
+            for s in standings:
+                ts = s.get("teamSlug")
+                if not ts or ts in seen_t:
+                    continue
+                seen_t.add(ts)
+                tm = slug_to_team_a.get(ts)
+                if not tm:
+                    continue
+                att.append({
+                    "team": tm["name"], "teamSlug": tm["slug"],
+                    "players": [{"hist": rp["name"], "name": rp["name"], "slug": rp["slug"],
+                                 "iso": rp.get("iso", ""), "captain": False} for rp in tm.get("roster", [])],
+                })
         tr["attending"] = att
 
     # ---- per-player team history (chronological, from attending rosters) ----
