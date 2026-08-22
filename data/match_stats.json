@@ -1779,6 +1779,596 @@
      ]
     }
    ]
+  },
+  "6-11": {
+   "maps": [
+    {
+     "map": "Vertigo",
+     "scoreA": 8,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "DiamondOnes",
+       "name": "lilraxxx",
+       "k": 16,
+       "a": 0,
+       "d": 17,
+       "mvp": 4,
+       "score": 35
+      },
+      {
+       "team": "DiamondOnes",
+       "name": "notccillia",
+       "k": 17,
+       "a": 1,
+       "d": 16,
+       "mvp": 2,
+       "score": 35
+      },
+      {
+       "team": "DiamondOnes",
+       "name": "midorissi",
+       "k": 15,
+       "a": 0,
+       "d": 20,
+       "mvp": 1,
+       "score": 34
+      },
+      {
+       "team": "DiamondOnes",
+       "name": "emiiiyu",
+       "k": 13,
+       "a": 1,
+       "d": 16,
+       "mvp": 1,
+       "score": 30
+      },
+      {
+       "team": "DiamondOnes",
+       "name": "xolalotl",
+       "k": 4,
+       "a": 3,
+       "d": 15,
+       "mvp": 0,
+       "score": 15
+      },
+      {
+       "team": "Sacred Raven",
+       "name": "capplecrow",
+       "k": 25,
+       "a": 0,
+       "d": 11,
+       "mvp": 7,
+       "score": 56
+      },
+      {
+       "team": "Sacred Raven",
+       "name": "skysbeautylai",
+       "k": 22,
+       "a": 3,
+       "d": 13,
+       "mvp": 1,
+       "score": 56
+      },
+      {
+       "team": "Sacred Raven",
+       "name": "Wellson111",
+       "k": 18,
+       "a": 2,
+       "d": 12,
+       "mvp": 3,
+       "score": 42
+      },
+      {
+       "team": "Sacred Raven",
+       "name": "matcha",
+       "k": 14,
+       "a": 2,
+       "d": 14,
+       "mvp": 2,
+       "score": 32
+      },
+      {
+       "team": "Sacred Raven",
+       "name": "Asterisks",
+       "k": 5,
+       "a": 4,
+       "d": 15,
+       "mvp": 0,
+       "score": 17
+      }
+     ]
+    },
+    {
+     "map": "Dust2",
+     "scoreA": 13,
+     "scoreB": 2,
+     "players": [
+      {
+       "team": "DiamondOnes",
+       "name": "midorissi",
+       "k": 19,
+       "a": 1,
+       "d": 4,
+       "mvp": 3,
+       "score": 46
+      },
+      {
+       "team": "DiamondOnes",
+       "name": "xolalotl",
+       "k": 16,
+       "a": 0,
+       "d": 6,
+       "mvp": 4,
+       "score": 36
+      },
+      {
+       "team": "DiamondOnes",
+       "name": "lilraxxx",
+       "k": 14,
+       "a": 0,
+       "d": 10,
+       "mvp": 4,
+       "score": 34
+      },
+      {
+       "team": "DiamondOnes",
+       "name": "notccillia",
+       "k": 10,
+       "a": 0,
+       "d": 9,
+       "mvp": 2,
+       "score": 22
+      },
+      {
+       "team": "DiamondOnes",
+       "name": "emiiiyu",
+       "k": 8,
+       "a": 1,
+       "d": 8,
+       "mvp": 0,
+       "score": 21
+      },
+      {
+       "team": "Sacred Raven",
+       "name": "matcha",
+       "k": 15,
+       "a": 0,
+       "d": 13,
+       "mvp": 1,
+       "score": 30
+      },
+      {
+       "team": "Sacred Raven",
+       "name": "Asterisks",
+       "k": 8,
+       "a": 0,
+       "d": 14,
+       "mvp": 1,
+       "score": 16
+      },
+      {
+       "team": "Sacred Raven",
+       "name": "capplecrow",
+       "k": 6,
+       "a": 1,
+       "d": 14,
+       "mvp": 0,
+       "score": 13
+      },
+      {
+       "team": "Sacred Raven",
+       "name": "Wellson111",
+       "k": 4,
+       "a": 2,
+       "d": 12,
+       "mvp": 0,
+       "score": 10
+      },
+      {
+       "team": "Sacred Raven",
+       "name": "skysbeautylai",
+       "k": 4,
+       "a": 2,
+       "d": 14,
+       "mvp": 0,
+       "score": 10
+      }
+     ]
+    },
+    {
+     "map": "Cache",
+     "scoreA": 8,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "DiamondOnes",
+       "name": "emiiiyu",
+       "k": 15,
+       "a": 0,
+       "d": 17,
+       "mvp": 3,
+       "score": 42
+      },
+      {
+       "team": "DiamondOnes",
+       "name": "notccillia",
+       "k": 15,
+       "a": 3,
+       "d": 17,
+       "mvp": 3,
+       "score": 38
+      },
+      {
+       "team": "DiamondOnes",
+       "name": "midorissi",
+       "k": 13,
+       "a": 2,
+       "d": 14,
+       "mvp": 0,
+       "score": 34
+      },
+      {
+       "team": "DiamondOnes",
+       "name": "xolalotl",
+       "k": 13,
+       "a": 1,
+       "d": 17,
+       "mvp": 1,
+       "score": 32
+      },
+      {
+       "team": "DiamondOnes",
+       "name": "lilraxxx",
+       "k": 8,
+       "a": 3,
+       "d": 16,
+       "mvp": 1,
+       "score": 27
+      },
+      {
+       "team": "Sacred Raven",
+       "name": "matcha",
+       "k": 24,
+       "a": 2,
+       "d": 14,
+       "mvp": 6,
+       "score": 60
+      },
+      {
+       "team": "Sacred Raven",
+       "name": "capplecrow",
+       "k": 16,
+       "a": 2,
+       "d": 12,
+       "mvp": 2,
+       "score": 45
+      },
+      {
+       "team": "Sacred Raven",
+       "name": "Wellson111",
+       "k": 14,
+       "a": 0,
+       "d": 14,
+       "mvp": 1,
+       "score": 40
+      },
+      {
+       "team": "Sacred Raven",
+       "name": "skysbeautylai",
+       "k": 13,
+       "a": 4,
+       "d": 12,
+       "mvp": 2,
+       "score": 38
+      },
+      {
+       "team": "Sacred Raven",
+       "name": "Asterisks",
+       "k": 14,
+       "a": 2,
+       "d": 12,
+       "mvp": 2,
+       "score": 34
+      }
+     ]
+    }
+   ]
+  },
+  "6-12": {
+   "maps": [
+    {
+     "map": "Cache",
+     "scoreA": 14,
+     "scoreB": 16,
+     "players": [
+      {
+       "team": "Astral Bloom",
+       "name": "Tsumugi Kokage",
+       "k": 23,
+       "a": 0,
+       "d": 18,
+       "mvp": 4,
+       "score": 61
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Tachibana Hinano",
+       "k": 22,
+       "a": 1,
+       "d": 21,
+       "mvp": 3,
+       "score": 58
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Remia Aotsuki",
+       "k": 23,
+       "a": 5,
+       "d": 19,
+       "mvp": 3,
+       "score": 57
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Shiranami Ramune",
+       "k": 22,
+       "a": 1,
+       "d": 18,
+       "mvp": 0,
+       "score": 55
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Eris Suzukami",
+       "k": 14,
+       "a": 3,
+       "d": 23,
+       "mvp": 3,
+       "score": 39
+      },
+      {
+       "team": "0v3",
+       "name": "zenn1sm",
+       "k": 25,
+       "a": 3,
+       "d": 19,
+       "mvp": 5,
+       "score": 68
+      },
+      {
+       "team": "0v3",
+       "name": "Navikuun",
+       "k": 30,
+       "a": 2,
+       "d": 22,
+       "mvp": 5,
+       "score": 67
+      },
+      {
+       "team": "0v3",
+       "name": "potatodepresso",
+       "k": 18,
+       "a": 2,
+       "d": 22,
+       "mvp": 2,
+       "score": 45
+      },
+      {
+       "team": "0v3",
+       "name": "milkenut",
+       "k": 15,
+       "a": 1,
+       "d": 18,
+       "mvp": 4,
+       "score": 41
+      },
+      {
+       "team": "0v3",
+       "name": "Pearlim",
+       "k": 11,
+       "a": 5,
+       "d": 23,
+       "mvp": 0,
+       "score": 31
+      }
+     ]
+    },
+    {
+     "map": "Vertigo",
+     "scoreA": 13,
+     "scoreB": 11,
+     "players": [
+      {
+       "team": "Astral Bloom",
+       "name": "Remia Aotsuki",
+       "k": 16,
+       "a": 1,
+       "d": 15,
+       "mvp": 4,
+       "score": 48
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Tachibana Hinano",
+       "k": 19,
+       "a": 5,
+       "d": 14,
+       "mvp": 2,
+       "score": 47
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Eris Suzukami",
+       "k": 17,
+       "a": 4,
+       "d": 13,
+       "mvp": 2,
+       "score": 46
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Shiranami Ramune",
+       "k": 21,
+       "a": 0,
+       "d": 17,
+       "mvp": 3,
+       "score": 44
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Tsumugi Kokage",
+       "k": 15,
+       "a": 2,
+       "d": 15,
+       "mvp": 2,
+       "score": 39
+      },
+      {
+       "team": "0v3",
+       "name": "zenn1sm",
+       "k": 24,
+       "a": 2,
+       "d": 17,
+       "mvp": 1,
+       "score": 54
+      },
+      {
+       "team": "0v3",
+       "name": "milkenut",
+       "k": 17,
+       "a": 2,
+       "d": 18,
+       "mvp": 4,
+       "score": 41
+      },
+      {
+       "team": "0v3",
+       "name": "potatodepresso",
+       "k": 16,
+       "a": 4,
+       "d": 18,
+       "mvp": 4,
+       "score": 41
+      },
+      {
+       "team": "0v3",
+       "name": "Navikuun",
+       "k": 11,
+       "a": 1,
+       "d": 18,
+       "mvp": 1,
+       "score": 27
+      },
+      {
+       "team": "0v3",
+       "name": "Pearlim",
+       "k": 5,
+       "a": 1,
+       "d": 18,
+       "mvp": 1,
+       "score": 16
+      }
+     ]
+    },
+    {
+     "map": "Mirage",
+     "scoreA": 9,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Astral Bloom",
+       "name": "Tsumugi Kokage",
+       "k": 21,
+       "a": 1,
+       "d": 16,
+       "mvp": 3,
+       "score": 47
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Tachibana Hinano",
+       "k": 13,
+       "a": 3,
+       "d": 15,
+       "mvp": 2,
+       "score": 42
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Eris Suzukami",
+       "k": 16,
+       "a": 3,
+       "d": 16,
+       "mvp": 2,
+       "score": 41
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Remia Aotsuki",
+       "k": 11,
+       "a": 2,
+       "d": 15,
+       "mvp": 1,
+       "score": 25
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Shiranami Ramune",
+       "k": 10,
+       "a": 0,
+       "d": 17,
+       "mvp": 1,
+       "score": 24
+      },
+      {
+       "team": "0v3",
+       "name": "milkenut",
+       "k": 17,
+       "a": 2,
+       "d": 13,
+       "mvp": 3,
+       "score": 44
+      },
+      {
+       "team": "0v3",
+       "name": "Navikuun",
+       "k": 19,
+       "a": 1,
+       "d": 13,
+       "mvp": 2,
+       "score": 43
+      },
+      {
+       "team": "0v3",
+       "name": "zenn1sm",
+       "k": 17,
+       "a": 2,
+       "d": 15,
+       "mvp": 3,
+       "score": 40
+      },
+      {
+       "team": "0v3",
+       "name": "potatodepresso",
+       "k": 16,
+       "a": 2,
+       "d": 16,
+       "mvp": 3,
+       "score": 38
+      },
+      {
+       "team": "0v3",
+       "name": "Pearlim",
+       "k": 10,
+       "a": 2,
+       "d": 14,
+       "mvp": 2,
+       "score": 28
+      }
+     ]
+    }
+   ]
   }
  }
 }
