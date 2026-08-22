@@ -7,7 +7,7 @@ BPL Rating per player (normalized within each pool), and writes site/data.json.
 Run:  python build/parse.py
 Re-run any time the source data changes.
 """
-import csv, json, os, re, sys, unicodedata
+import csv, hashlib, json, os, re, sys, unicodedata
 from collections import defaultdict
 from datetime import date as _date
 
@@ -876,6 +876,23 @@ def main():
     for f in os.listdir(LOGO_DIR):
         if f.lower().endswith((".png", ".jpg", ".jpeg", ".webp")):
             shutil.copy2(os.path.join(LOGO_DIR, f), os.path.join(site_logos, f))
+
+    # cache-bust js/css so browsers fetch new builds instead of a stale cached copy.
+    # The version is a hash of the JS+CSS, so it only changes when those files change.
+    try:
+        idx_path = os.path.join(SITE, "index.html")
+        html = open(idx_path, encoding="utf-8").read()
+        h = hashlib.md5()
+        for f in ("js/app.js", "css/style.css"):
+            p = os.path.join(SITE, f)
+            if os.path.exists(p):
+                h.update(open(p, "rb").read())
+        ver = h.hexdigest()[:8]
+        html = re.sub(r'(src="js/app\.js)(\?v=[^"]*)?"', rf'\1?v={ver}"', html)
+        html = re.sub(r'(href="css/style\.css)(\?v=[^"]*)?"', rf'\1?v={ver}"', html)
+        open(idx_path, "w", encoding="utf-8").write(html)
+    except Exception as e:
+        print("cache-bust skipped:", e)
 
     # ---------- validation report ----------
     print(f"Teams parsed:        {len(teams)}")
