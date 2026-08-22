@@ -23,6 +23,11 @@ function ratingBadge(r){ if(r==null) return '<span class="muted">—</span>'; re
 function teamLogo(t){ return t && t.logo ? `<img src="${esc(t.logo)}" alt="">` : ''; }
 function teamCell(name){ const t=teamByName(name); if(!t) return `<span class="team-inline"><span class="muted">${esc(name||"—")}</span></span>`;
   return `<a class="team-inline" href="#/team/${t.slug}">${teamLogo(t)}<span>${esc(t.name)}</span></a>`; }
+function rankDeltaBadge(t){
+  const d = t.rankDelta||0; if(!d) return '';
+  const up = d>0, n = Math.abs(d);
+  return ` <span class="rank-delta ${up?'up':'down'}" title="${up?'Up':'Down'} ${n} place${n>1?'s':''} since the last event">${up?'▲':'▼'}${n}</span>`;
+}
 function flag(iso){
   if(!iso) return '';
   if(iso==="neutral") return `<span class="flag flag-neutral" title="Land of Make Believe"></span>`;
@@ -191,7 +196,7 @@ function renderHome(){
 function renderTeams(){
   const cols = [
     ["#", t=>t.rank, "rankcol"],
-    ["Team", t=>teamCell(t.name)+(t.star?' <span class="star" title="Major winner">★</span>':''), "name-cell", t=>t.name],
+    ["Team", t=>`<span class="tm-rank">${teamCell(t.name)}${t.star?' <span class="star" title="Major winner">★</span>':''}${rankDeltaBadge(t)}</span>`, "name-cell", t=>t.name],
     ["Pts", t=>t.rank_points, "mono"],
     ["Maps", t=>t.total_maps, "mono"],
     ["W-L-T", t=>`${t.map_wins}-${t.map_losses}-${t.map_ties}`, "mono", t=>t.map_wins],
@@ -458,7 +463,7 @@ function renderRankings(){
     <div class="tablewrap"><table class="data">
       <thead><tr><th class="no-sort rankcol">#</th><th class="no-sort">Team</th><th class="no-sort">Points</th>
         <th class="no-sort">Majors</th><th class="no-sort">S-Tier</th><th class="no-sort">Events</th></tr></thead>
-      <tbody>${DATA.teams.map(t=>`<tr><td class="rankcol">${t.rank}</td><td class="name-cell">${teamCell(t.name)}</td>
+      <tbody>${DATA.teams.map(t=>`<tr><td class="rankcol">${t.rank}</td><td class="name-cell"><span class="tm-rank">${teamCell(t.name)}${rankDeltaBadge(t)}</span></td>
         <td class="mono" style="color:var(--accent);font-weight:700">${t.rank_points}</td>
         <td class="mono">${t.major_wins||'–'}</td><td class="mono">${t.s_tier_wins||'–'}</td><td class="mono">${t.events_played}</td></tr>`).join("")}</tbody></table></div>
     <h2 class="section-title" style="margin-top:26px"><span class="accent-bar"></span>Player Leaderboards <span class="muted" style="font-size:11px">(pro)</span></h2>

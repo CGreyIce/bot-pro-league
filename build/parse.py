@@ -228,30 +228,42 @@ def _pdate(s):
     y, m, d = (int(x) for x in s.split("-")); return _date(y, m, d)
 def compute_team_points(teams, tournaments):
     """Override each team's rank_points with a value derived from completed events:
-    Σ placement_points(rank) × tier_mult × recency_decay. Then re-sort + re-rank."""
+    Σ placement_points(rank) × tier_mult × recency_decay. Then re-sort + re-rank, and
+    record how each team's rank moved vs. before the most recent completed event."""
     dated = [t["date"] for t in tournaments if t.get("date")]
     ref = max((_pdate(d) for d in dated), default=None)   # newest event = "now"
-    pts = defaultdict(float)
-    breakdown = defaultdict(list)
-    for tr in tournaments:
-        if not tr.get("championTeam") or not tr.get("date"):
-            continue                       # skip in-progress / undecided events
-        mult = TIER_POINT_MULT.get(tr["tier"], 1.0)
-        w = 0.5 ** ((ref - _pdate(tr["date"])).days / POINTS_HALFLIFE_DAYS) if ref else 1.0
-        for s in tr["standings"]:
-            if s.get("teamSlug"):
-                p = _placement_points(s["rank"]) * mult * w
-                pts[s["teamSlug"]] += p
-                breakdown[s["teamSlug"]].append({
-                    "event": tr["name"], "slug": tr["slug"], "date": tr["date"],
-                    "tier": tr["tier"], "placement": s["rank"], "points": round(p, 1)})
+    completed = [tr for tr in tournaments if tr.get("championTeam") and tr.get("date")]
+    latest_date = max((tr["date"] for tr in completed), default=None)  # most recent event
+
+    def tally(exclude_latest):
+        pts = defaultdict(float); bd = defaultdict(list)
+        for tr in completed:
+            if exclude_latest and tr["date"] == latest_date:
+                continue
+            mult = TIER_POINT_MULT.get(tr["tier"], 1.0)
+            w = 0.5 ** ((ref - _pdate(tr["date"])).days / POINTS_HALFLIFE_DAYS) if ref else 1.0
+            for s in tr["standings"]:
+                if s.get("teamSlug"):
+                    p = _placement_points(s["rank"]) * mult * w
+                    pts[s["teamSlug"]] += p
+                    bd[s["teamSlug"]].append({
+                        "event": tr["name"], "slug": tr["slug"], "date": tr["date"],
+                        "tier": tr["tier"], "placement": s["rank"], "points": round(p, 1)})
+        return pts, bd
+
+    pts, breakdown = tally(False)
+    prev_pts, _ = tally(True)
     for t in teams:
         t["rank_points"] = round(pts.get(t["slug"], 0))
-        t["points_breakdown"] = sorted(breakdown.get(t["slug"], []),
-                                       key=lambda b: -b["points"])
+        t["points_breakdown"] = sorted(breakdown.get(t["slug"], []), key=lambda b: -b["points"])
     teams.sort(key=lambda t: -t["rank_points"])
     for i, t in enumerate(teams):
         t["rank"] = i + 1
+    # rank before the most recent event (tie-break on current rank), for the movement arrow
+    prev_order = sorted(teams, key=lambda t: (-prev_pts.get(t["slug"], 0), t["rank"]))
+    prev_rank = {t["slug"]: i + 1 for i, t in enumerate(prev_order)}
+    for t in teams:
+        t["rankDelta"] = prev_rank.get(t["slug"], t["rank"]) - t["rank"]   # + = moved up
 
 # ---------- roster .txt (team lore) ----------
 def parse_rosters():
