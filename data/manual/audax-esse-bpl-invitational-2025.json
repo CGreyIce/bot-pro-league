@@ -1,0 +1,946 @@
+{
+ "slug": "audax-esse-bpl-invitational-2025",
+ "name": "Audax Esse BPL Invitational 2025",
+ "tier": "s",
+ "date": "2025-03-22",
+ "champion": "PepegaX",
+ "stages": [
+  {
+   "id": 1,
+   "name": "Group A",
+   "format": "swiss",
+   "bestOf": 1,
+   "teams": [
+    "Lemon Tree",
+    "Technomancy",
+    "Divide&Conquer",
+    "Opal",
+    "Masmark",
+    "Looking4Team"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "a": "Lemon Tree",
+     "b": "Technomancy",
+     "sa": 13,
+     "sb": 7
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "a": "Divide&Conquer",
+     "b": "Opal",
+     "sa": 13,
+     "sb": 8
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "a": "Masmark",
+     "b": "Looking4Team",
+     "sa": 13,
+     "sb": 1
+    },
+    {
+     "id": 4,
+     "round": 2,
+     "a": "Lemon Tree",
+     "b": "Divide&Conquer",
+     "sa": 13,
+     "sb": 16
+    },
+    {
+     "id": 5,
+     "round": 2,
+     "a": "Masmark",
+     "b": "Technomancy",
+     "sa": 19,
+     "sb": 16
+    },
+    {
+     "id": 6,
+     "round": 2,
+     "a": "Opal",
+     "b": "Looking4Team",
+     "sa": 13,
+     "sb": 4
+    },
+    {
+     "id": 7,
+     "round": 3,
+     "a": "Divide&Conquer",
+     "b": "Masmark",
+     "sa": 5,
+     "sb": 13
+    },
+    {
+     "id": 8,
+     "round": 3,
+     "a": "Looking4Team",
+     "b": "Technomancy",
+     "sa": 16,
+     "sb": 12
+    },
+    {
+     "id": 9,
+     "round": 3,
+     "a": "Lemon Tree",
+     "b": "Opal",
+     "sa": 10,
+     "sb": 13
+    },
+    {
+     "id": 10,
+     "round": 4,
+     "a": "Masmark",
+     "b": "Opal",
+     "sa": 13,
+     "sb": 11
+    },
+    {
+     "id": 11,
+     "round": 4,
+     "a": "Technomancy",
+     "b": "Divide&Conquer",
+     "sa": 10,
+     "sb": 13
+    },
+    {
+     "id": 12,
+     "round": 4,
+     "a": "Lemon Tree",
+     "b": "Looking4Team",
+     "sa": 13,
+     "sb": 8
+    }
+   ],
+   "rounds": 4,
+   "roundTitles": {
+    "1": "Round 1",
+    "2": "Round 2",
+    "3": "Round 3",
+    "4": "Round 4"
+   }
+  },
+  {
+   "id": 2,
+   "name": "Group B",
+   "format": "swiss",
+   "bestOf": 1,
+   "teams": [
+    "degree",
+    "Team Neverseen",
+    "Aspire",
+    "PepegaX",
+    "entity",
+    "Raven Song"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "a": "degree",
+     "b": "Team Neverseen",
+     "sa": 11,
+     "sb": 13
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "a": "Aspire",
+     "b": "PepegaX",
+     "sa": 13,
+     "sb": 9
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "a": "entity",
+     "b": "Raven Song",
+     "sa": 7,
+     "sb": 13
+    },
+    {
+     "id": 4,
+     "round": 2,
+     "a": "Aspire",
+     "b": "Team Neverseen",
+     "sa": 1,
+     "sb": 13
+    },
+    {
+     "id": 5,
+     "round": 2,
+     "a": "Raven Song",
+     "b": "degree",
+     "sa": 10,
+     "sb": 13
+    },
+    {
+     "id": 6,
+     "round": 2,
+     "a": "entity",
+     "b": "PepegaX",
+     "sa": 9,
+     "sb": 13
+    },
+    {
+     "id": 7,
+     "round": 3,
+     "a": "Team Neverseen",
+     "b": "entity",
+     "sa": 10,
+     "sb": 13
+    },
+    {
+     "id": 8,
+     "round": 3,
+     "a": "degree",
+     "b": "Aspire",
+     "sa": 13,
+     "sb": 10
+    },
+    {
+     "id": 9,
+     "round": 3,
+     "a": "PepegaX",
+     "b": "Raven Song",
+     "sa": 13,
+     "sb": 3
+    },
+    {
+     "id": 10,
+     "round": 4,
+     "a": "Team Neverseen",
+     "b": "PepegaX",
+     "sa": 13,
+     "sb": 8
+    },
+    {
+     "id": 11,
+     "round": 4,
+     "a": "degree",
+     "b": "entity",
+     "sa": 9,
+     "sb": 13
+    },
+    {
+     "id": 12,
+     "round": 4,
+     "a": "Raven Song",
+     "b": "Aspire",
+     "sa": 13,
+     "sb": 8
+    }
+   ],
+   "rounds": 4,
+   "roundTitles": {
+    "1": "Round 1",
+    "2": "Round 2",
+    "3": "Round 3",
+    "4": "Round 4"
+   }
+  },
+  {
+   "id": 3,
+   "name": "Group C",
+   "format": "swiss",
+   "bestOf": 1,
+   "teams": [
+    "Infernum E-Sports",
+    "Setting Sun",
+    "Artisian",
+    "Sacred Raven",
+    "Ukiyo",
+    "Aeternum"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "a": "Infernum E-Sports",
+     "b": "Setting Sun",
+     "sa": 5,
+     "sb": 13
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "a": "Artisian",
+     "b": "Sacred Raven",
+     "sa": 13,
+     "sb": 11
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "a": "Ukiyo",
+     "b": "Aeternum",
+     "sa": 13,
+     "sb": 7
+    },
+    {
+     "id": 4,
+     "round": 2,
+     "a": "Artisian",
+     "b": "Ukiyo",
+     "sa": 13,
+     "sb": 8
+    },
+    {
+     "id": 5,
+     "round": 2,
+     "a": "Setting Sun",
+     "b": "Sacred Raven",
+     "sa": 13,
+     "sb": 11
+    },
+    {
+     "id": 6,
+     "round": 2,
+     "a": "Infernum E-Sports",
+     "b": "Aeternum",
+     "sa": 4,
+     "sb": 13
+    },
+    {
+     "id": 7,
+     "round": 3,
+     "a": "Artisian",
+     "b": "Setting Sun",
+     "sa": 13,
+     "sb": 9
+    },
+    {
+     "id": 8,
+     "round": 3,
+     "a": "Aeternum",
+     "b": "Sacred Raven",
+     "sa": 2,
+     "sb": 13
+    },
+    {
+     "id": 9,
+     "round": 3,
+     "a": "Ukiyo",
+     "b": "Infernum E-Sports",
+     "sa": 4,
+     "sb": 13
+    },
+    {
+     "id": 10,
+     "round": 4,
+     "a": "Artisian",
+     "b": "Aeternum",
+     "sa": 13,
+     "sb": 7
+    },
+    {
+     "id": 11,
+     "round": 4,
+     "a": "Setting Sun",
+     "b": "Ukiyo",
+     "sa": 13,
+     "sb": 8
+    },
+    {
+     "id": 12,
+     "round": 4,
+     "a": "Sacred Raven",
+     "b": "Infernum E-Sports",
+     "sa": 13,
+     "sb": 16
+    }
+   ],
+   "rounds": 4,
+   "roundTitles": {
+    "1": "Round 1",
+    "2": "Round 2",
+    "3": "Round 3",
+    "4": "Round 4"
+   }
+  },
+  {
+   "id": 4,
+   "name": "Group D",
+   "format": "swiss",
+   "bestOf": 1,
+   "teams": [
+    "99Lives",
+    "New Jade",
+    "Alcheministry",
+    "Fruit Basket",
+    "Unforgettable",
+    "The Gigarage"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "a": "99Lives",
+     "b": "New Jade",
+     "sa": 13,
+     "sb": 10
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "a": "Alcheministry",
+     "b": "Fruit Basket",
+     "sa": 9,
+     "sb": 13
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "a": "Unforgettable",
+     "b": "The Gigarage",
+     "sa": 13,
+     "sb": 9
+    },
+    {
+     "id": 4,
+     "round": 2,
+     "a": "99Lives",
+     "b": "Unforgettable",
+     "sa": 1,
+     "sb": 13
+    },
+    {
+     "id": 5,
+     "round": 2,
+     "a": "Fruit Basket",
+     "b": "New Jade",
+     "sa": 13,
+     "sb": 9
+    },
+    {
+     "id": 6,
+     "round": 2,
+     "a": "Alcheministry",
+     "b": "The Gigarage",
+     "sa": 12,
+     "sb": 16
+    },
+    {
+     "id": 7,
+     "round": 3,
+     "a": "Unforgettable",
+     "b": "Fruit Basket",
+     "sa": 16,
+     "sb": 13
+    },
+    {
+     "id": 8,
+     "round": 3,
+     "a": "New Jade",
+     "b": "Alcheministry",
+     "sa": 0,
+     "sb": 13
+    },
+    {
+     "id": 9,
+     "round": 3,
+     "a": "99Lives",
+     "b": "The Gigarage",
+     "sa": 0,
+     "sb": 13
+    },
+    {
+     "id": 10,
+     "round": 4,
+     "a": "Fruit Basket",
+     "b": "The Gigarage",
+     "sa": 0,
+     "sb": 13
+    },
+    {
+     "id": 11,
+     "round": 4,
+     "a": "New Jade",
+     "b": "Unforgettable",
+     "sa": 7,
+     "sb": 13
+    },
+    {
+     "id": 12,
+     "round": 4,
+     "a": "99Lives",
+     "b": "Alcheministry",
+     "sa": 18,
+     "sb": 22
+    }
+   ],
+   "rounds": 4,
+   "roundTitles": {
+    "1": "Round 1",
+    "2": "Round 2",
+    "3": "Round 3",
+    "4": "Round 4"
+   }
+  },
+  {
+   "id": 5,
+   "name": "Group E",
+   "format": "swiss",
+   "bestOf": 1,
+   "teams": [
+    "Aimpunch",
+    "DiamondOnes",
+    "The Nomads",
+    "Cyanide",
+    "Bloom E-Sports",
+    "division20"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "a": "Aimpunch",
+     "b": "DiamondOnes",
+     "sa": 11,
+     "sb": 13
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "a": "The Nomads",
+     "b": "Cyanide",
+     "sa": 4,
+     "sb": 13
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "a": "Bloom E-Sports",
+     "b": "division20",
+     "sa": 19,
+     "sb": 22
+    },
+    {
+     "id": 4,
+     "round": 2,
+     "a": "DiamondOnes",
+     "b": "Cyanide",
+     "sa": 13,
+     "sb": 10
+    },
+    {
+     "id": 5,
+     "round": 2,
+     "a": "division20",
+     "b": "Aimpunch",
+     "sa": 13,
+     "sb": 10
+    },
+    {
+     "id": 6,
+     "round": 2,
+     "a": "The Nomads",
+     "b": "Bloom E-Sports",
+     "sa": 2,
+     "sb": 13
+    },
+    {
+     "id": 7,
+     "round": 3,
+     "a": "DiamondOnes",
+     "b": "division20",
+     "sa": 13,
+     "sb": 10
+    },
+    {
+     "id": 8,
+     "round": 3,
+     "a": "The Nomads",
+     "b": "Aimpunch",
+     "sa": 13,
+     "sb": 16
+    },
+    {
+     "id": 9,
+     "round": 3,
+     "a": "Bloom E-Sports",
+     "b": "Cyanide",
+     "sa": 13,
+     "sb": 10
+    },
+    {
+     "id": 10,
+     "round": 4,
+     "a": "DiamondOnes",
+     "b": "Bloom E-Sports",
+     "sa": 13,
+     "sb": 10
+    },
+    {
+     "id": 11,
+     "round": 4,
+     "a": "The Nomads",
+     "b": "division20",
+     "sa": 8,
+     "sb": 13
+    },
+    {
+     "id": 12,
+     "round": 4,
+     "a": "Aimpunch",
+     "b": "Cyanide",
+     "sa": 13,
+     "sb": 10
+    }
+   ],
+   "rounds": 4,
+   "roundTitles": {
+    "1": "Round 1",
+    "2": "Round 2",
+    "3": "Round 3",
+    "4": "Round 4"
+   }
+  },
+  {
+   "id": 6,
+   "name": "Group F",
+   "format": "swiss",
+   "bestOf": 1,
+   "teams": [
+    "Neverland",
+    "Cosmos",
+    "Kiedz",
+    "0v3",
+    "Bluebird",
+    "Caelum Scala"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "a": "Neverland",
+     "b": "Cosmos",
+     "sa": 13,
+     "sb": 9
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "a": "Kiedz",
+     "b": "0v3",
+     "sa": 22,
+     "sb": 18
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "a": "Bluebird",
+     "b": "Caelum Scala",
+     "sa": 7,
+     "sb": 13
+    },
+    {
+     "id": 4,
+     "round": 2,
+     "a": "Neverland",
+     "b": "Kiedz",
+     "sa": 2,
+     "sb": 13
+    },
+    {
+     "id": 5,
+     "round": 2,
+     "a": "Caelum Scala",
+     "b": "Cosmos",
+     "sa": 10,
+     "sb": 13
+    },
+    {
+     "id": 6,
+     "round": 2,
+     "a": "Bluebird",
+     "b": "0v3",
+     "sa": 11,
+     "sb": 13
+    },
+    {
+     "id": 7,
+     "round": 3,
+     "a": "Kiedz",
+     "b": "Cosmos",
+     "sa": 13,
+     "sb": 8
+    },
+    {
+     "id": 8,
+     "round": 3,
+     "a": "Bluebird",
+     "b": "Neverland",
+     "sa": 13,
+     "sb": 9
+    },
+    {
+     "id": 9,
+     "round": 3,
+     "a": "0v3",
+     "b": "Caelum Scala",
+     "sa": 11,
+     "sb": 13
+    },
+    {
+     "id": 10,
+     "round": 4,
+     "a": "Kiedz",
+     "b": "Caelum Scala",
+     "sa": 11,
+     "sb": 13
+    },
+    {
+     "id": 11,
+     "round": 4,
+     "a": "Bluebird",
+     "b": "Cosmos",
+     "sa": 11,
+     "sb": 13
+    },
+    {
+     "id": 12,
+     "round": 4,
+     "a": "0v3",
+     "b": "Neverland",
+     "sa": 13,
+     "sb": 6
+    }
+   ],
+   "rounds": 4,
+   "roundTitles": {
+    "1": "Round 1",
+    "2": "Round 2",
+    "3": "Round 3",
+    "4": "Round 4"
+   }
+  },
+  {
+   "id": 7,
+   "name": "Playoffs",
+   "format": "single_elim",
+   "bestOf": 3,
+   "teams": [
+    "Masmark",
+    "Team Neverseen",
+    "Unforgettable",
+    "Artisian",
+    "DiamondOnes",
+    "Caelum Scala",
+    "Divide&Conquer",
+    "PepegaX",
+    "Setting Sun",
+    "The Gigarage",
+    "division20",
+    "Kiedz"
+   ],
+   "roundTitles": {
+    "1": "Round of 8",
+    "2": "Quarterfinals",
+    "3": "Semifinals",
+    "4": "Final"
+   },
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "fa": {
+      "seed": 1
+     },
+     "fb": {
+      "seed": 16
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "fa": {
+      "seed": 8
+     },
+     "fb": {
+      "seed": 9
+     },
+     "sa": 2,
+     "sb": 0
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "fa": {
+      "seed": 4
+     },
+     "fb": {
+      "seed": 13
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 1,
+     "fa": {
+      "seed": 5
+     },
+     "fb": {
+      "seed": 12
+     },
+     "sa": 2,
+     "sb": 1
+    },
+    {
+     "id": 5,
+     "round": 1,
+     "fa": {
+      "seed": 2
+     },
+     "fb": {
+      "seed": 15
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 6,
+     "round": 1,
+     "fa": {
+      "seed": 7
+     },
+     "fb": {
+      "seed": 10
+     },
+     "sa": 2,
+     "sb": 0
+    },
+    {
+     "id": 7,
+     "round": 1,
+     "fa": {
+      "seed": 3
+     },
+     "fb": {
+      "seed": 14
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 8,
+     "round": 1,
+     "fa": {
+      "seed": 6
+     },
+     "fb": {
+      "seed": 11
+     },
+     "sa": 2,
+     "sb": 0
+    },
+    {
+     "id": 9,
+     "round": 2,
+     "fa": {
+      "match": 1
+     },
+     "fb": {
+      "match": 2
+     },
+     "sa": 0,
+     "sb": 2
+    },
+    {
+     "id": 10,
+     "round": 2,
+     "fa": {
+      "match": 3
+     },
+     "fb": {
+      "match": 4
+     },
+     "sa": 1,
+     "sb": 2
+    },
+    {
+     "id": 11,
+     "round": 2,
+     "fa": {
+      "match": 5
+     },
+     "fb": {
+      "match": 6
+     },
+     "sa": 1,
+     "sb": 2
+    },
+    {
+     "id": 12,
+     "round": 2,
+     "fa": {
+      "match": 7
+     },
+     "fb": {
+      "match": 8
+     },
+     "sa": 0,
+     "sb": 2
+    },
+    {
+     "id": 13,
+     "round": 3,
+     "fa": {
+      "match": 9
+     },
+     "fb": {
+      "match": 10
+     },
+     "sa": 2,
+     "sb": 0
+    },
+    {
+     "id": 14,
+     "round": 3,
+     "fa": {
+      "match": 11
+     },
+     "fb": {
+      "match": 12
+     },
+     "sa": 2,
+     "sb": 0
+    },
+    {
+     "id": 15,
+     "round": 4,
+     "fa": {
+      "match": 13
+     },
+     "fb": {
+      "match": 14
+     },
+     "sa": 3,
+     "sb": 2,
+     "bestOf": 5
+    },
+    {
+     "id": 16,
+     "round": 4,
+     "thirdPlace": true,
+     "bestOf": 1,
+     "fa": {
+      "loserOf": 13
+     },
+     "fb": {
+      "loserOf": 14
+     },
+     "sa": 13,
+     "sb": 5
+    }
+   ]
+  }
+ ]
+}

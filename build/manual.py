@@ -168,6 +168,8 @@ def _elim_resolved(stage):
     def team_of(f):
         if "seed" in f:
             s = f["seed"]; return name_by_seed.get(s) if s <= n else None
+        if "loserOf" in f:                       # 3rd-place decider: pull the beaten semifinalist
+            return loser_of(f["loserOf"])
         return winner_of(f["match"])
     def winner_of(mid):
         if mid in memo: return memo[mid]
@@ -178,13 +180,17 @@ def _elim_resolved(stage):
         elif a and b and m.get("sa") is not None and m.get("sb") is not None:
             w = a if m["sa"] > m["sb"] else b if m["sb"] > m["sa"] else None
         memo[mid] = w; return w
+    def loser_of(mid):
+        m = by_id[mid]; a, b = team_of(m["fa"]), team_of(m["fb"]); w = winner_of(mid)
+        return (a if w == b else b if w == a else None) if w else None
     res = {}
     for m in stage["matches"]:
         a, b = team_of(m["fa"]), team_of(m["fb"]); w = winner_of(m["id"])
         wi = 1 if (w and w == a) else 2 if (w and w == b) else 0
         walk = (a and is_bye(m["fb"])) or (b and is_bye(m["fa"]))
         res[m["id"]] = {"a": a, "b": b, "w": wi, "bye": walk}
-    final_id = max((m["id"] for m in stage["matches"]), default=None)
+    # the final is the last real match — a 3rd-place decider must never be mistaken for it
+    final_id = max((m["id"] for m in stage["matches"] if not m.get("thirdPlace")), default=None)
     champ = winner_of(final_id) if final_id else None
     return res, champ
 
@@ -218,8 +224,24 @@ def stage_standings(stage, res):
     order = sorted(rec.keys(), key=lambda n: (-rec[n]["w"], rec[n]["l"], -rec[n]["diff"], (n or "").lower()))
     if stage["format"] == "single_elim":
         _, champ = _elim_resolved(stage)
+        # explicit podium: champion, runner-up (final loser), then the 3rd-place decider's
+        # winner and loser — so a lost semifinal doesn't get mis-sorted by round-diff
+        top = []
+        finals = [m for m in stage["matches"] if not m.get("thirdPlace")]
+        fin = max(finals, key=lambda m: m["id"]) if finals else None
         if champ:
-            order = [champ] + [n for n in order if n != champ]
+            top.append(champ)
+            fr = res.get(fin["id"], {}) if fin else {}
+            ru = fr.get("b") if fr.get("w") == 1 else fr.get("a") if fr.get("w") == 2 else None
+            if ru:
+                top.append(ru)
+        tp = next((m for m in stage["matches"] if m.get("thirdPlace")), None)
+        if tp:
+            tr = res.get(tp["id"], {})
+            if tr.get("w") in (1, 2):
+                top.append(tr["a"] if tr["w"] == 1 else tr["b"])
+                top.append(tr["b"] if tr["w"] == 1 else tr["a"])
+        order = [n for n in top if n] + [n for n in order if n not in top]
     return [{"name": n, "w": rec[n]["w"], "l": rec[n]["l"]} for n in order]
 
 # ---------------- to standard schema ----------------
@@ -235,7 +257,8 @@ def stage_to_standard(stage):
                             "b": b or ("(bye)" if rr.get("bye") else ""),
                             "sc": [m.get("sa"), m.get("sb")] if m.get("sa") is not None else "",
                             "w": rr["w"], "st": "complete" if rr["w"] else "pending",
-                            "grp": False, "bo": stage.get("bestOf", 1), "ts": m.get("ts")})
+                            "grp": False, "tp": bool(m.get("thirdPlace")),
+                            "bo": m.get("bestOf", stage.get("bestOf", 1)), "ts": m.get("ts")})
     return {
         "id": stage["id"], "name": stage["name"], "format": stage["format"],
         "bestOf": stage.get("bestOf", 1), "roundTitles": stage.get("roundTitles", {}),

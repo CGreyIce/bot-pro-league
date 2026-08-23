@@ -1450,12 +1450,20 @@ function renderTournament(slug){
   const mref = (m, pfx)=> (m.i!=null ? ` data-match="${pfx}${m.i}"` : '');
   const treeMatch = (m, pfx="")=>`<div class="bkt-match"${mref(m,pfx)}>${treeTeam(m.a,m.aTeam,m.sa,m.w===1)}${treeTeam(m.b,m.bTeam,m.sb,m.w===2)}</div>`;
   const isByeMatch = m => m.a==="(bye)" || m.b==="(bye)";
+  // a 3rd-place decider floats on its own — pulled out of the main tree
+  const thirdPlaceBox = (rounds, pfx="")=>{
+    const tps = (rounds||[]).flatMap(rd=>rd.matches.filter(m=>m.tp));
+    if(!tps.length) return '';
+    return `<div class="bkt-third">
+      <div class="bkt-third-title">Third Place Match</div>
+      ${tps.map(m=>`<div class="bkt-third-match">${treeMatch(m,pfx)}</div>`).join("")}</div>`;
+  };
   const treeSection = (title, rounds, pfx="")=>{
     if(!rounds.length) return '';
     // drop first-round byes: a seeded team with a bye is shown waiting in the next round,
     // so the real opening matches line up 1:1 with the round they feed into.
     const cols = rounds.map(rd=>{
-        const matches = rd.matches.filter(m=>!isByeMatch(m));
+        const matches = rd.matches.filter(m=>!isByeMatch(m) && !m.tp);
         if(!matches.length) return '';
         return `<div class="bkt-round">
         <div class="bkt-round-title">${esc(rd.title)}</div>
@@ -1484,7 +1492,7 @@ function renderTournament(slug){
       const pfx = st.id + "-";
       const head = `<h2 class="section-title" style="margin-top:20px"><span class="accent-bar"></span>${esc(st.name)}
         <span class="muted" style="font-size:11px">${fmtLabel(st.format)}${st.bestOf>1?' · Bo'+st.bestOf:''}</span></h2>`;
-      if(st.format==="single_elim") return head + treeSection("", st.rounds, pfx);
+      if(st.format==="single_elim") return head + treeSection("", st.rounds, pfx) + thirdPlaceBox(st.rounds, pfx);
       return head + stageStandings(st) + listRounds(st.rounds, pfx);
     }).join("");
   } else if(isElim){

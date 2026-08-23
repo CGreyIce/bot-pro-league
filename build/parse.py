@@ -111,10 +111,10 @@ def find_logo(team_name):
     return None
 
 # ---------- rating ----------
-TIERS = [  # (min_rating_inclusive, tier name) — calibrated to the shrunk rating scale (~0.81..1.18, mean 1.00)
-    (1.155, "Champion"), (1.125, "Grandmaster"), (1.090, "Master"),
-    (1.050, "Diamond"), (1.020, "Emerald"), (0.990, "Platinum"),
-    (0.950, "Gold"), (0.910, "Silver"), (0.870, "Bronze"), (0.0, "Iron"),
+TIERS = [  # (min_rating_inclusive, tier name) — calibrated to the K=20 shrunk scale (~0.89..1.12, mean 1.00)
+    (1.103, "Champion"), (1.081, "Grandmaster"), (1.055, "Master"),
+    (1.029, "Diamond"), (1.012, "Emerald"), (0.994, "Platinum"),
+    (0.969, "Gold"), (0.945, "Silver"), (0.918, "Bronze"), (0.0, "Iron"),
 ]
 def tier_for(rating):
     for lo, name in TIERS:
@@ -122,13 +122,48 @@ def tier_for(rating):
             return name
     return "Iron"
 
-RATING_LO, RATING_HI = 0.80, 1.20
+RATING_LO, RATING_HI = 0.86, 1.16
 def level_for(rating):
-    # linear map of rating across [0.80, 1.20] onto BPL Level 1..10
+    # linear map of rating across [0.86, 1.16] onto BPL Level 1..10 (K=20 compressed scale)
     lvl = int(round(1 + 9 * (rating - RATING_LO) / (RATING_HI - RATING_LO)))
     return max(1, min(10, lvl))
 
 WEIGHTS = {"kdr": 0.40, "kpm": 0.30, "mvppm": 0.15, "apm": 0.10, "wr": 0.05}
+
+_TIER_TOKEN = re.compile(r"\b(Champion|Grandmaster|Master|Diamond|Emerald|Platinum|Gold|Silver|Bronze|Iron)\b")
+def refresh_bio_dynamics(pro, amateur, solo):
+    """Keep the volatile parts of each hand-written bio in sync with live ratings:
+    the tier name, the rating value, and the 'highest-rated in the pool' epithet.
+    Every bio references its own tier at most once (verified), so a single-token
+    swap is unambiguous. Runs each build so bios never go stale as stats change."""
+    def sync(p):
+        bio = p.get("bio")
+        if not bio:
+            return
+        tier, rating = p.get("tier"), p.get("rating")
+        if tier:
+            bio = _TIER_TOKEN.sub(tier, bio, count=1)                       # self-tier -> current tier
+        if rating is not None:
+            rs = f"{rating:.2f}"
+            bio = re.sub(r"\b(at\s+)(?:1\.\d\d|0\.\d\d)\b", lambda m: m.group(1) + rs, bio)   # "Master at 1.09"
+            bio = re.sub(r"\b(?:1\.\d\d|0\.\d\d)(\s+rating\b)", lambda m: rs + m.group(1), bio)  # "1.14 rating"
+        p["bio"] = bio
+    for pool in (pro, amateur, solo):
+        for p in pool:
+            sync(p)
+    # "highest-rated player in the {pool} pool" epithet follows the true #1 automatically
+    for pool, label in ((pro, "pro"), (amateur, "amateur")):
+        rated = [p for p in pool if p.get("rating") is not None]
+        if not rated:
+            continue
+        top = max(rated, key=lambda p: p["rating"])
+        the = f"the highest-rated player in the {label} pool"
+        one = f"one of the highest-rated players in the {label} pool"
+        for p in pool:
+            b = p.get("bio")
+            if not b:
+                continue
+            p["bio"] = b.replace(one, the) if p is top else b.replace(the, one)
 
 # Players that don't belong in a given pool (removed before rating normalization).
 EXCLUDE_TEAMS = {
@@ -193,7 +228,8 @@ def compute_ratings(players):
     a_mvp = avg(lambda p: p["mvp"] / p["maps"])
     a_apm = avg(lambda p: p["assists"] / p["maps"])
     a_wr  = avg(lambda p: p["winrate"]) or 1.0
-    K = 8.0  # shrinkage pseudo-maps: a small sample is pulled toward the league mean (ratio 1.0)
+    K = 20.0  # shrinkage pseudo-maps: rewards map volume — a small sample is pulled hard toward the
+              # league mean (ratio 1.0), so a 13-map player can't outrank a consistent 30-map player
     def shrink(ratio, n):
         return (n * ratio + K * 1.0) / (n + K)
     for p in players:
@@ -221,7 +257,7 @@ def _rating_value(kills, deaths, assists, mvp, wins, losses, avg):
     maps = wins + losses
     if maps <= 0 or deaths <= 0:
         return None
-    n = maps; K = 8.0
+    n = maps; K = 20.0
     def shrink(ratio):
         return (n * ratio + K * 1.0) / (n + K)
     r_kdr = shrink((kills / deaths) / avg["kdr"] if avg["kdr"] else 1)
@@ -570,6 +606,7 @@ def main():
                     p["bio"] = b.get("bio", "")
                     if b.get("gender") in ("M", "F"):
                         p["gender"] = b["gender"]
+    refresh_bio_dynamics(pro, amateur, solo)  # sync tier/rating/#1 language to live stats
 
     # attach pro players to teams (sorted by rating)
     roster = defaultdict(list)
