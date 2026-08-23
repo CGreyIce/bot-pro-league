@@ -615,6 +615,22 @@ def main():
     for t in teams:
         t["events"].sort(key=lambda e: e["date"], reverse=True)
 
+    # ---- team trophy counts recomputed from championships (event tier is source of truth) ----
+    # Challengers & Legends stages count as S-Tier; only the Conquerors stage is a Major title.
+    for t in teams:
+        t["major_wins"] = t["s_tier_wins"] = t["a_tier_wins"] = 0
+    for tr in tournaments:
+        tm = slug_to_team.get(tr.get("championTeam")) if tr.get("championTeam") else None
+        if not tm:
+            continue
+        tier = tr.get("tier")
+        if tier == "major":
+            tm["major_wins"] += 1
+        elif tier == "s":
+            tm["s_tier_wins"] += 1
+        elif tier == "a":
+            tm["a_tier_wins"] += 1
+
     # ---- website-computed BPL Rank Points (overrides the sheet value; re-ranks) ----
     compute_team_points(teams, tournaments)
 
