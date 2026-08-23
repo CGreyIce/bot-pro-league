@@ -57,6 +57,7 @@ COUNTRY_ISO = {
     "france":"fr","netherlands":"nl","korea":"kr","south korea":"kr","canada":"ca",
     "new zealand":"nz","austria":"at","poland":"pl","finland":"fi","italy":"it",
     "belgium":"be","iceland":"is","sweden":"se","kazakhstan":"kz","hong kong":"hk",
+    "brazil":"br","china":"cn","vietnam":"vn",
     "russia":"neutral","russian":"neutral","land of make believe":"neutral",  # neutral (flagless) flag
 }
 # ISO alpha-2 -> region label (for the region shown on a team profile)
@@ -65,6 +66,7 @@ REGION_BY_ISO = {
     "jp":"East Asia","kr":"East Asia","tw":"East Asia","hk":"East Asia","cn":"East Asia",
     "au":"Oceania","nz":"Oceania",
     "us":"North America","ca":"North America",
+    "br":"South America",
     "gb":"Europe","fr":"Europe","de":"Europe","nl":"Europe","be":"Europe","at":"Europe",
     "pl":"Europe","fi":"Europe","it":"Europe","is":"Europe","se":"Europe","ua":"Europe",
     "kz":"Central Asia",
