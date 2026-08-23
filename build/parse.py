@@ -565,6 +565,22 @@ def main():
         if denom:
             t["wlr"] = round(t["map_wins"] / denom, 3)
 
+    # ---- solo-queue scoreboards (admin-entered) on top of the competitive_me sheet base ----
+    solo_by_name = {}
+    for p in solo:
+        solo_by_name.setdefault(norm_key(p["name"]), p)
+    ssp = os.path.join(DATA, "solo_scoreboards.json")
+    solo_sb = json.load(open(ssp, encoding="utf-8")) if os.path.exists(ssp) else []
+    for g in solo_sb:
+        for pl in g.get("players", []):
+            k = norm_key(pl.get("name", "")); nn = old2new.get(k)
+            tgt = solo_by_name.get(norm_key(nn) if nn else k)
+            if not tgt:
+                continue
+            tgt["kills"] += int(pl.get("k", 0)); tgt["deaths"] += int(pl.get("d", 0))
+            tgt["assists"] += int(pl.get("a", 0)); tgt["mvp"] += int(pl.get("mvp", 0))
+            tgt["wins"] += 1 if pl.get("won") else 0; tgt["losses"] += 0 if pl.get("won") else 1
+
     # ---- ratings (computed AFTER scoreboards are merged into totals) ----
     pro_avg = compute_ratings(pro); am_avg = compute_ratings(amateur); solo_avg = compute_ratings(solo)
 
@@ -595,6 +611,27 @@ def main():
     compute_player_deltas(amateur, am_avg, latest_contrib)
     compute_player_deltas(solo, solo_avg, latest_contrib)
 
+    # ---- fold solo-queue stats into tournament profiles; keep only solo-ONLY players standalone ----
+    solo_ranked = sorted([p for p in solo if p.get("rating") is not None], key=lambda p: -p["rating"])
+    for i, p in enumerate(solo_ranked):
+        p["soloRank"] = i + 1
+    solo_lookup = {}
+    for p in solo:
+        solo_lookup.setdefault(norm_key(p["name"]), p)
+    def solo_block(sp):
+        return {"kills": sp["kills"], "deaths": sp["deaths"], "assists": sp["assists"], "mvp": sp["mvp"],
+                "wins": sp["wins"], "losses": sp["losses"], "maps": sp["maps"], "kdr": sp["kdr"],
+                "winrate": sp["winrate"], "rating": sp["rating"], "tier": sp["tier"],
+                "level": sp["level"], "soloRank": sp.get("soloRank"), "soloTotal": len(solo_ranked)}
+    tourney_names = {norm_key(p["name"]) for p in pro} | {norm_key(p["name"]) for p in amateur}
+    for pool in (pro, amateur):
+        for p in pool:
+            sp = solo_lookup.get(norm_key(p["name"]))
+            if sp and sp.get("rating") is not None:
+                p["soloStats"] = solo_block(sp)
+    # standalone Solo Queue pool = players with no pro/amateur (tournament) profile
+    solo = [p for p in solo if norm_key(p["name"]) not in tourney_names]
+
     # ---- player bios (broadcast descriptions; data/player_bios.json from gen_bios.py) ----
     bios_path = os.path.join(DATA, "player_bios.json")
     if os.path.exists(bios_path):
@@ -607,6 +644,14 @@ def main():
                     if b.get("gender") in ("M", "F"):
                         p["gender"] = b["gender"]
     refresh_bio_dynamics(pro, amateur, solo)  # sync tier/rating/#1 language to live stats
+
+    # ---- team profile bios (broadcast descriptions; data/team_bios_override.json) ----
+    tbp = os.path.join(DATA, "team_bios_override.json")
+    team_bios = json.load(open(tbp, encoding="utf-8")) if os.path.exists(tbp) else {}
+    for t in teams:
+        b = team_bios.get(t["slug"]) or team_bios.get(t["key"])
+        if b:
+            t["bio"] = b
 
     # attach pro players to teams (sorted by rating)
     roster = defaultdict(list)

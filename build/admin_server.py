@@ -17,6 +17,16 @@ import manual
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.path.join(ROOT, "site")
 PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 8099
+SOLO_SB = os.path.join(ROOT, "data", "solo_scoreboards.json")
+
+def load_solo():
+    try:
+        return json.load(open(SOLO_SB, encoding="utf-8"))
+    except Exception:
+        return []
+
+def save_solo(lst):
+    json.dump(lst, open(SOLO_SB, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
 def regenerate():
     """Re-run the data pipeline so the site reflects the latest manual edits."""
@@ -82,6 +92,8 @@ class Handler(SimpleHTTPRequestHandler):
         if path == "/api/state":
             return self._json(200, {"ok": True, "admin": True,
                                     "tournaments": manual.list_manual(), "teams": team_names()})
+        if path == "/api/solo/list":
+            return self._json(200, {"ok": True, "games": load_solo()})
         if path.startswith("/api/manual/"):
             slug = path[len("/api/manual/"):]
             man = manual.load(slug)
@@ -128,6 +140,21 @@ class Handler(SimpleHTTPRequestHandler):
                 man = manual.rename_round(b["slug"], b["sid"], b["round"], b.get("title", ""))
             elif path == "/api/matchstats":
                 manual.save_match_stats(b["slug"], b["ref"], b.get("maps", []))
+                ok, msg = regenerate()
+                return self._json(200, {"ok": ok, "msg": msg})
+            elif path == "/api/solo/add":
+                games = load_solo()
+                nid = max([g.get("id", 0) for g in games], default=0) + 1
+                players = [{"name": (p.get("name") or "").strip(),
+                            "k": int(p.get("k", 0) or 0), "d": int(p.get("d", 0) or 0),
+                            "a": int(p.get("a", 0) or 0), "mvp": int(p.get("mvp", 0) or 0),
+                            "won": bool(p.get("won"))}
+                           for p in b.get("players", []) if (p.get("name") or "").strip()]
+                games.append({"id": nid, "map": b.get("map", ""), "date": b.get("date", ""), "players": players})
+                save_solo(games); ok, msg = regenerate()
+                return self._json(200, {"ok": ok, "msg": msg, "id": nid})
+            elif path == "/api/solo/delete":
+                save_solo([g for g in load_solo() if g.get("id") != b.get("id")])
                 ok, msg = regenerate()
                 return self._json(200, {"ok": ok, "msg": msg})
             elif path == "/api/delete":

@@ -258,6 +258,7 @@ function renderTeam(slug){
       <div class="ph-rank"><div class="big">#${t.rank}</div><div class="lbl">BPL Rank</div></div>
       <div class="ph-rank"><div class="big">${t.rank_points}</div><div class="lbl">Points</div></div>
     </div>
+    ${t.bio?`<div class="player-bio">${esc(t.bio)}</div>`:''}
 
     <div class="profile-grid">
       <div class="infobox">
@@ -411,6 +412,8 @@ function renderPlayer(slug){
       </div>` : ''}
       </div>
       <div>
+        ${p.soloStats?`<h2 class="section-title" style="margin-top:0"><span class="accent-bar"></span>Tournament
+          <span class="muted" style="font-size:11px">S-Tier &amp; Major</span></h2>`:''}
         <div class="statgrid">
           ${stat(p.kills,"Kills")}
           ${stat(p.deaths,"Deaths")}
@@ -421,6 +424,19 @@ function renderPlayer(slug){
           ${stat(p.ot,"OT Played")}
           ${stat(pct(p.winrate),"Win Rate")}
         </div>
+        ${p.soloStats?(()=>{const s=p.soloStats;return `
+        <h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>Solo Queue
+          <span class="muted" style="font-size:11px">${esc(s.tier||'')}${s.rating!=null?' · '+s.rating.toFixed(2)+' rating':''}${s.soloRank?' · #'+s.soloRank+' of '+s.soloTotal:''}</span></h2>
+        <div class="statgrid">
+          ${stat(s.kills,"Kills")}
+          ${stat(s.deaths,"Deaths")}
+          ${stat(s.kdr.toFixed(2),"K/D Ratio",true)}
+          ${stat(s.mvp,"MVPs")}
+          ${stat(s.assists,"Assists")}
+          ${stat((s.kills/Math.max(1,s.maps)).toFixed(1),"Kills / Map")}
+          ${stat(s.wins+'-'+s.losses,"Record")}
+          ${stat(pct(s.winrate),"Win Rate")}
+        </div>`;})():''}
         ${(p.titles&&p.titles.length)||(p.mvpAwards&&p.mvpAwards.length)?`
         <h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>Honors
           <span class="muted" style="font-size:11px">${p.titles?p.titles.length+'× champion':''}${p.mvpAwards&&p.mvpAwards.length?(p.titles&&p.titles.length?' · ':'')+p.mvpAwards.length+'× MVP':''}</span></h2>
@@ -1242,6 +1258,28 @@ async function renderAdmin(){
         <div class="adm-list">${listHtml}</div>
         <div id="adm-editor" style="margin-top:18px"></div>
       </div>
+    </div>
+    <div class="adm-solo" style="margin-top:26px">
+      <h2 class="section-title"><span class="accent-bar"></span>Solo Queue Scoreboards</h2>
+      <p class="muted" style="font-size:12px;margin:-4px 0 12px">Record a solo-queue game. These stats stack on top of the sheet into each player's <strong>Solo Queue</strong> block only — tournament stats are never touched. Check <strong>W</strong> for players on the winning side.</p>
+      <div class="profile-grid" style="grid-template-columns:360px 1fr">
+        <div class="infobox" style="padding:14px">
+          <div class="ib-title" style="margin:-14px -14px 12px">New Solo Game</div>
+          <div style="display:flex;gap:8px">
+            <div style="flex:1"><label class="adm-l">Map (optional)</label><input id="sq-map" class="adm-in" placeholder="Dust2"></div>
+            <div style="flex:1"><label class="adm-l">Date</label><input id="sq-date" class="adm-in" type="date"></div>
+          </div>
+          <label class="adm-l">Players</label>
+          <div id="sq-players"></div>
+          <button id="sq-addrow" class="adm-btn" style="margin-top:6px;background:var(--panel);border:1px solid var(--border);color:var(--text)">+ Add player</button>
+          <button id="sq-save" class="adm-btn" style="margin-top:6px">Save game</button>
+          <div id="sq-msg" class="muted" style="font-size:12px;margin-top:8px"></div>
+        </div>
+        <div>
+          <h3 class="rec-group" style="margin-top:0">Recorded Solo Games</h3>
+          <div id="sq-list" class="adm-list"><p class="muted">Loading…</p></div>
+        </div>
+      </div>
     </div>`;
 
   $("#adm-publish").onclick = async ()=>{
@@ -1266,7 +1304,64 @@ async function renderAdmin(){
     if(!confirm("Delete this tournament?")) return;
     await apiPost("/api/delete",{slug:b.dataset.del}); adminEditing=null; await reloadData(); renderAdmin();
   });
+  setupSoloAdmin();
   if(adminEditing) openEditor(adminEditing);
+}
+
+function setupSoloAdmin(){
+  const wrap = $("#sq-players"); if(!wrap) return;
+  const addRow = (name="")=>{
+    const row = document.createElement("div");
+    row.className = "sq-prow";
+    row.style.cssText = "display:flex;gap:4px;margin-bottom:4px";
+    row.innerHTML = `
+      <input class="adm-in sq-name" placeholder="Player" value="${esc(name)}" style="flex:2;min-width:0">
+      <input class="adm-in sq-k" type="number" min="0" placeholder="K" style="width:44px" title="Kills">
+      <input class="adm-in sq-d" type="number" min="0" placeholder="D" style="width:44px" title="Deaths">
+      <input class="adm-in sq-a" type="number" min="0" placeholder="A" style="width:44px" title="Assists">
+      <input class="adm-in sq-mvp" type="number" min="0" placeholder="M" style="width:44px" title="MVPs">
+      <label style="display:flex;align-items:center;gap:2px;font-size:11px" title="Won?"><input type="checkbox" class="sq-won">W</label>
+      <button class="sq-rm" title="Remove" style="background:none;border:none;color:var(--muted);cursor:pointer">✕</button>`;
+    row.querySelector(".sq-rm").onclick = ()=>row.remove();
+    wrap.appendChild(row);
+  };
+  wrap.innerHTML = ""; addRow(); addRow();
+  $("#sq-addrow").onclick = ()=>addRow();
+  $("#sq-save").onclick = async ()=>{
+    const players = [...wrap.querySelectorAll(".sq-prow")].map(r=>({
+      name: r.querySelector(".sq-name").value.trim(),
+      k: +r.querySelector(".sq-k").value||0, d: +r.querySelector(".sq-d").value||0,
+      a: +r.querySelector(".sq-a").value||0, mvp: +r.querySelector(".sq-mvp").value||0,
+      won: r.querySelector(".sq-won").checked,
+    })).filter(p=>p.name);
+    const msg = $("#sq-msg");
+    if(!players.length){ msg.textContent = "Add at least one player."; return; }
+    msg.textContent = "Saving…";
+    const r = await apiPost("/api/solo/add",{map:$("#sq-map").value.trim(), date:$("#sq-date").value, players});
+    if(r.ok){ msg.style.color="var(--good)"; msg.textContent="Saved "+players.length+" players."; $("#sq-map").value=""; wrap.innerHTML=""; addRow(); addRow(); await reloadData(); loadSoloList(); }
+    else { msg.style.color="var(--accent2,#ff6b6b)"; msg.textContent = "Error: "+(r.msg||r.error||"failed"); }
+  };
+  loadSoloList();
+}
+
+async function loadSoloList(){
+  const box = $("#sq-list"); if(!box) return;
+  let games = [];
+  try{ const r = await (await fetch("/api/solo/list")).json(); games = r.games||[]; }catch(e){}
+  if(!games.length){ box.innerHTML = '<p class="muted">No solo games recorded yet.</p>'; return; }
+  box.innerHTML = games.slice().reverse().map(g=>{
+    const w = g.players.filter(p=>p.won).map(p=>esc(p.name)).join(", ");
+    const l = g.players.filter(p=>!p.won).map(p=>esc(p.name)).join(", ");
+    return `<div class="adm-trow">
+      <span class="muted" style="font-size:11px;min-width:70px">${esc(g.map||"—")}${g.date?" · "+esc(g.date):""}</span>
+      <span style="flex:1;font-size:12px"><span class="ae-win">${w||"—"}</span> <span class="muted">def.</span> ${l||"—"}</span>
+      <button class="adm-del" data-solodel="${g.id}" title="Delete">✕</button>
+    </div>`;
+  }).join("");
+  box.querySelectorAll("[data-solodel]").forEach(b=>b.onclick=async ()=>{
+    if(!confirm("Delete this solo game?")) return;
+    await apiPost("/api/solo/delete",{id:+b.dataset.solodel}); await reloadData(); loadSoloList();
+  });
 }
 
 async function openEditor(slug){
