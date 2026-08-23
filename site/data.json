@@ -196046,7 +196046,7 @@
        "w": 0,
        "aTeam": null,
        "bTeam": null,
-       "bo": 3,
+       "bo": 1,
        "tp": true,
        "ts": null
       }
@@ -202383,7 +202383,7 @@
          "w": 0,
          "aTeam": null,
          "bTeam": null,
-         "bo": 3,
+         "bo": 1,
          "tp": true,
          "ts": null
         }
