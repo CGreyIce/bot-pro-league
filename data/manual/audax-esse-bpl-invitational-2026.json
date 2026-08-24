@@ -1093,8 +1093,9 @@
      "fb": {
       "match": 14
      },
-     "sa": null,
-     "sb": null
+     "sa": 1,
+     "sb": 3,
+     "ts": 1787587883
     },
     {
      "id": 16,
@@ -1106,9 +1107,10 @@
      "fb": {
       "loserOf": 14
      },
-     "sa": null,
-     "sb": null,
-     "bestOf": 1
+     "sa": 15,
+     "sb": 13,
+     "bestOf": 1,
+     "ts": 1787575977
     }
    ],
    "roundTitles": {
