@@ -1290,6 +1290,10 @@ async function renderAdmin(){
           <label class="adm-l">One group per line, comma-separated names — these stay together</label>
           <textarea id="shf-locks" class="adm-in" rows="5" placeholder="tiniibee, hyvred&#10;playerA, playerB, playerC"></textarea>
           <div id="shf-lockmsg" class="muted" style="font-size:11px;margin:4px 0 0"></div>
+          <label style="display:flex;align-items:center;gap:7px;margin-top:12px;font-size:13px;cursor:pointer">
+            <input type="checkbox" id="shf-country" checked> Group by country/region
+          </label>
+          <div class="muted" style="font-size:11px;margin-top:2px">Off = purely random teams (roles + locked groups still apply).</div>
           <button id="shf-go" class="adm-btn" style="margin-top:10px">🎲 Shuffle teams</button>
           <button id="shf-copy" class="adm-btn" style="margin-top:6px;background:var(--panel);border:1px solid var(--border);color:var(--text)">Copy result</button>
           <div id="shf-msg" class="muted" style="font-size:12px;margin-top:8px"></div>
@@ -1348,7 +1352,7 @@ function setupShuffler(){
   $("#shf-locks").oninput = parseLocks;
   go.onclick = ()=>{
     const groups = parseLocks();
-    lastShuffle = generateTeams(DATA.players.amateur, groups);
+    lastShuffle = generateTeams(DATA.players.amateur, groups, $("#shf-country").checked);
     renderShuffleResult(lastShuffle);
     const noAwp = lastShuffle.filter(t=>t.missingAwp).length, noIGL = lastShuffle.filter(t=>t.missingIGL).length;
     $("#shf-msg").innerHTML = `${lastShuffle.length} teams generated.` +
@@ -1392,7 +1396,7 @@ const shfRegion = iso => SHF_REGION[iso] || "";
 function shfShuffle(arr){ const a=arr.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
 let lastShuffle = null;
 
-function generateTeams(players, lockedGroups){
+function generateTeams(players, lockedGroups, groupByCountry=true){
   const norm = s => (s||"").toLowerCase().replace(/[^a-z0-9]/g,"");
   const byKey = {}; players.forEach(p=>{ byKey[norm(p.name)] = p; });
   const meta = p => {
@@ -1408,7 +1412,7 @@ function generateTeams(players, lockedGroups){
   const teams = Array.from({length:nTeams}, ()=>({members:[]}));
   const has = (t,fn)=> t.members.some(fn);
   const dominantCountry = t => { const c={}; t.members.forEach(m=>{ if(m.country) c[m.country]=(c[m.country]||0)+1; }); return Object.keys(c).sort((a,b)=>c[b]-c[a])[0]||""; };
-  const scoreFor = (t,m)=>{ const dc=dominantCountry(t); if(dc && m.country===dc) return 3; const drs=t.members.map(x=>x.region); if(m.region && drs.includes(m.region)) return 1; return 0; };
+  const scoreFor = (t,m)=>{ if(!groupByCountry) return 0; const dc=dominantCountry(t); if(dc && m.country===dc) return 3; const drs=t.members.map(x=>x.region); if(m.region && drs.includes(m.region)) return 1; return 0; };
   const take = (pool,t)=>{ // best country match, random among ties
     let best=null,bs=-1; const order=shfShuffle(pool);
     for(const m of order){ const s=scoreFor(t,m); if(s>bs){ bs=s; best=m; } }
