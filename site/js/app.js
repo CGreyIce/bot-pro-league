@@ -1280,6 +1280,25 @@ async function renderAdmin(){
           <div id="sq-list" class="adm-list"><p class="muted">Loading…</p></div>
         </div>
       </div>
+    </div>
+    <div class="adm-shuffle" style="margin-top:26px">
+      <h2 class="section-title"><span class="accent-bar"></span>Amateur Team Shuffler</h2>
+      <p class="muted" style="font-size:12px;margin:-4px 0 12px">Shuffles all <strong>${DATA.players.amateur.length}</strong> amateur players into teams of 5. Each team gets 1 IGL + 1 Awper first (scarce roles spread as far as they go), then fills by shared country/region. Nothing is saved — this is a scratch tool.</p>
+      <div class="profile-grid" style="grid-template-columns:360px 1fr">
+        <div class="infobox" style="padding:14px">
+          <div class="ib-title" style="margin:-14px -14px 12px">Locked Groups</div>
+          <label class="adm-l">One group per line, comma-separated names — these stay together</label>
+          <textarea id="shf-locks" class="adm-in" rows="5" placeholder="tiniibee, hyvred&#10;playerA, playerB, playerC"></textarea>
+          <div id="shf-lockmsg" class="muted" style="font-size:11px;margin:4px 0 0"></div>
+          <button id="shf-go" class="adm-btn" style="margin-top:10px">🎲 Shuffle teams</button>
+          <button id="shf-copy" class="adm-btn" style="margin-top:6px;background:var(--panel);border:1px solid var(--border);color:var(--text)">Copy result</button>
+          <div id="shf-msg" class="muted" style="font-size:12px;margin-top:8px"></div>
+        </div>
+        <div>
+          <h3 class="rec-group" style="margin-top:0">Generated Teams</h3>
+          <div id="shf-out"><p class="muted">Click “Shuffle teams” to generate.</p></div>
+        </div>
+      </div>
     </div>`;
 
   $("#adm-publish").onclick = async ()=>{
@@ -1305,7 +1324,131 @@ async function renderAdmin(){
     await apiPost("/api/delete",{slug:b.dataset.del}); adminEditing=null; await reloadData(); renderAdmin();
   });
   setupSoloAdmin();
+  setupShuffler();
   if(adminEditing) openEditor(adminEditing);
+}
+
+function setupShuffler(){
+  const go = $("#shf-go"); if(!go) return;
+  const parseLocks = ()=>{
+    const norm = s => (s||"").toLowerCase().replace(/[^a-z0-9]/g,"");
+    const known = {}; DATA.players.amateur.forEach(p=>known[norm(p.name)]=p.name);
+    const lines = ($("#shf-locks").value||"").split("\n").map(l=>l.trim()).filter(Boolean);
+    const groups=[], unknown=[];
+    lines.forEach(l=>{
+      const names = l.split(",").map(s=>s.trim()).filter(Boolean);
+      names.forEach(n=>{ if(!known[norm(n)]) unknown.push(n); });
+      if(names.length) groups.push(names);
+    });
+    $("#shf-lockmsg").innerHTML = unknown.length
+      ? `<span style="color:var(--accent2,#ff6b6b)">Not found in amateur pool: ${unknown.map(esc).join(", ")}</span>`
+      : (groups.length? `${groups.length} locked group(s).` : "");
+    return groups;
+  };
+  $("#shf-locks").oninput = parseLocks;
+  go.onclick = ()=>{
+    const groups = parseLocks();
+    lastShuffle = generateTeams(DATA.players.amateur, groups);
+    renderShuffleResult(lastShuffle);
+    const noAwp = lastShuffle.filter(t=>t.missingAwp).length, noIGL = lastShuffle.filter(t=>t.missingIGL).length;
+    $("#shf-msg").innerHTML = `${lastShuffle.length} teams generated.` +
+      (noAwp?` <span style="color:var(--accent2,#ff6b6b)">${noAwp} without an Awper</span>`:"") +
+      (noIGL?` <span style="color:var(--accent2,#ff6b6b)">${noIGL} without an IGL</span>`:"");
+  };
+  $("#shf-copy").onclick = ()=>{
+    if(!lastShuffle){ $("#shf-msg").textContent="Shuffle first."; return; }
+    const txt = lastShuffle.map(t=>`Team ${t.n}${t.country?" ("+t.country+")":""}\n`+
+      t.players.map(p=>`  ${p.role}: ${p.name}`).join("\n")).join("\n\n");
+    navigator.clipboard.writeText(txt).then(()=>{ $("#shf-msg").textContent="Copied to clipboard."; },
+      ()=>{ $("#shf-msg").textContent="Copy failed."; });
+  };
+}
+
+function renderShuffleResult(teams){
+  const out = $("#shf-out"); if(!out) return;
+  const roleClass = r => r.startsWith("IGL")?"shf-igl": r==="Awper"?"shf-awp": r==="Fill"?"shf-fill":"shf-rif";
+  out.innerHTML = `<div class="shf-grid">${teams.map(t=>`
+    <div class="shf-team">
+      <div class="shf-th">Team ${t.n} ${t.country?`<span class="th-flag">${flag(isoForCountry(t.country))}</span><span class="muted" style="font-size:11px">${esc(t.country)}</span>`:''}
+        ${t.missingAwp?'<span class="shf-warn" title="No Awper">no AWP</span>':''}${t.missingIGL?'<span class="shf-warn" title="No IGL">no IGL</span>':''}</div>
+      ${t.players.map(p=>`<div class="shf-row">
+        <span class="shf-role ${roleClass(p.role)}">${esc(p.role)}</span>
+        <a href="#/player/${p.slug}" class="shf-name">${flag(p.iso)}${esc(p.name)}</a>
+        <span class="shf-rat">${p.rating>=0?p.rating.toFixed(2):'—'}</span>
+      </div>`).join("")}
+    </div>`).join("")}</div>`;
+}
+function isoForCountry(c){ const m={USA:"us",Singapore:"sg",Malaysia:"my",Japan:"jp",Philippines:"ph",Australia:"au","Hong Kong":"hk",Canada:"ca",Brazil:"br",Taiwan:"tw",Indonesia:"id",Thailand:"th",Korea:"kr","South Korea":"kr",China:"cn",Vietnam:"vn"}; return m[c]||""; }
+
+// ---- amateur team shuffler (scratch tool; client-side only) ----
+const SHF_REGION = {
+  sg:"SEA",my:"SEA",ph:"SEA",id:"SEA",th:"SEA",vn:"SEA",
+  jp:"East Asia",kr:"East Asia",tw:"East Asia",hk:"East Asia",cn:"East Asia",
+  au:"Oceania",nz:"Oceania", us:"North America",ca:"North America", br:"South America",
+  gb:"Europe",fr:"Europe",de:"Europe",nl:"Europe",be:"Europe",at:"Europe",pl:"Europe",fi:"Europe",it:"Europe",is:"Europe",se:"Europe",ua:"Europe",
+  kz:"Central Asia",
+};
+const shfRegion = iso => SHF_REGION[iso] || "";
+function shfShuffle(arr){ const a=arr.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+let lastShuffle = null;
+
+function generateTeams(players, lockedGroups){
+  const norm = s => (s||"").toLowerCase().replace(/[^a-z0-9]/g,"");
+  const byKey = {}; players.forEach(p=>{ byKey[norm(p.name)] = p; });
+  const meta = p => {
+    const role = (p.role||"").toLowerCase();
+    const vssmb = norm(p.name)==="vssmb";
+    return { p, name:p.name, rating:(p.rating==null?-1:p.rating), iso:p.iso||"", country:p.nat||"",
+             region:shfRegion(p.iso), isAwp:/awp/.test(role)||vssmb, isIGL:/igl/.test(role)||vssmb,
+             baseRole:p.role||"Rifler" };
+  };
+  const all = players.map(meta);
+  const placed = new Set();               // norm names already on a team
+  const N = all.length, nTeams = Math.max(1, Math.ceil(N/5));
+  const teams = Array.from({length:nTeams}, ()=>({members:[]}));
+  const has = (t,fn)=> t.members.some(fn);
+  const dominantCountry = t => { const c={}; t.members.forEach(m=>{ if(m.country) c[m.country]=(c[m.country]||0)+1; }); return Object.keys(c).sort((a,b)=>c[b]-c[a])[0]||""; };
+  const scoreFor = (t,m)=>{ const dc=dominantCountry(t); if(dc && m.country===dc) return 3; const drs=t.members.map(x=>x.region); if(m.region && drs.includes(m.region)) return 1; return 0; };
+  const take = (pool,t)=>{ // best country match, random among ties
+    let best=null,bs=-1; const order=shfShuffle(pool);
+    for(const m of order){ const s=scoreFor(t,m); if(s>bs){ bs=s; best=m; } }
+    return best;
+  };
+  const put = (t,m)=>{ t.members.push(m); placed.add(norm(m.name)); };
+
+  // 1) locked groups seed teams
+  let ti=0;
+  lockedGroups.forEach(names=>{
+    if(ti>=nTeams) return;
+    const t=teams[ti++];
+    names.forEach(nm=>{ const m=all.find(x=>norm(x.name)===norm(nm)); if(m && !placed.has(norm(nm)) && t.members.length<5) put(t,m); });
+  });
+
+  const freeOf = pred => all.filter(m=>!placed.has(norm(m.name)) && pred(m));
+  // 2) one Awper per team (scarcer first); VSSMB satisfies both
+  teams.forEach(t=>{ if(t.members.length>=5||has(t,m=>m.isAwp)) return; const pool=freeOf(m=>m.isAwp); if(!pool.length) return; put(t, take(pool,t)); });
+  // 3) one IGL per team
+  teams.forEach(t=>{ if(t.members.length>=5||has(t,m=>m.isIGL)) return; const pool=freeOf(m=>m.isIGL); if(!pool.length) return; put(t, take(pool,t)); });
+  // 4) fill remaining slots, round-robin, country/region weighted
+  let guard=0;
+  while(freeOf(()=>true).length && teams.some(t=>t.members.length<5) && guard++<N+5){
+    teams.forEach(t=>{ if(t.members.length>=5) return; const pool=freeOf(()=>true); if(!pool.length) return; put(t, take(pool,t)); });
+  }
+  // 5) assign display roles + flags
+  return teams.filter(t=>t.members.length).map((t,i)=>{
+    const igls = t.members.filter(m=>m.isIGL).sort((a,b)=>b.rating-a.rating);
+    const iglPick = igls[0]||null;
+    const rows = t.members.map(m=>{
+      let role;
+      if(iglPick && m===iglPick) role = m.isAwp ? "IGL · Awp" : "IGL";
+      else if(m.isAwp) role="Awper";
+      else if(/fill/i.test(m.baseRole)) role="Fill";
+      else role="Rifler";
+      return { name:m.name, slug:m.p.slug, role, rating:m.rating, iso:m.iso, country:m.country };
+    }).sort((a,b)=> (a.role==="IGL"||a.role==="IGL · Awp"?0: a.role==="Awper"?1: a.role==="Fill"?3:2) - (b.role==="IGL"||b.role==="IGL · Awp"?0: b.role==="Awper"?1: b.role==="Fill"?3:2));
+    return { n:i+1, players:rows, country:dominantCountry(t),
+             missingAwp: !t.members.some(m=>m.isAwp), missingIGL: !t.members.some(m=>m.isIGL) };
+  });
 }
 
 function setupSoloAdmin(){

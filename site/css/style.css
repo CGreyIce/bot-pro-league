@@ -513,6 +513,21 @@ textarea.adm-in{resize:vertical}
 .bkt-third{display:inline-block;margin:4px 0 14px;padding:10px 14px;border:1px dashed var(--border);border-radius:9px;background:linear-gradient(180deg,rgba(205,127,50,.06),transparent)}
 .bkt-third-title{font-family:'Rajdhani';font-weight:700;text-transform:uppercase;letter-spacing:1px;font-size:12px;color:#cd7f32;margin-bottom:7px}
 .bkt-third-match{min-width:190px;max-width:240px}
+/* amateur team shuffler */
+.shf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.shf-team{border:1px solid var(--border);border-radius:9px;background:var(--panel);padding:10px 12px}
+.shf-th{font-family:'Rajdhani';font-weight:700;font-size:14px;margin-bottom:8px;display:flex;align-items:center;gap:5px}
+.shf-row{display:flex;align-items:center;gap:6px;padding:3px 0;font-size:12px;min-width:0}
+.shf-role{flex:0 0 auto;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;padding:2px 5px;border-radius:4px;min-width:52px;text-align:center}
+.shf-igl{background:rgba(255,92,61,.16);color:#ff7a5c}
+.shf-awp{background:rgba(90,160,255,.16);color:#6db0ff}
+.shf-rif{background:var(--bg);color:var(--muted)}
+.shf-fill{background:var(--bg);color:var(--muted2)}
+.shf-name{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text)}
+.shf-name:hover{color:var(--link)}
+.shf-rat{flex:0 0 auto;font-family:monospace;font-size:11px;color:var(--muted)}
+.shf-warn{font-size:10px;font-weight:700;color:#ff6b6b;border:1px solid rgba(255,107,107,.4);border-radius:4px;padding:1px 4px;margin-left:auto}
+textarea.adm-in{resize:vertical;font-family:inherit}
 .bkt-team .bt-score{margin-left:auto;padding-left:8px;font-variant-numeric:tabular-nums;font-weight:700;flex-shrink:0}
 .bkt-team.win .bt-score{color:var(--accent)}
 .bkt-svg{position:absolute;top:0;left:0;pointer-events:none;z-index:0;overflow:visible}
