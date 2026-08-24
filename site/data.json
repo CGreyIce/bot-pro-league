@@ -53484,6 +53484,51 @@
        ]
       },
       {
+       "team": "Nihilism",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2024"
+       ],
+       "roster": [
+        {
+         "hist": "Navikuun",
+         "name": "Navikuun",
+         "slug": "navikuun",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "SqueezeVT",
+         "name": "AuraSinVT",
+         "slug": "aurasinvt-amateur",
+         "iso": "us",
+         "captain": false
+        },
+        {
+         "hist": "bailingvt",
+         "name": "YinghuVT",
+         "slug": "yinghuvt-amateur",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "daifuku.wu",
+         "name": "daifuku.wu",
+         "slug": "daifuku-wu",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "livingitupbt",
+         "name": "Solaonix",
+         "slug": "solaonix",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
        "team": "Round Loss Bonus",
        "teamSlug": "round-loss-bonus",
        "isPro": true,
@@ -58239,6 +58284,51 @@
          "name": "VeniceC",
          "slug": "venicec",
          "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "livingitupbt",
+         "name": "Solaonix",
+         "slug": "solaonix",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Nihilism",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2024"
+       ],
+       "roster": [
+        {
+         "hist": "Navikuun",
+         "name": "Navikuun",
+         "slug": "navikuun",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "SqueezeVT",
+         "name": "AuraSinVT",
+         "slug": "aurasinvt-amateur",
+         "iso": "us",
+         "captain": false
+        },
+        {
+         "hist": "bailingvt",
+         "name": "YinghuVT",
+         "slug": "yinghuvt-amateur",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "daifuku.wu",
+         "name": "daifuku.wu",
+         "slug": "daifuku-wu",
+         "iso": "sg",
          "captain": false
         },
         {
@@ -72727,6 +72817,51 @@
        ]
       },
       {
+       "team": "Nihilism",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2024"
+       ],
+       "roster": [
+        {
+         "hist": "Navikuun",
+         "name": "Navikuun",
+         "slug": "navikuun",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "SqueezeVT",
+         "name": "AuraSinVT",
+         "slug": "aurasinvt-amateur",
+         "iso": "us",
+         "captain": false
+        },
+        {
+         "hist": "bailingvt",
+         "name": "YinghuVT",
+         "slug": "yinghuvt-amateur",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "daifuku.wu",
+         "name": "daifuku.wu",
+         "slug": "daifuku-wu",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "livingitupbt",
+         "name": "Solaonix",
+         "slug": "solaonix",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
        "team": "Vitrix E-Sports",
        "teamSlug": null,
        "isPro": false,
@@ -80058,6 +80193,51 @@
       ]
      },
      {
+      "team": "Nihilism",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2024"
+      ],
+      "roster": [
+       {
+        "hist": "Navikuun",
+        "name": "Navikuun",
+        "slug": "navikuun",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "SqueezeVT",
+        "name": "AuraSinVT",
+        "slug": "aurasinvt-amateur",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "bailingvt",
+        "name": "YinghuVT",
+        "slug": "yinghuvt-amateur",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "daifuku.wu",
+        "name": "daifuku.wu",
+        "slug": "daifuku-wu",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "livingitupbt",
+        "name": "Solaonix",
+        "slug": "solaonix",
+        "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "Bloodrush",
       "teamSlug": null,
       "isPro": false,
@@ -82315,6 +82495,51 @@
         "hist": "rebebx",
         "name": "rebebx",
         "slug": "rebebx-amateur",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "livingitupbt",
+        "name": "Solaonix",
+        "slug": "solaonix",
+        "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Nihilism",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2024"
+      ],
+      "roster": [
+       {
+        "hist": "Navikuun",
+        "name": "Navikuun",
+        "slug": "navikuun",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "SqueezeVT",
+        "name": "AuraSinVT",
+        "slug": "aurasinvt-amateur",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "bailingvt",
+        "name": "YinghuVT",
+        "slug": "yinghuvt-amateur",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "daifuku.wu",
+        "name": "daifuku.wu",
+        "slug": "daifuku-wu",
         "iso": "sg",
         "captain": false
        },
@@ -127263,6 +127488,51 @@
       ]
      },
      {
+      "team": "Nihilism",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2024"
+      ],
+      "roster": [
+       {
+        "hist": "Navikuun",
+        "name": "Navikuun",
+        "slug": "navikuun",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "SqueezeVT",
+        "name": "AuraSinVT",
+        "slug": "aurasinvt-amateur",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "bailingvt",
+        "name": "YinghuVT",
+        "slug": "yinghuvt-amateur",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "daifuku.wu",
+        "name": "daifuku.wu",
+        "slug": "daifuku-wu",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "livingitupbt",
+        "name": "Solaonix",
+        "slug": "solaonix",
+        "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "Round Loss Bonus",
       "teamSlug": "round-loss-bonus",
       "isPro": true,
@@ -165881,6 +166151,51 @@
       ]
      },
      {
+      "team": "Nihilism",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2024"
+      ],
+      "roster": [
+       {
+        "hist": "Navikuun",
+        "name": "Navikuun",
+        "slug": "navikuun",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "SqueezeVT",
+        "name": "AuraSinVT",
+        "slug": "aurasinvt-amateur",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "bailingvt",
+        "name": "YinghuVT",
+        "slug": "yinghuvt-amateur",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "daifuku.wu",
+        "name": "daifuku.wu",
+        "slug": "daifuku-wu",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "livingitupbt",
+        "name": "Solaonix",
+        "slug": "solaonix",
+        "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "Project Jellyfish",
       "teamSlug": null,
       "isPro": false,
@@ -166062,7 +166377,8 @@
      }
     ],
     "aka": [
-     "holoqqwinny"
+     "holoqqwinny",
+     "bailingvt"
     ]
    },
    {
@@ -166150,6 +166466,51 @@
         "hist": "afayctionate",
         "name": "afayctionate",
         "slug": "afayctionate-amateur",
+        "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Nihilism",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2024"
+      ],
+      "roster": [
+       {
+        "hist": "Navikuun",
+        "name": "Navikuun",
+        "slug": "navikuun",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "SqueezeVT",
+        "name": "AuraSinVT",
+        "slug": "aurasinvt-amateur",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "bailingvt",
+        "name": "YinghuVT",
+        "slug": "yinghuvt-amateur",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "daifuku.wu",
+        "name": "daifuku.wu",
+        "slug": "daifuku-wu",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "livingitupbt",
+        "name": "Solaonix",
+        "slug": "solaonix",
         "iso": "sg",
         "captain": false
        }
@@ -225712,6 +226073,47 @@
        "captain": false
       }
      ]
+    },
+    {
+     "team": "Nihilism",
+     "teamSlug": null,
+     "players": [
+      {
+       "hist": "Navikuun",
+       "name": "Navikuun",
+       "slug": "navikuun",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "SqueezeVT",
+       "name": "AuraSinVT",
+       "slug": "aurasinvt-amateur",
+       "iso": "us",
+       "captain": false
+      },
+      {
+       "hist": "bailingvt",
+       "name": "YinghuVT",
+       "slug": "yinghuvt-amateur",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "daifuku.wu",
+       "name": "daifuku.wu",
+       "slug": "daifuku-wu",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "livingitupbt",
+       "name": "Solaonix",
+       "slug": "solaonix",
+       "iso": "sg",
+       "captain": false
+      }
+     ]
     }
    ]
   },
@@ -270237,7 +270639,7 @@
    "player": "Solaonix",
    "playerSlug": "solaonix",
    "iso": "sg",
-   "fromTeam": "W-Key Only",
+   "fromTeam": "Nihilism",
    "fromSlug": null,
    "toTeam": "Vitrix E-Sports",
    "toSlug": null,
@@ -270441,8 +270843,8 @@
    "player": "Navikuun",
    "playerSlug": "navikuun",
    "iso": "sg",
-   "fromTeam": "entity",
-   "fromSlug": "entity",
+   "fromTeam": "Nihilism",
+   "fromSlug": null,
    "toTeam": "Bloodrush",
    "toSlug": null,
    "toPro": false,
@@ -270513,7 +270915,7 @@
    "player": "daifuku.wu",
    "playerSlug": "daifuku-wu",
    "iso": "sg",
-   "fromTeam": "movemint",
+   "fromTeam": "Nihilism",
    "fromSlug": null,
    "toTeam": "Round Loss Bonus",
    "toSlug": "round-loss-bonus",
@@ -270813,7 +271215,7 @@
    "player": "YinghuVT",
    "playerSlug": "yinghuvt-amateur",
    "iso": "sg",
-   "fromTeam": "Ursa Majoris",
+   "fromTeam": "Nihilism",
    "fromSlug": null,
    "toTeam": "Project Jellyfish",
    "toSlug": null,
@@ -270849,7 +271251,7 @@
    "player": "AuraSinVT",
    "playerSlug": "aurasinvt-amateur",
    "iso": "us",
-   "fromTeam": "ScreenTime",
+   "fromTeam": "Nihilism",
    "fromSlug": null,
    "toTeam": "Sugarcrash Protocol",
    "toSlug": null,
@@ -271902,6 +272304,18 @@
   },
   {
    "type": "transfer",
+   "player": "Solaonix",
+   "playerSlug": "solaonix",
+   "iso": "sg",
+   "fromTeam": "W-Key Only",
+   "fromSlug": null,
+   "toTeam": "Nihilism",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2024-08-03"
+  },
+  {
+   "type": "transfer",
    "player": "Kyu",
    "playerSlug": "kyu-amateur",
    "iso": "sg",
@@ -272022,6 +272436,18 @@
   },
   {
    "type": "transfer",
+   "player": "Navikuun",
+   "playerSlug": "navikuun",
+   "iso": "sg",
+   "fromTeam": "entity",
+   "fromSlug": "entity",
+   "toTeam": "Nihilism",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2024-08-03"
+  },
+  {
+   "type": "transfer",
    "player": "briant",
    "playerSlug": "briant-amateur",
    "iso": "sg",
@@ -272064,6 +272490,18 @@
    "fromTeam": "Scarlet Legion",
    "fromSlug": null,
    "toTeam": "ExoPrisma",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2024-08-03"
+  },
+  {
+   "type": "transfer",
+   "player": "daifuku.wu",
+   "playerSlug": "daifuku-wu",
+   "iso": "sg",
+   "fromTeam": "movemint",
+   "fromSlug": null,
+   "toTeam": "Nihilism",
    "toSlug": null,
    "toPro": false,
    "date": "2024-08-03"
@@ -272550,6 +272988,18 @@
   },
   {
    "type": "transfer",
+   "player": "YinghuVT",
+   "playerSlug": "yinghuvt-amateur",
+   "iso": "sg",
+   "fromTeam": "Ursa Majoris",
+   "fromSlug": null,
+   "toTeam": "Nihilism",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2024-08-03"
+  },
+  {
+   "type": "transfer",
    "player": "Stylus",
    "playerSlug": "stylus",
    "iso": "sg",
@@ -272592,6 +273042,18 @@
    "fromTeam": "Savant",
    "fromSlug": null,
    "toTeam": "darkmatter",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2024-08-03"
+  },
+  {
+   "type": "transfer",
+   "player": "AuraSinVT",
+   "playerSlug": "aurasinvt-amateur",
+   "iso": "us",
+   "fromTeam": "ScreenTime",
+   "fromSlug": null,
+   "toTeam": "Nihilism",
    "toSlug": null,
    "toPro": false,
    "date": "2024-08-03"

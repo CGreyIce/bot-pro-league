@@ -2826,6 +2826,37 @@
      "curSlug": "ryker-sterling"
     }
    ]
+  },
+  {
+   "team": "Nihilism",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Navikuun",
+     "captain": false,
+     "curSlug": "navikuun"
+    },
+    {
+     "name": "SqueezeVT",
+     "captain": false,
+     "curSlug": "aurasinvt-amateur"
+    },
+    {
+     "name": "bailingvt",
+     "captain": false,
+     "curSlug": "yinghuvt-amateur"
+    },
+    {
+     "name": "daifuku.wu",
+     "captain": false,
+     "curSlug": "daifuku-wu"
+    },
+    {
+     "name": "livingitupbt",
+     "captain": false,
+     "curSlug": "solaonix"
+    }
+   ]
   }
  ],
  "BPLLStage24": [
