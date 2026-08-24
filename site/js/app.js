@@ -1769,6 +1769,21 @@ function renderTournament(slug){
          <span class="muted" style="font-size:11px">(${tr.attending.length}) · hover for roster</span></h2>
        <div class="attend-wall">${wall}</div>` : '';
 
+  const fs = tr.finalStandings || [];
+  const fsMedal = r => r===1?'🥇':r===2?'🥈':r===3?'🥉':'';
+  const fsResultCls = res => res==='Champion'?'fs-champ':res==='Runner-up'?'fs-ru':res==='3rd Place'?'fs-3rd':res==='Group Stage'?'fs-grp':'';
+  const fsRow = s => `<tr>
+      <td class="rankcol fs-rank">${(s.rank<=3?fsMedal(s.rank)+' ':'')}${s.rank}</td>
+      <td class="name-cell">${crest(s.name, s.teamSlug)}</td>
+      <td><span class="fs-result ${fsResultCls(s.result)}">${esc(s.result)}</span></td></tr>`;
+  const fsPlayoff = fs.filter(s=>s.result!=='Group Stage');
+  const fsGroup = fs.filter(s=>s.result==='Group Stage');
+  const finalStandingsSection = fs.length ? `
+    <h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Final Standings</h2>
+    <div class="tablewrap fs-wrap"><table class="data fs-table"><tbody>${fsPlayoff.map(fsRow).join("")}</tbody></table></div>
+    ${fsGroup.length?`<details class="fs-details"><summary>Group stage — ${fsGroup.length} teams that didn't advance</summary>
+       <div class="tablewrap fs-wrap"><table class="data fs-table"><tbody>${fsGroup.map(fsRow).join("")}</tbody></table></div></details>`:''}` : '';
+
   app.innerHTML = `
     <div class="crumb"><a href="#/tournaments">Tournaments</a><span class="sep">/</span>${esc(tr.name)}</div>
     <div class="profile-head">
@@ -1789,6 +1804,7 @@ function renderTournament(slug){
       <div>${wallSection || (tr.manual?'':'<div class="muted">No roster data.</div>')}</div>
     </div>
     <h2 class="section-title" style="margin-top:24px"><span class="accent-bar"></span>${isElim?'Bracket':'Match Results'}</h2>`}
+    ${tr.stages ? finalStandingsSection : ''}
     ${tr.stages ? wallSection : ''}
     ${bracketBlock}`;
 

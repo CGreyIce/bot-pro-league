@@ -528,6 +528,18 @@ textarea.adm-in{resize:vertical}
 .shf-rat{flex:0 0 auto;font-family:monospace;font-size:11px;color:var(--muted)}
 .shf-warn{font-size:10px;font-weight:700;color:#ff6b6b;border:1px solid rgba(255,107,107,.4);border-radius:4px;padding:1px 4px;margin-left:auto}
 textarea.adm-in{resize:vertical;font-family:inherit}
+/* final standings */
+.fs-wrap{max-width:520px}
+.fs-table td{padding:7px 10px}
+.fs-rank{font-family:'Rajdhani';font-weight:700;white-space:nowrap;width:52px}
+.fs-result{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;padding:2px 8px;border-radius:5px;background:var(--bg);color:var(--muted)}
+.fs-result.fs-champ{background:rgba(255,196,0,.16);color:#ffc400}
+.fs-result.fs-ru{background:rgba(180,190,200,.16);color:#c3ccd6}
+.fs-result.fs-3rd{background:rgba(205,127,50,.16);color:#cd7f32}
+.fs-result.fs-grp{background:var(--bg);color:var(--muted2)}
+.fs-details{margin-top:8px;max-width:520px}
+.fs-details summary{cursor:pointer;font-size:12px;color:var(--muted);padding:6px 0}
+.fs-details summary:hover{color:var(--text)}
 .bkt-team .bt-score{margin-left:auto;padding-left:8px;font-variant-numeric:tabular-nums;font-weight:700;flex-shrink:0}
 .bkt-team.win .bt-score{color:var(--accent)}
 .bkt-svg{position:absolute;top:0;left:0;pointer-events:none;z-index:0;overflow:visible}

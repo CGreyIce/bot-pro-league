@@ -122,6 +122,11 @@ def process_manual(raw, team_map, alias):
             bracket.append({"round": 1000 * so["id"] + rd["round"], "title": prefix + rd["title"],
                             "matches": rd["matches"]})
     champ_name, champ_slug = resolve(raw.get("champion"))
+    final_standings = []
+    for s in raw.get("finalStandings", []):
+        dn, sl = resolve(s["name"])
+        final_standings.append({"rank": s["rank"], "name": dn, "teamSlug": sl,
+                                "result": s["result"], "tie": s.get("tie", False)})
     overall = stages_out[-1]["standings"] if stages_out else []
     # collapse repeated stage formats: e.g. six swiss groups -> "6 Groups (Swiss)"
     fmt_name = {"single_elim": "Single Elim", "round_robin": "Round Robin", "swiss": "Swiss"}
@@ -148,6 +153,7 @@ def process_manual(raw, team_map, alias):
         "champion": champ_name or None, "championTeam": champ_slug,
         "runnerUp": None, "runnerUpTeam": None,
         "standings": overall, "bracket": bracket, "stages": stages_out,
+        "finalStandings": final_standings,
     }
 
 def process_one(raw, team_map, alias):

@@ -265,6 +265,70 @@ def stage_to_standard(stage):
         "matches": out_matches, "standings": stage_standings(stage, res),
     }
 
+def tournament_placements(man):
+    """Full final standings across the whole event: playoff finishers by bracket
+    placement (champion, runner-up, 3rd/4th, then round-by-round tiers), followed by
+    the teams that didn't advance, ranked by their group record. Recomputes each build."""
+    stages = man.get("stages", [])
+    if not stages:
+        return []
+    out, placed = [], set()
+    playoff = next((s for s in reversed(stages) if s["format"] == "single_elim"), None)
+    if playoff and any(m.get("sa") is not None for m in playoff["matches"]):
+        res, champ = _elim_resolved(playoff)
+        real = [m for m in playoff["matches"] if not m.get("thirdPlace")]
+        titles = playoff.get("roundTitles", {})
+        seed_of = {t: i for i, t in enumerate(playoff["teams"])}
+        maxRound = max(m["round"] for m in real)
+        finalM = max((m for m in real if m["round"] == maxRound), key=lambda m: m["id"])
+        fr = res.get(finalM["id"], {})
+        if champ:
+            out.append({"rank": 1, "name": champ, "result": "Champion"}); placed.add(champ)
+            ru = fr.get("b") if fr.get("w") == 1 else fr.get("a") if fr.get("w") == 2 else None
+            if ru:
+                out.append({"rank": 2, "name": ru, "result": "Runner-up"}); placed.add(ru)
+        tp = next((m for m in playoff["matches"] if m.get("thirdPlace")), None)
+        if tp:
+            tr = res.get(tp["id"], {})
+            if tr.get("w") in (1, 2):
+                w = tr["a"] if tr["w"] == 1 else tr["b"]; l = tr["b"] if tr["w"] == 1 else tr["a"]
+                if w and w not in placed:
+                    out.append({"rank": 3, "name": w, "result": "3rd Place"}); placed.add(w)
+                if l and l not in placed:
+                    out.append({"rank": 4, "name": l, "result": "4th Place"}); placed.add(l)
+        losers_by_round = {}
+        for m in real:
+            r = res.get(m["id"], {})
+            if r.get("w") in (1, 2):
+                loser = r["b"] if r["w"] == 1 else r["a"]
+                if loser and loser not in placed:
+                    losers_by_round.setdefault(m["round"], []).append(loser)
+        rank = len(out) + 1
+        for rnd in sorted(losers_by_round, reverse=True):
+            teams = sorted({t for t in losers_by_round[rnd]}, key=lambda t: seed_of.get(t, 999))
+            label = titles.get(str(rnd), "Round %d" % rnd)
+            tie = len(teams) > 1
+            for t in teams:
+                if t not in placed:
+                    out.append({"rank": rank, "name": t, "result": label, "tie": tie}); placed.add(t)
+            rank += len(teams)
+    # teams that didn't reach the playoff bracket — rank by their group record
+    grp_rec = {}
+    for s in stages:
+        if s["format"] not in ("swiss", "round_robin"):
+            continue
+        r2, _ = stage_resolved(s)
+        for row in stage_standings(s, r2):
+            nm = row["name"]
+            if nm and nm not in grp_rec:
+                grp_rec[nm] = (row["w"], -row["l"])
+    remaining = sorted((nm for nm in grp_rec if nm not in placed),
+                       key=lambda nm: (-grp_rec[nm][0], grp_rec[nm][1], nm.lower()))
+    rank = len(out) + 1
+    for nm in remaining:
+        out.append({"rank": rank, "name": nm, "result": "Group Stage", "tie": True}); rank += 1
+    return out
+
 def to_standard(man):
     stages = [stage_to_standard(s) for s in man["stages"]]
     # champion = decisive result of the last stage
@@ -295,6 +359,7 @@ def to_standard(man):
                  "round_robin": "round robin", "swiss": "swiss"}[man["stages"][0]["format"]],
         "manual": True, "champion": champion, "stages": stages,
         "participants": parts, "matches": flat, "roundTitles": {},
+        "finalStandings": tournament_placements(man),
     }
 
 # ---------------- persistence ----------------

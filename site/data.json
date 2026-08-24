@@ -207084,6 +207084,302 @@
      ]
     }
    ],
+   "finalStandings": [
+    {
+     "rank": 1,
+     "name": "Raven Song",
+     "teamSlug": "raven-song",
+     "result": "Champion",
+     "tie": false
+    },
+    {
+     "rank": 2,
+     "name": "Bloom E-Sports",
+     "teamSlug": "bloom-e-sports",
+     "result": "Runner-up",
+     "tie": false
+    },
+    {
+     "rank": 3,
+     "name": "PepegaX",
+     "teamSlug": "pepegax",
+     "result": "3rd Place",
+     "tie": false
+    },
+    {
+     "rank": 4,
+     "name": "Flood Flashers",
+     "teamSlug": "flood-flashers",
+     "result": "4th Place",
+     "tie": false
+    },
+    {
+     "rank": 5,
+     "name": "Aimpunch",
+     "teamSlug": "aimpunch",
+     "result": "Quarterfinals",
+     "tie": true
+    },
+    {
+     "rank": 5,
+     "name": "Setting Sun",
+     "teamSlug": "setting-sun",
+     "result": "Quarterfinals",
+     "tie": true
+    },
+    {
+     "rank": 5,
+     "name": "division20",
+     "teamSlug": "division20",
+     "result": "Quarterfinals",
+     "tie": true
+    },
+    {
+     "rank": 5,
+     "name": "Aetherline",
+     "teamSlug": "aetherline",
+     "result": "Quarterfinals",
+     "tie": true
+    },
+    {
+     "rank": 9,
+     "name": "xPlosiv",
+     "teamSlug": "xplosiv",
+     "result": "First Round",
+     "tie": true
+    },
+    {
+     "rank": 9,
+     "name": "Neverland",
+     "teamSlug": "neverland",
+     "result": "First Round",
+     "tie": true
+    },
+    {
+     "rank": 9,
+     "name": "Sacred Raven",
+     "teamSlug": "sacred-raven",
+     "result": "First Round",
+     "tie": true
+    },
+    {
+     "rank": 9,
+     "name": "Aeternum",
+     "teamSlug": "aeternum",
+     "result": "First Round",
+     "tie": true
+    },
+    {
+     "rank": 13,
+     "name": "DiamondOnes",
+     "teamSlug": "diamondones",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 14,
+     "name": "entity",
+     "teamSlug": "entity",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 15,
+     "name": "Technomancy",
+     "teamSlug": "technomancy",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 16,
+     "name": "The Gigarage",
+     "teamSlug": "the-gigarage",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 17,
+     "name": "Ukiyo",
+     "teamSlug": "ukiyo",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 18,
+     "name": "5PERCENT",
+     "teamSlug": "5percent",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 19,
+     "name": "99Lives",
+     "teamSlug": "99lives",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 20,
+     "name": "Aspire",
+     "teamSlug": "aspire",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 21,
+     "name": "Cosmos",
+     "teamSlug": "cosmos",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 22,
+     "name": "Cyanide",
+     "teamSlug": "cyanide",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 23,
+     "name": "degree",
+     "teamSlug": "degree",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 24,
+     "name": "Fruit Basket",
+     "teamSlug": "fruit-basket",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 25,
+     "name": "Kiedz",
+     "teamSlug": "kiedz",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 26,
+     "name": "Lemon Tree",
+     "teamSlug": "lemon-tree",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 27,
+     "name": "Moonlit Tempo",
+     "teamSlug": "moonlit-tempo",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 28,
+     "name": "New Jade",
+     "teamSlug": "new-jade",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 29,
+     "name": "Team Neverseen",
+     "teamSlug": "team-neverseen",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 30,
+     "name": "0v3",
+     "teamSlug": "0v3",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 31,
+     "name": "Alcheministry",
+     "teamSlug": "alcheministry",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 32,
+     "name": "Artisian",
+     "teamSlug": "artisian",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 33,
+     "name": "Astral Bloom",
+     "teamSlug": "astral-bloom",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 34,
+     "name": "Bluebird",
+     "teamSlug": "bluebird",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 35,
+     "name": "Opal",
+     "teamSlug": "opal",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 36,
+     "name": "Round Loss Bonus",
+     "teamSlug": "round-loss-bonus",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 37,
+     "name": "The Nomads",
+     "teamSlug": "the-nomads",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 38,
+     "name": "Caelum Scala",
+     "teamSlug": "caelum-scala",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 39,
+     "name": "Divide&Conquer",
+     "teamSlug": "divide-conquer",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 40,
+     "name": "Infernum E-Sports",
+     "teamSlug": "infernum-e-sports",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 41,
+     "name": "Masmark",
+     "teamSlug": "masmark",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 42,
+     "name": "Unforgettable",
+     "teamSlug": "unforgettable",
+     "result": "Group Stage",
+     "tie": true
+    }
+   ],
    "attending": [
     {
      "team": "Aimpunch",
@@ -228089,6 +228385,260 @@
        "l": 4
       }
      ]
+    }
+   ],
+   "finalStandings": [
+    {
+     "rank": 1,
+     "name": "PepegaX",
+     "teamSlug": "pepegax",
+     "result": "Champion",
+     "tie": false
+    },
+    {
+     "rank": 2,
+     "name": "Divide&Conquer",
+     "teamSlug": "divide-conquer",
+     "result": "Runner-up",
+     "tie": false
+    },
+    {
+     "rank": 3,
+     "name": "DiamondOnes",
+     "teamSlug": "diamondones",
+     "result": "3rd Place",
+     "tie": false
+    },
+    {
+     "rank": 4,
+     "name": "Caelum Scala",
+     "teamSlug": "caelum-scala",
+     "result": "4th Place",
+     "tie": false
+    },
+    {
+     "rank": 5,
+     "name": "Masmark",
+     "teamSlug": "masmark",
+     "result": "Quarterfinals",
+     "tie": true
+    },
+    {
+     "rank": 5,
+     "name": "Team Neverseen",
+     "teamSlug": "team-neverseen",
+     "result": "Quarterfinals",
+     "tie": true
+    },
+    {
+     "rank": 5,
+     "name": "Unforgettable",
+     "teamSlug": "unforgettable",
+     "result": "Quarterfinals",
+     "tie": true
+    },
+    {
+     "rank": 5,
+     "name": "Artisian",
+     "teamSlug": "artisian",
+     "result": "Quarterfinals",
+     "tie": true
+    },
+    {
+     "rank": 9,
+     "name": "Setting Sun",
+     "teamSlug": "setting-sun",
+     "result": "Round of 8",
+     "tie": true
+    },
+    {
+     "rank": 9,
+     "name": "The Gigarage",
+     "teamSlug": "the-gigarage",
+     "result": "Round of 8",
+     "tie": true
+    },
+    {
+     "rank": 9,
+     "name": "division20",
+     "teamSlug": "division20",
+     "result": "Round of 8",
+     "tie": true
+    },
+    {
+     "rank": 9,
+     "name": "Kiedz",
+     "teamSlug": "kiedz",
+     "result": "Round of 8",
+     "tie": true
+    },
+    {
+     "rank": 13,
+     "name": "0v3",
+     "teamSlug": "0v3",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 14,
+     "name": "Aimpunch",
+     "teamSlug": "aimpunch",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 15,
+     "name": "Alcheministry",
+     "teamSlug": "alcheministry",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 16,
+     "name": "Bloom E-Sports",
+     "teamSlug": "bloom-e-sports",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 17,
+     "name": "Cosmos",
+     "teamSlug": "cosmos",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 18,
+     "name": "degree",
+     "teamSlug": "degree",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 19,
+     "name": "entity",
+     "teamSlug": "entity",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 20,
+     "name": "Fruit Basket",
+     "teamSlug": "fruit-basket",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 21,
+     "name": "Infernum E-Sports",
+     "teamSlug": "infernum-e-sports",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 22,
+     "name": "Lemon Tree",
+     "teamSlug": "lemon-tree",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 23,
+     "name": "Opal",
+     "teamSlug": "opal",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 24,
+     "name": "Raven Song",
+     "teamSlug": "raven-song",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 25,
+     "name": "99Lives",
+     "teamSlug": "99lives",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 26,
+     "name": "Aeternum",
+     "teamSlug": "aeternum",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 27,
+     "name": "Aspire",
+     "teamSlug": "aspire",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 28,
+     "name": "Bluebird",
+     "teamSlug": "bluebird",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 29,
+     "name": "Cyanide",
+     "teamSlug": "cyanide",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 30,
+     "name": "Looking4Team",
+     "teamSlug": null,
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 31,
+     "name": "Neverland",
+     "teamSlug": "neverland",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 32,
+     "name": "Sacred Raven",
+     "teamSlug": "sacred-raven",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 33,
+     "name": "Ukiyo",
+     "teamSlug": "ukiyo",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 34,
+     "name": "New Jade",
+     "teamSlug": "new-jade",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 35,
+     "name": "Technomancy",
+     "teamSlug": "technomancy",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 36,
+     "name": "The Nomads",
+     "teamSlug": "the-nomads",
+     "result": "Group Stage",
+     "tie": true
     }
    ],
    "attending": [
