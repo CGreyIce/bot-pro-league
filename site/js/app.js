@@ -1376,7 +1376,7 @@ function renderShuffleResult(teams){
       <div class="shf-th">Team ${t.n} ${t.country?`<span class="th-flag">${flag(isoForCountry(t.country))}</span><span class="muted" style="font-size:11px">${esc(t.country)}</span>`:''}
         ${t.missingAwp?'<span class="shf-warn" title="No Awper">no AWP</span>':''}${t.missingIGL?'<span class="shf-warn" title="No IGL">no IGL</span>':''}</div>
       ${t.players.map(p=>`<div class="shf-row">
-        <span class="shf-role ${roleClass(p.role)}">${esc(p.role)}</span>
+        <span class="shf-role ${roleClass(p.role)}"${p.role==="IGL*"?' title="Promoted from Rifler — no natural IGL on this team"':''}>${esc(p.role)}</span>
         <a href="#/player/${p.slug}" class="shf-name">${flag(p.iso)}${esc(p.name)}</a>
         <span class="shf-rat">${p.rating>=0?p.rating.toFixed(2):'—'}</span>
       </div>`).join("")}
@@ -1440,18 +1440,26 @@ function generateTeams(players, lockedGroups, groupByCountry=true){
   }
   // 5) assign display roles + flags
   return teams.filter(t=>t.members.length).map((t,i)=>{
+    const hadIGL = t.members.some(m=>m.isIGL);
     const igls = t.members.filter(m=>m.isIGL).sort((a,b)=>b.rating-a.rating);
-    const iglPick = igls[0]||null;
+    let iglPick = igls[0]||null, promoted=false;
+    if(!iglPick){
+      // no natural IGL on the team — promote the highest-rated Rifler (fall back to any non-Awper)
+      const nonAwp = t.members.filter(m=>!m.isAwp).sort((a,b)=>b.rating-a.rating);
+      const riflers = nonAwp.filter(m=>/rifl/i.test(m.baseRole));
+      iglPick = riflers[0] || nonAwp[0] || t.members.slice().sort((a,b)=>b.rating-a.rating)[0] || null;
+      promoted = !!iglPick;
+    }
     const rows = t.members.map(m=>{
       let role;
-      if(iglPick && m===iglPick) role = m.isAwp ? "IGL · Awp" : "IGL";
+      if(iglPick && m===iglPick) role = m.isAwp ? "IGL · Awp" : (promoted ? "IGL*" : "IGL");
       else if(m.isAwp) role="Awper";
       else if(/fill/i.test(m.baseRole)) role="Fill";
       else role="Rifler";
       return { name:m.name, slug:m.p.slug, role, rating:m.rating, iso:m.iso, country:m.country };
-    }).sort((a,b)=> (a.role==="IGL"||a.role==="IGL · Awp"?0: a.role==="Awper"?1: a.role==="Fill"?3:2) - (b.role==="IGL"||b.role==="IGL · Awp"?0: b.role==="Awper"?1: b.role==="Fill"?3:2));
+    }).sort((a,b)=> (a.role.startsWith("IGL")?0: a.role==="Awper"?1: a.role==="Fill"?3:2) - (b.role.startsWith("IGL")?0: b.role==="Awper"?1: b.role==="Fill"?3:2));
     return { n:i+1, players:rows, country:dominantCountry(t),
-             missingAwp: !t.members.some(m=>m.isAwp), missingIGL: !t.members.some(m=>m.isIGL) };
+             missingAwp: !t.members.some(m=>m.isAwp), missingIGL: !iglPick };
   });
 }
 
