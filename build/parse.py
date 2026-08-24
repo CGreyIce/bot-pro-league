@@ -715,6 +715,37 @@ def main():
         elif tier == "a":
             tm["a_tier_wins"] += 1
 
+    # ---- Playoff & S-Tier history: auto-update from completed site-run (manual) S-tier/Major
+    # events. Historical scraped events stay in the sheet; a manual event is authoritative for
+    # its own (category, year). Categories: Major Playoffs (reached the Conquerors Stage),
+    # Audax Esse Playoffs (made the AUXE playoff bracket), Pro Cup Top 16 (top-16 finish). ----
+    computed_po = {}  # (label, year) -> set(team slug)
+    for tr in tournaments:
+        if tr["slug"] not in manual_slugs or tr.get("tier") not in ("s", "major") or not tr.get("champion"):
+            continue
+        yr = tr.get("year"); nm = tr["name"]; fs = tr.get("finalStandings") or []
+        if not yr or not fs:
+            continue
+        if "Audax Esse" in nm:
+            label = "Audax Esse Playoffs"
+            makers = {s["teamSlug"] for s in fs if s.get("teamSlug") and s.get("result") != "Group Stage"}
+        elif "Conquerors" in nm:
+            label = "Major Playoffs"
+            makers = {s["teamSlug"] for s in fs if s.get("teamSlug")}
+        elif "Pro Cup" in nm:
+            label = "Pro Cup Top 16"
+            makers = {s["teamSlug"] for s in fs if s.get("teamSlug") and s.get("rank", 99) <= 16}
+        else:
+            continue
+        computed_po[(label, yr)] = makers
+    for (label, yr), makers in computed_po.items():
+        for t in teams:                       # manual event is authoritative — clear any stale sheet entry
+            t.get("playoffs", {}).get(label, {}).pop(yr, None)
+        for slug in makers:
+            tm = slug_to_team.get(slug)
+            if tm:
+                tm.setdefault("playoffs", {}).setdefault(label, {})[yr] = "Yes"
+
     # ---- website-computed BPL Rank Points (overrides the sheet value; re-ranks) ----
     compute_team_points(teams, tournaments)
 

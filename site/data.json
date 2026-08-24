@@ -10037,7 +10037,8 @@
     },
     "Audax Esse Playoffs": {
      "2022": "Yes",
-     "2023": "Yes"
+     "2023": "Yes",
+     "2026": "Yes"
     },
     "Pro Cup Top 16": {
      "2022": "Yes"
@@ -16157,6 +16158,9 @@
     },
     "Pro Cup Top 16": {
      "2022": "Yes"
+    },
+    "Audax Esse Playoffs": {
+     "2026": "Yes"
     }
    },
    "rank": 9,
@@ -25615,7 +25619,8 @@
      "2023": "Yes"
     },
     "Audax Esse Playoffs": {
-     "2025": "Won"
+     "2026": "Yes",
+     "2025": "Yes"
     }
    },
    "rank": 14,
@@ -38541,6 +38546,7 @@
      "2024": "Yes"
     },
     "Audax Esse Playoffs": {
+     "2026": "Yes",
      "2025": "Yes"
     },
     "Pro Cup Top 16": {
@@ -40202,6 +40208,9 @@
     },
     "Pro Cup Top 16": {
      "2022": "Yes"
+    },
+    "Audax Esse Playoffs": {
+     "2026": "Yes"
     }
    },
    "rank": 22,
@@ -41746,6 +41755,9 @@
    "playoffs": {
     "Major Playoffs": {
      "2023": "Yes"
+    },
+    "Audax Esse Playoffs": {
+     "2026": "Yes"
     }
    },
    "rank": 23,
@@ -66212,6 +66224,7 @@
      "2025": "Yes"
     },
     "Audax Esse Playoffs": {
+     "2026": "Yes",
      "2025": "Yes"
     }
    },
@@ -73865,7 +73878,11 @@
    "origin": "BPL 14 Winners",
    "notes": "",
    "star": false,
-   "playoffs": {},
+   "playoffs": {
+    "Audax Esse Playoffs": {
+     "2026": "Yes"
+    }
+   },
    "rank": 39,
    "bio": "xPlosiv boast one of the best win rates in the entire league, a Singaporean team with a Minor League title and rising star tapiyokaaa leading the charge — a small sample, but a fearsome one.",
    "roster": [
