@@ -1114,7 +1114,8 @@ function renderScoreboard(){
     ? maps.reduce((s,mp)=>s+((mp.scoreA||0)+(mp.scoreB||0)),0)
     : ((maps[_sbTab].scoreA||0)+(maps[_sbTab].scoreB||0));
   const block = (teamName, teamSlug)=>{
-    const players = view.filter(p=>normKey(p.team)===normKey(teamName)).sort((a,b)=>b.score-a.score);
+    const rtgOf = p => { const r = matchRating(p.k,p.a,p.d,p.score,rounds); return r==null ? -Infinity : r; };
+    const players = view.filter(p=>normKey(p.team)===normKey(teamName)).sort((a,b)=>rtgOf(b)-rtgOf(a)||b.score-a.score);
     if(!players.length) return '';
     const t = teamSlug ? teamBySlug(teamSlug) : null;
     return `<div class="sb-team">
