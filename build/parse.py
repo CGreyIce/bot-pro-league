@@ -737,14 +737,14 @@ def main():
             makers = {s["teamSlug"] for s in fs if s.get("teamSlug") and s.get("rank", 99) <= 16}
         else:
             continue
-        computed_po[(label, yr)] = makers
-    for (label, yr), makers in computed_po.items():
+        computed_po[(label, yr)] = (makers, tr.get("championTeam"))
+    for (label, yr), (makers, champ_slug) in computed_po.items():
         for t in teams:                       # manual event is authoritative — clear any stale sheet entry
             t.get("playoffs", {}).get(label, {}).pop(yr, None)
         for slug in makers:
             tm = slug_to_team.get(slug)
             if tm:
-                tm.setdefault("playoffs", {}).setdefault(label, {})[yr] = "Yes"
+                tm.setdefault("playoffs", {}).setdefault(label, {})[yr] = "Won" if slug == champ_slug else "Yes"
 
     # ---- website-computed BPL Rank Points (overrides the sheet value; re-ranks) ----
     compute_team_points(teams, tournaments)
