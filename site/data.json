@@ -314045,5 +314045,2282 @@
    "toPro": false,
    "date": "2020-04-26"
   }
+ ],
+ "adhocMapTeams": [
+  {
+   "name": "BeeHyve",
+   "slug": "adhoc-beehyve",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.669,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.448,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.394,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.439,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.649,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.303,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.267,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Anubis",
+    "Vertigo"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Eiromancers",
+   "slug": "adhoc-eiromancers",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.61,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.355,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.572,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.493,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.627,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.443,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.366,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Anubis"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Rebellium",
+   "slug": "adhoc-rebellium",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.611,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.507,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.692,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.473,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.664,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.767,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.447,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Anubis",
+    "Cache"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Nightshade",
+   "slug": "adhoc-nightshade",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.623,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.438,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.541,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.612,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.455,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.645,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.55,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Tuscan"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Crimson Meridian",
+   "slug": "adhoc-crimsonmeridian",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.538,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.456,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.665,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.321,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.507,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.342,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.343,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Inferno",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Cache",
+    "Vertigo"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Sakura Sovereign",
+   "slug": "adhoc-sakurasovereign",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.53,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.464,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.613,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.277,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.444,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.5,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.413,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Inferno",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Cache",
+    "Anubis"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Kagerou Collective",
+   "slug": "adhoc-kageroucollective",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.549,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.386,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.326,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.361,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.642,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.467,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.543,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Inferno",
+    "Cache"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Seraph Dynasty",
+   "slug": "adhoc-seraphdynasty",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.537,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.573,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.554,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.652,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.289,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.302,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.446,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Dust2"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Vertigo"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Ivory Vanguard",
+   "slug": "adhoc-ivoryvanguard",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.671,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.537,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.486,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.634,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.377,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.659,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.615,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Inferno"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Lunar Cadence",
+   "slug": "adhoc-lunarcadence",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.304,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.691,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.585,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.35,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.31,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.642,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.651,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Tuscan"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Voidborne",
+   "slug": "adhoc-voidborne",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.423,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.35,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.656,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.416,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.406,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.634,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.68,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Anubis",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Tuscan"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Onyx Legion",
+   "slug": "adhoc-onyxlegion",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.417,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.304,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.597,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.444,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.465,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.382,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.573,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Inferno",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Vertigo"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Syzygy",
+   "slug": "adhoc-syzygy",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.645,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.528,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.565,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.436,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.296,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.453,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.653,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Anubis",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Cache"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Stormfront",
+   "slug": "adhoc-stormfront",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.349,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.59,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.359,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.582,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.376,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.329,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.413,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Mirage"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Northwind",
+   "slug": "adhoc-northwind",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.309,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.495,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.553,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.318,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.457,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.591,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.309,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Anubis"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Frostbyte",
+   "slug": "adhoc-frostbyte",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.368,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.505,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.454,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.436,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.307,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.447,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.617,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Anubis",
+    "Dust2"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Mirage"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Radiant Coil",
+   "slug": "adhoc-radiantcoil",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.409,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.521,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.447,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.567,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.649,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.372,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.457,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Mirage"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Emberfall",
+   "slug": "adhoc-emberfall",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.523,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.369,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.502,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.326,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.592,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.641,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.609,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Cache",
+    "Dust2"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Nightbloom",
+   "slug": "adhoc-nightbloom",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.332,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.38,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.375,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.381,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.468,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.551,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.303,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Anubis",
+    "Mirage"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Supernova",
+   "slug": "adhoc-supernova",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.365,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.557,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.626,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.317,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.512,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.706,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.415,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Cache",
+    "Mirage"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Aurora Pact",
+   "slug": "adhoc-aurorapact",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.621,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.375,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.53,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.537,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.356,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.656,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.557,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Dust2"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Echo Cipher",
+   "slug": "adhoc-echocipher",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.572,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.359,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.48,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.528,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.727,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.676,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.677,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Inferno"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Wraithborne",
+   "slug": "adhoc-wraithborne",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.597,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.27,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.435,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.67,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.542,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.548,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.675,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Anubis",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Inferno"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Dreamstate",
+   "slug": "adhoc-dreamstate",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.337,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.554,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.558,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.658,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.657,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.68,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.378,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Anubis"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Albion Rising",
+   "slug": "adhoc-albionrising",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.426,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.485,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.324,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.348,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.566,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.537,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.425,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Inferno",
+    "Cache"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Thunderveil",
+   "slug": "adhoc-thunderveil",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.523,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.355,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.45,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.512,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.281,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.495,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.298,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Anubis"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Mourningstar",
+   "slug": "adhoc-mourningstar",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.526,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.465,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.381,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.641,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.479,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.458,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.464,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Inferno",
+    "Vertigo"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Starling Coven",
+   "slug": "adhoc-starlingcoven",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.464,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.358,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.469,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.511,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.668,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.38,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.362,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Anubis"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Feral Instinct",
+   "slug": "adhoc-feralinstinct",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.534,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.37,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.475,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.564,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.512,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.413,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.568,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Anubis",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Vertigo"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Wanderlight",
+   "slug": "adhoc-wanderlight",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.535,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.616,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.329,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.596,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.48,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.443,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.503,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Inferno",
+    "Vertigo"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Prism Divide",
+   "slug": "adhoc-prismdivide",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.555,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.677,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.497,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.41,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.601,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.419,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.366,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Anubis",
+    "Cache"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Tidebreakers",
+   "slug": "adhoc-tidebreakers",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.642,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.502,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.335,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.522,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.358,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.621,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.357,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Inferno",
+    "Anubis"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Nullpoint",
+   "slug": "adhoc-nullpoint",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.429,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.517,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.461,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.533,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.543,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.395,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.537,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Mirage"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Solstice",
+   "slug": "adhoc-solstice",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.317,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.669,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.316,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.389,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.676,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.521,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.473,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Dust2"
+   ],
+   "worstMaps": [
+    "Inferno",
+    "Mirage"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Ashfall",
+   "slug": "adhoc-ashfall",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.618,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.589,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.453,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.572,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.356,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.459,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.516,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Dust2"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Inferno"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  }
  ]
 }
