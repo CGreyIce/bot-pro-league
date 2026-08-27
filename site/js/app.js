@@ -1471,7 +1471,7 @@ function renderShuffleResult(teams){
       ${t.players.map(p=>`<div class="shf-row">
         <span class="shf-role ${roleClass(p.role)}"${p.role==="IGL*"?' title="Promoted from Rifler — no natural IGL on this team"':''}>${esc(p.role)}</span>
         <a href="#/player/${p.slug}" class="shf-name">${flag(p.iso)}${esc(p.name)}</a>
-        <span class="shf-rat">${p.rating>=0?p.rating.toFixed(2):'—'}</span>
+        <span class="shf-rat">${p.points!=null?p.points+' pts':'—'}</span>
       </div>`).join("")}
     </div>`).join("")}</div>`;
 }
@@ -1495,7 +1495,8 @@ function generateTeams(players, lockedGroups, groupByCountry=true){
   const meta = p => {
     const role = (p.role||"").toLowerCase();
     const vssmb = norm(p.name)==="vssmb";
-    return { p, name:p.name, rating:(p.rating==null?-1:p.rating), iso:p.iso||"", country:p.nat||"",
+    return { p, name:p.name, rating:(p.rating==null?-1:p.rating), points:(p.ratingPoints==null?null:p.ratingPoints),
+             iso:p.iso||"", country:p.nat||"",
              region:shfRegion(p.iso), isAwp:/awp/.test(role)||vssmb, isIGL:/igl/.test(role)||vssmb,
              baseRole:p.role||"Rifler" };
   };
@@ -1549,7 +1550,7 @@ function generateTeams(players, lockedGroups, groupByCountry=true){
       else if(m.isAwp) role="Awper";
       else if(/fill/i.test(m.baseRole)) role="Fill";
       else role="Rifler";
-      return { name:m.name, slug:m.p.slug, role, rating:m.rating, iso:m.iso, country:m.country };
+      return { name:m.name, slug:m.p.slug, role, rating:m.rating, points:m.points, iso:m.iso, country:m.country };
     }).sort((a,b)=> (a.role.startsWith("IGL")?0: a.role==="Awper"?1: a.role==="Fill"?3:2) - (b.role.startsWith("IGL")?0: b.role==="Awper"?1: b.role==="Fill"?3:2));
     return { n:i+1, players:rows, country:dominantCountry(t),
              missingAwp: !t.members.some(m=>m.isAwp), missingIGL: !iglPick };

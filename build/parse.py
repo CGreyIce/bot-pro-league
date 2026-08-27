@@ -144,21 +144,26 @@ WEIGHTS = {"kdr": 0.40, "kpm": 0.30, "mvppm": 0.15, "apm": 0.10, "wr": 0.05}
 
 _TIER_TOKEN = re.compile(r"\b(Champion|Grandmaster|Master|Diamond|Emerald|Platinum|Gold|Silver|Bronze|Iron)\b")
 def refresh_bio_dynamics(pro, amateur, solo):
-    """Keep the volatile parts of each hand-written bio in sync with live ratings:
-    the tier name, the rating value, and the 'highest-rated in the pool' epithet.
-    Every bio references its own tier at most once (verified), so a single-token
-    swap is unambiguous. Runs each build so bios never go stale as stats change."""
+    """Keep the volatile parts of each hand-written bio in sync with the live FACEIT-style
+    stats: tier language becomes 'Level N', rating values become 'N points', and the
+    'highest-rated in the pool' epithet follows the true #1. Every bio references its own
+    tier at most once (verified), so a single-token swap is unambiguous. Runs each build."""
     def sync(p):
         bio = p.get("bio")
         if not bio:
             return
-        tier, rating = p.get("tier"), p.get("rating")
-        if tier:
-            bio = _TIER_TOKEN.sub(tier, bio, count=1)                       # self-tier -> current tier
-        if rating is not None:
-            rs = f"{rating:.2f}"
-            bio = re.sub(r"\b(at\s+)(?:1\.\d\d|0\.\d\d)\b", lambda m: m.group(1) + rs, bio)   # "Master at 1.09"
-            bio = re.sub(r"\b(?:1\.\d\d|0\.\d\d)(\s+rating\b)", lambda m: rs + m.group(1), bio)  # "1.14 rating"
+        ss = p.get("soloStats") or {}
+        lvl = p.get("level") or ss.get("level")                            # fall back to solo-queue standing
+        pts = p.get("ratingPoints") if p.get("ratingPoints") is not None else ss.get("ratingPoints")
+        if lvl:
+            new = re.sub(r"\b(?:Champion|Grandmaster|Master|Diamond|Emerald|Platinum|Gold|Silver|Bronze|Iron)-tier\b",
+                         f"Level {lvl}", bio, count=1)                       # "Grandmaster-tier rifler" -> "Level 8 rifler"
+            if new == bio:
+                new = _TIER_TOKEN.sub(f"Level {lvl}", bio, count=1)         # standalone "Champion" -> "Level 8"
+            bio = new
+        if pts is not None:
+            bio = re.sub(r"\b(at\s+)(?:1\.\d\d|0\.\d\d)\b", lambda m: m.group(1) + f"{pts} points", bio)   # "Level 8 at 1609 points"
+            bio = re.sub(r"\b(?:1\.\d\d|0\.\d\d)\s+rating\b", f"{pts} points", bio)                         # "1.14 rating" -> "1609 points"
         p["bio"] = bio
     for pool in (pro, amateur, solo):
         for p in pool:
