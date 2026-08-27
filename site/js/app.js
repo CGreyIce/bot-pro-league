@@ -1304,6 +1304,19 @@ async function renderAdmin(){
           <div id="shf-out"><p class="muted">Click “Shuffle teams” to generate.</p></div>
         </div>
       </div>
+    </div>
+    <div class="adm-veto" style="margin-top:26px">
+      <h2 class="section-title"><span class="accent-bar"></span>Map Veto Simulator</h2>
+      <p class="muted" style="font-size:12px;margin:-4px 0 14px">A real CS-style veto driven by each team's per-map win rate. Teams ban the opponent's strong maps (but never their own best), pick their best, and leave a decider. Split is excluded (custom 3rd-place map only).</p>
+      <div class="veto-controls">
+        ${(()=>{const opts=DATA.teams.slice().sort((a,b)=>a.name.localeCompare(b.name)).map(t=>`<option value="${t.slug}">${esc(t.name)}</option>`).join("");
+          return `<select id="veto-a" class="adm-in">${opts}</select>
+          <span class="veto-vs">vs</span>
+          <select id="veto-b" class="adm-in">${opts}</select>
+          <select id="veto-fmt" class="adm-in"><option value="bo1">Best of 1</option><option value="bo3" selected>Best of 3</option></select>
+          <button id="veto-go" class="adm-btn" style="max-width:180px">Simulate veto</button>`;})()}
+      </div>
+      <div id="veto-out"></div>
     </div>`;
 
   $("#adm-publish").onclick = async ()=>{
@@ -1330,7 +1343,84 @@ async function renderAdmin(){
   });
   setupSoloAdmin();
   setupShuffler();
+  setupMapVeto();
   if(adminEditing) openEditor(adminEditing);
+}
+
+// ---- map veto simulator (admin) ----
+const VETO_MAPS = ["Mirage","Dust2","Inferno","Cache","Tuscan","Vertigo","Anubis"];
+const VETO_IMG = {Mirage:"mirage.jpg",Dust2:"dust2.jpg",Inferno:"inferno.jpg",Cache:"cache.jpg",Tuscan:"tuscan.jpg",Vertigo:"vertigo.jpeg",Anubis:"anubis.jpeg"};
+function setupMapVeto(){
+  const go=$("#veto-go"); if(!go) return;
+  const teams=DATA.teams; const bySlug={}; teams.forEach(t=>bySlug[t.slug]=t);
+  // default B to a different team than A
+  const b=$("#veto-b"); if(b && b.options.length>1) b.selectedIndex=1;
+  go.onclick=()=>{
+    const A=bySlug[$("#veto-a").value], B=bySlug[$("#veto-b").value], fmt=$("#veto-fmt").value;
+    const out=$("#veto-out");
+    if(!A||!B){ out.innerHTML='<p class="muted">Pick two teams.</p>'; return; }
+    if(A===B){ out.innerHTML='<p class="muted" style="color:var(--accent2,#ff6b6b)">Pick two different teams.</p>'; return; }
+    renderVetoResult(A,B,fmt,simulateVeto(A,B,fmt));
+  };
+}
+function simulateVeto(A,B,fmt){
+  const wr=(t,m)=> (t.mapStats&&t.mapStats[m] ? t.mapStats[m].wr : 0.5);
+  const isBest=(t,m)=> (t.bestMaps||[]).includes(m);
+  let remaining=VETO_MAPS.slice(); const steps=[];
+  const seq = fmt==="bo1"
+    ? [[A,"ban"],[B,"ban"],[A,"ban"],[B,"ban"],[A,"ban"],[B,"ban"]]
+    : [[A,"ban"],[B,"ban"],[A,"pick"],[B,"pick"],[A,"ban"],[B,"ban"]];
+  for(const [team,action] of seq){
+    const opp = team===A?B:A; let map, reason;
+    if(action==="ban"){
+      let cands=remaining.filter(m=>!isBest(team,m));      // never ban your own best…
+      if(!cands.length) cands=remaining.slice();            // …unless the field is all your best maps
+      cands.sort((x,y)=> wr(opp,y)-wr(opp,x) || wr(team,x)-wr(team,y));
+      map=cands[0];
+      if(isBest(opp,map)) reason=`removes ${opp.name}'s best map (${pct(wr(opp,map))})`;
+      else if(wr(opp,map)>=0.55) reason=`${opp.name} are strong here (${pct(wr(opp,map))})`;
+      else reason=`${team.name} are weakest here (${pct(wr(team,map))})`;
+    } else {
+      let cands=remaining.slice().sort((x,y)=> wr(team,y)-wr(team,x));
+      map=cands[0];
+      reason = isBest(team,map) ? `${team.name}'s best map (${pct(wr(team,map))})` : `${team.name}'s strongest left (${pct(wr(team,map))})`;
+    }
+    remaining=remaining.filter(m=>m!==map);
+    steps.push({team:team.name, side:team===A?"a":"b", action, map, reason, wrA:wr(A,map), wrB:wr(B,map)});
+  }
+  const decider=remaining[0];
+  steps.push({team:"", side:"d", action:"decider", map:decider, reason:"the map left after all vetoes", wrA:wr(A,decider), wrB:wr(B,decider)});
+  return {steps, decider, played: fmt==="bo1" ? [decider] : steps.filter(s=>s.action==="pick").map(s=>s.map).concat(decider)};
+}
+function vetoMapImg(m){ return `<img class="vt-img" src="assets/maps/${VETO_IMG[m]}" alt="${esc(m)}">`; }
+function renderVetoResult(A,B,fmt,res){
+  const out=$("#veto-out"); if(!out) return;
+  const wr=(t,m)=> (t.mapStats&&t.mapStats[m]?t.mapStats[m].wr:0.5);
+  const isBest=(t,m)=>(t.bestMaps||[]).includes(m), isWorst=(t,m)=>(t.worstMaps||[]).includes(m);
+  const cell=(t,m)=>{ const w=wr(t,m); const cls=isBest(t,m)?"vt-best":isWorst(t,m)?"vt-worst":""; const g=t.mapStats&&t.mapStats[m]?t.mapStats[m].g:0;
+    return `<td class="mono ${cls}" title="${g?g+' maps played':'projected'}">${pct(w)}${g?'':'*'}</td>`; };
+  const matrix=`<div class="tablewrap" style="max-width:560px"><table class="data vt-matrix">
+    <thead><tr><th class="no-sort">Map</th><th class="no-sort">${esc(A.name)}</th><th class="no-sort">${esc(B.name)}</th></tr></thead>
+    <tbody>${VETO_MAPS.map(m=>`<tr><td class="name-cell">${vetoMapImg(m)}<span class="vt-mname">${esc(m)}</span></td>${cell(A,m)}${cell(B,m)}</tr>`).join("")}</tbody></table>
+    <div class="muted" style="font-size:11px;margin-top:4px">Green = a team's best map · red = worst · <b>*</b> = projected (not enough real maps yet).</div></div>`;
+  const stepRow=s=>{
+    const badge = s.action==="ban"?`<span class="vt-badge ban">BAN</span>`
+      : s.action==="pick"?`<span class="vt-badge pick">PICK</span>`
+      : `<span class="vt-badge dec">DECIDER</span>`;
+    const who = s.team?`<span class="vt-team ${s.side}">${esc(s.team)}</span>`:`<span class="vt-team d">Left over</span>`;
+    return `<div class="vt-step ${s.action}">
+      ${vetoMapImg(s.map)}
+      <div class="vt-body"><div class="vt-line">${badge} ${who} — <b>${esc(s.map)}</b></div>
+        <div class="vt-reason">${esc(s.reason)}</div></div>
+      <div class="vt-wr"><span class="a">${esc(A.name.slice(0,10))} ${pct(s.wrA)}</span><span class="b">${esc(B.name.slice(0,10))} ${pct(s.wrB)}</span></div>
+    </div>`; };
+  out.innerHTML=`<div class="veto-grid">
+    <div><h3 class="rec-group" style="margin-top:0">Veto sequence · ${fmt.toUpperCase()}</h3>
+      <div class="vt-steps">${res.steps.map(stepRow).join("")}</div>
+      <div class="vt-final">${fmt==="bo1"?"Map played:":"Maps played:"} ${res.played.map(m=>`<span class="vt-chip">${vetoMapImg(m)}${esc(m)}</span>`).join("")}</div>
+    </div>
+    <div><h3 class="rec-group" style="margin-top:0">Win-rate by map</h3>${matrix}</div>
+  </div>`;
 }
 
 function setupShuffler(){

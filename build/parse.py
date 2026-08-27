@@ -567,6 +567,49 @@ def main():
         if denom:
             t["wlr"] = round(t["map_wins"] / denom, 3)
 
+    # ---- per-team per-map records (for the map veto simulator) ----
+    # Active map pool of 7 (Split is a custom 3rd-place-only map and is ignored).
+    POOL_MAPS = ["Mirage", "Dust2", "Inferno", "Cache", "Tuscan", "Vertigo", "Anubis"]
+    _mapkey = {m.lower(): m for m in POOL_MAPS}
+    map_rec = defaultdict(lambda: defaultdict(lambda: [0, 0]))   # slug -> mapName -> [w, l]
+    for tr in tournaments:
+        mlist = ([m for st in tr.get("stages", []) for rd in st["rounds"] for m in rd["matches"]]
+                 if tr.get("stages") else [m for rd in tr.get("bracket", []) for m in rd["matches"]])
+        for m in mlist:
+            stats = m.get("stats")
+            if not stats:
+                continue
+            aT, bT = m.get("aTeam"), m.get("bTeam")
+            for mp in stats.get("maps", []):
+                cm = _mapkey.get((mp.get("map") or "").strip().lower())
+                if not cm:
+                    continue                                     # skips Split + anything off-pool
+                sa, sb = mp.get("scoreA"), mp.get("scoreB")
+                if sa is None or sb is None or sa == sb:
+                    continue
+                if aT: map_rec[aT][cm][0 if sa > sb else 1] += 1
+                if bT: map_rec[bT][cm][1 if sa > sb else 0] += 1
+    def _seed(s):
+        h = 2166136261
+        for ch in s:
+            h = ((h ^ ord(ch)) * 16777619) & 0xFFFFFFFF
+        return h
+    for t in teams:
+        base = t.get("wlr") or 0.5
+        stats = {}
+        for cm in POOL_MAPS:
+            w, l = map_rec[t["slug"]].get(cm, [0, 0]); g = w + l
+            if g >= 2:                                           # enough real maps -> real win rate
+                wr, real = round(w / g, 3), True
+            else:                                                # not enough data -> deterministic seeded rate
+                off = (_seed(t["slug"] + "|" + cm) % 4200) / 10000.0 - 0.21   # ~[-0.21, +0.21]
+                wr, real = round(max(0.18, min(0.85, base + off)), 3), False
+            stats[cm] = {"w": w, "l": l, "g": g, "wr": wr, "real": real}
+        order = sorted(POOL_MAPS, key=lambda cm: (-stats[cm]["wr"], cm))
+        t["mapStats"] = stats
+        t["bestMaps"] = order[:2]
+        t["worstMaps"] = [order[-1], order[-2]]
+
     # ---- solo-queue scoreboards (admin-entered) on top of the competitive_me sheet base ----
     solo_by_name = {}
     for p in solo:

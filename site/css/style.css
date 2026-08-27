@@ -561,6 +561,36 @@ textarea.adm-in{resize:vertical;font-family:inherit}
 .pd-gh{font-family:'Rajdhani';font-weight:700;margin-right:6px}
 .pd-q{display:block;color:var(--muted)}
 .pd-q2{opacity:.75}
+/* map veto simulator */
+.veto-controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.veto-controls .adm-in{max-width:240px;margin:0}
+.veto-vs{font-family:'Rajdhani';font-weight:700;color:var(--muted)}
+.veto-grid{display:grid;grid-template-columns:1fr 560px;gap:26px}
+@media(max-width:1100px){.veto-grid{grid-template-columns:1fr}}
+.vt-img{width:46px;height:28px;object-fit:cover;border-radius:5px;flex-shrink:0}
+.vt-matrix td,.vt-matrix th{vertical-align:middle}
+.vt-matrix .name-cell{display:flex;align-items:center;gap:9px}
+.vt-mname{font-weight:600}
+.vt-best{color:var(--good);font-weight:700}
+.vt-worst{color:#ff6b6b;font-weight:700}
+.vt-steps{display:flex;flex-direction:column;gap:8px}
+.vt-step{display:flex;align-items:center;gap:12px;background:var(--panel);border:1px solid var(--line,var(--border));border-radius:9px;padding:9px 12px}
+.vt-step.ban{opacity:.72}
+.vt-step.pick{border-color:rgba(61,220,132,.45)}
+.vt-step.decider{border-color:var(--accent);background:rgba(255,92,61,.06)}
+.vt-body{flex:1;min-width:0}
+.vt-line{font-size:14px}
+.vt-reason{font-size:12px;color:var(--muted);margin-top:2px}
+.vt-badge{font-family:'Rajdhani';font-weight:700;font-size:11px;letter-spacing:.5px;padding:2px 7px;border-radius:5px;margin-right:4px}
+.vt-badge.ban{background:rgba(255,107,107,.16);color:#ff6b6b}
+.vt-badge.pick{background:rgba(61,220,132,.16);color:var(--good)}
+.vt-badge.dec{background:rgba(255,92,61,.18);color:var(--accent)}
+.vt-team{font-weight:700}
+.vt-team.b{color:var(--link,#6db0ff)}
+.vt-team.d{color:var(--muted)}
+.vt-wr{display:flex;flex-direction:column;gap:2px;font-family:monospace;font-size:11px;color:var(--muted);text-align:right;white-space:nowrap}
+.vt-final{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:14px;font-family:'Rajdhani';font-weight:700;font-size:16px}
+.vt-chip{display:inline-flex;align-items:center;gap:7px;background:var(--panel);border:1px solid var(--accent);border-radius:8px;padding:5px 12px 5px 5px}
 /* final standings */
 .fs-wrap{max-width:520px}
 .fs-table td{padding:7px 10px}

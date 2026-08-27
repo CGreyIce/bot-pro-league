@@ -39,6 +39,65 @@
     }
    },
    "rank": 1,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.665,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.575,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.466,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.497,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.686,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.472,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.773,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Anubis",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Inferno",
+    "Vertigo"
+   ],
    "bio": "The most decorated organization in Bot Pro League history, Aimpunch are Singapore's benchmark team — a dynasty forged across 2022 and 2023 that peaked with the 2023 BPL Conquerors Major. Led by in-game leader Chiai Fujikawa and headlined by Sketch, they have turned sustained excellence into a trophy haul no rival can match.",
    "roster": [
     {
@@ -1885,6 +1944,65 @@
     }
    },
    "rank": 2,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.575,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.441,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.672,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.535,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.736,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.552,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.584,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Cache"
+   ],
    "bio": "Cosmos announced themselves in the biggest way possible, storming to the 2025 BPL Conquerors Major on the back of sneakyyyyy's elite firepower. A Singaporean team that peaks when the lights are brightest, they are the league's reigning kings.",
    "roster": [
     {
@@ -3626,6 +3744,65 @@
     }
    },
    "rank": 3,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.339,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.53,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.413,
+     "real": false
+    },
+    "Cache": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.704,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.7,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.407,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.685,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Vertigo"
+   ],
    "bio": "New Jade are two-time BPL Legends Stage champions, bookending an era with titles in 2022 and 2025. Captained by the ever-reliable VPLH, the Singaporean outfit have built a reputation as a big-stage team that delivers when it counts.",
    "roster": [
     {
@@ -6490,6 +6667,65 @@
     }
    },
    "rank": 4,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.586,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.55,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.658,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.56,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.623,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.474,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.419,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Inferno",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Anubis",
+    "Vertigo"
+   ],
    "bio": "The Gigarage fly the flag for North America in a league dominated by Southeast Asia, and they have the silverware to back it up — a BPL Legends Stage crown in 2023. Built around gigichiii_, they remain one of the few teams capable of breaking the SEA stranglehold.",
    "roster": [
     {
@@ -8137,6 +8373,65 @@
     }
    },
    "rank": 5,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.463,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.501,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.627,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.726,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.775,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.721,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.743,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Dust2"
+   ],
    "bio": "Artisian are the house that SanCtuary built — the pro pool's highest-rated player anchoring a Singaporean team that claimed the 2022 BPL Challengers Stage. Perennial contenders, they are never far from the sharp end of a bracket.",
    "roster": [
     {
@@ -10045,6 +10340,65 @@
     }
    },
    "rank": 6,
+   "mapStats": {
+    "Mirage": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.701,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.656,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.372,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.607,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 2,
+     "g": 2,
+     "wr": 0.0,
+     "real": true
+    },
+    "Vertigo": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.364,
+     "real": false
+    },
+    "Anubis": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.721,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Anubis",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Vertigo"
+   ],
    "bio": "Neverland are BPL Legends Stage champions from 2024, a Singaporean team whose roots stretch back to the league's earliest days. Marshalled by in-game leader Resent, they pair veteran know-how with a knack for the deep run.",
    "roster": [
     {
@@ -11675,6 +12029,65 @@
     }
    },
    "rank": 7,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.398,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.456,
+     "real": false
+    },
+    "Inferno": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.693,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.338,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.578,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.639,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.482,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Inferno",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Cache",
+    "Mirage"
+   ],
    "bio": "Lemon Tree own a BPL Conquerors Major from 2024 and a Bot Pro Cup from 2022, a resume that marks them out as one of Singapore's genuine heavyweights. With luminichi on the AWP, they blend experience and firepower in equal measure.",
    "roster": [
     {
@@ -14089,6 +14502,65 @@
     }
    },
    "rank": 8,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.453,
+     "real": false
+    },
+    "Dust2": {
+     "w": 1,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
+     "real": true
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.598,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.549,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.584,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.552,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.547,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Inferno",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Dust2"
+   ],
    "bio": "Infernum E-Sports were among the league's original powers, winning the 2022 BPL Conquerors Major with a core that still anchors the team today. Captain Historia and the long-serving spine of the roster keep the Singaporean club a fixture at the business end.",
    "roster": [
     {
@@ -16164,6 +16636,65 @@
     }
    },
    "rank": 9,
+   "mapStats": {
+    "Mirage": {
+     "w": 2,
+     "l": 0,
+     "g": 2,
+     "wr": 1.0,
+     "real": true
+    },
+    "Dust2": {
+     "w": 2,
+     "l": 1,
+     "g": 3,
+     "wr": 0.667,
+     "real": true
+    },
+    "Inferno": {
+     "w": 2,
+     "l": 0,
+     "g": 2,
+     "wr": 1.0,
+     "real": true
+    },
+    "Cache": {
+     "w": 1,
+     "l": 2,
+     "g": 3,
+     "wr": 0.333,
+     "real": true
+    },
+    "Tuscan": {
+     "w": 1,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
+     "real": true
+    },
+    "Vertigo": {
+     "w": 2,
+     "l": 0,
+     "g": 2,
+     "wr": 1.0,
+     "real": true
+    },
+    "Anubis": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.414,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Inferno",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Cache",
+    "Anubis"
+   ],
    "bio": "Raven Song are a Malaysian team and one of the league's more international entries, an experienced outfit rebuilding toward a return to form.",
    "roster": [
     {
@@ -18164,6 +18695,65 @@
     }
    },
    "rank": 10,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.593,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.536,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.453,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.4,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.668,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.705,
+     "real": false
+    },
+    "Anubis": {
+     "w": 1,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
+     "real": true
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Cache",
+    "Inferno"
+   ],
    "bio": "The Nomads are a Singaporean team with a Minor League title to their name, a steady outfit that has proven it can grind through a bracket when the draw opens up.",
    "roster": [
     {
@@ -20236,6 +20826,65 @@
     }
    },
    "rank": 11,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.636,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.667,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.572,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.511,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.663,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.456,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.414,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Anubis",
+    "Vertigo"
+   ],
    "bio": "Opal are a Singaporean team long on games and experience if still chasing that breakthrough title. Consistent and hard to beat on their day, they remain a dangerous floater in any group.",
    "roster": [
     {
@@ -22167,6 +22816,65 @@
     }
    },
    "rank": 12,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.645,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.431,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.557,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.729,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.703,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.485,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.534,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Vertigo"
+   ],
    "bio": "Masmark are a Singaporean outfit who have quietly built a reputation as bracket spoilers, capable of a deep run — as their charge through the Audax Esse 2025 group stage showed.",
    "roster": [
     {
@@ -23611,6 +24319,65 @@
     }
    },
    "rank": 13,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.392,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.603,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.596,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.739,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.625,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.617,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.556,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Anubis"
+   ],
    "bio": "degree are a Singaporean team with a positive map record and a habit of punching at or above their seeding. Solid fundamentals keep them in the mix across the calendar.",
    "roster": [
     {
@@ -25624,6 +26391,65 @@
     }
    },
    "rank": 14,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.468,
+     "real": false
+    },
+    "Dust2": {
+     "w": 3,
+     "l": 0,
+     "g": 3,
+     "wr": 1.0,
+     "real": true
+    },
+    "Inferno": {
+     "w": 1,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
+     "real": true
+    },
+    "Cache": {
+     "w": 2,
+     "l": 1,
+     "g": 3,
+     "wr": 0.667,
+     "real": true
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 2,
+     "g": 2,
+     "wr": 0.0,
+     "real": true
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.599,
+     "real": false
+    },
+    "Anubis": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.644,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Mirage"
+   ],
    "bio": "PepegaX authored one of the great Cinderella stories, storming from an eighth seed to win the entire Audax Esse BPL Invitational 2025. A Singaporean team that proves seeding means nothing once the maps go live.",
    "roster": [
     {
@@ -28044,6 +28870,65 @@
     }
    },
    "rank": 15,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.772,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.559,
+     "real": false
+    },
+    "Inferno": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.646,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.509,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.459,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.429,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.68,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Tuscan"
+   ],
    "bio": "Aetherline are a Singaporean team powered by the prolific EfreetsZ, an attack-minded outfit that leans on raw firepower to outscore its opponents.",
    "roster": [
     {
@@ -29364,6 +30249,65 @@
     }
    },
    "rank": 16,
+   "mapStats": {
+    "Mirage": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.748,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.44,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.548,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.42,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.602,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.682,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.608,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Cache",
+    "Dust2"
+   ],
    "bio": "Divide&Conquer are a Singaporean team with a Minor League crown and a run to the Audax Esse 2025 final on their ledger. A well-drilled unit, they specialize in the upset.",
    "roster": [
     {
@@ -31633,6 +32577,65 @@
     }
    },
    "rank": 17,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.441,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.641,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.717,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.657,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.555,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.541,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.549,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Inferno",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Vertigo"
+   ],
    "bio": "entity are a Singaporean team that wins more than it loses — one of the more efficient outfits in the pool, even without a marquee title to show for it yet.",
    "roster": [
     {
@@ -33343,6 +34346,65 @@
     }
    },
    "rank": 18,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.467,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.398,
+     "real": false
+    },
+    "Inferno": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.347,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.644,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.446,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.494,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.352,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Inferno",
+    "Anubis"
+   ],
    "bio": "Bluebird are a Singaporean team built around the firepower of Nutzeru, an even-money outfit with the individual talent to trouble higher seeds on the right day.",
    "roster": [
     {
@@ -35119,6 +36181,65 @@
     }
    },
    "rank": 19,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.707,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.643,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.58,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.483,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.609,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.723,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.536,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Cache",
+    "Anubis"
+   ],
    "bio": "Alcheministry claimed the 2025 BPL Ranking Reshuffle, a Singaporean team led by in-game leader tanykeat whose tactical discipline makes them an awkward out for anyone.",
    "roster": [
     {
@@ -36620,6 +37741,65 @@
     }
    },
    "rank": 20,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.711,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.434,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.458,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.447,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.464,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.704,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.572,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Cache"
+   ],
    "bio": "Unforgettable are a Singaporean team with two lower-tier titles to their name and one of the busiest schedules in the league — a grinder's team that thrives on volume and cohesion.",
    "roster": [
     {
@@ -38554,6 +39734,65 @@
     }
    },
    "rank": 21,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.431,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.721,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.458,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.416,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.423,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.368,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.38,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Anubis"
+   ],
    "bio": "Setting Sun are a Singaporean team with a Minor League title and one of the better map records in the pool, a well-rounded outfit led by jaelyo.",
    "roster": [
     {
@@ -40214,6 +41453,65 @@
     }
    },
    "rank": 22,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.415,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.39,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.559,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.615,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.306,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.234,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.275,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Anubis"
+   ],
    "bio": "Aeternum are a Singaporean team with a Minor League title in the cabinet, built around the veteran presence of Marsinss and CrimsynFlames.",
    "roster": [
     {
@@ -41761,6 +43059,65 @@
     }
    },
    "rank": 23,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.322,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.503,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.679,
+     "real": false
+    },
+    "Cache": {
+     "w": 2,
+     "l": 1,
+     "g": 3,
+     "wr": 0.667,
+     "real": true
+    },
+    "Tuscan": {
+     "w": 1,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
+     "real": true
+    },
+    "Vertigo": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.444,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.688,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Anubis",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Vertigo"
+   ],
    "bio": "Sacred Raven claimed the 2023 BPL Challengers Stage, a Singaporean team led by in-game leader capplecrow whose disciplined structure has delivered on the big stage before.",
    "roster": [
     {
@@ -44390,6 +45747,65 @@
     }
    },
    "rank": 24,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.71,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.43,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.53,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.664,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.627,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.71,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.357,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Anubis",
+    "Dust2"
+   ],
    "bio": "Moonlit Tempo are the 2025 BPL Challengers Stage champions, a Singaporean team led by the sharp-shooting SashimiGoesBloop and very much a name on the rise.",
    "roster": [
     {
@@ -46307,6 +47723,65 @@
     }
    },
    "rank": 25,
+   "mapStats": {
+    "Mirage": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.679,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.545,
+     "real": false
+    },
+    "Inferno": {
+     "w": 1,
+     "l": 2,
+     "g": 3,
+     "wr": 0.333,
+     "real": true
+    },
+    "Cache": {
+     "w": 1,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
+     "real": true
+    },
+    "Tuscan": {
+     "w": 3,
+     "l": 0,
+     "g": 3,
+     "wr": 1.0,
+     "real": true
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.663,
+     "real": false
+    },
+    "Anubis": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.625,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Inferno",
+    "Cache"
+   ],
    "bio": "Bloom E-Sports are a Singaporean team with a positive map record and room to grow, an outfit still finding its ceiling.",
    "roster": [
     {
@@ -48927,6 +50402,65 @@
     }
    },
    "rank": 26,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.31,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.482,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.451,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.627,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.543,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.508,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.358,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Anubis"
+   ],
    "bio": "Kiedz are a Singaporean team with a Minor League title and a deep well of experience, headlined by Illus — a durable outfit that rarely beats itself.",
    "roster": [
     {
@@ -50203,6 +51737,65 @@
     }
    },
    "rank": 27,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.647,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.472,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.549,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.611,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.582,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.487,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.631,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Vertigo"
+   ],
    "bio": "Caelum Scala are a Singaporean team with a Minor League crown and a podium finish at Audax Esse 2025, where they reached the semifinals. Gritty and organized, they punch above their seed.",
    "roster": [
     {
@@ -52928,6 +54521,65 @@
     }
    },
    "rank": 28,
+   "mapStats": {
+    "Mirage": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.717,
+     "real": false
+    },
+    "Dust2": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.434,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.751,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.751,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.372,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.363,
+     "real": false
+    },
+    "Anubis": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.615,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Tuscan"
+   ],
    "bio": "DiamondOnes are a Singaporean team who announced themselves with a run to third place at Audax Esse 2025, upsetting higher seeds along the way. A young outfit trending upward.",
    "roster": [
     {
@@ -54927,6 +56579,65 @@
     }
    },
    "rank": 29,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.392,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.509,
+     "real": false
+    },
+    "Inferno": {
+     "w": 1,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
+     "real": true
+    },
+    "Cache": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.475,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.354,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.422,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.484,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Mirage"
+   ],
    "bio": "Technomancy are a Singaporean team still building their story, a competitive outfit capable of springing a surprise in the group stage.",
    "roster": [
     {
@@ -56287,6 +57998,65 @@
     }
    },
    "rank": 30,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.479,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.373,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.529,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.516,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.375,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.417,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.286,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Inferno",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Anubis",
+    "Dust2"
+   ],
    "bio": "Team Neverseen are a Singaporean team with a long history in the league, an even-money outfit that has fed talent to bigger names while remaining a familiar face in every bracket.",
    "roster": [
     {
@@ -58700,6 +60470,65 @@
     }
    },
    "rank": 31,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.628,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.509,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.326,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.578,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.594,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.376,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.5,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Inferno",
+    "Vertigo"
+   ],
    "bio": "Round Loss Bonus are a Singaporean team with a playful name and a serious edge, a scrappy outfit that makes opponents earn every round.",
    "roster": [
     {
@@ -60483,6 +62312,65 @@
     }
    },
    "rank": 32,
+   "mapStats": {
+    "Mirage": {
+     "w": 1,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
+     "real": true
+    },
+    "Dust2": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.635,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.562,
+     "real": false
+    },
+    "Cache": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.75,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.85,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.85,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.5,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Anubis"
+   ],
    "bio": "Flood Flashers fly the flag for Japan, a team with a Minor League title and a stellar win rate built around the explosive cassiopeiarawr. One of the most exciting up-and-coming names in the pool.",
    "roster": [
     {
@@ -61704,6 +63592,65 @@
     }
    },
    "rank": 33,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.692,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.311,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.317,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.517,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.499,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.647,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.583,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Inferno"
+   ],
    "bio": "Ukiyo are a Singaporean team built around the individual brilliance of Acryii_, an even-money outfit with the talent to trouble anyone when their star fires.",
    "roster": [
     {
@@ -63724,6 +65671,65 @@
     }
    },
    "rank": 34,
+   "mapStats": {
+    "Mirage": {
+     "w": 1,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
+     "real": true
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.593,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.567,
+     "real": false
+    },
+    "Cache": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.573,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.549,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 2,
+     "g": 2,
+     "wr": 0.0,
+     "real": true
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.445,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Anubis"
+   ],
    "bio": "0v3 are a Singaporean team with a Minor League crown, headlined by the elite solo-queue fragger Navikuun. A dangerous team on their day.",
    "roster": [
     {
@@ -66229,6 +68235,65 @@
     }
    },
    "rank": 35,
+   "mapStats": {
+    "Mirage": {
+     "w": 1,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
+     "real": true
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.34,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.507,
+     "real": false
+    },
+    "Cache": {
+     "w": 2,
+     "l": 0,
+     "g": 2,
+     "wr": 1.0,
+     "real": true
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.421,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.57,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.563,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Tuscan"
+   ],
    "bio": "division20 are a Singaporean team stacked with individual talent — Spoods, Eroxis and Laburi rank among the pool's sharpest fraggers — and a team whose ceiling far outstrips its standing.",
    "roster": [
     {
@@ -68600,6 +70665,65 @@
     }
    },
    "rank": 36,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.592,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.43,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.783,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.673,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.43,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.401,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.702,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Inferno",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Tuscan"
+   ],
    "bio": "99Lives are a Singaporean team with a winning record and plenty of fight, an outfit that has shown flashes of a deeper run.",
    "roster": [
     {
@@ -70587,6 +72711,65 @@
     }
    },
    "rank": 37,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.412,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.373,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.618,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.518,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.224,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.255,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.459,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Inferno",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Vertigo"
+   ],
    "bio": "Fruit Basket are a Singaporean team whose Minor League title dates to the league's early years, anchored now by the reliable Hakase.",
    "roster": [
     {
@@ -71839,6 +74022,65 @@
     }
    },
    "rank": 38,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.335,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.356,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.476,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.378,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.519,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.477,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.451,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Dust2"
+   ],
    "bio": "Cyanide are a cross-region team blending Southeast Asian and North American talent, a rebuilding outfit still searching for consistency.",
    "roster": [
     {
@@ -73884,6 +76126,65 @@
     }
    },
    "rank": 39,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.832,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.85,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.85,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.564,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.678,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.85,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.586,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Cache",
+    "Anubis"
+   ],
    "bio": "xPlosiv boast one of the best win rates in the entire league, a Singaporean team with a Minor League title and rising star tapiyokaaa leading the charge — a small sample, but a fearsome one.",
    "roster": [
     {
@@ -74879,6 +77180,65 @@
    "star": false,
    "playoffs": {},
    "rank": 40,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.58,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.563,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.717,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.723,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.752,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.823,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.563,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Anubis"
+   ],
    "bio": "5PERCENT are a Singaporean team with a Minor League crown and the efficient Solaonix at the sharp end, a compact roster that overachieves relative to its size.",
    "roster": [
     {
@@ -76842,6 +79202,65 @@
     }
    },
    "rank": 41,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.401,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.393,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.564,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.324,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.34,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.448,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.65,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Anubis",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Cache",
+    "Tuscan"
+   ],
    "bio": "Aspire are a Singaporean team living up to their name, a developing outfit chasing its first taste of silverware.",
    "roster": [
     {
@@ -79241,6 +81660,65 @@
    "star": false,
    "playoffs": {},
    "rank": 42,
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.28,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.18,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.18,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 2,
+     "g": 2,
+     "wr": 0.0,
+     "real": true
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 1,
+     "g": 1,
+     "wr": 0.416,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.454,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.415,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Cache",
+    "Inferno"
+   ],
    "bio": "Astral Bloom are a Japanese team and one of the league's newest entries, an outfit early in its competitive journey and building toward better days.",
    "roster": [
     {
