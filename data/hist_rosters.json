@@ -23095,5 +23095,1092 @@
     }
    ]
   }
+ ],
+ "bot-pro-cup-2026": [
+  {
+   "team": "BeeHyve",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Tigeraxd",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "_froggiee",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "TiniiBee",
+     "captain": true,
+     "curSlug": null
+    },
+    {
+     "name": "Hyvred",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "keikatamori",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Eiromancers",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Skiazelle",
+     "captain": true,
+     "curSlug": null
+    },
+    {
+     "name": "boopydoopy",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "RaviasEir",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "kanarivt",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "kaikaijins",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Rebellium",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Sadgeboi",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Aranionja",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Tosaki Mimi",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "rebebx",
+     "captain": true,
+     "curSlug": null
+    },
+    {
+     "name": "obvMX",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Nightshade",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Kyu",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "KydaSana",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "JigglyPingu",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "yinnzx",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "ItzMaigo",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Crimson Meridian",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Just_Ansel",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "kimmixd",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Xevaria",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Karasu",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Dazeido",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Sakura Sovereign",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Hanabusa Lisa",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Kaga Sumire",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Asumi Sena",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Ichinose Uruha",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Shuvimo",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Kagerou Collective",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "HakoP",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Kamito",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Sendo Yuuhi",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Aizawa Ema",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "FumishiroYummy",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Seraph Dynasty",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "AnjuValse",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Narin Mikure",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Nekota Tsuna",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Choya Hanabi",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Miki Nakai",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Ivory Vanguard",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "xmeijixx",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "ruamamiya",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Michimouto",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "bodexx",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Nataleste",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Lunar Cadence",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "briant",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Yumeno Akari",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Kogara Toto",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Ginjo Saine",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Tatsumaki Chise",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Voidborne",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "VSSMB",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "JustYoong",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "xaeela",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "kyomikoo",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "SachiMizora",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Onyx Legion",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Ryujin",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "NOTORIOUS47",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "ErineRurie",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "CryingNutz",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "ostc.x",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Syzygy",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Xyrren",
+     "captain": true,
+     "curSlug": null
+    },
+    {
+     "name": "AyanOwOT",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "akuluvr",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "sengjung123",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "leachubby",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Stormfront",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "cwstalVT",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "emmabutnormal",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "yxie",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Dianya",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "pastellows",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Northwind",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Airizu",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "MilliannaVT",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "MiyaLeile",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Karoni",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "MizukiiMoon",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Frostbyte",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "AuraSinVT",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "iceenblue",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "itswinter__",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "voxslefthorn",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "shirou_kitakami",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Radiant Coil",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "JStarWolf",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Aweberry",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "kenzieyii",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "kimonra",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Laurel",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Emberfall",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "KurmitSuicidal",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "swoopsy",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "YinghuVT",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "RumiRumi",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "PenguChi",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Nightbloom",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Nightveil Lycoris",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Yarimell",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "rittan0x0",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "StrandedPond",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "SeaEmV",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Supernova",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "L2Strike",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Jenakai",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "rach.elx_",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Hamzyy",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "KiokoCheiko",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Aurora Pact",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Niamocha",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "LeilaMayadah",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "haze_vt",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Arya Kuroha",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "stitchkyui",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Echo Cipher",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "okjustsmd",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "CodedEcho",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "thehidz",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "twentyrosie",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "anju_o",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Wraithborne",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Pattsuu",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "ProPHOcy_",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "voidnw",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "RIHSURI",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "rattecs",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Dreamstate",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "yumezukiyomi",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "moricorovt",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Bajiru_EN",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "yukihimeowo",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "bloodbane",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Albion Rising",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Zarlard",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "PSYSTRA",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Aleaka",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Nerfox",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Hanyachi",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Thunderveil",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Vyphogrid",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Yano Kuromu",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "miruaamaochi",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Kaminari Qpi",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Amayui Moka",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Mourningstar",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "TearsofDeath",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "arcimoon",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Jira Jisaki",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "cherri_vt",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "EXaCT",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Starling Coven",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "afayctionate",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "sakistars",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "nyxcatto",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "scorn",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Kurumi Noah",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Feral Instinct",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "qebo",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Loonatic",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "wushii",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "TRPaki",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "MKakili",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Wanderlight",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "itswendy_",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "dla.wo",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "tiger.lark",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "vixi",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "SoapiiSereia",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Prism Divide",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "XueQiii",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "AkanersVT",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Syrrith",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "sayupurin",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Codiant",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Tidebreakers",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "sURF",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "djsalty_",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Yakumo Beni",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "HiguVT",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "KrinoJ",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Nullpoint",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "zhizyii",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "candybar_isblue",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "UtsuhoNull",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "ssseiso",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Kaito_Oshino",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Solstice",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Luneforrune",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Jasticar",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Spinafex",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Yaekia",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Riko Solari",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  },
+  {
+   "team": "Ashfall",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "AkiraTsukiyono",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Kaga Nazuna",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Juno Umezono",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "aoi_chibi",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Kojadayo",
+     "captain": false,
+     "curSlug": null
+    }
+   ]
+  }
  ]
 }

@@ -113,7 +113,8 @@ def process_manual(raw, team_map, alias):
             dn, sl = resolve(s["name"])
             standings.append({"rank": i + 1, "name": dn, "teamSlug": sl, "w": s["w"], "l": s["l"]})
         stages_out.append({"id": st["id"], "name": st["name"], "format": st["format"],
-                           "bestOf": st.get("bestOf", 1), "rounds": rounds, "standings": standings})
+                           "bestOf": st.get("bestOf", 1), "rounds": rounds, "standings": standings,
+                           "teams": [resolve(t) for t in st.get("teams", [])]})
     # combined bracket for the feeds (results/H2H/records) — one round-group per stage-round
     bracket = []
     for so in stages_out:

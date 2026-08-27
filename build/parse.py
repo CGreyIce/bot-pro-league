@@ -787,14 +787,21 @@ def main():
                 "teamSlug": tm["slug"] if tm else None,
                 "players": pls,
             })
-        # site-run (manual) events have no scraped line-ups — build the attending list
-        # from every participating team's current roster so the module still shows.
-        if not att and tr["slug"] in manual_slugs_a:
-            standings = [s for st in tr["stages"] for s in st.get("standings", [])] \
-                if tr.get("stages") else tr["standings"]
-            seen_t = set()
-            for s in standings:
-                ts = s.get("teamSlug")
+        # site-run (manual) events: fill in any participating team not already covered by a
+        # recorded line-up, using that team's current roster (additive, so partial hist_rosters
+        # — e.g. only the ad-hoc amateur teams — still leave the pro teams' rosters showing).
+        if tr["slug"] in manual_slugs_a:
+            # participating team slugs: from stage team lists (works before any game is played)
+            # plus standings, so every roster shows even in a brand-new event.
+            part = []
+            if tr.get("stages"):
+                for st in tr["stages"]:
+                    part += [t[1] for t in st.get("teams", []) if isinstance(t, (list, tuple)) and t[1]]
+                    part += [s.get("teamSlug") for s in st.get("standings", [])]
+            else:
+                part += [s.get("teamSlug") for s in tr["standings"]]
+            seen_t = {a.get("teamSlug") for a in att if a.get("teamSlug")}
+            for ts in part:
                 if not ts or ts in seen_t:
                     continue
                 seen_t.add(ts)

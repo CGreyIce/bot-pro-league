@@ -262,6 +262,7 @@ def stage_to_standard(stage):
     return {
         "id": stage["id"], "name": stage["name"], "format": stage["format"],
         "bestOf": stage.get("bestOf", 1), "roundTitles": stage.get("roundTitles", {}),
+        "teams": list(stage.get("teams", [])),
         "matches": out_matches, "standings": stage_standings(stage, res),
     }
 
@@ -342,9 +343,12 @@ def to_standard(man):
             # only crown if every match played
             if st and all(m.get("sa") is not None for m in last["matches"]) and last["matches"]:
                 champion = st[0]["name"]
-    # all participants (unique across stages)
+    # all participants (unique). Playoff brackets re-enter a subset of the field (or, for a
+    # not-yet-seeded event, placeholder slots) — so count the opening group stages when present.
+    _grp = [s for s in man["stages"] if s["format"] != "single_elim"]
+    _src = _grp if _grp else man["stages"]
     seen, parts = set(), []
-    for s in man["stages"]:
+    for s in _src:
         for t in s["teams"]:
             if t and t not in seen:
                 seen.add(t); parts.append({"id": len(parts) + 1, "s": len(parts) + 1, "n": t})
