@@ -111,7 +111,7 @@ const routes = {
   "results": renderResults, "records": renderRecords, "compare": renderCompare,
   "transfers": renderTransfers, "matches": renderMatches, "awards": renderAwards, "maps": renderMaps,
   "compareteams": renderTeamCompare, "stats": renderStats,
-  "admin": renderAdmin, "match": renderMatch,
+  "admin": renderAdmin, "match": renderMatch, "predict": renderPredict,
 };
 function parseHash(){
   const h = location.hash.replace(/^#\/?/, "");
@@ -1792,6 +1792,7 @@ function renderTournament(slug){
         <div class="ph-sub">${fmtDate(tr.date)} · ${tr.format} · ${tr.participantCount} teams</div>
         <div style="margin-top:12px;font-size:15px">${champLabel(tr)}:
           <strong style="font-size:18px;font-family:'Rajdhani'">${crest(tr.champion, tr.championTeam)}</strong></div>
+        ${(tr.stages && predGroups(tr).length) ? `<a class="predict-btn" href="#/predict/${tr.slug}">🔮 ${tr.champion?'Predictions & leaderboard':'Make your predictions'}</a>` : ''}
       </div>
       ${champT&&champT.logo?`<img class="crest" src="${esc(champT.logo)}" alt="">`:''}
     </div>
@@ -1930,6 +1931,204 @@ function setupNav(){
   menu.addEventListener("click", e=>{ if(e.target.closest("a")) close(); });   // close after picking a link
   window.addEventListener("hashchange", close);                                 // and on any route change
 }
+// ================= PREDICTIONS =================
+const PredictBackend = (function(){
+  const cfg = window.BPL_FIREBASE || {};
+  const isShared = !!(cfg.apiKey && cfg.projectId);
+  let db = null, ready = null;
+  function load(){
+    if(ready) return ready;
+    ready = new Promise((resolve,reject)=>{
+      if(!isShared){ resolve(null); return; }
+      const add=(src,cb)=>{ const s=document.createElement('script'); s.src=src; s.onload=cb; s.onerror=reject; document.head.appendChild(s); };
+      add("https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js", ()=>{
+        add("https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js", ()=>{
+          try{ firebase.initializeApp(cfg); db=firebase.firestore(); resolve(db); }catch(e){ reject(e); }
+        });
+      });
+    });
+    return ready;
+  }
+  const lkey = p => `bpl_pred_${p.event}_${p.uid}`;
+  return {
+    isShared,
+    async save(pred){
+      if(isShared){ await load(); await db.collection('predictions').doc(pred.event+'__'+pred.uid).set(pred); }
+      else { localStorage.setItem(lkey(pred), JSON.stringify(pred)); }
+    },
+    async loadAll(event){
+      if(isShared){ await load(); const snap=await db.collection('predictions').where('event','==',event).get(); return snap.docs.map(d=>d.data()); }
+      const out=[]; for(let i=0;i<localStorage.length;i++){ const k=localStorage.key(i); if(k.indexOf('bpl_pred_'+event+'_')===0){ try{ out.push(JSON.parse(localStorage.getItem(k))); }catch(e){} } } return out;
+    },
+    async loadMine(event, uid){
+      if(isShared){ await load(); const d=await db.collection('predictions').doc(event+'__'+uid).get(); return d.exists?d.data():null; }
+      const v=localStorage.getItem('bpl_pred_'+event+'_'+uid); return v?JSON.parse(v):null;
+    }
+  };
+})();
+function predUser(){
+  let uid=localStorage.getItem('bpl_uid');
+  if(!uid){ uid='u'+Math.random().toString(36).slice(2,10)+Date.now().toString(36); localStorage.setItem('bpl_uid',uid); }
+  return { uid, name: localStorage.getItem('bpl_pname')||'' };
+}
+const BR16 = [1,16,8,9,5,12,4,13,3,14,6,11,7,10,2,15];
+function predGroups(tr){ return (tr.stages||[]).filter(s=>s.format!=='single_elim'); }
+function predSeeds(tr, pred){                     // 16 qualifiers from group picks (winners 1-8, runners 9-16)
+  const gs=predGroups(tr); const w=[],r=[];
+  gs.forEach(g=>{ const p=(pred.groups||{})[g.name]||[]; w.push(p[0]||null); r.push(p[1]||null); });
+  return w.concat(r);
+}
+function bracketRounds(seeds, picks){
+  if(seeds.some(s=>!s)) return null;              // groups not fully picked yet
+  let matches=[]; for(let i=0;i<16;i+=2) matches.push([seeds[BR16[i]-1], seeds[BR16[i+1]-1]]);
+  const rounds=[]; let r=1;
+  while(true){
+    const wk = matches.map((m,i)=>({a:m[0],b:m[1],key:`r${r}m${i}`,pick:picks[`r${r}m${i}`]||null}));
+    rounds.push(wk);
+    if(matches.length===1) break;
+    const win = wk.map(m=>m.pick);
+    const nxt=[]; for(let i=0;i<win.length;i+=2) nxt.push([win[i],win[i+1]]);
+    matches=nxt; r++;
+  }
+  return rounds;
+}
+function prunePicks(rounds, picks){                // drop picks whose team is no longer in its matchup
+  let changed=false;
+  (rounds||[]).forEach(rd=>rd.forEach(m=>{
+    if(m.pick && m.pick!==m.a && m.pick!==m.b){ delete picks[m.key]; changed=true; }
+  }));
+  return changed;
+}
+function predPlacements(rounds){                   // predicted champ / runner-up / SF losers / QF losers
+  if(!rounds) return {champ:null,ru:null,sf:[],qf:[]};
+  const R=rounds.length; const fin=rounds[R-1][0];
+  const champ=fin.pick||null, ru=champ?(champ===fin.a?fin.b:fin.a):null;
+  const loser=m=>m.pick?(m.pick===m.a?m.b:m.a):null;
+  const sf=R>=2?rounds[R-2].map(loser).filter(Boolean):[];
+  const qf=R>=3?rounds[R-3].map(loser).filter(Boolean):[];
+  return {champ, ru, sf, qf};
+}
+function actualResults(tr){
+  if(!tr.champion) return null;
+  const groups={}; predGroups(tr).forEach(g=>{ groups[g.name]=(g.standings||[]).slice(0,2).map(s=>s.name); });
+  const fs=tr.finalStandings||[]; const has=labels=>fs.filter(s=>labels.includes(s.result)).map(s=>s.name);
+  return { groups, champ:(fs.find(s=>s.result==='Champion')||{}).name,
+           ru:(fs.find(s=>s.result==='Runner-up')||{}).name,
+           f4:has(['Champion','Runner-up','3rd Place','4th Place']),
+           f8:has(['Champion','Runner-up','3rd Place','4th Place','Quarterfinals']) };
+}
+function scorePrediction(pred, tr, actual){
+  if(!actual) return null;
+  let pts=0;
+  Object.entries(pred.groups||{}).forEach(([g,picks])=>{
+    const act=actual.groups[g]||[];
+    (picks||[]).forEach((team,i)=>{ if(team && act.includes(team)){ pts+=3; if(act[i]===team) pts+=1; } });
+  });
+  const pl=predPlacements(bracketRounds(predSeeds(tr,pred), pred.bracket||{}));
+  if(pl.champ && pl.champ===actual.champ) pts+=10;
+  if(pl.ru && (pl.ru===actual.champ||pl.ru===actual.ru)) pts+=6;
+  pl.sf.forEach(t=>{ if(actual.f4.includes(t)) pts+=4; });
+  pl.qf.forEach(t=>{ if(actual.f8.includes(t)) pts+=2; });
+  return pts;
+}
+
+let _pred = null, _predTr = null;
+async function renderPredict(slug){
+  const tr = (DATA.tournaments||[]).find(t=>t.slug===slug);
+  if(!tr){ app.innerHTML = notFound("Event"); return; }
+  if(!tr.stages || !predGroups(tr).length){ app.innerHTML = `<div class="notice">Predictions are only available for group-stage events.</div>`; return; }
+  _predTr = tr;
+  const u = predUser();
+  _pred = await PredictBackend.loadMine(slug, u.uid) || { event:slug, uid:u.uid, name:u.name, groups:{}, bracket:{} };
+  if(u.name && !_pred.name) _pred.name = u.name;
+  drawPredict();
+}
+function drawPredict(){
+  const tr=_predTr, pred=_pred; const gs=predGroups(tr);
+  const u=predUser();
+  const teamOpt=(sel, list)=>`<option value="">—</option>`+list.map(t=>`<option value="${esc(t[0])}" ${sel===t[0]?'selected':''}>${esc(t[0])}</option>`).join("");
+  const groupCards = gs.map(g=>{
+    const pk=(pred.groups[g.name]||[]);
+    return `<div class="pg-card"><div class="pg-h">${esc(g.name)}</div>
+      <label class="pg-l">1st <select class="pg-sel" data-g="${esc(g.name)}" data-pos="0">${teamOpt(pk[0], g.teams)}</select></label>
+      <label class="pg-l">2nd <select class="pg-sel" data-g="${esc(g.name)}" data-pos="1">${teamOpt(pk[1], g.teams)}</select></label></div>`;
+  }).join("");
+  const seeds=predSeeds(tr,pred);
+  let rounds=bracketRounds(seeds, pred.bracket);
+  if(rounds && prunePicks(rounds, pred.bracket)) rounds=bracketRounds(seeds, pred.bracket);
+  const RL=["Round of 16","Quarterfinals","Semifinals","Final"];
+  const bracketHtml = !rounds
+    ? `<p class="muted">Pick a 1st and 2nd for all ${gs.length} groups to unlock the bracket.</p>`
+    : `<div class="bkt-wrap"><div class="pbk">${rounds.map((rd,ri)=>`<div class="pbk-col"><div class="pbk-rt">${RL[ri]||('Round '+(ri+1))}</div>${rd.map(m=>{
+        const bt=(t,other)=>`<div class="pbk-team ${m.pick===t?'pk':''} ${t?'':'tbd'}" data-key="${m.key}" data-team="${esc(t||'')}">${t?crestMini(t):'<span class=muted>TBD</span>'}</div>`;
+        return `<div class="pbk-m">${bt(m.a)}${bt(m.b)}</div>`;
+      }).join("")}</div>`).join("")}</div></div>`;
+  const pl=predPlacements(rounds);
+  const actual=actualResults(tr);
+  const myScore = actual ? scorePrediction(pred, tr, actual) : null;
+  app.innerHTML = `
+    <div class="crumb"><a href="#/tournament/${tr.slug}">${esc(tr.name)}</a><span class="sep">/</span>Predictions</div>
+    <h2 class="section-title"><span class="accent-bar"></span>Predictions · ${esc(tr.name)}
+      <span class="muted" style="font-size:11px">${PredictBackend.isShared?'shared leaderboard':'saved in your browser'}</span></h2>
+    <div class="notice" style="text-align:left;margin-bottom:14px">
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+        <strong>Your name:</strong>
+        <input id="pred-name" class="adm-in" style="max-width:220px;margin:0" placeholder="e.g. Alice" value="${esc(pred.name||'')}">
+        <span id="pred-status" class="muted" style="font-size:12px">${tr.champion?'Results are in — predictions locked.':'Pick your group qualifiers and bracket, then Save.'}</span>
+      </div>
+    </div>
+    ${tr.champion?'':`<h3 class="rec-group">Group Qualifiers <span class="muted" style="font-size:11px">top 2 advance</span></h3>
+    <div class="pg-grid">${groupCards}</div>
+    <h3 class="rec-group" style="margin-top:18px">Playoff Bracket</h3>
+    ${bracketHtml}
+    <div style="margin-top:12px;display:flex;gap:10px;align-items:center">
+      <button id="pred-save" class="adm-btn" style="max-width:220px">Save prediction</button>
+      <span class="muted" style="font-size:12px">Your champion: <strong>${pl.champ?esc(pl.champ):'—'}</strong></span>
+      <span id="pred-savemsg" class="muted" style="font-size:12px"></span>
+    </div>`}
+    ${myScore!=null?`<div class="notice" style="margin-top:14px"><strong>Your score: ${myScore} pts</strong></div>`:''}
+    <h2 class="section-title" style="margin-top:24px"><span class="accent-bar"></span>Leaderboard</h2>
+    <div id="pred-board"><p class="muted">Loading…</p></div>`;
+  // group selects
+  app.querySelectorAll('.pg-sel').forEach(sel=>sel.onchange=()=>{
+    const g=sel.dataset.g, pos=+sel.dataset.pos;
+    (pred.groups[g]=pred.groups[g]||[])[pos]=sel.value||null;
+    drawPredict();
+  });
+  // bracket clicks
+  app.querySelectorAll('.pbk-team').forEach(el=>el.onclick=()=>{
+    const t=el.dataset.team; if(!t) return;
+    pred.bracket[el.dataset.key]=t; drawPredict();
+  });
+  const nameInput=$("#pred-name"); if(nameInput) nameInput.oninput=()=>{ pred.name=nameInput.value; localStorage.setItem('bpl_pname', nameInput.value.trim()); };
+  const saveBtn=$("#pred-save");
+  if(saveBtn) saveBtn.onclick=async ()=>{
+    if(!(pred.name||'').trim()){ $("#pred-savemsg").textContent="Enter a name first."; return; }
+    saveBtn.disabled=true; $("#pred-savemsg").textContent="Saving…";
+    pred.name=pred.name.trim(); pred.ts=Date.now();
+    try{ await PredictBackend.save(pred); $("#pred-savemsg").style.color="var(--good)"; $("#pred-savemsg").textContent="Saved!"; loadPredBoard(); }
+    catch(e){ $("#pred-savemsg").style.color="var(--accent2,#ff6b6b)"; $("#pred-savemsg").textContent="Save failed: "+e.message; }
+    saveBtn.disabled=false;
+  };
+  loadPredBoard();
+}
+function crestMini(name){ const t=teamByName(name); return `${t?`<img class="pbk-logo" src="${esc(t.logo||'')}" alt="">`:''}<span class="pbk-nm">${esc(name)}</span>`; }
+async function loadPredBoard(){
+  const box=$("#pred-board"); if(!box) return; const tr=_predTr;
+  let all=[]; try{ all=await PredictBackend.loadAll(tr.slug); }catch(e){ box.innerHTML=`<p class="muted">Couldn't load leaderboard: ${esc(e.message)}</p>`; return; }
+  if(!all.length){ box.innerHTML='<p class="muted">No predictions yet — be the first!</p>'; return; }
+  const actual=actualResults(tr);
+  const rows=all.map(p=>({name:p.name||'anon', champ:(predPlacements(bracketRounds(predSeeds(tr,p),p.bracket||{}))).champ,
+                          score: actual?scorePrediction(p,tr,actual):null}))
+    .sort((a,b)=> (b.score||0)-(a.score||0) || (a.name||'').localeCompare(b.name||''));
+  box.innerHTML=`<div class="tablewrap" style="max-width:520px"><table class="data">
+    <thead><tr><th class="no-sort rankcol">#</th><th class="no-sort">Predictor</th><th class="no-sort">Champion pick</th>${actual?'<th class="no-sort">Score</th>':''}</tr></thead>
+    <tbody>${rows.map((r,i)=>`<tr><td class="rankcol">${i+1}</td><td>${esc(r.name)}</td>
+      <td>${r.champ?teamCell(r.champ):'<span class="muted">—</span>'}</td>
+      ${actual?`<td class="mono">${r.score!=null?r.score:'—'}</td>`:''}</tr>`).join("")}</tbody></table></div>
+    ${actual?'':'<p class="muted" style="font-size:12px;margin-top:8px">Scores appear once the event finishes.</p>'}`;
+}
+
 loadData().then(async d=>{
   DATA = d;
   try{ _adminOn = ((await (await fetch("/api/state")).json()).admin === true); }catch(e){ _adminOn = false; }

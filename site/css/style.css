@@ -528,6 +528,25 @@ textarea.adm-in{resize:vertical}
 .shf-rat{flex:0 0 auto;font-family:monospace;font-size:11px;color:var(--muted)}
 .shf-warn{font-size:10px;font-weight:700;color:#ff6b6b;border:1px solid rgba(255,107,107,.4);border-radius:4px;padding:1px 4px;margin-left:auto}
 textarea.adm-in{resize:vertical;font-family:inherit}
+/* predictions */
+.predict-btn{display:inline-block;margin-top:12px;background:linear-gradient(135deg,#7b5cff,#ff5c3d);color:#fff;font-weight:700;font-size:13px;padding:8px 14px;border-radius:8px;text-decoration:none}
+.predict-btn:hover{filter:brightness(1.1)}
+.pg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.pg-card{border:1px solid var(--border);border-radius:9px;background:var(--panel);padding:10px 12px}
+.pg-h{font-family:'Rajdhani';font-weight:700;font-size:14px;margin-bottom:6px}
+.pg-l{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);margin:4px 0}
+.pg-sel{flex:1;min-width:0;background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:4px 6px;font-size:12px}
+.pbk{display:flex;gap:26px;min-width:min-content;padding:4px 0}
+.pbk-col{display:flex;flex-direction:column;justify-content:space-around;min-width:150px;gap:10px}
+.pbk-rt{font-family:'Rajdhani';font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);text-align:center;padding-bottom:4px}
+.pbk-m{display:flex;flex-direction:column;border:1px solid var(--border);border-radius:7px;overflow:hidden;background:var(--panel)}
+.pbk-team{display:flex;align-items:center;gap:6px;padding:6px 9px;font-size:12px;color:var(--muted);cursor:pointer;min-width:0}
+.pbk-team+.pbk-team{border-top:1px solid var(--border)}
+.pbk-team:hover:not(.tbd){background:rgba(123,92,255,.10)}
+.pbk-team.pk{background:rgba(123,92,255,.18);color:var(--text);font-weight:600}
+.pbk-team.tbd{cursor:default}
+.pbk-logo{height:16px;width:16px;object-fit:contain;flex-shrink:0}
+.pbk-nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 /* final standings */
 .fs-wrap{max-width:520px}
 .fs-table td{padding:7px 10px}
