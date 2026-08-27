@@ -1313,7 +1313,7 @@ async function renderAdmin(){
           return `<select id="veto-a" class="adm-in">${opts}</select>
           <span class="veto-vs">vs</span>
           <select id="veto-b" class="adm-in">${opts}</select>
-          <select id="veto-fmt" class="adm-in"><option value="bo1">Best of 1</option><option value="bo3" selected>Best of 3</option></select>
+          <select id="veto-fmt" class="adm-in"><option value="bo1">Best of 1</option><option value="bo3" selected>Best of 3</option><option value="bo5">Best of 5 (final)</option></select>
           <button id="veto-go" class="adm-btn" style="max-width:180px">Simulate veto</button>`;})()}
       </div>
       <div id="veto-out"></div>
@@ -1369,6 +1369,8 @@ function simulateVeto(A,B,fmt){
   let remaining=VETO_MAPS.slice(); const steps=[];
   const seq = fmt==="bo1"
     ? [[A,"ban"],[B,"ban"],[A,"ban"],[B,"ban"],[A,"ban"],[B,"ban"]]
+    : fmt==="bo5"
+    ? [[A,"ban"],[B,"ban"],[A,"pick"],[B,"pick"],[A,"pick"],[B,"pick"]]
     : [[A,"ban"],[B,"ban"],[A,"pick"],[B,"pick"],[A,"ban"],[B,"ban"]];
   for(const [team,action] of seq){
     const opp = team===A?B:A; let map, reason;
