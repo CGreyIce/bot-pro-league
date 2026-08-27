@@ -858,6 +858,23 @@ def main():
                 })
         tr["attending"] = att
 
+    # ---- in-progress ad-hoc tournament teams override a player's displayed team ----
+    # While a site-run event is live, show each ad-hoc-team player their tournament team instead
+    # of "—" (e.g. amateur free agents on a Bot Pro Cup roster). Ad-hoc = a team with no page
+    # (teamSlug is None). Pro players keep their real team. Reverts to "—" once the event finishes
+    # (a champion exists), where the promote-to-pro / disband rules then apply.
+    for tr in tournaments:
+        if tr["slug"] not in manual_slugs_a or tr.get("champion"):
+            continue
+        for row in tr.get("attending", []):
+            if row.get("teamSlug"):
+                continue                         # real team page -> keep its own roster/team
+            for pl in row["players"]:
+                p = slug_to_player.get(pl.get("slug"))
+                if p and p.get("pool") != "pro":
+                    p["team"] = row["team"]
+                    p["teamTourney"] = tr["name"]
+
     # ---- per-player team history (chronological, from attending rosters) ----
     player_teams = defaultdict(dict)  # player slug -> {teamName: {teamSlug, isPro, first, years}}
     for tr in sorted(tournaments, key=lambda t: t["date"]):
