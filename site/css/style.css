@@ -551,6 +551,16 @@ textarea.adm-in{resize:vertical;font-family:inherit}
 .pbk-team.tbd{cursor:default}
 .pbk-logo{height:16px;width:16px;object-fit:contain;flex-shrink:0}
 .pbk-nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pred-row{cursor:pointer}
+.pred-row:hover{background:rgba(123,92,255,.07)}
+.pred-row.sel{background:rgba(123,92,255,.14)}
+.pbk-ro .pbk-team{cursor:default}
+.pd-sub{font-size:11px;text-transform:uppercase;letter-spacing:.6px;margin-bottom:6px}
+.pd-groups{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px;margin-bottom:6px}
+.pd-g{border:1px solid var(--border);border-radius:7px;background:var(--panel);padding:6px 9px;font-size:12px}
+.pd-gh{font-family:'Rajdhani';font-weight:700;margin-right:6px}
+.pd-q{display:block;color:var(--muted)}
+.pd-q2{opacity:.75}
 /* final standings */
 .fs-wrap{max-width:520px}
 .fs-table td{padding:7px 10px}

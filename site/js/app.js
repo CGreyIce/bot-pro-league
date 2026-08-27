@@ -2124,15 +2124,40 @@ async function loadPredBoard(){
   let all=[]; try{ all=await PredictBackend.loadAll(tr.slug); }catch(e){ box.innerHTML=`<p class="muted">Couldn't load leaderboard: ${esc(e.message)}</p>`; return; }
   if(!all.length){ box.innerHTML='<p class="muted">No predictions yet — be the first!</p>'; return; }
   const actual=actualResults(tr);
-  const rows=all.map(p=>({name:p.name||'anon', champ:(predPlacements(bracketRounds(predSeeds(tr,p),p.bracket||{}))).champ,
+  const rows=all.map(p=>({p, name:p.name||'anon', champ:(predPlacements(bracketRounds(predSeeds(tr,p),p.bracket||{}))).champ,
                           score: actual?scorePrediction(p,tr,actual):null}))
     .sort((a,b)=> (b.score||0)-(a.score||0) || (a.name||'').localeCompare(b.name||''));
   box.innerHTML=`<div class="tablewrap" style="max-width:520px"><table class="data">
     <thead><tr><th class="no-sort rankcol">#</th><th class="no-sort">Predictor</th><th class="no-sort">Champion pick</th>${actual?'<th class="no-sort">Score</th>':''}</tr></thead>
-    <tbody>${rows.map((r,i)=>`<tr><td class="rankcol">${i+1}</td><td>${esc(r.name)}</td>
+    <tbody>${rows.map((r,i)=>`<tr class="pred-row" data-pi="${i}"><td class="rankcol">${i+1}</td><td>${esc(r.name)}</td>
       <td>${r.champ?teamCell(r.champ):'<span class="muted">—</span>'}</td>
       ${actual?`<td class="mono">${r.score!=null?r.score:'—'}</td>`:''}</tr>`).join("")}</tbody></table></div>
-    ${actual?'':'<p class="muted" style="font-size:12px;margin-top:8px">Scores appear once the event finishes.</p>'}`;
+    <div class="muted" style="font-size:11px;margin-top:4px">Click a name to see their full prediction.</div>
+    ${actual?'':'<p class="muted" style="font-size:12px;margin-top:4px">Scores appear once the event finishes.</p>'}
+    <div id="pred-detail" style="margin-top:14px"></div>`;
+  box.querySelectorAll('.pred-row').forEach(row=>row.onclick=()=>{
+    box.querySelectorAll('.pred-row').forEach(x=>x.classList.remove('sel')); row.classList.add('sel');
+    renderPredDetail(rows[+row.dataset.pi].p);
+  });
+}
+function renderPredDetail(pred){
+  const box=$("#pred-detail"); if(!box) return; const tr=_predTr;
+  const gs=predGroups(tr);
+  const groupHtml=`<div class="pd-groups">${gs.map(g=>{ const pk=(pred.groups||{})[g.name]||[];
+    return `<div class="pd-g"><span class="pd-gh">${esc(g.name.replace('Group ',''))}</span>
+      <span class="pd-q">1 ${pk[0]?esc(pk[0]):'—'}</span><span class="pd-q pd-q2">2 ${pk[1]?esc(pk[1]):'—'}</span></div>`; }).join("")}</div>`;
+  const rounds=bracketRounds(predSeeds(tr,pred), pred.bracket||{});
+  const RL=["Round of 16","Quarterfinals","Semifinals","Final"];
+  const bracketHtml = rounds ? `<div class="bkt-wrap"><div class="pbk pbk-ro">${rounds.map((rd,ri)=>`<div class="pbk-col"><div class="pbk-rt">${RL[ri]||('Round '+(ri+1))}</div>${rd.map(m=>{
+      const cell=x=>`<div class="pbk-team ${m.pick===x?'pk':''} ${x?'':'tbd'}"${x?predRAttr(x):''}>${x?crestMini(x):'<span class=muted>TBD</span>'}</div>`;
+      return `<div class="pbk-m">${cell(m.a)}${cell(m.b)}</div>`; }).join("")}</div>`).join("")}</div></div>`
+    : '<p class="muted">Bracket not filled in.</p>';
+  const pl=predPlacements(rounds);
+  box.innerHTML=`<h3 class="rec-group" style="margin-top:0">${esc(pred.name||'anon')}'s prediction
+    <span class="muted" style="font-size:11px">champion: ${pl.champ?esc(pl.champ):'—'}</span></h3>
+    <div class="pd-sub muted">Group qualifiers</div>${groupHtml}
+    <div class="pd-sub muted" style="margin-top:10px">Playoff bracket</div>${bracketHtml}`;
+  box.scrollIntoView({behavior:'smooth', block:'nearest'});
 }
 
 loadData().then(async d=>{
