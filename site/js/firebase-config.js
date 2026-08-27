@@ -23,8 +23,10 @@
 //        → copy the firebaseConfig values into the object below.
 //   5. Save this file, then Publish the site (Admin → Publish).
 window.BPL_FIREBASE = {
-  apiKey: "",
-  authDomain: "",
-  projectId: "",
-  // (storageBucket / messagingSenderId / appId are optional for predictions)
+  apiKey: "AIzaSyBHqs1-KFunG49VDMVv-v63MeZb7SmMuP4",
+  authDomain: "predictions-database.firebaseapp.com",
+  projectId: "predictions-database",
+  storageBucket: "predictions-database.firebasestorage.app",
+  messagingSenderId: "412239932219",
+  appId: "1:412239932219:web:4225d1be70d65e273d651e",
 };
