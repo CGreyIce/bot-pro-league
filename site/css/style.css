@@ -131,6 +131,13 @@ table.data td.name-cell{font-weight:600}
 
 /* level chip */
 .levelchip{display:inline-flex;align-items:center;justify-content:center;min-width:26px;height:22px;padding:0 6px;border-radius:5px;background:var(--accent-grad);color:#0b1120;font-weight:700;font-size:12px}
+/* FACEIT-style level chip, coloured by level */
+.lvl-chip{display:inline-flex;align-items:center;justify-content:center;min-width:26px;height:23px;padding:0 7px;border-radius:6px;font-family:'Rajdhani';font-weight:700;font-size:15px;line-height:1;color:#0a0c12;background:#c7ccd6}
+.lvl-chip.lvl-1,.lvl-chip.lvl-2{background:#c7ccd6;color:#12151c}
+.lvl-chip.lvl-3,.lvl-chip.lvl-4{background:#3ddc84;color:#053019}
+.lvl-chip.lvl-5,.lvl-chip.lvl-6,.lvl-chip.lvl-7{background:#ffce54;color:#463500}
+.lvl-chip.lvl-8,.lvl-chip.lvl-9{background:#ff8c42;color:#451c00}
+.lvl-chip.lvl-10{background:#ff4655;color:#fff}
 
 /* ---------- profile header ---------- */
 .profile-head{display:flex;align-items:center;gap:22px;padding:24px;background:linear-gradient(120deg,var(--panel2),var(--panel));border:1px solid var(--border);border-radius:12px;margin-bottom:18px;position:relative;overflow:hidden}

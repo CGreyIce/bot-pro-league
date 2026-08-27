@@ -124,11 +124,21 @@ def tier_for(rating):
             return name
     return "Iron"
 
-RATING_LO, RATING_HI = 0.86, 1.16
+# FACEIT-style Rating Points (ELO-like) derived from the shrunk rating, plus Level 1..10 from
+# the points via FACEIT thresholds. Points is the public metric; Level is f(points).
+def points_for(rating):
+    if rating is None:
+        return None
+    return int(max(100, min(3500, round(1150 + (rating - 1.0) * 3900))))
+_LEVEL_CUTS = [501, 751, 901, 1051, 1201, 1351, 1531, 1751, 2001]   # upper bound of L1..L9
 def level_for(rating):
-    # linear map of rating across [0.86, 1.16] onto BPL Level 1..10 (K=20 compressed scale)
-    lvl = int(round(1 + 9 * (rating - RATING_LO) / (RATING_HI - RATING_LO)))
-    return max(1, min(10, lvl))
+    pts = points_for(rating)
+    if pts is None:
+        return None
+    for i, cut in enumerate(_LEVEL_CUTS):
+        if pts < cut:
+            return i + 1
+    return 10
 
 WEIGHTS = {"kdr": 0.40, "kpm": 0.30, "mvppm": 0.15, "apm": 0.10, "wr": 0.05}
 
@@ -236,7 +246,7 @@ def compute_ratings(players):
         return (n * ratio + K * 1.0) / (n + K)
     for p in players:
         if p["maps"] <= 0:
-            p["rating"] = None; p["tier"] = None; p["level"] = None
+            p["rating"] = None; p["ratingPoints"] = None; p["tier"] = None; p["level"] = None
             continue
         n = p["maps"]
         kpm = p["kills"] / n; mvppm = p["mvp"] / n; apm = p["assists"] / n
@@ -248,6 +258,7 @@ def compute_ratings(players):
         rating = (WEIGHTS["kdr"] * r_kdr + WEIGHTS["kpm"] * r_kpm +
                   WEIGHTS["mvppm"] * r_mvp + WEIGHTS["apm"] * r_apm + WEIGHTS["wr"] * r_wr)
         p["rating"] = round(rating, 3)
+        p["ratingPoints"] = points_for(rating)
         p["tier"] = tier_for(rating)
         p["level"] = level_for(rating)
         p["kpm"] = round(kpm, 1)
@@ -666,8 +677,8 @@ def main():
     def solo_block(sp):
         return {"kills": sp["kills"], "deaths": sp["deaths"], "assists": sp["assists"], "mvp": sp["mvp"],
                 "wins": sp["wins"], "losses": sp["losses"], "maps": sp["maps"], "kdr": sp["kdr"],
-                "winrate": sp["winrate"], "rating": sp["rating"], "tier": sp["tier"],
-                "level": sp["level"], "soloRank": sp.get("soloRank"), "soloTotal": len(solo_ranked)}
+                "winrate": sp["winrate"], "rating": sp["rating"], "ratingPoints": sp.get("ratingPoints"),
+                "tier": sp["tier"], "level": sp["level"], "soloRank": sp.get("soloRank"), "soloTotal": len(solo_ranked)}
     tourney_names = {norm_key(p["name"]) for p in pro} | {norm_key(p["name"]) for p in amateur}
     for pool in (pro, amateur):
         for p in pool:

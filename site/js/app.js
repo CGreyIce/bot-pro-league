@@ -20,6 +20,8 @@ const TIER_VARS = {Champion:"--tier-champion",Grandmaster:"--tier-grandmaster",M
 function tierColor(t){ return `var(${TIER_VARS[t]||"--muted"})`; }
 function tierBadge(t){ if(!t) return '<span class="muted">—</span>'; return `<span class="tier"><span class="dot" style="background:${tierColor(t)}"></span>${esc(t)}</span>`; }
 function ratingBadge(r){ if(r==null) return '<span class="muted">—</span>'; return `<span class="rating-badge">${r.toFixed(2)}</span>`; }
+function pointsBadge(pts){ if(pts==null) return '<span class="muted">—</span>'; return `<span class="rating-badge">${pts}</span>`; }
+function levelChip(lvl){ if(!lvl) return '<span class="muted">—</span>'; return `<span class="lvl-chip lvl-${lvl}" title="Level ${lvl}">${lvl}</span>`; }
 function teamLogo(t){ return t && t.logo ? `<img src="${esc(t.logo)}" alt="">` : ''; }
 function teamCell(name){ const t=teamByName(name); if(!t) return `<span class="team-inline"><span class="muted">${esc(name||"—")}</span></span>`;
   return `<a class="team-inline" href="#/team/${t.slug}">${teamLogo(t)}<span>${esc(t.name)}</span></a>`; }
@@ -184,7 +186,7 @@ function renderHome(){
         </div>`:''}
         <h2 class="section-title"><span class="accent-bar"></span>Stat Leaders <span class="muted" style="font-size:11px">(pro)</span></h2>
         <div class="leaders">
-          ${leader("BPL Rating", byRating, p=>p.rating.toFixed(2))}
+          ${leader("Rating Points", byRating, p=>p.ratingPoints)}
           ${leader("Total Kills", byKills, p=>p.kills)}
           ${leader("K/D Ratio", byKdr, p=>p.kdr.toFixed(2))}
           ${leader("MVPs", byMvp, p=>p.mvp)}
@@ -219,7 +221,7 @@ function renderTeam(slug){
   const rosterHtml = roster.map(p=>`<a class="pcard-mini" href="#/player/${p.slug}">
       <div class="avatar">${initials(p.name)}</div>
       <div><div class="pm-name">${flag(p.iso)}${esc(p.name)}</div>
-      <div class="pm-sub">${esc(p.role||'—')} · ${p.rating?p.rating.toFixed(2):'—'} ${p.tier?'· '+esc(p.tier):''}</div></div>
+      <div class="pm-sub">${esc(p.role||'—')} ${p.ratingPoints!=null?'· '+p.ratingPoints+' pts · Lvl '+p.level:''}</div></div>
     </a>`).join("");
 
   const stat = (v,l,acc)=>`<div class="stat${acc?' accent':''}"><div class="sv">${v}</div><div class="sl">${l}</div></div>`;
@@ -329,18 +331,17 @@ function renderTeam(slug){
     </div>`;
 }
 
-let playersPool = "pro", playersSort = {key:"Rating", dir:-1};
+let playersPool = "pro", playersSort = {key:"Rating Points", dir:-1};
 function renderPlayers(){
   const pool = playersPool;
   const players = DATA.players[pool];
   const cols = [
     ["#", (p,i)=>i+1, "rankcol"],
-    ["Player", p=>`<span class="tm-rank">${playerLink(p)}${playersSort.key==="Rating"?rankDeltaBadge(p,"their last match"):''}</span>`, "name-cell", p=>p.name],
+    ["Player", p=>`<span class="tm-rank">${playerLink(p)}${playersSort.key==="Rating Points"?rankDeltaBadge(p,"their last match"):''}</span>`, "name-cell", p=>p.name],
     ["Team", p=>teamCell(p.team), "", p=>p.team],
     ["Role", p=>p.role?`<span class="pill role-pill">${esc(p.role)}</span>`:'—', "", p=>p.role],
-    ["Rating", p=>ratingBadge(p.rating), "mono", p=>p.rating==null?-1:p.rating],
-    ["Tier", p=>tierBadge(p.tier), "", p=>p.rating==null?-1:p.rating],
-    ["Lvl", p=>p.level?`<span class="levelchip">${p.level}</span>`:'—', "mono", p=>p.level||0],
+    ["Rating Points", p=>pointsBadge(p.ratingPoints), "mono", p=>p.ratingPoints==null?-1:p.ratingPoints],
+    ["Lvl", p=>levelChip(p.level), "", p=>p.level||0],
     ["K", p=>p.kills, "mono"],
     ["D", p=>p.deaths, "mono"],
     ["KDR", p=>p.kdr.toFixed(2), "mono", p=>p.kdr],
@@ -355,7 +356,7 @@ function renderPlayers(){
         k==="pro"?"Pro":k==="amateur"?"Amateur":"Solo Queue"} <span style="opacity:.7">${DATA.players[k].length}</span></button>`).join("")}
     </div>
     <div id="ptable"></div>`;
-  app.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{playersPool=b.dataset.pool;playersSort={key:"Rating",dir:-1};renderPlayers();});
+  app.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{playersPool=b.dataset.pool;playersSort={key:"Rating Points",dir:-1};renderPlayers();});
   drawPlayerTable(players, cols);
 }
 function drawPlayerTable(players, cols){
@@ -377,9 +378,9 @@ function renderPlayer(slug){
       <div class="ph-main">
         <h1>${flag(p.iso)}${esc(p.name)}</h1>
         <div class="ph-sub">${p.nat?esc(p.nat)+' · ':''}${p.role?esc(p.role)+' · ':''}${t?`<a href="#/team/${t.slug}" style="color:var(--link)">${esc(t.name)}</a>`:esc(p.team||'Teamless')} · ${poolName}</div>
-        <div style="margin-top:10px">${tierBadge(p.tier)} ${p.level?`<span class="levelchip">Lvl ${p.level}</span>`:''}</div>
+        <div style="margin-top:10px">${p.level?`${levelChip(p.level)}<span class="levelchip" style="margin-left:8px">Level ${p.level}</span>`:'<span class="muted">Unranked</span>'}</div>
       </div>
-      <div class="ph-rank"><div class="big">${p.rating!=null?p.rating.toFixed(2):'—'}</div><div class="lbl">BPL Rating</div></div>
+      <div class="ph-rank"><div class="big">${p.ratingPoints!=null?p.ratingPoints:'—'}</div><div class="lbl">Rating Points</div></div>
     </div>
     ${p.bio?`<div class="player-bio">${esc(p.bio)}</div>`:''}
     <div class="profile-grid">
@@ -390,8 +391,7 @@ function renderPlayer(slug){
         <div class="ib-row"><span class="k">Team</span><span class="v">${t?`<a href="#/team/${t.slug}" style="color:var(--link)">${esc(t.name)}</a>`:esc(p.team||'—')}</span></div>
         <div class="ib-row"><span class="k">Role</span><span class="v">${esc(p.role||'—')}</span></div>
         <div class="ib-row"><span class="k">Pool</span><span class="v">${poolName}</span></div>
-        <div class="ib-row"><span class="k">BPL Rating</span><span class="v">${p.rating!=null?p.rating.toFixed(2):'—'}</span></div>
-        <div class="ib-row"><span class="k">Tier</span><span class="v">${p.tier?esc(p.tier):'—'}</span></div>
+        <div class="ib-row"><span class="k">Rating Points</span><span class="v">${p.ratingPoints!=null?p.ratingPoints:'—'}</span></div>
         <div class="ib-row"><span class="k">Level</span><span class="v">${p.level||'—'} / 10</span></div>
         <div class="ib-row"><span class="k">Record</span><span class="v">${p.wins}-${p.losses} (${pct(p.winrate)})</span></div>
         <div class="ib-row"><span class="k">Maps</span><span class="v">${p.maps}</span></div>
@@ -426,7 +426,7 @@ function renderPlayer(slug){
         </div>
         ${p.soloStats?(()=>{const s=p.soloStats;return `
         <h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>Solo Queue
-          <span class="muted" style="font-size:11px">${esc(s.tier||'')}${s.rating!=null?' · '+s.rating.toFixed(2)+' rating':''}${s.soloRank?' · #'+s.soloRank+' of '+s.soloTotal:''}</span></h2>
+          <span class="muted" style="font-size:11px">${s.level?'Level '+s.level:''}${s.ratingPoints!=null?' · '+s.ratingPoints+' pts':''}${s.soloRank?' · #'+s.soloRank+' of '+s.soloTotal:''}</span></h2>
         <div class="statgrid">
           ${stat(s.kills,"Kills")}
           ${stat(s.deaths,"Deaths")}
@@ -451,9 +451,9 @@ function renderPlayer(slug){
              <span class="honor-sub">Event MVP · ${a.year}</span></span></a>`).join("")}
         </div>`:''}
         <div class="notice" style="text-align:left;margin-top:18px">
-          <strong>BPL Rating ${p.rating!=null?p.rating.toFixed(2):'—'}</strong> — normalized within the ${poolName.toLowerCase()} pool
-          (1.00 = pool average). Weighted: 40% K/D, 30% kills/map, 15% MVP impact, 10% assists, 5% win rate,
-          with small-sample shrinkage. ${t?`Ranks ${p.rating!=null?ratingRankInPool(p):''} in the pool.`:''}
+          <strong>${p.ratingPoints!=null?p.ratingPoints+' Rating Points · Level '+p.level:'Unranked'}</strong> — a FACEIT-style score built from
+          performance within the ${poolName.toLowerCase()} pool, weighted 40% K/D, 30% kills/map, 15% MVP impact, 10% assists, 5% win rate
+          (with small-sample shrinkage) and mapped onto Levels 1–10. ${t&&p.rating!=null?`Ranks ${ratingRankInPool(p)} in the pool.`:''}
         </div>
       </div>
     </div>`;
@@ -485,7 +485,7 @@ function renderRankings(){
         <td class="mono">${t.major_wins||'–'}</td><td class="mono">${t.s_tier_wins||'–'}</td><td class="mono">${t.events_played}</td></tr>`).join("")}</tbody></table></div>
     <h2 class="section-title" style="margin-top:26px"><span class="accent-bar"></span>Player Leaderboards <span class="muted" style="font-size:11px">(pro)</span></h2>
     <div class="grid" style="grid-template-columns:repeat(2,1fr)">
-      ${board("BPL Rating", top("rating"), p=>p.rating.toFixed(2), true)}
+      ${board("Rating Points", top("rating"), p=>p.ratingPoints, true)}
       ${board("Total Kills", top("kills"), p=>p.kills)}
       ${board("K/D Ratio", top("kdr"), p=>p.kdr.toFixed(2))}
       ${board("MVPs", top("mvp"), p=>p.mvp)}
@@ -583,7 +583,7 @@ function renderRecords(){
     </div>
     <h3 class="rec-group">Players <span class="muted" style="font-size:11px">(pro; rate stats min 12 maps)</span></h3>
     <div class="rec-grid">
-      ${recCard("Highest BPL Rating", topRating.name, topRating.rating.toFixed(2), `#/player/${topRating.slug}`)}
+      ${recCard("Most Rating Points", topRating.name, topRating.ratingPoints, `#/player/${topRating.slug}`)}
       ${recCard("Best K/D Ratio", topKdr.name, topKdr.kdr.toFixed(2), `#/player/${topKdr.slug}`)}
       ${recCard("Most Total Kills", topKills.name, topKills.kills, `#/player/${topKills.slug}`)}
       ${recCard("Most MVPs", topMvp.name, topMvp.mvp, `#/player/${topMvp.slug}`)}
@@ -842,8 +842,8 @@ function renderCompare(){
     DATA.players[pk].map(p=>`<option value="${p.slug}" ${p.slug===sel?'selected':''}>${esc(p.name)}</option>`).join("")+`</optgroup>`).join("");
   const A=playerBySlug(cmpA), B=playerBySlug(cmpB);
   const rows=[
-    ["BPL Rating",p=>p.rating!=null?p.rating.toFixed(2):'—',p=>p.rating||0],
-    ["Tier",p=>p.tier||'—',null],
+    ["Rating Points",p=>p.ratingPoints!=null?p.ratingPoints:'—',p=>p.ratingPoints||0],
+    ["Level",p=>p.level||'—',p=>p.level||0],
     ["K/D Ratio",p=>p.kdr.toFixed(2),p=>p.kdr],
     ["Kills",p=>p.kills,p=>p.kills],
     ["Deaths",p=>p.deaths,p=>-p.deaths],
@@ -864,7 +864,7 @@ function renderCompare(){
       <div class="avatar cmp-av">${initials(p.name)}</div>
       <div class="cmp-pname">${flag(p.iso)}<a href="#/player/${p.slug}">${esc(p.name)}</a></div>
       <div class="cmp-pteam">${t?`<a href="#/team/${t.slug}" style="color:var(--link)">${esc(p.team)}</a>`:esc(p.team||'Teamless')}</div>
-      <div class="cmp-ptier">${tierBadge(p.tier)}</div></div>`;
+      <div class="cmp-ptier">${p.level?`${levelChip(p.level)} <span class="muted" style="font-size:12px">Lvl ${p.level} · ${p.ratingPoints} pts</span>`:'<span class="muted">Unranked</span>'}</div></div>`;
   };
   app.innerHTML = `
     <h2 class="section-title"><span class="accent-bar"></span>Player Comparison
@@ -973,7 +973,7 @@ function renderStats(){
   }));
   const natBars=natList.slice(0,14).map(x=>{
     const tp=topByNat[x.nat];
-    const fl = tp ? `<span class="flag-tip">${flag(x.iso)}<span class="ftbox"><span class="ftlabel">Top player</span><b>${esc(tp.name)}</b><span class="ftmeta">${tp.rating.toFixed(2)} rating${tp.team?' · '+esc(tp.team):''}</span></span></span>` : flag(x.iso);
+    const fl = tp ? `<span class="flag-tip">${flag(x.iso)}<span class="ftbox"><span class="ftlabel">Top player</span><b>${esc(tp.name)}</b><span class="ftmeta">${tp.ratingPoints} pts${tp.team?' · '+esc(tp.team):''}</span></span></span>` : flag(x.iso);
     return `<div class="bar-row"><span class="bar-label">${fl}<span class="bar-cty">${esc(x.nat)}</span></span>
       <div class="bar-track"><div class="bar-fill" style="width:${Math.max(2,Math.round(x.n/natMax*100))}%"></div></div>
       <span class="bar-val">${x.n}</span></div>`;
