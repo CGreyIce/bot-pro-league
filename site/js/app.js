@@ -2032,12 +2032,15 @@ function scorePrediction(pred, tr, actual){
   return pts;
 }
 
-let _pred = null, _predTr = null;
+let _pred = null, _predTr = null, _predRosters = {};
+function predRAttr(name){ const i = _predRosters[normKey(name||'')]; return i!=null ? ` data-roster="${i}"` : ''; }
 async function renderPredict(slug){
   const tr = (DATA.tournaments||[]).find(t=>t.slug===slug);
   if(!tr){ app.innerHTML = notFound("Event"); return; }
   if(!tr.stages || !predGroups(tr).length){ app.innerHTML = `<div class="notice">Predictions are only available for group-stage events.</div>`; return; }
   _predTr = tr;
+  _predRosters = {};                          // team -> PAGE_ROSTERS index (hover shows the line-up)
+  (tr.attending||[]).forEach(row=>{ if(row.players && row.players.length) _predRosters[normKey(row.team)] = rosterIdx({team:row.team, teamSlug:row.teamSlug, players:row.players}); });
   const u = predUser();
   _pred = await PredictBackend.loadMine(slug, u.uid) || { event:slug, uid:u.uid, name:u.name, groups:{}, bracket:{} };
   if(u.name && !_pred.name) _pred.name = u.name;
@@ -2049,7 +2052,10 @@ function drawPredict(){
   const teamOpt=(sel, list)=>`<option value="">—</option>`+list.map(t=>`<option value="${esc(t[0])}" ${sel===t[0]?'selected':''}>${esc(t[0])}</option>`).join("");
   const groupCards = gs.map(g=>{
     const pk=(pred.groups[g.name]||[]);
+    const chips = g.teams.map(t=>{ const nm=t[0]; const tm=teamByName(nm);
+      return `<span class="pg-team"${predRAttr(nm)}>${tm&&tm.logo?`<img class="pg-tlogo" src="${esc(tm.logo)}" alt="">`:''}${esc(nm)}</span>`; }).join("");
     return `<div class="pg-card"><div class="pg-h">${esc(g.name)}</div>
+      <div class="pg-teams">${chips}</div>
       <label class="pg-l">1st <select class="pg-sel" data-g="${esc(g.name)}" data-pos="0">${teamOpt(pk[0], g.teams)}</select></label>
       <label class="pg-l">2nd <select class="pg-sel" data-g="${esc(g.name)}" data-pos="1">${teamOpt(pk[1], g.teams)}</select></label></div>`;
   }).join("");
@@ -2060,7 +2066,7 @@ function drawPredict(){
   const bracketHtml = !rounds
     ? `<p class="muted">Pick a 1st and 2nd for all ${gs.length} groups to unlock the bracket.</p>`
     : `<div class="bkt-wrap"><div class="pbk">${rounds.map((rd,ri)=>`<div class="pbk-col"><div class="pbk-rt">${RL[ri]||('Round '+(ri+1))}</div>${rd.map(m=>{
-        const bt=(t,other)=>`<div class="pbk-team ${m.pick===t?'pk':''} ${t?'':'tbd'}" data-key="${m.key}" data-team="${esc(t||'')}">${t?crestMini(t):'<span class=muted>TBD</span>'}</div>`;
+        const bt=(t,other)=>`<div class="pbk-team ${m.pick===t?'pk':''} ${t?'':'tbd'}" data-key="${m.key}" data-team="${esc(t||'')}"${t?predRAttr(t):''}>${t?crestMini(t):'<span class=muted>TBD</span>'}</div>`;
         return `<div class="pbk-m">${bt(m.a)}${bt(m.b)}</div>`;
       }).join("")}</div>`).join("")}</div></div>`;
   const pl=predPlacements(rounds);
