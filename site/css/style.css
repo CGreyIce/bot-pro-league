@@ -507,6 +507,7 @@ textarea.adm-in{resize:vertical}
 .bkt-team.win{color:var(--text);font-weight:600;background:rgba(255,92,61,.06)}
 .bkt-team .bt-logo{height:16px;width:16px;object-fit:contain;flex-shrink:0}
 .bkt-team .bt-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.seed-tag{display:inline-block;min-width:19px;text-align:center;font-family:'Rajdhani';font-weight:700;font-size:11px;line-height:16px;color:var(--muted);background:var(--bg);border:1px solid var(--border);border-radius:5px;padding:0 4px;margin-right:6px;vertical-align:middle;flex-shrink:0}
 .bkt-team .bt-name a{color:inherit}
 .bkt-team .bt-name a:hover{color:var(--link)}
 /* floating single-match 3rd-place decider */

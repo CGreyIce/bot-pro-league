@@ -1768,10 +1768,11 @@ function renderTournament(slug){
     const inner = teamSlug ? `<a href="#/team/${teamSlug}">${esc(name)}</a>` : esc(name);
     return `<span class="team-inline"${rAttr(name, teamSlug)}>${t&&t.logo?`<img src="${esc(t.logo)}" alt="">`:''}${inner}</span>`;
   };
+  const seedTag = (name, teamSlug)=>{ const s = tr.seeds && (tr.seeds[teamSlug] || tr.seeds[name]); return s ? `<span class="seed-tag" title="Seed ${s}">${s}</span>` : ''; };
   const bteamName = (name, teamSlug)=>{
     if(!name) return '<span class="muted">TBD</span>';
     const inner = teamSlug ? `<a href="#/team/${teamSlug}" style="color:inherit">${esc(name)}</a>` : esc(name);
-    return `<span${rAttr(name, teamSlug)}>${inner}</span>`;
+    return `<span${rAttr(name, teamSlug)}>${seedTag(name,teamSlug)}${inner}</span>`;
   };
 
   const standRows = tr.standings.map(s=>`<tr>
@@ -1788,7 +1789,7 @@ function renderTournament(slug){
     const logo = t&&t.logo ? `<img class="bt-logo" src="${esc(t.logo)}" alt="">` : '';
     const nm = name ? (teamSlug ? `<a href="#/team/${teamSlug}">${esc(name)}</a>` : esc(name)) : '<span class="muted">TBD</span>';
     const sc = score!=null ? score : '';
-    return `<div class="bkt-team ${win?'win':''}"${rAttr(name, teamSlug)}>${logo}<span class="bt-name">${nm}</span><span class="bt-score">${sc}</span></div>`;
+    return `<div class="bkt-team ${win?'win':''}"${rAttr(name, teamSlug)}>${logo}${name?seedTag(name,teamSlug):''}<span class="bt-name">${nm}</span><span class="bt-score">${sc}</span></div>`;
   };
   const mref = (m, pfx)=> (m.i!=null ? ` data-match="${pfx}${m.i}"` : '');
   const treeMatch = (m, pfx="")=>`<div class="bkt-match"${mref(m,pfx)}>${treeTeam(m.a,m.aTeam,m.sa,m.w===1)}${treeTeam(m.b,m.bTeam,m.sb,m.w===2)}</div>`;

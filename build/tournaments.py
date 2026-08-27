@@ -123,6 +123,13 @@ def process_manual(raw, team_map, alias):
             bracket.append({"round": 1000 * so["id"] + rd["round"], "title": prefix + rd["title"],
                             "matches": rd["matches"]})
     champ_name, champ_slug = resolve(raw.get("champion"))
+    seeds_out = {}
+    for nm, sd in (raw.get("seeds") or {}).items():
+        dn, sl = resolve(nm)
+        if sl:
+            seeds_out[sl] = sd          # by team-page slug (pro teams)
+        seeds_out[dn] = sd              # by resolved display name
+        seeds_out[nm] = sd              # by raw name (ad-hoc amateur teams with no page)
     final_standings = []
     for s in raw.get("finalStandings", []):
         dn, sl = resolve(s["name"])
@@ -154,7 +161,7 @@ def process_manual(raw, team_map, alias):
         "champion": champ_name or None, "championTeam": champ_slug,
         "runnerUp": None, "runnerUpTeam": None,
         "standings": overall, "bracket": bracket, "stages": stages_out,
-        "finalStandings": final_standings,
+        "finalStandings": final_standings, "seeds": seeds_out,
     }
 
 def process_one(raw, team_map, alias):

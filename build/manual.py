@@ -364,6 +364,7 @@ def to_standard(man):
         "manual": True, "champion": champion, "stages": stages,
         "participants": parts, "matches": flat, "roundTitles": {},
         "finalStandings": tournament_placements(man),
+        "seeds": man.get("seeds", {}),
     }
 
 # ---------------- persistence ----------------
