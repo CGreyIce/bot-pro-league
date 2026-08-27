@@ -144059,9 +144059,9 @@
       "roster": [
        {
         "hist": "Pattsuu",
-        "name": "Pattsu",
-        "slug": null,
-        "iso": "",
+        "name": "Pattsuu",
+        "slug": "pattsuu-amateur",
+        "iso": "ca",
         "captain": false
        },
        {
@@ -149494,9 +149494,9 @@
        },
        {
         "hist": "Pattsuu",
-        "name": "Pattsu",
-        "slug": null,
-        "iso": "",
+        "name": "Pattsuu",
+        "slug": "pattsuu-amateur",
+        "iso": "ca",
         "captain": false
        },
        {
@@ -149721,9 +149721,9 @@
        },
        {
         "hist": "Pattsuu",
-        "name": "Pattsu",
-        "slug": null,
-        "iso": "",
+        "name": "Pattsuu",
+        "slug": "pattsuu-amateur",
+        "iso": "ca",
         "captain": false
        },
        {
@@ -153789,9 +153789,9 @@
       "roster": [
        {
         "hist": "Pattsuu",
-        "name": "Pattsu",
-        "slug": null,
-        "iso": "",
+        "name": "Pattsuu",
+        "slug": "pattsuu-amateur",
+        "iso": "ca",
         "captain": false
        },
        {
@@ -165069,9 +165069,9 @@
       "roster": [
        {
         "hist": "Pattsuu",
-        "name": "Pattsu",
-        "slug": null,
-        "iso": "",
+        "name": "Pattsuu",
+        "slug": "pattsuu-amateur",
+        "iso": "ca",
         "captain": false
        },
        {
@@ -165847,9 +165847,9 @@
        },
        {
         "hist": "Pattsuu",
-        "name": "Pattsu",
-        "slug": null,
-        "iso": "",
+        "name": "Pattsuu",
+        "slug": "pattsuu-amateur",
+        "iso": "ca",
         "captain": false
        },
        {
@@ -183683,7 +183683,147 @@
      "soloTotal": 370
     },
     "bio": "Pattsuu is a Canadian in-game leader and a Gold-tier free agent, a rare North American caller in the amateur ranks.",
-    "gender": "F"
+    "gender": "F",
+    "teamHistory": [
+     {
+      "team": "MoreSoap",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "SoapiiSereia",
+        "name": "SoapiiSereia",
+        "slug": "soapiisereia-amateur",
+        "iso": "nz",
+        "captain": false
+       },
+       {
+        "hist": "moricorovt",
+        "name": "moricorovt",
+        "slug": "moricorovt-amateur",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "bloodbane",
+        "name": "bloodbane",
+        "slug": "bloodbane-amateur",
+        "iso": "au",
+        "captain": false
+       },
+       {
+        "hist": "Pattsuu",
+        "name": "Pattsuu",
+        "slug": "pattsuu-amateur",
+        "iso": "ca",
+        "captain": false
+       },
+       {
+        "hist": "cwstalVT",
+        "name": "cwstalVT",
+        "slug": "cwstalvt-amateur",
+        "iso": "us",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Magic Maverick",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Pattsuu",
+        "name": "Pattsuu",
+        "slug": "pattsuu-amateur",
+        "iso": "ca",
+        "captain": false
+       },
+       {
+        "hist": "Ginjo Saine",
+        "name": "Ginjo Saine",
+        "slug": "ginjo-saine-amateur",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Aweberry",
+        "name": "Aweberry",
+        "slug": "aweberry-amateur",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "rebebx",
+        "name": "rebebx",
+        "slug": "rebebx-amateur",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "shirou_kitakami",
+        "name": "shirou_kitakami",
+        "slug": "shirou-kitakami-amateur",
+        "iso": "us",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Wraithborne",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Pattsuu",
+        "name": "Pattsuu",
+        "slug": "pattsuu-amateur",
+        "iso": "ca",
+        "captain": false
+       },
+       {
+        "hist": "ProPHOcy_",
+        "name": "ProPHOcy_",
+        "slug": "prophocy-amateur",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "voidnw",
+        "name": "voidnw",
+        "slug": "voidnw-amateur",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "RIHSURI",
+        "name": "RIHSURI",
+        "slug": "rihsuri-amateur",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "rattecs",
+        "name": "rattecs",
+        "slug": "rattecs-amateur",
+        "iso": "fi",
+        "captain": false
+       }
+      ]
+     }
+    ],
+    "aka": [
+     "Pattsu"
+    ]
    },
    {
     "name": "AyanOwOT",
@@ -184034,9 +184174,9 @@
        },
        {
         "hist": "Pattsuu",
-        "name": "Pattsu",
-        "slug": null,
-        "iso": "",
+        "name": "Pattsuu",
+        "slug": "pattsuu-amateur",
+        "iso": "ca",
         "captain": false
        },
        {
@@ -185465,9 +185605,9 @@
       "roster": [
        {
         "hist": "Pattsuu",
-        "name": "Pattsu",
-        "slug": null,
-        "iso": "",
+        "name": "Pattsuu",
+        "slug": "pattsuu-amateur",
+        "iso": "ca",
         "captain": false
        },
        {
@@ -186281,9 +186421,9 @@
       "roster": [
        {
         "hist": "Pattsuu",
-        "name": "Pattsu",
-        "slug": null,
-        "iso": "",
+        "name": "Pattsuu",
+        "slug": "pattsuu-amateur",
+        "iso": "ca",
         "captain": false
        },
        {
@@ -186825,9 +186965,9 @@
       "roster": [
        {
         "hist": "Pattsuu",
-        "name": "Pattsu",
-        "slug": null,
-        "iso": "",
+        "name": "Pattsuu",
+        "slug": "pattsuu-amateur",
+        "iso": "ca",
         "captain": false
        },
        {
@@ -188428,9 +188568,9 @@
       "roster": [
        {
         "hist": "Pattsuu",
-        "name": "Pattsu",
-        "slug": null,
-        "iso": "",
+        "name": "Pattsuu",
+        "slug": "pattsuu-amateur",
+        "iso": "ca",
         "captain": false
        },
        {
@@ -196258,9 +196398,9 @@
       "roster": [
        {
         "hist": "Pattsuu",
-        "name": "Pattsu",
-        "slug": null,
-        "iso": "",
+        "name": "Pattsuu",
+        "slug": "pattsuu-amateur",
+        "iso": "ca",
         "captain": false
        },
        {
@@ -199831,9 +199971,9 @@
      "players": [
       {
        "hist": "Pattsuu",
-       "name": "Pattsu",
-       "slug": null,
-       "iso": "",
+       "name": "Pattsuu",
+       "slug": "pattsuu-amateur",
+       "iso": "ca",
        "captain": false
       },
       {
@@ -225575,9 +225715,9 @@
      "players": [
       {
        "hist": "Pattsuu",
-       "name": "Pattsu",
-       "slug": null,
-       "iso": "",
+       "name": "Pattsuu",
+       "slug": "pattsuu-amateur",
+       "iso": "ca",
        "captain": false
       },
       {
@@ -228235,9 +228375,9 @@
       },
       {
        "hist": "Pattsuu",
-       "name": "Pattsu",
-       "slug": null,
-       "iso": "",
+       "name": "Pattsuu",
+       "slug": "pattsuu-amateur",
+       "iso": "ca",
        "captain": false
       },
       {
@@ -285604,6 +285744,18 @@
   },
   {
    "type": "transfer",
+   "player": "Pattsuu",
+   "playerSlug": "pattsuu-amateur",
+   "iso": "ca",
+   "fromTeam": "Magic Maverick",
+   "fromSlug": null,
+   "toTeam": "Wraithborne",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
    "player": "cwstalVT",
    "playerSlug": "cwstalvt-amateur",
    "iso": "us",
@@ -289000,6 +289152,18 @@
   },
   {
    "type": "transfer",
+   "player": "Pattsuu",
+   "playerSlug": "pattsuu-amateur",
+   "iso": "ca",
+   "fromTeam": "MoreSoap",
+   "fromSlug": null,
+   "toTeam": "Magic Maverick",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-06-21"
+  },
+  {
+   "type": "transfer",
    "player": "Arya Kuroha",
    "playerSlug": "arya-kuroha-amateur",
    "iso": "us",
@@ -290923,6 +291087,18 @@
    "player": "bloodbane",
    "playerSlug": "bloodbane-amateur",
    "iso": "au",
+   "fromTeam": null,
+   "fromSlug": null,
+   "toTeam": "MoreSoap",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-05-28"
+  },
+  {
+   "type": "debut",
+   "player": "Pattsuu",
+   "playerSlug": "pattsuu-amateur",
+   "iso": "ca",
    "fromTeam": null,
    "fromSlug": null,
    "toTeam": "MoreSoap",
