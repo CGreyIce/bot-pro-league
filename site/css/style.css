@@ -146,6 +146,13 @@ table.data td.name-cell{font-weight:600}
 .form-dot.l{background:rgba(255,107,107,.18);color:#ff6b6b}
 .form-dot.t{background:var(--panel);color:var(--muted)}
 .form-spark{display:block}
+.form-spark .fs-bar{cursor:pointer;transition:opacity .1s}
+.form-spark .fs-bar:hover{opacity:.8}
+#form-tip{position:absolute;z-index:100;pointer-events:none;background:var(--panel2,var(--panel));border:1px solid var(--border);border-radius:8px;padding:8px 11px;box-shadow:0 8px 24px rgba(0,0,0,.4);min-width:110px}
+#form-tip .ft-rtg{font-family:'Rajdhani';font-weight:700;font-size:22px;line-height:1}
+#form-tip .ft-rtg span{font-size:12px;color:var(--muted)}
+#form-tip .ft-sub{font-size:12px;color:var(--text);margin-top:3px}
+#form-tip .ft-ev{font-size:11px;color:var(--muted);margin-top:1px}
 
 /* ---------- profile header ---------- */
 .profile-head{display:flex;align-items:center;gap:22px;padding:24px;background:linear-gradient(120deg,var(--panel2),var(--panel));border:1px solid var(--border);border-radius:12px;margin-bottom:18px;position:relative;overflow:hidden}

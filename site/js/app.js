@@ -1170,8 +1170,29 @@ function formSpark(log){
   const vals=rec.map(x=>x.rtg);
   const hi=Math.max(1.4,...vals), lo=Math.min(0.6,...vals), H=46, BW=14, GAP=4;
   const bars=rec.map((x,i)=>{ const h=Math.max(3,(H-6)*((x.rtg-lo)/((hi-lo)||1)));
-    return `<rect x="${i*(BW+GAP)}" y="${H-h}" width="${BW}" height="${h}" rx="2" fill="${rtgColor(x.rtg)}"><title>${esc(x.map)} · ${x.rtg.toFixed(2)} RTG</title></rect>`; }).join("");
+    return `<rect class="fs-bar" x="${i*(BW+GAP)}" y="${H-h}" width="${BW}" height="${h}" rx="2" fill="${rtgColor(x.rtg)}"
+      data-rtg="${x.rtg.toFixed(2)}" data-map="${esc(x.map)}" data-event="${esc(x.event)}" data-won="${x.won===true?'W':x.won===false?'L':'—'}"></rect>`; }).join("");
   return `<svg class="form-spark" width="${rec.length*(BW+GAP)}" height="${H}" aria-label="recent rating trend">${bars}</svg>`;
+}
+function setupFormTip(){
+  let tip=document.getElementById("form-tip");
+  if(!tip){ tip=document.createElement("div"); tip.id="form-tip"; tip.style.display="none"; document.body.appendChild(tip); }
+  document.addEventListener("mouseover", e=>{
+    const r=e.target.closest && e.target.closest(".fs-bar"); if(!r) return;
+    const won=r.getAttribute("data-won");
+    tip.innerHTML=`<div class="ft-rtg" style="color:${r.getAttribute("fill")}">${r.getAttribute("data-rtg")} <span>RTG</span></div>
+      <div class="ft-sub">${won==="W"?"Win":won==="L"?"Loss":"Tie"}${r.getAttribute("data-map")?" · "+esc(r.getAttribute("data-map")):""}</div>
+      <div class="ft-ev">${esc(r.getAttribute("data-event")||"")}</div>`;
+    tip.style.display="block";
+    const b=r.getBoundingClientRect(), w=tip.offsetWidth||140;
+    let left=b.left+window.scrollX+b.width/2-w/2;
+    left=Math.max(6, Math.min(left, window.scrollX+window.innerWidth-w-8));
+    tip.style.left=left+"px";
+    tip.style.top=(b.top+window.scrollY-tip.offsetHeight-9)+"px";
+  });
+  document.addEventListener("mouseout", e=>{
+    if(e.target.closest && e.target.closest(".fs-bar")) tip.style.display="none";
+  });
 }
 function renderScoreboard(){
   const match = _sbMatch; if(!match) return;
@@ -2376,6 +2397,7 @@ loadData().then(async d=>{
   try{ _adminOn = ((await (await fetch("/api/state")).json()).admin === true); }catch(e){ _adminOn = false; }
   setupSearch();
   setupRosterPop();
+  setupFormTip();
   setupNav();
   window.addEventListener("hashchange", router);
   router();
