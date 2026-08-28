@@ -1667,10 +1667,10 @@ function simulateVeto(A,B,fmt){
   }
   const decider=remaining[0];
   const dstep={team:"", side:"d", action:"decider", map:decider, reason:"the map left after all vetoes", wrA:wr(A,decider), wrB:wr(B,decider)};
-  {                                                        // decider: sides settled by a knife round
+  {                                                        // decider: sides settled by a coin flip
     const kwin=(vetoHash(A.slug+"|"+B.slug+"|"+decider)%2===0)?A:B, ss=vetoSide(kwin,decider,A,B);
-    dstep.sideTeam=kwin.name; dstep.sideAB=kwin===A?"a":"b"; dstep.startSide=ss; dstep.knife=true;
-    dstep.sideNote=`${kwin.name} win the knife round and start ${ss}`;
+    dstep.sideTeam=kwin.name; dstep.sideAB=kwin===A?"a":"b"; dstep.startSide=ss; dstep.coin=true;
+    dstep.sideNote=`${kwin.name} win the coin flip and start ${ss}`;
   }
   steps.push(dstep);
   return {steps, decider, played: fmt==="bo1" ? [decider] : steps.filter(s=>s.action==="pick").map(s=>s.map).concat(decider)};
@@ -1696,7 +1696,7 @@ function renderVetoResult(A,B,fmt,res){
     const sideHtml = s.sideNote
       ? `<div class="vt-side"><span class="vt-sd ${s.sideAB}">${esc(s.sideTeam)} <b>${s.startSide}</b></span>
          <span class="vt-sd ${other}">${esc(otherName)} <b>${s.startSide==="CT"?"T":"CT"}</b></span>
-         <span class="vt-sd-note">${s.knife?"🔪 knife round":`${esc(s.sideTeam)} choose side`}</span></div>`
+         <span class="vt-sd-note">${s.coin?"🪙 coin flip":`${esc(s.sideTeam)} choose side`}</span></div>`
       : '';
     return `<div class="vt-step ${s.action}">
       ${vetoMapImg(s.map)}
