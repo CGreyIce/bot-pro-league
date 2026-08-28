@@ -1221,14 +1221,18 @@ function renderMatch(){
     previewHtml = `<h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Match Preview</h2>
       <div class="mp-grid">${col(ta)}<div class="mp-vs">vs</div>${col(tb)}</div>`;
   }
-  // rosters at this event (if available)
-  const rosterCol = (slug2)=>{
-    const row = (tr.attending||[]).find(r=>r.teamSlug===slug2);
+  // rosters at this event (if available). Ad-hoc/amateur teams have no teamSlug,
+  // so match those by team name — otherwise every slug-less side collapses onto
+  // the first slug-less attending row.
+  const rosterCol = (slug2, name2)=>{
+    const row = (tr.attending||[]).find(r=> slug2
+      ? r.teamSlug===slug2
+      : (r.teamSlug==null && !!name2 && normKey(r.team)===normKey(name2)));
     if(!row) return '';
     return `<div class="m-roster"><div class="m-roster-h">${esc(row.team)}</div>${row.players.map(p=>
       `<div class="m-rp">${flag(p.iso)}${p.slug?`<a href="#/player/${p.slug}">${esc(p.name)}</a>`:esc(p.name)}${p.captain?'<span class="rp-c">C</span>':''}</div>`).join("")}</div>`;
   };
-  const rosters = (match.aTeam||match.bTeam) ? `${rosterCol(match.aTeam)}${rosterCol(match.bTeam)}` : '';
+  const rosters = (match.aTeam||match.bTeam||match.a||match.b) ? `${rosterCol(match.aTeam, match.a)}${rosterCol(match.bTeam, match.b)}` : '';
 
   // full player scoreboard(s) (HLTV-style, Bo1/Bo3/Bo5) when recorded
   let sbHtml = '';
