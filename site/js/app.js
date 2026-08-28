@@ -612,15 +612,18 @@ function renderRecords(){
 function inFormPlayers(){
   const byslug={};
   (DATA.tournaments||[]).forEach(tr=>{
-    const rounds=(tr.stages&&tr.stages.length)?tr.stages.flatMap(s=>s.rounds):(tr.bracket||[]);
-    rounds.forEach(rd=>rd.matches.forEach(m=>{ if(!m.stats||!m.stats.maps) return;
+    const scan=(matches,pfx)=>matches.forEach(m=>{ if(!m.stats||!m.stats.maps) return;
       m.stats.maps.forEach(mp=>{ const tot=(mp.scoreA||0)+(mp.scoreB||0); if(!tot) return;
         (mp.players||[]).forEach(pl=>{ if(!pl.slug) return;
           const onA=normKey(pl.team)===normKey(m.a); const won=mp.scoreA===mp.scoreB?null:(onA?mp.scoreA>mp.scoreB:mp.scoreB>mp.scoreA);
-          (byslug[pl.slug]=byslug[pl.slug]||[]).push({date:tr.date||'',rtg:matchRating(pl.k,pl.a,pl.d,pl.score,tot),won,map:mp.map||'',event:tr.name});
+          (byslug[pl.slug]=byslug[pl.slug]||[]).push({date:tr.date||'',rtg:matchRating(pl.k,pl.a,pl.d,pl.score,tot),won,map:mp.map||'',
+            event:tr.name,eventSlug:tr.slug,ref:(m.i!=null?pfx+m.i:null),opp:(onA?m.b:m.a)||'',
+            score:(onA?`${mp.scoreA}-${mp.scoreB}`:`${mp.scoreB}-${mp.scoreA}`)});
         });
       });
-    }));
+    });
+    if(tr.stages&&tr.stages.length) tr.stages.forEach(st=>st.rounds.forEach(rd=>scan(rd.matches,st.id+"-")));
+    else (tr.bracket||[]).forEach(rd=>scan(rd.matches,""));
   });
   const out=[];
   Object.entries(byslug).forEach(([slug,log])=>{
@@ -1143,26 +1146,35 @@ function rtgColor(r){
 function playerFormLog(slug){
   const out=[];
   (DATA.tournaments||[]).forEach(tr=>{
-    const rounds = (tr.stages && tr.stages.length) ? tr.stages.flatMap(s=>s.rounds) : (tr.bracket||[]);
-    rounds.forEach(rd=>rd.matches.forEach(m=>{
+    const scan=(matches, pfx)=>matches.forEach(m=>{
       if(!m.stats || !m.stats.maps) return;
       m.stats.maps.forEach(mp=>{
         const pl=(mp.players||[]).find(x=>x.slug===slug); if(!pl) return;
         const tot=(mp.scoreA||0)+(mp.scoreB||0); if(!tot) return;
         const onA = normKey(pl.team)===normKey(m.a);
         const won = mp.scoreA===mp.scoreB ? null : (onA ? mp.scoreA>mp.scoreB : mp.scoreB>mp.scoreA);
-        out.push({ date:tr.date||'', event:tr.name, eventSlug:tr.slug, map:mp.map||'',
-                   rtg:matchRating(pl.k,pl.a,pl.d,pl.score,tot), won, k:pl.k, d:pl.d });
+        out.push({ date:tr.date||'', event:tr.name, eventSlug:tr.slug, ref:(m.i!=null?pfx+m.i:null),
+          opp:(onA?m.b:m.a)||'', score:(onA?`${mp.scoreA}-${mp.scoreB}`:`${mp.scoreB}-${mp.scoreA}`), map:mp.map||'',
+          rtg:matchRating(pl.k,pl.a,pl.d,pl.score,tot), won, k:pl.k, d:pl.d });
       });
-    }));
+    });
+    if(tr.stages && tr.stages.length) tr.stages.forEach(st=>st.rounds.forEach(rd=>scan(rd.matches, st.id+"-")));
+    else (tr.bracket||[]).forEach(rd=>scan(rd.matches, ""));
   });
   out.sort((a,b)=> (a.date||'').localeCompare(b.date||''));
   return out;
 }
+function formDotAttrs(x){
+  return `data-rtg="${x.rtg.toFixed(2)}" data-map="${esc(x.map||'')}" data-event="${esc(x.event||'')}" `+
+         `data-won="${x.won===true?'W':x.won===false?'L':'—'}" data-opp="${esc(x.opp||'')}" data-score="${esc(x.score||'')}"`;
+}
 function formDots(log){
   return `<span class="form-dots">${log.slice(-12).map(x=>{
     const c = x.won===true?'w':x.won===false?'l':'t';
-    return `<span class="form-dot ${c}" title="${esc(x.map)} · ${esc(x.event)} · ${x.rtg.toFixed(2)} RTG">${x.won===true?'W':x.won===false?'L':'–'}</span>`;
+    const label = x.won===true?'W':x.won===false?'L':'–';
+    return x.ref
+      ? `<a class="form-dot ${c}" href="#/match/${x.eventSlug}/${x.ref}" ${formDotAttrs(x)}>${label}</a>`
+      : `<span class="form-dot ${c}" ${formDotAttrs(x)}>${label}</span>`;
   }).join("")}</span>`;
 }
 function formSpark(log){
@@ -1170,28 +1182,31 @@ function formSpark(log){
   const vals=rec.map(x=>x.rtg);
   const hi=Math.max(1.4,...vals), lo=Math.min(0.6,...vals), H=46, BW=14, GAP=4;
   const bars=rec.map((x,i)=>{ const h=Math.max(3,(H-6)*((x.rtg-lo)/((hi-lo)||1)));
-    return `<rect class="fs-bar" x="${i*(BW+GAP)}" y="${H-h}" width="${BW}" height="${h}" rx="2" fill="${rtgColor(x.rtg)}"
-      data-rtg="${x.rtg.toFixed(2)}" data-map="${esc(x.map)}" data-event="${esc(x.event)}" data-won="${x.won===true?'W':x.won===false?'L':'—'}"></rect>`; }).join("");
+    return `<rect class="fs-bar" x="${i*(BW+GAP)}" y="${H-h}" width="${BW}" height="${h}" rx="2" fill="${rtgColor(x.rtg)}" ${formDotAttrs(x)}></rect>`; }).join("");
   return `<svg class="form-spark" width="${rec.length*(BW+GAP)}" height="${H}" aria-label="recent rating trend">${bars}</svg>`;
 }
 function setupFormTip(){
   let tip=document.getElementById("form-tip");
   if(!tip){ tip=document.createElement("div"); tip.id="form-tip"; tip.style.display="none"; document.body.appendChild(tip); }
   document.addEventListener("mouseover", e=>{
-    const r=e.target.closest && e.target.closest(".fs-bar"); if(!r) return;
-    const won=r.getAttribute("data-won");
-    tip.innerHTML=`<div class="ft-rtg" style="color:${r.getAttribute("fill")}">${r.getAttribute("data-rtg")} <span>RTG</span></div>
-      <div class="ft-sub">${won==="W"?"Win":won==="L"?"Loss":"Tie"}${r.getAttribute("data-map")?" · "+esc(r.getAttribute("data-map")):""}</div>
-      <div class="ft-ev">${esc(r.getAttribute("data-event")||"")}</div>`;
+    const r=e.target.closest && e.target.closest(".fs-bar, .form-dot"); if(!r) return;
+    const won=r.getAttribute("data-won"), rtg=r.getAttribute("data-rtg");
+    const opp=r.getAttribute("data-opp"), score=r.getAttribute("data-score"), map=r.getAttribute("data-map");
+    const col=r.getAttribute("fill") || rtgColor(parseFloat(rtg));
+    const clickable=r.tagName.toLowerCase()==="a";
+    tip.innerHTML=`<div class="ft-rtg" style="color:${col}">${rtg} <span>RTG</span></div>
+      <div class="ft-sub">${won==="W"?"Win":won==="L"?"Loss":"Tie"}${opp?" vs "+esc(opp):""}${score?" · "+esc(score):""}</div>
+      <div class="ft-ev">${map?esc(map)+" · ":""}${esc(r.getAttribute("data-event")||"")}</div>
+      ${clickable?`<div class="ft-go">click to view match →</div>`:""}`;
     tip.style.display="block";
-    const b=r.getBoundingClientRect(), w=tip.offsetWidth||140;
+    const b=r.getBoundingClientRect(), w=tip.offsetWidth||150;
     let left=b.left+window.scrollX+b.width/2-w/2;
     left=Math.max(6, Math.min(left, window.scrollX+window.innerWidth-w-8));
     tip.style.left=left+"px";
     tip.style.top=(b.top+window.scrollY-tip.offsetHeight-9)+"px";
   });
   document.addEventListener("mouseout", e=>{
-    if(e.target.closest && e.target.closest(".fs-bar")) tip.style.display="none";
+    if(e.target.closest && e.target.closest(".fs-bar, .form-dot")) tip.style.display="none";
   });
 }
 function renderScoreboard(){
