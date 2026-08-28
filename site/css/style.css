@@ -138,6 +138,14 @@ table.data td.name-cell{font-weight:600}
 .lvl-chip.lvl-5,.lvl-chip.lvl-6,.lvl-chip.lvl-7{background:#ffce54;color:#463500}
 .lvl-chip.lvl-8,.lvl-chip.lvl-9{background:#ff8c42;color:#451c00}
 .lvl-chip.lvl-10{background:#ff4655;color:#fff}
+/* recent form */
+.form-row{display:flex;align-items:flex-end;gap:22px;flex-wrap:wrap;margin-top:6px}
+.form-dots{display:flex;gap:4px;flex-wrap:wrap}
+.form-dot{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:6px;font-size:12px;font-weight:700;font-family:'Rajdhani'}
+.form-dot.w{background:rgba(61,220,132,.18);color:var(--good)}
+.form-dot.l{background:rgba(255,107,107,.18);color:#ff6b6b}
+.form-dot.t{background:var(--panel);color:var(--muted)}
+.form-spark{display:block}
 
 /* ---------- profile header ---------- */
 .profile-head{display:flex;align-items:center;gap:22px;padding:24px;background:linear-gradient(120deg,var(--panel2),var(--panel));border:1px solid var(--border);border-radius:12px;margin-bottom:18px;position:relative;overflow:hidden}

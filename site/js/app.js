@@ -113,7 +113,7 @@ const routes = {
   "results": renderResults, "records": renderRecords, "compare": renderCompare,
   "transfers": renderTransfers, "matches": renderMatches, "awards": renderAwards, "maps": renderMaps,
   "compareteams": renderTeamCompare, "stats": renderStats,
-  "admin": renderAdmin, "match": renderMatch, "predict": renderPredict,
+  "admin": renderAdmin, "match": renderMatch, "predict": renderPredict, "prophets": renderProphets,
 };
 function parseHash(){
   const h = location.hash.replace(/^#\/?/, "");
@@ -437,6 +437,12 @@ function renderPlayer(slug){
           ${stat(s.wins+'-'+s.losses,"Record")}
           ${stat(pct(s.winrate),"Win Rate")}
         </div>`;})():''}
+        ${(()=>{ const log=playerFormLog(p.slug); if(!log.length) return '';
+          const last=log.slice(-10); const w=last.filter(x=>x.won===true).length, l=last.filter(x=>x.won===false).length;
+          const avg=last.reduce((a,x)=>a+x.rtg,0)/last.length;
+          return `<h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>Recent Form
+            <span class="muted" style="font-size:11px">last ${last.length} map${last.length===1?'':'s'} · ${w}-${l} · ${avg.toFixed(2)} avg RTG</span></h2>
+            <div class="form-row">${formDots(log)}${formSpark(log)}</div>`; })()}
         ${(p.titles&&p.titles.length)||(p.mvpAwards&&p.mvpAwards.length)?`
         <h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>Honors
           <span class="muted" style="font-size:11px">${p.titles?p.titles.length+'× champion':''}${p.mvpAwards&&p.mvpAwards.length?(p.titles&&p.titles.length?' · ':'')+p.mvpAwards.length+'× MVP':''}</span></h2>
@@ -594,7 +600,35 @@ function renderRecords(){
     <div class="rec-grid">
       ${blow?recCard("Biggest Blowout", `${blow.m.w===1?blow.m.a:blow.m.b} vs ${blow.m.w===1?blow.m.b:blow.m.a}`,
         `${Math.max(blow.m.sa,blow.m.sb)}–${Math.min(blow.m.sa,blow.m.sb)}`, `#/tournament/${blow.m.eventSlug}`):''}
-    </div>`;
+    </div>
+    ${(()=>{ const inform=inFormPlayers(); if(!inform.length) return '';
+      return `<h3 class="rec-group">In-Form Players <span class="muted" style="font-size:11px">best recent match ratings · min 3 recent maps</span></h3>
+      <div class="tablewrap" style="max-width:560px"><table class="data"><thead><tr><th class="no-sort rankcol">#</th><th class="no-sort">Player</th><th class="no-sort">Recent RTG</th><th class="no-sort">Form</th></tr></thead>
+      <tbody>${inform.map((x,i)=>`<tr><td class="rankcol">${i+1}</td><td class="name-cell">${x.p?playerLink(x.p):esc(x.name)}</td>
+        <td class="mono" style="color:${rtgColor(x.avg)}"><strong>${x.avg.toFixed(2)}</strong></td>
+        <td>${formDots(x.log)}</td></tr>`).join("")}</tbody></table></div>`; })()}`;
+}
+// players with the best average RTG over their last few recorded maps
+function inFormPlayers(){
+  const byslug={};
+  (DATA.tournaments||[]).forEach(tr=>{
+    const rounds=(tr.stages&&tr.stages.length)?tr.stages.flatMap(s=>s.rounds):(tr.bracket||[]);
+    rounds.forEach(rd=>rd.matches.forEach(m=>{ if(!m.stats||!m.stats.maps) return;
+      m.stats.maps.forEach(mp=>{ const tot=(mp.scoreA||0)+(mp.scoreB||0); if(!tot) return;
+        (mp.players||[]).forEach(pl=>{ if(!pl.slug) return;
+          const onA=normKey(pl.team)===normKey(m.a); const won=mp.scoreA===mp.scoreB?null:(onA?mp.scoreA>mp.scoreB:mp.scoreB>mp.scoreA);
+          (byslug[pl.slug]=byslug[pl.slug]||[]).push({date:tr.date||'',rtg:matchRating(pl.k,pl.a,pl.d,pl.score,tot),won,map:mp.map||'',event:tr.name});
+        });
+      });
+    }));
+  });
+  const out=[];
+  Object.entries(byslug).forEach(([slug,log])=>{
+    log.sort((a,b)=>(a.date||'').localeCompare(b.date||''));
+    const rec=log.slice(-5); if(rec.length<3) return;
+    out.push({slug, p:playerBySlug(slug), name:slug, log, avg:rec.reduce((a,x)=>a+x.rtg,0)/rec.length});
+  });
+  return out.sort((a,b)=>b.avg-a.avg).slice(0,10);
 }
 
 // ---------- Transfers ----------
@@ -1104,6 +1138,40 @@ function rtgColor(r){
   if(r>=1.10) return 'var(--good)';
   if(r<0.90)  return 'var(--accent2, #ff6b6b)';
   return 'var(--text)';
+}
+// every recorded map a player appeared in (from scoreboards): rtg + win/loss, oldest→newest
+function playerFormLog(slug){
+  const out=[];
+  (DATA.tournaments||[]).forEach(tr=>{
+    const rounds = (tr.stages && tr.stages.length) ? tr.stages.flatMap(s=>s.rounds) : (tr.bracket||[]);
+    rounds.forEach(rd=>rd.matches.forEach(m=>{
+      if(!m.stats || !m.stats.maps) return;
+      m.stats.maps.forEach(mp=>{
+        const pl=(mp.players||[]).find(x=>x.slug===slug); if(!pl) return;
+        const tot=(mp.scoreA||0)+(mp.scoreB||0); if(!tot) return;
+        const onA = normKey(pl.team)===normKey(m.a);
+        const won = mp.scoreA===mp.scoreB ? null : (onA ? mp.scoreA>mp.scoreB : mp.scoreB>mp.scoreA);
+        out.push({ date:tr.date||'', event:tr.name, eventSlug:tr.slug, map:mp.map||'',
+                   rtg:matchRating(pl.k,pl.a,pl.d,pl.score,tot), won, k:pl.k, d:pl.d });
+      });
+    }));
+  });
+  out.sort((a,b)=> (a.date||'').localeCompare(b.date||''));
+  return out;
+}
+function formDots(log){
+  return `<span class="form-dots">${log.slice(-12).map(x=>{
+    const c = x.won===true?'w':x.won===false?'l':'t';
+    return `<span class="form-dot ${c}" title="${esc(x.map)} · ${esc(x.event)} · ${x.rtg.toFixed(2)} RTG">${x.won===true?'W':x.won===false?'L':'–'}</span>`;
+  }).join("")}</span>`;
+}
+function formSpark(log){
+  const rec=log.slice(-14); if(!rec.length) return '';
+  const vals=rec.map(x=>x.rtg);
+  const hi=Math.max(1.4,...vals), lo=Math.min(0.6,...vals), H=46, BW=14, GAP=4;
+  const bars=rec.map((x,i)=>{ const h=Math.max(3,(H-6)*((x.rtg-lo)/((hi-lo)||1)));
+    return `<rect x="${i*(BW+GAP)}" y="${H-h}" width="${BW}" height="${h}" rx="2" fill="${rtgColor(x.rtg)}"><title>${esc(x.map)} · ${x.rtg.toFixed(2)} RTG</title></rect>`; }).join("");
+  return `<svg class="form-spark" width="${rec.length*(BW+GAP)}" height="${H}" aria-label="recent rating trend">${bars}</svg>`;
 }
 function renderScoreboard(){
   const match = _sbMatch; if(!match) return;
@@ -2059,6 +2127,10 @@ const PredictBackend = (function(){
     async loadMine(event, uid){
       if(isShared){ await load(); const d=await db.collection('predictions').doc(event+'__'+uid).get(); return d.exists?d.data():null; }
       const v=localStorage.getItem('bpl_pred_'+event+'_'+uid); return v?JSON.parse(v):null;
+    },
+    async loadEverything(){
+      if(isShared){ await load(); const snap=await db.collection('predictions').get(); return snap.docs.map(d=>d.data()); }
+      const out=[]; for(let i=0;i<localStorage.length;i++){ const k=localStorage.key(i); if(k.indexOf('bpl_pred_')===0){ try{ out.push(JSON.parse(localStorage.getItem(k))); }catch(e){} } } return out;
     }
   };
 })();
@@ -2254,6 +2326,49 @@ function renderPredDetail(pred){
     <div class="pd-sub muted">Group qualifiers</div>${groupHtml}
     <div class="pd-sub muted" style="margin-top:10px">Playoff bracket</div>${bracketHtml}`;
   box.scrollIntoView({behavior:'smooth', block:'nearest'});
+}
+
+// ---- Prophets: all-time cross-event predictions leaderboard ----
+async function renderProphets(){
+  app.innerHTML = `<h2 class="section-title"><span class="accent-bar"></span>Prophets
+      <span class="muted" style="font-size:11px">all-time prediction leaderboard · ${PredictBackend.isShared?'shared':'this browser'}</span></h2>
+    <p class="muted" style="font-size:13px;margin:-6px 0 14px;max-width:720px">Every prediction, across every event, scored once the tournament finishes. Points add up over the season — climb the board by calling brackets better than everyone else.</p>
+    <div id="proph-out"><p class="muted">Loading predictions…</p></div>`;
+  let all=[]; try{ all=await PredictBackend.loadEverything(); }catch(e){ $("#proph-out").innerHTML=`<p class="muted">Couldn't load the leaderboard: ${esc(e.message)}</p>`; return; }
+  if(!all.length){ $("#proph-out").innerHTML='<p class="muted">No predictions yet — open a group-stage tournament and make some!</p>'; return; }
+  const trBySlug={}; (DATA.tournaments||[]).forEach(t=>trBySlug[t.slug]=t);
+  const aCache={}; const actualFor=slug=>{ if(!(slug in aCache)){ const tr=trBySlug[slug]; aCache[slug]=tr?actualResults(tr):null; } return aCache[slug]; };
+  const byUid={};
+  all.forEach(p=>{
+    const uid=p.uid||p.name; if(!uid) return;
+    const tr=trBySlug[p.event]; if(!tr) return;
+    const u=byUid[uid]||(byUid[uid]={name:p.name||'anon', total:0, scored:0, pending:0, best:0, bestEv:'', champHits:0, champTries:0, ts:0});
+    if((p.ts||0)>=u.ts){ u.ts=p.ts||0; u.name=p.name||u.name; }
+    const actual=actualFor(p.event);
+    if(actual){
+      const sc=scorePrediction(p,tr,actual)||0; u.total+=sc; u.scored++;
+      if(sc>u.best){ u.best=sc; u.bestEv=tr.name; }
+      const champ=predPlacements(bracketRounds(predSeeds(tr,p),p.bracket||{})).champ;
+      if(champ){ u.champTries++; if(champ===actual.champ) u.champHits++; }
+    } else { u.pending++; }
+  });
+  const rows=Object.values(byUid).filter(u=>u.scored||u.pending)
+    .sort((a,b)=> b.total-a.total || b.best-a.best || (a.name||'').localeCompare(b.name||''));
+  const medal=i=> i===0?'🥇':i===1?'🥈':i===2?'🥉':(i+1);
+  $("#proph-out").innerHTML = `<div class="tablewrap" style="max-width:720px"><table class="data">
+    <thead><tr><th class="no-sort rankcol">#</th><th class="no-sort">Predictor</th><th class="no-sort" title="Total points across all finished events">Points</th>
+      <th class="no-sort" title="Finished events scored">Events</th><th class="no-sort" title="Correct champion picks">Champ %</th>
+      <th class="no-sort" title="Best single-event score">Best</th><th class="no-sort" title="Predictions on events not yet finished">Live</th></tr></thead>
+    <tbody>${rows.map((u,i)=>`<tr>
+      <td class="rankcol">${medal(i)}</td>
+      <td>${esc(u.name)}</td>
+      <td class="mono"><strong>${u.total}</strong></td>
+      <td class="mono">${u.scored}</td>
+      <td class="mono">${u.champTries?Math.round(100*u.champHits/u.champTries)+'%':'—'}</td>
+      <td class="mono" title="${esc(u.bestEv||'')}">${u.best||'—'}</td>
+      <td class="mono muted">${u.pending||'—'}</td>
+    </tr>`).join("")}</tbody></table></div>
+    <p class="muted" style="font-size:11px;margin-top:6px">${rows.length} predictor${rows.length===1?'':'s'} · scoring: correct qualifier +3 (exact spot +1), champion +10, finalist +6, semifinalist +4, quarterfinalist +2.</p>`;
 }
 
 loadData().then(async d=>{
