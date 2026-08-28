@@ -203003,7 +203003,7 @@
     "Seraph Dynasty": 76,
     "Ashfall": 77
    },
-   "predictionsLocked": false,
+   "predictionsLocked": true,
    "attending": [
     {
      "team": "BeeHyve",
