@@ -214,6 +214,105 @@ function renderTeams(){
     ${sortableTable(DATA.teams, cols, "rank")}`;
 }
 
+// ---------- Achievements / lineup / H2H shared helpers ----------
+const MEDAL_ICO = {g:'🥇', s:'🥈', b:'🥉'};
+function medalOf(e){
+  if(e.isChampion || e.placement===1) return 'g';
+  if(e.placement===2) return 's';
+  if(e.placement===3) return 'b';
+  return null;
+}
+// Trophy cabinet for a team, built from its event placements.
+function teamCabinetHtml(t){
+  const meds = (t.events||[]).map(e=>({e, m:medalOf(e)})).filter(x=>x.m);
+  if(!meds.length) return '';
+  meds.sort((a,b)=>(b.e.date||'').localeCompare(a.e.date||''));
+  const g=meds.filter(x=>x.m==='g').length, s=meds.filter(x=>x.m==='s').length, b=meds.filter(x=>x.m==='b').length;
+  return `<div class="infobox cabinet">
+    <div class="ib-title">Trophy Cabinet</div>
+    <div class="medal-tally">
+      ${g?`<span class="mt">🥇 ${g}</span>`:''}${s?`<span class="mt">🥈 ${s}</span>`:''}${b?`<span class="mt">🥉 ${b}</span>`:''}
+    </div>
+    <div class="cab-list">${meds.map(x=>`<a class="cab-row" href="#/tournament/${x.e.slug}">
+      <span class="cab-m">${MEDAL_ICO[x.m]}</span>
+      <span class="cab-body"><span class="cab-ev">${esc(x.e.name)}</span>
+      <span class="cab-sub"><span class="event-tier ${TIER_CLASS[x.e.tier]}">${esc(x.e.tierLabel.toUpperCase())}</span> ${fmtDate(x.e.date)}</span></span></a>`).join("")}</div>
+  </div>`;
+}
+// A player's podium finishes: golds from vetted titles, silver/bronze inferred
+// from the placements of teams they were rostered on in the matching years.
+function playerMedals(p){
+  const golds = (p.titles||[]).map(tt=>({m:'g', ev:tt.event, slug:tt.slug, tier:tt.tier,
+    tierLabel:tt.tierLabel, year:String(tt.year), team:tt.team, sort:String(tt.year)+'-99'}));
+  const goldKeys = new Set(golds.map(x=>x.slug));
+  const seen = new Set(), others = [];
+  (p.teamHistory||[]).forEach(th=>{
+    if(!th.teamSlug) return;
+    const tm = teamBySlug(th.teamSlug); if(!tm) return;
+    const yrs = new Set((th.years||[]).map(String));
+    (tm.events||[]).forEach(e=>{
+      const m = medalOf(e); if(!m || m==='g') return;
+      const ey = String((e.date||'').slice(0,4));
+      if(!yrs.has(ey) || goldKeys.has(e.slug) || seen.has(e.slug)) return;
+      seen.add(e.slug);
+      others.push({m, ev:e.name, slug:e.slug, tier:e.tier, tierLabel:e.tierLabel, year:ey, team:tm.name, sort:e.date||ey});
+    });
+  });
+  const all = golds.concat(others).sort((a,b)=>(b.sort||'').localeCompare(a.sort||''));
+  return {all, g:golds.length, s:others.filter(x=>x.m==='s').length, b:others.filter(x=>x.m==='b').length};
+}
+// Lineup history: horizontal per-player tenure bars across years, Liquipedia-style.
+function lineupTimelineHtml(t){
+  const rows = [];
+  (t.roster||[]).forEach(r=>{
+    const ph = playerBySlug(r.slug);
+    const th = ph && (ph.teamHistory||[]).find(h=>h.teamSlug===t.slug);
+    let yrs = th ? th.years.map(Number) : [];
+    if(!yrs.length) yrs = [new Date().getFullYear()];
+    rows.push({slug:r.slug, name:r.name, iso:r.iso, role:r.role, years:new Set(yrs), current:true});
+  });
+  (t.formerPlayers||[]).forEach(f=>{
+    rows.push({slug:f.slug, name:f.name, iso:f.iso, role:'', years:new Set((f.years||[]).map(Number)), current:false, nowTeam:f.nowTeam});
+  });
+  const withYears = rows.filter(r=>r.years.size);
+  if(withYears.length<2) return '';
+  const allYears = [...new Set(withYears.flatMap(r=>[...r.years]))].sort((a,b)=>a-b);
+  const y0 = allYears[0], y1 = allYears[allYears.length-1];
+  const cols = []; for(let y=y0;y<=y1;y++) cols.push(y);
+  // active players first, then most-recent former
+  withYears.sort((a,b)=> (b.current-a.current) || (Math.max(...b.years)-Math.max(...a.years)));
+  const head = `<div class="lt-row lt-head"><div class="lt-name"></div><div class="lt-cells">${cols.map(y=>`<span class="lt-yr">${String(y).slice(2)}</span>`).join("")}</div></div>`;
+  const body = withYears.map(r=>{
+    const cells = cols.map(y=>{
+      const on = r.years.has(y);
+      const cls = on ? (r.current?'on cur':'on') : 'off';
+      return `<span class="lt-cell ${cls}"></span>`;
+    }).join("");
+    const nm = r.slug ? `<a href="#/player/${r.slug}">${flag(r.iso)}${esc(r.name)}</a>` : `${flag(r.iso)}${esc(r.name)}`;
+    return `<div class="lt-row"><div class="lt-name" title="${esc(r.name)}${r.current?' · current':(r.nowTeam?' · now '+esc(r.nowTeam):'')}">${nm}${r.current?'<span class="lt-badge">now</span>':''}</div><div class="lt-cells">${cells}</div></div>`;
+  }).join("");
+  return `<h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Lineup History</h2>
+    <div class="lineup-tl">${head}${body}</div>`;
+}
+// Every played match between two teams (scans group stages + bracket), newest first.
+function teamMeetings(slugA, slugB){
+  const out = [];
+  (DATA.tournaments||[]).forEach(tr=>{
+    const scan=(matches,pfx)=>matches.forEach(m=>{
+      if(!(m.w===1||m.w===2) || !m.aTeam || !m.bTeam) return;
+      if(!((m.aTeam===slugA&&m.bTeam===slugB)||(m.aTeam===slugB&&m.bTeam===slugA))) return;
+      const aIsA = m.aTeam===slugA;
+      out.push({date:tr.date||'', event:tr.name, eventSlug:tr.slug, ref:(m.i!=null?pfx+m.i:null),
+        aScore:(aIsA?m.sa:m.sb), bScore:(aIsA?m.sb:m.sa),
+        winner:((m.w===1?m.aTeam:m.bTeam)===slugA?'a':'b')});
+    });
+    if(tr.stages&&tr.stages.length) tr.stages.forEach(st=>st.rounds.forEach(rd=>scan(rd.matches, st.id+"-")));
+    else (tr.bracket||[]).forEach(rd=>scan(rd.matches, ""));
+  });
+  out.sort((x,y)=>(y.date||'').localeCompare(x.date||''));
+  return out;
+}
+
 function renderTeam(slug){
   const t = teamBySlug(slug);
   if(!t){ app.innerHTML = notFound("Team"); return; }
@@ -263,6 +362,7 @@ function renderTeam(slug){
     ${t.bio?`<div class="player-bio">${esc(t.bio)}</div>`:''}
 
     <div class="profile-grid">
+      <div class="profile-side">
       <div class="infobox">
         <div class="ib-title">Team Info</div>
         <div class="ib-row"><span class="k">Tag</span><span class="v">${esc(t.tag||'—')}</span></div>
@@ -275,6 +375,8 @@ function renderTeam(slug){
         <div class="ib-row"><span class="k">Events played</span><span class="v">${t.events_played}</span></div>
         <div class="ib-row"><span class="k">Podiums</span><span class="v">${t.podiums} (${t.major_podiums} major)</span></div>
         <div class="ib-row"><span class="k">Trophies</span><span class="v">${trophies.length?esc(trophies.join(' · ')):'—'}</span></div>
+      </div>
+      ${teamCabinetHtml(t)}
       </div>
       <div>
         <div class="statgrid">
@@ -303,6 +405,7 @@ function renderTeam(slug){
             <div><div class="pm-name">${flag(f.iso)}${esc(f.name)}</div>
             <div class="pm-sub">${yrs?esc(yrs)+' · ':''}now: ${now}</div></div>
           </a>`;}).join("")}</div>`:''}
+        ${lineupTimelineHtml(t)}
         ${(t.events&&t.events.length)?(()=>{
           const pb={}; (t.points_breakdown||[]).forEach(b=>pb[b.slug]=(pb[b.slug]||0)+b.points);
           return `
@@ -443,19 +546,27 @@ function renderPlayer(slug){
           return `<h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>Recent Form
             <span class="muted" style="font-size:11px">last ${last.length} map${last.length===1?'':'s'} · ${w}-${l} · ${avg.toFixed(2)} avg RTG</span></h2>
             <div class="form-row">${formDots(log)}${formSpark(log)}</div>`; })()}
-        ${(p.titles&&p.titles.length)||(p.mvpAwards&&p.mvpAwards.length)?`
-        <h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>Honors
-          <span class="muted" style="font-size:11px">${p.titles?p.titles.length+'× champion':''}${p.mvpAwards&&p.mvpAwards.length?(p.titles&&p.titles.length?' · ':'')+p.mvpAwards.length+'× MVP':''}</span></h2>
-        <div class="honors">
-          ${(p.titles||[]).map(tt=>`<a class="honor" href="#/tournament/${tt.slug}">
-             <span class="honor-ico">🏆</span>
-             <span class="honor-body"><span class="honor-ev">${esc(tt.event)}</span>
-             <span class="honor-sub"><span class="event-tier ${TIER_CLASS[tt.tier]}">${esc(tt.tierLabel.toUpperCase())}</span> ${tt.year} · ${esc(tt.team)}</span></span></a>`).join("")}
-          ${(p.mvpAwards||[]).map(a=>`<a class="honor" href="#/tournament/${a.slug}">
+        ${(()=>{
+          const med = playerMedals(p);
+          const nMvp = (p.mvpAwards||[]).length;
+          if(!med.all.length && !nMvp) return '';
+          const tally=[];
+          if(med.g) tally.push(`🥇 ${med.g}`);
+          if(med.s) tally.push(`🥈 ${med.s}`);
+          if(med.b) tally.push(`🥉 ${med.b}`);
+          if(nMvp) tally.push(`⭐ ${nMvp}× MVP`);
+          const medHtml = med.all.map(x=>`<a class="honor" href="#/tournament/${x.slug}">
+             <span class="honor-ico">${MEDAL_ICO[x.m]}</span>
+             <span class="honor-body"><span class="honor-ev">${esc(x.ev)}</span>
+             <span class="honor-sub"><span class="event-tier ${TIER_CLASS[x.tier]}">${esc(x.tierLabel.toUpperCase())}</span> ${x.year} · ${esc(x.team)}</span></span></a>`).join("");
+          const mvpHtml = (p.mvpAwards||[]).map(a=>`<a class="honor" href="#/tournament/${a.slug}">
              <span class="honor-ico">⭐</span>
              <span class="honor-body"><span class="honor-ev">${esc(a.event)}</span>
-             <span class="honor-sub">Event MVP · ${a.year}</span></span></a>`).join("")}
-        </div>`:''}
+             <span class="honor-sub">Event MVP · ${a.year}</span></span></a>`).join("");
+          return `<h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>Achievements
+            <span class="muted" style="font-size:11px">${tally.join(' · ')}</span></h2>
+            <div class="honors">${medHtml}${mvpHtml}</div>`;
+        })()}
         <div class="notice" style="text-align:left;margin-top:18px">
           <strong>${p.ratingPoints!=null?p.ratingPoints+' Rating Points · Level '+p.level:'Unranked'}</strong> — a FACEIT-style score built from
           performance within the ${poolName.toLowerCase()} pool, weighted 40% K/D, 30% kills/map, 15% MVP impact, 10% assists, 5% win rate
@@ -1059,13 +1170,31 @@ function renderMatch(){
     const nm = name ? (slug2?`<a href="#/team/${slug2}">${esc(name)}</a>`:esc(name)) : '<span class="muted">TBD</span>';
     return `<div class="m-side ${win?'m-win':''}">${logo}<div class="m-name">${nm}</div><div class="m-score">${score!=null?score:'–'}</div></div>`;
   };
-  // head-to-head between these two current teams
+  // head-to-head between these two teams (all prior meetings, this match excluded)
   let h2hHtml = '';
-  if(match.aTeam && match.bTeam){
-    const ta = teamBySlug(match.aTeam);
-    const rec = ta && (ta.h2h||[]).find(h=>h.opp===match.bTeam);
-    if(rec) h2hHtml = `<div class="m-h2h"><span class="muted">All-time head-to-head</span>
-      <div class="m-h2h-rec"><span class="m-h2h-w">${rec.w}</span><span class="muted">–</span><span class="m-h2h-l">${rec.l}</span></div></div>`;
+  if(match.aTeam && match.bTeam && match.aTeam!==match.bTeam){
+    const meets = teamMeetings(match.aTeam, match.bTeam).filter(x=>!(x.eventSlug===slug && x.ref===ref));
+    const wA = meets.filter(x=>x.winner==='a').length, wB = meets.filter(x=>x.winner==='b').length;
+    const la = teamBySlug(match.aTeam), lb = teamBySlug(match.bTeam);
+    const crest = tm => tm&&tm.logo ? `<img src="${esc(tm.logo)}" alt="">` : '';
+    const rows = meets.slice(0,12).map(x=>{
+      const aw = x.winner==='a';
+      const href = x.ref ? `#/match/${x.eventSlug}/${x.ref}` : `#/tournament/${x.eventSlug}`;
+      return `<a class="h2h-meet" href="${href}">
+        <span class="h2h-date">${fmtDate(x.date)}</span>
+        <span class="h2h-scores"><span class="h2h-sc ${aw?'won':'lost'}">${x.aScore!=null?x.aScore:'–'}</span><span class="h2h-colon">:</span><span class="h2h-sc ${aw?'lost':'won'}">${x.bScore!=null?x.bScore:'–'}</span></span>
+        <span class="h2h-ev">${esc(x.event)}</span></a>`;
+    }).join("");
+    h2hHtml = `<h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Head-to-Head</h2>
+      <div class="h2h-box">
+        <div class="h2h-head">
+          <span class="h2h-team">${crest(la)}<a href="#/team/${match.aTeam}">${esc(match.a)}</a></span>
+          <span class="h2h-rec"><span class="hw">${wA}</span><span class="muted">–</span><span class="hl">${wB}</span></span>
+          <span class="h2h-team right"><a href="#/team/${match.bTeam}">${esc(match.b)}</a>${crest(lb)}</span>
+        </div>
+        ${meets.length ? `<div class="h2h-list">${rows}</div>${meets.length>12?`<div class="h2h-more muted">+ ${meets.length-12} earlier meeting${meets.length-12===1?'':'s'}</div>`:''}`
+          : '<div class="h2h-none muted">First-ever meeting between these two teams.</div>'}
+      </div>`;
   }
   // pre-match preview: rankings + recent form (only when not yet played and both teams known)
   let previewHtml = '';
