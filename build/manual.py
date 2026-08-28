@@ -365,6 +365,7 @@ def to_standard(man):
         "participants": parts, "matches": flat, "roundTitles": {},
         "finalStandings": tournament_placements(man),
         "seeds": man.get("seeds", {}),
+        "predictionsLocked": bool(man.get("predictionsLocked")),
     }
 
 # ---------------- persistence ----------------
@@ -386,7 +387,7 @@ def list_manual():
         if fn.endswith(".json"):
             m = json.load(open(os.path.join(MANUAL, fn), encoding="utf-8"))
             out.append({"slug": m["slug"], "name": m["name"], "tier": m["tier"], "date": m["date"],
-                        "stages": len(m.get("stages", []))})
+                        "stages": len(m.get("stages", [])), "predictionsLocked": bool(m.get("predictionsLocked"))})
     return out
 
 # ---------------- mutations ----------------
@@ -410,6 +411,14 @@ def add_stage(slug, name, fmt, teams, best_of=1):
     man["stages"].append({"id": _next_stage_id(man), "name": name.strip() or fmt,
                           "format": fmt, "bestOf": int(best_of or 1), "teams": teams,
                           "matches": matches, "roundTitles": titles})
+    save(man); return man
+
+def set_predictions_locked(slug, locked):
+    """Lock/unlock predictions for an event. Locking = the tournament has started,
+    so no new predictions and no edits to existing ones are accepted by the UI."""
+    man = load(slug)
+    if not man: return None
+    man["predictionsLocked"] = bool(locked)
     save(man); return man
 
 def _stage(man, sid):

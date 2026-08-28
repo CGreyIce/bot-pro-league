@@ -162,6 +162,7 @@ def process_manual(raw, team_map, alias):
         "runnerUp": None, "runnerUpTeam": None,
         "standings": overall, "bracket": bracket, "stages": stages_out,
         "finalStandings": final_standings, "seeds": seeds_out,
+        "predictionsLocked": bool(raw.get("predictionsLocked")),
     }
 
 def process_one(raw, team_map, alias):

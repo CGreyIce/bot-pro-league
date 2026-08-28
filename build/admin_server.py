@@ -157,6 +157,8 @@ class Handler(SimpleHTTPRequestHandler):
                 save_solo([g for g in load_solo() if g.get("id") != b.get("id")])
                 ok, msg = regenerate()
                 return self._json(200, {"ok": ok, "msg": msg})
+            elif path == "/api/predlock":
+                man = manual.set_predictions_locked(b["slug"], b.get("locked", True))
             elif path == "/api/delete":
                 manual.delete(b["slug"]); ok, msg = regenerate()
                 return self._json(200, {"ok": ok, "msg": msg})

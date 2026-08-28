@@ -484,6 +484,10 @@ textarea.adm-in{resize:vertical}
 .adm-trow .adm-name:hover{color:var(--link)}
 .adm-del{margin-left:auto;background:none;border:0;color:var(--muted2);cursor:pointer;font-size:14px}
 .adm-del:hover{color:var(--accent2)}
+.adm-predlock{margin-left:auto;background:var(--panel2);border:1px solid var(--border);color:var(--text);cursor:pointer;font-size:11px;font-weight:600;border-radius:6px;padding:5px 9px;white-space:nowrap}
+.adm-predlock:hover{border-color:var(--accent)}
+.adm-predlock.on{background:rgba(255,107,107,.12);border-color:var(--accent2,#ff6b6b);color:var(--accent2,#ff6b6b)}
+.adm-trow .adm-del{margin-left:6px}
 .ae-head{display:flex;align-items:center;gap:12px;margin-bottom:12px}
 .ae-champ{color:var(--accent);font-weight:700;font-family:'Rajdhani'}
 .ae-bracket{display:flex;gap:26px;overflow-x:auto;padding-bottom:10px}

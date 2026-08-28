@@ -1473,6 +1473,8 @@ async function renderAdmin(){
         <a href="#/admin" data-edit="${esc(t.slug)}" class="adm-name">${esc(t.name)}</a>
         <span class="muted" style="font-size:12px">${esc(t.date)} · ${t.stages} stage${t.stages===1?'':'s'}</span>
         <a href="#/tournament/${esc(t.slug)}" class="muted" style="font-size:12px">view →</a>
+        <button class="adm-predlock ${t.predictionsLocked?'on':''}" data-predlock="${esc(t.slug)}" data-locked="${t.predictionsLocked?1:0}"
+          title="${t.predictionsLocked?'Predictions are locked — click to reopen them':'Start this tournament — lock predictions so no new entries or edits are accepted'}">${t.predictionsLocked?'🔒 Predictions locked':'▶ Start (lock predictions)'}</button>
         <button class="adm-del" data-del="${esc(t.slug)}" title="Delete">✕</button>
       </div>`).join("") : '<p class="muted">No admin tournaments yet.</p>';
 
@@ -1588,6 +1590,15 @@ async function renderAdmin(){
     e.preventDefault();
     if(!confirm("Delete this tournament?")) return;
     await apiPost("/api/delete",{slug:b.dataset.del}); adminEditing=null; await reloadData(); renderAdmin();
+  });
+  app.querySelectorAll("[data-predlock]").forEach(b=>b.onclick=async e=>{
+    e.preventDefault();
+    const locking = b.dataset.locked!=="1";
+    if(locking && !confirm("Start this tournament and lock predictions?\n\nNo new predictions can be made and existing ones can't be edited. You can reopen them later. Remember to Publish afterwards to apply it to the live site.")) return;
+    if(!locking && !confirm("Reopen predictions for this tournament? People will be able to enter and edit predictions again.")) return;
+    b.disabled=true; b.textContent = locking?"Locking…":"Reopening…";
+    await apiPost("/api/predlock",{slug:b.dataset.predlock, locked:locking});
+    await reloadData(); renderAdmin();
   });
   setupSoloAdmin();
   setupShuffler();
@@ -2418,6 +2429,10 @@ function drawPredict(){
   const pl=predPlacements(rounds);
   const actual=actualResults(tr);
   const myScore = actual ? scorePrediction(pred, tr, actual) : null;
+  const locked = !!(tr.champion || tr.predictionsLocked);
+  const statusMsg = tr.champion ? 'Results are in — predictions locked.'
+    : tr.predictionsLocked ? 'The tournament has started — predictions are locked.'
+    : 'Pick your group qualifiers and bracket, then Save.';
   app.innerHTML = `
     <div class="crumb"><a href="#/tournament/${tr.slug}">${esc(tr.name)}</a><span class="sep">/</span>Predictions</div>
     <h2 class="section-title"><span class="accent-bar"></span>Predictions · ${esc(tr.name)}
@@ -2426,10 +2441,13 @@ function drawPredict(){
       <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
         <strong>Your name:</strong>
         <input id="pred-name" class="adm-in" style="max-width:220px;margin:0" placeholder="e.g. Alice" value="${esc(pred.name||'')}">
-        <span id="pred-status" class="muted" style="font-size:12px">${tr.champion?'Results are in — predictions locked.':'Pick your group qualifiers and bracket, then Save.'}</span>
+        <span id="pred-status" class="muted" style="font-size:12px">${statusMsg}</span>
       </div>
     </div>
-    ${tr.champion?'':`<h3 class="rec-group">Group Qualifiers <span class="muted" style="font-size:11px">top 2 advance</span></h3>
+    ${locked?`<div class="notice" style="text-align:left;margin-bottom:14px;border-color:var(--accent)">
+      🔒 <strong>${tr.predictionsLocked&&!tr.champion?'This tournament is underway.':'This event is over.'}</strong>
+      Predictions are locked — no new entries or edits. See the standings below.</div>`
+    :`<h3 class="rec-group">Group Qualifiers <span class="muted" style="font-size:11px">top 2 advance</span></h3>
     <div class="pg-grid">${groupCards}</div>
     <h3 class="rec-group" style="margin-top:18px">Playoff Bracket</h3>
     ${bracketHtml}
