@@ -1609,6 +1609,16 @@ async function renderAdmin(){
 // ---- map veto simulator (admin) ----
 const VETO_MAPS = ["Mirage","Dust2","Inferno","Cache","Tuscan","Vertigo","Anubis"];
 const VETO_IMG = {Mirage:"mirage.jpg",Dust2:"dust2.jpg",Inferno:"inferno.jpg",Cache:"cache.jpg",Tuscan:"tuscan.jpg",Vertigo:"vertigo.jpeg",Anubis:"anubis.jpeg"};
+// The team that picks a map doesn't choose sides — the opponent picks which side
+// to start on. We have no CT/T split in the stats, so the choice is deterministic
+// (stable per matchup) with a light lean toward each map's stronger starting side.
+const MAP_SIDE_LEAN = {Mirage:"CT",Dust2:"T",Inferno:"CT",Cache:"CT",Tuscan:"CT",Vertigo:"CT",Anubis:"T"};
+function vetoHash(s){ let h=2166136261>>>0; for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,16777619); } return h>>>0; }
+function vetoSide(chooser, map, A, B){
+  const lean = MAP_SIDE_LEAN[map] || "CT";
+  const follow = (vetoHash((chooser.slug||chooser.name)+"|"+map+"|"+A.slug+"|"+B.slug) % 100) < 65;
+  return follow ? lean : (lean==="CT" ? "T" : "CT");
+}
 function setupMapVeto(){
   const go=$("#veto-go"); if(!go) return;
   const teams=DATA.teams.concat(DATA.adhocMapTeams||[]); const bySlug={}; teams.forEach(t=>bySlug[t.slug]=t);
@@ -1647,10 +1657,22 @@ function simulateVeto(A,B,fmt){
       reason = isBest(team,map) ? `${team.name}'s best map (${pct(wr(team,map))})` : `${team.name}'s strongest left (${pct(wr(team,map))})`;
     }
     remaining=remaining.filter(m=>m!==map);
-    steps.push({team:team.name, side:team===A?"a":"b", action, map, reason, wrA:wr(A,map), wrB:wr(B,map)});
+    const step={team:team.name, side:team===A?"a":"b", action, map, reason, wrA:wr(A,map), wrB:wr(B,map)};
+    if(action==="pick"){                                  // opponent of the picker elects the side
+      const chooser=opp, ss=vetoSide(chooser,map,A,B);
+      step.sideTeam=chooser.name; step.sideAB=chooser===A?"a":"b"; step.startSide=ss;
+      step.sideNote=`${chooser.name} start ${ss} (${team.name}'s pick, so ${chooser.name} choose side)`;
+    }
+    steps.push(step);
   }
   const decider=remaining[0];
-  steps.push({team:"", side:"d", action:"decider", map:decider, reason:"the map left after all vetoes", wrA:wr(A,decider), wrB:wr(B,decider)});
+  const dstep={team:"", side:"d", action:"decider", map:decider, reason:"the map left after all vetoes", wrA:wr(A,decider), wrB:wr(B,decider)};
+  {                                                        // decider: sides settled by a knife round
+    const kwin=(vetoHash(A.slug+"|"+B.slug+"|"+decider)%2===0)?A:B, ss=vetoSide(kwin,decider,A,B);
+    dstep.sideTeam=kwin.name; dstep.sideAB=kwin===A?"a":"b"; dstep.startSide=ss; dstep.knife=true;
+    dstep.sideNote=`${kwin.name} win the knife round and start ${ss}`;
+  }
+  steps.push(dstep);
   return {steps, decider, played: fmt==="bo1" ? [decider] : steps.filter(s=>s.action==="pick").map(s=>s.map).concat(decider)};
 }
 function vetoMapImg(m){ return `<img class="vt-img" src="assets/maps/${VETO_IMG[m]}" alt="${esc(m)}">`; }
@@ -1669,10 +1691,17 @@ function renderVetoResult(A,B,fmt,res){
       : s.action==="pick"?`<span class="vt-badge pick">PICK</span>`
       : `<span class="vt-badge dec">DECIDER</span>`;
     const who = s.team?`<span class="vt-team ${s.side}">${esc(s.team)}</span>`:`<span class="vt-team d">Left over</span>`;
+    const other = s.sideAB==="a"?"b":"a";
+    const otherName = s.sideAB==="a"?B.name:A.name;
+    const sideHtml = s.sideNote
+      ? `<div class="vt-side"><span class="vt-sd ${s.sideAB}">${esc(s.sideTeam)} <b>${s.startSide}</b></span>
+         <span class="vt-sd ${other}">${esc(otherName)} <b>${s.startSide==="CT"?"T":"CT"}</b></span>
+         <span class="vt-sd-note">${s.knife?"🔪 knife round":`${esc(s.sideTeam)} choose side`}</span></div>`
+      : '';
     return `<div class="vt-step ${s.action}">
       ${vetoMapImg(s.map)}
       <div class="vt-body"><div class="vt-line">${badge} ${who} — <b>${esc(s.map)}</b></div>
-        <div class="vt-reason">${esc(s.reason)}</div></div>
+        <div class="vt-reason">${esc(s.reason)}</div>${sideHtml}</div>
       <div class="vt-wr"><span class="a">${esc(A.name.slice(0,10))} ${pct(s.wrA)}</span><span class="b">${esc(B.name.slice(0,10))} ${pct(s.wrB)}</span></div>
     </div>`; };
   out.innerHTML=`<div class="veto-grid">
