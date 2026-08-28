@@ -276,15 +276,24 @@ function lineupTimelineHtml(t){
   });
   const withYears = rows.filter(r=>r.years.size);
   if(withYears.length<2) return '';
-  const allYears = [...new Set(withYears.flatMap(r=>[...r.years]))].sort((a,b)=>a-b);
-  const y0 = allYears[0], y1 = allYears[allYears.length-1];
+  const cy = new Date().getFullYear();
+  // The recorded years are event-participation years, but a roster persists
+  // between events unless it changes — so draw each player's tenure as a solid
+  // bar from their first recorded year to their last (or to the present, if
+  // they're still on the roster), filling the years the team simply sat out.
+  withYears.forEach(r=>{
+    const ys=[...r.years];
+    r.lo=Math.min(...ys);
+    r.hi=r.current?Math.max(cy,...ys):Math.max(...ys);
+  });
+  const y0 = Math.min(...withYears.map(r=>r.lo)), y1 = Math.max(...withYears.map(r=>r.hi));
   const cols = []; for(let y=y0;y<=y1;y++) cols.push(y);
-  // active players first, then most-recent former
-  withYears.sort((a,b)=> (b.current-a.current) || (Math.max(...b.years)-Math.max(...a.years)));
+  // active players first, then most-recent tenure
+  withYears.sort((a,b)=> (b.current-a.current) || (b.hi-a.hi) || (a.lo-b.lo));
   const head = `<div class="lt-row lt-head"><div class="lt-name"></div><div class="lt-cells">${cols.map(y=>`<span class="lt-yr">${String(y).slice(2)}</span>`).join("")}</div></div>`;
   const body = withYears.map(r=>{
     const cells = cols.map(y=>{
-      const on = r.years.has(y);
+      const on = y>=r.lo && y<=r.hi;
       const cls = on ? (r.current?'on cur':'on') : 'off';
       return `<span class="lt-cell ${cls}"></span>`;
     }).join("");
