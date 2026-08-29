@@ -1030,6 +1030,25 @@ def main():
         former.sort(key=lambda x: (x["years"][-1] if x["years"] else "", x["name"].lower()), reverse=True)
         t["formerPlayers"] = former
 
+    # ---- manually-added former players (predate recorded event rosters, e.g. banned) ----
+    fpx_path = os.path.join(DATA, "former_players_extra.json")
+    fpx = json.load(open(fpx_path, encoding="utf-8")) if os.path.exists(fpx_path) else {}
+    for t in teams:
+        extra = fpx.get(t["slug"])
+        if not extra:
+            continue
+        have = {f["name"].lower() for f in t["formerPlayers"]}
+        for e in extra:
+            if not isinstance(e, dict) or not e.get("name") or e["name"].lower() in have:
+                continue
+            t["formerPlayers"].append({
+                "slug": e.get("slug"), "name": e["name"], "iso": e.get("iso", ""),
+                "years": [str(y) for y in e.get("years", [])],
+                "nowTeam": "", "nowTeamSlug": None,
+                "status": e.get("status"), "replacedBy": e.get("replacedBy"),
+            })
+        t["formerPlayers"].sort(key=lambda x: (x["years"][-1] if x["years"] else "", x["name"].lower()), reverse=True)
+
     # ---- also-known-as (former names) per current player ----
     nc_raw = json.load(open(ncp, encoding="utf-8")) if os.path.exists(ncp) else {}
     aka = defaultdict(list)

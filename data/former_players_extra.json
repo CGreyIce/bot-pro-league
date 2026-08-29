@@ -1,0 +1,19 @@
+{
+  "_comment": "Manually-added former players who predate the recorded event rosters. Merged into each team's formerPlayers by parse.py. years = list of year strings on the team; status 'banned' shows a banned badge; replacedBy names their successor. iso optional (flag).",
+  "setting-sun": [
+    {
+      "name": "Clueby",
+      "years": ["2020", "2021", "2022", "2023", "2024"],
+      "status": "banned",
+      "replacedBy": "Uzuhii"
+    }
+  ],
+  "infernum-e-sports": [
+    {
+      "name": "Snyxxel",
+      "years": ["2021", "2022", "2023", "2024"],
+      "status": "banned",
+      "replacedBy": "soapdax"
+    }
+  ]
+}

@@ -16534,7 +16534,23 @@
     }
    ],
    "rankDelta": 0,
-   "formerPlayers": [],
+   "formerPlayers": [
+    {
+     "slug": null,
+     "name": "Snyxxel",
+     "iso": "",
+     "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+     ],
+     "nowTeam": "",
+     "nowTeamSlug": null,
+     "status": "banned",
+     "replacedBy": "soapdax"
+    }
+   ],
    "h2h": [
     {
      "opp": "kiedz",
@@ -41622,7 +41638,24 @@
     }
    ],
    "rankDelta": 9,
-   "formerPlayers": [],
+   "formerPlayers": [
+    {
+     "slug": null,
+     "name": "Clueby",
+     "iso": "",
+     "years": [
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+     ],
+     "nowTeam": "",
+     "nowTeamSlug": null,
+     "status": "banned",
+     "replacedBy": "Uzuhii"
+    }
+   ],
    "h2h": [
     {
      "opp": "infernum-e-sports",

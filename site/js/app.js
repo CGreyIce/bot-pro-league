@@ -272,7 +272,7 @@ function lineupTimelineHtml(t){
     rows.push({slug:r.slug, name:r.name, iso:r.iso, role:r.role, years:new Set(yrs), current:true});
   });
   (t.formerPlayers||[]).forEach(f=>{
-    rows.push({slug:f.slug, name:f.name, iso:f.iso, role:'', years:new Set((f.years||[]).map(Number)), current:false, nowTeam:f.nowTeam});
+    rows.push({slug:f.slug, name:f.name, iso:f.iso, role:'', years:new Set((f.years||[]).map(Number)), current:false, nowTeam:f.nowTeam, banned:f.status==='banned', replacedBy:f.replacedBy});
   });
   const withYears = rows.filter(r=>r.years.size);
   if(withYears.length<2) return '';
@@ -298,7 +298,9 @@ function lineupTimelineHtml(t){
       return `<span class="lt-cell ${cls}"></span>`;
     }).join("");
     const nm = r.slug ? `<a href="#/player/${r.slug}">${flag(r.iso)}${esc(r.name)}</a>` : `${flag(r.iso)}${esc(r.name)}`;
-    return `<div class="lt-row"><div class="lt-name" title="${esc(r.name)}${r.current?' · current':(r.nowTeam?' · now '+esc(r.nowTeam):'')}">${nm}${r.current?'<span class="lt-badge">now</span>':''}</div><div class="lt-cells">${cells}</div></div>`;
+    const ttl = esc(r.name)+(r.current?' · current':(r.banned?' · banned'+(r.replacedBy?', replaced by '+r.replacedBy:''):(r.nowTeam?' · now '+esc(r.nowTeam):'')));
+    const tag = r.current?'<span class="lt-badge">now</span>':(r.banned?'<span class="lt-badge ban">banned</span>':'');
+    return `<div class="lt-row"><div class="lt-name" title="${ttl}">${nm}${tag}</div><div class="lt-cells">${cells}</div></div>`;
   }).join("");
   return `<h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Lineup History</h2>
     <div class="lineup-tl">${head}${body}</div>`;
@@ -408,12 +410,16 @@ function renderTeam(slug){
           <span class="muted" style="font-size:11px">(${t.formerPlayers.length})</span></h2>
         <div class="roster">${t.formerPlayers.map(f=>{
           const yrs = f.years&&f.years.length ? (f.years.length>1?`${f.years[0]}–${f.years[f.years.length-1]}`:f.years[0]) : '';
-          const now = f.nowTeam ? esc(f.nowTeam) : 'Teamless';
-          return `<a class="pcard-mini former" href="#/player/${f.slug}">
-            <div class="avatar">${initials(f.name)}</div>
+          const banned = f.status==='banned';
+          const sub = banned
+            ? `${yrs?esc(yrs)+' · ':''}<span class="fp-ban">Banned</span>${f.replacedBy?' · replaced by '+esc(f.replacedBy):''}`
+            : `${yrs?esc(yrs)+' · ':''}now: ${f.nowTeam?esc(f.nowTeam):'Teamless'}`;
+          const inner = `<div class="avatar">${initials(f.name)}</div>
             <div><div class="pm-name">${flag(f.iso)}${esc(f.name)}</div>
-            <div class="pm-sub">${yrs?esc(yrs)+' · ':''}now: ${now}</div></div>
-          </a>`;}).join("")}</div>`:''}
+            <div class="pm-sub">${sub}</div></div>`;
+          return f.slug ? `<a class="pcard-mini former" href="#/player/${f.slug}">${inner}</a>`
+                        : `<div class="pcard-mini former noprofile">${inner}</div>`;
+        }).join("")}</div>`:''}
         ${lineupTimelineHtml(t)}
         ${(t.events&&t.events.length)?(()=>{
           const pb={}; (t.points_breakdown||[]).forEach(b=>pb[b.slug]=(pb[b.slug]||0)+b.points);
