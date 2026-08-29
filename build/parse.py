@@ -747,6 +747,7 @@ def main():
     for t in teams:
         t["events"] = []
     for tr in tournaments:
+        added = set()
         for s in tr["standings"]:
             tm = slug_to_team.get(s["teamSlug"]) if s.get("teamSlug") else None
             if tm:
@@ -755,6 +756,26 @@ def main():
                     "tier": tr["tier"], "tierLabel": tr["tierLabel"],
                     "placement": s["rank"], "isChampion": (tr["championTeam"] == tm["slug"]),
                 })
+                added.add(tm["slug"])
+        # Teams eliminated before the final stage (e.g. the group stage) aren't in the
+        # playoff standings — surface them from finalStandings so the event still shows on
+        # their profile, with a labelled placement ("Group Stage", "Quarterfinals", …).
+        # Only for finished events; they earn no ladder points, so the Pts column shows "—".
+        if tr.get("champion"):
+            for s in (tr.get("finalStandings") or []):
+                slug = s.get("teamSlug")
+                if not slug or slug in added:
+                    continue
+                tm = slug_to_team.get(slug)
+                if not tm:
+                    continue
+                tm["events"].append({
+                    "slug": tr["slug"], "name": tr["name"], "date": tr["date"],
+                    "tier": tr["tier"], "tierLabel": tr["tierLabel"],
+                    "placement": s.get("rank"), "isChampion": False,
+                    "placementLabel": s.get("result") or "Group Stage",
+                })
+                added.add(slug)
     for t in teams:
         t["events"].sort(key=lambda e: e["date"], reverse=True)
 

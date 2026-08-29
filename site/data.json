@@ -1397,6 +1397,16 @@
      "isChampion": false
     },
     {
+     "slug": "audax-esse-bpl-invitational-2025",
+     "name": "Audax Esse BPL Invitational 2025",
+     "date": "2025-03-22",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 14,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLCStage24",
      "name": "BPL Conquerors Stage 2024",
      "date": "2024-08-03",
@@ -3415,6 +3425,16 @@
    "originCountry": "Singapore",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 21,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLCStage25",
      "name": "BPL Conquerors Stage 2025",
      "date": "2025-10-10",
@@ -3431,6 +3451,16 @@
      "tierLabel": "S-Tier",
      "placement": 6,
      "isChampion": false
+    },
+    {
+     "slug": "audax-esse-bpl-invitational-2025",
+     "name": "Audax Esse BPL Invitational 2025",
+     "date": "2025-03-22",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 17,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
     },
     {
      "slug": "BPLChalS2024",
@@ -6173,6 +6203,16 @@
    "originCountry": "Singapore",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 28,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLCStage25",
      "name": "BPL Conquerors Stage 2025",
      "date": "2025-10-10",
@@ -6198,6 +6238,16 @@
      "tierLabel": "S-Tier",
      "placement": 21,
      "isChampion": false
+    },
+    {
+     "slug": "audax-esse-bpl-invitational-2025",
+     "name": "Audax Esse BPL Invitational 2025",
+     "date": "2025-03-22",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 34,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
     },
     {
      "slug": "BPLCStage24",
@@ -7978,6 +8028,16 @@
    "originIso": "us",
    "originCountry": "USA",
    "events": [
+    {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 16,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
     {
      "slug": "BPLCStage25",
      "name": "BPL Conquerors Stage 2025",
@@ -9837,6 +9897,16 @@
    "originCountry": "Singapore",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 32,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLCStage25",
      "name": "BPL Conquerors Stage 2025",
      "date": "2025-10-10",
@@ -11492,6 +11562,16 @@
      "tierLabel": "S-Tier",
      "placement": 30,
      "isChampion": false
+    },
+    {
+     "slug": "audax-esse-bpl-invitational-2025",
+     "name": "Audax Esse BPL Invitational 2025",
+     "date": "2025-03-22",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 31,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
     },
     {
      "slug": "BPLCStage24",
@@ -14054,6 +14134,16 @@
    "originCountry": "Singapore",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 26,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLLStage25",
      "name": "BPL Legends Stage 2025",
      "date": "2025-10-10",
@@ -14070,6 +14160,16 @@
      "tierLabel": "S-Tier",
      "placement": 19,
      "isChampion": false
+    },
+    {
+     "slug": "audax-esse-bpl-invitational-2025",
+     "name": "Audax Esse BPL Invitational 2025",
+     "date": "2025-03-22",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 22,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
     },
     {
      "slug": "BPLCStage24",
@@ -16207,6 +16307,16 @@
    "originCountry": "Singapore",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 40,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLLStage25",
      "name": "BPL Legends Stage 2025",
      "date": "2025-10-10",
@@ -16223,6 +16333,16 @@
      "tierLabel": "S-Tier",
      "placement": 10,
      "isChampion": false
+    },
+    {
+     "slug": "audax-esse-bpl-invitational-2025",
+     "name": "Audax Esse BPL Invitational 2025",
+     "date": "2025-03-22",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 21,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
     },
     {
      "slug": "BPLCStage24",
@@ -18246,6 +18366,16 @@
      "tierLabel": "S-Tier",
      "placement": 27,
      "isChampion": false
+    },
+    {
+     "slug": "audax-esse-bpl-invitational-2025",
+     "name": "Audax Esse BPL Invitational 2025",
+     "date": "2025-03-22",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 24,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
     },
     {
      "slug": "BPLLStage24",
@@ -20477,6 +20607,16 @@
    "originCountry": "Singapore",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 37,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLCStage25",
      "name": "BPL Conquerors Stage 2025",
      "date": "2025-10-10",
@@ -20502,6 +20642,16 @@
      "tierLabel": "S-Tier",
      "placement": 35,
      "isChampion": false
+    },
+    {
+     "slug": "audax-esse-bpl-invitational-2025",
+     "name": "Audax Esse BPL Invitational 2025",
+     "date": "2025-03-22",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 36,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
     },
     {
      "slug": "BPLCStage24",
@@ -22435,6 +22585,16 @@
    "originCountry": "Singapore",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 35,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLLStage25",
      "name": "BPL Legends Stage 2025",
      "date": "2025-10-10",
@@ -22451,6 +22611,16 @@
      "tierLabel": "S-Tier",
      "placement": 20,
      "isChampion": false
+    },
+    {
+     "slug": "audax-esse-bpl-invitational-2025",
+     "name": "Audax Esse BPL Invitational 2025",
+     "date": "2025-03-22",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 23,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
     },
     {
      "slug": "BPLLStage24",
@@ -23982,6 +24152,16 @@
    "originIso": "sg",
    "originCountry": "Singapore",
    "events": [
+    {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 41,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
     {
      "slug": "BPLCStage25",
      "name": "BPL Conquerors Stage 2025",
@@ -25952,6 +26132,16 @@
    "originCountry": "Singapore",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 23,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLLStage25",
      "name": "BPL Legends Stage 2025",
      "date": "2025-10-10",
@@ -25968,6 +26158,16 @@
      "tierLabel": "S-Tier",
      "placement": 14,
      "isChampion": false
+    },
+    {
+     "slug": "audax-esse-bpl-invitational-2025",
+     "name": "Audax Esse BPL Invitational 2025",
+     "date": "2025-03-22",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 18,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
     },
     {
      "slug": "BPLCStage24",
@@ -32205,6 +32405,16 @@
    "originCountry": "Singapore",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 39,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLLStage25",
      "name": "BPL Legends Stage 2025",
      "date": "2025-10-10",
@@ -34011,6 +34221,16 @@
    "originCountry": "Singapore",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 14,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLCStage25",
      "name": "BPL Conquerors Stage 2025",
      "date": "2025-10-10",
@@ -34027,6 +34247,16 @@
      "tierLabel": "S-Tier",
      "placement": 2,
      "isChampion": false
+    },
+    {
+     "slug": "audax-esse-bpl-invitational-2025",
+     "name": "Audax Esse BPL Invitational 2025",
+     "date": "2025-03-22",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 19,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
     },
     {
      "slug": "BPLChalS2024",
@@ -35849,6 +36079,16 @@
    "originCountry": "Singapore",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 34,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLCStage25",
      "name": "BPL Conquerors Stage 2025",
      "date": "2025-10-10",
@@ -35874,6 +36114,16 @@
      "tierLabel": "S-Tier",
      "placement": 28,
      "isChampion": false
+    },
+    {
+     "slug": "audax-esse-bpl-invitational-2025",
+     "name": "Audax Esse BPL Invitational 2025",
+     "date": "2025-03-22",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 28,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
     },
     {
      "slug": "BPLCStage24",
@@ -37604,6 +37854,16 @@
    "originCountry": "Singapore",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 31,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLCStage25",
      "name": "BPL Conquerors Stage 2025",
      "date": "2025-10-10",
@@ -37620,6 +37880,16 @@
      "tierLabel": "S-Tier",
      "placement": 1,
      "isChampion": true
+    },
+    {
+     "slug": "audax-esse-bpl-invitational-2025",
+     "name": "Audax Esse BPL Invitational 2025",
+     "date": "2025-03-22",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 15,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
     },
     {
      "slug": "BPLCStage24",
@@ -39063,6 +39333,16 @@
    "originIso": "sg",
    "originCountry": "Singapore",
    "events": [
+    {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 42,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
     {
      "slug": "BPLLStage25",
      "name": "BPL Legends Stage 2025",
@@ -42727,6 +43007,16 @@
      "isChampion": false
     },
     {
+     "slug": "audax-esse-bpl-invitational-2025",
+     "name": "Audax Esse BPL Invitational 2025",
+     "date": "2025-03-22",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 26,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLLStage24",
      "name": "BPL Legends Stage 2024",
      "date": "2024-08-03",
@@ -45593,6 +45883,16 @@
      "isChampion": false
     },
     {
+     "slug": "audax-esse-bpl-invitational-2025",
+     "name": "Audax Esse BPL Invitational 2025",
+     "date": "2025-03-22",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 32,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLLStage24",
      "name": "BPL Legends Stage 2024",
      "date": "2024-08-03",
@@ -47717,6 +48017,16 @@
    "originIso": "sg",
    "originCountry": "Singapore",
    "events": [
+    {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 27,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
     {
      "slug": "BPLChalS2025",
      "name": "BPL Challengers Stage 2025",
@@ -50302,6 +50612,16 @@
      "isChampion": false
     },
     {
+     "slug": "audax-esse-bpl-invitational-2025",
+     "name": "Audax Esse BPL Invitational 2025",
+     "date": "2025-03-22",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 16,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLChalS2024",
      "name": "BPL Challengers Stage 2024",
      "date": "2024-08-03",
@@ -51450,6 +51770,16 @@
    "originIso": "sg",
    "originCountry": "Singapore",
    "events": [
+    {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 25,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
     {
      "slug": "BPLLStage25",
      "name": "BPL Legends Stage 2025",
@@ -54366,6 +54696,16 @@
    "originCountry": "Singapore",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 38,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLCStage25",
      "name": "BPL Conquerors Stage 2025",
      "date": "2025-10-10",
@@ -56388,6 +56728,16 @@
    "originCountry": "Singapore",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 13,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLLStage25",
      "name": "BPL Legends Stage 2025",
      "date": "2025-10-10",
@@ -57911,6 +58261,16 @@
    "originCountry": "Singapore",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 15,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLCStage25",
      "name": "BPL Conquerors Stage 2025",
      "date": "2025-10-10",
@@ -57936,6 +58296,16 @@
      "tierLabel": "S-Tier",
      "placement": 24,
      "isChampion": false
+    },
+    {
+     "slug": "audax-esse-bpl-invitational-2025",
+     "name": "Audax Esse BPL Invitational 2025",
+     "date": "2025-03-22",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 35,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
     },
     {
      "slug": "BPLChalS2024",
@@ -60261,6 +60631,16 @@
    "originCountry": "Singapore",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 29,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLLStage25",
      "name": "BPL Legends Stage 2025",
      "date": "2025-10-10",
@@ -62361,6 +62741,16 @@
    "originIso": "sg",
    "originCountry": "Singapore",
    "events": [
+    {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 36,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
     {
      "slug": "BPLChalS2025",
      "name": "BPL Challengers Stage 2025",
@@ -65554,6 +65944,16 @@
    "originCountry": "Singapore",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 17,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLLStage25",
      "name": "BPL Legends Stage 2025",
      "date": "2025-10-10",
@@ -65570,6 +65970,16 @@
      "tierLabel": "S-Tier",
      "placement": 36,
      "isChampion": false
+    },
+    {
+     "slug": "audax-esse-bpl-invitational-2025",
+     "name": "Audax Esse BPL Invitational 2025",
+     "date": "2025-03-22",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 33,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
     },
     {
      "slug": "BPLCStage24",
@@ -68129,6 +68539,16 @@
    "originCountry": "Singapore",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 30,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLLStage25",
      "name": "BPL Legends Stage 2025",
      "date": "2025-10-10",
@@ -68145,6 +68565,16 @@
      "tierLabel": "S-Tier",
      "placement": 26,
      "isChampion": false
+    },
+    {
+     "slug": "audax-esse-bpl-invitational-2025",
+     "name": "Audax Esse BPL Invitational 2025",
+     "date": "2025-03-22",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 13,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
     },
     {
      "slug": "BPLLStage24",
@@ -72749,6 +73179,16 @@
    "originCountry": "Singapore",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 19,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLLStage25",
      "name": "BPL Legends Stage 2025",
      "date": "2025-10-10",
@@ -72765,6 +73205,16 @@
      "tierLabel": "S-Tier",
      "placement": 17,
      "isChampion": false
+    },
+    {
+     "slug": "audax-esse-bpl-invitational-2025",
+     "name": "Audax Esse BPL Invitational 2025",
+     "date": "2025-03-22",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 25,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
     },
     {
      "slug": "BPLCStage24",
@@ -73846,6 +74296,16 @@
    "originCountry": "Singapore",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 24,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLLStage25",
      "name": "BPL Legends Stage 2025",
      "date": "2025-10-10",
@@ -73862,6 +74322,16 @@
      "tierLabel": "S-Tier",
      "placement": 23,
      "isChampion": false
+    },
+    {
+     "slug": "audax-esse-bpl-invitational-2025",
+     "name": "Audax Esse BPL Invitational 2025",
+     "date": "2025-03-22",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 20,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
     },
     {
      "slug": "BPLLStage24",
@@ -75994,6 +76464,16 @@
    "originCountry": "USA",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 22,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLLStage25",
      "name": "BPL Legends Stage 2025",
      "date": "2025-10-10",
@@ -76010,6 +76490,16 @@
      "tierLabel": "S-Tier",
      "placement": 32,
      "isChampion": false
+    },
+    {
+     "slug": "audax-esse-bpl-invitational-2025",
+     "name": "Audax Esse BPL Invitational 2025",
+     "date": "2025-03-22",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 29,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
     },
     {
      "slug": "BPLLStage24",
@@ -79429,6 +79919,16 @@
    "originCountry": "Singapore",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 18,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BotProLeague13",
      "name": "Bot Pro Minor League 13",
      "date": "2026-05-28",
@@ -81687,6 +82187,16 @@
    "originCountry": "Singapore",
    "events": [
     {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 20,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
+    {
      "slug": "BPLLStage25",
      "name": "BPL Legends Stage 2025",
      "date": "2025-10-10",
@@ -81703,6 +82213,16 @@
      "tierLabel": "S-Tier",
      "placement": 34,
      "isChampion": false
+    },
+    {
+     "slug": "audax-esse-bpl-invitational-2025",
+     "name": "Audax Esse BPL Invitational 2025",
+     "date": "2025-03-22",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 27,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
     },
     {
      "slug": "BPLChalS2024",
@@ -82616,6 +83136,16 @@
    "originIso": "jp",
    "originCountry": "Japan",
    "events": [
+    {
+     "slug": "audax-esse-bpl-invitational-2026",
+     "name": "Audax Esse BPL Invitational 2026",
+     "date": "2026-08-21",
+     "tier": "s",
+     "tierLabel": "S-Tier",
+     "placement": 33,
+     "isChampion": false,
+     "placementLabel": "Group Stage"
+    },
     {
      "slug": "BPLLStage25",
      "name": "BPL Legends Stage 2025",

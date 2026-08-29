@@ -425,7 +425,7 @@ function renderTeam(slug){
             <td class="mono">${fmtDate(e.date)}</td>
             <td><span class="event-tier ${TIER_CLASS[e.tier]}">${esc(e.tierLabel.toUpperCase())}</span></td>
             <td class="name-cell"><a href="#/tournament/${e.slug}">${esc(e.name)}</a></td>
-            <td>${e.isChampion?'<span class="star">★</span> <strong>Champion</strong>':'#'+e.placement}</td>
+            <td>${e.isChampion?'<span class="star">★</span> <strong>Champion</strong>':(e.placementLabel?esc(e.placementLabel):'#'+e.placement)}</td>
             <td class="mono" style="color:var(--accent)">${pb[e.slug]!=null?'+'+Math.round(pb[e.slug]):'—'}</td>
           </tr>`).join("")}</tbody></table></div>`;})():''}
         <h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Playoff & S-Tier History</h2>
