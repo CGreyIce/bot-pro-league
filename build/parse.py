@@ -862,9 +862,14 @@ def main():
     ncp = os.path.join(DATA, "name_changes.json")
     if os.path.exists(ncp):
         old2new = {norm_key(k): v for k, v in json.load(open(ncp, encoding="utf-8")).items()}
+    # Rosters / team history / former players resolve to a player's real profile — the amateur
+    # (or pro) entry — NOT the pro "shadow" (which only exists to hold S-Tier scoreboard stats
+    # under team "—"). Skip shadows here so an amateur keeps their amateur profile + team.
     pmap = {}
     for pool in (pro, amateur, solo):
         for p in pool:
+            if p.get("shadowAmateur"):
+                continue
             pmap.setdefault(norm_key(p["name"]), p)
     hist_path = os.path.join(DATA, "hist_rosters.json")
     hist_rosters = json.load(open(hist_path, encoding="utf-8")) if os.path.exists(hist_path) else {}
