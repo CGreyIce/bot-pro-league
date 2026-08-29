@@ -474,6 +474,30 @@ def main():
     amateur = parse_player_pool(read_csv("bot_amateur_tourney_stats.csv"), "amateur")
     solo = parse_player_pool(read_csv("bot_competitive_me.csv"), "solo")
 
+    # ---- pro "shadow" entries for amateur players competing in S-Tier site events ----
+    # Amateur-team players in the Bot Pro Cup (S-Tier) accumulate their tournament stats in the
+    # PRO column, under a placeholder team "—" (they aren't pro yet). Each shadow starts empty
+    # and is fed ONLY by recorded scoreboards (routed here because pmap prefers the pro pool);
+    # any shadow that never gets a recorded pro map is dropped after rating. So a player surfaces
+    # in the Pro tab the moment they've played a recorded pro map — with stats ready to carry over
+    # if their team is later promoted — while still appearing in the Amateur tab.
+    _pro_slugs = {p["slug"] for p in pro}
+    _shadow_seen = set()
+    for ap in amateur:
+        # amateur slug = <clean>-amateur; the pro/clean slug is that minus the suffix
+        s = ap["slug"][:-8] if ap["slug"].endswith("-amateur") else ap["slug"]
+        if s in _pro_slugs or s in _shadow_seen:
+            continue
+        _shadow_seen.add(s)
+        pro.append({
+            "name": ap["name"], "team": "—", "pool": "pro",
+            "kills": 0, "assists": 0, "deaths": 0, "mvp": 0, "kdr": 0.0,
+            "wins": 0, "losses": 0, "winrate": 0.0, "ot": 0,
+            "role": ap.get("role", ""), "maps": 0,
+            "orig_rank": "", "orig_level": "", "orig_rating": 0,
+            "slug": s, "shadowAmateur": True,
+        })
+
     # nationalities / flags
     nat = load_nat()
     for pool in (pro, amateur, solo):
@@ -645,6 +669,10 @@ def main():
     # ---- ratings (computed AFTER scoreboards are merged into totals) ----
     pro_avg = compute_ratings(pro); am_avg = compute_ratings(amateur); solo_avg = compute_ratings(solo)
 
+    # Drop amateur→pro shadows that never received a recorded pro stat, so the Pro tab isn't
+    # padded with empty rows. They return automatically once a scoreboard is entered for them.
+    pro = [p for p in pro if not p.get("shadowAmateur") or p.get("maps", 0) > 0]
+
     # ---- player rank movement vs. before the most recent recorded match ----
     def scoreboard_contrib(m):
         """Per-player stat totals this match's scoreboard added: {slug:{k,a,d,mvp,w,l}}."""
@@ -763,10 +791,10 @@ def main():
         # Only for finished events; they earn no ladder points, so the Pts column shows "—".
         if tr.get("champion"):
             for s in (tr.get("finalStandings") or []):
-                slug = s.get("teamSlug")
-                if not slug or slug in added:
+                tslug = s.get("teamSlug")
+                if not tslug or tslug in added:
                     continue
-                tm = slug_to_team.get(slug)
+                tm = slug_to_team.get(tslug)
                 if not tm:
                     continue
                 tm["events"].append({
@@ -775,7 +803,7 @@ def main():
                     "placement": s.get("rank"), "isChampion": False,
                     "placementLabel": s.get("result") or "Group Stage",
                 })
-                added.add(slug)
+                added.add(tslug)
     for t in teams:
         t["events"].sort(key=lambda e: e["date"], reverse=True)
 
