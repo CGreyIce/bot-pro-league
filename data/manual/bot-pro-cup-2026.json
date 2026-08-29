@@ -119,37 +119,74 @@
      "round": 1,
      "a": "0v3",
      "b": "Aetherline",
-     "sa": null,
-     "sb": null
+     "sa": 12,
+     "sb": 16,
+     "ts": 1788000772
     },
     {
      "id": 2,
      "round": 1,
      "a": "Bluebird",
      "b": "Cosmos",
-     "sa": null,
-     "sb": null
+     "sa": 8,
+     "sb": 13,
+     "ts": 1788001404
     },
     {
      "id": 3,
      "round": 1,
      "a": "Emberfall",
      "b": "Kagerou Collective",
-     "sa": null,
-     "sb": null
+     "sa": 16,
+     "sb": 13,
+     "ts": 1788002218
     },
     {
      "id": 4,
      "round": 1,
      "a": "Nightshade",
      "b": "Round Loss Bonus",
+     "sa": 3,
+     "sb": 13,
+     "ts": 1788003160
+    },
+    {
+     "id": 5,
+     "round": 2,
+     "a": "Round Loss Bonus",
+     "b": "Cosmos",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 6,
+     "round": 2,
+     "a": "Aetherline",
+     "b": "Emberfall",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 7,
+     "round": 2,
+     "a": "Stormfront",
+     "b": "Kagerou Collective",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 8,
+     "round": 2,
+     "a": "0v3",
+     "b": "Bluebird",
      "sa": null,
      "sb": null
     }
    ],
    "rounds": 5,
    "roundTitles": {
-    "1": "Round 1"
+    "1": "Round 1",
+    "2": "Round 2"
    }
   },
   {
