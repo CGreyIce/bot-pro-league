@@ -948,17 +948,47 @@ def main():
     # of "—" (e.g. amateur free agents on a Bot Pro Cup roster). Ad-hoc = a team with no page
     # (teamSlug is None). Pro players keep their real team. Reverts to "—" once the event finishes
     # (a champion exists), where the promote-to-pro / disband rules then apply.
+    _prov_keys = {t["key"] for t in teams if t.get("provisional")}
     for tr in tournaments:
         if tr["slug"] not in manual_slugs_a or tr.get("champion"):
             continue
         for row in tr.get("attending", []):
-            if row.get("teamSlug"):
-                continue                         # real team page -> keep its own roster/team
+            # real pro team page keeps its own roster/team; provisional teams aren't pro yet,
+            # so their (amateur) players still show the team name.
+            if row.get("teamSlug") and norm_key(row["team"]) not in _prov_keys:
+                continue
             for pl in row["players"]:
                 p = slug_to_player.get(pl.get("slug"))
                 if p and p.get("pool") != "pro":
                     p["team"] = row["team"]
                     p["teamTourney"] = tr["name"]
+
+    # ---- provisional teams source their current roster from the amateur pool ----
+    # (their players aren't in the pro pool). Done here, after the override set each amateur's team.
+    _prov_teams = [t for t in teams if t.get("provisional")]
+    if _prov_teams:
+        am_by_key = defaultdict(list)
+        for p in amateur:
+            k = norm_key(p.get("team", ""))
+            if k:
+                am_by_key[k].append(p)
+        for t in _prov_teams:
+            t["roster"] = sorted(am_by_key.get(t["key"], []), key=lambda p: -(p["rating"] or 0))
+            isos = [p.get("iso") for p in t["roster"] if p.get("iso") and p["iso"] != "neutral"]
+            if isos:
+                iso_count = defaultdict(int)
+                for i in isos:
+                    iso_count[i] += 1
+                origin_iso = max(iso_count, key=lambda i: (iso_count[i], i))
+                reg_count = defaultdict(int)
+                for i in isos:
+                    reg_count[REGION_BY_ISO.get(i, "Other")] += 1
+                top = max(reg_count.values())
+                tied = [r for r, c in reg_count.items() if c == top]
+                oreg = REGION_BY_ISO.get(origin_iso, "Other")
+                t["region"] = oreg if oreg in tied else sorted(tied)[0]
+                t["originIso"] = origin_iso
+                t["originCountry"] = next((p.get("nat", "") for p in t["roster"] if p.get("iso") == origin_iso), "")
 
     # ---- map profiles for ad-hoc amateur teams (for the veto simulator) — in-progress events ----
     # Same lifecycle as the team override above: available while the event is live, gone once it
