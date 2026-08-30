@@ -2200,6 +2200,9 @@ function renderTournament(slug){
         <div class="ph-sub">${fmtDate(tr.date)} · ${tr.format} · ${tr.participantCount} teams</div>
         <div style="margin-top:12px;font-size:15px">${champLabel(tr)}:
           <strong style="font-size:18px;font-family:'Rajdhani'">${crest(tr.champion, tr.championTeam)}</strong></div>
+        ${tr.mvp ? `<div class="tourn-mvp">⭐ <span class="muted">${tr.champion?'Tournament MVP':'MVP so far'}:</span>
+          <a href="#/player/${tr.mvp.slug}" class="tm-mvp-name">${flag(tr.mvp.iso)}${esc(tr.mvp.name)}</a>
+          <span class="muted" style="font-size:12px">${tr.mvp.mvpRounds} MVP round${tr.mvp.mvpRounds===1?'':'s'}${tr.mvp.team&&tr.mvp.team!=='—'?' · '+esc(tr.mvp.team):''}</span></div>` : ''}
         ${(tr.stages && predGroups(tr).length) ? `<a class="predict-btn" href="#/predict/${tr.slug}">🔮 ${tr.champion?'Predictions & leaderboard':'Make your predictions'}</a>` : ''}
       </div>
       ${champT&&champT.logo?`<img class="crest" src="${esc(champT.logo)}" alt="">`:''}

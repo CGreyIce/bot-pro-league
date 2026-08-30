@@ -437,6 +437,9 @@ a.form-dot:hover{transform:translateY(-2px)}
 .pcard-mini.noprofile{cursor:default}
 .fp-ban{color:var(--accent2,#ff6b6b);font-weight:700}
 .prov-badge{font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:5px;padding:2px 7px;vertical-align:middle}
+.tourn-mvp{margin-top:6px;font-size:14px}
+.tourn-mvp .tm-mvp-name{font-weight:700;color:var(--link)}
+.tourn-mvp .tm-mvp-name:hover{text-decoration:underline}
 .m-rosters{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:560px}
 .m-roster{background:var(--panel);border:1px solid var(--border);border-radius:9px;padding:8px 4px}
 .m-roster-h{font-family:'Rajdhani';font-weight:700;padding:2px 10px 8px;border-bottom:1px solid var(--border)}

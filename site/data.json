@@ -223335,7 +223335,15 @@
       }
      ]
     }
-   ]
+   ],
+   "mvp": {
+    "name": "Bajiru_EN",
+    "slug": "bajiru-en",
+    "iso": "us",
+    "team": "—",
+    "mvpRounds": 14,
+    "kills": 56
+   }
   },
   {
    "slug": "audax-esse-bpl-invitational-2026",
@@ -243082,7 +243090,15 @@
       }
      ]
     }
-   ]
+   ],
+   "mvp": {
+    "name": "Nifela",
+    "slug": "nifela",
+    "iso": "us",
+    "team": "PepegaX",
+    "mvpRounds": 96,
+    "kills": 434
+   }
   },
   {
    "slug": "BotProLeague15",
@@ -280463,7 +280479,15 @@
       }
      ]
     }
-   ]
+   ],
+   "mvp": {
+    "name": "chreyll",
+    "slug": "chreyll",
+    "iso": "sg",
+    "team": "Divide&Conquer",
+    "mvpRounds": 13,
+    "kills": 47
+   }
   },
   {
    "slug": "BotProLeague12",

@@ -1187,6 +1187,9 @@ def main():
             if p:
                 p.setdefault("mvpAwards", []).append({
                     "event": tr["name"], "slug": tr["slug"], "year": tr["year"]})
+                # crown the event MVP on the tournament too (for the tournament page)
+                tr["mvp"] = {"name": p["name"], "slug": p["slug"], "iso": p.get("iso", ""),
+                             "team": p.get("team", ""), "mvpRounds": best[1]["mvp"], "kills": best[1]["k"]}
     for p in (pro + amateur + solo):
         if p.get("titles"):
             p["titles"].sort(key=lambda x: x["year"], reverse=True)
