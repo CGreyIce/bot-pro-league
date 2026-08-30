@@ -23,19 +23,22 @@ function ratingBadge(r){ if(r==null) return '<span class="muted">—</span>'; re
 function pointsBadge(pts){ if(pts==null) return '<span class="muted">—</span>'; return `<span class="rating-badge">${pts}</span>`; }
 function levelChip(lvl){ if(!lvl) return '<span class="muted">—</span>'; return `<span class="lvl-chip lvl-${lvl}" title="Level ${lvl}">${lvl}</span>`; }
 function levelColor(lvl){ return lvl>=10?'#ff4655':lvl>=8?'#ff8c42':lvl>=5?'#ffce54':lvl>=3?'#3ddc84':'#c7ccd6'; }
-// The solo-queue league is open to everyone: every player with a solo-queue record — their
-// folded soloStats if they also play tournaments, or the standalone solo-only players.
+// The solo-queue league is open to the WHOLE league: every player appears — with their
+// solo-queue record if they have one (folded soloStats, or the solo-only players), or a
+// blank/unranked row if they haven't played a solo game yet.
 let _soloLeague=null;
 function soloLeague(){
   if(_soloLeague) return _soloLeague;
   const out=[], seen=new Set();
+  const blank=p=>({name:p.name, iso:p.iso, nat:p.nat, team:p.team, role:p.role, slug:p.slug, pool:"solo",
+    kills:0, assists:0, deaths:0, mvp:0, wins:0, losses:0, maps:0, kdr:0, winrate:0, ratingPoints:null, level:null, rating:null});
+  (DATA.players.solo||[]).forEach(p=>{ const k=normKey(p.name); if(seen.has(k)) return; seen.add(k); out.push(p); });
   ["pro","amateur"].forEach(pk=>(DATA.players[pk]||[]).forEach(p=>{
     if(p.shadowAmateur) return;                 // shadow is redundant with the amateur entry
-    const s=p.soloStats; if(!s) return;
     const k=normKey(p.name); if(seen.has(k)) return; seen.add(k);
-    out.push({...s, name:p.name, iso:p.iso, nat:p.nat, team:p.team, role:p.role, slug:p.slug, pool:"solo"});
+    out.push(p.soloStats ? {...p.soloStats, name:p.name, iso:p.iso, nat:p.nat, team:p.team, role:p.role, slug:p.slug, pool:"solo"}
+                         : blank(p));
   }));
-  (DATA.players.solo||[]).forEach(p=>{ const k=normKey(p.name); if(seen.has(k)) return; seen.add(k); out.push(p); });
   return _soloLeague=out;
 }
 function teamLogo(t){ return t && t.logo ? `<img src="${esc(t.logo)}" alt="">` : ''; }
@@ -482,10 +485,10 @@ function renderPlayers(){
     ["Lvl", p=>levelChip(p.level), "", p=>p.level||0],
     ["K", p=>p.kills, "mono"],
     ["D", p=>p.deaths, "mono"],
-    ["KDR", p=>p.kdr.toFixed(2), "mono", p=>p.kdr],
+    ["KDR", p=>p.maps?p.kdr.toFixed(2):'—', "mono", p=>p.kdr],
     ["MVP", p=>p.mvp, "mono"],
     ["Maps", p=>p.maps, "mono"],
-    ["Win%", p=>pct(p.winrate), "mono", p=>p.winrate],
+    ["Win%", p=>p.maps?pct(p.winrate):'—', "mono", p=>p.winrate],
   ];
   app.innerHTML = `<h2 class="section-title"><span class="accent-bar"></span>Player Leaderboard
       <a href="#/compare" class="muted" style="margin-left:auto;font-size:12px">⇄ Compare players</a></h2>
@@ -493,7 +496,7 @@ function renderPlayers(){
       ${["pro","amateur","solo"].map(k=>`<button data-pool="${k}" class="${k===pool?'active':''}">${
         k==="pro"?"Pro":k==="amateur"?"Amateur":"Solo Queue"} <span style="opacity:.7">${poolList(k).length}</span></button>`).join("")}
     </div>
-    ${pool==="solo"?'<p class="muted" style="font-size:12px;margin:-4px 0 12px">The solo-queue ladder is open to the whole league — every player\'s solo-queue record, tournament regulars included.</p>':''}
+    ${pool==="solo"?'<p class="muted" style="font-size:12px;margin:-4px 0 12px">The solo-queue ladder is open to the whole league — every player is listed; those who haven\'t played a solo game yet sit unranked (—) at the bottom.</p>':''}
     <div id="ptable"></div>`;
   app.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{playersPool=b.dataset.pool;playersSort={key:"Rating Points",dir:-1};renderPlayers();});
   drawPlayerTable(players, cols);
