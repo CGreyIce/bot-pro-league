@@ -340,13 +340,55 @@
      "round": 1,
      "a": "The Gigarage",
      "b": "Unforgettable",
+     "sa": 13,
+     "sb": 9,
+     "ts": 1788125218
+    },
+    {
+     "id": 6,
+     "round": 2,
+     "a": "Syzygy",
+     "b": "99Lives",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 7,
+     "round": 2,
+     "a": "Eiromancers",
+     "b": "The Gigarage",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 8,
+     "round": 2,
+     "a": "degree",
+     "b": "Unforgettable",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 9,
+     "round": 2,
+     "a": "Dreamstate",
+     "b": "Ashfall",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 10,
+     "round": 2,
+     "a": "Sakura Sovereign",
+     "b": "Technomancy",
      "sa": null,
      "sb": null
     }
    ],
    "rounds": 5,
    "roundTitles": {
-    "1": "Round 1"
+    "1": "Round 1",
+    "2": "Round 2"
    }
   },
   {
