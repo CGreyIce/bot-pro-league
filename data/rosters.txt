@@ -172,3 +172,16 @@ bot_add_ct "UNF Sakami"; bot_add_ct "UNF dudriduo_"; bot_add_ct "UNF joshiwahhh"
 xPlosiv (BPL 14 Winners)
 bot_add "XPLO Cursiffe"; bot_add "XPLO TokieShepherdVT"; bot_add "XPLO tapiyokaaa"; bot_add "XPLO 88EXP"; bot_add "XPLO StrigidaeVT";
 bot_add_ct "XPLO Cursiffe"; bot_add_ct "XPLO TokieShepherdVT"; bot_add_ct "XPLO tapiyokaaa"; bot_add_ct "XPLO 88EXP"; bot_add_ct "XPLO StrigidaeVT";
+
+
+BeeHyve (Bot Pro Cup 2026) [core duo TiniiBee & Hyvred since BPL13]
+bot_add "BEE TiniiBee"; bot_add "BEE Hyvred"; bot_add "BEE Tigeraxd"; bot_add "BEE _froggiee"; bot_add "BEE keikatamori";
+bot_add_ct "BEE TiniiBee"; bot_add_ct "BEE Hyvred"; bot_add_ct "BEE Tigeraxd"; bot_add_ct "BEE _froggiee"; bot_add_ct "BEE keikatamori";
+
+Eiromancers (Bot Pro Cup 2026) [RaviasEir & Skiazelle core since BPL13]
+bot_add "EIRO RaviasEir"; bot_add "EIRO Skiazelle"; bot_add "EIRO boopydoopy"; bot_add "EIRO kanarivt"; bot_add "EIRO kaikaijins";
+bot_add_ct "EIRO RaviasEir"; bot_add_ct "EIRO Skiazelle"; bot_add_ct "EIRO boopydoopy"; bot_add_ct "EIRO kanarivt"; bot_add_ct "EIRO kaikaijins";
+
+Syzygy (Bot Pro Cup 2026) [Xyrren-led; many rosters since BPL6]
+bot_add "SYZ Xyrren"; bot_add "SYZ leachubby"; bot_add "SYZ akuluvr"; bot_add "SYZ AyanOwOT"; bot_add "SYZ sengjung123";
+bot_add_ct "SYZ Xyrren"; bot_add_ct "SYZ leachubby"; bot_add_ct "SYZ akuluvr"; bot_add_ct "SYZ AyanOwOT"; bot_add_ct "SYZ sengjung123";
