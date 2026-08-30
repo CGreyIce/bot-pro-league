@@ -6929,6 +6929,107 @@
      ]
     }
    ]
+  },
+  "3-2": {
+   "maps": [
+    {
+     "map": "Dust2",
+     "scoreA": 13,
+     "scoreB": 10,
+     "players": [
+      {
+       "team": "division20",
+       "name": "Eroxis",
+       "k": 22,
+       "a": 0,
+       "d": 13,
+       "mvp": 1,
+       "score": 53
+      },
+      {
+       "team": "division20",
+       "name": "Laburi",
+       "k": 18,
+       "a": 1,
+       "d": 14,
+       "mvp": 5,
+       "score": 44
+      },
+      {
+       "team": "division20",
+       "name": "Spoods",
+       "k": 17,
+       "a": 2,
+       "d": 16,
+       "mvp": 4,
+       "score": 43
+      },
+      {
+       "team": "division20",
+       "name": "y.uuno",
+       "k": 17,
+       "a": 0,
+       "d": 15,
+       "mvp": 2,
+       "score": 41
+      },
+      {
+       "team": "division20",
+       "name": "kitties258",
+       "k": 13,
+       "a": 2,
+       "d": 13,
+       "mvp": 1,
+       "score": 35
+      },
+      {
+       "team": "Echo Cipher",
+       "name": "thehidz",
+       "k": 22,
+       "a": 4,
+       "d": 19,
+       "mvp": 6,
+       "score": 51
+      },
+      {
+       "team": "Echo Cipher",
+       "name": "twentyrosie",
+       "k": 18,
+       "a": 0,
+       "d": 15,
+       "mvp": 1,
+       "score": 37
+      },
+      {
+       "team": "Echo Cipher",
+       "name": "CodedEcho",
+       "k": 12,
+       "a": 0,
+       "d": 15,
+       "mvp": 1,
+       "score": 32
+      },
+      {
+       "team": "Echo Cipher",
+       "name": "okjustsmd",
+       "k": 12,
+       "a": 3,
+       "d": 18,
+       "mvp": 1,
+       "score": 28
+      },
+      {
+       "team": "Echo Cipher",
+       "name": "anju_o",
+       "k": 7,
+       "a": 3,
+       "d": 20,
+       "mvp": 1,
+       "score": 20
+      }
+     ]
+    }
+   ]
   }
  }
 }

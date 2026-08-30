@@ -1393,6 +1393,7 @@ function renderScoreboard(){
 }
 let _sfMaps = [];
 let _sfListA = "allplayers", _sfListB = "allplayers";
+const SF_MAP_POOL = ["Dust2","Anubis","Mirage","Inferno","Vertigo","Cache","Tuscan"];
 function sfTeamRoster(tr, teamName){
   if(!tr || !teamName) return null;
   const row = (tr.attending||[]).find(r=>normKey(r.team)===normKey(teamName));
@@ -1408,10 +1409,13 @@ function openStatsForm(slug, ref, match){
   _sfListA = rosterA ? "sf-roster-a" : "allplayers";
   _sfListB = rosterB ? "sf-roster-b" : "allplayers";
   const dl = (id, names)=> names ? `<datalist id="${id}">${names.map(n=>`<option value="${esc(n)}">`).join("")}</datalist>` : '';
+  // Map pool: the active 7, plus Split only on a 3rd-place decider (match.tp).
+  const mapPool = SF_MAP_POOL.concat(match.tp ? ["Split"] : []);
   box.innerHTML = `
     <div class="sf-wrap">
       <datalist id="allplayers">${allPlayers().map(p=>`<option value="${esc(p.name)}">`).join("")}</datalist>
       ${dl("sf-roster-a", rosterA)}${dl("sf-roster-b", rosterB)}
+      ${dl("sf-maps-list", mapPool)}
       <div id="sf-maps"></div>
       <button id="sf-addmap" class="loadmore" style="margin-top:6px">+ Add map</button>
       <div style="margin-top:12px"><button id="sf-save" class="adm-btn" style="max-width:220px">Save all maps</button>
@@ -1456,7 +1460,7 @@ function renderSfMaps(match){
     ${[0,1,2,3,4].map(i=>rowFor(mp,teamName,i,listId)).join("")}</div>` : '';
   c.innerHTML = _sfMaps.map((mp,mi)=>`<div class="sf-map">
       <div class="sf-maphdr"><span class="sf-mapno">Map ${mi+1}</span>
-        <input class="sf-in sf-mapname" placeholder="map" value="${esc(mp.map||'')}" style="max-width:150px">
+        <input class="sf-in sf-mapname" placeholder="map" list="sf-maps-list" value="${esc(mp.map||'')}" style="max-width:150px">
         <span class="muted" style="font-size:11px">score</span>
         <input class="sf-in sf-scA" type="number" title="${esc(match.a||'A')}" value="${mp.scoreA!=null?mp.scoreA:''}" style="width:52px">
         <input class="sf-in sf-scB" type="number" title="${esc(match.b||'B')}" value="${mp.scoreB!=null?mp.scoreB:''}" style="width:52px">
