@@ -209,9 +209,10 @@ function renderTeams(){
     ["Podiums", t=>t.podiums, "mono"],
     ["Events", t=>t.events_played, "mono"],
   ];
-  app.innerHTML = `<h2 class="section-title"><span class="accent-bar"></span>Team Ranking · ${DATA.teams.length} pro teams
+  const proTeams = DATA.teams.filter(t=>!t.provisional);
+  app.innerHTML = `<h2 class="section-title"><span class="accent-bar"></span>Team Ranking · ${proTeams.length} pro teams
       <a href="#/compareteams" class="muted" style="margin-left:auto;font-size:12px">⇄ Compare teams</a></h2>
-    ${sortableTable(DATA.teams, cols, "rank")}`;
+    ${sortableTable(proTeams, cols, "rank")}`;
 }
 
 // ---------- Achievements / lineup / H2H shared helpers ----------
@@ -364,10 +365,12 @@ function renderTeam(slug){
     <div class="profile-head">
       ${t.logo?`<img class="crest" src="${esc(t.logo)}" alt="">`:''}
       <div class="ph-main">
-        <h1>${t.originIso?`<span class="th-flag" title="${esc(t.originCountry||'')}">${flag(t.originIso)}</span>`:''}${esc(t.name)} ${t.star?'<span class="star" title="Major winner">★</span>':''} ${t.tag?`<span class="tag">${esc(t.tag)}</span>`:''}</h1>
-        <div class="ph-sub">${t.region?`<span class="th-region">${esc(t.region)}</span>`:''}${t.origin?(' · Earned pro status: '+esc(t.origin)):''}${t.notes?` · <span class="muted">${esc(t.notes)}</span>`:''}</div>
+        <h1>${t.originIso?`<span class="th-flag" title="${esc(t.originCountry||'')}">${flag(t.originIso)}</span>`:''}${esc(t.name)} ${t.star?'<span class="star" title="Major winner">★</span>':''} ${t.tag?`<span class="tag">${esc(t.tag)}</span>`:''}${t.provisional?' <span class="prov-badge" title="Has a profile but is not a pro team yet">PROVISIONAL</span>':''}</h1>
+        <div class="ph-sub">${t.region?`<span class="th-region">${esc(t.region)}</span>`:''}${t.provisional?' · <span class="muted">Not a pro team yet — profile only</span>':(t.origin?(' · Earned pro status: '+esc(t.origin)):'')}${t.notes?` · <span class="muted">${esc(t.notes)}</span>`:''}</div>
       </div>
-      <div class="ph-rank"><div class="big">#${t.rank}</div><div class="lbl">BPL Rank</div></div>
+      ${t.provisional
+        ? `<div class="ph-rank"><div class="big" style="font-size:15px;color:var(--muted)">Unranked</div><div class="lbl">Not yet pro</div></div>`
+        : `<div class="ph-rank"><div class="big">#${t.rank}</div><div class="lbl">BPL Rank</div></div>`}
       <div class="ph-rank"><div class="big">${t.rank_points}</div><div class="lbl">Points</div></div>
     </div>
     ${t.bio?`<div class="player-bio">${esc(t.bio)}</div>`:''}
@@ -377,7 +380,7 @@ function renderTeam(slug){
       <div class="infobox">
         <div class="ib-title">Team Info</div>
         <div class="ib-row"><span class="k">Tag</span><span class="v">${esc(t.tag||'—')}</span></div>
-        <div class="ib-row"><span class="k">BPL Rank</span><span class="v">#${t.rank} · ${t.rank_points} pts</span></div>
+        <div class="ib-row"><span class="k">${t.provisional?'Status':'BPL Rank'}</span><span class="v">${t.provisional?`Provisional · ${t.rank_points} pts`:`#${t.rank} · ${t.rank_points} pts`}</span></div>
         <div class="ib-row"><span class="k">Region</span><span class="v">${t.region?esc(t.region):'—'}</span></div>
         <div class="ib-row"><span class="k">Country</span><span class="v">${t.originIso?`${flag(t.originIso)} ${esc(t.originCountry||'')}`:'—'}</span></div>
         <div class="ib-row"><span class="k">Origin</span><span class="v">${esc(t.origin||'—')}</span></div>
@@ -612,7 +615,7 @@ function renderRankings(){
     <div class="tablewrap"><table class="data">
       <thead><tr><th class="no-sort rankcol">#</th><th class="no-sort">Team</th><th class="no-sort">Points</th>
         <th class="no-sort">Majors</th><th class="no-sort">S-Tier</th><th class="no-sort">Events</th></tr></thead>
-      <tbody>${DATA.teams.map(t=>`<tr><td class="rankcol">${t.rank}</td><td class="name-cell"><span class="tm-rank">${teamCell(t.name)}${rankDeltaBadge(t)}</span></td>
+      <tbody>${DATA.teams.filter(t=>!t.provisional).map(t=>`<tr><td class="rankcol">${t.rank}</td><td class="name-cell"><span class="tm-rank">${teamCell(t.name)}${rankDeltaBadge(t)}</span></td>
         <td class="mono" style="color:var(--accent);font-weight:700">${t.rank_points}</td>
         <td class="mono">${t.major_wins||'–'}</td><td class="mono">${t.s_tier_wins||'–'}</td><td class="mono">${t.events_played}</td></tr>`).join("")}</tbody></table></div>
     <h2 class="section-title" style="margin-top:26px"><span class="accent-bar"></span>Player Leaderboards <span class="muted" style="font-size:11px">(pro)</span></h2>
@@ -1053,7 +1056,7 @@ function renderTeamCompare(){
   const opts=sel=>teams.map(t=>`<option value="${t.slug}" ${t.slug===sel?'selected':''}>${esc(t.name)}</option>`).join("");
   const A=teamBySlug(tcmpA), B=teamBySlug(tcmpB);
   const rows=[
-    ["BPL Rank", t=>'#'+t.rank, t=>-t.rank],
+    ["BPL Rank", t=>t.provisional?'Unranked':'#'+t.rank, t=>t.rank==null?-9999:-t.rank],
     ["Rank Points", t=>t.rank_points, t=>t.rank_points],
     ["Major Titles", t=>t.major_wins, t=>t.major_wins],
     ["S-Tier Titles", t=>t.s_tier_wins, t=>t.s_tier_wins],
@@ -1149,7 +1152,7 @@ function renderStats(){
     <h2 class="section-title"><span class="accent-bar"></span>League Stats</h2>
     <div class="statgrid" style="margin-bottom:22px">
       ${tile(totalPeople,"Players")}
-      ${tile(DATA.teams.length,"Pro Teams")}
+      ${tile(DATA.teams.filter(t=>!t.provisional).length,"Pro Teams")}
       ${tile(countries,"Countries")}
       ${tile((DATA.tournaments||[]).length,"Events")}
       ${tile(matchCount,"Matches")}

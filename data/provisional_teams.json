@@ -1,0 +1,4 @@
+{
+  "_comment": "Teams that have a profile page but are NOT yet pro — excluded from the pro team leaderboard/rankings and the pro-team count. They still have a page, roster, and history. Values are team slugs.",
+  "slugs": ["beehyve", "eiromancers", "syzygy"]
+}

@@ -351,14 +351,23 @@ def compute_team_points(teams, tournaments):
     for t in teams:
         t["rank_points"] = round(pts.get(t["slug"], 0))
         t["points_breakdown"] = sorted(breakdown.get(t["slug"], []), key=lambda b: -b["points"])
-    teams.sort(key=lambda t: -t["rank_points"])
-    for i, t in enumerate(teams):
+    # Provisional teams have a page but aren't pro yet — keep them out of the ranked ladder
+    # entirely (no rank, and they don't push the real pro teams down).
+    ranked = [t for t in teams if not t.get("provisional")]
+    ranked.sort(key=lambda t: -t["rank_points"])
+    for i, t in enumerate(ranked):
         t["rank"] = i + 1
-    # rank before the most recent event (tie-break on current rank), for the movement arrow
-    prev_order = sorted(teams, key=lambda t: (-prev_pts.get(t["slug"], 0), t["rank"]))
-    prev_rank = {t["slug"]: i + 1 for i, t in enumerate(prev_order)}
     for t in teams:
+        if t.get("provisional"):
+            t["rank"] = None
+    # rank before the most recent event (tie-break on current rank), for the movement arrow
+    prev_order = sorted(ranked, key=lambda t: (-prev_pts.get(t["slug"], 0), t["rank"]))
+    prev_rank = {t["slug"]: i + 1 for i, t in enumerate(prev_order)}
+    for t in ranked:
         t["rankDelta"] = prev_rank.get(t["slug"], t["rank"]) - t["rank"]   # + = moved up
+    for t in teams:
+        if t.get("provisional"):
+            t["rankDelta"] = 0
 
 # ---------- roster .txt (team lore) ----------
 def parse_rosters():
@@ -468,6 +477,12 @@ def main():
     roster_meta = parse_rosters()
     playoffs = parse_playoffs()
     teams = parse_teams(roster_meta, playoffs)
+    # teams that have a page but aren't pro yet (excluded from the pro leaderboard/rankings)
+    _prov_path = os.path.join(DATA, "provisional_teams.json")
+    _prov = set(json.load(open(_prov_path, encoding="utf-8")).get("slugs", [])) if os.path.exists(_prov_path) else set()
+    for t in teams:
+        if t["slug"] in _prov:
+            t["provisional"] = True
     team_by_key = {t["key"]: t for t in teams}
 
     pro = parse_player_pool(read_csv("bot_tourney_stats.csv"), "pro")
