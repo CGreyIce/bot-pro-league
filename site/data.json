@@ -1933,7 +1933,15 @@
      "sa": 13
     }
    ],
-   "streak": "L2"
+   "streak": "L2",
+   "longestWinStreak": {
+    "len": 13,
+    "startEvent": "Audax Esse BPL Invitational 2023",
+    "startDate": "2023-07-23",
+    "endEvent": "Bot Pro Cup 2023",
+    "endSlug": "BotProCup2023",
+    "endDate": "2023-11-12"
+   }
   },
   {
    "name": "Cosmos",
@@ -3761,7 +3769,15 @@
      "sa": 8
     }
    ],
-   "streak": "W3"
+   "streak": "W3",
+   "longestWinStreak": {
+    "len": 5,
+    "startEvent": "BPL Ranking Reshuffle 2025",
+    "startDate": "2025-06-12",
+    "endEvent": "BPL Conquerors Stage 2025",
+    "endSlug": "BPLCStage25",
+    "endDate": "2025-10-10"
+   }
   },
   {
    "name": "New Jade",
@@ -6719,7 +6735,15 @@
      "sa": 11
     }
    ],
-   "streak": "W2"
+   "streak": "W2",
+   "longestWinStreak": {
+    "len": 6,
+    "startEvent": "BPL Legends Stage 2025",
+    "startDate": "2025-10-10",
+    "endEvent": "Audax Esse BPL Invitational 2026",
+    "endSlug": "audax-esse-bpl-invitational-2026",
+    "endDate": "2026-08-21"
+   }
   },
   {
    "name": "The Gigarage",
@@ -8439,7 +8463,15 @@
      "sa": 9
     }
    ],
-   "streak": "W2"
+   "streak": "W2",
+   "longestWinStreak": {
+    "len": 7,
+    "startEvent": "BPL Challengers Stage 2023",
+    "startDate": "2023-08-25",
+    "endEvent": "BPL Legends Stage 2023",
+    "endSlug": "BPLLStage23",
+    "endDate": "2023-08-25"
+   }
   },
   {
    "name": "Artisian",
@@ -10426,7 +10458,15 @@
      "sa": 13
     }
    ],
-   "streak": "L2"
+   "streak": "L2",
+   "longestWinStreak": {
+    "len": 8,
+    "startEvent": "BPL Challengers Stage 2022",
+    "startDate": "2022-04-23",
+    "endEvent": "BPL Legends Stage 2022",
+    "endSlug": "BPLLegendsStage",
+    "endDate": "2022-05-06"
+   }
   },
   {
    "name": "Neverland",
@@ -12139,7 +12179,15 @@
      "sa": 2
     }
    ],
-   "streak": "L1"
+   "streak": "L1",
+   "longestWinStreak": {
+    "len": 9,
+    "startEvent": "BPL Tournament Minor 3",
+    "startDate": "2020-05-07",
+    "endEvent": "Bot Pro Cup 2022",
+    "endSlug": "BotProCup2022",
+    "endDate": "2022-03-25"
+   }
   },
   {
    "name": "Lemon Tree",
@@ -14639,7 +14687,15 @@
      "sa": 0
     }
    ],
-   "streak": "W1"
+   "streak": "W1",
+   "longestWinStreak": {
+    "len": 6,
+    "startEvent": "BPL Conquerors Stage 2024",
+    "startDate": "2024-08-03",
+    "endEvent": "Audax Esse BPL Invitational 2025",
+    "endSlug": "audax-esse-bpl-invitational-2025",
+    "endDate": "2025-03-22"
+   }
   },
   {
    "name": "Infernum E-Sports",
@@ -16822,7 +16878,15 @@
      "sa": 2
     }
    ],
-   "streak": "L9"
+   "streak": "L9",
+   "longestWinStreak": {
+    "len": 9,
+    "startEvent": "Bot Pro League Minor 7",
+    "startDate": "2021-09-10",
+    "endEvent": "Bot Pro Cup 2022",
+    "endSlug": "BotProCup2022",
+    "endDate": "2022-03-25"
+   }
   },
   {
    "name": "Raven Song",
@@ -18912,7 +18976,15 @@
      "sa": 1
     }
    ],
-   "streak": "W7"
+   "streak": "W7",
+   "longestWinStreak": {
+    "len": 14,
+    "startEvent": "Audax Esse BPL Invitational 2026",
+    "startDate": "2026-08-21",
+    "endEvent": "Audax Esse BPL Invitational 2026",
+    "endSlug": "audax-esse-bpl-invitational-2026",
+    "endDate": "2026-08-21"
+   }
   },
   {
    "name": "The Nomads",
@@ -21065,7 +21137,15 @@
      "sa": 2
     }
    ],
-   "streak": "L1"
+   "streak": "L1",
+   "longestWinStreak": {
+    "len": 7,
+    "startEvent": "Bot Pro League Minor 11",
+    "startDate": "2023-02-19",
+    "endEvent": "Audax Esse BPL Invitational 2023",
+    "endSlug": "AuxEBPL2023",
+    "endDate": "2023-07-23"
+   }
   },
   {
    "name": "Opal",
@@ -23095,7 +23175,15 @@
      "sa": 2
     }
    ],
-   "streak": "L2"
+   "streak": "L2",
+   "longestWinStreak": {
+    "len": 8,
+    "startEvent": "BPL Major SRR",
+    "startDate": "2022-04-14",
+    "endEvent": "BPL Major SRR",
+    "endSlug": "BPLSRR",
+    "endDate": "2022-04-14"
+   }
   },
   {
    "name": "Masmark",
@@ -24619,7 +24707,15 @@
      "sa": 13
     }
    ],
-   "streak": "L6"
+   "streak": "L6",
+   "longestWinStreak": {
+    "len": 6,
+    "startEvent": "BPL Legends Stage 2023",
+    "startDate": "2023-08-25",
+    "endEvent": "BPL Challengers Stage 2023",
+    "endSlug": "BPLCStage23",
+    "endDate": "2023-08-25"
+   }
   },
   {
    "name": "degree",
@@ -26721,7 +26817,15 @@
      "sa": 13
     }
    ],
-   "streak": "W1"
+   "streak": "W1",
+   "longestWinStreak": {
+    "len": 5,
+    "startEvent": "BPL Challengers Stage 2023",
+    "startDate": "2023-08-25",
+    "endEvent": "BPL Conquerors Stage 2023",
+    "endSlug": "BPLCONQ2023",
+    "endDate": "2023-08-27"
+   }
   },
   {
    "name": "PepegaX",
@@ -29217,7 +29321,15 @@
      "sa": 13
     }
    ],
-   "streak": "L1"
+   "streak": "L1",
+   "longestWinStreak": {
+    "len": 5,
+    "startEvent": "Audax Esse BPL Invitational 2025",
+    "startDate": "2025-03-22",
+    "endEvent": "BPL Ranking Reshuffle 2025",
+    "endSlug": "BPLRR2025",
+    "endDate": "2025-06-12"
+   }
   },
   {
    "name": "Aetherline",
@@ -30604,7 +30716,15 @@
      "sa": 12
     }
    ],
-   "streak": "W1"
+   "streak": "W1",
+   "longestWinStreak": {
+    "len": 3,
+    "startEvent": "BPL Challengers Stage 2025",
+    "startDate": "2025-10-10",
+    "endEvent": "BPL Conquerors Stage 2025",
+    "endSlug": "BPLCStage25",
+    "endDate": "2025-10-10"
+   }
   },
   {
    "name": "Divide&Conquer",
@@ -32968,7 +33088,15 @@
      "sa": 5
     }
    ],
-   "streak": "W1"
+   "streak": "W1",
+   "longestWinStreak": {
+    "len": 4,
+    "startEvent": "Bot Pro League Minor 8",
+    "startDate": "2021-10-08",
+    "endEvent": "Bot Pro League Minor 8",
+    "endSlug": "BotProLeague8",
+    "endDate": "2021-10-08"
+   }
   },
   {
    "name": "entity",
@@ -34758,7 +34886,15 @@
      "sa": 13
     }
    ],
-   "streak": "L2"
+   "streak": "L2",
+   "longestWinStreak": {
+    "len": 7,
+    "startEvent": "Audax Esse BPL Invitational 2025",
+    "startDate": "2025-03-22",
+    "endEvent": "BPL Ranking Reshuffle 2025",
+    "endSlug": "BPLRR2025",
+    "endDate": "2025-06-12"
+   }
   },
   {
    "name": "Bluebird",
@@ -36635,7 +36771,15 @@
      "sa": 13
     }
    ],
-   "streak": "L4"
+   "streak": "L4",
+   "longestWinStreak": {
+    "len": 4,
+    "startEvent": "BPL Legends Stage 2022",
+    "startDate": "2022-05-06",
+    "endEvent": "Audax Esse BPL Invitational 2022",
+    "endSlug": "AuxEBPL2022",
+    "endDate": "2022-08-06"
+   }
   },
   {
    "name": "Alcheministry",
@@ -38227,7 +38371,15 @@
      "sa": 8
     }
    ],
-   "streak": "W1"
+   "streak": "W1",
+   "longestWinStreak": {
+    "len": 4,
+    "startEvent": "Audax Esse BPL Invitational 2025",
+    "startDate": "2025-03-22",
+    "endEvent": "BPL Ranking Reshuffle 2025",
+    "endSlug": "BPLRR2025",
+    "endDate": "2025-06-12"
+   }
   },
   {
    "name": "Unforgettable",
@@ -40246,7 +40398,15 @@
      "sa": 13
     }
    ],
-   "streak": "L6"
+   "streak": "L6",
+   "longestWinStreak": {
+    "len": 8,
+    "startEvent": "Bot Pro League Minor 8",
+    "startDate": "2021-10-08",
+    "endEvent": "Bot Pro League Minor 8",
+    "endSlug": "BotProLeague8",
+    "endDate": "2021-10-08"
+   }
   },
   {
    "name": "Setting Sun",
@@ -41999,7 +42159,15 @@
      "sa": 19
     }
    ],
-   "streak": "L2"
+   "streak": "L2",
+   "longestWinStreak": {
+    "len": 7,
+    "startEvent": "BPL Legends Stage 2025",
+    "startDate": "2025-10-10",
+    "endEvent": "Audax Esse BPL Invitational 2026",
+    "endSlug": "audax-esse-bpl-invitational-2026",
+    "endDate": "2026-08-21"
+   }
   },
   {
    "name": "Aeternum",
@@ -43635,7 +43803,15 @@
      "sa": 2
     }
    ],
-   "streak": "L3"
+   "streak": "L3",
+   "longestWinStreak": {
+    "len": 6,
+    "startEvent": "BPL Tournament Minor 6",
+    "startDate": "2021-04-30",
+    "endEvent": "Bot Pro Cup 2022",
+    "endSlug": "BotProCup2022",
+    "endDate": "2022-03-25"
+   }
   },
   {
    "name": "Sacred Raven",
@@ -46346,7 +46522,15 @@
      "sa": 2
     }
    ],
-   "streak": "L1"
+   "streak": "L1",
+   "longestWinStreak": {
+    "len": 6,
+    "startEvent": "BPL Challengers Stage 2023",
+    "startDate": "2023-08-25",
+    "endEvent": "BPL Challengers Stage 2023",
+    "endSlug": "BPLCStage23",
+    "endDate": "2023-08-25"
+   }
   },
   {
    "name": "Moonlit Tempo",
@@ -48339,7 +48523,15 @@
      "sa": 2
     }
    ],
-   "streak": "L2"
+   "streak": "L2",
+   "longestWinStreak": {
+    "len": 8,
+    "startEvent": "BPL Legends Stage 2025",
+    "startDate": "2025-10-10",
+    "endEvent": "BPL Challengers Stage 2025",
+    "endSlug": "BPLChalS2025",
+    "endDate": "2025-10-10"
+   }
   },
   {
    "name": "Bloom E-Sports",
@@ -51033,7 +51225,15 @@
      "sa": 3
     }
    ],
-   "streak": "L1"
+   "streak": "L1",
+   "longestWinStreak": {
+    "len": 6,
+    "startEvent": "Audax Esse BPL Invitational 2026",
+    "startDate": "2026-08-21",
+    "endEvent": "Audax Esse BPL Invitational 2026",
+    "endSlug": "audax-esse-bpl-invitational-2026",
+    "endDate": "2026-08-21"
+   }
   },
   {
    "name": "Kiedz",
@@ -52393,7 +52593,15 @@
      "sa": 2
     }
    ],
-   "streak": "L1"
+   "streak": "L1",
+   "longestWinStreak": {
+    "len": 6,
+    "startEvent": "BPL Tournament Minor 5",
+    "startDate": "2021-01-27",
+    "endEvent": "Bot Pro Cup 2022",
+    "endSlug": "BotProCup2022",
+    "endDate": "2022-03-25"
+   }
   },
   {
    "name": "Caelum Scala",
@@ -55193,7 +55401,15 @@
      "sa": 2
     }
    ],
-   "streak": "L6"
+   "streak": "L6",
+   "longestWinStreak": {
+    "len": 5,
+    "startEvent": "Bot Pro League Minor 10",
+    "startDate": "2022-10-23",
+    "endEvent": "Bot Pro League Minor 10",
+    "endSlug": "BotProLeague10",
+    "endDate": "2022-10-23"
+   }
   },
   {
    "name": "DiamondOnes",
@@ -57277,7 +57493,15 @@
      "sa": 11
     }
    ],
-   "streak": "W2"
+   "streak": "W2",
+   "longestWinStreak": {
+    "len": 9,
+    "startEvent": "BPL Legends Stage 2024",
+    "startDate": "2024-08-03",
+    "endEvent": "Audax Esse BPL Invitational 2025",
+    "endSlug": "audax-esse-bpl-invitational-2025",
+    "endDate": "2025-03-22"
+   }
   },
   {
    "name": "Technomancy",
@@ -58725,7 +58949,15 @@
      "sa": 13
     }
    ],
-   "streak": "L2"
+   "streak": "L2",
+   "longestWinStreak": {
+    "len": 7,
+    "startEvent": "BPL Legends Stage 2025",
+    "startDate": "2025-10-10",
+    "endEvent": "Audax Esse BPL Invitational 2026",
+    "endSlug": "audax-esse-bpl-invitational-2026",
+    "endDate": "2026-08-21"
+   }
   },
   {
    "name": "Team Neverseen",
@@ -61231,7 +61463,15 @@
      "sa": 2
     }
    ],
-   "streak": "L1"
+   "streak": "L1",
+   "longestWinStreak": {
+    "len": 4,
+    "startEvent": "BPL Legends Stage 2022",
+    "startDate": "2022-05-06",
+    "endEvent": "BPL Legends Stage 2022",
+    "endSlug": "BPLLegendsStage",
+    "endDate": "2022-05-06"
+   }
   },
   {
    "name": "Round Loss Bonus",
@@ -63093,7 +63333,15 @@
      "sa": 3
     }
    ],
-   "streak": "W1"
+   "streak": "W1",
+   "longestWinStreak": {
+    "len": 4,
+    "startEvent": "BPL Conquerors Stage 2025",
+    "startDate": "2025-10-10",
+    "endEvent": "BPL Challengers Stage 2025",
+    "endSlug": "BPLChalS2025",
+    "endDate": "2025-10-10"
+   }
   },
   {
    "name": "Flood Flashers",
@@ -64378,7 +64626,15 @@
      "sa": 13
     }
    ],
-   "streak": "L3"
+   "streak": "L3",
+   "longestWinStreak": {
+    "len": 9,
+    "startEvent": "Bot Pro Minor League 15",
+    "startDate": "2026-07-12",
+    "endEvent": "Audax Esse BPL Invitational 2026",
+    "endSlug": "audax-esse-bpl-invitational-2026",
+    "endDate": "2026-08-21"
+   }
   },
   {
    "name": "Ukiyo",
@@ -66494,7 +66750,15 @@
      "sa": 13
     }
    ],
-   "streak": "L1"
+   "streak": "L1",
+   "longestWinStreak": {
+    "len": 9,
+    "startEvent": "Bot Pro League Minor 10",
+    "startDate": "2022-10-23",
+    "endEvent": "Audax Esse BPL Invitational 2023",
+    "endSlug": "AuxEBPL2023",
+    "endDate": "2023-07-23"
+   }
   },
   {
    "name": "0v3",
@@ -69093,7 +69357,15 @@
      "sa": 16
     }
    ],
-   "streak": "L2"
+   "streak": "L2",
+   "longestWinStreak": {
+    "len": 6,
+    "startEvent": "Bot Pro League Minor 12",
+    "startDate": "2023-05-05",
+    "endEvent": "Bot Pro League Minor 12",
+    "endSlug": "BotProLeague12",
+    "endDate": "2023-05-05"
+   }
   },
   {
    "name": "division20",
@@ -71534,7 +71806,15 @@
      "sa": 10
     }
    ],
-   "streak": "W1"
+   "streak": "W1",
+   "longestWinStreak": {
+    "len": 4,
+    "startEvent": "BPL Ranking Reshuffle 2025",
+    "startDate": "2025-06-12",
+    "endEvent": "BPL Ranking Reshuffle 2025",
+    "endSlug": "BPLRR2025",
+    "endDate": "2025-06-12"
+   }
   },
   {
    "name": "99Lives",
@@ -73605,7 +73885,15 @@
      "sa": 8
     }
    ],
-   "streak": "W2"
+   "streak": "W2",
+   "longestWinStreak": {
+    "len": 6,
+    "startEvent": "Bot Pro Cup 2023",
+    "startDate": "2023-11-12",
+    "endEvent": "Bot Pro Cup 2023",
+    "endSlug": "BotProCup2023",
+    "endDate": "2023-11-12"
+   }
   },
   {
    "name": "Fruit Basket",
@@ -74951,7 +75239,15 @@
      "sa": 13
     }
    ],
-   "streak": "L1"
+   "streak": "L1",
+   "longestWinStreak": {
+    "len": 5,
+    "startEvent": "BPL Tournament Minor 2",
+    "startDate": "2020-04-30",
+    "endEvent": "BPL Tournament Minor 2",
+    "endSlug": "BotProLeague2",
+    "endDate": "2020-04-30"
+   }
   },
   {
    "name": "Cyanide",
@@ -77094,7 +77390,15 @@
      "sa": 2
     }
    ],
-   "streak": "L1"
+   "streak": "L1",
+   "longestWinStreak": {
+    "len": 6,
+    "startEvent": "BPL Challengers Stage 2022",
+    "startDate": "2022-04-23",
+    "endEvent": "BPL Legends Stage 2022",
+    "endSlug": "BPLLegendsStage",
+    "endDate": "2022-05-06"
+   }
   },
   {
    "name": "xPlosiv",
@@ -78168,7 +78472,15 @@
      "sa": 2
     }
    ],
-   "streak": "L1"
+   "streak": "L1",
+   "longestWinStreak": {
+    "len": 4,
+    "startEvent": "Bot Pro Minor League 14",
+    "startDate": "2026-06-21",
+    "endEvent": "Bot Pro Minor League 14",
+    "endSlug": "BotProLeague14",
+    "endDate": "2026-06-21"
+   }
   },
   {
    "name": "5PERCENT",
@@ -80206,7 +80518,15 @@
      "sa": 2
     }
    ],
-   "streak": "L1"
+   "streak": "L1",
+   "longestWinStreak": {
+    "len": 6,
+    "startEvent": "Bot Pro Minor League 13",
+    "startDate": "2026-05-28",
+    "endEvent": "Bot Pro Minor League 13",
+    "endSlug": "BotProLeague13",
+    "endDate": "2026-05-28"
+   }
   },
   {
    "name": "Aspire",
@@ -82704,7 +83024,15 @@
      "sa": 0
     }
    ],
-   "streak": "W1"
+   "streak": "W1",
+   "longestWinStreak": {
+    "len": 7,
+    "startEvent": "BPL Challengers Stage 2024",
+    "startDate": "2024-08-03",
+    "endEvent": "Audax Esse BPL Invitational 2025",
+    "endSlug": "audax-esse-bpl-invitational-2025",
+    "endDate": "2025-03-22"
+   }
   },
   {
    "name": "Astral Bloom",
@@ -83495,7 +83823,15 @@
      "sa": 2
     }
    ],
-   "streak": "L3"
+   "streak": "L3",
+   "longestWinStreak": {
+    "len": 2,
+    "startEvent": "BPL Ranking Reshuffle 2025",
+    "startDate": "2025-06-12",
+    "endEvent": "BPL Ranking Reshuffle 2025",
+    "endSlug": "BPLRR2025",
+    "endDate": "2025-06-12"
+   }
   },
   {
    "name": "Syzygy",
@@ -86353,7 +86689,15 @@
      "sa": 4
     }
    ],
-   "streak": "W1"
+   "streak": "W1",
+   "longestWinStreak": {
+    "len": 4,
+    "startEvent": "Bot Pro League Minor 9",
+    "startDate": "2021-10-31",
+    "endEvent": "Bot Pro League Minor 9",
+    "endSlug": "BotProLeague9",
+    "endDate": "2021-10-31"
+   }
   },
   {
    "name": "Eiromancers",
@@ -87569,7 +87913,15 @@
      "sa": 8
     }
    ],
-   "streak": "W1"
+   "streak": "W1",
+   "longestWinStreak": {
+    "len": 4,
+    "startEvent": "Bot Pro Minor League 13",
+    "startDate": "2026-05-28",
+    "endEvent": "Bot Pro Minor League 13",
+    "endSlug": "BotProLeague13",
+    "endDate": "2026-05-28"
+   }
   },
   {
    "name": "BeeHyve",
@@ -88813,7 +89165,8 @@
      "sa": 13
     }
    ],
-   "streak": "L5"
+   "streak": "L5",
+   "longestWinStreak": null
   }
  ],
  "players": {

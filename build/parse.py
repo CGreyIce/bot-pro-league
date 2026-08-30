@@ -1239,6 +1239,45 @@ def main():
                 break
         t["streak"] = (last + str(streak)) if last else ""
 
+    # ---- all-time longest win streak (per team, across group-stage AND bracket matches) ----
+    allm = defaultdict(list)
+    for tr in tournaments:
+        seq = 0
+        ordered = []
+        for st in tr.get("stages", []):
+            for rd in st["rounds"]:
+                ordered += rd["matches"]
+        for rd in tr.get("bracket", []):
+            ordered += rd["matches"]
+        for m in ordered:
+            w = m.get("w")
+            if w not in (1, 2) or m.get("a") == "(bye)" or m.get("b") == "(bye)":
+                continue
+            a, b = m.get("aTeam"), m.get("bTeam")
+            base = {"date": tr["date"], "event": tr["name"], "eventSlug": tr["slug"], "ord": seq}
+            if a:
+                allm[a].append({**base, "res": "W" if w == 1 else "L", "opp": m.get("b")})
+            if b:
+                allm[b].append({**base, "res": "W" if w == 2 else "L", "opp": m.get("a")})
+            seq += 1
+    for t in teams:
+        ms = sorted(allm.get(t["slug"], []), key=lambda x: (x["date"], x["ord"]))
+        best = cur = 0
+        best_start = best_end = cur_start = None
+        for m in ms:
+            if m["res"] == "W":
+                if cur == 0:
+                    cur_start = m
+                cur += 1
+                if cur > best:
+                    best, best_start, best_end = cur, cur_start, m
+            else:
+                cur = 0
+        t["longestWinStreak"] = ({"len": best,
+                                  "startEvent": best_start["event"], "startDate": best_start["date"],
+                                  "endEvent": best_end["event"], "endSlug": best_end["eventSlug"],
+                                  "endDate": best_end["date"]} if best >= 2 else None)
+
     data = {
         "teams": teams,
         "players": {"pro": pro, "amateur": amateur, "solo": solo},

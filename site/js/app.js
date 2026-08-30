@@ -736,6 +736,7 @@ function renderRecords(){
   allMatches().forEach(m=>{ if(m.sa!=null&&m.sb!=null){ const tot=m.sa+m.sb, marg=Math.abs(m.sa-m.sb);
     if(tot>=13&&tot<=32&&(!blow||marg>blow.marg)) blow={marg, m}; }});
   const bestStreak = [...teams].filter(t=>t.streak&&t.streak[0]==="W").sort((a,b)=>parseInt(b.streak.slice(1))-parseInt(a.streak.slice(1)))[0];
+  const allTimeStreak = [...teams].filter(t=>t.longestWinStreak).sort((a,b)=>b.longestWinStreak.len-a.longestWinStreak.len)[0];
 
   const maxBy = (arr,key)=>[...arr].sort((a,b)=>b[key]-a[key])[0];
   const recCard = (title, holder, val, href) => `<div class="rec-card">
@@ -771,6 +772,7 @@ function renderRecords(){
       ${recCard("Highest Win Rate", topTeamWR.name, pct(topTeamWR.wlr), `#/team/${topTeamWR.slug}`)}
       ${mostSTier.s_tier_wins?recCard("Most S-Tier Titles", mostSTier.name, mostSTier.s_tier_wins+"×", `#/team/${mostSTier.slug}`):''}
       ${recCard("Most Map Wins", mostMapWins.name, mostMapWins.map_wins, `#/team/${mostMapWins.slug}`)}
+      ${allTimeStreak?recCard("Longest Win Streak (all-time)", allTimeStreak.name, allTimeStreak.longestWinStreak.len+" wins", `#/team/${allTimeStreak.slug}`):''}
       ${recCard("Longest Win Streak (active)", bestStreak?bestStreak.name:'—', bestStreak?bestStreak.streak:'—', bestStreak?`#/team/${bestStreak.slug}`:null)}
     </div>
     <h3 class="rec-group">Players <span class="muted" style="font-size:11px">(pro; rate stats min 12 maps)</span></h3>
