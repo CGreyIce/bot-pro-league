@@ -680,6 +680,27 @@ function renderResults(){
 }
 
 // ---------- Records / Hall of Fame ----------
+// scan every recorded scoreboard for single-map highs (most kills / best rating in one map)
+function singleMapRecords(){
+  let topK=null, topRtg=null;
+  (DATA.tournaments||[]).forEach(tr=>{
+    const scan=(matches,pfx)=>matches.forEach(m=>{
+      if(!m.stats||!m.stats.maps) return;
+      m.stats.maps.forEach(mp=>{
+        const tot=(mp.scoreA||0)+(mp.scoreB||0); if(!tot) return;
+        const ref=(m.i!=null?pfx+m.i:null);
+        (mp.players||[]).forEach(pl=>{
+          if(pl.k!=null && (!topK||pl.k>topK.val)) topK={val:pl.k, name:pl.name, slug:pl.slug, map:mp.map, event:tr.name, eventSlug:tr.slug, ref};
+          const rtg=matchRating(pl.k,pl.a,pl.d,pl.score,tot);
+          if(rtg!=null && (!topRtg||rtg>topRtg.val)) topRtg={val:rtg, name:pl.name, slug:pl.slug, map:mp.map, event:tr.name, eventSlug:tr.slug, ref};
+        });
+      });
+    });
+    if(tr.stages&&tr.stages.length) tr.stages.forEach(st=>st.rounds.forEach(rd=>scan(rd.matches, st.id+"-")));
+    else (tr.bracket||[]).forEach(rd=>scan(rd.matches, ""));
+  });
+  return {topK, topRtg};
+}
 function renderRecords(){
   const pro = DATA.players.pro.filter(p=>p.rating!=null);
   const qualified = pro.filter(p=>p.maps>=12);
@@ -703,8 +724,20 @@ function renderRecords(){
   const pl = p => recCard.bind(null);
   const topRating=maxBy(qualified,'rating'), topKills=maxBy(pro,'kills'), topMvp=maxBy(pro,'mvp'),
         topKdr=maxBy(qualified,'kdr'), topAssist=maxBy(pro,'assists'), topOT=maxBy(pro,'ot');
+  const topKpm=[...qualified].sort((a,b)=>(b.kills/b.maps)-(a.kills/a.maps))[0];
+  const topWR=maxBy(qualified,'winrate'), topWins=maxBy(pro,'wins'), topPlayerMaps=maxBy(pro,'maps');
+  const nTitles=p=>(p.titles||[]).length, nMvp=p=>(p.mvpAwards||[]).length;
+  const mostPTitles=[...pro].sort((a,b)=>nTitles(b)-nTitles(a))[0];
+  const mostPMvp=[...pro].sort((a,b)=>nMvp(b)-nMvp(a))[0];
   const mostMaps=maxBy(teams,'total_maps'), mostEvents=maxBy(teams,'events_played'),
         mostMajors=maxBy(teams,'major_wins'), mostPodiums=maxBy(teams,'podiums');
+  const qTeams=teams.filter(t=>t.total_maps>=40);
+  const topTeamWR=maxBy(qTeams.length?qTeams:teams,'wlr'), mostSTier=maxBy(teams,'s_tier_wins'), mostMapWins=maxBy(teams,'map_wins');
+  const smr=singleMapRecords();
+  let highScore=null;
+  allMatches().forEach(m=>{ if(m.sa!=null&&m.sb!=null){ const tot=m.sa+m.sb;
+    if(tot>=13&&tot<=60&&(!highScore||tot>highScore.tot)) highScore={tot,m}; }});
+  const smLink=r=>r.slug?`#/player/${r.slug}`:(r.ref?`#/match/${r.eventSlug}/${r.ref}`:`#/tournament/${r.eventSlug}`);
   app.innerHTML = `
     <h2 class="section-title"><span class="accent-bar"></span>Records &amp; Hall of Fame</h2>
     <h3 class="rec-group">Titles &amp; Teams</h3>
@@ -714,6 +747,9 @@ function renderRecords(){
       ${recCard("Most Podiums", mostPodiums.name, mostPodiums.podiums, `#/team/${mostPodiums.slug}`)}
       ${recCard("Most Events Played", mostEvents.name, mostEvents.events_played, `#/team/${mostEvents.slug}`)}
       ${recCard("Most Maps Played", mostMaps.name, mostMaps.total_maps, `#/team/${mostMaps.slug}`)}
+      ${recCard("Highest Win Rate", topTeamWR.name, pct(topTeamWR.wlr), `#/team/${topTeamWR.slug}`)}
+      ${mostSTier.s_tier_wins?recCard("Most S-Tier Titles", mostSTier.name, mostSTier.s_tier_wins+"×", `#/team/${mostSTier.slug}`):''}
+      ${recCard("Most Map Wins", mostMapWins.name, mostMapWins.map_wins, `#/team/${mostMapWins.slug}`)}
       ${recCard("Longest Win Streak (active)", bestStreak?bestStreak.name:'—', bestStreak?bestStreak.streak:'—', bestStreak?`#/team/${bestStreak.slug}`:null)}
     </div>
     <h3 class="rec-group">Players <span class="muted" style="font-size:11px">(pro; rate stats min 12 maps)</span></h3>
@@ -723,12 +759,22 @@ function renderRecords(){
       ${recCard("Most Total Kills", topKills.name, topKills.kills, `#/player/${topKills.slug}`)}
       ${recCard("Most MVPs", topMvp.name, topMvp.mvp, `#/player/${topMvp.slug}`)}
       ${recCard("Most Assists", topAssist.name, topAssist.assists, `#/player/${topAssist.slug}`)}
+      ${recCard("Highest Kills / Map", topKpm.name, (topKpm.kills/topKpm.maps).toFixed(1), `#/player/${topKpm.slug}`)}
+      ${recCard("Highest Win Rate", topWR.name, pct(topWR.winrate), `#/player/${topWR.slug}`)}
+      ${recCard("Most Wins", topWins.name, topWins.wins, `#/player/${topWins.slug}`)}
+      ${recCard("Most Maps Played", topPlayerMaps.name, topPlayerMaps.maps, `#/player/${topPlayerMaps.slug}`)}
+      ${nTitles(mostPTitles)?recCard("Most Titles Won", mostPTitles.name, nTitles(mostPTitles)+"×", `#/player/${mostPTitles.slug}`):''}
+      ${nMvp(mostPMvp)?recCard("Most Event MVPs", mostPMvp.name, nMvp(mostPMvp)+"×", `#/player/${mostPMvp.slug}`):''}
       ${recCard("Most OT Games", topOT.name, topOT.ot, `#/player/${topOT.slug}`)}
     </div>
-    <h3 class="rec-group">Matches</h3>
+    <h3 class="rec-group">Matches &amp; Single-Map Feats</h3>
     <div class="rec-grid">
       ${blow?recCard("Biggest Blowout", `${blow.m.w===1?blow.m.a:blow.m.b} vs ${blow.m.w===1?blow.m.b:blow.m.a}`,
         `${Math.max(blow.m.sa,blow.m.sb)}–${Math.min(blow.m.sa,blow.m.sb)}`, `#/tournament/${blow.m.eventSlug}`):''}
+      ${highScore?recCard("Highest-Scoring Map", `${esc(highScore.m.a)} vs ${esc(highScore.m.b)}`,
+        `${highScore.m.sa}–${highScore.m.sb} · ${highScore.tot} rds`, `#/tournament/${highScore.m.eventSlug}`):''}
+      ${smr.topK?recCard("Most Kills in a Map", smr.topK.name, smr.topK.val+(smr.topK.map?' · '+esc(smr.topK.map):''), smLink(smr.topK)):''}
+      ${smr.topRtg?recCard("Best Single-Map Rating", smr.topRtg.name, smr.topRtg.val.toFixed(2)+(smr.topRtg.map?' · '+esc(smr.topRtg.map):''), smLink(smr.topRtg)):''}
     </div>
     ${(()=>{ const inform=inFormPlayers(); if(!inform.length) return '';
       return `<h3 class="rec-group">In-Form Players <span class="muted" style="font-size:11px">best recent match ratings · min 3 recent maps</span></h3>
