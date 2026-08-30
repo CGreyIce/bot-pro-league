@@ -432,29 +432,73 @@
      "round": 1,
      "a": "Masmark",
      "b": "Nullpoint",
-     "sa": null,
-     "sb": null
+     "sa": 6,
+     "sb": 13,
+     "ts": 1788129264
     },
     {
      "id": 4,
      "round": 1,
      "a": "Onyx Legion",
      "b": "Seraph Dynasty",
-     "sa": null,
-     "sb": null
+     "sa": 12,
+     "sb": 16,
+     "ts": 1788130073
     },
     {
      "id": 5,
      "round": 1,
      "a": "Setting Sun",
      "b": "Voidborne",
+     "sa": 15,
+     "sb": 19,
+     "ts": 1788130950
+    },
+    {
+     "id": 6,
+     "round": 2,
+     "a": "Lunar Cadence",
+     "b": "Nullpoint",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 7,
+     "round": 2,
+     "a": "Seraph Dynasty",
+     "b": "Voidborne",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 8,
+     "round": 2,
+     "a": "DiamondOnes",
+     "b": "Onyx Legion",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 9,
+     "round": 2,
+     "a": "Artisian",
+     "b": "Setting Sun",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 10,
+     "round": 2,
+     "a": "Fruit Basket",
+     "b": "Masmark",
      "sa": null,
      "sb": null
     }
    ],
    "rounds": 5,
    "roundTitles": {
-    "1": "Round 1"
+    "1": "Round 1",
+    "2": "Round 2"
    }
   },
   {
