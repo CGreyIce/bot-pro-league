@@ -22,6 +22,22 @@ function tierBadge(t){ if(!t) return '<span class="muted">—</span>'; return `<
 function ratingBadge(r){ if(r==null) return '<span class="muted">—</span>'; return `<span class="rating-badge">${r.toFixed(2)}</span>`; }
 function pointsBadge(pts){ if(pts==null) return '<span class="muted">—</span>'; return `<span class="rating-badge">${pts}</span>`; }
 function levelChip(lvl){ if(!lvl) return '<span class="muted">—</span>'; return `<span class="lvl-chip lvl-${lvl}" title="Level ${lvl}">${lvl}</span>`; }
+function levelColor(lvl){ return lvl>=10?'#ff4655':lvl>=8?'#ff8c42':lvl>=5?'#ffce54':lvl>=3?'#3ddc84':'#c7ccd6'; }
+// The solo-queue league is open to everyone: every player with a solo-queue record — their
+// folded soloStats if they also play tournaments, or the standalone solo-only players.
+let _soloLeague=null;
+function soloLeague(){
+  if(_soloLeague) return _soloLeague;
+  const out=[], seen=new Set();
+  ["pro","amateur"].forEach(pk=>(DATA.players[pk]||[]).forEach(p=>{
+    if(p.shadowAmateur) return;                 // shadow is redundant with the amateur entry
+    const s=p.soloStats; if(!s) return;
+    const k=normKey(p.name); if(seen.has(k)) return; seen.add(k);
+    out.push({...s, name:p.name, iso:p.iso, nat:p.nat, team:p.team, role:p.role, slug:p.slug, pool:"solo"});
+  }));
+  (DATA.players.solo||[]).forEach(p=>{ const k=normKey(p.name); if(seen.has(k)) return; seen.add(k); out.push(p); });
+  return _soloLeague=out;
+}
 function teamLogo(t){ return t && t.logo ? `<img src="${esc(t.logo)}" alt="">` : ''; }
 function teamCell(name){ const t=teamByName(name); if(!t) return `<span class="team-inline"><span class="muted">${esc(name||"—")}</span></span>`;
   return `<a class="team-inline" href="#/team/${t.slug}">${teamLogo(t)}<span>${esc(t.name)}</span></a>`; }
@@ -453,9 +469,10 @@ function renderTeam(slug){
 }
 
 let playersPool = "pro", playersSort = {key:"Rating Points", dir:-1};
+function poolList(pk){ return pk==="solo" ? soloLeague() : (DATA.players[pk]||[]); }
 function renderPlayers(){
   const pool = playersPool;
-  const players = DATA.players[pool];
+  const players = poolList(pool);
   const cols = [
     ["#", (p,i)=>i+1, "rankcol"],
     ["Player", p=>`<span class="tm-rank">${playerLink(p)}${playersSort.key==="Rating Points"?rankDeltaBadge(p,"their last match"):''}</span>`, "name-cell", p=>p.name],
@@ -474,8 +491,9 @@ function renderPlayers(){
       <a href="#/compare" class="muted" style="margin-left:auto;font-size:12px">⇄ Compare players</a></h2>
     <div class="tabs">
       ${["pro","amateur","solo"].map(k=>`<button data-pool="${k}" class="${k===pool?'active':''}">${
-        k==="pro"?"Pro":k==="amateur"?"Amateur":"Solo Queue"} <span style="opacity:.7">${DATA.players[k].length}</span></button>`).join("")}
+        k==="pro"?"Pro":k==="amateur"?"Amateur":"Solo Queue"} <span style="opacity:.7">${poolList(k).length}</span></button>`).join("")}
     </div>
+    ${pool==="solo"?'<p class="muted" style="font-size:12px;margin:-4px 0 12px">The solo-queue ladder is open to the whole league — every player\'s solo-queue record, tournament regulars included.</p>':''}
     <div id="ptable"></div>`;
   app.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{playersPool=b.dataset.pool;playersSort={key:"Rating Points",dir:-1};renderPlayers();});
   drawPlayerTable(players, cols);
@@ -1158,10 +1176,9 @@ function renderStats(){
   const natList=Object.values(nat).sort((a,b)=>b.n-a.n);
   const totalPeople=seen.size;
   const countries=natList.filter(x=>x.nat!=='Unknown').length;
-  // tier distribution (pro)
-  const tiers=(DATA.tiers||[]);
-  const tierCount={}; DATA.players.pro.forEach(p=>{ if(p.tier) tierCount[p.tier]=(tierCount[p.tier]||0)+1; });
-  const tierMax=Math.max(1,...Object.values(tierCount));
+  // level distribution (pro)
+  const levelCount={}; DATA.players.pro.forEach(p=>{ if(p.level) levelCount[p.level]=(levelCount[p.level]||0)+1; });
+  const levelMax=Math.max(1,...Object.values(levelCount));
   // matches recorded
   const matchCount=allMatches().length;
   const bar=(label,n,max,color)=>`<div class="bar-row">
@@ -1190,9 +1207,10 @@ function renderStats(){
       <div class="bar-track"><div class="bar-fill" style="width:${Math.max(2,Math.round(x.n/natMax*100))}%"></div></div>
       <span class="bar-val">${x.n}</span></div>`;
   }).join("");
-  const tierBars=tiers.map(t=>tierCount[t]?bar(`<span class="dot" style="background:${tierColor(t)}"></span>${esc(t)}`,tierCount[t],tierMax,tierColor(t)):'').join("");
-  const poolMax=Math.max(...pools.map(pk=>DATA.players[pk].length));
-  const poolBars=pools.map(pk=>bar(pk==='pro'?'Pro':pk==='amateur'?'Amateur':'Solo Queue',DATA.players[pk].length,poolMax)).join("");
+  const levelBars=[10,9,8,7,6,5,4,3,2,1].map(lv=>levelCount[lv]?bar(`<span class="dot" style="background:${levelColor(lv)}"></span>Level ${lv}`,levelCount[lv],levelMax,levelColor(lv)):'').join("");
+  const poolSize=pk=>pk==='solo'?soloLeague().length:DATA.players[pk].length;
+  const poolMax=Math.max(...pools.map(poolSize));
+  const poolBars=pools.map(pk=>bar(pk==='pro'?'Pro':pk==='amateur'?'Amateur':'Solo Queue',poolSize(pk),poolMax)).join("");
   const tile=(v,l)=>`<div class="stat"><div class="sv">${v}</div><div class="sl">${l}</div></div>`;
   app.innerHTML=`
     <h2 class="section-title"><span class="accent-bar"></span>League Stats</h2>
@@ -1206,8 +1224,8 @@ function renderStats(){
     <div class="stats2col">
       <div><h3 class="rec-group">Players by Country <span class="muted" style="font-size:11px">(top 14)</span></h3>
         <div class="bars">${natBars}</div></div>
-      <div><h3 class="rec-group">Pro Rating Tiers</h3>
-        <div class="bars">${tierBars}</div>
+      <div><h3 class="rec-group">Pro Players by Level</h3>
+        <div class="bars">${levelBars}</div>
         <h3 class="rec-group" style="margin-top:22px">Player Pools</h3>
         <div class="bars">${poolBars}</div></div>
     </div>`;
@@ -1520,7 +1538,7 @@ function renderSfMaps(match){
 
 // ---------- Admin (local editing) ----------
 let adminEditing = null, _adminTeams = [], _adminOn = false;
-async function reloadData(){ try{ DATA = await loadData(5); _allMatches=null; _proSlugs=null; }catch(e){} }
+async function reloadData(){ try{ DATA = await loadData(5); _allMatches=null; _proSlugs=null; _soloLeague=null; }catch(e){} }
 function apiPost(p, body){ return fetch(p,{method:"POST",headers:{"Content-Type":"text/plain"},body:JSON.stringify(body)}).then(r=>r.json()).catch(e=>({ok:false,error:String(e)})); }
 async function renderAdmin(){
   app.innerHTML = `<div class="loading">Connecting to admin…</div>`;
