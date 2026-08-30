@@ -164,6 +164,16 @@ def refresh_bio_dynamics(pro, amateur, solo):
         if pts is not None:
             bio = re.sub(r"\b(at\s+)(?:1\.\d\d|0\.\d\d)\b", lambda m: m.group(1) + f"{pts} points", bio)   # "Level 8 at 1609 points"
             bio = re.sub(r"\b(?:1\.\d\d|0\.\d\d)\s+rating\b", f"{pts} points", bio)                         # "1.14 rating" -> "1609 points"
+        # live counting stats so hard numbers in the prose never go stale (kills / MVP / assists / deaths / K-D)
+        kills, mvp, assists, deaths, kdr = p["kills"], p["mvp"], p["assists"], p["deaths"], p["kdr"]
+        if not p.get("maps") and ss:            # unranked in the main pool -> use solo-queue figures
+            kills, mvp = ss.get("kills", kills), ss.get("mvp", mvp)
+            assists, deaths, kdr = ss.get("assists", assists), ss.get("deaths", deaths), ss.get("kdr", kdr)
+        bio = re.sub(r"\b\d+(\s+career)?\s+kills\b", lambda m: f"{kills}{m.group(1) or ''} kills", bio)     # "535 kills" -> "683 kills"
+        bio = re.sub(r"\b\d+\s+MVP\b", f"{mvp} MVP", bio)                                                   # "90 MVP rounds" -> "121 MVP rounds"
+        bio = re.sub(r"\b\d+\s+assists\b", f"{assists} assists", bio)
+        bio = re.sub(r"\b\d+\s+deaths\b", f"{deaths} deaths", bio)
+        bio = re.sub(r"\b\d\.\d+\s+K/D\b", f"{kdr:.2f} K/D", bio)                                           # "1.14 K/D" -> live K/D
         p["bio"] = bio
     for pool in (pro, amateur, solo):
         for p in pool:
