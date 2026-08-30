@@ -7333,6 +7333,309 @@
      ]
     }
    ]
+  },
+  "4-2": {
+   "maps": [
+    {
+     "map": "Cache",
+     "scoreA": 16,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "degree",
+       "name": "Zoweya",
+       "k": 28,
+       "a": 0,
+       "d": 21,
+       "mvp": 6,
+       "score": 77
+      },
+      {
+       "team": "degree",
+       "name": "AltheaVT",
+       "k": 18,
+       "a": 3,
+       "d": 22,
+       "mvp": 3,
+       "score": 49
+      },
+      {
+       "team": "degree",
+       "name": "Anony",
+       "k": 17,
+       "a": 1,
+       "d": 21,
+       "mvp": 1,
+       "score": 48
+      },
+      {
+       "team": "degree",
+       "name": "VanixEvans",
+       "k": 20,
+       "a": 1,
+       "d": 21,
+       "mvp": 4,
+       "score": 43
+      },
+      {
+       "team": "degree",
+       "name": "airawwr",
+       "k": 14,
+       "a": 3,
+       "d": 22,
+       "mvp": 2,
+       "score": 37
+      },
+      {
+       "team": "Dreamstate",
+       "name": "Bajiru_EN",
+       "k": 28,
+       "a": 2,
+       "d": 19,
+       "mvp": 7,
+       "score": 69
+      },
+      {
+       "team": "Dreamstate",
+       "name": "bloodbane",
+       "k": 28,
+       "a": 1,
+       "d": 18,
+       "mvp": 2,
+       "score": 64
+      },
+      {
+       "team": "Dreamstate",
+       "name": "yukihimeowo",
+       "k": 21,
+       "a": 3,
+       "d": 21,
+       "mvp": 2,
+       "score": 51
+      },
+      {
+       "team": "Dreamstate",
+       "name": "moricorovt",
+       "k": 14,
+       "a": 5,
+       "d": 19,
+       "mvp": 0,
+       "score": 41
+      },
+      {
+       "team": "Dreamstate",
+       "name": "yumezukiyomi",
+       "k": 16,
+       "a": 2,
+       "d": 20,
+       "mvp": 2,
+       "score": 40
+      }
+     ]
+    }
+   ]
+  },
+  "4-3": {
+   "maps": [
+    {
+     "map": "Mirage",
+     "scoreA": 13,
+     "scoreB": 8,
+     "players": [
+      {
+       "team": "Eiromancers",
+       "name": "kanarivt",
+       "k": 21,
+       "a": 2,
+       "d": 11,
+       "mvp": 3,
+       "score": 55
+      },
+      {
+       "team": "Eiromancers",
+       "name": "boopydoopy",
+       "k": 14,
+       "a": 4,
+       "d": 15,
+       "mvp": 2,
+       "score": 42
+      },
+      {
+       "team": "Eiromancers",
+       "name": "RaviasEir",
+       "k": 14,
+       "a": 1,
+       "d": 13,
+       "mvp": 5,
+       "score": 40
+      },
+      {
+       "team": "Eiromancers",
+       "name": "kaikaijins",
+       "k": 13,
+       "a": 2,
+       "d": 14,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "Eiromancers",
+       "name": "Skiazelle",
+       "k": 11,
+       "a": 0,
+       "d": 13,
+       "mvp": 1,
+       "score": 26
+      },
+      {
+       "team": "Sakura Sovereign",
+       "name": "Ichinose Uruha",
+       "k": 18,
+       "a": 1,
+       "d": 13,
+       "mvp": 3,
+       "score": 41
+      },
+      {
+       "team": "Sakura Sovereign",
+       "name": "Hanabusa Lisa",
+       "k": 15,
+       "a": 1,
+       "d": 13,
+       "mvp": 2,
+       "score": 41
+      },
+      {
+       "team": "Sakura Sovereign",
+       "name": "Shuvimo",
+       "k": 15,
+       "a": 3,
+       "d": 14,
+       "mvp": 0,
+       "score": 40
+      },
+      {
+       "team": "Sakura Sovereign",
+       "name": "Kaga Sumire",
+       "k": 13,
+       "a": 3,
+       "d": 16,
+       "mvp": 2,
+       "score": 39
+      },
+      {
+       "team": "Sakura Sovereign",
+       "name": "Asumi Sena",
+       "k": 5,
+       "a": 4,
+       "d": 17,
+       "mvp": 1,
+       "score": 22
+      }
+     ]
+    }
+   ]
+  },
+  "4-4": {
+   "maps": [
+    {
+     "map": "Tuscan",
+     "scoreA": 13,
+     "scoreB": 4,
+     "players": [
+      {
+       "team": "Syzygy",
+       "name": "sengjung123",
+       "k": 20,
+       "a": 0,
+       "d": 9,
+       "mvp": 5,
+       "score": 52
+      },
+      {
+       "team": "Syzygy",
+       "name": "akuluvr",
+       "k": 13,
+       "a": 0,
+       "d": 10,
+       "mvp": 3,
+       "score": 36
+      },
+      {
+       "team": "Syzygy",
+       "name": "leachubby",
+       "k": 15,
+       "a": 1,
+       "d": 9,
+       "mvp": 1,
+       "score": 32
+      },
+      {
+       "team": "Syzygy",
+       "name": "Xyrren",
+       "k": 14,
+       "a": 1,
+       "d": 10,
+       "mvp": 1,
+       "score": 30
+      },
+      {
+       "team": "Syzygy",
+       "name": "AyanOwOT",
+       "k": 9,
+       "a": 0,
+       "d": 10,
+       "mvp": 3,
+       "score": 22
+      },
+      {
+       "team": "Technomancy",
+       "name": "OchakoKiyomi",
+       "k": 13,
+       "a": 1,
+       "d": 14,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "Technomancy",
+       "name": "teckiyo",
+       "k": 13,
+       "a": 1,
+       "d": 15,
+       "mvp": 2,
+       "score": 28
+      },
+      {
+       "team": "Technomancy",
+       "name": "SkuxxNinja44",
+       "k": 8,
+       "a": 5,
+       "d": 14,
+       "mvp": 0,
+       "score": 25
+      },
+      {
+       "team": "Technomancy",
+       "name": "nicsman",
+       "k": 9,
+       "a": 0,
+       "d": 13,
+       "mvp": 0,
+       "score": 20
+      },
+      {
+       "team": "Technomancy",
+       "name": "carv",
+       "k": 5,
+       "a": 2,
+       "d": 15,
+       "mvp": 0,
+       "score": 12
+      }
+     ]
+    }
+   ]
   }
  }
 }

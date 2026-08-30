@@ -313,24 +313,27 @@
      "round": 1,
      "a": "degree",
      "b": "Dreamstate",
-     "sa": null,
-     "sb": null
+     "sa": 16,
+     "sb": 13,
+     "ts": 1788123190
     },
     {
      "id": 3,
      "round": 1,
      "a": "Eiromancers",
      "b": "Sakura Sovereign",
-     "sa": null,
-     "sb": null
+     "sa": 13,
+     "sb": 8,
+     "ts": 1788123810
     },
     {
      "id": 4,
      "round": 1,
      "a": "Syzygy",
      "b": "Technomancy",
-     "sa": null,
-     "sb": null
+     "sa": 13,
+     "sb": 4,
+     "ts": 1788124354
     },
     {
      "id": 5,
