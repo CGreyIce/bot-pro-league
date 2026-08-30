@@ -7737,6 +7737,208 @@
      ]
     }
    ]
+  },
+  "5-1": {
+   "maps": [
+    {
+     "map": "Dust2",
+     "scoreA": 11,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Artisian",
+       "name": "KTenshi",
+       "k": 25,
+       "a": 0,
+       "d": 16,
+       "mvp": 5,
+       "score": 57
+      },
+      {
+       "team": "Artisian",
+       "name": "Yixl",
+       "k": 16,
+       "a": 3,
+       "d": 20,
+       "mvp": 2,
+       "score": 41
+      },
+      {
+       "team": "Artisian",
+       "name": "Skyllabtw",
+       "k": 15,
+       "a": 1,
+       "d": 16,
+       "mvp": 3,
+       "score": 39
+      },
+      {
+       "team": "Artisian",
+       "name": "SanCtuary",
+       "k": 16,
+       "a": 0,
+       "d": 20,
+       "mvp": 1,
+       "score": 38
+      },
+      {
+       "team": "Artisian",
+       "name": "rebellioniite",
+       "k": 8,
+       "a": 2,
+       "d": 23,
+       "mvp": 0,
+       "score": 21
+      },
+      {
+       "team": "DiamondOnes",
+       "name": "emiiiyu",
+       "k": 26,
+       "a": 1,
+       "d": 18,
+       "mvp": 2,
+       "score": 63
+      },
+      {
+       "team": "DiamondOnes",
+       "name": "notccillia",
+       "k": 22,
+       "a": 1,
+       "d": 14,
+       "mvp": 3,
+       "score": 58
+      },
+      {
+       "team": "DiamondOnes",
+       "name": "xolalotl",
+       "k": 19,
+       "a": 3,
+       "d": 16,
+       "mvp": 3,
+       "score": 43
+      },
+      {
+       "team": "DiamondOnes",
+       "name": "midorissi",
+       "k": 13,
+       "a": 5,
+       "d": 15,
+       "mvp": 2,
+       "score": 43
+      },
+      {
+       "team": "DiamondOnes",
+       "name": "lilraxxx",
+       "k": 15,
+       "a": 3,
+       "d": 17,
+       "mvp": 3,
+       "score": 41
+      }
+     ]
+    }
+   ]
+  },
+  "5-2": {
+   "maps": [
+    {
+     "map": "Tuscan",
+     "scoreA": 6,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Fruit Basket",
+       "name": "Mango",
+       "k": 22,
+       "a": 0,
+       "d": 14,
+       "mvp": 4,
+       "score": 52
+      },
+      {
+       "team": "Fruit Basket",
+       "name": "Phxebe",
+       "k": 8,
+       "a": 2,
+       "d": 16,
+       "mvp": 1,
+       "score": 23
+      },
+      {
+       "team": "Fruit Basket",
+       "name": "cshhp",
+       "k": 9,
+       "a": 1,
+       "d": 17,
+       "mvp": 0,
+       "score": 22
+      },
+      {
+       "team": "Fruit Basket",
+       "name": "yuuschan",
+       "k": 9,
+       "a": 1,
+       "d": 14,
+       "mvp": 1,
+       "score": 21
+      },
+      {
+       "team": "Fruit Basket",
+       "name": "Hakase",
+       "k": 9,
+       "a": 2,
+       "d": 17,
+       "mvp": 0,
+       "score": 21
+      },
+      {
+       "team": "Lunar Cadence",
+       "name": "briant",
+       "k": 20,
+       "a": 2,
+       "d": 11,
+       "mvp": 5,
+       "score": 49
+      },
+      {
+       "team": "Lunar Cadence",
+       "name": "Ginjo Saine",
+       "k": 20,
+       "a": 1,
+       "d": 12,
+       "mvp": 2,
+       "score": 43
+      },
+      {
+       "team": "Lunar Cadence",
+       "name": "Kogara Toto",
+       "k": 17,
+       "a": 3,
+       "d": 12,
+       "mvp": 3,
+       "score": 38
+      },
+      {
+       "team": "Lunar Cadence",
+       "name": "Tatsumaki Chise",
+       "k": 13,
+       "a": 2,
+       "d": 12,
+       "mvp": 1,
+       "score": 34
+      },
+      {
+       "team": "Lunar Cadence",
+       "name": "Yumeno Akari",
+       "k": 8,
+       "a": 2,
+       "d": 10,
+       "mvp": 2,
+       "score": 21
+      }
+     ]
+    }
+   ]
   }
  }
 }

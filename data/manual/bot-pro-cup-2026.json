@@ -414,16 +414,18 @@
      "round": 1,
      "a": "Artisian",
      "b": "DiamondOnes",
-     "sa": null,
-     "sb": null
+     "sa": 11,
+     "sb": 13,
+     "ts": 1788128225
     },
     {
      "id": 2,
      "round": 1,
      "a": "Fruit Basket",
      "b": "Lunar Cadence",
-     "sa": null,
-     "sb": null
+     "sa": 6,
+     "sb": 13,
+     "ts": 1788128760
     },
     {
      "id": 3,

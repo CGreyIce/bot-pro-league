@@ -368,6 +368,8 @@ def compute_team_points(teams, tournaments):
     for t in teams:
         if t.get("provisional"):
             t["rankDelta"] = 0
+    # keep the list itself ordered by rank (ranked teams first, provisional last)
+    teams.sort(key=lambda t: (t["rank"] is None, t["rank"] or 0))
 
 # ---------- roster .txt (team lore) ----------
 def parse_rosters():
