@@ -1392,13 +1392,26 @@ function renderScoreboard(){
   c.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{ _sbTab = b.dataset.tab==='all'?'all':+b.dataset.tab; renderScoreboard(); });
 }
 let _sfMaps = [];
+let _sfListA = "allplayers", _sfListB = "allplayers";
+function sfTeamRoster(tr, teamName){
+  if(!tr || !teamName) return null;
+  const row = (tr.attending||[]).find(r=>normKey(r.team)===normKey(teamName));
+  return (row && row.players && row.players.length) ? row.players.map(p=>p.name) : null;
+}
 function openStatsForm(slug, ref, match){
   const box = $("#m-statsform"); if(!box) return;
   const em = (match.stats&&match.stats.maps)||[];
   _sfMaps = em.length ? JSON.parse(JSON.stringify(em)) : [{map:"", players:[]}];
+  // Per-team player lists: clicking a slot only suggests that team's roster for this event.
+  const tr = (DATA.tournaments||[]).find(t=>t.slug===slug);
+  const rosterA = sfTeamRoster(tr, match.a), rosterB = sfTeamRoster(tr, match.b);
+  _sfListA = rosterA ? "sf-roster-a" : "allplayers";
+  _sfListB = rosterB ? "sf-roster-b" : "allplayers";
+  const dl = (id, names)=> names ? `<datalist id="${id}">${names.map(n=>`<option value="${esc(n)}">`).join("")}</datalist>` : '';
   box.innerHTML = `
     <div class="sf-wrap">
       <datalist id="allplayers">${allPlayers().map(p=>`<option value="${esc(p.name)}">`).join("")}</datalist>
+      ${dl("sf-roster-a", rosterA)}${dl("sf-roster-b", rosterB)}
       <div id="sf-maps"></div>
       <button id="sf-addmap" class="loadmore" style="margin-top:6px">+ Add map</button>
       <div style="margin-top:12px"><button id="sf-save" class="adm-btn" style="max-width:220px">Save all maps</button>
@@ -1427,20 +1440,20 @@ function collectSf(match){
 }
 function renderSfMaps(match){
   const c = $("#sf-maps"); if(!c) return;
-  const rowFor=(mp,teamName,idx)=>{
+  const rowFor=(mp,teamName,idx,listId)=>{
     const p=(mp.players||[]).filter(x=>normKey(x.team)===normKey(teamName))[idx]||{};
     const v=k=>p[k]!=null?p[k]:'';
     return `<div class="sf-row" data-team="${esc(teamName)}">
-      <input class="sf-in sf-name" placeholder="player" list="allplayers" value="${esc(p.name||'')}">
+      <input class="sf-in sf-name" placeholder="player" list="${listId}" value="${esc(p.name||'')}">
       <input class="sf-in sf-k" type="number" placeholder="K" value="${v('k')}">
       <input class="sf-in sf-a" type="number" placeholder="A" value="${v('a')}">
       <input class="sf-in sf-d" type="number" placeholder="D" value="${v('d')}">
       <input class="sf-in sf-mvp" type="number" placeholder="MVP" value="${v('mvp')}">
       <input class="sf-in sf-score" type="number" placeholder="Score" value="${v('score')}"></div>`;
   };
-  const teamBlock=(mp,teamName)=> teamName ? `<div class="sf-team"><div class="sf-th">${esc(teamName)}</div>
+  const teamBlock=(mp,teamName,listId)=> teamName ? `<div class="sf-team"><div class="sf-th">${esc(teamName)}</div>
     <div class="sf-hdr"><span>Player</span><span>K</span><span>A</span><span>D</span><span>MVP</span><span>Score</span></div>
-    ${[0,1,2,3,4].map(i=>rowFor(mp,teamName,i)).join("")}</div>` : '';
+    ${[0,1,2,3,4].map(i=>rowFor(mp,teamName,i,listId)).join("")}</div>` : '';
   c.innerHTML = _sfMaps.map((mp,mi)=>`<div class="sf-map">
       <div class="sf-maphdr"><span class="sf-mapno">Map ${mi+1}</span>
         <input class="sf-in sf-mapname" placeholder="map" value="${esc(mp.map||'')}" style="max-width:150px">
@@ -1448,7 +1461,7 @@ function renderSfMaps(match){
         <input class="sf-in sf-scA" type="number" title="${esc(match.a||'A')}" value="${mp.scoreA!=null?mp.scoreA:''}" style="width:52px">
         <input class="sf-in sf-scB" type="number" title="${esc(match.b||'B')}" value="${mp.scoreB!=null?mp.scoreB:''}" style="width:52px">
         ${_sfMaps.length>1?`<button class="sf-delmap" data-mi="${mi}" title="remove map">✕ map</button>`:''}</div>
-      <div class="sf-teams">${teamBlock(mp,match.a)}${teamBlock(mp,match.b)}</div></div>`).join("");
+      <div class="sf-teams">${teamBlock(mp,match.a,_sfListA)}${teamBlock(mp,match.b,_sfListB)}</div></div>`).join("");
   c.querySelectorAll(".sf-delmap").forEach(b=>b.onclick=()=>{ collectSf(match); _sfMaps.splice(+b.dataset.mi,1); if(!_sfMaps.length) _sfMaps=[{map:"",players:[]}]; renderSfMaps(match); });
 }
 

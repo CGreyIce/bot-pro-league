@@ -6828,6 +6828,107 @@
      ]
     }
    ]
+  },
+  "3-1": {
+   "maps": [
+    {
+     "map": "Mirage",
+     "scoreA": 13,
+     "scoreB": 8,
+     "players": [
+      {
+       "team": "Alcheministry",
+       "name": "d.chong",
+       "k": 28,
+       "a": 2,
+       "d": 14,
+       "mvp": 6,
+       "score": 66
+      },
+      {
+       "team": "Alcheministry",
+       "name": "tanykeat",
+       "k": 19,
+       "a": 5,
+       "d": 12,
+       "mvp": 1,
+       "score": 47
+      },
+      {
+       "team": "Alcheministry",
+       "name": "NekoSoji",
+       "k": 18,
+       "a": 3,
+       "d": 14,
+       "mvp": 3,
+       "score": 41
+      },
+      {
+       "team": "Alcheministry",
+       "name": "hikopiko_",
+       "k": 16,
+       "a": 0,
+       "d": 14,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "Alcheministry",
+       "name": "EviKuroneko",
+       "k": 10,
+       "a": 4,
+       "d": 12,
+       "mvp": 1,
+       "score": 30
+      },
+      {
+       "team": "BeeHyve",
+       "name": "Tigeraxd",
+       "k": 16,
+       "a": 1,
+       "d": 17,
+       "mvp": 2,
+       "score": 40
+      },
+      {
+       "team": "BeeHyve",
+       "name": "keikatamori",
+       "k": 15,
+       "a": 0,
+       "d": 17,
+       "mvp": 3,
+       "score": 37
+      },
+      {
+       "team": "BeeHyve",
+       "name": "_froggiee",
+       "k": 12,
+       "a": 0,
+       "d": 20,
+       "mvp": 1,
+       "score": 27
+      },
+      {
+       "team": "BeeHyve",
+       "name": "TiniiBee",
+       "k": 12,
+       "a": 1,
+       "d": 19,
+       "mvp": 1,
+       "score": 26
+      },
+      {
+       "team": "BeeHyve",
+       "name": "Hyvred",
+       "k": 11,
+       "a": 0,
+       "d": 18,
+       "mvp": 1,
+       "score": 24
+      }
+     ]
+    }
+   ]
   }
  }
 }
