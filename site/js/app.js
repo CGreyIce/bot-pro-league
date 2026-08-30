@@ -1170,11 +1170,12 @@ function renderTeamCompare(){
 function renderStats(){
   const pools=["pro","amateur","solo"];
   // dedupe people across pools by name
-  const seen=new Set(), nat={};
+  const seen=new Set(), nat={}, reg={};
   pools.forEach(pk=>DATA.players[pk].forEach(p=>{
     const key=normKey(p.name); if(seen.has(key)) return; seen.add(key);
     const name=p.nat||'Unknown', e=nat[name]=nat[name]||{nat:name,iso:p.iso||'',n:0}; e.n++;
     if(!e.iso&&p.iso) e.iso=p.iso;
+    const rn=playerRegion(p); const re=reg[rn]=reg[rn]||{region:rn,n:0}; re.n++;
   }));
   const natList=Object.values(nat).sort((a,b)=>b.n-a.n);
   const totalPeople=seen.size;
@@ -1192,22 +1193,28 @@ function renderStats(){
   // highest-rated player per nationality (for the flag hover tooltip).
   // prefer the top PRO player; fall back to amateur/solo only if the country has no pro.
   const topByNat={};
-  DATA.players.pro.forEach(p=>{
-    if(p.rating==null||!p.nat) return;
-    const cur=topByNat[p.nat];
-    if(!cur||p.rating>cur.rating) topByNat[p.nat]={name:p.name,rating:p.rating,team:p.team,slug:p.slug,pro:true};
-  });
-  ["amateur","solo"].forEach(pk=>DATA.players[pk].forEach(p=>{
-    if(p.rating==null||!p.nat) return;
-    const cur=topByNat[p.nat];
-    if(cur&&cur.pro) return;                         // a pro from this country already wins
-    if(!cur||p.rating>cur.rating) topByNat[p.nat]={name:p.name,rating:p.rating,team:p.team,slug:p.slug,pro:false};
-  }));
+  const topByReg={};
+  const consider=(map,keyOf,p,isPro)=>{
+    if(p.rating==null) return; const kk=keyOf(p); if(kk==null||kk==="") return;
+    const cur=map[kk]; if(cur&&cur.pro&&!isPro) return;
+    if(!cur||p.rating>cur.rating) map[kk]={name:p.name,rating:p.rating,ratingPoints:p.ratingPoints,team:p.team,slug:p.slug,pro:isPro};
+  };
+  DATA.players.pro.forEach(p=>{ consider(topByNat,x=>x.nat,p,true); consider(topByReg,playerRegion,p,true); });
+  ["amateur","solo"].forEach(pk=>DATA.players[pk].forEach(p=>{ consider(topByNat,x=>x.nat,p,false); consider(topByReg,playerRegion,p,false); }));
   const natBars=natList.slice(0,14).map(x=>{
     const tp=topByNat[x.nat];
     const fl = tp ? `<span class="flag-tip">${flag(x.iso)}<span class="ftbox"><span class="ftlabel">Top player</span><b>${esc(tp.name)}</b><span class="ftmeta">${tp.ratingPoints} pts${tp.team?' · '+esc(tp.team):''}</span></span></span>` : flag(x.iso);
     return `<div class="bar-row"><span class="bar-label">${fl}<span class="bar-cty">${esc(x.nat)}</span></span>
       <div class="bar-track"><div class="bar-fill" style="width:${Math.max(2,Math.round(x.n/natMax*100))}%"></div></div>
+      <span class="bar-val">${x.n}</span></div>`;
+  }).join("");
+  const regList=Object.values(reg).sort((a,b)=>b.n-a.n);
+  const regMax=Math.max(1,...regList.map(x=>x.n));
+  const regBars=regList.map(x=>{
+    const tp=topByReg[x.region];
+    const lbl = tp ? `<span class="flag-tip"><span class="bar-cty reg-name">${esc(x.region)}</span><span class="ftbox"><span class="ftlabel">Top player</span><b>${esc(tp.name)}</b><span class="ftmeta">${tp.ratingPoints} pts${tp.team?' · '+esc(tp.team):''}</span></span></span>` : `<span class="bar-cty reg-name">${esc(x.region)}</span>`;
+    return `<div class="bar-row"><span class="bar-label">${lbl}</span>
+      <div class="bar-track"><div class="bar-fill" style="width:${Math.max(2,Math.round(x.n/regMax*100))}%"></div></div>
       <span class="bar-val">${x.n}</span></div>`;
   }).join("");
   const levelBars=[10,9,8,7,6,5,4,3,2,1].map(lv=>levelCount[lv]?bar(`<span class="dot" style="background:${levelColor(lv)}"></span>Level ${lv}`,levelCount[lv],levelMax,levelColor(lv)):'').join("");
@@ -1226,7 +1233,9 @@ function renderStats(){
     </div>
     <div class="stats2col">
       <div><h3 class="rec-group">Players by Country <span class="muted" style="font-size:11px">(top 14)</span></h3>
-        <div class="bars">${natBars}</div></div>
+        <div class="bars">${natBars}</div>
+        <h3 class="rec-group" style="margin-top:22px">Players by Region <span class="muted" style="font-size:11px">(hover for top player)</span></h3>
+        <div class="bars">${regBars}</div></div>
       <div><h3 class="rec-group">Pro Players by Level</h3>
         <div class="bars">${levelBars}</div>
         <h3 class="rec-group" style="margin-top:22px">Player Pools</h3>
@@ -1867,6 +1876,11 @@ const SHF_REGION = {
   kz:"Central Asia",
 };
 const shfRegion = iso => SHF_REGION[iso] || "";
+// Region for a player. Land of Make Believe (flagless "neutral") is its own region, not "Other".
+function playerRegion(p){
+  if(p && (p.nat==="Land of Make Believe")) return "Land of Make Believe";
+  return SHF_REGION[(p&&p.iso)||""] || "Other";
+}
 function shfShuffle(arr){ const a=arr.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
 let lastShuffle = null;
 
