@@ -643,29 +643,73 @@
      "round": 1,
      "a": "Bloom E-Sports",
      "b": "Lemon Tree",
-     "sa": null,
-     "sb": null
+     "sa": 13,
+     "sb": 11,
+     "ts": 1788215953
     },
     {
      "id": 3,
      "round": 1,
      "a": "Northwind",
      "b": "Sacred Raven",
-     "sa": null,
-     "sb": null
+     "sa": 7,
+     "sb": 13,
+     "ts": 1788216549
     },
     {
      "id": 4,
      "round": 1,
      "a": "Supernova",
      "b": "The Nomads",
-     "sa": null,
-     "sb": null
+     "sa": 10,
+     "sb": 13,
+     "ts": 1788217169
     },
     {
      "id": 5,
      "round": 1,
      "a": "Wraithborne",
+     "b": "xPlosiv",
+     "sa": 13,
+     "sb": 1,
+     "ts": 1788217591
+    },
+    {
+     "id": 6,
+     "round": 2,
+     "a": "Wraithborne",
+     "b": "Aurora Pact",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 7,
+     "round": 2,
+     "a": "Sacred Raven",
+     "b": "The Nomads",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 8,
+     "round": 2,
+     "a": "Bloom E-Sports",
+     "b": "Supernova",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 9,
+     "round": 2,
+     "a": "Lemon Tree",
+     "b": "Northwind",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 10,
+     "round": 2,
+     "a": "Astral Bloom",
      "b": "xPlosiv",
      "sa": null,
      "sb": null
@@ -673,7 +717,8 @@
    ],
    "rounds": 5,
    "roundTitles": {
-    "1": "Round 1"
+    "1": "Round 1",
+    "2": "Round 2"
    }
   },
   {
