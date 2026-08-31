@@ -524,45 +524,91 @@
      "round": 1,
      "a": "Aeternum",
      "b": "Caelum Scala",
-     "sa": null,
-     "sb": null
+     "sa": 8,
+     "sb": 13,
+     "ts": 1788211914
     },
     {
      "id": 2,
      "round": 1,
      "a": "Cyanide",
      "b": "Frostbyte",
-     "sa": null,
-     "sb": null
+     "sa": 3,
+     "sb": 13,
+     "ts": 1788212395
     },
     {
      "id": 3,
      "round": 1,
      "a": "Ivory Vanguard",
      "b": "Neverland",
-     "sa": null,
-     "sb": null
+     "sa": 13,
+     "sb": 11,
+     "ts": 1788213065
     },
     {
      "id": 4,
      "round": 1,
      "a": "Opal",
      "b": "Rebellium",
-     "sa": null,
-     "sb": null
+     "sa": 14,
+     "sb": 16,
+     "ts": 1788213968
     },
     {
      "id": 5,
      "round": 1,
      "a": "Solstice",
      "b": "Thunderveil",
+     "sa": 13,
+     "sb": 8,
+     "ts": 1788214597
+    },
+    {
+     "id": 6,
+     "round": 2,
+     "a": "Frostbyte",
+     "b": "Caelum Scala",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 7,
+     "round": 2,
+     "a": "Solstice",
+     "b": "Ivory Vanguard",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 8,
+     "round": 2,
+     "a": "Rebellium",
+     "b": "Neverland",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 9,
+     "round": 2,
+     "a": "Opal",
+     "b": "Aeternum",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 10,
+     "round": 2,
+     "a": "Thunderveil",
+     "b": "Cyanide",
      "sa": null,
      "sb": null
     }
    ],
    "rounds": 5,
    "roundTitles": {
-    "1": "Round 1"
+    "1": "Round 1",
+    "2": "Round 2"
    }
   },
   {
