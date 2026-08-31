@@ -8747,6 +8747,107 @@
      ]
     }
    ]
+  },
+  "7-1": {
+   "maps": [
+    {
+     "map": "Vertigo",
+     "scoreA": 2,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Astral Bloom",
+       "name": "Tachibana Hinano",
+       "k": 7,
+       "a": 2,
+       "d": 13,
+       "mvp": 1,
+       "score": 20
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Tsumugi Kokage",
+       "k": 9,
+       "a": 1,
+       "d": 15,
+       "mvp": 0,
+       "score": 19
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Remia Aotsuki",
+       "k": 5,
+       "a": 1,
+       "d": 14,
+       "mvp": 0,
+       "score": 13
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Shiranami Ramune",
+       "k": 3,
+       "a": 2,
+       "d": 14,
+       "mvp": 1,
+       "score": 10
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Eris Suzukami",
+       "k": 4,
+       "a": 0,
+       "d": 15,
+       "mvp": 0,
+       "score": 9
+      },
+      {
+       "team": "Aurora Pact",
+       "name": "haze_vt",
+       "k": 24,
+       "a": 0,
+       "d": 5,
+       "mvp": 3,
+       "score": 59
+      },
+      {
+       "team": "Aurora Pact",
+       "name": "Niamocha",
+       "k": 16,
+       "a": 1,
+       "d": 9,
+       "mvp": 5,
+       "score": 44
+      },
+      {
+       "team": "Aurora Pact",
+       "name": "Arya Kuroha",
+       "k": 14,
+       "a": 0,
+       "d": 4,
+       "mvp": 3,
+       "score": 33
+      },
+      {
+       "team": "Aurora Pact",
+       "name": "stitchkyui",
+       "k": 10,
+       "a": 0,
+       "d": 6,
+       "mvp": 2,
+       "score": 21
+      },
+      {
+       "team": "Aurora Pact",
+       "name": "LeilaMayadah",
+       "k": 7,
+       "a": 0,
+       "d": 4,
+       "mvp": 0,
+       "score": 19
+      }
+     ]
+    }
+   ]
   }
  }
 }

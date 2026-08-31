@@ -45,7 +45,7 @@ Moira	Singapore
 Hanarisu	Singapore
 Stylus	Singapore
 Tachibana Hinano	Japan
-Remia Aotsuki	Japan
+Remia Aotsuki	Netherlands
 Shiranami Ramune	Japan
 Tsumugi Kokage	Japan
 Eris Suzukami	Japan
@@ -229,7 +229,7 @@ Aizawa Ema	Japan
 yinnzx	Singapore	 
 Hyvred	Singapore	 
 TiniiBee	Australia	 
-Juno Umezono	Japan	 
+Juno Umezono	Philippines	 
 Aleaka	United Kingdom	 
 FumishiroYummy	Japan	 
 Hanabusa Lisa	Japan	 
@@ -300,7 +300,7 @@ MKakili	Australia
 VSSMB	Singapore	 
 Michimouto	Singapore	 
 JustYoong	Singapore	 
-Jira Jisaki	USA	 
+Jira Jisaki	Philippines	 
 Yakumo Beni	Japan	 
 leachubby	Singapore	 
 anju_o	Philippines	 

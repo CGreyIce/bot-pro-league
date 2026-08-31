@@ -634,8 +634,9 @@
      "round": 1,
      "a": "Astral Bloom",
      "b": "Aurora Pact",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 13,
+     "ts": 1788215059
     },
     {
      "id": 2,
