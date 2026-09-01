@@ -9758,5 +9758,1189 @@
     }
    ]
   }
+ },
+ "nations-cup-qualifier-philippines-2026": {
+  "1-1": {
+   "maps": [
+    {
+     "map": "Dust2",
+     "scoreA": 2,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "PH Squad 1",
+       "name": "Laurel",
+       "k": 7,
+       "a": 4,
+       "d": 14,
+       "mvp": 0,
+       "score": 20
+      },
+      {
+       "team": "PH Squad 1",
+       "name": "anju_o",
+       "k": 8,
+       "a": 2,
+       "d": 13,
+       "mvp": 2,
+       "score": 18
+      },
+      {
+       "team": "PH Squad 1",
+       "name": "KiokoCheiko",
+       "k": 6,
+       "a": 3,
+       "d": 14,
+       "mvp": 0,
+       "score": 15
+      },
+      {
+       "team": "PH Squad 1",
+       "name": "Vyphogrid",
+       "k": 5,
+       "a": 2,
+       "d": 15,
+       "mvp": 0,
+       "score": 12
+      },
+      {
+       "team": "PH Squad 1",
+       "name": "Sheep",
+       "k": 4,
+       "a": 1,
+       "d": 13,
+       "mvp": 0,
+       "score": 9
+      },
+      {
+       "team": "PH Squad 2",
+       "name": "PenguChi",
+       "k": 20,
+       "a": 0,
+       "d": 6,
+       "mvp": 3,
+       "score": 43
+      },
+      {
+       "team": "PH Squad 2",
+       "name": "Uzuhii",
+       "k": 13,
+       "a": 1,
+       "d": 6,
+       "mvp": 3,
+       "score": 36
+      },
+      {
+       "team": "PH Squad 2",
+       "name": "minMaXXer",
+       "k": 14,
+       "a": 0,
+       "d": 8,
+       "mvp": 3,
+       "score": 32
+      },
+      {
+       "team": "PH Squad 2",
+       "name": "Jira Jisaki",
+       "k": 13,
+       "a": 0,
+       "d": 6,
+       "mvp": 3,
+       "score": 30
+      },
+      {
+       "team": "PH Squad 2",
+       "name": "Juno Umezono",
+       "k": 9,
+       "a": 0,
+       "d": 4,
+       "mvp": 1,
+       "score": 21
+      }
+     ]
+    },
+    {
+     "map": "Vertigo",
+     "scoreA": 13,
+     "scoreB": 7,
+     "players": [
+      {
+       "team": "PH Squad 1",
+       "name": "Vyphogrid",
+       "k": 21,
+       "a": 0,
+       "d": 11,
+       "mvp": 5,
+       "score": 48
+      },
+      {
+       "team": "PH Squad 1",
+       "name": "KiokoCheiko",
+       "k": 23,
+       "a": 1,
+       "d": 12,
+       "mvp": 3,
+       "score": 47
+      },
+      {
+       "team": "PH Squad 1",
+       "name": "anju_o",
+       "k": 14,
+       "a": 2,
+       "d": 13,
+       "mvp": 3,
+       "score": 35
+      },
+      {
+       "team": "PH Squad 1",
+       "name": "Sheep",
+       "k": 13,
+       "a": 1,
+       "d": 13,
+       "mvp": 1,
+       "score": 30
+      },
+      {
+       "team": "PH Squad 1",
+       "name": "Laurel",
+       "k": 11,
+       "a": 2,
+       "d": 13,
+       "mvp": 1,
+       "score": 24
+      },
+      {
+       "team": "PH Squad 2",
+       "name": "Uzuhii",
+       "k": 16,
+       "a": 1,
+       "d": 15,
+       "mvp": 2,
+       "score": 40
+      },
+      {
+       "team": "PH Squad 2",
+       "name": "PenguChi",
+       "k": 14,
+       "a": 2,
+       "d": 18,
+       "mvp": 1,
+       "score": 34
+      },
+      {
+       "team": "PH Squad 2",
+       "name": "Jira Jisaki",
+       "k": 12,
+       "a": 2,
+       "d": 16,
+       "mvp": 2,
+       "score": 26
+      },
+      {
+       "team": "PH Squad 2",
+       "name": "minMaXXer",
+       "k": 11,
+       "a": 0,
+       "d": 17,
+       "mvp": 1,
+       "score": 25
+      },
+      {
+       "team": "PH Squad 2",
+       "name": "Juno Umezono",
+       "k": 9,
+       "a": 1,
+       "d": 16,
+       "mvp": 1,
+       "score": 22
+      }
+     ]
+    },
+    {
+     "map": "Tuscan",
+     "scoreA": 0,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "PH Squad 1",
+       "name": "KiokoCheiko",
+       "k": 8,
+       "a": 2,
+       "d": 13,
+       "mvp": 0,
+       "score": 18
+      },
+      {
+       "team": "PH Squad 1",
+       "name": "Vyphogrid",
+       "k": 7,
+       "a": 3,
+       "d": 13,
+       "mvp": 0,
+       "score": 17
+      },
+      {
+       "team": "PH Squad 1",
+       "name": "Laurel",
+       "k": 5,
+       "a": 0,
+       "d": 13,
+       "mvp": 0,
+       "score": 10
+      },
+      {
+       "team": "PH Squad 1",
+       "name": "anju_o",
+       "k": 3,
+       "a": 2,
+       "d": 13,
+       "mvp": 0,
+       "score": 8
+      },
+      {
+       "team": "PH Squad 1",
+       "name": "Sheep",
+       "k": 2,
+       "a": 1,
+       "d": 13,
+       "mvp": 0,
+       "score": 5
+      },
+      {
+       "team": "PH Squad 2",
+       "name": "PenguChi",
+       "k": 21,
+       "a": 0,
+       "d": 4,
+       "mvp": 3,
+       "score": 42
+      },
+      {
+       "team": "PH Squad 2",
+       "name": "Jira Jisaki",
+       "k": 14,
+       "a": 0,
+       "d": 5,
+       "mvp": 5,
+       "score": 34
+      },
+      {
+       "team": "PH Squad 2",
+       "name": "Uzuhii",
+       "k": 12,
+       "a": 0,
+       "d": 5,
+       "mvp": 3,
+       "score": 32
+      },
+      {
+       "team": "PH Squad 2",
+       "name": "minMaXXer",
+       "k": 10,
+       "a": 0,
+       "d": 4,
+       "mvp": 1,
+       "score": 23
+      },
+      {
+       "team": "PH Squad 2",
+       "name": "Juno Umezono",
+       "k": 8,
+       "a": 0,
+       "d": 7,
+       "mvp": 1,
+       "score": 21
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "nations-cup-qualifier-australia-2026": {
+  "1-1": {
+   "maps": [
+    {
+     "map": "Cache",
+     "scoreA": 13,
+     "scoreB": 11,
+     "players": [
+      {
+       "team": "AU Squad 1",
+       "name": "MKakili",
+       "k": 17,
+       "a": 5,
+       "d": 18,
+       "mvp": 5,
+       "score": 47
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "gigichiii_",
+       "k": 20,
+       "a": 1,
+       "d": 17,
+       "mvp": 4,
+       "score": 47
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "Yaekia",
+       "k": 16,
+       "a": 2,
+       "d": 17,
+       "mvp": 3,
+       "score": 44
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "cassiopeiarawr",
+       "k": 17,
+       "a": 2,
+       "d": 18,
+       "mvp": 0,
+       "score": 41
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "_froggiee",
+       "k": 10,
+       "a": 3,
+       "d": 15,
+       "mvp": 1,
+       "score": 28
+      },
+      {
+       "team": "AU Squad 4",
+       "name": "Kaito_Oshino",
+       "k": 23,
+       "a": 5,
+       "d": 14,
+       "mvp": 1,
+       "score": 60
+      },
+      {
+       "team": "AU Squad 4",
+       "name": "ssseiso",
+       "k": 19,
+       "a": 1,
+       "d": 17,
+       "mvp": 3,
+       "score": 47
+      },
+      {
+       "team": "AU Squad 4",
+       "name": "HiguVT",
+       "k": 20,
+       "a": 2,
+       "d": 16,
+       "mvp": 6,
+       "score": 46
+      },
+      {
+       "team": "AU Squad 4",
+       "name": "SachiMizora",
+       "k": 19,
+       "a": 1,
+       "d": 16,
+       "mvp": 1,
+       "score": 42
+      },
+      {
+       "team": "AU Squad 4",
+       "name": "cherri_vt",
+       "k": 4,
+       "a": 2,
+       "d": 17,
+       "mvp": 0,
+       "score": 12
+      }
+     ]
+    },
+    {
+     "map": "Mirage",
+     "scoreA": 13,
+     "scoreB": 8,
+     "players": [
+      {
+       "team": "AU Squad 1",
+       "name": "gigichiii_",
+       "k": 20,
+       "a": 5,
+       "d": 14,
+       "mvp": 6,
+       "score": 53
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "MKakili",
+       "k": 20,
+       "a": 3,
+       "d": 12,
+       "mvp": 2,
+       "score": 48
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "_froggiee",
+       "k": 16,
+       "a": 1,
+       "d": 10,
+       "mvp": 2,
+       "score": 44
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "Yaekia",
+       "k": 14,
+       "a": 0,
+       "d": 11,
+       "mvp": 3,
+       "score": 34
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "cassiopeiarawr",
+       "k": 11,
+       "a": 0,
+       "d": 13,
+       "mvp": 0,
+       "score": 29
+      },
+      {
+       "team": "AU Squad 4",
+       "name": "HiguVT",
+       "k": 16,
+       "a": 3,
+       "d": 16,
+       "mvp": 3,
+       "score": 45
+      },
+      {
+       "team": "AU Squad 4",
+       "name": "SachiMizora",
+       "k": 13,
+       "a": 0,
+       "d": 16,
+       "mvp": 2,
+       "score": 38
+      },
+      {
+       "team": "AU Squad 4",
+       "name": "Kaito_Oshino",
+       "k": 12,
+       "a": 0,
+       "d": 18,
+       "mvp": 2,
+       "score": 31
+      },
+      {
+       "team": "AU Squad 4",
+       "name": "cherri_vt",
+       "k": 14,
+       "a": 0,
+       "d": 16,
+       "mvp": 1,
+       "score": 31
+      },
+      {
+       "team": "AU Squad 4",
+       "name": "ssseiso",
+       "k": 5,
+       "a": 0,
+       "d": 15,
+       "mvp": 0,
+       "score": 13
+      }
+     ]
+    }
+   ]
+  },
+  "1-2": {
+   "maps": [
+    {
+     "map": "Dust2",
+     "scoreA": 13,
+     "scoreB": 7,
+     "players": [
+      {
+       "team": "AU Squad 2",
+       "name": "Tigeraxd",
+       "k": 20,
+       "a": 1,
+       "d": 13,
+       "mvp": 4,
+       "score": 48
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "matcha",
+       "k": 19,
+       "a": 0,
+       "d": 11,
+       "mvp": 4,
+       "score": 47
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "keikatamori",
+       "k": 15,
+       "a": 3,
+       "d": 15,
+       "mvp": 3,
+       "score": 35
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "bloodbane",
+       "k": 13,
+       "a": 2,
+       "d": 12,
+       "mvp": 0,
+       "score": 30
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "miyomille",
+       "k": 12,
+       "a": 1,
+       "d": 13,
+       "mvp": 2,
+       "score": 28
+      },
+      {
+       "team": "AU Squad 3",
+       "name": "88EXP",
+       "k": 18,
+       "a": 1,
+       "d": 17,
+       "mvp": 1,
+       "score": 38
+      },
+      {
+       "team": "AU Squad 3",
+       "name": "Spinafex",
+       "k": 13,
+       "a": 2,
+       "d": 15,
+       "mvp": 1,
+       "score": 33
+      },
+      {
+       "team": "AU Squad 3",
+       "name": "vixi",
+       "k": 13,
+       "a": 2,
+       "d": 16,
+       "mvp": 1,
+       "score": 33
+      },
+      {
+       "team": "AU Squad 3",
+       "name": "Cursiffe",
+       "k": 11,
+       "a": 2,
+       "d": 17,
+       "mvp": 2,
+       "score": 31
+      },
+      {
+       "team": "AU Squad 3",
+       "name": "snowybluebell",
+       "k": 9,
+       "a": 2,
+       "d": 14,
+       "mvp": 2,
+       "score": 26
+      }
+     ]
+    },
+    {
+     "map": "Tuscan",
+     "scoreA": 13,
+     "scoreB": 3,
+     "players": [
+      {
+       "team": "AU Squad 2",
+       "name": "Tigeraxd",
+       "k": 25,
+       "a": 1,
+       "d": 7,
+       "mvp": 4,
+       "score": 52
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "miyomille",
+       "k": 14,
+       "a": 0,
+       "d": 5,
+       "mvp": 4,
+       "score": 36
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "bloodbane",
+       "k": 13,
+       "a": 3,
+       "d": 11,
+       "mvp": 2,
+       "score": 29
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "matcha",
+       "k": 9,
+       "a": 0,
+       "d": 10,
+       "mvp": 2,
+       "score": 24
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "keikatamori",
+       "k": 10,
+       "a": 0,
+       "d": 6,
+       "mvp": 1,
+       "score": 21
+      },
+      {
+       "team": "AU Squad 3",
+       "name": "88EXP",
+       "k": 11,
+       "a": 1,
+       "d": 14,
+       "mvp": 1,
+       "score": 26
+      },
+      {
+       "team": "AU Squad 3",
+       "name": "Spinafex",
+       "k": 9,
+       "a": 2,
+       "d": 15,
+       "mvp": 0,
+       "score": 22
+      },
+      {
+       "team": "AU Squad 3",
+       "name": "vixi",
+       "k": 7,
+       "a": 0,
+       "d": 13,
+       "mvp": 2,
+       "score": 17
+      },
+      {
+       "team": "AU Squad 3",
+       "name": "Cursiffe",
+       "k": 7,
+       "a": 1,
+       "d": 15,
+       "mvp": 0,
+       "score": 15
+      },
+      {
+       "team": "AU Squad 3",
+       "name": "snowybluebell",
+       "k": 5,
+       "a": 0,
+       "d": 14,
+       "mvp": 0,
+       "score": 10
+      }
+     ]
+    }
+   ]
+  },
+  "1-3": {
+   "maps": [
+    {
+     "map": "Cache",
+     "scoreA": 13,
+     "scoreB": 11,
+     "players": [
+      {
+       "team": "AU Squad 1",
+       "name": "cassiopeiarawr",
+       "k": 28,
+       "a": 2,
+       "d": 13,
+       "mvp": 4,
+       "score": 67
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "_froggiee",
+       "k": 23,
+       "a": 2,
+       "d": 15,
+       "mvp": 2,
+       "score": 55
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "MKakili",
+       "k": 17,
+       "a": 1,
+       "d": 14,
+       "mvp": 3,
+       "score": 47
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "gigichiii_",
+       "k": 11,
+       "a": 2,
+       "d": 14,
+       "mvp": 2,
+       "score": 35
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "Yaekia",
+       "k": 15,
+       "a": 1,
+       "d": 15,
+       "mvp": 2,
+       "score": 34
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "keikatamori",
+       "k": 17,
+       "a": 1,
+       "d": 17,
+       "mvp": 2,
+       "score": 44
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "Tigeraxd",
+       "k": 13,
+       "a": 3,
+       "d": 18,
+       "mvp": 3,
+       "score": 39
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "matcha",
+       "k": 15,
+       "a": 1,
+       "d": 20,
+       "mvp": 1,
+       "score": 36
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "bloodbane",
+       "k": 13,
+       "a": 0,
+       "d": 19,
+       "mvp": 3,
+       "score": 34
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "miyomille",
+       "k": 13,
+       "a": 3,
+       "d": 20,
+       "mvp": 2,
+       "score": 32
+      }
+     ]
+    },
+    {
+     "map": "Inferno",
+     "scoreA": 5,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "AU Squad 1",
+       "name": "Yaekia",
+       "k": 14,
+       "a": 1,
+       "d": 13,
+       "mvp": 2,
+       "score": 32
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "_froggiee",
+       "k": 12,
+       "a": 1,
+       "d": 15,
+       "mvp": 2,
+       "score": 25
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "cassiopeiarawr",
+       "k": 7,
+       "a": 2,
+       "d": 13,
+       "mvp": 0,
+       "score": 18
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "gigichiii_",
+       "k": 8,
+       "a": 1,
+       "d": 15,
+       "mvp": 1,
+       "score": 17
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "MKakili",
+       "k": 5,
+       "a": 0,
+       "d": 13,
+       "mvp": 0,
+       "score": 11
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "bloodbane",
+       "k": 19,
+       "a": 1,
+       "d": 8,
+       "mvp": 5,
+       "score": 40
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "keikatamori",
+       "k": 15,
+       "a": 1,
+       "d": 8,
+       "mvp": 3,
+       "score": 39
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "Tigeraxd",
+       "k": 15,
+       "a": 0,
+       "d": 9,
+       "mvp": 3,
+       "score": 38
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "matcha",
+       "k": 14,
+       "a": 1,
+       "d": 8,
+       "mvp": 2,
+       "score": 38
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "miyomille",
+       "k": 6,
+       "a": 0,
+       "d": 13,
+       "mvp": 0,
+       "score": 14
+      }
+     ]
+    },
+    {
+     "map": "Tuscan",
+     "scoreA": 11,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "AU Squad 1",
+       "name": "gigichiii_",
+       "k": 17,
+       "a": 5,
+       "d": 15,
+       "mvp": 3,
+       "score": 54
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "Yaekia",
+       "k": 16,
+       "a": 1,
+       "d": 18,
+       "mvp": 2,
+       "score": 46
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "MKakili",
+       "k": 19,
+       "a": 1,
+       "d": 19,
+       "mvp": 1,
+       "score": 43
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "cassiopeiarawr",
+       "k": 17,
+       "a": 1,
+       "d": 15,
+       "mvp": 2,
+       "score": 42
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "_froggiee",
+       "k": 20,
+       "a": 1,
+       "d": 19,
+       "mvp": 3,
+       "score": 41
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "matcha",
+       "k": 26,
+       "a": 1,
+       "d": 16,
+       "mvp": 2,
+       "score": 60
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "bloodbane",
+       "k": 22,
+       "a": 1,
+       "d": 18,
+       "mvp": 4,
+       "score": 53
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "keikatamori",
+       "k": 17,
+       "a": 3,
+       "d": 17,
+       "mvp": 2,
+       "score": 48
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "Tigeraxd",
+       "k": 12,
+       "a": 1,
+       "d": 17,
+       "mvp": 4,
+       "score": 30
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "miyomille",
+       "k": 9,
+       "a": 4,
+       "d": 21,
+       "mvp": 1,
+       "score": 22
+      }
+     ]
+    },
+    {
+     "map": "Anubis",
+     "scoreA": 13,
+     "scoreB": 11,
+     "players": [
+      {
+       "team": "AU Squad 1",
+       "name": "MKakili",
+       "k": 24,
+       "a": 4,
+       "d": 18,
+       "mvp": 4,
+       "score": 60
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "Yaekia",
+       "k": 20,
+       "a": 4,
+       "d": 14,
+       "mvp": 5,
+       "score": 58
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "_froggiee",
+       "k": 20,
+       "a": 0,
+       "d": 15,
+       "mvp": 1,
+       "score": 47
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "cassiopeiarawr",
+       "k": 16,
+       "a": 3,
+       "d": 15,
+       "mvp": 0,
+       "score": 40
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "gigichiii_",
+       "k": 14,
+       "a": 4,
+       "d": 15,
+       "mvp": 3,
+       "score": 37
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "bloodbane",
+       "k": 17,
+       "a": 4,
+       "d": 19,
+       "mvp": 4,
+       "score": 49
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "Tigeraxd",
+       "k": 16,
+       "a": 1,
+       "d": 20,
+       "mvp": 2,
+       "score": 43
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "miyomille",
+       "k": 16,
+       "a": 3,
+       "d": 20,
+       "mvp": 2,
+       "score": 35
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "keikatamori",
+       "k": 14,
+       "a": 2,
+       "d": 16,
+       "mvp": 1,
+       "score": 35
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "matcha",
+       "k": 14,
+       "a": 0,
+       "d": 19,
+       "mvp": 2,
+       "score": 33
+      }
+     ]
+    },
+    {
+     "map": "Mirage",
+     "scoreA": 13,
+     "scoreB": 10,
+     "players": [
+      {
+       "team": "AU Squad 1",
+       "name": "Yaekia",
+       "k": 23,
+       "a": 1,
+       "d": 15,
+       "mvp": 3,
+       "score": 60
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "_froggiee",
+       "k": 19,
+       "a": 1,
+       "d": 15,
+       "mvp": 2,
+       "score": 46
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "MKakili",
+       "k": 18,
+       "a": 0,
+       "d": 14,
+       "mvp": 4,
+       "score": 41
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "cassiopeiarawr",
+       "k": 12,
+       "a": 0,
+       "d": 14,
+       "mvp": 3,
+       "score": 28
+      },
+      {
+       "team": "AU Squad 1",
+       "name": "gigichiii_",
+       "k": 11,
+       "a": 2,
+       "d": 16,
+       "mvp": 1,
+       "score": 24
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "Tigeraxd",
+       "k": 20,
+       "a": 0,
+       "d": 16,
+       "mvp": 4,
+       "score": 50
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "bloodbane",
+       "k": 17,
+       "a": 3,
+       "d": 17,
+       "mvp": 1,
+       "score": 42
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "matcha",
+       "k": 16,
+       "a": 1,
+       "d": 17,
+       "mvp": 2,
+       "score": 35
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "keikatamori",
+       "k": 11,
+       "a": 1,
+       "d": 16,
+       "mvp": 2,
+       "score": 29
+      },
+      {
+       "team": "AU Squad 2",
+       "name": "miyomille",
+       "k": 10,
+       "a": 1,
+       "d": 17,
+       "mvp": 1,
+       "score": 26
+      }
+     ]
+    }
+   ]
+  }
  }
 }

@@ -25,8 +25,9 @@
      "fb": {
       "seed": 4
      },
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1788294509
     },
     {
      "id": 2,
@@ -37,8 +38,9 @@
      "fb": {
       "seed": 3
      },
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1788295492
     },
     {
      "id": 3,
@@ -49,8 +51,9 @@
      "fb": {
       "match": 2
      },
-     "sa": null,
-     "sb": null
+     "sa": 3,
+     "sb": 2,
+     "ts": 1788298704
     }
    ],
    "roundTitles": {
