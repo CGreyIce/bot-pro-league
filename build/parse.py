@@ -1244,11 +1244,15 @@ def main():
     for tr in tournaments:
         seq = 0
         ordered = []
-        for st in tr.get("stages", []):
-            for rd in st["rounds"]:
+        # stages already contain every match (groups + playoffs); bracket is a flattened
+        # DUPLICATE of them for multi-stage events — scan one or the other, never both.
+        if tr.get("stages"):
+            for st in tr["stages"]:
+                for rd in st["rounds"]:
+                    ordered += rd["matches"]
+        else:
+            for rd in tr.get("bracket", []):
                 ordered += rd["matches"]
-        for rd in tr.get("bracket", []):
-            ordered += rd["matches"]
         for m in ordered:
             w = m.get("w")
             if w not in (1, 2) or m.get("a") == "(bye)" or m.get("b") == "(bye)":
