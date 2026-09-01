@@ -340,7 +340,10 @@ def compute_team_points(teams, tournaments):
     record how each team's rank moved vs. before the most recent completed event."""
     dated = [t["date"] for t in tournaments if t.get("date")]
     ref = max((_pdate(d) for d in dated), default=None)   # newest event = "now"
-    completed = [tr for tr in tournaments if tr.get("championTeam") and tr.get("date")]
+    # "completed" = has a winner (champion name) + a date. Use the champion NAME, not the
+    # resolved championTeam slug: an event won by a non-tracked team (e.g. Challengers 2024,
+    # won by "Kabar") still awards placement points to the tracked teams that competed.
+    completed = [tr for tr in tournaments if tr.get("champion") and tr.get("date")]
     latest_date = max((tr["date"] for tr in completed), default=None)  # most recent event
 
     def tally(exclude_latest):
