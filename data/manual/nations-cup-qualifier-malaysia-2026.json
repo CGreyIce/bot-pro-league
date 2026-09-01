@@ -1,0 +1,117 @@
+{
+ "slug": "nations-cup-qualifier-malaysia-2026",
+ "name": "BPL Nations Cup — Malaysia Qualifier 2026",
+ "tier": "a",
+ "date": "2026-09-20",
+ "stages": [
+  {
+   "id": 1,
+   "name": "Bracket",
+   "format": "single_elim",
+   "bestOf": 1,
+   "teams": [
+    "MY Squad 1",
+    "MY Squad 2",
+    "MY Squad 3",
+    "MY Squad 4",
+    "MY Squad 5",
+    "MY Squad 6",
+    "MY Squad 7",
+    "MY Squad 8"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "fa": {
+      "seed": 1
+     },
+     "fb": {
+      "seed": 8
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "fa": {
+      "seed": 4
+     },
+     "fb": {
+      "seed": 5
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "fa": {
+      "seed": 2
+     },
+     "fb": {
+      "seed": 7
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 1,
+     "fa": {
+      "seed": 3
+     },
+     "fb": {
+      "seed": 6
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 5,
+     "round": 2,
+     "fa": {
+      "match": 1
+     },
+     "fb": {
+      "match": 2
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 6,
+     "round": 2,
+     "fa": {
+      "match": 3
+     },
+     "fb": {
+      "match": 4
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 7,
+     "round": 3,
+     "fa": {
+      "match": 5
+     },
+     "fb": {
+      "match": 6
+     },
+     "sa": null,
+     "sb": null
+    }
+   ],
+   "roundTitles": {
+    "1": "Quarterfinals",
+    "2": "Semifinals",
+    "3": "Final"
+   }
+  }
+ ],
+ "seeds": {},
+ "noHonors": true
+}

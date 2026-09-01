@@ -1,0 +1,37 @@
+{
+ "slug": "nations-cup-qualifier-philippines-2026",
+ "name": "BPL Nations Cup — Philippines Qualifier 2026",
+ "tier": "a",
+ "date": "2026-09-20",
+ "stages": [
+  {
+   "id": 1,
+   "name": "Bracket",
+   "format": "single_elim",
+   "bestOf": 1,
+   "teams": [
+    "PH Squad 1",
+    "PH Squad 2"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "fa": {
+      "seed": 1
+     },
+     "fb": {
+      "seed": 2
+     },
+     "sa": null,
+     "sb": null
+    }
+   ],
+   "roundTitles": {
+    "1": "Final"
+   }
+  }
+ ],
+ "seeds": {},
+ "noHonors": true
+}

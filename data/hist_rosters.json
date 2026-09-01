@@ -24182,5 +24182,1321 @@
     }
    ]
   }
+ ],
+ "nations-cup-qualifier-singapore-2026": [
+  {
+   "team": "SG Squad 1",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Laburi",
+     "captain": true,
+     "curSlug": "laburi"
+    },
+    {
+     "name": "y.uuno",
+     "captain": false,
+     "curSlug": "y-uuno"
+    },
+    {
+     "name": "rebebx",
+     "captain": false,
+     "curSlug": "rebebx-amateur"
+    },
+    {
+     "name": "dla.wo",
+     "captain": false,
+     "curSlug": "dla-wo-amateur"
+    },
+    {
+     "name": "TearsofDeath",
+     "captain": false,
+     "curSlug": "tearsofdeath-amateur"
+    }
+   ]
+  },
+  {
+   "team": "SG Squad 2",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "SanCtuary",
+     "captain": true,
+     "curSlug": "sanctuary"
+    },
+    {
+     "name": "chreyll",
+     "captain": false,
+     "curSlug": "chreyll"
+    },
+    {
+     "name": "candybar_isblue",
+     "captain": false,
+     "curSlug": "candybar-isblue-amateur"
+    },
+    {
+     "name": "Solaonix",
+     "captain": false,
+     "curSlug": "solaonix"
+    },
+    {
+     "name": "Acryii_",
+     "captain": false,
+     "curSlug": "acryii"
+    }
+   ]
+  },
+  {
+   "team": "SG Squad 3",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "xmeijixx",
+     "captain": true,
+     "curSlug": "xmeijixx-amateur"
+    },
+    {
+     "name": "Elfy Mint",
+     "captain": false,
+     "curSlug": "elfy-mint"
+    },
+    {
+     "name": "RaviasEir",
+     "captain": false,
+     "curSlug": "raviaseir-amateur"
+    },
+    {
+     "name": "Nutzeru",
+     "captain": false,
+     "curSlug": "nutzeru"
+    },
+    {
+     "name": "d.chong",
+     "captain": false,
+     "curSlug": "d-chong"
+    }
+   ]
+  },
+  {
+   "team": "SG Squad 4",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "KurmitSuicidal",
+     "captain": true,
+     "curSlug": "kurmitsuicidal-amateur"
+    },
+    {
+     "name": "Xyrolizea",
+     "captain": false,
+     "curSlug": "xyrolizea"
+    },
+    {
+     "name": "Spoods",
+     "captain": false,
+     "curSlug": "spoods"
+    },
+    {
+     "name": "nattyuwus",
+     "captain": false,
+     "curSlug": "nattyuwus"
+    },
+    {
+     "name": "YinghuVT",
+     "captain": false,
+     "curSlug": "yinghuvt-amateur"
+    }
+   ]
+  },
+  {
+   "team": "SG Squad 5",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "VPLH",
+     "captain": true,
+     "curSlug": "vplh"
+    },
+    {
+     "name": "laavv._",
+     "captain": false,
+     "curSlug": "laavv"
+    },
+    {
+     "name": "kanarivt",
+     "captain": false,
+     "curSlug": "kanarivt-amateur"
+    },
+    {
+     "name": "JustYoong",
+     "captain": false,
+     "curSlug": "justyoong-amateur"
+    },
+    {
+     "name": "Historia",
+     "captain": false,
+     "curSlug": "historia"
+    }
+   ]
+  },
+  {
+   "team": "SG Squad 6",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "tanykeat",
+     "captain": true,
+     "curSlug": "tanykeat"
+    },
+    {
+     "name": "Marsinss",
+     "captain": false,
+     "curSlug": "marsinss"
+    },
+    {
+     "name": "UtsuhoNull",
+     "captain": false,
+     "curSlug": "utsuhonull-amateur"
+    },
+    {
+     "name": "Hakase",
+     "captain": false,
+     "curSlug": "hakase"
+    },
+    {
+     "name": "plainyingying",
+     "captain": false,
+     "curSlug": "plainyingying"
+    }
+   ]
+  },
+  {
+   "team": "SG Squad 7",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "capplecrow",
+     "captain": true,
+     "curSlug": "capplecrow"
+    },
+    {
+     "name": "Seireiix",
+     "captain": false,
+     "curSlug": "seireiix"
+    },
+    {
+     "name": "kenzieyii",
+     "captain": false,
+     "curSlug": "kenzieyii-amateur"
+    },
+    {
+     "name": "obvMX",
+     "captain": false,
+     "curSlug": "obvmx-amateur"
+    },
+    {
+     "name": "y1jingg",
+     "captain": false,
+     "curSlug": "y1jingg"
+    }
+   ]
+  },
+  {
+   "team": "SG Squad 8",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Kai",
+     "captain": true,
+     "curSlug": "kai"
+    },
+    {
+     "name": "lenette",
+     "captain": false,
+     "curSlug": "lenette"
+    },
+    {
+     "name": "sneakyyyyy",
+     "captain": false,
+     "curSlug": "sneakyyyyy"
+    },
+    {
+     "name": "AkanersVT",
+     "captain": false,
+     "curSlug": "akanersvt-amateur"
+    },
+    {
+     "name": "EfreetsZ",
+     "captain": false,
+     "curSlug": "efreetsz"
+    }
+   ]
+  }
+ ],
+ "nations-cup-qualifier-malaysia-2026": [
+  {
+   "team": "MY Squad 1",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Sadgeboi",
+     "captain": true,
+     "curSlug": "sadgeboi-amateur"
+    },
+    {
+     "name": "Scorpium",
+     "captain": false,
+     "curSlug": "scorpium"
+    },
+    {
+     "name": "Karasu",
+     "captain": false,
+     "curSlug": "karasu-amateur"
+    },
+    {
+     "name": "urnisa_",
+     "captain": false,
+     "curSlug": "urnisa"
+    },
+    {
+     "name": "_kellyxleox_",
+     "captain": false,
+     "curSlug": "kellyxleox"
+    }
+   ]
+  },
+  {
+   "team": "MY Squad 2",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Chiai Fujikawa",
+     "captain": true,
+     "curSlug": "chiai-fujikawa"
+    },
+    {
+     "name": "yerm",
+     "captain": false,
+     "curSlug": "yerm"
+    },
+    {
+     "name": "Eroxis",
+     "captain": false,
+     "curSlug": "eroxis"
+    },
+    {
+     "name": "CryingNutz",
+     "captain": false,
+     "curSlug": "cryingnutz-amateur"
+    },
+    {
+     "name": "dudriduo_",
+     "captain": false,
+     "curSlug": "dudriduo"
+    }
+   ]
+  },
+  {
+   "team": "MY Squad 3",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "ebi",
+     "captain": true,
+     "curSlug": "ebi"
+    },
+    {
+     "name": "BluBEAR",
+     "captain": false,
+     "curSlug": "blubear"
+    },
+    {
+     "name": "wushii",
+     "captain": false,
+     "curSlug": "wushii-amateur"
+    },
+    {
+     "name": "Ice",
+     "captain": false,
+     "curSlug": "ice"
+    },
+    {
+     "name": "potatodepresso",
+     "captain": false,
+     "curSlug": "potatodepresso"
+    }
+   ]
+  },
+  {
+   "team": "MY Squad 4",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "qebo",
+     "captain": true,
+     "curSlug": "qebo-amateur"
+    },
+    {
+     "name": "Yixl",
+     "captain": false,
+     "curSlug": "yixl"
+    },
+    {
+     "name": "CRex",
+     "captain": false,
+     "curSlug": "crex"
+    },
+    {
+     "name": "mmirawr_",
+     "captain": false,
+     "curSlug": "mmirawr"
+    },
+    {
+     "name": "nicsman",
+     "captain": false,
+     "curSlug": "nicsman"
+    }
+   ]
+  },
+  {
+   "team": "MY Squad 5",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Ryujin",
+     "captain": true,
+     "curSlug": "ryujin-amateur"
+    },
+    {
+     "name": "NOTORIOUS47",
+     "captain": false,
+     "curSlug": "notorious47-amateur"
+    },
+    {
+     "name": "xJavyz",
+     "captain": false,
+     "curSlug": "xjavyz"
+    },
+    {
+     "name": "ErineRurie",
+     "captain": false,
+     "curSlug": "erinerurie-amateur"
+    },
+    {
+     "name": "AyanOwOT",
+     "captain": false,
+     "curSlug": "ayanowot-amateur"
+    }
+   ]
+  },
+  {
+   "team": "MY Squad 6",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Soozy",
+     "captain": true,
+     "curSlug": "soozy"
+    },
+    {
+     "name": "drip",
+     "captain": false,
+     "curSlug": "drip"
+    },
+    {
+     "name": "Syrrith",
+     "captain": false,
+     "curSlug": "syrrith-amateur"
+    },
+    {
+     "name": "DelphoxLuna",
+     "captain": false,
+     "curSlug": "delphoxluna"
+    },
+    {
+     "name": "NekoSoji",
+     "captain": false,
+     "curSlug": "nekosoji"
+    }
+   ]
+  },
+  {
+   "team": "MY Squad 7",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Nightveil Lycoris",
+     "captain": true,
+     "curSlug": "nightveil-lycoris-amateur"
+    },
+    {
+     "name": "Reffelexx",
+     "captain": false,
+     "curSlug": "reffelexx"
+    },
+    {
+     "name": "rittan0x0",
+     "captain": false,
+     "curSlug": "rittan0x0-amateur"
+    },
+    {
+     "name": "StrandedPond",
+     "captain": false,
+     "curSlug": "strandedpond-amateur"
+    },
+    {
+     "name": "Yarimell",
+     "captain": false,
+     "curSlug": "yarimell-amateur"
+    }
+   ]
+  },
+  {
+   "team": "MY Squad 8",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "ShizuyaUmiko",
+     "captain": true,
+     "curSlug": "shizuyaumiko"
+    },
+    {
+     "name": "MoonRaika",
+     "captain": false,
+     "curSlug": "moonraika"
+    },
+    {
+     "name": "Xevaria",
+     "captain": false,
+     "curSlug": "xevaria-amateur"
+    },
+    {
+     "name": "Kyan",
+     "captain": false,
+     "curSlug": "kyan"
+    },
+    {
+     "name": "VeniceC",
+     "captain": false,
+     "curSlug": "venicec"
+    }
+   ]
+  }
+ ],
+ "nations-cup-qualifier-usa-2026": [
+  {
+   "team": "US Squad 1",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "cwstalVT",
+     "captain": true,
+     "curSlug": "cwstalvt-amateur"
+    },
+    {
+     "name": "moricorovt",
+     "captain": false,
+     "curSlug": "moricorovt-amateur"
+    },
+    {
+     "name": "pastellows",
+     "captain": false,
+     "curSlug": "pastellows-amateur"
+    },
+    {
+     "name": "Bajiru_EN",
+     "captain": false,
+     "curSlug": "bajiru-en-amateur"
+    },
+    {
+     "name": "stitchkyui",
+     "captain": false,
+     "curSlug": "stitchkyui-amateur"
+    }
+   ]
+  },
+  {
+   "team": "US Squad 2",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Illus",
+     "captain": true,
+     "curSlug": "illus"
+    },
+    {
+     "name": "emmabutnormal",
+     "captain": false,
+     "curSlug": "emmabutnormal-amateur"
+    },
+    {
+     "name": "shirou_kitakami",
+     "captain": false,
+     "curSlug": "shirou-kitakami-amateur"
+    },
+    {
+     "name": "Dianya",
+     "captain": false,
+     "curSlug": "dianya-amateur"
+    },
+    {
+     "name": "itswinter__",
+     "captain": false,
+     "curSlug": "itswinter-amateur"
+    }
+   ]
+  },
+  {
+   "team": "US Squad 3",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Nifela",
+     "captain": true,
+     "curSlug": "nifela"
+    },
+    {
+     "name": "heavenweeps",
+     "captain": false,
+     "curSlug": "heavenweeps"
+    },
+    {
+     "name": "Kairi",
+     "captain": false,
+     "curSlug": "kairi"
+    },
+    {
+     "name": "TokieShepherdVT",
+     "captain": false,
+     "curSlug": "tokieshepherdvt"
+    },
+    {
+     "name": "YoJareddo",
+     "captain": false,
+     "curSlug": "yojareddo"
+    }
+   ]
+  },
+  {
+   "team": "US Squad 4",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "XueHuaVT",
+     "captain": true,
+     "curSlug": "xuehuavt"
+    },
+    {
+     "name": "ProPHOcy_",
+     "captain": false,
+     "curSlug": "prophocy-amateur"
+    },
+    {
+     "name": "yunaeyo",
+     "captain": false,
+     "curSlug": "yunaeyo"
+    },
+    {
+     "name": "voxslefthorn",
+     "captain": false,
+     "curSlug": "voxslefthorn-amateur"
+    },
+    {
+     "name": "voidnw",
+     "captain": false,
+     "curSlug": "voidnw-amateur"
+    }
+   ]
+  }
+ ],
+ "nations-cup-qualifier-japan-2026": [
+  {
+   "team": "JP Squad 1",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Hanabusa Lisa",
+     "captain": true,
+     "curSlug": "hanabusa-lisa-amateur"
+    },
+    {
+     "name": "Yumeno Akari",
+     "captain": false,
+     "curSlug": "yumeno-akari-amateur"
+    },
+    {
+     "name": "FumishiroYummy",
+     "captain": false,
+     "curSlug": "fumishiroyummy-amateur"
+    },
+    {
+     "name": "Asumi Sena",
+     "captain": false,
+     "curSlug": "asumi-sena-amateur"
+    },
+    {
+     "name": "Choya Hanabi",
+     "captain": false,
+     "curSlug": "choya-hanabi-amateur"
+    }
+   ]
+  },
+  {
+   "team": "JP Squad 2",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Kamito",
+     "captain": true,
+     "curSlug": "kamito-amateur"
+    },
+    {
+     "name": "Kogara Toto",
+     "captain": false,
+     "curSlug": "kogara-toto-amateur"
+    },
+    {
+     "name": "Kisaragi Ren",
+     "captain": false,
+     "curSlug": "kisaragi-ren"
+    },
+    {
+     "name": "Ginjo Saine",
+     "captain": false,
+     "curSlug": "ginjo-saine-amateur"
+    },
+    {
+     "name": "Amayui Moka",
+     "captain": false,
+     "curSlug": "amayui-moka-amateur"
+    }
+   ]
+  },
+  {
+   "team": "JP Squad 3",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Shiranami Ramune",
+     "captain": true,
+     "curSlug": "shiranami-ramune"
+    },
+    {
+     "name": "Shuvimo",
+     "captain": false,
+     "curSlug": "shuvimo-amateur"
+    },
+    {
+     "name": "Yakumo Beni",
+     "captain": false,
+     "curSlug": "yakumo-beni-amateur"
+    },
+    {
+     "name": "Kurumi Noah",
+     "captain": false,
+     "curSlug": "kurumi-noah-amateur"
+    },
+    {
+     "name": "Sendo Yuuhi",
+     "captain": false,
+     "curSlug": "sendo-yuuhi-amateur"
+    }
+   ]
+  },
+  {
+   "team": "JP Squad 4",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Tosaki Mimi",
+     "captain": true,
+     "curSlug": "tosaki-mimi-amateur"
+    },
+    {
+     "name": "Tachibana Hinano",
+     "captain": false,
+     "curSlug": "tachibana-hinano"
+    },
+    {
+     "name": "Aizawa Ema",
+     "captain": false,
+     "curSlug": "aizawa-ema-amateur"
+    },
+    {
+     "name": "Komori Met",
+     "captain": false,
+     "curSlug": "komori-met"
+    },
+    {
+     "name": "Tsumugi Kokage",
+     "captain": false,
+     "curSlug": "tsumugi-kokage"
+    }
+   ]
+  }
+ ],
+ "nations-cup-qualifier-australia-2026": [
+  {
+   "team": "AU Squad 1",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "gigichiii_",
+     "captain": true,
+     "curSlug": "gigichiii"
+    },
+    {
+     "name": "_froggiee",
+     "captain": false,
+     "curSlug": "froggiee-amateur"
+    },
+    {
+     "name": "MKakili",
+     "captain": false,
+     "curSlug": "mkakili-amateur"
+    },
+    {
+     "name": "Yaekia",
+     "captain": false,
+     "curSlug": "yaekia-amateur"
+    },
+    {
+     "name": "cassiopeiarawr",
+     "captain": false,
+     "curSlug": "cassiopeiarawr"
+    }
+   ]
+  },
+  {
+   "team": "AU Squad 2",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Tigeraxd",
+     "captain": true,
+     "curSlug": "tigeraxd-amateur"
+    },
+    {
+     "name": "miyomille",
+     "captain": false,
+     "curSlug": "miyomille-amateur"
+    },
+    {
+     "name": "bloodbane",
+     "captain": false,
+     "curSlug": "bloodbane-amateur"
+    },
+    {
+     "name": "matcha",
+     "captain": false,
+     "curSlug": "matcha"
+    },
+    {
+     "name": "keikatamori",
+     "captain": false,
+     "curSlug": "keikatamori-amateur"
+    }
+   ]
+  },
+  {
+   "team": "AU Squad 3",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "88EXP",
+     "captain": true,
+     "curSlug": "88exp"
+    },
+    {
+     "name": "snowybluebell",
+     "captain": false,
+     "curSlug": "snowybluebell-amateur"
+    },
+    {
+     "name": "vixi",
+     "captain": false,
+     "curSlug": "vixi-amateur"
+    },
+    {
+     "name": "Spinafex",
+     "captain": false,
+     "curSlug": "spinafex-amateur"
+    },
+    {
+     "name": "Cursiffe",
+     "captain": false,
+     "curSlug": "cursiffe"
+    }
+   ]
+  },
+  {
+   "team": "AU Squad 4",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "HiguVT",
+     "captain": true,
+     "curSlug": "higuvt-amateur"
+    },
+    {
+     "name": "Kaito_Oshino",
+     "captain": false,
+     "curSlug": "kaito-oshino-amateur"
+    },
+    {
+     "name": "SachiMizora",
+     "captain": false,
+     "curSlug": "sachimizora-amateur"
+    },
+    {
+     "name": "ssseiso",
+     "captain": false,
+     "curSlug": "ssseiso-amateur"
+    },
+    {
+     "name": "cherri_vt",
+     "captain": false,
+     "curSlug": "cherri-vt-amateur"
+    }
+   ]
+  }
+ ],
+ "nations-cup-qualifier-philippines-2026": [
+  {
+   "team": "PH Squad 1",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Vyphogrid",
+     "captain": true,
+     "curSlug": "vyphogrid-amateur"
+    },
+    {
+     "name": "Sheep",
+     "captain": false,
+     "curSlug": "sheep"
+    },
+    {
+     "name": "KiokoCheiko",
+     "captain": false,
+     "curSlug": "kiokocheiko-amateur"
+    },
+    {
+     "name": "anju_o",
+     "captain": false,
+     "curSlug": "anju-o-amateur"
+    },
+    {
+     "name": "Laurel",
+     "captain": false,
+     "curSlug": "laurel-amateur"
+    }
+   ]
+  },
+  {
+   "team": "PH Squad 2",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Jira Jisaki",
+     "captain": true,
+     "curSlug": "jira-jisaki-amateur"
+    },
+    {
+     "name": "Uzuhii",
+     "captain": false,
+     "curSlug": "uzuhii"
+    },
+    {
+     "name": "minMaXXer",
+     "captain": false,
+     "curSlug": "minmaxxer"
+    },
+    {
+     "name": "PenguChi",
+     "captain": false,
+     "curSlug": "penguchi-amateur"
+    },
+    {
+     "name": "Juno Umezono",
+     "captain": false,
+     "curSlug": "juno-umezono-amateur"
+    }
+   ]
+  }
+ ],
+ "bpl-nations-cup-2026": [
+  {
+   "team": "Team Singapore",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Laburi",
+     "captain": true,
+     "curSlug": "laburi"
+    },
+    {
+     "name": "y.uuno",
+     "captain": false,
+     "curSlug": "y-uuno"
+    },
+    {
+     "name": "rebebx",
+     "captain": false,
+     "curSlug": "rebebx-amateur"
+    },
+    {
+     "name": "dla.wo",
+     "captain": false,
+     "curSlug": "dla-wo-amateur"
+    },
+    {
+     "name": "TearsofDeath",
+     "captain": false,
+     "curSlug": "tearsofdeath-amateur"
+    }
+   ]
+  },
+  {
+   "team": "Team Malaysia",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Sadgeboi",
+     "captain": true,
+     "curSlug": "sadgeboi-amateur"
+    },
+    {
+     "name": "Scorpium",
+     "captain": false,
+     "curSlug": "scorpium"
+    },
+    {
+     "name": "Karasu",
+     "captain": false,
+     "curSlug": "karasu-amateur"
+    },
+    {
+     "name": "urnisa_",
+     "captain": false,
+     "curSlug": "urnisa"
+    },
+    {
+     "name": "_kellyxleox_",
+     "captain": false,
+     "curSlug": "kellyxleox"
+    }
+   ]
+  },
+  {
+   "team": "Team Philippines",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Vyphogrid",
+     "captain": true,
+     "curSlug": "vyphogrid-amateur"
+    },
+    {
+     "name": "Sheep",
+     "captain": false,
+     "curSlug": "sheep"
+    },
+    {
+     "name": "KiokoCheiko",
+     "captain": false,
+     "curSlug": "kiokocheiko-amateur"
+    },
+    {
+     "name": "anju_o",
+     "captain": false,
+     "curSlug": "anju-o-amateur"
+    },
+    {
+     "name": "Laurel",
+     "captain": false,
+     "curSlug": "laurel-amateur"
+    }
+   ]
+  },
+  {
+   "team": "Team USA",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "cwstalVT",
+     "captain": true,
+     "curSlug": "cwstalvt-amateur"
+    },
+    {
+     "name": "moricorovt",
+     "captain": false,
+     "curSlug": "moricorovt-amateur"
+    },
+    {
+     "name": "pastellows",
+     "captain": false,
+     "curSlug": "pastellows-amateur"
+    },
+    {
+     "name": "Bajiru_EN",
+     "captain": false,
+     "curSlug": "bajiru-en-amateur"
+    },
+    {
+     "name": "stitchkyui",
+     "captain": false,
+     "curSlug": "stitchkyui-amateur"
+    }
+   ]
+  },
+  {
+   "team": "Team Japan",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Hanabusa Lisa",
+     "captain": true,
+     "curSlug": "hanabusa-lisa-amateur"
+    },
+    {
+     "name": "Yumeno Akari",
+     "captain": false,
+     "curSlug": "yumeno-akari-amateur"
+    },
+    {
+     "name": "FumishiroYummy",
+     "captain": false,
+     "curSlug": "fumishiroyummy-amateur"
+    },
+    {
+     "name": "Asumi Sena",
+     "captain": false,
+     "curSlug": "asumi-sena-amateur"
+    },
+    {
+     "name": "Choya Hanabi",
+     "captain": false,
+     "curSlug": "choya-hanabi-amateur"
+    }
+   ]
+  },
+  {
+   "team": "Team Australia",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "gigichiii_",
+     "captain": true,
+     "curSlug": "gigichiii"
+    },
+    {
+     "name": "_froggiee",
+     "captain": false,
+     "curSlug": "froggiee-amateur"
+    },
+    {
+     "name": "MKakili",
+     "captain": false,
+     "curSlug": "mkakili-amateur"
+    },
+    {
+     "name": "Yaekia",
+     "captain": false,
+     "curSlug": "yaekia-amateur"
+    },
+    {
+     "name": "cassiopeiarawr",
+     "captain": false,
+     "curSlug": "cassiopeiarawr"
+    }
+   ]
+  },
+  {
+   "team": "Team Land of Make Believe",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "djassaulty",
+     "captain": true,
+     "curSlug": "djassaulty-solo"
+    },
+    {
+     "name": "Spectrum Gabriel",
+     "captain": false,
+     "curSlug": "spectrum-gabriel-solo"
+    },
+    {
+     "name": "ItzMaigay",
+     "captain": false,
+     "curSlug": "itzmaigay-solo"
+    },
+    {
+     "name": "Icington the third",
+     "captain": false,
+     "curSlug": "icington-the-third-solo"
+    },
+    {
+     "name": "Goonuyun",
+     "captain": false,
+     "curSlug": "goonuyun-solo"
+    }
+   ]
+  },
+  {
+   "team": "Team Taiwan",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "HakoP",
+     "captain": true,
+     "curSlug": "hakop-amateur"
+    },
+    {
+     "name": "murasakibara_tsuki1",
+     "captain": false,
+     "curSlug": "murasakibara-tsuki1"
+    },
+    {
+     "name": "Emily_melody",
+     "captain": false,
+     "curSlug": "emily-melody"
+    },
+    {
+     "name": "AltheaVT",
+     "captain": false,
+     "curSlug": "altheavt"
+    },
+    {
+     "name": "KinEto46",
+     "captain": false,
+     "curSlug": "kineto46-amateur"
+    }
+   ]
+  },
+  {
+   "team": "Team Canada",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Niamocha",
+     "captain": true,
+     "curSlug": "niamocha-amateur"
+    },
+    {
+     "name": "Pattsuu",
+     "captain": false,
+     "curSlug": "pattsuu-amateur"
+    },
+    {
+     "name": "arcimoon",
+     "captain": false,
+     "curSlug": "arcimoon-amateur"
+    },
+    {
+     "name": "LeilaMayadah",
+     "captain": false,
+     "curSlug": "leilamayadah-amateur"
+    },
+    {
+     "name": "haze_vt",
+     "captain": false,
+     "curSlug": "haze-vt-amateur"
+    }
+   ]
+  },
+  {
+   "team": "Team Netherlands",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "MiyaLeile",
+     "captain": true,
+     "curSlug": "miyaleile-amateur"
+    },
+    {
+     "name": "Remia Aotsuki",
+     "captain": false,
+     "curSlug": "remia-aotsuki"
+    },
+    {
+     "name": "MilliannaVT",
+     "captain": false,
+     "curSlug": "milliannavt-amateur"
+    },
+    {
+     "name": "Sayucchi",
+     "captain": false,
+     "curSlug": "sayucchi"
+    },
+    {
+     "name": "ChiyoAqua",
+     "captain": false,
+     "curSlug": "chiyoaqua-amateur"
+    }
+   ]
+  },
+  {
+   "team": "Team United Kingdom",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "inaxho",
+     "captain": true,
+     "curSlug": "inaxho"
+    },
+    {
+     "name": "Aleaka",
+     "captain": false,
+     "curSlug": "aleaka-amateur"
+    },
+    {
+     "name": "soapdax",
+     "captain": false,
+     "curSlug": "soapdax"
+    },
+    {
+     "name": "PSYSTRA",
+     "captain": false,
+     "curSlug": "psystra-amateur"
+    },
+    {
+     "name": "koohaaruuu",
+     "captain": false,
+     "curSlug": "koohaaruuu-amateur"
+    }
+   ]
+  },
+  {
+   "team": "Team Indonesia",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "l1feless",
+     "captain": true,
+     "curSlug": "l1feless"
+    },
+    {
+     "name": "Dazeido",
+     "captain": false,
+     "curSlug": "dazeido-amateur"
+    },
+    {
+     "name": "Mikuryne",
+     "captain": false,
+     "curSlug": "mikuryne-amateur"
+    },
+    {
+     "name": "Reruzensky",
+     "captain": false,
+     "curSlug": "reruzensky-amateur"
+    },
+    {
+     "name": "SpicyWolfie",
+     "captain": false,
+     "curSlug": "spicywolfie-amateur"
+    }
+   ]
+  }
  ]
 }

@@ -366,6 +366,7 @@ def to_standard(man):
         "finalStandings": tournament_placements(man),
         "seeds": man.get("seeds", {}),
         "predictionsLocked": bool(man.get("predictionsLocked")),
+        "noHonors": bool(man.get("noHonors")),
     }
 
 # ---------------- persistence ----------------

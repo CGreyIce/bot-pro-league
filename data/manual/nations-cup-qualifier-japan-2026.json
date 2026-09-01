@@ -1,0 +1,64 @@
+{
+ "slug": "nations-cup-qualifier-japan-2026",
+ "name": "BPL Nations Cup — Japan Qualifier 2026",
+ "tier": "a",
+ "date": "2026-09-20",
+ "stages": [
+  {
+   "id": 1,
+   "name": "Bracket",
+   "format": "single_elim",
+   "bestOf": 1,
+   "teams": [
+    "JP Squad 1",
+    "JP Squad 2",
+    "JP Squad 3",
+    "JP Squad 4"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "fa": {
+      "seed": 1
+     },
+     "fb": {
+      "seed": 4
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "fa": {
+      "seed": 2
+     },
+     "fb": {
+      "seed": 3
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 3,
+     "round": 2,
+     "fa": {
+      "match": 1
+     },
+     "fb": {
+      "match": 2
+     },
+     "sa": null,
+     "sb": null
+    }
+   ],
+   "roundTitles": {
+    "1": "Semifinals",
+    "2": "Final"
+   }
+  }
+ ],
+ "seeds": {},
+ "noHonors": true
+}

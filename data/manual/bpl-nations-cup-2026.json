@@ -1,0 +1,230 @@
+{
+ "slug": "bpl-nations-cup-2026",
+ "name": "BPL Nations Cup 2026",
+ "tier": "a",
+ "date": "2026-09-27",
+ "stages": [
+  {
+   "id": 1,
+   "name": "Bracket",
+   "format": "single_elim",
+   "bestOf": 3,
+   "teams": [
+    "Team Singapore",
+    "Team Malaysia",
+    "Team Philippines",
+    "Team USA",
+    "Team Japan",
+    "Team Australia",
+    "Team Land of Make Believe",
+    "Team Taiwan",
+    "Team Canada",
+    "Team Netherlands",
+    "Team United Kingdom",
+    "Team Indonesia"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "fa": {
+      "seed": 1
+     },
+     "fb": {
+      "seed": 16
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "fa": {
+      "seed": 8
+     },
+     "fb": {
+      "seed": 9
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "fa": {
+      "seed": 4
+     },
+     "fb": {
+      "seed": 13
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 1,
+     "fa": {
+      "seed": 5
+     },
+     "fb": {
+      "seed": 12
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 5,
+     "round": 1,
+     "fa": {
+      "seed": 2
+     },
+     "fb": {
+      "seed": 15
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 6,
+     "round": 1,
+     "fa": {
+      "seed": 7
+     },
+     "fb": {
+      "seed": 10
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 7,
+     "round": 1,
+     "fa": {
+      "seed": 3
+     },
+     "fb": {
+      "seed": 14
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 8,
+     "round": 1,
+     "fa": {
+      "seed": 6
+     },
+     "fb": {
+      "seed": 11
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 9,
+     "round": 2,
+     "fa": {
+      "match": 1
+     },
+     "fb": {
+      "match": 2
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 10,
+     "round": 2,
+     "fa": {
+      "match": 3
+     },
+     "fb": {
+      "match": 4
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 11,
+     "round": 2,
+     "fa": {
+      "match": 5
+     },
+     "fb": {
+      "match": 6
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 12,
+     "round": 2,
+     "fa": {
+      "match": 7
+     },
+     "fb": {
+      "match": 8
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 13,
+     "round": 3,
+     "fa": {
+      "match": 9
+     },
+     "fb": {
+      "match": 10
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 14,
+     "round": 3,
+     "fa": {
+      "match": 11
+     },
+     "fb": {
+      "match": 12
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 15,
+     "round": 4,
+     "fa": {
+      "match": 13
+     },
+     "fb": {
+      "match": 14
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 16,
+     "round": 3,
+     "thirdPlace": true,
+     "fa": {
+      "loserOf": 13
+     },
+     "fb": {
+      "loserOf": 14
+     },
+     "sa": null,
+     "sb": null
+    }
+   ],
+   "roundTitles": {
+    "1": "Round of 16",
+    "2": "Quarterfinals",
+    "3": "Semifinals",
+    "4": "Final"
+   }
+  }
+ ],
+ "seeds": {}
+}
