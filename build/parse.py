@@ -58,6 +58,8 @@ COUNTRY_ISO = {
     "new zealand":"nz","austria":"at","poland":"pl","finland":"fi","italy":"it",
     "belgium":"be","iceland":"is","sweden":"se","kazakhstan":"kz","hong kong":"hk",
     "brazil":"br","china":"cn","vietnam":"vn",
+    "bosnia&herzegovina":"ba","bosnia and herzegovina":"ba","bosnia":"ba",
+    "czechia":"cz","czech republic":"cz",
     "russia":"neutral","russian":"neutral","land of make believe":"neutral",  # neutral (flagless) flag
 }
 # ISO alpha-2 -> region label (for the region shown on a team profile)
@@ -69,6 +71,7 @@ REGION_BY_ISO = {
     "br":"South America",
     "gb":"Europe","fr":"Europe","de":"Europe","nl":"Europe","be":"Europe","at":"Europe",
     "pl":"Europe","fi":"Europe","it":"Europe","is":"Europe","se":"Europe","ua":"Europe",
+    "ba":"Europe","cz":"Europe",
     "kz":"Central Asia",
 }
 def load_nat():
