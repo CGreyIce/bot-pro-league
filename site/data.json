@@ -381292,5 +381292,4487 @@
    ],
    "nation": true
   }
+ ],
+ "qualifierMapTeams": [
+  {
+   "name": "AU Squad 1",
+   "slug": "qual-ausquad1",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.393,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.506,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.369,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.516,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.43,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.605,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.336,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Anubis",
+    "Inferno"
+   ],
+   "nation": true
+  },
+  {
+   "name": "AU Squad 2",
+   "slug": "qual-ausquad2",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.495,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.599,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.586,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.73,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.433,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.458,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.508,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Dust2"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Vertigo"
+   ],
+   "nation": true
+  },
+  {
+   "name": "AU Squad 3",
+   "slug": "qual-ausquad3",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.542,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.707,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.359,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.431,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.65,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.699,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.536,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Inferno",
+    "Cache"
+   ],
+   "nation": true
+  },
+  {
+   "name": "AU Squad 4",
+   "slug": "qual-ausquad4",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.69,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.693,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.334,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.412,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.333,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.539,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.48,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Inferno"
+   ],
+   "nation": true
+  },
+  {
+   "name": "JP Squad 1",
+   "slug": "qual-jpsquad1",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.704,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.319,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.728,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.705,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.447,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.383,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.65,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Inferno",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Vertigo"
+   ],
+   "nation": true
+  },
+  {
+   "name": "JP Squad 2",
+   "slug": "qual-jpsquad2",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.408,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.482,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.625,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.486,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.547,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.33,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.512,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Inferno",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Mirage"
+   ],
+   "nation": true
+  },
+  {
+   "name": "JP Squad 3",
+   "slug": "qual-jpsquad3",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.333,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.269,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.347,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.445,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.286,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.424,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.271,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Anubis"
+   ],
+   "nation": true
+  },
+  {
+   "name": "JP Squad 4",
+   "slug": "qual-jpsquad4",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.558,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.333,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.488,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.654,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.28,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.351,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.281,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Anubis"
+   ],
+   "nation": true
+  },
+  {
+   "name": "JP Squad 5",
+   "slug": "qual-jpsquad5",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.349,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.624,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.418,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.395,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.584,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.583,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.621,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Cache"
+   ],
+   "nation": true
+  },
+  {
+   "name": "JP Squad 6",
+   "slug": "qual-jpsquad6",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.389,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.661,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.562,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.291,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.306,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.341,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.47,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Cache",
+    "Tuscan"
+   ],
+   "nation": true
+  },
+  {
+   "name": "MY Squad 1",
+   "slug": "qual-mysquad1",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.478,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.521,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.625,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.671,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.427,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.567,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.633,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Mirage"
+   ],
+   "nation": true
+  },
+  {
+   "name": "MY Squad 2",
+   "slug": "qual-mysquad2",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.457,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.558,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.507,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.717,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.475,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.34,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.548,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Dust2"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Mirage"
+   ],
+   "nation": true
+  },
+  {
+   "name": "MY Squad 3",
+   "slug": "qual-mysquad3",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.375,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.567,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.598,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.38,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.361,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.56,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.367,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Inferno",
+    "Dust2"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Anubis"
+   ],
+   "nation": true
+  },
+  {
+   "name": "MY Squad 4",
+   "slug": "qual-mysquad4",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.669,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.535,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.672,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.432,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.334,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.292,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.392,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Inferno",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Tuscan"
+   ],
+   "nation": true
+  },
+  {
+   "name": "MY Squad 5",
+   "slug": "qual-mysquad5",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.622,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.545,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.56,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.698,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.405,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.471,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.52,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Vertigo"
+   ],
+   "nation": true
+  },
+  {
+   "name": "MY Squad 6",
+   "slug": "qual-mysquad6",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.292,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.482,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.598,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.654,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.297,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.506,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.488,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Tuscan"
+   ],
+   "nation": true
+  },
+  {
+   "name": "MY Squad 7",
+   "slug": "qual-mysquad7",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.585,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.475,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.496,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.566,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.573,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.583,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.647,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Anubis",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Inferno"
+   ],
+   "nation": true
+  },
+  {
+   "name": "MY Squad 8",
+   "slug": "qual-mysquad8",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.345,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.651,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.266,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.3,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.374,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.511,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.391,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Inferno",
+    "Cache"
+   ],
+   "nation": true
+  },
+  {
+   "name": "MY Squad 9",
+   "slug": "qual-mysquad9",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.338,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.434,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.442,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.45,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.343,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.266,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.336,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Anubis"
+   ],
+   "nation": true
+  },
+  {
+   "name": "MY Squad 10",
+   "slug": "qual-mysquad10",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.292,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.48,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.278,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.633,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.605,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.608,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.3,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Inferno",
+    "Mirage"
+   ],
+   "nation": true
+  },
+  {
+   "name": "PH Squad 1",
+   "slug": "qual-phsquad1",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.374,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.688,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.526,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.359,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.362,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.613,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.435,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Cache",
+    "Tuscan"
+   ],
+   "nation": true
+  },
+  {
+   "name": "PH Squad 2",
+   "slug": "qual-phsquad2",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.399,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.691,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.644,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.587,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.484,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.684,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.542,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Tuscan"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 1",
+   "slug": "qual-sgsquad1",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.602,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.742,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.6,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.512,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.69,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.448,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.457,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Anubis"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 2",
+   "slug": "qual-sgsquad2",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.476,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.54,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.381,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.474,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.733,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.646,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.423,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Inferno",
+    "Anubis"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 3",
+   "slug": "qual-sgsquad3",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.457,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.753,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.521,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.357,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.616,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.624,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.457,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Cache",
+    "Mirage"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 4",
+   "slug": "qual-sgsquad4",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.699,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.479,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.407,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.529,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.455,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.507,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.562,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Inferno",
+    "Tuscan"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 5",
+   "slug": "qual-sgsquad5",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.472,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.496,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.672,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.676,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.619,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.332,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.522,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Mirage"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 6",
+   "slug": "qual-sgsquad6",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.648,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.617,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.337,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.535,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.562,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.424,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.553,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Dust2"
+   ],
+   "worstMaps": [
+    "Inferno",
+    "Vertigo"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 7",
+   "slug": "qual-sgsquad7",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.626,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.405,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.557,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.72,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.543,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.467,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.627,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Vertigo"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 8",
+   "slug": "qual-sgsquad8",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.378,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.425,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.62,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.562,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.721,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.641,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.651,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Dust2"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 9",
+   "slug": "qual-sgsquad9",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.374,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.365,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.635,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.518,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.56,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.729,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.617,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Mirage"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 10",
+   "slug": "qual-sgsquad10",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.616,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.702,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.413,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.316,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.475,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.549,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.652,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Cache",
+    "Inferno"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 11",
+   "slug": "qual-sgsquad11",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.6,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.365,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.72,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.377,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.354,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.437,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.571,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Inferno",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Dust2"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 12",
+   "slug": "qual-sgsquad12",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.683,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.413,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.479,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.491,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.689,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.426,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.61,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Vertigo"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 13",
+   "slug": "qual-sgsquad13",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.567,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.634,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.551,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.316,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.687,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.528,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.385,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Dust2"
+   ],
+   "worstMaps": [
+    "Cache",
+    "Anubis"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 14",
+   "slug": "qual-sgsquad14",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.666,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.366,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.64,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.539,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.498,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.634,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.593,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Tuscan"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 15",
+   "slug": "qual-sgsquad15",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.359,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.677,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.568,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.396,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.715,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.616,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.343,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Dust2"
+   ],
+   "worstMaps": [
+    "Anubis",
+    "Mirage"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 16",
+   "slug": "qual-sgsquad16",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.306,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.312,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.333,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.682,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.506,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.325,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.636,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Dust2"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 17",
+   "slug": "qual-sgsquad17",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.661,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.491,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.309,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.699,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.446,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.374,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.555,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Inferno",
+    "Vertigo"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 18",
+   "slug": "qual-sgsquad18",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.531,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.38,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.517,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.697,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.605,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.549,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.428,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Anubis"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 19",
+   "slug": "qual-sgsquad19",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.364,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.692,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.308,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.422,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.528,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.697,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.429,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Dust2"
+   ],
+   "worstMaps": [
+    "Inferno",
+    "Mirage"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 20",
+   "slug": "qual-sgsquad20",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.58,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.545,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.632,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.575,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.711,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.586,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.675,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Cache"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 21",
+   "slug": "qual-sgsquad21",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.608,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.357,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.411,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.502,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.42,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.579,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.345,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Anubis",
+    "Dust2"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 22",
+   "slug": "qual-sgsquad22",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.321,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.629,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.485,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.604,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.523,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.317,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.314,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Anubis",
+    "Vertigo"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 23",
+   "slug": "qual-sgsquad23",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.609,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.355,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.411,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.372,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.388,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.45,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.339,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Anubis",
+    "Dust2"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 24",
+   "slug": "qual-sgsquad24",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.605,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.452,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.574,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.627,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.636,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.682,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.467,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Anubis"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 25",
+   "slug": "qual-sgsquad25",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.44,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.329,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.549,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.575,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.42,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.696,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.636,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Tuscan"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 26",
+   "slug": "qual-sgsquad26",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.659,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.301,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.612,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.541,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.487,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.536,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.487,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Tuscan"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 27",
+   "slug": "qual-sgsquad27",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.388,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.494,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.634,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.491,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.459,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.624,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.344,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Inferno",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Anubis",
+    "Mirage"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 28",
+   "slug": "qual-sgsquad28",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.318,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.367,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.457,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.665,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.376,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.695,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.627,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Dust2"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 29",
+   "slug": "qual-sgsquad29",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.635,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.492,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.601,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.332,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.323,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.384,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.544,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Cache"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 30",
+   "slug": "qual-sgsquad30",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.591,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.437,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.328,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.533,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.297,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.502,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.535,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Inferno"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 31",
+   "slug": "qual-sgsquad31",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.443,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.468,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.672,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.403,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.28,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.59,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.626,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Inferno",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Cache"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 32",
+   "slug": "qual-sgsquad32",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.468,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.609,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.354,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.472,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.298,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.567,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.578,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Inferno"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 33",
+   "slug": "qual-sgsquad33",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.343,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.644,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.444,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.638,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.663,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.566,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.384,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Dust2"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Anubis"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 34",
+   "slug": "qual-sgsquad34",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.444,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.623,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.548,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.318,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.435,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.458,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.392,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Cache",
+    "Anubis"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 35",
+   "slug": "qual-sgsquad35",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.319,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.46,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.54,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.304,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.346,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.314,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.518,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Inferno",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Cache",
+    "Vertigo"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 36",
+   "slug": "qual-sgsquad36",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.315,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.375,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.27,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.391,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.429,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.514,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.422,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Inferno",
+    "Mirage"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 37",
+   "slug": "qual-sgsquad37",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.422,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.272,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.395,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.652,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.341,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.33,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.468,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Vertigo"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 38",
+   "slug": "qual-sgsquad38",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.535,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.499,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.298,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.59,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.523,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.385,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.287,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Anubis",
+    "Inferno"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 39",
+   "slug": "qual-sgsquad39",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.34,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.495,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.388,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.667,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.345,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.296,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.536,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Mirage"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 40",
+   "slug": "qual-sgsquad40",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.497,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.45,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.37,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.295,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.524,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.673,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.276,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Anubis",
+    "Cache"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 41",
+   "slug": "qual-sgsquad41",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.632,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.314,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.388,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.429,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.624,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.298,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.581,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Dust2"
+   ],
+   "nation": true
+  },
+  {
+   "name": "SG Squad 42",
+   "slug": "qual-sgsquad42",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.6,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.263,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.334,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.332,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.519,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.579,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.646,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Anubis",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Cache"
+   ],
+   "nation": true
+  },
+  {
+   "name": "US Squad 1",
+   "slug": "qual-ussquad1",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.388,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.563,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.43,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.641,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.45,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.598,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.607,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Inferno"
+   ],
+   "nation": true
+  },
+  {
+   "name": "US Squad 2",
+   "slug": "qual-ussquad2",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.47,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.37,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.62,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.51,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.518,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.405,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.625,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Anubis",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Vertigo"
+   ],
+   "nation": true
+  },
+  {
+   "name": "US Squad 3",
+   "slug": "qual-ussquad3",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.307,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.652,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.326,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.574,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.328,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.333,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.415,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Inferno"
+   ],
+   "nation": true
+  },
+  {
+   "name": "US Squad 4",
+   "slug": "qual-ussquad4",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.368,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.66,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.294,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.596,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.551,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.34,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.334,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Inferno",
+    "Anubis"
+   ],
+   "nation": true
+  },
+  {
+   "name": "US Squad 5",
+   "slug": "qual-ussquad5",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.59,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.283,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.357,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.361,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.422,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.46,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.662,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Anubis",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Inferno"
+   ],
+   "nation": true
+  },
+  {
+   "name": "US Squad 6",
+   "slug": "qual-ussquad6",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.467,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.545,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.617,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.596,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.639,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.303,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.45,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Anubis"
+   ],
+   "nation": true
+  }
  ]
 }

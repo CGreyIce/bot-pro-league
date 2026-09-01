@@ -1067,6 +1067,27 @@ def main():
                                      "mapStats": stats, "bestMaps": order[:2],
                                      "worstMaps": [order[-1], order[-2]], "nation": True})
 
+    # ---- map profiles for the qualifier squads (veto "Nation Qualifiers") ----
+    qualifier_map_teams = []
+    for tr in tournaments:
+        if not tr["slug"].startswith("nations-cup-qualifier-"):
+            continue
+        for row in tr.get("attending", []):
+            if not row.get("players"):
+                continue
+            rs = [slug_to_player[pl["slug"]]["rating"] for pl in row["players"]
+                  if pl.get("slug") and slug_to_player.get(pl["slug"]) and slug_to_player[pl["slug"]].get("rating") is not None]
+            avg = sum(rs) / len(rs) if rs else 1.0
+            base = max(0.38, min(0.60, 0.5 + (avg - 1.0) * 0.9))
+            stats = {}
+            for cm in POOL_MAPS:
+                off = (_seed(row["team"] + "|" + cm) % 4200) / 10000.0 - 0.21
+                stats[cm] = {"w": 0, "l": 0, "g": 0, "wr": round(max(0.20, min(0.82, base + off)), 3), "real": False}
+            order = sorted(POOL_MAPS, key=lambda cm: (-stats[cm]["wr"], cm))
+            qualifier_map_teams.append({"name": row["team"], "slug": "qual-" + norm_key(row["team"]),
+                                        "mapStats": stats, "bestMaps": order[:2],
+                                        "worstMaps": [order[-1], order[-2]], "nation": True})
+
     # ---- per-player team history (chronological, from attending rosters) ----
     player_teams = defaultdict(dict)  # player slug -> {teamName: {teamSlug, isPro, first, years}}
     for tr in sorted(tournaments, key=lambda t: t["date"]):
@@ -1340,6 +1361,7 @@ def main():
         "transfers": transfers,
         "adhocMapTeams": adhoc_map_teams,
         "nationMapTeams": nation_map_teams,
+        "qualifierMapTeams": qualifier_map_teams,
     }
     os.makedirs(SITE, exist_ok=True)
     with open(os.path.join(SITE, "data.json"), "w", encoding="utf-8") as f:
