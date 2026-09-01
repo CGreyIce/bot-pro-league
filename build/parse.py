@@ -961,6 +961,21 @@ def main():
                 })
         tr["attending"] = att
 
+    # ---- Nations Cup: each nation's team = the winning squad from its qualifier ----
+    # A qualifier carries "nationTeam" (e.g. "Team Singapore"); once it has a champion (the
+    # winning squad), copy that squad's five players onto the matching Nations Cup team. Until
+    # then the pre-seeded placeholder squad stays.
+    _nc = next((tr for tr in tournaments if tr["slug"] == "bpl-nations-cup-2026"), None)
+    if _nc:
+        for tr in tournaments:
+            nt, champ = tr.get("nationTeam"), tr.get("champion")
+            if not nt or not champ:
+                continue
+            qrow = next((r for r in tr.get("attending", []) if norm_key(r["team"]) == norm_key(champ)), None)
+            ncrow = next((r for r in _nc.get("attending", []) if norm_key(r["team"]) == norm_key(nt)), None)
+            if qrow and ncrow:
+                ncrow["players"] = qrow["players"]
+
     # ---- in-progress ad-hoc tournament teams override a player's displayed team ----
     # While a site-run event is live, show each ad-hoc-team player their tournament team instead
     # of "—" (e.g. amateur free agents on a Bot Pro Cup roster). Ad-hoc = a team with no page
@@ -968,8 +983,8 @@ def main():
     # (a champion exists), where the promote-to-pro / disband rules then apply.
     _prov_keys = {t["key"] for t in teams if t.get("provisional")}
     for tr in tournaments:
-        if tr["slug"] not in manual_slugs_a or tr.get("champion"):
-            continue
+        if tr["slug"] not in manual_slugs_a or tr.get("champion") or "nations-cup" in tr["slug"]:
+            continue                          # national-team players keep their real club team
         for row in tr.get("attending", []):
             # real pro team page keeps its own roster/team; provisional teams aren't pro yet,
             # so their (amateur) players still show the team name.
@@ -1014,8 +1029,8 @@ def main():
     # around a base set by the roster's average Rating Points; no real per-map data yet.
     adhoc_map_teams = []
     for tr in tournaments:
-        if tr["slug"] not in manual_slugs_a or tr.get("champion"):
-            continue
+        if tr["slug"] not in manual_slugs_a or tr.get("champion") or "nations-cup" in tr["slug"]:
+            continue                          # national teams are temporary; not veto teams
         for row in tr.get("attending", []):
             if row.get("teamSlug"):
                 continue

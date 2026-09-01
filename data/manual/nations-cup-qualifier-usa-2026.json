@@ -13,7 +13,9 @@
     "US Squad 1",
     "US Squad 2",
     "US Squad 3",
-    "US Squad 4"
+    "US Squad 4",
+    "US Squad 5",
+    "US Squad 6"
    ],
    "matches": [
     {
@@ -23,7 +25,7 @@
       "seed": 1
      },
      "fb": {
-      "seed": 4
+      "seed": 8
      },
      "sa": null,
      "sb": null
@@ -32,16 +34,40 @@
      "id": 2,
      "round": 1,
      "fa": {
-      "seed": 2
+      "seed": 4
      },
      "fb": {
-      "seed": 3
+      "seed": 5
      },
      "sa": null,
      "sb": null
     },
     {
      "id": 3,
+     "round": 1,
+     "fa": {
+      "seed": 2
+     },
+     "fb": {
+      "seed": 7
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 1,
+     "fa": {
+      "seed": 3
+     },
+     "fb": {
+      "seed": 6
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 5,
      "round": 2,
      "fa": {
       "match": 1
@@ -51,14 +77,40 @@
      },
      "sa": null,
      "sb": null
+    },
+    {
+     "id": 6,
+     "round": 2,
+     "fa": {
+      "match": 3
+     },
+     "fb": {
+      "match": 4
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 7,
+     "round": 3,
+     "fa": {
+      "match": 5
+     },
+     "fb": {
+      "match": 6
+     },
+     "sa": null,
+     "sb": null
     }
    ],
    "roundTitles": {
-    "1": "Semifinals",
-    "2": "Final"
+    "1": "Quarterfinals",
+    "2": "Semifinals",
+    "3": "Final"
    }
   }
  ],
  "seeds": {},
- "noHonors": true
+ "noHonors": true,
+ "nationTeam": "Team USA"
 }

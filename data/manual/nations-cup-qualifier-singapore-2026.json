@@ -17,7 +17,41 @@
     "SG Squad 5",
     "SG Squad 6",
     "SG Squad 7",
-    "SG Squad 8"
+    "SG Squad 8",
+    "SG Squad 9",
+    "SG Squad 10",
+    "SG Squad 11",
+    "SG Squad 12",
+    "SG Squad 13",
+    "SG Squad 14",
+    "SG Squad 15",
+    "SG Squad 16",
+    "SG Squad 17",
+    "SG Squad 18",
+    "SG Squad 19",
+    "SG Squad 20",
+    "SG Squad 21",
+    "SG Squad 22",
+    "SG Squad 23",
+    "SG Squad 24",
+    "SG Squad 25",
+    "SG Squad 26",
+    "SG Squad 27",
+    "SG Squad 28",
+    "SG Squad 29",
+    "SG Squad 30",
+    "SG Squad 31",
+    "SG Squad 32",
+    "SG Squad 33",
+    "SG Squad 34",
+    "SG Squad 35",
+    "SG Squad 36",
+    "SG Squad 37",
+    "SG Squad 38",
+    "SG Squad 39",
+    "SG Squad 40",
+    "SG Squad 41",
+    "SG Squad 42"
    ],
    "matches": [
     {
@@ -27,7 +61,7 @@
       "seed": 1
      },
      "fb": {
-      "seed": 8
+      "seed": 64
      },
      "sa": null,
      "sb": null
@@ -36,10 +70,10 @@
      "id": 2,
      "round": 1,
      "fa": {
-      "seed": 4
+      "seed": 32
      },
      "fb": {
-      "seed": 5
+      "seed": 33
      },
      "sa": null,
      "sb": null
@@ -48,10 +82,10 @@
      "id": 3,
      "round": 1,
      "fa": {
-      "seed": 2
+      "seed": 16
      },
      "fb": {
-      "seed": 7
+      "seed": 49
      },
      "sa": null,
      "sb": null
@@ -60,16 +94,352 @@
      "id": 4,
      "round": 1,
      "fa": {
-      "seed": 3
+      "seed": 17
      },
      "fb": {
-      "seed": 6
+      "seed": 48
      },
      "sa": null,
      "sb": null
     },
     {
      "id": 5,
+     "round": 1,
+     "fa": {
+      "seed": 8
+     },
+     "fb": {
+      "seed": 57
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 6,
+     "round": 1,
+     "fa": {
+      "seed": 25
+     },
+     "fb": {
+      "seed": 40
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 7,
+     "round": 1,
+     "fa": {
+      "seed": 9
+     },
+     "fb": {
+      "seed": 56
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 8,
+     "round": 1,
+     "fa": {
+      "seed": 24
+     },
+     "fb": {
+      "seed": 41
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 9,
+     "round": 1,
+     "fa": {
+      "seed": 4
+     },
+     "fb": {
+      "seed": 61
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 10,
+     "round": 1,
+     "fa": {
+      "seed": 29
+     },
+     "fb": {
+      "seed": 36
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 11,
+     "round": 1,
+     "fa": {
+      "seed": 13
+     },
+     "fb": {
+      "seed": 52
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 12,
+     "round": 1,
+     "fa": {
+      "seed": 20
+     },
+     "fb": {
+      "seed": 45
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 13,
+     "round": 1,
+     "fa": {
+      "seed": 5
+     },
+     "fb": {
+      "seed": 60
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 14,
+     "round": 1,
+     "fa": {
+      "seed": 28
+     },
+     "fb": {
+      "seed": 37
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 15,
+     "round": 1,
+     "fa": {
+      "seed": 12
+     },
+     "fb": {
+      "seed": 53
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 16,
+     "round": 1,
+     "fa": {
+      "seed": 21
+     },
+     "fb": {
+      "seed": 44
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 17,
+     "round": 1,
+     "fa": {
+      "seed": 2
+     },
+     "fb": {
+      "seed": 63
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 18,
+     "round": 1,
+     "fa": {
+      "seed": 31
+     },
+     "fb": {
+      "seed": 34
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 19,
+     "round": 1,
+     "fa": {
+      "seed": 15
+     },
+     "fb": {
+      "seed": 50
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 20,
+     "round": 1,
+     "fa": {
+      "seed": 18
+     },
+     "fb": {
+      "seed": 47
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 21,
+     "round": 1,
+     "fa": {
+      "seed": 7
+     },
+     "fb": {
+      "seed": 58
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 22,
+     "round": 1,
+     "fa": {
+      "seed": 26
+     },
+     "fb": {
+      "seed": 39
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 23,
+     "round": 1,
+     "fa": {
+      "seed": 10
+     },
+     "fb": {
+      "seed": 55
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 24,
+     "round": 1,
+     "fa": {
+      "seed": 23
+     },
+     "fb": {
+      "seed": 42
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 25,
+     "round": 1,
+     "fa": {
+      "seed": 3
+     },
+     "fb": {
+      "seed": 62
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 26,
+     "round": 1,
+     "fa": {
+      "seed": 30
+     },
+     "fb": {
+      "seed": 35
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 27,
+     "round": 1,
+     "fa": {
+      "seed": 14
+     },
+     "fb": {
+      "seed": 51
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 28,
+     "round": 1,
+     "fa": {
+      "seed": 19
+     },
+     "fb": {
+      "seed": 46
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 29,
+     "round": 1,
+     "fa": {
+      "seed": 6
+     },
+     "fb": {
+      "seed": 59
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 30,
+     "round": 1,
+     "fa": {
+      "seed": 27
+     },
+     "fb": {
+      "seed": 38
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 31,
+     "round": 1,
+     "fa": {
+      "seed": 11
+     },
+     "fb": {
+      "seed": 54
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 32,
+     "round": 1,
+     "fa": {
+      "seed": 22
+     },
+     "fb": {
+      "seed": 43
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 33,
      "round": 2,
      "fa": {
       "match": 1
@@ -81,7 +451,7 @@
      "sb": null
     },
     {
-     "id": 6,
+     "id": 34,
      "round": 2,
      "fa": {
       "match": 3
@@ -93,8 +463,8 @@
      "sb": null
     },
     {
-     "id": 7,
-     "round": 3,
+     "id": 35,
+     "round": 2,
      "fa": {
       "match": 5
      },
@@ -103,15 +473,355 @@
      },
      "sa": null,
      "sb": null
+    },
+    {
+     "id": 36,
+     "round": 2,
+     "fa": {
+      "match": 7
+     },
+     "fb": {
+      "match": 8
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 37,
+     "round": 2,
+     "fa": {
+      "match": 9
+     },
+     "fb": {
+      "match": 10
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 38,
+     "round": 2,
+     "fa": {
+      "match": 11
+     },
+     "fb": {
+      "match": 12
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 39,
+     "round": 2,
+     "fa": {
+      "match": 13
+     },
+     "fb": {
+      "match": 14
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 40,
+     "round": 2,
+     "fa": {
+      "match": 15
+     },
+     "fb": {
+      "match": 16
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 41,
+     "round": 2,
+     "fa": {
+      "match": 17
+     },
+     "fb": {
+      "match": 18
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 42,
+     "round": 2,
+     "fa": {
+      "match": 19
+     },
+     "fb": {
+      "match": 20
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 43,
+     "round": 2,
+     "fa": {
+      "match": 21
+     },
+     "fb": {
+      "match": 22
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 44,
+     "round": 2,
+     "fa": {
+      "match": 23
+     },
+     "fb": {
+      "match": 24
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 45,
+     "round": 2,
+     "fa": {
+      "match": 25
+     },
+     "fb": {
+      "match": 26
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 46,
+     "round": 2,
+     "fa": {
+      "match": 27
+     },
+     "fb": {
+      "match": 28
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 47,
+     "round": 2,
+     "fa": {
+      "match": 29
+     },
+     "fb": {
+      "match": 30
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 48,
+     "round": 2,
+     "fa": {
+      "match": 31
+     },
+     "fb": {
+      "match": 32
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 49,
+     "round": 3,
+     "fa": {
+      "match": 33
+     },
+     "fb": {
+      "match": 34
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 50,
+     "round": 3,
+     "fa": {
+      "match": 35
+     },
+     "fb": {
+      "match": 36
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 51,
+     "round": 3,
+     "fa": {
+      "match": 37
+     },
+     "fb": {
+      "match": 38
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 52,
+     "round": 3,
+     "fa": {
+      "match": 39
+     },
+     "fb": {
+      "match": 40
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 53,
+     "round": 3,
+     "fa": {
+      "match": 41
+     },
+     "fb": {
+      "match": 42
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 54,
+     "round": 3,
+     "fa": {
+      "match": 43
+     },
+     "fb": {
+      "match": 44
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 55,
+     "round": 3,
+     "fa": {
+      "match": 45
+     },
+     "fb": {
+      "match": 46
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 56,
+     "round": 3,
+     "fa": {
+      "match": 47
+     },
+     "fb": {
+      "match": 48
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 57,
+     "round": 4,
+     "fa": {
+      "match": 49
+     },
+     "fb": {
+      "match": 50
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 58,
+     "round": 4,
+     "fa": {
+      "match": 51
+     },
+     "fb": {
+      "match": 52
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 59,
+     "round": 4,
+     "fa": {
+      "match": 53
+     },
+     "fb": {
+      "match": 54
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 60,
+     "round": 4,
+     "fa": {
+      "match": 55
+     },
+     "fb": {
+      "match": 56
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 61,
+     "round": 5,
+     "fa": {
+      "match": 57
+     },
+     "fb": {
+      "match": 58
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 62,
+     "round": 5,
+     "fa": {
+      "match": 59
+     },
+     "fb": {
+      "match": 60
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 63,
+     "round": 6,
+     "fa": {
+      "match": 61
+     },
+     "fb": {
+      "match": 62
+     },
+     "sa": null,
+     "sb": null
     }
    ],
    "roundTitles": {
-    "1": "Quarterfinals",
-    "2": "Semifinals",
-    "3": "Final"
+    "1": "Round of 64",
+    "2": "Round of 32",
+    "3": "Round of 16",
+    "4": "Quarterfinals",
+    "5": "Semifinals",
+    "6": "Final"
    }
   }
  ],
  "seeds": {},
- "noHonors": true
+ "noHonors": true,
+ "nationTeam": "Team Singapore"
 }

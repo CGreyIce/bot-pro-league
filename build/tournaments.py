@@ -164,6 +164,7 @@ def process_manual(raw, team_map, alias):
         "finalStandings": final_standings, "seeds": seeds_out,
         "predictionsLocked": bool(raw.get("predictionsLocked")),
         "noHonors": bool(raw.get("noHonors")),
+        "nationTeam": raw.get("nationTeam"),
     }
 
 def process_one(raw, team_map, alias):
