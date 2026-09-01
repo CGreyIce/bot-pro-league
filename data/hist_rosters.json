@@ -26369,188 +26369,32 @@
   {
    "team": "Team Singapore",
    "teamSlug": null,
-   "players": [
-    {
-     "name": "Laburi",
-     "captain": true,
-     "curSlug": "laburi"
-    },
-    {
-     "name": "y.uuno",
-     "captain": false,
-     "curSlug": "y-uuno"
-    },
-    {
-     "name": "rebebx",
-     "captain": false,
-     "curSlug": "rebebx-amateur"
-    },
-    {
-     "name": "tapiyokaaa",
-     "captain": false,
-     "curSlug": "tapiyokaaa"
-    },
-    {
-     "name": "kuro_mi",
-     "captain": false,
-     "curSlug": "kuro-mi"
-    }
-   ]
+   "players": []
   },
   {
    "team": "Team Malaysia",
    "teamSlug": null,
-   "players": [
-    {
-     "name": "Sadgeboi",
-     "captain": true,
-     "curSlug": "sadgeboi-amateur"
-    },
-    {
-     "name": "Scorpium",
-     "captain": false,
-     "curSlug": "scorpium"
-    },
-    {
-     "name": "Karasu",
-     "captain": false,
-     "curSlug": "karasu-amateur"
-    },
-    {
-     "name": "Ice",
-     "captain": false,
-     "curSlug": "ice"
-    },
-    {
-     "name": "Yarimell",
-     "captain": false,
-     "curSlug": "yarimell-amateur"
-    }
-   ]
+   "players": []
   },
   {
    "team": "Team Philippines",
    "teamSlug": null,
-   "players": [
-    {
-     "name": "Vyphogrid",
-     "captain": true,
-     "curSlug": "vyphogrid-amateur"
-    },
-    {
-     "name": "Sheep",
-     "captain": false,
-     "curSlug": "sheep"
-    },
-    {
-     "name": "KiokoCheiko",
-     "captain": false,
-     "curSlug": "kiokocheiko-amateur"
-    },
-    {
-     "name": "anju_o",
-     "captain": false,
-     "curSlug": "anju-o-amateur"
-    },
-    {
-     "name": "Laurel",
-     "captain": false,
-     "curSlug": "laurel-amateur"
-    }
-   ]
+   "players": []
   },
   {
    "team": "Team Australia",
    "teamSlug": null,
-   "players": [
-    {
-     "name": "gigichiii_",
-     "captain": true,
-     "curSlug": "gigichiii"
-    },
-    {
-     "name": "_froggiee",
-     "captain": false,
-     "curSlug": "froggiee-amateur"
-    },
-    {
-     "name": "MKakili",
-     "captain": false,
-     "curSlug": "mkakili-amateur"
-    },
-    {
-     "name": "Yaekia",
-     "captain": false,
-     "curSlug": "yaekia-amateur"
-    },
-    {
-     "name": "cassiopeiarawr",
-     "captain": false,
-     "curSlug": "cassiopeiarawr"
-    }
-   ]
+   "players": []
   },
   {
    "team": "Team USA",
    "teamSlug": null,
-   "players": [
-    {
-     "name": "cwstalVT",
-     "captain": true,
-     "curSlug": "cwstalvt-amateur"
-    },
-    {
-     "name": "moricorovt",
-     "captain": false,
-     "curSlug": "moricorovt-amateur"
-    },
-    {
-     "name": "pastellows",
-     "captain": false,
-     "curSlug": "pastellows-amateur"
-    },
-    {
-     "name": "TokieShepherdVT",
-     "captain": false,
-     "curSlug": "tokieshepherdvt"
-    },
-    {
-     "name": "yukihimeowo",
-     "captain": false,
-     "curSlug": "yukihimeowo-amateur"
-    }
-   ]
+   "players": []
   },
   {
    "team": "Team Japan",
    "teamSlug": null,
-   "players": [
-    {
-     "name": "Hanabusa Lisa",
-     "captain": true,
-     "curSlug": "hanabusa-lisa-amateur"
-    },
-    {
-     "name": "Yumeno Akari",
-     "captain": false,
-     "curSlug": "yumeno-akari-amateur"
-    },
-    {
-     "name": "FumishiroYummy",
-     "captain": false,
-     "curSlug": "fumishiroyummy-amateur"
-    },
-    {
-     "name": "Yakumo Beni",
-     "captain": false,
-     "curSlug": "yakumo-beni-amateur"
-    },
-    {
-     "name": "Amayui Moka",
-     "captain": false,
-     "curSlug": "amayui-moka-amateur"
-    }
-   ]
+   "players": []
   },
   {
    "team": "Team Land of Make Believe",

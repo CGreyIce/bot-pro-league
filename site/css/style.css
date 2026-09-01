@@ -437,6 +437,7 @@ a.form-dot:hover{transform:translateY(-2px)}
 .pcard-mini.noprofile{cursor:default}
 .fp-ban{color:var(--accent2,#ff6b6b);font-weight:700}
 .prov-badge{font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:5px;padding:2px 7px;vertical-align:middle}
+#roster-pop .rp-tbc{color:var(--muted);font-style:italic;font-size:12px;padding:4px 2px}
 .tourn-mvp{margin-top:6px;font-size:14px}
 .tourn-mvp .tm-mvp-name{font-weight:700;color:var(--link)}
 .tourn-mvp .tm-mvp-name:hover{text-decoration:underline}

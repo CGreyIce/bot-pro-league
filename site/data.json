@@ -7750,51 +7750,6 @@
          "captain": false
         }
        ]
-      },
-      {
-       "team": "Team Australia",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "gigichiii_",
-         "name": "gigichiii_",
-         "slug": "gigichiii",
-         "iso": "au",
-         "captain": true
-        },
-        {
-         "hist": "_froggiee",
-         "name": "_froggiee",
-         "slug": "froggiee-amateur",
-         "iso": "au",
-         "captain": false
-        },
-        {
-         "hist": "MKakili",
-         "name": "MKakili",
-         "slug": "mkakili-amateur",
-         "iso": "au",
-         "captain": false
-        },
-        {
-         "hist": "Yaekia",
-         "name": "Yaekia",
-         "slug": "yaekia-amateur",
-         "iso": "au",
-         "captain": false
-        },
-        {
-         "hist": "cassiopeiarawr",
-         "name": "cassiopeiarawr",
-         "slug": "cassiopeiarawr",
-         "iso": "au",
-         "captain": false
-        }
-       ]
       }
      ],
      "aka": [
@@ -12273,51 +12228,6 @@
       },
       {
        "team": "MY Squad 1",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "Sadgeboi",
-         "name": "Sadgeboi",
-         "slug": "sadgeboi-amateur",
-         "iso": "my",
-         "captain": true
-        },
-        {
-         "hist": "Scorpium",
-         "name": "Scorpium",
-         "slug": "scorpium",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "Karasu",
-         "name": "Karasu",
-         "slug": "karasu-amateur",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "Ice",
-         "name": "Ice",
-         "slug": "ice",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "Yarimell",
-         "name": "Yarimell",
-         "slug": "yarimell-amateur",
-         "iso": "my",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Team Malaysia",
        "teamSlug": null,
        "isPro": false,
        "years": [
@@ -26537,51 +26447,6 @@
          "captain": false
         }
        ]
-      },
-      {
-       "team": "Team Malaysia",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "Sadgeboi",
-         "name": "Sadgeboi",
-         "slug": "sadgeboi-amateur",
-         "iso": "my",
-         "captain": true
-        },
-        {
-         "hist": "Scorpium",
-         "name": "Scorpium",
-         "slug": "scorpium",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "Karasu",
-         "name": "Karasu",
-         "slug": "karasu-amateur",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "Ice",
-         "name": "Ice",
-         "slug": "ice",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "Yarimell",
-         "name": "Yarimell",
-         "slug": "yarimell-amateur",
-         "iso": "my",
-         "captain": false
-        }
-       ]
       }
      ]
     },
@@ -27284,51 +27149,6 @@
       },
       {
        "team": "SG Squad 1",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "Laburi",
-         "name": "Laburi",
-         "slug": "laburi",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "y.uuno",
-         "name": "y.uuno",
-         "slug": "y-uuno",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "rebebx",
-         "name": "rebebx",
-         "slug": "rebebx-amateur",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "tapiyokaaa",
-         "name": "tapiyokaaa",
-         "slug": "tapiyokaaa",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "kuro_mi",
-         "name": "kuro_mi",
-         "slug": "kuro-mi",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Team Singapore",
        "teamSlug": null,
        "isPro": false,
        "years": [
@@ -70774,51 +70594,6 @@
          "captain": false
         }
        ]
-      },
-      {
-       "team": "Team Australia",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "gigichiii_",
-         "name": "gigichiii_",
-         "slug": "gigichiii",
-         "iso": "au",
-         "captain": true
-        },
-        {
-         "hist": "_froggiee",
-         "name": "_froggiee",
-         "slug": "froggiee-amateur",
-         "iso": "au",
-         "captain": false
-        },
-        {
-         "hist": "MKakili",
-         "name": "MKakili",
-         "slug": "mkakili-amateur",
-         "iso": "au",
-         "captain": false
-        },
-        {
-         "hist": "Yaekia",
-         "name": "Yaekia",
-         "slug": "yaekia-amateur",
-         "iso": "au",
-         "captain": false
-        },
-        {
-         "hist": "cassiopeiarawr",
-         "name": "cassiopeiarawr",
-         "slug": "cassiopeiarawr",
-         "iso": "au",
-         "captain": false
-        }
-       ]
       }
      ],
      "titles": [
@@ -77573,51 +77348,6 @@
          "captain": false
         }
        ]
-      },
-      {
-       "team": "Team Singapore",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "Laburi",
-         "name": "Laburi",
-         "slug": "laburi",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "y.uuno",
-         "name": "y.uuno",
-         "slug": "y-uuno",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "rebebx",
-         "name": "rebebx",
-         "slug": "rebebx-amateur",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "tapiyokaaa",
-         "name": "tapiyokaaa",
-         "slug": "tapiyokaaa",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "kuro_mi",
-         "name": "kuro_mi",
-         "slug": "kuro-mi",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
       }
      ]
     },
@@ -78767,51 +78497,6 @@
       },
       {
        "team": "SG Squad 1",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "Laburi",
-         "name": "Laburi",
-         "slug": "laburi",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "y.uuno",
-         "name": "y.uuno",
-         "slug": "y-uuno",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "rebebx",
-         "name": "rebebx",
-         "slug": "rebebx-amateur",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "tapiyokaaa",
-         "name": "tapiyokaaa",
-         "slug": "tapiyokaaa",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "kuro_mi",
-         "name": "kuro_mi",
-         "slug": "kuro-mi",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Team Singapore",
        "teamSlug": null,
        "isPro": false,
        "years": [
@@ -80799,51 +80484,6 @@
       },
       {
        "team": "PH Squad 1",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "Vyphogrid",
-         "name": "Vyphogrid",
-         "slug": "vyphogrid-amateur",
-         "iso": "ph",
-         "captain": true
-        },
-        {
-         "hist": "Sheep",
-         "name": "Sheep",
-         "slug": "sheep",
-         "iso": "ph",
-         "captain": false
-        },
-        {
-         "hist": "KiokoCheiko",
-         "name": "KiokoCheiko",
-         "slug": "kiokocheiko-amateur",
-         "iso": "ph",
-         "captain": false
-        },
-        {
-         "hist": "anju_o",
-         "name": "anju_o",
-         "slug": "anju-o-amateur",
-         "iso": "ph",
-         "captain": false
-        },
-        {
-         "hist": "Laurel",
-         "name": "Laurel",
-         "slug": "laurel-amateur",
-         "iso": "ph",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Team Philippines",
        "teamSlug": null,
        "isPro": false,
        "years": [
@@ -89154,51 +88794,6 @@
          "captain": false
         }
        ]
-      },
-      {
-       "team": "Team Singapore",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "Laburi",
-         "name": "Laburi",
-         "slug": "laburi",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "y.uuno",
-         "name": "y.uuno",
-         "slug": "y-uuno",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "rebebx",
-         "name": "rebebx",
-         "slug": "rebebx-amateur",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "tapiyokaaa",
-         "name": "tapiyokaaa",
-         "slug": "tapiyokaaa",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "kuro_mi",
-         "name": "kuro_mi",
-         "slug": "kuro-mi",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
       }
      ],
      "titles": [
@@ -89306,51 +88901,6 @@
       },
       {
        "team": "US Squad 1",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "cwstalVT",
-         "name": "cwstalVT",
-         "slug": "cwstalvt-amateur",
-         "iso": "us",
-         "captain": true
-        },
-        {
-         "hist": "moricorovt",
-         "name": "moricorovt",
-         "slug": "moricorovt-amateur",
-         "iso": "us",
-         "captain": false
-        },
-        {
-         "hist": "pastellows",
-         "name": "pastellows",
-         "slug": "pastellows-amateur",
-         "iso": "us",
-         "captain": false
-        },
-        {
-         "hist": "TokieShepherdVT",
-         "name": "TokieShepherdVT",
-         "slug": "tokieshepherdvt",
-         "iso": "us",
-         "captain": false
-        },
-        {
-         "hist": "yukihimeowo",
-         "name": "yukihimeowo",
-         "slug": "yukihimeowo-amateur",
-         "iso": "us",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Team USA",
        "teamSlug": null,
        "isPro": false,
        "years": [
@@ -99211,51 +98761,6 @@
          "captain": false
         }
        ]
-      },
-      {
-       "team": "Team Australia",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "gigichiii_",
-         "name": "gigichiii_",
-         "slug": "gigichiii",
-         "iso": "au",
-         "captain": true
-        },
-        {
-         "hist": "_froggiee",
-         "name": "_froggiee",
-         "slug": "froggiee-amateur",
-         "iso": "au",
-         "captain": false
-        },
-        {
-         "hist": "MKakili",
-         "name": "MKakili",
-         "slug": "mkakili-amateur",
-         "iso": "au",
-         "captain": false
-        },
-        {
-         "hist": "Yaekia",
-         "name": "Yaekia",
-         "slug": "yaekia-amateur",
-         "iso": "au",
-         "captain": false
-        },
-        {
-         "hist": "cassiopeiarawr",
-         "name": "cassiopeiarawr",
-         "slug": "cassiopeiarawr",
-         "iso": "au",
-         "captain": false
-        }
-       ]
       }
      ]
     }
@@ -104126,51 +103631,6 @@
      },
      {
       "team": "PH Squad 1",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "Vyphogrid",
-        "name": "Vyphogrid",
-        "slug": "vyphogrid-amateur",
-        "iso": "ph",
-        "captain": true
-       },
-       {
-        "hist": "Sheep",
-        "name": "Sheep",
-        "slug": "sheep",
-        "iso": "ph",
-        "captain": false
-       },
-       {
-        "hist": "KiokoCheiko",
-        "name": "KiokoCheiko",
-        "slug": "kiokocheiko-amateur",
-        "iso": "ph",
-        "captain": false
-       },
-       {
-        "hist": "anju_o",
-        "name": "anju_o",
-        "slug": "anju-o-amateur",
-        "iso": "ph",
-        "captain": false
-       },
-       {
-        "hist": "Laurel",
-        "name": "Laurel",
-        "slug": "laurel-amateur",
-        "iso": "ph",
-        "captain": false
-       }
-      ]
-     },
-     {
-      "team": "Team Philippines",
       "teamSlug": null,
       "isPro": false,
       "years": [
@@ -131081,51 +130541,6 @@
         "captain": false
        }
       ]
-     },
-     {
-      "team": "Team Singapore",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "Laburi",
-        "name": "Laburi",
-        "slug": "laburi",
-        "iso": "sg",
-        "captain": true
-       },
-       {
-        "hist": "y.uuno",
-        "name": "y.uuno",
-        "slug": "y-uuno",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "rebebx",
-        "name": "rebebx",
-        "slug": "rebebx-amateur",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "tapiyokaaa",
-        "name": "tapiyokaaa",
-        "slug": "tapiyokaaa",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "kuro_mi",
-        "name": "kuro_mi",
-        "slug": "kuro-mi",
-        "iso": "sg",
-        "captain": false
-       }
-      ]
      }
     ]
    },
@@ -131998,51 +131413,6 @@
      },
      {
       "team": "SG Squad 1",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "Laburi",
-        "name": "Laburi",
-        "slug": "laburi",
-        "iso": "sg",
-        "captain": true
-       },
-       {
-        "hist": "y.uuno",
-        "name": "y.uuno",
-        "slug": "y-uuno",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "rebebx",
-        "name": "rebebx",
-        "slug": "rebebx-amateur",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "tapiyokaaa",
-        "name": "tapiyokaaa",
-        "slug": "tapiyokaaa",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "kuro_mi",
-        "name": "kuro_mi",
-        "slug": "kuro-mi",
-        "iso": "sg",
-        "captain": false
-       }
-      ]
-     },
-     {
-      "team": "Team Singapore",
       "teamSlug": null,
       "isPro": false,
       "years": [
@@ -134369,51 +133739,6 @@
      },
      {
       "team": "AU Squad 1",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "gigichiii_",
-        "name": "gigichiii_",
-        "slug": "gigichiii",
-        "iso": "au",
-        "captain": true
-       },
-       {
-        "hist": "_froggiee",
-        "name": "_froggiee",
-        "slug": "froggiee-amateur",
-        "iso": "au",
-        "captain": false
-       },
-       {
-        "hist": "MKakili",
-        "name": "MKakili",
-        "slug": "mkakili-amateur",
-        "iso": "au",
-        "captain": false
-       },
-       {
-        "hist": "Yaekia",
-        "name": "Yaekia",
-        "slug": "yaekia-amateur",
-        "iso": "au",
-        "captain": false
-       },
-       {
-        "hist": "cassiopeiarawr",
-        "name": "cassiopeiarawr",
-        "slug": "cassiopeiarawr",
-        "iso": "au",
-        "captain": false
-       }
-      ]
-     },
-     {
-      "team": "Team Australia",
       "teamSlug": null,
       "isPro": false,
       "years": [
@@ -145170,51 +144495,6 @@
         "captain": false
        }
       ]
-     },
-     {
-      "team": "Team Malaysia",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "Sadgeboi",
-        "name": "Sadgeboi",
-        "slug": "sadgeboi-amateur",
-        "iso": "my",
-        "captain": true
-       },
-       {
-        "hist": "Scorpium",
-        "name": "Scorpium",
-        "slug": "scorpium",
-        "iso": "my",
-        "captain": false
-       },
-       {
-        "hist": "Karasu",
-        "name": "Karasu",
-        "slug": "karasu-amateur",
-        "iso": "my",
-        "captain": false
-       },
-       {
-        "hist": "Ice",
-        "name": "Ice",
-        "slug": "ice",
-        "iso": "my",
-        "captain": false
-       },
-       {
-        "hist": "Yarimell",
-        "name": "Yarimell",
-        "slug": "yarimell-amateur",
-        "iso": "my",
-        "captain": false
-       }
-      ]
      }
     ],
     "aka": [
@@ -149418,51 +148698,6 @@
         "captain": false
        }
       ]
-     },
-     {
-      "team": "Team Malaysia",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "Sadgeboi",
-        "name": "Sadgeboi",
-        "slug": "sadgeboi-amateur",
-        "iso": "my",
-        "captain": true
-       },
-       {
-        "hist": "Scorpium",
-        "name": "Scorpium",
-        "slug": "scorpium",
-        "iso": "my",
-        "captain": false
-       },
-       {
-        "hist": "Karasu",
-        "name": "Karasu",
-        "slug": "karasu-amateur",
-        "iso": "my",
-        "captain": false
-       },
-       {
-        "hist": "Ice",
-        "name": "Ice",
-        "slug": "ice",
-        "iso": "my",
-        "captain": false
-       },
-       {
-        "hist": "Yarimell",
-        "name": "Yarimell",
-        "slug": "yarimell-amateur",
-        "iso": "my",
-        "captain": false
-       }
-      ]
      }
     ]
    },
@@ -149699,51 +148934,6 @@
      },
      {
       "team": "SG Squad 1",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "Laburi",
-        "name": "Laburi",
-        "slug": "laburi",
-        "iso": "sg",
-        "captain": true
-       },
-       {
-        "hist": "y.uuno",
-        "name": "y.uuno",
-        "slug": "y-uuno",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "rebebx",
-        "name": "rebebx",
-        "slug": "rebebx-amateur",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "tapiyokaaa",
-        "name": "tapiyokaaa",
-        "slug": "tapiyokaaa",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "kuro_mi",
-        "name": "kuro_mi",
-        "slug": "kuro-mi",
-        "iso": "sg",
-        "captain": false
-       }
-      ]
-     },
-     {
-      "team": "Team Singapore",
       "teamSlug": null,
       "isPro": false,
       "years": [
@@ -162778,51 +161968,6 @@
         "captain": false
        }
       ]
-     },
-     {
-      "team": "Team Australia",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "gigichiii_",
-        "name": "gigichiii_",
-        "slug": "gigichiii",
-        "iso": "au",
-        "captain": true
-       },
-       {
-        "hist": "_froggiee",
-        "name": "_froggiee",
-        "slug": "froggiee-amateur",
-        "iso": "au",
-        "captain": false
-       },
-       {
-        "hist": "MKakili",
-        "name": "MKakili",
-        "slug": "mkakili-amateur",
-        "iso": "au",
-        "captain": false
-       },
-       {
-        "hist": "Yaekia",
-        "name": "Yaekia",
-        "slug": "yaekia-amateur",
-        "iso": "au",
-        "captain": false
-       },
-       {
-        "hist": "cassiopeiarawr",
-        "name": "cassiopeiarawr",
-        "slug": "cassiopeiarawr",
-        "iso": "au",
-        "captain": false
-       }
-      ]
      }
     ],
     "aka": [
@@ -169174,51 +168319,6 @@
         "captain": false
        }
       ]
-     },
-     {
-      "team": "Team Singapore",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "Laburi",
-        "name": "Laburi",
-        "slug": "laburi",
-        "iso": "sg",
-        "captain": true
-       },
-       {
-        "hist": "y.uuno",
-        "name": "y.uuno",
-        "slug": "y-uuno",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "rebebx",
-        "name": "rebebx",
-        "slug": "rebebx-amateur",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "tapiyokaaa",
-        "name": "tapiyokaaa",
-        "slug": "tapiyokaaa",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "kuro_mi",
-        "name": "kuro_mi",
-        "slug": "kuro-mi",
-        "iso": "sg",
-        "captain": false
-       }
-      ]
      }
     ],
     "titles": [
@@ -169326,51 +168426,6 @@
      },
      {
       "team": "US Squad 1",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "cwstalVT",
-        "name": "cwstalVT",
-        "slug": "cwstalvt-amateur",
-        "iso": "us",
-        "captain": true
-       },
-       {
-        "hist": "moricorovt",
-        "name": "moricorovt",
-        "slug": "moricorovt-amateur",
-        "iso": "us",
-        "captain": false
-       },
-       {
-        "hist": "pastellows",
-        "name": "pastellows",
-        "slug": "pastellows-amateur",
-        "iso": "us",
-        "captain": false
-       },
-       {
-        "hist": "TokieShepherdVT",
-        "name": "TokieShepherdVT",
-        "slug": "tokieshepherdvt",
-        "iso": "us",
-        "captain": false
-       },
-       {
-        "hist": "yukihimeowo",
-        "name": "yukihimeowo",
-        "slug": "yukihimeowo-amateur",
-        "iso": "us",
-        "captain": false
-       }
-      ]
-     },
-     {
-      "team": "Team USA",
       "teamSlug": null,
       "isPro": false,
       "years": [
@@ -178267,51 +177322,6 @@
         "captain": false
        }
       ]
-     },
-     {
-      "team": "Team Malaysia",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "Sadgeboi",
-        "name": "Sadgeboi",
-        "slug": "sadgeboi-amateur",
-        "iso": "my",
-        "captain": true
-       },
-       {
-        "hist": "Scorpium",
-        "name": "Scorpium",
-        "slug": "scorpium",
-        "iso": "my",
-        "captain": false
-       },
-       {
-        "hist": "Karasu",
-        "name": "Karasu",
-        "slug": "karasu-amateur",
-        "iso": "my",
-        "captain": false
-       },
-       {
-        "hist": "Ice",
-        "name": "Ice",
-        "slug": "ice",
-        "iso": "my",
-        "captain": false
-       },
-       {
-        "hist": "Yarimell",
-        "name": "Yarimell",
-        "slug": "yarimell-amateur",
-        "iso": "my",
-        "captain": false
-       }
-      ]
      }
     ]
    },
@@ -179008,51 +178018,6 @@
      },
      {
       "team": "US Squad 1",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "cwstalVT",
-        "name": "cwstalVT",
-        "slug": "cwstalvt-amateur",
-        "iso": "us",
-        "captain": true
-       },
-       {
-        "hist": "moricorovt",
-        "name": "moricorovt",
-        "slug": "moricorovt-amateur",
-        "iso": "us",
-        "captain": false
-       },
-       {
-        "hist": "pastellows",
-        "name": "pastellows",
-        "slug": "pastellows-amateur",
-        "iso": "us",
-        "captain": false
-       },
-       {
-        "hist": "TokieShepherdVT",
-        "name": "TokieShepherdVT",
-        "slug": "tokieshepherdvt",
-        "iso": "us",
-        "captain": false
-       },
-       {
-        "hist": "yukihimeowo",
-        "name": "yukihimeowo",
-        "slug": "yukihimeowo-amateur",
-        "iso": "us",
-        "captain": false
-       }
-      ]
-     },
-     {
-      "team": "Team USA",
       "teamSlug": null,
       "isPro": false,
       "years": [
@@ -180590,51 +179555,6 @@
         "captain": false
        }
       ]
-     },
-     {
-      "team": "Team Singapore",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "Laburi",
-        "name": "Laburi",
-        "slug": "laburi",
-        "iso": "sg",
-        "captain": true
-       },
-       {
-        "hist": "y.uuno",
-        "name": "y.uuno",
-        "slug": "y-uuno",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "rebebx",
-        "name": "rebebx",
-        "slug": "rebebx-amateur",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "tapiyokaaa",
-        "name": "tapiyokaaa",
-        "slug": "tapiyokaaa",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "kuro_mi",
-        "name": "kuro_mi",
-        "slug": "kuro-mi",
-        "iso": "sg",
-        "captain": false
-       }
-      ]
      }
     ],
     "titles": [
@@ -181013,51 +179933,6 @@
      },
      {
       "team": "MY Squad 1",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "Sadgeboi",
-        "name": "Sadgeboi",
-        "slug": "sadgeboi-amateur",
-        "iso": "my",
-        "captain": true
-       },
-       {
-        "hist": "Scorpium",
-        "name": "Scorpium",
-        "slug": "scorpium",
-        "iso": "my",
-        "captain": false
-       },
-       {
-        "hist": "Karasu",
-        "name": "Karasu",
-        "slug": "karasu-amateur",
-        "iso": "my",
-        "captain": false
-       },
-       {
-        "hist": "Ice",
-        "name": "Ice",
-        "slug": "ice",
-        "iso": "my",
-        "captain": false
-       },
-       {
-        "hist": "Yarimell",
-        "name": "Yarimell",
-        "slug": "yarimell-amateur",
-        "iso": "my",
-        "captain": false
-       }
-      ]
-     },
-     {
-      "team": "Team Malaysia",
       "teamSlug": null,
       "isPro": false,
       "years": [
@@ -182262,51 +181137,6 @@
      },
      {
       "team": "AU Squad 1",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "gigichiii_",
-        "name": "gigichiii_",
-        "slug": "gigichiii",
-        "iso": "au",
-        "captain": true
-       },
-       {
-        "hist": "_froggiee",
-        "name": "_froggiee",
-        "slug": "froggiee-amateur",
-        "iso": "au",
-        "captain": false
-       },
-       {
-        "hist": "MKakili",
-        "name": "MKakili",
-        "slug": "mkakili-amateur",
-        "iso": "au",
-        "captain": false
-       },
-       {
-        "hist": "Yaekia",
-        "name": "Yaekia",
-        "slug": "yaekia-amateur",
-        "iso": "au",
-        "captain": false
-       },
-       {
-        "hist": "cassiopeiarawr",
-        "name": "cassiopeiarawr",
-        "slug": "cassiopeiarawr",
-        "iso": "au",
-        "captain": false
-       }
-      ]
-     },
-     {
-      "team": "Team Australia",
       "teamSlug": null,
       "isPro": false,
       "years": [
@@ -185237,51 +184067,6 @@
      },
      {
       "team": "PH Squad 1",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "Vyphogrid",
-        "name": "Vyphogrid",
-        "slug": "vyphogrid-amateur",
-        "iso": "ph",
-        "captain": true
-       },
-       {
-        "hist": "Sheep",
-        "name": "Sheep",
-        "slug": "sheep",
-        "iso": "ph",
-        "captain": false
-       },
-       {
-        "hist": "KiokoCheiko",
-        "name": "KiokoCheiko",
-        "slug": "kiokocheiko-amateur",
-        "iso": "ph",
-        "captain": false
-       },
-       {
-        "hist": "anju_o",
-        "name": "anju_o",
-        "slug": "anju-o-amateur",
-        "iso": "ph",
-        "captain": false
-       },
-       {
-        "hist": "Laurel",
-        "name": "Laurel",
-        "slug": "laurel-amateur",
-        "iso": "ph",
-        "captain": false
-       }
-      ]
-     },
-     {
-      "team": "Team Philippines",
       "teamSlug": null,
       "isPro": false,
       "years": [
@@ -188263,51 +187048,6 @@
         "captain": false
        }
       ]
-     },
-     {
-      "team": "Team Philippines",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "Vyphogrid",
-        "name": "Vyphogrid",
-        "slug": "vyphogrid-amateur",
-        "iso": "ph",
-        "captain": true
-       },
-       {
-        "hist": "Sheep",
-        "name": "Sheep",
-        "slug": "sheep",
-        "iso": "ph",
-        "captain": false
-       },
-       {
-        "hist": "KiokoCheiko",
-        "name": "KiokoCheiko",
-        "slug": "kiokocheiko-amateur",
-        "iso": "ph",
-        "captain": false
-       },
-       {
-        "hist": "anju_o",
-        "name": "anju_o",
-        "slug": "anju-o-amateur",
-        "iso": "ph",
-        "captain": false
-       },
-       {
-        "hist": "Laurel",
-        "name": "Laurel",
-        "slug": "laurel-amateur",
-        "iso": "ph",
-        "captain": false
-       }
-      ]
      }
     ]
    },
@@ -190128,51 +188868,6 @@
         "captain": false
        }
       ]
-     },
-     {
-      "team": "Team Japan",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "Hanabusa Lisa",
-        "name": "Hanabusa Lisa",
-        "slug": "hanabusa-lisa-amateur",
-        "iso": "jp",
-        "captain": true
-       },
-       {
-        "hist": "Yumeno Akari",
-        "name": "Yumeno Akari",
-        "slug": "yumeno-akari-amateur",
-        "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "FumishiroYummy",
-        "name": "FumishiroYummy",
-        "slug": "fumishiroyummy-amateur",
-        "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "Yakumo Beni",
-        "name": "Yakumo Beni",
-        "slug": "yakumo-beni-amateur",
-        "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "Amayui Moka",
-        "name": "Amayui Moka",
-        "slug": "amayui-moka-amateur",
-        "iso": "jp",
-        "captain": false
-       }
-      ]
      }
     ]
    },
@@ -190816,51 +189511,6 @@
      },
      {
       "team": "JP Squad 1",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "Hanabusa Lisa",
-        "name": "Hanabusa Lisa",
-        "slug": "hanabusa-lisa-amateur",
-        "iso": "jp",
-        "captain": true
-       },
-       {
-        "hist": "Yumeno Akari",
-        "name": "Yumeno Akari",
-        "slug": "yumeno-akari-amateur",
-        "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "FumishiroYummy",
-        "name": "FumishiroYummy",
-        "slug": "fumishiroyummy-amateur",
-        "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "Yakumo Beni",
-        "name": "Yakumo Beni",
-        "slug": "yakumo-beni-amateur",
-        "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "Amayui Moka",
-        "name": "Amayui Moka",
-        "slug": "amayui-moka-amateur",
-        "iso": "jp",
-        "captain": false
-       }
-      ]
-     },
-     {
-      "team": "Team Japan",
       "teamSlug": null,
       "isPro": false,
       "years": [
@@ -200446,51 +199096,6 @@
         "captain": false
        }
       ]
-     },
-     {
-      "team": "Team Philippines",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "Vyphogrid",
-        "name": "Vyphogrid",
-        "slug": "vyphogrid-amateur",
-        "iso": "ph",
-        "captain": true
-       },
-       {
-        "hist": "Sheep",
-        "name": "Sheep",
-        "slug": "sheep",
-        "iso": "ph",
-        "captain": false
-       },
-       {
-        "hist": "KiokoCheiko",
-        "name": "KiokoCheiko",
-        "slug": "kiokocheiko-amateur",
-        "iso": "ph",
-        "captain": false
-       },
-       {
-        "hist": "anju_o",
-        "name": "anju_o",
-        "slug": "anju-o-amateur",
-        "iso": "ph",
-        "captain": false
-       },
-       {
-        "hist": "Laurel",
-        "name": "Laurel",
-        "slug": "laurel-amateur",
-        "iso": "ph",
-        "captain": false
-       }
-      ]
      }
     ]
    },
@@ -202984,51 +201589,6 @@
         "captain": false
        }
       ]
-     },
-     {
-      "team": "Team USA",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "cwstalVT",
-        "name": "cwstalVT",
-        "slug": "cwstalvt-amateur",
-        "iso": "us",
-        "captain": true
-       },
-       {
-        "hist": "moricorovt",
-        "name": "moricorovt",
-        "slug": "moricorovt-amateur",
-        "iso": "us",
-        "captain": false
-       },
-       {
-        "hist": "pastellows",
-        "name": "pastellows",
-        "slug": "pastellows-amateur",
-        "iso": "us",
-        "captain": false
-       },
-       {
-        "hist": "TokieShepherdVT",
-        "name": "TokieShepherdVT",
-        "slug": "tokieshepherdvt",
-        "iso": "us",
-        "captain": false
-       },
-       {
-        "hist": "yukihimeowo",
-        "name": "yukihimeowo",
-        "slug": "yukihimeowo-amateur",
-        "iso": "us",
-        "captain": false
-       }
-      ]
      }
     ]
    },
@@ -203472,51 +202032,6 @@
         "captain": false
        }
       ]
-     },
-     {
-      "team": "Team USA",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "cwstalVT",
-        "name": "cwstalVT",
-        "slug": "cwstalvt-amateur",
-        "iso": "us",
-        "captain": true
-       },
-       {
-        "hist": "moricorovt",
-        "name": "moricorovt",
-        "slug": "moricorovt-amateur",
-        "iso": "us",
-        "captain": false
-       },
-       {
-        "hist": "pastellows",
-        "name": "pastellows",
-        "slug": "pastellows-amateur",
-        "iso": "us",
-        "captain": false
-       },
-       {
-        "hist": "TokieShepherdVT",
-        "name": "TokieShepherdVT",
-        "slug": "tokieshepherdvt",
-        "iso": "us",
-        "captain": false
-       },
-       {
-        "hist": "yukihimeowo",
-        "name": "yukihimeowo",
-        "slug": "yukihimeowo-amateur",
-        "iso": "us",
-        "captain": false
-       }
-      ]
      }
     ]
    },
@@ -203795,51 +202310,6 @@
      },
      {
       "team": "AU Squad 1",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "gigichiii_",
-        "name": "gigichiii_",
-        "slug": "gigichiii",
-        "iso": "au",
-        "captain": true
-       },
-       {
-        "hist": "_froggiee",
-        "name": "_froggiee",
-        "slug": "froggiee-amateur",
-        "iso": "au",
-        "captain": false
-       },
-       {
-        "hist": "MKakili",
-        "name": "MKakili",
-        "slug": "mkakili-amateur",
-        "iso": "au",
-        "captain": false
-       },
-       {
-        "hist": "Yaekia",
-        "name": "Yaekia",
-        "slug": "yaekia-amateur",
-        "iso": "au",
-        "captain": false
-       },
-       {
-        "hist": "cassiopeiarawr",
-        "name": "cassiopeiarawr",
-        "slug": "cassiopeiarawr",
-        "iso": "au",
-        "captain": false
-       }
-      ]
-     },
-     {
-      "team": "Team Australia",
       "teamSlug": null,
       "isPro": false,
       "years": [
@@ -207213,51 +205683,6 @@
      },
      {
       "team": "PH Squad 1",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "Vyphogrid",
-        "name": "Vyphogrid",
-        "slug": "vyphogrid-amateur",
-        "iso": "ph",
-        "captain": true
-       },
-       {
-        "hist": "Sheep",
-        "name": "Sheep",
-        "slug": "sheep",
-        "iso": "ph",
-        "captain": false
-       },
-       {
-        "hist": "KiokoCheiko",
-        "name": "KiokoCheiko",
-        "slug": "kiokocheiko-amateur",
-        "iso": "ph",
-        "captain": false
-       },
-       {
-        "hist": "anju_o",
-        "name": "anju_o",
-        "slug": "anju-o-amateur",
-        "iso": "ph",
-        "captain": false
-       },
-       {
-        "hist": "Laurel",
-        "name": "Laurel",
-        "slug": "laurel-amateur",
-        "iso": "ph",
-        "captain": false
-       }
-      ]
-     },
-     {
-      "team": "Team Philippines",
       "teamSlug": null,
       "isPro": false,
       "years": [
@@ -217717,51 +216142,6 @@
         "captain": false
        }
       ]
-     },
-     {
-      "team": "Team Japan",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "Hanabusa Lisa",
-        "name": "Hanabusa Lisa",
-        "slug": "hanabusa-lisa-amateur",
-        "iso": "jp",
-        "captain": true
-       },
-       {
-        "hist": "Yumeno Akari",
-        "name": "Yumeno Akari",
-        "slug": "yumeno-akari-amateur",
-        "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "FumishiroYummy",
-        "name": "FumishiroYummy",
-        "slug": "fumishiroyummy-amateur",
-        "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "Yakumo Beni",
-        "name": "Yakumo Beni",
-        "slug": "yakumo-beni-amateur",
-        "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "Amayui Moka",
-        "name": "Amayui Moka",
-        "slug": "amayui-moka-amateur",
-        "iso": "jp",
-        "captain": false
-       }
-      ]
      }
     ]
    },
@@ -220687,51 +219067,6 @@
         "captain": false
        }
       ]
-     },
-     {
-      "team": "Team Japan",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "Hanabusa Lisa",
-        "name": "Hanabusa Lisa",
-        "slug": "hanabusa-lisa-amateur",
-        "iso": "jp",
-        "captain": true
-       },
-       {
-        "hist": "Yumeno Akari",
-        "name": "Yumeno Akari",
-        "slug": "yumeno-akari-amateur",
-        "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "FumishiroYummy",
-        "name": "FumishiroYummy",
-        "slug": "fumishiroyummy-amateur",
-        "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "Yakumo Beni",
-        "name": "Yakumo Beni",
-        "slug": "yakumo-beni-amateur",
-        "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "Amayui Moka",
-        "name": "Amayui Moka",
-        "slug": "amayui-moka-amateur",
-        "iso": "jp",
-        "captain": false
-       }
-      ]
      }
     ]
    },
@@ -223470,51 +221805,6 @@
         "captain": false
        }
       ]
-     },
-     {
-      "team": "Team USA",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "cwstalVT",
-        "name": "cwstalVT",
-        "slug": "cwstalvt-amateur",
-        "iso": "us",
-        "captain": true
-       },
-       {
-        "hist": "moricorovt",
-        "name": "moricorovt",
-        "slug": "moricorovt-amateur",
-        "iso": "us",
-        "captain": false
-       },
-       {
-        "hist": "pastellows",
-        "name": "pastellows",
-        "slug": "pastellows-amateur",
-        "iso": "us",
-        "captain": false
-       },
-       {
-        "hist": "TokieShepherdVT",
-        "name": "TokieShepherdVT",
-        "slug": "tokieshepherdvt",
-        "iso": "us",
-        "captain": false
-       },
-       {
-        "hist": "yukihimeowo",
-        "name": "yukihimeowo",
-        "slug": "yukihimeowo-amateur",
-        "iso": "us",
-        "captain": false
-       }
-      ]
      }
     ]
    },
@@ -224113,51 +222403,6 @@
      },
      {
       "team": "MY Squad 1",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "Sadgeboi",
-        "name": "Sadgeboi",
-        "slug": "sadgeboi-amateur",
-        "iso": "my",
-        "captain": true
-       },
-       {
-        "hist": "Scorpium",
-        "name": "Scorpium",
-        "slug": "scorpium",
-        "iso": "my",
-        "captain": false
-       },
-       {
-        "hist": "Karasu",
-        "name": "Karasu",
-        "slug": "karasu-amateur",
-        "iso": "my",
-        "captain": false
-       },
-       {
-        "hist": "Ice",
-        "name": "Ice",
-        "slug": "ice",
-        "iso": "my",
-        "captain": false
-       },
-       {
-        "hist": "Yarimell",
-        "name": "Yarimell",
-        "slug": "yarimell-amateur",
-        "iso": "my",
-        "captain": false
-       }
-      ]
-     },
-     {
-      "team": "Team Malaysia",
       "teamSlug": null,
       "isPro": false,
       "years": [
@@ -228752,51 +226997,6 @@
      },
      {
       "team": "JP Squad 1",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "Hanabusa Lisa",
-        "name": "Hanabusa Lisa",
-        "slug": "hanabusa-lisa-amateur",
-        "iso": "jp",
-        "captain": true
-       },
-       {
-        "hist": "Yumeno Akari",
-        "name": "Yumeno Akari",
-        "slug": "yumeno-akari-amateur",
-        "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "FumishiroYummy",
-        "name": "FumishiroYummy",
-        "slug": "fumishiroyummy-amateur",
-        "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "Yakumo Beni",
-        "name": "Yakumo Beni",
-        "slug": "yakumo-beni-amateur",
-        "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "Amayui Moka",
-        "name": "Amayui Moka",
-        "slug": "amayui-moka-amateur",
-        "iso": "jp",
-        "captain": false
-       }
-      ]
-     },
-     {
-      "team": "Team Japan",
       "teamSlug": null,
       "isPro": false,
       "years": [
@@ -238182,51 +236382,6 @@
         "captain": false
        }
       ]
-     },
-     {
-      "team": "Team Australia",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "gigichiii_",
-        "name": "gigichiii_",
-        "slug": "gigichiii",
-        "iso": "au",
-        "captain": true
-       },
-       {
-        "hist": "_froggiee",
-        "name": "_froggiee",
-        "slug": "froggiee-amateur",
-        "iso": "au",
-        "captain": false
-       },
-       {
-        "hist": "MKakili",
-        "name": "MKakili",
-        "slug": "mkakili-amateur",
-        "iso": "au",
-        "captain": false
-       },
-       {
-        "hist": "Yaekia",
-        "name": "Yaekia",
-        "slug": "yaekia-amateur",
-        "iso": "au",
-        "captain": false
-       },
-       {
-        "hist": "cassiopeiarawr",
-        "name": "cassiopeiarawr",
-        "slug": "cassiopeiarawr",
-        "iso": "au",
-        "captain": false
-       }
-      ]
      }
     ]
    },
@@ -244955,248 +243110,32 @@
     {
      "team": "Team Singapore",
      "teamSlug": null,
-     "players": [
-      {
-       "hist": "Laburi",
-       "name": "Laburi",
-       "slug": "laburi",
-       "iso": "sg",
-       "captain": true
-      },
-      {
-       "hist": "y.uuno",
-       "name": "y.uuno",
-       "slug": "y-uuno",
-       "iso": "sg",
-       "captain": false
-      },
-      {
-       "hist": "rebebx",
-       "name": "rebebx",
-       "slug": "rebebx-amateur",
-       "iso": "sg",
-       "captain": false
-      },
-      {
-       "hist": "tapiyokaaa",
-       "name": "tapiyokaaa",
-       "slug": "tapiyokaaa",
-       "iso": "sg",
-       "captain": false
-      },
-      {
-       "hist": "kuro_mi",
-       "name": "kuro_mi",
-       "slug": "kuro-mi",
-       "iso": "sg",
-       "captain": false
-      }
-     ]
+     "players": []
     },
     {
      "team": "Team Malaysia",
      "teamSlug": null,
-     "players": [
-      {
-       "hist": "Sadgeboi",
-       "name": "Sadgeboi",
-       "slug": "sadgeboi-amateur",
-       "iso": "my",
-       "captain": true
-      },
-      {
-       "hist": "Scorpium",
-       "name": "Scorpium",
-       "slug": "scorpium",
-       "iso": "my",
-       "captain": false
-      },
-      {
-       "hist": "Karasu",
-       "name": "Karasu",
-       "slug": "karasu-amateur",
-       "iso": "my",
-       "captain": false
-      },
-      {
-       "hist": "Ice",
-       "name": "Ice",
-       "slug": "ice",
-       "iso": "my",
-       "captain": false
-      },
-      {
-       "hist": "Yarimell",
-       "name": "Yarimell",
-       "slug": "yarimell-amateur",
-       "iso": "my",
-       "captain": false
-      }
-     ]
+     "players": []
     },
     {
      "team": "Team Philippines",
      "teamSlug": null,
-     "players": [
-      {
-       "hist": "Vyphogrid",
-       "name": "Vyphogrid",
-       "slug": "vyphogrid-amateur",
-       "iso": "ph",
-       "captain": true
-      },
-      {
-       "hist": "Sheep",
-       "name": "Sheep",
-       "slug": "sheep",
-       "iso": "ph",
-       "captain": false
-      },
-      {
-       "hist": "KiokoCheiko",
-       "name": "KiokoCheiko",
-       "slug": "kiokocheiko-amateur",
-       "iso": "ph",
-       "captain": false
-      },
-      {
-       "hist": "anju_o",
-       "name": "anju_o",
-       "slug": "anju-o-amateur",
-       "iso": "ph",
-       "captain": false
-      },
-      {
-       "hist": "Laurel",
-       "name": "Laurel",
-       "slug": "laurel-amateur",
-       "iso": "ph",
-       "captain": false
-      }
-     ]
+     "players": []
     },
     {
      "team": "Team Australia",
      "teamSlug": null,
-     "players": [
-      {
-       "hist": "gigichiii_",
-       "name": "gigichiii_",
-       "slug": "gigichiii",
-       "iso": "au",
-       "captain": true
-      },
-      {
-       "hist": "_froggiee",
-       "name": "_froggiee",
-       "slug": "froggiee-amateur",
-       "iso": "au",
-       "captain": false
-      },
-      {
-       "hist": "MKakili",
-       "name": "MKakili",
-       "slug": "mkakili-amateur",
-       "iso": "au",
-       "captain": false
-      },
-      {
-       "hist": "Yaekia",
-       "name": "Yaekia",
-       "slug": "yaekia-amateur",
-       "iso": "au",
-       "captain": false
-      },
-      {
-       "hist": "cassiopeiarawr",
-       "name": "cassiopeiarawr",
-       "slug": "cassiopeiarawr",
-       "iso": "au",
-       "captain": false
-      }
-     ]
+     "players": []
     },
     {
      "team": "Team USA",
      "teamSlug": null,
-     "players": [
-      {
-       "hist": "cwstalVT",
-       "name": "cwstalVT",
-       "slug": "cwstalvt-amateur",
-       "iso": "us",
-       "captain": true
-      },
-      {
-       "hist": "moricorovt",
-       "name": "moricorovt",
-       "slug": "moricorovt-amateur",
-       "iso": "us",
-       "captain": false
-      },
-      {
-       "hist": "pastellows",
-       "name": "pastellows",
-       "slug": "pastellows-amateur",
-       "iso": "us",
-       "captain": false
-      },
-      {
-       "hist": "TokieShepherdVT",
-       "name": "TokieShepherdVT",
-       "slug": "tokieshepherdvt",
-       "iso": "us",
-       "captain": false
-      },
-      {
-       "hist": "yukihimeowo",
-       "name": "yukihimeowo",
-       "slug": "yukihimeowo-amateur",
-       "iso": "us",
-       "captain": false
-      }
-     ]
+     "players": []
     },
     {
      "team": "Team Japan",
      "teamSlug": null,
-     "players": [
-      {
-       "hist": "Hanabusa Lisa",
-       "name": "Hanabusa Lisa",
-       "slug": "hanabusa-lisa-amateur",
-       "iso": "jp",
-       "captain": true
-      },
-      {
-       "hist": "Yumeno Akari",
-       "name": "Yumeno Akari",
-       "slug": "yumeno-akari-amateur",
-       "iso": "jp",
-       "captain": false
-      },
-      {
-       "hist": "FumishiroYummy",
-       "name": "FumishiroYummy",
-       "slug": "fumishiroyummy-amateur",
-       "iso": "jp",
-       "captain": false
-      },
-      {
-       "hist": "Yakumo Beni",
-       "name": "Yakumo Beni",
-       "slug": "yakumo-beni-amateur",
-       "iso": "jp",
-       "captain": false
-      },
-      {
-       "hist": "Amayui Moka",
-       "name": "Amayui Moka",
-       "slug": "amayui-moka-amateur",
-       "iso": "jp",
-       "captain": false
-      }
-     ]
+     "players": []
     },
     {
      "team": "Team Land of Make Believe",
@@ -350515,78 +348454,6 @@
  "transfers": [
   {
    "type": "transfer",
-   "player": "y.uuno",
-   "playerSlug": "y-uuno",
-   "iso": "sg",
-   "fromTeam": "SG Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Singapore",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "rebebx",
-   "playerSlug": "rebebx-amateur",
-   "iso": "sg",
-   "fromTeam": "SG Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Singapore",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "Ice",
-   "playerSlug": "ice",
-   "iso": "my",
-   "fromTeam": "MY Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Malaysia",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "Laburi",
-   "playerSlug": "laburi",
-   "iso": "sg",
-   "fromTeam": "SG Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Singapore",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "Scorpium",
-   "playerSlug": "scorpium",
-   "iso": "my",
-   "fromTeam": "MY Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Malaysia",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "kuro_mi",
-   "playerSlug": "kuro-mi",
-   "iso": "sg",
-   "fromTeam": "SG Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Singapore",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
    "player": "l1feless",
    "playerSlug": "l1feless",
    "iso": "id",
@@ -350599,84 +348466,12 @@
   },
   {
    "type": "transfer",
-   "player": "Sheep",
-   "playerSlug": "sheep",
-   "iso": "ph",
-   "fromTeam": "PH Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Philippines",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "Laurel",
-   "playerSlug": "laurel-amateur",
-   "iso": "ph",
-   "fromTeam": "PH Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Philippines",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "KiokoCheiko",
-   "playerSlug": "kiokocheiko-amateur",
-   "iso": "ph",
-   "fromTeam": "PH Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Philippines",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
    "player": "AltheaVT",
    "playerSlug": "altheavt",
    "iso": "tw",
    "fromTeam": "degree",
    "fromSlug": "degree",
    "toTeam": "Team Taiwan",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "gigichiii_",
-   "playerSlug": "gigichiii",
-   "iso": "au",
-   "fromTeam": "AU Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Australia",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "Vyphogrid",
-   "playerSlug": "vyphogrid-amateur",
-   "iso": "ph",
-   "fromTeam": "PH Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Philippines",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "Sadgeboi",
-   "playerSlug": "sadgeboi-amateur",
-   "iso": "my",
-   "fromTeam": "MY Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Malaysia",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-27"
@@ -350701,18 +348496,6 @@
    "fromTeam": "Round Loss Bonus",
    "fromSlug": "round-loss-bonus",
    "toTeam": "Team Taiwan",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "Yarimell",
-   "playerSlug": "yarimell-amateur",
-   "iso": "my",
-   "fromTeam": "MY Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Malaysia",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-27"
@@ -350755,54 +348538,6 @@
   },
   {
    "type": "transfer",
-   "player": "tapiyokaaa",
-   "playerSlug": "tapiyokaaa",
-   "iso": "sg",
-   "fromTeam": "SG Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Singapore",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "anju_o",
-   "playerSlug": "anju-o-amateur",
-   "iso": "ph",
-   "fromTeam": "PH Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Philippines",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "pastellows",
-   "playerSlug": "pastellows-amateur",
-   "iso": "us",
-   "fromTeam": "US Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team USA",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "Yaekia",
-   "playerSlug": "yaekia-amateur",
-   "iso": "au",
-   "fromTeam": "AU Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Australia",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
    "player": "LeilaMayadah",
    "playerSlug": "leilamayadah-amateur",
    "iso": "ca",
@@ -350821,18 +348556,6 @@
    "fromTeam": "Albion Rising",
    "fromSlug": null,
    "toTeam": "Team United Kingdom",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "FumishiroYummy",
-   "playerSlug": "fumishiroyummy-amateur",
-   "iso": "jp",
-   "fromTeam": "JP Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Japan",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-27"
@@ -350935,48 +348658,12 @@
   },
   {
    "type": "transfer",
-   "player": "Karasu",
-   "playerSlug": "karasu-amateur",
-   "iso": "my",
-   "fromTeam": "MY Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Malaysia",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
    "player": "Aleaka",
    "playerSlug": "aleaka-amateur",
    "iso": "gb",
    "fromTeam": "Albion Rising",
    "fromSlug": null,
    "toTeam": "Team United Kingdom",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "Hanabusa Lisa",
-   "playerSlug": "hanabusa-lisa-amateur",
-   "iso": "jp",
-   "fromTeam": "JP Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Japan",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "Yumeno Akari",
-   "playerSlug": "yumeno-akari-amateur",
-   "iso": "jp",
-   "fromTeam": "JP Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Japan",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-27"
@@ -350995,42 +348682,6 @@
   },
   {
    "type": "transfer",
-   "player": "MKakili",
-   "playerSlug": "mkakili-amateur",
-   "iso": "au",
-   "fromTeam": "AU Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Australia",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "Yakumo Beni",
-   "playerSlug": "yakumo-beni-amateur",
-   "iso": "jp",
-   "fromTeam": "JP Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Japan",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "moricorovt",
-   "playerSlug": "moricorovt-amateur",
-   "iso": "us",
-   "fromTeam": "US Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team USA",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
    "player": "Pattsuu",
    "playerSlug": "pattsuu-amateur",
    "iso": "ca",
@@ -351043,84 +348694,12 @@
   },
   {
    "type": "transfer",
-   "player": "cwstalVT",
-   "playerSlug": "cwstalvt-amateur",
-   "iso": "us",
-   "fromTeam": "US Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team USA",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "Amayui Moka",
-   "playerSlug": "amayui-moka-amateur",
-   "iso": "jp",
-   "fromTeam": "JP Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Japan",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
    "player": "Dazeido",
    "playerSlug": "dazeido-amateur",
    "iso": "id",
    "fromTeam": "Crimson Meridian",
    "fromSlug": null,
    "toTeam": "Team Indonesia",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "cassiopeiarawr",
-   "playerSlug": "cassiopeiarawr",
-   "iso": "au",
-   "fromTeam": "AU Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Australia",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "_froggiee",
-   "playerSlug": "froggiee-amateur",
-   "iso": "au",
-   "fromTeam": "AU Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team Australia",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "TokieShepherdVT",
-   "playerSlug": "tokieshepherdvt",
-   "iso": "us",
-   "fromTeam": "US Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team USA",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "yukihimeowo",
-   "playerSlug": "yukihimeowo-amateur",
-   "iso": "us",
-   "fromTeam": "US Squad 1",
-   "fromSlug": null,
-   "toTeam": "Team USA",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-27"

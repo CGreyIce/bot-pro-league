@@ -68,6 +68,8 @@ function rosterPopHTML(row){
   const t = row.teamSlug ? teamBySlug(row.teamSlug) : null;
   const teamName = row.teamSlug ? `<a href="#/team/${row.teamSlug}">${esc(row.team)}</a>` : `<strong>${esc(row.team)}</strong>`;
   const head = `<div class="rp-head">${t&&t.logo?`<img src="${esc(t.logo)}" alt="">`:''}${teamName}<span class="rp-close" title="Close">×</span></div>`;
+  if(!(row.players||[]).length)
+    return head + `<div class="rp-row rp-tbc">TBC — qualifier not yet decided</div>`;
   const rows = (row.players||[]).map(p=>{
     const pro = p.slug && proSlugs().has(p.slug);  // teammate who is a current pro player
     const nm = p.slug ? `<a href="#/player/${p.slug}" class="${pro?'rp-pro':''}">${esc(p.name)}</a>` : `<span>${esc(p.name)}</span>`;
