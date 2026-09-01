@@ -1664,8 +1664,10 @@ async function renderAdmin(){
       <p class="muted" style="font-size:12px;margin:-4px 0 14px">A real CS-style veto driven by each team's per-map win rate. Teams ban the opponent's strong maps (but never their own best), pick their best, and leave a decider. Split is excluded (custom 3rd-place map only).</p>
       <div class="veto-controls">
         ${(()=>{const mk=list=>list.slice().sort((a,b)=>a.name.localeCompare(b.name)).map(t=>`<option value="${t.slug}">${esc(t.name)}</option>`).join("");
-          const adhoc=DATA.adhocMapTeams||[];
-          const opts=`<optgroup label="Pro Teams">${mk(DATA.teams)}</optgroup>`+(adhoc.length?`<optgroup label="Tournament Teams">${mk(adhoc)}</optgroup>`:'');
+          const adhoc=DATA.adhocMapTeams||[], nations=DATA.nationMapTeams||[];
+          const opts=`<optgroup label="Pro Teams">${mk(DATA.teams)}</optgroup>`
+            +(nations.length?`<optgroup label="Nation Teams">${mk(nations)}</optgroup>`:'')
+            +(adhoc.length?`<optgroup label="Tournament Teams">${mk(adhoc)}</optgroup>`:'');
           return `<select id="veto-a" class="adm-in">${opts}</select>
           <span class="veto-vs">vs</span>
           <select id="veto-b" class="adm-in">${opts}</select>
@@ -1727,7 +1729,7 @@ function vetoSide(chooser, map, A, B){
 }
 function setupMapVeto(){
   const go=$("#veto-go"); if(!go) return;
-  const teams=DATA.teams.concat(DATA.adhocMapTeams||[]); const bySlug={}; teams.forEach(t=>bySlug[t.slug]=t);
+  const teams=DATA.teams.concat(DATA.adhocMapTeams||[]).concat(DATA.nationMapTeams||[]); const bySlug={}; teams.forEach(t=>bySlug[t.slug]=t);
   // default B to a different team than A
   const b=$("#veto-b"); if(b && b.options.length>1) b.selectedIndex=1;
   go.onclick=()=>{

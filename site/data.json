@@ -380906,5 +380906,391 @@
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
   }
+ ],
+ "nationMapTeams": [
+  {
+   "name": "Team Land of Make Believe",
+   "slug": "nation-teamlandofmakebelieve",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.641,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.326,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.631,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.69,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.518,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.318,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.503,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Dust2"
+   ],
+   "nation": true
+  },
+  {
+   "name": "Team Taiwan",
+   "slug": "nation-teamtaiwan",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.373,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.458,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.449,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.458,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.509,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.315,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.344,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Anubis"
+   ],
+   "nation": true
+  },
+  {
+   "name": "Team Canada",
+   "slug": "nation-teamcanada",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.501,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.291,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.604,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.516,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.502,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.278,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.47,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Inferno",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Dust2"
+   ],
+   "nation": true
+  },
+  {
+   "name": "Team Netherlands",
+   "slug": "nation-teamnetherlands",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.315,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.556,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.388,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.463,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.442,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.679,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.271,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Dust2"
+   ],
+   "worstMaps": [
+    "Anubis",
+    "Mirage"
+   ],
+   "nation": true
+  },
+  {
+   "name": "Team United Kingdom",
+   "slug": "nation-teamunitedkingdom",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.395,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.362,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.399,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.535,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.337,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.393,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.322,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Anubis",
+    "Tuscan"
+   ],
+   "nation": true
+  },
+  {
+   "name": "Team Indonesia",
+   "slug": "nation-teamindonesia",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.293,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.511,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.296,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.464,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.586,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.607,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.382,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Inferno"
+   ],
+   "nation": true
+  }
  ]
 }
