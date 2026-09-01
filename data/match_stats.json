@@ -10942,5 +10942,302 @@
     }
    ]
   }
+ },
+ "nations-cup-qualifier-usa-2026": {
+  "1-2": {
+   "maps": [
+    {
+     "map": "Cache",
+     "scoreA": 11,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "US Squad 4",
+       "name": "FeatBri",
+       "k": 20,
+       "a": 2,
+       "d": 18,
+       "mvp": 2,
+       "score": 47
+      },
+      {
+       "team": "US Squad 4",
+       "name": "yunaeyo",
+       "k": 19,
+       "a": 2,
+       "d": 18,
+       "mvp": 4,
+       "score": 46
+      },
+      {
+       "team": "US Squad 4",
+       "name": "XueHuaVT",
+       "k": 17,
+       "a": 1,
+       "d": 18,
+       "mvp": 3,
+       "score": 40
+      },
+      {
+       "team": "US Squad 4",
+       "name": "ProPHOcy_",
+       "k": 10,
+       "a": 2,
+       "d": 17,
+       "mvp": 1,
+       "score": 31
+      },
+      {
+       "team": "US Squad 4",
+       "name": "itswinter__",
+       "k": 9,
+       "a": 2,
+       "d": 20,
+       "mvp": 1,
+       "score": 25
+      },
+      {
+       "team": "US Squad 5",
+       "name": "Bajiru_EN",
+       "k": 26,
+       "a": 0,
+       "d": 16,
+       "mvp": 4,
+       "score": 58
+      },
+      {
+       "team": "US Squad 5",
+       "name": "AuraSinVT",
+       "k": 20,
+       "a": 2,
+       "d": 12,
+       "mvp": 4,
+       "score": 56
+      },
+      {
+       "team": "US Squad 5",
+       "name": "YoJareddo",
+       "k": 18,
+       "a": 2,
+       "d": 18,
+       "mvp": 3,
+       "score": 39
+      },
+      {
+       "team": "US Squad 5",
+       "name": "yxie",
+       "k": 14,
+       "a": 1,
+       "d": 15,
+       "mvp": 1,
+       "score": 37
+      },
+      {
+       "team": "US Squad 5",
+       "name": "iceenblue",
+       "k": 13,
+       "a": 3,
+       "d": 14,
+       "mvp": 1,
+       "score": 36
+      }
+     ]
+    },
+    {
+     "map": "Mirage",
+     "scoreA": 13,
+     "scoreB": 9,
+     "players": [
+      {
+       "team": "US Squad 4",
+       "name": "FeatBri",
+       "k": 24,
+       "a": 1,
+       "d": 11,
+       "mvp": 4,
+       "score": 61
+      },
+      {
+       "team": "US Squad 4",
+       "name": "itswinter__",
+       "k": 23,
+       "a": 0,
+       "d": 12,
+       "mvp": 2,
+       "score": 56
+      },
+      {
+       "team": "US Squad 4",
+       "name": "yunaeyo",
+       "k": 14,
+       "a": 3,
+       "d": 12,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "US Squad 4",
+       "name": "XueHuaVT",
+       "k": 14,
+       "a": 3,
+       "d": 12,
+       "mvp": 3,
+       "score": 35
+      },
+      {
+       "team": "US Squad 4",
+       "name": "ProPHOcy_",
+       "k": 10,
+       "a": 2,
+       "d": 14,
+       "mvp": 2,
+       "score": 30
+      },
+      {
+       "team": "US Squad 5",
+       "name": "Bajiru_EN",
+       "k": 18,
+       "a": 0,
+       "d": 16,
+       "mvp": 2,
+       "score": 45
+      },
+      {
+       "team": "US Squad 5",
+       "name": "AuraSinVT",
+       "k": 19,
+       "a": 0,
+       "d": 17,
+       "mvp": 3,
+       "score": 42
+      },
+      {
+       "team": "US Squad 5",
+       "name": "yxie",
+       "k": 11,
+       "a": 3,
+       "d": 17,
+       "mvp": 3,
+       "score": 29
+      },
+      {
+       "team": "US Squad 5",
+       "name": "YoJareddo",
+       "k": 9,
+       "a": 1,
+       "d": 17,
+       "mvp": 0,
+       "score": 25
+      },
+      {
+       "team": "US Squad 5",
+       "name": "iceenblue",
+       "k": 4,
+       "a": 0,
+       "d": 18,
+       "mvp": 1,
+       "score": 10
+      }
+     ]
+    },
+    {
+     "map": "Inferno",
+     "scoreA": 13,
+     "scoreB": 10,
+     "players": [
+      {
+       "team": "US Squad 4",
+       "name": "yunaeyo",
+       "k": 21,
+       "a": 3,
+       "d": 16,
+       "mvp": 4,
+       "score": 57
+      },
+      {
+       "team": "US Squad 4",
+       "name": "itswinter__",
+       "k": 19,
+       "a": 4,
+       "d": 17,
+       "mvp": 3,
+       "score": 49
+      },
+      {
+       "team": "US Squad 4",
+       "name": "XueHuaVT",
+       "k": 18,
+       "a": 3,
+       "d": 15,
+       "mvp": 2,
+       "score": 38
+      },
+      {
+       "team": "US Squad 4",
+       "name": "FeatBri",
+       "k": 13,
+       "a": 2,
+       "d": 18,
+       "mvp": 3,
+       "score": 33
+      },
+      {
+       "team": "US Squad 4",
+       "name": "ProPHOcy_",
+       "k": 10,
+       "a": 4,
+       "d": 13,
+       "mvp": 1,
+       "score": 21
+      },
+      {
+       "team": "US Squad 5",
+       "name": "Bajiru_EN",
+       "k": 18,
+       "a": 2,
+       "d": 15,
+       "mvp": 4,
+       "score": 45
+      },
+      {
+       "team": "US Squad 5",
+       "name": "iceenblue",
+       "k": 14,
+       "a": 4,
+       "d": 17,
+       "mvp": 2,
+       "score": 37
+      },
+      {
+       "team": "US Squad 5",
+       "name": "YoJareddo",
+       "k": 12,
+       "a": 1,
+       "d": 18,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "US Squad 5",
+       "name": "yxie",
+       "k": 13,
+       "a": 3,
+       "d": 21,
+       "mvp": 1,
+       "score": 33
+      },
+      {
+       "team": "US Squad 5",
+       "name": "AuraSinVT",
+       "k": 7,
+       "a": 2,
+       "d": 18,
+       "mvp": 1,
+       "score": 17
+      }
+     ]
+    }
+   ]
+  }
  }
 }
