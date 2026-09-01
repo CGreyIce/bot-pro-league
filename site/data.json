@@ -42488,7 +42488,7 @@
          "hist": "drip",
          "name": "drip",
          "slug": "drip",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         }
        ]
@@ -42632,7 +42632,7 @@
          "hist": "drip",
          "name": "drip",
          "slug": "drip",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         }
        ]
@@ -42879,7 +42879,7 @@
          "hist": "drip",
          "name": "drip",
          "slug": "drip",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         }
        ]
@@ -43075,7 +43075,7 @@
          "hist": "drip",
          "name": "drip",
          "slug": "drip",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         }
        ]
@@ -43104,8 +43104,8 @@
      "orig_level": "Level 4",
      "orig_rating": 1646.0,
      "slug": "drip",
-     "nat": "Singapore",
-     "iso": "sg",
+     "nat": "Malaysia",
+     "iso": "my",
      "rating": 0.968,
      "ratingPoints": 1023,
      "tier": "Silver",
@@ -43151,7 +43151,7 @@
          "hist": "drip",
          "name": "drip",
          "slug": "drip",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         },
         {
@@ -43221,7 +43221,7 @@
          "hist": "drip",
          "name": "drip",
          "slug": "drip",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         }
        ]
@@ -46697,7 +46697,7 @@
          "hist": "drip",
          "name": "drip",
          "slug": "drip",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         },
         {
@@ -58178,7 +58178,7 @@
          "hist": "Syrrith",
          "name": "Syrrith",
          "slug": "syrrith-amateur",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         },
         {
@@ -61917,7 +61917,7 @@
          "hist": "Syrrith",
          "name": "Syrrith",
          "slug": "syrrith-amateur",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         },
         {
@@ -61931,7 +61931,7 @@
          "hist": "AyanOWOT",
          "name": "AyanOwOT",
          "slug": "ayanowot-amateur",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         },
         {
@@ -62063,7 +62063,7 @@
          "hist": "Syrrith",
          "name": "Syrrith",
          "slug": "syrrith-amateur",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         },
         {
@@ -62077,7 +62077,7 @@
          "hist": "AyanOWOT",
          "name": "AyanOwOT",
          "slug": "ayanowot-amateur",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         },
         {
@@ -64158,7 +64158,7 @@
          "hist": "AyanOwOT",
          "name": "AyanOwOT",
          "slug": "ayanowot-amateur",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         },
         {
@@ -69808,7 +69808,7 @@
          "hist": "drip",
          "name": "drip",
          "slug": "drip",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         },
         {
@@ -72489,7 +72489,7 @@
      "orig_level": "Level 4",
      "orig_rating": 1970.0,
      "slug": "sheep",
-     "nat": "Phillipines",
+     "nat": "Philippines",
      "iso": "ph",
      "rating": 1.032,
      "ratingPoints": 1277,
@@ -73083,7 +73083,7 @@
          "hist": "drip",
          "name": "drip",
          "slug": "drip",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         },
         {
@@ -83210,7 +83210,7 @@
          "hist": "Eris Suzukami",
          "name": "Eris Suzukami",
          "slug": "eris-suzukami",
-         "iso": "jp",
+         "iso": "kr",
          "captain": false
         },
         {
@@ -83257,8 +83257,8 @@
      "orig_level": "Level 3",
      "orig_rating": 1258.0,
      "slug": "eris-suzukami",
-     "nat": "Japan",
-     "iso": "jp",
+     "nat": "Korea",
+     "iso": "kr",
      "rating": 0.988,
      "ratingPoints": 1102,
      "tier": "Gold",
@@ -83304,7 +83304,7 @@
          "hist": "Eris Suzukami",
          "name": "Eris Suzukami",
          "slug": "eris-suzukami",
-         "iso": "jp",
+         "iso": "kr",
          "captain": false
         },
         {
@@ -83399,7 +83399,7 @@
          "hist": "Eris Suzukami",
          "name": "Eris Suzukami",
          "slug": "eris-suzukami",
-         "iso": "jp",
+         "iso": "kr",
          "captain": false
         },
         {
@@ -83494,7 +83494,7 @@
          "hist": "Eris Suzukami",
          "name": "Eris Suzukami",
          "slug": "eris-suzukami",
-         "iso": "jp",
+         "iso": "kr",
          "captain": false
         },
         {
@@ -83589,7 +83589,7 @@
          "hist": "Eris Suzukami",
          "name": "Eris Suzukami",
          "slug": "eris-suzukami",
-         "iso": "jp",
+         "iso": "kr",
          "captain": false
         },
         {
@@ -84559,7 +84559,7 @@
          "hist": "AyanOwOT",
          "name": "AyanOwOT",
          "slug": "ayanowot-amateur",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         },
         {
@@ -84732,7 +84732,7 @@
          "hist": "AyanOwOT",
          "name": "AyanOwOT",
          "slug": "ayanowot-amateur",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         },
         {
@@ -85277,7 +85277,7 @@
          "hist": "AyanOwOT",
          "name": "AyanOwOT",
          "slug": "ayanowot-amateur",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         },
         {
@@ -85322,7 +85322,7 @@
          "hist": "AyanOwOT",
          "name": "AyanOwOT",
          "slug": "ayanowot-amateur",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         },
         {
@@ -85419,7 +85419,7 @@
          "hist": "AyanOwOT",
          "name": "AyanOwOT",
          "slug": "ayanowot-amateur",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         },
         {
@@ -85784,8 +85784,8 @@
      "orig_level": "Level 3",
      "orig_rating": 1092.0,
      "slug": "ayanowot-amateur",
-     "nat": "Singapore",
-     "iso": "sg",
+     "nat": "Malaysia",
+     "iso": "my",
      "rating": 0.952,
      "ratingPoints": 962,
      "tier": "Silver",
@@ -85833,7 +85833,7 @@
          "hist": "AyanOwOT",
          "name": "AyanOwOT",
          "slug": "ayanowot-amateur",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         },
         {
@@ -85885,7 +85885,7 @@
          "hist": "AyanOwOT",
          "name": "AyanOwOT",
          "slug": "ayanowot-amateur",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         },
         {
@@ -85916,7 +85916,7 @@
          "hist": "AyanOwOT",
          "name": "AyanOwOT",
          "slug": "ayanowot-amateur",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         },
         {
@@ -85982,7 +85982,7 @@
          "hist": "AyanOwOT",
          "name": "AyanOwOT",
          "slug": "ayanowot-amateur",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         },
         {
@@ -86013,7 +86013,7 @@
          "hist": "AyanOwOT",
          "name": "AyanOwOT",
          "slug": "ayanowot-amateur",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         },
         {
@@ -86090,7 +86090,7 @@
          "hist": "AyanOwOT",
          "name": "AyanOwOT",
          "slug": "ayanowot-amateur",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         },
         {
@@ -86343,7 +86343,7 @@
     {
      "slug": "syrrith-amateur",
      "name": "Syrrith",
-     "iso": "sg",
+     "iso": "my",
      "years": [
       "2024"
      ],
@@ -88415,7 +88415,7 @@
          "hist": "AyanOwOT",
          "name": "AyanOwOT",
          "slug": "ayanowot-amateur",
-         "iso": "sg",
+         "iso": "my",
          "captain": false
         },
         {
@@ -93055,7 +93055,7 @@
     "orig_level": "Level 4",
     "orig_rating": 1970.0,
     "slug": "sheep",
-    "nat": "Phillipines",
+    "nat": "Philippines",
     "iso": "ph",
     "rating": 1.032,
     "ratingPoints": 1277,
@@ -94341,7 +94341,7 @@
         "hist": "drip",
         "name": "drip",
         "slug": "drip",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -94920,7 +94920,7 @@
         "hist": "drip",
         "name": "drip",
         "slug": "drip",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        }
       ]
@@ -95154,7 +95154,7 @@
         "hist": "drip",
         "name": "drip",
         "slug": "drip",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        }
       ]
@@ -95308,7 +95308,7 @@
         "hist": "drip",
         "name": "drip",
         "slug": "drip",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        }
       ]
@@ -95507,7 +95507,7 @@
         "hist": "drip",
         "name": "drip",
         "slug": "drip",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        }
       ]
@@ -95536,8 +95536,8 @@
     "orig_level": "Level 4",
     "orig_rating": 1646.0,
     "slug": "drip",
-    "nat": "Singapore",
-    "iso": "sg",
+    "nat": "Malaysia",
+    "iso": "my",
     "rating": 0.968,
     "ratingPoints": 1023,
     "tier": "Silver",
@@ -95583,7 +95583,7 @@
         "hist": "drip",
         "name": "drip",
         "slug": "drip",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -95653,7 +95653,7 @@
         "hist": "drip",
         "name": "drip",
         "slug": "drip",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        }
       ]
@@ -102530,7 +102530,7 @@
         "hist": "Eris Suzukami",
         "name": "Eris Suzukami",
         "slug": "eris-suzukami",
-        "iso": "jp",
+        "iso": "kr",
         "captain": false
        },
        {
@@ -102625,7 +102625,7 @@
         "hist": "Eris Suzukami",
         "name": "Eris Suzukami",
         "slug": "eris-suzukami",
-        "iso": "jp",
+        "iso": "kr",
         "captain": false
        },
        {
@@ -102720,7 +102720,7 @@
         "hist": "Eris Suzukami",
         "name": "Eris Suzukami",
         "slug": "eris-suzukami",
-        "iso": "jp",
+        "iso": "kr",
         "captain": false
        },
        {
@@ -102815,7 +102815,7 @@
         "hist": "Eris Suzukami",
         "name": "Eris Suzukami",
         "slug": "eris-suzukami",
-        "iso": "jp",
+        "iso": "kr",
         "captain": false
        },
        {
@@ -102862,8 +102862,8 @@
     "orig_level": "Level 3",
     "orig_rating": 1258.0,
     "slug": "eris-suzukami",
-    "nat": "Japan",
-    "iso": "jp",
+    "nat": "Korea",
+    "iso": "kr",
     "rating": 0.988,
     "ratingPoints": 1102,
     "tier": "Gold",
@@ -102909,7 +102909,7 @@
         "hist": "Eris Suzukami",
         "name": "Eris Suzukami",
         "slug": "eris-suzukami",
-        "iso": "jp",
+        "iso": "kr",
         "captain": false
        },
        {
@@ -117589,7 +117589,7 @@
         "hist": "drip",
         "name": "drip",
         "slug": "drip",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -120223,7 +120223,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -126777,7 +126777,7 @@
         "hist": "drip",
         "name": "drip",
         "slug": "drip",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -136555,7 +136555,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -136569,7 +136569,7 @@
         "hist": "AyanOWOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -136701,7 +136701,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -136715,7 +136715,7 @@
         "hist": "AyanOWOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -143491,7 +143491,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -153393,8 +153393,8 @@
     "orig_rating": 0,
     "slug": "syrrith",
     "shadowAmateur": true,
-    "nat": "Singapore",
-    "iso": "sg",
+    "nat": "Malaysia",
+    "iso": "my",
     "rating": 1.001,
     "ratingPoints": 1155,
     "tier": "Platinum",
@@ -157510,8 +157510,8 @@
     "orig_rating": 0,
     "slug": "ayanowot",
     "shadowAmateur": true,
-    "nat": "Singapore",
-    "iso": "sg",
+    "nat": "Malaysia",
+    "iso": "my",
     "rating": 0.991,
     "ratingPoints": 1114,
     "tier": "Gold",
@@ -158664,7 +158664,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -161172,7 +161172,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -161961,7 +161961,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -162333,7 +162333,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -163981,7 +163981,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -165318,7 +165318,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -165349,7 +165349,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -171106,7 +171106,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -172969,7 +172969,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -173835,7 +173835,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -173849,7 +173849,7 @@
         "hist": "AyanOWOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -174349,7 +174349,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -176338,7 +176338,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -179573,7 +179573,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -180483,7 +180483,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -184032,7 +184032,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -185452,8 +185452,8 @@
     "orig_level": "Level 3",
     "orig_rating": 1347.0,
     "slug": "syrrith-amateur",
-    "nat": "Singapore",
-    "iso": "sg",
+    "nat": "Malaysia",
+    "iso": "my",
     "rating": 1.045,
     "ratingPoints": 1327,
     "tier": "Diamond",
@@ -185500,7 +185500,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -185545,7 +185545,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -185559,7 +185559,7 @@
         "hist": "AyanOWOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -185597,7 +185597,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -185635,7 +185635,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -185687,7 +185687,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -186510,7 +186510,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -187836,7 +187836,7 @@
         "hist": "drip",
         "name": "drip",
         "slug": "drip",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -188249,7 +188249,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -191906,7 +191906,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -193397,7 +193397,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -193463,7 +193463,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -193769,7 +193769,7 @@
         "hist": "drip",
         "name": "drip",
         "slug": "drip",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -194814,7 +194814,7 @@
         "hist": "drip",
         "name": "drip",
         "slug": "drip",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -195039,7 +195039,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -195167,7 +195167,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -199157,7 +199157,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -199527,7 +199527,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -199764,7 +199764,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -201578,7 +201578,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -207577,7 +207577,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -209584,7 +209584,7 @@
         "hist": "Syrrith",
         "name": "Syrrith",
         "slug": "syrrith-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -211116,7 +211116,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -212266,7 +212266,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -212631,8 +212631,8 @@
     "orig_level": "Level 3",
     "orig_rating": 1092.0,
     "slug": "ayanowot-amateur",
-    "nat": "Singapore",
-    "iso": "sg",
+    "nat": "Malaysia",
+    "iso": "my",
     "rating": 0.952,
     "ratingPoints": 962,
     "tier": "Silver",
@@ -212680,7 +212680,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -212732,7 +212732,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -212763,7 +212763,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -212829,7 +212829,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -212860,7 +212860,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -213405,7 +213405,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -213450,7 +213450,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -213527,7 +213527,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -214171,7 +214171,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -214344,7 +214344,7 @@
         "hist": "AyanOwOT",
         "name": "AyanOwOT",
         "slug": "ayanowot-amateur",
-        "iso": "sg",
+        "iso": "my",
         "captain": false
        },
        {
@@ -215202,7 +215202,7 @@
             "mvp": 3,
             "score": 34,
             "slug": "syrrith",
-            "iso": "sg"
+            "iso": "my"
            },
            {
             "team": "Prism Divide",
@@ -217103,7 +217103,7 @@
             "mvp": 3,
             "score": 22,
             "slug": "ayanowot",
-            "iso": "sg"
+            "iso": "my"
            },
            {
             "team": "Technomancy",
@@ -218173,7 +218173,7 @@
             "mvp": 1,
             "score": 29,
             "slug": "drip",
-            "iso": "sg"
+            "iso": "my"
            },
            {
             "team": "Aeternum",
@@ -218942,7 +218942,7 @@
             "mvp": 0,
             "score": 9,
             "slug": "eris-suzukami",
-            "iso": "jp"
+            "iso": "kr"
            },
            {
             "team": "Aurora Pact",
@@ -220977,7 +220977,7 @@
               "mvp": 3,
               "score": 34,
               "slug": "syrrith",
-              "iso": "sg"
+              "iso": "my"
              },
              {
               "team": "Prism Divide",
@@ -223190,7 +223190,7 @@
               "mvp": 3,
               "score": 22,
               "slug": "ayanowot",
-              "iso": "sg"
+              "iso": "my"
              },
              {
               "team": "Technomancy",
@@ -224504,7 +224504,7 @@
               "mvp": 1,
               "score": 29,
               "slug": "drip",
-              "iso": "sg"
+              "iso": "my"
              },
              {
               "team": "Aeternum",
@@ -225395,7 +225395,7 @@
               "mvp": 0,
               "score": 9,
               "slug": "eris-suzukami",
-              "iso": "jp"
+              "iso": "kr"
              },
              {
               "team": "Aurora Pact",
@@ -228508,7 +228508,7 @@
        "hist": "AyanOwOT",
        "name": "AyanOwOT",
        "slug": "ayanowot-amateur",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       },
       {
@@ -229253,7 +229253,7 @@
        "hist": "Syrrith",
        "name": "Syrrith",
        "slug": "syrrith-amateur",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       },
       {
@@ -230579,7 +230579,7 @@
        "hist": "drip",
        "name": "drip",
        "slug": "drip",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       }
      ]
@@ -230886,7 +230886,7 @@
        "hist": "Eris Suzukami",
        "name": "Eris Suzukami",
        "slug": "eris-suzukami",
-       "iso": "jp",
+       "iso": "kr",
        "captain": false
       },
       {
@@ -234776,7 +234776,7 @@
             "mvp": 3,
             "score": 39,
             "slug": "eris-suzukami",
-            "iso": "jp"
+            "iso": "kr"
            },
            {
             "team": "0v3",
@@ -234871,7 +234871,7 @@
             "mvp": 2,
             "score": 46,
             "slug": "eris-suzukami",
-            "iso": "jp"
+            "iso": "kr"
            },
            {
             "team": "Astral Bloom",
@@ -234988,7 +234988,7 @@
             "mvp": 2,
             "score": 41,
             "slug": "eris-suzukami",
-            "iso": "jp"
+            "iso": "kr"
            },
            {
             "team": "Astral Bloom",
@@ -235791,7 +235791,7 @@
             "mvp": 0,
             "score": 31,
             "slug": "eris-suzukami",
-            "iso": "jp"
+            "iso": "kr"
            },
            {
             "team": "Astral Bloom",
@@ -235897,7 +235897,7 @@
             "mvp": 2,
             "score": 81,
             "slug": "eris-suzukami",
-            "iso": "jp"
+            "iso": "kr"
            },
            {
             "team": "Astral Bloom",
@@ -236611,7 +236611,7 @@
             "mvp": 0,
             "score": 30,
             "slug": "drip",
-            "iso": "sg"
+            "iso": "my"
            },
            {
             "team": "Aeternum",
@@ -236717,7 +236717,7 @@
             "mvp": 0,
             "score": 17,
             "slug": "drip",
-            "iso": "sg"
+            "iso": "my"
            },
            {
             "team": "Aeternum",
@@ -243693,7 +243693,7 @@
               "mvp": 3,
               "score": 39,
               "slug": "eris-suzukami",
-              "iso": "jp"
+              "iso": "kr"
              },
              {
               "team": "0v3",
@@ -243788,7 +243788,7 @@
               "mvp": 2,
               "score": 46,
               "slug": "eris-suzukami",
-              "iso": "jp"
+              "iso": "kr"
              },
              {
               "team": "Astral Bloom",
@@ -243905,7 +243905,7 @@
               "mvp": 2,
               "score": 41,
               "slug": "eris-suzukami",
-              "iso": "jp"
+              "iso": "kr"
              },
              {
               "team": "Astral Bloom",
@@ -244708,7 +244708,7 @@
               "mvp": 0,
               "score": 31,
               "slug": "eris-suzukami",
-              "iso": "jp"
+              "iso": "kr"
              },
              {
               "team": "Astral Bloom",
@@ -244814,7 +244814,7 @@
               "mvp": 2,
               "score": 81,
               "slug": "eris-suzukami",
-              "iso": "jp"
+              "iso": "kr"
              },
              {
               "team": "Astral Bloom",
@@ -245617,7 +245617,7 @@
               "mvp": 0,
               "score": 30,
               "slug": "drip",
-              "iso": "sg"
+              "iso": "my"
              },
              {
               "team": "Aeternum",
@@ -245723,7 +245723,7 @@
               "mvp": 0,
               "score": 17,
               "slug": "drip",
-              "iso": "sg"
+              "iso": "my"
              },
              {
               "team": "Aeternum",
@@ -250006,7 +250006,7 @@
        "hist": "drip",
        "name": "drip",
        "slug": "drip",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       }
      ]
@@ -250887,7 +250887,7 @@
        "hist": "Eris Suzukami",
        "name": "Eris Suzukami",
        "slug": "eris-suzukami",
-       "iso": "jp",
+       "iso": "kr",
        "captain": false
       },
       {
@@ -253013,7 +253013,7 @@
        "hist": "AyanOwOT",
        "name": "AyanOwOT",
        "slug": "ayanowot-amateur",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       },
       {
@@ -255063,7 +255063,7 @@
        "hist": "AyanOwOT",
        "name": "AyanOwOT",
        "slug": "ayanowot-amateur",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       },
       {
@@ -256492,7 +256492,7 @@
        "hist": "AyanOwOT",
        "name": "AyanOwOT",
        "slug": "ayanowot-amateur",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       },
       {
@@ -256950,7 +256950,7 @@
        "hist": "Syrrith",
        "name": "Syrrith",
        "slug": "syrrith-amateur",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       },
       {
@@ -259137,7 +259137,7 @@
        "hist": "AyanOwOT",
        "name": "AyanOwOT",
        "slug": "ayanowot-amateur",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       },
       {
@@ -259588,7 +259588,7 @@
        "hist": "Syrrith",
        "name": "Syrrith",
        "slug": "syrrith-amateur",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       },
       {
@@ -260361,7 +260361,7 @@
        "hist": "drip",
        "name": "drip",
        "slug": "drip",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       },
       {
@@ -263784,7 +263784,7 @@
        "hist": "AyanOwOT",
        "name": "AyanOwOT",
        "slug": "ayanowot-amateur",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       },
       {
@@ -263825,7 +263825,7 @@
        "hist": "Syrrith",
        "name": "Syrrith",
        "slug": "syrrith-amateur",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       },
       {
@@ -265813,7 +265813,7 @@
        "hist": "drip",
        "name": "drip",
        "slug": "drip",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       },
       {
@@ -270895,7 +270895,7 @@
        "hist": "drip",
        "name": "drip",
        "slug": "drip",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       },
       {
@@ -273419,7 +273419,7 @@
        "hist": "Syrrith",
        "name": "Syrrith",
        "slug": "syrrith-amateur",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       },
       {
@@ -273433,7 +273433,7 @@
        "hist": "AyanOWOT",
        "name": "AyanOwOT",
        "slug": "ayanowot-amateur",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       },
       {
@@ -277376,7 +277376,7 @@
        "hist": "drip",
        "name": "drip",
        "slug": "drip",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       },
       {
@@ -280503,7 +280503,7 @@
        "hist": "drip",
        "name": "drip",
        "slug": "drip",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       },
       {
@@ -280578,7 +280578,7 @@
        "hist": "Syrrith",
        "name": "Syrrith",
        "slug": "syrrith-amateur",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       },
       {
@@ -285614,7 +285614,7 @@
        "hist": "drip",
        "name": "drip",
        "slug": "drip",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       },
       {
@@ -287627,7 +287627,7 @@
        "hist": "drip",
        "name": "drip",
        "slug": "drip",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       },
       {
@@ -293412,7 +293412,7 @@
        "hist": "drip",
        "name": "drip",
        "slug": "drip",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       },
       {
@@ -297280,7 +297280,7 @@
        "hist": "drip",
        "name": "drip",
        "slug": "drip",
-       "iso": "sg",
+       "iso": "my",
        "captain": false
       },
       {
@@ -313740,7 +313740,7 @@
    "type": "transfer",
    "player": "Syrrith",
    "playerSlug": "syrrith-amateur",
-   "iso": "sg",
+   "iso": "my",
    "fromTeam": "Extinction Bay",
    "fromSlug": null,
    "toTeam": "Prism Divide",
@@ -315276,7 +315276,7 @@
    "type": "debut",
    "player": "Eris Suzukami",
    "playerSlug": "eris-suzukami",
-   "iso": "jp",
+   "iso": "kr",
    "fromTeam": null,
    "fromSlug": null,
    "toTeam": "Astral Bloom",
@@ -315816,7 +315816,7 @@
    "type": "transfer",
    "player": "AyanOwOT",
    "playerSlug": "ayanowot-amateur",
-   "iso": "sg",
+   "iso": "my",
    "fromTeam": "TicketPunched",
    "fromSlug": null,
    "toTeam": "Vision",
@@ -317352,7 +317352,7 @@
    "type": "transfer",
    "player": "AyanOwOT",
    "playerSlug": "ayanowot-amateur",
-   "iso": "sg",
+   "iso": "my",
    "fromTeam": "Aces High",
    "fromSlug": null,
    "toTeam": "TicketPunched",
@@ -318912,7 +318912,7 @@
    "type": "transfer",
    "player": "Syrrith",
    "playerSlug": "syrrith-amateur",
-   "iso": "sg",
+   "iso": "my",
    "fromTeam": "Escape Velocity",
    "fromSlug": null,
    "toTeam": "Extinction Bay",
@@ -319068,7 +319068,7 @@
    "type": "transfer",
    "player": "AyanOwOT",
    "playerSlug": "ayanowot-amateur",
-   "iso": "sg",
+   "iso": "my",
    "fromTeam": "Aurum Core",
    "fromSlug": null,
    "toTeam": "Aces High",
@@ -321000,7 +321000,7 @@
    "type": "transfer",
    "player": "Syrrith",
    "playerSlug": "syrrith-amateur",
-   "iso": "sg",
+   "iso": "my",
    "fromTeam": "Syzygy",
    "fromSlug": "syzygy",
    "toTeam": "Escape Velocity",
@@ -321144,7 +321144,7 @@
    "type": "transfer",
    "player": "AyanOwOT",
    "playerSlug": "ayanowot-amateur",
-   "iso": "sg",
+   "iso": "my",
    "fromTeam": "Syzygy",
    "fromSlug": "syzygy",
    "toTeam": "Aurum Core",
@@ -322776,7 +322776,7 @@
    "type": "transfer",
    "player": "Syrrith",
    "playerSlug": "syrrith-amateur",
-   "iso": "sg",
+   "iso": "my",
    "fromTeam": "Ursa Majoris",
    "fromSlug": null,
    "toTeam": "Syzygy",
@@ -323016,7 +323016,7 @@
    "type": "debut",
    "player": "AyanOwOT",
    "playerSlug": "ayanowot-amateur",
-   "iso": "sg",
+   "iso": "my",
    "fromTeam": null,
    "fromSlug": null,
    "toTeam": "Syzygy",
@@ -324024,7 +324024,7 @@
    "type": "debut",
    "player": "Syrrith",
    "playerSlug": "syrrith-amateur",
-   "iso": "sg",
+   "iso": "my",
    "fromTeam": null,
    "fromSlug": null,
    "toTeam": "Ursa Majoris",
@@ -328560,7 +328560,7 @@
    "type": "transfer",
    "player": "drip",
    "playerSlug": "drip",
-   "iso": "sg",
+   "iso": "my",
    "fromTeam": "Dragon's Breath",
    "fromSlug": null,
    "toTeam": "Aeternum",
@@ -329388,7 +329388,7 @@
    "type": "debut",
    "player": "drip",
    "playerSlug": "drip",
-   "iso": "sg",
+   "iso": "my",
    "fromTeam": null,
    "fromSlug": null,
    "toTeam": "Dragon's Breath",

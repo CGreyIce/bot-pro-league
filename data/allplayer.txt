@@ -10,12 +10,12 @@ Kisaragi Ren	Japan
 dumbo	Singapore
 AngelxAim	Singapore
 y1jingg	Singapore
-Sheep	Phillipines
+Sheep	Philippines
 BluBEAR	Malaysia
 minMaXXer	Philippines
 m0wmeow	Singapore
 Marsinss	Singapore
-drip	Singapore
+drip	Malaysia
 CrimsynFlames	Singapore
 Suzuyunn	Singapore
 Applezxc	Singapore
@@ -48,7 +48,7 @@ Tachibana Hinano	Japan
 Remia Aotsuki	Netherlands
 Shiranami Ramune	Japan
 Tsumugi Kokage	Japan
-Eris Suzukami	Japan
+Eris Suzukami	Korea
 plainyingying	Singapore
 VeniceC	Malaysia
 fleurcoz	Singapore
@@ -214,7 +214,7 @@ okjustsmd	Singapore
 EXaCT	Singapore	
 Luneforrune	Singapore	
 Laurel	Philippines	
-AyanOwOT	Singapore	
+AyanOwOT	Malaysia	
 Dianya	USA	 
 thehidz	Singapore	 
 bodexx	Singapore	 
@@ -268,7 +268,7 @@ boopydoopy	Singapore
 SachiMizora	Australia	 
 keikatamori	Australia	 
 Nekota Tsuna	Korea	 
-Syrrith	Singapore	 
+Syrrith	Malaysia	 
 Ginjo Saine	Japan	 
 sURF	Singapore	 
 rittan0x0	Malaysia	 
