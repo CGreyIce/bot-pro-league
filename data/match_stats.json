@@ -11238,6 +11238,301 @@
      ]
     }
    ]
+  },
+  "1-4": {
+   "maps": [
+    {
+     "map": "Cache",
+     "scoreA": 13,
+     "scoreB": 8,
+     "players": [
+      {
+       "team": "US Squad 3",
+       "name": "Nifela",
+       "k": 20,
+       "a": 2,
+       "d": 14,
+       "mvp": 4,
+       "score": 52
+      },
+      {
+       "team": "US Squad 3",
+       "name": "Decrease",
+       "k": 21,
+       "a": 2,
+       "d": 13,
+       "mvp": 2,
+       "score": 47
+      },
+      {
+       "team": "US Squad 3",
+       "name": "stitchkyui",
+       "k": 17,
+       "a": 1,
+       "d": 13,
+       "mvp": 3,
+       "score": 45
+      },
+      {
+       "team": "US Squad 3",
+       "name": "heavenweeps",
+       "k": 16,
+       "a": 1,
+       "d": 12,
+       "mvp": 2,
+       "score": 44
+      },
+      {
+       "team": "US Squad 3",
+       "name": "Kairi",
+       "k": 9,
+       "a": 2,
+       "d": 15,
+       "mvp": 2,
+       "score": 25
+      },
+      {
+       "team": "US Squad 6",
+       "name": "voidnw",
+       "k": 17,
+       "a": 2,
+       "d": 18,
+       "mvp": 3,
+       "score": 43
+      },
+      {
+       "team": "US Squad 6",
+       "name": "RIHSURI",
+       "k": 15,
+       "a": 3,
+       "d": 19,
+       "mvp": 2,
+       "score": 40
+      },
+      {
+       "team": "US Squad 6",
+       "name": "plushyoshii",
+       "k": 13,
+       "a": 2,
+       "d": 14,
+       "mvp": 0,
+       "score": 37
+      },
+      {
+       "team": "US Squad 6",
+       "name": "Dianya",
+       "k": 11,
+       "a": 2,
+       "d": 14,
+       "mvp": 2,
+       "score": 31
+      },
+      {
+       "team": "US Squad 6",
+       "name": "ReigyuuVT",
+       "k": 11,
+       "a": 4,
+       "d": 18,
+       "mvp": 1,
+       "score": 28
+      }
+     ]
+    },
+    {
+     "map": "Inferno",
+     "scoreA": 3,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "US Squad 3",
+       "name": "Nifela",
+       "k": 11,
+       "a": 6,
+       "d": 14,
+       "mvp": 2,
+       "score": 32
+      },
+      {
+       "team": "US Squad 3",
+       "name": "Kairi",
+       "k": 12,
+       "a": 1,
+       "d": 13,
+       "mvp": 1,
+       "score": 27
+      },
+      {
+       "team": "US Squad 3",
+       "name": "heavenweeps",
+       "k": 10,
+       "a": 2,
+       "d": 15,
+       "mvp": 0,
+       "score": 23
+      },
+      {
+       "team": "US Squad 3",
+       "name": "stitchkyui",
+       "k": 9,
+       "a": 1,
+       "d": 15,
+       "mvp": 0,
+       "score": 21
+      },
+      {
+       "team": "US Squad 3",
+       "name": "Decrease",
+       "k": 6,
+       "a": 1,
+       "d": 13,
+       "mvp": 0,
+       "score": 14
+      },
+      {
+       "team": "US Squad 6",
+       "name": "plushyoshii",
+       "k": 19,
+       "a": 0,
+       "d": 8,
+       "mvp": 3,
+       "score": 47
+      },
+      {
+       "team": "US Squad 6",
+       "name": "RIHSURI",
+       "k": 15,
+       "a": 1,
+       "d": 9,
+       "mvp": 3,
+       "score": 44
+      },
+      {
+       "team": "US Squad 6",
+       "name": "ReigyuuVT",
+       "k": 17,
+       "a": 0,
+       "d": 13,
+       "mvp": 4,
+       "score": 38
+      },
+      {
+       "team": "US Squad 6",
+       "name": "voidnw",
+       "k": 10,
+       "a": 0,
+       "d": 8,
+       "mvp": 1,
+       "score": 27
+      },
+      {
+       "team": "US Squad 6",
+       "name": "Dianya",
+       "k": 9,
+       "a": 1,
+       "d": 10,
+       "mvp": 2,
+       "score": 23
+      }
+     ]
+    },
+    {
+     "map": "Vertigo",
+     "scoreA": 13,
+     "scoreB": 8,
+     "players": [
+      {
+       "team": "US Squad 3",
+       "name": "Nifela",
+       "k": 23,
+       "a": 2,
+       "d": 19,
+       "mvp": 4,
+       "score": 53
+      },
+      {
+       "team": "US Squad 3",
+       "name": "Decrease",
+       "k": 20,
+       "a": 0,
+       "d": 14,
+       "mvp": 4,
+       "score": 49
+      },
+      {
+       "team": "US Squad 3",
+       "name": "stitchkyui",
+       "k": 17,
+       "a": 3,
+       "d": 11,
+       "mvp": 4,
+       "score": 49
+      },
+      {
+       "team": "US Squad 3",
+       "name": "heavenweeps",
+       "k": 12,
+       "a": 1,
+       "d": 12,
+       "mvp": 1,
+       "score": 29
+      },
+      {
+       "team": "US Squad 3",
+       "name": "Kairi",
+       "k": 9,
+       "a": 2,
+       "d": 14,
+       "mvp": 0,
+       "score": 26
+      },
+      {
+       "team": "US Squad 6",
+       "name": "RIHSURI",
+       "k": 21,
+       "a": 0,
+       "d": 17,
+       "mvp": 2,
+       "score": 49
+      },
+      {
+       "team": "US Squad 6",
+       "name": "plushyoshii",
+       "k": 16,
+       "a": 2,
+       "d": 16,
+       "mvp": 2,
+       "score": 42
+      },
+      {
+       "team": "US Squad 6",
+       "name": "ReigyuuVT",
+       "k": 13,
+       "a": 0,
+       "d": 16,
+       "mvp": 2,
+       "score": 29
+      },
+      {
+       "team": "US Squad 6",
+       "name": "voidnw",
+       "k": 11,
+       "a": 2,
+       "d": 16,
+       "mvp": 1,
+       "score": 28
+      },
+      {
+       "team": "US Squad 6",
+       "name": "Dianya",
+       "k": 9,
+       "a": 1,
+       "d": 16,
+       "mvp": 1,
+       "score": 23
+      }
+     ]
+    }
+   ]
   }
  }
 }
