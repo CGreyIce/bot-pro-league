@@ -59,6 +59,28 @@ function playerLink(p){ return `${flag(p.iso)}<a href="#/player/${p.slug}">${esc
 // ---------- roster hover popups ----------
 let PAGE_ROSTERS = [];
 function rosterIdx(row){ PAGE_ROSTERS.push(row); return PAGE_ROSTERS.length - 1; }
+// map-score hover: for Bo3/Bo5 matches that have been played, hovering a team in
+// the bracket shows the per-map score breakdown (from that team's perspective)
+// instead of the roster.
+let PAGE_MAPSCORES = [];
+function mapScoreEntry(m, side){   // returns a PAGE_MAPSCORES index, or null to fall back to roster
+  const maps = m && m.stats && m.stats.maps;
+  if(!(m.bo>1) || !maps || !maps.length) return null;
+  const mine = (mp)=> side==='a' ? mp.scoreA : mp.scoreB;
+  const theirs = (mp)=> side==='a' ? mp.scoreB : mp.scoreA;
+  const list = maps.map((mp,i)=>({ map: mp.map||'', my: mine(mp), opp: theirs(mp) }));
+  PAGE_MAPSCORES.push({ team: side==='a'?m.a:m.b, opp: side==='a'?m.b:m.a, maps:list });
+  return PAGE_MAPSCORES.length - 1;
+}
+function mapScorePopHTML(e){
+  const head = `<div class="rp-head">${esc(e.team)}<span class="ms-vs"> vs ${esc(e.opp)}</span></div>`;
+  const rows = e.maps.map((mp,i)=>{
+    const won = mp.my>mp.opp, tie = mp.my===mp.opp;
+    return `<div class="ms-row"><span class="ms-map">${mp.map?esc(mp.map):'Map '+(i+1)}</span>`+
+      `<span class="ms-sc"><b class="${tie?'':won?'ms-w':'ms-l'}">${mp.my}</b><span class="ms-dash">–</span><span class="${tie?'':won?'ms-l':'ms-w'}">${mp.opp}</span></span></div>`;
+  }).join("");
+  return head + rows;
+}
 let _proSlugs = null;
 function proSlugs(){  // slugs of players currently on a pro team roster
   if(!_proSlugs){ _proSlugs = new Set(); (DATA.teams||[]).forEach(t=>(t.roster||[]).forEach(p=>_proSlugs.add(p.slug))); }
@@ -87,8 +109,11 @@ function setupRosterPop(){
   const closePop = ()=>{ _pinned = false; pop.classList.remove("pinned"); pop.style.display="none"; };
   const show = el=>{
     clearTimeout(hideT);
-    const row = PAGE_ROSTERS[+el.dataset.roster]; if(!row) return;
-    pop.innerHTML = rosterPopHTML(row); pop.style.display="block";
+    let html = null;
+    if(el.dataset.mapscore!=null){ const e = PAGE_MAPSCORES[+el.dataset.mapscore]; if(e) html = mapScorePopHTML(e); }
+    else if(el.dataset.roster!=null){ const row = PAGE_ROSTERS[+el.dataset.roster]; if(row) html = rosterPopHTML(row); }
+    if(html==null) return;
+    pop.innerHTML = html; pop.style.display="block";
     const r = el.getBoundingClientRect();
     const w = pop.offsetWidth || 220;
     let left = r.left + window.scrollX;
@@ -98,12 +123,12 @@ function setupRosterPop(){
   };
   document.addEventListener("mouseover", e=>{
     if(_pinned) return;                       // don't swap the popup while pinned
-    const el = e.target.closest("[data-roster]");
+    const el = e.target.closest("[data-roster],[data-mapscore]");
     if(el){ show(el); } else if(e.target.closest("#roster-pop")){ clearTimeout(hideT); }
   });
   document.addEventListener("mouseout", e=>{
     if(_pinned) return;
-    if(e.target.closest("[data-roster]") || e.target.closest("#roster-pop")) hide();
+    if(e.target.closest("[data-roster],[data-mapscore]") || e.target.closest("#roster-pop")) hide();
   });
   // click a Career-Teams row to PIN the popup (so its player links are clickable)
   document.addEventListener("click", e=>{
@@ -145,7 +170,7 @@ function router(){
   const {route, arg} = parseHash();
   const fn = routes[route] || renderHome;
   window.scrollTo(0,0);
-  PAGE_ROSTERS = [];
+  PAGE_ROSTERS = []; PAGE_MAPSCORES = [];
   fn(arg);
   document.querySelectorAll(".mainnav a").forEach(a=>{
     const map={team:"teams",player:"players",tournament:"tournaments"};
@@ -2172,10 +2197,10 @@ function renderTournament(slug){
     return `<span class="team-inline"${rAttr(name, teamSlug)}>${t&&t.logo?`<img src="${esc(t.logo)}" alt="">`:''}${inner}</span>`;
   };
   const seedTag = (name, teamSlug)=>{ const s = tr.seeds && (tr.seeds[teamSlug] || tr.seeds[name]); return s ? `<span class="seed-tag" title="Seed ${s}">${s}</span>` : ''; };
-  const bteamName = (name, teamSlug)=>{
+  const bteamName = (name, teamSlug, hov)=>{
     if(!name) return '<span class="muted">TBD</span>';
     const inner = teamSlug ? `<a href="#/team/${teamSlug}" style="color:inherit">${esc(name)}</a>` : esc(name);
-    return `<span${rAttr(name, teamSlug)}>${seedTag(name,teamSlug)}${inner}</span>`;
+    return `<span${hov!=null?hov:rAttr(name, teamSlug)}>${seedTag(name,teamSlug)}${inner}</span>`;
   };
 
   const standRows = tr.standings.map(s=>`<tr>
@@ -2186,16 +2211,20 @@ function renderTournament(slug){
 
   const isElim = /elimination/.test(tr.type);
 
+  // hover attribute: Bo3/Bo5 played matches show the per-map score; otherwise the roster
+  const hovAttr = (m, side, name, teamSlug)=>{ const i = mapScoreEntry(m, side); return i!=null ? ` data-mapscore="${i}"` : rAttr(name, teamSlug); };
   // --- tree bracket (single/double elim) ---
-  const treeTeam = (name, teamSlug, score, win)=>{
+  const treeTeam = (m, side)=>{
+    const name = side==='a'?m.a:m.b, teamSlug = side==='a'?m.aTeam:m.bTeam;
+    const score = side==='a'?m.sa:m.sb, win = m.w===(side==='a'?1:2);
     const t = teamSlug ? teamBySlug(teamSlug) : null;
     const logo = t&&t.logo ? `<img class="bt-logo" src="${esc(t.logo)}" alt="">` : '';
     const nm = name ? (teamSlug ? `<a href="#/team/${teamSlug}">${esc(name)}</a>` : esc(name)) : '<span class="muted">TBD</span>';
     const sc = score!=null ? score : '';
-    return `<div class="bkt-team ${win?'win':''}"${rAttr(name, teamSlug)}>${logo}${name?seedTag(name,teamSlug):''}<span class="bt-name">${nm}</span><span class="bt-score">${sc}</span></div>`;
+    return `<div class="bkt-team ${win?'win':''}"${hovAttr(m, side, name, teamSlug)}>${logo}${name?seedTag(name,teamSlug):''}<span class="bt-name">${nm}</span><span class="bt-score">${sc}</span></div>`;
   };
   const mref = (m, pfx)=> (m.i!=null ? ` data-match="${pfx}${m.i}"` : '');
-  const treeMatch = (m, pfx="")=>`<div class="bkt-match"${mref(m,pfx)}>${treeTeam(m.a,m.aTeam,m.sa,m.w===1)}${treeTeam(m.b,m.bTeam,m.sb,m.w===2)}</div>`;
+  const treeMatch = (m, pfx="")=>`<div class="bkt-match"${mref(m,pfx)}>${treeTeam(m,'a')}${treeTeam(m,'b')}</div>`;
   const isByeMatch = m => m.a==="(bye)" || m.b==="(bye)";
   // a 3rd-place decider floats on its own — pulled out of the main tree
   const thirdPlaceBox = (rounds, pfx="")=>{
@@ -2222,8 +2251,8 @@ function renderTournament(slug){
   };
   const listRounds = (rounds, pfx="")=>`<div class="bracket">${rounds.map(rd=>{
       const ms = rd.matches.map(m=>`<div class="bmatch"${mref(m,pfx)}>
-          <div class="bteam ${m.w===1?'bw':''}">${bteamName(m.a, m.aTeam)}<span class="bscore">${m.sa!=null?m.sa:''}</span></div>
-          <div class="bteam ${m.w===2?'bw':''}">${bteamName(m.b, m.bTeam)}<span class="bscore">${m.sb!=null?m.sb:''}</span></div>
+          <div class="bteam ${m.w===1?'bw':''}">${bteamName(m.a, m.aTeam, hovAttr(m,'a',m.a,m.aTeam))}<span class="bscore">${m.sa!=null?m.sa:''}</span></div>
+          <div class="bteam ${m.w===2?'bw':''}">${bteamName(m.b, m.bTeam, hovAttr(m,'b',m.b,m.bTeam))}<span class="bscore">${m.sb!=null?m.sb:''}</span></div>
         </div>`).join("");
       return `<div class="bround"><div class="brtitle">${esc(rd.title)}</div>${ms}</div>`;
     }).join("")}</div>`;

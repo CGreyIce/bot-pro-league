@@ -565,7 +565,15 @@ textarea.adm-in{resize:vertical}
 #roster-pop .rp-row a.rp-pro{color:var(--accent);font-weight:700}
 #roster-pop .rp-c{margin-left:2px;font-size:10px;font-weight:700;color:#0b1120;background:var(--accent-grad);border-radius:3px;padding:0 4px}
 #roster-pop .rp-old{margin-left:auto;font-size:11px;color:var(--muted2);font-style:italic}
-[data-roster]{cursor:default}
+[data-roster],[data-mapscore]{cursor:default}
+/* map-score hover (Bo3/Bo5 bracket matches) */
+#roster-pop .ms-vs{margin-left:6px;font-size:12px;font-weight:400;color:var(--muted)}
+#roster-pop .ms-row{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:4px 10px;font-size:13px}
+#roster-pop .ms-map{color:var(--muted2);font-family:'Rajdhani';letter-spacing:.3px}
+#roster-pop .ms-sc{font-family:monospace;font-variant-numeric:tabular-nums;font-size:13px;white-space:nowrap}
+#roster-pop .ms-sc .ms-dash{color:var(--muted);margin:0 3px}
+#roster-pop .ms-sc .ms-w{color:var(--accent);font-weight:700}
+#roster-pop .ms-sc .ms-l{color:var(--muted)}
 
 /* teams-attending wall */
 .attend-wall{display:flex;flex-wrap:wrap;gap:8px}
