@@ -64,8 +64,9 @@ function rosterIdx(row){ PAGE_ROSTERS.push(row); return PAGE_ROSTERS.length - 1;
 // instead of the roster.
 let PAGE_MAPSCORES = [];
 function mapScoreEntry(m, side){   // returns a PAGE_MAPSCORES index, or null to fall back to roster
+  // key off the number of recorded maps, not the bo field (some series are stored as bo=1)
   const maps = m && m.stats && m.stats.maps;
-  if(!(m.bo>1) || !maps || !maps.length) return null;
+  if(!maps || maps.length < 2) return null;
   const mine = (mp)=> side==='a' ? mp.scoreA : mp.scoreB;
   const theirs = (mp)=> side==='a' ? mp.scoreB : mp.scoreA;
   const list = maps.map((mp,i)=>({ map: mp.map||'', my: mine(mp), opp: theirs(mp) }));
