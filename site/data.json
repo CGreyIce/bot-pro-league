@@ -19413,9 +19413,9 @@
          "captain": true
         },
         {
-         "hist": "BluBEAR",
-         "name": "BluBEAR",
-         "slug": "blubear",
+         "hist": "tedstyx",
+         "name": "tedstyx",
+         "slug": "tedstyx-solo",
          "iso": "my",
          "captain": false
         },
@@ -26809,8 +26809,8 @@
         },
         {
          "hist": "Volatus",
-         "name": "Volatus",
-         "slug": "volatus",
+         "name": "Lyrazal",
+         "slug": "lyrazal",
          "iso": "sg",
          "captain": false
         }
@@ -28870,9 +28870,9 @@
          "captain": true
         },
         {
-         "hist": "BluBEAR",
-         "name": "BluBEAR",
-         "slug": "blubear",
+         "hist": "tedstyx",
+         "name": "tedstyx",
+         "slug": "tedstyx-solo",
          "iso": "my",
          "captain": false
         },
@@ -39107,9 +39107,9 @@
          "captain": false
         },
         {
-         "hist": "Volatus",
-         "name": "Volatus",
-         "slug": "volatus",
+         "hist": "Lyrazal",
+         "name": "Lyrazal",
+         "slug": "lyrazal",
          "iso": "sg",
          "captain": false
         },
@@ -39250,9 +39250,9 @@
          "captain": false
         },
         {
-         "hist": "Volatus",
-         "name": "Volatus",
-         "slug": "volatus",
+         "hist": "Lyrazal",
+         "name": "Lyrazal",
+         "slug": "lyrazal",
          "iso": "sg",
          "captain": false
         },
@@ -39843,9 +39843,9 @@
          "captain": false
         },
         {
-         "hist": "Volatus",
-         "name": "Volatus",
-         "slug": "volatus",
+         "hist": "Lyrazal",
+         "name": "Lyrazal",
+         "slug": "lyrazal",
          "iso": "sg",
          "captain": false
         },
@@ -39906,7 +39906,7 @@
      ]
     },
     {
-     "name": "Volatus",
+     "name": "Lyrazal",
      "team": "Bluebird",
      "pool": "pro",
      "kills": 364,
@@ -39923,7 +39923,7 @@
      "orig_rank": "Silver",
      "orig_level": "Level 4",
      "orig_rating": 1548.0,
-     "slug": "volatus",
+     "slug": "lyrazal",
      "nat": "Singapore",
      "iso": "sg",
      "rating": 0.974,
@@ -39949,7 +39949,7 @@
       "soloRank": 196,
       "soloTotal": 370
      },
-     "bio": "Volatus is the in-game leader for Bluebird, a Singaporean caller and Level 4 talent.",
+     "bio": "Lyrazal is the in-game leader for Bluebird, a Singaporean caller and Level 4 talent.",
      "gender": "F",
      "teamHistory": [
       {
@@ -39991,8 +39991,8 @@
         },
         {
          "hist": "Volatus",
-         "name": "Volatus",
-         "slug": "volatus",
+         "name": "Lyrazal",
+         "slug": "lyrazal",
          "iso": "sg",
          "captain": false
         }
@@ -40032,9 +40032,9 @@
          "captain": false
         },
         {
-         "hist": "Volatus",
-         "name": "Volatus",
-         "slug": "volatus",
+         "hist": "Lyrazal",
+         "name": "Lyrazal",
+         "slug": "lyrazal",
          "iso": "sg",
          "captain": false
         },
@@ -40085,13 +40085,16 @@
         },
         {
          "hist": "Volatus",
-         "name": "Volatus",
-         "slug": "volatus",
+         "name": "Lyrazal",
+         "slug": "lyrazal",
          "iso": "sg",
          "captain": false
         }
        ]
       }
+     ],
+     "aka": [
+      "Volatus"
      ]
     },
     {
@@ -40175,9 +40178,9 @@
          "captain": false
         },
         {
-         "hist": "Volatus",
-         "name": "Volatus",
-         "slug": "volatus",
+         "hist": "Lyrazal",
+         "name": "Lyrazal",
+         "slug": "lyrazal",
          "iso": "sg",
          "captain": false
         },
@@ -51770,9 +51773,9 @@
          "captain": false
         },
         {
-         "hist": "drip",
-         "name": "drip",
-         "slug": "drip",
+         "hist": "perk",
+         "name": "perk",
+         "slug": "perk",
          "iso": "my",
          "captain": false
         }
@@ -51959,9 +51962,9 @@
          "captain": false
         },
         {
-         "hist": "drip",
-         "name": "drip",
-         "slug": "drip",
+         "hist": "perk",
+         "name": "perk",
+         "slug": "perk",
          "iso": "my",
          "captain": false
         }
@@ -52251,9 +52254,9 @@
          "captain": false
         },
         {
-         "hist": "drip",
-         "name": "drip",
-         "slug": "drip",
+         "hist": "perk",
+         "name": "perk",
+         "slug": "perk",
          "iso": "my",
          "captain": false
         }
@@ -52492,9 +52495,9 @@
          "captain": false
         },
         {
-         "hist": "drip",
-         "name": "drip",
-         "slug": "drip",
+         "hist": "perk",
+         "name": "perk",
+         "slug": "perk",
          "iso": "my",
          "captain": false
         }
@@ -52551,7 +52554,7 @@
      ]
     },
     {
-     "name": "drip",
+     "name": "perk",
      "team": "Aeternum",
      "pool": "pro",
      "kills": 325,
@@ -52568,7 +52571,7 @@
      "orig_rank": "Silver",
      "orig_level": "Level 4",
      "orig_rating": 1646.0,
-     "slug": "drip",
+     "slug": "perk",
      "nat": "Malaysia",
      "iso": "my",
      "rating": 0.975,
@@ -52594,7 +52597,7 @@
       "soloRank": 157,
       "soloTotal": 370
      },
-     "bio": "drip is a Level 5 AWPer for Aeternum, a Singaporean sniper holding down the team's defensive rounds.",
+     "bio": "perk is a Level 5 AWPer for Aeternum, a Singaporean sniper holding down the team's defensive rounds.",
      "gender": "M",
      "teamHistory": [
       {
@@ -52614,8 +52617,8 @@
         },
         {
          "hist": "drip",
-         "name": "drip",
-         "slug": "drip",
+         "name": "perk",
+         "slug": "perk",
          "iso": "my",
          "captain": false
         },
@@ -52683,9 +52686,9 @@
          "captain": false
         },
         {
-         "hist": "drip",
-         "name": "drip",
-         "slug": "drip",
+         "hist": "perk",
+         "name": "perk",
+         "slug": "perk",
          "iso": "my",
          "captain": false
         }
@@ -52708,8 +52711,8 @@
         },
         {
          "hist": "drip",
-         "name": "drip",
-         "slug": "drip",
+         "name": "perk",
+         "slug": "perk",
          "iso": "my",
          "captain": false
         },
@@ -52736,6 +52739,9 @@
         }
        ]
       }
+     ],
+     "aka": [
+      "drip"
      ]
     }
    ],
@@ -53955,8 +53961,8 @@
         },
         {
          "hist": "Volatus",
-         "name": "Volatus",
-         "slug": "volatus",
+         "name": "Lyrazal",
+         "slug": "lyrazal",
          "iso": "sg",
          "captain": false
         }
@@ -56430,8 +56436,8 @@
         },
         {
          "hist": "drip",
-         "name": "drip",
-         "slug": "drip",
+         "name": "perk",
+         "slug": "perk",
          "iso": "my",
          "captain": false
         },
@@ -57679,8 +57685,8 @@
         },
         {
          "hist": "drip",
-         "name": "drip",
-         "slug": "drip",
+         "name": "perk",
+         "slug": "perk",
          "iso": "my",
          "captain": false
         },
@@ -77363,8 +77369,8 @@
         },
         {
          "hist": "drip",
-         "name": "drip",
-         "slug": "drip",
+         "name": "perk",
+         "slug": "perk",
          "iso": "my",
          "captain": false
         },
@@ -80228,7 +80234,7 @@
          "hist": "BluBEAR",
          "name": "BluBEAR",
          "slug": "blubear",
-         "iso": "my",
+         "iso": "th",
          "captain": false
         },
         {
@@ -80586,8 +80592,8 @@
         },
         {
          "hist": "drip",
-         "name": "drip",
-         "slug": "drip",
+         "name": "perk",
+         "slug": "perk",
          "iso": "my",
          "captain": false
         },
@@ -80823,7 +80829,7 @@
          "hist": "BluBEAR",
          "name": "BluBEAR",
          "slug": "blubear",
-         "iso": "my",
+         "iso": "th",
          "captain": false
         },
         {
@@ -80908,8 +80914,8 @@
      "orig_level": "Level 4",
      "orig_rating": 1809.0,
      "slug": "blubear",
-     "nat": "Malaysia",
-     "iso": "my",
+     "nat": "Thailand",
+     "iso": "th",
      "rating": 1.012,
      "ratingPoints": 1198,
      "tier": "Emerald",
@@ -80965,7 +80971,7 @@
          "hist": "BluBEAR",
          "name": "BluBEAR",
          "slug": "blubear",
-         "iso": "my",
+         "iso": "th",
          "captain": false
         },
         {
@@ -80980,51 +80986,6 @@
          "name": "Sheep",
          "slug": "sheep",
          "iso": "ph",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "MY Squad 3",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "ebi",
-         "name": "ebi",
-         "slug": "ebi",
-         "iso": "my",
-         "captain": true
-        },
-        {
-         "hist": "BluBEAR",
-         "name": "BluBEAR",
-         "slug": "blubear",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "wushii",
-         "name": "wushii",
-         "slug": "wushii-amateur",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "ErineRurie",
-         "name": "ErineRurie",
-         "slug": "erinerurie-amateur",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "kn",
-         "name": "kn",
-         "slug": "kn",
-         "iso": "my",
          "captain": false
         }
        ]
@@ -81155,7 +81116,7 @@
          "hist": "BluBEAR",
          "name": "BluBEAR",
          "slug": "blubear",
-         "iso": "my",
+         "iso": "th",
          "captain": false
         },
         {
@@ -81567,7 +81528,7 @@
          "hist": "BluBEAR",
          "name": "BluBEAR",
          "slug": "blubear",
-         "iso": "my",
+         "iso": "th",
          "captain": false
         },
         {
@@ -87306,8 +87267,8 @@
         },
         {
          "hist": "drip",
-         "name": "drip",
-         "slug": "drip",
+         "name": "perk",
+         "slug": "perk",
          "iso": "my",
          "captain": false
         },
@@ -88023,8 +87984,8 @@
         },
         {
          "hist": "Volatus",
-         "name": "Volatus",
-         "slug": "volatus",
+         "name": "Lyrazal",
+         "slug": "lyrazal",
          "iso": "sg",
          "captain": false
         }
@@ -96032,17 +95993,6 @@
      "nowTeamSlug": "division20"
     },
     {
-     "slug": "volatus",
-     "name": "Volatus",
-     "iso": "sg",
-     "years": [
-      "2021",
-      "2022"
-     ],
-     "nowTeam": "Bluebird",
-     "nowTeamSlug": "bluebird"
-    },
-    {
      "slug": "tanykeat",
      "name": "tanykeat",
      "iso": "sg",
@@ -96073,6 +96023,17 @@
      ],
      "nowTeam": "Cyanide",
      "nowTeamSlug": "cyanide"
+    },
+    {
+     "slug": "lyrazal",
+     "name": "Lyrazal",
+     "iso": "sg",
+     "years": [
+      "2021",
+      "2022"
+     ],
+     "nowTeam": "Bluebird",
+     "nowTeamSlug": "bluebird"
     },
     {
      "slug": "lilraxxx",
@@ -97987,8 +97948,8 @@
         },
         {
          "hist": "Volatus",
-         "name": "Volatus",
-         "slug": "volatus",
+         "name": "Lyrazal",
+         "slug": "lyrazal",
          "iso": "sg",
          "captain": false
         }
@@ -103835,7 +103796,7 @@
         "hist": "BluBEAR",
         "name": "BluBEAR",
         "slug": "blubear",
-        "iso": "my",
+        "iso": "th",
         "captain": false
        },
        {
@@ -104427,7 +104388,7 @@
         "hist": "BluBEAR",
         "name": "BluBEAR",
         "slug": "blubear",
-        "iso": "my",
+        "iso": "th",
         "captain": false
        },
        {
@@ -104617,7 +104578,7 @@
         "hist": "BluBEAR",
         "name": "BluBEAR",
         "slug": "blubear",
-        "iso": "my",
+        "iso": "th",
         "captain": false
        },
        {
@@ -105017,8 +104978,8 @@
        },
        {
         "hist": "drip",
-        "name": "drip",
-        "slug": "drip",
+        "name": "perk",
+        "slug": "perk",
         "iso": "my",
         "captain": false
        },
@@ -105254,7 +105215,7 @@
         "hist": "BluBEAR",
         "name": "BluBEAR",
         "slug": "blubear",
-        "iso": "my",
+        "iso": "th",
         "captain": false
        },
        {
@@ -105339,8 +105300,8 @@
     "orig_level": "Level 4",
     "orig_rating": 1809.0,
     "slug": "blubear",
-    "nat": "Malaysia",
-    "iso": "my",
+    "nat": "Thailand",
+    "iso": "th",
     "rating": 1.012,
     "ratingPoints": 1198,
     "tier": "Emerald",
@@ -105396,7 +105357,7 @@
         "hist": "BluBEAR",
         "name": "BluBEAR",
         "slug": "blubear",
-        "iso": "my",
+        "iso": "th",
         "captain": false
        },
        {
@@ -105411,51 +105372,6 @@
         "name": "Sheep",
         "slug": "sheep",
         "iso": "ph",
-        "captain": false
-       }
-      ]
-     },
-     {
-      "team": "MY Squad 3",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "ebi",
-        "name": "ebi",
-        "slug": "ebi",
-        "iso": "my",
-        "captain": true
-       },
-       {
-        "hist": "BluBEAR",
-        "name": "BluBEAR",
-        "slug": "blubear",
-        "iso": "my",
-        "captain": false
-       },
-       {
-        "hist": "wushii",
-        "name": "wushii",
-        "slug": "wushii-amateur",
-        "iso": "my",
-        "captain": false
-       },
-       {
-        "hist": "ErineRurie",
-        "name": "ErineRurie",
-        "slug": "erinerurie-amateur",
-        "iso": "my",
-        "captain": false
-       },
-       {
-        "hist": "kn",
-        "name": "kn",
-        "slug": "kn",
-        "iso": "my",
         "captain": false
        }
       ]
@@ -105685,9 +105601,9 @@
         "captain": false
        },
        {
-        "hist": "drip",
-        "name": "drip",
-        "slug": "drip",
+        "hist": "perk",
+        "name": "perk",
+        "slug": "perk",
         "iso": "my",
         "captain": false
        }
@@ -105964,9 +105880,9 @@
         "captain": false
        },
        {
-        "hist": "drip",
-        "name": "drip",
-        "slug": "drip",
+        "hist": "perk",
+        "name": "perk",
+        "slug": "perk",
         "iso": "my",
         "captain": false
        }
@@ -106163,9 +106079,9 @@
         "captain": false
        },
        {
-        "hist": "drip",
-        "name": "drip",
-        "slug": "drip",
+        "hist": "perk",
+        "name": "perk",
+        "slug": "perk",
         "iso": "my",
         "captain": false
        }
@@ -106407,9 +106323,9 @@
         "captain": false
        },
        {
-        "hist": "drip",
-        "name": "drip",
-        "slug": "drip",
+        "hist": "perk",
+        "name": "perk",
+        "slug": "perk",
         "iso": "my",
         "captain": false
        }
@@ -106466,7 +106382,7 @@
     ]
    },
    {
-    "name": "drip",
+    "name": "perk",
     "team": "Aeternum",
     "pool": "pro",
     "kills": 325,
@@ -106483,7 +106399,7 @@
     "orig_rank": "Silver",
     "orig_level": "Level 4",
     "orig_rating": 1646.0,
-    "slug": "drip",
+    "slug": "perk",
     "nat": "Malaysia",
     "iso": "my",
     "rating": 0.975,
@@ -106509,7 +106425,7 @@
      "soloRank": 157,
      "soloTotal": 370
     },
-    "bio": "drip is a Level 5 AWPer for Aeternum, a Singaporean sniper holding down the team's defensive rounds.",
+    "bio": "perk is a Level 5 AWPer for Aeternum, a Singaporean sniper holding down the team's defensive rounds.",
     "gender": "M",
     "teamHistory": [
      {
@@ -106529,8 +106445,8 @@
        },
        {
         "hist": "drip",
-        "name": "drip",
-        "slug": "drip",
+        "name": "perk",
+        "slug": "perk",
         "iso": "my",
         "captain": false
        },
@@ -106598,9 +106514,9 @@
         "captain": false
        },
        {
-        "hist": "drip",
-        "name": "drip",
-        "slug": "drip",
+        "hist": "perk",
+        "name": "perk",
+        "slug": "perk",
         "iso": "my",
         "captain": false
        }
@@ -106623,8 +106539,8 @@
        },
        {
         "hist": "drip",
-        "name": "drip",
-        "slug": "drip",
+        "name": "perk",
+        "slug": "perk",
         "iso": "my",
         "captain": false
        },
@@ -106651,6 +106567,9 @@
        }
       ]
      }
+    ],
+    "aka": [
+     "drip"
     ]
    },
    {
@@ -117744,9 +117663,9 @@
         "captain": false
        },
        {
-        "hist": "Volatus",
-        "name": "Volatus",
-        "slug": "volatus",
+        "hist": "Lyrazal",
+        "name": "Lyrazal",
+        "slug": "lyrazal",
         "iso": "sg",
         "captain": false
        },
@@ -118157,9 +118076,9 @@
         "captain": false
        },
        {
-        "hist": "Volatus",
-        "name": "Volatus",
-        "slug": "volatus",
+        "hist": "Lyrazal",
+        "name": "Lyrazal",
+        "slug": "lyrazal",
         "iso": "sg",
         "captain": false
        },
@@ -118750,9 +118669,9 @@
         "captain": false
        },
        {
-        "hist": "Volatus",
-        "name": "Volatus",
-        "slug": "volatus",
+        "hist": "Lyrazal",
+        "name": "Lyrazal",
+        "slug": "lyrazal",
         "iso": "sg",
         "captain": false
        },
@@ -118893,9 +118812,9 @@
         "captain": false
        },
        {
-        "hist": "Volatus",
-        "name": "Volatus",
-        "slug": "volatus",
+        "hist": "Lyrazal",
+        "name": "Lyrazal",
+        "slug": "lyrazal",
         "iso": "sg",
         "captain": false
        },
@@ -118959,7 +118878,7 @@
     ]
    },
    {
-    "name": "Volatus",
+    "name": "Lyrazal",
     "team": "Bluebird",
     "pool": "pro",
     "kills": 364,
@@ -118976,7 +118895,7 @@
     "orig_rank": "Silver",
     "orig_level": "Level 4",
     "orig_rating": 1548.0,
-    "slug": "volatus",
+    "slug": "lyrazal",
     "nat": "Singapore",
     "iso": "sg",
     "rating": 0.974,
@@ -119002,7 +118921,7 @@
      "soloRank": 196,
      "soloTotal": 370
     },
-    "bio": "Volatus is the in-game leader for Bluebird, a Singaporean caller and Level 4 talent.",
+    "bio": "Lyrazal is the in-game leader for Bluebird, a Singaporean caller and Level 4 talent.",
     "gender": "F",
     "teamHistory": [
      {
@@ -119044,8 +118963,8 @@
        },
        {
         "hist": "Volatus",
-        "name": "Volatus",
-        "slug": "volatus",
+        "name": "Lyrazal",
+        "slug": "lyrazal",
         "iso": "sg",
         "captain": false
        }
@@ -119085,9 +119004,9 @@
         "captain": false
        },
        {
-        "hist": "Volatus",
-        "name": "Volatus",
-        "slug": "volatus",
+        "hist": "Lyrazal",
+        "name": "Lyrazal",
+        "slug": "lyrazal",
         "iso": "sg",
         "captain": false
        },
@@ -119138,13 +119057,16 @@
        },
        {
         "hist": "Volatus",
-        "name": "Volatus",
-        "slug": "volatus",
+        "name": "Lyrazal",
+        "slug": "lyrazal",
         "iso": "sg",
         "captain": false
        }
       ]
      }
+    ],
+    "aka": [
+     "Volatus"
     ]
    },
    {
@@ -124210,8 +124132,8 @@
        },
        {
         "hist": "drip",
-        "name": "drip",
-        "slug": "drip",
+        "name": "perk",
+        "slug": "perk",
         "iso": "my",
         "captain": false
        },
@@ -124559,8 +124481,8 @@
        },
        {
         "hist": "Volatus",
-        "name": "Volatus",
-        "slug": "volatus",
+        "name": "Lyrazal",
+        "slug": "lyrazal",
         "iso": "sg",
         "captain": false
        }
@@ -131605,8 +131527,8 @@
        },
        {
         "hist": "drip",
-        "name": "drip",
-        "slug": "drip",
+        "name": "perk",
+        "slug": "perk",
         "iso": "my",
         "captain": false
        },
@@ -141966,9 +141888,9 @@
         "captain": true
        },
        {
-        "hist": "BluBEAR",
-        "name": "BluBEAR",
-        "slug": "blubear",
+        "hist": "tedstyx",
+        "name": "tedstyx",
+        "slug": "tedstyx-solo",
         "iso": "my",
         "captain": false
        },
@@ -142593,8 +142515,8 @@
        },
        {
         "hist": "drip",
-        "name": "drip",
-        "slug": "drip",
+        "name": "perk",
+        "slug": "perk",
         "iso": "my",
         "captain": false
        },
@@ -143465,8 +143387,8 @@
        },
        {
         "hist": "drip",
-        "name": "drip",
-        "slug": "drip",
+        "name": "perk",
+        "slug": "perk",
         "iso": "my",
         "captain": false
        },
@@ -148639,8 +148561,8 @@
        },
        {
         "hist": "Volatus",
-        "name": "Volatus",
-        "slug": "volatus",
+        "name": "Lyrazal",
+        "slug": "lyrazal",
         "iso": "sg",
         "captain": false
        }
@@ -151971,9 +151893,9 @@
         "captain": true
        },
        {
-        "hist": "BluBEAR",
-        "name": "BluBEAR",
-        "slug": "blubear",
+        "hist": "tedstyx",
+        "name": "tedstyx",
+        "slug": "tedstyx-solo",
         "iso": "my",
         "captain": false
        },
@@ -155573,8 +155495,8 @@
        },
        {
         "hist": "Volatus",
-        "name": "Volatus",
-        "slug": "volatus",
+        "name": "Lyrazal",
+        "slug": "lyrazal",
         "iso": "sg",
         "captain": false
        }
@@ -196118,9 +196040,9 @@
         "captain": true
        },
        {
-        "hist": "BluBEAR",
-        "name": "BluBEAR",
-        "slug": "blubear",
+        "hist": "tedstyx",
+        "name": "tedstyx",
+        "slug": "tedstyx-solo",
         "iso": "my",
         "captain": false
        },
@@ -198003,8 +197925,8 @@
        },
        {
         "hist": "Volatus",
-        "name": "Volatus",
-        "slug": "volatus",
+        "name": "Lyrazal",
+        "slug": "lyrazal",
         "iso": "sg",
         "captain": false
        }
@@ -208644,8 +208566,8 @@
        },
        {
         "hist": "drip",
-        "name": "drip",
-        "slug": "drip",
+        "name": "perk",
+        "slug": "perk",
         "iso": "my",
         "captain": false
        },
@@ -211025,8 +210947,8 @@
        },
        {
         "hist": "drip",
-        "name": "drip",
-        "slug": "drip",
+        "name": "perk",
+        "slug": "perk",
         "iso": "my",
         "captain": false
        },
@@ -217543,8 +217465,8 @@
        },
        {
         "hist": "drip",
-        "name": "drip",
-        "slug": "drip",
+        "name": "perk",
+        "slug": "perk",
         "iso": "my",
         "captain": false
        },
@@ -218643,8 +218565,8 @@
        },
        {
         "hist": "drip",
-        "name": "drip",
-        "slug": "drip",
+        "name": "perk",
+        "slug": "perk",
         "iso": "my",
         "captain": false
        },
@@ -222791,8 +222713,8 @@
        },
        {
         "hist": "drip",
-        "name": "drip",
-        "slug": "drip",
+        "name": "perk",
+        "slug": "perk",
         "iso": "my",
         "captain": false
        },
@@ -230527,9 +230449,9 @@
         "captain": true
        },
        {
-        "hist": "BluBEAR",
-        "name": "BluBEAR",
-        "slug": "blubear",
+        "hist": "tedstyx",
+        "name": "tedstyx",
+        "slug": "tedstyx-solo",
         "iso": "my",
         "captain": false
        },
@@ -237484,8 +237406,8 @@
        },
        {
         "hist": "Volatus",
-        "name": "Volatus",
-        "slug": "volatus",
+        "name": "Lyrazal",
+        "slug": "lyrazal",
         "iso": "sg",
         "captain": false
        }
@@ -243388,6 +243310,566 @@
       ]
      }
     ]
+   },
+   {
+    "name": "byeolyuna",
+    "team": "",
+    "pool": "solo",
+    "kills": 0,
+    "assists": 0,
+    "deaths": 0,
+    "mvp": 0,
+    "kdr": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "winrate": 0.0,
+    "ot": 0,
+    "role": "Rifler",
+    "maps": 0,
+    "orig_rank": "",
+    "orig_level": "",
+    "orig_rating": 0.0,
+    "slug": "byeolyuna-solo",
+    "nat": "Korea",
+    "iso": "kr",
+    "rating": null,
+    "ratingPoints": null,
+    "tier": null,
+    "level": null,
+    "rankDelta": 0
+   },
+   {
+    "name": "GreatMoonAroma",
+    "team": "",
+    "pool": "solo",
+    "kills": 0,
+    "assists": 0,
+    "deaths": 0,
+    "mvp": 0,
+    "kdr": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "winrate": 0.0,
+    "ot": 0,
+    "role": "Rifler",
+    "maps": 0,
+    "orig_rank": "",
+    "orig_level": "",
+    "orig_rating": 0.0,
+    "slug": "greatmoonaroma-solo",
+    "nat": "Korea",
+    "iso": "kr",
+    "rating": null,
+    "ratingPoints": null,
+    "tier": null,
+    "level": null,
+    "rankDelta": 0
+   },
+   {
+    "name": "RaivyRain",
+    "team": "",
+    "pool": "solo",
+    "kills": 0,
+    "assists": 0,
+    "deaths": 0,
+    "mvp": 0,
+    "kdr": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "winrate": 0.0,
+    "ot": 0,
+    "role": "Awper",
+    "maps": 0,
+    "orig_rank": "",
+    "orig_level": "",
+    "orig_rating": 0.0,
+    "slug": "raivyrain-solo",
+    "nat": "Germany",
+    "iso": "de",
+    "rating": null,
+    "ratingPoints": null,
+    "tier": null,
+    "level": null,
+    "rankDelta": 0
+   },
+   {
+    "name": "zero_macabre",
+    "team": "",
+    "pool": "solo",
+    "kills": 0,
+    "assists": 0,
+    "deaths": 0,
+    "mvp": 0,
+    "kdr": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "winrate": 0.0,
+    "ot": 0,
+    "role": "Rifler",
+    "maps": 0,
+    "orig_rank": "",
+    "orig_level": "",
+    "orig_rating": 0.0,
+    "slug": "zero-macabre-solo",
+    "nat": "France",
+    "iso": "fr",
+    "rating": null,
+    "ratingPoints": null,
+    "tier": null,
+    "level": null,
+    "rankDelta": 0
+   },
+   {
+    "name": "HikariiFloofie",
+    "team": "",
+    "pool": "solo",
+    "kills": 0,
+    "assists": 0,
+    "deaths": 0,
+    "mvp": 0,
+    "kdr": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "winrate": 0.0,
+    "ot": 0,
+    "role": "Rifler",
+    "maps": 0,
+    "orig_rank": "",
+    "orig_level": "",
+    "orig_rating": 0.0,
+    "slug": "hikariifloofie-solo",
+    "nat": "Malaysia",
+    "iso": "my",
+    "rating": null,
+    "ratingPoints": null,
+    "tier": null,
+    "level": null,
+    "rankDelta": 0
+   },
+   {
+    "name": "tedstyx",
+    "team": "",
+    "pool": "solo",
+    "kills": 0,
+    "assists": 0,
+    "deaths": 0,
+    "mvp": 0,
+    "kdr": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "winrate": 0.0,
+    "ot": 0,
+    "role": "IGL",
+    "maps": 0,
+    "orig_rank": "",
+    "orig_level": "",
+    "orig_rating": 0.0,
+    "slug": "tedstyx-solo",
+    "nat": "Malaysia",
+    "iso": "my",
+    "rating": null,
+    "ratingPoints": null,
+    "tier": null,
+    "level": null,
+    "rankDelta": 0,
+    "teamHistory": [
+     {
+      "team": "MY Squad 3",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "ebi",
+        "name": "ebi",
+        "slug": "ebi",
+        "iso": "my",
+        "captain": true
+       },
+       {
+        "hist": "tedstyx",
+        "name": "tedstyx",
+        "slug": "tedstyx-solo",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "wushii",
+        "name": "wushii",
+        "slug": "wushii-amateur",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "ErineRurie",
+        "name": "ErineRurie",
+        "slug": "erinerurie-amateur",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "kn",
+        "name": "kn",
+        "slug": "kn",
+        "iso": "my",
+        "captain": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "RDarius",
+    "team": "",
+    "pool": "solo",
+    "kills": 0,
+    "assists": 0,
+    "deaths": 0,
+    "mvp": 0,
+    "kdr": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "winrate": 0.0,
+    "ot": 0,
+    "role": "Awper",
+    "maps": 0,
+    "orig_rank": "",
+    "orig_level": "",
+    "orig_rating": 0.0,
+    "slug": "rdarius-solo",
+    "nat": "Lithuania",
+    "iso": "lt",
+    "rating": null,
+    "ratingPoints": null,
+    "tier": null,
+    "level": null,
+    "rankDelta": 0
+   },
+   {
+    "name": "colour",
+    "team": "",
+    "pool": "solo",
+    "kills": 0,
+    "assists": 0,
+    "deaths": 0,
+    "mvp": 0,
+    "kdr": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "winrate": 0.0,
+    "ot": 0,
+    "role": "Awper",
+    "maps": 0,
+    "orig_rank": "",
+    "orig_level": "",
+    "orig_rating": 0.0,
+    "slug": "colour-solo",
+    "nat": "Thailand",
+    "iso": "th",
+    "rating": null,
+    "ratingPoints": null,
+    "tier": null,
+    "level": null,
+    "rankDelta": 0
+   },
+   {
+    "name": "Nico",
+    "team": "",
+    "pool": "solo",
+    "kills": 0,
+    "assists": 0,
+    "deaths": 0,
+    "mvp": 0,
+    "kdr": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "winrate": 0.0,
+    "ot": 0,
+    "role": "Rifler",
+    "maps": 0,
+    "orig_rank": "",
+    "orig_level": "",
+    "orig_rating": 0.0,
+    "slug": "nico-solo",
+    "nat": "Thailand",
+    "iso": "th",
+    "rating": null,
+    "ratingPoints": null,
+    "tier": null,
+    "level": null,
+    "rankDelta": 0
+   },
+   {
+    "name": "sozu",
+    "team": "",
+    "pool": "solo",
+    "kills": 0,
+    "assists": 0,
+    "deaths": 0,
+    "mvp": 0,
+    "kdr": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "winrate": 0.0,
+    "ot": 0,
+    "role": "Rifler",
+    "maps": 0,
+    "orig_rank": "",
+    "orig_level": "",
+    "orig_rating": 0.0,
+    "slug": "sozu-solo",
+    "nat": "Czechia",
+    "iso": "cz",
+    "rating": null,
+    "ratingPoints": null,
+    "tier": null,
+    "level": null,
+    "rankDelta": 0
+   },
+   {
+    "name": "renren.",
+    "team": "",
+    "pool": "solo",
+    "kills": 0,
+    "assists": 0,
+    "deaths": 0,
+    "mvp": 0,
+    "kdr": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "winrate": 0.0,
+    "ot": 0,
+    "role": "Rifler",
+    "maps": 0,
+    "orig_rank": "",
+    "orig_level": "",
+    "orig_rating": 0.0,
+    "slug": "renren-solo",
+    "nat": "Vietnam",
+    "iso": "vn",
+    "rating": null,
+    "ratingPoints": null,
+    "tier": null,
+    "level": null,
+    "rankDelta": 0
+   },
+   {
+    "name": "SyberiaK",
+    "team": "",
+    "pool": "solo",
+    "kills": 0,
+    "assists": 0,
+    "deaths": 0,
+    "mvp": 0,
+    "kdr": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "winrate": 0.0,
+    "ot": 0,
+    "role": "Rifler",
+    "maps": 0,
+    "orig_rank": "",
+    "orig_level": "",
+    "orig_rating": 0.0,
+    "slug": "syberiak-solo",
+    "nat": "France",
+    "iso": "fr",
+    "rating": null,
+    "ratingPoints": null,
+    "tier": null,
+    "level": null,
+    "rankDelta": 0
+   },
+   {
+    "name": "ixc999",
+    "team": "",
+    "pool": "solo",
+    "kills": 0,
+    "assists": 0,
+    "deaths": 0,
+    "mvp": 0,
+    "kdr": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "winrate": 0.0,
+    "ot": 0,
+    "role": "Awper",
+    "maps": 0,
+    "orig_rank": "",
+    "orig_level": "",
+    "orig_rating": 0.0,
+    "slug": "ixc999-solo",
+    "nat": "Hong Kong",
+    "iso": "hk",
+    "rating": null,
+    "ratingPoints": null,
+    "tier": null,
+    "level": null,
+    "rankDelta": 0
+   },
+   {
+    "name": "SUMMER",
+    "team": "",
+    "pool": "solo",
+    "kills": 0,
+    "assists": 0,
+    "deaths": 0,
+    "mvp": 0,
+    "kdr": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "winrate": 0.0,
+    "ot": 0,
+    "role": "Rifler",
+    "maps": 0,
+    "orig_rank": "",
+    "orig_level": "",
+    "orig_rating": 0.0,
+    "slug": "summer-solo",
+    "nat": "Thailand",
+    "iso": "th",
+    "rating": null,
+    "ratingPoints": null,
+    "tier": null,
+    "level": null,
+    "rankDelta": 0
+   },
+   {
+    "name": "FLAVA",
+    "team": "",
+    "pool": "solo",
+    "kills": 0,
+    "assists": 0,
+    "deaths": 0,
+    "mvp": 0,
+    "kdr": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "winrate": 0.0,
+    "ot": 0,
+    "role": "IGL",
+    "maps": 0,
+    "orig_rank": "",
+    "orig_level": "",
+    "orig_rating": 0.0,
+    "slug": "flava-solo",
+    "nat": "Vietnam",
+    "iso": "vn",
+    "rating": null,
+    "ratingPoints": null,
+    "tier": null,
+    "level": null,
+    "rankDelta": 0
+   },
+   {
+    "name": "jackgia2002",
+    "team": "",
+    "pool": "solo",
+    "kills": 0,
+    "assists": 0,
+    "deaths": 0,
+    "mvp": 0,
+    "kdr": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "winrate": 0.0,
+    "ot": 0,
+    "role": "Rifler",
+    "maps": 0,
+    "orig_rank": "",
+    "orig_level": "",
+    "orig_rating": 0.0,
+    "slug": "jackgia2002-solo",
+    "nat": "Vietnam",
+    "iso": "vn",
+    "rating": null,
+    "ratingPoints": null,
+    "tier": null,
+    "level": null,
+    "rankDelta": 0
+   },
+   {
+    "name": "IcyCrowVT",
+    "team": "",
+    "pool": "solo",
+    "kills": 0,
+    "assists": 0,
+    "deaths": 0,
+    "mvp": 0,
+    "kdr": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "winrate": 0.0,
+    "ot": 0,
+    "role": "IGL",
+    "maps": 0,
+    "orig_rank": "",
+    "orig_level": "",
+    "orig_rating": 0.0,
+    "slug": "icycrowvt-solo",
+    "nat": "Norway",
+    "iso": "no",
+    "rating": null,
+    "ratingPoints": null,
+    "tier": null,
+    "level": null,
+    "rankDelta": 0
+   },
+   {
+    "name": "suoh",
+    "team": "",
+    "pool": "solo",
+    "kills": 0,
+    "assists": 0,
+    "deaths": 0,
+    "mvp": 0,
+    "kdr": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "winrate": 0.0,
+    "ot": 0,
+    "role": "Awper",
+    "maps": 0,
+    "orig_rank": "",
+    "orig_level": "",
+    "orig_rating": 0.0,
+    "slug": "suoh-solo",
+    "nat": "Vietnam",
+    "iso": "vn",
+    "rating": null,
+    "ratingPoints": null,
+    "tier": null,
+    "level": null,
+    "rankDelta": 0
+   },
+   {
+    "name": "DarkLite",
+    "team": "",
+    "pool": "solo",
+    "kills": 0,
+    "assists": 0,
+    "deaths": 0,
+    "mvp": 0,
+    "kdr": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "winrate": 0.0,
+    "ot": 0,
+    "role": "Rifler",
+    "maps": 0,
+    "orig_rank": "",
+    "orig_level": "",
+    "orig_rating": 0.0,
+    "slug": "darklite-solo",
+    "nat": "Vietnam",
+    "iso": "vn",
+    "rating": null,
+    "ratingPoints": null,
+    "tier": null,
+    "level": null,
+    "rankDelta": 0
    }
   ]
  },
@@ -248219,9 +248701,9 @@
        "captain": true
       },
       {
-       "hist": "BluBEAR",
-       "name": "BluBEAR",
-       "slug": "blubear",
+       "hist": "tedstyx",
+       "name": "tedstyx",
+       "slug": "tedstyx-solo",
        "iso": "my",
        "captain": false
       },
@@ -248343,8 +248825,8 @@
       },
       {
        "hist": "drip",
-       "name": "drip",
-       "slug": "drip",
+       "name": "perk",
+       "slug": "perk",
        "iso": "my",
        "captain": false
       },
@@ -251976,8 +252458,8 @@
       },
       {
        "hist": "Volatus",
-       "name": "Volatus",
-       "slug": "volatus",
+       "name": "Lyrazal",
+       "slug": "lyrazal",
        "iso": "sg",
        "captain": false
       }
@@ -256289,13 +256771,13 @@
            },
            {
             "team": "Bluebird",
-            "name": "Volatus",
+            "name": "Lyrazal",
             "k": 9,
             "a": 1,
             "d": 15,
             "mvp": 0,
             "score": 21,
-            "slug": "volatus",
+            "slug": "lyrazal",
             "iso": "sg"
            },
            {
@@ -257340,7 +257822,7 @@
             "mvp": 2,
             "score": 44,
             "slug": "blubear",
-            "iso": "my"
+            "iso": "th"
            },
            {
             "team": "99Lives",
@@ -258838,13 +259320,13 @@
            },
            {
             "team": "Aeternum",
-            "name": "drip",
+            "name": "perk",
             "k": 12,
             "a": 0,
             "d": 15,
             "mvp": 1,
             "score": 29,
-            "slug": "drip",
+            "slug": "perk",
             "iso": "my"
            },
            {
@@ -262168,13 +262650,13 @@
              },
              {
               "team": "Bluebird",
-              "name": "Volatus",
+              "name": "Lyrazal",
               "k": 9,
               "a": 1,
               "d": 15,
               "mvp": 0,
               "score": 21,
-              "slug": "volatus",
+              "slug": "lyrazal",
               "iso": "sg"
              },
              {
@@ -263427,7 +263909,7 @@
               "mvp": 2,
               "score": 44,
               "slug": "blubear",
-              "iso": "my"
+              "iso": "th"
              },
              {
               "team": "99Lives",
@@ -265169,13 +265651,13 @@
              },
              {
               "team": "Aeternum",
-              "name": "drip",
+              "name": "perk",
               "k": 12,
               "a": 0,
               "d": 15,
               "mvp": 1,
               "score": 29,
-              "slug": "drip",
+              "slug": "perk",
               "iso": "my"
              },
              {
@@ -270423,9 +270905,9 @@
        "captain": false
       },
       {
-       "hist": "Volatus",
-       "name": "Volatus",
-       "slug": "volatus",
+       "hist": "Lyrazal",
+       "name": "Lyrazal",
+       "slug": "lyrazal",
        "iso": "sg",
        "captain": false
       },
@@ -270911,7 +271393,7 @@
        "hist": "BluBEAR",
        "name": "BluBEAR",
        "slug": "blubear",
-       "iso": "my",
+       "iso": "th",
        "captain": false
       },
       {
@@ -271250,9 +271732,9 @@
        "captain": false
       },
       {
-       "hist": "drip",
-       "name": "drip",
-       "slug": "drip",
+       "hist": "perk",
+       "name": "perk",
+       "slug": "perk",
        "iso": "my",
        "captain": false
       }
@@ -276090,13 +276572,13 @@
            },
            {
             "team": "Bluebird",
-            "name": "Volatus",
+            "name": "Lyrazal",
             "k": 21,
             "a": 4,
             "d": 21,
             "mvp": 4,
             "score": 55,
-            "slug": "volatus",
+            "slug": "lyrazal",
             "iso": "sg"
            },
            {
@@ -276218,13 +276700,13 @@
            },
            {
             "team": "Bluebird",
-            "name": "Volatus",
+            "name": "Lyrazal",
             "k": 15,
             "a": 1,
             "d": 15,
             "mvp": 4,
             "score": 43,
-            "slug": "volatus",
+            "slug": "lyrazal",
             "iso": "sg"
            },
            {
@@ -276335,13 +276817,13 @@
            },
            {
             "team": "Bluebird",
-            "name": "Volatus",
+            "name": "Lyrazal",
             "k": 9,
             "a": 1,
             "d": 14,
             "mvp": 0,
             "score": 24,
-            "slug": "volatus",
+            "slug": "lyrazal",
             "iso": "sg"
            },
            {
@@ -277278,13 +277760,13 @@
            },
            {
             "team": "Aeternum",
-            "name": "drip",
+            "name": "perk",
             "k": 10,
             "a": 3,
             "d": 15,
             "mvp": 0,
             "score": 30,
-            "slug": "drip",
+            "slug": "perk",
             "iso": "my"
            },
            {
@@ -277384,13 +277866,13 @@
            },
            {
             "team": "Aeternum",
-            "name": "drip",
+            "name": "perk",
             "k": 8,
             "a": 0,
             "d": 14,
             "mvp": 0,
             "score": 17,
-            "slug": "drip",
+            "slug": "perk",
             "iso": "my"
            },
            {
@@ -285007,13 +285489,13 @@
              },
              {
               "team": "Bluebird",
-              "name": "Volatus",
+              "name": "Lyrazal",
               "k": 21,
               "a": 4,
               "d": 21,
               "mvp": 4,
               "score": 55,
-              "slug": "volatus",
+              "slug": "lyrazal",
               "iso": "sg"
              },
              {
@@ -285135,13 +285617,13 @@
              },
              {
               "team": "Bluebird",
-              "name": "Volatus",
+              "name": "Lyrazal",
               "k": 15,
               "a": 1,
               "d": 15,
               "mvp": 4,
               "score": 43,
-              "slug": "volatus",
+              "slug": "lyrazal",
               "iso": "sg"
              },
              {
@@ -285252,13 +285734,13 @@
              },
              {
               "team": "Bluebird",
-              "name": "Volatus",
+              "name": "Lyrazal",
               "k": 9,
               "a": 1,
               "d": 14,
               "mvp": 0,
               "score": 24,
-              "slug": "volatus",
+              "slug": "lyrazal",
               "iso": "sg"
              },
              {
@@ -286284,13 +286766,13 @@
              },
              {
               "team": "Aeternum",
-              "name": "drip",
+              "name": "perk",
               "k": 10,
               "a": 3,
               "d": 15,
               "mvp": 0,
               "score": 30,
-              "slug": "drip",
+              "slug": "perk",
               "iso": "my"
              },
              {
@@ -286390,13 +286872,13 @@
              },
              {
               "team": "Aeternum",
-              "name": "drip",
+              "name": "perk",
               "k": 8,
               "a": 0,
               "d": 14,
               "mvp": 0,
               "score": 17,
-              "slug": "drip",
+              "slug": "perk",
               "iso": "my"
              },
              {
@@ -290545,7 +291027,7 @@
        "hist": "BluBEAR",
        "name": "BluBEAR",
        "slug": "blubear",
-       "iso": "my",
+       "iso": "th",
        "captain": false
       },
       {
@@ -290679,9 +291161,9 @@
        "captain": false
       },
       {
-       "hist": "drip",
-       "name": "drip",
-       "slug": "drip",
+       "hist": "perk",
+       "name": "perk",
+       "slug": "perk",
        "iso": "my",
        "captain": false
       }
@@ -291369,9 +291851,9 @@
        "captain": false
       },
       {
-       "hist": "Volatus",
-       "name": "Volatus",
-       "slug": "volatus",
+       "hist": "Lyrazal",
+       "name": "Lyrazal",
+       "slug": "lyrazal",
        "iso": "sg",
        "captain": false
       },
@@ -301035,8 +301517,8 @@
       },
       {
        "hist": "drip",
-       "name": "drip",
-       "slug": "drip",
+       "name": "perk",
+       "slug": "perk",
        "iso": "my",
        "captain": false
       },
@@ -301411,8 +301893,8 @@
       },
       {
        "hist": "Volatus",
-       "name": "Volatus",
-       "slug": "volatus",
+       "name": "Lyrazal",
+       "slug": "lyrazal",
        "iso": "sg",
        "captain": false
       },
@@ -303565,7 +304047,7 @@
        "hist": "BluBear",
        "name": "BluBEAR",
        "slug": "blubear",
-       "iso": "my",
+       "iso": "th",
        "captain": false
       },
       {
@@ -304178,8 +304660,8 @@
       },
       {
        "hist": "Volatus",
-       "name": "Volatus",
-       "slug": "volatus",
+       "name": "Lyrazal",
+       "slug": "lyrazal",
        "iso": "sg",
        "captain": false
       },
@@ -306487,8 +306969,8 @@
       },
       {
        "hist": "drip",
-       "name": "drip",
-       "slug": "drip",
+       "name": "perk",
+       "slug": "perk",
        "iso": "my",
        "captain": false
       },
@@ -306904,8 +307386,8 @@
       },
       {
        "hist": "Volatus",
-       "name": "Volatus",
-       "slug": "volatus",
+       "name": "Lyrazal",
+       "slug": "lyrazal",
        "iso": "sg",
        "captain": false
       },
@@ -307439,7 +307921,7 @@
        "hist": "BluBear",
        "name": "BluBEAR",
        "slug": "blubear",
-       "iso": "my",
+       "iso": "th",
        "captain": false
       },
       {
@@ -311571,8 +312053,8 @@
       },
       {
        "hist": "drip",
-       "name": "drip",
-       "slug": "drip",
+       "name": "perk",
+       "slug": "perk",
        "iso": "my",
        "captain": false
       },
@@ -311988,8 +312470,8 @@
       },
       {
        "hist": "Volatus",
-       "name": "Volatus",
-       "slug": "volatus",
+       "name": "Lyrazal",
+       "slug": "lyrazal",
        "iso": "sg",
        "captain": false
       },
@@ -312523,7 +313005,7 @@
        "hist": "BluBear",
        "name": "BluBEAR",
        "slug": "blubear",
-       "iso": "my",
+       "iso": "th",
        "captain": false
       },
       {
@@ -315157,7 +315639,7 @@
        "hist": "BluBear",
        "name": "BluBEAR",
        "slug": "blubear",
-       "iso": "my",
+       "iso": "th",
        "captain": false
       },
       {
@@ -315975,8 +316457,8 @@
       },
       {
        "hist": "Volatus",
-       "name": "Volatus",
-       "slug": "volatus",
+       "name": "Lyrazal",
+       "slug": "lyrazal",
        "iso": "sg",
        "captain": false
       },
@@ -317649,8 +318131,8 @@
       },
       {
        "hist": "Volatus",
-       "name": "Volatus",
-       "slug": "volatus",
+       "name": "Lyrazal",
+       "slug": "lyrazal",
        "iso": "sg",
        "captain": false
       },
@@ -318052,8 +318534,8 @@
       },
       {
        "hist": "drip",
-       "name": "drip",
-       "slug": "drip",
+       "name": "perk",
+       "slug": "perk",
        "iso": "my",
        "captain": false
       },
@@ -320325,8 +320807,8 @@
       },
       {
        "hist": "Volatus",
-       "name": "Volatus",
-       "slug": "volatus",
+       "name": "Lyrazal",
+       "slug": "lyrazal",
        "iso": "sg",
        "captain": false
       },
@@ -321179,8 +321661,8 @@
       },
       {
        "hist": "drip",
-       "name": "drip",
-       "slug": "drip",
+       "name": "perk",
+       "slug": "perk",
        "iso": "my",
        "captain": false
       },
@@ -321475,7 +321957,7 @@
        "hist": "BlueBear",
        "name": "BluBEAR",
        "slug": "blubear",
-       "iso": "my",
+       "iso": "th",
        "captain": false
       },
       {
@@ -322570,8 +323052,8 @@
       },
       {
        "hist": "Volatus",
-       "name": "Volatus",
-       "slug": "volatus",
+       "name": "Lyrazal",
+       "slug": "lyrazal",
        "iso": "sg",
        "captain": false
       },
@@ -326290,8 +326772,8 @@
       },
       {
        "hist": "drip",
-       "name": "drip",
-       "slug": "drip",
+       "name": "perk",
+       "slug": "perk",
        "iso": "my",
        "captain": false
       },
@@ -328303,8 +328785,8 @@
       },
       {
        "hist": "drip",
-       "name": "drip",
-       "slug": "drip",
+       "name": "perk",
+       "slug": "perk",
        "iso": "my",
        "captain": false
       },
@@ -328720,8 +329202,8 @@
       },
       {
        "hist": "Volatus",
-       "name": "Volatus",
-       "slug": "volatus",
+       "name": "Lyrazal",
+       "slug": "lyrazal",
        "iso": "sg",
        "captain": false
       },
@@ -334088,8 +334570,8 @@
       },
       {
        "hist": "drip",
-       "name": "drip",
-       "slug": "drip",
+       "name": "perk",
+       "slug": "perk",
        "iso": "my",
        "captain": false
       },
@@ -334505,8 +334987,8 @@
       },
       {
        "hist": "Volatus",
-       "name": "Volatus",
-       "slug": "volatus",
+       "name": "Lyrazal",
+       "slug": "lyrazal",
        "iso": "sg",
        "captain": false
       },
@@ -335911,8 +336393,8 @@
       },
       {
        "hist": "Volatus",
-       "name": "Volatus",
-       "slug": "volatus",
+       "name": "Lyrazal",
+       "slug": "lyrazal",
        "iso": "sg",
        "captain": false
       },
@@ -337956,8 +338438,8 @@
       },
       {
        "hist": "drip",
-       "name": "drip",
-       "slug": "drip",
+       "name": "perk",
+       "slug": "perk",
        "iso": "my",
        "captain": false
       },
@@ -338093,8 +338575,8 @@
       },
       {
        "hist": "Volatus",
-       "name": "Volatus",
-       "slug": "volatus",
+       "name": "Lyrazal",
+       "slug": "lyrazal",
        "iso": "sg",
        "captain": false
       },
@@ -339030,8 +339512,8 @@
       },
       {
        "hist": "Volatus",
-       "name": "Volatus",
-       "slug": "volatus",
+       "name": "Lyrazal",
+       "slug": "lyrazal",
        "iso": "sg",
        "captain": false
       },
@@ -341760,8 +342242,8 @@
       },
       {
        "hist": "Volatus",
-       "name": "Volatus",
-       "slug": "volatus",
+       "name": "Lyrazal",
+       "slug": "lyrazal",
        "iso": "sg",
        "captain": false
       }
@@ -343536,8 +344018,8 @@
       },
       {
        "hist": "Volatus",
-       "name": "Volatus",
-       "slug": "volatus",
+       "name": "Lyrazal",
+       "slug": "lyrazal",
        "iso": "sg",
        "captain": false
       }
@@ -355976,8 +356458,8 @@
   },
   {
    "type": "transfer",
-   "player": "Volatus",
-   "playerSlug": "volatus",
+   "player": "Lyrazal",
+   "playerSlug": "lyrazal",
    "iso": "sg",
    "fromTeam": "Bluebird",
    "fromSlug": "bluebird",
@@ -356204,8 +356686,8 @@
   },
   {
    "type": "transfer",
-   "player": "drip",
-   "playerSlug": "drip",
+   "player": "perk",
+   "playerSlug": "perk",
    "iso": "my",
    "fromTeam": "Aeternum",
    "fromSlug": "aeternum",
@@ -357002,18 +357484,6 @@
    "fromTeam": "Stormfront",
    "fromSlug": null,
    "toTeam": "US Squad 6",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-20"
-  },
-  {
-   "type": "transfer",
-   "player": "BluBEAR",
-   "playerSlug": "blubear",
-   "iso": "my",
-   "fromTeam": "99Lives",
-   "fromSlug": "99lives",
-   "toTeam": "MY Squad 3",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-20"
@@ -358514,6 +358984,18 @@
    "fromTeam": null,
    "fromSlug": null,
    "toTeam": "AU Squad 3",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-20"
+  },
+  {
+   "type": "debut",
+   "player": "tedstyx",
+   "playerSlug": "tedstyx-solo",
+   "iso": "my",
+   "fromTeam": null,
+   "fromSlug": null,
+   "toTeam": "MY Squad 3",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-20"
@@ -369454,7 +369936,7 @@
    "type": "debut",
    "player": "BluBEAR",
    "playerSlug": "blubear",
-   "iso": "my",
+   "iso": "th",
    "fromTeam": null,
    "fromSlug": null,
    "toTeam": "99Lives",
@@ -373916,8 +374398,8 @@
   },
   {
    "type": "transfer",
-   "player": "drip",
-   "playerSlug": "drip",
+   "player": "perk",
+   "playerSlug": "perk",
    "iso": "my",
    "fromTeam": "Dragon's Breath",
    "fromSlug": null,
@@ -374744,8 +375226,8 @@
   },
   {
    "type": "debut",
-   "player": "drip",
-   "playerSlug": "drip",
+   "player": "perk",
+   "playerSlug": "perk",
    "iso": "my",
    "fromTeam": null,
    "fromSlug": null,
@@ -375032,8 +375514,8 @@
   },
   {
    "type": "transfer",
-   "player": "Volatus",
-   "playerSlug": "volatus",
+   "player": "Lyrazal",
+   "playerSlug": "lyrazal",
    "iso": "sg",
    "fromTeam": "Syzygy",
    "fromSlug": "syzygy",
@@ -377276,8 +377758,8 @@
   },
   {
    "type": "debut",
-   "player": "Volatus",
-   "playerSlug": "volatus",
+   "player": "Lyrazal",
+   "playerSlug": "lyrazal",
    "iso": "sg",
    "fromTeam": null,
    "fromSlug": null,
@@ -387800,49 +388282,49 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.38,
+     "wr": 0.382,
      "real": false
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.572,
+     "wr": 0.573,
      "real": false
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.603,
+     "wr": 0.604,
      "real": false
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.385,
+     "wr": 0.386,
      "real": false
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.366,
+     "wr": 0.368,
      "real": false
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.565,
+     "wr": 0.566,
      "real": false
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.372,
+     "wr": 0.374,
      "real": false
     }
    },

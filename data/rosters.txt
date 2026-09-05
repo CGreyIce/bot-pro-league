@@ -18,8 +18,8 @@ bot_add "99L Sheep"; bot_add "99L m0wmeow"; bot_add "99L minMaXXer"; bot_add "99
 bot_add_ct "99L Sheep"; bot_add_ct "99L m0wmeow"; bot_add_ct "99L minMaXXer"; bot_add_ct "99L BluBear"; bot_add_ct "99L y1jingg"
 
 Aeternum (BPL6 Winners) [ehsten switched to drip, sashimi switched to marsinss, zhizyii switched to suzu]
-bot_add "AET CrimsynFlames"; bot_add "AET Marsinss"; bot_add "AET drip"; bot_add "AET Applezxc"; bot_add "AET Suzuyunn"; 
-bot_add_ct "AET CrimsynFlames"; bot_add_ct "AET Marsinss"; bot_add_ct "AET drip"; bot_add_ct "AET Applezxc"; bot_add_ct "AET Suzuyunn"; 
+bot_add "AET CrimsynFlames"; bot_add "AET Marsinss"; bot_add "AET perk"; bot_add "AET Applezxc"; bot_add "AET Suzuyunn"; 
+bot_add_ct "AET CrimsynFlames"; bot_add_ct "AET Marsinss"; bot_add_ct "AET perk"; bot_add_ct "AET Applezxc"; bot_add_ct "AET Suzuyunn"; 
 
 Aetherline (BPL Legends Stage 2025)
 bot_add "aTL NipNip"; bot_add "aTL BaBaYaGa"; bot_add "aTL EfreetsZ"; bot_add "aTL awtoh"; bot_add "aTL Anndreika";
@@ -50,8 +50,8 @@ bot_add "BLOOM fleurcoz"; bot_add "BLOOM winda"; bot_add "BLOOM lumpydayo"; bot_
 bot_add_ct "BLOOM fleurcoz"; bot_add_ct "BLOOM winda"; bot_add_ct "BLOOM lumpydayo"; bot_add_ct "BLOOM plainyingying"; bot_add_ct "BLOOM VeniceC";
 
 Bluebird (BPL Legends Stage 2022)
-bot_add "Bb l1feless"; bot_add "Bb AppleOrangePear"; bot_add "Bb beyouna"; bot_add "Bb Volatus"; bot_add "Bb Nutzeru";
-bot_add_ct "Bb l1feless"; bot_add_ct "Bb AppleOrangePear"; bot_add_ct "Bb beyouna"; bot_add_ct "Bb Volatus"; bot_add_ct "Bb Nutzeru";
+bot_add "Bb l1feless"; bot_add "Bb AppleOrangePear"; bot_add "Bb beyouna"; bot_add "Bb Lyrazal"; bot_add "Bb Nutzeru";
+bot_add_ct "Bb l1feless"; bot_add_ct "Bb AppleOrangePear"; bot_add_ct "Bb beyouna"; bot_add_ct "Bb Lyrazal"; bot_add_ct "Bb Nutzeru";
 
 Caelum Scala (BPL10 Winners) [yinnzx to irosuico]
 bot_add "CaeSC Nyuii"; bot_add "CaeSC Baer"; bot_add "CaeSC lenette"; bot_add "CaeSC kyyltn"; bot_add "CaeSC 4_naru";

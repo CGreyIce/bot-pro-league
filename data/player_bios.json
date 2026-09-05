@@ -75,10 +75,6 @@
   "gender": "M",
   "bio": "Suzuyunn is a Platinum-tier in-game leader for Aeternum, a Singaporean caller with a winning record for the roster."
  },
- "drip": {
-  "gender": "M",
-  "bio": "drip is a Platinum-tier AWPer for Aeternum, a Singaporean sniper holding down the team's defensive rounds."
- },
  "nipnip": {
   "gender": "M",
   "bio": "NipNip is the in-game leader for Aetherline, a Singaporean caller who tops the scoreboard as often as not — 522 kills and 95 MVP rounds while running the team, at a 64% win rate."
@@ -234,10 +230,6 @@
  "l1feless": {
   "gender": "M",
   "bio": "l1feless is a Silver-tier AWPer for Bluebird, an Indonesian sniper and one of the pool's few Indonesian names."
- },
- "volatus": {
-  "gender": "F",
-  "bio": "Volatus is the in-game leader for Bluebird, a Singaporean caller and Gold-tier talent."
  },
  "lenette": {
   "gender": "F",
@@ -1558,5 +1550,13 @@
  "itzmaigay": {
   "gender": "M",
   "bio": "ItzMaigay is a solo-queue regular rated Gold, a ladder grinder building a body of work one game at a time."
+ },
+ "lyrazal": {
+  "gender": "F",
+  "bio": "Lyrazal is the in-game leader for Bluebird, a Singaporean caller and Gold-tier talent."
+ },
+ "perk": {
+  "gender": "M",
+  "bio": "perk is a Platinum-tier AWPer for Aeternum, a Singaporean sniper holding down the team's defensive rounds."
  }
 }
