@@ -39159,9 +39159,9 @@
          "captain": false
         },
         {
-         "hist": "dumbo",
-         "name": "dumbo",
-         "slug": "dumbo",
+         "hist": "MiruuxdVT",
+         "name": "MiruuxdVT",
+         "slug": "miruuxdvt-solo",
          "iso": "sg",
          "captain": false
         }
@@ -40206,9 +40206,9 @@
          "captain": true
         },
         {
-         "hist": "Dazeido",
-         "name": "Dazeido",
-         "slug": "dazeido-amateur",
+         "hist": "dumbo",
+         "name": "dumbo",
+         "slug": "dumbo",
          "iso": "id",
          "captain": false
         },
@@ -64778,9 +64778,9 @@
          "captain": false
         },
         {
-         "hist": "dumbo",
-         "name": "dumbo",
-         "slug": "dumbo",
+         "hist": "MiruuxdVT",
+         "name": "MiruuxdVT",
+         "slug": "miruuxdvt-solo",
          "iso": "sg",
          "captain": false
         }
@@ -65903,9 +65903,9 @@
          "captain": false
         },
         {
-         "hist": "dumbo",
-         "name": "dumbo",
-         "slug": "dumbo",
+         "hist": "MiruuxdVT",
+         "name": "MiruuxdVT",
+         "slug": "miruuxdvt-solo",
          "iso": "sg",
          "captain": false
         }
@@ -80284,9 +80284,9 @@
          "captain": false
         },
         {
-         "hist": "dumbo",
-         "name": "dumbo",
-         "slug": "dumbo",
+         "hist": "MiruuxdVT",
+         "name": "MiruuxdVT",
+         "slug": "miruuxdvt-solo",
          "iso": "sg",
          "captain": false
         }
@@ -90941,7 +90941,7 @@
          "hist": "dumbo",
          "name": "dumbo",
          "slug": "dumbo",
-         "iso": "sg",
+         "iso": "id",
          "captain": false
         },
         {
@@ -91273,7 +91273,7 @@
          "hist": "dumbo",
          "name": "dumbo",
          "slug": "dumbo",
-         "iso": "sg",
+         "iso": "id",
          "captain": false
         },
         {
@@ -91422,7 +91422,7 @@
          "hist": "dumbo",
          "name": "dumbo",
          "slug": "dumbo",
-         "iso": "sg",
+         "iso": "id",
          "captain": false
         },
         {
@@ -91510,8 +91510,8 @@
      "orig_level": "Level 3",
      "orig_rating": 1272.0,
      "slug": "dumbo",
-     "nat": "Singapore",
-     "iso": "sg",
+     "nat": "Indonesia",
+     "iso": "id",
      "rating": 0.968,
      "ratingPoints": 1024,
      "tier": "Silver",
@@ -91571,7 +91571,7 @@
          "hist": "dumbo",
          "name": "dumbo",
          "slug": "dumbo",
-         "iso": "sg",
+         "iso": "id",
          "captain": false
         },
         {
@@ -91584,7 +91584,7 @@
        ]
       },
       {
-       "team": "SG Squad 11",
+       "team": "Team Indonesia",
        "teamSlug": null,
        "isPro": false,
        "years": [
@@ -91592,38 +91592,38 @@
        ],
        "roster": [
         {
-         "hist": "y1jingg",
-         "name": "y1jingg",
-         "slug": "y1jingg",
-         "iso": "sg",
+         "hist": "l1feless",
+         "name": "l1feless",
+         "slug": "l1feless",
+         "iso": "id",
          "captain": true
-        },
-        {
-         "hist": "xolalotl",
-         "name": "xolalotl",
-         "slug": "xolalotl",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Nutzeru",
-         "name": "Nutzeru",
-         "slug": "nutzeru",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Niito",
-         "name": "Niito",
-         "slug": "niito",
-         "iso": "sg",
-         "captain": false
         },
         {
          "hist": "dumbo",
          "name": "dumbo",
          "slug": "dumbo",
-         "iso": "sg",
+         "iso": "id",
+         "captain": false
+        },
+        {
+         "hist": "Mikuryne",
+         "name": "Mikuryne",
+         "slug": "mikuryne-amateur",
+         "iso": "id",
+         "captain": false
+        },
+        {
+         "hist": "Reruzensky",
+         "name": "Reruzensky",
+         "slug": "reruzensky-amateur",
+         "iso": "id",
+         "captain": false
+        },
+        {
+         "hist": "SpicyWolfie",
+         "name": "SpicyWolfie",
+         "slug": "spicywolfie-amateur",
+         "iso": "id",
          "captain": false
         }
        ]
@@ -91990,7 +91990,7 @@
          "hist": "dumbo",
          "name": "dumbo",
          "slug": "dumbo",
-         "iso": "sg",
+         "iso": "id",
          "captain": false
         },
         {
@@ -102413,7 +102413,7 @@
         "hist": "dumbo",
         "name": "dumbo",
         "slug": "dumbo",
-        "iso": "sg",
+        "iso": "id",
         "captain": false
        },
        {
@@ -102504,8 +102504,8 @@
     "orig_level": "Level 3",
     "orig_rating": 1272.0,
     "slug": "dumbo",
-    "nat": "Singapore",
-    "iso": "sg",
+    "nat": "Indonesia",
+    "iso": "id",
     "rating": 0.968,
     "ratingPoints": 1024,
     "tier": "Silver",
@@ -102565,7 +102565,7 @@
         "hist": "dumbo",
         "name": "dumbo",
         "slug": "dumbo",
-        "iso": "sg",
+        "iso": "id",
         "captain": false
        },
        {
@@ -102578,7 +102578,7 @@
       ]
      },
      {
-      "team": "SG Squad 11",
+      "team": "Team Indonesia",
       "teamSlug": null,
       "isPro": false,
       "years": [
@@ -102586,38 +102586,38 @@
       ],
       "roster": [
        {
-        "hist": "y1jingg",
-        "name": "y1jingg",
-        "slug": "y1jingg",
-        "iso": "sg",
+        "hist": "l1feless",
+        "name": "l1feless",
+        "slug": "l1feless",
+        "iso": "id",
         "captain": true
-       },
-       {
-        "hist": "xolalotl",
-        "name": "xolalotl",
-        "slug": "xolalotl",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "Nutzeru",
-        "name": "Nutzeru",
-        "slug": "nutzeru",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "Niito",
-        "name": "Niito",
-        "slug": "niito",
-        "iso": "sg",
-        "captain": false
        },
        {
         "hist": "dumbo",
         "name": "dumbo",
         "slug": "dumbo",
-        "iso": "sg",
+        "iso": "id",
+        "captain": false
+       },
+       {
+        "hist": "Mikuryne",
+        "name": "Mikuryne",
+        "slug": "mikuryne-amateur",
+        "iso": "id",
+        "captain": false
+       },
+       {
+        "hist": "Reruzensky",
+        "name": "Reruzensky",
+        "slug": "reruzensky-amateur",
+        "iso": "id",
+        "captain": false
+       },
+       {
+        "hist": "SpicyWolfie",
+        "name": "SpicyWolfie",
+        "slug": "spicywolfie-amateur",
+        "iso": "id",
         "captain": false
        }
       ]
@@ -102894,7 +102894,7 @@
         "hist": "dumbo",
         "name": "dumbo",
         "slug": "dumbo",
-        "iso": "sg",
+        "iso": "id",
         "captain": false
        },
        {
@@ -103043,7 +103043,7 @@
         "hist": "dumbo",
         "name": "dumbo",
         "slug": "dumbo",
-        "iso": "sg",
+        "iso": "id",
         "captain": false
        },
        {
@@ -103462,7 +103462,7 @@
         "hist": "dumbo",
         "name": "dumbo",
         "slug": "dumbo",
-        "iso": "sg",
+        "iso": "id",
         "captain": false
        },
        {
@@ -104483,9 +104483,9 @@
         "captain": false
        },
        {
-        "hist": "dumbo",
-        "name": "dumbo",
-        "slug": "dumbo",
+        "hist": "MiruuxdVT",
+        "name": "MiruuxdVT",
+        "slug": "miruuxdvt-solo",
         "iso": "sg",
         "captain": false
        }
@@ -118209,9 +118209,9 @@
         "captain": false
        },
        {
-        "hist": "dumbo",
-        "name": "dumbo",
-        "slug": "dumbo",
+        "hist": "MiruuxdVT",
+        "name": "MiruuxdVT",
+        "slug": "miruuxdvt-solo",
         "iso": "sg",
         "captain": false
        }
@@ -118924,9 +118924,9 @@
         "captain": true
        },
        {
-        "hist": "Dazeido",
-        "name": "Dazeido",
-        "slug": "dazeido-amateur",
+        "hist": "dumbo",
+        "name": "dumbo",
+        "slug": "dumbo",
         "iso": "id",
         "captain": false
        },
@@ -127331,9 +127331,9 @@
         "captain": false
        },
        {
-        "hist": "dumbo",
-        "name": "dumbo",
-        "slug": "dumbo",
+        "hist": "MiruuxdVT",
+        "name": "MiruuxdVT",
+        "slug": "miruuxdvt-solo",
         "iso": "sg",
         "captain": false
        }
@@ -159265,9 +159265,9 @@
         "captain": false
        },
        {
-        "hist": "dumbo",
-        "name": "dumbo",
-        "slug": "dumbo",
+        "hist": "MiruuxdVT",
+        "name": "MiruuxdVT",
+        "slug": "miruuxdvt-solo",
         "iso": "sg",
         "captain": false
        }
@@ -198830,51 +198830,6 @@
         "hist": "Dazeido",
         "name": "Dazeido",
         "slug": "dazeido-amateur",
-        "iso": "id",
-        "captain": false
-       }
-      ]
-     },
-     {
-      "team": "Team Indonesia",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "l1feless",
-        "name": "l1feless",
-        "slug": "l1feless",
-        "iso": "id",
-        "captain": true
-       },
-       {
-        "hist": "Dazeido",
-        "name": "Dazeido",
-        "slug": "dazeido-amateur",
-        "iso": "id",
-        "captain": false
-       },
-       {
-        "hist": "Mikuryne",
-        "name": "Mikuryne",
-        "slug": "mikuryne-amateur",
-        "iso": "id",
-        "captain": false
-       },
-       {
-        "hist": "Reruzensky",
-        "name": "Reruzensky",
-        "slug": "reruzensky-amateur",
-        "iso": "id",
-        "captain": false
-       },
-       {
-        "hist": "SpicyWolfie",
-        "name": "SpicyWolfie",
-        "slug": "spicywolfie-amateur",
         "iso": "id",
         "captain": false
        }
@@ -242315,9 +242270,9 @@
         "captain": true
        },
        {
-        "hist": "Dazeido",
-        "name": "Dazeido",
-        "slug": "dazeido-amateur",
+        "hist": "dumbo",
+        "name": "dumbo",
+        "slug": "dumbo",
         "iso": "id",
         "captain": false
        },
@@ -242463,9 +242418,9 @@
         "captain": true
        },
        {
-        "hist": "Dazeido",
-        "name": "Dazeido",
-        "slug": "dazeido-amateur",
+        "hist": "dumbo",
+        "name": "dumbo",
+        "slug": "dumbo",
         "iso": "id",
         "captain": false
        },
@@ -242537,9 +242492,9 @@
         "captain": true
        },
        {
-        "hist": "Dazeido",
-        "name": "Dazeido",
-        "slug": "dazeido-amateur",
+        "hist": "dumbo",
+        "name": "dumbo",
+        "slug": "dumbo",
         "iso": "id",
         "captain": false
        },
@@ -243354,6 +243309,80 @@
         "name": "Goonuyun",
         "slug": "goonuyun-solo",
         "iso": "neutral",
+        "captain": false
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "MiruuxdVT",
+    "team": "",
+    "pool": "solo",
+    "kills": 0,
+    "assists": 0,
+    "deaths": 0,
+    "mvp": 0,
+    "kdr": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "winrate": 0.0,
+    "ot": 0,
+    "role": "Rifler",
+    "maps": 0,
+    "orig_rank": "",
+    "orig_level": "",
+    "orig_rating": 0.0,
+    "slug": "miruuxdvt-solo",
+    "nat": "Singapore",
+    "iso": "sg",
+    "rating": null,
+    "ratingPoints": null,
+    "tier": null,
+    "level": null,
+    "rankDelta": 0,
+    "teamHistory": [
+     {
+      "team": "SG Squad 11",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "y1jingg",
+        "name": "y1jingg",
+        "slug": "y1jingg",
+        "iso": "sg",
+        "captain": true
+       },
+       {
+        "hist": "xolalotl",
+        "name": "xolalotl",
+        "slug": "xolalotl",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Nutzeru",
+        "name": "Nutzeru",
+        "slug": "nutzeru",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Niito",
+        "name": "Niito",
+        "slug": "niito",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "MiruuxdVT",
+        "name": "MiruuxdVT",
+        "slug": "miruuxdvt-solo",
+        "iso": "sg",
         "captain": false
        }
       ]
@@ -244344,9 +244373,9 @@
        "captain": true
       },
       {
-       "hist": "Dazeido",
-       "name": "Dazeido",
-       "slug": "dazeido-amateur",
+       "hist": "dumbo",
+       "name": "dumbo",
+       "slug": "dumbo",
        "iso": "id",
        "captain": false
       },
@@ -252110,9 +252139,9 @@
        "captain": false
       },
       {
-       "hist": "dumbo",
-       "name": "dumbo",
-       "slug": "dumbo",
+       "hist": "MiruuxdVT",
+       "name": "MiruuxdVT",
+       "slug": "miruuxdvt-solo",
        "iso": "sg",
        "captain": false
       }
@@ -260332,7 +260361,7 @@
             "mvp": 0,
             "score": 18,
             "slug": "dumbo",
-            "iso": "sg"
+            "iso": "id"
            },
            {
             "team": "Aspire",
@@ -266907,7 +266936,7 @@
               "mvp": 0,
               "score": 18,
               "slug": "dumbo",
-              "iso": "sg"
+              "iso": "id"
              },
              {
               "team": "Aspire",
@@ -271750,7 +271779,7 @@
        "hist": "dumbo",
        "name": "dumbo",
        "slug": "dumbo",
-       "iso": "sg",
+       "iso": "id",
        "captain": false
       },
       {
@@ -289908,7 +289937,7 @@
        "hist": "dumbo",
        "name": "dumbo",
        "slug": "dumbo",
-       "iso": "sg",
+       "iso": "id",
        "captain": false
       },
       {
@@ -297098,7 +297127,7 @@
        "hist": "dumbo",
        "name": "dumbo",
        "slug": "dumbo",
-       "iso": "sg",
+       "iso": "id",
        "captain": false
       },
       {
@@ -354171,6 +354200,18 @@
   },
   {
    "type": "transfer",
+   "player": "dumbo",
+   "playerSlug": "dumbo",
+   "iso": "id",
+   "fromTeam": "5PERCENT",
+   "fromSlug": "5percent",
+   "toTeam": "Team Indonesia",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
+   "type": "transfer",
    "player": "Juno Umezono",
    "playerSlug": "juno-umezono-amateur",
    "iso": "ph",
@@ -354237,18 +354278,6 @@
    "fromTeam": "Wraithborne",
    "fromSlug": null,
    "toTeam": "Team Canada",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
-   "player": "Dazeido",
-   "playerSlug": "dazeido-amateur",
-   "iso": "id",
-   "fromTeam": "Crimson Meridian",
-   "fromSlug": null,
-   "toTeam": "Team Indonesia",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-27"
@@ -357651,18 +357680,6 @@
   },
   {
    "type": "transfer",
-   "player": "dumbo",
-   "playerSlug": "dumbo",
-   "iso": "sg",
-   "fromTeam": "5PERCENT",
-   "fromSlug": "5percent",
-   "toTeam": "SG Squad 11",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-20"
-  },
-  {
-   "type": "transfer",
    "player": "Kisaragi Ren",
    "playerSlug": "kisaragi-ren",
    "iso": "jp",
@@ -358509,6 +358526,18 @@
    "fromTeam": null,
    "fromSlug": null,
    "toTeam": "MY Squad 10",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-20"
+  },
+  {
+   "type": "debut",
+   "player": "MiruuxdVT",
+   "playerSlug": "miruuxdvt-solo",
+   "iso": "sg",
+   "fromTeam": null,
+   "fromSlug": null,
+   "toTeam": "SG Squad 11",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-20"
@@ -364877,7 +364906,7 @@
    "type": "debut",
    "player": "dumbo",
    "playerSlug": "dumbo",
-   "iso": "sg",
+   "iso": "id",
    "fromTeam": null,
    "fromSlug": null,
    "toTeam": "5PERCENT",
@@ -386937,49 +386966,49 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.296,
+     "wr": 0.312,
      "real": false
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.514,
+     "wr": 0.529,
      "real": false
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.3,
+     "wr": 0.315,
      "real": false
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.468,
+     "wr": 0.483,
      "real": false
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.589,
+     "wr": 0.605,
      "real": false
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.61,
+     "wr": 0.626,
      "real": false
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.386,
+     "wr": 0.401,
      "real": false
     }
    },
@@ -389051,49 +389080,49 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.608,
+     "wr": 0.623,
      "real": false
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.373,
+     "wr": 0.388,
      "real": false
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.729,
+     "wr": 0.743,
      "real": false
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.386,
+     "wr": 0.4,
      "real": false
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.362,
+     "wr": 0.377,
      "real": false
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.445,
+     "wr": 0.46,
      "real": false
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.579,
+     "wr": 0.594,
      "real": false
     }
    },
