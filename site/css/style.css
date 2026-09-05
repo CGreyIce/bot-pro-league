@@ -574,6 +574,44 @@ textarea.adm-in{resize:vertical}
 #roster-pop .ms-sc .ms-dash{color:var(--muted);margin:0 3px}
 #roster-pop .ms-sc .ms-w{color:var(--accent);font-weight:700}
 #roster-pop .ms-sc .ms-l{color:var(--muted)}
+.bkt-match,.bmatch{cursor:pointer}
+
+/* HLTV-style match card (click a played bracket match) */
+#match-card-ov{position:fixed;inset:0;z-index:400;background:rgba(4,8,16,.62);backdrop-filter:blur(2px);display:none;align-items:flex-start;justify-content:center;padding:60px 16px 24px;overflow:auto}
+.mc-card{width:380px;max-width:100%;background:var(--panel);border:1px solid var(--border2);border-radius:12px;box-shadow:0 24px 60px rgba(0,0,0,.6);overflow:hidden}
+.mc-head{position:relative;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;padding:16px 14px 14px;border-bottom:1px solid var(--border)}
+.mc-team{display:flex;align-items:center;gap:8px;min-width:0;font-family:'Rajdhani';font-size:16px;font-weight:600}
+.mc-team.right{justify-content:flex-end;text-align:right}
+.mc-team a{color:var(--muted)}
+.mc-team.win a{color:var(--text)}
+.mc-team a:hover{color:var(--link)}
+.mc-team .mc-tn{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mc-team img{height:26px;width:26px;object-fit:contain;flex:0 0 auto}
+.mc-noimg{height:26px;width:26px;border-radius:5px;background:var(--chip,#223);display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--muted);flex:0 0 auto}
+.mc-seed{font-size:10px;color:var(--muted);background:var(--chip,#1b2333);border-radius:4px;padding:1px 4px}
+.mc-score{display:flex;align-items:center;gap:7px;font-family:'Rajdhani';font-size:24px;font-weight:700}
+.mc-score b{color:var(--muted)} .mc-score b.won{color:var(--good)} .mc-score span{color:var(--muted);font-size:16px}
+.mc-close{position:absolute;top:6px;right:9px;cursor:pointer;color:var(--muted);font-size:19px;line-height:1}
+.mc-close:hover{color:var(--text)}
+.mc-sec{text-align:center;font-family:'Rajdhani';letter-spacing:.6px;text-transform:uppercase;font-size:12px;color:var(--muted);padding:11px 0 7px;font-weight:600}
+.mc-sec span{text-transform:none;letter-spacing:0;font-size:10.5px;color:var(--muted2);font-weight:400;display:block;margin-top:1px}
+.mc-maps{padding:0 16px 8px}
+.mc-map{display:grid;grid-template-columns:34px 1fr 34px;align-items:center;padding:4px 0}
+.mc-map .mc-mn{text-align:center;color:var(--text);font-size:13px;font-family:'Rajdhani';letter-spacing:.3px}
+.mc-map .mc-ms{font-family:monospace;font-variant-numeric:tabular-nums;font-size:14px;color:var(--muted)}
+.mc-map .mc-ms:last-child{text-align:right}
+.mc-map .mc-ms.won{color:var(--good);font-weight:700}
+.mc-lines{padding:0 12px 6px}
+.mc-lrow{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:3px 0;border-top:1px solid var(--border)}
+.mc-lrow:first-child{border-top:none}
+.mc-pl{display:flex;align-items:center;gap:6px;min-width:0;font-size:12.5px}
+.mc-pl.r{justify-content:flex-end;text-align:right}
+.mc-pl .mc-pn{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mc-pl .mc-pn a{color:var(--text)} .mc-pl .mc-pn a:hover{color:var(--link)}
+.mc-pl .mc-rt{font-family:monospace;font-variant-numeric:tabular-nums;font-size:12.5px;flex:0 0 auto}
+.mc-pl .flag{flex:0 0 auto}
+.mc-btn{display:block;text-align:center;margin:8px 12px 12px;padding:9px;border-radius:8px;background:var(--accent-grad,#2b3b57);color:#eaf2ff;font-family:'Rajdhani';font-weight:600;letter-spacing:.4px}
+.mc-btn:hover{filter:brightness(1.12)}
 
 /* teams-attending wall */
 .attend-wall{display:flex;flex-wrap:wrap;gap:8px}

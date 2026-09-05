@@ -1274,11 +1274,8 @@ function renderStats(){
 }
 
 // ---------- Match page ----------
-function renderMatch(){
-  const parts = location.hash.replace(/^#\/?/,"").split("/");
-  const slug = parts[1], ref = parts.slice(2).join("/");
-  const tr = (DATA.tournaments||[]).find(t=>t.slug===slug);
-  if(!tr){ app.innerHTML = notFound("Match"); return; }
+// locate a match (and its round/stage titles) within a tournament by ref string
+function findMatchByRef(tr, ref){
   let match=null, roundTitle="", stageName="";
   const scan = (rounds, sName)=>rounds.forEach(rd=>rd.matches.forEach(m=>{
     if(m.i!=null && (String(m.i)===ref || `${ref}`.endsWith("-"+m.i))){ match=m; roundTitle=rd.title; stageName=sName||""; }
@@ -1286,6 +1283,15 @@ function renderMatch(){
   if(ref.includes("-") && tr.stages){ const sid=ref.split("-")[0]; const st=tr.stages.find(s=>String(s.id)===sid); if(st) scan(st.rounds, st.name); }
   if(!match){ (tr.bracket||[]).forEach(rd=>rd.matches.forEach(m=>{ if(String(m.i)===ref){match=m;roundTitle=rd.title;} })); }
   if(!match && tr.stages){ tr.stages.forEach(st=>scan(st.rounds, st.name)); }
+  return {match, roundTitle, stageName};
+}
+function renderMatch(){
+  const parts = location.hash.replace(/^#\/?/,"").split("/");
+  const slug = parts[1], ref = parts.slice(2).join("/");
+  const tr = (DATA.tournaments||[]).find(t=>t.slug===slug);
+  if(!tr){ app.innerHTML = notFound("Match"); return; }
+  const _f = findMatchByRef(tr, ref);
+  let match=_f.match, roundTitle=_f.roundTitle, stageName=_f.stageName;
   if(!match){ app.innerHTML = notFound("Match"); return; }
 
   const side = (name, slug2, score, win)=>{
@@ -1399,6 +1405,67 @@ function rtgColor(r){
   if(r<0.90)  return 'var(--accent2, #ff6b6b)';
   return 'var(--text)';
 }
+// ---------- HLTV-style match card (click a played bracket match) ----------
+function matchCardHTML(tr, m, ref){
+  const ta = m.aTeam?teamBySlug(m.aTeam):null, tb = m.bTeam?teamBySlug(m.bTeam):null;
+  const seedOf = (nm,sl)=>{ const s = tr.seeds && (tr.seeds[sl]||tr.seeds[nm]); return s?`<span class="mc-seed">#${s}</span>`:''; };
+  const crest = (t,nm)=> t&&t.logo ? `<img src="${esc(t.logo)}" alt="">` : `<span class="mc-noimg">${initials(nm||'?')}</span>`;
+  const head = `<div class="mc-head">
+      <div class="mc-team ${m.w===1?'win':''}">${crest(ta,m.a)}<span class="mc-tn">${m.aTeam?`<a href="#/team/${m.aTeam}">${esc(m.a)}</a>`:esc(m.a||'TBD')}</span>${seedOf(m.a,m.aTeam)}</div>
+      <div class="mc-score"><b class="${m.w===1?'won':''}">${m.sa!=null?m.sa:'–'}</b><span>:</span><b class="${m.w===2?'won':''}">${m.sb!=null?m.sb:'–'}</b></div>
+      <div class="mc-team right ${m.w===2?'win':''}">${seedOf(m.b,m.bTeam)}<span class="mc-tn">${m.bTeam?`<a href="#/team/${m.bTeam}">${esc(m.b)}</a>`:esc(m.b||'TBD')}</span>${crest(tb,m.b)}</div>
+      <span class="mc-close" title="Close">×</span>
+    </div>`;
+  const maps = (m.stats && m.stats.maps) || [];
+  let mapsHtml = '';
+  if(maps.length){
+    mapsHtml = `<div class="mc-sec">Maps</div><div class="mc-maps">`+maps.map(mp=>{
+      const aw = mp.scoreA>mp.scoreB, bw = mp.scoreB>mp.scoreA;
+      return `<div class="mc-map"><span class="mc-ms ${aw?'won':''}">${mp.scoreA!=null?mp.scoreA:'–'}</span>`+
+             `<span class="mc-mn">${mp.map?esc(mp.map):'Map'}</span>`+
+             `<span class="mc-ms ${bw?'won':''}">${mp.scoreB!=null?mp.scoreB:'–'}</span></div>`;
+    }).join("")+`</div>`;
+  }
+  // lineups with this-match aggregate rating, paired A-vs-B by rating rank
+  let lineHtml = '';
+  const R = maps.reduce((s,mp)=>s+((mp.scoreA||0)+(mp.scoreB||0)),0);
+  if(R>0){
+    const agg = aggregateMaps(maps);
+    const side = nm => agg.filter(p=>normKey(p.team)===normKey(nm))
+      .map(p=>({...p, rtg:matchRating(p.k,p.a,p.d,p.score,R)}))
+      .sort((x,y)=>(y.rtg==null?-1:y.rtg)-(x.rtg==null?-1:x.rtg));
+    const A = side(m.a), B = side(m.b), n = Math.max(A.length, B.length);
+    if(n){
+      const cell = (p, right)=>{
+        if(!p) return `<span class="mc-pl ${right?'r':''}"></span>`;
+        const nm = p.slug?`<a href="#/player/${p.slug}">${esc(p.name)}</a>`:esc(p.name);
+        const rt = p.rtg==null?'—':p.rtg.toFixed(2);
+        return right
+          ? `<span class="mc-pl r"><b class="mc-rt" style="color:${rtgColor(p.rtg)}">${rt}</b>${flag(p.iso)}<span class="mc-pn">${nm}</span></span>`
+          : `<span class="mc-pl"><span class="mc-pn">${nm}</span>${flag(p.iso)}<b class="mc-rt" style="color:${rtgColor(p.rtg)}">${rt}</b></span>`;
+      };
+      let rows='';
+      for(let i=0;i<n;i++) rows += `<div class="mc-lrow">${cell(A[i],false)}${cell(B[i],true)}</div>`;
+      lineHtml = `<div class="mc-sec">Lineups <span>player ratings for this match</span></div><div class="mc-lines">${rows}</div>`;
+    }
+  }
+  const btn = `<a class="mc-btn" href="#/match/${tr.slug}/${ref}">Match page</a>`;
+  return `<div class="mc-card">${head}${mapsHtml}${lineHtml}${btn}</div>`;
+}
+function matchCardEl(){
+  let ov = document.getElementById("match-card-ov");
+  if(!ov){
+    ov = document.createElement("div"); ov.id="match-card-ov"; ov.style.display="none";
+    ov.innerHTML = `<div class="mc-inner"></div>`;
+    document.body.appendChild(ov);
+    ov.addEventListener("click", e=>{ if(e.target===ov) hideMatchCard(); });
+    ov.addEventListener("click", e=>{ if(e.target.closest(".mc-close")||e.target.closest(".mc-btn")||e.target.closest("a")) hideMatchCard(); });
+    document.addEventListener("keydown", e=>{ if(e.key==="Escape") hideMatchCard(); });
+  }
+  return ov;
+}
+function showMatchCard(html){ const ov=matchCardEl(); ov.querySelector(".mc-inner").innerHTML=html; ov.style.display="flex"; }
+function hideMatchCard(){ const ov=document.getElementById("match-card-ov"); if(ov) ov.style.display="none"; }
 // every recorded map a player appeared in (from scoreboards): rtg + win/loss, oldest→newest
 function playerFormLog(slug){
   const out=[];
@@ -2212,8 +2279,8 @@ function renderTournament(slug){
 
   const isElim = /elimination/.test(tr.type);
 
-  // hover attribute: Bo3/Bo5 played matches show the per-map score; otherwise the roster
-  const hovAttr = (m, side, name, teamSlug)=>{ const i = mapScoreEntry(m, side); return i!=null ? ` data-mapscore="${i}"` : rAttr(name, teamSlug); };
+  // bracket matches: no hover popup — clicking the match opens an HLTV-style card instead
+  const hovAttr = ()=> '';
   // --- tree bracket (single/double elim) ---
   const treeTeam = (m, side)=>{
     const name = side==='a'?m.a:m.b, teamSlug = side==='a'?m.aTeam:m.bTeam;
@@ -2340,10 +2407,17 @@ function renderTournament(slug){
 
   // draw bracket connector lines once laid out
   requestAnimationFrame(()=>document.querySelectorAll(".bkt").forEach(drawConnectors));
-  // click a match to open its match page (but let team-name links work)
+  // click a match: played matches open an HLTV-style card; unplayed jump to the match page.
+  // (team-name links still work; they navigate to the team page.)
   app.querySelectorAll("[data-match]").forEach(el=>el.addEventListener("click", e=>{
     if(e.target.closest("a")) return;
-    location.hash = `#/match/${slug}/${el.dataset.match}`;
+    const ref = el.dataset.match;
+    const {match} = findMatchByRef(tr, ref);
+    if(match && match.stats && (match.stats.maps||[]).length){
+      showMatchCard(matchCardHTML(tr, match, ref));
+    } else {
+      location.hash = `#/match/${slug}/${ref}`;
+    }
   }));
 }
 
