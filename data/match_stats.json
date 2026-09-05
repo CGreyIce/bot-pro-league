@@ -12322,5 +12322,205 @@
     }
    ]
   }
+ },
+ "nations-cup-qualifier-japan-2026": {
+  "1-2": {
+   "maps": [
+    {
+     "map": "Mirage",
+     "scoreA": 13,
+     "scoreB": 9,
+     "players": [
+      {
+       "team": "JP Squad 4",
+       "name": "Ginjo Saine",
+       "k": 26,
+       "a": 0,
+       "d": 11,
+       "mvp": 5,
+       "score": 63
+      },
+      {
+       "team": "JP Squad 4",
+       "name": "Miki Nakai",
+       "k": 17,
+       "a": 4,
+       "d": 11,
+       "mvp": 1,
+       "score": 47
+      },
+      {
+       "team": "JP Squad 4",
+       "name": "Tachibana Hinano",
+       "k": 15,
+       "a": 1,
+       "d": 13,
+       "mvp": 3,
+       "score": 39
+      },
+      {
+       "team": "JP Squad 4",
+       "name": "Tosaki Mimi",
+       "k": 14,
+       "a": 1,
+       "d": 13,
+       "mvp": 3,
+       "score": 38
+      },
+      {
+       "team": "JP Squad 4",
+       "name": "Shinomiya Runa",
+       "k": 13,
+       "a": 3,
+       "d": 19,
+       "mvp": 1,
+       "score": 30
+      },
+      {
+       "team": "JP Squad 5",
+       "name": "AkiraTsukiyono",
+       "k": 18,
+       "a": 3,
+       "d": 18,
+       "mvp": 1,
+       "score": 44
+      },
+      {
+       "team": "JP Squad 5",
+       "name": "Tatsumaki Chise",
+       "k": 15,
+       "a": 1,
+       "d": 16,
+       "mvp": 3,
+       "score": 40
+      },
+      {
+       "team": "JP Squad 5",
+       "name": "Asumi Sena",
+       "k": 13,
+       "a": 0,
+       "d": 18,
+       "mvp": 2,
+       "score": 32
+      },
+      {
+       "team": "JP Squad 5",
+       "name": "Kaga Sumire",
+       "k": 12,
+       "a": 1,
+       "d": 17,
+       "mvp": 2,
+       "score": 32
+      },
+      {
+       "team": "JP Squad 5",
+       "name": "Kurumi Noah",
+       "k": 9,
+       "a": 1,
+       "d": 16,
+       "mvp": 1,
+       "score": 26
+      }
+     ]
+    },
+    {
+     "map": "Anubis",
+     "scoreA": 13,
+     "scoreB": 2,
+     "players": [
+      {
+       "team": "JP Squad 4",
+       "name": "Tachibana Hinano",
+       "k": 19,
+       "a": 0,
+       "d": 8,
+       "mvp": 3,
+       "score": 55
+      },
+      {
+       "team": "JP Squad 4",
+       "name": "Ginjo Saine",
+       "k": 16,
+       "a": 0,
+       "d": 9,
+       "mvp": 2,
+       "score": 41
+      },
+      {
+       "team": "JP Squad 4",
+       "name": "Shinomiya Runa",
+       "k": 14,
+       "a": 0,
+       "d": 9,
+       "mvp": 3,
+       "score": 35
+      },
+      {
+       "team": "JP Squad 4",
+       "name": "Tosaki Mimi",
+       "k": 10,
+       "a": 0,
+       "d": 7,
+       "mvp": 3,
+       "score": 27
+      },
+      {
+       "team": "JP Squad 4",
+       "name": "Miki Nakai",
+       "k": 11,
+       "a": 0,
+       "d": 7,
+       "mvp": 2,
+       "score": 25
+      },
+      {
+       "team": "JP Squad 5",
+       "name": "Tatsumaki Chise",
+       "k": 10,
+       "a": 2,
+       "d": 14,
+       "mvp": 1,
+       "score": 26
+      },
+      {
+       "team": "JP Squad 5",
+       "name": "Kaga Sumire",
+       "k": 10,
+       "a": 2,
+       "d": 13,
+       "mvp": 0,
+       "score": 23
+      },
+      {
+       "team": "JP Squad 5",
+       "name": "Kurumi Noah",
+       "k": 9,
+       "a": 1,
+       "d": 14,
+       "mvp": 0,
+       "score": 21
+      },
+      {
+       "team": "JP Squad 5",
+       "name": "Asumi Sena",
+       "k": 6,
+       "a": 2,
+       "d": 15,
+       "mvp": 0,
+       "score": 16
+      },
+      {
+       "team": "JP Squad 5",
+       "name": "AkiraTsukiyono",
+       "k": 5,
+       "a": 1,
+       "d": 13,
+       "mvp": 1,
+       "score": 14
+      }
+     ]
+    }
+   ]
+  }
  }
 }
