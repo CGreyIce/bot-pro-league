@@ -26581,6 +26581,130 @@
      "curSlug": "spicywolfie-amateur"
     }
    ]
+  },
+  {
+   "team": "Team Germany",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Hanyachi",
+     "captain": false,
+     "curSlug": "hanyachi"
+    },
+    {
+     "name": "LITA",
+     "captain": true,
+     "curSlug": "lita"
+    },
+    {
+     "name": "RaivyRain",
+     "captain": false,
+     "curSlug": "raivyrain-solo"
+    },
+    {
+     "name": "Soapbox_Danny",
+     "captain": false,
+     "curSlug": "soapbox-danny-amateur"
+    },
+    {
+     "name": "Sportsocke",
+     "captain": false,
+     "curSlug": "sportsocke-amateur"
+    }
+   ]
+  },
+  {
+   "team": "Team Korea",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "byeolyuna",
+     "captain": false,
+     "curSlug": "byeolyuna-solo"
+    },
+    {
+     "name": "Eris Suzukami",
+     "captain": false,
+     "curSlug": "eris-suzukami"
+    },
+    {
+     "name": "GreatMoonAroma",
+     "captain": false,
+     "curSlug": "greatmoonaroma-solo"
+    },
+    {
+     "name": "Narin Mikure",
+     "captain": false,
+     "curSlug": "narin-mikure"
+    },
+    {
+     "name": "Nekota Tsuna",
+     "captain": true,
+     "curSlug": "nekota-tsuna"
+    }
+   ]
+  },
+  {
+   "team": "Team Thailand",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Anony",
+     "captain": false,
+     "curSlug": "anony"
+    },
+    {
+     "name": "BluBEAR",
+     "captain": true,
+     "curSlug": "blubear"
+    },
+    {
+     "name": "colour",
+     "captain": false,
+     "curSlug": "colour-solo"
+    },
+    {
+     "name": "Nico",
+     "captain": false,
+     "curSlug": "nico-solo"
+    },
+    {
+     "name": "SUMMER",
+     "captain": false,
+     "curSlug": "summer-solo"
+    }
+   ]
+  },
+  {
+   "team": "Team Vietnam",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "DarkLite",
+     "captain": false,
+     "curSlug": "darklite-solo"
+    },
+    {
+     "name": "FLAVA",
+     "captain": true,
+     "curSlug": "flava-solo"
+    },
+    {
+     "name": "jackgia2002",
+     "captain": false,
+     "curSlug": "jackgia2002-solo"
+    },
+    {
+     "name": "renren.",
+     "captain": false,
+     "curSlug": "renren-solo"
+    },
+    {
+     "name": "suoh",
+     "captain": false,
+     "curSlug": "suoh-solo"
+    }
+   ]
   }
  ]
 }

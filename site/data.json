@@ -30415,6 +30415,51 @@
          "captain": false
         }
        ]
+      },
+      {
+       "team": "Team Thailand",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Anony",
+         "name": "Anony",
+         "slug": "anony",
+         "iso": "th",
+         "captain": false
+        },
+        {
+         "hist": "BluBEAR",
+         "name": "BluBEAR",
+         "slug": "blubear",
+         "iso": "th",
+         "captain": true
+        },
+        {
+         "hist": "colour",
+         "name": "colour",
+         "slug": "colour-solo",
+         "iso": "th",
+         "captain": false
+        },
+        {
+         "hist": "Nico",
+         "name": "Nico",
+         "slug": "nico-solo",
+         "iso": "th",
+         "captain": false
+        },
+        {
+         "hist": "SUMMER",
+         "name": "SUMMER",
+         "slug": "summer-solo",
+         "iso": "th",
+         "captain": false
+        }
+       ]
       }
      ]
     },
@@ -36822,6 +36867,51 @@
          "name": "laavv._",
          "slug": "laavv",
          "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Team Germany",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Hanyachi",
+         "name": "Hanyachi",
+         "slug": "hanyachi-amateur",
+         "iso": "de",
+         "captain": false
+        },
+        {
+         "hist": "LITA",
+         "name": "LITA",
+         "slug": "lita",
+         "iso": "de",
+         "captain": true
+        },
+        {
+         "hist": "RaivyRain",
+         "name": "RaivyRain",
+         "slug": "raivyrain-solo",
+         "iso": "de",
+         "captain": false
+        },
+        {
+         "hist": "Soapbox_Danny",
+         "name": "Soapbox_Danny",
+         "slug": "soapbox-danny-amateur",
+         "iso": "de",
+         "captain": false
+        },
+        {
+         "hist": "Sportsocke",
+         "name": "Sportsocke",
+         "slug": "sportsocke-amateur",
+         "iso": "de",
          "captain": false
         }
        ]
@@ -80989,6 +81079,51 @@
          "captain": false
         }
        ]
+      },
+      {
+       "team": "Team Thailand",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Anony",
+         "name": "Anony",
+         "slug": "anony",
+         "iso": "th",
+         "captain": false
+        },
+        {
+         "hist": "BluBEAR",
+         "name": "BluBEAR",
+         "slug": "blubear",
+         "iso": "th",
+         "captain": true
+        },
+        {
+         "hist": "colour",
+         "name": "colour",
+         "slug": "colour-solo",
+         "iso": "th",
+         "captain": false
+        },
+        {
+         "hist": "Nico",
+         "name": "Nico",
+         "slug": "nico-solo",
+         "iso": "th",
+         "captain": false
+        },
+        {
+         "hist": "SUMMER",
+         "name": "SUMMER",
+         "slug": "summer-solo",
+         "iso": "th",
+         "captain": false
+        }
+       ]
       }
      ],
      "aka": [
@@ -92518,6 +92653,51 @@
          "slug": "shiranami-ramune",
          "iso": "jp",
          "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Team Korea",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "byeolyuna",
+         "name": "byeolyuna",
+         "slug": "byeolyuna-solo",
+         "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "Eris Suzukami",
+         "name": "Eris Suzukami",
+         "slug": "eris-suzukami",
+         "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "GreatMoonAroma",
+         "name": "GreatMoonAroma",
+         "slug": "greatmoonaroma-solo",
+         "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "Narin Mikure",
+         "name": "Narin Mikure",
+         "slug": "narin-mikure-amateur",
+         "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "Nekota Tsuna",
+         "name": "Nekota Tsuna",
+         "slug": "nekota-tsuna-amateur",
+         "iso": "kr",
+         "captain": true
         }
        ]
       }
@@ -105375,6 +105555,51 @@
         "captain": false
        }
       ]
+     },
+     {
+      "team": "Team Thailand",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Anony",
+        "name": "Anony",
+        "slug": "anony",
+        "iso": "th",
+        "captain": false
+       },
+       {
+        "hist": "BluBEAR",
+        "name": "BluBEAR",
+        "slug": "blubear",
+        "iso": "th",
+        "captain": true
+       },
+       {
+        "hist": "colour",
+        "name": "colour",
+        "slug": "colour-solo",
+        "iso": "th",
+        "captain": false
+       },
+       {
+        "hist": "Nico",
+        "name": "Nico",
+        "slug": "nico-solo",
+        "iso": "th",
+        "captain": false
+       },
+       {
+        "hist": "SUMMER",
+        "name": "SUMMER",
+        "slug": "summer-solo",
+        "iso": "th",
+        "captain": false
+       }
+      ]
      }
     ],
     "aka": [
@@ -115114,6 +115339,51 @@
         "slug": "shiranami-ramune",
         "iso": "jp",
         "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Team Korea",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "byeolyuna",
+        "name": "byeolyuna",
+        "slug": "byeolyuna-solo",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Eris Suzukami",
+        "name": "Eris Suzukami",
+        "slug": "eris-suzukami",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "GreatMoonAroma",
+        "name": "GreatMoonAroma",
+        "slug": "greatmoonaroma-solo",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Narin Mikure",
+        "name": "Narin Mikure",
+        "slug": "narin-mikure-amateur",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Nekota Tsuna",
+        "name": "Nekota Tsuna",
+        "slug": "nekota-tsuna-amateur",
+        "iso": "kr",
+        "captain": true
        }
       ]
      }
@@ -126062,6 +126332,51 @@
         "captain": false
        }
       ]
+     },
+     {
+      "team": "Team Thailand",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Anony",
+        "name": "Anony",
+        "slug": "anony",
+        "iso": "th",
+        "captain": false
+       },
+       {
+        "hist": "BluBEAR",
+        "name": "BluBEAR",
+        "slug": "blubear",
+        "iso": "th",
+        "captain": true
+       },
+       {
+        "hist": "colour",
+        "name": "colour",
+        "slug": "colour-solo",
+        "iso": "th",
+        "captain": false
+       },
+       {
+        "hist": "Nico",
+        "name": "Nico",
+        "slug": "nico-solo",
+        "iso": "th",
+        "captain": false
+       },
+       {
+        "hist": "SUMMER",
+        "name": "SUMMER",
+        "slug": "summer-solo",
+        "iso": "th",
+        "captain": false
+       }
+      ]
      }
     ]
    },
@@ -130170,6 +130485,51 @@
         "name": "laavv._",
         "slug": "laavv",
         "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Team Germany",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Hanyachi",
+        "name": "Hanyachi",
+        "slug": "hanyachi-amateur",
+        "iso": "de",
+        "captain": false
+       },
+       {
+        "hist": "LITA",
+        "name": "LITA",
+        "slug": "lita",
+        "iso": "de",
+        "captain": true
+       },
+       {
+        "hist": "RaivyRain",
+        "name": "RaivyRain",
+        "slug": "raivyrain-solo",
+        "iso": "de",
+        "captain": false
+       },
+       {
+        "hist": "Soapbox_Danny",
+        "name": "Soapbox_Danny",
+        "slug": "soapbox-danny-amateur",
+        "iso": "de",
+        "captain": false
+       },
+       {
+        "hist": "Sportsocke",
+        "name": "Sportsocke",
+        "slug": "sportsocke-amateur",
+        "iso": "de",
         "captain": false
        }
       ]
@@ -223655,6 +224015,51 @@
         "captain": false
        }
       ]
+     },
+     {
+      "team": "Team Korea",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "byeolyuna",
+        "name": "byeolyuna",
+        "slug": "byeolyuna-solo",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Eris Suzukami",
+        "name": "Eris Suzukami",
+        "slug": "eris-suzukami",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "GreatMoonAroma",
+        "name": "GreatMoonAroma",
+        "slug": "greatmoonaroma-solo",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Narin Mikure",
+        "name": "Narin Mikure",
+        "slug": "narin-mikure-amateur",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Nekota Tsuna",
+        "name": "Nekota Tsuna",
+        "slug": "nekota-tsuna-amateur",
+        "iso": "kr",
+        "captain": true
+       }
+      ]
      }
     ]
    },
@@ -233468,6 +233873,51 @@
         "captain": false
        }
       ]
+     },
+     {
+      "team": "Team Korea",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "byeolyuna",
+        "name": "byeolyuna",
+        "slug": "byeolyuna-solo",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Eris Suzukami",
+        "name": "Eris Suzukami",
+        "slug": "eris-suzukami",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "GreatMoonAroma",
+        "name": "GreatMoonAroma",
+        "slug": "greatmoonaroma-solo",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Narin Mikure",
+        "name": "Narin Mikure",
+        "slug": "narin-mikure-amateur",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Nekota Tsuna",
+        "name": "Nekota Tsuna",
+        "slug": "nekota-tsuna-amateur",
+        "iso": "kr",
+        "captain": true
+       }
+      ]
      }
     ]
    },
@@ -235033,6 +235483,51 @@
         "hist": "Hanyachi",
         "name": "Hanyachi",
         "slug": "hanyachi-amateur",
+        "iso": "de",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Team Germany",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Hanyachi",
+        "name": "Hanyachi",
+        "slug": "hanyachi-amateur",
+        "iso": "de",
+        "captain": false
+       },
+       {
+        "hist": "LITA",
+        "name": "LITA",
+        "slug": "lita",
+        "iso": "de",
+        "captain": true
+       },
+       {
+        "hist": "RaivyRain",
+        "name": "RaivyRain",
+        "slug": "raivyrain-solo",
+        "iso": "de",
+        "captain": false
+       },
+       {
+        "hist": "Soapbox_Danny",
+        "name": "Soapbox_Danny",
+        "slug": "soapbox-danny-amateur",
+        "iso": "de",
+        "captain": false
+       },
+       {
+        "hist": "Sportsocke",
+        "name": "Sportsocke",
+        "slug": "sportsocke-amateur",
         "iso": "de",
         "captain": false
        }
@@ -241440,7 +241935,54 @@
     "ratingPoints": null,
     "tier": null,
     "level": null,
-    "rankDelta": 0
+    "rankDelta": 0,
+    "teamHistory": [
+     {
+      "team": "Team Germany",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Hanyachi",
+        "name": "Hanyachi",
+        "slug": "hanyachi-amateur",
+        "iso": "de",
+        "captain": false
+       },
+       {
+        "hist": "LITA",
+        "name": "LITA",
+        "slug": "lita",
+        "iso": "de",
+        "captain": true
+       },
+       {
+        "hist": "RaivyRain",
+        "name": "RaivyRain",
+        "slug": "raivyrain-solo",
+        "iso": "de",
+        "captain": false
+       },
+       {
+        "hist": "Soapbox_Danny",
+        "name": "Soapbox_Danny",
+        "slug": "soapbox-danny-amateur",
+        "iso": "de",
+        "captain": false
+       },
+       {
+        "hist": "Sportsocke",
+        "name": "Sportsocke",
+        "slug": "sportsocke-amateur",
+        "iso": "de",
+        "captain": false
+       }
+      ]
+     }
+    ]
    },
    {
     "name": "Sportsocke",
@@ -241467,7 +242009,54 @@
     "ratingPoints": null,
     "tier": null,
     "level": null,
-    "rankDelta": 0
+    "rankDelta": 0,
+    "teamHistory": [
+     {
+      "team": "Team Germany",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Hanyachi",
+        "name": "Hanyachi",
+        "slug": "hanyachi-amateur",
+        "iso": "de",
+        "captain": false
+       },
+       {
+        "hist": "LITA",
+        "name": "LITA",
+        "slug": "lita",
+        "iso": "de",
+        "captain": true
+       },
+       {
+        "hist": "RaivyRain",
+        "name": "RaivyRain",
+        "slug": "raivyrain-solo",
+        "iso": "de",
+        "captain": false
+       },
+       {
+        "hist": "Soapbox_Danny",
+        "name": "Soapbox_Danny",
+        "slug": "soapbox-danny-amateur",
+        "iso": "de",
+        "captain": false
+       },
+       {
+        "hist": "Sportsocke",
+        "name": "Sportsocke",
+        "slug": "sportsocke-amateur",
+        "iso": "de",
+        "captain": false
+       }
+      ]
+     }
+    ]
    },
    {
     "name": "Mokaiyu_",
@@ -243336,7 +243925,54 @@
     "ratingPoints": null,
     "tier": null,
     "level": null,
-    "rankDelta": 0
+    "rankDelta": 0,
+    "teamHistory": [
+     {
+      "team": "Team Korea",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "byeolyuna",
+        "name": "byeolyuna",
+        "slug": "byeolyuna-solo",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Eris Suzukami",
+        "name": "Eris Suzukami",
+        "slug": "eris-suzukami",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "GreatMoonAroma",
+        "name": "GreatMoonAroma",
+        "slug": "greatmoonaroma-solo",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Narin Mikure",
+        "name": "Narin Mikure",
+        "slug": "narin-mikure-amateur",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Nekota Tsuna",
+        "name": "Nekota Tsuna",
+        "slug": "nekota-tsuna-amateur",
+        "iso": "kr",
+        "captain": true
+       }
+      ]
+     }
+    ]
    },
    {
     "name": "GreatMoonAroma",
@@ -243363,7 +243999,54 @@
     "ratingPoints": null,
     "tier": null,
     "level": null,
-    "rankDelta": 0
+    "rankDelta": 0,
+    "teamHistory": [
+     {
+      "team": "Team Korea",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "byeolyuna",
+        "name": "byeolyuna",
+        "slug": "byeolyuna-solo",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Eris Suzukami",
+        "name": "Eris Suzukami",
+        "slug": "eris-suzukami",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "GreatMoonAroma",
+        "name": "GreatMoonAroma",
+        "slug": "greatmoonaroma-solo",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Narin Mikure",
+        "name": "Narin Mikure",
+        "slug": "narin-mikure-amateur",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Nekota Tsuna",
+        "name": "Nekota Tsuna",
+        "slug": "nekota-tsuna-amateur",
+        "iso": "kr",
+        "captain": true
+       }
+      ]
+     }
+    ]
    },
    {
     "name": "RaivyRain",
@@ -243390,7 +244073,54 @@
     "ratingPoints": null,
     "tier": null,
     "level": null,
-    "rankDelta": 0
+    "rankDelta": 0,
+    "teamHistory": [
+     {
+      "team": "Team Germany",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Hanyachi",
+        "name": "Hanyachi",
+        "slug": "hanyachi-amateur",
+        "iso": "de",
+        "captain": false
+       },
+       {
+        "hist": "LITA",
+        "name": "LITA",
+        "slug": "lita",
+        "iso": "de",
+        "captain": true
+       },
+       {
+        "hist": "RaivyRain",
+        "name": "RaivyRain",
+        "slug": "raivyrain-solo",
+        "iso": "de",
+        "captain": false
+       },
+       {
+        "hist": "Soapbox_Danny",
+        "name": "Soapbox_Danny",
+        "slug": "soapbox-danny-amateur",
+        "iso": "de",
+        "captain": false
+       },
+       {
+        "hist": "Sportsocke",
+        "name": "Sportsocke",
+        "slug": "sportsocke-amateur",
+        "iso": "de",
+        "captain": false
+       }
+      ]
+     }
+    ]
    },
    {
     "name": "zero_macabre",
@@ -243572,7 +244302,54 @@
     "ratingPoints": null,
     "tier": null,
     "level": null,
-    "rankDelta": 0
+    "rankDelta": 0,
+    "teamHistory": [
+     {
+      "team": "Team Thailand",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Anony",
+        "name": "Anony",
+        "slug": "anony",
+        "iso": "th",
+        "captain": false
+       },
+       {
+        "hist": "BluBEAR",
+        "name": "BluBEAR",
+        "slug": "blubear",
+        "iso": "th",
+        "captain": true
+       },
+       {
+        "hist": "colour",
+        "name": "colour",
+        "slug": "colour-solo",
+        "iso": "th",
+        "captain": false
+       },
+       {
+        "hist": "Nico",
+        "name": "Nico",
+        "slug": "nico-solo",
+        "iso": "th",
+        "captain": false
+       },
+       {
+        "hist": "SUMMER",
+        "name": "SUMMER",
+        "slug": "summer-solo",
+        "iso": "th",
+        "captain": false
+       }
+      ]
+     }
+    ]
    },
    {
     "name": "Nico",
@@ -243599,7 +244376,54 @@
     "ratingPoints": null,
     "tier": null,
     "level": null,
-    "rankDelta": 0
+    "rankDelta": 0,
+    "teamHistory": [
+     {
+      "team": "Team Thailand",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Anony",
+        "name": "Anony",
+        "slug": "anony",
+        "iso": "th",
+        "captain": false
+       },
+       {
+        "hist": "BluBEAR",
+        "name": "BluBEAR",
+        "slug": "blubear",
+        "iso": "th",
+        "captain": true
+       },
+       {
+        "hist": "colour",
+        "name": "colour",
+        "slug": "colour-solo",
+        "iso": "th",
+        "captain": false
+       },
+       {
+        "hist": "Nico",
+        "name": "Nico",
+        "slug": "nico-solo",
+        "iso": "th",
+        "captain": false
+       },
+       {
+        "hist": "SUMMER",
+        "name": "SUMMER",
+        "slug": "summer-solo",
+        "iso": "th",
+        "captain": false
+       }
+      ]
+     }
+    ]
    },
    {
     "name": "sozu",
@@ -243653,7 +244477,54 @@
     "ratingPoints": null,
     "tier": null,
     "level": null,
-    "rankDelta": 0
+    "rankDelta": 0,
+    "teamHistory": [
+     {
+      "team": "Team Vietnam",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "DarkLite",
+        "name": "DarkLite",
+        "slug": "darklite-solo",
+        "iso": "vn",
+        "captain": false
+       },
+       {
+        "hist": "FLAVA",
+        "name": "FLAVA",
+        "slug": "flava-solo",
+        "iso": "vn",
+        "captain": true
+       },
+       {
+        "hist": "jackgia2002",
+        "name": "jackgia2002",
+        "slug": "jackgia2002-solo",
+        "iso": "vn",
+        "captain": false
+       },
+       {
+        "hist": "renren.",
+        "name": "renren.",
+        "slug": "renren-solo",
+        "iso": "vn",
+        "captain": false
+       },
+       {
+        "hist": "suoh",
+        "name": "suoh",
+        "slug": "suoh-solo",
+        "iso": "vn",
+        "captain": false
+       }
+      ]
+     }
+    ]
    },
    {
     "name": "SyberiaK",
@@ -243734,7 +244605,54 @@
     "ratingPoints": null,
     "tier": null,
     "level": null,
-    "rankDelta": 0
+    "rankDelta": 0,
+    "teamHistory": [
+     {
+      "team": "Team Thailand",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Anony",
+        "name": "Anony",
+        "slug": "anony",
+        "iso": "th",
+        "captain": false
+       },
+       {
+        "hist": "BluBEAR",
+        "name": "BluBEAR",
+        "slug": "blubear",
+        "iso": "th",
+        "captain": true
+       },
+       {
+        "hist": "colour",
+        "name": "colour",
+        "slug": "colour-solo",
+        "iso": "th",
+        "captain": false
+       },
+       {
+        "hist": "Nico",
+        "name": "Nico",
+        "slug": "nico-solo",
+        "iso": "th",
+        "captain": false
+       },
+       {
+        "hist": "SUMMER",
+        "name": "SUMMER",
+        "slug": "summer-solo",
+        "iso": "th",
+        "captain": false
+       }
+      ]
+     }
+    ]
    },
    {
     "name": "FLAVA",
@@ -243761,7 +244679,54 @@
     "ratingPoints": null,
     "tier": null,
     "level": null,
-    "rankDelta": 0
+    "rankDelta": 0,
+    "teamHistory": [
+     {
+      "team": "Team Vietnam",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "DarkLite",
+        "name": "DarkLite",
+        "slug": "darklite-solo",
+        "iso": "vn",
+        "captain": false
+       },
+       {
+        "hist": "FLAVA",
+        "name": "FLAVA",
+        "slug": "flava-solo",
+        "iso": "vn",
+        "captain": true
+       },
+       {
+        "hist": "jackgia2002",
+        "name": "jackgia2002",
+        "slug": "jackgia2002-solo",
+        "iso": "vn",
+        "captain": false
+       },
+       {
+        "hist": "renren.",
+        "name": "renren.",
+        "slug": "renren-solo",
+        "iso": "vn",
+        "captain": false
+       },
+       {
+        "hist": "suoh",
+        "name": "suoh",
+        "slug": "suoh-solo",
+        "iso": "vn",
+        "captain": false
+       }
+      ]
+     }
+    ]
    },
    {
     "name": "jackgia2002",
@@ -243788,7 +244753,54 @@
     "ratingPoints": null,
     "tier": null,
     "level": null,
-    "rankDelta": 0
+    "rankDelta": 0,
+    "teamHistory": [
+     {
+      "team": "Team Vietnam",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "DarkLite",
+        "name": "DarkLite",
+        "slug": "darklite-solo",
+        "iso": "vn",
+        "captain": false
+       },
+       {
+        "hist": "FLAVA",
+        "name": "FLAVA",
+        "slug": "flava-solo",
+        "iso": "vn",
+        "captain": true
+       },
+       {
+        "hist": "jackgia2002",
+        "name": "jackgia2002",
+        "slug": "jackgia2002-solo",
+        "iso": "vn",
+        "captain": false
+       },
+       {
+        "hist": "renren.",
+        "name": "renren.",
+        "slug": "renren-solo",
+        "iso": "vn",
+        "captain": false
+       },
+       {
+        "hist": "suoh",
+        "name": "suoh",
+        "slug": "suoh-solo",
+        "iso": "vn",
+        "captain": false
+       }
+      ]
+     }
+    ]
    },
    {
     "name": "IcyCrowVT",
@@ -243842,7 +244854,54 @@
     "ratingPoints": null,
     "tier": null,
     "level": null,
-    "rankDelta": 0
+    "rankDelta": 0,
+    "teamHistory": [
+     {
+      "team": "Team Vietnam",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "DarkLite",
+        "name": "DarkLite",
+        "slug": "darklite-solo",
+        "iso": "vn",
+        "captain": false
+       },
+       {
+        "hist": "FLAVA",
+        "name": "FLAVA",
+        "slug": "flava-solo",
+        "iso": "vn",
+        "captain": true
+       },
+       {
+        "hist": "jackgia2002",
+        "name": "jackgia2002",
+        "slug": "jackgia2002-solo",
+        "iso": "vn",
+        "captain": false
+       },
+       {
+        "hist": "renren.",
+        "name": "renren.",
+        "slug": "renren-solo",
+        "iso": "vn",
+        "captain": false
+       },
+       {
+        "hist": "suoh",
+        "name": "suoh",
+        "slug": "suoh-solo",
+        "iso": "vn",
+        "captain": false
+       }
+      ]
+     }
+    ]
    },
    {
     "name": "DarkLite",
@@ -243869,7 +244928,54 @@
     "ratingPoints": null,
     "tier": null,
     "level": null,
-    "rankDelta": 0
+    "rankDelta": 0,
+    "teamHistory": [
+     {
+      "team": "Team Vietnam",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "DarkLite",
+        "name": "DarkLite",
+        "slug": "darklite-solo",
+        "iso": "vn",
+        "captain": false
+       },
+       {
+        "hist": "FLAVA",
+        "name": "FLAVA",
+        "slug": "flava-solo",
+        "iso": "vn",
+        "captain": true
+       },
+       {
+        "hist": "jackgia2002",
+        "name": "jackgia2002",
+        "slug": "jackgia2002-solo",
+        "iso": "vn",
+        "captain": false
+       },
+       {
+        "hist": "renren.",
+        "name": "renren.",
+        "slug": "renren-solo",
+        "iso": "vn",
+        "captain": false
+       },
+       {
+        "hist": "suoh",
+        "name": "suoh",
+        "slug": "suoh-solo",
+        "iso": "vn",
+        "captain": false
+       }
+      ]
+     }
+    ]
    }
   ]
  },
@@ -243925,48 +245031,12 @@
    "tierLabel": "S-Tier",
    "type": "single elimination",
    "format": "Single Elim",
-   "participantCount": 12,
+   "participantCount": 16,
    "champion": null,
    "championTeam": null,
    "runnerUp": null,
    "runnerUpTeam": null,
-   "standings": [
-    {
-     "rank": 1,
-     "name": "Team Australia",
-     "teamSlug": null,
-     "w": 1,
-     "l": 0
-    },
-    {
-     "rank": 2,
-     "name": "Team Malaysia",
-     "teamSlug": null,
-     "w": 1,
-     "l": 0
-    },
-    {
-     "rank": 3,
-     "name": "Team Philippines",
-     "teamSlug": null,
-     "w": 1,
-     "l": 0
-    },
-    {
-     "rank": 4,
-     "name": "Team Singapore",
-     "teamSlug": null,
-     "w": 1,
-     "l": 0
-    },
-    {
-     "rank": 5,
-     "name": "",
-     "teamSlug": null,
-     "w": 0,
-     "l": 4
-    }
-   ],
+   "standings": [],
    "bracket": [
     {
      "round": 1001,
@@ -243975,10 +245045,10 @@
       {
        "i": 1,
        "a": "Team Singapore",
-       "b": "(bye)",
+       "b": "Team Vietnam",
        "sa": null,
        "sb": null,
-       "w": 1,
+       "w": 0,
        "aTeam": null,
        "bTeam": null,
        "bo": 3,
@@ -244001,10 +245071,10 @@
       {
        "i": 3,
        "a": "Team Australia",
-       "b": "(bye)",
+       "b": "Team Germany",
        "sa": null,
        "sb": null,
-       "w": 1,
+       "w": 0,
        "aTeam": null,
        "bTeam": null,
        "bo": 3,
@@ -244027,10 +245097,10 @@
       {
        "i": 5,
        "a": "Team Malaysia",
-       "b": "(bye)",
+       "b": "Team Thailand",
        "sa": null,
        "sb": null,
-       "w": 1,
+       "w": 0,
        "aTeam": null,
        "bTeam": null,
        "bo": 3,
@@ -244053,10 +245123,10 @@
       {
        "i": 7,
        "a": "Team Philippines",
-       "b": "(bye)",
+       "b": "Team Korea",
        "sa": null,
        "sb": null,
-       "w": 1,
+       "w": 0,
        "aTeam": null,
        "bTeam": null,
        "bo": 3,
@@ -244084,7 +245154,7 @@
      "matches": [
       {
        "i": 9,
-       "a": "Team Singapore",
+       "a": "",
        "b": "",
        "sa": null,
        "sb": null,
@@ -244097,7 +245167,7 @@
       },
       {
        "i": 10,
-       "a": "Team Australia",
+       "a": "",
        "b": "",
        "sa": null,
        "sb": null,
@@ -244110,7 +245180,7 @@
       },
       {
        "i": 11,
-       "a": "Team Malaysia",
+       "a": "",
        "b": "",
        "sa": null,
        "sb": null,
@@ -244123,7 +245193,7 @@
       },
       {
        "i": 12,
-       "a": "Team Philippines",
+       "a": "",
        "b": "",
        "sa": null,
        "sb": null,
@@ -244215,10 +245285,10 @@
         {
          "i": 1,
          "a": "Team Singapore",
-         "b": "(bye)",
+         "b": "Team Vietnam",
          "sa": null,
          "sb": null,
-         "w": 1,
+         "w": 0,
          "aTeam": null,
          "bTeam": null,
          "bo": 3,
@@ -244241,10 +245311,10 @@
         {
          "i": 3,
          "a": "Team Australia",
-         "b": "(bye)",
+         "b": "Team Germany",
          "sa": null,
          "sb": null,
-         "w": 1,
+         "w": 0,
          "aTeam": null,
          "bTeam": null,
          "bo": 3,
@@ -244267,10 +245337,10 @@
         {
          "i": 5,
          "a": "Team Malaysia",
-         "b": "(bye)",
+         "b": "Team Thailand",
          "sa": null,
          "sb": null,
-         "w": 1,
+         "w": 0,
          "aTeam": null,
          "bTeam": null,
          "bo": 3,
@@ -244293,10 +245363,10 @@
         {
          "i": 7,
          "a": "Team Philippines",
-         "b": "(bye)",
+         "b": "Team Korea",
          "sa": null,
          "sb": null,
-         "w": 1,
+         "w": 0,
          "aTeam": null,
          "bTeam": null,
          "bo": 3,
@@ -244324,7 +245394,7 @@
        "matches": [
         {
          "i": 9,
-         "a": "Team Singapore",
+         "a": "",
          "b": "",
          "sa": null,
          "sb": null,
@@ -244337,7 +245407,7 @@
         },
         {
          "i": 10,
-         "a": "Team Australia",
+         "a": "",
          "b": "",
          "sa": null,
          "sb": null,
@@ -244350,7 +245420,7 @@
         },
         {
          "i": 11,
-         "a": "Team Malaysia",
+         "a": "",
          "b": "",
          "sa": null,
          "sb": null,
@@ -244363,7 +245433,7 @@
         },
         {
          "i": 12,
-         "a": "Team Philippines",
+         "a": "",
          "b": "",
          "sa": null,
          "sb": null,
@@ -244441,43 +245511,7 @@
        ]
       }
      ],
-     "standings": [
-      {
-       "rank": 1,
-       "name": "Team Australia",
-       "teamSlug": null,
-       "w": 1,
-       "l": 0
-      },
-      {
-       "rank": 2,
-       "name": "Team Malaysia",
-       "teamSlug": null,
-       "w": 1,
-       "l": 0
-      },
-      {
-       "rank": 3,
-       "name": "Team Philippines",
-       "teamSlug": null,
-       "w": 1,
-       "l": 0
-      },
-      {
-       "rank": 4,
-       "name": "Team Singapore",
-       "teamSlug": null,
-       "w": 1,
-       "l": 0
-      },
-      {
-       "rank": 5,
-       "name": "",
-       "teamSlug": null,
-       "w": 0,
-       "l": 4
-      }
-     ],
+     "standings": [],
      "teams": [
       [
        "Team Singapore",
@@ -244525,6 +245559,22 @@
       ],
       [
        "Team Indonesia",
+       null
+      ],
+      [
+       "Team Germany",
+       null
+      ],
+      [
+       "Team Korea",
+       null
+      ],
+      [
+       "Team Thailand",
+       null
+      ],
+      [
+       "Team Vietnam",
        null
       ]
      ]
@@ -244880,6 +245930,170 @@
        "name": "SpicyWolfie",
        "slug": "spicywolfie-amateur",
        "iso": "id",
+       "captain": false
+      }
+     ]
+    },
+    {
+     "team": "Team Germany",
+     "teamSlug": null,
+     "players": [
+      {
+       "hist": "Hanyachi",
+       "name": "Hanyachi",
+       "slug": "hanyachi-amateur",
+       "iso": "de",
+       "captain": false
+      },
+      {
+       "hist": "LITA",
+       "name": "LITA",
+       "slug": "lita",
+       "iso": "de",
+       "captain": true
+      },
+      {
+       "hist": "RaivyRain",
+       "name": "RaivyRain",
+       "slug": "raivyrain-solo",
+       "iso": "de",
+       "captain": false
+      },
+      {
+       "hist": "Soapbox_Danny",
+       "name": "Soapbox_Danny",
+       "slug": "soapbox-danny-amateur",
+       "iso": "de",
+       "captain": false
+      },
+      {
+       "hist": "Sportsocke",
+       "name": "Sportsocke",
+       "slug": "sportsocke-amateur",
+       "iso": "de",
+       "captain": false
+      }
+     ]
+    },
+    {
+     "team": "Team Korea",
+     "teamSlug": null,
+     "players": [
+      {
+       "hist": "byeolyuna",
+       "name": "byeolyuna",
+       "slug": "byeolyuna-solo",
+       "iso": "kr",
+       "captain": false
+      },
+      {
+       "hist": "Eris Suzukami",
+       "name": "Eris Suzukami",
+       "slug": "eris-suzukami",
+       "iso": "kr",
+       "captain": false
+      },
+      {
+       "hist": "GreatMoonAroma",
+       "name": "GreatMoonAroma",
+       "slug": "greatmoonaroma-solo",
+       "iso": "kr",
+       "captain": false
+      },
+      {
+       "hist": "Narin Mikure",
+       "name": "Narin Mikure",
+       "slug": "narin-mikure-amateur",
+       "iso": "kr",
+       "captain": false
+      },
+      {
+       "hist": "Nekota Tsuna",
+       "name": "Nekota Tsuna",
+       "slug": "nekota-tsuna-amateur",
+       "iso": "kr",
+       "captain": true
+      }
+     ]
+    },
+    {
+     "team": "Team Thailand",
+     "teamSlug": null,
+     "players": [
+      {
+       "hist": "Anony",
+       "name": "Anony",
+       "slug": "anony",
+       "iso": "th",
+       "captain": false
+      },
+      {
+       "hist": "BluBEAR",
+       "name": "BluBEAR",
+       "slug": "blubear",
+       "iso": "th",
+       "captain": true
+      },
+      {
+       "hist": "colour",
+       "name": "colour",
+       "slug": "colour-solo",
+       "iso": "th",
+       "captain": false
+      },
+      {
+       "hist": "Nico",
+       "name": "Nico",
+       "slug": "nico-solo",
+       "iso": "th",
+       "captain": false
+      },
+      {
+       "hist": "SUMMER",
+       "name": "SUMMER",
+       "slug": "summer-solo",
+       "iso": "th",
+       "captain": false
+      }
+     ]
+    },
+    {
+     "team": "Team Vietnam",
+     "teamSlug": null,
+     "players": [
+      {
+       "hist": "DarkLite",
+       "name": "DarkLite",
+       "slug": "darklite-solo",
+       "iso": "vn",
+       "captain": false
+      },
+      {
+       "hist": "FLAVA",
+       "name": "FLAVA",
+       "slug": "flava-solo",
+       "iso": "vn",
+       "captain": true
+      },
+      {
+       "hist": "jackgia2002",
+       "name": "jackgia2002",
+       "slug": "jackgia2002-solo",
+       "iso": "vn",
+       "captain": false
+      },
+      {
+       "hist": "renren.",
+       "name": "renren.",
+       "slug": "renren-solo",
+       "iso": "vn",
+       "captain": false
+      },
+      {
+       "hist": "suoh",
+       "name": "suoh",
+       "slug": "suoh-solo",
+       "iso": "vn",
        "captain": false
       }
      ]
@@ -354418,12 +355632,36 @@
  "transfers": [
   {
    "type": "transfer",
+   "player": "LITA",
+   "playerSlug": "lita",
+   "iso": "de",
+   "fromTeam": "Divide&Conquer",
+   "fromSlug": "divide-conquer",
+   "toTeam": "Team Germany",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
+   "type": "transfer",
    "player": "l1feless",
    "playerSlug": "l1feless",
    "iso": "id",
    "fromTeam": "Bluebird",
    "fromSlug": "bluebird",
    "toTeam": "Team Indonesia",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
+   "type": "transfer",
+   "player": "Anony",
+   "playerSlug": "anony",
+   "iso": "th",
+   "fromTeam": "degree",
+   "fromSlug": "degree",
+   "toTeam": "Team Thailand",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-27"
@@ -354460,6 +355698,18 @@
    "fromTeam": "PH Squad 2",
    "fromSlug": null,
    "toTeam": "Team Philippines",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
+   "type": "transfer",
+   "player": "BluBEAR",
+   "playerSlug": "blubear",
+   "iso": "th",
+   "fromTeam": "99Lives",
+   "fromSlug": "99lives",
+   "toTeam": "Team Thailand",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-27"
@@ -354718,12 +355968,36 @@
   },
   {
    "type": "transfer",
+   "player": "Narin Mikure",
+   "playerSlug": "narin-mikure-amateur",
+   "iso": "kr",
+   "fromTeam": "Seraph Dynasty",
+   "fromSlug": null,
+   "toTeam": "Team Korea",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
+   "type": "transfer",
    "player": "Niamocha",
    "playerSlug": "niamocha-amateur",
    "iso": "ca",
    "fromTeam": "Aurora Pact",
    "fromSlug": null,
    "toTeam": "Team Canada",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
+   "type": "transfer",
+   "player": "Nekota Tsuna",
+   "playerSlug": "nekota-tsuna-amateur",
+   "iso": "kr",
+   "fromTeam": "Seraph Dynasty",
+   "fromSlug": null,
+   "toTeam": "Team Korea",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-27"
@@ -354814,6 +356088,30 @@
   },
   {
    "type": "transfer",
+   "player": "Hanyachi",
+   "playerSlug": "hanyachi-amateur",
+   "iso": "de",
+   "fromTeam": "Albion Rising",
+   "fromSlug": null,
+   "toTeam": "Team Germany",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
+   "type": "transfer",
+   "player": "Eris Suzukami",
+   "playerSlug": "eris-suzukami",
+   "iso": "kr",
+   "fromTeam": "Astral Bloom",
+   "fromSlug": "astral-bloom",
+   "toTeam": "Team Korea",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
+   "type": "transfer",
    "player": "haze_vt",
    "playerSlug": "haze-vt-amateur",
    "iso": "ca",
@@ -354892,6 +356190,162 @@
    "fromTeam": null,
    "fromSlug": null,
    "toTeam": "Team Indonesia",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
+   "type": "debut",
+   "player": "RaivyRain",
+   "playerSlug": "raivyrain-solo",
+   "iso": "de",
+   "fromTeam": null,
+   "fromSlug": null,
+   "toTeam": "Team Germany",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
+   "type": "debut",
+   "player": "Soapbox_Danny",
+   "playerSlug": "soapbox-danny-amateur",
+   "iso": "de",
+   "fromTeam": null,
+   "fromSlug": null,
+   "toTeam": "Team Germany",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
+   "type": "debut",
+   "player": "Sportsocke",
+   "playerSlug": "sportsocke-amateur",
+   "iso": "de",
+   "fromTeam": null,
+   "fromSlug": null,
+   "toTeam": "Team Germany",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
+   "type": "debut",
+   "player": "byeolyuna",
+   "playerSlug": "byeolyuna-solo",
+   "iso": "kr",
+   "fromTeam": null,
+   "fromSlug": null,
+   "toTeam": "Team Korea",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
+   "type": "debut",
+   "player": "GreatMoonAroma",
+   "playerSlug": "greatmoonaroma-solo",
+   "iso": "kr",
+   "fromTeam": null,
+   "fromSlug": null,
+   "toTeam": "Team Korea",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
+   "type": "debut",
+   "player": "colour",
+   "playerSlug": "colour-solo",
+   "iso": "th",
+   "fromTeam": null,
+   "fromSlug": null,
+   "toTeam": "Team Thailand",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
+   "type": "debut",
+   "player": "Nico",
+   "playerSlug": "nico-solo",
+   "iso": "th",
+   "fromTeam": null,
+   "fromSlug": null,
+   "toTeam": "Team Thailand",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
+   "type": "debut",
+   "player": "SUMMER",
+   "playerSlug": "summer-solo",
+   "iso": "th",
+   "fromTeam": null,
+   "fromSlug": null,
+   "toTeam": "Team Thailand",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
+   "type": "debut",
+   "player": "DarkLite",
+   "playerSlug": "darklite-solo",
+   "iso": "vn",
+   "fromTeam": null,
+   "fromSlug": null,
+   "toTeam": "Team Vietnam",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
+   "type": "debut",
+   "player": "FLAVA",
+   "playerSlug": "flava-solo",
+   "iso": "vn",
+   "fromTeam": null,
+   "fromSlug": null,
+   "toTeam": "Team Vietnam",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
+   "type": "debut",
+   "player": "jackgia2002",
+   "playerSlug": "jackgia2002-solo",
+   "iso": "vn",
+   "fromTeam": null,
+   "fromSlug": null,
+   "toTeam": "Team Vietnam",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
+   "type": "debut",
+   "player": "renren.",
+   "playerSlug": "renren-solo",
+   "iso": "vn",
+   "fromTeam": null,
+   "fromSlug": null,
+   "toTeam": "Team Vietnam",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
+   "type": "debut",
+   "player": "suoh",
+   "playerSlug": "suoh-solo",
+   "iso": "vn",
+   "fromTeam": null,
+   "fromSlug": null,
+   "toTeam": "Team Vietnam",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-27"
@@ -387500,6 +388954,262 @@
    ],
    "worstMaps": [
     "Mirage",
+    "Inferno"
+   ],
+   "nation": true
+  },
+  {
+   "name": "Team Germany",
+   "slug": "nation-teamgermany",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.399,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.477,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.627,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.561,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.487,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.456,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.543,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Inferno",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Vertigo"
+   ],
+   "nation": true
+  },
+  {
+   "name": "Team Korea",
+   "slug": "nation-teamkorea",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.394,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.635,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.508,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.691,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.591,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.456,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.644,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Vertigo"
+   ],
+   "nation": true
+  },
+  {
+   "name": "Team Thailand",
+   "slug": "nation-teamthailand",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.503,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.302,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.301,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.641,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.44,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.294,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.431,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Inferno"
+   ],
+   "nation": true
+  },
+  {
+   "name": "Team Vietnam",
+   "slug": "nation-teamvietnam",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.475,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.649,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.463,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.442,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.559,
+     "real": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.646,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.488,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Cache",
     "Inferno"
    ],
    "nation": true
