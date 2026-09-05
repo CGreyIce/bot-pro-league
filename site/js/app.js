@@ -1905,7 +1905,7 @@ const SHF_REGION = {
   sg:"SEA",my:"SEA",ph:"SEA",id:"SEA",th:"SEA",vn:"SEA",
   jp:"East Asia",kr:"East Asia",tw:"East Asia",hk:"East Asia",cn:"East Asia",
   au:"Oceania",nz:"Oceania", us:"North America",ca:"North America", br:"South America",
-  gb:"Europe",fr:"Europe",de:"Europe",nl:"Europe",be:"Europe",at:"Europe",pl:"Europe",fi:"Europe",it:"Europe",is:"Europe",se:"Europe",ua:"Europe",ba:"Europe",cz:"Europe",
+  gb:"Europe",fr:"Europe",de:"Europe",nl:"Europe",be:"Europe",at:"Europe",pl:"Europe",fi:"Europe",it:"Europe",is:"Europe",se:"Europe",ua:"Europe",ba:"Europe",cz:"Europe",gr:"Europe",
   kz:"Central Asia",
 };
 const shfRegion = iso => SHF_REGION[iso] || "";

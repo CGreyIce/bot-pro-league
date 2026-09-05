@@ -3369,9 +3369,9 @@
          "captain": false
         },
         {
-         "hist": "koohaaruuu",
-         "name": "koohaaruuu",
-         "slug": "koohaaruuu-amateur",
+         "hist": "MsWizVT",
+         "name": "MsWizVT",
+         "slug": "mswizvt-amateur",
          "iso": "gb",
          "captain": false
         }
@@ -18199,9 +18199,9 @@
          "captain": false
         },
         {
-         "hist": "koohaaruuu",
-         "name": "koohaaruuu",
-         "slug": "koohaaruuu-amateur",
+         "hist": "MsWizVT",
+         "name": "MsWizVT",
+         "slug": "mswizvt-amateur",
          "iso": "gb",
          "captain": false
         }
@@ -122402,9 +122402,9 @@
         "captain": false
        },
        {
-        "hist": "koohaaruuu",
-        "name": "koohaaruuu",
-        "slug": "koohaaruuu-amateur",
+        "hist": "MsWizVT",
+        "name": "MsWizVT",
+        "slug": "mswizvt-amateur",
         "iso": "gb",
         "captain": false
        }
@@ -136649,9 +136649,9 @@
         "captain": false
        },
        {
-        "hist": "koohaaruuu",
-        "name": "koohaaruuu",
-        "slug": "koohaaruuu-amateur",
+        "hist": "MsWizVT",
+        "name": "MsWizVT",
+        "slug": "mswizvt-amateur",
         "iso": "gb",
         "captain": false
        }
@@ -190789,9 +190789,9 @@
         "captain": false
        },
        {
-        "hist": "koohaaruuu",
-        "name": "koohaaruuu",
-        "slug": "koohaaruuu-amateur",
+        "hist": "MsWizVT",
+        "name": "MsWizVT",
+        "slug": "mswizvt-amateur",
         "iso": "gb",
         "captain": false
        }
@@ -199950,9 +199950,9 @@
         "captain": false
        },
        {
-        "hist": "koohaaruuu",
-        "name": "koohaaruuu",
-        "slug": "koohaaruuu-amateur",
+        "hist": "MsWizVT",
+        "name": "MsWizVT",
+        "slug": "mswizvt-amateur",
         "iso": "gb",
         "captain": false
        }
@@ -241337,60 +241337,13 @@
     "orig_level": "",
     "orig_rating": 0.0,
     "slug": "koohaaruuu-amateur",
-    "nat": "United Kingdom",
-    "iso": "gb",
+    "nat": "Greece",
+    "iso": "gr",
     "rating": null,
     "ratingPoints": null,
     "tier": null,
     "level": null,
-    "rankDelta": 0,
-    "teamHistory": [
-     {
-      "team": "Team United Kingdom",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "inaxho",
-        "name": "inaxho",
-        "slug": "inaxho",
-        "iso": "gb",
-        "captain": true
-       },
-       {
-        "hist": "Aleaka",
-        "name": "Aleaka",
-        "slug": "aleaka-amateur",
-        "iso": "gb",
-        "captain": false
-       },
-       {
-        "hist": "soapdax",
-        "name": "soapdax",
-        "slug": "soapdax",
-        "iso": "gb",
-        "captain": false
-       },
-       {
-        "hist": "PSYSTRA",
-        "name": "PSYSTRA",
-        "slug": "psystra-amateur",
-        "iso": "gb",
-        "captain": false
-       },
-       {
-        "hist": "koohaaruuu",
-        "name": "koohaaruuu",
-        "slug": "koohaaruuu-amateur",
-        "iso": "gb",
-        "captain": false
-       }
-      ]
-     }
-    ]
+    "rankDelta": 0
    },
    {
     "name": "miyomille",
@@ -242023,7 +241976,54 @@
     "ratingPoints": null,
     "tier": null,
     "level": null,
-    "rankDelta": 0
+    "rankDelta": 0,
+    "teamHistory": [
+     {
+      "team": "Team United Kingdom",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "inaxho",
+        "name": "inaxho",
+        "slug": "inaxho",
+        "iso": "gb",
+        "captain": true
+       },
+       {
+        "hist": "Aleaka",
+        "name": "Aleaka",
+        "slug": "aleaka-amateur",
+        "iso": "gb",
+        "captain": false
+       },
+       {
+        "hist": "soapdax",
+        "name": "soapdax",
+        "slug": "soapdax",
+        "iso": "gb",
+        "captain": false
+       },
+       {
+        "hist": "PSYSTRA",
+        "name": "PSYSTRA",
+        "slug": "psystra-amateur",
+        "iso": "gb",
+        "captain": false
+       },
+       {
+        "hist": "MsWizVT",
+        "name": "MsWizVT",
+        "slug": "mswizvt-amateur",
+        "iso": "gb",
+        "captain": false
+       }
+      ]
+     }
+    ]
    },
    {
     "name": "deedeepup_vt",
@@ -244353,9 +244353,9 @@
        "captain": false
       },
       {
-       "hist": "koohaaruuu",
-       "name": "koohaaruuu",
-       "slug": "koohaaruuu-amateur",
+       "hist": "MsWizVT",
+       "name": "MsWizVT",
+       "slug": "mswizvt-amateur",
        "iso": "gb",
        "captain": false
       }
@@ -354368,8 +354368,8 @@
   },
   {
    "type": "debut",
-   "player": "koohaaruuu",
-   "playerSlug": "koohaaruuu-amateur",
+   "player": "MsWizVT",
+   "playerSlug": "mswizvt-amateur",
    "iso": "gb",
    "fromTeam": null,
    "fromSlug": null,
