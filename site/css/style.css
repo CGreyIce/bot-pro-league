@@ -602,14 +602,15 @@ textarea.adm-in{resize:vertical}
 .mc-map .mc-ms:last-child{text-align:right}
 .mc-map .mc-ms.won{color:var(--good);font-weight:700}
 .mc-lines{padding:0 12px 6px}
-.mc-lrow{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:3px 0;border-top:1px solid var(--border)}
+.mc-lrow{display:grid;grid-template-columns:1fr 42px 42px 1fr;align-items:center;gap:6px;padding:3px 0;border-top:1px solid var(--border)}
 .mc-lrow:first-child{border-top:none}
 .mc-pl{display:flex;align-items:center;gap:6px;min-width:0;font-size:12.5px}
 .mc-pl.r{justify-content:flex-end;text-align:right}
 .mc-pl .mc-pn{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .mc-pl .mc-pn a{color:var(--text)} .mc-pl .mc-pn a:hover{color:var(--link)}
-.mc-pl .mc-rt{font-family:monospace;font-variant-numeric:tabular-nums;font-size:12.5px;flex:0 0 auto}
 .mc-pl .flag{flex:0 0 auto}
+.mc-rt{font-family:monospace;font-variant-numeric:tabular-nums;font-size:12.5px}
+.mc-rt.l{text-align:right} .mc-rt.r{text-align:left}
 .mc-btn{display:block;text-align:center;margin:8px 12px 12px;padding:9px;border-radius:8px;background:var(--accent-grad,#2b3b57);color:#eaf2ff;font-family:'Rajdhani';font-weight:600;letter-spacing:.4px}
 .mc-btn:hover{filter:brightness(1.12)}
 

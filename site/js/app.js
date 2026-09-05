@@ -1436,16 +1436,21 @@ function matchCardHTML(tr, m, ref){
       .sort((x,y)=>(y.rtg==null?-1:y.rtg)-(x.rtg==null?-1:x.rtg));
     const A = side(m.a), B = side(m.b), n = Math.max(A.length, B.length);
     if(n){
-      const cell = (p, right)=>{
+      // 4 fixed grid columns per row: [left player][left rtg][right rtg][right player]
+      // so every rating lines up in the two central columns (not staggered by name length).
+      const pcell = (p, right)=>{
         if(!p) return `<span class="mc-pl ${right?'r':''}"></span>`;
         const nm = p.slug?`<a href="#/player/${p.slug}">${esc(p.name)}</a>`:esc(p.name);
-        const rt = p.rtg==null?'—':p.rtg.toFixed(2);
         return right
-          ? `<span class="mc-pl r"><b class="mc-rt" style="color:${rtgColor(p.rtg)}">${rt}</b>${flag(p.iso)}<span class="mc-pn">${nm}</span></span>`
-          : `<span class="mc-pl"><span class="mc-pn">${nm}</span>${flag(p.iso)}<b class="mc-rt" style="color:${rtgColor(p.rtg)}">${rt}</b></span>`;
+          ? `<span class="mc-pl r"><span class="mc-pn">${nm}</span>${flag(p.iso)}</span>`
+          : `<span class="mc-pl">${flag(p.iso)}<span class="mc-pn">${nm}</span></span>`;
+      };
+      const rcell = (p, cls)=>{
+        const rt = (!p||p.rtg==null)?'—':p.rtg.toFixed(2);
+        return `<b class="mc-rt ${cls}" style="color:${rtgColor(p&&p.rtg)}">${rt}</b>`;
       };
       let rows='';
-      for(let i=0;i<n;i++) rows += `<div class="mc-lrow">${cell(A[i],false)}${cell(B[i],true)}</div>`;
+      for(let i=0;i<n;i++) rows += `<div class="mc-lrow">${pcell(A[i],false)}${rcell(A[i],'l')}${rcell(B[i],'r')}${pcell(B[i],true)}</div>`;
       lineHtml = `<div class="mc-sec">Lineups <span>player ratings for this match</span></div><div class="mc-lines">${rows}</div>`;
     }
   }
