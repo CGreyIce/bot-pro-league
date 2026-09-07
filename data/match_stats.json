@@ -13014,6 +13014,301 @@
      ]
     }
    ]
+  },
+  "1-6": {
+   "maps": [
+    {
+     "map": "Tuscan",
+     "scoreA": 13,
+     "scoreB": 16,
+     "players": [
+      {
+       "team": "JP Squad 2",
+       "name": "Ichinose Uruha",
+       "k": 30,
+       "a": 1,
+       "d": 20,
+       "mvp": 5,
+       "score": 73
+      },
+      {
+       "team": "JP Squad 2",
+       "name": "Kamito",
+       "k": 21,
+       "a": 3,
+       "d": 25,
+       "mvp": 4,
+       "score": 55
+      },
+      {
+       "team": "JP Squad 2",
+       "name": "Kogara Toto",
+       "k": 19,
+       "a": 5,
+       "d": 24,
+       "mvp": 3,
+       "score": 51
+      },
+      {
+       "team": "JP Squad 2",
+       "name": "Sendo Yuuhi",
+       "k": 15,
+       "a": 4,
+       "d": 26,
+       "mvp": 1,
+       "score": 38
+      },
+      {
+       "team": "JP Squad 2",
+       "name": "Aizawa Ema",
+       "k": 16,
+       "a": 1,
+       "d": 21,
+       "mvp": 0,
+       "score": 38
+      },
+      {
+       "team": "JP Squad 3",
+       "name": "Shuvimo",
+       "k": 36,
+       "a": 3,
+       "d": 19,
+       "mvp": 7,
+       "score": 93
+      },
+      {
+       "team": "JP Squad 3",
+       "name": "Kaminari Qpi",
+       "k": 24,
+       "a": 3,
+       "d": 22,
+       "mvp": 3,
+       "score": 65
+      },
+      {
+       "team": "JP Squad 3",
+       "name": "Tsumugi Kokage",
+       "k": 16,
+       "a": 6,
+       "d": 17,
+       "mvp": 3,
+       "score": 52
+      },
+      {
+       "team": "JP Squad 3",
+       "name": "Shiranami Ramune",
+       "k": 23,
+       "a": 0,
+       "d": 21,
+       "mvp": 3,
+       "score": 51
+      },
+      {
+       "team": "JP Squad 3",
+       "name": "Choya Hanabi",
+       "k": 17,
+       "a": 4,
+       "d": 22,
+       "mvp": 0,
+       "score": 43
+      }
+     ]
+    },
+    {
+     "map": "Vertigo",
+     "scoreA": 19,
+     "scoreB": 15,
+     "players": [
+      {
+       "team": "JP Squad 2",
+       "name": "Sendo Yuuhi",
+       "k": 35,
+       "a": 2,
+       "d": 22,
+       "mvp": 6,
+       "score": 84
+      },
+      {
+       "team": "JP Squad 2",
+       "name": "Aizawa Ema",
+       "k": 26,
+       "a": 2,
+       "d": 26,
+       "mvp": 3,
+       "score": 63
+      },
+      {
+       "team": "JP Squad 2",
+       "name": "Kamito",
+       "k": 23,
+       "a": 0,
+       "d": 26,
+       "mvp": 3,
+       "score": 55
+      },
+      {
+       "team": "JP Squad 2",
+       "name": "Kogara Toto",
+       "k": 18,
+       "a": 3,
+       "d": 24,
+       "mvp": 5,
+       "score": 50
+      },
+      {
+       "team": "JP Squad 2",
+       "name": "Ichinose Uruha",
+       "k": 15,
+       "a": 3,
+       "d": 26,
+       "mvp": 2,
+       "score": 40
+      },
+      {
+       "team": "JP Squad 3",
+       "name": "Kaminari Qpi",
+       "k": 31,
+       "a": 4,
+       "d": 21,
+       "mvp": 4,
+       "score": 83
+      },
+      {
+       "team": "JP Squad 3",
+       "name": "Shuvimo",
+       "k": 28,
+       "a": 6,
+       "d": 21,
+       "mvp": 3,
+       "score": 76
+      },
+      {
+       "team": "JP Squad 3",
+       "name": "Choya Hanabi",
+       "k": 28,
+       "a": 3,
+       "d": 23,
+       "mvp": 5,
+       "score": 61
+      },
+      {
+       "team": "JP Squad 3",
+       "name": "Shiranami Ramune",
+       "k": 21,
+       "a": 0,
+       "d": 27,
+       "mvp": 3,
+       "score": 48
+      },
+      {
+       "team": "JP Squad 3",
+       "name": "Tsumugi Kokage",
+       "k": 15,
+       "a": 4,
+       "d": 26,
+       "mvp": 0,
+       "score": 36
+      }
+     ]
+    },
+    {
+     "map": "Dust2",
+     "scoreA": 11,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "JP Squad 2",
+       "name": "Aizawa Ema",
+       "k": 18,
+       "a": 1,
+       "d": 15,
+       "mvp": 1,
+       "score": 44
+      },
+      {
+       "team": "JP Squad 2",
+       "name": "Kamito",
+       "k": 19,
+       "a": 1,
+       "d": 20,
+       "mvp": 2,
+       "score": 43
+      },
+      {
+       "team": "JP Squad 2",
+       "name": "Sendo Yuuhi",
+       "k": 16,
+       "a": 4,
+       "d": 20,
+       "mvp": 3,
+       "score": 41
+      },
+      {
+       "team": "JP Squad 2",
+       "name": "Kogara Toto",
+       "k": 14,
+       "a": 1,
+       "d": 18,
+       "mvp": 2,
+       "score": 38
+      },
+      {
+       "team": "JP Squad 2",
+       "name": "Ichinose Uruha",
+       "k": 10,
+       "a": 6,
+       "d": 20,
+       "mvp": 3,
+       "score": 36
+      },
+      {
+       "team": "JP Squad 3",
+       "name": "Shuvimo",
+       "k": 25,
+       "a": 3,
+       "d": 17,
+       "mvp": 5,
+       "score": 63
+      },
+      {
+       "team": "JP Squad 3",
+       "name": "Shiranami Ramune",
+       "k": 22,
+       "a": 3,
+       "d": 15,
+       "mvp": 4,
+       "score": 50
+      },
+      {
+       "team": "JP Squad 3",
+       "name": "Choya Hanabi",
+       "k": 17,
+       "a": 4,
+       "d": 17,
+       "mvp": 2,
+       "score": 45
+      },
+      {
+       "team": "JP Squad 3",
+       "name": "Kaminari Qpi",
+       "k": 16,
+       "a": 2,
+       "d": 14,
+       "mvp": 1,
+       "score": 39
+      },
+      {
+       "team": "JP Squad 3",
+       "name": "Tsumugi Kokage",
+       "k": 13,
+       "a": 1,
+       "d": 14,
+       "mvp": 1,
+       "score": 35
+      }
+     ]
+    }
+   ]
   }
  }
 }
