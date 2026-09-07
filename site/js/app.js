@@ -188,6 +188,7 @@ function router(){
   window.scrollTo(0,0);
   PAGE_ROSTERS = []; PAGE_MAPSCORES = [];
   fn(arg);
+  renderPromo();   // re-roll the socials promo on each page for even exposure
   document.querySelectorAll(".mainnav a").forEach(a=>{
     const map={team:"teams",player:"players",tournament:"tournaments"};
     a.classList.toggle("active", a.dataset.route === (map[route]||route));
@@ -2829,15 +2830,17 @@ async function renderProphets(){
 }
 
 // ---------- creator socials "sponsored" slot (randomized) ----------
+const TW_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/></svg>';
 const PROMOS = [
   { net:'youtube', label:'YouTube', color:'#ff0033', cta:'Subscribe', ctaText:'#fff', handle:'@cgreyice',
-    head:'Watch the bots battle it out on YouTube', url:'https://www.youtube.com/@cgreyice',
+    head:'Watch bot highlights, or my funny videos', url:'https://www.youtube.com/@cgreyice',
     icon:'<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>' },
   { net:'twitch', label:'Twitch', color:'#9146ff', cta:'Follow', ctaText:'#fff', handle:'cgreyice',
-    head:'Catch the Bot Pro League live on Twitch', url:'https://www.twitch.tv/cgreyice',
-    icon:'<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/></svg>' },
+    head:'I stream all sorts of content here', url:'https://www.twitch.tv/cgreyice', icon:TW_ICON },
+  { net:'twitch', label:'Twitch', color:'#9146ff', cta:'Follow', ctaText:'#fff', handle:'cgrycei',
+    head:'Catch our BPL games here', url:'https://www.twitch.tv/cgrycei', icon:TW_ICON },
   { net:'x', label:'X', color:'#d9dbdd', cta:'Follow', ctaText:'#0a0d16', handle:'@CGreyIce',
-    head:'Results, rosters &amp; more on X', url:'https://x.com/CGreyIce',
+    head:'Follow my Twitter for more cool clips or funny posts', url:'https://x.com/CGreyIce',
     icon:'<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932zM17.61 20.644h2.039L6.486 3.24H4.298z"/></svg>' },
 ];
 function renderPromo(){
@@ -2865,7 +2868,6 @@ loadData().then(async d=>{
   setupRosterPop();
   setupFormTip();
   setupNav();
-  renderPromo();
   window.addEventListener("hashchange", router);
   router();
 }).catch(e=>{ app.innerHTML = `<div class="notice"><h2>Couldn't load data</h2><p>${esc(e.message)}</p>
