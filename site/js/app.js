@@ -55,6 +55,21 @@ function flag(iso){
   return `<img class="flag" src="https://flagcdn.com/20x15/${iso}.png" alt="${esc(iso)}" title="${esc(iso.toUpperCase())}" loading="lazy">`;
 }
 function playerLink(p){ return `${flag(p.iso)}<a href="#/player/${p.slug}">${esc(p.name)}</a>`; }
+// National teams (BPL Nations Cup) use their country flag as the team badge.
+const NATION_ISO = {singapore:'sg',malaysia:'my',philippines:'ph',australia:'au',usa:'us','united states':'us',
+  japan:'jp',taiwan:'tw',canada:'ca',netherlands:'nl','united kingdom':'gb',uk:'gb',indonesia:'id',
+  germany:'de',korea:'kr','south korea':'kr',thailand:'th',vietnam:'vn','land of make believe':'neutral'};
+function nationIso(teamName){
+  const m = /^team\s+(.+)$/i.exec((teamName||'').trim());
+  return m ? (NATION_ISO[m[1].trim().toLowerCase()]||null) : null;
+}
+function nationCrest(name, h){  // country flag badge for a "Team <Country>" name, else null
+  const iso = nationIso(name); if(!iso) return null;
+  h = h||16;
+  return iso==='neutral'
+    ? `<span class="nat-crest flag-neutral" style="height:${h}px;width:${Math.round(h*4/3)}px"></span>`
+    : `<img class="nat-crest" src="https://flagcdn.com/h40/${iso}.png" style="height:${h}px" alt="" loading="lazy">`;
+}
 
 // ---------- roster hover popups ----------
 let PAGE_ROSTERS = [];
@@ -1398,7 +1413,7 @@ function rtgColor(r){
 function matchCardHTML(tr, m, ref){
   const ta = m.aTeam?teamBySlug(m.aTeam):null, tb = m.bTeam?teamBySlug(m.bTeam):null;
   const seedOf = (nm,sl)=>{ const s = tr.seeds && (tr.seeds[sl]||tr.seeds[nm]); return s?`<span class="mc-seed">#${s}</span>`:''; };
-  const crest = (t,nm)=> t&&t.logo ? `<img src="${esc(t.logo)}" alt="">` : `<span class="mc-noimg">${initials(nm||'?')}</span>`;
+  const crest = (t,nm)=> nationCrest(nm,24) || (t&&t.logo ? `<img src="${esc(t.logo)}" alt="">` : `<span class="mc-noimg">${initials(nm||'?')}</span>`);
   const head = `<div class="mc-head">
       <div class="mc-team ${m.w===1?'win':''}">${crest(ta,m.a)}<span class="mc-tn">${m.aTeam?`<a href="#/team/${m.aTeam}">${esc(m.a)}</a>`:esc(m.a||'TBD')}</span>${seedOf(m.a,m.aTeam)}</div>
       <div class="mc-score"><b class="${m.w===1?'won':''}">${m.sa!=null?m.sa:'–'}</b><span>:</span><b class="${m.w===2?'won':''}">${m.sb!=null?m.sb:'–'}</b></div>
@@ -2255,7 +2270,8 @@ function renderTournament(slug){
     if(!name) return '—';
     const t = teamSlug ? teamBySlug(teamSlug) : null;
     const inner = teamSlug ? `<a href="#/team/${teamSlug}">${esc(name)}</a>` : esc(name);
-    return `<span class="team-inline"${rAttr(name, teamSlug)}>${t&&t.logo?`<img src="${esc(t.logo)}" alt="">`:''}${inner}</span>`;
+    const badge = nationCrest(name,18) || (t&&t.logo?`<img src="${esc(t.logo)}" alt="">`:'');
+    return `<span class="team-inline"${rAttr(name, teamSlug)}>${badge}${inner}</span>`;
   };
   const seedTag = (name, teamSlug)=>{ const s = tr.seeds && (tr.seeds[teamSlug] || tr.seeds[name]); return s ? `<span class="seed-tag" title="Seed ${s}">${s}</span>` : ''; };
   const bteamName = (name, teamSlug, hov)=>{
@@ -2279,7 +2295,7 @@ function renderTournament(slug){
     const name = side==='a'?m.a:m.b, teamSlug = side==='a'?m.aTeam:m.bTeam;
     const score = side==='a'?m.sa:m.sb, win = m.w===(side==='a'?1:2);
     const t = teamSlug ? teamBySlug(teamSlug) : null;
-    const logo = t&&t.logo ? `<img class="bt-logo" src="${esc(t.logo)}" alt="">` : '';
+    const logo = nationCrest(name,15) || (t&&t.logo ? `<img class="bt-logo" src="${esc(t.logo)}" alt="">` : '');
     const nm = name ? (teamSlug ? `<a href="#/team/${teamSlug}">${esc(name)}</a>` : esc(name)) : '<span class="muted">TBD</span>';
     const sc = score!=null ? score : '';
     return `<div class="bkt-team ${win?'win':''}"${hovAttr(m, side, name, teamSlug)}>${logo}${name?seedTag(name,teamSlug):''}<span class="bt-name">${nm}</span><span class="bt-score">${sc}</span></div>`;
@@ -2344,7 +2360,7 @@ function renderTournament(slug){
   // teams-attending logo wall
   const wall = (tr.attending||[]).map(row=>{
     const t = row.teamSlug ? teamBySlug(row.teamSlug) : null;
-    const logo = t&&t.logo ? `<img src="${esc(t.logo)}" alt="">` : `<span class="aw-noimg">${initials(row.team)}</span>`;
+    const logo = nationCrest(row.team,22) || (t&&t.logo ? `<img src="${esc(t.logo)}" alt="">` : `<span class="aw-noimg">${initials(row.team)}</span>`);
     const inner = `${logo}<span class="aw-name">${esc(row.team)}</span>`;
     return row.teamSlug
       ? `<a class="aw-tile" href="#/team/${row.teamSlug}"${rAttr(row.team,row.teamSlug)}>${inner}</a>`
