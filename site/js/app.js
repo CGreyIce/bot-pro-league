@@ -226,10 +226,10 @@ function renderHome(){
         ${(DATA.tournaments&&DATA.tournaments.length)?`
         <h2 class="section-title"><span class="accent-bar"></span>Latest Results</h2>
         <div class="leader-card" style="margin-bottom:18px">
-          ${DATA.tournaments.slice(0,6).map(tr=>`<div class="leader-row" style="align-items:center">
-            <span class="event-tier ${TIER_CLASS[tr.tier]}" style="margin-right:8px">${esc(tr.tierLabel[0]==='M'?'MAJ':tr.tierLabel[0]==='S'?'S':'A')}</span>
-            <a class="lr-name" href="#/tournament/${tr.slug}" style="min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(tr.name)}</a>
-            <span class="lr-val" style="font-size:12px">${esc(tr.champion||'')}</span></div>`).join("")}
+          ${DATA.tournaments.slice(0,6).map(tr=>`<a class="leader-row lr-result" href="#/tournament/${tr.slug}" style="align-items:center">
+            <span class="event-tier ${TIER_CLASS[tr.tier]}">${esc(tr.tierLabel[0]==='M'?'MAJ':tr.tierLabel[0]==='S'?'S':'A')}</span>
+            <span class="lr-name" style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(tr.name)}</span>
+            ${tr.champion?`<span class="lr-val" style="font-size:12px;white-space:nowrap;flex:0 0 auto">🏆 ${esc(tr.champion)}</span>`:'<span class="lr-val muted" style="font-size:11px;white-space:nowrap;flex:0 0 auto">ongoing</span>'}</a>`).join("")}
           <div style="margin-top:8px"><a href="#/tournaments" class="muted" style="font-size:12px">All tournaments →</a></div>
         </div>`:''}
         <h2 class="section-title"><span class="accent-bar"></span>Stat Leaders <span class="muted" style="font-size:11px">(pro)</span></h2>
