@@ -2689,6 +2689,16 @@ function prunePicks(rounds, picks){                // drop picks whose team is n
   }));
   return changed;
 }
+// render a prediction bracket as an aligned tree with connector lines (reuses the .bkt layout).
+// `inner(m)` returns the two team cells for a match. Call drawConnectors afterwards.
+function predBracketTree(rounds, RL, inner, extraCls){
+  return `<div class="bkt-wrap"><div class="bkt ${extraCls||''}"><svg class="bkt-svg"></svg>${rounds.map((rd,ri)=>{
+    const ms=rd.filter(m=>m.a!==PBYE && m.b!==PBYE);
+    if(!ms.length) return '';
+    return `<div class="bkt-round"><div class="bkt-round-title">${RL[ri]||('Round '+(ri+1))}</div>`+
+      `<div class="bkt-round-matches">${ms.map(m=>`<div class="bkt-match">${inner(m)}</div>`).join("")}</div></div>`;
+  }).join("")}</div></div>`;
+}
 function predPlacements(rounds){                   // predicted champ / runner-up / SF losers / QF losers
   if(!rounds) return {champ:null,ru:null,sf:[],qf:[]};
   const nb=t=>(t&&t!==PBYE)?t:null;               // ignore bye padding
@@ -2756,10 +2766,10 @@ function drawPredict(){
   const RL=roundLabels(rounds?rounds.length:0);
   const bracketHtml = !rounds
     ? `<p class="muted">Pick a 1st and 2nd for all ${gs.length} groups to unlock the bracket.</p>`
-    : `<div class="bkt-wrap"><div class="pbk">${rounds.map((rd,ri)=>`<div class="pbk-col"><div class="pbk-rt">${RL[ri]||('Round '+(ri+1))}</div>${rd.filter(m=>m.a!==PBYE&&m.b!==PBYE).map(m=>{
+    : predBracketTree(rounds, RL, m=>{
         const bt=(t)=>`<div class="pbk-team ${m.pick===t?'pk':''} ${t?'':'tbd'}" data-key="${m.key}" data-team="${esc(t||'')}"${t?predRAttr(t):''}>${t?crestMini(t):'<span class=muted>TBD</span>'}</div>`;
-        return `<div class="pbk-m">${bt(m.a)}${bt(m.b)}</div>`;
-      }).join("")}</div>`).join("")}</div></div>`;
+        return `${bt(m.a)}${bt(m.b)}`;
+      });
   const pl=predPlacements(rounds);
   const actual=actualResults(tr);
   const myScore = actual ? scorePrediction(pred, tr, actual) : null;
@@ -2815,6 +2825,7 @@ function drawPredict(){
     catch(e){ $("#pred-savemsg").style.color="var(--accent2,#ff6b6b)"; $("#pred-savemsg").textContent="Save failed: "+e.message; }
     saveBtn.disabled=false;
   };
+  requestAnimationFrame(()=>app.querySelectorAll('.bkt').forEach(drawConnectors));
   loadPredBoard();
 }
 function crestMini(name){ const t=teamByName(name); return `${t?`<img class="pbk-logo" src="${esc(t.logo||'')}" alt="">`:''}<span class="pbk-nm">${esc(name)}</span>`; }
@@ -2847,15 +2858,15 @@ function renderPredDetail(pred){
       <span class="pd-q">1 ${pk[0]?esc(pk[0]):'—'}</span><span class="pd-q pd-q2">2 ${pk[1]?esc(pk[1]):'—'}</span></div>`; }).join("")}</div>`;
   const rounds=bracketRounds(predSeeds(tr,pred), pred.bracket||{});
   const RL=roundLabels(rounds?rounds.length:0);
-  const bracketHtml = rounds ? `<div class="bkt-wrap"><div class="pbk pbk-ro">${rounds.map((rd,ri)=>`<div class="pbk-col"><div class="pbk-rt">${RL[ri]||('Round '+(ri+1))}</div>${rd.filter(m=>m.a!==PBYE&&m.b!==PBYE).map(m=>{
+  const bracketHtml = rounds ? predBracketTree(rounds, RL, m=>{
       const cell=x=>`<div class="pbk-team ${m.pick===x?'pk':''} ${x?'':'tbd'}"${x?predRAttr(x):''}>${x?crestMini(x):'<span class=muted>TBD</span>'}</div>`;
-      return `<div class="pbk-m">${cell(m.a)}${cell(m.b)}</div>`; }).join("")}</div>`).join("")}</div></div>`
+      return `${cell(m.a)}${cell(m.b)}`; }, 'pbk-ro')
     : '<p class="muted">Bracket not filled in.</p>';
   const pl=predPlacements(rounds);
   box.innerHTML=`<h3 class="rec-group" style="margin-top:0">${esc(pred.name||'anon')}'s prediction
     <span class="muted" style="font-size:11px">champion: ${pl.champ?esc(pl.champ):'—'}</span></h3>
-    <div class="pd-sub muted">Group qualifiers</div>${groupHtml}
-    <div class="pd-sub muted" style="margin-top:10px">Playoff bracket</div>${bracketHtml}`;
+    ${gs.length?`<div class="pd-sub muted">Group qualifiers</div>${groupHtml}<div class="pd-sub muted" style="margin-top:10px">Playoff bracket</div>`:''}${bracketHtml}`;
+  box.querySelectorAll('.bkt').forEach(drawConnectors);
   box.scrollIntoView({behavior:'smooth', block:'nearest'});
 }
 
