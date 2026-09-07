@@ -205,10 +205,11 @@ function renderHome(){
   const leader = (title, arr, fmt) => `<div class="leader-card"><h4>${title}</h4>${
     arr.map((p,i)=>`<div class="leader-row"><span class="lr-rank">${i+1}</span>
       <span class="lr-name">${playerLink(p)}</span><span class="lr-val">${fmt(p)}</span></div>`).join("")}</div>`;
+  const proQ     = pro.filter(p=>p.maps>=10);   // stat leaders: min 10 maps played
   const byRating = [...pro].sort((a,b)=>b.rating-a.rating).slice(0,5);
-  const byKills  = [...pro].sort((a,b)=>b.kills-a.kills).slice(0,5);
-  const byKdr    = [...pro].sort((a,b)=>b.kdr-a.kdr).slice(0,5);
-  const byMvp    = [...pro].sort((a,b)=>b.mvp-a.mvp).slice(0,5);
+  const byKills  = [...proQ].sort((a,b)=>b.kills-a.kills).slice(0,5);
+  const byKdr    = [...proQ].sort((a,b)=>b.kdr-a.kdr).slice(0,5);
+  const byMvp    = [...proQ].sort((a,b)=>b.mvp-a.mvp).slice(0,5);
 
   app.innerHTML = `
     <div class="grid home-grid">
