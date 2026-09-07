@@ -666,6 +666,8 @@ function renderRankings(){
       <div class="tablewrap" style="border:0"><table class="data"><tbody>${rows}</tbody></table></div></div>`;
   };
   const top = (key,n=10)=>[...pro].sort((a,b)=>b[key]-a[key]).slice(0,n);
+  const proQ = pro.filter(p=>p.maps>=10);   // rate boards (K/D, Win%) need a real sample
+  const topQ = (key,n=10)=>[...proQ].sort((a,b)=>b[key]-a[key]).slice(0,n);
   app.innerHTML = `
     <h2 class="section-title"><span class="accent-bar"></span>Team Points Ladder</h2>
     <div class="tablewrap"><table class="data">
@@ -678,10 +680,10 @@ function renderRankings(){
     <div class="grid" style="grid-template-columns:repeat(2,1fr)">
       ${board("Rating Points", top("rating"), p=>p.ratingPoints, true)}
       ${board("Total Kills", top("kills"), p=>p.kills)}
-      ${board("K/D Ratio", top("kdr"), p=>p.kdr.toFixed(2))}
+      ${board(`K/D Ratio <span class="muted" style="font-size:10px;font-weight:400">min 10 maps</span>`, topQ("kdr"), p=>p.kdr.toFixed(2))}
       ${board("MVPs", top("mvp"), p=>p.mvp)}
       ${board("Assists", top("assists"), p=>p.assists)}
-      ${board("Win Rate", top("winrate"), p=>pct(p.winrate))}
+      ${board(`Win Rate <span class="muted" style="font-size:10px;font-weight:400">min 10 maps</span>`, topQ("winrate"), p=>pct(p.winrate))}
     </div>`;
 }
 
@@ -2826,6 +2828,36 @@ async function renderProphets(){
     <p class="muted" style="font-size:11px;margin-top:6px">${rows.length} predictor${rows.length===1?'':'s'} · scoring: correct qualifier +3 (exact spot +1), champion +10, finalist +6, semifinalist +4, quarterfinalist +2.</p>`;
 }
 
+// ---------- creator socials "sponsored" slot (randomized) ----------
+const PROMOS = [
+  { net:'youtube', label:'YouTube', color:'#ff0033', cta:'Subscribe', ctaText:'#fff', handle:'@cgreyice',
+    head:'Watch the bots battle it out on YouTube', url:'https://www.youtube.com/@cgreyice',
+    icon:'<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>' },
+  { net:'twitch', label:'Twitch', color:'#9146ff', cta:'Follow', ctaText:'#fff', handle:'cgreyice',
+    head:'Catch the Bot Pro League live on Twitch', url:'https://www.twitch.tv/cgreyice',
+    icon:'<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z"/></svg>' },
+  { net:'x', label:'X', color:'#d9dbdd', cta:'Follow', ctaText:'#0a0d16', handle:'@CGreyIce',
+    head:'Results, rosters &amp; more on X', url:'https://x.com/CGreyIce',
+    icon:'<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932zM17.61 20.644h2.039L6.486 3.24H4.298z"/></svg>' },
+];
+function renderPromo(){
+  const slot = document.getElementById('promo-slot'); if(!slot) return;
+  let hidden=false; try{ hidden = sessionStorage.getItem('bpl-promo-hide')==='1'; }catch(e){}
+  if(hidden){ slot.style.display='none'; return; }
+  const p = PROMOS[Math.floor(Math.random()*PROMOS.length)];
+  slot.innerHTML = `<div class="promo promo-${p.net}" style="--net:${p.color}">
+      <span class="promo-tag">Ad</span>
+      <span class="promo-ico">${p.icon}</span>
+      <a class="promo-body" href="${p.url}" target="_blank" rel="noopener noreferrer">
+        <span class="promo-head">${p.head}</span>
+        <span class="promo-sub">${p.label} · <strong>${esc(p.handle)}</strong></span>
+      </a>
+      <a class="promo-cta" href="${p.url}" target="_blank" rel="noopener noreferrer" style="color:${p.ctaText}">${p.cta}</a>
+      <button class="promo-close" title="Hide" aria-label="Hide">×</button>
+    </div>`;
+  slot.querySelector('.promo-close').onclick = ()=>{ slot.style.display='none'; try{ sessionStorage.setItem('bpl-promo-hide','1'); }catch(e){} };
+}
+
 loadData().then(async d=>{
   DATA = d;
   try{ _adminOn = ((await (await fetch("/api/state")).json()).admin === true); }catch(e){ _adminOn = false; }
@@ -2833,6 +2865,7 @@ loadData().then(async d=>{
   setupRosterPop();
   setupFormTip();
   setupNav();
+  renderPromo();
   window.addEventListener("hashchange", router);
   router();
 }).catch(e=>{ app.innerHTML = `<div class="notice"><h2>Couldn't load data</h2><p>${esc(e.message)}</p>
