@@ -631,6 +631,18 @@ function renderPlayer(slug){
           return `<h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>Recent Form
             <span class="muted" style="font-size:11px">last ${last.length} map${last.length===1?'':'s'} · ${w}-${l} · ${avg.toFixed(2)} avg RTG</span></h2>
             <div class="form-row">${formDots(log)}${formSpark(log)}</div>`; })()}
+        ${(()=>{ const ms=playerMapStats(playerFormLog(p.slug)); if(!ms) return '';
+          const wr=m=>`${Math.round(m.wr*100)}% <span class="pmap-rec">${m.w}-${m.l}</span>`;
+          const card=(cls,ico,label,m,detail)=> m?`<div class="pmap ${cls}"><span class="pmap-ico">${ico}</span>
+            <div class="pmap-b"><span class="pmap-l">${label}</span><span class="pmap-m">${esc(m.map)}</span>
+            <span class="pmap-d">${detail(m)}</span></div></div>`:'';
+          const cards=[
+            card('fav','⭐','Favorite Map',ms.favorite,m=>`${m.played} map${m.played===1?'':'s'} played`),
+            card('best','🟢','Best Map',ms.best,wr),
+            (ms.worst&&ms.best&&ms.worst.map!==ms.best.map)?card('worst','🔴','Worst Map',ms.worst,wr):''
+          ].join('');
+          return `<h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>Maps</h2>
+            <div class="pmap-cards">${cards}</div>`; })()}
         ${(()=>{
           const med = playerMedals(p);
           const nMvp = (p.mvpAwards||[]).length;
@@ -1500,6 +1512,23 @@ function playerFormLog(slug){
   });
   out.sort((a,b)=> (a.date||'').localeCompare(b.date||''));
   return out;
+}
+// per-map play/win aggregate from a form log → favorite (most played), best & worst (win rate)
+function playerMapStats(log){
+  const by={};
+  log.forEach(x=>{
+    if(!x.map) return;
+    const m = by[x.map] = by[x.map] || {map:x.map, played:0, w:0, l:0};
+    m.played++;
+    if(x.won===true) m.w++; else if(x.won===false) m.l++;
+  });
+  const arr = Object.values(by).map(m=>({...m, dec:m.w+m.l, wr:(m.w+m.l)?m.w/(m.w+m.l):0}));
+  if(!arr.length) return null;
+  const favorite = [...arr].sort((a,b)=> b.played-a.played || b.dec-a.dec)[0];
+  const rated = arr.filter(m=>m.dec>=2);   // need a real sample for a win-rate claim
+  const best = rated.length ? [...rated].sort((a,b)=> b.wr-a.wr || b.dec-a.dec)[0] : null;
+  const worst = rated.length>=2 ? [...rated].sort((a,b)=> a.wr-b.wr || b.dec-a.dec)[0] : null;
+  return {favorite, best, worst};
 }
 function formDotAttrs(x){
   return `data-rtg="${x.rtg.toFixed(2)}" data-map="${esc(x.map||'')}" data-event="${esc(x.event||'')}" `+
