@@ -1218,24 +1218,25 @@ def main():
 
     # ---- player honors: titles won (on the champion's event roster) + event MVPs ----
     for tr in tournaments:
-        if tr.get("noHonors"):
-            continue                      # selection/qualifier events award no titles or MVP
-        # champion's roster: resolved team by slug, else (ad-hoc champion, e.g. a Nations Cup
-        # "Team Singapore") the attending row matched by champion name.
-        ct = tr.get("championTeam")
-        row = None
-        if ct:
-            row = next((r for r in tr["attending"] if r.get("teamSlug") == ct), None)
-        elif tr.get("champion"):
-            row = next((r for r in tr["attending"] if norm_key(r.get("team", "")) == norm_key(tr["champion"])), None)
-        if row:
-            for pl in row["players"]:
-                p = slug_to_player.get(pl.get("slug"))
-                if p:
-                    p.setdefault("titles", []).append({
-                        "event": tr["name"], "slug": tr["slug"], "tier": tr["tier"],
-                        "tierLabel": tr["tierLabel"], "year": tr["year"], "team": row["team"]})
-        # event MVP from any recorded scoreboards
+        # titles: skipped for noHonors (selection/qualifier events award no titles). MVP is
+        # still awarded for every event with recorded scoreboards, any tier — see below.
+        if not tr.get("noHonors"):
+            # champion's roster: resolved team by slug, else (ad-hoc champion, e.g. a Nations Cup
+            # "Team Singapore") the attending row matched by champion name.
+            ct = tr.get("championTeam")
+            row = None
+            if ct:
+                row = next((r for r in tr["attending"] if r.get("teamSlug") == ct), None)
+            elif tr.get("champion"):
+                row = next((r for r in tr["attending"] if norm_key(r.get("team", "")) == norm_key(tr["champion"])), None)
+            if row:
+                for pl in row["players"]:
+                    p = slug_to_player.get(pl.get("slug"))
+                    if p:
+                        p.setdefault("titles", []).append({
+                            "event": tr["name"], "slug": tr["slug"], "tier": tr["tier"],
+                            "tierLabel": tr["tierLabel"], "year": tr["year"], "team": row["team"]})
+        # event MVP from any recorded scoreboards (every tournament, any tier)
         agg = {}
         def _scan(rounds):
             for rd in rounds:

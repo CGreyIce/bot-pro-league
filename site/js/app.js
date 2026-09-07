@@ -2431,7 +2431,7 @@ function renderTournament(slug){
         ${tr.mvp ? `<div class="tourn-mvp">⭐ <span class="muted">${tr.champion?'Tournament MVP':'MVP so far'}:</span>
           <a href="#/player/${tr.mvp.slug}" class="tm-mvp-name">${flag(tr.mvp.iso)}${esc(tr.mvp.name)}</a>
           <span class="muted" style="font-size:12px">${tr.mvp.mvpRounds} MVP round${tr.mvp.mvpRounds===1?'':'s'}${tr.mvp.team&&tr.mvp.team!=='—'?' · '+esc(tr.mvp.team):''}</span></div>` : ''}
-        ${(tr.stages && predGroups(tr).length) ? `<a class="predict-btn" href="#/predict/${tr.slug}">🔮 ${tr.champion?'Predictions & leaderboard':'Make your predictions'}</a>` : ''}
+        ${predSupported(tr) ? `<a class="predict-btn" href="#/predict/${tr.slug}">🔮 ${tr.champion?'Predictions & leaderboard':'Make your predictions'}</a>` : ''}
       </div>
       ${champT&&champT.logo?`<img class="crest" src="${esc(champT.logo)}" alt="">`:''}
     </div>
@@ -2622,15 +2622,45 @@ function predUser(){
   return { uid, name: localStorage.getItem('bpl_pname')||'' };
 }
 const BR16 = [1,16,8,9,5,12,4,13,3,14,6,11,7,10,2,15];
+// standard bracket seed order for N teams. Keep BR16 verbatim for 16 so existing saved
+// group-stage predictions (keyed by match position) don't shift.
+function seedOrder(n){
+  if(n===16) return BR16;
+  let order=[1,2];
+  while(order.length<n){ const m=order.length*2+1; order=order.flatMap(s=>[s, m-s]); }
+  return order;
+}
 function predGroups(tr){ return (tr.stages||[]).filter(s=>s.format!=='single_elim'); }
-function predSeeds(tr, pred){                     // 16 qualifiers from group picks (winners 1-8, runners 9-16)
-  const gs=predGroups(tr); const w=[],r=[];
+// seed list for the prediction bracket: from group picks (winners 1-8, runners 9-16),
+// or — for a pure single-elim event — the bracket's own seed-ordered teams.
+function predSeeds(tr, pred){
+  const gs=predGroups(tr);
+  if(!gs.length){
+    const st=(tr.stages||[]).find(s=>s.format==='single_elim') || (tr.stages||[])[0];
+    return ((st&&st.teams)||[]).map(t=>Array.isArray(t)?t[0]:t);
+  }
+  const w=[],r=[];
   gs.forEach(g=>{ const p=(pred.groups||{})[g.name]||[]; w.push(p[0]||null); r.push(p[1]||null); });
   return w.concat(r);
 }
+// events that support predictions: group-stage events, or clean power-of-2 single-elim brackets
+function predSupported(tr){
+  if(!tr || !tr.stages || !tr.stages.length) return false;
+  if(predGroups(tr).length) return true;
+  const n=predSeeds(tr,{groups:{}}).length;
+  return n>=2 && (n&(n-1))===0;
+}
+function roundLabels(nRounds){
+  const out=[];
+  for(let r=0;r<nRounds;r++){ const fe=nRounds-1-r;
+    out.push(fe===0?'Final':fe===1?'Semifinals':fe===2?'Quarterfinals':('Round of '+Math.pow(2,fe+1))); }
+  return out;
+}
 function bracketRounds(seeds, picks){
-  if(seeds.some(s=>!s)) return null;              // groups not fully picked yet
-  let matches=[]; for(let i=0;i<16;i+=2) matches.push([seeds[BR16[i]-1], seeds[BR16[i+1]-1]]);
+  const n=(seeds||[]).length;
+  if(n<2 || (n&(n-1))!==0 || seeds.some(s=>!s)) return null;   // need a full power-of-2 seed list
+  const ord=seedOrder(n);
+  let matches=[]; for(let i=0;i<n;i+=2) matches.push([seeds[ord[i]-1], seeds[ord[i+1]-1]]);
   const rounds=[]; let r=1;
   while(true){
     const wk = matches.map((m,i)=>({a:m[0],b:m[1],key:`r${r}m${i}`,pick:picks[`r${r}m${i}`]||null}));
@@ -2687,7 +2717,7 @@ function predRAttr(name){ const i = _predRosters[normKey(name||'')]; return i!=n
 async function renderPredict(slug){
   const tr = (DATA.tournaments||[]).find(t=>t.slug===slug);
   if(!tr){ app.innerHTML = notFound("Event"); return; }
-  if(!tr.stages || !predGroups(tr).length){ app.innerHTML = `<div class="notice">Predictions are only available for group-stage events.</div>`; return; }
+  if(!predSupported(tr)){ app.innerHTML = `<div class="notice">Predictions aren't available for this event's format.</div>`; return; }
   _predTr = tr;
   _predRosters = {};                          // team -> PAGE_ROSTERS index (hover shows the line-up)
   (tr.attending||[]).forEach(row=>{ if(row.players && row.players.length) _predRosters[normKey(row.team)] = rosterIdx({team:row.team, teamSlug:row.teamSlug, players:row.players}); });
@@ -2712,7 +2742,7 @@ function drawPredict(){
   const seeds=predSeeds(tr,pred);
   let rounds=bracketRounds(seeds, pred.bracket);
   if(rounds && prunePicks(rounds, pred.bracket)) rounds=bracketRounds(seeds, pred.bracket);
-  const RL=["Round of 16","Quarterfinals","Semifinals","Final"];
+  const RL=roundLabels(rounds?rounds.length:0);
   const bracketHtml = !rounds
     ? `<p class="muted">Pick a 1st and 2nd for all ${gs.length} groups to unlock the bracket.</p>`
     : `<div class="bkt-wrap"><div class="pbk">${rounds.map((rd,ri)=>`<div class="pbk-col"><div class="pbk-rt">${RL[ri]||('Round '+(ri+1))}</div>${rd.map(m=>{
@@ -2725,7 +2755,8 @@ function drawPredict(){
   const locked = !!(tr.champion || tr.predictionsLocked);
   const statusMsg = tr.champion ? 'Results are in — predictions locked.'
     : tr.predictionsLocked ? 'The tournament has started — predictions are locked.'
-    : 'Pick your group qualifiers and bracket, then Save.';
+    : gs.length ? 'Pick your group qualifiers and bracket, then Save.'
+    : 'Pick the bracket winners through to the champion, then Save.';
   app.innerHTML = `
     <div class="crumb"><a href="#/tournament/${tr.slug}">${esc(tr.name)}</a><span class="sep">/</span>Predictions</div>
     <h2 class="section-title"><span class="accent-bar"></span>Predictions · ${esc(tr.name)}
@@ -2740,9 +2771,9 @@ function drawPredict(){
     ${locked?`<div class="notice" style="text-align:left;margin-bottom:14px;border-color:var(--accent)">
       🔒 <strong>${tr.predictionsLocked&&!tr.champion?'This tournament is underway.':'This event is over.'}</strong>
       Predictions are locked — no new entries or edits. See the standings below.</div>`
-    :`<h3 class="rec-group">Group Qualifiers <span class="muted" style="font-size:11px">top 2 advance</span></h3>
+    :`${gs.length?`<h3 class="rec-group">Group Qualifiers <span class="muted" style="font-size:11px">top 2 advance</span></h3>
     <div class="pg-grid">${groupCards}</div>
-    <h3 class="rec-group" style="margin-top:18px">Playoff Bracket</h3>
+    <h3 class="rec-group" style="margin-top:18px">Playoff Bracket</h3>`:'<h3 class="rec-group">Bracket <span class="muted" style="font-size:11px">pick every winner</span></h3>'}
     ${bracketHtml}
     <div style="margin-top:12px;display:flex;gap:10px;align-items:center">
       <button id="pred-save" class="adm-btn" style="max-width:220px">Save prediction</button>
@@ -2804,7 +2835,7 @@ function renderPredDetail(pred){
     return `<div class="pd-g"><span class="pd-gh">${esc(g.name.replace('Group ',''))}</span>
       <span class="pd-q">1 ${pk[0]?esc(pk[0]):'—'}</span><span class="pd-q pd-q2">2 ${pk[1]?esc(pk[1]):'—'}</span></div>`; }).join("")}</div>`;
   const rounds=bracketRounds(predSeeds(tr,pred), pred.bracket||{});
-  const RL=["Round of 16","Quarterfinals","Semifinals","Final"];
+  const RL=roundLabels(rounds?rounds.length:0);
   const bracketHtml = rounds ? `<div class="bkt-wrap"><div class="pbk pbk-ro">${rounds.map((rd,ri)=>`<div class="pbk-col"><div class="pbk-rt">${RL[ri]||('Round '+(ri+1))}</div>${rd.map(m=>{
       const cell=x=>`<div class="pbk-team ${m.pick===x?'pk':''} ${x?'':'tbd'}"${x?predRAttr(x):''}>${x?crestMini(x):'<span class=muted>TBD</span>'}</div>`;
       return `<div class="pbk-m">${cell(m.a)}${cell(m.b)}</div>`; }).join("")}</div>`).join("")}</div></div>`
