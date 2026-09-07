@@ -825,9 +825,6 @@ textarea.adm-in{resize:vertical;font-family:inherit}
 .promo-cta{flex:0 0 auto;z-index:1;font-family:var(--font-display);font-weight:700;font-size:12.5px;letter-spacing:.4px;
   background:var(--net);padding:8px 16px;border-radius:8px;transition:.15s;white-space:nowrap}
 .promo-cta:hover{filter:brightness(1.12)}
-.promo-close{position:absolute;top:5px;right:8px;z-index:2;background:none;border:none;color:var(--muted2);
-  font-size:16px;line-height:1;cursor:pointer;padding:2px 4px}
-.promo-close:hover{color:var(--text)}
 
 /* player profile — favorite / best / worst map cards (image-backed) */
 .pmap-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}

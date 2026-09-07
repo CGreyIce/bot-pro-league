@@ -2875,8 +2875,6 @@ const PROMOS = [
 ];
 function renderPromo(){
   const slot = document.getElementById('promo-slot'); if(!slot) return;
-  let hidden=false; try{ hidden = sessionStorage.getItem('bpl-promo-hide')==='1'; }catch(e){}
-  if(hidden){ slot.style.display='none'; return; }
   const p = PROMOS[Math.floor(Math.random()*PROMOS.length)];
   slot.innerHTML = `<div class="promo promo-${p.net}" style="--net:${p.color}">
       <span class="promo-tag">Ad</span>
@@ -2886,9 +2884,7 @@ function renderPromo(){
         <span class="promo-sub">${p.label} · <strong>${esc(p.handle)}</strong></span>
       </a>
       <a class="promo-cta" href="${p.url}" target="_blank" rel="noopener noreferrer" style="color:${p.ctaText}">${p.cta}</a>
-      <button class="promo-close" title="Hide" aria-label="Hide">×</button>
     </div>`;
-  slot.querySelector('.promo-close').onclick = ()=>{ slot.style.display='none'; try{ sessionStorage.setItem('bpl-promo-hide','1'); }catch(e){} };
 }
 
 loadData().then(async d=>{
