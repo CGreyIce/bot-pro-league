@@ -249081,7 +249081,7 @@
     }
    ],
    "seeds": {},
-   "predictionsLocked": false,
+   "predictionsLocked": true,
    "noHonors": true,
    "nationTeam": "Team Australia",
    "attending": [
@@ -252034,7 +252034,7 @@
     }
    ],
    "seeds": {},
-   "predictionsLocked": false,
+   "predictionsLocked": true,
    "noHonors": true,
    "nationTeam": "Team Japan",
    "attending": [
@@ -254153,7 +254153,7 @@
     }
    ],
    "seeds": {},
-   "predictionsLocked": false,
+   "predictionsLocked": true,
    "noHonors": true,
    "nationTeam": "Team Philippines",
    "attending": [
@@ -261944,7 +261944,7 @@
     }
    ],
    "seeds": {},
-   "predictionsLocked": false,
+   "predictionsLocked": true,
    "noHonors": true,
    "nationTeam": "Team USA",
    "attending": [

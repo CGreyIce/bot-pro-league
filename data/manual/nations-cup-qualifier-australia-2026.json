@@ -64,5 +64,6 @@
  ],
  "seeds": {},
  "noHonors": true,
- "nationTeam": "Team Australia"
+ "nationTeam": "Team Australia",
+ "predictionsLocked": true
 }

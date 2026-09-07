@@ -35,5 +35,6 @@
  ],
  "seeds": {},
  "noHonors": true,
- "nationTeam": "Team Philippines"
+ "nationTeam": "Team Philippines",
+ "predictionsLocked": true
 }
