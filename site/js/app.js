@@ -2164,7 +2164,7 @@ async function openEditor(slug){
   }).join("");
 
   ed.innerHTML = `
-    <div class="ae-head"><strong style="font-family:Rajdhani;font-size:18px">${esc(man.name)}</strong>
+    <div class="ae-head"><strong style="font-family:Chakra Petch;font-size:18px">${esc(man.name)}</strong>
       ${r.champion?`<span class="ae-champ">🏆 ${esc(r.champion)}</span>`:'<span class="muted">in progress</span>'}
       <a href="#/tournament/${esc(slug)}" class="muted" style="margin-left:auto;font-size:12px">open event page →</a></div>
     ${stagesHtml || '<p class="muted">No stages yet — add one below.</p>'}
@@ -2389,7 +2389,7 @@ function renderTournament(slug){
         <h1>${esc(tr.name)} ${tierBadgeEvent(tr)}</h1>
         <div class="ph-sub">${fmtDate(tr.date)} · ${tr.format} · ${tr.participantCount} teams</div>
         <div style="margin-top:12px;font-size:15px">${champLabel(tr)}:
-          <strong style="font-size:18px;font-family:'Rajdhani'">${crest(tr.champion, tr.championTeam)}</strong></div>
+          <strong style="font-size:18px;font-family:'Chakra Petch'">${crest(tr.champion, tr.championTeam)}</strong></div>
         ${tr.mvp ? `<div class="tourn-mvp">⭐ <span class="muted">${tr.champion?'Tournament MVP':'MVP so far'}:</span>
           <a href="#/player/${tr.mvp.slug}" class="tm-mvp-name">${flag(tr.mvp.iso)}${esc(tr.mvp.name)}</a>
           <span class="muted" style="font-size:12px">${tr.mvp.mvpRounds} MVP round${tr.mvp.mvpRounds===1?'':'s'}${tr.mvp.team&&tr.mvp.team!=='—'?' · '+esc(tr.mvp.team):''}</span></div>` : ''}
