@@ -829,21 +829,26 @@ textarea.adm-in{resize:vertical;font-family:inherit}
   font-size:16px;line-height:1;cursor:pointer;padding:2px 4px}
 .promo-close:hover{color:var(--text)}
 
-/* player profile — favorite / best / worst map cards */
+/* player profile — favorite / best / worst map cards (image-backed) */
 .pmap-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
 @media(max-width:620px){.pmap-cards{grid-template-columns:1fr}}
-.pmap{display:flex;align-items:center;gap:12px;min-width:0;padding:12px 14px;border-radius:12px;
+.pmap{position:relative;overflow:hidden;display:flex;align-items:flex-end;min-height:88px;padding:11px 13px;border-radius:12px;
   background:linear-gradient(180deg,var(--panel-top),var(--panel));border:1px solid var(--border);border-left:3px solid var(--border2);
   box-shadow:inset 0 1px 0 rgba(255,255,255,.04),0 12px 30px -22px rgba(0,0,0,.7)}
 .pmap.fav{border-left-color:var(--accent)}
 .pmap.best{border-left-color:var(--good)}
 .pmap.worst{border-left-color:var(--accent2)}
-.pmap-ico{font-size:20px;flex:0 0 auto;line-height:1}
-.pmap-b{display:flex;flex-direction:column;min-width:0}
-.pmap-l{font-family:var(--font-display);font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.7px;color:var(--muted2)}
-.pmap-m{font-family:var(--font-display);font-weight:700;font-size:16px;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.pmap-d{font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums}
-.pmap-d .pmap-rec{color:var(--muted2);margin-left:2px}
+.pmap-bg{position:absolute;inset:0;background-size:cover;background-position:center;z-index:0}
+.pmap-bg::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(8,12,22,.2) 0%,rgba(8,12,22,.55) 42%,rgba(8,12,22,.93) 100%)}
+.pmap.fav .pmap-bg::after{background:linear-gradient(180deg,rgba(8,12,22,.2),rgba(8,12,22,.55) 42%,rgba(8,12,22,.93)),linear-gradient(90deg,rgba(255,106,61,.16),transparent 55%)}
+.pmap.best .pmap-bg::after{background:linear-gradient(180deg,rgba(8,12,22,.2),rgba(8,12,22,.55) 42%,rgba(8,12,22,.93)),linear-gradient(90deg,rgba(46,230,166,.14),transparent 55%)}
+.pmap.worst .pmap-bg::after{background:linear-gradient(180deg,rgba(8,12,22,.2),rgba(8,12,22,.55) 42%,rgba(8,12,22,.93)),linear-gradient(90deg,rgba(255,61,100,.15),transparent 55%)}
+.pmap-b{position:relative;z-index:1;display:flex;flex-direction:column;min-width:0}
+.pmap-l{font-family:var(--font-display);font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.7px;color:rgba(255,255,255,.72);margin-bottom:2px}
+.pmap-m{font-family:var(--font-display);font-weight:700;font-size:18px;color:#fff;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-shadow:0 1px 8px rgba(0,0,0,.75)}
+.pmap-d{font-size:12px;color:rgba(255,255,255,.85);font-variant-numeric:tabular-nums;text-shadow:0 1px 6px rgba(0,0,0,.7)}
+.pmap-d .pmap-rec{color:rgba(255,255,255,.6);margin-left:2px}
 @media(max-width:560px){
   .promo{gap:11px;padding:10px 12px}
   .promo-ico{width:36px;height:36px}

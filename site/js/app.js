@@ -633,8 +633,9 @@ function renderPlayer(slug){
             <div class="form-row">${formDots(log)}${formSpark(log)}</div>`; })()}
         ${(()=>{ const ms=playerMapStats(playerFormLog(p.slug)); if(!ms) return '';
           const wr=m=>`${Math.round(m.wr*100)}% <span class="pmap-rec">${m.w}-${m.l}</span>`;
-          const card=(cls,ico,label,m,detail)=> m?`<div class="pmap ${cls}"><span class="pmap-ico">${ico}</span>
-            <div class="pmap-b"><span class="pmap-l">${label}</span><span class="pmap-m">${esc(m.map)}</span>
+          const bg=m=> VETO_IMG[m.map] ? `<div class="pmap-bg" style="background-image:url('assets/maps/${VETO_IMG[m.map]}')"></div>` : '';
+          const card=(cls,ico,label,m,detail)=> m?`<div class="pmap ${cls}">${bg(m)}
+            <div class="pmap-b"><span class="pmap-l">${ico} ${label}</span><span class="pmap-m">${esc(m.map)}</span>
             <span class="pmap-d">${detail(m)}</span></div></div>`:'';
           const cards=[
             card('fav','⭐','Favorite Map',ms.favorite,m=>`${m.played} map${m.played===1?'':'s'} played`),
