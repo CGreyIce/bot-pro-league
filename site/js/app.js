@@ -2647,8 +2647,7 @@ function predSeeds(tr, pred){
 function predSupported(tr){
   if(!tr || !tr.stages || !tr.stages.length) return false;
   if(predGroups(tr).length) return true;
-  const n=predSeeds(tr,{groups:{}}).length;
-  return n>=2 && (n&(n-1))===0;
+  return predSeeds(tr,{groups:{}}).length>=2;     // any single-elim (byes padded to power of 2)
 }
 function roundLabels(nRounds){
   const out=[];
@@ -2656,14 +2655,25 @@ function roundLabels(nRounds){
     out.push(fe===0?'Final':fe===1?'Semifinals':fe===2?'Quarterfinals':('Round of '+Math.pow(2,fe+1))); }
   return out;
 }
+const PBYE='(bye)';   // seed padding for non-power-of-2 single-elim brackets — auto-advances
 function bracketRounds(seeds, picks){
-  const n=(seeds||[]).length;
-  if(n<2 || (n&(n-1))!==0 || seeds.some(s=>!s)) return null;   // need a full power-of-2 seed list
+  let list=(seeds||[]).slice();
+  if(list.length<2) return null;
+  let n=1; while(n<list.length) n*=2;              // pad up to a power of 2 with byes
+  while(list.length<n) list.push(PBYE);
+  if(list.some(s=>s==null)) return null;           // group picks not fully made yet
   const ord=seedOrder(n);
-  let matches=[]; for(let i=0;i<n;i+=2) matches.push([seeds[ord[i]-1], seeds[ord[i+1]-1]]);
+  let matches=[]; for(let i=0;i<n;i+=2) matches.push([list[ord[i]-1], list[ord[i+1]-1]]);
   const rounds=[]; let r=1;
   while(true){
-    const wk = matches.map((m,i)=>({a:m[0],b:m[1],key:`r${r}m${i}`,pick:picks[`r${r}m${i}`]||null}));
+    const wk = matches.map((m,i)=>{
+      const a=m[0], b=m[1]; let pick=picks[`r${r}m${i}`]||null, auto=false;
+      if(a===PBYE && b!==PBYE){ pick=b; auto=true; }        // bye: the real team advances
+      else if(b===PBYE && a!==PBYE){ pick=a; auto=true; }
+      else if(a===PBYE && b===PBYE){ pick=PBYE; auto=true; }
+      else if(pick && pick!==a && pick!==b) pick=null;      // stale pick (matchup changed)
+      return {a,b,key:`r${r}m${i}`,pick,auto};
+    });
     rounds.push(wk);
     if(matches.length===1) break;
     const win = wk.map(m=>m.pick);
@@ -2681,9 +2691,10 @@ function prunePicks(rounds, picks){                // drop picks whose team is n
 }
 function predPlacements(rounds){                   // predicted champ / runner-up / SF losers / QF losers
   if(!rounds) return {champ:null,ru:null,sf:[],qf:[]};
+  const nb=t=>(t&&t!==PBYE)?t:null;               // ignore bye padding
   const R=rounds.length; const fin=rounds[R-1][0];
-  const champ=fin.pick||null, ru=champ?(champ===fin.a?fin.b:fin.a):null;
-  const loser=m=>m.pick?(m.pick===m.a?m.b:m.a):null;
+  const champ=nb(fin.pick), ru=champ?nb(champ===fin.a?fin.b:fin.a):null;
+  const loser=m=>m.pick&&m.pick!==PBYE?nb(m.pick===m.a?m.b:m.a):null;
   const sf=R>=2?rounds[R-2].map(loser).filter(Boolean):[];
   const qf=R>=3?rounds[R-3].map(loser).filter(Boolean):[];
   return {champ, ru, sf, qf};
@@ -2745,8 +2756,8 @@ function drawPredict(){
   const RL=roundLabels(rounds?rounds.length:0);
   const bracketHtml = !rounds
     ? `<p class="muted">Pick a 1st and 2nd for all ${gs.length} groups to unlock the bracket.</p>`
-    : `<div class="bkt-wrap"><div class="pbk">${rounds.map((rd,ri)=>`<div class="pbk-col"><div class="pbk-rt">${RL[ri]||('Round '+(ri+1))}</div>${rd.map(m=>{
-        const bt=(t,other)=>`<div class="pbk-team ${m.pick===t?'pk':''} ${t?'':'tbd'}" data-key="${m.key}" data-team="${esc(t||'')}"${t?predRAttr(t):''}>${t?crestMini(t):'<span class=muted>TBD</span>'}</div>`;
+    : `<div class="bkt-wrap"><div class="pbk">${rounds.map((rd,ri)=>`<div class="pbk-col"><div class="pbk-rt">${RL[ri]||('Round '+(ri+1))}</div>${rd.filter(m=>m.a!==PBYE&&m.b!==PBYE).map(m=>{
+        const bt=(t)=>`<div class="pbk-team ${m.pick===t?'pk':''} ${t?'':'tbd'}" data-key="${m.key}" data-team="${esc(t||'')}"${t?predRAttr(t):''}>${t?crestMini(t):'<span class=muted>TBD</span>'}</div>`;
         return `<div class="pbk-m">${bt(m.a)}${bt(m.b)}</div>`;
       }).join("")}</div>`).join("")}</div></div>`;
   const pl=predPlacements(rounds);
@@ -2836,7 +2847,7 @@ function renderPredDetail(pred){
       <span class="pd-q">1 ${pk[0]?esc(pk[0]):'—'}</span><span class="pd-q pd-q2">2 ${pk[1]?esc(pk[1]):'—'}</span></div>`; }).join("")}</div>`;
   const rounds=bracketRounds(predSeeds(tr,pred), pred.bracket||{});
   const RL=roundLabels(rounds?rounds.length:0);
-  const bracketHtml = rounds ? `<div class="bkt-wrap"><div class="pbk pbk-ro">${rounds.map((rd,ri)=>`<div class="pbk-col"><div class="pbk-rt">${RL[ri]||('Round '+(ri+1))}</div>${rd.map(m=>{
+  const bracketHtml = rounds ? `<div class="bkt-wrap"><div class="pbk pbk-ro">${rounds.map((rd,ri)=>`<div class="pbk-col"><div class="pbk-rt">${RL[ri]||('Round '+(ri+1))}</div>${rd.filter(m=>m.a!==PBYE&&m.b!==PBYE).map(m=>{
       const cell=x=>`<div class="pbk-team ${m.pick===x?'pk':''} ${x?'':'tbd'}"${x?predRAttr(x):''}>${x?crestMini(x):'<span class=muted>TBD</span>'}</div>`;
       return `<div class="pbk-m">${cell(m.a)}${cell(m.b)}</div>`; }).join("")}</div>`).join("")}</div></div>`
     : '<p class="muted">Bracket not filled in.</p>';
