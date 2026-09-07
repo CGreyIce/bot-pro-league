@@ -476,7 +476,7 @@ function renderTeam(slug){
           return `
         <h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Tournament Results <span class="muted" style="font-size:11px">(${t.events.length})</span></h2>
         <div class="tablewrap"><table class="data">
-          <thead><tr><th class="no-sort">Date</th><th class="no-sort">Tier</th><th class="no-sort">Event</th><th class="no-sort">Placement</th><th class="no-sort" title="Ranking points earned (tier-weighted, recency-faded)">Pts</th></tr></thead>
+          <thead><tr><th class="no-sort">Date</th><th class="no-sort">Tier</th><th class="no-sort">Event</th><th class="no-sort">Placement</th><th class="no-sort" title="Ranking points earned">Pts</th></tr></thead>
           <tbody>${t.events.map(e=>`<tr>
             <td class="mono">${fmtDate(e.date)}</td>
             <td><span class="event-tier ${TIER_CLASS[e.tier]}">${esc(e.tierLabel.toUpperCase())}</span></td>
@@ -524,7 +524,7 @@ function renderPlayers(){
       ${["pro","amateur","solo"].map(k=>`<button data-pool="${k}" class="${k===pool?'active':''}">${
         k==="pro"?"Pro":k==="amateur"?"Amateur":"Solo Queue"} <span style="opacity:.7">${poolList(k).length}</span></button>`).join("")}
     </div>
-    ${pool==="solo"?'<p class="muted" style="font-size:12px;margin:-4px 0 12px">The solo-queue ladder is open to the whole league — every player is listed; those who haven\'t played a solo game yet sit unranked (—) at the bottom.</p>':''}
+    ${pool==="solo"?'<p class="muted" style="font-size:12px;margin:-4px 0 12px">Whole league · unplayed sit unranked below.</p>':''}
     <div id="ptable"></div>`;
   app.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{playersPool=b.dataset.pool;playersSort={key:"Rating Points",dir:-1};renderPlayers();});
   drawPlayerTable(players, cols);
@@ -634,18 +634,8 @@ function renderPlayer(slug){
             <span class="muted" style="font-size:11px">${tally.join(' · ')}</span></h2>
             <div class="honors">${medHtml}${mvpHtml}</div>`;
         })()}
-        <div class="notice" style="text-align:left;margin-top:18px">
-          <strong>${p.ratingPoints!=null?p.ratingPoints+' Rating Points · Level '+p.level:'Unranked'}</strong> — a FACEIT-style score built from
-          performance within the ${poolName.toLowerCase()} pool, weighted 40% K/D, 30% kills/map, 15% MVP impact, 10% assists, 5% win rate
-          (with small-sample shrinkage) and mapped onto Levels 1–10. ${t&&p.rating!=null?`Ranks ${ratingRankInPool(p)} in the pool.`:''}
-        </div>
       </div>
     </div>`;
-}
-function ratingRankInPool(p){
-  const arr = DATA.players[p.pool].filter(x=>x.rating!=null).sort((a,b)=>b.rating-a.rating);
-  const i = arr.findIndex(x=>x.slug===p.slug);
-  return i>=0?`#${i+1} of ${arr.length}`:'';
 }
 
 function renderRankings(){
@@ -886,7 +876,7 @@ function renderTransfers(){
   const tab=(k,l,n)=>`<button data-ts="${k}" class="${k===_transferScope?'active':''}">${l} <span style="opacity:.7">${n}</span></button>`;
   app.innerHTML = `
     <h2 class="section-title"><span class="accent-bar"></span>Transfers <span class="muted" style="font-size:11px">(${list.length} moves)</span></h2>
-    <p class="muted" style="font-size:12px;margin:-6px 0 12px">Roster moves derived from historical event line-ups. Green = joined a pro team, red = left one.</p>
+    <p class="muted" style="font-size:12px;margin:-6px 0 12px"><span style="color:var(--good)">Green</span> joined · <span style="color:var(--accent2)">red</span> left</p>
     <div class="tabs">${tab("pro","Pro teams",proMoves.length)}${tab("all","All",all.length)}</div>
     <div class="tablewrap"><table class="data results-table"><thead><tr>
       <th class="no-sort">Date</th><th class="no-sort">Player</th><th class="no-sort" style="text-align:right">From</th><th class="no-sort"></th><th class="no-sort">To</th>
@@ -933,7 +923,7 @@ function renderMatches(){
             <span class="mt-b">${teamSide(u.b,u.bTeam)}</span>
           </span>
         </div>`).join("")}
-      </div>`).join("") : '<p class="muted">No upcoming or live matches right now — everything on record is finished. Check <a href="#/results">Results</a>.</p>';
+      </div>`).join("") : '<p class="muted">No upcoming or live matches. See <a href="#/results">Results</a>.</p>';
   const recent = allMatches().slice(0,12);
   const recentHtml = recent.map(m=>`<tr>
       <td class="mono muted">${fmtDate(m.date)}</td>
@@ -1010,7 +1000,7 @@ function renderAwards(){
       <td class="name-cell"><a href="#/tournament/${x.slug}">${esc(x.event)}</a></td>
       <td class="name-cell">${flag(x.p.iso)}<a href="#/player/${x.p.slug}">${esc(x.p.name)}</a></td>
       <td class="mono">${x.p.mvp} MVP · ${x.p.k}K</td></tr>`).join("")
-    : `<tr><td colspan="3" class="muted">No scoreboards recorded yet — event MVPs will appear here as you add match scoreboards.</td></tr>`;
+    : `<tr><td colspan="3" class="muted">No scoreboards recorded yet.</td></tr>`;
   app.innerHTML=`
     <h2 class="section-title"><span class="accent-bar"></span>Awards</h2>
     <h3 class="rec-group">🏆 Champions Cabinet <span class="muted" style="font-size:11px">(${ts.length} titles)</span></h3>
@@ -1056,8 +1046,7 @@ function renderMaps(){
   const totalMaps=mapList.reduce((s,m)=>s+m.played,0);
   if(!mapList.length){
     app.innerHTML=`<h2 class="section-title"><span class="accent-bar"></span>Maps</h2>
-      <div class="notice"><h2>No map data yet</h2>
-      <p class="muted">Map statistics are built from recorded match scoreboards. Add a scoreboard with map names (via <a href="#/admin">Admin</a>) and this page fills in automatically — most-played maps, per-team map records, and every map result.</p></div>`;
+      <div class="notice"><h2>No map data yet</h2></div>`;
     return;
   }
   const mapCards=mapList.map(m=>`<div class="rec-card">
@@ -1083,7 +1072,6 @@ function renderMaps(){
   }).join("");
   app.innerHTML=`
     <h2 class="section-title"><span class="accent-bar"></span>Maps <span class="muted" style="font-size:11px">(${totalMaps} maps recorded)</span></h2>
-    <p class="muted" style="font-size:12px;margin:-6px 0 14px">Built from recorded match scoreboards — grows as you add more. <a href="#/admin">Record a scoreboard →</a></p>
     <h3 class="rec-group">Map Pool</h3>
     <div class="rec-grid">${mapCards}</div>
     <h3 class="rec-group" style="margin-top:24px">Team Map Records</h3>
@@ -2242,8 +2230,7 @@ function renderTournaments(){
     <div class="tablewrap"><table class="data">
       <thead><tr><th class="no-sort">Date</th><th class="no-sort">Tier</th><th class="no-sort">Event</th>
         <th class="no-sort">Format</th><th class="no-sort">Teams</th><th class="no-sort">Winner</th></tr></thead>
-      <tbody>${rows}</tbody></table></div>
-    <p class="muted" style="margin-top:12px">Bracket data imported from Challonge. Individual/1v1/duos skill tournaments and the Bot 2v2 (Inferno) event are excluded.</p>`;
+      <tbody>${rows}</tbody></table></div>`;
   app.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{tourneyFilter=b.dataset.tf;renderTournaments();});
 }
 
@@ -2783,7 +2770,6 @@ function renderPredDetail(pred){
 async function renderProphets(){
   app.innerHTML = `<h2 class="section-title"><span class="accent-bar"></span>Prophets
       <span class="muted" style="font-size:11px">all-time prediction leaderboard · ${PredictBackend.isShared?'shared':'this browser'}</span></h2>
-    <p class="muted" style="font-size:13px;margin:-6px 0 14px;max-width:720px">Every prediction, across every event, scored once the tournament finishes. Points add up over the season — climb the board by calling brackets better than everyone else.</p>
     <div id="proph-out"><p class="muted">Loading predictions…</p></div>`;
   let all=[]; try{ all=await PredictBackend.loadEverything(); }catch(e){ $("#proph-out").innerHTML=`<p class="muted">Couldn't load the leaderboard: ${esc(e.message)}</p>`; return; }
   if(!all.length){ $("#proph-out").innerHTML='<p class="muted">No predictions yet — open a group-stage tournament and make some!</p>'; return; }
