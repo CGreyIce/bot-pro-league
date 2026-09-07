@@ -65,10 +65,10 @@ function nationIso(teamName){
 }
 function nationCrest(name, h){  // country flag badge for a "Team <Country>" name, else null
   const iso = nationIso(name); if(!iso) return null;
-  h = h||16;
+  h = h||16; const w = Math.round(h*4/3);   // uniform 4:3 box for every flag (object-fit:cover)
   return iso==='neutral'
-    ? `<span class="nat-crest flag-neutral" style="height:${h}px;width:${Math.round(h*4/3)}px"></span>`
-    : `<img class="nat-crest" src="https://flagcdn.com/h40/${iso}.png" style="height:${h}px" alt="" loading="lazy">`;
+    ? `<span class="nat-crest flag-neutral" style="height:${h}px;width:${w}px"></span>`
+    : `<img class="nat-crest" src="https://flagcdn.com/h40/${iso}.png" style="height:${h}px;width:${w}px" alt="" loading="lazy">`;
 }
 
 // ---------- roster hover popups ----------
@@ -529,10 +529,11 @@ function renderPlayers(){
     ["Lvl", p=>levelChip(p.level), "", p=>p.level||0],
     ["K", p=>p.kills, "mono"],
     ["D", p=>p.deaths, "mono"],
-    ["KDR", p=>p.maps?p.kdr.toFixed(2):'—', "mono", p=>p.kdr],
+    // pro K/D & Win% require 10+ maps so single-game flukes don't top the sort
+    ["KDR", p=>(pool==="pro"&&p.maps<10)||!p.maps?'—':p.kdr.toFixed(2), "mono", p=>(pool==="pro"&&p.maps<10)?-1:p.kdr],
     ["MVP", p=>p.mvp, "mono"],
     ["Maps", p=>p.maps, "mono"],
-    ["Win%", p=>p.maps?pct(p.winrate):'—', "mono", p=>p.winrate],
+    ["Win%", p=>(pool==="pro"&&p.maps<10)||!p.maps?'—':pct(p.winrate), "mono", p=>(pool==="pro"&&p.maps<10)?-1:p.winrate],
   ];
   app.innerHTML = `<h2 class="section-title"><span class="accent-bar"></span>Player Leaderboard
       <a href="#/compare" class="muted" style="margin-left:auto;font-size:12px">⇄ Compare players</a></h2>
