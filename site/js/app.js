@@ -2335,7 +2335,7 @@ function renderTournament(slug){
     return `<div class="bkt-team ${win?'win':''}"${hovAttr(m, side, name, teamSlug)}>${logo}${name?seedTag(name,teamSlug):''}<span class="bt-name">${nm}</span><span class="bt-score">${sc}</span></div>`;
   };
   const mref = (m, pfx)=> (m.i!=null ? ` data-match="${pfx}${m.i}"` : '');
-  const treeMatch = (m, pfx="")=>`<div class="bkt-match"${mref(m,pfx)}>${treeTeam(m,'a')}${treeTeam(m,'b')}</div>`;
+  const treeMatch = (m, pfx="", slot, round)=>`<div class="bkt-match"${mref(m,pfx)}${slot!=null?` data-round="${round}" data-slot="${slot}"`:''}>${treeTeam(m,'a')}${treeTeam(m,'b')}</div>`;
   const isByeMatch = m => m.a==="(bye)" || m.b==="(bye)";
   // a 3rd-place decider floats on its own — pulled out of the main tree
   const thirdPlaceBox = (rounds, pfx="")=>{
@@ -2345,16 +2345,17 @@ function renderTournament(slug){
       <div class="bkt-third-title">Third Place Match</div>
       ${tps.map(m=>`<div class="bkt-third-match">${treeMatch(m,pfx)}</div>`).join("")}</div>`;
   };
-  const treeSection = (title, rounds, pfx="")=>{
+  const treeSection = (title, rounds, pfx="", tagged)=>{
     if(!rounds.length) return '';
-    // drop first-round byes: a seeded team with a bye is shown waiting in the next round,
-    // so the real opening matches line up 1:1 with the round they feed into.
-    const cols = rounds.map(rd=>{
-        const matches = rd.matches.filter(m=>!isByeMatch(m) && !m.tp);
+    // drop first-round byes: a seeded team with a bye is shown waiting in the next round.
+    // when `tagged`, stamp each match with its real round + full-round slot so connectors
+    // link to the true parent (match at round r, slot s feeds round r+1, slot floor(s/2)).
+    const cols = rounds.map((rd,ri)=>{
+        const matches = rd.matches.map((m,slot)=>({m,slot})).filter(x=>!isByeMatch(x.m) && !x.m.tp);
         if(!matches.length) return '';
         return `<div class="bkt-round">
         <div class="bkt-round-title">${esc(rd.title)}</div>
-        <div class="bkt-round-matches">${matches.map(m=>treeMatch(m,pfx)).join("")}</div>
+        <div class="bkt-round-matches">${matches.map(x=>treeMatch(x.m,pfx, tagged?x.slot:null, ri)).join("")}</div>
       </div>`;
       }).join("");
     return `${title?`<div class="bkt-section-title">${title}</div>`:''}
@@ -2379,14 +2380,14 @@ function renderTournament(slug){
       const pfx = st.id + "-";
       const head = `<h2 class="section-title" style="margin-top:20px"><span class="accent-bar"></span>${esc(st.name)}
         <span class="muted" style="font-size:11px">${fmtLabel(st.format)}${st.bestOf>1?' · Bo'+st.bestOf:''}</span></h2>`;
-      if(st.format==="single_elim") return head + treeSection("", st.rounds, pfx) + thirdPlaceBox(st.rounds, pfx);
+      if(st.format==="single_elim") return head + treeSection("", st.rounds, pfx, true) + thirdPlaceBox(st.rounds, pfx);
       return head + stageStandings(st) + listRounds(st.rounds, pfx);
     }).join("");
   } else if(isElim){
     const pos = tr.bracket.filter(r=>r.round>0), neg = tr.bracket.filter(r=>r.round<0);
     bracketBlock = neg.length
-      ? treeSection("Upper Bracket", pos) + treeSection("Lower Bracket", neg)
-      : treeSection("", pos);
+      ? treeSection("Upper Bracket", pos) + treeSection("Lower Bracket", neg)   // double-elim: positional connectors
+      : treeSection("", pos, "", true);
   } else {
     bracketBlock = listRounds(tr.bracket);
   }
@@ -2449,7 +2450,7 @@ function renderTournament(slug){
     ${bracketBlock}`;
 
   // draw bracket connector lines once laid out
-  requestAnimationFrame(()=>document.querySelectorAll(".bkt").forEach(drawConnectors));
+  drawAllConnectors(document);
   // click a match: played matches open an HLTV-style card; unplayed jump to the match page.
   // (team-name links still work; they navigate to the team page.)
   app.querySelectorAll("[data-match]").forEach(el=>el.addEventListener("click", e=>{
@@ -2467,26 +2468,39 @@ function renderTournament(slug){
 function drawConnectors(bkt){
   const svg = bkt.querySelector(".bkt-svg");
   if(!svg) return;
-  const rounds = [...bkt.querySelectorAll(".bkt-round-matches")];
   const brect = bkt.getBoundingClientRect();
   const px = el=>{ const r=el.getBoundingClientRect(); return {x1:r.left-brect.left, x2:r.right-brect.left, y:r.top-brect.top+r.height/2}; };
+  const seg = (a,b)=>{ const midX=(a.x2+b.x1)/2; return `<path d="M${a.x2} ${a.y} H${midX} V${b.y} H${b.x1}" fill="none" stroke="var(--border2)" stroke-width="2"/>`; };
   let paths = "";
-  for(let c=0;c<rounds.length-1;c++){
-    const cur = [...rounds[c].querySelectorAll(".bkt-match")];
-    const nxt = [...rounds[c+1].querySelectorAll(".bkt-match")];
-    if(!nxt.length) continue;
-    const oneToOne = nxt.length === cur.length; // losers-bracket carry rounds
-    cur.forEach((m,i)=>{
-      const target = nxt[oneToOne ? i : Math.floor(i/2)];
-      if(!target) return;
-      const a = px(m), b = px(target);
-      const midX = (a.x2 + b.x1) / 2;
-      paths += `<path d="M${a.x2} ${a.y} H${midX} V${b.y} H${b.x1}" fill="none" stroke="var(--border2)" stroke-width="2"/>`;
+  if(bkt.querySelector(".bkt-match[data-round]")){
+    // slot-aware: match at (round r, slot s) feeds (round r+1, slot floor(s/2)).
+    // correct even when byes are hidden and rounds don't halve on screen.
+    const byRS = {};
+    bkt.querySelectorAll(".bkt-match[data-round]").forEach(el=>{ byRS[el.dataset.round+":"+el.dataset.slot]=el; });
+    bkt.querySelectorAll(".bkt-match[data-round]").forEach(el=>{
+      const parent = byRS[(+el.dataset.round+1)+":"+Math.floor(+el.dataset.slot/2)];
+      if(parent) paths += seg(px(el), px(parent));
     });
+  } else {
+    // positional fallback (double-elim losers brackets)
+    const rounds = [...bkt.querySelectorAll(".bkt-round-matches")];
+    for(let c=0;c<rounds.length-1;c++){
+      const cur = [...rounds[c].querySelectorAll(".bkt-match")];
+      const nxt = [...rounds[c+1].querySelectorAll(".bkt-match")];
+      if(!nxt.length) continue;
+      const oneToOne = nxt.length === cur.length;
+      cur.forEach((m,i)=>{ const target = nxt[oneToOne ? i : Math.floor(i/2)]; if(target) paths += seg(px(m), px(target)); });
+    }
   }
   svg.style.width = bkt.scrollWidth + "px";
   svg.style.height = bkt.scrollHeight + "px";
   svg.innerHTML = paths;
+}
+// draw connectors reliably: after layout settles (double rAF) + a delayed retry for late layout
+function drawAllConnectors(root){
+  const run=()=>(root||document).querySelectorAll(".bkt").forEach(drawConnectors);
+  requestAnimationFrame(()=>{ run(); requestAnimationFrame(run); });
+  setTimeout(run, 140);
 }
 let _bktResize;
 window.addEventListener("resize", ()=>{ clearTimeout(_bktResize); _bktResize = setTimeout(()=>document.querySelectorAll(".bkt").forEach(drawConnectors), 150); });
@@ -2696,7 +2710,7 @@ function predBracketTree(rounds, RL, inner, extraCls){
     const ms=rd.filter(m=>m.a!==PBYE && m.b!==PBYE);
     if(!ms.length) return '';
     return `<div class="bkt-round"><div class="bkt-round-title">${RL[ri]||('Round '+(ri+1))}</div>`+
-      `<div class="bkt-round-matches">${ms.map(m=>`<div class="bkt-match">${inner(m)}</div>`).join("")}</div></div>`;
+      `<div class="bkt-round-matches">${ms.map(m=>{const s=+String(m.key).split('m')[1]; return `<div class="bkt-match" data-round="${ri}" data-slot="${s}">${inner(m)}</div>`;}).join("")}</div></div>`;
   }).join("")}</div></div>`;
 }
 function predPlacements(rounds){                   // predicted champ / runner-up / SF losers / QF losers
@@ -2825,7 +2839,7 @@ function drawPredict(){
     catch(e){ $("#pred-savemsg").style.color="var(--accent2,#ff6b6b)"; $("#pred-savemsg").textContent="Save failed: "+e.message; }
     saveBtn.disabled=false;
   };
-  requestAnimationFrame(()=>app.querySelectorAll('.bkt').forEach(drawConnectors));
+  drawAllConnectors(app);
   loadPredBoard();
 }
 function crestMini(name){ const t=teamByName(name); return `${t?`<img class="pbk-logo" src="${esc(t.logo||'')}" alt="">`:''}<span class="pbk-nm">${esc(name)}</span>`; }
@@ -2866,7 +2880,7 @@ function renderPredDetail(pred){
   box.innerHTML=`<h3 class="rec-group" style="margin-top:0">${esc(pred.name||'anon')}'s prediction
     <span class="muted" style="font-size:11px">champion: ${pl.champ?esc(pl.champ):'—'}</span></h3>
     ${gs.length?`<div class="pd-sub muted">Group qualifiers</div>${groupHtml}<div class="pd-sub muted" style="margin-top:10px">Playoff bracket</div>`:''}${bracketHtml}`;
-  box.querySelectorAll('.bkt').forEach(drawConnectors);
+  drawAllConnectors(box);
   box.scrollIntoView({behavior:'smooth', block:'nearest'});
 }
 
