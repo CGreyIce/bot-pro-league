@@ -13702,5 +13702,209 @@
     }
    ]
   }
+ },
+ "nations-cup-qualifier-malaysia-2026": {
+  "1-2": {
+   "maps": [
+    {
+     "map": "Mirage",
+     "scoreA": 11,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "MY Squad 8",
+       "name": "ShizuyaUmiko",
+       "k": 18,
+       "a": 3,
+       "d": 14,
+       "mvp": 2,
+       "score": 50
+      },
+      {
+       "team": "MY Squad 8",
+       "name": "Xevaria",
+       "k": 21,
+       "a": 0,
+       "d": 17,
+       "mvp": 4,
+       "score": 48
+      },
+      {
+       "team": "MY Squad 8",
+       "name": "MoonRaika",
+       "k": 16,
+       "a": 2,
+       "d": 19,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "MY Squad 8",
+       "name": "dudriduo_",
+       "k": 13,
+       "a": 3,
+       "d": 18,
+       "mvp": 3,
+       "score": 33
+      },
+      {
+       "team": "MY Squad 8",
+       "name": "BaBaYaGa",
+       "k": 12,
+       "a": 2,
+       "d": 16,
+       "mvp": 0,
+       "score": 28
+      },
+      {
+       "team": "MY Squad 9",
+       "name": "AyanOwOT",
+       "k": 22,
+       "a": 0,
+       "d": 16,
+       "mvp": 2,
+       "score": 53
+      },
+      {
+       "team": "MY Squad 9",
+       "name": "Just_Ansel",
+       "k": 18,
+       "a": 1,
+       "d": 15,
+       "mvp": 4,
+       "score": 44
+      },
+      {
+       "team": "MY Squad 9",
+       "name": "koen",
+       "k": 17,
+       "a": 2,
+       "d": 17,
+       "mvp": 3,
+       "score": 44
+      },
+      {
+       "team": "MY Squad 9",
+       "name": "potatodepresso",
+       "k": 14,
+       "a": 3,
+       "d": 16,
+       "mvp": 1,
+       "score": 36
+      },
+      {
+       "team": "MY Squad 9",
+       "name": "urnisa_",
+       "k": 13,
+       "a": 2,
+       "d": 16,
+       "mvp": 3,
+       "score": 32
+      }
+     ]
+    }
+   ]
+  },
+  "1-6": {
+   "maps": [
+    {
+     "map": "Dust2",
+     "scoreA": 13,
+     "scoreB": 9,
+     "players": [
+      {
+       "team": "MY Squad 7",
+       "name": "_kellyxleox_",
+       "k": 26,
+       "a": 4,
+       "d": 14,
+       "mvp": 5,
+       "score": 70
+      },
+      {
+       "team": "MY Squad 7",
+       "name": "rittan0x0",
+       "k": 23,
+       "a": 2,
+       "d": 13,
+       "mvp": 6,
+       "score": 55
+      },
+      {
+       "team": "MY Squad 7",
+       "name": "kimmixd",
+       "k": 13,
+       "a": 4,
+       "d": 13,
+       "mvp": 0,
+       "score": 34
+      },
+      {
+       "team": "MY Squad 7",
+       "name": "Reffelexx",
+       "k": 13,
+       "a": 1,
+       "d": 17,
+       "mvp": 1,
+       "score": 30
+      },
+      {
+       "team": "MY Squad 7",
+       "name": "Nightveil Lycoris",
+       "k": 12,
+       "a": 0,
+       "d": 14,
+       "mvp": 1,
+       "score": 25
+      },
+      {
+       "team": "MY Squad 10",
+       "name": "Vale_Kuroshio",
+       "k": 20,
+       "a": 2,
+       "d": 17,
+       "mvp": 4,
+       "score": 50
+      },
+      {
+       "team": "MY Squad 10",
+       "name": "nicsman",
+       "k": 19,
+       "a": 2,
+       "d": 18,
+       "mvp": 3,
+       "score": 42
+      },
+      {
+       "team": "MY Squad 10",
+       "name": "CryingNutz",
+       "k": 19,
+       "a": 0,
+       "d": 17,
+       "mvp": 1,
+       "score": 41
+      },
+      {
+       "team": "MY Squad 10",
+       "name": "carv",
+       "k": 8,
+       "a": 2,
+       "d": 18,
+       "mvp": 1,
+       "score": 21
+      },
+      {
+       "team": "MY Squad 10",
+       "name": "NekoSoji",
+       "k": 5,
+       "a": 4,
+       "d": 17,
+       "mvp": 0,
+       "score": 19
+      }
+     ]
+    }
+   ]
+  }
  }
 }

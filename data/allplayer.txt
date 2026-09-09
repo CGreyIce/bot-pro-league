@@ -310,7 +310,7 @@ PSYSTRA	United Kingdom
 SoapiiSereia	New Zealand	 
 cwstalVT	USA	 
 bloodbane	Australia	 
-moricorovt	USA	 
+MoriSottoVT	USA	 
 Pattsu	Canada	 
 Arya Kuroha	USA	 
 ItzMaigo	Singapore	 

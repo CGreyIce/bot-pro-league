@@ -1311,10 +1311,6 @@
   "gender": "M",
   "bio": "AyanOwOT is a Singaporean AWPer and a Silver-tier free agent in the amateur ranks."
  },
- "moricorovt": {
-  "gender": "M",
-  "bio": "moricorovt is an American AWPer and a Silver-tier free agent in the amateur ranks."
- },
  "loonatic": {
   "gender": "M",
   "bio": "Loonatic is a Malaysian AWPer and a Bronze-tier free agent in the amateur ranks."
@@ -1558,5 +1554,9 @@
  "perk": {
   "gender": "M",
   "bio": "perk is a Platinum-tier AWPer for Aeternum, a Singaporean sniper holding down the team's defensive rounds."
+ },
+ "morisottovt": {
+  "gender": "M",
+  "bio": "MoriSottoVT is an American AWPer and a Silver-tier free agent in the amateur ranks."
  }
 }
