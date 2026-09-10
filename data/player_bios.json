@@ -987,10 +987,6 @@
   "gender": "M",
   "bio": "Laurel is a Filipino rifler rated Emerald in the amateur pool, a free agent whose kill volume marks him as a name to watch."
  },
- "kurmitsuicidal": {
-  "gender": "M",
-  "bio": "KurmitSuicidal is a Singaporean in-game leader and a Grandmaster in the amateur pool, a free agent whose 1.12 K/D marks him as a caller who can also hold his own in a firefight."
- },
  "kuruminoah": {
   "gender": "F",
   "bio": "Kurumi Noah is a Japanese rifler and a Gold-tier free agent with a winning amateur record."
@@ -1558,5 +1554,9 @@
  "morisottovt": {
   "gender": "M",
   "bio": "MoriSottoVT is an American AWPer and a Silver-tier free agent in the amateur ranks."
+ },
+ "lukedefabio": {
+  "gender": "M",
+  "bio": "lukedefabio is a Singaporean in-game leader and a Grandmaster in the amateur pool, a free agent whose 1.12 K/D marks him as a caller who can also hold his own in a firefight."
  }
 }
