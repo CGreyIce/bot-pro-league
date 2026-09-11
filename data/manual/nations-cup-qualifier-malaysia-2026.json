@@ -43,8 +43,9 @@
      "fb": {
       "seed": 9
      },
-     "sa": null,
-     "sb": null
+     "sa": 11,
+     "sb": 13,
+     "ts": 1789112762
     },
     {
      "id": 3,
@@ -91,8 +92,9 @@
      "fb": {
       "seed": 10
      },
-     "sa": null,
-     "sb": null
+     "sa": 13,
+     "sb": 9,
+     "ts": 1789112768
     },
     {
      "id": 7,
@@ -127,8 +129,9 @@
      "fb": {
       "match": 2
      },
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1789114226
     },
     {
      "id": 10,
@@ -139,8 +142,9 @@
      "fb": {
       "match": 4
      },
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1789115707
     },
     {
      "id": 11,
@@ -151,8 +155,9 @@
      "fb": {
       "match": 6
      },
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1789117073
     },
     {
      "id": 12,
@@ -163,8 +168,9 @@
      "fb": {
       "match": 8
      },
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1789118827
     },
     {
      "id": 13,
@@ -213,5 +219,6 @@
  ],
  "seeds": {},
  "noHonors": true,
- "nationTeam": "Team Malaysia"
+ "nationTeam": "Team Malaysia",
+ "predictionsLocked": true
 }
