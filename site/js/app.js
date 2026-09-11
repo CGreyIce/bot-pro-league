@@ -1024,7 +1024,7 @@ function renderAwards(){
     const agg={};
     const scanM=rounds=>rounds.forEach(rd=>rd.matches.forEach(m=>{ if(!m.stats)return; m.stats.maps.forEach(mp=>(mp.players||[]).forEach(pl=>{
       if(!pl.slug)return; const a=agg[pl.slug]=agg[pl.slug]||{name:pl.name,slug:pl.slug,iso:pl.iso,k:0,mvp:0}; a.k+=pl.k||0; a.mvp+=pl.mvp||0; })); }));
-    (tr.stages||[]).forEach(st=>scanM(st.rounds)); scanM(tr.bracket||[]);
+    if(tr.stages&&tr.stages.length) tr.stages.forEach(st=>scanM(st.rounds)); else scanM(tr.bracket||[]);
     const arr=Object.values(agg); if(!arr.length) return;
     arr.sort((a,b)=>b.mvp-a.mvp||b.k-a.k);
     mvps.push({event:tr.name,slug:tr.slug,p:arr[0]});
@@ -1073,7 +1073,7 @@ function renderMaps(){
         }
       });
     }));
-    (tr.stages||[]).forEach(st=>scan(st.rounds)); scan(tr.bracket||[]);
+    if(tr.stages&&tr.stages.length) tr.stages.forEach(st=>scan(st.rounds)); else scan(tr.bracket||[]);
   });
   const mapList=Object.values(maps).sort((a,b)=>b.played-a.played);
   const totalMaps=mapList.reduce((s,m)=>s+m.played,0);

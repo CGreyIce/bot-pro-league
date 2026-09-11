@@ -1248,9 +1248,13 @@ def main():
                                 continue
                             a = agg.setdefault(s, {"mvp": 0, "k": 0})
                             a["mvp"] += int(pl.get("mvp", 0)); a["k"] += int(pl.get("k", 0))
-        for st in tr.get("stages", []):
-            _scan(st["rounds"])
-        _scan(tr.get("bracket", []))
+        # scan stages OR the flattened bracket — never both (a multi-stage event stores every
+        # match in both, so scanning both double-counts every stat, e.g. qebo's 11 MVPs -> 22).
+        if tr.get("stages"):
+            for st in tr["stages"]:
+                _scan(st["rounds"])
+        else:
+            _scan(tr.get("bracket", []))
         if agg:
             best = max(agg.items(), key=lambda kv: (kv[1]["mvp"], kv[1]["k"]))
             p = slug_to_player.get(best[0])
