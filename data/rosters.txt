@@ -102,8 +102,8 @@ bot_add "KIEDZ Kairi";  bot_add "KIEDZ Illus";  bot_add "KIEDZ Elfy Mint";  bot_
 bot_add_ct "KIEDZ Kairi";  bot_add_ct "KIEDZ Illus";  bot_add_ct "KIEDZ Elfy Mint";  bot_add_ct "KIEDZ declaration__";  bot_add_ct "KIEDZ zuann_"; 
 
 Lemon Tree ☆ (Bot Pro Cup 2022)
-bot_add "LMN luminichi"; bot_add "LMN JWQI"; bot_add "LMN MoonRaika"; bot_add "LMN meowcolmz"; bot_add "LMN kkayyteeee";
-bot_add_ct "LMN luminichi"; bot_add_ct "LMN JWQI"; bot_add_ct "LMN MoonRaika"; bot_add_ct "LMN meowcolmz"; bot_add_ct "LMN kkayyteeee";
+bot_add "LMN luminmochi"; bot_add "LMN JWQI"; bot_add "LMN MoonRaika"; bot_add "LMN meowcolmz"; bot_add "LMN kkayyteeee";
+bot_add_ct "LMN luminmochi"; bot_add_ct "LMN JWQI"; bot_add_ct "LMN MoonRaika"; bot_add_ct "LMN meowcolmz"; bot_add_ct "LMN kkayyteeee";
 
 Masmark (BPL Legends Stage 2023)
 bot_add "M Xyrolizea"; bot_add "M XuehuaVT"; bot_add "M urnisa_"; bot_add "M kn"; bot_add "M estellyy.";

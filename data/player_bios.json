@@ -471,10 +471,6 @@
   "gender": "F",
   "bio": "zuann_ is a Singaporean rifler for Kiedz, a Platinum-tier fragger and a winner of BPL Tournament Minor 5."
  },
- "luminichi": {
-  "gender": "F",
-  "bio": "luminichi holds the AWP for Lemon Tree, a Singaporean sniper and two-time BPL winner. Her honours — the 2022 Bot Pro Cup and the 2024 Conquerors Stage — speak to a player who has delivered on the sport's bigger stages."
- },
  "meowcolmz": {
   "gender": "M",
   "bio": "Meowcolmz calls the game for Lemon Tree, a Singaporean in-game leader with two BPL titles to his name. The 2022 Bot Pro Cup and 2024 Conquerors Stage crowns underline a caller who knows how to steer a team through a bracket."
@@ -1558,5 +1554,9 @@
  "lukedefabio": {
   "gender": "M",
   "bio": "lukedefabio is a Singaporean in-game leader and a Grandmaster in the amateur pool, a free agent whose 1.12 K/D marks him as a caller who can also hold his own in a firefight."
+ },
+ "luminmochi": {
+  "gender": "F",
+  "bio": "luminmochi holds the AWP for Lemon Tree, a Singaporean sniper and two-time BPL winner. Her honours — the 2022 Bot Pro Cup and the 2024 Conquerors Stage — speak to a player who has delivered on the sport's bigger stages."
  }
 }
