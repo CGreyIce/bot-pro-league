@@ -823,5 +823,6 @@
  ],
  "seeds": {},
  "noHonors": true,
- "nationTeam": "Team Singapore"
+ "nationTeam": "Team Singapore",
+ "predictionsLocked": true
 }
