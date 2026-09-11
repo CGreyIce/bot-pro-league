@@ -2752,7 +2752,7 @@
          "hist": "DelphoxLuna",
          "name": "DelphoxLuna",
          "slug": "delphoxluna",
-         "iso": "my",
+         "iso": "sg",
          "captain": false
         }
        ]
@@ -3131,7 +3131,7 @@
          "hist": "DelphoxLuna",
          "name": "DelphoxLuna",
          "slug": "delphoxluna",
-         "iso": "my",
+         "iso": "sg",
          "captain": false
         }
        ]
@@ -3166,9 +3166,9 @@
          "captain": false
         },
         {
-         "hist": "Dirfun",
-         "name": "Dirfun",
-         "slug": "dirfun",
+         "hist": "DelphoxLuna",
+         "name": "DelphoxLuna",
+         "slug": "delphoxluna",
          "iso": "sg",
          "captain": false
         },
@@ -3327,7 +3327,7 @@
          "hist": "DelphoxLuna",
          "name": "DelphoxLuna",
          "slug": "delphoxluna",
-         "iso": "my",
+         "iso": "sg",
          "captain": false
         }
        ]
@@ -3658,7 +3658,7 @@
          "hist": "DelphoxLuna",
          "name": "DelphoxLuna",
          "slug": "delphoxluna",
-         "iso": "my",
+         "iso": "sg",
          "captain": false
         }
        ]
@@ -3739,8 +3739,8 @@
      "orig_level": "Level 4",
      "orig_rating": 1580.0,
      "slug": "delphoxluna",
-     "nat": "Malaysia",
-     "iso": "my",
+     "nat": "Singapore",
+     "iso": "sg",
      "rating": 0.977,
      "ratingPoints": 1062,
      "tier": "Gold",
@@ -3808,13 +3808,13 @@
          "hist": "DelphoxLuna",
          "name": "DelphoxLuna",
          "slug": "delphoxluna",
-         "iso": "my",
+         "iso": "sg",
          "captain": false
         }
        ]
       },
       {
-       "team": "MY Squad 4",
+       "team": "SG Squad 33",
        "teamSlug": null,
        "isPro": false,
        "years": [
@@ -3822,38 +3822,38 @@
        ],
        "roster": [
         {
-         "hist": "qebo",
-         "name": "qebo",
-         "slug": "qebo-amateur",
-         "iso": "my",
+         "hist": "WO4TK",
+         "name": "WO4TK",
+         "slug": "wo4tk",
+         "iso": "sg",
          "captain": true
         },
         {
-         "hist": "Yixl",
-         "name": "Yixl",
-         "slug": "yixl",
-         "iso": "my",
+         "hist": "Sakami",
+         "name": "Sakami",
+         "slug": "sakami",
+         "iso": "sg",
          "captain": false
         },
         {
-         "hist": "CRex",
-         "name": "CRex",
-         "slug": "crex",
-         "iso": "my",
+         "hist": "azzuto",
+         "name": "azzuto",
+         "slug": "azzuto",
+         "iso": "sg",
          "captain": false
         },
         {
          "hist": "DelphoxLuna",
          "name": "DelphoxLuna",
          "slug": "delphoxluna",
-         "iso": "my",
+         "iso": "sg",
          "captain": false
         },
         {
-         "hist": "Nikorasu",
-         "name": "Nikorasu",
-         "slug": "nikorasu",
-         "iso": "my",
+         "hist": "milkenut",
+         "name": "milkenut",
+         "slug": "milkenut",
+         "iso": "sg",
          "captain": false
         }
        ]
@@ -11073,9 +11073,9 @@
          "captain": false
         },
         {
-         "hist": "DelphoxLuna",
-         "name": "DelphoxLuna",
-         "slug": "delphoxluna",
+         "hist": "HikariiFloofie",
+         "name": "HikariiFloofie",
+         "slug": "hikariifloofie-solo",
          "iso": "my",
          "captain": false
         },
@@ -17140,7 +17140,7 @@
        ]
       },
       {
-       "team": "SG Squad 33",
+       "team": "SG Squad 14",
        "teamSlug": null,
        "isPro": false,
        "years": [
@@ -17148,23 +17148,30 @@
        ],
        "roster": [
         {
-         "hist": "WO4TK",
-         "name": "WO4TK",
-         "slug": "wo4tk",
+         "hist": "caturteer",
+         "name": "caturteer",
+         "slug": "caturteer",
          "iso": "sg",
          "captain": true
         },
         {
-         "hist": "Sakami",
-         "name": "Sakami",
-         "slug": "sakami",
+         "hist": "Aranionja",
+         "name": "Aranionja",
+         "slug": "aranionja-amateur",
          "iso": "sg",
          "captain": false
         },
         {
-         "hist": "azzuto",
-         "name": "azzuto",
-         "slug": "azzuto",
+         "hist": "obvMX",
+         "name": "obvMX",
+         "slug": "obvmx-amateur",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "twentyrosie",
+         "name": "twentyrosie",
+         "slug": "twentyrosie-amateur",
          "iso": "sg",
          "captain": false
         },
@@ -17172,13 +17179,6 @@
          "hist": "Dirfun",
          "name": "Dirfun",
          "slug": "dirfun",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "milkenut",
-         "name": "milkenut",
-         "slug": "milkenut",
          "iso": "sg",
          "captain": false
         }
@@ -19052,9 +19052,9 @@
          "captain": false
         },
         {
-         "hist": "DelphoxLuna",
-         "name": "DelphoxLuna",
-         "slug": "delphoxluna",
+         "hist": "HikariiFloofie",
+         "name": "HikariiFloofie",
+         "slug": "hikariifloofie-solo",
          "iso": "my",
          "captain": false
         },
@@ -21614,9 +21614,9 @@
          "captain": false
         },
         {
-         "hist": "DelphoxLuna",
-         "name": "DelphoxLuna",
-         "slug": "delphoxluna",
+         "hist": "HikariiFloofie",
+         "name": "HikariiFloofie",
+         "slug": "hikariifloofie-solo",
          "iso": "my",
          "captain": false
         },
@@ -46027,9 +46027,9 @@
          "captain": false
         },
         {
-         "hist": "Dirfun",
-         "name": "Dirfun",
-         "slug": "dirfun",
+         "hist": "DelphoxLuna",
+         "name": "DelphoxLuna",
+         "slug": "delphoxluna",
          "iso": "sg",
          "captain": false
         },
@@ -46783,9 +46783,9 @@
          "captain": false
         },
         {
-         "hist": "Dirfun",
-         "name": "Dirfun",
-         "slug": "dirfun",
+         "hist": "DelphoxLuna",
+         "name": "DelphoxLuna",
+         "slug": "delphoxluna",
          "iso": "sg",
          "captain": false
         },
@@ -68692,9 +68692,9 @@
          "captain": false
         },
         {
-         "hist": "Kyu",
-         "name": "Kyu",
-         "slug": "kyu-amateur",
+         "hist": "Dirfun",
+         "name": "Dirfun",
+         "slug": "dirfun",
          "iso": "sg",
          "captain": false
         }
@@ -76685,9 +76685,9 @@
          "captain": false
         },
         {
-         "hist": "Dirfun",
-         "name": "Dirfun",
-         "slug": "dirfun",
+         "hist": "DelphoxLuna",
+         "name": "DelphoxLuna",
+         "slug": "delphoxluna",
          "iso": "sg",
          "captain": false
         },
@@ -101912,9 +101912,9 @@
         "captain": false
        },
        {
-        "hist": "Dirfun",
-        "name": "Dirfun",
-        "slug": "dirfun",
+        "hist": "DelphoxLuna",
+        "name": "DelphoxLuna",
+        "slug": "delphoxluna",
         "iso": "sg",
         "captain": false
        },
@@ -112101,9 +112101,9 @@
         "captain": false
        },
        {
-        "hist": "DelphoxLuna",
-        "name": "DelphoxLuna",
-        "slug": "delphoxluna",
+        "hist": "HikariiFloofie",
+        "name": "HikariiFloofie",
+        "slug": "hikariifloofie-solo",
         "iso": "my",
         "captain": false
        },
@@ -122676,7 +122676,7 @@
         "hist": "DelphoxLuna",
         "name": "DelphoxLuna",
         "slug": "delphoxluna",
-        "iso": "my",
+        "iso": "sg",
         "captain": false
        }
       ]
@@ -122875,7 +122875,7 @@
         "hist": "DelphoxLuna",
         "name": "DelphoxLuna",
         "slug": "delphoxluna",
-        "iso": "my",
+        "iso": "sg",
         "captain": false
        }
       ]
@@ -123251,7 +123251,7 @@
         "hist": "DelphoxLuna",
         "name": "DelphoxLuna",
         "slug": "delphoxluna",
-        "iso": "my",
+        "iso": "sg",
         "captain": false
        }
       ]
@@ -123286,9 +123286,9 @@
         "captain": false
        },
        {
-        "hist": "Dirfun",
-        "name": "Dirfun",
-        "slug": "dirfun",
+        "hist": "DelphoxLuna",
+        "name": "DelphoxLuna",
+        "slug": "delphoxluna",
         "iso": "sg",
         "captain": false
        },
@@ -123582,7 +123582,7 @@
         "hist": "DelphoxLuna",
         "name": "DelphoxLuna",
         "slug": "delphoxluna",
-        "iso": "my",
+        "iso": "sg",
         "captain": false
        }
       ]
@@ -123663,8 +123663,8 @@
     "orig_level": "Level 4",
     "orig_rating": 1580.0,
     "slug": "delphoxluna",
-    "nat": "Malaysia",
-    "iso": "my",
+    "nat": "Singapore",
+    "iso": "sg",
     "rating": 0.977,
     "ratingPoints": 1062,
     "tier": "Gold",
@@ -123732,13 +123732,13 @@
         "hist": "DelphoxLuna",
         "name": "DelphoxLuna",
         "slug": "delphoxluna",
-        "iso": "my",
+        "iso": "sg",
         "captain": false
        }
       ]
      },
      {
-      "team": "MY Squad 4",
+      "team": "SG Squad 33",
       "teamSlug": null,
       "isPro": false,
       "years": [
@@ -123746,38 +123746,38 @@
       ],
       "roster": [
        {
-        "hist": "qebo",
-        "name": "qebo",
-        "slug": "qebo-amateur",
-        "iso": "my",
+        "hist": "WO4TK",
+        "name": "WO4TK",
+        "slug": "wo4tk",
+        "iso": "sg",
         "captain": true
        },
        {
-        "hist": "Yixl",
-        "name": "Yixl",
-        "slug": "yixl",
-        "iso": "my",
+        "hist": "Sakami",
+        "name": "Sakami",
+        "slug": "sakami",
+        "iso": "sg",
         "captain": false
        },
        {
-        "hist": "CRex",
-        "name": "CRex",
-        "slug": "crex",
-        "iso": "my",
+        "hist": "azzuto",
+        "name": "azzuto",
+        "slug": "azzuto",
+        "iso": "sg",
         "captain": false
        },
        {
         "hist": "DelphoxLuna",
         "name": "DelphoxLuna",
         "slug": "delphoxluna",
-        "iso": "my",
+        "iso": "sg",
         "captain": false
        },
        {
-        "hist": "Nikorasu",
-        "name": "Nikorasu",
-        "slug": "nikorasu",
-        "iso": "my",
+        "hist": "milkenut",
+        "name": "milkenut",
+        "slug": "milkenut",
+        "iso": "sg",
         "captain": false
        }
       ]
@@ -138112,7 +138112,7 @@
       ]
      },
      {
-      "team": "SG Squad 33",
+      "team": "SG Squad 14",
       "teamSlug": null,
       "isPro": false,
       "years": [
@@ -138120,23 +138120,30 @@
       ],
       "roster": [
        {
-        "hist": "WO4TK",
-        "name": "WO4TK",
-        "slug": "wo4tk",
+        "hist": "caturteer",
+        "name": "caturteer",
+        "slug": "caturteer",
         "iso": "sg",
         "captain": true
        },
        {
-        "hist": "Sakami",
-        "name": "Sakami",
-        "slug": "sakami",
+        "hist": "Aranionja",
+        "name": "Aranionja",
+        "slug": "aranionja-amateur",
         "iso": "sg",
         "captain": false
        },
        {
-        "hist": "azzuto",
-        "name": "azzuto",
-        "slug": "azzuto",
+        "hist": "obvMX",
+        "name": "obvMX",
+        "slug": "obvmx-amateur",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "twentyrosie",
+        "name": "twentyrosie",
+        "slug": "twentyrosie-amateur",
         "iso": "sg",
         "captain": false
        },
@@ -138144,13 +138151,6 @@
         "hist": "Dirfun",
         "name": "Dirfun",
         "slug": "dirfun",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "milkenut",
-        "name": "milkenut",
-        "slug": "milkenut",
         "iso": "sg",
         "captain": false
        }
@@ -153528,9 +153528,9 @@
         "captain": false
        },
        {
-        "hist": "DelphoxLuna",
-        "name": "DelphoxLuna",
-        "slug": "delphoxluna",
+        "hist": "HikariiFloofie",
+        "name": "HikariiFloofie",
+        "slug": "hikariifloofie-solo",
         "iso": "my",
         "captain": false
        },
@@ -154440,9 +154440,9 @@
         "captain": false
        },
        {
-        "hist": "Kyu",
-        "name": "Kyu",
-        "slug": "kyu-amateur",
+        "hist": "Dirfun",
+        "name": "Dirfun",
+        "slug": "dirfun",
         "iso": "sg",
         "captain": false
        }
@@ -165249,9 +165249,9 @@
         "captain": false
        },
        {
-        "hist": "DelphoxLuna",
-        "name": "DelphoxLuna",
-        "slug": "delphoxluna",
+        "hist": "HikariiFloofie",
+        "name": "HikariiFloofie",
+        "slug": "hikariifloofie-solo",
         "iso": "my",
         "captain": false
        },
@@ -168791,9 +168791,9 @@
         "captain": false
        },
        {
-        "hist": "Dirfun",
-        "name": "Dirfun",
-        "slug": "dirfun",
+        "hist": "DelphoxLuna",
+        "name": "DelphoxLuna",
+        "slug": "delphoxluna",
         "iso": "sg",
         "captain": false
        },
@@ -169075,9 +169075,9 @@
         "captain": false
        },
        {
-        "hist": "Dirfun",
-        "name": "Dirfun",
-        "slug": "dirfun",
+        "hist": "DelphoxLuna",
+        "name": "DelphoxLuna",
+        "slug": "delphoxluna",
         "iso": "sg",
         "captain": false
        },
@@ -180240,9 +180240,9 @@
         "captain": false
        },
        {
-        "hist": "Kyu",
-        "name": "Kyu",
-        "slug": "kyu-amateur",
+        "hist": "Dirfun",
+        "name": "Dirfun",
+        "slug": "dirfun",
         "iso": "sg",
         "captain": false
        }
@@ -184554,9 +184554,9 @@
         "captain": false
        },
        {
-        "hist": "Kyu",
-        "name": "Kyu",
-        "slug": "kyu-amateur",
+        "hist": "Dirfun",
+        "name": "Dirfun",
+        "slug": "dirfun",
         "iso": "sg",
         "captain": false
        }
@@ -203087,9 +203087,9 @@
         "captain": false
        },
        {
-        "hist": "Kyu",
-        "name": "Kyu",
-        "slug": "kyu-amateur",
+        "hist": "Dirfun",
+        "name": "Dirfun",
+        "slug": "dirfun",
         "iso": "sg",
         "captain": false
        }
@@ -231550,51 +231550,6 @@
         "captain": false
        }
       ]
-     },
-     {
-      "team": "SG Squad 14",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "caturteer",
-        "name": "caturteer",
-        "slug": "caturteer",
-        "iso": "sg",
-        "captain": true
-       },
-       {
-        "hist": "Aranionja",
-        "name": "Aranionja",
-        "slug": "aranionja-amateur",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "obvMX",
-        "name": "obvMX",
-        "slug": "obvmx-amateur",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "twentyrosie",
-        "name": "twentyrosie",
-        "slug": "twentyrosie-amateur",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "Kyu",
-        "name": "Kyu",
-        "slug": "kyu-amateur",
-        "iso": "sg",
-        "captain": false
-       }
-      ]
      }
     ]
    },
@@ -236293,9 +236248,9 @@
         "captain": false
        },
        {
-        "hist": "DelphoxLuna",
-        "name": "DelphoxLuna",
-        "slug": "delphoxluna",
+        "hist": "HikariiFloofie",
+        "name": "HikariiFloofie",
+        "slug": "hikariifloofie-solo",
         "iso": "my",
         "captain": false
        },
@@ -245115,7 +245070,54 @@
     "ratingPoints": null,
     "tier": null,
     "level": null,
-    "rankDelta": 0
+    "rankDelta": 0,
+    "teamHistory": [
+     {
+      "team": "MY Squad 4",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "qebo",
+        "name": "qebo",
+        "slug": "qebo-amateur",
+        "iso": "my",
+        "captain": true
+       },
+       {
+        "hist": "Yixl",
+        "name": "Yixl",
+        "slug": "yixl",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "CRex",
+        "name": "CRex",
+        "slug": "crex",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "HikariiFloofie",
+        "name": "HikariiFloofie",
+        "slug": "hikariifloofie-solo",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "Nikorasu",
+        "name": "Nikorasu",
+        "slug": "nikorasu",
+        "iso": "my",
+        "captain": false
+       }
+      ]
+     }
+    ]
    },
    {
     "name": "tedstyx",
@@ -254426,7 +254428,7 @@
             "mvp": 1,
             "score": 23,
             "slug": "delphoxluna",
-            "iso": "my"
+            "iso": "sg"
            },
            {
             "team": "MY Squad 5",
@@ -254543,7 +254545,7 @@
             "mvp": 2,
             "score": 38,
             "slug": "delphoxluna",
-            "iso": "my"
+            "iso": "sg"
            },
            {
             "team": "MY Squad 5",
@@ -255229,7 +255231,7 @@
             "mvp": 2,
             "score": 44,
             "slug": "delphoxluna",
-            "iso": "my"
+            "iso": "sg"
            },
            {
             "team": "MY Squad 4",
@@ -255335,7 +255337,7 @@
             "mvp": 0,
             "score": 32,
             "slug": "delphoxluna",
-            "iso": "my"
+            "iso": "sg"
            },
            {
             "team": "MY Squad 4",
@@ -255452,7 +255454,7 @@
             "mvp": 3,
             "score": 38,
             "slug": "delphoxluna",
-            "iso": "my"
+            "iso": "sg"
            },
            {
             "team": "MY Squad 4",
@@ -256557,7 +256559,7 @@
               "mvp": 1,
               "score": 23,
               "slug": "delphoxluna",
-              "iso": "my"
+              "iso": "sg"
              },
              {
               "team": "MY Squad 5",
@@ -256674,7 +256676,7 @@
               "mvp": 2,
               "score": 38,
               "slug": "delphoxluna",
-              "iso": "my"
+              "iso": "sg"
              },
              {
               "team": "MY Squad 5",
@@ -257360,7 +257362,7 @@
               "mvp": 2,
               "score": 44,
               "slug": "delphoxluna",
-              "iso": "my"
+              "iso": "sg"
              },
              {
               "team": "MY Squad 4",
@@ -257466,7 +257468,7 @@
               "mvp": 0,
               "score": 32,
               "slug": "delphoxluna",
-              "iso": "my"
+              "iso": "sg"
              },
              {
               "team": "MY Squad 4",
@@ -257583,7 +257585,7 @@
               "mvp": 3,
               "score": 38,
               "slug": "delphoxluna",
-              "iso": "my"
+              "iso": "sg"
              },
              {
               "team": "MY Squad 4",
@@ -258337,9 +258339,9 @@
        "captain": false
       },
       {
-       "hist": "DelphoxLuna",
-       "name": "DelphoxLuna",
-       "slug": "delphoxluna",
+       "hist": "HikariiFloofie",
+       "name": "HikariiFloofie",
+       "slug": "hikariifloofie-solo",
        "iso": "my",
        "captain": false
       },
@@ -262341,9 +262343,9 @@
        "captain": false
       },
       {
-       "hist": "Kyu",
-       "name": "Kyu",
-       "slug": "kyu-amateur",
+       "hist": "Dirfun",
+       "name": "Dirfun",
+       "slug": "dirfun",
        "iso": "sg",
        "captain": false
       }
@@ -263113,9 +263115,9 @@
        "captain": false
       },
       {
-       "hist": "Dirfun",
-       "name": "Dirfun",
-       "slug": "dirfun",
+       "hist": "DelphoxLuna",
+       "name": "DelphoxLuna",
+       "slug": "delphoxluna",
        "iso": "sg",
        "captain": false
       },
@@ -268340,7 +268342,7 @@
             "mvp": 3,
             "score": 46,
             "slug": "delphoxluna",
-            "iso": "my"
+            "iso": "sg"
            },
            {
             "team": "Cosmos",
@@ -274219,7 +274221,7 @@
               "mvp": 3,
               "score": 46,
               "slug": "delphoxluna",
-              "iso": "my"
+              "iso": "sg"
              },
              {
               "team": "Cosmos",
@@ -282362,7 +282364,7 @@
        "hist": "DelphoxLuna",
        "name": "DelphoxLuna",
        "slug": "delphoxluna",
-       "iso": "my",
+       "iso": "sg",
        "captain": false
       }
      ]
@@ -302611,7 +302613,7 @@
        "hist": "DelphoxLuna",
        "name": "DelphoxLuna",
        "slug": "delphoxluna",
-       "iso": "my",
+       "iso": "sg",
        "captain": false
       }
      ]
@@ -313164,7 +313166,7 @@
        "hist": "DelphoxLuna",
        "name": "DelphoxLuna",
        "slug": "delphoxluna",
-       "iso": "my",
+       "iso": "sg",
        "captain": false
       },
       {
@@ -367507,18 +367509,6 @@
   },
   {
    "type": "transfer",
-   "player": "Kyu",
-   "playerSlug": "kyu-amateur",
-   "iso": "sg",
-   "fromTeam": "Nightshade",
-   "fromSlug": null,
-   "toTeam": "SG Squad 14",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-20"
-  },
-  {
-   "type": "transfer",
    "player": "zhizyii",
    "playerSlug": "zhizyii-amateur",
    "iso": "sg",
@@ -367572,7 +367562,7 @@
    "iso": "sg",
    "fromTeam": "Infernum E-Sports",
    "fromSlug": "infernum-e-sports",
-   "toTeam": "SG Squad 33",
+   "toTeam": "SG Squad 14",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-20"
@@ -370029,10 +370019,10 @@
    "type": "transfer",
    "player": "DelphoxLuna",
    "playerSlug": "delphoxluna",
-   "iso": "my",
+   "iso": "sg",
    "fromTeam": "Cosmos",
    "fromSlug": "cosmos",
-   "toTeam": "MY Squad 4",
+   "toTeam": "SG Squad 33",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-20"
@@ -370885,6 +370875,18 @@
    "fromTeam": null,
    "fromSlug": null,
    "toTeam": "MY Squad 3",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-20"
+  },
+  {
+   "type": "debut",
+   "player": "HikariiFloofie",
+   "playerSlug": "hikariifloofie-solo",
+   "iso": "my",
+   "fromTeam": null,
+   "fromSlug": null,
+   "toTeam": "MY Squad 4",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-20"
@@ -379473,7 +379475,7 @@
    "type": "debut",
    "player": "DelphoxLuna",
    "playerSlug": "delphoxluna",
-   "iso": "my",
+   "iso": "sg",
    "fromTeam": null,
    "fromSlug": null,
    "toTeam": "Cosmos",
@@ -400619,49 +400621,49 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.676,
+     "wr": 0.683,
      "real": false
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.543,
+     "wr": 0.549,
      "real": false
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.679,
+     "wr": 0.685,
      "real": false
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.44,
+     "wr": 0.446,
      "real": false
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.341,
+     "wr": 0.348,
      "real": false
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.3,
+     "wr": 0.306,
      "real": false
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.399,
+     "wr": 0.406,
      "real": false
     }
    },
@@ -402027,49 +402029,49 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.668,
+     "wr": 0.675,
      "real": false
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.368,
+     "wr": 0.374,
      "real": false
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.642,
+     "wr": 0.649,
      "real": false
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.541,
+     "wr": 0.548,
      "real": false
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.501,
+     "wr": 0.507,
      "real": false
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.636,
+     "wr": 0.642,
      "real": false
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.595,
+     "wr": 0.602,
      "real": false
     }
    },
@@ -403243,49 +403245,49 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.353,
+     "wr": 0.349,
      "real": false
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.653,
+     "wr": 0.65,
      "real": false
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.454,
+     "wr": 0.45,
      "real": false
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.648,
+     "wr": 0.645,
      "real": false
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.673,
+     "wr": 0.67,
      "real": false
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.576,
+     "wr": 0.573,
      "real": false
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.394,
+     "wr": 0.391,
      "real": false
     }
    },
