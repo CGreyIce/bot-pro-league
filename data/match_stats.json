@@ -16085,6 +16085,612 @@
      ]
     }
    ]
+  },
+  "1-14": {
+   "maps": [
+    {
+     "map": "Cache",
+     "scoreA": 17,
+     "scoreB": 19,
+     "players": [
+      {
+       "team": "SG Squad 28",
+       "name": "lumpydayo",
+       "k": 28,
+       "a": 4,
+       "d": 27,
+       "mvp": 5,
+       "score": 70
+      },
+      {
+       "team": "SG Squad 28",
+       "name": "briant",
+       "k": 28,
+       "a": 2,
+       "d": 23,
+       "mvp": 5,
+       "score": 70
+      },
+      {
+       "team": "SG Squad 28",
+       "name": "Jeribean",
+       "k": 27,
+       "a": 3,
+       "d": 27,
+       "mvp": 4,
+       "score": 67
+      },
+      {
+       "team": "SG Squad 28",
+       "name": "KrinoJ",
+       "k": 20,
+       "a": 6,
+       "d": 26,
+       "mvp": 2,
+       "score": 57
+      },
+      {
+       "team": "SG Squad 28",
+       "name": "TiF2",
+       "k": 20,
+       "a": 2,
+       "d": 25,
+       "mvp": 1,
+       "score": 46
+      },
+      {
+       "team": "SG Squad 37",
+       "name": "ItzMaigo",
+       "k": 37,
+       "a": 3,
+       "d": 25,
+       "mvp": 5,
+       "score": 89
+      },
+      {
+       "team": "SG Squad 37",
+       "name": "CodedEcho",
+       "k": 26,
+       "a": 5,
+       "d": 22,
+       "mvp": 6,
+       "score": 70
+      },
+      {
+       "team": "SG Squad 37",
+       "name": "rebellioniite",
+       "k": 23,
+       "a": 5,
+       "d": 25,
+       "mvp": 3,
+       "score": 63
+      },
+      {
+       "team": "SG Squad 37",
+       "name": "Suzuyunn",
+       "k": 22,
+       "a": 3,
+       "d": 26,
+       "mvp": 3,
+       "score": 53
+      },
+      {
+       "team": "SG Squad 37",
+       "name": "4_naru",
+       "k": 20,
+       "a": 5,
+       "d": 25,
+       "mvp": 2,
+       "score": 52
+      }
+     ]
+    }
+   ]
+  },
+  "1-18": {
+   "maps": [
+    {
+     "map": "Inferno",
+     "scoreA": 8,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "SG Squad 31",
+       "name": "Sketch",
+       "k": 18,
+       "a": 0,
+       "d": 16,
+       "mvp": 1,
+       "score": 42
+      },
+      {
+       "team": "SG Squad 31",
+       "name": "beyouna",
+       "k": 14,
+       "a": 3,
+       "d": 17,
+       "mvp": 3,
+       "score": 40
+      },
+      {
+       "team": "SG Squad 31",
+       "name": "Pearlim",
+       "k": 13,
+       "a": 1,
+       "d": 15,
+       "mvp": 1,
+       "score": 36
+      },
+      {
+       "team": "SG Squad 31",
+       "name": "XueQiii",
+       "k": 9,
+       "a": 2,
+       "d": 15,
+       "mvp": 2,
+       "score": 24
+      },
+      {
+       "team": "SG Squad 31",
+       "name": "kyomikoo",
+       "k": 9,
+       "a": 0,
+       "d": 16,
+       "mvp": 1,
+       "score": 19
+      },
+      {
+       "team": "SG Squad 34",
+       "name": "Zoweya",
+       "k": 28,
+       "a": 3,
+       "d": 11,
+       "mvp": 6,
+       "score": 63
+      },
+      {
+       "team": "SG Squad 34",
+       "name": "afayctionate",
+       "k": 20,
+       "a": 7,
+       "d": 13,
+       "mvp": 4,
+       "score": 54
+      },
+      {
+       "team": "SG Squad 34",
+       "name": "zhiweiingg",
+       "k": 13,
+       "a": 0,
+       "d": 12,
+       "mvp": 1,
+       "score": 35
+      },
+      {
+       "team": "SG Squad 34",
+       "name": "nyxcatto",
+       "k": 10,
+       "a": 2,
+       "d": 13,
+       "mvp": 1,
+       "score": 22
+      },
+      {
+       "team": "SG Squad 34",
+       "name": "rc_ia",
+       "k": 8,
+       "a": 4,
+       "d": 14,
+       "mvp": 1,
+       "score": 20
+      }
+     ]
+    }
+   ]
+  },
+  "1-22": {
+   "maps": [
+    {
+     "map": "Tuscan",
+     "scoreA": 13,
+     "scoreB": 9,
+     "players": [
+      {
+       "team": "SG Squad 26",
+       "name": "winda",
+       "k": 17,
+       "a": 2,
+       "d": 13,
+       "mvp": 3,
+       "score": 46
+      },
+      {
+       "team": "SG Squad 26",
+       "name": "TRPaki",
+       "k": 17,
+       "a": 0,
+       "d": 15,
+       "mvp": 4,
+       "score": 41
+      },
+      {
+       "team": "SG Squad 26",
+       "name": "KydaSana",
+       "k": 19,
+       "a": 0,
+       "d": 16,
+       "mvp": 3,
+       "score": 40
+      },
+      {
+       "team": "SG Squad 26",
+       "name": "airawwr",
+       "k": 14,
+       "a": 2,
+       "d": 14,
+       "mvp": 2,
+       "score": 40
+      },
+      {
+       "team": "SG Squad 26",
+       "name": "kokushi_vampir",
+       "k": 15,
+       "a": 2,
+       "d": 13,
+       "mvp": 1,
+       "score": 39
+      },
+      {
+       "team": "SG Squad 39",
+       "name": "fleurcoz",
+       "k": 21,
+       "a": 3,
+       "d": 16,
+       "mvp": 6,
+       "score": 52
+      },
+      {
+       "team": "SG Squad 39",
+       "name": "VoicetheMirai",
+       "k": 19,
+       "a": 1,
+       "d": 16,
+       "mvp": 0,
+       "score": 44
+      },
+      {
+       "team": "SG Squad 39",
+       "name": "Xrela",
+       "k": 14,
+       "a": 1,
+       "d": 17,
+       "mvp": 1,
+       "score": 32
+      },
+      {
+       "team": "SG Squad 39",
+       "name": "Joshiwahhh",
+       "k": 10,
+       "a": 2,
+       "d": 17,
+       "mvp": 1,
+       "score": 26
+      },
+      {
+       "team": "SG Squad 39",
+       "name": "VanixEvans",
+       "k": 7,
+       "a": 2,
+       "d": 16,
+       "mvp": 1,
+       "score": 17
+      }
+     ]
+    }
+   ]
+  },
+  "1-24": {
+   "maps": [
+    {
+     "map": "Mirage",
+     "scoreA": 10,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "SG Squad 23",
+       "name": "itswendy_",
+       "k": 18,
+       "a": 1,
+       "d": 17,
+       "mvp": 3,
+       "score": 43
+      },
+      {
+       "team": "SG Squad 23",
+       "name": "Aweberry",
+       "k": 15,
+       "a": 0,
+       "d": 14,
+       "mvp": 2,
+       "score": 34
+      },
+      {
+       "team": "SG Squad 23",
+       "name": "rach.elx_",
+       "k": 12,
+       "a": 1,
+       "d": 18,
+       "mvp": 1,
+       "score": 33
+      },
+      {
+       "team": "SG Squad 23",
+       "name": "Luneforrune",
+       "k": 12,
+       "a": 2,
+       "d": 18,
+       "mvp": 4,
+       "score": 32
+      },
+      {
+       "team": "SG Squad 23",
+       "name": "Astro_Ruckus",
+       "k": 14,
+       "a": 1,
+       "d": 19,
+       "mvp": 0,
+       "score": 31
+      },
+      {
+       "team": "SG Squad 42",
+       "name": "Ryker_Sterling",
+       "k": 25,
+       "a": 1,
+       "d": 14,
+       "mvp": 4,
+       "score": 57
+      },
+      {
+       "team": "SG Squad 42",
+       "name": "Meowcolmz",
+       "k": 21,
+       "a": 2,
+       "d": 14,
+       "mvp": 4,
+       "score": 54
+      },
+      {
+       "team": "SG Squad 42",
+       "name": "treblest",
+       "k": 18,
+       "a": 0,
+       "d": 17,
+       "mvp": 2,
+       "score": 40
+      },
+      {
+       "team": "SG Squad 42",
+       "name": "Chisa_Scarlett",
+       "k": 13,
+       "a": 5,
+       "d": 13,
+       "mvp": 1,
+       "score": 37
+      },
+      {
+       "team": "SG Squad 42",
+       "name": "EviKuroneko",
+       "k": 9,
+       "a": 4,
+       "d": 13,
+       "mvp": 2,
+       "score": 28
+      }
+     ]
+    }
+   ]
+  },
+  "1-26": {
+   "maps": [
+    {
+     "map": "Anubis",
+     "scoreA": 16,
+     "scoreB": 14,
+     "players": [
+      {
+       "team": "SG Squad 30",
+       "name": "JStarWolf",
+       "k": 25,
+       "a": 1,
+       "d": 22,
+       "mvp": 7,
+       "score": 64
+      },
+      {
+       "team": "SG Squad 30",
+       "name": "mominichi",
+       "k": 24,
+       "a": 2,
+       "d": 17,
+       "mvp": 3,
+       "score": 57
+      },
+      {
+       "team": "SG Squad 30",
+       "name": "yuuschan",
+       "k": 19,
+       "a": 2,
+       "d": 21,
+       "mvp": 3,
+       "score": 55
+      },
+      {
+       "team": "SG Squad 30",
+       "name": "Skyllabtw",
+       "k": 19,
+       "a": 0,
+       "d": 19,
+       "mvp": 1,
+       "score": 46
+      },
+      {
+       "team": "SG Squad 30",
+       "name": "estellyy.",
+       "k": 14,
+       "a": 1,
+       "d": 19,
+       "mvp": 2,
+       "score": 31
+      },
+      {
+       "team": "SG Squad 35",
+       "name": "Applezxc",
+       "k": 24,
+       "a": 9,
+       "d": 23,
+       "mvp": 4,
+       "score": 66
+      },
+      {
+       "team": "SG Squad 35",
+       "name": "zenn1sm",
+       "k": 22,
+       "a": 2,
+       "d": 19,
+       "mvp": 6,
+       "score": 61
+      },
+      {
+       "team": "SG Squad 35",
+       "name": "xaeela",
+       "k": 25,
+       "a": 2,
+       "d": 22,
+       "mvp": 3,
+       "score": 61
+      },
+      {
+       "team": "SG Squad 35",
+       "name": "EXaCT",
+       "k": 16,
+       "a": 3,
+       "d": 18,
+       "mvp": 1,
+       "score": 44
+      },
+      {
+       "team": "SG Squad 35",
+       "name": "miorine",
+       "k": 11,
+       "a": 0,
+       "d": 19,
+       "mvp": 0,
+       "score": 26
+      }
+     ]
+    }
+   ]
+  },
+  "1-30": {
+   "maps": [
+    {
+     "map": "Anubis",
+     "scoreA": 13,
+     "scoreB": 5,
+     "players": [
+      {
+       "team": "SG Squad 27",
+       "name": "djsalty_",
+       "k": 23,
+       "a": 1,
+       "d": 6,
+       "mvp": 3,
+       "score": 55
+      },
+      {
+       "team": "SG Squad 27",
+       "name": "Leveti",
+       "k": 16,
+       "a": 1,
+       "d": 10,
+       "mvp": 3,
+       "score": 44
+      },
+      {
+       "team": "SG Squad 27",
+       "name": "jaelyo",
+       "k": 19,
+       "a": 0,
+       "d": 7,
+       "mvp": 4,
+       "score": 40
+      },
+      {
+       "team": "SG Squad 27",
+       "name": "TuxedoCat",
+       "k": 15,
+       "a": 0,
+       "d": 8,
+       "mvp": 2,
+       "score": 31
+      },
+      {
+       "team": "SG Squad 27",
+       "name": "AngelxAim",
+       "k": 8,
+       "a": 2,
+       "d": 11,
+       "mvp": 1,
+       "score": 21
+      },
+      {
+       "team": "SG Squad 38",
+       "name": "KTenshi",
+       "k": 16,
+       "a": 1,
+       "d": 14,
+       "mvp": 3,
+       "score": 37
+      },
+      {
+       "team": "SG Squad 38",
+       "name": "Mango",
+       "k": 11,
+       "a": 7,
+       "d": 16,
+       "mvp": 1,
+       "score": 30
+      },
+      {
+       "team": "SG Squad 38",
+       "name": "mond33__",
+       "k": 7,
+       "a": 1,
+       "d": 16,
+       "mvp": 1,
+       "score": 19
+      },
+      {
+       "team": "SG Squad 38",
+       "name": "sengjung123",
+       "k": 4,
+       "a": 3,
+       "d": 18,
+       "mvp": 0,
+       "score": 11
+      },
+      {
+       "team": "SG Squad 38",
+       "name": "Hanarisu",
+       "k": 4,
+       "a": 0,
+       "d": 17,
+       "mvp": 0,
+       "score": 9
+      }
+     ]
+    }
+   ]
   }
  }
 }
