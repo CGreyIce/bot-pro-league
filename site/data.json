@@ -93589,7 +93589,20 @@
     }
    ],
    "rankDelta": 0,
-   "formerPlayers": [],
+   "formerPlayers": [
+    {
+     "slug": null,
+     "name": "Sen Ikuiku",
+     "iso": "",
+     "years": [
+      "2025"
+     ],
+     "nowTeam": "",
+     "nowTeamSlug": null,
+     "status": null,
+     "replacedBy": "Eris Suzukami"
+    }
+   ],
    "h2h": [
     {
      "opp": "new-jade",
