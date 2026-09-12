@@ -5,7 +5,8 @@
       "name": "Clueby",
       "years": ["2020", "2021", "2022", "2023", "2024"],
       "status": "banned",
-      "replacedBy": "Uzuhii"
+      "replacedBy": "Uzuhii",
+      "iso": "sg"
     }
   ],
   "infernum-e-sports": [
@@ -13,14 +14,16 @@
       "name": "Snyxxel",
       "years": ["2021", "2022", "2023", "2024"],
       "status": "banned",
-      "replacedBy": "soapdax"
+      "replacedBy": "soapdax",
+      "iso": "sg"
     }
   ],
   "astral-bloom": [
     {
       "name": "Sen Ikuiku",
       "years": ["2025"],
-      "replacedBy": "Eris Suzukami"
+      "replacedBy": "Eris Suzukami",
+      "iso": "cn"
     }
   ]
 }
