@@ -1245,8 +1245,10 @@ def main():
                             s = pl.get("slug")
                             if not s:
                                 continue
-                            a = agg.setdefault(s, {"mvp": 0, "k": 0})
+                            a = agg.setdefault(s, {"mvp": 0, "k": 0, "team": ""})
                             a["mvp"] += int(pl.get("mvp", 0)); a["k"] += int(pl.get("k", 0))
+                            if pl.get("team"):
+                                a["team"] = pl["team"]   # team the player represented in THIS event
         # scan stages OR the flattened bracket — never both (a multi-stage event stores every
         # match in both, so scanning both double-counts every stat, e.g. qebo's 11 MVPs -> 22).
         if tr.get("stages"):
@@ -1262,7 +1264,8 @@ def main():
                     "event": tr["name"], "slug": tr["slug"], "year": tr["year"]})
                 # crown the event MVP on the tournament too (for the tournament page)
                 tr["mvp"] = {"name": p["name"], "slug": p["slug"], "iso": p.get("iso", ""),
-                             "team": p.get("team", ""), "mvpRounds": best[1]["mvp"], "kills": best[1]["k"]}
+                             "team": best[1].get("team") or p.get("team", ""),   # in-event team
+                             "mvpRounds": best[1]["mvp"], "kills": best[1]["k"]}
     for p in (pro + amateur + solo):
         if p.get("titles"):
             p["titles"].sort(key=lambda x: x["year"], reverse=True)
