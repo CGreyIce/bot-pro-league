@@ -528,7 +528,7 @@ def main():
             if not c.get("team"):                    # keep the pro team; adopt amateur only if none
                 c["team"] = ap.get("team", "")
         else:
-            ap["slug"] = cs; ap["pool"] = "pro"; _combined[cs] = ap
+            ap["slug"] = cs; ap["pool"] = "pro"; ap["amateurOrigin"] = True; _combined[cs] = ap
     pro = list(_combined.values())
     amateur = []                                     # merged into pro; kept as an empty pool
 
@@ -989,7 +989,9 @@ def main():
                 continue
             for pl in row["players"]:
                 p = slug_to_player.get(pl.get("slug"))
-                if p and p.get("pool") != "pro":
+                # amateur-origin players (no real pro team) show their tournament team; the pro+amateur
+                # pools are merged now, so key off amateurOrigin rather than the (uniform) pool field.
+                if p and p.get("amateurOrigin"):
                     p["team"] = row["team"]
                     p["teamTourney"] = tr["name"]
 
