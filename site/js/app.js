@@ -530,17 +530,16 @@ function renderPlayers(){
     ["Lvl", p=>levelChip(p.level), "", p=>p.level||0],
     ["K", p=>p.kills, "mono"],
     ["D", p=>p.deaths, "mono"],
-    // pro K/D & Win% require 10+ maps so single-game flukes don't top the sort
-    ["KDR", p=>(pool==="pro"&&p.maps<10)||!p.maps?'—':p.kdr.toFixed(2), "mono", p=>(pool==="pro"&&p.maps<10)?-1:p.kdr],
+    ["KDR", p=>p.maps?p.kdr.toFixed(2):'—', "mono", p=>p.kdr],
     ["MVP", p=>p.mvp, "mono"],
     ["Maps", p=>p.maps, "mono"],
-    ["Win%", p=>(pool==="pro"&&p.maps<10)||!p.maps?'—':pct(p.winrate), "mono", p=>(pool==="pro"&&p.maps<10)?-1:p.winrate],
+    ["Win%", p=>p.maps?pct(p.winrate):'—', "mono", p=>p.winrate],
   ];
   app.innerHTML = `<h2 class="section-title"><span class="accent-bar"></span>Player Leaderboard
       <a href="#/compare" class="muted" style="margin-left:auto;font-size:12px">⇄ Compare players</a></h2>
     <div class="tabs">
-      ${["pro","amateur","solo"].map(k=>`<button data-pool="${k}" class="${k===pool?'active':''}">${
-        k==="pro"?"Pro":k==="amateur"?"Amateur":"Solo Queue"} <span style="opacity:.7">${poolList(k).length}</span></button>`).join("")}
+      ${["pro","solo"].map(k=>`<button data-pool="${k}" class="${k===pool?'active':''}">${
+        k==="pro"?"Pro":"Solo Queue"} <span style="opacity:.7">${poolList(k).length}</span></button>`).join("")}
     </div>
     ${pool==="solo"?'<p class="muted" style="font-size:12px;margin:-4px 0 12px">Whole league · unplayed sit unranked below.</p>':''}
     <div id="ptable"></div>`;
@@ -1219,7 +1218,7 @@ function renderTeamCompare(){
 
 // ---------- League Stats ----------
 function renderStats(){
-  const pools=["pro","amateur","solo"];
+  const pools=["pro","solo"];   // amateur merged into pro
   // dedupe people across pools by name
   const seen=new Set(), nat={}, reg={};
   pools.forEach(pk=>DATA.players[pk].forEach(p=>{
@@ -1774,7 +1773,7 @@ async function renderAdmin(){
     </div>
     <div class="adm-shuffle" style="margin-top:26px">
       <h2 class="section-title"><span class="accent-bar"></span>Amateur Team Shuffler</h2>
-      <p class="muted" style="font-size:12px;margin:-4px 0 12px">Shuffles all <strong>${DATA.players.amateur.length}</strong> amateur players into teams of 5. Each team gets 1 IGL + 1 Awper first (scarce roles spread as far as they go), then fills by shared country/region. Nothing is saved — this is a scratch tool.</p>
+      <p class="muted" style="font-size:12px;margin:-4px 0 12px">Shuffles all <strong>${DATA.players.pro.length}</strong> tournament players into teams of 5. Each team gets 1 IGL + 1 Awper first (scarce roles spread as far as they go), then fills by shared country/region. Nothing is saved — this is a scratch tool.</p>
       <div class="profile-grid" style="grid-template-columns:360px 1fr">
         <div class="infobox" style="padding:14px">
           <div class="ib-title" style="margin:-14px -14px 12px">Locked Groups</div>
@@ -1962,7 +1961,7 @@ function setupShuffler(){
   const go = $("#shf-go"); if(!go) return;
   const parseLocks = ()=>{
     const norm = s => (s||"").toLowerCase().replace(/[^a-z0-9]/g,"");
-    const known = {}; DATA.players.amateur.forEach(p=>known[norm(p.name)]=p.name);
+    const known = {}; DATA.players.pro.forEach(p=>known[norm(p.name)]=p.name);
     const lines = ($("#shf-locks").value||"").split("\n").map(l=>l.trim()).filter(Boolean);
     const groups=[], unknown=[];
     lines.forEach(l=>{
@@ -1978,7 +1977,7 @@ function setupShuffler(){
   $("#shf-locks").oninput = parseLocks;
   go.onclick = ()=>{
     const groups = parseLocks();
-    lastShuffle = generateTeams(DATA.players.amateur, groups, $("#shf-country").checked);
+    lastShuffle = generateTeams(DATA.players.pro, groups, $("#shf-country").checked);
     renderShuffleResult(lastShuffle);
     const noAwp = lastShuffle.filter(t=>t.missingAwp).length, noIGL = lastShuffle.filter(t=>t.missingIGL).length;
     $("#shf-msg").innerHTML = `${lastShuffle.length} teams generated.` +
