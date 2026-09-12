@@ -17196,6 +17196,107 @@
      ]
     }
    ]
+  },
+  "1-38": {
+   "maps": [
+    {
+     "map": "Tuscan",
+     "scoreA": 13,
+     "scoreB": 7,
+     "players": [
+      {
+       "team": "SG Squad 13",
+       "name": "caarrietan",
+       "k": 24,
+       "a": 1,
+       "d": 12,
+       "mvp": 2,
+       "score": 56
+      },
+      {
+       "team": "SG Squad 13",
+       "name": "JustYoong",
+       "k": 20,
+       "a": 3,
+       "d": 11,
+       "mvp": 3,
+       "score": 52
+      },
+      {
+       "team": "SG Squad 13",
+       "name": "Mike",
+       "k": 19,
+       "a": 3,
+       "d": 13,
+       "mvp": 5,
+       "score": 45
+      },
+      {
+       "team": "SG Squad 13",
+       "name": "declaration__",
+       "k": 13,
+       "a": 4,
+       "d": 9,
+       "mvp": 3,
+       "score": 38
+      },
+      {
+       "team": "SG Squad 13",
+       "name": "akuluvr",
+       "k": 9,
+       "a": 2,
+       "d": 12,
+       "mvp": 0,
+       "score": 23
+      },
+      {
+       "team": "SG Squad 20",
+       "name": "plainyingying",
+       "k": 17,
+       "a": 0,
+       "d": 16,
+       "mvp": 3,
+       "score": 41
+      },
+      {
+       "team": "SG Squad 20",
+       "name": "luciddoob",
+       "k": 16,
+       "a": 1,
+       "d": 16,
+       "mvp": 3,
+       "score": 38
+      },
+      {
+       "team": "SG Squad 20",
+       "name": "Skiazelle",
+       "k": 10,
+       "a": 0,
+       "d": 18,
+       "mvp": 1,
+       "score": 29
+      },
+      {
+       "team": "SG Squad 20",
+       "name": "chiyoriinn",
+       "k": 7,
+       "a": 1,
+       "d": 16,
+       "mvp": 0,
+       "score": 18
+      },
+      {
+       "team": "SG Squad 20",
+       "name": "Ziweiv",
+       "k": 7,
+       "a": 0,
+       "d": 19,
+       "mvp": 0,
+       "score": 18
+      }
+     ]
+    }
+   ]
   }
  }
 }
