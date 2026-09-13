@@ -148,9 +148,11 @@ WEIGHTS = {"kdr": 0.40, "kpm": 0.30, "mvppm": 0.15, "apm": 0.10, "wr": 0.05}
 _TIER_TOKEN = re.compile(r"\b(Champion|Grandmaster|Master|Diamond|Emerald|Platinum|Gold|Silver|Bronze|Iron)\b")
 def refresh_bio_dynamics(pro, amateur, solo):
     """Keep the volatile parts of each hand-written bio in sync with the live FACEIT-style
-    stats: tier language becomes 'Level N', rating values become 'N points', and the
-    'highest-rated in the pool' epithet follows the true #1. Every bio references its own
-    tier at most once (verified), so a single-token swap is unambiguous. Runs each build."""
+    stats: tier language becomes 'Level N', rating values become 'N points', counting stats
+    (kills/MVP/assists/deaths/K-D) track the live totals, and the 'highest-rated in the league'
+    epithet follows the true combined #1 -- so a bio's ranking claim re-grades itself every
+    build as ratings move. Pro & amateur are one leaderboard now, so legacy 'amateur/pro pool'
+    wording is retired to 'league'. Runs each build."""
     def sync(p):
         bio = p.get("bio")
         if not bio:
@@ -177,19 +179,21 @@ def refresh_bio_dynamics(pro, amateur, solo):
         bio = re.sub(r"\b\d+\s+assists\b", f"{assists} assists", bio)
         bio = re.sub(r"\b\d+\s+deaths\b", f"{deaths} deaths", bio)
         bio = re.sub(r"\b\d\.\d+\s+K/D\b", f"{kdr:.2f} K/D", bio)                                           # "1.14 K/D" -> live K/D
+        # pro & amateur are now one combined leaderboard -> retire the old "pool" wording
+        bio = (bio.replace("amateur pool", "league").replace("pro pool", "league")
+                  .replace("the pool's", "the league's"))
         p["bio"] = bio
     for pool in (pro, amateur, solo):
         for p in pool:
             sync(p)
-    # "highest-rated player in the {pool} pool" epithet follows the true #1 automatically
-    for pool, label in ((pro, "pro"), (amateur, "amateur")):
-        rated = [p for p in pool if p.get("rating") is not None]
-        if not rated:
-            continue
+    # "highest-rated player in the league" epithet follows the true combined #1 automatically,
+    # so a bio's ranking claim re-grades itself every build as ratings move.
+    rated = [p for p in pro if p.get("rating") is not None]
+    if rated:
         top = max(rated, key=lambda p: p["rating"])
-        the = f"the highest-rated player in the {label} pool"
-        one = f"one of the highest-rated players in the {label} pool"
-        for p in pool:
+        the = "the highest-rated player in the league"
+        one = "one of the highest-rated players in the league"
+        for p in pro:
             b = p.get("bio")
             if not b:
                 continue

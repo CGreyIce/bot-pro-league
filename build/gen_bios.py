@@ -70,16 +70,16 @@ def make_bio(p, gender):
 
     # ---- sentence 1: identity + standing (ratings are normalized within each pool) ----
     pool = p.get("pool", "pro")
-    poollbl = {"amateur": " in the amateur pool", "solo": " in the solo-queue pool"}.get(pool, "")
+    poollbl = {"solo": " in the solo-queue pool"}.get(pool, "")   # pro & amateur are one combined league now
     if rating is None or not tier:
         standing = ""
-    elif pool != "pro":
+    elif pool == "solo":
         standing = f"rated {rating:.2f} ({tier}){poollbl}"
     elif tier == "Champion":
         standing = pick(name + "c", [f"one of the league's very best at {rating:.2f} (Champion tier)",
-                                     f"the pool's premier talent at {rating:.2f} (Champion tier)"])
+                                     f"the league's premier talent at {rating:.2f} (Champion tier)"])
     elif tier == "Grandmaster":
-        standing = f"one of the pool's elite at {rating:.2f} (Grandmaster)"
+        standing = f"one of the league's elite at {rating:.2f} (Grandmaster)"
     elif tier == "Master":
         standing = f"a Master-tier standout rated {rating:.2f}"
     else:
