@@ -552,10 +552,20 @@ function drawPlayerTable(players, cols){
   wireSort($("#ptable"), players, cols, playersSort, (s)=>{playersSort=s;drawPlayerTable(players,cols);});
 }
 
+// current position on the Pro leaderboard — derived live from the same pool the
+// Players/Rankings tabs use, so it stays in sync whenever ratings update.
+function proRankOf(p){
+  if(!p || p.pool!=="pro" || p.ratingPoints==null) return null;
+  const ranked=(DATA.players.pro||[]).filter(x=>x.ratingPoints!=null)
+    .sort((a,b)=>b.ratingPoints-a.ratingPoints);          // stable: ties keep tab order
+  const i=ranked.findIndex(x=>x.slug===p.slug);
+  return i<0?null:{rank:i+1, total:ranked.length};
+}
 function renderPlayer(slug){
   const p = playerBySlug(slug);
   if(!p){ app.innerHTML = notFound("Player"); return; }
   const t = teamByName(p.team);
+  const pr = proRankOf(p);
   const stat = (v,l,acc)=>`<div class="stat${acc?' accent':''}"><div class="sv">${v}</div><div class="sl">${l}</div></div>`;
   const poolName = p.pool==="pro"?"Pro Circuit":p.pool==="amateur"?"Amateur":"Solo Queue";
   app.innerHTML = `
@@ -567,6 +577,7 @@ function renderPlayer(slug){
         <div class="ph-sub">${p.nat?esc(p.nat)+' · ':''}${p.role?esc(p.role)+' · ':''}${t?`<a href="#/team/${t.slug}" style="color:var(--link)">${esc(t.name)}</a>`:esc(p.team||'Teamless')} · ${poolName}</div>
         <div style="margin-top:10px">${p.level?`${levelChip(p.level)}<span class="levelchip" style="margin-left:8px">Level ${p.level}</span>`:'<span class="muted">Unranked</span>'}</div>
       </div>
+      ${pr?`<div class="ph-rank"><div class="big">#${pr.rank}</div><div class="lbl">Pro Rank</div></div>`:''}
       <div class="ph-rank"><div class="big">${p.ratingPoints!=null?p.ratingPoints:'—'}</div><div class="lbl">Rating Points</div></div>
     </div>
     ${p.bio?`<div class="player-bio">${esc(p.bio)}</div>`:''}
@@ -579,6 +590,7 @@ function renderPlayer(slug){
         <div class="ib-row"><span class="k">Role</span><span class="v">${esc(p.role||'—')}</span></div>
         <div class="ib-row"><span class="k">Pool</span><span class="v">${poolName}</span></div>
         <div class="ib-row"><span class="k">Rating Points</span><span class="v">${p.ratingPoints!=null?p.ratingPoints:'—'}</span></div>
+        ${pr?`<div class="ib-row"><span class="k">Pro Rank</span><span class="v">#${pr.rank} <span class="muted" style="font-size:11px">of ${pr.total}</span></span></div>`:''}
         <div class="ib-row"><span class="k">Level</span><span class="v">${p.level||'—'} / 10</span></div>
         <div class="ib-row"><span class="k">Record</span><span class="v">${p.wins}-${p.losses} (${pct(p.winrate)})</span></div>
         <div class="ib-row"><span class="k">Maps</span><span class="v">${p.maps}</span></div>
