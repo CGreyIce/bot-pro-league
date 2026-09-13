@@ -2832,6 +2832,7 @@ function drawPredict(){
   const saveBtn=$("#pred-save");
   if(saveBtn) saveBtn.onclick=async ()=>{
     if(!(pred.name||'').trim()){ $("#pred-savemsg").textContent="Enter a name first."; return; }
+    if((pred.name||'').trim().length>40){ $("#pred-savemsg").style.color="var(--accent2,#ff6b6b)"; $("#pred-savemsg").textContent="Name too long — max 40 characters."; return; }
     saveBtn.disabled=true; $("#pred-savemsg").textContent="Saving…";
     pred.name=pred.name.trim(); pred.ts=Date.now();
     try{ await PredictBackend.save(pred); $("#pred-savemsg").style.color="var(--good)"; $("#pred-savemsg").textContent="Saved!"; loadPredBoard(); }
