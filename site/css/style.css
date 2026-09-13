@@ -738,6 +738,19 @@ textarea.adm-in{resize:vertical;font-family:inherit}
 .pd-gh{font-family:'Chakra Petch';font-weight:700;margin-right:6px}
 .pd-q{display:block;color:var(--muted)}
 .pd-q2{opacity:.75}
+/* prediction grading (after an event finishes) */
+.pbk-team.pk.correct{background:rgba(46,230,166,.20);color:var(--text)}
+.pbk-team.pk.correct .pbk-nm{color:var(--good)}
+.pbk-team.pk.wrong{background:rgba(255,61,100,.16);color:var(--text)}
+.pbk-team.pk.wrong .pbk-nm{color:var(--accent2);text-decoration:line-through;text-decoration-color:rgba(255,61,100,.6)}
+.pbk-team.pk.correct::after{content:"✓";margin-left:auto;color:var(--good);font-weight:700;flex:0 0 auto}
+.pbk-team.pk.wrong::after{content:"✕";margin-left:auto;color:var(--accent2);font-weight:700;flex:0 0 auto}
+.pd-q.correct{color:var(--good)} .pd-q.correct.exact{font-weight:700}
+.pd-q.wrong{color:var(--accent2);text-decoration:line-through;text-decoration-color:rgba(255,61,100,.5)}
+.pd-legend{margin-left:8px;font-size:10px;font-weight:400}
+.pd-key{text-transform:uppercase;letter-spacing:.5px;padding:0 5px;border-radius:3px;margin-left:4px}
+.pd-key.correct{background:rgba(46,230,166,.18);color:var(--good)}
+.pd-key.wrong{background:rgba(255,61,100,.16);color:var(--accent2)}
 /* map veto simulator */
 .veto-controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px}
 .veto-controls .adm-in{max-width:240px;margin:0}

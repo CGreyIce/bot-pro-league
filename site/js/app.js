@@ -2709,7 +2709,7 @@ function predBracketTree(rounds, RL, inner, extraCls){
     const ms=rd.filter(m=>m.a!==PBYE && m.b!==PBYE);
     if(!ms.length) return '';
     return `<div class="bkt-round"><div class="bkt-round-title">${RL[ri]||('Round '+(ri+1))}</div>`+
-      `<div class="bkt-round-matches">${ms.map(m=>{const s=+String(m.key).split('m')[1]; return `<div class="bkt-match" data-round="${ri}" data-slot="${s}">${inner(m)}</div>`;}).join("")}</div></div>`;
+      `<div class="bkt-round-matches">${ms.map(m=>{const s=+String(m.key).split('m')[1]; return `<div class="bkt-match" data-round="${ri}" data-slot="${s}">${inner(m,ri)}</div>`;}).join("")}</div></div>`;
   }).join("")}</div></div>`;
 }
 function predPlacements(rounds){                   // predicted champ / runner-up / SF losers / QF losers
@@ -2863,21 +2863,36 @@ async function loadPredBoard(){
     renderPredDetail(rows[+row.dataset.pi].p);
   });
 }
+// after an event finishes, grade a prediction against the real results.
+const _STAGE_REMAIN = {'Champion':1,'Runner-up':2,'Semifinals':4,'3rd Place':4,'4th Place':4,
+  'Quarterfinals':8,'Round of 8':8,'Round of 16':16,'Round of 32':32,'Round of 64':64,'Round of 128':128};
+function actualReach(tr){   // team -> smallest "teams remaining" stage it reached (1 = champion)
+  const m={}; (tr.finalStandings||[]).forEach(s=>{ const r=_STAGE_REMAIN[s.result]; if(r!=null) m[normKey(s.name)]=r; });
+  return m;
+}
 function renderPredDetail(pred){
   const box=$("#pred-detail"); if(!box) return; const tr=_predTr;
   const gs=predGroups(tr);
+  const actual=actualResults(tr);                 // null until the event finishes
+  const reach=actual?actualReach(tr):null;
   const groupHtml=`<div class="pd-groups">${gs.map(g=>{ const pk=(pred.groups||{})[g.name]||[];
-    return `<div class="pd-g"><span class="pd-gh">${esc(g.name.replace('Group ',''))}</span>
-      <span class="pd-q">1 ${pk[0]?esc(pk[0]):'—'}</span><span class="pd-q pd-q2">2 ${pk[1]?esc(pk[1]):'—'}</span></div>`; }).join("")}</div>`;
+    const cls=(team,pos)=>{ if(!actual||!team) return ''; const act=actual.groups[g.name]||[];
+      return act.includes(team)?(act[pos]===team?' correct exact':' correct'):' wrong'; };
+    const q=(team,pos)=>`<span class="pd-q${pos?' pd-q2':''}${cls(team,pos)}">${pos+1} ${team?esc(team):'—'}</span>`;
+    return `<div class="pd-g"><span class="pd-gh">${esc(g.name.replace('Group ',''))}</span>${q(pk[0],0)}${q(pk[1],1)}</div>`; }).join("")}</div>`;
   const rounds=bracketRounds(predSeeds(tr,pred), pred.bracket||{});
   const RL=roundLabels(rounds?rounds.length:0);
-  const bracketHtml = rounds ? predBracketTree(rounds, RL, m=>{
-      const cell=x=>`<div class="pbk-team ${m.pick===x?'pk':''} ${x?'':'tbd'}"${x?predRAttr(x):''}>${x?crestMini(x):'<span class=muted>TBD</span>'}</div>`;
+  const R=rounds?rounds.length:0;
+  const grade=(team,ri)=>{ if(!reach||!team) return ''; const need=Math.pow(2, R-ri-1);
+    return (reach[normKey(team)]!=null && reach[normKey(team)]<=need)?' correct':' wrong'; };
+  const bracketHtml = rounds ? predBracketTree(rounds, RL, (m,ri)=>{
+      const cell=x=>`<div class="pbk-team ${m.pick===x?'pk':''} ${x?'':'tbd'}${(x&&m.pick===x)?grade(x,ri):''}"${x?predRAttr(x):''}>${x?crestMini(x):'<span class=muted>TBD</span>'}</div>`;
       return `${cell(m.a)}${cell(m.b)}`; }, 'pbk-ro')
     : '<p class="muted">Bracket not filled in.</p>';
   const pl=predPlacements(rounds);
   box.innerHTML=`<h3 class="rec-group" style="margin-top:0">${esc(pred.name||'anon')}'s prediction
-    <span class="muted" style="font-size:11px">champion: ${pl.champ?esc(pl.champ):'—'}</span></h3>
+    <span class="muted" style="font-size:11px">champion: ${pl.champ?esc(pl.champ):'—'}</span>
+    ${actual?`<span class="pd-legend"><span class="pd-key correct">correct</span><span class="pd-key wrong">wrong</span></span>`:''}</h3>
     ${gs.length?`<div class="pd-sub muted">Group qualifiers</div>${groupHtml}<div class="pd-sub muted" style="margin-top:10px">Playoff bracket</div>`:''}${bracketHtml}`;
   drawAllConnectors(box);
   box.scrollIntoView({behavior:'smooth', block:'nearest'});
