@@ -523,7 +523,7 @@ function renderPlayers(){
   const players = poolList(pool);
   const cols = [
     ["#", (p,i)=>i+1, "rankcol"],
-    ["Player", p=>`<span class="tm-rank">${playerLink(p)}${playersSort.key==="Rating Points"?rankDeltaBadge(p, pool==="solo"?"their last solo game":"their last match"):''}</span>`, "name-cell", p=>p.name],
+    ["Player", p=>`<span class="tm-rank">${playerLink(p)}${p.provisional?'<span class="prov-badge" title="Provisional — under 5 maps played">PROV</span>':''}${playersSort.key==="Rating Points"?rankDeltaBadge(p, pool==="solo"?"their last solo game":"their last match"):''}</span>`, "name-cell", p=>p.name],
     ["Team", p=>teamCell(p.team), "", p=>p.team],
     ["Role", p=>p.role?`<span class="pill role-pill">${esc(p.role)}</span>`:'—', "", p=>p.role],
     ["Rating Points", p=>pointsBadge(p.ratingPoints), "mono", p=>p.ratingPoints==null?-1:p.ratingPoints],
@@ -541,7 +541,7 @@ function renderPlayers(){
       ${["pro","solo"].map(k=>`<button data-pool="${k}" class="${k===pool?'active':''}">${
         k==="pro"?"Pro":"Solo Queue"} <span style="opacity:.7">${poolList(k).length}</span></button>`).join("")}
     </div>
-    ${pool==="solo"?'<p class="muted" style="font-size:12px;margin:-4px 0 12px">Whole league · unplayed sit unranked below.</p>':''}
+    ${pool==="solo"?'<p class="muted" style="font-size:12px;margin:-4px 0 12px">Whole league · under 5 maps stay provisional (unranked) at the bottom.</p>':''}
     <div id="ptable"></div>`;
   app.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{playersPool=b.dataset.pool;playersSort={key:"Rating Points",dir:-1};renderPlayers();});
   drawPlayerTable(players, cols);

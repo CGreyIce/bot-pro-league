@@ -246,9 +246,11 @@ def parse_player_pool(rows, pool):
         print(f"  [{pool}] removed {len(removed)}: {', '.join(removed)}")
     return players
 
-def compute_ratings(players):
+def compute_ratings(players, min_maps=0):
     """Normalize within the pool and compute kdr/winrate/rating/tier/level from the
-    CURRENT totals. Call AFTER any recorded-scoreboard stats have been merged in."""
+    CURRENT totals. Call AFTER any recorded-scoreboard stats have been merged in.
+    min_maps: players below this many maps stay unrated ('provisional') so a tiny
+    sample can't top the board off a freak stat line — their K/D/win rate still show."""
     for p in players:                       # refresh derived fields from (possibly grown) totals
         p["maps"] = p["wins"] + p["losses"]
         p["kdr"] = round(p["kills"] / p["deaths"], 2) if p["deaths"] else 0.0
@@ -267,8 +269,13 @@ def compute_ratings(players):
     def shrink(ratio, n):
         return (n * ratio + K * 1.0) / (n + K)
     for p in players:
+        p["provisional"] = False
         if p["maps"] <= 0:
             p["rating"] = None; p["ratingPoints"] = None; p["tier"] = None; p["level"] = None
+            continue
+        if min_maps and p["maps"] < min_maps:          # too few maps to rank -> provisional, unrated
+            p["rating"] = None; p["ratingPoints"] = None; p["tier"] = None; p["level"] = None
+            p["provisional"] = True
             continue
         n = p["maps"]
         kpm = p["kills"] / n; mvppm = p["mvp"] / n; apm = p["assists"] / n
@@ -720,7 +727,11 @@ def main():
             o["w"] += 1 if pl.get("won") else 0; o["l"] += 0 if pl.get("won") else 1
 
     # ---- ratings (computed AFTER scoreboards are merged into totals) ----
-    pro_avg = compute_ratings(pro); am_avg = compute_ratings(amateur); solo_avg = compute_ratings(solo)
+    # Solo Queue needs a placement minimum: many players have only a game or two, and an
+    # extreme small-sample K/D would otherwise top the board over a proven high-volume player.
+    SOLO_MIN_MAPS = 5
+    pro_avg = compute_ratings(pro); am_avg = compute_ratings(amateur)
+    solo_avg = compute_ratings(solo, min_maps=SOLO_MIN_MAPS)
 
     # ---- player rank movement vs. before the most recent recorded match ----
     def scoreboard_contrib(m):
@@ -783,7 +794,7 @@ def main():
                 "wins": sp["wins"], "losses": sp["losses"], "maps": sp["maps"], "kdr": sp["kdr"],
                 "winrate": sp["winrate"], "rating": sp["rating"], "ratingPoints": sp.get("ratingPoints"),
                 "tier": sp["tier"], "level": sp["level"], "soloRank": sp.get("soloRank"), "soloTotal": len(solo_ranked),
-                "rankDelta": sp.get("rankDelta", 0)}
+                "rankDelta": sp.get("rankDelta", 0), "provisional": sp.get("provisional", False)}
     tourney_names = {norm_key(p["name"]) for p in pro} | {norm_key(p["name"]) for p in amateur}
     for pool in (pro, amateur):
         for p in pool:
