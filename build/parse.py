@@ -753,6 +753,28 @@ def main():
     solo_ranked = sorted([p for p in solo if p.get("rating") is not None], key=lambda p: -p["rating"])
     for i, p in enumerate(solo_ranked):
         p["soloRank"] = i + 1
+
+    # ---- per-game rating-point gain (marginal contribution of each solo game) ----
+    # For every recorded solo game, how many rating points each player's record moved by
+    # having played it: points(current totals) − points(totals minus this game). Shown in the
+    # admin game popup. Keyed by game id, then by the player's normalized name.
+    solo_game_stats = {}
+    for g in solo_sb:
+        entry = {}
+        for pl in g.get("players", []):
+            k = norm_key(pl.get("name", "")); nn = old2new.get(k)
+            tgt = solo_by_name.get(norm_key(nn) if nn else k)
+            if not tgt or tgt.get("ratingPoints") is None:
+                continue
+            r_before = _rating_value(tgt["kills"] - int(pl.get("k", 0)), tgt["deaths"] - int(pl.get("d", 0)),
+                                     tgt["assists"] - int(pl.get("a", 0)), tgt["mvp"] - int(pl.get("mvp", 0)),
+                                     tgt["wins"] - (1 if pl.get("won") else 0),
+                                     tgt["losses"] - (0 if pl.get("won") else 1), solo_avg)
+            pts_before = points_for(r_before) or 0
+            entry[k] = {"gain": tgt["ratingPoints"] - pts_before, "ratingPoints": tgt["ratingPoints"],
+                        "soloRank": tgt.get("soloRank")}
+        solo_game_stats[str(g.get("id"))] = entry
+
     solo_lookup = {}
     for p in solo:
         solo_lookup.setdefault(norm_key(p["name"]), p)
@@ -1431,6 +1453,7 @@ def main():
         "adhocMapTeams": adhoc_map_teams,
         "nationMapTeams": nation_map_teams,
         "qualifierMapTeams": qualifier_map_teams,
+        "soloGameStats": solo_game_stats,
     }
     os.makedirs(SITE, exist_ok=True)
     with open(os.path.join(SITE, "data.json"), "w", encoding="utf-8") as f:

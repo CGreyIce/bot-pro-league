@@ -642,6 +642,26 @@ span.nat-crest.flag-neutral{border-radius:3px}
 .sqm.up{color:var(--good,#2ee6a6)} .sqm.down{color:var(--accent2,#ff3d64)}
 .sqm.new{color:var(--accent)} .sqm.same{color:var(--muted)}
 .sqsum-foot{padding:10px 16px;font-size:11px;border-top:1px solid var(--border)}
+/* recorded solo-game scoreboard popout (admin) */
+.sq-gamerow{cursor:pointer;transition:background .12s}
+.sq-gamerow:hover{background:rgba(123,92,255,.08)}
+#sqgame-ov{position:fixed;inset:0;z-index:500;background:rgba(4,8,16,.62);backdrop-filter:blur(2px);display:none;align-items:flex-start;justify-content:center;padding:60px 16px 24px;overflow:auto}
+.sqgame-card{width:560px;max-width:100%;background:var(--panel);border:1px solid var(--border2);border-radius:12px;box-shadow:0 24px 60px rgba(0,0,0,.6);overflow:hidden}
+.sqgame-head{display:flex;align-items:flex-start;justify-content:space-between;padding:14px 16px;border-bottom:1px solid var(--border)}
+.sqgame-map{font-family:'Chakra Petch';font-weight:700;font-size:16px;letter-spacing:.5px}
+.sqgame-sub{font-size:11px;margin-top:2px}
+.sqgame-x{background:none;border:none;color:var(--muted);font-size:15px;cursor:pointer;line-height:1;padding:2px 4px}
+.sqgame-x:hover{color:var(--text)}
+.sqgame-body{max-height:60vh;overflow:auto}
+.sqgame-tbl{width:100%}
+.sqgame-tbl th,.sqgame-tbl td{text-align:right;padding:7px 10px;white-space:nowrap}
+.sqgame-tbl th:first-child,.sqgame-tbl td.sg-nm{text-align:left}
+.sqgame-tbl td.sg-nm{display:flex;align-items:center;gap:6px;font-weight:600}
+.sqgame-tbl tr.sg-w td:first-child{box-shadow:inset 3px 0 0 var(--good,#2ee6a6)}
+.sqgame-tbl tr.sg-l td:first-child{box-shadow:inset 3px 0 0 var(--accent2,#ff3d64)}
+.sg-gain{font-family:'Chakra Petch';font-weight:700}
+.sg-gain.up{color:var(--good,#2ee6a6)} .sg-gain.down{color:var(--accent2,#ff3d64)} .sg-gain.same{color:var(--muted)}
+.sqgame-foot{padding:10px 16px;font-size:11px;border-top:1px solid var(--border)}
 #match-card-ov{position:fixed;inset:0;z-index:400;background:rgba(4,8,16,.62);backdrop-filter:blur(2px);display:none;align-items:flex-start;justify-content:center;padding:60px 16px 24px;overflow:auto}
 .mc-card{width:380px;max-width:100%;background:var(--panel);border:1px solid var(--border2);border-radius:12px;box-shadow:0 24px 60px rgba(0,0,0,.6);overflow:hidden}
 .mc-head{position:relative;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;padding:16px 14px 14px;border-bottom:1px solid var(--border)}

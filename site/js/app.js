@@ -2107,14 +2107,23 @@ function generateTeams(players, lockedGroups, groupByCountry=true){
   });
 }
 
+const SOLO_ROWS = 10;                              // a solo game is 5v5 -> default to 10 slots
 function setupSoloAdmin(){
   const wrap = $("#sq-players"); if(!wrap) return;
+  // autocomplete list of every bot in BPL (alphabetical), so any player can be typed quickly
+  let dl = $("#sq-allbots"); if(dl) dl.remove();
+  dl = document.createElement("datalist"); dl.id = "sq-allbots";
+  const seen = new Set(), names = [];
+  allPlayers().forEach(p=>{ const k=normKey(p.name); if(seen.has(k)) return; seen.add(k); names.push(p.name); });
+  names.sort((a,b)=>a.localeCompare(b));
+  dl.innerHTML = names.map(n=>`<option value="${esc(n)}">`).join("");
+  document.body.appendChild(dl);
   const addRow = (name="")=>{
     const row = document.createElement("div");
     row.className = "sq-prow";
     row.style.cssText = "display:flex;gap:4px;margin-bottom:4px";
     row.innerHTML = `
-      <input class="adm-in sq-name" placeholder="Player" value="${esc(name)}" style="flex:2;min-width:0">
+      <input class="adm-in sq-name" list="sq-allbots" autocomplete="off" placeholder="Player" value="${esc(name)}" style="flex:2;min-width:0">
       <input class="adm-in sq-k" type="number" min="0" placeholder="K" style="width:44px" title="Kills">
       <input class="adm-in sq-d" type="number" min="0" placeholder="D" style="width:44px" title="Deaths">
       <input class="adm-in sq-a" type="number" min="0" placeholder="A" style="width:44px" title="Assists">
@@ -2124,7 +2133,7 @@ function setupSoloAdmin(){
     row.querySelector(".sq-rm").onclick = ()=>row.remove();
     wrap.appendChild(row);
   };
-  wrap.innerHTML = ""; addRow(); addRow();
+  wrap.innerHTML = ""; for(let i=0;i<SOLO_ROWS;i++) addRow();
   $("#sq-addrow").onclick = ()=>addRow();
   $("#sq-save").onclick = async ()=>{
     const players = [...wrap.querySelectorAll(".sq-prow")].map(r=>({
@@ -2138,7 +2147,7 @@ function setupSoloAdmin(){
     msg.textContent = "Saving…";
     const before = soloRankSnapshot();                       // solo standings before this game
     const r = await apiPost("/api/solo/add",{map:$("#sq-map").value.trim(), date:$("#sq-date").value, players});
-    if(r.ok){ msg.style.color="var(--good)"; msg.textContent="Saved "+players.length+" players."; $("#sq-map").value=""; wrap.innerHTML=""; addRow(); addRow(); await reloadData(); loadSoloList();
+    if(r.ok){ msg.style.color="var(--good)"; msg.textContent="Saved "+players.length+" players."; $("#sq-map").value=""; wrap.innerHTML=""; for(let i=0;i<SOLO_ROWS;i++) addRow(); await reloadData(); loadSoloList();
       showSoloRankSummary(before, soloRankSnapshot(), players.map(p=>normKey(p.name))); }
     else { msg.style.color="var(--accent2,#ff6b6b)"; msg.textContent = "Error: "+(r.msg||r.error||"failed"); }
   };
@@ -2153,16 +2162,56 @@ async function loadSoloList(){
   box.innerHTML = games.slice().reverse().map(g=>{
     const w = g.players.filter(p=>p.won).map(p=>esc(p.name)).join(", ");
     const l = g.players.filter(p=>!p.won).map(p=>esc(p.name)).join(", ");
-    return `<div class="adm-trow">
+    return `<div class="adm-trow sq-gamerow" data-sologame="${g.id}" title="Click for the scoreboard">
       <span class="muted" style="font-size:11px;min-width:70px">${esc(g.map||"—")}${g.date?" · "+esc(g.date):""}</span>
       <span style="flex:1;font-size:12px"><span class="ae-win">${w||"—"}</span> <span class="muted">def.</span> ${l||"—"}</span>
       <button class="adm-del" data-solodel="${g.id}" title="Delete">✕</button>
     </div>`;
   }).join("");
-  box.querySelectorAll("[data-solodel]").forEach(b=>b.onclick=async ()=>{
+  box.querySelectorAll("[data-sologame]").forEach(row=>row.onclick=e=>{
+    if(e.target.closest("[data-solodel]")) return;               // delete button handles itself
+    const g=games.find(x=>String(x.id)===row.dataset.sologame); if(g) showSoloGameCard(g);
+  });
+  box.querySelectorAll("[data-solodel]").forEach(b=>b.onclick=async e=>{
+    e.stopPropagation();
     if(!confirm("Delete this solo game?")) return;
     await apiPost("/api/solo/delete",{id:+b.dataset.solodel}); await reloadData(); loadSoloList();
   });
+}
+
+// click a recorded solo game -> scoreboard popup (like the pro match card) with each
+// player's stats and the rating-point gain this game earned them.
+function showSoloGameCard(g){
+  const stats=(DATA.soloGameStats||{})[String(g.id)]||{};
+  const info={}; allPlayers().forEach(p=>{ const k=normKey(p.name); if(!info[k]) info[k]=p; });
+  const rows=(g.players||[]).slice().sort((a,b)=> (b.won?1:0)-(a.won?1:0) || b.k-a.k);
+  const line=pl=>{ const k=normKey(pl.name), pi=info[k], st=stats[k]||{};
+    const kd=pl.d?(pl.k/pl.d).toFixed(2):(pl.k).toFixed(2);
+    const gain=st.gain;
+    const gtxt=gain==null?'—':(gain>0?'+'+gain:''+gain), gcls=gain>0?'up':gain<0?'down':'same';
+    const nm = pi&&pi.slug ? `<a href="#/player/${pi.slug}">${esc(pl.name)}</a>` : esc(pl.name);
+    return `<tr class="${pl.won?'sg-w':'sg-l'}">
+      <td class="sg-nm">${pi?flag(pi.iso):''}${nm}</td>
+      <td class="mono">${pl.k}</td><td class="mono">${pl.d}</td><td class="mono">${pl.a}</td>
+      <td class="mono">${kd}</td><td class="mono">${pl.mvp}</td>
+      <td class="mono sg-gain ${gcls}" title="rating points earned from this game">${gtxt}</td></tr>`; };
+  const w=g.players.filter(p=>p.won).length, l=g.players.length-w;
+  let ov=$("#sqgame-ov");
+  if(!ov){ ov=document.createElement("div"); ov.id="sqgame-ov"; document.body.appendChild(ov); }
+  ov.innerHTML=`<div class="sqgame-card">
+      <div class="sqgame-head"><div><div class="sqgame-map">${esc(g.map||"Solo Queue")}</div>
+        <div class="sqgame-sub muted">${g.date?esc(g.date)+" · ":""}${w} won · ${l} lost</div></div>
+        <button class="sqgame-x" aria-label="Close">✕</button></div>
+      <div class="sqgame-body"><table class="data sqgame-tbl"><thead><tr>
+        <th class="no-sort">Player</th><th class="no-sort">K</th><th class="no-sort">D</th><th class="no-sort">A</th>
+        <th class="no-sort">K/D</th><th class="no-sort">MVP</th><th class="no-sort" title="Rating points earned">±Pts</th>
+        </tr></thead><tbody>${rows.map(line).join("")}</tbody></table></div>
+      <div class="sqgame-foot muted">Rating points = how this game moved each player's Solo Queue score.</div></div>`;
+  ov.style.display="flex";
+  const close=()=>{ ov.style.display="none"; };
+  ov.querySelector(".sqgame-x").onclick=close;
+  ov.onclick=e=>{ if(e.target===ov) close(); };
+  document.addEventListener("keydown", function esc2(e){ if(e.key==="Escape"){ close(); document.removeEventListener("keydown", esc2); } });
 }
 
 // snapshot of the solo-queue ranking (rated players, rating desc — mirrors parse.py's solo_ranked)
