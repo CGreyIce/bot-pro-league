@@ -2138,8 +2138,8 @@ function setupSoloAdmin(){
     row.innerHTML = `
       <input class="adm-in sq-name" list="sq-allbots" autocomplete="off" placeholder="Player" value="${esc(name)}" style="flex:2;min-width:0">
       <input class="adm-in sq-k" type="number" min="0" placeholder="K" style="width:42px" title="Kills">
-      <input class="adm-in sq-d" type="number" min="0" placeholder="D" style="width:42px" title="Deaths">
       <input class="adm-in sq-a" type="number" min="0" placeholder="A" style="width:42px" title="Assists">
+      <input class="adm-in sq-d" type="number" min="0" placeholder="D" style="width:42px" title="Deaths">
       <input class="adm-in sq-mvp" type="number" min="0" placeholder="M" style="width:42px" title="MVPs">
       <button class="sq-rm" title="Remove" style="background:none;border:none;color:var(--muted);cursor:pointer">✕</button>`;
     row.querySelector(".sq-rm").onclick = ()=>row.remove();
@@ -2234,7 +2234,7 @@ function showSoloGameCard(g){
     const nm = pi&&pi.slug ? `<a href="#/player/${pi.slug}">${esc(pl.name)}</a>` : esc(pl.name);
     return `<tr class="${pl.won?'sg-w':'sg-l'}">
       <td class="sg-nm">${pi?flag(pi.iso):''}${nm}</td>
-      <td class="mono">${pl.k}</td><td class="mono">${pl.d}</td><td class="mono">${pl.a}</td>
+      <td class="mono">${pl.k}</td><td class="mono">${pl.a}</td><td class="mono">${pl.d}</td>
       <td class="mono">${kd}</td><td class="mono">${pl.mvp}</td>
       <td class="mono sg-gain ${gcls}" title="rating points earned from this game">${gtxt}</td></tr>`; };
   const w=g.players.filter(p=>p.won).length, l=g.players.length-w;
@@ -2245,7 +2245,7 @@ function showSoloGameCard(g){
         <div class="sqgame-sub muted">${g.date?esc(g.date)+" · ":""}${w} won · ${l} lost</div></div>
         <button class="sqgame-x" aria-label="Close">✕</button></div>
       <div class="sqgame-body"><table class="data sqgame-tbl"><thead><tr>
-        <th class="no-sort">Player</th><th class="no-sort">K</th><th class="no-sort">D</th><th class="no-sort">A</th>
+        <th class="no-sort">Player</th><th class="no-sort">K</th><th class="no-sort">A</th><th class="no-sort">D</th>
         <th class="no-sort">K/D</th><th class="no-sort">MVP</th><th class="no-sort" title="Rating points earned">±Pts</th>
         </tr></thead><tbody>${rows.map(line).join("")}</tbody></table></div>
       <div class="sqgame-foot muted">Rating points = how this game moved each player's Solo Queue score.</div></div>`;
