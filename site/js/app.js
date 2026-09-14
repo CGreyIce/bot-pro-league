@@ -2275,7 +2275,9 @@ function soloRandomLineup(n){
 }
 // snapshot of the solo-queue ranking (rated players, rating desc — mirrors parse.py's solo_ranked)
 function soloRankSnapshot(){
-  const rated=(DATA.players.solo||[]).filter(p=>p.rating!=null).slice().sort((a,b)=>b.rating-a.rating);
+  // the WHOLE Solo Queue board (solo-only + pro/amateur who also queue), same as the tab —
+  // not just DATA.players.solo, or games between tournament players would look rank-neutral.
+  const rated=soloLeague().filter(p=>p.rating!=null).slice().sort((a,b)=>b.rating-a.rating);
   const m={}; rated.forEach((p,i)=>{ m[normKey(p.name)]={rank:i+1, name:p.name, iso:p.iso}; });
   return m;
 }
