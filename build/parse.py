@@ -1050,20 +1050,11 @@ def main():
                                     "mapStats": stats, "bestMaps": order[:2],
                                     "worstMaps": [order[-1], order[-2]], "adhoc": True, "event": tr["name"]})
 
-    # A nation team is exactly the squad that won its qualifier (same five players), so it can
-    # inherit that squad's real per-map W/L from the qualifier matches. Ad-hoc squads carry no
-    # team slug (aTeam/bTeam are null), so their records are keyed off the a/b display names.
-    # Match by roster so an all-star pick that differs would fall back to the seeded profile
-    # instead of borrowing the wrong record.
-    _qual_squad_by_roster = {}
-    _qual_map_rec = defaultdict(lambda: defaultdict(lambda: [0, 0]))   # squad name -> map -> [w, l]
+    # Per-map W/L keyed by team DISPLAY NAME, across every event. Ad-hoc and national teams carry
+    # no team slug (aTeam/bTeam are null), so slug-based map_rec above misses them — this keys off
+    # the a/b names instead. Scanned each build, so recording any new game's scoreboard feeds it.
+    _name_map_rec = defaultdict(lambda: defaultdict(lambda: [0, 0]))   # team name -> map -> [w, l]
     for tr in tournaments:
-        if not tr["slug"].startswith("nations-cup-qualifier-"):
-            continue
-        for row in tr.get("attending", []):
-            key = frozenset(pl["slug"] for pl in row.get("players", []) if pl.get("slug"))
-            if key:
-                _qual_squad_by_roster[key] = row["team"]
         mlist = ([m for st in tr.get("stages", []) for rd in st["rounds"] for m in rd["matches"]]
                  if tr.get("stages") else [m for rd in tr.get("bracket", []) for m in rd["matches"]])
         for m in mlist:                              # stages OR bracket, never both (shared objects)
@@ -1073,8 +1064,18 @@ def main():
                 if not cm or sa is None or sb is None or sa == sb:
                     continue
                 a, b = m.get("a"), m.get("b")
-                if a: _qual_map_rec[a][cm][0 if sa > sb else 1] += 1
-                if b: _qual_map_rec[b][cm][1 if sa > sb else 0] += 1
+                if a: _name_map_rec[a][cm][0 if sa > sb else 1] += 1
+                if b: _name_map_rec[b][cm][1 if sa > sb else 0] += 1
+    # A nation team is exactly the squad that won its qualifier (same five players), matched by
+    # roster so an all-star pick that differs falls back to the seeded profile.
+    _qual_squad_by_roster = {}
+    for tr in tournaments:
+        if not tr["slug"].startswith("nations-cup-qualifier-"):
+            continue
+        for row in tr.get("attending", []):
+            key = frozenset(pl["slug"] for pl in row.get("players", []) if pl.get("slug"))
+            if key:
+                _qual_squad_by_roster[key] = row["team"]
 
     # ---- map profiles for Nations Cup national teams (veto "Nation Teams") ----
     nation_map_teams = []
@@ -1091,13 +1092,18 @@ def main():
             for cm in POOL_MAPS:
                 off = (_seed(row["team"] + "|" + cm) % 4200) / 10000.0 - 0.21
                 stats[cm] = {"w": 0, "l": 0, "g": 0, "wr": round(max(0.20, min(0.82, base + off)), 3), "real": False}
-            # overlay the qualifier squad's actual per-map form where it exists
+            # overlay real form: this nation's own games (as "Team X") + the qualifier squad it
+            # was built from. Any future Nations Cup result flows in here on the next rebuild.
+            names = [row["team"]]
             squad = _qual_squad_by_roster.get(frozenset(pl["slug"] for pl in row["players"] if pl.get("slug")))
-            if squad:
-                for cm in POOL_MAPS:
-                    w, l = _qual_map_rec[squad].get(cm, [0, 0]); g = w + l
-                    if g >= 1:
-                        stats[cm] = {"w": w, "l": l, "g": g, "wr": round(w / g, 3), "real": True}
+            if squad and squad != row["team"]:
+                names.append(squad)
+            for cm in POOL_MAPS:
+                w = sum(_name_map_rec[n].get(cm, [0, 0])[0] for n in names)
+                l = sum(_name_map_rec[n].get(cm, [0, 0])[1] for n in names)
+                g = w + l
+                if g >= 1:
+                    stats[cm] = {"w": w, "l": l, "g": g, "wr": round(w / g, 3), "real": True}
             order = sorted(POOL_MAPS, key=lambda cm: (-stats[cm]["wr"], cm))
             nation_map_teams.append({"name": row["team"], "slug": "nation-" + norm_key(row["team"]),
                                      "mapStats": stats, "bestMaps": order[:2],

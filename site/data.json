@@ -406863,9 +406863,9 @@
    "slug": "nation-teamsingapore",
    "mapStats": {
     "Mirage": {
-     "w": 3,
+     "w": 4,
      "l": 0,
-     "g": 3,
+     "g": 4,
      "wr": 1.0,
      "real": true
     },
@@ -406898,10 +406898,10 @@
      "real": false
     },
     "Vertigo": {
-     "w": 1,
+     "w": 2,
      "l": 1,
-     "g": 2,
-     "wr": 0.5,
+     "g": 3,
+     "wr": 0.667,
      "real": true
     },
     "Anubis": {
@@ -406918,7 +406918,7 @@
    ],
    "worstMaps": [
     "Tuscan",
-    "Vertigo"
+    "Inferno"
    ],
    "nation": true
   },
@@ -407824,10 +407824,10 @@
    "mapStats": {
     "Mirage": {
      "w": 0,
-     "l": 0,
-     "g": 0,
-     "wr": 0.458,
-     "real": false
+     "l": 1,
+     "g": 1,
+     "wr": 0.0,
+     "real": true
     },
     "Dust2": {
      "w": 0,
@@ -407859,10 +407859,10 @@
     },
     "Vertigo": {
      "w": 0,
-     "l": 0,
-     "g": 0,
-     "wr": 0.629,
-     "real": false
+     "l": 1,
+     "g": 1,
+     "wr": 0.0,
+     "real": true
     },
     "Anubis": {
      "w": 0,
@@ -407874,11 +407874,11 @@
    },
    "bestMaps": [
     "Dust2",
-    "Vertigo"
+    "Tuscan"
    ],
    "worstMaps": [
-    "Cache",
-    "Inferno"
+    "Vertigo",
+    "Mirage"
    ],
    "nation": true
   }

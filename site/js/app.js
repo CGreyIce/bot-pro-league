@@ -1328,7 +1328,8 @@ function renderMatch(){
 
   const side = (name, slug2, score, win)=>{
     const t = slug2 ? teamBySlug(slug2) : null;
-    const logo = t&&t.logo ? `<img src="${esc(t.logo)}" alt="">` : `<div class="m-noimg">${initials(name||'?')}</div>`;
+    const logo = nationCrest(name, 48)                                   // national teams -> country flag
+      || (t&&t.logo ? `<img src="${esc(t.logo)}" alt="">` : `<div class="m-noimg">${initials(name||'?')}</div>`);
     const nm = name ? (slug2?`<a href="#/team/${slug2}">${esc(name)}</a>`:esc(name)) : '<span class="muted">TBD</span>';
     return `<div class="m-side ${win?'m-win':''}">${logo}<div class="m-name">${nm}</div><div class="m-score">${score!=null?score:'–'}</div></div>`;
   };
