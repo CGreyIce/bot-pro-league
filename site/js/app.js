@@ -1777,6 +1777,9 @@ async function renderAdmin(){
           <button id="sq-addrow" class="adm-btn" style="margin-top:6px;background:var(--panel);border:1px solid var(--border);color:var(--text)">+ Add player</button>
           <button id="sq-save" class="adm-btn" style="margin-top:6px">Save game</button>
           <div id="sq-msg" class="muted" style="font-size:12px;margin-top:8px"></div>
+          <button id="sq-rand" class="adm-btn" style="margin-top:12px;background:var(--panel);border:1px solid var(--border);color:var(--text)" title="Pick 10 players of similar Solo Queue rank and output bot_add lines">🎲 Random balanced lineup (10)</button>
+          <textarea id="sq-randout" class="adm-in" rows="3" readonly placeholder="bot_add lines appear here…" style="margin-top:6px;font-family:monospace;font-size:11px;line-height:1.5" hidden></textarea>
+          <div id="sq-randmsg" class="muted" style="font-size:11px;margin-top:4px"></div>
         </div>
         <div>
           <h3 class="rec-group" style="margin-top:0">Recorded Solo Games</h3>
@@ -2135,6 +2138,15 @@ function setupSoloAdmin(){
   };
   wrap.innerHTML = ""; for(let i=0;i<SOLO_ROWS;i++) addRow();
   $("#sq-addrow").onclick = ()=>addRow();
+  const randBtn=$("#sq-rand");
+  if(randBtn) randBtn.onclick=()=>{
+    const out=$("#sq-randout"), rmsg=$("#sq-randmsg");
+    const line=soloRandomLineup(SOLO_ROWS);
+    if(!line){ out.hidden=false; out.value=""; rmsg.textContent=`Need at least ${SOLO_ROWS} ranked solo players to build a lineup.`; return; }
+    out.hidden=false; out.value=line.str; out.focus(); out.select();
+    let copied=false; try{ copied=document.execCommand("copy"); }catch(e){}
+    rmsg.textContent=(copied?"Copied. ":"")+`${line.rankLo}–${line.rankHi} in Solo Queue · ${line.teams} tagged, ${SOLO_ROWS-line.teams} free agents`;
+  };
   $("#sq-save").onclick = async ()=>{
     const players = [...wrap.querySelectorAll(".sq-prow")].map(r=>({
       name: r.querySelector(".sq-name").value.trim(),
@@ -2214,6 +2226,22 @@ function showSoloGameCard(g){
   document.addEventListener("keydown", function esc2(e){ if(e.key==="Escape"){ close(); document.removeEventListener("keydown", esc2); } });
 }
 
+// bot_add name for a player: team players get "<tag> <name>", free agents just "<name>";
+// anything with a space (a tag, or a two-word name like "narin Mikure") is quoted.
+function soloBotName(p){
+  const t = p.team ? teamByName(p.team) : null;
+  const nm = (t && t.tag) ? `${t.tag} ${p.name}` : p.name;
+  return { text: /\s/.test(nm) ? `"${nm}"` : nm, tagged: !!(t && t.tag) };
+}
+// a random block of n similarly-ranked Solo Queue players -> a bot_add string
+function soloRandomLineup(n){
+  const ranked = soloLeague().filter(p=>p.rating!=null).sort((a,b)=>b.rating-a.rating);
+  if(ranked.length < n) return null;
+  const start = Math.floor(Math.random()*(ranked.length - n + 1));
+  const parts = ranked.slice(start, start+n).map(soloBotName);
+  return { str: parts.map(x=>`bot_add ${x.text};`).join(" "),
+           rankLo: "#"+(start+1), rankHi: "#"+(start+n), teams: parts.filter(x=>x.tagged).length };
+}
 // snapshot of the solo-queue ranking (rated players, rating desc — mirrors parse.py's solo_ranked)
 function soloRankSnapshot(){
   const rated=(DATA.players.solo||[]).filter(p=>p.rating!=null).slice().sort((a,b)=>b.rating-a.rating);
