@@ -704,6 +704,21 @@ def main():
             tgt["assists"] += int(pl.get("a", 0)); tgt["mvp"] += int(pl.get("mvp", 0))
             tgt["wins"] += 1 if pl.get("won") else 0; tgt["losses"] += 0 if pl.get("won") else 1
 
+    # per-player contributions from the MOST RECENT solo game -> drives the solo tab's rank arrows
+    # (the tournament scoreboard equivalent, latest_contrib, is built below for the pro/amateur tabs)
+    solo_contrib = defaultdict(lambda: {"k": 0, "a": 0, "d": 0, "mvp": 0, "w": 0, "l": 0})
+    if solo_sb:
+        latest_solo = max(enumerate(solo_sb), key=lambda t: (t[1].get("date") or "", t[0]))[1]
+        for pl in latest_solo.get("players", []):
+            k = norm_key(pl.get("name", "")); nn = old2new.get(k)
+            tgt = solo_by_name.get(norm_key(nn) if nn else k)
+            if not tgt:
+                continue
+            o = solo_contrib[tgt["slug"]]
+            o["k"] += int(pl.get("k", 0)); o["d"] += int(pl.get("d", 0))
+            o["a"] += int(pl.get("a", 0)); o["mvp"] += int(pl.get("mvp", 0))
+            o["w"] += 1 if pl.get("won") else 0; o["l"] += 0 if pl.get("won") else 1
+
     # ---- ratings (computed AFTER scoreboards are merged into totals) ----
     pro_avg = compute_ratings(pro); am_avg = compute_ratings(amateur); solo_avg = compute_ratings(solo)
 
@@ -732,7 +747,7 @@ def main():
     latest_contrib = scoreboard_contrib(max(sb_matches, key=lambda x: x[0])[1]) if sb_matches else {}
     compute_player_deltas(pro, pro_avg, latest_contrib)
     compute_player_deltas(amateur, am_avg, latest_contrib)
-    compute_player_deltas(solo, solo_avg, latest_contrib)
+    compute_player_deltas(solo, solo_avg, solo_contrib)     # solo arrows follow the last solo game
 
     # ---- fold solo-queue stats into tournament profiles; keep only solo-ONLY players standalone ----
     solo_ranked = sorted([p for p in solo if p.get("rating") is not None], key=lambda p: -p["rating"])
@@ -745,7 +760,8 @@ def main():
         return {"kills": sp["kills"], "deaths": sp["deaths"], "assists": sp["assists"], "mvp": sp["mvp"],
                 "wins": sp["wins"], "losses": sp["losses"], "maps": sp["maps"], "kdr": sp["kdr"],
                 "winrate": sp["winrate"], "rating": sp["rating"], "ratingPoints": sp.get("ratingPoints"),
-                "tier": sp["tier"], "level": sp["level"], "soloRank": sp.get("soloRank"), "soloTotal": len(solo_ranked)}
+                "tier": sp["tier"], "level": sp["level"], "soloRank": sp.get("soloRank"), "soloTotal": len(solo_ranked),
+                "rankDelta": sp.get("rankDelta", 0)}
     tourney_names = {norm_key(p["name"]) for p in pro} | {norm_key(p["name"]) for p in amateur}
     for pool in (pro, amateur):
         for p in pool:

@@ -523,7 +523,7 @@ function renderPlayers(){
   const players = poolList(pool);
   const cols = [
     ["#", (p,i)=>i+1, "rankcol"],
-    ["Player", p=>`<span class="tm-rank">${playerLink(p)}${playersSort.key==="Rating Points"?rankDeltaBadge(p,"their last match"):''}</span>`, "name-cell", p=>p.name],
+    ["Player", p=>`<span class="tm-rank">${playerLink(p)}${playersSort.key==="Rating Points"?rankDeltaBadge(p, pool==="solo"?"their last solo game":"their last match"):''}</span>`, "name-cell", p=>p.name],
     ["Team", p=>teamCell(p.team), "", p=>p.team],
     ["Role", p=>p.role?`<span class="pill role-pill">${esc(p.role)}</span>`:'—', "", p=>p.role],
     ["Rating Points", p=>pointsBadge(p.ratingPoints), "mono", p=>p.ratingPoints==null?-1:p.ratingPoints],
