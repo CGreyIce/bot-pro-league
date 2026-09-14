@@ -1990,6 +1990,7 @@ function amateurShufflePool(){
   const seen = new Set(), pool = [];
   DATA.players.pro.concat(DATA.players.solo||[]).forEach(p=>{
     const k = normKey(p.name); if(seen.has(k)) return; seen.add(k);
+    if(p.iso === "neutral") return;                        // Land of Make Believe (novelty team)
     if(p.team && proTeams.has(normKey(p.team))) return;    // drop players on a pro team
     pool.push(p);
   });
