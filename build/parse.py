@@ -310,7 +310,59 @@ def _rating_value(kills, deaths, assists, mvp, wins, losses, avg):
     return (WEIGHTS["kdr"] * r_kdr + WEIGHTS["kpm"] * r_kpm +
             WEIGHTS["mvppm"] * r_mvp + WEIGHTS["apm"] * r_apm + WEIGHTS["wr"] * r_wr)
 
-def compute_player_deltas(players, avg, contrib):
+# ---------- Solo Queue rating (different philosophy from the tournament pools) ----------
+# Win rate is the primary driver, made trustworthy by volume (win rate counts more the more
+# maps you've played), but GATED by individual fragging so a weak fragger can't reach the top
+# no matter how many games they win. Fragging = K/D + kills/map + MVP/map, regressed toward the
+# league mean so a tiny-sample freak line can't game it.
+SOLO_PERF_W = {"kdr": 0.50, "kpm": 0.30, "mvp": 0.20}   # the "did you frag well" composite
+SOLO_WIN_A  = 0.85    # how hard win rate (× volume × frag-gate) moves the rating
+SOLO_PERF_B = 0.14    # small direct fragging reward (separates equal-win-rate players)
+SOLO_KP     = 10.0    # regression pseudo-maps for the fragging composite (tames freak samples)
+SOLO_CWIN   = 15.0    # volume half-weight for win rate: maps/(maps+CWIN) -> more maps count more
+SOLO_GATE_LO, SOLO_GATE_HI = 0.45, 1.35   # frag gate clamp: weak fraggers scale the win bonus down
+def _solo_rating_value(kills, deaths, assists, mvp, wins, losses, avg):
+    """Solo rating from arbitrary totals. `avg` holds pool means {kdr, kpm, mvp}."""
+    maps = wins + losses
+    if maps <= 0 or deaths <= 0:
+        return None
+    perf_raw = (SOLO_PERF_W["kdr"] * ((kills / deaths) / avg["kdr"] if avg["kdr"] else 1)
+              + SOLO_PERF_W["kpm"] * ((kills / maps) / avg["kpm"] if avg["kpm"] else 1)
+              + SOLO_PERF_W["mvp"] * ((mvp / maps) / avg["mvp"] if avg["mvp"] else 1))
+    perf = (maps * perf_raw + SOLO_KP * 1.0) / (maps + SOLO_KP)   # regress toward average
+    gate = max(SOLO_GATE_LO, min(SOLO_GATE_HI, perf))
+    conf = maps / (maps + SOLO_CWIN)                              # volume confidence in the win rate
+    win_dev = (wins / maps) - 0.5                                 # above/below a 50% baseline
+    return 1.0 + SOLO_WIN_A * win_dev * conf * gate + SOLO_PERF_B * (perf - 1.0)
+
+def compute_solo_ratings(players, min_maps=0):
+    """Solo Queue variant of compute_ratings: win-rate-led, volume-rewarded, frag-gated.
+    Players under min_maps stay unrated ('provisional'). Returns pool means {kdr, kpm, mvp}."""
+    for p in players:
+        p["maps"] = p["wins"] + p["losses"]
+        p["kdr"] = round(p["kills"] / p["deaths"], 2) if p["deaths"] else 0.0
+        p["winrate"] = round(p["wins"] / p["maps"], 3) if p["maps"] else 0.0
+    valid = [p for p in players if p["maps"] > 0 and p["deaths"] > 0]
+    def avg(key):
+        vals = [key(p) for p in valid]
+        return sum(vals) / len(vals) if vals else 1.0
+    a = {"kdr": avg(lambda p: p["kdr"]), "kpm": avg(lambda p: p["kills"] / p["maps"]),
+         "mvp": avg(lambda p: p["mvp"] / p["maps"]) or 1.0}
+    for p in players:
+        p["provisional"] = False
+        if p["maps"] <= 0 or (min_maps and p["maps"] < min_maps):
+            p["rating"] = None; p["ratingPoints"] = None; p["tier"] = None; p["level"] = None
+            p["provisional"] = p["maps"] > 0
+            continue
+        rating = _solo_rating_value(p["kills"], p["deaths"], p["assists"], p["mvp"], p["wins"], p["losses"], a)
+        p["rating"] = round(rating, 3)
+        p["ratingPoints"] = points_for(rating)
+        p["tier"] = tier_for(rating)
+        p["level"] = level_for(rating)
+        p["kpm"] = round(p["kills"] / p["maps"], 1)
+    return a
+
+def compute_player_deltas(players, avg, contrib, rating_fn=_rating_value):
     """Set p['rankDelta'] = places moved in the pool's rating order vs. before the most
     recent recorded match (whose per-player stat contributions are in `contrib`)."""
     rated = [p for p in players if p.get("rating") is not None]
@@ -324,8 +376,8 @@ def compute_player_deltas(players, avg, contrib):
         if not c:
             prev_val[p["slug"]] = p["rating"]        # not in the last match -> unchanged
         else:
-            r = _rating_value(p["kills"] - c["k"], p["deaths"] - c["d"], p["assists"] - c["a"],
-                              p["mvp"] - c["mvp"], p["wins"] - c["w"], p["losses"] - c["l"], avg)
+            r = rating_fn(p["kills"] - c["k"], p["deaths"] - c["d"], p["assists"] - c["a"],
+                          p["mvp"] - c["mvp"], p["wins"] - c["w"], p["losses"] - c["l"], avg)
             prev_val[p["slug"]] = r if r is not None else p["rating"]
     prev_order = sorted(rated, key=lambda p: (-prev_val[p["slug"]], cur_rank[p["slug"]]))
     prev_rank = {p["slug"]: i + 1 for i, p in enumerate(prev_order)}
@@ -731,7 +783,7 @@ def main():
     # extreme small-sample K/D would otherwise top the board over a proven high-volume player.
     SOLO_MIN_MAPS = 5
     pro_avg = compute_ratings(pro); am_avg = compute_ratings(amateur)
-    solo_avg = compute_ratings(solo, min_maps=SOLO_MIN_MAPS)
+    solo_avg = compute_solo_ratings(solo, min_maps=SOLO_MIN_MAPS)   # win-rate-led, frag-gated
 
     # ---- player rank movement vs. before the most recent recorded match ----
     def scoreboard_contrib(m):
@@ -758,7 +810,7 @@ def main():
     latest_contrib = scoreboard_contrib(max(sb_matches, key=lambda x: x[0])[1]) if sb_matches else {}
     compute_player_deltas(pro, pro_avg, latest_contrib)
     compute_player_deltas(amateur, am_avg, latest_contrib)
-    compute_player_deltas(solo, solo_avg, solo_contrib)     # solo arrows follow the last solo game
+    compute_player_deltas(solo, solo_avg, solo_contrib, rating_fn=_solo_rating_value)   # solo arrows follow the last solo game
 
     # ---- fold solo-queue stats into tournament profiles; keep only solo-ONLY players standalone ----
     solo_ranked = sorted([p for p in solo if p.get("rating") is not None], key=lambda p: -p["rating"])
@@ -777,10 +829,10 @@ def main():
             tgt = solo_by_name.get(norm_key(nn) if nn else k)
             if not tgt or tgt.get("ratingPoints") is None:
                 continue
-            r_before = _rating_value(tgt["kills"] - int(pl.get("k", 0)), tgt["deaths"] - int(pl.get("d", 0)),
-                                     tgt["assists"] - int(pl.get("a", 0)), tgt["mvp"] - int(pl.get("mvp", 0)),
-                                     tgt["wins"] - (1 if pl.get("won") else 0),
-                                     tgt["losses"] - (0 if pl.get("won") else 1), solo_avg)
+            r_before = _solo_rating_value(tgt["kills"] - int(pl.get("k", 0)), tgt["deaths"] - int(pl.get("d", 0)),
+                                          tgt["assists"] - int(pl.get("a", 0)), tgt["mvp"] - int(pl.get("mvp", 0)),
+                                          tgt["wins"] - (1 if pl.get("won") else 0),
+                                          tgt["losses"] - (0 if pl.get("won") else 1), solo_avg)
             pts_before = points_for(r_before) or 0
             entry[k] = {"gain": tgt["ratingPoints"] - pts_before, "ratingPoints": tgt["ratingPoints"],
                         "soloRank": tgt.get("soloRank")}
