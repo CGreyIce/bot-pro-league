@@ -20987,5 +20987,205 @@
     }
    ]
   }
+ },
+ "bpl-nations-cup-2026": {
+  "1-1": {
+   "maps": [
+    {
+     "map": "Mirage",
+     "scoreA": 13,
+     "scoreB": 4,
+     "players": [
+      {
+       "team": "Team Singapore",
+       "name": "twentyrosie",
+       "k": 20,
+       "a": 1,
+       "d": 9,
+       "mvp": 3,
+       "score": 48
+      },
+      {
+       "team": "Team Singapore",
+       "name": "caturteer",
+       "k": 18,
+       "a": 0,
+       "d": 10,
+       "mvp": 4,
+       "score": 45
+      },
+      {
+       "team": "Team Singapore",
+       "name": "Dirfun",
+       "k": 14,
+       "a": 1,
+       "d": 9,
+       "mvp": 2,
+       "score": 37
+      },
+      {
+       "team": "Team Singapore",
+       "name": "Aranionja",
+       "k": 11,
+       "a": 0,
+       "d": 9,
+       "mvp": 3,
+       "score": 30
+      },
+      {
+       "team": "Team Singapore",
+       "name": "obvMX",
+       "k": 7,
+       "a": 1,
+       "d": 10,
+       "mvp": 1,
+       "score": 19
+      },
+      {
+       "team": "Team Vietnam",
+       "name": "jackgia2002",
+       "k": 15,
+       "a": 1,
+       "d": 13,
+       "mvp": 2,
+       "score": 33
+      },
+      {
+       "team": "Team Vietnam",
+       "name": "FLAVA",
+       "k": 10,
+       "a": 3,
+       "d": 14,
+       "mvp": 0,
+       "score": 27
+      },
+      {
+       "team": "Team Vietnam",
+       "name": "DarkLite",
+       "k": 9,
+       "a": 1,
+       "d": 15,
+       "mvp": 1,
+       "score": 21
+      },
+      {
+       "team": "Team Vietnam",
+       "name": "suoh",
+       "k": 7,
+       "a": 1,
+       "d": 13,
+       "mvp": 0,
+       "score": 17
+      },
+      {
+       "team": "Team Vietnam",
+       "name": "renren.",
+       "k": 6,
+       "a": 1,
+       "d": 15,
+       "mvp": 1,
+       "score": 14
+      }
+     ]
+    },
+    {
+     "map": "Vertigo",
+     "scoreA": 13,
+     "scoreB": 11,
+     "players": [
+      {
+       "team": "Team Singapore",
+       "name": "caturteer",
+       "k": 25,
+       "a": 0,
+       "d": 16,
+       "mvp": 5,
+       "score": 62
+      },
+      {
+       "team": "Team Singapore",
+       "name": "twentyrosie",
+       "k": 20,
+       "a": 2,
+       "d": 16,
+       "mvp": 3,
+       "score": 47
+      },
+      {
+       "team": "Team Singapore",
+       "name": "obvMX",
+       "k": 16,
+       "a": 4,
+       "d": 17,
+       "mvp": 2,
+       "score": 44
+      },
+      {
+       "team": "Team Singapore",
+       "name": "Dirfun",
+       "k": 13,
+       "a": 3,
+       "d": 19,
+       "mvp": 2,
+       "score": 31
+      },
+      {
+       "team": "Team Singapore",
+       "name": "Aranionja",
+       "k": 12,
+       "a": 1,
+       "d": 19,
+       "mvp": 1,
+       "score": 25
+      },
+      {
+       "team": "Team Vietnam",
+       "name": "FLAVA",
+       "k": 24,
+       "a": 0,
+       "d": 17,
+       "mvp": 3,
+       "score": 60
+      },
+      {
+       "team": "Team Vietnam",
+       "name": "renren.",
+       "k": 18,
+       "a": 3,
+       "d": 17,
+       "mvp": 3,
+       "score": 43
+      },
+      {
+       "team": "Team Vietnam",
+       "name": "DarkLite",
+       "k": 15,
+       "a": 1,
+       "d": 17,
+       "mvp": 3,
+       "score": 41
+      },
+      {
+       "team": "Team Vietnam",
+       "name": "suoh",
+       "k": 17,
+       "a": 0,
+       "d": 18,
+       "mvp": 1,
+       "score": 36
+      },
+      {
+       "team": "Team Vietnam",
+       "name": "jackgia2002",
+       "k": 12,
+       "a": 3,
+       "d": 18,
+       "mvp": 1,
+       "score": 34
+      }
+     ]
+    }
+   ]
+  }
  }
 }
