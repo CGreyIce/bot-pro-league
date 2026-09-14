@@ -230,5 +230,6 @@
    }
   }
  ],
- "seeds": {}
+ "seeds": {},
+ "predictionsLocked": true
 }
