@@ -2136,8 +2136,10 @@ function setupSoloAdmin(){
     const msg = $("#sq-msg");
     if(!players.length){ msg.textContent = "Add at least one player."; return; }
     msg.textContent = "Saving…";
+    const before = soloRankSnapshot();                       // solo standings before this game
     const r = await apiPost("/api/solo/add",{map:$("#sq-map").value.trim(), date:$("#sq-date").value, players});
-    if(r.ok){ msg.style.color="var(--good)"; msg.textContent="Saved "+players.length+" players."; $("#sq-map").value=""; wrap.innerHTML=""; addRow(); addRow(); await reloadData(); loadSoloList(); }
+    if(r.ok){ msg.style.color="var(--good)"; msg.textContent="Saved "+players.length+" players."; $("#sq-map").value=""; wrap.innerHTML=""; addRow(); addRow(); await reloadData(); loadSoloList();
+      showSoloRankSummary(before, soloRankSnapshot(), players.map(p=>normKey(p.name))); }
     else { msg.style.color="var(--accent2,#ff6b6b)"; msg.textContent = "Error: "+(r.msg||r.error||"failed"); }
   };
   loadSoloList();
@@ -2161,6 +2163,43 @@ async function loadSoloList(){
     if(!confirm("Delete this solo game?")) return;
     await apiPost("/api/solo/delete",{id:+b.dataset.solodel}); await reloadData(); loadSoloList();
   });
+}
+
+// snapshot of the solo-queue ranking (rated players, rating desc — mirrors parse.py's solo_ranked)
+function soloRankSnapshot(){
+  const rated=(DATA.players.solo||[]).filter(p=>p.rating!=null).slice().sort((a,b)=>b.rating-a.rating);
+  const m={}; rated.forEach((p,i)=>{ m[normKey(p.name)]={rank:i+1, name:p.name, iso:p.iso}; });
+  return m;
+}
+// after a solo scoreboard is recorded, pop out a summary of how the solo-queue ranks moved.
+function showSoloRankSummary(before, after, participantKeys){
+  const parts=participantKeys||[], keys=new Set(parts);
+  Object.keys(after).forEach(k=>{ if(!before[k] || before[k].rank!==after[k].rank) keys.add(k); });
+  Object.keys(before).forEach(k=>{ if(!after[k] || before[k].rank!==after[k].rank) keys.add(k); });
+  const rows=[...keys].map(k=>{
+    const a=after[k], b=before[k]; if(!a) return null;       // no longer rated (won't happen on add)
+    let move, cls;
+    if(!b){ move="NEW"; cls="new"; }
+    else { const d=b.rank-a.rank; if(d>0){move="▲"+d;cls="up";} else if(d<0){move="▼"+(-d);cls="down";} else {move="—";cls="same";} }
+    return {a, b, move, cls, part:parts.includes(k)};
+  }).filter(Boolean).sort((x,y)=>x.a.rank-y.a.rank);
+  const moved=rows.filter(r=>r.cls!=="same").length;
+  const body=rows.map(r=>`<div class="sqsum-row${r.part?' part':''}">
+      <span class="sqsum-rank">#${r.a.rank}</span>
+      <span class="sqsum-name">${flag(r.a.iso)}${esc(r.a.name)}</span>
+      <span class="sqsum-prev">${r.b?"was #"+r.b.rank:"first game"}</span>
+      <span class="sqm ${r.cls}">${r.move}</span></div>`).join("");
+  let ov=$("#sqsum-ov");
+  if(!ov){ ov=document.createElement("div"); ov.id="sqsum-ov"; document.body.appendChild(ov); }
+  ov.innerHTML=`<div class="sqsum-card">
+      <div class="sqsum-head"><span>Solo rank changes</span><button class="sqsum-x" aria-label="Close">✕</button></div>
+      <div class="sqsum-body">${body||'<p class="muted" style="padding:14px">No ranked players affected.</p>'}</div>
+      <div class="sqsum-foot muted">${moved} player${moved===1?"":"s"} moved${rows.length>moved?" · "+(rows.length-moved)+" unchanged":""}</div></div>`;
+  ov.style.display="flex";
+  const close=()=>{ ov.style.display="none"; };
+  ov.querySelector(".sqsum-x").onclick=close;
+  ov.onclick=e=>{ if(e.target===ov) close(); };
+  document.addEventListener("keydown", function esc(e){ if(e.key==="Escape"){ close(); document.removeEventListener("keydown", esc); } });
 }
 
 async function openEditor(slug){

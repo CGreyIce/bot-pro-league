@@ -625,6 +625,23 @@ span.nat-crest.flag-neutral{border-radius:3px}
 .bkt-match,.bmatch{cursor:pointer}
 
 /* HLTV-style match card (click a played bracket match) */
+/* solo-queue rank-change summary popout (admin) */
+#sqsum-ov{position:fixed;inset:0;z-index:500;background:rgba(4,8,16,.62);backdrop-filter:blur(2px);display:none;align-items:flex-start;justify-content:center;padding:70px 16px 24px;overflow:auto}
+.sqsum-card{width:440px;max-width:100%;background:var(--panel);border:1px solid var(--border2);border-radius:12px;box-shadow:0 24px 60px rgba(0,0,0,.6);overflow:hidden}
+.sqsum-head{display:flex;align-items:center;justify-content:space-between;padding:13px 16px;border-bottom:1px solid var(--border);font-family:'Chakra Petch';font-weight:700;letter-spacing:.5px}
+.sqsum-x{background:none;border:none;color:var(--muted);font-size:15px;cursor:pointer;line-height:1;padding:2px 4px}
+.sqsum-x:hover{color:var(--text)}
+.sqsum-body{max-height:58vh;overflow:auto}
+.sqsum-row{display:flex;align-items:center;gap:10px;padding:8px 16px;border-bottom:1px solid rgba(255,255,255,.05)}
+.sqsum-row:last-child{border-bottom:0}
+.sqsum-row.part{background:rgba(123,92,255,.09)}
+.sqsum-rank{font-family:'Chakra Petch';font-weight:700;color:var(--muted);min-width:40px}
+.sqsum-name{flex:1;display:flex;align-items:center;gap:6px;min-width:0;font-weight:600}
+.sqsum-prev{font-size:11px;color:var(--muted);white-space:nowrap}
+.sqm{font-family:'Chakra Petch';font-weight:700;font-size:12px;min-width:46px;text-align:right}
+.sqm.up{color:var(--good,#2ee6a6)} .sqm.down{color:var(--accent2,#ff3d64)}
+.sqm.new{color:var(--accent)} .sqm.same{color:var(--muted)}
+.sqsum-foot{padding:10px 16px;font-size:11px;border-top:1px solid var(--border)}
 #match-card-ov{position:fixed;inset:0;z-index:400;background:rgba(4,8,16,.62);backdrop-filter:blur(2px);display:none;align-items:flex-start;justify-content:center;padding:60px 16px 24px;overflow:auto}
 .mc-card{width:380px;max-width:100%;background:var(--panel);border:1px solid var(--border2);border-radius:12px;box-shadow:0 24px 60px rgba(0,0,0,.6);overflow:hidden}
 .mc-head{position:relative;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;padding:16px 14px 14px;border-bottom:1px solid var(--border)}
