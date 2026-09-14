@@ -1799,7 +1799,7 @@ async function renderAdmin(){
     </div>
     <div class="adm-shuffle" style="margin-top:26px">
       <h2 class="section-title"><span class="accent-bar"></span>Amateur Team Shuffler</h2>
-      <p class="muted" style="font-size:12px;margin:-4px 0 12px">Shuffles all <strong>${DATA.players.pro.length}</strong> tournament players into teams of 5. Each team gets 1 IGL + 1 Awper first (scarce roles spread as far as they go), then fills by shared country/region. Nothing is saved — this is a scratch tool.</p>
+      <p class="muted" style="font-size:12px;margin:-4px 0 12px">Shuffles all <strong>${amateurShufflePool().length}</strong> non-pro players (everyone except the ${DATA.teams.filter(t=>!t.provisional).length} ranked pro teams, incl. solo-queue-only players) into teams of 5. Each team gets 1 IGL + 1 Awper first (scarce roles spread as far as they go), then fills by shared country/region. Nothing is saved — this is a scratch tool.</p>
       <div class="profile-grid" style="grid-template-columns:360px 1fr">
         <div class="infobox" style="padding:14px">
           <div class="ib-title" style="margin:-14px -14px 12px">Locked Groups</div>
@@ -1983,11 +1983,23 @@ function renderVetoResult(A,B,fmt,res){
   </div>`;
 }
 
+// the shuffler works on AMATEURS only: everyone (tournament pool + solo-queue-only players)
+// except the players signed to one of the ranked pro teams.
+function amateurShufflePool(){
+  const proTeams = new Set(DATA.teams.filter(t=>!t.provisional).map(t=>normKey(t.name)));
+  const seen = new Set(), pool = [];
+  DATA.players.pro.concat(DATA.players.solo||[]).forEach(p=>{
+    const k = normKey(p.name); if(seen.has(k)) return; seen.add(k);
+    if(p.team && proTeams.has(normKey(p.team))) return;    // drop players on a pro team
+    pool.push(p);
+  });
+  return pool;
+}
 function setupShuffler(){
   const go = $("#shf-go"); if(!go) return;
   const parseLocks = ()=>{
     const norm = s => (s||"").toLowerCase().replace(/[^a-z0-9]/g,"");
-    const known = {}; DATA.players.pro.forEach(p=>known[norm(p.name)]=p.name);
+    const known = {}; amateurShufflePool().forEach(p=>known[norm(p.name)]=p.name);
     const lines = ($("#shf-locks").value||"").split("\n").map(l=>l.trim()).filter(Boolean);
     const groups=[], unknown=[];
     lines.forEach(l=>{
@@ -2003,7 +2015,7 @@ function setupShuffler(){
   $("#shf-locks").oninput = parseLocks;
   go.onclick = ()=>{
     const groups = parseLocks();
-    lastShuffle = generateTeams(DATA.players.pro, groups, $("#shf-country").checked);
+    lastShuffle = generateTeams(amateurShufflePool(), groups, $("#shf-country").checked);
     renderShuffleResult(lastShuffle);
     const noAwp = lastShuffle.filter(t=>t.missingAwp).length, noIGL = lastShuffle.filter(t=>t.missingIGL).length;
     $("#shf-msg").innerHTML = `${lastShuffle.length} teams generated.` +
