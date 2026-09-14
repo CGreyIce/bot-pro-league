@@ -1772,10 +1772,20 @@ async function renderAdmin(){
             <div style="flex:1"><label class="adm-l">Map (optional)</label><input id="sq-map" class="adm-in" placeholder="Dust2"></div>
             <div style="flex:1"><label class="adm-l">Date</label><input id="sq-date" class="adm-in" type="date"></div>
           </div>
-          <label class="adm-l">Players</label>
-          <div id="sq-players"></div>
-          <button id="sq-addrow" class="adm-btn" style="margin-top:6px;background:var(--panel);border:1px solid var(--border);color:var(--text)">+ Add player</button>
-          <button id="sq-save" class="adm-btn" style="margin-top:6px">Save game</button>
+          <label class="adm-l">Score</label>
+          <div class="sq-scorebar">
+            <input id="sq-score-a" class="adm-in sq-score" type="number" min="0" placeholder="13" title="Team A rounds">
+            <span class="sq-vs">–</span>
+            <input id="sq-score-b" class="adm-in sq-score" type="number" min="0" placeholder="0" title="Team B rounds">
+            <span class="muted" style="font-size:11px">winner is set automatically</span>
+          </div>
+          <div class="sq-team-h" id="sq-th-a"><span>Team A</span><span class="sq-th-badge" id="sq-badge-a"></span></div>
+          <div id="sq-players-a"></div>
+          <button class="adm-btn sq-teamadd" data-team="a" style="margin-top:4px;background:var(--panel);border:1px solid var(--border);color:var(--text);font-size:11px;padding:3px 8px">+ add</button>
+          <div class="sq-team-h" id="sq-th-b" style="margin-top:12px"><span>Team B</span><span class="sq-th-badge" id="sq-badge-b"></span></div>
+          <div id="sq-players-b"></div>
+          <button class="adm-btn sq-teamadd" data-team="b" style="margin-top:4px;background:var(--panel);border:1px solid var(--border);color:var(--text);font-size:11px;padding:3px 8px">+ add</button>
+          <button id="sq-save" class="adm-btn" style="margin-top:10px">Save game</button>
           <div id="sq-msg" class="muted" style="font-size:12px;margin-top:8px"></div>
           <button id="sq-rand" class="adm-btn" style="margin-top:12px;background:var(--panel);border:1px solid var(--border);color:var(--text)" title="Pick 10 players of similar Solo Queue rank and output bot_add lines">🎲 Random balanced lineup (10)</button>
           <textarea id="sq-randout" class="adm-in" rows="3" readonly placeholder="bot_add lines appear here…" style="margin-top:6px;font-family:monospace;font-size:11px;line-height:1.5" hidden></textarea>
@@ -2110,9 +2120,9 @@ function generateTeams(players, lockedGroups, groupByCountry=true){
   });
 }
 
-const SOLO_ROWS = 10;                              // a solo game is 5v5 -> default to 10 slots
+const SOLO_HALF = 5;                               // a solo game is 5v5
 function setupSoloAdmin(){
-  const wrap = $("#sq-players"); if(!wrap) return;
+  const teamA=$("#sq-players-a"), teamB=$("#sq-players-b"); if(!teamA||!teamB) return;
   // autocomplete list of every bot in BPL (alphabetical), so any player can be typed quickly
   let dl = $("#sq-allbots"); if(dl) dl.remove();
   dl = document.createElement("datalist"); dl.id = "sq-allbots";
@@ -2121,45 +2131,65 @@ function setupSoloAdmin(){
   names.sort((a,b)=>a.localeCompare(b));
   dl.innerHTML = names.map(n=>`<option value="${esc(n)}">`).join("");
   document.body.appendChild(dl);
-  const addRow = (name="")=>{
+  const addRow = (container, name="")=>{
     const row = document.createElement("div");
     row.className = "sq-prow";
     row.style.cssText = "display:flex;gap:4px;margin-bottom:4px";
     row.innerHTML = `
       <input class="adm-in sq-name" list="sq-allbots" autocomplete="off" placeholder="Player" value="${esc(name)}" style="flex:2;min-width:0">
-      <input class="adm-in sq-k" type="number" min="0" placeholder="K" style="width:44px" title="Kills">
-      <input class="adm-in sq-d" type="number" min="0" placeholder="D" style="width:44px" title="Deaths">
-      <input class="adm-in sq-a" type="number" min="0" placeholder="A" style="width:44px" title="Assists">
-      <input class="adm-in sq-mvp" type="number" min="0" placeholder="M" style="width:44px" title="MVPs">
-      <label style="display:flex;align-items:center;gap:2px;font-size:11px" title="Won?"><input type="checkbox" class="sq-won">W</label>
+      <input class="adm-in sq-k" type="number" min="0" placeholder="K" style="width:42px" title="Kills">
+      <input class="adm-in sq-d" type="number" min="0" placeholder="D" style="width:42px" title="Deaths">
+      <input class="adm-in sq-a" type="number" min="0" placeholder="A" style="width:42px" title="Assists">
+      <input class="adm-in sq-mvp" type="number" min="0" placeholder="M" style="width:42px" title="MVPs">
       <button class="sq-rm" title="Remove" style="background:none;border:none;color:var(--muted);cursor:pointer">✕</button>`;
     row.querySelector(".sq-rm").onclick = ()=>row.remove();
-    wrap.appendChild(row);
+    container.appendChild(row);
   };
-  wrap.innerHTML = ""; for(let i=0;i<SOLO_ROWS;i++) addRow();
-  $("#sq-addrow").onclick = ()=>addRow();
+  const fillTeams = (a=[], b=[])=>{ teamA.innerHTML=""; teamB.innerHTML="";
+    for(let i=0;i<SOLO_HALF;i++) addRow(teamA, a[i]||"");
+    for(let i=0;i<SOLO_HALF;i++) addRow(teamB, b[i]||""); };
+  fillTeams();
+  document.querySelectorAll(".sq-teamadd").forEach(b=>b.onclick=()=>addRow(b.dataset.team==="a"?teamA:teamB));
+  // match score -> which side won (drives the header badges and the saved won/lost flags)
+  const thA=$("#sq-th-a"), thB=$("#sq-th-b"), badgeA=$("#sq-badge-a"), badgeB=$("#sq-badge-b");
+  const winnerA=()=>{ const av=$("#sq-score-a").value, bv=$("#sq-score-b").value;
+    if(av===""||bv==="") return null; const sa=+av, sb=+bv; return sa===sb ? "tie" : sa>sb; };
+  const updateWin=()=>{ const w=winnerA();
+    thA.className="sq-team-h"; thB.className="sq-team-h"; badgeA.textContent=""; badgeB.textContent=""; badgeA.className="sq-th-badge"; badgeB.className="sq-th-badge";
+    if(w==="tie"){ badgeA.textContent="tie — no winner"; badgeA.classList.add("tie"); return; }
+    if(w===null) return;
+    thA.classList.add(w?"win":"lose"); thB.classList.add(w?"lose":"win");
+    badgeA.textContent=w?"WON":"LOST"; badgeB.textContent=w?"LOST":"WON"; };
+  $("#sq-score-a").oninput=updateWin; $("#sq-score-b").oninput=updateWin;
+  // random balanced lineup -> fill both teams AND output the bot_add string
   const randBtn=$("#sq-rand");
   if(randBtn) randBtn.onclick=()=>{
     const out=$("#sq-randout"), rmsg=$("#sq-randmsg");
-    const line=soloRandomLineup(SOLO_ROWS);
-    if(!line){ out.hidden=false; out.value=""; rmsg.textContent=`Need at least ${SOLO_ROWS} ranked solo players to build a lineup.`; return; }
+    const line=soloRandomLineup(SOLO_HALF*2);
+    if(!line){ out.hidden=false; out.value=""; rmsg.textContent=`Need at least ${SOLO_HALF*2} ranked solo players to build a lineup.`; return; }
+    fillTeams(line.names.slice(0,SOLO_HALF), line.names.slice(SOLO_HALF));
     out.hidden=false; out.value=line.str; out.focus(); out.select();
     let copied=false; try{ copied=document.execCommand("copy"); }catch(e){}
-    rmsg.textContent=(copied?"Copied. ":"")+`${line.rankLo}–${line.rankHi} in Solo Queue · ${line.teams} tagged, ${SOLO_ROWS-line.teams} free agents`;
+    rmsg.textContent=(copied?"Copied. ":"")+`${line.rankLo}–${line.rankHi} in Solo Queue · filled both teams`;
   };
   $("#sq-save").onclick = async ()=>{
-    const players = [...wrap.querySelectorAll(".sq-prow")].map(r=>({
+    const msg = $("#sq-msg");
+    const av=$("#sq-score-a").value, bv=$("#sq-score-b").value, sa=+av, sb=+bv;
+    if(av===""||bv===""||sa===sb){ msg.style.color="var(--accent2,#ff6b6b)"; msg.textContent="Enter a score with a winner (no ties)."; return; }
+    const aWon=sa>sb;
+    const collect=(container,won)=>[...container.querySelectorAll(".sq-prow")].map(r=>({
       name: r.querySelector(".sq-name").value.trim(),
       k: +r.querySelector(".sq-k").value||0, d: +r.querySelector(".sq-d").value||0,
-      a: +r.querySelector(".sq-a").value||0, mvp: +r.querySelector(".sq-mvp").value||0,
-      won: r.querySelector(".sq-won").checked,
+      a: +r.querySelector(".sq-a").value||0, mvp: +r.querySelector(".sq-mvp").value||0, won
     })).filter(p=>p.name);
-    const msg = $("#sq-msg");
-    if(!players.length){ msg.textContent = "Add at least one player."; return; }
-    msg.textContent = "Saving…";
+    const players=[...collect(teamA,aWon), ...collect(teamB,!aWon)];
+    if(!players.length){ msg.style.color="var(--accent2,#ff6b6b)"; msg.textContent="Add at least one player."; return; }
+    msg.style.color=""; msg.textContent = "Saving…";
     const before = soloRankSnapshot();                       // solo standings before this game
     const r = await apiPost("/api/solo/add",{map:$("#sq-map").value.trim(), date:$("#sq-date").value, players});
-    if(r.ok){ msg.style.color="var(--good)"; msg.textContent="Saved "+players.length+" players."; $("#sq-map").value=""; wrap.innerHTML=""; for(let i=0;i<SOLO_ROWS;i++) addRow(); await reloadData(); loadSoloList();
+    if(r.ok){ msg.style.color="var(--good)"; msg.textContent="Saved "+players.length+" players.";
+      $("#sq-map").value=""; $("#sq-score-a").value=""; $("#sq-score-b").value=""; updateWin(); fillTeams();
+      await reloadData(); loadSoloList();
       showSoloRankSummary(before, soloRankSnapshot(), players.map(p=>normKey(p.name))); }
     else { msg.style.color="var(--accent2,#ff6b6b)"; msg.textContent = "Error: "+(r.msg||r.error||"failed"); }
   };
@@ -2238,8 +2268,9 @@ function soloRandomLineup(n){
   const ranked = soloLeague().filter(p=>p.rating!=null).sort((a,b)=>b.rating-a.rating);
   if(ranked.length < n) return null;
   const start = Math.floor(Math.random()*(ranked.length - n + 1));
-  const parts = ranked.slice(start, start+n).map(soloBotName);
-  return { str: parts.map(x=>`bot_add ${x.text};`).join(" "),
+  const pick = ranked.slice(start, start+n);
+  const parts = pick.map(soloBotName);
+  return { str: parts.map(x=>`bot_add ${x.text};`).join(" "), names: pick.map(p=>p.name),
            rankLo: "#"+(start+1), rankHi: "#"+(start+n), teams: parts.filter(x=>x.tagged).length };
 }
 // snapshot of the solo-queue ranking (rated players, rating desc — mirrors parse.py's solo_ranked)

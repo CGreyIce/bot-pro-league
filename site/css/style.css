@@ -642,6 +642,17 @@ span.nat-crest.flag-neutral{border-radius:3px}
 .sqm.up{color:var(--good,#2ee6a6)} .sqm.down{color:var(--accent2,#ff3d64)}
 .sqm.new{color:var(--accent)} .sqm.same{color:var(--muted)}
 .sqsum-foot{padding:10px 16px;font-size:11px;border-top:1px solid var(--border)}
+/* solo game entry: score bar + split team headers (admin) */
+.sq-scorebar{display:flex;align-items:center;gap:8px;margin-bottom:12px}
+.sq-score{width:56px;text-align:center;font-family:'Chakra Petch';font-weight:700}
+.sq-vs{color:var(--muted);font-weight:700}
+.sq-team-h{display:flex;align-items:center;gap:8px;font-family:'Chakra Petch';font-weight:700;font-size:13px;letter-spacing:.5px;padding:5px 8px;border-radius:6px;border-left:3px solid var(--border);margin-bottom:6px;background:var(--panel2)}
+.sq-team-h.win{border-left-color:var(--good,#2ee6a6)}
+.sq-team-h.lose{border-left-color:var(--accent2,#ff3d64);opacity:.75}
+.sq-th-badge{font-size:10px;font-weight:700;letter-spacing:.5px}
+.sq-team-h.win .sq-th-badge{color:var(--good,#2ee6a6)}
+.sq-team-h.lose .sq-th-badge{color:var(--accent2,#ff3d64)}
+.sq-th-badge.tie{color:var(--accent2,#ff3d64)}
 /* recorded solo-game scoreboard popout (admin) */
 .sq-gamerow{cursor:pointer;transition:background .12s}
 .sq-gamerow:hover{background:rgba(123,92,255,.08)}
