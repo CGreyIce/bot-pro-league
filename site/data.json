@@ -329,7 +329,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.014,
-     "ratingPoints": 1204,
+     "ratingPoints": 1203,
      "tier": "Emerald",
      "level": 6,
      "kpm": 14.6,
@@ -4341,7 +4341,7 @@
       "kdr": 0.93,
       "winrate": 0.833,
       "rating": 1.075,
-      "ratingPoints": 1443,
+      "ratingPoints": 1442,
       "tier": "Master",
       "level": 7,
       "soloRank": 23,
@@ -5920,7 +5920,7 @@
       "kdr": 1.14,
       "winrate": 0.429,
       "rating": 0.987,
-      "ratingPoints": 1101,
+      "ratingPoints": 1100,
       "tier": "Gold",
       "level": 5,
       "soloRank": 140,
@@ -7475,7 +7475,7 @@
      "iso": "au",
      "provisional": false,
      "rating": 1.051,
-     "ratingPoints": 1349,
+     "ratingPoints": 1348,
      "tier": "Diamond",
      "level": 6,
      "kpm": 14.5,
@@ -7929,7 +7929,7 @@
      "iso": "my",
      "provisional": false,
      "rating": 1.029,
-     "ratingPoints": 1264,
+     "ratingPoints": 1263,
      "tier": "Diamond",
      "level": 6,
      "kpm": 14.7,
@@ -9494,7 +9494,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.134,
-     "ratingPoints": 1673,
+     "ratingPoints": 1672,
      "tier": "Champion",
      "level": 8,
      "kpm": 17.7,
@@ -9518,7 +9518,7 @@
       "rankDelta": 0,
       "provisional": false
      },
-     "bio": "SanCtuary is one of the highest-rated players in the league, a Singaporean in-game leader who has turned Artisian into a genuine contender. A Level 8 at 1673 points, he marries elite individual form with the responsibility of calling — a rare combination — and already owns a BPL Challengers Stage title from 2022.",
+     "bio": "SanCtuary is one of the highest-rated players in the league, a Singaporean in-game leader who has turned Artisian into a genuine contender. A Level 8 at 1672 points, he marries elite individual form with the responsibility of calling — a rare combination — and already owns a BPL Challengers Stage title from 2022.",
      "gender": "M",
      "teamHistory": [
       {
@@ -10563,7 +10563,7 @@
       "kdr": 0.95,
       "winrate": 0.429,
       "rating": 0.981,
-      "ratingPoints": 1075,
+      "ratingPoints": 1074,
       "tier": "Gold",
       "level": 5,
       "soloRank": 146,
@@ -12821,7 +12821,7 @@
      "tier": "Silver",
      "level": 4,
      "kpm": 14.7,
-     "rankDelta": -23,
+     "rankDelta": 0,
      "bio": "Sayucchi is a Level 4 rifler for Neverland, a Dutch fragger with a winning record and a rare European passport in the roster.",
      "gender": "F",
      "teamHistory": [
@@ -20100,7 +20100,7 @@
       "kdr": 0.95,
       "winrate": 0.875,
       "rating": 1.105,
-      "ratingPoints": 1561,
+      "ratingPoints": 1560,
       "tier": "Champion",
       "level": 8,
       "soloRank": 9,
@@ -24446,7 +24446,7 @@
      "iso": "my",
      "provisional": false,
      "rating": 1.05,
-     "ratingPoints": 1347,
+     "ratingPoints": 1346,
      "tier": "Diamond",
      "level": 6,
      "kpm": 16.5,
@@ -24677,7 +24677,7 @@
       "kdr": 1.02,
       "winrate": 0.333,
       "rating": 0.949,
-      "ratingPoints": 953,
+      "ratingPoints": 952,
       "tier": "Silver",
       "level": 4,
       "soloRank": 190,
@@ -25627,7 +25627,7 @@
       "ratingPoints": 1066,
       "tier": "Gold",
       "level": 5,
-      "soloRank": 158,
+      "soloRank": 157,
       "soloTotal": 232,
       "rankDelta": 0,
       "provisional": false
@@ -26321,7 +26321,7 @@
       "kdr": 0.71,
       "winrate": 0.5,
       "rating": 0.99,
-      "ratingPoints": 1110,
+      "ratingPoints": 1109,
       "tier": "Gold",
       "level": 5,
       "soloRank": 134,
@@ -26982,7 +26982,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.023,
+     "rating": 1.022,
      "ratingPoints": 1238,
      "tier": "Emerald",
      "level": 6,
@@ -32920,7 +32920,7 @@
       "kdr": 0.89,
       "winrate": 0.2,
       "rating": 0.938,
-      "ratingPoints": 908,
+      "ratingPoints": 907,
       "tier": "Bronze",
       "level": 4,
       "soloRank": 198,
@@ -33996,7 +33996,7 @@
      "iso": "my",
      "provisional": false,
      "rating": 0.98,
-     "ratingPoints": 1073,
+     "ratingPoints": 1072,
      "tier": "Gold",
      "level": 5,
      "kpm": 14.3,
@@ -37758,7 +37758,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.04,
-     "ratingPoints": 1307,
+     "ratingPoints": 1306,
      "tier": "Diamond",
      "level": 6,
      "kpm": 15.5,
@@ -41328,7 +41328,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.092,
-     "ratingPoints": 1509,
+     "ratingPoints": 1508,
      "tier": "Grandmaster",
      "level": 7,
      "kpm": 17.2,
@@ -44324,7 +44324,7 @@
       "kdr": 1.09,
       "winrate": 0.5,
       "rating": 1.017,
-      "ratingPoints": 1217,
+      "ratingPoints": 1216,
       "tier": "Emerald",
       "level": 6,
       "soloRank": 96,
@@ -46714,7 +46714,7 @@
       "kdr": 0.75,
       "winrate": 0.417,
       "rating": 0.958,
-      "ratingPoints": 987,
+      "ratingPoints": 986,
       "tier": "Silver",
       "level": 4,
       "soloRank": 183,
@@ -48167,17 +48167,17 @@
      "name": "Uzuhii",
      "team": "Setting Sun",
      "pool": "pro",
-     "kills": 508,
-     "assists": 87,
-     "deaths": 472,
-     "mvp": 67,
-     "kdr": 1.08,
+     "kills": 551,
+     "assists": 91,
+     "deaths": 504,
+     "mvp": 74,
+     "kdr": 1.09,
      "wins": 17,
-     "losses": 14,
-     "winrate": 0.548,
+     "losses": 16,
+     "winrate": 0.515,
      "ot": 1,
      "role": "Rifler",
-     "maps": 31,
+     "maps": 33,
      "orig_rank": "Emerald",
      "orig_level": "Level 5",
      "orig_rating": 2041.0,
@@ -48185,13 +48185,13 @@
      "nat": "Philippines",
      "iso": "ph",
      "provisional": false,
-     "rating": 1.053,
-     "ratingPoints": 1355,
-     "tier": "Diamond",
+     "rating": 1.06,
+     "ratingPoints": 1384,
+     "tier": "Master",
      "level": 7,
-     "kpm": 16.4,
-     "rankDelta": 0,
-     "bio": "Uzuhii is a Level 7 rifler for Setting Sun, a Filipino with over 508 career kills and a steady hand for a competitive roster.",
+     "kpm": 16.7,
+     "rankDelta": 12,
+     "bio": "Uzuhii is a Level 7 rifler for Setting Sun, a Filipino with over 551 career kills and a steady hand for a competitive roster.",
      "gender": "M",
      "teamHistory": [
       {
@@ -48652,7 +48652,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 0.999,
-     "ratingPoints": 1147,
+     "ratingPoints": 1146,
      "tier": "Platinum",
      "level": 5,
      "kpm": 14.9,
@@ -50879,7 +50879,7 @@
      "iso": "my",
      "provisional": false,
      "rating": 0.909,
-     "ratingPoints": 794,
+     "ratingPoints": 793,
      "tier": "Iron",
      "level": 3,
      "kpm": 13.4,
@@ -51857,7 +51857,7 @@
       "ratingPoints": 1065,
       "tier": "Gold",
       "level": 5,
-      "soloRank": 157,
+      "soloRank": 156,
       "soloTotal": 232,
       "rankDelta": 0,
       "provisional": false
@@ -54295,7 +54295,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.035,
-     "ratingPoints": 1287,
+     "ratingPoints": 1286,
      "tier": "Diamond",
      "level": 6,
      "kpm": 15.4,
@@ -55110,7 +55110,7 @@
       "ratingPoints": 1063,
       "tier": "Gold",
       "level": 5,
-      "soloRank": 160,
+      "soloRank": 159,
       "soloTotal": 232,
       "rankDelta": 0,
       "provisional": false
@@ -57733,7 +57733,7 @@
      "iso": "fr",
      "provisional": false,
      "rating": 0.947,
-     "ratingPoints": 944,
+     "ratingPoints": 943,
      "tier": "Silver",
      "level": 4,
      "kpm": 13.3,
@@ -58571,9 +58571,9 @@
      "iso": "us",
      "provisional": false,
      "rating": 1.098,
-     "ratingPoints": 1531,
+     "ratingPoints": 1530,
      "tier": "Grandmaster",
-     "level": 8,
+     "level": 7,
      "kpm": 16.5,
      "rankDelta": 0,
      "soloStats": {
@@ -58595,7 +58595,7 @@
       "rankDelta": 0,
       "provisional": false
      },
-     "bio": "Illus is an American in-game leader for Kiedz, a Level 8 caller whose 1.14 K/D shows he can still frag while running the show. A winner of BPL Tournament Minor 5, he brings both structure and steel to the roster.",
+     "bio": "Illus is an American in-game leader for Kiedz, a Level 7 caller whose 1.14 K/D shows he can still frag while running the show. A winner of BPL Tournament Minor 5, he brings both structure and steel to the roster.",
      "gender": "M",
      "teamHistory": [
       {
@@ -58882,7 +58882,7 @@
       "kdr": 1.24,
       "winrate": 0.583,
       "rating": 1.06,
-      "ratingPoints": 1386,
+      "ratingPoints": 1385,
       "tier": "Master",
       "level": 7,
       "soloRank": 38,
@@ -59219,7 +59219,7 @@
       "kdr": 0.93,
       "winrate": 0.5,
       "rating": 1.0,
-      "ratingPoints": 1149,
+      "ratingPoints": 1148,
       "tier": "Platinum",
       "level": 5,
       "soloRank": 120,
@@ -60854,7 +60854,7 @@
       "kdr": 0.98,
       "winrate": 0.667,
       "rating": 1.043,
-      "ratingPoints": 1318,
+      "ratingPoints": 1317,
       "tier": "Diamond",
       "level": 6,
       "soloRank": 53,
@@ -63680,7 +63680,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.077,
-     "ratingPoints": 1451,
+     "ratingPoints": 1450,
      "tier": "Master",
      "level": 7,
      "kpm": 16.3,
@@ -66990,7 +66990,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 0.924,
+     "rating": 0.923,
      "ratingPoints": 852,
      "tier": "Bronze",
      "level": 3,
@@ -73560,11 +73560,11 @@
       "maps": 13,
       "kdr": 0.87,
       "winrate": 0.462,
-      "rating": 0.978,
+      "rating": 0.977,
       "ratingPoints": 1062,
       "tier": "Gold",
       "level": 5,
-      "soloRank": 156,
+      "soloRank": 160,
       "soloTotal": 232,
       "rankDelta": 0,
       "provisional": false
@@ -76038,7 +76038,7 @@
       "kdr": 1.28,
       "winrate": 0.938,
       "rating": 1.261,
-      "ratingPoints": 2167,
+      "ratingPoints": 2166,
       "tier": "Champion",
       "level": 10,
       "soloRank": 1,
@@ -81084,17 +81084,17 @@
      "name": "minMaXXer",
      "team": "99Lives",
      "pool": "pro",
-     "kills": 365,
-     "assists": 83,
-     "deaths": 364,
-     "mvp": 51,
-     "kdr": 1.0,
+     "kills": 399,
+     "assists": 87,
+     "deaths": 392,
+     "mvp": 54,
+     "kdr": 1.02,
      "wins": 15,
-     "losses": 10,
-     "winrate": 0.6,
+     "losses": 12,
+     "winrate": 0.556,
      "ot": 0,
      "role": "Rifler",
-     "maps": 25,
+     "maps": 27,
      "orig_rank": "Gold",
      "orig_level": "Level 4",
      "orig_rating": 1846.0,
@@ -81103,10 +81103,10 @@
      "iso": "ph",
      "provisional": false,
      "rating": 1.022,
-     "ratingPoints": 1234,
+     "ratingPoints": 1236,
      "tier": "Emerald",
      "level": 6,
-     "kpm": 14.6,
+     "kpm": 14.8,
      "rankDelta": 0,
      "soloStats": {
       "kills": 92,
@@ -84872,7 +84872,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.105,
-     "ratingPoints": 1560,
+     "ratingPoints": 1559,
      "tier": "Champion",
      "level": 8,
      "kpm": 17.6,
@@ -85034,7 +85034,7 @@
       "kdr": 1.35,
       "winrate": 0.6,
       "rating": 1.043,
-      "ratingPoints": 1319,
+      "ratingPoints": 1318,
       "tier": "Diamond",
       "level": 6,
       "soloRank": 58,
@@ -89086,7 +89086,7 @@
      "iso": "us",
      "provisional": false,
      "rating": 1.027,
-     "ratingPoints": 1255,
+     "ratingPoints": 1254,
      "tier": "Emerald",
      "level": 6,
      "kpm": 16.0,
@@ -92422,17 +92422,17 @@
          "captain": false
         },
         {
-         "hist": "Remia Aotsuki",
-         "name": "Remia Aotsuki",
-         "slug": "remia-aotsuki",
-         "iso": "nl",
-         "captain": false
-        },
-        {
          "hist": "Eris Suzukami",
          "name": "Eris Suzukami",
          "slug": "eris-suzukami",
          "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "Remia Aotsuki",
+         "name": "Remia Aotsuki",
+         "slug": "remia-aotsuki",
+         "iso": "nl",
          "captain": false
         },
         {
@@ -92544,163 +92544,20 @@
      ]
     },
     {
-     "name": "Remia Aotsuki",
-     "team": "Astral Bloom",
-     "pool": "pro",
-     "kills": 412,
-     "assists": 86,
-     "deaths": 431,
-     "mvp": 57,
-     "kdr": 0.96,
-     "wins": 7,
-     "losses": 19,
-     "winrate": 0.269,
-     "ot": 0,
-     "role": "IGL",
-     "maps": 26,
-     "orig_rank": "Bronze",
-     "orig_level": "Level 3",
-     "orig_rating": 1331.0,
-     "slug": "remia-aotsuki",
-     "nat": "Netherlands",
-     "iso": "nl",
-     "provisional": false,
-     "rating": 1.013,
-     "ratingPoints": 1199,
-     "tier": "Emerald",
-     "level": 5,
-     "kpm": 15.8,
-     "rankDelta": 15,
-     "soloStats": {
-      "kills": 250,
-      "deaths": 262,
-      "assists": 28,
-      "mvp": 39,
-      "wins": 8,
-      "losses": 8,
-      "maps": 16,
-      "kdr": 0.95,
-      "winrate": 0.5,
-      "rating": 1.003,
-      "ratingPoints": 1163,
-      "tier": "Platinum",
-      "level": 5,
-      "soloRank": 114,
-      "soloTotal": 232,
-      "rankDelta": 0,
-      "provisional": false
-     },
-     "bio": "Remia Aotsuki is the in-game leader for Astral Bloom, a Japanese caller working to lift a team that has found wins hard to come by.",
-     "gender": "F",
-     "teamHistory": [
-      {
-       "team": "Astral Bloom",
-       "teamSlug": "astral-bloom",
-       "isPro": true,
-       "years": [
-        "2025",
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "Tachibana Hinano",
-         "name": "Tachibana Hinano",
-         "slug": "tachibana-hinano",
-         "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "Remia Aotsuki",
-         "name": "Remia Aotsuki",
-         "slug": "remia-aotsuki",
-         "iso": "nl",
-         "captain": false
-        },
-        {
-         "hist": "Eris Suzukami",
-         "name": "Eris Suzukami",
-         "slug": "eris-suzukami",
-         "iso": "kr",
-         "captain": false
-        },
-        {
-         "hist": "Tsumugi Kokage",
-         "name": "Tsumugi Kokage",
-         "slug": "tsumugi-kokage",
-         "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "Shiranami Ramune",
-         "name": "Shiranami Ramune",
-         "slug": "shiranami-ramune",
-         "iso": "jp",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Team Netherlands",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "MiyaLeile",
-         "name": "MiyaLeile",
-         "slug": "miyaleile",
-         "iso": "nl",
-         "captain": true
-        },
-        {
-         "hist": "Remia Aotsuki",
-         "name": "Remia Aotsuki",
-         "slug": "remia-aotsuki",
-         "iso": "nl",
-         "captain": false
-        },
-        {
-         "hist": "MilliannaVT",
-         "name": "MilliannaVT",
-         "slug": "milliannavt",
-         "iso": "nl",
-         "captain": false
-        },
-        {
-         "hist": "Sayucchi",
-         "name": "Sayucchi",
-         "slug": "sayucchi",
-         "iso": "nl",
-         "captain": false
-        },
-        {
-         "hist": "Airizu",
-         "name": "Airizu",
-         "slug": "airizu",
-         "iso": "nl",
-         "captain": false
-        }
-       ]
-      }
-     ]
-    },
-    {
      "name": "Eris Suzukami",
      "team": "Astral Bloom",
      "pool": "pro",
-     "kills": 314,
-     "assists": 45,
-     "deaths": 283,
-     "mvp": 32,
-     "kdr": 1.11,
-     "wins": 6,
+     "kills": 343,
+     "assists": 49,
+     "deaths": 314,
+     "mvp": 42,
+     "kdr": 1.09,
+     "wins": 8,
      "losses": 13,
-     "winrate": 0.316,
+     "winrate": 0.381,
      "ot": 0,
      "role": "Rifler",
-     "maps": 19,
+     "maps": 21,
      "orig_rank": "Iron",
      "orig_level": "Level 3",
      "orig_rating": 1258.0,
@@ -92708,12 +92565,12 @@
      "nat": "Korea",
      "iso": "kr",
      "provisional": false,
-     "rating": 1.012,
-     "ratingPoints": 1196,
-     "tier": "Platinum",
-     "level": 5,
-     "kpm": 16.5,
-     "rankDelta": 0,
+     "rating": 1.02,
+     "ratingPoints": 1229,
+     "tier": "Emerald",
+     "level": 6,
+     "kpm": 16.3,
+     "rankDelta": 23,
      "soloStats": {
       "kills": 242,
       "deaths": 219,
@@ -92724,16 +92581,16 @@
       "maps": 13,
       "kdr": 1.11,
       "winrate": 0.615,
-      "rating": 1.068,
+      "rating": 1.067,
       "ratingPoints": 1413,
       "tier": "Master",
       "level": 7,
-      "soloRank": 30,
+      "soloRank": 31,
       "soloTotal": 232,
       "rankDelta": 0,
       "provisional": false
      },
-     "bio": "Eris Suzukami is an Level 5 rifler for Astral Bloom, a Japanese fragger whose 1.11 K/D is a bright spot on a struggling team.",
+     "bio": "Eris Suzukami is an Level 6 rifler for Astral Bloom, a Japanese fragger whose 1.09 K/D is a bright spot on a struggling team.",
      "gender": "F",
      "teamHistory": [
       {
@@ -92752,17 +92609,17 @@
          "captain": false
         },
         {
-         "hist": "Remia Aotsuki",
-         "name": "Remia Aotsuki",
-         "slug": "remia-aotsuki",
-         "iso": "nl",
-         "captain": false
-        },
-        {
          "hist": "Eris Suzukami",
          "name": "Eris Suzukami",
          "slug": "eris-suzukami",
          "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "Remia Aotsuki",
+         "name": "Remia Aotsuki",
+         "slug": "remia-aotsuki",
+         "iso": "nl",
          "captain": false
         },
         {
@@ -92823,6 +92680,149 @@
          "slug": "nekota-tsuna",
          "iso": "kr",
          "captain": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Remia Aotsuki",
+     "team": "Astral Bloom",
+     "pool": "pro",
+     "kills": 412,
+     "assists": 86,
+     "deaths": 431,
+     "mvp": 57,
+     "kdr": 0.96,
+     "wins": 7,
+     "losses": 19,
+     "winrate": 0.269,
+     "ot": 0,
+     "role": "IGL",
+     "maps": 26,
+     "orig_rank": "Bronze",
+     "orig_level": "Level 3",
+     "orig_rating": 1331.0,
+     "slug": "remia-aotsuki",
+     "nat": "Netherlands",
+     "iso": "nl",
+     "provisional": false,
+     "rating": 1.013,
+     "ratingPoints": 1199,
+     "tier": "Emerald",
+     "level": 5,
+     "kpm": 15.8,
+     "rankDelta": 0,
+     "soloStats": {
+      "kills": 250,
+      "deaths": 262,
+      "assists": 28,
+      "mvp": 39,
+      "wins": 8,
+      "losses": 8,
+      "maps": 16,
+      "kdr": 0.95,
+      "winrate": 0.5,
+      "rating": 1.003,
+      "ratingPoints": 1163,
+      "tier": "Platinum",
+      "level": 5,
+      "soloRank": 114,
+      "soloTotal": 232,
+      "rankDelta": 0,
+      "provisional": false
+     },
+     "bio": "Remia Aotsuki is the in-game leader for Astral Bloom, a Japanese caller working to lift a team that has found wins hard to come by.",
+     "gender": "F",
+     "teamHistory": [
+      {
+       "team": "Astral Bloom",
+       "teamSlug": "astral-bloom",
+       "isPro": true,
+       "years": [
+        "2025",
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Tachibana Hinano",
+         "name": "Tachibana Hinano",
+         "slug": "tachibana-hinano",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Eris Suzukami",
+         "name": "Eris Suzukami",
+         "slug": "eris-suzukami",
+         "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "Remia Aotsuki",
+         "name": "Remia Aotsuki",
+         "slug": "remia-aotsuki",
+         "iso": "nl",
+         "captain": false
+        },
+        {
+         "hist": "Tsumugi Kokage",
+         "name": "Tsumugi Kokage",
+         "slug": "tsumugi-kokage",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Shiranami Ramune",
+         "name": "Shiranami Ramune",
+         "slug": "shiranami-ramune",
+         "iso": "jp",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Team Netherlands",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "MiyaLeile",
+         "name": "MiyaLeile",
+         "slug": "miyaleile",
+         "iso": "nl",
+         "captain": true
+        },
+        {
+         "hist": "Remia Aotsuki",
+         "name": "Remia Aotsuki",
+         "slug": "remia-aotsuki",
+         "iso": "nl",
+         "captain": false
+        },
+        {
+         "hist": "MilliannaVT",
+         "name": "MilliannaVT",
+         "slug": "milliannavt",
+         "iso": "nl",
+         "captain": false
+        },
+        {
+         "hist": "Sayucchi",
+         "name": "Sayucchi",
+         "slug": "sayucchi",
+         "iso": "nl",
+         "captain": false
+        },
+        {
+         "hist": "Airizu",
+         "name": "Airizu",
+         "slug": "airizu",
+         "iso": "nl",
+         "captain": false
         }
        ]
       }
@@ -92895,17 +92895,17 @@
          "captain": false
         },
         {
-         "hist": "Remia Aotsuki",
-         "name": "Remia Aotsuki",
-         "slug": "remia-aotsuki",
-         "iso": "nl",
-         "captain": false
-        },
-        {
          "hist": "Eris Suzukami",
          "name": "Eris Suzukami",
          "slug": "eris-suzukami",
          "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "Remia Aotsuki",
+         "name": "Remia Aotsuki",
+         "slug": "remia-aotsuki",
+         "iso": "nl",
          "captain": false
         },
         {
@@ -93019,17 +93019,17 @@
          "captain": false
         },
         {
-         "hist": "Remia Aotsuki",
-         "name": "Remia Aotsuki",
-         "slug": "remia-aotsuki",
-         "iso": "nl",
-         "captain": false
-        },
-        {
          "hist": "Eris Suzukami",
          "name": "Eris Suzukami",
          "slug": "eris-suzukami",
          "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "Remia Aotsuki",
+         "name": "Remia Aotsuki",
+         "slug": "remia-aotsuki",
+         "iso": "nl",
          "captain": false
         },
         {
@@ -101173,7 +101173,7 @@
      "kdr": 1.28,
      "winrate": 0.938,
      "rating": 1.261,
-     "ratingPoints": 2167,
+     "ratingPoints": 2166,
      "tier": "Champion",
      "level": 10,
      "soloRank": 1,
@@ -104631,17 +104631,17 @@
     "name": "minMaXXer",
     "team": "99Lives",
     "pool": "pro",
-    "kills": 365,
-    "assists": 83,
-    "deaths": 364,
-    "mvp": 51,
-    "kdr": 1.0,
+    "kills": 399,
+    "assists": 87,
+    "deaths": 392,
+    "mvp": 54,
+    "kdr": 1.02,
     "wins": 15,
-    "losses": 10,
-    "winrate": 0.6,
+    "losses": 12,
+    "winrate": 0.556,
     "ot": 0,
     "role": "Rifler",
-    "maps": 25,
+    "maps": 27,
     "orig_rank": "Gold",
     "orig_level": "Level 4",
     "orig_rating": 1846.0,
@@ -104650,10 +104650,10 @@
     "iso": "ph",
     "provisional": false,
     "rating": 1.022,
-    "ratingPoints": 1234,
+    "ratingPoints": 1236,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 14.6,
+    "kpm": 14.8,
     "rankDelta": 0,
     "soloStats": {
      "kills": 92,
@@ -105906,7 +105906,7 @@
      "ratingPoints": 1065,
      "tier": "Gold",
      "level": 5,
-     "soloRank": 157,
+     "soloRank": 156,
      "soloTotal": 232,
      "rankDelta": 0,
      "provisional": false
@@ -108222,7 +108222,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.014,
-    "ratingPoints": 1204,
+    "ratingPoints": 1203,
     "tier": "Emerald",
     "level": 6,
     "kpm": 14.6,
@@ -109856,7 +109856,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.092,
-    "ratingPoints": 1509,
+    "ratingPoints": 1508,
     "tier": "Grandmaster",
     "level": 7,
     "kpm": 17.2,
@@ -110846,7 +110846,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.134,
-    "ratingPoints": 1673,
+    "ratingPoints": 1672,
     "tier": "Champion",
     "level": 8,
     "kpm": 17.7,
@@ -110870,7 +110870,7 @@
      "rankDelta": 0,
      "provisional": false
     },
-    "bio": "SanCtuary is one of the highest-rated players in the league, a Singaporean in-game leader who has turned Artisian into a genuine contender. A Level 8 at 1673 points, he marries elite individual form with the responsibility of calling — a rare combination — and already owns a BPL Challengers Stage title from 2022.",
+    "bio": "SanCtuary is one of the highest-rated players in the league, a Singaporean in-game leader who has turned Artisian into a genuine contender. A Level 8 at 1672 points, he marries elite individual form with the responsibility of calling — a rare combination — and already owns a BPL Challengers Stage title from 2022.",
     "gender": "M",
     "teamHistory": [
      {
@@ -111309,7 +111309,7 @@
      "kdr": 0.95,
      "winrate": 0.429,
      "rating": 0.981,
-     "ratingPoints": 1075,
+     "ratingPoints": 1074,
      "tier": "Gold",
      "level": 5,
      "soloRank": 146,
@@ -114739,17 +114739,17 @@
         "captain": false
        },
        {
-        "hist": "Remia Aotsuki",
-        "name": "Remia Aotsuki",
-        "slug": "remia-aotsuki",
-        "iso": "nl",
-        "captain": false
-       },
-       {
         "hist": "Eris Suzukami",
         "name": "Eris Suzukami",
         "slug": "eris-suzukami",
         "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Remia Aotsuki",
+        "name": "Remia Aotsuki",
+        "slug": "remia-aotsuki",
+        "iso": "nl",
         "captain": false
        },
        {
@@ -114908,17 +114908,17 @@
         "captain": false
        },
        {
-        "hist": "Remia Aotsuki",
-        "name": "Remia Aotsuki",
-        "slug": "remia-aotsuki",
-        "iso": "nl",
-        "captain": false
-       },
-       {
         "hist": "Eris Suzukami",
         "name": "Eris Suzukami",
         "slug": "eris-suzukami",
         "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Remia Aotsuki",
+        "name": "Remia Aotsuki",
+        "slug": "remia-aotsuki",
+        "iso": "nl",
         "captain": false
        },
        {
@@ -115011,7 +115011,7 @@
     "tier": "Emerald",
     "level": 5,
     "kpm": 15.8,
-    "rankDelta": 15,
+    "rankDelta": 0,
     "soloStats": {
      "kills": 250,
      "deaths": 262,
@@ -115051,17 +115051,17 @@
         "captain": false
        },
        {
-        "hist": "Remia Aotsuki",
-        "name": "Remia Aotsuki",
-        "slug": "remia-aotsuki",
-        "iso": "nl",
-        "captain": false
-       },
-       {
         "hist": "Eris Suzukami",
         "name": "Eris Suzukami",
         "slug": "eris-suzukami",
         "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Remia Aotsuki",
+        "name": "Remia Aotsuki",
+        "slug": "remia-aotsuki",
+        "iso": "nl",
         "captain": false
        },
        {
@@ -115194,17 +115194,17 @@
         "captain": false
        },
        {
-        "hist": "Remia Aotsuki",
-        "name": "Remia Aotsuki",
-        "slug": "remia-aotsuki",
-        "iso": "nl",
-        "captain": false
-       },
-       {
         "hist": "Eris Suzukami",
         "name": "Eris Suzukami",
         "slug": "eris-suzukami",
         "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Remia Aotsuki",
+        "name": "Remia Aotsuki",
+        "slug": "remia-aotsuki",
+        "iso": "nl",
         "captain": false
        },
        {
@@ -115274,17 +115274,17 @@
     "name": "Eris Suzukami",
     "team": "Astral Bloom",
     "pool": "pro",
-    "kills": 314,
-    "assists": 45,
-    "deaths": 283,
-    "mvp": 32,
-    "kdr": 1.11,
-    "wins": 6,
+    "kills": 343,
+    "assists": 49,
+    "deaths": 314,
+    "mvp": 42,
+    "kdr": 1.09,
+    "wins": 8,
     "losses": 13,
-    "winrate": 0.316,
+    "winrate": 0.381,
     "ot": 0,
     "role": "Rifler",
-    "maps": 19,
+    "maps": 21,
     "orig_rank": "Iron",
     "orig_level": "Level 3",
     "orig_rating": 1258.0,
@@ -115292,12 +115292,12 @@
     "nat": "Korea",
     "iso": "kr",
     "provisional": false,
-    "rating": 1.012,
-    "ratingPoints": 1196,
-    "tier": "Platinum",
-    "level": 5,
-    "kpm": 16.5,
-    "rankDelta": 0,
+    "rating": 1.02,
+    "ratingPoints": 1229,
+    "tier": "Emerald",
+    "level": 6,
+    "kpm": 16.3,
+    "rankDelta": 23,
     "soloStats": {
      "kills": 242,
      "deaths": 219,
@@ -115308,16 +115308,16 @@
      "maps": 13,
      "kdr": 1.11,
      "winrate": 0.615,
-     "rating": 1.068,
+     "rating": 1.067,
      "ratingPoints": 1413,
      "tier": "Master",
      "level": 7,
-     "soloRank": 30,
+     "soloRank": 31,
      "soloTotal": 232,
      "rankDelta": 0,
      "provisional": false
     },
-    "bio": "Eris Suzukami is an Level 5 rifler for Astral Bloom, a Japanese fragger whose 1.11 K/D is a bright spot on a struggling team.",
+    "bio": "Eris Suzukami is an Level 6 rifler for Astral Bloom, a Japanese fragger whose 1.09 K/D is a bright spot on a struggling team.",
     "gender": "F",
     "teamHistory": [
      {
@@ -115336,17 +115336,17 @@
         "captain": false
        },
        {
-        "hist": "Remia Aotsuki",
-        "name": "Remia Aotsuki",
-        "slug": "remia-aotsuki",
-        "iso": "nl",
-        "captain": false
-       },
-       {
         "hist": "Eris Suzukami",
         "name": "Eris Suzukami",
         "slug": "eris-suzukami",
         "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Remia Aotsuki",
+        "name": "Remia Aotsuki",
+        "slug": "remia-aotsuki",
+        "iso": "nl",
         "captain": false
        },
        {
@@ -116639,7 +116639,7 @@
      "kdr": 1.09,
      "winrate": 0.5,
      "rating": 1.017,
-     "ratingPoints": 1217,
+     "ratingPoints": 1216,
      "tier": "Emerald",
      "level": 6,
      "soloRank": 96,
@@ -120082,7 +120082,7 @@
      "kdr": 0.98,
      "winrate": 0.667,
      "rating": 1.043,
-     "ratingPoints": 1318,
+     "ratingPoints": 1317,
      "tier": "Diamond",
      "level": 6,
      "soloRank": 53,
@@ -128365,7 +128365,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.077,
-    "ratingPoints": 1451,
+    "ratingPoints": 1450,
     "tier": "Master",
     "level": 7,
     "kpm": 16.3,
@@ -129163,7 +129163,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.04,
-    "ratingPoints": 1307,
+    "ratingPoints": 1306,
     "tier": "Diamond",
     "level": 6,
     "kpm": 15.5,
@@ -133714,7 +133714,7 @@
      "kdr": 1.02,
      "winrate": 0.333,
      "rating": 0.949,
-     "ratingPoints": 953,
+     "ratingPoints": 952,
      "tier": "Silver",
      "level": 4,
      "soloRank": 190,
@@ -134031,7 +134031,7 @@
     "iso": "my",
     "provisional": false,
     "rating": 1.05,
-    "ratingPoints": 1347,
+    "ratingPoints": 1346,
     "tier": "Diamond",
     "level": 6,
     "kpm": 16.5,
@@ -135553,7 +135553,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.105,
-    "ratingPoints": 1560,
+    "ratingPoints": 1559,
     "tier": "Champion",
     "level": 8,
     "kpm": 17.6,
@@ -135916,7 +135916,7 @@
      "kdr": 1.35,
      "winrate": 0.6,
      "rating": 1.043,
-     "ratingPoints": 1319,
+     "ratingPoints": 1318,
      "tier": "Diamond",
      "level": 6,
      "soloRank": 58,
@@ -138403,9 +138403,9 @@
     "iso": "us",
     "provisional": false,
     "rating": 1.098,
-    "ratingPoints": 1531,
+    "ratingPoints": 1530,
     "tier": "Grandmaster",
-    "level": 8,
+    "level": 7,
     "kpm": 16.5,
     "rankDelta": 0,
     "soloStats": {
@@ -138427,7 +138427,7 @@
      "rankDelta": 0,
      "provisional": false
     },
-    "bio": "Illus is an American in-game leader for Kiedz, a Level 8 caller whose 1.14 K/D shows he can still frag while running the show. A winner of BPL Tournament Minor 5, he brings both structure and steel to the roster.",
+    "bio": "Illus is an American in-game leader for Kiedz, a Level 7 caller whose 1.14 K/D shows he can still frag while running the show. A winner of BPL Tournament Minor 5, he brings both structure and steel to the roster.",
     "gender": "M",
     "teamHistory": [
      {
@@ -138576,7 +138576,7 @@
      "kdr": 0.93,
      "winrate": 0.5,
      "rating": 1.0,
-     "ratingPoints": 1149,
+     "ratingPoints": 1148,
      "tier": "Platinum",
      "level": 5,
      "soloRank": 120,
@@ -138916,7 +138916,7 @@
      "kdr": 1.24,
      "winrate": 0.583,
      "rating": 1.06,
-     "ratingPoints": 1386,
+     "ratingPoints": 1385,
      "tier": "Master",
      "level": 7,
      "soloRank": 38,
@@ -143833,7 +143833,7 @@
     "iso": "fr",
     "provisional": false,
     "rating": 0.947,
-    "ratingPoints": 944,
+    "ratingPoints": 943,
     "tier": "Silver",
     "level": 4,
     "kpm": 13.3,
@@ -145389,7 +145389,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 14.7,
-    "rankDelta": -23,
+    "rankDelta": 0,
     "bio": "Sayucchi is a Level 4 rifler for Neverland, a Dutch fragger with a winning record and a rare European passport in the roster.",
     "gender": "F",
     "teamHistory": [
@@ -145525,7 +145525,7 @@
      "kdr": 0.93,
      "winrate": 0.833,
      "rating": 1.075,
-     "ratingPoints": 1443,
+     "ratingPoints": 1442,
      "tier": "Master",
      "level": 7,
      "soloRank": 23,
@@ -147104,7 +147104,7 @@
      "kdr": 1.14,
      "winrate": 0.429,
      "rating": 0.987,
-     "ratingPoints": 1101,
+     "ratingPoints": 1100,
      "tier": "Gold",
      "level": 5,
      "soloRank": 140,
@@ -148046,7 +148046,7 @@
      "ratingPoints": 1066,
      "tier": "Gold",
      "level": 5,
-     "soloRank": 158,
+     "soloRank": 157,
      "soloTotal": 232,
      "rankDelta": 0,
      "provisional": false
@@ -148901,7 +148901,7 @@
      "kdr": 0.71,
      "winrate": 0.5,
      "rating": 0.99,
-     "ratingPoints": 1110,
+     "ratingPoints": 1109,
      "tier": "Gold",
      "level": 5,
      "soloRank": 134,
@@ -149255,7 +149255,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.023,
+    "rating": 1.022,
     "ratingPoints": 1238,
     "tier": "Emerald",
     "level": 6,
@@ -149683,7 +149683,7 @@
     "iso": "my",
     "provisional": false,
     "rating": 0.98,
-    "ratingPoints": 1073,
+    "ratingPoints": 1072,
     "tier": "Gold",
     "level": 5,
     "kpm": 14.3,
@@ -150371,7 +150371,7 @@
      "kdr": 0.89,
      "winrate": 0.2,
      "rating": 0.938,
-     "ratingPoints": 908,
+     "ratingPoints": 907,
      "tier": "Bronze",
      "level": 4,
      "soloRank": 198,
@@ -153060,7 +153060,7 @@
      "kdr": 0.95,
      "winrate": 0.875,
      "rating": 1.105,
-     "ratingPoints": 1561,
+     "ratingPoints": 1560,
      "tier": "Champion",
      "level": 8,
      "soloRank": 9,
@@ -156221,7 +156221,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.035,
-    "ratingPoints": 1287,
+    "ratingPoints": 1286,
     "tier": "Diamond",
     "level": 6,
     "kpm": 15.4,
@@ -157326,7 +157326,7 @@
      "ratingPoints": 1063,
      "tier": "Gold",
      "level": 5,
-     "soloRank": 160,
+     "soloRank": 159,
      "soloTotal": 232,
      "rankDelta": 0,
      "provisional": false
@@ -158372,17 +158372,17 @@
     "name": "Uzuhii",
     "team": "Setting Sun",
     "pool": "pro",
-    "kills": 508,
-    "assists": 87,
-    "deaths": 472,
-    "mvp": 67,
-    "kdr": 1.08,
+    "kills": 551,
+    "assists": 91,
+    "deaths": 504,
+    "mvp": 74,
+    "kdr": 1.09,
     "wins": 17,
-    "losses": 14,
-    "winrate": 0.548,
+    "losses": 16,
+    "winrate": 0.515,
     "ot": 1,
     "role": "Rifler",
-    "maps": 31,
+    "maps": 33,
     "orig_rank": "Emerald",
     "orig_level": "Level 5",
     "orig_rating": 2041.0,
@@ -158390,13 +158390,13 @@
     "nat": "Philippines",
     "iso": "ph",
     "provisional": false,
-    "rating": 1.053,
-    "ratingPoints": 1355,
-    "tier": "Diamond",
+    "rating": 1.06,
+    "ratingPoints": 1384,
+    "tier": "Master",
     "level": 7,
-    "kpm": 16.4,
-    "rankDelta": 0,
-    "bio": "Uzuhii is a Level 7 rifler for Setting Sun, a Filipino with over 508 career kills and a steady hand for a competitive roster.",
+    "kpm": 16.7,
+    "rankDelta": 12,
+    "bio": "Uzuhii is a Level 7 rifler for Setting Sun, a Filipino with over 551 career kills and a steady hand for a competitive roster.",
     "gender": "M",
     "teamHistory": [
      {
@@ -158853,7 +158853,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.999,
-    "ratingPoints": 1147,
+    "ratingPoints": 1146,
     "tier": "Platinum",
     "level": 5,
     "kpm": 14.9,
@@ -160665,7 +160665,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 0.924,
+    "rating": 0.923,
     "ratingPoints": 852,
     "tier": "Bronze",
     "level": 3,
@@ -161958,7 +161958,7 @@
     "iso": "my",
     "provisional": false,
     "rating": 0.909,
-    "ratingPoints": 794,
+    "ratingPoints": 793,
     "tier": "Iron",
     "level": 3,
     "kpm": 13.4,
@@ -162381,7 +162381,7 @@
     "iso": "au",
     "provisional": false,
     "rating": 1.051,
-    "ratingPoints": 1349,
+    "ratingPoints": 1348,
     "tier": "Diamond",
     "level": 6,
     "kpm": 14.5,
@@ -162835,7 +162835,7 @@
     "iso": "my",
     "provisional": false,
     "rating": 1.029,
-    "ratingPoints": 1264,
+    "ratingPoints": 1263,
     "tier": "Diamond",
     "level": 6,
     "kpm": 14.7,
@@ -167436,11 +167436,11 @@
      "maps": 13,
      "kdr": 0.87,
      "winrate": 0.462,
-     "rating": 0.978,
+     "rating": 0.977,
      "ratingPoints": 1062,
      "tier": "Gold",
      "level": 5,
-     "soloRank": 156,
+     "soloRank": 160,
      "soloTotal": 232,
      "rankDelta": 0,
      "provisional": false
@@ -168578,7 +168578,7 @@
      "kdr": 0.75,
      "winrate": 0.417,
      "rating": 0.958,
-     "ratingPoints": 987,
+     "ratingPoints": 986,
      "tier": "Silver",
      "level": 4,
      "soloRank": 183,
@@ -169032,7 +169032,7 @@
     "iso": "us",
     "provisional": false,
     "rating": 1.027,
-    "ratingPoints": 1255,
+    "ratingPoints": 1254,
     "tier": "Emerald",
     "level": 6,
     "kpm": 16.0,
@@ -172676,7 +172676,7 @@
      "kdr": 1.03,
      "winrate": 0.714,
      "rating": 1.066,
-     "ratingPoints": 1406,
+     "ratingPoints": 1405,
      "tier": "Master",
      "level": 7,
      "soloRank": 32,
@@ -174467,7 +174467,7 @@
     "iso": "jp",
     "provisional": false,
     "rating": 0.955,
-    "ratingPoints": 975,
+    "ratingPoints": 974,
     "tier": "Silver",
     "level": 4,
     "kpm": 14.0,
@@ -176253,7 +176253,7 @@
      "maps": 5,
      "kdr": 1.25,
      "winrate": 0.8,
-     "rating": 1.079,
+     "rating": 1.078,
      "ratingPoints": 1456,
      "tier": "Master",
      "level": 7,
@@ -176777,7 +176777,7 @@
     "iso": "ph",
     "provisional": false,
     "rating": 1.039,
-    "ratingPoints": 1301,
+    "ratingPoints": 1300,
     "tier": "Diamond",
     "level": 6,
     "kpm": 17.1,
@@ -177743,7 +177743,7 @@
     "nat": "Australia",
     "iso": "au",
     "provisional": false,
-    "rating": 1.078,
+    "rating": 1.077,
     "ratingPoints": 1452,
     "tier": "Master",
     "level": 7,
@@ -178649,7 +178649,7 @@
      "kdr": 0.78,
      "winrate": 0.167,
      "rating": 0.914,
-     "ratingPoints": 817,
+     "ratingPoints": 816,
      "tier": "Iron",
      "level": 3,
      "soloRank": 217,
@@ -181437,7 +181437,7 @@
     "tier": "Iron",
     "level": 3,
     "kpm": 13.1,
-    "rankDelta": -3,
+    "rankDelta": 0,
     "bio": "MilliannaVT is a Dutch AWPer and a Level 3 free agent with a winning amateur record.",
     "gender": "M",
     "teamTourney": "Bot Pro Cup 2026",
@@ -187322,7 +187322,7 @@
      "kdr": 0.89,
      "winrate": 0.5,
      "rating": 0.993,
-     "ratingPoints": 1124,
+     "ratingPoints": 1123,
      "tier": "Gold",
      "level": 5,
      "soloRank": 130,
@@ -187601,7 +187601,7 @@
      "kdr": 0.91,
      "winrate": 0.5,
      "rating": 0.996,
-     "ratingPoints": 1135,
+     "ratingPoints": 1134,
      "tier": "Platinum",
      "level": 5,
      "soloRank": 125,
@@ -188990,7 +188990,7 @@
     "nat": "Canada",
     "iso": "ca",
     "provisional": false,
-    "rating": 0.95,
+    "rating": 0.949,
     "ratingPoints": 953,
     "tier": "Silver",
     "level": 4,
@@ -197378,7 +197378,7 @@
      "kdr": 0.96,
      "winrate": 0.5,
      "rating": 1.002,
-     "ratingPoints": 1158,
+     "ratingPoints": 1157,
      "tier": "Platinum",
      "level": 5,
      "soloRank": 116,
@@ -201950,7 +201950,7 @@
      "kdr": 1.22,
      "winrate": 0.7,
      "rating": 1.103,
-     "ratingPoints": 1552,
+     "ratingPoints": 1551,
      "tier": "Grandmaster",
      "level": 8,
      "soloRank": 10,
@@ -202997,7 +202997,7 @@
      "ratingPoints": 1064,
      "tier": "Gold",
      "level": 5,
-     "soloRank": 159,
+     "soloRank": 158,
      "soloTotal": 232,
      "rankDelta": 0,
      "provisional": false
@@ -209478,7 +209478,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.038,
-    "ratingPoints": 1299,
+    "ratingPoints": 1298,
     "tier": "Diamond",
     "level": 6,
     "kpm": 17.2,
@@ -210261,7 +210261,7 @@
     "nat": "Iceland",
     "iso": "is",
     "provisional": false,
-    "rating": 1.026,
+    "rating": 1.025,
     "ratingPoints": 1249,
     "tier": "Emerald",
     "level": 6,
@@ -211841,17 +211841,17 @@
     "name": "Jira Jisaki",
     "team": "Mourningstar",
     "pool": "pro",
-    "kills": 192,
-    "assists": 18,
-    "deaths": 158,
-    "mvp": 35,
-    "kdr": 1.22,
+    "kills": 213,
+    "assists": 22,
+    "deaths": 191,
+    "mvp": 37,
+    "kdr": 1.12,
     "wins": 6,
-    "losses": 7,
-    "winrate": 0.462,
+    "losses": 9,
+    "winrate": 0.4,
     "ot": 0,
     "role": "Rifler",
-    "maps": 13,
+    "maps": 15,
     "orig_rank": "Bronze",
     "orig_level": "Level 3",
     "orig_rating": 1146.0,
@@ -211860,13 +211860,13 @@
     "nat": "Philippines",
     "iso": "ph",
     "provisional": false,
-    "rating": 1.03,
-    "ratingPoints": 1268,
-    "tier": "Diamond",
-    "level": 6,
-    "kpm": 14.8,
-    "rankDelta": 0,
-    "bio": "Jira Jisaki is an American rifler rated Level 6 in the league, a free agent with a sharp 1.22 K/D.",
+    "rating": 1.003,
+    "ratingPoints": 1161,
+    "tier": "Platinum",
+    "level": 5,
+    "kpm": 14.2,
+    "rankDelta": -78,
+    "bio": "Jira Jisaki is an American rifler rated Level 5 in the league, a free agent with a sharp 1.12 K/D.",
     "gender": "F",
     "teamTourney": "Bot Pro Cup 2026",
     "teamHistory": [
@@ -215565,17 +215565,17 @@
     "name": "Nekota Tsuna",
     "team": "Seraph Dynasty",
     "pool": "pro",
-    "kills": 163,
-    "assists": 21,
-    "deaths": 171,
-    "mvp": 27,
-    "kdr": 0.95,
-    "wins": 4,
+    "kills": 205,
+    "assists": 23,
+    "deaths": 202,
+    "mvp": 32,
+    "kdr": 1.01,
+    "wins": 6,
     "losses": 6,
-    "winrate": 0.4,
+    "winrate": 0.5,
     "ot": 5,
     "role": "Rifler",
-    "maps": 10,
+    "maps": 12,
     "orig_rank": "Bronze",
     "orig_level": "Level 3",
     "orig_rating": 1026.0,
@@ -215584,13 +215584,13 @@
     "nat": "Korea",
     "iso": "kr",
     "provisional": false,
-    "rating": 1.008,
-    "ratingPoints": 1181,
-    "tier": "Platinum",
-    "level": 5,
-    "kpm": 16.3,
-    "rankDelta": 0,
-    "bio": "Nekota Tsuna is a Korean rifler and a Level 5 free agent, one of the league's rare Korean names.",
+    "rating": 1.024,
+    "ratingPoints": 1243,
+    "tier": "Emerald",
+    "level": 6,
+    "kpm": 17.1,
+    "rankDelta": 43,
+    "bio": "Nekota Tsuna is a Korean rifler and a Level 6 free agent, one of the league's rare Korean names.",
     "gender": "F",
     "teamTourney": "Bot Pro Cup 2026",
     "teamHistory": [
@@ -219872,11 +219872,11 @@
     "iso": "nl",
     "provisional": false,
     "rating": 0.976,
-    "ratingPoints": 1055,
+    "ratingPoints": 1056,
     "tier": "Gold",
     "level": 5,
     "kpm": 15.7,
-    "rankDelta": 9,
+    "rankDelta": 0,
     "bio": "Airizu is an Austrian in-game leader and a Level 5 free agent whose 1.07 K/D marks him a capable caller — one of the league's few Austrian names.",
     "gender": "M",
     "teamTourney": "Bot Pro Cup 2026",
@@ -220969,17 +220969,17 @@
     "name": "PenguChi",
     "team": "Emberfall",
     "pool": "pro",
-    "kills": 178,
-    "assists": 10,
-    "deaths": 160,
-    "mvp": 23,
-    "kdr": 1.11,
+    "kills": 210,
+    "assists": 15,
+    "deaths": 194,
+    "mvp": 25,
+    "kdr": 1.08,
     "wins": 5,
-    "losses": 6,
-    "winrate": 0.455,
+    "losses": 8,
+    "winrate": 0.385,
     "ot": 1,
     "role": "Rifler",
-    "maps": 11,
+    "maps": 13,
     "orig_rank": "Bronze",
     "orig_level": "Level 2",
     "orig_rating": 668.0,
@@ -220988,12 +220988,12 @@
     "nat": "Philippines",
     "iso": "ph",
     "provisional": false,
-    "rating": 0.999,
-    "ratingPoints": 1145,
-    "tier": "Platinum",
+    "rating": 0.99,
+    "ratingPoints": 1113,
+    "tier": "Gold",
     "level": 5,
     "kpm": 16.2,
-    "rankDelta": 0,
+    "rankDelta": -19,
     "soloStats": {
      "kills": 61,
      "deaths": 82,
@@ -222616,17 +222616,17 @@
     "name": "Juno Umezono",
     "team": "Ashfall",
     "pool": "pro",
-    "kills": 144,
-    "assists": 11,
-    "deaths": 163,
-    "mvp": 15,
-    "kdr": 0.88,
+    "kills": 173,
+    "assists": 17,
+    "deaths": 193,
+    "mvp": 19,
+    "kdr": 0.9,
     "wins": 4,
-    "losses": 8,
-    "winrate": 0.333,
+    "losses": 10,
+    "winrate": 0.286,
     "ot": 0,
     "role": "Rifler",
-    "maps": 12,
+    "maps": 14,
     "orig_rank": "Iron",
     "orig_level": "Level 2",
     "orig_rating": 638.0,
@@ -222635,12 +222635,12 @@
     "nat": "Philippines",
     "iso": "ph",
     "provisional": false,
-    "rating": 0.907,
-    "ratingPoints": 786,
+    "rating": 0.91,
+    "ratingPoints": 799,
     "tier": "Iron",
     "level": 3,
-    "kpm": 12.0,
-    "rankDelta": 0,
+    "kpm": 12.4,
+    "rankDelta": 3,
     "bio": "Juno Umezono is a Japanese rifler rated Level 3 in the league, a developing free agent.",
     "gender": "F",
     "teamTourney": "Bot Pro Cup 2026",
@@ -223280,7 +223280,7 @@
      "maps": 9,
      "kdr": 0.99,
      "winrate": 0.333,
-     "rating": 0.953,
+     "rating": 0.952,
      "ratingPoints": 965,
      "tier": "Silver",
      "level": 4,
@@ -223589,7 +223589,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.942,
-    "ratingPoints": 923,
+    "ratingPoints": 922,
     "tier": "Bronze",
     "level": 4,
     "kpm": 13.1,
@@ -225380,17 +225380,17 @@
     "name": "Narin Mikure",
     "team": "Seraph Dynasty",
     "pool": "pro",
-    "kills": 89,
-    "assists": 17,
-    "deaths": 119,
-    "mvp": 10,
-    "kdr": 0.75,
-    "wins": 1,
+    "kills": 111,
+    "assists": 22,
+    "deaths": 154,
+    "mvp": 13,
+    "kdr": 0.72,
+    "wins": 3,
     "losses": 6,
-    "winrate": 0.143,
+    "winrate": 0.333,
     "ot": 0,
     "role": "Awper",
-    "maps": 7,
+    "maps": 9,
     "orig_rank": "Iron",
     "orig_level": "Level 1",
     "orig_rating": 316.0,
@@ -225399,13 +225399,13 @@
     "nat": "Korea",
     "iso": "kr",
     "provisional": false,
-    "rating": 0.941,
-    "ratingPoints": 919,
+    "rating": 0.93,
+    "ratingPoints": 876,
     "tier": "Bronze",
-    "level": 4,
-    "kpm": 12.7,
-    "rankDelta": 0,
-    "bio": "Narin Mikure is a Korean AWPer and a Level 4 free agent, an amateur still hunting a first win.",
+    "level": 3,
+    "kpm": 12.3,
+    "rankDelta": -19,
+    "bio": "Narin Mikure is a Korean AWPer and a Level 3 free agent, an amateur still hunting a first win.",
     "gender": "F",
     "teamTourney": "Bot Pro Cup 2026",
     "teamHistory": [
@@ -226752,7 +226752,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 16.0,
-    "rankDelta": -58,
+    "rankDelta": 0,
     "bio": "MiyaLeile is a Dutch rifler and a Level 5 free agent, a rare European name in the pool whose early numbers hint at promise over a small sample.",
     "gender": "F",
     "teamTourney": "Bot Pro Cup 2026",
@@ -235045,7 +235045,7 @@
     "iso": "neutral",
     "provisional": false,
     "rating": 1.11,
-    "ratingPoints": 1581,
+    "ratingPoints": 1580,
     "tier": "Champion",
     "level": 8,
     "kpm": 17.3,
@@ -235174,7 +235174,7 @@
     "level": 7,
     "kpm": 17.3,
     "rankDelta": 0,
-    "soloRank": 31,
+    "soloRank": 30,
     "bio": "Spectrum Gabriel is a solo-queue regular rated Level 7, a grinder who wins his fair share on the ladder.",
     "gender": "M",
     "teamHistory": [
@@ -235719,24 +235719,24 @@
     "name": "byeolyuna",
     "team": "",
     "pool": "solo",
-    "kills": 0,
-    "assists": 0,
-    "deaths": 0,
-    "mvp": 0,
-    "kdr": 0.0,
-    "wins": 0,
+    "kills": 26,
+    "assists": 1,
+    "deaths": 33,
+    "mvp": 3,
+    "kdr": 0.79,
+    "wins": 2,
     "losses": 0,
-    "winrate": 0.0,
+    "winrate": 1.0,
     "ot": 0,
     "role": "Rifler",
-    "maps": 0,
+    "maps": 2,
     "orig_rank": "",
     "orig_level": "",
     "orig_rating": 0.0,
     "slug": "byeolyuna-solo",
     "nat": "Korea",
     "iso": "kr",
-    "provisional": false,
+    "provisional": true,
     "rating": null,
     "ratingPoints": null,
     "tier": null,
@@ -235794,24 +235794,24 @@
     "name": "GreatMoonAroma",
     "team": "",
     "pool": "solo",
-    "kills": 0,
-    "assists": 0,
-    "deaths": 0,
-    "mvp": 0,
-    "kdr": 0.0,
-    "wins": 0,
+    "kills": 38,
+    "assists": 2,
+    "deaths": 29,
+    "mvp": 5,
+    "kdr": 1.31,
+    "wins": 2,
     "losses": 0,
-    "winrate": 0.0,
+    "winrate": 1.0,
     "ot": 0,
     "role": "Rifler",
-    "maps": 0,
+    "maps": 2,
     "orig_rank": "",
     "orig_level": "",
     "orig_rating": 0.0,
     "slug": "greatmoonaroma-solo",
     "nat": "Korea",
     "iso": "kr",
-    "provisional": false,
+    "provisional": true,
     "rating": null,
     "ratingPoints": null,
     "tier": null,
@@ -236911,11 +236911,11 @@
  },
  "pool_avg": {
   "pro": {
-   "kdr": 0.9978,
-   "kpm": 15.274827805992313,
-   "mvp": 2.1491096665895637,
-   "apm": 2.288684172677857,
-   "wr": 0.4712275
+   "kdr": 0.997625,
+   "kpm": 15.27597027913415,
+   "mvp": 2.1492424984389067,
+   "apm": 2.289372232439261,
+   "wr": 0.47147500000000003
   },
   "amateur": {
    "kdr": 1.0,
@@ -236925,9 +236925,9 @@
    "wr": 1.0
   },
   "solo": {
-   "kdr": 0.9749214659685864,
-   "kpm": 15.12886863803479,
-   "mvp": 2.023877400061185
+   "kdr": 0.9753124999999999,
+   "kpm": 15.133405780545026,
+   "mvp": 2.0237530386025333
   }
  },
  "weights": {
@@ -236967,83 +236967,97 @@
    "standings": [
     {
      "rank": 1,
-     "name": "Team Land of Make Believe",
+     "name": "Team Korea",
      "teamSlug": null,
      "w": 1,
      "l": 0
     },
     {
      "rank": 2,
-     "name": "Team Singapore",
+     "name": "Team Land of Make Believe",
      "teamSlug": null,
      "w": 1,
      "l": 0
     },
     {
      "rank": 3,
-     "name": "Team Thailand",
+     "name": "Team Singapore",
      "teamSlug": null,
      "w": 1,
      "l": 0
     },
     {
      "rank": 4,
-     "name": "Team Germany",
+     "name": "Team Thailand",
      "teamSlug": null,
      "w": 1,
      "l": 0
     },
     {
      "rank": 5,
-     "name": "Team Indonesia",
+     "name": "Team Germany",
      "teamSlug": null,
      "w": 1,
      "l": 0
     },
     {
      "rank": 6,
-     "name": "Team Taiwan",
+     "name": "Team Indonesia",
      "teamSlug": null,
      "w": 1,
      "l": 0
     },
     {
      "rank": 7,
+     "name": "Team Taiwan",
+     "teamSlug": null,
+     "w": 1,
+     "l": 0
+    },
+    {
+     "rank": 8,
      "name": "Team Australia",
      "teamSlug": null,
      "w": 0,
      "l": 1
     },
     {
-     "rank": 8,
+     "rank": 9,
      "name": "Team Canada",
      "teamSlug": null,
      "w": 0,
      "l": 1
     },
     {
-     "rank": 9,
+     "rank": 10,
      "name": "Team USA",
      "teamSlug": null,
      "w": 0,
      "l": 1
     },
     {
-     "rank": 10,
+     "rank": 11,
      "name": "Team Malaysia",
      "teamSlug": null,
      "w": 0,
      "l": 1
     },
     {
-     "rank": 11,
+     "rank": 12,
      "name": "Team Netherlands",
      "teamSlug": null,
      "w": 0,
      "l": 1
     },
     {
-     "rank": 12,
+     "rank": 13,
+     "name": "Team Philippines",
+     "teamSlug": null,
+     "w": 0,
+     "l": 1
+    },
+    {
+     "rank": 14,
      "name": "Team Vietnam",
      "teamSlug": null,
      "w": 0,
@@ -238916,14 +238930,252 @@
        "i": 7,
        "a": "Team Philippines",
        "b": "Team Korea",
-       "sa": null,
-       "sb": null,
-       "w": 0,
+       "sa": 0,
+       "sb": 2,
+       "w": 2,
        "aTeam": null,
        "bTeam": null,
        "bo": 3,
        "tp": false,
-       "ts": null
+       "ts": 1789500486,
+       "stats": {
+        "maps": [
+         {
+          "map": "Dust2",
+          "scoreA": 10,
+          "scoreB": 13,
+          "players": [
+           {
+            "team": "Team Philippines",
+            "name": "Uzuhii",
+            "k": 23,
+            "a": 2,
+            "d": 18,
+            "mvp": 3,
+            "score": 49,
+            "slug": "uzuhii",
+            "iso": "ph"
+           },
+           {
+            "team": "Team Philippines",
+            "name": "Juno Umezono",
+            "k": 16,
+            "a": 5,
+            "d": 16,
+            "mvp": 3,
+            "score": 44,
+            "slug": "juno-umezono",
+            "iso": "ph"
+           },
+           {
+            "team": "Team Philippines",
+            "name": "minMaXXer",
+            "k": 20,
+            "a": 1,
+            "d": 14,
+            "mvp": 2,
+            "score": 44,
+            "slug": "minmaxxer",
+            "iso": "ph"
+           },
+           {
+            "team": "Team Philippines",
+            "name": "PenguChi",
+            "k": 15,
+            "a": 4,
+            "d": 18,
+            "mvp": 1,
+            "score": 36,
+            "slug": "penguchi",
+            "iso": "ph"
+           },
+           {
+            "team": "Team Philippines",
+            "name": "Jira Jisaki",
+            "k": 8,
+            "a": 2,
+            "d": 19,
+            "mvp": 1,
+            "score": 18,
+            "slug": "jira-jisaki",
+            "iso": "ph"
+           },
+           {
+            "team": "Team Korea",
+            "name": "Nekota Tsuna",
+            "k": 25,
+            "a": 1,
+            "d": 14,
+            "mvp": 3,
+            "score": 58,
+            "slug": "nekota-tsuna",
+            "iso": "kr"
+           },
+           {
+            "team": "Team Korea",
+            "name": "GreatMoonAroma",
+            "k": 18,
+            "a": 1,
+            "d": 16,
+            "mvp": 3,
+            "score": 41,
+            "slug": "greatmoonaroma-solo",
+            "iso": "kr"
+           },
+           {
+            "team": "Team Korea",
+            "name": "Narin Mikure",
+            "k": 15,
+            "a": 2,
+            "d": 19,
+            "mvp": 1,
+            "score": 33,
+            "slug": "narin-mikure",
+            "iso": "kr"
+           },
+           {
+            "team": "Team Korea",
+            "name": "byeolyuna",
+            "k": 15,
+            "a": 0,
+            "d": 16,
+            "mvp": 1,
+            "score": 32,
+            "slug": "byeolyuna-solo",
+            "iso": "kr"
+           },
+           {
+            "team": "Team Korea",
+            "name": "Eris Suzukami",
+            "k": 12,
+            "a": 3,
+            "d": 17,
+            "mvp": 5,
+            "score": 31,
+            "slug": "eris-suzukami",
+            "iso": "kr"
+           }
+          ]
+         },
+         {
+          "map": "Anubis",
+          "scoreA": 8,
+          "scoreB": 13,
+          "players": [
+           {
+            "team": "Team Philippines",
+            "name": "Uzuhii",
+            "k": 20,
+            "a": 2,
+            "d": 14,
+            "mvp": 4,
+            "score": 47,
+            "slug": "uzuhii",
+            "iso": "ph"
+           },
+           {
+            "team": "Team Philippines",
+            "name": "PenguChi",
+            "k": 17,
+            "a": 1,
+            "d": 16,
+            "mvp": 1,
+            "score": 37,
+            "slug": "penguchi",
+            "iso": "ph"
+           },
+           {
+            "team": "Team Philippines",
+            "name": "minMaXXer",
+            "k": 14,
+            "a": 3,
+            "d": 14,
+            "mvp": 1,
+            "score": 32,
+            "slug": "minmaxxer",
+            "iso": "ph"
+           },
+           {
+            "team": "Team Philippines",
+            "name": "Jira Jisaki",
+            "k": 13,
+            "a": 2,
+            "d": 14,
+            "mvp": 1,
+            "score": 30,
+            "slug": "jira-jisaki",
+            "iso": "ph"
+           },
+           {
+            "team": "Team Philippines",
+            "name": "Juno Umezono",
+            "k": 13,
+            "a": 1,
+            "d": 14,
+            "mvp": 1,
+            "score": 30,
+            "slug": "juno-umezono",
+            "iso": "ph"
+           },
+           {
+            "team": "Team Korea",
+            "name": "GreatMoonAroma",
+            "k": 20,
+            "a": 1,
+            "d": 13,
+            "mvp": 2,
+            "score": 51,
+            "slug": "greatmoonaroma-solo",
+            "iso": "kr"
+           },
+           {
+            "team": "Team Korea",
+            "name": "Eris Suzukami",
+            "k": 17,
+            "a": 1,
+            "d": 14,
+            "mvp": 5,
+            "score": 44,
+            "slug": "eris-suzukami",
+            "iso": "kr"
+           },
+           {
+            "team": "Team Korea",
+            "name": "Nekota Tsuna",
+            "k": 17,
+            "a": 1,
+            "d": 17,
+            "mvp": 2,
+            "score": 36,
+            "slug": "nekota-tsuna",
+            "iso": "kr"
+           },
+           {
+            "team": "Team Korea",
+            "name": "byeolyuna",
+            "k": 11,
+            "a": 1,
+            "d": 17,
+            "mvp": 2,
+            "score": 28,
+            "slug": "byeolyuna-solo",
+            "iso": "kr"
+           },
+           {
+            "team": "Team Korea",
+            "name": "Narin Mikure",
+            "k": 7,
+            "a": 3,
+            "d": 16,
+            "mvp": 2,
+            "score": 26,
+            "slug": "narin-mikure",
+            "iso": "kr"
+           }
+          ]
+         }
+        ]
+       }
       },
       {
        "i": 8,
@@ -238985,7 +239237,7 @@
       },
       {
        "i": 12,
-       "a": "",
+       "a": "Team Korea",
        "b": "",
        "sa": null,
        "sb": null,
@@ -240935,14 +241187,252 @@
          "i": 7,
          "a": "Team Philippines",
          "b": "Team Korea",
-         "sa": null,
-         "sb": null,
-         "w": 0,
+         "sa": 0,
+         "sb": 2,
+         "w": 2,
          "aTeam": null,
          "bTeam": null,
          "bo": 3,
          "tp": false,
-         "ts": null
+         "ts": 1789500486,
+         "stats": {
+          "maps": [
+           {
+            "map": "Dust2",
+            "scoreA": 10,
+            "scoreB": 13,
+            "players": [
+             {
+              "team": "Team Philippines",
+              "name": "Uzuhii",
+              "k": 23,
+              "a": 2,
+              "d": 18,
+              "mvp": 3,
+              "score": 49,
+              "slug": "uzuhii",
+              "iso": "ph"
+             },
+             {
+              "team": "Team Philippines",
+              "name": "Juno Umezono",
+              "k": 16,
+              "a": 5,
+              "d": 16,
+              "mvp": 3,
+              "score": 44,
+              "slug": "juno-umezono",
+              "iso": "ph"
+             },
+             {
+              "team": "Team Philippines",
+              "name": "minMaXXer",
+              "k": 20,
+              "a": 1,
+              "d": 14,
+              "mvp": 2,
+              "score": 44,
+              "slug": "minmaxxer",
+              "iso": "ph"
+             },
+             {
+              "team": "Team Philippines",
+              "name": "PenguChi",
+              "k": 15,
+              "a": 4,
+              "d": 18,
+              "mvp": 1,
+              "score": 36,
+              "slug": "penguchi",
+              "iso": "ph"
+             },
+             {
+              "team": "Team Philippines",
+              "name": "Jira Jisaki",
+              "k": 8,
+              "a": 2,
+              "d": 19,
+              "mvp": 1,
+              "score": 18,
+              "slug": "jira-jisaki",
+              "iso": "ph"
+             },
+             {
+              "team": "Team Korea",
+              "name": "Nekota Tsuna",
+              "k": 25,
+              "a": 1,
+              "d": 14,
+              "mvp": 3,
+              "score": 58,
+              "slug": "nekota-tsuna",
+              "iso": "kr"
+             },
+             {
+              "team": "Team Korea",
+              "name": "GreatMoonAroma",
+              "k": 18,
+              "a": 1,
+              "d": 16,
+              "mvp": 3,
+              "score": 41,
+              "slug": "greatmoonaroma-solo",
+              "iso": "kr"
+             },
+             {
+              "team": "Team Korea",
+              "name": "Narin Mikure",
+              "k": 15,
+              "a": 2,
+              "d": 19,
+              "mvp": 1,
+              "score": 33,
+              "slug": "narin-mikure",
+              "iso": "kr"
+             },
+             {
+              "team": "Team Korea",
+              "name": "byeolyuna",
+              "k": 15,
+              "a": 0,
+              "d": 16,
+              "mvp": 1,
+              "score": 32,
+              "slug": "byeolyuna-solo",
+              "iso": "kr"
+             },
+             {
+              "team": "Team Korea",
+              "name": "Eris Suzukami",
+              "k": 12,
+              "a": 3,
+              "d": 17,
+              "mvp": 5,
+              "score": 31,
+              "slug": "eris-suzukami",
+              "iso": "kr"
+             }
+            ]
+           },
+           {
+            "map": "Anubis",
+            "scoreA": 8,
+            "scoreB": 13,
+            "players": [
+             {
+              "team": "Team Philippines",
+              "name": "Uzuhii",
+              "k": 20,
+              "a": 2,
+              "d": 14,
+              "mvp": 4,
+              "score": 47,
+              "slug": "uzuhii",
+              "iso": "ph"
+             },
+             {
+              "team": "Team Philippines",
+              "name": "PenguChi",
+              "k": 17,
+              "a": 1,
+              "d": 16,
+              "mvp": 1,
+              "score": 37,
+              "slug": "penguchi",
+              "iso": "ph"
+             },
+             {
+              "team": "Team Philippines",
+              "name": "minMaXXer",
+              "k": 14,
+              "a": 3,
+              "d": 14,
+              "mvp": 1,
+              "score": 32,
+              "slug": "minmaxxer",
+              "iso": "ph"
+             },
+             {
+              "team": "Team Philippines",
+              "name": "Jira Jisaki",
+              "k": 13,
+              "a": 2,
+              "d": 14,
+              "mvp": 1,
+              "score": 30,
+              "slug": "jira-jisaki",
+              "iso": "ph"
+             },
+             {
+              "team": "Team Philippines",
+              "name": "Juno Umezono",
+              "k": 13,
+              "a": 1,
+              "d": 14,
+              "mvp": 1,
+              "score": 30,
+              "slug": "juno-umezono",
+              "iso": "ph"
+             },
+             {
+              "team": "Team Korea",
+              "name": "GreatMoonAroma",
+              "k": 20,
+              "a": 1,
+              "d": 13,
+              "mvp": 2,
+              "score": 51,
+              "slug": "greatmoonaroma-solo",
+              "iso": "kr"
+             },
+             {
+              "team": "Team Korea",
+              "name": "Eris Suzukami",
+              "k": 17,
+              "a": 1,
+              "d": 14,
+              "mvp": 5,
+              "score": 44,
+              "slug": "eris-suzukami",
+              "iso": "kr"
+             },
+             {
+              "team": "Team Korea",
+              "name": "Nekota Tsuna",
+              "k": 17,
+              "a": 1,
+              "d": 17,
+              "mvp": 2,
+              "score": 36,
+              "slug": "nekota-tsuna",
+              "iso": "kr"
+             },
+             {
+              "team": "Team Korea",
+              "name": "byeolyuna",
+              "k": 11,
+              "a": 1,
+              "d": 17,
+              "mvp": 2,
+              "score": 28,
+              "slug": "byeolyuna-solo",
+              "iso": "kr"
+             },
+             {
+              "team": "Team Korea",
+              "name": "Narin Mikure",
+              "k": 7,
+              "a": 3,
+              "d": 16,
+              "mvp": 2,
+              "score": 26,
+              "slug": "narin-mikure",
+              "iso": "kr"
+             }
+            ]
+           }
+          ]
+         }
         },
         {
          "i": 8,
@@ -241004,7 +241494,7 @@
         },
         {
          "i": 12,
-         "a": "",
+         "a": "Team Korea",
          "b": "",
          "sa": null,
          "sb": null,
@@ -241085,83 +241575,97 @@
      "standings": [
       {
        "rank": 1,
-       "name": "Team Land of Make Believe",
+       "name": "Team Korea",
        "teamSlug": null,
        "w": 1,
        "l": 0
       },
       {
        "rank": 2,
-       "name": "Team Singapore",
+       "name": "Team Land of Make Believe",
        "teamSlug": null,
        "w": 1,
        "l": 0
       },
       {
        "rank": 3,
-       "name": "Team Thailand",
+       "name": "Team Singapore",
        "teamSlug": null,
        "w": 1,
        "l": 0
       },
       {
        "rank": 4,
-       "name": "Team Germany",
+       "name": "Team Thailand",
        "teamSlug": null,
        "w": 1,
        "l": 0
       },
       {
        "rank": 5,
-       "name": "Team Indonesia",
+       "name": "Team Germany",
        "teamSlug": null,
        "w": 1,
        "l": 0
       },
       {
        "rank": 6,
-       "name": "Team Taiwan",
+       "name": "Team Indonesia",
        "teamSlug": null,
        "w": 1,
        "l": 0
       },
       {
        "rank": 7,
+       "name": "Team Taiwan",
+       "teamSlug": null,
+       "w": 1,
+       "l": 0
+      },
+      {
+       "rank": 8,
        "name": "Team Australia",
        "teamSlug": null,
        "w": 0,
        "l": 1
       },
       {
-       "rank": 8,
+       "rank": 9,
        "name": "Team Canada",
        "teamSlug": null,
        "w": 0,
        "l": 1
       },
       {
-       "rank": 9,
+       "rank": 10,
        "name": "Team USA",
        "teamSlug": null,
        "w": 0,
        "l": 1
       },
       {
-       "rank": 10,
+       "rank": 11,
        "name": "Team Malaysia",
        "teamSlug": null,
        "w": 0,
        "l": 1
       },
       {
-       "rank": 11,
+       "rank": 12,
        "name": "Team Netherlands",
        "teamSlug": null,
        "w": 0,
        "l": 1
       },
       {
-       "rank": 12,
+       "rank": 13,
+       "name": "Team Philippines",
+       "teamSlug": null,
+       "w": 0,
+       "l": 1
+      },
+      {
+       "rank": 14,
        "name": "Team Vietnam",
        "teamSlug": null,
        "w": 0,
@@ -241240,6 +241744,13 @@
     {
      "rank": 1,
      "name": "Team Malaysia",
+     "teamSlug": null,
+     "result": "Round of 16",
+     "tie": true
+    },
+    {
+     "rank": 1,
+     "name": "Team Philippines",
      "teamSlug": null,
      "result": "Round of 16",
      "tie": true
@@ -292675,17 +293186,17 @@
        "captain": false
       },
       {
-       "hist": "Remia Aotsuki",
-       "name": "Remia Aotsuki",
-       "slug": "remia-aotsuki",
-       "iso": "nl",
-       "captain": false
-      },
-      {
        "hist": "Eris Suzukami",
        "name": "Eris Suzukami",
        "slug": "eris-suzukami",
        "iso": "kr",
+       "captain": false
+      },
+      {
+       "hist": "Remia Aotsuki",
+       "name": "Remia Aotsuki",
+       "slug": "remia-aotsuki",
+       "iso": "nl",
        "captain": false
       },
       {
@@ -312678,17 +313189,17 @@
        "captain": false
       },
       {
-       "hist": "Remia Aotsuki",
-       "name": "Remia Aotsuki",
-       "slug": "remia-aotsuki",
-       "iso": "nl",
-       "captain": false
-      },
-      {
        "hist": "Eris Suzukami",
        "name": "Eris Suzukami",
        "slug": "eris-suzukami",
        "iso": "kr",
+       "captain": false
+      },
+      {
+       "hist": "Remia Aotsuki",
+       "name": "Remia Aotsuki",
+       "slug": "remia-aotsuki",
+       "iso": "nl",
        "captain": false
       },
       {
@@ -406359,49 +406870,49 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.557,
+     "wr": 0.558,
      "real": false
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.593,
+     "wr": 0.594,
      "real": false
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.573,
+     "wr": 0.574,
      "real": false
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.671,
+     "wr": 0.672,
      "real": false
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.309,
+     "wr": 0.31,
      "real": false
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.321,
+     "wr": 0.322,
      "real": false
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.466,
+     "wr": 0.467,
      "real": false
     }
    },
@@ -406944,49 +407455,49 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.512,
+     "wr": 0.51,
      "real": false
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.358,
+     "wr": 0.356,
      "real": false
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.491,
+     "wr": 0.489,
      "real": false
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.315,
+     "wr": 0.313,
      "real": false
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.581,
+     "wr": 0.579,
      "real": false
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.629,
+     "wr": 0.628,
      "real": false
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.598,
+     "wr": 0.596,
      "real": false
     }
    },
@@ -407529,49 +408040,49 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.511,
+     "wr": 0.506,
      "real": false
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.45,
+     "wr": 0.445,
      "real": false
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.365,
+     "wr": 0.36,
      "real": false
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.626,
+     "wr": 0.621,
      "real": false
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.463,
+     "wr": 0.458,
      "real": false
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.442,
+     "wr": 0.437,
      "real": false
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.448,
+     "wr": 0.443,
      "real": false
     }
    },
@@ -408049,7 +408560,7 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.602,
+     "wr": 0.603,
      "real": false
     },
     "Dust2": {
@@ -408077,7 +408588,7 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.339,
+     "wr": 0.34,
      "real": false
     },
     "Vertigo": {
@@ -408091,7 +408602,7 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.499,
+     "wr": 0.5,
      "real": false
     }
    },
@@ -408244,28 +408755,28 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.303,
+     "wr": 0.298,
      "real": false
     },
     "Dust2": {
      "w": 1,
-     "l": 0,
-     "g": 1,
-     "wr": 1.0,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
      "real": true
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.61,
+     "wr": 0.606,
      "real": false
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.581,
+     "wr": 0.576,
      "real": false
     },
     "Tuscan": {
@@ -408284,19 +408795,19 @@
     },
     "Anubis": {
      "w": 0,
-     "l": 0,
-     "g": 0,
-     "wr": 0.552,
-     "real": false
+     "l": 1,
+     "g": 1,
+     "wr": 0.0,
+     "real": true
     }
    },
    "bestMaps": [
-    "Dust2",
-    "Tuscan"
+    "Tuscan",
+    "Inferno"
    ],
    "worstMaps": [
     "Vertigo",
-    "Mirage"
+    "Anubis"
    ],
    "nation": true
   },
@@ -408656,7 +409167,7 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.51,
+     "wr": 0.509,
      "real": false
     },
     "Vertigo": {
@@ -408948,55 +409459,55 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.398,
+     "wr": 0.402,
      "real": false
     },
     "Dust2": {
-     "w": 0,
+     "w": 1,
      "l": 0,
-     "g": 0,
-     "wr": 0.639,
-     "real": false
+     "g": 1,
+     "wr": 1.0,
+     "real": true
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.512,
+     "wr": 0.516,
      "real": false
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.696,
+     "wr": 0.699,
      "real": false
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.596,
+     "wr": 0.599,
      "real": false
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.461,
+     "wr": 0.464,
      "real": false
     },
     "Anubis": {
-     "w": 0,
+     "w": 1,
      "l": 0,
-     "g": 0,
-     "wr": 0.648,
-     "real": false
+     "g": 1,
+     "wr": 1.0,
+     "real": true
     }
    },
    "bestMaps": [
-    "Cache",
-    "Anubis"
+    "Anubis",
+    "Dust2"
    ],
    "worstMaps": [
     "Mirage",
