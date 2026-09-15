@@ -23356,6 +23356,301 @@
      ]
     }
    ]
+  },
+  "1-11": {
+   "maps": [
+    {
+     "map": "Mirage",
+     "scoreA": 13,
+     "scoreB": 7,
+     "players": [
+      {
+       "team": "Team Thailand",
+       "name": "BluBEAR",
+       "k": 21,
+       "a": 2,
+       "d": 16,
+       "mvp": 4,
+       "score": 48
+      },
+      {
+       "team": "Team Thailand",
+       "name": "SUMMER",
+       "k": 19,
+       "a": 1,
+       "d": 11,
+       "mvp": 5,
+       "score": 46
+      },
+      {
+       "team": "Team Thailand",
+       "name": "Anony",
+       "k": 13,
+       "a": 4,
+       "d": 13,
+       "mvp": 2,
+       "score": 37
+      },
+      {
+       "team": "Team Thailand",
+       "name": "Nico",
+       "k": 13,
+       "a": 2,
+       "d": 14,
+       "mvp": 1,
+       "score": 32
+      },
+      {
+       "team": "Team Thailand",
+       "name": "colour",
+       "k": 11,
+       "a": 2,
+       "d": 14,
+       "mvp": 1,
+       "score": 30
+      },
+      {
+       "team": "Team Land of Make Believe",
+       "name": "ItzMaigay",
+       "k": 19,
+       "a": 2,
+       "d": 15,
+       "mvp": 3,
+       "score": 52
+      },
+      {
+       "team": "Team Land of Make Believe",
+       "name": "Icington the third",
+       "k": 17,
+       "a": 4,
+       "d": 16,
+       "mvp": 1,
+       "score": 48
+      },
+      {
+       "team": "Team Land of Make Believe",
+       "name": "Spectrum Gabriel",
+       "k": 12,
+       "a": 1,
+       "d": 16,
+       "mvp": 0,
+       "score": 28
+      },
+      {
+       "team": "Team Land of Make Believe",
+       "name": "djassaulty",
+       "k": 12,
+       "a": 0,
+       "d": 14,
+       "mvp": 2,
+       "score": 26
+      },
+      {
+       "team": "Team Land of Make Believe",
+       "name": "Goonuyun",
+       "k": 8,
+       "a": 2,
+       "d": 16,
+       "mvp": 1,
+       "score": 22
+      }
+     ]
+    },
+    {
+     "map": "Dust2",
+     "scoreA": 9,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Team Thailand",
+       "name": "Anony",
+       "k": 17,
+       "a": 4,
+       "d": 19,
+       "mvp": 4,
+       "score": 42
+      },
+      {
+       "team": "Team Thailand",
+       "name": "Nico",
+       "k": 14,
+       "a": 1,
+       "d": 18,
+       "mvp": 2,
+       "score": 39
+      },
+      {
+       "team": "Team Thailand",
+       "name": "BluBEAR",
+       "k": 14,
+       "a": 3,
+       "d": 18,
+       "mvp": 2,
+       "score": 35
+      },
+      {
+       "team": "Team Thailand",
+       "name": "SUMMER",
+       "k": 11,
+       "a": 0,
+       "d": 16,
+       "mvp": 0,
+       "score": 30
+      },
+      {
+       "team": "Team Thailand",
+       "name": "colour",
+       "k": 6,
+       "a": 1,
+       "d": 20,
+       "mvp": 1,
+       "score": 16
+      },
+      {
+       "team": "Team Land of Make Believe",
+       "name": "Spectrum Gabriel",
+       "k": 24,
+       "a": 1,
+       "d": 12,
+       "mvp": 5,
+       "score": 55
+      },
+      {
+       "team": "Team Land of Make Believe",
+       "name": "ItzMaigay",
+       "k": 19,
+       "a": 1,
+       "d": 12,
+       "mvp": 4,
+       "score": 48
+      },
+      {
+       "team": "Team Land of Make Believe",
+       "name": "djassaulty",
+       "k": 20,
+       "a": 1,
+       "d": 14,
+       "mvp": 0,
+       "score": 44
+      },
+      {
+       "team": "Team Land of Make Believe",
+       "name": "Icington the third",
+       "k": 18,
+       "a": 4,
+       "d": 13,
+       "mvp": 2,
+       "score": 43
+      },
+      {
+       "team": "Team Land of Make Believe",
+       "name": "Goonuyun",
+       "k": 10,
+       "a": 5,
+       "d": 11,
+       "mvp": 2,
+       "score": 25
+      }
+     ]
+    },
+    {
+     "map": "Vertigo",
+     "scoreA": 4,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Team Thailand",
+       "name": "colour",
+       "k": 16,
+       "a": 1,
+       "d": 14,
+       "mvp": 2,
+       "score": 37
+      },
+      {
+       "team": "Team Thailand",
+       "name": "BluBEAR",
+       "k": 9,
+       "a": 0,
+       "d": 15,
+       "mvp": 1,
+       "score": 20
+      },
+      {
+       "team": "Team Thailand",
+       "name": "Anony",
+       "k": 8,
+       "a": 0,
+       "d": 13,
+       "mvp": 1,
+       "score": 18
+      },
+      {
+       "team": "Team Thailand",
+       "name": "SUMMER",
+       "k": 8,
+       "a": 2,
+       "d": 14,
+       "mvp": 0,
+       "score": 18
+      },
+      {
+       "team": "Team Thailand",
+       "name": "Nico",
+       "k": 8,
+       "a": 2,
+       "d": 15,
+       "mvp": 0,
+       "score": 18
+      },
+      {
+       "team": "Team Land of Make Believe",
+       "name": "Icington the third",
+       "k": 17,
+       "a": 1,
+       "d": 8,
+       "mvp": 3,
+       "score": 42
+      },
+      {
+       "team": "Team Land of Make Believe",
+       "name": "ItzMaigay",
+       "k": 15,
+       "a": 2,
+       "d": 10,
+       "mvp": 3,
+       "score": 35
+      },
+      {
+       "team": "Team Land of Make Believe",
+       "name": "Spectrum Gabriel",
+       "k": 15,
+       "a": 4,
+       "d": 11,
+       "mvp": 2,
+       "score": 35
+      },
+      {
+       "team": "Team Land of Make Believe",
+       "name": "djassaulty",
+       "k": 12,
+       "a": 3,
+       "d": 11,
+       "mvp": 3,
+       "score": 33
+      },
+      {
+       "team": "Team Land of Make Believe",
+       "name": "Goonuyun",
+       "k": 12,
+       "a": 2,
+       "d": 9,
+       "mvp": 2,
+       "score": 31
+      }
+     ]
+    }
+   ]
   }
  }
 }
