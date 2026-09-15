@@ -23849,6 +23849,204 @@
      ]
     }
    ]
+  },
+  "1-13": {
+   "maps": [
+    {
+     "map": "Mirage",
+     "scoreA": 13,
+     "scoreB": 9,
+     "players": [
+      {
+       "team": "Team Singapore",
+       "name": "caturteer",
+       "k": 29,
+       "a": 4,
+       "d": 16,
+       "mvp": 5,
+       "score": 74
+      },
+      {
+       "team": "Team Singapore",
+       "name": "twentyrosie",
+       "k": 21,
+       "a": 2,
+       "d": 18,
+       "mvp": 6,
+       "score": 53
+      },
+      {
+       "team": "Team Singapore",
+       "name": "Dirfun",
+       "k": 18,
+       "a": 2,
+       "d": 15,
+       "mvp": 1,
+       "score": 46
+      },
+      {
+       "team": "Team Singapore",
+       "name": "obvMX",
+       "k": 11,
+       "a": 4,
+       "d": 17,
+       "mvp": 1,
+       "score": 28
+      },
+      {
+       "team": "Team Singapore",
+       "name": "Aranionja",
+       "k": 7,
+       "a": 4,
+       "d": 19,
+       "mvp": 0,
+       "score": 21
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "l1feless",
+       "k": 20,
+       "a": 5,
+       "d": 17,
+       "mvp": 1,
+       "score": 55
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "Mikuryne",
+       "k": 19,
+       "a": 2,
+       "d": 16,
+       "mvp": 2,
+       "score": 46
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "SpicyWolfie",
+       "k": 17,
+       "a": 1,
+       "d": 17,
+       "mvp": 2,
+       "score": 41
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "dumbo",
+       "k": 17,
+       "a": 2,
+       "d": 19,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "Reruzensky",
+       "k": 12,
+       "a": 3,
+       "d": 17,
+       "mvp": 2,
+       "score": 30
+      }
+     ]
+    },
+    {
+     "map": "Inferno",
+     "scoreA": 16,
+     "scoreB": 14,
+     "players": [
+      {
+       "team": "Team Singapore",
+       "name": "Dirfun",
+       "k": 38,
+       "a": 2,
+       "d": 19,
+       "mvp": 3,
+       "score": 83
+      },
+      {
+       "team": "Team Singapore",
+       "name": "caturteer",
+       "k": 26,
+       "a": 2,
+       "d": 19,
+       "mvp": 4,
+       "score": 63
+      },
+      {
+       "team": "Team Singapore",
+       "name": "twentyrosie",
+       "k": 25,
+       "a": 3,
+       "d": 20,
+       "mvp": 4,
+       "score": 60
+      },
+      {
+       "team": "Team Singapore",
+       "name": "Aranionja",
+       "k": 18,
+       "a": 2,
+       "d": 17,
+       "mvp": 3,
+       "score": 42
+      },
+      {
+       "team": "Team Singapore",
+       "name": "obvMX",
+       "k": 11,
+       "a": 5,
+       "d": 20,
+       "mvp": 2,
+       "score": 35
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "dumbo",
+       "k": 24,
+       "a": 2,
+       "d": 23,
+       "mvp": 6,
+       "score": 59
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "Reruzensky",
+       "k": 23,
+       "a": 1,
+       "d": 24,
+       "mvp": 1,
+       "score": 48
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "Mikuryne",
+       "k": 16,
+       "a": 1,
+       "d": 24,
+       "mvp": 3,
+       "score": 41
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "l1feless",
+       "k": 17,
+       "a": 1,
+       "d": 25,
+       "mvp": 3,
+       "score": 40
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "SpicyWolfie",
+       "k": 15,
+       "a": 1,
+       "d": 22,
+       "mvp": 1,
+       "score": 38
+      }
+     ]
+    }
+   ]
   }
  }
 }
