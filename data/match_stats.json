@@ -22071,6 +22071,204 @@
      ]
     }
    ]
+  },
+  "1-5": {
+   "maps": [
+    {
+     "map": "Dust2",
+     "scoreA": 14,
+     "scoreB": 16,
+     "players": [
+      {
+       "team": "Team Malaysia",
+       "name": "HikariiFloofie",
+       "k": 28,
+       "a": 0,
+       "d": 20,
+       "mvp": 2,
+       "score": 68
+      },
+      {
+       "team": "Team Malaysia",
+       "name": "CRex",
+       "k": 25,
+       "a": 4,
+       "d": 23,
+       "mvp": 4,
+       "score": 65
+      },
+      {
+       "team": "Team Malaysia",
+       "name": "Yixl",
+       "k": 25,
+       "a": 0,
+       "d": 22,
+       "mvp": 3,
+       "score": 61
+      },
+      {
+       "team": "Team Malaysia",
+       "name": "Nikorasu",
+       "k": 13,
+       "a": 5,
+       "d": 21,
+       "mvp": 3,
+       "score": 43
+      },
+      {
+       "team": "Team Malaysia",
+       "name": "qebo",
+       "k": 11,
+       "a": 3,
+       "d": 20,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "Team Thailand",
+       "name": "Nico",
+       "k": 28,
+       "a": 1,
+       "d": 21,
+       "mvp": 3,
+       "score": 66
+      },
+      {
+       "team": "Team Thailand",
+       "name": "SUMMER",
+       "k": 23,
+       "a": 5,
+       "d": 22,
+       "mvp": 3,
+       "score": 62
+      },
+      {
+       "team": "Team Thailand",
+       "name": "Anony",
+       "k": 20,
+       "a": 3,
+       "d": 18,
+       "mvp": 2,
+       "score": 51
+      },
+      {
+       "team": "Team Thailand",
+       "name": "BluBEAR",
+       "k": 15,
+       "a": 4,
+       "d": 21,
+       "mvp": 6,
+       "score": 50
+      },
+      {
+       "team": "Team Thailand",
+       "name": "colour",
+       "k": 20,
+       "a": 2,
+       "d": 20,
+       "mvp": 2,
+       "score": 49
+      }
+     ]
+    },
+    {
+     "map": "Mirage",
+     "scoreA": 6,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Team Malaysia",
+       "name": "Nikorasu",
+       "k": 16,
+       "a": 0,
+       "d": 14,
+       "mvp": 0,
+       "score": 39
+      },
+      {
+       "team": "Team Malaysia",
+       "name": "CRex",
+       "k": 13,
+       "a": 1,
+       "d": 13,
+       "mvp": 1,
+       "score": 38
+      },
+      {
+       "team": "Team Malaysia",
+       "name": "Yixl",
+       "k": 13,
+       "a": 1,
+       "d": 16,
+       "mvp": 3,
+       "score": 30
+      },
+      {
+       "team": "Team Malaysia",
+       "name": "HikariiFloofie",
+       "k": 13,
+       "a": 2,
+       "d": 15,
+       "mvp": 1,
+       "score": 30
+      },
+      {
+       "team": "Team Malaysia",
+       "name": "qebo",
+       "k": 5,
+       "a": 1,
+       "d": 16,
+       "mvp": 1,
+       "score": 11
+      },
+      {
+       "team": "Team Thailand",
+       "name": "colour",
+       "k": 17,
+       "a": 2,
+       "d": 13,
+       "mvp": 3,
+       "score": 46
+      },
+      {
+       "team": "Team Thailand",
+       "name": "Nico",
+       "k": 14,
+       "a": 2,
+       "d": 9,
+       "mvp": 2,
+       "score": 40
+      },
+      {
+       "team": "Team Thailand",
+       "name": "Anony",
+       "k": 16,
+       "a": 1,
+       "d": 11,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "Team Thailand",
+       "name": "SUMMER",
+       "k": 13,
+       "a": 2,
+       "d": 14,
+       "mvp": 2,
+       "score": 34
+      },
+      {
+       "team": "Team Thailand",
+       "name": "BluBEAR",
+       "k": 14,
+       "a": 0,
+       "d": 13,
+       "mvp": 4,
+       "score": 33
+      }
+     ]
+    }
+   ]
   }
  }
 }
