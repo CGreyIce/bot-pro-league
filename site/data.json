@@ -123,12 +123,12 @@
      "iso": "my",
      "provisional": false,
      "rating": 1.084,
-     "ratingPoints": 1477,
+     "ratingPoints": 1476,
      "tier": "Grandmaster",
      "level": 7,
      "kpm": 16.2,
      "rankDelta": 0,
-     "bio": "The voice behind Aimpunch's championship run, Chiai Fujikawa is a Malaysian in-game leader who calls the shots for one of BPL's most successful teams. A four-time champion — headlined by the 2023 BPL Conquerors Major — he pairs a tactical mind with real firepower, carrying a Level 7 1477 points and a 1.11 K/D that few IGLs can match.",
+     "bio": "The voice behind Aimpunch's championship run, Chiai Fujikawa is a Malaysian in-game leader who calls the shots for one of BPL's most successful teams. A four-time champion — headlined by the 2023 BPL Conquerors Major — he pairs a tactical mind with real firepower, carrying a Level 7 1476 points and a 1.11 K/D that few IGLs can match.",
      "gender": "M",
      "teamHistory": [
       {
@@ -329,7 +329,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.016,
-     "ratingPoints": 1214,
+     "ratingPoints": 1213,
      "tier": "Emerald",
      "level": 6,
      "kpm": 14.6,
@@ -348,7 +348,7 @@
       "ratingPoints": 849,
       "tier": "Bronze",
       "level": 3,
-      "soloRank": 220,
+      "soloRank": 219,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -7494,7 +7494,7 @@
       "ratingPoints": 895,
       "tier": "Bronze",
       "level": 3,
-      "soloRank": 212,
+      "soloRank": 211,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -8193,7 +8193,7 @@
       "ratingPoints": 1283,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 77,
+      "soloRank": 75,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -8348,7 +8348,7 @@
       "ratingPoints": 1356,
       "tier": "Diamond",
       "level": 7,
-      "soloRank": 48,
+      "soloRank": 46,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -9960,7 +9960,7 @@
       "ratingPoints": 891,
       "tier": "Bronze",
       "level": 3,
-      "soloRank": 214,
+      "soloRank": 213,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -10929,7 +10929,7 @@
      "provisional": false,
      "rating": 0.994,
      "ratingPoints": 1127,
-     "tier": "Platinum",
+     "tier": "Gold",
      "level": 5,
      "kpm": 15.4,
      "rankDelta": 0,
@@ -12009,7 +12009,7 @@
       "ratingPoints": 897,
       "tier": "Bronze",
       "level": 3,
-      "soloRank": 211,
+      "soloRank": 210,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -12817,7 +12817,7 @@
      "iso": "nl",
      "provisional": false,
      "rating": 0.954,
-     "ratingPoints": 972,
+     "ratingPoints": 971,
      "tier": "Silver",
      "level": 4,
      "kpm": 14.7,
@@ -13674,7 +13674,7 @@
       "ratingPoints": 901,
       "tier": "Bronze",
       "level": 4,
-      "soloRank": 209,
+      "soloRank": 208,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -17180,7 +17180,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 0.999,
+     "rating": 0.998,
      "ratingPoints": 1144,
      "tier": "Platinum",
      "level": 5,
@@ -21146,7 +21146,7 @@
       "ratingPoints": 1338,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 52,
+      "soloRank": 50,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -21684,7 +21684,7 @@
       "ratingPoints": 1326,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 54,
+      "soloRank": 51,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -22739,7 +22739,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 0.951,
+     "rating": 0.95,
      "ratingPoints": 957,
      "tier": "Silver",
      "level": 4,
@@ -22759,7 +22759,7 @@
       "ratingPoints": 1016,
       "tier": "Silver",
       "level": 4,
-      "soloRank": 183,
+      "soloRank": 184,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -23573,7 +23573,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.088,
-     "ratingPoints": 1493,
+     "ratingPoints": 1492,
      "tier": "Grandmaster",
      "level": 7,
      "kpm": 17.7,
@@ -24661,7 +24661,7 @@
      "iso": "my",
      "provisional": false,
      "rating": 1.014,
-     "ratingPoints": 1206,
+     "ratingPoints": 1205,
      "tier": "Emerald",
      "level": 6,
      "kpm": 15.3,
@@ -26178,7 +26178,7 @@
       "ratingPoints": 1257,
       "tier": "Emerald",
       "level": 6,
-      "soloRank": 86,
+      "soloRank": 85,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -30108,7 +30108,7 @@
       "ratingPoints": 892,
       "tier": "Bronze",
       "level": 3,
-      "soloRank": 215,
+      "soloRank": 214,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -30433,7 +30433,7 @@
       "ratingPoints": 1301,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 65,
+      "soloRank": 63,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -30559,7 +30559,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 0.959,
-     "ratingPoints": 992,
+     "ratingPoints": 991,
      "tier": "Silver",
      "level": 4,
      "kpm": 13.4,
@@ -31889,7 +31889,7 @@
      "iso": "us",
      "provisional": false,
      "rating": 1.101,
-     "ratingPoints": 1545,
+     "ratingPoints": 1544,
      "tier": "Grandmaster",
      "level": 8,
      "kpm": 15.8,
@@ -32923,7 +32923,7 @@
       "ratingPoints": 908,
       "tier": "Bronze",
       "level": 4,
-      "soloRank": 207,
+      "soloRank": 206,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -33643,8 +33643,8 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.016,
-     "ratingPoints": 1211,
+     "rating": 1.015,
+     "ratingPoints": 1210,
      "tier": "Emerald",
      "level": 6,
      "kpm": 14.4,
@@ -34949,7 +34949,7 @@
      "iso": "ua",
      "provisional": false,
      "rating": 1.03,
-     "ratingPoints": 1267,
+     "ratingPoints": 1266,
      "tier": "Diamond",
      "level": 6,
      "kpm": 16.0,
@@ -35163,7 +35163,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.002,
-     "ratingPoints": 1157,
+     "ratingPoints": 1156,
      "tier": "Platinum",
      "level": 5,
      "kpm": 15.3,
@@ -35425,7 +35425,7 @@
       "ratingPoints": 898,
       "tier": "Bronze",
       "level": 3,
-      "soloRank": 213,
+      "soloRank": 212,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -37758,7 +37758,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.043,
-     "ratingPoints": 1318,
+     "ratingPoints": 1317,
      "tier": "Diamond",
      "level": 6,
      "kpm": 15.5,
@@ -38844,7 +38844,7 @@
       "ratingPoints": 1020,
       "tier": "Silver",
       "level": 4,
-      "soloRank": 182,
+      "soloRank": 183,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -39260,7 +39260,7 @@
       "ratingPoints": 1272,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 82,
+      "soloRank": 81,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -40159,17 +40159,17 @@
      "name": "l1feless",
      "team": "Bluebird",
      "pool": "pro",
-     "kills": 447,
-     "assists": 86,
-     "deaths": 498,
-     "mvp": 67,
+     "kills": 460,
+     "assists": 90,
+     "deaths": 513,
+     "mvp": 69,
      "kdr": 0.9,
-     "wins": 14,
+     "wins": 15,
      "losses": 18,
-     "winrate": 0.438,
+     "winrate": 0.455,
      "ot": 0,
      "role": "Awper",
-     "maps": 32,
+     "maps": 33,
      "orig_rank": "Silver",
      "orig_level": "Level 4",
      "orig_rating": 1616.0,
@@ -40177,12 +40177,12 @@
      "nat": "Indonesia",
      "iso": "id",
      "provisional": false,
-     "rating": 0.969,
-     "ratingPoints": 1028,
-     "tier": "Silver",
+     "rating": 0.97,
+     "ratingPoints": 1033,
+     "tier": "Gold",
      "level": 4,
-     "kpm": 14.0,
-     "rankDelta": 0,
+     "kpm": 13.9,
+     "rankDelta": 2,
      "soloStats": {
       "kills": 198,
       "deaths": 224,
@@ -40197,7 +40197,7 @@
       "ratingPoints": 849,
       "tier": "Bronze",
       "level": 3,
-      "soloRank": 219,
+      "soloRank": 218,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -40966,7 +40966,7 @@
       "ratingPoints": 876,
       "tier": "Bronze",
       "level": 3,
-      "soloRank": 218,
+      "soloRank": 217,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -41327,8 +41327,8 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.095,
-     "ratingPoints": 1519,
+     "rating": 1.094,
+     "ratingPoints": 1518,
      "tier": "Grandmaster",
      "level": 7,
      "kpm": 17.2,
@@ -41844,7 +41844,7 @@
       "ratingPoints": 1319,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 59,
+      "soloRank": 56,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -42137,7 +42137,7 @@
       "ratingPoints": 1309,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 63,
+      "soloRank": 61,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -43586,7 +43586,7 @@
       "ratingPoints": 1322,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 56,
+      "soloRank": 53,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -43958,7 +43958,7 @@
       "ratingPoints": 1319,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 60,
+      "soloRank": 57,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -45011,7 +45011,7 @@
       "ratingPoints": 899,
       "tier": "Bronze",
       "level": 3,
-      "soloRank": 210,
+      "soloRank": 209,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -48356,7 +48356,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.052,
-     "ratingPoints": 1352,
+     "ratingPoints": 1351,
      "tier": "Diamond",
      "level": 7,
      "kpm": 15.5,
@@ -49914,7 +49914,7 @@
      "iso": "nz",
      "provisional": false,
      "rating": 1.061,
-     "ratingPoints": 1388,
+     "ratingPoints": 1387,
      "tier": "Master",
      "level": 7,
      "kpm": 16.0,
@@ -49933,7 +49933,7 @@
       "ratingPoints": 1300,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 66,
+      "soloRank": 64,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -50427,7 +50427,7 @@
       "ratingPoints": 1258,
       "tier": "Emerald",
       "level": 6,
-      "soloRank": 85,
+      "soloRank": 84,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -51579,7 +51579,7 @@
       "ratingPoints": 890,
       "tier": "Bronze",
       "level": 3,
-      "soloRank": 216,
+      "soloRank": 215,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -52149,7 +52149,7 @@
       "ratingPoints": 1382,
       "tier": "Master",
       "level": 7,
-      "soloRank": 42,
+      "soloRank": 41,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -52591,7 +52591,7 @@
       "ratingPoints": 1322,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 55,
+      "soloRank": 52,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -54005,7 +54005,7 @@
      "iso": "au",
      "provisional": false,
      "rating": 1.058,
-     "ratingPoints": 1377,
+     "ratingPoints": 1376,
      "tier": "Master",
      "level": 7,
      "kpm": 16.7,
@@ -54294,7 +54294,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.038,
+     "rating": 1.037,
      "ratingPoints": 1296,
      "tier": "Diamond",
      "level": 6,
@@ -55606,7 +55606,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.006,
-     "ratingPoints": 1175,
+     "ratingPoints": 1174,
      "tier": "Platinum",
      "level": 5,
      "kpm": 14.4,
@@ -56380,7 +56380,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.063,
-     "ratingPoints": 1395,
+     "ratingPoints": 1394,
      "tier": "Master",
      "level": 7,
      "kpm": 16.4,
@@ -57014,7 +57014,7 @@
       "ratingPoints": 1294,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 71,
+      "soloRank": 69,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -58590,7 +58590,7 @@
       "ratingPoints": 1287,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 75,
+      "soloRank": 73,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -58866,7 +58866,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.062,
-     "ratingPoints": 1392,
+     "ratingPoints": 1391,
      "tier": "Master",
      "level": 7,
      "kpm": 15.5,
@@ -58885,7 +58885,7 @@
       "ratingPoints": 1386,
       "tier": "Master",
       "level": 7,
-      "soloRank": 40,
+      "soloRank": 39,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -60857,7 +60857,7 @@
       "ratingPoints": 1318,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 57,
+      "soloRank": 54,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -61651,7 +61651,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 0.957,
-     "ratingPoints": 982,
+     "ratingPoints": 981,
      "tier": "Silver",
      "level": 4,
      "kpm": 13.2,
@@ -62286,7 +62286,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 0.932,
-     "ratingPoints": 886,
+     "ratingPoints": 885,
      "tier": "Bronze",
      "level": 3,
      "kpm": 12.5,
@@ -62305,7 +62305,7 @@
       "ratingPoints": 1281,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 78,
+      "soloRank": 76,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -63219,8 +63219,8 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.096,
-     "ratingPoints": 1523,
+     "rating": 1.095,
+     "ratingPoints": 1522,
      "tier": "Grandmaster",
      "level": 7,
      "kpm": 16.0,
@@ -64603,7 +64603,7 @@
       "ratingPoints": 1274,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 80,
+      "soloRank": 79,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -65489,7 +65489,7 @@
       "ratingPoints": 1295,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 72,
+      "soloRank": 70,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -67010,7 +67010,7 @@
       "ratingPoints": 1289,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 73,
+      "soloRank": 71,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -68174,11 +68174,11 @@
       "maps": 6,
       "kdr": 1.15,
       "winrate": 0.333,
-      "rating": 0.966,
+      "rating": 0.967,
       "ratingPoints": 1019,
       "tier": "Silver",
       "level": 4,
-      "soloRank": 184,
+      "soloRank": 182,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -68720,7 +68720,7 @@
       "ratingPoints": 1295,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 68,
+      "soloRank": 66,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -69619,7 +69619,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 0.953,
+     "rating": 0.952,
      "ratingPoints": 965,
      "tier": "Silver",
      "level": 4,
@@ -71901,7 +71901,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.121,
-     "ratingPoints": 1621,
+     "ratingPoints": 1620,
      "tier": "Champion",
      "level": 8,
      "kpm": 18.5,
@@ -73006,7 +73006,7 @@
       "ratingPoints": 1293,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 69,
+      "soloRank": 67,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -73148,7 +73148,7 @@
       "ratingPoints": 1254,
       "tier": "Emerald",
       "level": 6,
-      "soloRank": 87,
+      "soloRank": 86,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -73561,7 +73561,7 @@
       "kdr": 0.87,
       "winrate": 0.462,
       "rating": 0.978,
-      "ratingPoints": 1062,
+      "ratingPoints": 1063,
       "tier": "Gold",
       "level": 5,
       "soloRank": 164,
@@ -74245,7 +74245,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.053,
-     "ratingPoints": 1356,
+     "ratingPoints": 1355,
      "tier": "Diamond",
      "level": 7,
      "kpm": 16.5,
@@ -75416,7 +75416,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 0.949,
+     "rating": 0.948,
      "ratingPoints": 949,
      "tier": "Silver",
      "level": 4,
@@ -77092,8 +77092,8 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.186,
-     "ratingPoints": 1874,
+     "rating": 1.185,
+     "ratingPoints": 1873,
      "tier": "Champion",
      "level": 9,
      "kpm": 17.9,
@@ -78203,7 +78203,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.095,
-     "ratingPoints": 1520,
+     "ratingPoints": 1519,
      "tier": "Grandmaster",
      "level": 7,
      "kpm": 16.1,
@@ -78772,7 +78772,7 @@
       "ratingPoints": 876,
       "tier": "Bronze",
       "level": 3,
-      "soloRank": 217,
+      "soloRank": 216,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -79800,7 +79800,7 @@
       "ratingPoints": 1295,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 70,
+      "soloRank": 68,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -80379,7 +80379,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.039,
-     "ratingPoints": 1302,
+     "ratingPoints": 1301,
      "tier": "Diamond",
      "level": 6,
      "kpm": 15.1,
@@ -81338,7 +81338,7 @@
      "iso": "ph",
      "provisional": false,
      "rating": 1.022,
-     "ratingPoints": 1238,
+     "ratingPoints": 1237,
      "tier": "Emerald",
      "level": 6,
      "kpm": 14.8,
@@ -81354,10 +81354,10 @@
       "kdr": 1.07,
       "winrate": 0.625,
       "rating": 1.04,
-      "ratingPoints": 1307,
+      "ratingPoints": 1308,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 64,
+      "soloRank": 62,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -82376,7 +82376,7 @@
       "ratingPoints": 1277,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 79,
+      "soloRank": 77,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -85037,7 +85037,7 @@
       "ratingPoints": 1319,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 62,
+      "soloRank": 59,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -85613,7 +85613,7 @@
       "ratingPoints": 917,
       "tier": "Bronze",
       "level": 4,
-      "soloRank": 205,
+      "soloRank": 204,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -87787,7 +87787,7 @@
      "iso": "us",
      "provisional": false,
      "rating": 0.939,
-     "ratingPoints": 911,
+     "ratingPoints": 910,
      "tier": "Bronze",
      "level": 4,
      "kpm": 13.8,
@@ -88863,7 +88863,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.081,
-     "ratingPoints": 1467,
+     "ratingPoints": 1466,
      "tier": "Grandmaster",
      "level": 7,
      "kpm": 18.8,
@@ -90958,6 +90958,13 @@
          "captain": false
         },
         {
+         "hist": "dumbo",
+         "name": "dumbo",
+         "slug": "dumbo",
+         "iso": "id",
+         "captain": false
+        },
+        {
          "hist": "TortillaRoll",
          "name": "TortillaRoll",
          "slug": "tortillaroll",
@@ -90969,13 +90976,6 @@
          "name": "Kisaragi Ren",
          "slug": "kisaragi-ren",
          "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "dumbo",
-         "name": "dumbo",
-         "slug": "dumbo",
-         "iso": "id",
          "captain": false
         },
         {
@@ -91035,6 +91035,165 @@
      ],
      "aka": [
       "livingitupbt"
+     ],
+     "titles": [
+      {
+       "event": "Bot Pro Minor League 13",
+       "slug": "BotProLeague13",
+       "tier": "a",
+       "tierLabel": "A-Tier",
+       "year": "2026",
+       "team": "5PERCENT"
+      }
+     ]
+    },
+    {
+     "name": "dumbo",
+     "team": "5PERCENT",
+     "pool": "pro",
+     "kills": 305,
+     "assists": 26,
+     "deaths": 277,
+     "mvp": 52,
+     "kdr": 1.1,
+     "wins": 11,
+     "losses": 8,
+     "winrate": 0.579,
+     "ot": 2,
+     "role": "IGL",
+     "maps": 19,
+     "orig_rank": "Bronze",
+     "orig_level": "Level 3",
+     "orig_rating": 1272.0,
+     "slug": "dumbo",
+     "nat": "Indonesia",
+     "iso": "id",
+     "provisional": false,
+     "rating": 1.036,
+     "ratingPoints": 1289,
+     "tier": "Diamond",
+     "level": 6,
+     "kpm": 16.1,
+     "rankDelta": 85,
+     "soloStats": {
+      "kills": 178,
+      "deaths": 165,
+      "assists": 20,
+      "mvp": 20,
+      "wins": 5,
+      "losses": 7,
+      "maps": 12,
+      "kdr": 1.08,
+      "winrate": 0.417,
+      "rating": 0.969,
+      "ratingPoints": 1030,
+      "tier": "Gold",
+      "level": 4,
+      "soloRank": 178,
+      "soloTotal": 240,
+      "rankDelta": 0,
+      "provisional": false
+     },
+     "bio": "dumbo calls the game for 5PERCENT, a Singaporean in-game leader whose title at Bot Pro Minor League 13 marks a promising start for the roster.",
+     "gender": "M",
+     "teamHistory": [
+      {
+       "team": "5PERCENT",
+       "teamSlug": "5percent",
+       "isPro": true,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Solaonix",
+         "name": "Solaonix",
+         "slug": "solaonix",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "dumbo",
+         "name": "dumbo",
+         "slug": "dumbo",
+         "iso": "id",
+         "captain": false
+        },
+        {
+         "hist": "TortillaRoll",
+         "name": "TortillaRoll",
+         "slug": "tortillaroll",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Kisaragi Ren",
+         "name": "Kisaragi Ren",
+         "slug": "kisaragi-ren",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "AngelxAim",
+         "name": "AngelxAim",
+         "slug": "angelxaim",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Team Indonesia",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "l1feless",
+         "name": "l1feless",
+         "slug": "l1feless",
+         "iso": "id",
+         "captain": true
+        },
+        {
+         "hist": "dumbo",
+         "name": "dumbo",
+         "slug": "dumbo",
+         "iso": "id",
+         "captain": false
+        },
+        {
+         "hist": "Mikuryne",
+         "name": "Mikuryne",
+         "slug": "mikuryne",
+         "iso": "id",
+         "captain": false
+        },
+        {
+         "hist": "Reruzensky",
+         "name": "Reruzensky",
+         "slug": "reruzensky",
+         "iso": "id",
+         "captain": false
+        },
+        {
+         "hist": "SpicyWolfie",
+         "name": "SpicyWolfie",
+         "slug": "spicywolfie",
+         "iso": "id",
+         "captain": false
+        }
+       ]
+      }
+     ],
+     "mvpAwards": [
+      {
+       "event": "BPL Nations Cup 2026",
+       "slug": "bpl-nations-cup-2026",
+       "year": "2026"
+      }
      ],
      "titles": [
       {
@@ -91293,6 +91452,13 @@
          "captain": false
         },
         {
+         "hist": "dumbo",
+         "name": "dumbo",
+         "slug": "dumbo",
+         "iso": "id",
+         "captain": false
+        },
+        {
          "hist": "TortillaRoll",
          "name": "TortillaRoll",
          "slug": "tortillaroll",
@@ -91304,13 +91470,6 @@
          "name": "Kisaragi Ren",
          "slug": "kisaragi-ren",
          "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "dumbo",
-         "name": "dumbo",
-         "slug": "dumbo",
-         "iso": "id",
          "captain": false
         },
         {
@@ -91445,6 +91604,13 @@
          "captain": false
         },
         {
+         "hist": "dumbo",
+         "name": "dumbo",
+         "slug": "dumbo",
+         "iso": "id",
+         "captain": false
+        },
+        {
          "hist": "TortillaRoll",
          "name": "TortillaRoll",
          "slug": "tortillaroll",
@@ -91456,13 +91622,6 @@
          "name": "Kisaragi Ren",
          "slug": "kisaragi-ren",
          "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "dumbo",
-         "name": "dumbo",
-         "slug": "dumbo",
-         "iso": "id",
          "captain": false
         },
         {
@@ -91515,158 +91674,6 @@
          "name": "miruaamaochi",
          "slug": "miruaamaochi",
          "iso": "jp",
-         "captain": false
-        }
-       ]
-      }
-     ],
-     "titles": [
-      {
-       "event": "Bot Pro Minor League 13",
-       "slug": "BotProLeague13",
-       "tier": "a",
-       "tierLabel": "A-Tier",
-       "year": "2026",
-       "team": "5PERCENT"
-      }
-     ]
-    },
-    {
-     "name": "dumbo",
-     "team": "5PERCENT",
-     "pool": "pro",
-     "kills": 274,
-     "assists": 22,
-     "deaths": 267,
-     "mvp": 47,
-     "kdr": 1.03,
-     "wins": 10,
-     "losses": 8,
-     "winrate": 0.556,
-     "ot": 2,
-     "role": "IGL",
-     "maps": 18,
-     "orig_rank": "Bronze",
-     "orig_level": "Level 3",
-     "orig_rating": 1272.0,
-     "slug": "dumbo",
-     "nat": "Indonesia",
-     "iso": "id",
-     "provisional": false,
-     "rating": 1.005,
-     "ratingPoints": 1170,
-     "tier": "Platinum",
-     "level": 5,
-     "kpm": 15.2,
-     "rankDelta": 0,
-     "soloStats": {
-      "kills": 178,
-      "deaths": 165,
-      "assists": 20,
-      "mvp": 20,
-      "wins": 5,
-      "losses": 7,
-      "maps": 12,
-      "kdr": 1.08,
-      "winrate": 0.417,
-      "rating": 0.969,
-      "ratingPoints": 1030,
-      "tier": "Gold",
-      "level": 4,
-      "soloRank": 178,
-      "soloTotal": 240,
-      "rankDelta": 0,
-      "provisional": false
-     },
-     "bio": "dumbo calls the game for 5PERCENT, a Singaporean in-game leader whose title at Bot Pro Minor League 13 marks a promising start for the roster.",
-     "gender": "M",
-     "teamHistory": [
-      {
-       "team": "5PERCENT",
-       "teamSlug": "5percent",
-       "isPro": true,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "Solaonix",
-         "name": "Solaonix",
-         "slug": "solaonix",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "TortillaRoll",
-         "name": "TortillaRoll",
-         "slug": "tortillaroll",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Kisaragi Ren",
-         "name": "Kisaragi Ren",
-         "slug": "kisaragi-ren",
-         "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "dumbo",
-         "name": "dumbo",
-         "slug": "dumbo",
-         "iso": "id",
-         "captain": false
-        },
-        {
-         "hist": "AngelxAim",
-         "name": "AngelxAim",
-         "slug": "angelxaim",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Team Indonesia",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "l1feless",
-         "name": "l1feless",
-         "slug": "l1feless",
-         "iso": "id",
-         "captain": true
-        },
-        {
-         "hist": "dumbo",
-         "name": "dumbo",
-         "slug": "dumbo",
-         "iso": "id",
-         "captain": false
-        },
-        {
-         "hist": "Mikuryne",
-         "name": "Mikuryne",
-         "slug": "mikuryne",
-         "iso": "id",
-         "captain": false
-        },
-        {
-         "hist": "Reruzensky",
-         "name": "Reruzensky",
-         "slug": "reruzensky",
-         "iso": "id",
-         "captain": false
-        },
-        {
-         "hist": "SpicyWolfie",
-         "name": "SpicyWolfie",
-         "slug": "spicywolfie",
-         "iso": "id",
          "captain": false
         }
        ]
@@ -92000,6 +92007,13 @@
          "captain": false
         },
         {
+         "hist": "dumbo",
+         "name": "dumbo",
+         "slug": "dumbo",
+         "iso": "id",
+         "captain": false
+        },
+        {
          "hist": "TortillaRoll",
          "name": "TortillaRoll",
          "slug": "tortillaroll",
@@ -92011,13 +92025,6 @@
          "name": "Kisaragi Ren",
          "slug": "kisaragi-ren",
          "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "dumbo",
-         "name": "dumbo",
-         "slug": "dumbo",
-         "iso": "id",
          "captain": false
         },
         {
@@ -92570,7 +92577,7 @@
      "tier": "Diamond",
      "level": 7,
      "kpm": 16.5,
-     "rankDelta": 13,
+     "rankDelta": 0,
      "soloStats": {
       "kills": 242,
       "deaths": 219,
@@ -92682,13 +92689,6 @@
          "captain": true
         }
        ]
-      }
-     ],
-     "mvpAwards": [
-      {
-       "event": "BPL Nations Cup 2026",
-       "slug": "bpl-nations-cup-2026",
-       "year": "2026"
       }
      ]
     },
@@ -93465,7 +93465,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.02,
-     "ratingPoints": 1229,
+     "ratingPoints": 1228,
      "tier": "Emerald",
      "level": 6,
      "kpm": 15.2,
@@ -93484,7 +93484,7 @@
       "ratingPoints": 1365,
       "tier": "Master",
       "level": 7,
-      "soloRank": 45,
+      "soloRank": 44,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -97096,7 +97096,7 @@
       "ratingPoints": 1318,
       "tier": "Diamond",
       "level": 6,
-      "soloRank": 61,
+      "soloRank": 58,
       "soloTotal": 240,
       "rankDelta": 0,
       "provisional": false
@@ -97220,7 +97220,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 0.993,
+     "rating": 0.992,
      "ratingPoints": 1121,
      "tier": "Gold",
      "level": 5,
@@ -98749,7 +98749,7 @@
      "iso": "au",
      "provisional": false,
      "rating": 0.902,
-     "ratingPoints": 768,
+     "ratingPoints": 767,
      "tier": "Iron",
      "level": 3,
      "kpm": 13.1,
@@ -99387,7 +99387,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.053,
-    "ratingPoints": 1356,
+    "ratingPoints": 1355,
     "tier": "Diamond",
     "level": 7,
     "kpm": 16.5,
@@ -100558,7 +100558,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 0.949,
+    "rating": 0.948,
     "ratingPoints": 949,
     "tier": "Silver",
     "level": 4,
@@ -102535,6 +102535,13 @@
         "captain": false
        },
        {
+        "hist": "dumbo",
+        "name": "dumbo",
+        "slug": "dumbo",
+        "iso": "id",
+        "captain": false
+       },
+       {
         "hist": "TortillaRoll",
         "name": "TortillaRoll",
         "slug": "tortillaroll",
@@ -102546,13 +102553,6 @@
         "name": "Kisaragi Ren",
         "slug": "kisaragi-ren",
         "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "dumbo",
-        "name": "dumbo",
-        "slug": "dumbo",
-        "iso": "id",
         "captain": false
        },
        {
@@ -102628,17 +102628,17 @@
     "name": "dumbo",
     "team": "5PERCENT",
     "pool": "pro",
-    "kills": 274,
-    "assists": 22,
-    "deaths": 267,
-    "mvp": 47,
-    "kdr": 1.03,
-    "wins": 10,
+    "kills": 305,
+    "assists": 26,
+    "deaths": 277,
+    "mvp": 52,
+    "kdr": 1.1,
+    "wins": 11,
     "losses": 8,
-    "winrate": 0.556,
+    "winrate": 0.579,
     "ot": 2,
     "role": "IGL",
-    "maps": 18,
+    "maps": 19,
     "orig_rank": "Bronze",
     "orig_level": "Level 3",
     "orig_rating": 1272.0,
@@ -102646,12 +102646,12 @@
     "nat": "Indonesia",
     "iso": "id",
     "provisional": false,
-    "rating": 1.005,
-    "ratingPoints": 1170,
-    "tier": "Platinum",
-    "level": 5,
-    "kpm": 15.2,
-    "rankDelta": 0,
+    "rating": 1.036,
+    "ratingPoints": 1289,
+    "tier": "Diamond",
+    "level": 6,
+    "kpm": 16.1,
+    "rankDelta": 85,
     "soloStats": {
      "kills": 178,
      "deaths": 165,
@@ -102690,6 +102690,13 @@
         "captain": false
        },
        {
+        "hist": "dumbo",
+        "name": "dumbo",
+        "slug": "dumbo",
+        "iso": "id",
+        "captain": false
+       },
+       {
         "hist": "TortillaRoll",
         "name": "TortillaRoll",
         "slug": "tortillaroll",
@@ -102701,13 +102708,6 @@
         "name": "Kisaragi Ren",
         "slug": "kisaragi-ren",
         "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "dumbo",
-        "name": "dumbo",
-        "slug": "dumbo",
-        "iso": "id",
         "captain": false
        },
        {
@@ -102763,6 +102763,13 @@
         "captain": false
        }
       ]
+     }
+    ],
+    "mvpAwards": [
+     {
+      "event": "BPL Nations Cup 2026",
+      "slug": "bpl-nations-cup-2026",
+      "year": "2026"
      }
     ],
     "titles": [
@@ -103022,6 +103029,13 @@
         "captain": false
        },
        {
+        "hist": "dumbo",
+        "name": "dumbo",
+        "slug": "dumbo",
+        "iso": "id",
+        "captain": false
+       },
+       {
         "hist": "TortillaRoll",
         "name": "TortillaRoll",
         "slug": "tortillaroll",
@@ -103033,13 +103047,6 @@
         "name": "Kisaragi Ren",
         "slug": "kisaragi-ren",
         "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "dumbo",
-        "name": "dumbo",
-        "slug": "dumbo",
-        "iso": "id",
         "captain": false
        },
        {
@@ -103174,6 +103181,13 @@
         "captain": false
        },
        {
+        "hist": "dumbo",
+        "name": "dumbo",
+        "slug": "dumbo",
+        "iso": "id",
+        "captain": false
+       },
+       {
         "hist": "TortillaRoll",
         "name": "TortillaRoll",
         "slug": "tortillaroll",
@@ -103185,13 +103199,6 @@
         "name": "Kisaragi Ren",
         "slug": "kisaragi-ren",
         "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "dumbo",
-        "name": "dumbo",
-        "slug": "dumbo",
-        "iso": "id",
         "captain": false
        },
        {
@@ -103577,6 +103584,13 @@
         "captain": false
        },
        {
+        "hist": "dumbo",
+        "name": "dumbo",
+        "slug": "dumbo",
+        "iso": "id",
+        "captain": false
+       },
+       {
         "hist": "TortillaRoll",
         "name": "TortillaRoll",
         "slug": "tortillaroll",
@@ -103588,13 +103602,6 @@
         "name": "Kisaragi Ren",
         "slug": "kisaragi-ren",
         "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "dumbo",
-        "name": "dumbo",
-        "slug": "dumbo",
-        "iso": "id",
         "captain": false
        },
        {
@@ -103689,7 +103696,7 @@
     "iso": "ph",
     "provisional": false,
     "rating": 1.022,
-    "ratingPoints": 1238,
+    "ratingPoints": 1237,
     "tier": "Emerald",
     "level": 6,
     "kpm": 14.8,
@@ -103705,10 +103712,10 @@
      "kdr": 1.07,
      "winrate": 0.625,
      "rating": 1.04,
-     "ratingPoints": 1307,
+     "ratingPoints": 1308,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 64,
+     "soloRank": 62,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -104078,7 +104085,7 @@
      "ratingPoints": 1295,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 70,
+     "soloRank": 68,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -104892,7 +104899,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.039,
-    "ratingPoints": 1302,
+    "ratingPoints": 1301,
     "tier": "Diamond",
     "level": 6,
     "kpm": 15.1,
@@ -105635,7 +105642,7 @@
      "ratingPoints": 890,
      "tier": "Bronze",
      "level": 3,
-     "soloRank": 216,
+     "soloRank": 215,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -106205,7 +106212,7 @@
      "ratingPoints": 1382,
      "tier": "Master",
      "level": 7,
-     "soloRank": 42,
+     "soloRank": 41,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -106647,7 +106654,7 @@
      "ratingPoints": 1322,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 55,
+     "soloRank": 52,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -107108,7 +107115,7 @@
     "iso": "ua",
     "provisional": false,
     "rating": 1.03,
-    "ratingPoints": 1267,
+    "ratingPoints": 1266,
     "tier": "Diamond",
     "level": 6,
     "kpm": 16.0,
@@ -107322,7 +107329,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.002,
-    "ratingPoints": 1157,
+    "ratingPoints": 1156,
     "tier": "Platinum",
     "level": 5,
     "kpm": 15.3,
@@ -107584,7 +107591,7 @@
      "ratingPoints": 898,
      "tier": "Bronze",
      "level": 3,
-     "soloRank": 213,
+     "soloRank": 212,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -108023,12 +108030,12 @@
     "iso": "my",
     "provisional": false,
     "rating": 1.084,
-    "ratingPoints": 1477,
+    "ratingPoints": 1476,
     "tier": "Grandmaster",
     "level": 7,
     "kpm": 16.2,
     "rankDelta": 0,
-    "bio": "The voice behind Aimpunch's championship run, Chiai Fujikawa is a Malaysian in-game leader who calls the shots for one of BPL's most successful teams. A four-time champion — headlined by the 2023 BPL Conquerors Major — he pairs a tactical mind with real firepower, carrying a Level 7 1477 points and a 1.11 K/D that few IGLs can match.",
+    "bio": "The voice behind Aimpunch's championship run, Chiai Fujikawa is a Malaysian in-game leader who calls the shots for one of BPL's most successful teams. A four-time champion — headlined by the 2023 BPL Conquerors Major — he pairs a tactical mind with real firepower, carrying a Level 7 1476 points and a 1.11 K/D that few IGLs can match.",
     "gender": "M",
     "teamHistory": [
      {
@@ -108229,7 +108236,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.016,
-    "ratingPoints": 1214,
+    "ratingPoints": 1213,
     "tier": "Emerald",
     "level": 6,
     "kpm": 14.6,
@@ -108248,7 +108255,7 @@
      "ratingPoints": 849,
      "tier": "Bronze",
      "level": 3,
-     "soloRank": 220,
+     "soloRank": 219,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -109501,7 +109508,7 @@
      "ratingPoints": 876,
      "tier": "Bronze",
      "level": 3,
-     "soloRank": 218,
+     "soloRank": 217,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -109862,8 +109869,8 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.095,
-    "ratingPoints": 1519,
+    "rating": 1.094,
+    "ratingPoints": 1518,
     "tier": "Grandmaster",
     "level": 7,
     "kpm": 17.2,
@@ -110379,7 +110386,7 @@
      "ratingPoints": 1319,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 59,
+     "soloRank": 56,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -110672,7 +110679,7 @@
      "ratingPoints": 1309,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 63,
+     "soloRank": 61,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -111682,7 +111689,7 @@
     "provisional": false,
     "rating": 0.994,
     "ratingPoints": 1127,
-    "tier": "Platinum",
+    "tier": "Gold",
     "level": 5,
     "kpm": 15.4,
     "rankDelta": 0,
@@ -111882,7 +111889,7 @@
      "ratingPoints": 891,
      "tier": "Bronze",
      "level": 3,
-     "soloRank": 214,
+     "soloRank": 213,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -113668,7 +113675,7 @@
      "ratingPoints": 1277,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 79,
+     "soloRank": 77,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -115304,7 +115311,7 @@
     "tier": "Diamond",
     "level": 7,
     "kpm": 16.5,
-    "rankDelta": 13,
+    "rankDelta": 0,
     "soloStats": {
      "kills": 242,
      "deaths": 219,
@@ -115416,13 +115423,6 @@
         "captain": true
        }
       ]
-     }
-    ],
-    "mvpAwards": [
-     {
-      "event": "BPL Nations Cup 2026",
-      "slug": "bpl-nations-cup-2026",
-      "year": "2026"
      }
     ]
    },
@@ -116287,7 +116287,7 @@
      "ratingPoints": 1319,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 60,
+     "soloRank": 57,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -117340,7 +117340,7 @@
      "ratingPoints": 1322,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 56,
+     "soloRank": 53,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -117712,7 +117712,7 @@
      "ratingPoints": 899,
      "tier": "Bronze",
      "level": 3,
-     "soloRank": 210,
+     "soloRank": 209,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -117946,7 +117946,7 @@
      "ratingPoints": 1272,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 82,
+     "soloRank": 81,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -118092,7 +118092,7 @@
      "ratingPoints": 1020,
      "tier": "Silver",
      "level": 4,
-     "soloRank": 182,
+     "soloRank": 183,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -119066,17 +119066,17 @@
     "name": "l1feless",
     "team": "Bluebird",
     "pool": "pro",
-    "kills": 447,
-    "assists": 86,
-    "deaths": 498,
-    "mvp": 67,
+    "kills": 460,
+    "assists": 90,
+    "deaths": 513,
+    "mvp": 69,
     "kdr": 0.9,
-    "wins": 14,
+    "wins": 15,
     "losses": 18,
-    "winrate": 0.438,
+    "winrate": 0.455,
     "ot": 0,
     "role": "Awper",
-    "maps": 32,
+    "maps": 33,
     "orig_rank": "Silver",
     "orig_level": "Level 4",
     "orig_rating": 1616.0,
@@ -119084,12 +119084,12 @@
     "nat": "Indonesia",
     "iso": "id",
     "provisional": false,
-    "rating": 0.969,
-    "ratingPoints": 1028,
-    "tier": "Silver",
+    "rating": 0.97,
+    "ratingPoints": 1033,
+    "tier": "Gold",
     "level": 4,
-    "kpm": 14.0,
-    "rankDelta": 0,
+    "kpm": 13.9,
+    "rankDelta": 2,
     "soloStats": {
      "kills": 198,
      "deaths": 224,
@@ -119104,7 +119104,7 @@
      "ratingPoints": 849,
      "tier": "Bronze",
      "level": 3,
-     "soloRank": 219,
+     "soloRank": 218,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -120099,7 +120099,7 @@
      "ratingPoints": 1318,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 57,
+     "soloRank": 54,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -120893,7 +120893,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.932,
-    "ratingPoints": 886,
+    "ratingPoints": 885,
     "tier": "Bronze",
     "level": 3,
     "kpm": 12.5,
@@ -120912,7 +120912,7 @@
      "ratingPoints": 1281,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 78,
+     "soloRank": 76,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -121310,7 +121310,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.957,
-    "ratingPoints": 982,
+    "ratingPoints": 981,
     "tier": "Silver",
     "level": 4,
     "kpm": 13.2,
@@ -124501,7 +124501,7 @@
     "iso": "us",
     "provisional": false,
     "rating": 0.939,
-    "ratingPoints": 911,
+    "ratingPoints": 910,
     "tier": "Bronze",
     "level": 4,
     "kpm": 13.8,
@@ -126194,7 +126194,7 @@
      "ratingPoints": 892,
      "tier": "Bronze",
      "level": 3,
-     "soloRank": 215,
+     "soloRank": 214,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -126519,7 +126519,7 @@
      "ratingPoints": 1301,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 65,
+     "soloRank": 63,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -126645,7 +126645,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.959,
-    "ratingPoints": 992,
+    "ratingPoints": 991,
     "tier": "Silver",
     "level": 4,
     "kpm": 13.4,
@@ -127014,8 +127014,8 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.096,
-    "ratingPoints": 1523,
+    "rating": 1.095,
+    "ratingPoints": 1522,
     "tier": "Grandmaster",
     "level": 7,
     "kpm": 16.0,
@@ -127494,7 +127494,7 @@
      "ratingPoints": 1274,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 80,
+     "soloRank": 79,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -129177,7 +129177,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.043,
-    "ratingPoints": 1318,
+    "ratingPoints": 1317,
     "tier": "Diamond",
     "level": 6,
     "kpm": 15.5,
@@ -130629,7 +130629,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.095,
-    "ratingPoints": 1520,
+    "ratingPoints": 1519,
     "tier": "Grandmaster",
     "level": 7,
     "kpm": 16.1,
@@ -131638,8 +131638,8 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.186,
-    "ratingPoints": 1874,
+    "rating": 1.185,
+    "ratingPoints": 1873,
     "tier": "Champion",
     "level": 9,
     "kpm": 17.9,
@@ -132308,7 +132308,7 @@
      "ratingPoints": 876,
      "tier": "Bronze",
      "level": 3,
-     "soloRank": 217,
+     "soloRank": 216,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -132839,7 +132839,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.088,
-    "ratingPoints": 1493,
+    "ratingPoints": 1492,
     "tier": "Grandmaster",
     "level": 7,
     "kpm": 17.7,
@@ -133712,7 +133712,7 @@
     "iso": "my",
     "provisional": false,
     "rating": 1.014,
-    "ratingPoints": 1206,
+    "ratingPoints": 1205,
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.3,
@@ -135732,7 +135732,7 @@
      "ratingPoints": 917,
      "tier": "Bronze",
      "level": 4,
-     "soloRank": 205,
+     "soloRank": 204,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -135933,7 +135933,7 @@
      "ratingPoints": 1319,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 62,
+     "soloRank": 59,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -137843,7 +137843,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 0.999,
+    "rating": 0.998,
     "ratingPoints": 1144,
     "tier": "Platinum",
     "level": 5,
@@ -138436,7 +138436,7 @@
      "ratingPoints": 1287,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 75,
+     "soloRank": 73,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -138914,7 +138914,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.062,
-    "ratingPoints": 1392,
+    "ratingPoints": 1391,
     "tier": "Master",
     "level": 7,
     "kpm": 15.5,
@@ -138933,7 +138933,7 @@
      "ratingPoints": 1386,
      "tier": "Master",
      "level": 7,
-     "soloRank": 40,
+     "soloRank": 39,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -139418,7 +139418,7 @@
      "ratingPoints": 901,
      "tier": "Bronze",
      "level": 4,
-     "soloRank": 209,
+     "soloRank": 208,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -142855,7 +142855,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.063,
-    "ratingPoints": 1395,
+    "ratingPoints": 1394,
     "tier": "Master",
     "level": 7,
     "kpm": 16.4,
@@ -143128,7 +143128,7 @@
      "ratingPoints": 1294,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 71,
+     "soloRank": 69,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -144845,7 +144845,7 @@
      "ratingPoints": 897,
      "tier": "Bronze",
      "level": 3,
-     "soloRank": 211,
+     "soloRank": 210,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -145399,7 +145399,7 @@
     "iso": "nl",
     "provisional": false,
     "rating": 0.954,
-    "ratingPoints": 972,
+    "ratingPoints": 971,
     "tier": "Silver",
     "level": 4,
     "kpm": 14.7,
@@ -149570,7 +149570,7 @@
      "ratingPoints": 1257,
      "tier": "Emerald",
      "level": 6,
-     "soloRank": 86,
+     "soloRank": 85,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -149833,7 +149833,7 @@
     "iso": "us",
     "provisional": false,
     "rating": 1.101,
-    "ratingPoints": 1545,
+    "ratingPoints": 1544,
     "tier": "Grandmaster",
     "level": 8,
     "kpm": 15.8,
@@ -150388,7 +150388,7 @@
      "ratingPoints": 908,
      "tier": "Bronze",
      "level": 4,
-     "soloRank": 207,
+     "soloRank": 206,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -151587,8 +151587,8 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.016,
-    "ratingPoints": 1211,
+    "rating": 1.015,
+    "ratingPoints": 1210,
     "tier": "Emerald",
     "level": 6,
     "kpm": 14.4,
@@ -153633,11 +153633,11 @@
      "maps": 6,
      "kdr": 1.15,
      "winrate": 0.333,
-     "rating": 0.966,
+     "rating": 0.967,
      "ratingPoints": 1019,
      "tier": "Silver",
      "level": 4,
-     "soloRank": 184,
+     "soloRank": 182,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -154595,7 +154595,7 @@
      "ratingPoints": 1295,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 68,
+     "soloRank": 66,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -155078,7 +155078,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 0.953,
+    "rating": 0.952,
     "ratingPoints": 965,
     "tier": "Silver",
     "level": 4,
@@ -155964,7 +155964,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.006,
-    "ratingPoints": 1175,
+    "ratingPoints": 1174,
     "tier": "Platinum",
     "level": 5,
     "kpm": 14.4,
@@ -156234,7 +156234,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.038,
+    "rating": 1.037,
     "ratingPoints": 1296,
     "tier": "Diamond",
     "level": 6,
@@ -157031,7 +157031,7 @@
     "iso": "au",
     "provisional": false,
     "rating": 1.058,
-    "ratingPoints": 1377,
+    "ratingPoints": 1376,
     "tier": "Master",
     "level": 7,
     "kpm": 16.7,
@@ -157836,7 +157836,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.052,
-    "ratingPoints": 1352,
+    "ratingPoints": 1351,
     "tier": "Diamond",
     "level": 7,
     "kpm": 15.5,
@@ -159178,7 +159178,7 @@
      "ratingPoints": 1295,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 72,
+     "soloRank": 70,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -160699,7 +160699,7 @@
      "ratingPoints": 1289,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 73,
+     "soloRank": 71,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -161241,7 +161241,7 @@
     "iso": "nz",
     "provisional": false,
     "rating": 1.061,
-    "ratingPoints": 1388,
+    "ratingPoints": 1387,
     "tier": "Master",
     "level": 7,
     "kpm": 16.0,
@@ -161260,7 +161260,7 @@
      "ratingPoints": 1300,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 66,
+     "soloRank": 64,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -161754,7 +161754,7 @@
      "ratingPoints": 1258,
      "tier": "Emerald",
      "level": 6,
-     "soloRank": 85,
+     "soloRank": 84,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -162414,7 +162414,7 @@
      "ratingPoints": 895,
      "tier": "Bronze",
      "level": 3,
-     "soloRank": 212,
+     "soloRank": 211,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -163113,7 +163113,7 @@
      "ratingPoints": 1283,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 77,
+     "soloRank": 75,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -163268,7 +163268,7 @@
      "ratingPoints": 1356,
      "tier": "Diamond",
      "level": 7,
-     "soloRank": 48,
+     "soloRank": 46,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -163907,7 +163907,7 @@
      "ratingPoints": 1338,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 52,
+     "soloRank": 50,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -164152,7 +164152,7 @@
      "ratingPoints": 1326,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 54,
+     "soloRank": 51,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -165500,7 +165500,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 0.951,
+    "rating": 0.95,
     "ratingPoints": 957,
     "tier": "Silver",
     "level": 4,
@@ -165520,7 +165520,7 @@
      "ratingPoints": 1016,
      "tier": "Silver",
      "level": 4,
-     "soloRank": 183,
+     "soloRank": 184,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -165810,7 +165810,7 @@
      "ratingPoints": 1293,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 69,
+     "soloRank": 67,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -166577,7 +166577,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.121,
-    "ratingPoints": 1621,
+    "ratingPoints": 1620,
     "tier": "Champion",
     "level": 8,
     "kpm": 18.5,
@@ -167038,7 +167038,7 @@
      "ratingPoints": 1254,
      "tier": "Emerald",
      "level": 6,
-     "soloRank": 87,
+     "soloRank": 86,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -167451,7 +167451,7 @@
      "kdr": 0.87,
      "winrate": 0.462,
      "rating": 0.978,
-     "ratingPoints": 1062,
+     "ratingPoints": 1063,
      "tier": "Gold",
      "level": 5,
      "soloRank": 164,
@@ -168823,7 +168823,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.081,
-    "ratingPoints": 1467,
+    "ratingPoints": 1466,
     "tier": "Grandmaster",
     "level": 7,
     "kpm": 18.8,
@@ -169752,7 +169752,7 @@
      "ratingPoints": 915,
      "tier": "Bronze",
      "level": 4,
-     "soloRank": 206,
+     "soloRank": 205,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -170156,7 +170156,7 @@
      "ratingPoints": 1272,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 83,
+     "soloRank": 82,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -170653,7 +170653,7 @@
      "ratingPoints": 1295,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 67,
+     "soloRank": 65,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -171665,7 +171665,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.174,
-    "ratingPoints": 1830,
+    "ratingPoints": 1829,
     "tier": "Champion",
     "level": 9,
     "kpm": 20.0,
@@ -172674,7 +172674,7 @@
     "iso": "my",
     "provisional": false,
     "rating": 1.162,
-    "ratingPoints": 1782,
+    "ratingPoints": 1781,
     "tier": "Champion",
     "level": 9,
     "kpm": 19.6,
@@ -175533,7 +175533,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.962,
-    "ratingPoints": 1004,
+    "ratingPoints": 1003,
     "tier": "Silver",
     "level": 4,
     "kpm": 14.2,
@@ -178245,7 +178245,7 @@
      "ratingPoints": 1290,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 74,
+     "soloRank": 72,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -178640,7 +178640,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.019,
-    "ratingPoints": 1223,
+    "ratingPoints": 1222,
     "tier": "Emerald",
     "level": 6,
     "kpm": 17.3,
@@ -181180,7 +181180,7 @@
     "iso": "jp",
     "provisional": false,
     "rating": 0.949,
-    "ratingPoints": 950,
+    "ratingPoints": 949,
     "tier": "Silver",
     "level": 4,
     "kpm": 14.0,
@@ -182822,7 +182822,7 @@
     "nat": "United Kingdom",
     "iso": "gb",
     "provisional": false,
-    "rating": 0.88,
+    "rating": 0.879,
     "ratingPoints": 680,
     "tier": "Iron",
     "level": 2,
@@ -183868,7 +183868,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.942,
-    "ratingPoints": 926,
+    "ratingPoints": 925,
     "tier": "Bronze",
     "level": 4,
     "kpm": 13.8,
@@ -184815,7 +184815,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.095,
-    "ratingPoints": 1520,
+    "ratingPoints": 1519,
     "tier": "Grandmaster",
     "level": 7,
     "kpm": 18.9,
@@ -186453,7 +186453,7 @@
      "kdr": 1.18,
      "winrate": 0.8,
      "rating": 1.071,
-     "ratingPoints": 1427,
+     "ratingPoints": 1428,
      "tier": "Master",
      "level": 7,
      "soloRank": 30,
@@ -188005,7 +188005,7 @@
     "nat": "Malaysia",
     "iso": "my",
     "provisional": false,
-    "rating": 1.035,
+    "rating": 1.034,
     "ratingPoints": 1285,
     "tier": "Diamond",
     "level": 6,
@@ -189017,7 +189017,7 @@
      "ratingPoints": 1264,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 84,
+     "soloRank": 83,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -190578,7 +190578,7 @@
      "kdr": 1.12,
      "winrate": 0.714,
      "rating": 1.07,
-     "ratingPoints": 1423,
+     "ratingPoints": 1424,
      "tier": "Master",
      "level": 7,
      "soloRank": 31,
@@ -191139,7 +191139,7 @@
      "ratingPoints": 1318,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 58,
+     "soloRank": 55,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -193422,7 +193422,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.049,
-    "ratingPoints": 1340,
+    "ratingPoints": 1339,
     "tier": "Diamond",
     "level": 6,
     "kpm": 18.9,
@@ -193701,7 +193701,7 @@
     "iso": "us",
     "provisional": false,
     "rating": 0.99,
-    "ratingPoints": 1113,
+    "ratingPoints": 1112,
     "tier": "Gold",
     "level": 5,
     "kpm": 15.9,
@@ -194972,7 +194972,7 @@
      "kdr": 1.0,
      "winrate": 0.6,
      "rating": 1.024,
-     "ratingPoints": 1245,
+     "ratingPoints": 1246,
      "tier": "Emerald",
      "level": 6,
      "soloRank": 90,
@@ -200901,7 +200901,7 @@
     "iso": "jp",
     "provisional": false,
     "rating": 0.996,
-    "ratingPoints": 1134,
+    "ratingPoints": 1133,
     "tier": "Platinum",
     "level": 5,
     "kpm": 16.4,
@@ -203916,7 +203916,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.023,
+    "rating": 1.022,
     "ratingPoints": 1238,
     "tier": "Emerald",
     "level": 6,
@@ -204954,7 +204954,7 @@
      "ratingPoints": 1353,
      "tier": "Diamond",
      "level": 7,
-     "soloRank": 49,
+     "soloRank": 47,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -205830,7 +205830,7 @@
      "ratingPoints": 1369,
      "tier": "Master",
      "level": 7,
-     "soloRank": 44,
+     "soloRank": 43,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -207886,7 +207886,7 @@
      "ratingPoints": 1386,
      "tier": "Master",
      "level": 7,
-     "soloRank": 41,
+     "soloRank": 40,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -209504,7 +209504,7 @@
      "ratingPoints": 921,
      "tier": "Bronze",
      "level": 4,
-     "soloRank": 204,
+     "soloRank": 203,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -210439,7 +210439,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.99,
-    "ratingPoints": 1113,
+    "ratingPoints": 1112,
     "tier": "Gold",
     "level": 5,
     "kpm": 15.0,
@@ -210458,7 +210458,7 @@
      "ratingPoints": 1379,
      "tier": "Master",
      "level": 7,
-     "soloRank": 43,
+     "soloRank": 42,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -212199,7 +212199,7 @@
      "ratingPoints": 1339,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 51,
+     "soloRank": 49,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -213323,7 +213323,7 @@
      "ratingPoints": 1359,
      "tier": "Diamond",
      "level": 7,
-     "soloRank": 47,
+     "soloRank": 45,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -215242,7 +215242,7 @@
      "ratingPoints": 1277,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 81,
+     "soloRank": 80,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -215596,7 +215596,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 16.1,
-    "rankDelta": -42,
+    "rankDelta": 0,
     "bio": "Nekota Tsuna is a Korean rifler and a Level 5 free agent, one of the league's rare Korean names.",
     "gender": "F",
     "teamTourney": "Bot Pro Cup 2026",
@@ -218316,7 +218316,7 @@
      "ratingPoints": 1281,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 76,
+     "soloRank": 74,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -222428,7 +222428,7 @@
      "ratingPoints": 908,
      "tier": "Bronze",
      "level": 4,
-     "soloRank": 208,
+     "soloRank": 207,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -225411,7 +225411,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 13.1,
-    "rankDelta": -12,
+    "rankDelta": 0,
     "bio": "Narin Mikure is a Korean AWPer and a Level 3 free agent, an amateur still hunting a first win.",
     "gender": "F",
     "teamTourney": "Bot Pro Cup 2026",
@@ -226235,7 +226235,7 @@
      "ratingPoints": 1346,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 50,
+     "soloRank": 48,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -228137,7 +228137,7 @@
     "iso": "jp",
     "provisional": false,
     "rating": 1.08,
-    "ratingPoints": 1461,
+    "ratingPoints": 1460,
     "tier": "Master",
     "level": 7,
     "kpm": 17.6,
@@ -229199,7 +229199,7 @@
     "iso": "au",
     "provisional": false,
     "rating": 0.902,
-    "ratingPoints": 768,
+    "ratingPoints": 767,
     "tier": "Iron",
     "level": 3,
     "kpm": 13.1,
@@ -230071,7 +230071,7 @@
      "ratingPoints": 1318,
      "tier": "Diamond",
      "level": 6,
-     "soloRank": 61,
+     "soloRank": 58,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -230968,7 +230968,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 0.993,
+    "rating": 0.992,
     "ratingPoints": 1121,
     "tier": "Gold",
     "level": 5,
@@ -232692,7 +232692,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.02,
-    "ratingPoints": 1229,
+    "ratingPoints": 1228,
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.2,
@@ -232711,7 +232711,7 @@
      "ratingPoints": 1365,
      "tier": "Master",
      "level": 7,
-     "soloRank": 45,
+     "soloRank": 44,
      "soloTotal": 240,
      "rankDelta": 0,
      "provisional": false
@@ -234588,17 +234588,17 @@
     "name": "Mikuryne",
     "team": "",
     "pool": "pro",
-    "kills": 150,
-    "assists": 12,
-    "deaths": 118,
-    "mvp": 23,
-    "kdr": 1.27,
-    "wins": 4,
+    "kills": 163,
+    "assists": 13,
+    "deaths": 132,
+    "mvp": 24,
+    "kdr": 1.23,
+    "wins": 5,
     "losses": 4,
-    "winrate": 0.5,
+    "winrate": 0.556,
     "ot": 0,
     "role": "Rifler",
-    "maps": 8,
+    "maps": 9,
     "orig_rank": "",
     "orig_level": "",
     "orig_rating": 0.0,
@@ -234607,12 +234607,12 @@
     "nat": "Indonesia",
     "iso": "id",
     "provisional": false,
-    "rating": 1.058,
-    "ratingPoints": 1375,
-    "tier": "Master",
-    "level": 7,
-    "kpm": 18.8,
-    "rankDelta": 0,
+    "rating": 1.05,
+    "ratingPoints": 1346,
+    "tier": "Diamond",
+    "level": 6,
+    "kpm": 18.1,
+    "rankDelta": -12,
     "teamHistory": [
      {
       "team": "Team Indonesia",
@@ -234694,17 +234694,17 @@
     "name": "Reruzensky",
     "team": "",
     "pool": "pro",
-    "kills": 140,
-    "assists": 14,
-    "deaths": 117,
-    "mvp": 17,
-    "kdr": 1.2,
-    "wins": 4,
+    "kills": 156,
+    "assists": 15,
+    "deaths": 126,
+    "mvp": 18,
+    "kdr": 1.24,
+    "wins": 5,
     "losses": 4,
-    "winrate": 0.5,
+    "winrate": 0.556,
     "ot": 0,
     "role": "Rifler",
-    "maps": 8,
+    "maps": 9,
     "orig_rank": "",
     "orig_level": "",
     "orig_rating": 0.0,
@@ -234713,12 +234713,12 @@
     "nat": "Indonesia",
     "iso": "id",
     "provisional": false,
-    "rating": 1.031,
-    "ratingPoints": 1269,
+    "rating": 1.035,
+    "ratingPoints": 1287,
     "tier": "Diamond",
     "level": 6,
-    "kpm": 17.5,
-    "rankDelta": 0,
+    "kpm": 17.3,
+    "rankDelta": 4,
     "teamHistory": [
      {
       "team": "Team Indonesia",
@@ -234771,17 +234771,17 @@
     "name": "SpicyWolfie",
     "team": "",
     "pool": "pro",
-    "kills": 127,
-    "assists": 17,
-    "deaths": 119,
-    "mvp": 17,
-    "kdr": 1.07,
-    "wins": 4,
+    "kills": 137,
+    "assists": 18,
+    "deaths": 132,
+    "mvp": 21,
+    "kdr": 1.04,
+    "wins": 5,
     "losses": 4,
-    "winrate": 0.5,
+    "winrate": 0.556,
     "ot": 0,
     "role": "IGL",
-    "maps": 8,
+    "maps": 9,
     "orig_rank": "",
     "orig_level": "",
     "orig_rating": 0.0,
@@ -234790,12 +234790,12 @@
     "nat": "Indonesia",
     "iso": "id",
     "provisional": false,
-    "rating": 1.011,
-    "ratingPoints": 1194,
+    "rating": 1.009,
+    "ratingPoints": 1186,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 15.9,
-    "rankDelta": 0,
+    "kpm": 15.2,
+    "rankDelta": -5,
     "teamHistory": [
      {
       "team": "Team Indonesia",
@@ -235158,17 +235158,17 @@
     "name": "Spectrum Gabriel",
     "team": "",
     "pool": "solo",
-    "kills": 227,
+    "kills": 242,
     "assists": 36,
-    "deaths": 218,
-    "mvp": 35,
-    "kdr": 1.04,
+    "deaths": 236,
+    "mvp": 37,
+    "kdr": 1.03,
     "wins": 8,
-    "losses": 5,
-    "winrate": 0.615,
+    "losses": 6,
+    "winrate": 0.571,
     "ot": 5,
     "role": "NA",
-    "maps": 13,
+    "maps": 14,
     "orig_rank": "Gold",
     "orig_level": "Level 2",
     "orig_rating": 651.0,
@@ -235176,14 +235176,14 @@
     "nat": "Land of Make Believe",
     "iso": "neutral",
     "provisional": false,
-    "rating": 1.061,
-    "ratingPoints": 1388,
-    "tier": "Master",
-    "level": 7,
-    "kpm": 17.5,
+    "rating": 1.042,
+    "ratingPoints": 1315,
+    "tier": "Diamond",
+    "level": 6,
+    "kpm": 17.3,
     "rankDelta": 0,
-    "soloRank": 39,
-    "bio": "Spectrum Gabriel is a solo-queue regular rated Level 7, a grinder who wins his fair share on the ladder.",
+    "soloRank": 60,
+    "bio": "Spectrum Gabriel is a solo-queue regular rated Level 6, a grinder who wins his fair share on the ladder.",
     "gender": "M",
     "teamHistory": [
      {
@@ -235282,17 +235282,17 @@
     "name": "Goonuyun",
     "team": "",
     "pool": "solo",
-    "kills": 178,
+    "kills": 197,
     "assists": 27,
-    "deaths": 233,
-    "mvp": 20,
-    "kdr": 0.76,
+    "deaths": 265,
+    "mvp": 26,
+    "kdr": 0.74,
     "wins": 6,
-    "losses": 9,
-    "winrate": 0.4,
+    "losses": 11,
+    "winrate": 0.353,
     "ot": 0,
     "role": "NA",
-    "maps": 15,
+    "maps": 17,
     "orig_rank": "Silver",
     "orig_level": "Level 1",
     "orig_rating": 411.0,
@@ -235300,14 +235300,14 @@
     "nat": "Land of Make Believe",
     "iso": "neutral",
     "provisional": false,
-    "rating": 0.943,
-    "ratingPoints": 929,
+    "rating": 0.923,
+    "ratingPoints": 848,
     "tier": "Bronze",
-    "level": 4,
-    "kpm": 11.9,
+    "level": 3,
+    "kpm": 11.6,
     "rankDelta": 0,
-    "soloRank": 203,
-    "bio": "Goonuyun is an Level 4 solo-queue player, a ladder regular grinding toward better days.",
+    "soloRank": 220,
+    "bio": "Goonuyun is an Level 3 solo-queue player, a ladder regular grinding toward better days.",
     "gender": "M",
     "teamHistory": [
      {
@@ -235406,17 +235406,17 @@
     "name": "Icington the third",
     "team": "",
     "pool": "solo",
-    "kills": 168,
-    "assists": 17,
-    "deaths": 144,
-    "mvp": 22,
-    "kdr": 1.17,
+    "kills": 182,
+    "assists": 18,
+    "deaths": 161,
+    "mvp": 24,
+    "kdr": 1.13,
     "wins": 6,
-    "losses": 4,
-    "winrate": 0.6,
+    "losses": 5,
+    "winrate": 0.545,
     "ot": 0,
     "role": "NA",
-    "maps": 10,
+    "maps": 11,
     "orig_rank": "Bronze",
     "orig_level": "Level 1",
     "orig_rating": 186.0,
@@ -235424,13 +235424,13 @@
     "nat": "Land of Make Believe",
     "iso": "neutral",
     "provisional": false,
-    "rating": 1.047,
-    "ratingPoints": 1333,
-    "tier": "Diamond",
+    "rating": 1.027,
+    "ratingPoints": 1253,
+    "tier": "Emerald",
     "level": 6,
-    "kpm": 16.8,
+    "kpm": 16.5,
     "rankDelta": 0,
-    "soloRank": 53,
+    "soloRank": 87,
     "bio": "Icington the third is a Level 6 solo-queue player, a ladder regular with a colourful name and a growing sample.",
     "gender": "M",
     "teamHistory": [
@@ -235530,17 +235530,17 @@
     "name": "ItzMaigay",
     "team": "",
     "pool": "solo",
-    "kills": 173,
-    "assists": 15,
-    "deaths": 145,
-    "mvp": 29,
-    "kdr": 1.19,
+    "kills": 186,
+    "assists": 16,
+    "deaths": 161,
+    "mvp": 30,
+    "kdr": 1.16,
     "wins": 6,
-    "losses": 4,
-    "winrate": 0.6,
+    "losses": 5,
+    "winrate": 0.545,
     "ot": 1,
     "role": "NA",
-    "maps": 10,
+    "maps": 11,
     "orig_rank": "Iron",
     "orig_level": "Level 1",
     "orig_rating": 180.0,
@@ -235548,14 +235548,14 @@
     "nat": "Land of Make Believe",
     "iso": "neutral",
     "provisional": false,
-    "rating": 1.055,
-    "ratingPoints": 1365,
-    "tier": "Master",
-    "level": 7,
-    "kpm": 17.3,
+    "rating": 1.033,
+    "ratingPoints": 1277,
+    "tier": "Diamond",
+    "level": 6,
+    "kpm": 16.9,
     "rankDelta": 0,
-    "soloRank": 46,
-    "bio": "ItzMaigay is a solo-queue regular rated Level 7, a ladder grinder building a body of work one game at a time.",
+    "soloRank": 78,
+    "bio": "ItzMaigay is a solo-queue regular rated Level 6, a ladder grinder building a body of work one game at a time.",
     "gender": "M",
     "teamHistory": [
      {
@@ -236935,11 +236935,11 @@
  },
  "pool_avg": {
   "pro": {
-   "kdr": 0.9939401496259351,
-   "kpm": 15.235750570458384,
-   "mvp": 2.1343663153554866,
-   "apm": 2.2802657744294184,
-   "wr": 0.46713216957605985
+   "kdr": 0.9940399002493766,
+   "kpm": 15.234111468121192,
+   "mvp": 2.1343610537222224,
+   "apm": 2.280071466870299,
+   "wr": 0.4676508728179551
   },
   "amateur": {
    "kdr": 1.0,
@@ -236949,9 +236949,9 @@
    "wr": 1.0
   },
   "solo": {
-   "kdr": 0.9747916666666666,
-   "kpm": 15.107706725549098,
-   "mvp": 2.0218666871068067
+   "kdr": 0.9745312500000001,
+   "kpm": 15.104842897179752,
+   "mvp": 2.021751371458403
   }
  },
  "weights": {
@@ -236991,31 +236991,31 @@
    "standings": [
     {
      "rank": 1,
+     "name": "Team Indonesia",
+     "teamSlug": null,
+     "w": 3,
+     "l": 1
+    },
+    {
+     "rank": 2,
+     "name": "Team Land of Make Believe",
+     "teamSlug": null,
+     "w": 2,
+     "l": 2
+    },
+    {
+     "rank": 3,
      "name": "Team Singapore",
      "teamSlug": null,
      "w": 3,
      "l": 0
     },
     {
-     "rank": 2,
+     "rank": 4,
      "name": "Team Korea",
      "teamSlug": null,
      "w": 3,
      "l": 0
-    },
-    {
-     "rank": 3,
-     "name": "Team Land of Make Believe",
-     "teamSlug": null,
-     "w": 2,
-     "l": 1
-    },
-    {
-     "rank": 4,
-     "name": "Team Indonesia",
-     "teamSlug": null,
-     "w": 2,
-     "l": 1
     },
     {
      "rank": 5,
@@ -241339,14 +241339,135 @@
        "i": 16,
        "a": "Team Indonesia",
        "b": "Team Land of Make Believe",
-       "sa": null,
-       "sb": null,
-       "w": 0,
+       "sa": 13,
+       "sb": 11,
+       "w": 1,
        "aTeam": null,
        "bTeam": null,
        "bo": 3,
        "tp": true,
-       "ts": null
+       "ts": 1789514248,
+       "stats": {
+        "maps": [
+         {
+          "map": "Split",
+          "scoreA": 13,
+          "scoreB": 11,
+          "players": [
+           {
+            "team": "Team Indonesia",
+            "name": "dumbo",
+            "k": 31,
+            "a": 4,
+            "d": 10,
+            "mvp": 5,
+            "score": 81,
+            "slug": "dumbo",
+            "iso": "id"
+           },
+           {
+            "team": "Team Indonesia",
+            "name": "Reruzensky",
+            "k": 16,
+            "a": 1,
+            "d": 9,
+            "mvp": 1,
+            "score": 47,
+            "slug": "reruzensky",
+            "iso": "id"
+           },
+           {
+            "team": "Team Indonesia",
+            "name": "l1feless",
+            "k": 13,
+            "a": 4,
+            "d": 15,
+            "mvp": 2,
+            "score": 37,
+            "slug": "l1feless",
+            "iso": "id"
+           },
+           {
+            "team": "Team Indonesia",
+            "name": "Mikuryne",
+            "k": 13,
+            "a": 1,
+            "d": 14,
+            "mvp": 1,
+            "score": 34,
+            "slug": "mikuryne",
+            "iso": "id"
+           },
+           {
+            "team": "Team Indonesia",
+            "name": "SpicyWolfie",
+            "k": 10,
+            "a": 1,
+            "d": 13,
+            "mvp": 4,
+            "score": 30,
+            "slug": "spicywolfie",
+            "iso": "id"
+           },
+           {
+            "team": "Team Land of Make Believe",
+            "name": "Spectrum Gabriel",
+            "k": 15,
+            "a": 0,
+            "d": 18,
+            "mvp": 2,
+            "score": 40,
+            "slug": "spectrum-gabriel-solo",
+            "iso": "neutral"
+           },
+           {
+            "team": "Team Land of Make Believe",
+            "name": "ItzMaigay",
+            "k": 13,
+            "a": 1,
+            "d": 16,
+            "mvp": 1,
+            "score": 38,
+            "slug": "itzmaigay-solo",
+            "iso": "neutral"
+           },
+           {
+            "team": "Team Land of Make Believe",
+            "name": "Goonuyun",
+            "k": 12,
+            "a": 0,
+            "d": 16,
+            "mvp": 3,
+            "score": 36,
+            "slug": "goonuyun-solo",
+            "iso": "neutral"
+           },
+           {
+            "team": "Team Land of Make Believe",
+            "name": "Icington the third",
+            "k": 14,
+            "a": 1,
+            "d": 17,
+            "mvp": 2,
+            "score": 36,
+            "slug": "icington-the-third-solo",
+            "iso": "neutral"
+           },
+           {
+            "team": "Team Land of Make Believe",
+            "name": "Goonuyun",
+            "k": 7,
+            "a": 0,
+            "d": 16,
+            "mvp": 3,
+            "score": 33,
+            "slug": "goonuyun-solo",
+            "iso": "neutral"
+           }
+          ]
+         }
+        ]
+       }
       }
      ]
     },
@@ -245613,14 +245734,135 @@
          "i": 16,
          "a": "Team Indonesia",
          "b": "Team Land of Make Believe",
-         "sa": null,
-         "sb": null,
-         "w": 0,
+         "sa": 13,
+         "sb": 11,
+         "w": 1,
          "aTeam": null,
          "bTeam": null,
          "bo": 3,
          "tp": true,
-         "ts": null
+         "ts": 1789514248,
+         "stats": {
+          "maps": [
+           {
+            "map": "Split",
+            "scoreA": 13,
+            "scoreB": 11,
+            "players": [
+             {
+              "team": "Team Indonesia",
+              "name": "dumbo",
+              "k": 31,
+              "a": 4,
+              "d": 10,
+              "mvp": 5,
+              "score": 81,
+              "slug": "dumbo",
+              "iso": "id"
+             },
+             {
+              "team": "Team Indonesia",
+              "name": "Reruzensky",
+              "k": 16,
+              "a": 1,
+              "d": 9,
+              "mvp": 1,
+              "score": 47,
+              "slug": "reruzensky",
+              "iso": "id"
+             },
+             {
+              "team": "Team Indonesia",
+              "name": "l1feless",
+              "k": 13,
+              "a": 4,
+              "d": 15,
+              "mvp": 2,
+              "score": 37,
+              "slug": "l1feless",
+              "iso": "id"
+             },
+             {
+              "team": "Team Indonesia",
+              "name": "Mikuryne",
+              "k": 13,
+              "a": 1,
+              "d": 14,
+              "mvp": 1,
+              "score": 34,
+              "slug": "mikuryne",
+              "iso": "id"
+             },
+             {
+              "team": "Team Indonesia",
+              "name": "SpicyWolfie",
+              "k": 10,
+              "a": 1,
+              "d": 13,
+              "mvp": 4,
+              "score": 30,
+              "slug": "spicywolfie",
+              "iso": "id"
+             },
+             {
+              "team": "Team Land of Make Believe",
+              "name": "Spectrum Gabriel",
+              "k": 15,
+              "a": 0,
+              "d": 18,
+              "mvp": 2,
+              "score": 40,
+              "slug": "spectrum-gabriel-solo",
+              "iso": "neutral"
+             },
+             {
+              "team": "Team Land of Make Believe",
+              "name": "ItzMaigay",
+              "k": 13,
+              "a": 1,
+              "d": 16,
+              "mvp": 1,
+              "score": 38,
+              "slug": "itzmaigay-solo",
+              "iso": "neutral"
+             },
+             {
+              "team": "Team Land of Make Believe",
+              "name": "Goonuyun",
+              "k": 12,
+              "a": 0,
+              "d": 16,
+              "mvp": 3,
+              "score": 36,
+              "slug": "goonuyun-solo",
+              "iso": "neutral"
+             },
+             {
+              "team": "Team Land of Make Believe",
+              "name": "Icington the third",
+              "k": 14,
+              "a": 1,
+              "d": 17,
+              "mvp": 2,
+              "score": 36,
+              "slug": "icington-the-third-solo",
+              "iso": "neutral"
+             },
+             {
+              "team": "Team Land of Make Believe",
+              "name": "Goonuyun",
+              "k": 7,
+              "a": 0,
+              "d": 16,
+              "mvp": 3,
+              "score": 33,
+              "slug": "goonuyun-solo",
+              "iso": "neutral"
+             }
+            ]
+           }
+          ]
+         }
         }
        ]
       },
@@ -245647,31 +245889,31 @@
      "standings": [
       {
        "rank": 1,
+       "name": "Team Indonesia",
+       "teamSlug": null,
+       "w": 3,
+       "l": 1
+      },
+      {
+       "rank": 2,
+       "name": "Team Land of Make Believe",
+       "teamSlug": null,
+       "w": 2,
+       "l": 2
+      },
+      {
+       "rank": 3,
        "name": "Team Singapore",
        "teamSlug": null,
        "w": 3,
        "l": 0
       },
       {
-       "rank": 2,
+       "rank": 4,
        "name": "Team Korea",
        "teamSlug": null,
        "w": 3,
        "l": 0
-      },
-      {
-       "rank": 3,
-       "name": "Team Land of Make Believe",
-       "teamSlug": null,
-       "w": 2,
-       "l": 1
-      },
-      {
-       "rank": 4,
-       "name": "Team Indonesia",
-       "teamSlug": null,
-       "w": 2,
-       "l": 1
       },
       {
        "rank": 5,
@@ -245828,18 +246070,18 @@
    ],
    "finalStandings": [
     {
-     "rank": 1,
-     "name": "Team Land of Make Believe",
-     "teamSlug": null,
-     "result": "Semifinals",
-     "tie": true
-    },
-    {
-     "rank": 1,
+     "rank": 3,
      "name": "Team Indonesia",
      "teamSlug": null,
-     "result": "Semifinals",
-     "tie": true
+     "result": "3rd Place",
+     "tie": false
+    },
+    {
+     "rank": 4,
+     "name": "Team Land of Make Believe",
+     "teamSlug": null,
+     "result": "4th Place",
+     "tie": false
     },
     {
      "rank": 3,
@@ -246589,12 +246831,12 @@
     }
    ],
    "mvp": {
-    "name": "Eris Suzukami",
-    "slug": "eris-suzukami",
-    "iso": "kr",
-    "team": "Team Korea",
+    "name": "dumbo",
+    "slug": "dumbo",
+    "iso": "id",
+    "team": "Team Indonesia",
     "mvpRounds": 28,
-    "kills": 116
+    "kills": 163
    }
   },
   {
@@ -297526,6 +297768,13 @@
        "captain": false
       },
       {
+       "hist": "dumbo",
+       "name": "dumbo",
+       "slug": "dumbo",
+       "iso": "id",
+       "captain": false
+      },
+      {
        "hist": "TortillaRoll",
        "name": "TortillaRoll",
        "slug": "tortillaroll",
@@ -297537,13 +297786,6 @@
        "name": "Kisaragi Ren",
        "slug": "kisaragi-ren",
        "iso": "jp",
-       "captain": false
-      },
-      {
-       "hist": "dumbo",
-       "name": "dumbo",
-       "slug": "dumbo",
-       "iso": "id",
        "captain": false
       },
       {
@@ -315684,6 +315926,13 @@
        "captain": false
       },
       {
+       "hist": "dumbo",
+       "name": "dumbo",
+       "slug": "dumbo",
+       "iso": "id",
+       "captain": false
+      },
+      {
        "hist": "TortillaRoll",
        "name": "TortillaRoll",
        "slug": "tortillaroll",
@@ -315695,13 +315944,6 @@
        "name": "Kisaragi Ren",
        "slug": "kisaragi-ren",
        "iso": "jp",
-       "captain": false
-      },
-      {
-       "hist": "dumbo",
-       "name": "dumbo",
-       "slug": "dumbo",
-       "iso": "id",
        "captain": false
       },
       {
@@ -411734,7 +411976,7 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.612,
+     "wr": 0.611,
      "real": false
     },
     "Cache": {
@@ -411762,7 +412004,7 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.401,
+     "wr": 0.4,
      "real": false
     }
    },
@@ -412066,7 +412308,7 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.33,
+     "wr": 0.329,
      "real": false
     },
     "Tuscan": {
@@ -412087,7 +412329,7 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.407,
+     "wr": 0.406,
      "real": false
     }
    },
@@ -412347,7 +412589,7 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.545,
+     "wr": 0.544,
      "real": false
     }
    },
@@ -413160,7 +413402,7 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.669,
+     "wr": 0.654,
      "real": false
     },
     "Cache": {
@@ -413174,7 +413416,7 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.555,
+     "wr": 0.541,
      "real": false
     },
     "Vertigo": {
@@ -413188,13 +413430,13 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.54,
+     "wr": 0.526,
      "real": false
     }
    },
    "bestMaps": [
     "Cache",
-    "Inferno"
+    "Dust2"
    ],
    "worstMaps": [
     "Vertigo",
@@ -413437,7 +413679,7 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.379,
+     "wr": 0.378,
      "real": false
     },
     "Anubis": {
@@ -413501,7 +413743,7 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.672,
+     "wr": 0.677,
      "real": false
     },
     "Anubis": {

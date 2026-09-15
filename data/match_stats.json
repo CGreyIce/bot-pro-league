@@ -24342,6 +24342,107 @@
      ]
     }
    ]
+  },
+  "1-16": {
+   "maps": [
+    {
+     "map": "Split",
+     "scoreA": 13,
+     "scoreB": 11,
+     "players": [
+      {
+       "team": "Team Indonesia",
+       "name": "dumbo",
+       "k": 31,
+       "a": 4,
+       "d": 10,
+       "mvp": 5,
+       "score": 81
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "Reruzensky",
+       "k": 16,
+       "a": 1,
+       "d": 9,
+       "mvp": 1,
+       "score": 47
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "l1feless",
+       "k": 13,
+       "a": 4,
+       "d": 15,
+       "mvp": 2,
+       "score": 37
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "Mikuryne",
+       "k": 13,
+       "a": 1,
+       "d": 14,
+       "mvp": 1,
+       "score": 34
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "SpicyWolfie",
+       "k": 10,
+       "a": 1,
+       "d": 13,
+       "mvp": 4,
+       "score": 30
+      },
+      {
+       "team": "Team Land of Make Believe",
+       "name": "Spectrum Gabriel",
+       "k": 15,
+       "a": 0,
+       "d": 18,
+       "mvp": 2,
+       "score": 40
+      },
+      {
+       "team": "Team Land of Make Believe",
+       "name": "ItzMaigay",
+       "k": 13,
+       "a": 1,
+       "d": 16,
+       "mvp": 1,
+       "score": 38
+      },
+      {
+       "team": "Team Land of Make Believe",
+       "name": "Goonuyun",
+       "k": 12,
+       "a": 0,
+       "d": 16,
+       "mvp": 3,
+       "score": 36
+      },
+      {
+       "team": "Team Land of Make Believe",
+       "name": "Icington the third",
+       "k": 14,
+       "a": 1,
+       "d": 17,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "Team Land of Make Believe",
+       "name": "Goonuyun",
+       "k": 7,
+       "a": 0,
+       "d": 16,
+       "mvp": 3,
+       "score": 33
+      }
+     ]
+    }
+   ]
   }
  }
 }
