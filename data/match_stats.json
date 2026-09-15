@@ -22665,6 +22665,204 @@
      ]
     }
    ]
+  },
+  "1-8": {
+   "maps": [
+    {
+     "map": "Mirage",
+     "scoreA": 13,
+     "scoreB": 6,
+     "players": [
+      {
+       "team": "Team Japan",
+       "name": "Shinomiya Runa",
+       "k": 20,
+       "a": 1,
+       "d": 9,
+       "mvp": 4,
+       "score": 48
+      },
+      {
+       "team": "Team Japan",
+       "name": "Miki Nakai",
+       "k": 17,
+       "a": 4,
+       "d": 10,
+       "mvp": 2,
+       "score": 45
+      },
+      {
+       "team": "Team Japan",
+       "name": "Ginjo Saine",
+       "k": 18,
+       "a": 0,
+       "d": 9,
+       "mvp": 5,
+       "score": 42
+      },
+      {
+       "team": "Team Japan",
+       "name": "Tosaki Mimi",
+       "k": 12,
+       "a": 1,
+       "d": 14,
+       "mvp": 1,
+       "score": 26
+      },
+      {
+       "team": "Team Japan",
+       "name": "Tachibana Hinano",
+       "k": 6,
+       "a": 2,
+       "d": 11,
+       "mvp": 1,
+       "score": 14
+      },
+      {
+       "team": "Team United Kingdom",
+       "name": "soapdax",
+       "k": 18,
+       "a": 1,
+       "d": 14,
+       "mvp": 2,
+       "score": 49
+      },
+      {
+       "team": "Team United Kingdom",
+       "name": "inaxho",
+       "k": 12,
+       "a": 2,
+       "d": 14,
+       "mvp": 3,
+       "score": 26
+      },
+      {
+       "team": "Team United Kingdom",
+       "name": "MsWizVT",
+       "k": 10,
+       "a": 0,
+       "d": 15,
+       "mvp": 0,
+       "score": 24
+      },
+      {
+       "team": "Team United Kingdom",
+       "name": "PSYSTRA",
+       "k": 9,
+       "a": 0,
+       "d": 15,
+       "mvp": 0,
+       "score": 18
+      },
+      {
+       "team": "Team United Kingdom",
+       "name": "Aleaka",
+       "k": 4,
+       "a": 0,
+       "d": 15,
+       "mvp": 1,
+       "score": 15
+      }
+     ]
+    },
+    {
+     "map": "Inferno",
+     "scoreA": 13,
+     "scoreB": 2,
+     "players": [
+      {
+       "team": "Team Japan",
+       "name": "Ginjo Saine",
+       "k": 17,
+       "a": 0,
+       "d": 4,
+       "mvp": 5,
+       "score": 37
+      },
+      {
+       "team": "Team Japan",
+       "name": "Miki Nakai",
+       "k": 17,
+       "a": 0,
+       "d": 6,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "Team Japan",
+       "name": "Tosaki Mimi",
+       "k": 14,
+       "a": 0,
+       "d": 6,
+       "mvp": 4,
+       "score": 32
+      },
+      {
+       "team": "Team Japan",
+       "name": "Tachibana Hinano",
+       "k": 12,
+       "a": 2,
+       "d": 6,
+       "mvp": 1,
+       "score": 32
+      },
+      {
+       "team": "Team Japan",
+       "name": "Shinomiya Runa",
+       "k": 6,
+       "a": 0,
+       "d": 5,
+       "mvp": 1,
+       "score": 18
+      },
+      {
+       "team": "Team United Kingdom",
+       "name": "soapdax",
+       "k": 9,
+       "a": 3,
+       "d": 13,
+       "mvp": 2,
+       "score": 21
+      },
+      {
+       "team": "Team United Kingdom",
+       "name": "MsWizVT",
+       "k": 7,
+       "a": 2,
+       "d": 13,
+       "mvp": 0,
+       "score": 16
+      },
+      {
+       "team": "Team United Kingdom",
+       "name": "Aleaka",
+       "k": 4,
+       "a": 4,
+       "d": 14,
+       "mvp": 0,
+       "score": 12
+      },
+      {
+       "team": "Team United Kingdom",
+       "name": "inaxho",
+       "k": 5,
+       "a": 1,
+       "d": 13,
+       "mvp": 0,
+       "score": 11
+      },
+      {
+       "team": "Team United Kingdom",
+       "name": "PSYSTRA",
+       "k": 2,
+       "a": 1,
+       "d": 13,
+       "mvp": 0,
+       "score": 5
+      }
+     ]
+    }
+   ]
   }
  }
 }
