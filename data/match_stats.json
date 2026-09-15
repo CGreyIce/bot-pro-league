@@ -21776,6 +21776,301 @@
      ]
     }
    ]
+  },
+  "1-4": {
+   "maps": [
+    {
+     "map": "Dust2",
+     "scoreA": 13,
+     "scoreB": 9,
+     "players": [
+      {
+       "team": "Team USA",
+       "name": "Decrease",
+       "k": 18,
+       "a": 4,
+       "d": 15,
+       "mvp": 2,
+       "score": 42
+      },
+      {
+       "team": "Team USA",
+       "name": "stitchkyui",
+       "k": 17,
+       "a": 1,
+       "d": 15,
+       "mvp": 2,
+       "score": 37
+      },
+      {
+       "team": "Team USA",
+       "name": "Nifela",
+       "k": 15,
+       "a": 3,
+       "d": 19,
+       "mvp": 3,
+       "score": 36
+      },
+      {
+       "team": "Team USA",
+       "name": "Kairi",
+       "k": 14,
+       "a": 2,
+       "d": 15,
+       "mvp": 3,
+       "score": 34
+      },
+      {
+       "team": "Team USA",
+       "name": "heavenweeps",
+       "k": 14,
+       "a": 2,
+       "d": 13,
+       "mvp": 3,
+       "score": 32
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "Reruzensky",
+       "k": 21,
+       "a": 2,
+       "d": 14,
+       "mvp": 3,
+       "score": 50
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "dumbo",
+       "k": 14,
+       "a": 0,
+       "d": 13,
+       "mvp": 2,
+       "score": 35
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "l1feless",
+       "k": 15,
+       "a": 2,
+       "d": 18,
+       "mvp": 1,
+       "score": 34
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "Mikuryne",
+       "k": 15,
+       "a": 1,
+       "d": 17,
+       "mvp": 1,
+       "score": 33
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "SpicyWolfie",
+       "k": 12,
+       "a": 3,
+       "d": 16,
+       "mvp": 2,
+       "score": 32
+      }
+     ]
+    },
+    {
+     "map": "Tuscan",
+     "scoreA": 5,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Team USA",
+       "name": "stitchkyui",
+       "k": 11,
+       "a": 3,
+       "d": 16,
+       "mvp": 2,
+       "score": 29
+      },
+      {
+       "team": "Team USA",
+       "name": "Kairi",
+       "k": 9,
+       "a": 0,
+       "d": 14,
+       "mvp": 1,
+       "score": 22
+      },
+      {
+       "team": "Team USA",
+       "name": "Nifela",
+       "k": 8,
+       "a": 2,
+       "d": 16,
+       "mvp": 1,
+       "score": 18
+      },
+      {
+       "team": "Team USA",
+       "name": "heavenweeps",
+       "k": 6,
+       "a": 0,
+       "d": 15,
+       "mvp": 0,
+       "score": 16
+      },
+      {
+       "team": "Team USA",
+       "name": "Decrease",
+       "k": 6,
+       "a": 2,
+       "d": 15,
+       "mvp": 1,
+       "score": 14
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "Reruzensky",
+       "k": 23,
+       "a": 0,
+       "d": 8,
+       "mvp": 4,
+       "score": 47
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "Mikuryne",
+       "k": 18,
+       "a": 1,
+       "d": 7,
+       "mvp": 4,
+       "score": 47
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "SpicyWolfie",
+       "k": 17,
+       "a": 6,
+       "d": 8,
+       "mvp": 3,
+       "score": 44
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "l1feless",
+       "k": 10,
+       "a": 1,
+       "d": 8,
+       "mvp": 1,
+       "score": 23
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "dumbo",
+       "k": 8,
+       "a": 2,
+       "d": 9,
+       "mvp": 1,
+       "score": 22
+      }
+     ]
+    },
+    {
+     "map": "Inferno",
+     "scoreA": 11,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Team USA",
+       "name": "Nifela",
+       "k": 24,
+       "a": 3,
+       "d": 23,
+       "mvp": 2,
+       "score": 59
+      },
+      {
+       "team": "Team USA",
+       "name": "Decrease",
+       "k": 26,
+       "a": 0,
+       "d": 14,
+       "mvp": 5,
+       "score": 57
+      },
+      {
+       "team": "Team USA",
+       "name": "stitchkyui",
+       "k": 11,
+       "a": 3,
+       "d": 21,
+       "mvp": 1,
+       "score": 30
+      },
+      {
+       "team": "Team USA",
+       "name": "Kairi",
+       "k": 9,
+       "a": 4,
+       "d": 18,
+       "mvp": 2,
+       "score": 23
+      },
+      {
+       "team": "Team USA",
+       "name": "heavenweeps",
+       "k": 9,
+       "a": 3,
+       "d": 21,
+       "mvp": 1,
+       "score": 23
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "dumbo",
+       "k": 24,
+       "a": 4,
+       "d": 16,
+       "mvp": 3,
+       "score": 62
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "Reruzensky",
+       "k": 20,
+       "a": 4,
+       "d": 17,
+       "mvp": 4,
+       "score": 54
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "SpicyWolfie",
+       "k": 18,
+       "a": 1,
+       "d": 15,
+       "mvp": 3,
+       "score": 47
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "Mikuryne",
+       "k": 20,
+       "a": 3,
+       "d": 17,
+       "mvp": 2,
+       "score": 44
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "l1feless",
+       "k": 15,
+       "a": 0,
+       "d": 14,
+       "mvp": 1,
+       "score": 37
+      }
+     ]
+    }
+   ]
   }
  }
 }
