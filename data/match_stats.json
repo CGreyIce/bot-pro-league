@@ -23651,6 +23651,204 @@
      ]
     }
    ]
+  },
+  "1-12": {
+   "maps": [
+    {
+     "map": "Dust2",
+     "scoreA": 16,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Team Korea",
+       "name": "GreatMoonAroma",
+       "k": 28,
+       "a": 3,
+       "d": 16,
+       "mvp": 3,
+       "score": 69
+      },
+      {
+       "team": "Team Korea",
+       "name": "byeolyuna",
+       "k": 23,
+       "a": 3,
+       "d": 18,
+       "mvp": 4,
+       "score": 54
+      },
+      {
+       "team": "Team Korea",
+       "name": "Eris Suzukami",
+       "k": 22,
+       "a": 2,
+       "d": 19,
+       "mvp": 7,
+       "score": 53
+      },
+      {
+       "team": "Team Korea",
+       "name": "Narin Mikure",
+       "k": 19,
+       "a": 1,
+       "d": 18,
+       "mvp": 1,
+       "score": 42
+      },
+      {
+       "team": "Team Korea",
+       "name": "Nekota Tsuna",
+       "k": 16,
+       "a": 4,
+       "d": 23,
+       "mvp": 1,
+       "score": 42
+      },
+      {
+       "team": "Team Japan",
+       "name": "Shinomiya Runa",
+       "k": 26,
+       "a": 3,
+       "d": 21,
+       "mvp": 7,
+       "score": 59
+      },
+      {
+       "team": "Team Japan",
+       "name": "Ginjo Saine",
+       "k": 17,
+       "a": 2,
+       "d": 20,
+       "mvp": 2,
+       "score": 49
+      },
+      {
+       "team": "Team Japan",
+       "name": "Tachibana Hinano",
+       "k": 16,
+       "a": 1,
+       "d": 21,
+       "mvp": 1,
+       "score": 44
+      },
+      {
+       "team": "Team Japan",
+       "name": "Miki Nakai",
+       "k": 19,
+       "a": 0,
+       "d": 22,
+       "mvp": 1,
+       "score": 43
+      },
+      {
+       "team": "Team Japan",
+       "name": "Tosaki Mimi",
+       "k": 16,
+       "a": 2,
+       "d": 24,
+       "mvp": 2,
+       "score": 41
+      }
+     ]
+    },
+    {
+     "map": "Inferno",
+     "scoreA": 13,
+     "scoreB": 1,
+     "players": [
+      {
+       "team": "Team Korea",
+       "name": "GreatMoonAroma",
+       "k": 16,
+       "a": 1,
+       "d": 4,
+       "mvp": 4,
+       "score": 40
+      },
+      {
+       "team": "Team Korea",
+       "name": "byeolyuna",
+       "k": 15,
+       "a": 1,
+       "d": 9,
+       "mvp": 4,
+       "score": 36
+      },
+      {
+       "team": "Team Korea",
+       "name": "Eris Suzukami",
+       "k": 15,
+       "a": 1,
+       "d": 4,
+       "mvp": 3,
+       "score": 36
+      },
+      {
+       "team": "Team Korea",
+       "name": "Nekota Tsuna",
+       "k": 10,
+       "a": 3,
+       "d": 7,
+       "mvp": 0,
+       "score": 30
+      },
+      {
+       "team": "Team Korea",
+       "name": "Narin Mikure",
+       "k": 11,
+       "a": 0,
+       "d": 10,
+       "mvp": 2,
+       "score": 24
+      },
+      {
+       "team": "Team Japan",
+       "name": "Ginjo Saine",
+       "k": 12,
+       "a": 1,
+       "d": 13,
+       "mvp": 0,
+       "score": 25
+      },
+      {
+       "team": "Team Japan",
+       "name": "Tachibana Hinano",
+       "k": 8,
+       "a": 5,
+       "d": 13,
+       "mvp": 1,
+       "score": 21
+      },
+      {
+       "team": "Team Japan",
+       "name": "Shinomiya Runa",
+       "k": 6,
+       "a": 2,
+       "d": 14,
+       "mvp": 0,
+       "score": 14
+      },
+      {
+       "team": "Team Japan",
+       "name": "Miki Nakai",
+       "k": 4,
+       "a": 3,
+       "d": 13,
+       "mvp": 0,
+       "score": 11
+      },
+      {
+       "team": "Team Japan",
+       "name": "Tosaki Mimi",
+       "k": 4,
+       "a": 3,
+       "d": 14,
+       "mvp": 0,
+       "score": 11
+      }
+     ]
+    }
+   ]
   }
  }
 }
