@@ -23061,6 +23061,301 @@
      ]
     }
    ]
+  },
+  "1-10": {
+   "maps": [
+    {
+     "map": "Anubis",
+     "scoreA": 13,
+     "scoreB": 9,
+     "players": [
+      {
+       "team": "Team Germany",
+       "name": "Hanyachi",
+       "k": 21,
+       "a": 2,
+       "d": 14,
+       "mvp": 4,
+       "score": 56
+      },
+      {
+       "team": "Team Germany",
+       "name": "Sportsocke",
+       "k": 17,
+       "a": 6,
+       "d": 14,
+       "mvp": 0,
+       "score": 45
+      },
+      {
+       "team": "Team Germany",
+       "name": "LITA",
+       "k": 17,
+       "a": 2,
+       "d": 12,
+       "mvp": 4,
+       "score": 44
+      },
+      {
+       "team": "Team Germany",
+       "name": "Soapbox_Danny",
+       "k": 18,
+       "a": 2,
+       "d": 15,
+       "mvp": 4,
+       "score": 42
+      },
+      {
+       "team": "Team Germany",
+       "name": "RaivyRain",
+       "k": 10,
+       "a": 1,
+       "d": 15,
+       "mvp": 1,
+       "score": 26
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "Mikuryne",
+       "k": 24,
+       "a": 1,
+       "d": 16,
+       "mvp": 2,
+       "score": 53
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "SpicyWolfie",
+       "k": 18,
+       "a": 0,
+       "d": 16,
+       "mvp": 3,
+       "score": 37
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "dumbo",
+       "k": 15,
+       "a": 3,
+       "d": 18,
+       "mvp": 3,
+       "score": 36
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "Reruzensky",
+       "k": 9,
+       "a": 3,
+       "d": 17,
+       "mvp": 1,
+       "score": 27
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "l1feless",
+       "k": 4,
+       "a": 3,
+       "d": 16,
+       "mvp": 0,
+       "score": 12
+      }
+     ]
+    },
+    {
+     "map": "Inferno",
+     "scoreA": 10,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Team Germany",
+       "name": "LITA",
+       "k": 18,
+       "a": 3,
+       "d": 19,
+       "mvp": 4,
+       "score": 50
+      },
+      {
+       "team": "Team Germany",
+       "name": "Hanyachi",
+       "k": 17,
+       "a": 3,
+       "d": 18,
+       "mvp": 1,
+       "score": 46
+      },
+      {
+       "team": "Team Germany",
+       "name": "Sportsocke",
+       "k": 20,
+       "a": 0,
+       "d": 18,
+       "mvp": 2,
+       "score": 44
+      },
+      {
+       "team": "Team Germany",
+       "name": "Soapbox_Danny",
+       "k": 12,
+       "a": 4,
+       "d": 19,
+       "mvp": 1,
+       "score": 37
+      },
+      {
+       "team": "Team Germany",
+       "name": "RaivyRain",
+       "k": 10,
+       "a": 3,
+       "d": 21,
+       "mvp": 2,
+       "score": 28
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "l1feless",
+       "k": 22,
+       "a": 3,
+       "d": 14,
+       "mvp": 5,
+       "score": 60
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "SpicyWolfie",
+       "k": 20,
+       "a": 4,
+       "d": 17,
+       "mvp": 2,
+       "score": 49
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "Mikuryne",
+       "k": 20,
+       "a": 2,
+       "d": 14,
+       "mvp": 3,
+       "score": 44
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "Reruzensky",
+       "k": 16,
+       "a": 1,
+       "d": 15,
+       "mvp": 1,
+       "score": 40
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "dumbo",
+       "k": 17,
+       "a": 1,
+       "d": 17,
+       "mvp": 2,
+       "score": 36
+      }
+     ]
+    },
+    {
+     "map": "Cache",
+     "scoreA": 1,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Team Germany",
+       "name": "Soapbox_Danny",
+       "k": 9,
+       "a": 4,
+       "d": 13,
+       "mvp": 0,
+       "score": 25
+      },
+      {
+       "team": "Team Germany",
+       "name": "Sportsocke",
+       "k": 8,
+       "a": 0,
+       "d": 13,
+       "mvp": 1,
+       "score": 18
+      },
+      {
+       "team": "Team Germany",
+       "name": "RaivyRain",
+       "k": 8,
+       "a": 1,
+       "d": 14,
+       "mvp": 0,
+       "score": 17
+      },
+      {
+       "team": "Team Germany",
+       "name": "LITA",
+       "k": 3,
+       "a": 3,
+       "d": 14,
+       "mvp": 0,
+       "score": 9
+      },
+      {
+       "team": "Team Germany",
+       "name": "Hanyachi",
+       "k": 2,
+       "a": 2,
+       "d": 14,
+       "mvp": 0,
+       "score": 6
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "Mikuryne",
+       "k": 18,
+       "a": 1,
+       "d": 7,
+       "mvp": 6,
+       "score": 48
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "Reruzensky",
+       "k": 16,
+       "a": 0,
+       "d": 5,
+       "mvp": 1,
+       "score": 39
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "l1feless",
+       "k": 11,
+       "a": 0,
+       "d": 5,
+       "mvp": 1,
+       "score": 33
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "dumbo",
+       "k": 13,
+       "a": 0,
+       "d": 5,
+       "mvp": 4,
+       "score": 31
+      },
+      {
+       "team": "Team Indonesia",
+       "name": "SpicyWolfie",
+       "k": 10,
+       "a": 1,
+       "d": 8,
+       "mvp": 1,
+       "score": 27
+      }
+     ]
+    }
+   ]
   }
  }
 }
