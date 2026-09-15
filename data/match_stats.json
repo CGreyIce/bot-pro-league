@@ -22863,6 +22863,204 @@
      ]
     }
    ]
+  },
+  "1-9": {
+   "maps": [
+    {
+     "map": "Dust2",
+     "scoreA": 13,
+     "scoreB": 11,
+     "players": [
+      {
+       "team": "Team Singapore",
+       "name": "caturteer",
+       "k": 18,
+       "a": 4,
+       "d": 14,
+       "mvp": 6,
+       "score": 49
+      },
+      {
+       "team": "Team Singapore",
+       "name": "twentyrosie",
+       "k": 18,
+       "a": 0,
+       "d": 15,
+       "mvp": 3,
+       "score": 44
+      },
+      {
+       "team": "Team Singapore",
+       "name": "Dirfun",
+       "k": 21,
+       "a": 0,
+       "d": 16,
+       "mvp": 3,
+       "score": 43
+      },
+      {
+       "team": "Team Singapore",
+       "name": "obvMX",
+       "k": 14,
+       "a": 1,
+       "d": 16,
+       "mvp": 0,
+       "score": 35
+      },
+      {
+       "team": "Team Singapore",
+       "name": "Aranionja",
+       "k": 12,
+       "a": 2,
+       "d": 12,
+       "mvp": 1,
+       "score": 32
+      },
+      {
+       "team": "Team Taiwan",
+       "name": "Emily_melody",
+       "k": 23,
+       "a": 0,
+       "d": 17,
+       "mvp": 5,
+       "score": 51
+      },
+      {
+       "team": "Team Taiwan",
+       "name": "KinEto46",
+       "k": 16,
+       "a": 2,
+       "d": 17,
+       "mvp": 2,
+       "score": 40
+      },
+      {
+       "team": "Team Taiwan",
+       "name": "HakoP",
+       "k": 15,
+       "a": 4,
+       "d": 16,
+       "mvp": 3,
+       "score": 39
+      },
+      {
+       "team": "Team Taiwan",
+       "name": "AltheaVT",
+       "k": 11,
+       "a": 1,
+       "d": 15,
+       "mvp": 0,
+       "score": 30
+      },
+      {
+       "team": "Team Taiwan",
+       "name": "murasakibara_tsuki1",
+       "k": 8,
+       "a": 3,
+       "d": 18,
+       "mvp": 1,
+       "score": 22
+      }
+     ]
+    },
+    {
+     "map": "Cache",
+     "scoreA": 13,
+     "scoreB": 6,
+     "players": [
+      {
+       "team": "Team Singapore",
+       "name": "obvMX",
+       "k": 27,
+       "a": 2,
+       "d": 13,
+       "mvp": 5,
+       "score": 67
+      },
+      {
+       "team": "Team Singapore",
+       "name": "twentyrosie",
+       "k": 15,
+       "a": 4,
+       "d": 13,
+       "mvp": 3,
+       "score": 43
+      },
+      {
+       "team": "Team Singapore",
+       "name": "Aranionja",
+       "k": 13,
+       "a": 1,
+       "d": 9,
+       "mvp": 3,
+       "score": 39
+      },
+      {
+       "team": "Team Singapore",
+       "name": "caturteer",
+       "k": 12,
+       "a": 4,
+       "d": 12,
+       "mvp": 1,
+       "score": 36
+      },
+      {
+       "team": "Team Singapore",
+       "name": "Dirfun",
+       "k": 14,
+       "a": 1,
+       "d": 13,
+       "mvp": 1,
+       "score": 31
+      },
+      {
+       "team": "Team Taiwan",
+       "name": "Emily_melody",
+       "k": 20,
+       "a": 1,
+       "d": 16,
+       "mvp": 0,
+       "score": 46
+      },
+      {
+       "team": "Team Taiwan",
+       "name": "KinEto46",
+       "k": 15,
+       "a": 1,
+       "d": 16,
+       "mvp": 1,
+       "score": 39
+      },
+      {
+       "team": "Team Taiwan",
+       "name": "HakoP",
+       "k": 11,
+       "a": 1,
+       "d": 16,
+       "mvp": 1,
+       "score": 34
+      },
+      {
+       "team": "Team Taiwan",
+       "name": "murasakibara_tsuki1",
+       "k": 10,
+       "a": 0,
+       "d": 17,
+       "mvp": 3,
+       "score": 28
+      },
+      {
+       "team": "Team Taiwan",
+       "name": "Emily_melody",
+       "k": 4,
+       "a": 1,
+       "d": 16,
+       "mvp": 1,
+       "score": 12
+      }
+     ]
+    }
+   ]
   }
  }
 }
