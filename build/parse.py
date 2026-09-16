@@ -1182,9 +1182,12 @@ def main():
     nation_map_teams = []
     _ncv = next((tr for tr in tournaments if tr["slug"] == "bpl-nations-cup-2026"), None)
     if _ncv:
+        _nc_champ = _ncv.get("champion")          # once the Cup is over, only the winner stays in the veto
         for row in _ncv.get("attending", []):
             if not row.get("players"):
                 continue                          # a TBC team (qualifier undecided) has no roster yet
+            if _nc_champ and row["team"] != _nc_champ:
+                continue                          # event finished -> drop the beaten nations
             rs = [slug_to_player[pl["slug"]]["rating"] for pl in row["players"]
                   if pl.get("slug") and slug_to_player.get(pl["slug"]) and slug_to_player[pl["slug"]].get("rating") is not None]
             avg = sum(rs) / len(rs) if rs else 1.0
