@@ -311,6 +311,12 @@ function playerMedals(p){
     tierLabel:tt.tierLabel, year:String(tt.year), team:tt.team, sort:String(tt.year)+'-99'}));
   const goldKeys = new Set(golds.map(x=>x.slug));
   const seen = new Set(), others = [];
+  // server-awarded podiums for ad-hoc teams without a page (e.g. Nations Cup national teams)
+  (p.podiums||[]).forEach(pd=>{
+    if(goldKeys.has(pd.slug) || seen.has(pd.slug)) return;
+    seen.add(pd.slug);
+    others.push({m:pd.m, ev:pd.event, slug:pd.slug, tier:pd.tier, tierLabel:pd.tierLabel, year:String(pd.year), team:pd.team, sort:String(pd.year)+'-98'});
+  });
   (p.teamHistory||[]).forEach(th=>{
     if(!th.teamSlug) return;
     const tm = teamBySlug(th.teamSlug); if(!tm) return;

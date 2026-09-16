@@ -1385,6 +1385,22 @@ def main():
                         p.setdefault("titles", []).append({
                             "event": tr["name"], "slug": tr["slug"], "tier": tr["tier"],
                             "tierLabel": tr["tierLabel"], "year": tr["year"], "team": row["team"]})
+            # silver/bronze for AD-HOC podium teams (e.g. Nations Cup "Team Korea"/"Team Indonesia").
+            # Pro-team podiums are inferred client-side from the team page; ad-hoc teams have none,
+            # so award them here off the finalStandings runner-up / 3rd-place rows.
+            for _res, _medal in (("Runner-up", "s"), ("3rd Place", "b")):
+                fst = next((s for s in (tr.get("finalStandings") or []) if s.get("result") == _res), None)
+                if not fst or fst.get("teamSlug"):        # no such placement, or it's a real (pro) team
+                    continue
+                prow = next((r for r in tr["attending"] if norm_key(r.get("team", "")) == norm_key(fst["name"])), None)
+                if not prow:
+                    continue
+                for pl in prow["players"]:
+                    p = slug_to_player.get(pl.get("slug"))
+                    if p:
+                        p.setdefault("podiums", []).append({
+                            "m": _medal, "event": tr["name"], "slug": tr["slug"], "tier": tr["tier"],
+                            "tierLabel": tr["tierLabel"], "year": tr["year"], "team": prow["team"]})
         # event MVP from any recorded scoreboards (every tournament, any tier)
         agg = {}
         def _scan(rounds):

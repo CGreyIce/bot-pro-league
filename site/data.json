@@ -40310,6 +40310,17 @@
      ],
      "aka": [
       "l1felessm"
+     ],
+     "podiums": [
+      {
+       "m": "b",
+       "event": "BPL Nations Cup 2026",
+       "slug": "bpl-nations-cup-2026",
+       "tier": "s",
+       "tierLabel": "S-Tier",
+       "year": "2026",
+       "team": "Team Indonesia"
+      }
      ]
     }
    ],
@@ -91213,6 +91224,17 @@
        ]
       }
      ],
+     "podiums": [
+      {
+       "m": "b",
+       "event": "BPL Nations Cup 2026",
+       "slug": "bpl-nations-cup-2026",
+       "tier": "s",
+       "tierLabel": "S-Tier",
+       "year": "2026",
+       "team": "Team Indonesia"
+      }
+     ],
      "titles": [
       {
        "event": "Bot Pro Minor League 13",
@@ -92850,6 +92872,17 @@
          "captain": true
         }
        ]
+      }
+     ],
+     "podiums": [
+      {
+       "m": "s",
+       "event": "BPL Nations Cup 2026",
+       "slug": "bpl-nations-cup-2026",
+       "tier": "s",
+       "tierLabel": "S-Tier",
+       "year": "2026",
+       "team": "Team Korea"
       }
      ]
     },
@@ -102781,6 +102814,17 @@
         "captain": false
        }
       ]
+     }
+    ],
+    "podiums": [
+     {
+      "m": "b",
+      "event": "BPL Nations Cup 2026",
+      "slug": "bpl-nations-cup-2026",
+      "tier": "s",
+      "tierLabel": "S-Tier",
+      "year": "2026",
+      "team": "Team Indonesia"
      }
     ],
     "titles": [
@@ -115435,6 +115479,17 @@
        }
       ]
      }
+    ],
+    "podiums": [
+     {
+      "m": "s",
+      "event": "BPL Nations Cup 2026",
+      "slug": "bpl-nations-cup-2026",
+      "tier": "s",
+      "tierLabel": "S-Tier",
+      "year": "2026",
+      "team": "Team Korea"
+     }
     ]
    },
    {
@@ -119220,6 +119275,17 @@
     ],
     "aka": [
      "l1felessm"
+    ],
+    "podiums": [
+     {
+      "m": "b",
+      "event": "BPL Nations Cup 2026",
+      "slug": "bpl-nations-cup-2026",
+      "tier": "s",
+      "tierLabel": "S-Tier",
+      "year": "2026",
+      "team": "Team Indonesia"
+     }
     ]
    },
    {
@@ -215847,6 +215913,17 @@
        }
       ]
      }
+    ],
+    "podiums": [
+     {
+      "m": "s",
+      "event": "BPL Nations Cup 2026",
+      "slug": "bpl-nations-cup-2026",
+      "tier": "s",
+      "tierLabel": "S-Tier",
+      "year": "2026",
+      "team": "Team Korea"
+     }
     ]
    },
    {
@@ -225707,6 +225784,17 @@
        }
       ]
      }
+    ],
+    "podiums": [
+     {
+      "m": "s",
+      "event": "BPL Nations Cup 2026",
+      "slug": "bpl-nations-cup-2026",
+      "tier": "s",
+      "tierLabel": "S-Tier",
+      "year": "2026",
+      "team": "Team Korea"
+     }
     ]
    },
    {
@@ -234725,6 +234813,17 @@
        }
       ]
      }
+    ],
+    "podiums": [
+     {
+      "m": "b",
+      "event": "BPL Nations Cup 2026",
+      "slug": "bpl-nations-cup-2026",
+      "tier": "s",
+      "tierLabel": "S-Tier",
+      "year": "2026",
+      "team": "Team Indonesia"
+     }
     ]
    },
    {
@@ -234831,6 +234930,17 @@
        }
       ]
      }
+    ],
+    "podiums": [
+     {
+      "m": "b",
+      "event": "BPL Nations Cup 2026",
+      "slug": "bpl-nations-cup-2026",
+      "tier": "s",
+      "tierLabel": "S-Tier",
+      "year": "2026",
+      "team": "Team Indonesia"
+     }
     ]
    },
    {
@@ -234907,6 +235017,17 @@
         "captain": false
        }
       ]
+     }
+    ],
+    "podiums": [
+     {
+      "m": "b",
+      "event": "BPL Nations Cup 2026",
+      "slug": "bpl-nations-cup-2026",
+      "tier": "s",
+      "tierLabel": "S-Tier",
+      "year": "2026",
+      "team": "Team Indonesia"
      }
     ]
    },
@@ -235868,6 +235989,17 @@
        }
       ]
      }
+    ],
+    "podiums": [
+     {
+      "m": "s",
+      "event": "BPL Nations Cup 2026",
+      "slug": "bpl-nations-cup-2026",
+      "tier": "s",
+      "tierLabel": "S-Tier",
+      "year": "2026",
+      "team": "Team Korea"
+     }
     ]
    },
    {
@@ -235944,6 +236076,17 @@
         "captain": true
        }
       ]
+     }
+    ],
+    "podiums": [
+     {
+      "m": "s",
+      "event": "BPL Nations Cup 2026",
+      "slug": "bpl-nations-cup-2026",
+      "tier": "s",
+      "tierLabel": "S-Tier",
+      "year": "2026",
+      "team": "Team Korea"
      }
     ]
    },
