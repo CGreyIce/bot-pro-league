@@ -28,6 +28,17 @@ def load_solo():
 def save_solo(lst):
     json.dump(lst, open(SOLO_SB, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
+ARTICLES = os.path.join(ROOT, "data", "articles.json")
+
+def load_articles():
+    try:
+        return json.load(open(ARTICLES, encoding="utf-8"))
+    except Exception:
+        return []
+
+def save_articles(lst):
+    json.dump(lst, open(ARTICLES, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
 def regenerate():
     """Re-run the data pipeline so the site reflects the latest manual edits."""
     r = subprocess.run([sys.executable, os.path.join(ROOT, "build", "parse.py")],
@@ -161,6 +172,22 @@ class Handler(SimpleHTTPRequestHandler):
                 man = manual.set_predictions_locked(b["slug"], b.get("locked", True))
             elif path == "/api/complete":
                 man = manual.set_completed(b["slug"], b.get("completed", True))
+            elif path == "/api/article/save":
+                if not (b.get("title") or "").strip():
+                    return self._json(400, {"ok": False, "error": "title required"})
+                arts = load_articles()
+                slug = (b.get("slug") or "").strip() or manual.slugify(b["title"])
+                art = {"slug": slug, "title": b["title"].strip(),
+                       "date": (b.get("date") or "").strip(), "author": (b.get("author") or "").strip(),
+                       "body": b.get("body") or ""}
+                arts = [a for a in arts if a.get("slug") != slug]      # replace when editing
+                arts.append(art)
+                save_articles(arts); ok, msg = regenerate()
+                return self._json(200, {"ok": ok, "msg": msg, "slug": slug})
+            elif path == "/api/article/delete":
+                save_articles([a for a in load_articles() if a.get("slug") != b.get("slug")])
+                ok, msg = regenerate()
+                return self._json(200, {"ok": ok, "msg": msg})
             elif path == "/api/delete":
                 manual.delete(b["slug"]); ok, msg = regenerate()
                 return self._json(200, {"ok": ok, "msg": msg})

@@ -799,6 +799,21 @@ textarea.adm-in{resize:vertical;font-family:inherit}
 .pd-key{text-transform:uppercase;letter-spacing:.5px;padding:0 5px;border-radius:3px;margin-left:4px}
 .pd-key.correct{background:rgba(46,230,166,.18);color:var(--good)}
 .pd-key.wrong{background:rgba(255,61,100,.16);color:var(--accent2)}
+/* news / articles */
+.home-news{margin-bottom:24px}
+.news-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:14px}
+.news-card{display:block;background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px;text-decoration:none;color:var(--text);transition:border-color .15s,transform .15s}
+.news-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.news-date{font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:.6px;font-weight:700;margin-bottom:6px}
+.news-title{font-family:'Chakra Petch';font-weight:700;font-size:16px;line-height:1.25;margin-bottom:6px}
+.news-snip{font-size:13px;color:var(--muted);line-height:1.45}
+.news-author{font-size:11px;color:var(--muted);margin-top:9px}
+.article{max-width:760px}
+.article-date{font-size:12px;color:var(--accent);text-transform:uppercase;letter-spacing:.6px;font-weight:700;margin-bottom:6px}
+.article-title{font-size:32px;line-height:1.12;margin:0 0 18px}
+.article-body{font-size:15.5px;line-height:1.7}
+.article-body p{margin:0 0 15px}
+.article-body a{color:var(--link)}
 /* map veto simulator */
 .veto-controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px}
 .veto-controls .adm-in{max-width:240px;margin:0}

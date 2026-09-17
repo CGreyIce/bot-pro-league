@@ -176,6 +176,7 @@ const routes = {
   "transfers": renderTransfers, "matches": renderMatches, "awards": renderAwards, "maps": renderMaps,
   "compareteams": renderTeamCompare, "stats": renderStats,
   "admin": renderAdmin, "match": renderMatch, "predict": renderPredict, "prophets": renderProphets,
+  "news": renderNews, "article": renderArticle,
 };
 function parseHash(){
   const h = location.hash.replace(/^#\/?/, "");
@@ -190,7 +191,7 @@ function router(){
   fn(arg);
   renderPromo();   // re-roll the socials promo on each page for even exposure
   document.querySelectorAll(".mainnav a").forEach(a=>{
-    const map={team:"teams",player:"players",tournament:"tournaments"};
+    const map={team:"teams",player:"players",tournament:"tournaments",article:"news"};
     a.classList.toggle("active", a.dataset.route === (map[route]||route));
   });
 }
@@ -228,6 +229,12 @@ function renderHome(){
   const byMvp    = [...proQ].sort((a,b)=>b.mvp-a.mvp).slice(0,5);
 
   app.innerHTML = `
+    ${(DATA.articles&&DATA.articles.length)?`
+    <div class="home-news">
+      <h2 class="section-title"><span class="accent-bar"></span>Latest News
+        <a href="#/news" class="muted" style="margin-left:auto;font-size:12px">All news →</a></h2>
+      <div class="news-list">${DATA.articles.slice(0,3).map(newsCard).join('')}</div>
+    </div>`:''}
     <div class="grid home-grid">
       <div>
         <h2 class="section-title"><span class="accent-bar"></span>Top Teams</h2>
@@ -257,6 +264,45 @@ function renderHome(){
         </div>
       </div>
     </div>`;
+}
+
+// ---- News / Articles ----
+function fmtArticleDate(d){ if(!d) return ''; const dt=new Date(d+'T00:00:00'); return isNaN(dt)?d:dt.toLocaleDateString(undefined,{year:'numeric',month:'long',day:'numeric'}); }
+function articleBodyHtml(body){
+  const e = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  const inline = s => e(s)
+    .replace(/\[([^\]]+)\]\((#[^)\s]+|https?:\/\/[^)\s]+)\)/g,(m,t,h)=>`<a href="${h}">${t}</a>`)  // [text](#/… or https://…)
+    .replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>')
+    .replace(/\*([^*]+)\*/g,'<em>$1</em>');
+  return (body||'').split(/\n\s*\n/).filter(p=>p.trim()).map(p=>`<p>${inline(p.trim()).replace(/\n/g,'<br>')}</p>`).join('');
+}
+function newsCard(a){
+  return `<a class="news-card" href="#/article/${esc(a.slug)}">
+    <div class="news-date">${fmtArticleDate(a.date)}</div>
+    <div class="news-title">${esc(a.title)}</div>
+    ${a.snippet?`<div class="news-snip">${esc(a.snippet)}</div>`:''}
+    ${a.author?`<div class="news-author">${esc(a.author)}</div>`:''}</a>`;
+}
+function renderNews(){
+  const arts = DATA.articles||[];
+  app.innerHTML = `<h2 class="section-title"><span class="accent-bar"></span>News</h2>`+
+    (arts.length ? `<div class="news-list">${arts.map(newsCard).join('')}</div>`
+                 : '<p class="muted">No articles yet.</p>');
+}
+function renderArticle(slug){
+  const a = (DATA.articles||[]).find(x=>x.slug===slug);
+  if(!a){ app.innerHTML = notFound('Article'); return; }
+  const idx = (DATA.articles||[]).indexOf(a);
+  const others = (DATA.articles||[]).filter((_,i)=>i!==idx).slice(0,3);
+  app.innerHTML = `
+    <div class="crumb"><a href="#/news">News</a><span class="sep">/</span>${esc(a.title)}</div>
+    <article class="article">
+      <div class="article-date">${fmtArticleDate(a.date)}${a.author?' · '+esc(a.author):''}</div>
+      <h1 class="article-title">${esc(a.title)}</h1>
+      <div class="article-body">${articleBodyHtml(a.body)}</div>
+    </article>
+    ${others.length?`<h2 class="section-title" style="margin-top:26px"><span class="accent-bar"></span>More news</h2>
+      <div class="news-list">${others.map(newsCard).join('')}</div>`:''}`;
 }
 
 function renderTeams(){
@@ -1784,6 +1830,31 @@ async function renderAdmin(){
         <div id="adm-editor" style="margin-top:18px"></div>
       </div>
     </div>
+    <div class="adm-news" style="margin-top:26px">
+      <h2 class="section-title"><span class="accent-bar"></span>News / Articles</h2>
+      <p class="muted" style="font-size:12px;margin:-4px 0 12px">Write an article and publish it to the News page. Supports <code>**bold**</code>, <code>*italic*</code>, and <code>[links](#/team/masmark)</code>. Leave a blank line between paragraphs.</p>
+      <div class="profile-grid" style="grid-template-columns:1fr 300px">
+        <div class="infobox" style="padding:14px">
+          <div class="ib-title" style="margin:-14px -14px 12px" id="art-formtitle">New Article</div>
+          <input type="hidden" id="art-slug">
+          <label class="adm-l">Title</label>
+          <input id="art-title" class="adm-in" placeholder="Masmark part ways with estellyy., sign HikariiFloofie">
+          <div style="display:flex;gap:8px">
+            <div style="flex:1"><label class="adm-l">Date</label><input id="art-date" class="adm-in" type="date"></div>
+            <div style="flex:1"><label class="adm-l">Author (optional)</label><input id="art-author" class="adm-in" placeholder="BPL Staff"></div>
+          </div>
+          <label class="adm-l">Body</label>
+          <textarea id="art-body" class="adm-in" rows="10" placeholder="Write the article here…&#10;&#10;Blank line between paragraphs."></textarea>
+          <button id="art-save" class="adm-btn" style="margin-top:8px">Save article</button>
+          <button id="art-new" class="adm-btn" style="margin-top:6px;background:var(--panel);border:1px solid var(--border);color:var(--text)">+ New (clear)</button>
+          <div id="art-msg" class="muted" style="font-size:12px;margin-top:8px"></div>
+        </div>
+        <div>
+          <h3 class="rec-group" style="margin-top:0">Published articles</h3>
+          <div id="art-list" class="adm-list"><p class="muted">None yet.</p></div>
+        </div>
+      </div>
+    </div>
     <div class="adm-solo" style="margin-top:26px">
       <h2 class="section-title"><span class="accent-bar"></span>Solo Queue Scoreboards</h2>
       <p class="muted" style="font-size:12px;margin:-4px 0 12px">Record a solo-queue game. These stats stack on top of the sheet into each player's <strong>Solo Queue</strong> block only — tournament stats are never touched. Check <strong>W</strong> for players on the winning side.</p>
@@ -1905,6 +1976,7 @@ async function renderAdmin(){
     await apiPost("/api/complete",{slug:b.dataset.reopen, completed:false});
     await reloadData(); renderAdmin();
   });
+  setupNewsAdmin();
   setupSoloAdmin();
   setupShuffler();
   setupMapVeto();
@@ -2171,6 +2243,44 @@ function generateTeams(players, lockedGroups, groupByCountry=true){
     return { n:i+1, players:rows, country:dominantCountry(t),
              missingAwp: !t.members.some(m=>m.isAwp), missingIGL: !iglPick };
   });
+}
+
+// ---- news/articles admin (write + publish articles) ----
+function setupNewsAdmin(){
+  const list=$("#art-list"); if(!list) return;
+  const arts = DATA.articles||[];
+  const clearForm=()=>{ $("#art-slug").value=""; $("#art-title").value=""; $("#art-author").value="";
+    $("#art-body").value=""; $("#art-date").value=new Date().toISOString().slice(0,10);
+    $("#art-formtitle").textContent="New Article"; $("#art-msg").textContent=""; };
+  clearForm();
+  list.innerHTML = arts.length ? arts.map(a=>`<div class="adm-trow" data-artedit="${esc(a.slug)}" style="cursor:pointer" title="Click to edit">
+      <span class="adm-name" style="flex:1;min-width:0">${esc(a.title)}</span>
+      <span class="muted" style="font-size:11px">${esc(a.date||'')}</span>
+      <button class="adm-del" data-artdel="${esc(a.slug)}" title="Delete">✕</button>
+    </div>`).join("") : '<p class="muted">None yet.</p>';
+  list.querySelectorAll("[data-artedit]").forEach(row=>row.onclick=e=>{
+    if(e.target.closest("[data-artdel]")) return;
+    const a=arts.find(x=>x.slug===row.dataset.artedit); if(!a) return;
+    $("#art-slug").value=a.slug; $("#art-title").value=a.title||""; $("#art-date").value=a.date||"";
+    $("#art-author").value=a.author||""; $("#art-body").value=a.body||"";
+    $("#art-formtitle").textContent="Editing: "+a.title; $("#art-msg").textContent="";
+    $("#art-title").scrollIntoView({behavior:"smooth", block:"center"});
+  });
+  list.querySelectorAll("[data-artdel]").forEach(b=>b.onclick=async e=>{
+    e.stopPropagation();
+    if(!confirm("Delete this article?")) return;
+    await apiPost("/api/article/delete",{slug:b.dataset.artdel}); await reloadData(); renderAdmin();
+  });
+  $("#art-new").onclick=clearForm;
+  $("#art-save").onclick=async ()=>{
+    const title=$("#art-title").value.trim(), msg=$("#art-msg");
+    if(!title){ msg.style.color="var(--accent2,#ff6b6b)"; msg.textContent="Enter a title."; return; }
+    msg.style.color=""; msg.textContent="Saving…";
+    const r=await apiPost("/api/article/save",{slug:$("#art-slug").value.trim(), title,
+      date:$("#art-date").value, author:$("#art-author").value.trim(), body:$("#art-body").value});
+    if(r.ok){ await reloadData(); renderAdmin(); }
+    else { msg.style.color="var(--accent2,#ff6b6b)"; msg.textContent="Error: "+(r.msg||r.error||"failed"); }
+  };
 }
 
 const SOLO_HALF = 5;                               // a solo game is 5v5
