@@ -1956,12 +1956,17 @@ function renderVetoResult(A,B,fmt,res){
   const out=$("#veto-out"); if(!out) return;
   const wr=(t,m)=> (t.mapStats&&t.mapStats[m]?t.mapStats[m].wr:0.5);
   const isBest=(t,m)=>(t.bestMaps||[]).includes(m), isWorst=(t,m)=>(t.worstMaps||[]).includes(m);
-  const cell=(t,m)=>{ const w=wr(t,m); const cls=isBest(t,m)?"vt-best":isWorst(t,m)?"vt-worst":""; const g=t.mapStats&&t.mapStats[m]?t.mapStats[m].g:0;
-    return `<td class="mono ${cls}" title="${g?g+' maps played':'projected'}">${pct(w)}${g?'':'*'}</td>`; };
+  const cell=(t,m)=>{ const w=wr(t,m); const cls=isBest(t,m)?"vt-best":isWorst(t,m)?"vt-worst":"";
+    const st=t.mapStats&&t.mapStats[m]||{}; const g=st.g||0;
+    const mark = g ? '' : (st.est ? '~' : '*');
+    const title = g ? g+' maps played'
+      : st.est ? ('est. from '+st.estN+' player'+(st.estN===1?'':'s')+' ('+st.estMaps+' map'+(st.estMaps===1?'':'s')+')')
+      : 'projected';
+    return `<td class="mono ${cls}" title="${title}">${pct(w)}${mark}</td>`; };
   const matrix=`<div class="tablewrap" style="max-width:560px"><table class="data vt-matrix">
     <thead><tr><th class="no-sort">Map</th><th class="no-sort">${esc(A.name)}</th><th class="no-sort">${esc(B.name)}</th></tr></thead>
     <tbody>${VETO_MAPS.map(m=>`<tr><td class="name-cell">${vetoMapImg(m)}<span class="vt-mname">${esc(m)}</span></td>${cell(A,m)}${cell(B,m)}</tr>`).join("")}</tbody></table>
-    <div class="muted" style="font-size:11px;margin-top:4px">Green = a team's best map · red = worst · <b>*</b> = projected (not enough real maps yet).</div></div>`;
+    <div class="muted" style="font-size:11px;margin-top:4px">Green = best map · red = worst · <b>~</b> = estimated from the players' own map form · <b>*</b> = projected (no data yet).</div></div>`;
   const stepRow=s=>{
     const badge = s.action==="ban"?`<span class="vt-badge ban">BAN</span>`
       : s.action==="pick"?`<span class="vt-badge pick">PICK</span>`

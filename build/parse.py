@@ -708,7 +708,8 @@ def main():
     # Active map pool of 7 (Split is a custom 3rd-place-only map and is ignored).
     POOL_MAPS = ["Mirage", "Dust2", "Inferno", "Cache", "Tuscan", "Vertigo", "Anubis"]
     _mapkey = {m.lower(): m for m in POOL_MAPS}
-    map_rec = defaultdict(lambda: defaultdict(lambda: [0, 0]))   # slug -> mapName -> [w, l]
+    map_rec = defaultdict(lambda: defaultdict(lambda: [0, 0]))          # team slug -> mapName -> [w, l]
+    player_map_rec = defaultdict(lambda: defaultdict(lambda: [0, 0]))   # player slug -> mapName -> [w, l]
     for tr in tournaments:
         mlist = ([m for st in tr.get("stages", []) for rd in st["rounds"] for m in rd["matches"]]
                  if tr.get("stages") else [m for rd in tr.get("bracket", []) for m in rd["matches"]])
@@ -724,8 +725,16 @@ def main():
                 sa, sb = mp.get("scoreA"), mp.get("scoreB")
                 if sa is None or sb is None or sa == sb:
                     continue
-                if aT: map_rec[aT][cm][0 if sa > sb else 1] += 1
-                if bT: map_rec[bT][cm][1 if sa > sb else 0] += 1
+                a_won = sa > sb
+                if aT: map_rec[aT][cm][0 if a_won else 1] += 1
+                if bT: map_rec[bT][cm][1 if a_won else 0] += 1
+                for pl in mp.get("players", []):                  # per-player map W/L (their side's result)
+                    s = pl.get("slug")
+                    if not s:
+                        continue
+                    on_a = norm_key(pl.get("team", "")) == norm_key(m.get("a", ""))
+                    won = a_won if on_a else (not a_won)
+                    player_map_rec[s][cm][0 if won else 1] += 1
     def _seed(s):
         h = 2166136261
         for ch in s:
@@ -1129,8 +1138,10 @@ def main():
 
     # ---- map profiles for ad-hoc amateur teams (for the veto simulator) — in-progress events ----
     # Same lifecycle as the team override above: available while the event is live, gone once it
-    # finishes (unless a team is promoted to pro and gains its own page). Seeded per-map win rates
-    # around a base set by the roster's average Rating Points; no real per-map data yet.
+    # finishes (unless a team is promoted to pro and gains its own page). The team has no games of
+    # its own, so each map is either ESTIMATED (the average of its roster players' real per-map win
+    # rates, e.g. from the Nations Cup) or, where no player has played that map, a seeded projection
+    # around a base set by the roster's average Rating Points.
     adhoc_map_teams = []
     for tr in tournaments:
         if tr["slug"] not in manual_slugs_a or tr.get("champion") or "nations-cup" in tr["slug"]:
@@ -1144,8 +1155,18 @@ def main():
             base = max(0.38, min(0.60, 0.5 + (avg - 1.0) * 0.9))
             stats = {}
             for cm in POOL_MAPS:
-                off = (_seed(row["team"] + "|" + cm) % 4200) / 10000.0 - 0.21
-                stats[cm] = {"w": 0, "l": 0, "g": 0, "wr": round(max(0.20, min(0.82, base + off)), 3), "real": False}
+                wrs, sample = [], 0                       # roster players who've actually played this map
+                for pl in row["players"]:
+                    w, l = player_map_rec.get(pl.get("slug"), {}).get(cm, [0, 0])
+                    if w + l > 0:
+                        wrs.append(w / (w + l)); sample += w + l
+                if wrs:                                   # estimate from the players' own map form
+                    stats[cm] = {"w": 0, "l": 0, "g": 0, "wr": round(sum(wrs) / len(wrs), 3),
+                                 "real": False, "est": True, "estN": len(wrs), "estMaps": sample}
+                else:                                     # nobody has played it -> seeded projection
+                    off = (_seed(row["team"] + "|" + cm) % 4200) / 10000.0 - 0.21
+                    stats[cm] = {"w": 0, "l": 0, "g": 0, "wr": round(max(0.20, min(0.82, base + off)), 3),
+                                 "real": False, "est": False}
             order = sorted(POOL_MAPS, key=lambda cm: (-stats[cm]["wr"], cm))
             adhoc_map_teams.append({"name": row["team"], "slug": "adhoc-" + norm_key(row["team"]),
                                     "mapStats": stats, "bestMaps": order[:2],

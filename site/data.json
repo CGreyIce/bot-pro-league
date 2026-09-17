@@ -2820,7 +2820,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.067,
-     "ratingPoints": 1410,
+     "ratingPoints": 1409,
      "tier": "Master",
      "level": 7,
      "kpm": 16.1,
@@ -3199,7 +3199,7 @@
      "iso": "gb",
      "provisional": false,
      "rating": 1.039,
-     "ratingPoints": 1302,
+     "ratingPoints": 1301,
      "tier": "Diamond",
      "level": 6,
      "kpm": 14.9,
@@ -3398,7 +3398,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.037,
-     "ratingPoints": 1295,
+     "ratingPoints": 1294,
      "tier": "Diamond",
      "level": 6,
      "kpm": 15.0,
@@ -4325,7 +4325,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.131,
-     "ratingPoints": 1660,
+     "ratingPoints": 1659,
      "tier": "Champion",
      "level": 8,
      "kpm": 16.7,
@@ -4349,7 +4349,7 @@
       "rankDelta": 0,
       "provisional": false
      },
-     "bio": "VPLH captains New Jade and ranks among the elite of the pool, a Singaporean in-game leader who leads from the front. A two-time BPL Legends Stage champion — first in 2022, again in 2025 — she blends her calling with a rare fragging output for an IGL, backing a Level 8 1660 points with a 1.23 K/D.",
+     "bio": "VPLH captains New Jade and ranks among the elite of the pool, a Singaporean in-game leader who leads from the front. A two-time BPL Legends Stage champion — first in 2022, again in 2025 — she blends her calling with a rare fragging output for an IGL, backing a Level 8 1659 points with a 1.23 K/D.",
      "gender": "F",
      "teamHistory": [
       {
@@ -9941,7 +9941,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.06,
-     "ratingPoints": 1384,
+     "ratingPoints": 1383,
      "tier": "Master",
      "level": 7,
      "kpm": 16.7,
@@ -11990,7 +11990,7 @@
      "iso": "my",
      "provisional": false,
      "rating": 1.056,
-     "ratingPoints": 1370,
+     "ratingPoints": 1369,
      "tier": "Master",
      "level": 7,
      "kpm": 17.0,
@@ -16795,7 +16795,7 @@
      "tier": "Master",
      "level": 7,
      "kpm": 16.1,
-     "rankDelta": 1,
+     "rankDelta": 0,
      "soloStats": {
       "kills": 83,
       "deaths": 95,
@@ -17624,7 +17624,7 @@
      "iso": "gb",
      "provisional": false,
      "rating": 0.987,
-     "ratingPoints": 1098,
+     "ratingPoints": 1097,
      "tier": "Gold",
      "level": 5,
      "kpm": 15.5,
@@ -20092,7 +20092,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 0.905,
-     "ratingPoints": 781,
+     "ratingPoints": 780,
      "tier": "Iron",
      "level": 3,
      "kpm": 12.8,
@@ -21379,7 +21379,7 @@
      "nat": "Malaysia",
      "iso": "my",
      "provisional": false,
-     "rating": 0.993,
+     "rating": 0.992,
      "ratingPoints": 1121,
      "tier": "Gold",
      "level": 5,
@@ -21673,7 +21673,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 0.978,
-     "ratingPoints": 1065,
+     "ratingPoints": 1064,
      "tier": "Gold",
      "level": 5,
      "kpm": 14.2,
@@ -30566,7 +30566,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 0.96,
+     "rating": 0.959,
      "ratingPoints": 992,
      "tier": "Silver",
      "level": 4,
@@ -36142,11 +36142,11 @@
    "slug": "divide-conquer",
    "key": "divideconquer",
    "logo": "assets/teams/Divide&Conquer.png",
-   "map_wins": 73,
+   "map_wins": 74,
    "map_losses": 54,
    "map_ties": 2,
-   "total_maps": 129,
-   "wlr": 0.575,
+   "total_maps": 130,
+   "wlr": 0.578,
    "a_tier_wins": 1,
    "s_tier_wins": 0,
    "major_wins": 0,
@@ -36181,34 +36181,34 @@
      "w": 1,
      "l": 0,
      "g": 1,
-     "wr": 0.752,
+     "wr": 0.755,
      "real": false
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.444,
+     "wr": 0.447,
      "real": false
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.552,
+     "wr": 0.555,
      "real": false
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.424,
+     "wr": 0.427,
      "real": false
     },
     "Tuscan": {
-     "w": 2,
+     "w": 3,
      "l": 0,
-     "g": 2,
+     "g": 3,
      "wr": 1.0,
      "real": true
     },
@@ -36216,14 +36216,14 @@
      "w": 0,
      "l": 1,
      "g": 1,
-     "wr": 0.686,
+     "wr": 0.689,
      "real": false
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.612,
+     "wr": 0.615,
      "real": false
     }
    },
@@ -36241,17 +36241,17 @@
      "name": "chreyll",
      "team": "Divide&Conquer",
      "pool": "pro",
-     "kills": 569,
-     "assists": 135,
-     "deaths": 543,
-     "mvp": 94,
+     "kills": 586,
+     "assists": 137,
+     "deaths": 559,
+     "mvp": 96,
      "kdr": 1.05,
-     "wins": 17,
+     "wins": 18,
      "losses": 18,
-     "winrate": 0.486,
+     "winrate": 0.5,
      "ot": 0,
      "role": "Awper",
-     "maps": 35,
+     "maps": 36,
      "orig_rank": "Emerald",
      "orig_level": "Level 5",
      "orig_rating": 2051.0,
@@ -36264,7 +36264,7 @@
      "tier": "Grandmaster",
      "level": 7,
      "kpm": 16.3,
-     "rankDelta": 0,
+     "rankDelta": 1,
      "soloStats": {
       "kills": 59,
       "deaths": 96,
@@ -36284,7 +36284,7 @@
       "rankDelta": 0,
       "provisional": false
      },
-     "bio": "chreyll is a Level 7 AWPer for Divide&Conquer and one of the league's most prolific players, a Singaporean with 569 career kills and 94 MVP rounds. A winner of Bot Pro League Minor 9, she has also been named an event MVP — a mark of her impact on the biggest rounds.",
+     "bio": "chreyll is a Level 7 AWPer for Divide&Conquer and one of the league's most prolific players, a Singaporean with 586 career kills and 96 MVP rounds. A winner of Bot Pro League Minor 9, she has also been named an event MVP — a mark of her impact on the biggest rounds.",
      "gender": "F",
      "teamHistory": [
       {
@@ -36630,16 +36630,16 @@
          "captain": false
         },
         {
-         "hist": "Solec",
-         "name": "Solec",
-         "slug": "solec",
+         "hist": "InfiniteBreaker",
+         "name": "InfiniteBreaker",
+         "slug": "infinitebreaker",
          "iso": "sg",
          "captain": false
         },
         {
-         "hist": "InfiniteBreaker",
-         "name": "InfiniteBreaker",
-         "slug": "infinitebreaker",
+         "hist": "Solec",
+         "name": "Solec",
+         "slug": "solec",
          "iso": "sg",
          "captain": false
         },
@@ -36723,17 +36723,17 @@
      "name": "LITA",
      "team": "Divide&Conquer",
      "pool": "pro",
-     "kills": 620,
-     "assists": 192,
-     "deaths": 623,
-     "mvp": 81,
-     "kdr": 1.0,
-     "wins": 20,
+     "kills": 647,
+     "assists": 195,
+     "deaths": 635,
+     "mvp": 88,
+     "kdr": 1.02,
+     "wins": 21,
      "losses": 20,
-     "winrate": 0.5,
+     "winrate": 0.512,
      "ot": 0,
      "role": "Rifler",
-     "maps": 40,
+     "maps": 41,
      "orig_rank": "Platinum",
      "orig_level": "Level 4",
      "orig_rating": 1882.0,
@@ -36741,13 +36741,13 @@
      "nat": "Germany",
      "iso": "de",
      "provisional": false,
-     "rating": 1.076,
-     "ratingPoints": 1447,
-     "tier": "Master",
+     "rating": 1.091,
+     "ratingPoints": 1506,
+     "tier": "Grandmaster",
      "level": 7,
-     "kpm": 15.5,
-     "rankDelta": 0,
-     "bio": "LITA is a German rifler for Divide&Conquer and one of the roster's heaviest hitters, with 620 career kills to her name. A winner of Bot Pro League Minor 9, she brings European steel to a Singapore-heavy pool.",
+     "kpm": 15.8,
+     "rankDelta": 21,
+     "bio": "LITA is a German rifler for Divide&Conquer and one of the roster's heaviest hitters, with 647 career kills to her name. A winner of Bot Pro League Minor 9, she brings European steel to a Singapore-heavy pool.",
      "gender": "F",
      "teamHistory": [
       {
@@ -36823,16 +36823,16 @@
          "captain": false
         },
         {
-         "hist": "Solec",
-         "name": "Solec",
-         "slug": "solec",
+         "hist": "InfiniteBreaker",
+         "name": "InfiniteBreaker",
+         "slug": "infinitebreaker",
          "iso": "sg",
          "captain": false
         },
         {
-         "hist": "InfiniteBreaker",
-         "name": "InfiniteBreaker",
-         "slug": "infinitebreaker",
+         "hist": "Solec",
+         "name": "Solec",
+         "slug": "solec",
          "iso": "sg",
          "captain": false
         },
@@ -36894,6 +36894,376 @@
      "aka": [
       "winterkindlita"
      ],
+     "mvpAwards": [
+      {
+       "event": "Bot Pro Cup 2026",
+       "slug": "bot-pro-cup-2026",
+       "year": "2026"
+      }
+     ],
+     "titles": [
+      {
+       "event": "Bot Pro League Minor 9",
+       "slug": "BotProLeague9",
+       "tier": "a",
+       "tierLabel": "A-Tier",
+       "year": "2021",
+       "team": "Divide&Conquer"
+      }
+     ]
+    },
+    {
+     "name": "InfiniteBreaker",
+     "team": "Divide&Conquer",
+     "pool": "pro",
+     "kills": 548,
+     "assists": 166,
+     "deaths": 569,
+     "mvp": 68,
+     "kdr": 0.96,
+     "wins": 18,
+     "losses": 18,
+     "winrate": 0.5,
+     "ot": 0,
+     "role": "Fill",
+     "maps": 36,
+     "orig_rank": "Platinum",
+     "orig_level": "Level 4",
+     "orig_rating": 1917.0,
+     "slug": "infinitebreaker",
+     "nat": "Singapore",
+     "iso": "sg",
+     "provisional": false,
+     "rating": 1.048,
+     "ratingPoints": 1338,
+     "tier": "Diamond",
+     "level": 6,
+     "kpm": 15.2,
+     "rankDelta": 2,
+     "bio": "InfiniteBreaker is a Singaporean flex player for Divide&Conquer, a Level 6 operator with over 548 kills and a title from Bot Pro League Minor 9. A versatile presence wherever the team needs him.",
+     "gender": "M",
+     "teamHistory": [
+      {
+       "team": "2Bit4",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2020"
+       ],
+       "roster": [
+        {
+         "hist": "InfiniteBreaker",
+         "name": "InfiniteBreaker",
+         "slug": "infinitebreaker",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "caarrietan",
+         "name": "caarrietan",
+         "slug": "caarrietan",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "ziweiv",
+         "name": "Ziweiv",
+         "slug": "ziweiv",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "kenzieyii",
+         "name": "kenzieyii",
+         "slug": "kenzieyii",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "leachubby",
+         "name": "leachubby",
+         "slug": "leachubby",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Pixinite",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2020"
+       ],
+       "roster": [
+        {
+         "hist": "InfiniteBreaker",
+         "name": "InfiniteBreaker",
+         "slug": "infinitebreaker",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "Keyboard Rage",
+         "name": "Solec",
+         "slug": "solec",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Ziweiv",
+         "name": "Ziweiv",
+         "slug": "ziweiv",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "S.GT",
+         "name": "S.GT",
+         "slug": "s-gt",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "chiyoriinn",
+         "name": "chiyoriinn",
+         "slug": "chiyoriinn",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "PixIgnite",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "InfiniteBreaker",
+         "name": "InfiniteBreaker",
+         "slug": "infinitebreaker",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "Ryujin",
+         "name": "Ryujin",
+         "slug": "ryujin",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "Skyllabtw",
+         "name": "Skyllabtw",
+         "slug": "skyllabtw",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "leachubby",
+         "name": "leachubby",
+         "slug": "leachubby",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "kitties258",
+         "name": "kitties258",
+         "slug": "kitties258",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Caelum",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "Mike",
+         "name": "Mike",
+         "slug": "mike",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "Navikuun",
+         "name": "Navikuun",
+         "slug": "navikuun",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "m0wmeow",
+         "name": "m0wmeow",
+         "slug": "m0wmeow",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "InfiniteBreaker",
+         "name": "InfiniteBreaker",
+         "slug": "infinitebreaker",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "laavv._",
+         "name": "laavv._",
+         "slug": "laavv",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "FateChanger",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "DestonKnee",
+         "name": "Kai",
+         "slug": "kai",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "InfiniteBreaker",
+         "name": "InfiniteBreaker",
+         "slug": "infinitebreaker",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Mike",
+         "name": "Mike",
+         "slug": "mike",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Nataleste",
+         "name": "Nataleste",
+         "slug": "nataleste",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Kuro_mi",
+         "name": "kuro_mi",
+         "slug": "kuro-mi",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Divide&Conquer",
+       "teamSlug": "divide-conquer",
+       "isPro": true,
+       "years": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "chreyll",
+         "name": "chreyll",
+         "slug": "chreyll",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "LITA",
+         "name": "LITA",
+         "slug": "lita",
+         "iso": "de",
+         "captain": false
+        },
+        {
+         "hist": "InfiniteBreaker",
+         "name": "InfiniteBreaker",
+         "slug": "infinitebreaker",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Solec",
+         "name": "Solec",
+         "slug": "solec",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "laavv._",
+         "name": "laavv._",
+         "slug": "laavv",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "SG Squad 5",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "VPLH",
+         "name": "VPLH",
+         "slug": "vplh",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "laavv._",
+         "name": "laavv._",
+         "slug": "laavv",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "kanarivt",
+         "name": "kanarivt",
+         "slug": "kanarivt",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "InfiniteBreaker",
+         "name": "InfiniteBreaker",
+         "slug": "infinitebreaker",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Xyrren",
+         "name": "Xyrren",
+         "slug": "xyrren",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      }
+     ],
      "titles": [
       {
        "event": "Bot Pro League Minor 9",
@@ -36909,17 +37279,17 @@
      "name": "Solec",
      "team": "Divide&Conquer",
      "pool": "pro",
-     "kills": 605,
-     "assists": 172,
-     "deaths": 631,
-     "mvp": 83,
-     "kdr": 0.96,
-     "wins": 21,
+     "kills": 616,
+     "assists": 176,
+     "deaths": 651,
+     "mvp": 85,
+     "kdr": 0.95,
+     "wins": 22,
      "losses": 19,
-     "winrate": 0.525,
+     "winrate": 0.537,
      "ot": 0,
      "role": "IGL",
-     "maps": 40,
+     "maps": 41,
      "orig_rank": "Platinum",
      "orig_level": "Level 4",
      "orig_rating": 1918.0,
@@ -36927,12 +37297,12 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.05,
-     "ratingPoints": 1345,
+     "rating": 1.047,
+     "ratingPoints": 1333,
      "tier": "Diamond",
      "level": 6,
-     "kpm": 15.1,
-     "rankDelta": 0,
+     "kpm": 15.0,
+     "rankDelta": -3,
      "soloStats": {
       "kills": 111,
       "deaths": 104,
@@ -36952,7 +37322,7 @@
       "rankDelta": 0,
       "provisional": false
      },
-     "bio": "Solec captains Divide&Conquer, a Singaporean in-game leader and Level 6 talent who still posts over 605 career kills. His title at Bot Pro League Minor 9 reflects a caller who gets results.",
+     "bio": "Solec captains Divide&Conquer, a Singaporean in-game leader and Level 6 talent who still posts over 616 career kills. His title at Bot Pro League Minor 9 reflects a caller who gets results.",
      "gender": "M",
      "teamHistory": [
       {
@@ -37298,16 +37668,16 @@
          "captain": false
         },
         {
-         "hist": "Solec",
-         "name": "Solec",
-         "slug": "solec",
+         "hist": "InfiniteBreaker",
+         "name": "InfiniteBreaker",
+         "slug": "infinitebreaker",
          "iso": "sg",
          "captain": false
         },
         {
-         "hist": "InfiniteBreaker",
-         "name": "InfiniteBreaker",
-         "slug": "infinitebreaker",
+         "hist": "Solec",
+         "name": "Solec",
+         "slug": "solec",
          "iso": "sg",
          "captain": false
         },
@@ -37381,383 +37751,20 @@
      ]
     },
     {
-     "name": "InfiniteBreaker",
-     "team": "Divide&Conquer",
-     "pool": "pro",
-     "kills": 530,
-     "assists": 166,
-     "deaths": 556,
-     "mvp": 66,
-     "kdr": 0.95,
-     "wins": 17,
-     "losses": 18,
-     "winrate": 0.486,
-     "ot": 0,
-     "role": "Fill",
-     "maps": 35,
-     "orig_rank": "Platinum",
-     "orig_level": "Level 4",
-     "orig_rating": 1917.0,
-     "slug": "infinitebreaker",
-     "nat": "Singapore",
-     "iso": "sg",
-     "provisional": false,
-     "rating": 1.047,
-     "ratingPoints": 1332,
-     "tier": "Diamond",
-     "level": 6,
-     "kpm": 15.1,
-     "rankDelta": 0,
-     "bio": "InfiniteBreaker is a Singaporean flex player for Divide&Conquer, a Level 6 operator with over 530 kills and a title from Bot Pro League Minor 9. A versatile presence wherever the team needs him.",
-     "gender": "M",
-     "teamHistory": [
-      {
-       "team": "2Bit4",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2020"
-       ],
-       "roster": [
-        {
-         "hist": "InfiniteBreaker",
-         "name": "InfiniteBreaker",
-         "slug": "infinitebreaker",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "caarrietan",
-         "name": "caarrietan",
-         "slug": "caarrietan",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "ziweiv",
-         "name": "Ziweiv",
-         "slug": "ziweiv",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "kenzieyii",
-         "name": "kenzieyii",
-         "slug": "kenzieyii",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "leachubby",
-         "name": "leachubby",
-         "slug": "leachubby",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Pixinite",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2020"
-       ],
-       "roster": [
-        {
-         "hist": "InfiniteBreaker",
-         "name": "InfiniteBreaker",
-         "slug": "infinitebreaker",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "Keyboard Rage",
-         "name": "Solec",
-         "slug": "solec",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Ziweiv",
-         "name": "Ziweiv",
-         "slug": "ziweiv",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "S.GT",
-         "name": "S.GT",
-         "slug": "s-gt",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "chiyoriinn",
-         "name": "chiyoriinn",
-         "slug": "chiyoriinn",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "PixIgnite",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2021"
-       ],
-       "roster": [
-        {
-         "hist": "InfiniteBreaker",
-         "name": "InfiniteBreaker",
-         "slug": "infinitebreaker",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "Ryujin",
-         "name": "Ryujin",
-         "slug": "ryujin",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "Skyllabtw",
-         "name": "Skyllabtw",
-         "slug": "skyllabtw",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "leachubby",
-         "name": "leachubby",
-         "slug": "leachubby",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "kitties258",
-         "name": "kitties258",
-         "slug": "kitties258",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Caelum",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2021"
-       ],
-       "roster": [
-        {
-         "hist": "Mike",
-         "name": "Mike",
-         "slug": "mike",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "Navikuun",
-         "name": "Navikuun",
-         "slug": "navikuun",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "m0wmeow",
-         "name": "m0wmeow",
-         "slug": "m0wmeow",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "InfiniteBreaker",
-         "name": "InfiniteBreaker",
-         "slug": "infinitebreaker",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "laavv._",
-         "name": "laavv._",
-         "slug": "laavv",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "FateChanger",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2021"
-       ],
-       "roster": [
-        {
-         "hist": "DestonKnee",
-         "name": "Kai",
-         "slug": "kai",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "InfiniteBreaker",
-         "name": "InfiniteBreaker",
-         "slug": "infinitebreaker",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Mike",
-         "name": "Mike",
-         "slug": "mike",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Nataleste",
-         "name": "Nataleste",
-         "slug": "nataleste",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Kuro_mi",
-         "name": "kuro_mi",
-         "slug": "kuro-mi",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Divide&Conquer",
-       "teamSlug": "divide-conquer",
-       "isPro": true,
-       "years": [
-        "2021",
-        "2022",
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "chreyll",
-         "name": "chreyll",
-         "slug": "chreyll",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "LITA",
-         "name": "LITA",
-         "slug": "lita",
-         "iso": "de",
-         "captain": false
-        },
-        {
-         "hist": "Solec",
-         "name": "Solec",
-         "slug": "solec",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "InfiniteBreaker",
-         "name": "InfiniteBreaker",
-         "slug": "infinitebreaker",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "laavv._",
-         "name": "laavv._",
-         "slug": "laavv",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "SG Squad 5",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "VPLH",
-         "name": "VPLH",
-         "slug": "vplh",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "laavv._",
-         "name": "laavv._",
-         "slug": "laavv",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "kanarivt",
-         "name": "kanarivt",
-         "slug": "kanarivt",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "InfiniteBreaker",
-         "name": "InfiniteBreaker",
-         "slug": "infinitebreaker",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Xyrren",
-         "name": "Xyrren",
-         "slug": "xyrren",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      }
-     ],
-     "titles": [
-      {
-       "event": "Bot Pro League Minor 9",
-       "slug": "BotProLeague9",
-       "tier": "a",
-       "tierLabel": "A-Tier",
-       "year": "2021",
-       "team": "Divide&Conquer"
-      }
-     ]
-    },
-    {
      "name": "laavv._",
      "team": "Divide&Conquer",
      "pool": "pro",
-     "kills": 544,
-     "assists": 112,
-     "deaths": 540,
+     "kills": 556,
+     "assists": 115,
+     "deaths": 558,
      "mvp": 81,
-     "kdr": 1.01,
-     "wins": 17,
+     "kdr": 1.0,
+     "wins": 18,
      "losses": 18,
-     "winrate": 0.486,
+     "winrate": 0.5,
      "ot": 0,
      "role": "Awper",
-     "maps": 35,
+     "maps": 36,
      "orig_rank": "Platinum",
      "orig_level": "Level 4",
      "orig_rating": 1983.0,
@@ -37765,12 +37772,12 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.043,
-     "ratingPoints": 1318,
+     "rating": 1.038,
+     "ratingPoints": 1297,
      "tier": "Diamond",
      "level": 6,
-     "kpm": 15.5,
-     "rankDelta": 0,
+     "kpm": 15.4,
+     "rankDelta": -9,
      "soloStats": {
       "kills": 103,
       "deaths": 114,
@@ -37790,7 +37797,7 @@
       "rankDelta": 0,
       "provisional": false
      },
-     "bio": "laavv._ is an Level 6 AWPer for Divide&Conquer and one of the roster's biggest contributors, a Singaporean with 544 kills and 81 MVP rounds. Her title at Bot Pro League Minor 9 is well earned.",
+     "bio": "laavv._ is an Level 6 AWPer for Divide&Conquer and one of the roster's biggest contributors, a Singaporean with 556 kills and 81 MVP rounds. Her title at Bot Pro League Minor 9 is well earned.",
      "gender": "F",
      "teamHistory": [
       {
@@ -38092,16 +38099,16 @@
          "captain": false
         },
         {
-         "hist": "Solec",
-         "name": "Solec",
-         "slug": "solec",
+         "hist": "InfiniteBreaker",
+         "name": "InfiniteBreaker",
+         "slug": "infinitebreaker",
          "iso": "sg",
          "captain": false
         },
         {
-         "hist": "InfiniteBreaker",
-         "name": "InfiniteBreaker",
-         "slug": "infinitebreaker",
+         "hist": "Solec",
+         "name": "Solec",
+         "slug": "solec",
          "iso": "sg",
          "captain": false
         },
@@ -38604,16 +38611,6 @@
      "date": "2025-10-10",
      "event": "BPL Legends Stage 2025",
      "eventSlug": "BPLLStage25",
-     "opp": "Escape Velocity",
-     "oppSlug": null,
-     "result": "L",
-     "sf": 12,
-     "sa": 16
-    },
-    {
-     "date": "2025-10-10",
-     "event": "BPL Legends Stage 2025",
-     "eventSlug": "BPLLStage25",
      "opp": "Sugarcrash Protocol",
      "oppSlug": null,
      "result": "L",
@@ -38699,9 +38696,19 @@
      "result": "W",
      "sf": 13,
      "sa": 5
+    },
+    {
+     "date": "2026-09-01",
+     "event": "Bot Pro Cup 2026",
+     "eventSlug": "bot-pro-cup-2026",
+     "opp": "Albion Rising",
+     "oppSlug": null,
+     "result": "W",
+     "sf": 13,
+     "sa": 8
     }
    ],
-   "streak": "W1",
+   "streak": "W2",
    "longestWinStreak": {
     "len": 4,
     "startEvent": "Bot Pro League Minor 8",
@@ -39249,7 +39256,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.061,
-     "ratingPoints": 1389,
+     "ratingPoints": 1388,
      "tier": "Master",
      "level": 7,
      "kpm": 17.1,
@@ -39395,7 +39402,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.024,
-     "ratingPoints": 1245,
+     "ratingPoints": 1244,
      "tier": "Emerald",
      "level": 6,
      "kpm": 16.0,
@@ -41707,7 +41714,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.016,
+     "rating": 1.015,
      "ratingPoints": 1210,
      "tier": "Emerald",
      "level": 6,
@@ -44326,7 +44333,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.067,
+     "rating": 1.066,
      "ratingPoints": 1409,
      "tier": "Master",
      "level": 7,
@@ -46488,7 +46495,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 0.952,
-     "ratingPoints": 963,
+     "ratingPoints": 962,
      "tier": "Silver",
      "level": 4,
      "kpm": 13.6,
@@ -48671,7 +48678,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.002,
-     "ratingPoints": 1158,
+     "ratingPoints": 1157,
      "tier": "Platinum",
      "level": 5,
      "kpm": 14.9,
@@ -58747,7 +58754,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.08,
-     "ratingPoints": 1462,
+     "ratingPoints": 1461,
      "tier": "Master",
      "level": 7,
      "kpm": 17.1,
@@ -65489,7 +65496,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.08,
-     "ratingPoints": 1461,
+     "ratingPoints": 1460,
      "tier": "Master",
      "level": 7,
      "kpm": 16.7,
@@ -66257,7 +66264,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 0.981,
-     "ratingPoints": 1078,
+     "ratingPoints": 1077,
      "tier": "Gold",
      "level": 5,
      "kpm": 14.7,
@@ -68737,7 +68744,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.037,
-     "ratingPoints": 1294,
+     "ratingPoints": 1293,
      "tier": "Diamond",
      "level": 6,
      "kpm": 16.7,
@@ -73022,7 +73029,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.089,
+     "rating": 1.088,
      "ratingPoints": 1495,
      "tier": "Grandmaster",
      "level": 7,
@@ -73581,7 +73588,7 @@
      "iso": "my",
      "provisional": false,
      "rating": 0.967,
-     "ratingPoints": 1022,
+     "ratingPoints": 1021,
      "tier": "Silver",
      "level": 4,
      "kpm": 15.7,
@@ -74963,7 +74970,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.02,
-     "ratingPoints": 1230,
+     "ratingPoints": 1229,
      "tier": "Emerald",
      "level": 6,
      "kpm": 15.3,
@@ -78049,7 +78056,7 @@
      "iso": "my",
      "provisional": false,
      "rating": 1.149,
-     "ratingPoints": 1730,
+     "ratingPoints": 1729,
      "tier": "Champion",
      "level": 8,
      "kpm": 18.1,
@@ -81139,7 +81146,7 @@
      "iso": "ph",
      "provisional": false,
      "rating": 1.025,
-     "ratingPoints": 1247,
+     "ratingPoints": 1246,
      "tier": "Emerald",
      "level": 6,
      "kpm": 14.8,
@@ -83447,7 +83454,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 0.971,
-     "ratingPoints": 1037,
+     "ratingPoints": 1036,
      "tier": "Gold",
      "level": 4,
      "kpm": 14.2,
@@ -84908,7 +84915,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.108,
-     "ratingPoints": 1571,
+     "ratingPoints": 1570,
      "tier": "Champion",
      "level": 8,
      "kpm": 17.6,
@@ -85255,7 +85262,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.002,
-     "ratingPoints": 1159,
+     "ratingPoints": 1158,
      "tier": "Platinum",
      "level": 5,
      "kpm": 14.9,
@@ -91269,7 +91276,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.031,
-     "ratingPoints": 1270,
+     "ratingPoints": 1269,
      "tier": "Diamond",
      "level": 6,
      "kpm": 16.1,
@@ -92425,7 +92432,7 @@
      "iso": "jp",
      "provisional": false,
      "rating": 1.058,
-     "ratingPoints": 1376,
+     "ratingPoints": 1375,
      "tier": "Master",
      "level": 7,
      "kpm": 16.8,
@@ -92613,7 +92620,7 @@
      "iso": "nl",
      "provisional": false,
      "rating": 1.015,
-     "ratingPoints": 1209,
+     "ratingPoints": 1208,
      "tier": "Emerald",
      "level": 6,
      "kpm": 15.8,
@@ -92760,7 +92767,7 @@
      "tier": "Emerald",
      "level": 6,
      "kpm": 15.7,
-     "rankDelta": -84,
+     "rankDelta": 0,
      "soloStats": {
       "kills": 242,
       "deaths": 219,
@@ -96614,7 +96621,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.088,
+     "rating": 1.087,
      "ratingPoints": 1491,
      "tier": "Grandmaster",
      "level": 7,
@@ -98331,7 +98338,7 @@
      "nat": "Australia",
      "iso": "au",
      "provisional": false,
-     "rating": 0.981,
+     "rating": 0.98,
      "ratingPoints": 1074,
      "tier": "Gold",
      "level": 5,
@@ -100120,7 +100127,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.02,
-    "ratingPoints": 1230,
+    "ratingPoints": 1229,
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.3,
@@ -102861,7 +102868,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.031,
-    "ratingPoints": 1270,
+    "ratingPoints": 1269,
     "tier": "Diamond",
     "level": 6,
     "kpm": 16.1,
@@ -104719,7 +104726,7 @@
     "iso": "ph",
     "provisional": false,
     "rating": 1.025,
-    "ratingPoints": 1247,
+    "ratingPoints": 1246,
     "tier": "Emerald",
     "level": 6,
     "kpm": 14.8,
@@ -110285,7 +110292,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.016,
+    "rating": 1.015,
     "ratingPoints": 1210,
     "tier": "Emerald",
     "level": 6,
@@ -111925,7 +111932,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.06,
-    "ratingPoints": 1384,
+    "ratingPoints": 1383,
     "tier": "Master",
     "level": 7,
     "kpm": 16.7,
@@ -112955,7 +112962,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.971,
-    "ratingPoints": 1037,
+    "ratingPoints": 1036,
     "tier": "Gold",
     "level": 4,
     "kpm": 14.2,
@@ -114764,7 +114771,7 @@
     "iso": "jp",
     "provisional": false,
     "rating": 1.058,
-    "ratingPoints": 1376,
+    "ratingPoints": 1375,
     "tier": "Master",
     "level": 7,
     "kpm": 16.8,
@@ -115076,7 +115083,7 @@
     "iso": "nl",
     "provisional": false,
     "rating": 1.015,
-    "ratingPoints": 1209,
+    "ratingPoints": 1208,
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.8,
@@ -115366,7 +115373,7 @@
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.7,
-    "rankDelta": -84,
+    "rankDelta": 0,
     "soloStats": {
      "kills": 242,
      "deaths": 219,
@@ -116702,7 +116709,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.067,
+    "rating": 1.066,
     "ratingPoints": 1409,
     "tier": "Master",
     "level": 7,
@@ -117993,7 +118000,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.061,
-    "ratingPoints": 1389,
+    "ratingPoints": 1388,
     "tier": "Master",
     "level": 7,
     "kpm": 17.1,
@@ -118555,7 +118562,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.024,
-    "ratingPoints": 1245,
+    "ratingPoints": 1244,
     "tier": "Emerald",
     "level": 6,
     "kpm": 16.0,
@@ -122584,7 +122591,7 @@
     "iso": "gb",
     "provisional": false,
     "rating": 1.039,
-    "ratingPoints": 1302,
+    "ratingPoints": 1301,
     "tier": "Diamond",
     "level": 6,
     "kpm": 14.9,
@@ -122783,7 +122790,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.067,
-    "ratingPoints": 1410,
+    "ratingPoints": 1409,
     "tier": "Master",
     "level": 7,
     "kpm": 16.1,
@@ -123162,7 +123169,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.037,
-    "ratingPoints": 1295,
+    "ratingPoints": 1294,
     "tier": "Diamond",
     "level": 6,
     "kpm": 15.0,
@@ -126721,7 +126728,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 0.96,
+    "rating": 0.959,
     "ratingPoints": 992,
     "tier": "Silver",
     "level": 4,
@@ -128753,17 +128760,17 @@
     "name": "chreyll",
     "team": "Divide&Conquer",
     "pool": "pro",
-    "kills": 569,
-    "assists": 135,
-    "deaths": 543,
-    "mvp": 94,
+    "kills": 586,
+    "assists": 137,
+    "deaths": 559,
+    "mvp": 96,
     "kdr": 1.05,
-    "wins": 17,
+    "wins": 18,
     "losses": 18,
-    "winrate": 0.486,
+    "winrate": 0.5,
     "ot": 0,
     "role": "Awper",
-    "maps": 35,
+    "maps": 36,
     "orig_rank": "Emerald",
     "orig_level": "Level 5",
     "orig_rating": 2051.0,
@@ -128776,7 +128783,7 @@
     "tier": "Grandmaster",
     "level": 7,
     "kpm": 16.3,
-    "rankDelta": 0,
+    "rankDelta": 1,
     "soloStats": {
      "kills": 59,
      "deaths": 96,
@@ -128796,7 +128803,7 @@
      "rankDelta": 0,
      "provisional": false
     },
-    "bio": "chreyll is a Level 7 AWPer for Divide&Conquer and one of the league's most prolific players, a Singaporean with 569 career kills and 94 MVP rounds. A winner of Bot Pro League Minor 9, she has also been named an event MVP — a mark of her impact on the biggest rounds.",
+    "bio": "chreyll is a Level 7 AWPer for Divide&Conquer and one of the league's most prolific players, a Singaporean with 586 career kills and 96 MVP rounds. A winner of Bot Pro League Minor 9, she has also been named an event MVP — a mark of her impact on the biggest rounds.",
     "gender": "F",
     "teamHistory": [
      {
@@ -129142,16 +129149,16 @@
         "captain": false
        },
        {
-        "hist": "Solec",
-        "name": "Solec",
-        "slug": "solec",
+        "hist": "InfiniteBreaker",
+        "name": "InfiniteBreaker",
+        "slug": "infinitebreaker",
         "iso": "sg",
         "captain": false
        },
        {
-        "hist": "InfiniteBreaker",
-        "name": "InfiniteBreaker",
-        "slug": "infinitebreaker",
+        "hist": "Solec",
+        "name": "Solec",
+        "slug": "solec",
         "iso": "sg",
         "captain": false
        },
@@ -129235,17 +129242,17 @@
     "name": "laavv._",
     "team": "Divide&Conquer",
     "pool": "pro",
-    "kills": 544,
-    "assists": 112,
-    "deaths": 540,
+    "kills": 556,
+    "assists": 115,
+    "deaths": 558,
     "mvp": 81,
-    "kdr": 1.01,
-    "wins": 17,
+    "kdr": 1.0,
+    "wins": 18,
     "losses": 18,
-    "winrate": 0.486,
+    "winrate": 0.5,
     "ot": 0,
     "role": "Awper",
-    "maps": 35,
+    "maps": 36,
     "orig_rank": "Platinum",
     "orig_level": "Level 4",
     "orig_rating": 1983.0,
@@ -129253,12 +129260,12 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.043,
-    "ratingPoints": 1318,
+    "rating": 1.038,
+    "ratingPoints": 1297,
     "tier": "Diamond",
     "level": 6,
-    "kpm": 15.5,
-    "rankDelta": 0,
+    "kpm": 15.4,
+    "rankDelta": -9,
     "soloStats": {
      "kills": 103,
      "deaths": 114,
@@ -129278,7 +129285,7 @@
      "rankDelta": 0,
      "provisional": false
     },
-    "bio": "laavv._ is an Level 6 AWPer for Divide&Conquer and one of the roster's biggest contributors, a Singaporean with 544 kills and 81 MVP rounds. Her title at Bot Pro League Minor 9 is well earned.",
+    "bio": "laavv._ is an Level 6 AWPer for Divide&Conquer and one of the roster's biggest contributors, a Singaporean with 556 kills and 81 MVP rounds. Her title at Bot Pro League Minor 9 is well earned.",
     "gender": "F",
     "teamHistory": [
      {
@@ -129580,16 +129587,16 @@
         "captain": false
        },
        {
-        "hist": "Solec",
-        "name": "Solec",
-        "slug": "solec",
+        "hist": "InfiniteBreaker",
+        "name": "InfiniteBreaker",
+        "slug": "infinitebreaker",
         "iso": "sg",
         "captain": false
        },
        {
-        "hist": "InfiniteBreaker",
-        "name": "InfiniteBreaker",
-        "slug": "infinitebreaker",
+        "hist": "Solec",
+        "name": "Solec",
+        "slug": "solec",
         "iso": "sg",
         "captain": false
        },
@@ -129663,17 +129670,17 @@
     "name": "InfiniteBreaker",
     "team": "Divide&Conquer",
     "pool": "pro",
-    "kills": 530,
+    "kills": 548,
     "assists": 166,
-    "deaths": 556,
-    "mvp": 66,
-    "kdr": 0.95,
-    "wins": 17,
+    "deaths": 569,
+    "mvp": 68,
+    "kdr": 0.96,
+    "wins": 18,
     "losses": 18,
-    "winrate": 0.486,
+    "winrate": 0.5,
     "ot": 0,
     "role": "Fill",
-    "maps": 35,
+    "maps": 36,
     "orig_rank": "Platinum",
     "orig_level": "Level 4",
     "orig_rating": 1917.0,
@@ -129681,13 +129688,13 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.047,
-    "ratingPoints": 1332,
+    "rating": 1.048,
+    "ratingPoints": 1338,
     "tier": "Diamond",
     "level": 6,
-    "kpm": 15.1,
-    "rankDelta": 0,
-    "bio": "InfiniteBreaker is a Singaporean flex player for Divide&Conquer, a Level 6 operator with over 530 kills and a title from Bot Pro League Minor 9. A versatile presence wherever the team needs him.",
+    "kpm": 15.2,
+    "rankDelta": 2,
+    "bio": "InfiniteBreaker is a Singaporean flex player for Divide&Conquer, a Level 6 operator with over 548 kills and a title from Bot Pro League Minor 9. A versatile presence wherever the team needs him.",
     "gender": "M",
     "teamHistory": [
      {
@@ -129943,16 +129950,16 @@
         "captain": false
        },
        {
-        "hist": "Solec",
-        "name": "Solec",
-        "slug": "solec",
+        "hist": "InfiniteBreaker",
+        "name": "InfiniteBreaker",
+        "slug": "infinitebreaker",
         "iso": "sg",
         "captain": false
        },
        {
-        "hist": "InfiniteBreaker",
-        "name": "InfiniteBreaker",
-        "slug": "infinitebreaker",
+        "hist": "Solec",
+        "name": "Solec",
+        "slug": "solec",
         "iso": "sg",
         "captain": false
        },
@@ -130026,17 +130033,17 @@
     "name": "Solec",
     "team": "Divide&Conquer",
     "pool": "pro",
-    "kills": 605,
-    "assists": 172,
-    "deaths": 631,
-    "mvp": 83,
-    "kdr": 0.96,
-    "wins": 21,
+    "kills": 616,
+    "assists": 176,
+    "deaths": 651,
+    "mvp": 85,
+    "kdr": 0.95,
+    "wins": 22,
     "losses": 19,
-    "winrate": 0.525,
+    "winrate": 0.537,
     "ot": 0,
     "role": "IGL",
-    "maps": 40,
+    "maps": 41,
     "orig_rank": "Platinum",
     "orig_level": "Level 4",
     "orig_rating": 1918.0,
@@ -130044,12 +130051,12 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.05,
-    "ratingPoints": 1345,
+    "rating": 1.047,
+    "ratingPoints": 1333,
     "tier": "Diamond",
     "level": 6,
-    "kpm": 15.1,
-    "rankDelta": 0,
+    "kpm": 15.0,
+    "rankDelta": -3,
     "soloStats": {
      "kills": 111,
      "deaths": 104,
@@ -130069,7 +130076,7 @@
      "rankDelta": 0,
      "provisional": false
     },
-    "bio": "Solec captains Divide&Conquer, a Singaporean in-game leader and Level 6 talent who still posts over 605 career kills. His title at Bot Pro League Minor 9 reflects a caller who gets results.",
+    "bio": "Solec captains Divide&Conquer, a Singaporean in-game leader and Level 6 talent who still posts over 616 career kills. His title at Bot Pro League Minor 9 reflects a caller who gets results.",
     "gender": "M",
     "teamHistory": [
      {
@@ -130415,16 +130422,16 @@
         "captain": false
        },
        {
-        "hist": "Solec",
-        "name": "Solec",
-        "slug": "solec",
+        "hist": "InfiniteBreaker",
+        "name": "InfiniteBreaker",
+        "slug": "infinitebreaker",
         "iso": "sg",
         "captain": false
        },
        {
-        "hist": "InfiniteBreaker",
-        "name": "InfiniteBreaker",
-        "slug": "infinitebreaker",
+        "hist": "Solec",
+        "name": "Solec",
+        "slug": "solec",
         "iso": "sg",
         "captain": false
        },
@@ -130501,17 +130508,17 @@
     "name": "LITA",
     "team": "Divide&Conquer",
     "pool": "pro",
-    "kills": 620,
-    "assists": 192,
-    "deaths": 623,
-    "mvp": 81,
-    "kdr": 1.0,
-    "wins": 20,
+    "kills": 647,
+    "assists": 195,
+    "deaths": 635,
+    "mvp": 88,
+    "kdr": 1.02,
+    "wins": 21,
     "losses": 20,
-    "winrate": 0.5,
+    "winrate": 0.512,
     "ot": 0,
     "role": "Rifler",
-    "maps": 40,
+    "maps": 41,
     "orig_rank": "Platinum",
     "orig_level": "Level 4",
     "orig_rating": 1882.0,
@@ -130519,13 +130526,13 @@
     "nat": "Germany",
     "iso": "de",
     "provisional": false,
-    "rating": 1.076,
-    "ratingPoints": 1447,
-    "tier": "Master",
+    "rating": 1.091,
+    "ratingPoints": 1506,
+    "tier": "Grandmaster",
     "level": 7,
-    "kpm": 15.5,
-    "rankDelta": 0,
-    "bio": "LITA is a German rifler for Divide&Conquer and one of the roster's heaviest hitters, with 620 career kills to her name. A winner of Bot Pro League Minor 9, she brings European steel to a Singapore-heavy pool.",
+    "kpm": 15.8,
+    "rankDelta": 21,
+    "bio": "LITA is a German rifler for Divide&Conquer and one of the roster's heaviest hitters, with 647 career kills to her name. A winner of Bot Pro League Minor 9, she brings European steel to a Singapore-heavy pool.",
     "gender": "F",
     "teamHistory": [
      {
@@ -130601,16 +130608,16 @@
         "captain": false
        },
        {
-        "hist": "Solec",
-        "name": "Solec",
-        "slug": "solec",
+        "hist": "InfiniteBreaker",
+        "name": "InfiniteBreaker",
+        "slug": "infinitebreaker",
         "iso": "sg",
         "captain": false
        },
        {
-        "hist": "InfiniteBreaker",
-        "name": "InfiniteBreaker",
-        "slug": "infinitebreaker",
+        "hist": "Solec",
+        "name": "Solec",
+        "slug": "solec",
         "iso": "sg",
         "captain": false
        },
@@ -130671,6 +130678,13 @@
     ],
     "aka": [
      "winterkindlita"
+    ],
+    "mvpAwards": [
+     {
+      "event": "Bot Pro Cup 2026",
+      "slug": "bot-pro-cup-2026",
+      "year": "2026"
+     }
     ],
     "titles": [
      {
@@ -132176,7 +132190,7 @@
     "iso": "my",
     "provisional": false,
     "rating": 1.149,
-    "ratingPoints": 1730,
+    "ratingPoints": 1729,
     "tier": "Champion",
     "level": 8,
     "kpm": 18.1,
@@ -135644,7 +135658,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.108,
-    "ratingPoints": 1571,
+    "ratingPoints": 1570,
     "tier": "Champion",
     "level": 8,
     "kpm": 17.6,
@@ -136363,7 +136377,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.002,
-    "ratingPoints": 1159,
+    "ratingPoints": 1158,
     "tier": "Platinum",
     "level": 5,
     "kpm": 14.9,
@@ -136987,7 +137001,7 @@
     "iso": "gb",
     "provisional": false,
     "rating": 0.987,
-    "ratingPoints": 1098,
+    "ratingPoints": 1097,
     "tier": "Gold",
     "level": 5,
     "kpm": 15.5,
@@ -137535,7 +137549,7 @@
     "tier": "Master",
     "level": 7,
     "kpm": 16.1,
-    "rankDelta": 1,
+    "rankDelta": 0,
     "soloStats": {
      "kills": 83,
      "deaths": 95,
@@ -138364,7 +138378,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.08,
-    "ratingPoints": 1462,
+    "ratingPoints": 1461,
     "tier": "Master",
     "level": 7,
     "kpm": 17.1,
@@ -144911,7 +144925,7 @@
     "iso": "my",
     "provisional": false,
     "rating": 1.056,
-    "ratingPoints": 1370,
+    "ratingPoints": 1369,
     "tier": "Master",
     "level": 7,
     "kpm": 17.0,
@@ -145608,7 +145622,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.131,
-    "ratingPoints": 1660,
+    "ratingPoints": 1659,
     "tier": "Champion",
     "level": 8,
     "kpm": 16.7,
@@ -145632,7 +145646,7 @@
      "rankDelta": 0,
      "provisional": false
     },
-    "bio": "VPLH captains New Jade and ranks among the elite of the pool, a Singaporean in-game leader who leads from the front. A two-time BPL Legends Stage champion — first in 2022, again in 2025 — she blends her calling with a rare fragging output for an IGL, backing a Level 8 1660 points with a 1.23 K/D.",
+    "bio": "VPLH captains New Jade and ranks among the elite of the pool, a Singaporean in-game leader who leads from the front. A two-time BPL Legends Stage champion — first in 2022, again in 2025 — she blends her calling with a rare fragging output for an IGL, backing a Level 8 1659 points with a 1.23 K/D.",
     "gender": "F",
     "teamHistory": [
      {
@@ -153143,7 +153157,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.905,
-    "ratingPoints": 781,
+    "ratingPoints": 780,
     "tier": "Iron",
     "level": 3,
     "kpm": 12.8,
@@ -154678,7 +154692,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.037,
-    "ratingPoints": 1294,
+    "ratingPoints": 1293,
     "tier": "Diamond",
     "level": 6,
     "kpm": 16.7,
@@ -158969,7 +158983,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.002,
-    "ratingPoints": 1158,
+    "ratingPoints": 1157,
     "tier": "Platinum",
     "level": 5,
     "kpm": 14.9,
@@ -159261,7 +159275,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.08,
-    "ratingPoints": 1461,
+    "ratingPoints": 1460,
     "tier": "Master",
     "level": 7,
     "kpm": 16.7,
@@ -160029,7 +160043,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.981,
-    "ratingPoints": 1078,
+    "ratingPoints": 1077,
     "tier": "Gold",
     "level": 5,
     "kpm": 14.7,
@@ -164235,7 +164249,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.978,
-    "ratingPoints": 1065,
+    "ratingPoints": 1064,
     "tier": "Gold",
     "level": 5,
     "kpm": 14.2,
@@ -164614,7 +164628,7 @@
     "nat": "Malaysia",
     "iso": "my",
     "provisional": false,
-    "rating": 0.993,
+    "rating": 0.992,
     "ratingPoints": 1121,
     "tier": "Gold",
     "level": 5,
@@ -165892,7 +165906,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.089,
+    "rating": 1.088,
     "ratingPoints": 1495,
     "tier": "Grandmaster",
     "level": 7,
@@ -167537,7 +167551,7 @@
     "iso": "my",
     "provisional": false,
     "rating": 0.967,
-    "ratingPoints": 1022,
+    "ratingPoints": 1021,
     "tier": "Silver",
     "level": 4,
     "kpm": 15.7,
@@ -168172,7 +168186,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.952,
-    "ratingPoints": 963,
+    "ratingPoints": 962,
     "tier": "Silver",
     "level": 4,
     "kpm": 13.6,
@@ -170518,7 +170532,7 @@
     "iso": "tw",
     "provisional": false,
     "rating": 1.028,
-    "ratingPoints": 1261,
+    "ratingPoints": 1260,
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.5,
@@ -170736,7 +170750,7 @@
     "iso": "kz",
     "provisional": false,
     "rating": 1.11,
-    "ratingPoints": 1579,
+    "ratingPoints": 1578,
     "tier": "Champion",
     "level": 8,
     "kpm": 15.9,
@@ -170970,7 +170984,7 @@
     "iso": "us",
     "provisional": false,
     "rating": 1.082,
-    "ratingPoints": 1471,
+    "ratingPoints": 1470,
     "tier": "Grandmaster",
     "level": 7,
     "kpm": 17.2,
@@ -171230,11 +171244,11 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.075,
-    "ratingPoints": 1442,
+    "ratingPoints": 1441,
     "tier": "Master",
     "level": 7,
     "kpm": 16.4,
-    "rankDelta": 8,
+    "rankDelta": 0,
     "bio": "obvMX is a Singaporean rifler and one of the league's biggest scorers, a free agent with 968 kills to his name and a Level 7 rating.",
     "gender": "M",
     "teamTourney": "Bot Pro Cup 2026",
@@ -174853,7 +174867,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.051,
-    "ratingPoints": 1350,
+    "ratingPoints": 1349,
     "tier": "Diamond",
     "level": 6,
     "kpm": 16.8,
@@ -175411,7 +175425,7 @@
     "iso": "jp",
     "provisional": false,
     "rating": 1.029,
-    "ratingPoints": 1263,
+    "ratingPoints": 1262,
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.1,
@@ -175649,7 +175663,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.9,
-    "rankDelta": -11,
+    "rankDelta": 0,
     "bio": "Aranionja is a Singaporean AWPer and a Level 4 free agent whose kill volume marks her as a capable amateur sniper.",
     "gender": "F",
     "teamTourney": "Bot Pro Cup 2026",
@@ -176373,7 +176387,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.066,
+    "rating": 1.065,
     "ratingPoints": 1405,
     "tier": "Master",
     "level": 7,
@@ -176913,7 +176927,7 @@
     "iso": "ph",
     "provisional": false,
     "rating": 1.041,
-    "ratingPoints": 1311,
+    "ratingPoints": 1310,
     "tier": "Diamond",
     "level": 6,
     "kpm": 17.1,
@@ -178113,17 +178127,17 @@
     "name": "Zarlard",
     "team": "Albion Rising",
     "pool": "pro",
-    "kills": 314,
-    "assists": 41,
-    "deaths": 317,
-    "mvp": 49,
+    "kills": 328,
+    "assists": 44,
+    "deaths": 332,
+    "mvp": 51,
     "kdr": 0.99,
     "wins": 13,
-    "losses": 11,
-    "winrate": 0.542,
+    "losses": 12,
+    "winrate": 0.52,
     "ot": 1,
     "role": "IGL",
-    "maps": 24,
+    "maps": 25,
     "orig_rank": "Platinum",
     "orig_level": "Level 4",
     "orig_rating": 1786.0,
@@ -178133,11 +178147,11 @@
     "iso": "se",
     "provisional": false,
     "rating": 0.963,
-    "ratingPoints": 1007,
+    "ratingPoints": 1005,
     "tier": "Silver",
     "level": 4,
     "kpm": 13.1,
-    "rankDelta": 0,
+    "rankDelta": -1,
     "bio": "Zarlard is a Swedish in-game leader and a Level 4 free agent, one of the league's rare Scandinavian names.",
     "gender": "M",
     "teamTourney": "Bot Pro Cup 2026",
@@ -179372,7 +179386,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.008,
-    "ratingPoints": 1180,
+    "ratingPoints": 1179,
     "tier": "Platinum",
     "level": 5,
     "kpm": 14.8,
@@ -181561,7 +181575,7 @@
     "nat": "Netherlands",
     "iso": "nl",
     "provisional": false,
-    "rating": 0.907,
+    "rating": 0.906,
     "ratingPoints": 785,
     "tier": "Iron",
     "level": 3,
@@ -182730,7 +182744,7 @@
     "iso": "au",
     "provisional": false,
     "rating": 1.044,
-    "ratingPoints": 1323,
+    "ratingPoints": 1322,
     "tier": "Diamond",
     "level": 6,
     "kpm": 17.2,
@@ -182925,17 +182939,17 @@
     "name": "PSYSTRA",
     "team": "Albion Rising",
     "pool": "pro",
-    "kills": 300,
-    "assists": 28,
-    "deaths": 357,
-    "mvp": 37,
+    "kills": 316,
+    "assists": 30,
+    "deaths": 376,
+    "mvp": 38,
     "kdr": 0.84,
     "wins": 13,
-    "losses": 12,
-    "winrate": 0.52,
+    "losses": 13,
+    "winrate": 0.5,
     "ot": 4,
     "role": "Awper",
-    "maps": 25,
+    "maps": 26,
     "orig_rank": "Gold",
     "orig_level": "Level 4",
     "orig_rating": 1678.0,
@@ -182944,11 +182958,11 @@
     "nat": "United Kingdom",
     "iso": "gb",
     "provisional": false,
-    "rating": 0.88,
-    "ratingPoints": 680,
+    "rating": 0.878,
+    "ratingPoints": 674,
     "tier": "Iron",
     "level": 2,
-    "kpm": 12.0,
+    "kpm": 12.2,
     "rankDelta": 0,
     "bio": "PSYSTRA is a British AWPer and a Level 2 free agent with a winning amateur record — one of the league's rare UK names.",
     "gender": "F",
@@ -186558,7 +186572,7 @@
     "nat": "Australia",
     "iso": "au",
     "provisional": false,
-    "rating": 1.028,
+    "rating": 1.027,
     "ratingPoints": 1257,
     "tier": "Emerald",
     "level": 6,
@@ -187435,7 +187449,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.077,
-    "ratingPoints": 1450,
+    "ratingPoints": 1449,
     "tier": "Master",
     "level": 7,
     "kpm": 17.0,
@@ -192140,17 +192154,17 @@
     "name": "Aleaka",
     "team": "Albion Rising",
     "pool": "pro",
-    "kills": 296,
-    "assists": 45,
-    "deaths": 355,
-    "mvp": 34,
+    "kills": 308,
+    "assists": 47,
+    "deaths": 373,
+    "mvp": 36,
     "kdr": 0.83,
     "wins": 11,
-    "losses": 11,
-    "winrate": 0.5,
+    "losses": 12,
+    "winrate": 0.478,
     "ot": 6,
     "role": "Rifler",
-    "maps": 22,
+    "maps": 23,
     "orig_rank": "Gold",
     "orig_level": "Level 4",
     "orig_rating": 1530.0,
@@ -192159,12 +192173,12 @@
     "nat": "United Kingdom",
     "iso": "gb",
     "provisional": false,
-    "rating": 0.922,
-    "ratingPoints": 846,
+    "rating": 0.919,
+    "ratingPoints": 834,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 13.5,
-    "rankDelta": 0,
+    "kpm": 13.4,
+    "rankDelta": -3,
     "bio": "Aleaka is a British rifler and a Level 3 free agent, one of the league's rare UK names with a winning amateur record.",
     "gender": "F",
     "teamTourney": "Bot Pro Cup 2026",
@@ -192375,7 +192389,7 @@
     "iso": "pl",
     "provisional": false,
     "rating": 0.971,
-    "ratingPoints": 1037,
+    "ratingPoints": 1036,
     "tier": "Gold",
     "level": 4,
     "kpm": 15.6,
@@ -194087,7 +194101,7 @@
     "tier": "Diamond",
     "level": 6,
     "kpm": 15.6,
-    "rankDelta": 17,
+    "rankDelta": 0,
     "bio": "twentyrosie is a Singaporean rifler rated Level 6 in the league, a developing free agent.",
     "gender": "F",
     "teamTourney": "Bot Pro Cup 2026",
@@ -194442,8 +194456,8 @@
     "nat": "USA",
     "iso": "us",
     "provisional": false,
-    "rating": 0.976,
-    "ratingPoints": 1055,
+    "rating": 0.975,
+    "ratingPoints": 1054,
     "tier": "Gold",
     "level": 5,
     "kpm": 15.2,
@@ -194872,7 +194886,7 @@
     "nat": "USA",
     "iso": "us",
     "provisional": false,
-    "rating": 1.087,
+    "rating": 1.086,
     "ratingPoints": 1487,
     "tier": "Grandmaster",
     "level": 7,
@@ -199529,7 +199543,7 @@
     "iso": "us",
     "provisional": false,
     "rating": 0.925,
-    "ratingPoints": 859,
+    "ratingPoints": 858,
     "tier": "Bronze",
     "level": 3,
     "kpm": 13.0,
@@ -200187,7 +200201,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.059,
+    "rating": 1.058,
     "ratingPoints": 1378,
     "tier": "Master",
     "level": 7,
@@ -202039,13 +202053,6 @@
         "captain": false
        }
       ]
-     }
-    ],
-    "mvpAwards": [
-     {
-      "event": "Bot Pro Cup 2026",
-      "slug": "bot-pro-cup-2026",
-      "year": "2026"
      }
     ]
    },
@@ -204807,7 +204814,7 @@
     "iso": "jp",
     "provisional": false,
     "rating": 0.984,
-    "ratingPoints": 1088,
+    "ratingPoints": 1087,
     "tier": "Gold",
     "level": 5,
     "kpm": 16.1,
@@ -206897,7 +206904,7 @@
     "iso": "my",
     "provisional": false,
     "rating": 0.952,
-    "ratingPoints": 965,
+    "ratingPoints": 964,
     "tier": "Silver",
     "level": 4,
     "kpm": 13.3,
@@ -207597,7 +207604,7 @@
     "iso": "jp",
     "provisional": false,
     "rating": 1.073,
-    "ratingPoints": 1436,
+    "ratingPoints": 1435,
     "tier": "Master",
     "level": 7,
     "kpm": 17.9,
@@ -212311,7 +212318,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.02,
+    "rating": 1.019,
     "ratingPoints": 1226,
     "tier": "Emerald",
     "level": 6,
@@ -215728,7 +215735,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 15.6,
-    "rankDelta": -45,
+    "rankDelta": 0,
     "bio": "Nekota Tsuna is a Korean rifler and a Level 5 free agent, one of the league's rare Korean names.",
     "gender": "F",
     "teamTourney": "Bot Pro Cup 2026",
@@ -216450,17 +216457,17 @@
     "name": "Nerfox",
     "team": "Albion Rising",
     "pool": "pro",
-    "kills": 183,
+    "kills": 204,
     "assists": 20,
-    "deaths": 212,
-    "mvp": 17,
-    "kdr": 0.86,
+    "deaths": 228,
+    "mvp": 19,
+    "kdr": 0.89,
     "wins": 6,
-    "losses": 8,
-    "winrate": 0.429,
+    "losses": 9,
+    "winrate": 0.4,
     "ot": 5,
     "role": "Rifler",
-    "maps": 14,
+    "maps": 15,
     "orig_rank": "Bronze",
     "orig_level": "Level 3",
     "orig_rating": 1000.0,
@@ -216469,12 +216476,12 @@
     "nat": "Poland",
     "iso": "pl",
     "provisional": false,
-    "rating": 0.917,
-    "ratingPoints": 825,
-    "tier": "Iron",
+    "rating": 0.921,
+    "ratingPoints": 843,
+    "tier": "Bronze",
     "level": 3,
-    "kpm": 13.1,
-    "rankDelta": 0,
+    "kpm": 13.6,
+    "rankDelta": 3,
     "soloStats": {
      "kills": 92,
      "deaths": 88,
@@ -219807,7 +219814,7 @@
     "iso": "jp",
     "provisional": false,
     "rating": 0.953,
-    "ratingPoints": 968,
+    "ratingPoints": 967,
     "tier": "Silver",
     "level": 4,
     "kpm": 15.1,
@@ -222786,7 +222793,7 @@
     "iso": "ph",
     "provisional": false,
     "rating": 0.911,
-    "ratingPoints": 805,
+    "ratingPoints": 804,
     "tier": "Iron",
     "level": 3,
     "kpm": 12.4,
@@ -225554,7 +225561,7 @@
     "tier": "Iron",
     "level": 3,
     "kpm": 12.5,
-    "rankDelta": -13,
+    "rankDelta": 0,
     "bio": "Narin Mikure is a Korean AWPer and a Level 3 free agent, an amateur still hunting a first win.",
     "gender": "F",
     "teamTourney": "Bot Pro Cup 2026",
@@ -227281,17 +227288,17 @@
     "name": "Hanyachi",
     "team": "Albion Rising",
     "pool": "pro",
-    "kills": 103,
-    "assists": 18,
-    "deaths": 123,
-    "mvp": 10,
-    "kdr": 0.84,
+    "kills": 119,
+    "assists": 19,
+    "deaths": 140,
+    "mvp": 11,
+    "kdr": 0.85,
     "wins": 4,
-    "losses": 5,
-    "winrate": 0.444,
+    "losses": 6,
+    "winrate": 0.4,
     "ot": 0,
     "role": "Rifler",
-    "maps": 9,
+    "maps": 10,
     "orig_rank": "Iron",
     "orig_level": "Level 1",
     "orig_rating": 18.0,
@@ -227300,12 +227307,12 @@
     "nat": "Germany",
     "iso": "de",
     "provisional": false,
-    "rating": 0.931,
-    "ratingPoints": 880,
+    "rating": 0.927,
+    "ratingPoints": 864,
     "tier": "Bronze",
     "level": 3,
-    "kpm": 11.4,
-    "rankDelta": 0,
+    "kpm": 11.9,
+    "rankDelta": -2,
     "bio": "Hanyachi is a German rifler and an Level 3 free agent, an amateur just getting started.",
     "gender": "F",
     "teamTourney": "Bot Pro Cup 2026",
@@ -229881,7 +229888,7 @@
     "nat": "Australia",
     "iso": "au",
     "provisional": false,
-    "rating": 0.981,
+    "rating": 0.98,
     "ratingPoints": 1074,
     "tier": "Gold",
     "level": 5,
@@ -230609,7 +230616,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.088,
+    "rating": 1.087,
     "ratingPoints": 1491,
     "tier": "Grandmaster",
     "level": 7,
@@ -234655,7 +234662,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 0.969,
+    "rating": 0.968,
     "ratingPoints": 1027,
     "tier": "Silver",
     "level": 4,
@@ -234879,7 +234886,7 @@
     "iso": "id",
     "provisional": false,
     "rating": 1.035,
-    "ratingPoints": 1288,
+    "ratingPoints": 1287,
     "tier": "Diamond",
     "level": 6,
     "kpm": 17.3,
@@ -237144,11 +237151,11 @@
  },
  "pool_avg": {
   "pro": {
-   "kdr": 0.9940648379052369,
-   "kpm": 15.227615707455444,
-   "mvp": 2.1334583988692746,
-   "apm": 2.2782730984211423,
-   "wr": 0.46739401496259353
+   "kdr": 0.9941895261845387,
+   "kpm": 15.230839807326486,
+   "mvp": 2.133658543375396,
+   "apm": 2.277395766849087,
+   "wr": 0.4672169576059851
   },
   "amateur": {
    "kdr": 1.0,
@@ -283220,14 +283227,135 @@
        "i": 5,
        "a": "Divide&Conquer",
        "b": "Albion Rising",
-       "sa": null,
-       "sb": null,
-       "w": 0,
+       "sa": 13,
+       "sb": 8,
+       "w": 1,
        "aTeam": "divide-conquer",
        "bTeam": null,
        "bo": 1,
        "tp": false,
-       "ts": null
+       "ts": 1789625021,
+       "stats": {
+        "maps": [
+         {
+          "map": "Tuscan",
+          "scoreA": 13,
+          "scoreB": 8,
+          "players": [
+           {
+            "team": "Divide&Conquer",
+            "name": "LITA",
+            "k": 27,
+            "a": 3,
+            "d": 12,
+            "mvp": 7,
+            "score": 76,
+            "slug": "lita",
+            "iso": "de"
+           },
+           {
+            "team": "Divide&Conquer",
+            "name": "chreyll",
+            "k": 17,
+            "a": 2,
+            "d": 16,
+            "mvp": 2,
+            "score": 46,
+            "slug": "chreyll",
+            "iso": "sg"
+           },
+           {
+            "team": "Divide&Conquer",
+            "name": "InfiniteBreaker",
+            "k": 18,
+            "a": 0,
+            "d": 13,
+            "mvp": 2,
+            "score": 40,
+            "slug": "infinitebreaker",
+            "iso": "sg"
+           },
+           {
+            "team": "Divide&Conquer",
+            "name": "laavv._",
+            "k": 12,
+            "a": 3,
+            "d": 18,
+            "mvp": 0,
+            "score": 30,
+            "slug": "laavv",
+            "iso": "sg"
+           },
+           {
+            "team": "Divide&Conquer",
+            "name": "Solec",
+            "k": 11,
+            "a": 4,
+            "d": 20,
+            "mvp": 2,
+            "score": 28,
+            "slug": "solec",
+            "iso": "sg"
+           },
+           {
+            "team": "Albion Rising",
+            "name": "Nerfox",
+            "k": 21,
+            "a": 0,
+            "d": 16,
+            "mvp": 2,
+            "score": 52,
+            "slug": "nerfox",
+            "iso": "pl"
+           },
+           {
+            "team": "Albion Rising",
+            "name": "Hanyachi",
+            "k": 16,
+            "a": 1,
+            "d": 17,
+            "mvp": 1,
+            "score": 42,
+            "slug": "hanyachi",
+            "iso": "de"
+           },
+           {
+            "team": "Albion Rising",
+            "name": "Zarlard",
+            "k": 14,
+            "a": 3,
+            "d": 15,
+            "mvp": 2,
+            "score": 36,
+            "slug": "zarlard",
+            "iso": "se"
+           },
+           {
+            "team": "Albion Rising",
+            "name": "PSYSTRA",
+            "k": 16,
+            "a": 2,
+            "d": 19,
+            "mvp": 1,
+            "score": 34,
+            "slug": "psystra",
+            "iso": "gb"
+           },
+           {
+            "team": "Albion Rising",
+            "name": "Aleaka",
+            "k": 12,
+            "a": 2,
+            "d": 18,
+            "mvp": 2,
+            "score": 27,
+            "slug": "aleaka",
+            "iso": "gb"
+           }
+          ]
+         }
+        ]
+       }
       },
       {
        "i": 6,
@@ -288995,14 +289123,135 @@
          "i": 5,
          "a": "Divide&Conquer",
          "b": "Albion Rising",
-         "sa": null,
-         "sb": null,
-         "w": 0,
+         "sa": 13,
+         "sb": 8,
+         "w": 1,
          "aTeam": "divide-conquer",
          "bTeam": null,
          "bo": 1,
          "tp": false,
-         "ts": null
+         "ts": 1789625021,
+         "stats": {
+          "maps": [
+           {
+            "map": "Tuscan",
+            "scoreA": 13,
+            "scoreB": 8,
+            "players": [
+             {
+              "team": "Divide&Conquer",
+              "name": "LITA",
+              "k": 27,
+              "a": 3,
+              "d": 12,
+              "mvp": 7,
+              "score": 76,
+              "slug": "lita",
+              "iso": "de"
+             },
+             {
+              "team": "Divide&Conquer",
+              "name": "chreyll",
+              "k": 17,
+              "a": 2,
+              "d": 16,
+              "mvp": 2,
+              "score": 46,
+              "slug": "chreyll",
+              "iso": "sg"
+             },
+             {
+              "team": "Divide&Conquer",
+              "name": "InfiniteBreaker",
+              "k": 18,
+              "a": 0,
+              "d": 13,
+              "mvp": 2,
+              "score": 40,
+              "slug": "infinitebreaker",
+              "iso": "sg"
+             },
+             {
+              "team": "Divide&Conquer",
+              "name": "laavv._",
+              "k": 12,
+              "a": 3,
+              "d": 18,
+              "mvp": 0,
+              "score": 30,
+              "slug": "laavv",
+              "iso": "sg"
+             },
+             {
+              "team": "Divide&Conquer",
+              "name": "Solec",
+              "k": 11,
+              "a": 4,
+              "d": 20,
+              "mvp": 2,
+              "score": 28,
+              "slug": "solec",
+              "iso": "sg"
+             },
+             {
+              "team": "Albion Rising",
+              "name": "Nerfox",
+              "k": 21,
+              "a": 0,
+              "d": 16,
+              "mvp": 2,
+              "score": 52,
+              "slug": "nerfox",
+              "iso": "pl"
+             },
+             {
+              "team": "Albion Rising",
+              "name": "Hanyachi",
+              "k": 16,
+              "a": 1,
+              "d": 17,
+              "mvp": 1,
+              "score": 42,
+              "slug": "hanyachi",
+              "iso": "de"
+             },
+             {
+              "team": "Albion Rising",
+              "name": "Zarlard",
+              "k": 14,
+              "a": 3,
+              "d": 15,
+              "mvp": 2,
+              "score": 36,
+              "slug": "zarlard",
+              "iso": "se"
+             },
+             {
+              "team": "Albion Rising",
+              "name": "PSYSTRA",
+              "k": 16,
+              "a": 2,
+              "d": 19,
+              "mvp": 1,
+              "score": 34,
+              "slug": "psystra",
+              "iso": "gb"
+             },
+             {
+              "team": "Albion Rising",
+              "name": "Aleaka",
+              "k": 12,
+              "a": 2,
+              "d": 18,
+              "mvp": 2,
+              "score": 27,
+              "slug": "aleaka",
+              "iso": "gb"
+             }
+            ]
+           }
+          ]
+         }
         },
         {
          "i": 6,
@@ -289051,29 +289300,29 @@
        "rank": 1,
        "name": "Divide&Conquer",
        "teamSlug": "divide-conquer",
-       "w": 1,
+       "w": 2,
        "l": 0
       },
       {
        "rank": 2,
-       "name": "Albion Rising",
-       "teamSlug": null,
-       "w": 1,
-       "l": 0
-      },
-      {
-       "rank": 3,
        "name": "Prism Divide",
        "teamSlug": null,
        "w": 1,
        "l": 0
       },
       {
-       "rank": 4,
+       "rank": 3,
        "name": "Radiant Coil",
        "teamSlug": null,
        "w": 1,
        "l": 0
+      },
+      {
+       "rank": 4,
+       "name": "Albion Rising",
+       "teamSlug": null,
+       "w": 1,
+       "l": 1
       },
       {
        "rank": 5,
@@ -295207,85 +295456,85 @@
    "finalStandings": [
     {
      "rank": 1,
-     "name": "5PERCENT",
-     "teamSlug": "5percent",
+     "name": "Divide&Conquer",
+     "teamSlug": "divide-conquer",
      "result": "Group Stage",
      "tie": true
     },
     {
      "rank": 2,
-     "name": "99Lives",
-     "teamSlug": "99lives",
-     "result": "Group Stage",
-     "tie": true
-    },
-    {
-     "rank": 3,
-     "name": "Aetherline",
-     "teamSlug": "aetherline",
-     "result": "Group Stage",
-     "tie": true
-    },
-    {
-     "rank": 4,
      "name": "Albion Rising",
      "teamSlug": null,
      "result": "Group Stage",
      "tie": true
     },
     {
+     "rank": 3,
+     "name": "5PERCENT",
+     "teamSlug": "5percent",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 4,
+     "name": "99Lives",
+     "teamSlug": "99lives",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
      "rank": 5,
+     "name": "Aetherline",
+     "teamSlug": "aetherline",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 6,
      "name": "Alcheministry",
      "teamSlug": "alcheministry",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 6,
+     "rank": 7,
      "name": "Aurora Pact",
      "teamSlug": null,
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 7,
+     "rank": 8,
      "name": "Bloom E-Sports",
      "teamSlug": "bloom-e-sports",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 8,
+     "rank": 9,
      "name": "Caelum Scala",
      "teamSlug": "caelum-scala",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 9,
+     "rank": 10,
      "name": "Cosmos",
      "teamSlug": "cosmos",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 10,
+     "rank": 11,
      "name": "degree",
      "teamSlug": "degree",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 11,
+     "rank": 12,
      "name": "DiamondOnes",
      "teamSlug": "diamondones",
-     "result": "Group Stage",
-     "tie": true
-    },
-    {
-     "rank": 12,
-     "name": "Divide&Conquer",
-     "teamSlug": "divide-conquer",
      "result": "Group Stage",
      "tie": true
     },
@@ -297343,16 +297592,16 @@
        "captain": false
       },
       {
-       "hist": "Solec",
-       "name": "Solec",
-       "slug": "solec",
+       "hist": "InfiniteBreaker",
+       "name": "InfiniteBreaker",
+       "slug": "infinitebreaker",
        "iso": "sg",
        "captain": false
       },
       {
-       "hist": "InfiniteBreaker",
-       "name": "InfiniteBreaker",
-       "slug": "infinitebreaker",
+       "hist": "Solec",
+       "name": "Solec",
+       "slug": "solec",
        "iso": "sg",
        "captain": false
       },
@@ -299007,12 +299256,12 @@
     }
    ],
    "mvp": {
-    "name": "Bajiru_EN",
-    "slug": "bajiru-en",
-    "iso": "us",
-    "team": "Dreamstate",
-    "mvpRounds": 7,
-    "kills": 28
+    "name": "LITA",
+    "slug": "lita",
+    "iso": "de",
+    "team": "Divide&Conquer",
+    "mvpRounds": 9,
+    "kills": 45
    }
   },
   {
@@ -317920,16 +318169,16 @@
        "captain": false
       },
       {
-       "hist": "Solec",
-       "name": "Solec",
-       "slug": "solec",
+       "hist": "InfiniteBreaker",
+       "name": "InfiniteBreaker",
+       "slug": "infinitebreaker",
        "iso": "sg",
        "captain": false
       },
       {
-       "hist": "InfiniteBreaker",
-       "name": "InfiniteBreaker",
-       "slug": "infinitebreaker",
+       "hist": "Solec",
+       "name": "Solec",
+       "slug": "solec",
        "iso": "sg",
        "captain": false
       },
@@ -412089,59 +412338,80 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.59,
-     "real": false
+     "wr": 0.8,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 16
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.486,
-     "real": false
+     "wr": 0.708,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 9
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.671,
-     "real": false
+     "wr": 0.667,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 9
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.452,
-     "real": false
+     "wr": 0.875,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 9
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.643,
-     "real": false
+     "wr": 0.667,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 4
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.747,
-     "real": false
+     "wr": 0.875,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 10
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.427,
-     "real": false
+     "wr": 0.8,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 12
     }
    },
    "bestMaps": [
-    "Vertigo",
-    "Inferno"
+    "Cache",
+    "Vertigo"
    ],
    "worstMaps": [
-    "Anubis",
-    "Cache"
+    "Tuscan",
+    "Inferno"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -412154,59 +412424,76 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.61,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 7
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.426,
-     "real": false
+     "wr": 0.667,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 3
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.529,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.599,
-     "real": false
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 2
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.443,
-     "real": false
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.632,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.537,
-     "real": false
+     "real": false,
+     "est": false
     }
    },
    "bestMaps": [
-    "Vertigo",
-    "Mirage"
+    "Cache",
+    "Tuscan"
    ],
    "worstMaps": [
-    "Dust2",
-    "Tuscan"
+    "Vertigo",
+    "Mirage"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -412219,59 +412506,78 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.51,
-     "real": false
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 4
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.428,
-     "real": false
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 4
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.637,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 5
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.293,
-     "real": false
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.479,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.314,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.315,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     }
    },
    "bestMaps": [
-    "Inferno",
-    "Mirage"
+    "Cache",
+    "Dust2"
    ],
    "worstMaps": [
-    "Cache",
-    "Vertigo"
+    "Tuscan",
+    "Inferno"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -412284,58 +412590,79 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.524,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 7
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.458,
-     "real": false
+     "wr": 0.25,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 3
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.607,
-     "real": false
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 2
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.271,
-     "real": false
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.438,
-     "real": false
+     "wr": 0.333,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 4
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.494,
-     "real": false
+     "wr": 0.333,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 4
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.407,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     }
    },
    "bestMaps": [
-    "Inferno",
-    "Mirage"
+    "Cache",
+    "Inferno"
    ],
    "worstMaps": [
-    "Cache",
+    "Mirage",
     "Anubis"
    ],
    "adhoc": true,
@@ -412349,59 +412676,76 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.534,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.37,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 4
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.31,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.345,
-     "real": false
+     "wr": 0.067,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 8
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.626,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 3
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.452,
-     "real": false
+     "wr": 0.8,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 5
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.527,
-     "real": false
+     "real": false,
+     "est": false
     }
    },
    "bestMaps": [
-    "Tuscan",
-    "Mirage"
+    "Vertigo",
+    "Anubis"
    ],
    "worstMaps": [
-    "Inferno",
-    "Cache"
+    "Tuscan",
+    "Mirage"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -412414,59 +412758,80 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.543,
-     "real": false
+     "wr": 0.333,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 4
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.579,
-     "real": false
+     "wr": 0.75,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 12
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.559,
-     "real": false
+     "wr": 0.792,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 7
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.657,
-     "real": false
+     "wr": 0.375,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 5
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.295,
-     "real": false
+     "wr": 0.833,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 4
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.307,
-     "real": false
+     "wr": 0.733,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 12
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.452,
-     "real": false
+     "wr": 0.667,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 5
     }
    },
    "bestMaps": [
-    "Cache",
-    "Dust2"
+    "Tuscan",
+    "Inferno"
    ],
    "worstMaps": [
-    "Tuscan",
-    "Vertigo"
+    "Mirage",
+    "Cache"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -412479,58 +412844,73 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.654,
-     "real": false
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 5
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.52,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.469,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.617,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.36,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.642,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.598,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     }
    },
    "bestMaps": [
     "Mirage",
-    "Vertigo"
+    "Cache"
    ],
    "worstMaps": [
-    "Tuscan",
+    "Vertigo",
     "Inferno"
    ],
    "adhoc": true,
@@ -412544,59 +412924,80 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.304,
-     "real": false
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 3
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.691,
-     "real": false
+     "wr": 0.25,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 3
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.584,
-     "real": false
+     "wr": 0.667,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 3
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.349,
-     "real": false
+     "wr": 0.167,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 4
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.31,
-     "real": false
+     "wr": 0.9,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 7
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.642,
-     "real": false
+     "wr": 0.667,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 3
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.65,
-     "real": false
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     }
    },
    "bestMaps": [
-    "Dust2",
-    "Anubis"
+    "Tuscan",
+    "Inferno"
    ],
    "worstMaps": [
-    "Mirage",
-    "Tuscan"
+    "Cache",
+    "Dust2"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -412609,59 +413010,76 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.424,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.351,
-     "real": false
+     "wr": 0.35,
+     "real": false,
+     "est": false
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.656,
-     "real": false
+     "wr": 0.9,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 6
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.416,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 3
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.407,
-     "real": false
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.635,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.681,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     }
    },
    "bestMaps": [
-    "Anubis",
+    "Tuscan",
     "Inferno"
    ],
    "worstMaps": [
-    "Dust2",
-    "Tuscan"
+    "Mirage",
+    "Cache"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -412674,59 +413092,80 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.393,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.28,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 4
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.573,
-     "real": false
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 2
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.42,
-     "real": false
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.442,
-     "real": false
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.358,
-     "real": false
+     "wr": 0.1,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 8
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.549,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     }
    },
    "bestMaps": [
-    "Inferno",
-    "Anubis"
+    "Cache",
+    "Inferno"
    ],
    "worstMaps": [
-    "Dust2",
-    "Vertigo"
+    "Mirage",
+    "Dust2"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -412739,55 +413178,72 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.32,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.561,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.33,
-     "real": false
+     "wr": 0.2,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 5
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.553,
-     "real": false
+     "wr": 0.2,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 5
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.346,
-     "real": false
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.299,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.384,
-     "real": false
+     "wr": 0.383,
+     "real": false,
+     "est": false
     }
    },
    "bestMaps": [
-    "Dust2",
-    "Cache"
+    "Tuscan",
+    "Dust2"
    ],
    "worstMaps": [
     "Vertigo",
@@ -412804,59 +413260,72 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.281,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 3
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.468,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 3
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.526,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 5
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.291,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.43,
-     "real": false
+     "wr": 0.429,
+     "real": false,
+     "est": false
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.563,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.282,
-     "real": false
+     "real": false,
+     "est": false
     }
    },
    "bestMaps": [
     "Vertigo",
-    "Inferno"
+    "Tuscan"
    ],
    "worstMaps": [
     "Mirage",
-    "Anubis"
+    "Inferno"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -412869,59 +413338,76 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.349,
-     "real": false
+     "wr": 0.733,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 9
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.486,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.434,
-     "real": false
+     "wr": 0.2,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 6
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.417,
-     "real": false
+     "wr": 0.467,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 7
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.287,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.427,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.598,
-     "real": false
+     "real": false,
+     "est": false
     }
    },
    "bestMaps": [
-    "Anubis",
-    "Dust2"
+    "Mirage",
+    "Anubis"
    ],
    "worstMaps": [
     "Tuscan",
-    "Mirage"
+    "Dust2"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -412934,59 +413420,78 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.401,
-     "real": false
+     "wr": 0.333,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 3
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.513,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.438,
-     "real": false
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 6
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.559,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.641,
-     "real": false
+     "wr": 0.167,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 4
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.364,
-     "real": false
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 3
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.449,
-     "real": false
+     "wr": 0.75,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 3
     }
    },
    "bestMaps": [
-    "Tuscan",
-    "Cache"
+    "Inferno",
+    "Vertigo"
    ],
    "worstMaps": [
-    "Vertigo",
-    "Mirage"
+    "Dust2",
+    "Tuscan"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -412999,59 +413504,78 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.512,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.358,
-     "real": false
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 2
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.491,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.315,
-     "real": false
+     "wr": 0.9,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 6
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.581,
-     "real": false
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.63,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.598,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     }
    },
    "bestMaps": [
-    "Vertigo",
-    "Anubis"
-   ],
-   "worstMaps": [
     "Cache",
     "Dust2"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Mirage"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -413064,59 +413588,76 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.313,
-     "real": false
+     "wr": 0.25,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 4
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.361,
-     "real": false
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 6
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.356,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.361,
-     "real": false
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.449,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.532,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.284,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 6
     }
    },
    "bestMaps": [
-    "Vertigo",
-    "Tuscan"
+    "Cache",
+    "Vertigo"
    ],
    "worstMaps": [
-    "Anubis",
-    "Mirage"
+    "Tuscan",
+    "Anubis"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -413129,59 +413670,76 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.35,
-     "real": false
+     "wr": 0.333,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 3
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.542,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.612,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.302,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.497,
-     "real": false
+     "wr": 0.444,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 5
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.691,
-     "real": false
+     "wr": 0.233,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 8
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.401,
-     "real": false
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 2
     }
    },
    "bestMaps": [
-    "Vertigo",
-    "Inferno"
+    "Inferno",
+    "Anubis"
    ],
    "worstMaps": [
-    "Cache",
-    "Mirage"
+    "Dust2",
+    "Vertigo"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -413194,59 +413752,78 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.631,
-     "real": false
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 4
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.384,
-     "real": false
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 2
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.539,
-     "real": false
+     "wr": 0.167,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 4
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.546,
-     "real": false
+     "wr": 0.2,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 7
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.365,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.665,
-     "real": false
+     "wr": 0.7,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 9
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.566,
-     "real": false
+     "real": false,
+     "est": false
     }
    },
    "bestMaps": [
-    "Vertigo",
+    "Dust2",
     "Mirage"
    ],
    "worstMaps": [
     "Tuscan",
-    "Dust2"
+    "Inferno"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -413259,59 +413836,80 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.554,
-     "real": false
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 7
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.341,
-     "real": false
+     "wr": 0.1,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 10
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.462,
-     "real": false
+     "wr": 0.667,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 3
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.51,
-     "real": false
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 6
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.709,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.658,
-     "real": false
+     "wr": 0.583,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 6
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.659,
-     "real": false
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 2
     }
    },
    "bestMaps": [
-    "Tuscan",
-    "Anubis"
+    "Anubis",
+    "Cache"
    ],
    "worstMaps": [
-    "Dust2",
-    "Inferno"
+    "Tuscan",
+    "Dust2"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -413324,59 +413922,78 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.592,
-     "real": false
+     "wr": 0.75,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 3
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.265,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.429,
-     "real": false
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 4
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.665,
-     "real": false
+     "wr": 0.083,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 6
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.537,
-     "real": false
+     "wr": 0.9,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 6
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.543,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 3
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.67,
-     "real": false
+     "real": false,
+     "est": false
     }
    },
    "bestMaps": [
-    "Anubis",
-    "Cache"
+    "Inferno",
+    "Tuscan"
    ],
    "worstMaps": [
-    "Dust2",
-    "Inferno"
+    "Vertigo",
+    "Dust2"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -413389,55 +414006,74 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.331,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.548,
-     "real": false
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.552,
-     "real": false
+     "wr": 0.25,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 4
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.652,
-     "real": false
+     "wr": 0.1,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 9
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.651,
-     "real": false
+     "wr": 0.75,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 5
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.674,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.372,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     }
    },
    "bestMaps": [
-    "Vertigo",
-    "Cache"
+    "Dust2",
+    "Tuscan"
    ],
    "worstMaps": [
     "Mirage",
@@ -413454,59 +414090,78 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.407,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.466,
-     "real": false
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.305,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 3
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.33,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 2
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.547,
-     "real": false
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 10
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.518,
-     "real": false
+     "wr": 0.517,
+     "real": false,
+     "est": false
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.407,
-     "real": false
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 2
     }
    },
    "bestMaps": [
-    "Tuscan",
-    "Vertigo"
+    "Anubis",
+    "Dust2"
    ],
    "worstMaps": [
-    "Inferno",
-    "Cache"
+    "Mirage",
+    "Inferno"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -413520,58 +414175,75 @@
      "l": 0,
      "g": 0,
      "wr": 0.514,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.347,
-     "real": false
+     "wr": 0.25,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 3
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.442,
-     "real": false
+     "wr": 0.067,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 9
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.504,
-     "real": false
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.273,
-     "real": false
+     "wr": 0.167,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 6
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.487,
-     "real": false
+     "wr": 0.6,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 6
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.29,
-     "real": false
+     "real": false,
+     "est": false
     }
    },
    "bestMaps": [
-    "Mirage",
-    "Cache"
+    "Vertigo",
+    "Mirage"
    ],
    "worstMaps": [
-    "Tuscan",
-    "Anubis"
+    "Inferno",
+    "Tuscan"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -413584,59 +414256,78 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.508,
-     "real": false
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.447,
-     "real": false
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 2
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.362,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.623,
-     "real": false
+     "wr": 0.8,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 7
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.46,
-     "real": false
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.439,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.445,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 3
     }
    },
    "bestMaps": [
-    "Cache",
-    "Mirage"
+    "Tuscan",
+    "Cache"
    ],
    "worstMaps": [
-    "Inferno",
-    "Vertigo"
+    "Vertigo",
+    "Anubis"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -413649,59 +414340,80 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.476,
-     "real": false
+     "wr": 0.667,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 3
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.369,
-     "real": false
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.481,
-     "real": false
+     "wr": 0.667,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 6
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.522,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.679,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.391,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.374,
-     "real": false
+     "wr": 0.9,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 8
     }
    },
    "bestMaps": [
-    "Tuscan",
-    "Cache"
-   ],
-   "worstMaps": [
     "Dust2",
     "Anubis"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Tuscan"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -413714,59 +414426,80 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.511,
-     "real": false
+     "wr": 0.444,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 6
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.348,
-     "real": false
+     "wr": 0.375,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 5
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.452,
-     "real": false
+     "wr": 0.375,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 5
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.541,
-     "real": false
+     "wr": 0.25,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 10
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.489,
-     "real": false
+     "wr": 0.75,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 4
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.39,
-     "real": false
+     "wr": 0.556,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 5
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.545,
-     "real": false
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 5
     }
    },
    "bestMaps": [
-    "Anubis",
-    "Cache"
+    "Tuscan",
+    "Vertigo"
    ],
    "worstMaps": [
-    "Dust2",
-    "Vertigo"
+    "Cache",
+    "Inferno"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -413779,59 +414512,74 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.51,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.59,
-     "real": false
+     "wr": 0.333,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 3
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.304,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.57,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.454,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.417,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.478,
-     "real": false
+     "real": false,
+     "est": false
     }
    },
    "bestMaps": [
-    "Dust2",
-    "Cache"
+    "Cache",
+    "Anubis"
    ],
    "worstMaps": [
-    "Inferno",
-    "Vertigo"
+    "Vertigo",
+    "Tuscan"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -413845,58 +414593,73 @@
      "l": 0,
      "g": 0,
      "wr": 0.522,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.643,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.464,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.377,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.567,
-     "real": false
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 6
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.386,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.332,
-     "real": false
+     "real": false,
+     "est": false
     }
    },
    "bestMaps": [
-    "Dust2",
-    "Tuscan"
+    "Tuscan",
+    "Mirage"
    ],
    "worstMaps": [
-    "Anubis",
-    "Cache"
+    "Vertigo",
+    "Inferno"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -413909,59 +414672,74 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.618,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.478,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.31,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.498,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 3
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.334,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.596,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.332,
-     "real": false
+     "wr": 0.067,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 7
     }
    },
    "bestMaps": [
-    "Mirage",
-    "Vertigo"
+    "Dust2",
+    "Tuscan"
    ],
    "worstMaps": [
-    "Inferno",
-    "Anubis"
+    "Vertigo",
+    "Mirage"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -413974,50 +414752,65 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.412,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 3
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.5,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.444,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.516,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 3
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.526,
-     "real": false
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 5
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.378,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.52,
-     "real": false
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     }
    },
    "bestMaps": [
@@ -414025,8 +414818,8 @@
     "Anubis"
    ],
    "worstMaps": [
-    "Vertigo",
-    "Mirage"
+    "Mirage",
+    "Cache"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -414039,59 +414832,78 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.305,
-     "real": false
+     "wr": 0.333,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 4
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.657,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.303,
-     "real": false
+     "wr": 0.9,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 6
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.377,
-     "real": false
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 3
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.663,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.509,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.46,
-     "real": false
+     "wr": 0.75,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 3
     }
    },
    "bestMaps": [
-    "Tuscan",
-    "Dust2"
+    "Cache",
+    "Inferno"
    ],
    "worstMaps": [
-    "Inferno",
-    "Mirage"
+    "Tuscan",
+    "Dust2"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -414104,58 +414916,77 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.603,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.574,
-     "real": false
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 2
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.438,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
      "wr": 0.557,
-     "real": false
+     "real": false,
+     "est": false
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.34,
-     "real": false
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.444,
-     "real": false
+     "wr": 0.1,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 7
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.501,
-     "real": false
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
     }
    },
    "bestMaps": [
-    "Mirage",
+    "Cache",
     "Dust2"
    ],
    "worstMaps": [
-    "Tuscan",
+    "Mirage",
     "Inferno"
    ],
    "adhoc": true,
