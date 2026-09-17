@@ -106,8 +106,8 @@ bot_add "LMN luminmochi"; bot_add "LMN JWQI"; bot_add "LMN MoonRaika"; bot_add "
 bot_add_ct "LMN luminmochi"; bot_add_ct "LMN JWQI"; bot_add_ct "LMN MoonRaika"; bot_add_ct "LMN meowcolmz"; bot_add_ct "LMN kkayyteeee";
 
 Masmark (BPL Legends Stage 2023)
-bot_add "M Xyrolizea"; bot_add "M XuehuaVT"; bot_add "M urnisa_"; bot_add "M kn"; bot_add "M estellyy.";
-bot_add_ct "M Xyrolizea"; bot_add_ct "M XuehuaVT"; bot_add_ct "M urnisa_"; bot_add_ct "M kn"; bot_add_ct "M estellyy.";
+bot_add "M Xyrolizea"; bot_add "M XuehuaVT"; bot_add "M urnisa_"; bot_add "M kn"; bot_add "M HikariiFloofie";
+bot_add_ct "M Xyrolizea"; bot_add_ct "M XuehuaVT"; bot_add_ct "M urnisa_"; bot_add_ct "M kn"; bot_add_ct "M HikariiFloofie";
 
 Moonlit Tempo (BPL Legends Stage 2025) [Celtsm from RV, Sashimi from AET]
 bot_add "MLT Celtsm"; bot_add "MLT Kyan"; bot_add "MLT GoddessAkane"; bot_add "MLT SashimiGoesBloop"; bot_add "MLT FeatBri";

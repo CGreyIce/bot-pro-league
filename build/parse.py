@@ -1385,6 +1385,28 @@ def main():
             prev = entry
     transfers.sort(key=lambda t: t["date"], reverse=True)
 
+    # ---- manual roster moves (user-directed post-event swaps, incl. releases to free agency) ----
+    rmp = os.path.join(DATA, "roster_moves.json")
+    if os.path.exists(rmp):
+        _tbk = {t["key"]: t for t in teams}
+        for mv in json.load(open(rmp, encoding="utf-8")):
+            p = pmap.get(norm_key(mv.get("player", "")))
+            if not p:
+                continue
+            def _side(nm):
+                tm = _tbk.get(norm_key(nm)) if nm else None
+                return (nm or None, tm["slug"] if tm else None)   # unknown name (e.g. 'Free agent') shows plainly
+            fromName, fromSlug = _side(mv.get("from"))
+            toName, toSlug = _side(mv.get("to"))
+            # drop any auto-generated entry this move supersedes (same player + same real destination)
+            if toSlug:
+                transfers[:] = [t for t in transfers if not (t["playerSlug"] == p["slug"] and t.get("toSlug") == toSlug)]
+            transfers.append({
+                "type": "transfer", "player": p["name"], "playerSlug": p["slug"], "iso": p.get("iso", ""),
+                "fromTeam": fromName, "fromSlug": fromSlug, "toTeam": toName, "toSlug": toSlug,
+                "toPro": bool(toSlug), "date": mv.get("date", cur_date)})
+        transfers.sort(key=lambda t: t["date"], reverse=True)
+
     # ---- per-team former players (inverted from historical attending rosters) ----
     team_seen = defaultdict(dict)   # teamSlug -> {playerSlug: {name, iso, years:set()}}
     for tr in tournaments:
