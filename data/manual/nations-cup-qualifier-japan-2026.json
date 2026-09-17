@@ -118,5 +118,6 @@
  "seeds": {},
  "noHonors": true,
  "nationTeam": "Team Japan",
- "predictionsLocked": true
+ "predictionsLocked": true,
+ "completed": true
 }

@@ -118,5 +118,6 @@
  "seeds": {},
  "noHonors": true,
  "nationTeam": "Team USA",
- "predictionsLocked": true
+ "predictionsLocked": true,
+ "completed": true
 }
