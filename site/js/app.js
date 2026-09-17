@@ -276,11 +276,13 @@ function articleBodyHtml(body){
     .replace(/\*([^*]+)\*/g,'<em>$1</em>');
   return (body||'').split(/\n\s*\n/).filter(p=>p.trim()).map(p=>`<p>${inline(p.trim()).replace(/\n/g,'<br>')}</p>`).join('');
 }
+function stripMd(s){ return String(s||"").replace(/\[([^\]]+)\]\([^)]+\)/g,"$1").replace(/\*\*([^*]+)\*\*/g,"$1").replace(/\*/g,""); }
 function newsCard(a){
+  const snip = stripMd(a.snippet || a.body || "");
   return `<a class="news-card" href="#/article/${esc(a.slug)}">
     <div class="news-date">${fmtArticleDate(a.date)}</div>
     <div class="news-title">${esc(a.title)}</div>
-    ${a.snippet?`<div class="news-snip">${esc(a.snippet)}</div>`:''}
+    ${snip?`<div class="news-snip">${esc(snip.length>180?snip.slice(0,180).trimEnd()+"…":snip)}</div>`:''}
     ${a.author?`<div class="news-author">${esc(a.author)}</div>`:''}</a>`;
 }
 function renderNews(){
