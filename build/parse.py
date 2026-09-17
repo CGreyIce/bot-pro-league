@@ -1648,7 +1648,10 @@ def main():
     ap = os.path.join(DATA, "articles.json")
     articles = json.load(open(ap, encoding="utf-8")) if os.path.exists(ap) else []
     for a in articles:
-        snip = re.sub(r"\s+", " ", a.get("body", "")).strip()
+        raw = a.get("body", "")
+        raw = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", raw)   # [text](url) -> text
+        raw = re.sub(r"\*\*([^*]+)\*\*", r"\1", raw).replace("*", "")   # drop bold/italic markers
+        snip = re.sub(r"\s+", " ", raw).strip()
         a["snippet"] = (snip[:180].rstrip() + "…") if len(snip) > 180 else snip
     articles.sort(key=lambda a: (a.get("date", ""), a.get("slug", "")), reverse=True)
 
