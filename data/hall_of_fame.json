@@ -1,0 +1,17 @@
+{
+ "players": [
+  {
+   "slug": "sketch",
+   "tagline": "The Aimpunch Dynasty",
+   "blurb": "Leader and star fragger of Aimpunch, he built a dynasty of multiple S-Tier titles and a Major, powered by an 18-match unbeaten run in S-Tier play.",
+   "article": "sketch-and-the-aimpunch-dynasty"
+  },
+  {
+   "slug": "nifela",
+   "tagline": "The Promise That Built PepegaX",
+   "blurb": "A journeyman American in-game leader who vowed to build a better team than the one he left, then made good on it with PepegaX and their Audax Esse 2025 miracle run.",
+   "article": "nifela-and-the-promise-that-built-pepegax"
+  }
+ ],
+ "teams": []
+}

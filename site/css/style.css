@@ -305,6 +305,17 @@ a.form-dot:hover{transform:translateY(-2px)}
 .rec-holder{font-family:'Chakra Petch';font-weight:700;font-size:19px;margin:4px 0 2px}
 .rec-holder a:hover{color:var(--link)}
 .rec-val{font-family:'Chakra Petch';font-weight:700;font-size:26px;color:var(--accent)}
+.hof-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.hof-card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:16px 16px 16px 18px;position:relative;overflow:hidden}
+.hof-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,#f5c451,#e0912a)}
+.hof-head{display:flex;align-items:center;gap:8px;font-family:'Chakra Petch';font-weight:700;font-size:20px}
+.hof-head img.flag,.hof-head img{width:22px;height:auto;border-radius:2px}
+.hof-name{color:var(--text)}
+.hof-name:hover{color:var(--link)}
+.hof-tag{font-family:'Chakra Petch';font-size:12px;text-transform:uppercase;letter-spacing:.8px;color:#e0912a;margin:3px 0 7px}
+.hof-blurb{font-size:13px;line-height:1.5;color:var(--muted)}
+.hof-link{display:inline-block;margin-top:9px;font-size:12px;font-weight:600;color:var(--link)}
+.hof-link:hover{text-decoration:underline}
 
 /* transfers */
 .tf-arrow{text-align:center;color:var(--muted);font-weight:700;font-size:16px}

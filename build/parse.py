@@ -1669,9 +1669,14 @@ def main():
         a["snippet"] = (snip[:180].rstrip() + "…") if len(snip) > 180 else snip
     articles.sort(key=lambda a: (a.get("date", ""), a.get("slug", "")), reverse=True)
 
+    # ---- Hall of Fame (curated inductees; app resolves slugs to profiles) ----
+    hof_path = os.path.join(DATA, "hall_of_fame.json")
+    hall_of_fame = json.load(open(hof_path, encoding="utf-8")) if os.path.exists(hof_path) else {"players": [], "teams": []}
+
     data = {
         "teams": teams,
         "articles": articles,
+        "hallOfFame": hall_of_fame,
         "players": {"pro": pro, "amateur": amateur, "solo": solo},
         "pool_avg": {"pro": pro_avg, "amateur": am_avg, "solo": solo_avg},
         "weights": WEIGHTS,
