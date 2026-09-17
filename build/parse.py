@@ -1422,6 +1422,18 @@ def main():
                         {"name": pl["name"], "iso": pl.get("iso", ""), "years": set()})
                 if yr:
                     e["years"].add(yr)
+    # a recorded release keeps the player's tenure on that team through the move's year, even if
+    # the team played no event that year (event history alone would cut it off early).
+    if os.path.exists(rmp):
+        _tbk_fp = {t["key"]: t for t in teams}
+        for mv in json.load(open(rmp, encoding="utf-8")):
+            fr = _tbk_fp.get(norm_key(mv.get("from", "")))
+            p = pmap.get(norm_key(mv.get("player", "")))
+            yr = (mv.get("date", "") or "")[:4]
+            if fr and p and yr:
+                e = team_seen[fr["slug"]].setdefault(p["slug"],
+                        {"name": p["name"], "iso": p.get("iso", ""), "years": set()})
+                e["years"].add(yr)
     for t in teams:
         cur = {p["slug"] for p in t.get("roster", [])}
         former = []
