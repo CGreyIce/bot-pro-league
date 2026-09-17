@@ -10161,6 +10161,410 @@
      ]
     }
    ]
+  },
+  "2-5": {
+   "maps": [
+    {
+     "map": "Tuscan",
+     "scoreA": 6,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Round Loss Bonus",
+       "name": "caturteer",
+       "k": 25,
+       "a": 1,
+       "d": 15,
+       "mvp": 2,
+       "score": 52
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "le_pyrrhic",
+       "k": 16,
+       "a": 1,
+       "d": 15,
+       "mvp": 3,
+       "score": 35
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "daifuku.wu",
+       "k": 11,
+       "a": 2,
+       "d": 16,
+       "mvp": 1,
+       "score": 28
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "TiF2",
+       "k": 8,
+       "a": 1,
+       "d": 15,
+       "mvp": 0,
+       "score": 17
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "murasakibara_tsuki1",
+       "k": 2,
+       "a": 2,
+       "d": 17,
+       "mvp": 0,
+       "score": 6
+      },
+      {
+       "team": "Cosmos",
+       "name": "sneakyyyyy",
+       "k": 21,
+       "a": 1,
+       "d": 11,
+       "mvp": 4,
+       "score": 53
+      },
+      {
+       "team": "Cosmos",
+       "name": "kokushi_vampir",
+       "k": 20,
+       "a": 0,
+       "d": 12,
+       "mvp": 2,
+       "score": 45
+      },
+      {
+       "team": "Cosmos",
+       "name": "azzuto",
+       "k": 18,
+       "a": 2,
+       "d": 12,
+       "mvp": 1,
+       "score": 41
+      },
+      {
+       "team": "Cosmos",
+       "name": "inaxho",
+       "k": 13,
+       "a": 4,
+       "d": 12,
+       "mvp": 4,
+       "score": 34
+      },
+      {
+       "team": "Cosmos",
+       "name": "DelphoxLuna",
+       "k": 6,
+       "a": 5,
+       "d": 15,
+       "mvp": 2,
+       "score": 19
+      }
+     ]
+    }
+   ]
+  },
+  "2-6": {
+   "maps": [
+    {
+     "map": "Vertigo",
+     "scoreA": 17,
+     "scoreB": 19,
+     "players": [
+      {
+       "team": "Aetherline",
+       "name": "EfreetsZ",
+       "k": 31,
+       "a": 2,
+       "d": 26,
+       "mvp": 5,
+       "score": 76
+      },
+      {
+       "team": "Aetherline",
+       "name": "Anndreika",
+       "k": 25,
+       "a": 1,
+       "d": 28,
+       "mvp": 4,
+       "score": 55
+      },
+      {
+       "team": "Aetherline",
+       "name": "BaBaYaGa",
+       "k": 22,
+       "a": 1,
+       "d": 22,
+       "mvp": 4,
+       "score": 55
+      },
+      {
+       "team": "Aetherline",
+       "name": "NipNip",
+       "k": 20,
+       "a": 3,
+       "d": 25,
+       "mvp": 3,
+       "score": 50
+      },
+      {
+       "team": "Aetherline",
+       "name": "awtoh",
+       "k": 22,
+       "a": 0,
+       "d": 28,
+       "mvp": 1,
+       "score": 49
+      },
+      {
+       "team": "Emberfall",
+       "name": "RumiRumi",
+       "k": 34,
+       "a": 6,
+       "d": 23,
+       "mvp": 5,
+       "score": 81
+      },
+      {
+       "team": "Emberfall",
+       "name": "lukedefabio",
+       "k": 26,
+       "a": 4,
+       "d": 23,
+       "mvp": 7,
+       "score": 65
+      },
+      {
+       "team": "Emberfall",
+       "name": "azumiying",
+       "k": 26,
+       "a": 4,
+       "d": 25,
+       "mvp": 4,
+       "score": 61
+      },
+      {
+       "team": "Emberfall",
+       "name": "PenguChi",
+       "k": 25,
+       "a": 3,
+       "d": 26,
+       "mvp": 2,
+       "score": 61
+      },
+      {
+       "team": "Emberfall",
+       "name": "swoopsy",
+       "k": 16,
+       "a": 3,
+       "d": 25,
+       "mvp": 1,
+       "score": 40
+      }
+     ]
+    }
+   ]
+  },
+  "2-7": {
+   "maps": [
+    {
+     "map": "Mirage",
+     "scoreA": 13,
+     "scoreB": 10,
+     "players": [
+      {
+       "team": "Stormfront",
+       "name": "emmabutnormal",
+       "k": 27,
+       "a": 1,
+       "d": 16,
+       "mvp": 6,
+       "score": 61
+      },
+      {
+       "team": "Stormfront",
+       "name": "pastellows",
+       "k": 24,
+       "a": 3,
+       "d": 15,
+       "mvp": 2,
+       "score": 55
+      },
+      {
+       "team": "Stormfront",
+       "name": "cwstalVT",
+       "k": 17,
+       "a": 1,
+       "d": 16,
+       "mvp": 3,
+       "score": 43
+      },
+      {
+       "team": "Stormfront",
+       "name": "Dianya",
+       "k": 12,
+       "a": 1,
+       "d": 15,
+       "mvp": 1,
+       "score": 30
+      },
+      {
+       "team": "Stormfront",
+       "name": "yxie",
+       "k": 10,
+       "a": 0,
+       "d": 14,
+       "mvp": 1,
+       "score": 26
+      },
+      {
+       "team": "Kagerou Collective",
+       "name": "Kamito",
+       "k": 18,
+       "a": 0,
+       "d": 17,
+       "mvp": 2,
+       "score": 42
+      },
+      {
+       "team": "Kagerou Collective",
+       "name": "HakoP",
+       "k": 18,
+       "a": 1,
+       "d": 18,
+       "mvp": 2,
+       "score": 39
+      },
+      {
+       "team": "Kagerou Collective",
+       "name": "Aizawa Ema",
+       "k": 17,
+       "a": 0,
+       "d": 18,
+       "mvp": 3,
+       "score": 38
+      },
+      {
+       "team": "Kagerou Collective",
+       "name": "FumishiroYummy",
+       "k": 15,
+       "a": 2,
+       "d": 17,
+       "mvp": 1,
+       "score": 36
+      },
+      {
+       "team": "Kagerou Collective",
+       "name": "Sendo Yuuhi",
+       "k": 8,
+       "a": 4,
+       "d": 20,
+       "mvp": 2,
+       "score": 24
+      }
+     ]
+    }
+   ]
+  },
+  "2-8": {
+   "maps": [
+    {
+     "map": "Cache",
+     "scoreA": 5,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "0v3",
+       "name": "potatodepresso",
+       "k": 15,
+       "a": 3,
+       "d": 15,
+       "mvp": 2,
+       "score": 39
+      },
+      {
+       "team": "0v3",
+       "name": "zenn1sm",
+       "k": 14,
+       "a": 2,
+       "d": 14,
+       "mvp": 2,
+       "score": 30
+      },
+      {
+       "team": "0v3",
+       "name": "Navikuun",
+       "k": 7,
+       "a": 4,
+       "d": 14,
+       "mvp": 1,
+       "score": 22
+      },
+      {
+       "team": "0v3",
+       "name": "Pearlim",
+       "k": 9,
+       "a": 1,
+       "d": 17,
+       "mvp": 0,
+       "score": 21
+      },
+      {
+       "team": "0v3",
+       "name": "milkenut",
+       "k": 7,
+       "a": 2,
+       "d": 15,
+       "mvp": 0,
+       "score": 16
+      },
+      {
+       "team": "Bluebird",
+       "name": "Nutzeru",
+       "k": 19,
+       "a": 0,
+       "d": 10,
+       "mvp": 4,
+       "score": 47
+      },
+      {
+       "team": "Bluebird",
+       "name": "Lyrazal",
+       "k": 14,
+       "a": 0,
+       "d": 11,
+       "mvp": 2,
+       "score": 37
+      },
+      {
+       "team": "Bluebird",
+       "name": "beyouna",
+       "k": 16,
+       "a": 1,
+       "d": 11,
+       "mvp": 3,
+       "score": 36
+      },
+      {
+       "team": "Bluebird",
+       "name": "AppleOrangePear",
+       "k": 16,
+       "a": 0,
+       "d": 11,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "Bluebird",
+       "name": "l1feless",
+       "k": 10,
+       "a": 5,
+       "d": 9,
+       "mvp": 2,
+       "score": 32
+      }
+     ]
+    }
+   ]
   }
  },
  "nations-cup-qualifier-philippines-2026": {
