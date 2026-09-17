@@ -38,8 +38,8 @@ bot_add "Art SanCtuary"; bot_add "Art rebellioniite"; bot_add "Art Yixl"; bot_ad
 bot_add_ct "Art SanCtuary"; bot_add_ct "Art rebellioniite"; bot_add_ct "Art Yixl"; bot_add_ct "Art Skyllabtw"; bot_add_ct "Art KTenshi";
 
 Aspire (BPL Legends 2024 Stage)
-bot_add "ASP Hanarisu"; bot_add "ASP TuxedoCat"; bot_add "ASP Moira"; bot_add "ASP Stylus"; bot_add "ASP caarrietan";
-bot_add_ct "ASP Hanarisu"; bot_add_ct "ASP TuxedoCat"; bot_add_ct "ASP Moira"; bot_add_ct "ASP Stylus"; bot_add_ct "ASP caarrietan";
+bot_add "ASP Hanarisu"; bot_add "ASP TuxedoCat"; bot_add "ASP Chisa_Scarlett"; bot_add "ASP Mikuryne"; bot_add "ASP caarrietan";
+bot_add_ct "ASP Hanarisu"; bot_add_ct "ASP TuxedoCat"; bot_add_ct "ASP Chisa_Scarlett"; bot_add_ct "ASP Mikuryne"; bot_add_ct "ASP caarrietan";
 
 Astral Bloom (BPL Roster Change 2025) [used to be VSPO! flagship team]
 bot_add "ABM Tachibana Hinano"; bot_add "ABM Remia Aotsuki"; bot_add "ABM Tsumugi Kokage"; bot_add "ABM Shiranami Ramune"; bot_add "ABM Eris Suzukami"

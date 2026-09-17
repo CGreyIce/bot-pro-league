@@ -25213,8 +25213,8 @@
       "2022",
       "2023"
      ],
-     "nowTeam": "Aspire",
-     "nowTeamSlug": "aspire"
+     "nowTeam": "",
+     "nowTeamSlug": null
     },
     {
      "slug": "jstarwolf",
@@ -82242,6 +82242,261 @@
    "bio": "Aspire are a Singaporean team living up to their name, a developing outfit chasing its first taste of silverware.",
    "roster": [
     {
+     "name": "Mikuryne",
+     "team": "Aspire",
+     "pool": "pro",
+     "kills": 163,
+     "assists": 13,
+     "deaths": 132,
+     "mvp": 24,
+     "kdr": 1.23,
+     "wins": 5,
+     "losses": 4,
+     "winrate": 0.556,
+     "ot": 0,
+     "role": "Rifler",
+     "maps": 9,
+     "orig_rank": "",
+     "orig_level": "",
+     "orig_rating": 0.0,
+     "slug": "mikuryne",
+     "amateurOrigin": true,
+     "nat": "Indonesia",
+     "iso": "id",
+     "provisional": false,
+     "rating": 1.05,
+     "ratingPoints": 1344,
+     "tier": "Diamond",
+     "level": 6,
+     "kpm": 18.1,
+     "rankDelta": 0,
+     "teamHistory": [
+      {
+       "team": "Aspire",
+       "teamSlug": "aspire",
+       "isPro": true,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Mikuryne",
+         "name": "Mikuryne",
+         "slug": "mikuryne",
+         "iso": "id",
+         "captain": false
+        },
+        {
+         "hist": "Chisa_Scarlett",
+         "name": "Chisa_Scarlett",
+         "slug": "chisa-scarlett",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "TuxedoCat",
+         "name": "TuxedoCat",
+         "slug": "tuxedocat",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Hanarisu",
+         "name": "Hanarisu",
+         "slug": "hanarisu",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "caarrietan",
+         "name": "caarrietan",
+         "slug": "caarrietan",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Team Indonesia",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "l1feless",
+         "name": "l1feless",
+         "slug": "l1feless",
+         "iso": "id",
+         "captain": true
+        },
+        {
+         "hist": "dumbo",
+         "name": "dumbo",
+         "slug": "dumbo",
+         "iso": "id",
+         "captain": false
+        },
+        {
+         "hist": "Mikuryne",
+         "name": "Mikuryne",
+         "slug": "mikuryne",
+         "iso": "id",
+         "captain": false
+        },
+        {
+         "hist": "Reruzensky",
+         "name": "Reruzensky",
+         "slug": "reruzensky",
+         "iso": "id",
+         "captain": false
+        },
+        {
+         "hist": "SpicyWolfie",
+         "name": "SpicyWolfie",
+         "slug": "spicywolfie",
+         "iso": "id",
+         "captain": false
+        }
+       ]
+      }
+     ],
+     "podiums": [
+      {
+       "m": "b",
+       "event": "BPL Nations Cup 2026",
+       "slug": "bpl-nations-cup-2026",
+       "tier": "s",
+       "tierLabel": "S-Tier",
+       "year": "2026",
+       "team": "Team Indonesia"
+      }
+     ]
+    },
+    {
+     "name": "Chisa_Scarlett",
+     "team": "Aspire",
+     "pool": "pro",
+     "kills": 110,
+     "assists": 9,
+     "deaths": 99,
+     "mvp": 11,
+     "kdr": 1.11,
+     "wins": 3,
+     "losses": 2,
+     "winrate": 0.6,
+     "ot": 0,
+     "role": "Rifler",
+     "maps": 5,
+     "orig_rank": "",
+     "orig_level": "",
+     "orig_rating": 0.0,
+     "slug": "chisa-scarlett",
+     "amateurOrigin": true,
+     "nat": "Singapore",
+     "iso": "sg",
+     "provisional": false,
+     "rating": 1.035,
+     "ratingPoints": 1288,
+     "tier": "Diamond",
+     "level": 6,
+     "kpm": 22.0,
+     "rankDelta": 0,
+     "teamHistory": [
+      {
+       "team": "Aspire",
+       "teamSlug": "aspire",
+       "isPro": true,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Mikuryne",
+         "name": "Mikuryne",
+         "slug": "mikuryne",
+         "iso": "id",
+         "captain": false
+        },
+        {
+         "hist": "Chisa_Scarlett",
+         "name": "Chisa_Scarlett",
+         "slug": "chisa-scarlett",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "TuxedoCat",
+         "name": "TuxedoCat",
+         "slug": "tuxedocat",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Hanarisu",
+         "name": "Hanarisu",
+         "slug": "hanarisu",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "caarrietan",
+         "name": "caarrietan",
+         "slug": "caarrietan",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "SG Squad 42",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Meowcolmz",
+         "name": "Meowcolmz",
+         "slug": "meowcolmz",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "treblest",
+         "name": "treblest",
+         "slug": "treblest",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Ryker_Sterling",
+         "name": "Ryker_Sterling",
+         "slug": "ryker-sterling",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "EviKuroneko",
+         "name": "EviKuroneko",
+         "slug": "evikuroneko",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Chisa_Scarlett",
+         "name": "Chisa_Scarlett",
+         "slug": "chisa-scarlett",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      }
+     ]
+    },
+    {
      "name": "TuxedoCat",
      "team": "Aspire",
      "pool": "pro",
@@ -82392,6 +82647,20 @@
        ],
        "roster": [
         {
+         "hist": "Mikuryne",
+         "name": "Mikuryne",
+         "slug": "mikuryne",
+         "iso": "id",
+         "captain": false
+        },
+        {
+         "hist": "Chisa_Scarlett",
+         "name": "Chisa_Scarlett",
+         "slug": "chisa-scarlett",
+         "iso": "sg",
+         "captain": false
+        },
+        {
          "hist": "TuxedoCat",
          "name": "TuxedoCat",
          "slug": "tuxedocat",
@@ -82409,20 +82678,6 @@
          "hist": "caarrietan",
          "name": "caarrietan",
          "slug": "caarrietan",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Moira",
-         "name": "Moira",
-         "slug": "moira",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Stylus",
-         "name": "Stylus",
-         "slug": "stylus",
          "iso": "sg",
          "captain": false
         }
@@ -82582,6 +82837,20 @@
        ],
        "roster": [
         {
+         "hist": "Mikuryne",
+         "name": "Mikuryne",
+         "slug": "mikuryne",
+         "iso": "id",
+         "captain": false
+        },
+        {
+         "hist": "Chisa_Scarlett",
+         "name": "Chisa_Scarlett",
+         "slug": "chisa-scarlett",
+         "iso": "sg",
+         "captain": false
+        },
+        {
          "hist": "TuxedoCat",
          "name": "TuxedoCat",
          "slug": "tuxedocat",
@@ -82599,20 +82868,6 @@
          "hist": "caarrietan",
          "name": "caarrietan",
          "slug": "caarrietan",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Moira",
-         "name": "Moira",
-         "slug": "moira",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Stylus",
-         "name": "Stylus",
-         "slug": "stylus",
          "iso": "sg",
          "captain": false
         }
@@ -83446,6 +83701,20 @@
        ],
        "roster": [
         {
+         "hist": "Mikuryne",
+         "name": "Mikuryne",
+         "slug": "mikuryne",
+         "iso": "id",
+         "captain": false
+        },
+        {
+         "hist": "Chisa_Scarlett",
+         "name": "Chisa_Scarlett",
+         "slug": "chisa-scarlett",
+         "iso": "sg",
+         "captain": false
+        },
+        {
          "hist": "TuxedoCat",
          "name": "TuxedoCat",
          "slug": "tuxedocat",
@@ -83463,20 +83732,6 @@
          "hist": "caarrietan",
          "name": "caarrietan",
          "slug": "caarrietan",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Moira",
-         "name": "Moira",
-         "slug": "moira",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Stylus",
-         "name": "Stylus",
-         "slug": "stylus",
          "iso": "sg",
          "captain": false
         }
@@ -83522,951 +83777,6 @@
          "hist": "caarrietan",
          "name": "caarrietan",
          "slug": "caarrietan",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "name": "Moira",
-     "team": "Aspire",
-     "pool": "pro",
-     "kills": 318,
-     "assists": 61,
-     "deaths": 349,
-     "mvp": 43,
-     "kdr": 0.91,
-     "wins": 7,
-     "losses": 15,
-     "winrate": 0.318,
-     "ot": 0,
-     "role": "Rifler",
-     "maps": 22,
-     "orig_rank": "Bronze",
-     "orig_level": "Level 3",
-     "orig_rating": 1394.0,
-     "slug": "moira",
-     "nat": "Singapore",
-     "iso": "sg",
-     "provisional": false,
-     "rating": 0.97,
-     "ratingPoints": 1034,
-     "tier": "Gold",
-     "level": 4,
-     "kpm": 14.5,
-     "rankDelta": 0,
-     "bio": "Moira is a Level 4 rifler for Aspire, a Singaporean fragger contributing to the roster.",
-     "gender": "F",
-     "teamHistory": [
-      {
-       "team": "2Out",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2020"
-       ],
-       "roster": [
-        {
-         "hist": "jeribean",
-         "name": "Jeribean",
-         "slug": "jeribean",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "iGUMDROP",
-         "name": "iGUMDROP",
-         "slug": null,
-         "iso": "",
-         "captain": false
-        },
-        {
-         "hist": "Moira",
-         "name": "Moira",
-         "slug": "moira",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Sykkuno",
-         "name": "Sykkuno",
-         "slug": null,
-         "iso": "",
-         "captain": false
-        },
-        {
-         "hist": "kylie.tn",
-         "name": "kyyltn",
-         "slug": "kyyltn",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Knights of Ni",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2020"
-       ],
-       "roster": [
-        {
-         "hist": "KurmitSuicidal",
-         "name": "lukedefabio",
-         "slug": "lukedefabio",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "y.uuno",
-         "name": "y.uuno",
-         "slug": "y-uuno",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "moira",
-         "name": "Moira",
-         "slug": "moira",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "caarrietan",
-         "name": "caarrietan",
-         "slug": "caarrietan",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "j_lim02",
-         "name": "dla.wo",
-         "slug": "dla-wo",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "MixTrix",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2020"
-       ],
-       "roster": [
-        {
-         "hist": "JWQI",
-         "name": "JWQI",
-         "slug": "jwqi",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "Pearlim",
-         "name": "Pearlim",
-         "slug": "pearlim",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "KurmitSuicidal",
-         "name": "lukedefabio",
-         "slug": "lukedefabio",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "AshaZ",
-         "name": "MoonRaika",
-         "slug": "moonraika",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "Moira",
-         "name": "Moira",
-         "slug": "moira",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Flickception",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2020"
-       ],
-       "roster": [
-        {
-         "hist": "Dirfun",
-         "name": "Dirfun",
-         "slug": "dirfun",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "Pearlim",
-         "name": "Pearlim",
-         "slug": "pearlim",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Moira",
-         "name": "Moira",
-         "slug": "moira",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "LimitedMono",
-         "name": "chreyll",
-         "slug": "chreyll",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "lenette",
-         "name": "lenette",
-         "slug": "lenette",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Trailblaze United",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2021"
-       ],
-       "roster": [
-        {
-         "hist": "AcroBlaze",
-         "name": "AcroBlaze",
-         "slug": "acroblaze",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "Soozy",
-         "name": "Soozy",
-         "slug": "soozy",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "KurmitSuicidal",
-         "name": "lukedefabio",
-         "slug": "lukedefabio",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Decrease",
-         "name": "Decrease",
-         "slug": "decrease",
-         "iso": "us",
-         "captain": false
-        },
-        {
-         "hist": "Moira",
-         "name": "Moira",
-         "slug": "moira",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "The Setup",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2021"
-       ],
-       "roster": [
-        {
-         "hist": "AcroBlaze",
-         "name": "AcroBlaze",
-         "slug": "acroblaze",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "yinnzx",
-         "name": "yinnzx",
-         "slug": "yinnzx",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Moira",
-         "name": "Moira",
-         "slug": "moira",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "KTenshi",
-         "name": "KTenshi",
-         "slug": "ktenshi",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "joyyy_cheng",
-         "name": "joyyy_cheng",
-         "slug": "joyyy-cheng",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Aegis",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2021"
-       ],
-       "roster": [
-        {
-         "hist": "ebi",
-         "name": "ebi",
-         "slug": "ebi",
-         "iso": "my",
-         "captain": true
-        },
-        {
-         "hist": "Navikuun",
-         "name": "Navikuun",
-         "slug": "navikuun",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Moira",
-         "name": "Moira",
-         "slug": "moira",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "InfiniteHolic",
-         "name": "KrinoJ",
-         "slug": "krinoj",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Pearlim",
-         "name": "Pearlim",
-         "slug": "pearlim",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Arroast",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2021"
-       ],
-       "roster": [
-        {
-         "hist": "Xueqiii",
-         "name": "XueQiii",
-         "slug": "xueqiii",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "Mike",
-         "name": "Mike",
-         "slug": "mike",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "treblest",
-         "name": "treblest",
-         "slug": "treblest",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Moira",
-         "name": "Moira",
-         "slug": "moira",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "rebebx",
-         "name": "rebebx",
-         "slug": "rebebx",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Rise of the Finches",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2022"
-       ],
-       "roster": [
-        {
-         "hist": "CappleCrow",
-         "name": "capplecrow",
-         "slug": "capplecrow",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "Jeribean",
-         "name": "Jeribean",
-         "slug": "jeribean",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "KurmitSuicidal",
-         "name": "lukedefabio",
-         "slug": "lukedefabio",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Moira",
-         "name": "Moira",
-         "slug": "moira",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "kitties258",
-         "name": "kitties258",
-         "slug": "kitties258",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "entity",
-       "teamSlug": "entity",
-       "isPro": true,
-       "years": [
-        "2022",
-        "2023"
-       ],
-       "roster": [
-        {
-         "hist": "Navikuun",
-         "name": "Navikuun",
-         "slug": "navikuun",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "JStarWolf",
-         "name": "JStarWolf",
-         "slug": "jstarwolf",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Moira",
-         "name": "Moira",
-         "slug": "moira",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "VeniceC",
-         "name": "VeniceC",
-         "slug": "venicec",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "livingitupbt",
-         "name": "Solaonix",
-         "slug": "solaonix",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Temenos E-Sports",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2022"
-       ],
-       "roster": [
-        {
-         "hist": "le_pyrrhic",
-         "name": "le_pyrrhic",
-         "slug": "le-pyrrhic",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "JStarWolf",
-         "name": "JStarWolf",
-         "slug": "jstarwolf",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "luciddoob",
-         "name": "luciddoob",
-         "slug": "luciddoob",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Moira",
-         "name": "Moira",
-         "slug": "moira",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Mike",
-         "name": "Mike",
-         "slug": "mike",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "metanoia",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2023"
-       ],
-       "roster": [
-        {
-         "hist": "Koen",
-         "name": "koen",
-         "slug": "koen",
-         "iso": "my",
-         "captain": true
-        },
-        {
-         "hist": "HiguVT",
-         "name": "HiguVT",
-         "slug": "higuvt",
-         "iso": "au",
-         "captain": false
-        },
-        {
-         "hist": "caarrietan",
-         "name": "caarrietan",
-         "slug": "caarrietan",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "azzuto",
-         "name": "azzuto",
-         "slug": "azzuto",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Moira",
-         "name": "Moira",
-         "slug": "moira",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Royal Flush",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2023"
-       ],
-       "roster": [
-        {
-         "hist": "winda",
-         "name": "winda",
-         "slug": "winda",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Anony",
-         "name": "Anony",
-         "slug": "anony",
-         "iso": "th",
-         "captain": false
-        },
-        {
-         "hist": "airawwr",
-         "name": "airawwr",
-         "slug": "airawwr",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "kenzieyii",
-         "name": "kenzieyii",
-         "slug": "kenzieyii",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Moira",
-         "name": "Moira",
-         "slug": "moira",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Syzygy",
-       "teamSlug": "syzygy",
-       "isPro": true,
-       "years": [
-        "2023"
-       ],
-       "roster": [
-        {
-         "hist": "le_pyrrhic",
-         "name": "le_pyrrhic",
-         "slug": "le-pyrrhic",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "XJavyz",
-         "name": "xJavyz",
-         "slug": "xjavyz",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "Jenakai",
-         "name": "Jenakai",
-         "slug": "jenakai",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Moira",
-         "name": "Moira",
-         "slug": "moira",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "plainyingying",
-         "name": "plainyingying",
-         "slug": "plainyingying",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Aspire",
-       "teamSlug": "aspire",
-       "isPro": true,
-       "years": [
-        "2024",
-        "2025",
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "TuxedoCat",
-         "name": "TuxedoCat",
-         "slug": "tuxedocat",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Hanarisu",
-         "name": "Hanarisu",
-         "slug": "hanarisu",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "caarrietan",
-         "name": "caarrietan",
-         "slug": "caarrietan",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Moira",
-         "name": "Moira",
-         "slug": "moira",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Stylus",
-         "name": "Stylus",
-         "slug": "stylus",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "SG Squad 18",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "yumezukiyomi",
-         "name": "yumezukiyomi",
-         "slug": "yumezukiyomi",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "le_pyrrhic",
-         "name": "le_pyrrhic",
-         "slug": "le-pyrrhic",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "azumiying",
-         "name": "azumiying",
-         "slug": "azumiying",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "scorn",
-         "name": "scorn",
-         "slug": "scorn",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Moira",
-         "name": "Moira",
-         "slug": "moira",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "name": "Stylus",
-     "team": "Aspire",
-     "pool": "pro",
-     "kills": 262,
-     "assists": 63,
-     "deaths": 353,
-     "mvp": 28,
-     "kdr": 0.74,
-     "wins": 8,
-     "losses": 15,
-     "winrate": 0.348,
-     "ot": 0,
-     "role": "Awper",
-     "maps": 23,
-     "orig_rank": "Iron",
-     "orig_level": "Level 3",
-     "orig_rating": 1129.0,
-     "slug": "stylus",
-     "nat": "Singapore",
-     "iso": "sg",
-     "provisional": false,
-     "rating": 0.874,
-     "ratingPoints": 658,
-     "tier": "Iron",
-     "level": 2,
-     "kpm": 11.4,
-     "rankDelta": 0,
-     "soloStats": {
-      "kills": 68,
-      "deaths": 93,
-      "assists": 13,
-      "mvp": 6,
-      "wins": 2,
-      "losses": 3,
-      "maps": 5,
-      "kdr": 0.73,
-      "winrate": 0.4,
-      "rating": 0.969,
-      "ratingPoints": 1031,
-      "tier": "Gold",
-      "level": 4,
-      "soloRank": 178,
-      "soloTotal": 239,
-      "rankDelta": 0,
-      "provisional": false
-     },
-     "bio": "Stylus is an Level 2 AWPer for Aspire, a Singaporean sniper working to raise his game on the roster.",
-     "gender": "M",
-     "teamHistory": [
-      {
-       "team": "D3V14NT",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2023"
-       ],
-       "roster": [
-        {
-         "hist": "Stylus",
-         "name": "Stylus",
-         "slug": "stylus",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "ShizuyaUmiko",
-         "name": "ShizuyaUmiko",
-         "slug": "shizuyaumiko",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "Kyan",
-         "name": "Kyan",
-         "slug": "kyan",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "WO4TK",
-         "name": "WO4TK",
-         "slug": "wo4tk",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Luneforrune",
-         "name": "Luneforrune",
-         "slug": "luneforrune",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Aspire",
-       "teamSlug": "aspire",
-       "isPro": true,
-       "years": [
-        "2024",
-        "2025",
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "TuxedoCat",
-         "name": "TuxedoCat",
-         "slug": "tuxedocat",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Hanarisu",
-         "name": "Hanarisu",
-         "slug": "hanarisu",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "caarrietan",
-         "name": "caarrietan",
-         "slug": "caarrietan",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Moira",
-         "name": "Moira",
-         "slug": "moira",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Stylus",
-         "name": "Stylus",
-         "slug": "stylus",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "SG Squad 41",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "siddnely",
-         "name": "siddnely",
-         "slug": "siddnely",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "Stylus",
-         "name": "Stylus",
-         "slug": "stylus",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "midorissi",
-         "name": "midorissi",
-         "slug": "midorissi",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Hamzyy",
-         "name": "Hamzyy",
-         "slug": "hamzyy",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "kimhuaying",
-         "name": "kimhuaying",
-         "slug": "kimhuaying",
          "iso": "sg",
          "captain": false
         }
@@ -84606,6 +83916,30 @@
    ],
    "rankDelta": 0,
    "formerPlayers": [
+    {
+     "slug": "stylus",
+     "name": "Stylus",
+     "iso": "sg",
+     "years": [
+      "2024",
+      "2025",
+      "2026"
+     ],
+     "nowTeam": "",
+     "nowTeamSlug": null
+    },
+    {
+     "slug": "moira",
+     "name": "Moira",
+     "iso": "sg",
+     "years": [
+      "2024",
+      "2025",
+      "2026"
+     ],
+     "nowTeam": "",
+     "nowTeamSlug": null
+    },
     {
      "slug": "teckiyo",
      "name": "teckiyo",
@@ -96713,8 +96047,8 @@
      "years": [
       "2023"
      ],
-     "nowTeam": "Aspire",
-     "nowTeamSlug": "aspire"
+     "nowTeam": "",
+     "nowTeamSlug": null
     },
     {
      "slug": "jenakai",
@@ -113238,6 +112572,20 @@
       ],
       "roster": [
        {
+        "hist": "Mikuryne",
+        "name": "Mikuryne",
+        "slug": "mikuryne",
+        "iso": "id",
+        "captain": false
+       },
+       {
+        "hist": "Chisa_Scarlett",
+        "name": "Chisa_Scarlett",
+        "slug": "chisa-scarlett",
+        "iso": "sg",
+        "captain": false
+       },
+       {
         "hist": "TuxedoCat",
         "name": "TuxedoCat",
         "slug": "tuxedocat",
@@ -113255,20 +112603,6 @@
         "hist": "caarrietan",
         "name": "caarrietan",
         "slug": "caarrietan",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "Moira",
-        "name": "Moira",
-        "slug": "moira",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "Stylus",
-        "name": "Stylus",
-        "slug": "stylus",
         "iso": "sg",
         "captain": false
        }
@@ -113428,6 +112762,20 @@
       ],
       "roster": [
        {
+        "hist": "Mikuryne",
+        "name": "Mikuryne",
+        "slug": "mikuryne",
+        "iso": "id",
+        "captain": false
+       },
+       {
+        "hist": "Chisa_Scarlett",
+        "name": "Chisa_Scarlett",
+        "slug": "chisa-scarlett",
+        "iso": "sg",
+        "captain": false
+       },
+       {
         "hist": "TuxedoCat",
         "name": "TuxedoCat",
         "slug": "tuxedocat",
@@ -113445,20 +112793,6 @@
         "hist": "caarrietan",
         "name": "caarrietan",
         "slug": "caarrietan",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "Moira",
-        "name": "Moira",
-        "slug": "moira",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "Stylus",
-        "name": "Stylus",
-        "slug": "stylus",
         "iso": "sg",
         "captain": false
        }
@@ -113513,7 +112847,7 @@
    },
    {
     "name": "Moira",
-    "team": "Aspire",
+    "team": "",
     "pool": "pro",
     "kills": 318,
     "assists": 61,
@@ -114191,16 +113525,16 @@
         "captain": false
        },
        {
-        "hist": "Hanarisu",
-        "name": "Hanarisu",
-        "slug": "hanarisu",
+        "hist": "caarrietan",
+        "name": "caarrietan",
+        "slug": "caarrietan",
         "iso": "sg",
         "captain": false
        },
        {
-        "hist": "caarrietan",
-        "name": "caarrietan",
-        "slug": "caarrietan",
+        "hist": "Hanarisu",
+        "name": "Hanarisu",
+        "slug": "hanarisu",
         "iso": "sg",
         "captain": false
        },
@@ -115048,6 +114382,20 @@
       ],
       "roster": [
        {
+        "hist": "Mikuryne",
+        "name": "Mikuryne",
+        "slug": "mikuryne",
+        "iso": "id",
+        "captain": false
+       },
+       {
+        "hist": "Chisa_Scarlett",
+        "name": "Chisa_Scarlett",
+        "slug": "chisa-scarlett",
+        "iso": "sg",
+        "captain": false
+       },
+       {
         "hist": "TuxedoCat",
         "name": "TuxedoCat",
         "slug": "tuxedocat",
@@ -115065,20 +114413,6 @@
         "hist": "caarrietan",
         "name": "caarrietan",
         "slug": "caarrietan",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "Moira",
-        "name": "Moira",
-        "slug": "moira",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "Stylus",
-        "name": "Stylus",
-        "slug": "stylus",
         "iso": "sg",
         "captain": false
        }
@@ -115133,7 +114467,7 @@
    },
    {
     "name": "Stylus",
-    "team": "Aspire",
+    "team": "",
     "pool": "pro",
     "kills": 262,
     "assists": 63,
@@ -115244,16 +114578,16 @@
         "captain": false
        },
        {
-        "hist": "Hanarisu",
-        "name": "Hanarisu",
-        "slug": "hanarisu",
+        "hist": "caarrietan",
+        "name": "caarrietan",
+        "slug": "caarrietan",
         "iso": "sg",
         "captain": false
        },
        {
-        "hist": "caarrietan",
-        "name": "caarrietan",
-        "slug": "caarrietan",
+        "hist": "Hanarisu",
+        "name": "Hanarisu",
+        "slug": "hanarisu",
         "iso": "sg",
         "captain": false
        },
@@ -235617,7 +234951,7 @@
    },
    {
     "name": "Mikuryne",
-    "team": "",
+    "team": "Aspire",
     "pool": "pro",
     "kills": 163,
     "assists": 13,
@@ -235645,6 +234979,51 @@
     "kpm": 18.1,
     "rankDelta": 0,
     "teamHistory": [
+     {
+      "team": "Aspire",
+      "teamSlug": "aspire",
+      "isPro": true,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Mikuryne",
+        "name": "Mikuryne",
+        "slug": "mikuryne",
+        "iso": "id",
+        "captain": false
+       },
+       {
+        "hist": "Chisa_Scarlett",
+        "name": "Chisa_Scarlett",
+        "slug": "chisa-scarlett",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "TuxedoCat",
+        "name": "TuxedoCat",
+        "slug": "tuxedocat",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Hanarisu",
+        "name": "Hanarisu",
+        "slug": "hanarisu",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "caarrietan",
+        "name": "caarrietan",
+        "slug": "caarrietan",
+        "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
      {
       "team": "Team Indonesia",
       "teamSlug": null,
@@ -235987,7 +235366,7 @@
    },
    {
     "name": "Chisa_Scarlett",
-    "team": "",
+    "team": "Aspire",
     "pool": "pro",
     "kills": 110,
     "assists": 9,
@@ -236015,6 +235394,51 @@
     "kpm": 22.0,
     "rankDelta": 0,
     "teamHistory": [
+     {
+      "team": "Aspire",
+      "teamSlug": "aspire",
+      "isPro": true,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Mikuryne",
+        "name": "Mikuryne",
+        "slug": "mikuryne",
+        "iso": "id",
+        "captain": false
+       },
+       {
+        "hist": "Chisa_Scarlett",
+        "name": "Chisa_Scarlett",
+        "slug": "chisa-scarlett",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "TuxedoCat",
+        "name": "TuxedoCat",
+        "slug": "tuxedocat",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Hanarisu",
+        "name": "Hanarisu",
+        "slug": "hanarisu",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "caarrietan",
+        "name": "caarrietan",
+        "slug": "caarrietan",
+        "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
      {
       "team": "SG Squad 42",
       "teamSlug": null,
@@ -309778,6 +309202,20 @@
      "teamSlug": "aspire",
      "players": [
       {
+       "hist": "Mikuryne",
+       "name": "Mikuryne",
+       "slug": "mikuryne",
+       "iso": "id",
+       "captain": false
+      },
+      {
+       "hist": "Chisa_Scarlett",
+       "name": "Chisa_Scarlett",
+       "slug": "chisa-scarlett",
+       "iso": "sg",
+       "captain": false
+      },
+      {
        "hist": "TuxedoCat",
        "name": "TuxedoCat",
        "slug": "tuxedocat",
@@ -309795,20 +309233,6 @@
        "hist": "caarrietan",
        "name": "caarrietan",
        "slug": "caarrietan",
-       "iso": "sg",
-       "captain": false
-      },
-      {
-       "hist": "Moira",
-       "name": "Moira",
-       "slug": "moira",
-       "iso": "sg",
-       "captain": false
-      },
-      {
-       "hist": "Stylus",
-       "name": "Stylus",
-       "slug": "stylus",
        "iso": "sg",
        "captain": false
       }
@@ -391918,6 +391342,54 @@
  "transfers": [
   {
    "type": "transfer",
+   "player": "Stylus",
+   "playerSlug": "stylus",
+   "iso": "sg",
+   "fromTeam": "Aspire",
+   "fromSlug": "aspire",
+   "toTeam": "Free agent",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-30"
+  },
+  {
+   "type": "transfer",
+   "player": "Moira",
+   "playerSlug": "moira",
+   "iso": "sg",
+   "fromTeam": "Aspire",
+   "fromSlug": "aspire",
+   "toTeam": "Free agent",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-30"
+  },
+  {
+   "type": "transfer",
+   "player": "Chisa_Scarlett",
+   "playerSlug": "chisa-scarlett",
+   "iso": "sg",
+   "fromTeam": "Free agent",
+   "fromSlug": null,
+   "toTeam": "Aspire",
+   "toSlug": "aspire",
+   "toPro": true,
+   "date": "2026-09-30"
+  },
+  {
+   "type": "transfer",
+   "player": "Mikuryne",
+   "playerSlug": "mikuryne",
+   "iso": "id",
+   "fromTeam": "Free agent",
+   "fromSlug": null,
+   "toTeam": "Aspire",
+   "toSlug": "aspire",
+   "toPro": true,
+   "date": "2026-09-30"
+  },
+  {
+   "type": "transfer",
    "player": "Eris Suzukami",
    "playerSlug": "eris-suzukami",
    "iso": "kr",
@@ -392757,6 +392229,18 @@
    "date": "2026-09-27"
   },
   {
+   "type": "transfer",
+   "player": "Mikuryne",
+   "playerSlug": "mikuryne",
+   "iso": "id",
+   "fromTeam": "Aspire",
+   "fromSlug": "aspire",
+   "toTeam": "Team Indonesia",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
    "type": "debut",
    "player": "KinEto46",
    "playerSlug": "kineto46",
@@ -392776,18 +392260,6 @@
    "fromTeam": null,
    "fromSlug": null,
    "toTeam": "Team United Kingdom",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "debut",
-   "player": "Mikuryne",
-   "playerSlug": "mikuryne",
-   "iso": "id",
-   "fromTeam": null,
-   "fromSlug": null,
-   "toTeam": "Team Indonesia",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-27"
@@ -397041,6 +396513,18 @@
    "date": "2026-09-20"
   },
   {
+   "type": "transfer",
+   "player": "Chisa_Scarlett",
+   "playerSlug": "chisa-scarlett",
+   "iso": "sg",
+   "fromTeam": "Aspire",
+   "fromSlug": "aspire",
+   "toTeam": "SG Squad 42",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-20"
+  },
+  {
    "type": "debut",
    "player": "miyomille",
    "playerSlug": "miyomille",
@@ -397132,18 +396616,6 @@
    "fromTeam": null,
    "fromSlug": null,
    "toTeam": "SG Squad 41",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-20"
-  },
-  {
-   "type": "debut",
-   "player": "Chisa_Scarlett",
-   "playerSlug": "chisa-scarlett",
-   "iso": "sg",
-   "fromTeam": null,
-   "fromSlug": null,
-   "toTeam": "SG Squad 42",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-20"
