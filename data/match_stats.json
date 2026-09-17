@@ -9757,6 +9757,410 @@
      ]
     }
    ]
+  },
+  "1-5": {
+   "maps": [
+    {
+     "map": "Tuscan",
+     "scoreA": 13,
+     "scoreB": 8,
+     "players": [
+      {
+       "team": "Divide&Conquer",
+       "name": "LITA",
+       "k": 27,
+       "a": 3,
+       "d": 12,
+       "mvp": 7,
+       "score": 76
+      },
+      {
+       "team": "Divide&Conquer",
+       "name": "chreyll",
+       "k": 17,
+       "a": 2,
+       "d": 16,
+       "mvp": 2,
+       "score": 46
+      },
+      {
+       "team": "Divide&Conquer",
+       "name": "InfiniteBreaker",
+       "k": 18,
+       "a": 0,
+       "d": 13,
+       "mvp": 2,
+       "score": 40
+      },
+      {
+       "team": "Divide&Conquer",
+       "name": "laavv._",
+       "k": 12,
+       "a": 3,
+       "d": 18,
+       "mvp": 0,
+       "score": 30
+      },
+      {
+       "team": "Divide&Conquer",
+       "name": "Solec",
+       "k": 11,
+       "a": 4,
+       "d": 20,
+       "mvp": 2,
+       "score": 28
+      },
+      {
+       "team": "Albion Rising",
+       "name": "Nerfox",
+       "k": 21,
+       "a": 0,
+       "d": 16,
+       "mvp": 2,
+       "score": 52
+      },
+      {
+       "team": "Albion Rising",
+       "name": "Hanyachi",
+       "k": 16,
+       "a": 1,
+       "d": 17,
+       "mvp": 1,
+       "score": 42
+      },
+      {
+       "team": "Albion Rising",
+       "name": "Zarlard",
+       "k": 14,
+       "a": 3,
+       "d": 15,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "Albion Rising",
+       "name": "PSYSTRA",
+       "k": 16,
+       "a": 2,
+       "d": 19,
+       "mvp": 1,
+       "score": 34
+      },
+      {
+       "team": "Albion Rising",
+       "name": "Aleaka",
+       "k": 12,
+       "a": 2,
+       "d": 18,
+       "mvp": 2,
+       "score": 27
+      }
+     ]
+    }
+   ]
+  },
+  "1-6": {
+   "maps": [
+    {
+     "map": "Tuscan",
+     "scoreA": 13,
+     "scoreB": 5,
+     "players": [
+      {
+       "team": "Prism Divide",
+       "name": "Syrrith",
+       "k": 20,
+       "a": 5,
+       "d": 9,
+       "mvp": 3,
+       "score": 54
+      },
+      {
+       "team": "Prism Divide",
+       "name": "sayupurin",
+       "k": 14,
+       "a": 3,
+       "d": 11,
+       "mvp": 2,
+       "score": 38
+      },
+      {
+       "team": "Prism Divide",
+       "name": "AkanersVT",
+       "k": 14,
+       "a": 2,
+       "d": 11,
+       "mvp": 3,
+       "score": 34
+      },
+      {
+       "team": "Prism Divide",
+       "name": "XueQiii",
+       "k": 13,
+       "a": 2,
+       "d": 12,
+       "mvp": 1,
+       "score": 34
+      },
+      {
+       "team": "Prism Divide",
+       "name": "Codiant",
+       "k": 11,
+       "a": 1,
+       "d": 13,
+       "mvp": 4,
+       "score": 28
+      },
+      {
+       "team": "Radiant Coil",
+       "name": "Laurel",
+       "k": 16,
+       "a": 1,
+       "d": 12,
+       "mvp": 2,
+       "score": 42
+      },
+      {
+       "team": "Radiant Coil",
+       "name": "kenzieyii",
+       "k": 12,
+       "a": 2,
+       "d": 13,
+       "mvp": 1,
+       "score": 30
+      },
+      {
+       "team": "Radiant Coil",
+       "name": "kimonra",
+       "k": 9,
+       "a": 4,
+       "d": 14,
+       "mvp": 1,
+       "score": 27
+      },
+      {
+       "team": "Radiant Coil",
+       "name": "JStarWolf",
+       "k": 10,
+       "a": 2,
+       "d": 16,
+       "mvp": 0,
+       "score": 24
+      },
+      {
+       "team": "Radiant Coil",
+       "name": "Aweberry",
+       "k": 9,
+       "a": 2,
+       "d": 17,
+       "mvp": 1,
+       "score": 20
+      }
+     ]
+    }
+   ]
+  },
+  "1-7": {
+   "maps": [
+    {
+     "map": "Inferno",
+     "scoreA": 10,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Wanderlight",
+       "name": "tiger.lark",
+       "k": 20,
+       "a": 2,
+       "d": 15,
+       "mvp": 3,
+       "score": 52
+      },
+      {
+       "team": "Wanderlight",
+       "name": "vixi",
+       "k": 15,
+       "a": 2,
+       "d": 17,
+       "mvp": 3,
+       "score": 38
+      },
+      {
+       "team": "Wanderlight",
+       "name": "dla.wo",
+       "k": 13,
+       "a": 0,
+       "d": 19,
+       "mvp": 2,
+       "score": 33
+      },
+      {
+       "team": "Wanderlight",
+       "name": "SoapiiSereia",
+       "k": 12,
+       "a": 3,
+       "d": 18,
+       "mvp": 2,
+       "score": 32
+      },
+      {
+       "team": "Wanderlight",
+       "name": "itswendy_",
+       "k": 8,
+       "a": 0,
+       "d": 16,
+       "mvp": 0,
+       "score": 23
+      },
+      {
+       "team": "Ukiyo",
+       "name": "Acryii_",
+       "k": 24,
+       "a": 1,
+       "d": 13,
+       "mvp": 5,
+       "score": 56
+      },
+      {
+       "team": "Ukiyo",
+       "name": "kael",
+       "k": 20,
+       "a": 2,
+       "d": 14,
+       "mvp": 2,
+       "score": 53
+      },
+      {
+       "team": "Ukiyo",
+       "name": "MugCowPayLucky",
+       "k": 16,
+       "a": 1,
+       "d": 15,
+       "mvp": 0,
+       "score": 37
+      },
+      {
+       "team": "Ukiyo",
+       "name": "Kai",
+       "k": 13,
+       "a": 2,
+       "d": 13,
+       "mvp": 4,
+       "score": 36
+      },
+      {
+       "team": "Ukiyo",
+       "name": "nattyuwus",
+       "k": 12,
+       "a": 1,
+       "d": 13,
+       "mvp": 2,
+       "score": 29
+      }
+     ]
+    }
+   ]
+  },
+  "1-8": {
+   "maps": [
+    {
+     "map": "Tuscan",
+     "scoreA": 7,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Aimpunch",
+       "name": "Sketch",
+       "k": 12,
+       "a": 2,
+       "d": 16,
+       "mvp": 0,
+       "score": 37
+      },
+      {
+       "team": "Aimpunch",
+       "name": "Chiai Fujikawa",
+       "k": 15,
+       "a": 0,
+       "d": 17,
+       "mvp": 2,
+       "score": 32
+      },
+      {
+       "team": "Aimpunch",
+       "name": "balililmao",
+       "k": 14,
+       "a": 0,
+       "d": 15,
+       "mvp": 1,
+       "score": 30
+      },
+      {
+       "team": "Aimpunch",
+       "name": "[Idiot] AngelCrutcher",
+       "k": 12,
+       "a": 2,
+       "d": 15,
+       "mvp": 3,
+       "score": 27
+      },
+      {
+       "team": "Aimpunch",
+       "name": "mond33__",
+       "k": 9,
+       "a": 3,
+       "d": 16,
+       "mvp": 1,
+       "score": 24
+      },
+      {
+       "team": "Flood Flashers",
+       "name": "Emily_melody",
+       "k": 18,
+       "a": 1,
+       "d": 12,
+       "mvp": 5,
+       "score": 41
+      },
+      {
+       "team": "Flood Flashers",
+       "name": "cassiopeiarawr",
+       "k": 19,
+       "a": 2,
+       "d": 14,
+       "mvp": 3,
+       "score": 41
+      },
+      {
+       "team": "Flood Flashers",
+       "name": "ShizuyaUmiko",
+       "k": 16,
+       "a": 4,
+       "d": 11,
+       "mvp": 3,
+       "score": 41
+      },
+      {
+       "team": "Flood Flashers",
+       "name": "Shinomiya Runa",
+       "k": 13,
+       "a": 3,
+       "d": 12,
+       "mvp": 1,
+       "score": 33
+      },
+      {
+       "team": "Flood Flashers",
+       "name": "Komori Met",
+       "k": 13,
+       "a": 3,
+       "d": 13,
+       "mvp": 1,
+       "score": 31
+      }
+     ]
+    }
+   ]
   }
  },
  "nations-cup-qualifier-philippines-2026": {

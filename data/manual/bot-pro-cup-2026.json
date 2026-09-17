@@ -63,30 +63,66 @@
      "round": 2,
      "a": "Divide&Conquer",
      "b": "Albion Rising",
-     "sa": null,
-     "sb": null
+     "sa": 13,
+     "sb": 8,
+     "ts": 1789625021
     },
     {
      "id": 6,
      "round": 2,
      "a": "Prism Divide",
      "b": "Radiant Coil",
-     "sa": null,
-     "sb": null
+     "sa": 13,
+     "sb": 5,
+     "ts": 1789625531
     },
     {
      "id": 7,
      "round": 2,
      "a": "Wanderlight",
      "b": "Ukiyo",
-     "sa": null,
-     "sb": null
+     "sa": 10,
+     "sb": 13,
+     "ts": 1789626233
     },
     {
      "id": 8,
      "round": 2,
      "a": "Aimpunch",
      "b": "Flood Flashers",
+     "sa": 7,
+     "sb": 13,
+     "ts": 1789628493
+    },
+    {
+     "id": 9,
+     "round": 3,
+     "a": "Divide&Conquer",
+     "b": "Prism Divide",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 10,
+     "round": 3,
+     "a": "Flood Flashers",
+     "b": "Ukiyo",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 11,
+     "round": 3,
+     "a": "Albion Rising",
+     "b": "Radiant Coil",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 12,
+     "round": 3,
+     "a": "Wanderlight",
+     "b": "entity",
      "sa": null,
      "sb": null
     }
@@ -94,7 +130,8 @@
    "rounds": 5,
    "roundTitles": {
     "1": "Round 1",
-    "2": "Round 2"
+    "2": "Round 2",
+    "3": "Round 3"
    }
   },
   {
