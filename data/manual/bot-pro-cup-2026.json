@@ -321,30 +321,66 @@
      "round": 2,
      "a": "Mourningstar",
      "b": "Alcheministry",
-     "sa": null,
-     "sb": null
+     "sa": 5,
+     "sb": 13,
+     "ts": 1789634449
     },
     {
      "id": 6,
      "round": 2,
      "a": "division20",
      "b": "New Jade",
-     "sa": null,
-     "sb": null
+     "sa": 13,
+     "sb": 9,
+     "ts": 1789635294
     },
     {
      "id": 7,
      "round": 2,
      "a": "Team Neverseen",
      "b": "PepegaX",
-     "sa": null,
-     "sb": null
+     "sa": 4,
+     "sb": 13,
+     "ts": 1789635737
     },
     {
      "id": 8,
      "round": 2,
      "a": "Echo Cipher",
      "b": "BeeHyve",
+     "sa": 2,
+     "sb": 13,
+     "ts": 1789636231
+    },
+    {
+     "id": 9,
+     "round": 3,
+     "a": "Alcheministry",
+     "b": "division20",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 10,
+     "round": 3,
+     "a": "PepegaX",
+     "b": "BeeHyve",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 11,
+     "round": 3,
+     "a": "Mourningstar",
+     "b": "New Jade",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 12,
+     "round": 3,
+     "a": "Team Neverseen",
+     "b": "Feral Instinct",
      "sa": null,
      "sb": null
     }
@@ -352,7 +388,8 @@
    "rounds": 5,
    "roundTitles": {
     "1": "Round 1",
-    "2": "Round 2"
+    "2": "Round 2",
+    "3": "Round 3"
    }
   },
   {

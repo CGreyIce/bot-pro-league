@@ -10565,6 +10565,410 @@
      ]
     }
    ]
+  },
+  "3-5": {
+   "maps": [
+    {
+     "map": "Anubis",
+     "scoreA": 5,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Mourningstar",
+       "name": "TearsofDeath",
+       "k": 17,
+       "a": 3,
+       "d": 14,
+       "mvp": 2,
+       "score": 42
+      },
+      {
+       "team": "Mourningstar",
+       "name": "arcimoon",
+       "k": 11,
+       "a": 1,
+       "d": 15,
+       "mvp": 1,
+       "score": 38
+      },
+      {
+       "team": "Mourningstar",
+       "name": "Jira Jisaki",
+       "k": 7,
+       "a": 4,
+       "d": 14,
+       "mvp": 2,
+       "score": 28
+      },
+      {
+       "team": "Mourningstar",
+       "name": "cherri_vt",
+       "k": 4,
+       "a": 1,
+       "d": 17,
+       "mvp": 0,
+       "score": 17
+      },
+      {
+       "team": "Mourningstar",
+       "name": "EXaCT",
+       "k": 4,
+       "a": 1,
+       "d": 18,
+       "mvp": 0,
+       "score": 9
+      },
+      {
+       "team": "Alcheministry",
+       "name": "tanykeat",
+       "k": 19,
+       "a": 3,
+       "d": 8,
+       "mvp": 4,
+       "score": 52
+      },
+      {
+       "team": "Alcheministry",
+       "name": "d.chong",
+       "k": 15,
+       "a": 1,
+       "d": 7,
+       "mvp": 3,
+       "score": 50
+      },
+      {
+       "team": "Alcheministry",
+       "name": "hikopiko_",
+       "k": 14,
+       "a": 1,
+       "d": 8,
+       "mvp": 3,
+       "score": 48
+      },
+      {
+       "team": "Alcheministry",
+       "name": "EviKuroneko",
+       "k": 11,
+       "a": 2,
+       "d": 5,
+       "mvp": 2,
+       "score": 38
+      },
+      {
+       "team": "Alcheministry",
+       "name": "NekoSoji",
+       "k": 8,
+       "a": 3,
+       "d": 6,
+       "mvp": 1,
+       "score": 37
+      }
+     ]
+    }
+   ]
+  },
+  "3-6": {
+   "maps": [
+    {
+     "map": "Cache",
+     "scoreA": 13,
+     "scoreB": 9,
+     "players": [
+      {
+       "team": "division20",
+       "name": "Laburi",
+       "k": 24,
+       "a": 4,
+       "d": 16,
+       "mvp": 5,
+       "score": 60
+      },
+      {
+       "team": "division20",
+       "name": "Eroxis",
+       "k": 17,
+       "a": 2,
+       "d": 14,
+       "mvp": 3,
+       "score": 45
+      },
+      {
+       "team": "division20",
+       "name": "Spoods",
+       "k": 18,
+       "a": 1,
+       "d": 15,
+       "mvp": 2,
+       "score": 42
+      },
+      {
+       "team": "division20",
+       "name": "kitties258",
+       "k": 11,
+       "a": 3,
+       "d": 13,
+       "mvp": 2,
+       "score": 35
+      },
+      {
+       "team": "division20",
+       "name": "y.uuno",
+       "k": 12,
+       "a": 1,
+       "d": 15,
+       "mvp": 1,
+       "score": 28
+      },
+      {
+       "team": "New Jade",
+       "name": "VPLH",
+       "k": 17,
+       "a": 1,
+       "d": 15,
+       "mvp": 3,
+       "score": 41
+      },
+      {
+       "team": "New Jade",
+       "name": "jenapoppins",
+       "k": 11,
+       "a": 2,
+       "d": 16,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "New Jade",
+       "name": "Jeribean",
+       "k": 11,
+       "a": 1,
+       "d": 13,
+       "mvp": 2,
+       "score": 34
+      },
+      {
+       "team": "New Jade",
+       "name": "Astro_Ruckus",
+       "k": 8,
+       "a": 3,
+       "d": 17,
+       "mvp": 1,
+       "score": 28
+      },
+      {
+       "team": "New Jade",
+       "name": "crazywhoopies",
+       "k": 6,
+       "a": 1,
+       "d": 18,
+       "mvp": 1,
+       "score": 17
+      }
+     ]
+    }
+   ]
+  },
+  "3-7": {
+   "maps": [
+    {
+     "map": "Tuscan",
+     "scoreA": 4,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Team Neverseen",
+       "name": "S.GT",
+       "k": 14,
+       "a": 2,
+       "d": 15,
+       "mvp": 1,
+       "score": 31
+      },
+      {
+       "team": "Team Neverseen",
+       "name": "Niito",
+       "k": 11,
+       "a": 1,
+       "d": 16,
+       "mvp": 1,
+       "score": 26
+      },
+      {
+       "team": "Team Neverseen",
+       "name": "jhjj80",
+       "k": 10,
+       "a": 1,
+       "d": 16,
+       "mvp": 0,
+       "score": 22
+      },
+      {
+       "team": "Team Neverseen",
+       "name": "HeyImKaiWen",
+       "k": 5,
+       "a": 2,
+       "d": 14,
+       "mvp": 2,
+       "score": 16
+      },
+      {
+       "team": "Team Neverseen",
+       "name": "pashionfruit18",
+       "k": 3,
+       "a": 4,
+       "d": 16,
+       "mvp": 0,
+       "score": 10
+      },
+      {
+       "team": "PepegaX",
+       "name": "Nifela",
+       "k": 24,
+       "a": 0,
+       "d": 7,
+       "mvp": 6,
+       "score": 54
+      },
+      {
+       "team": "PepegaX",
+       "name": "AcroBlaze",
+       "k": 22,
+       "a": 4,
+       "d": 7,
+       "mvp": 4,
+       "score": 54
+      },
+      {
+       "team": "PepegaX",
+       "name": "yuuki_PS",
+       "k": 13,
+       "a": 2,
+       "d": 9,
+       "mvp": 1,
+       "score": 34
+      },
+      {
+       "team": "PepegaX",
+       "name": "ehsten",
+       "k": 11,
+       "a": 2,
+       "d": 9,
+       "mvp": 1,
+       "score": 29
+      },
+      {
+       "team": "PepegaX",
+       "name": "Reffelexx",
+       "k": 7,
+       "a": 0,
+       "d": 11,
+       "mvp": 1,
+       "score": 16
+      }
+     ]
+    }
+   ]
+  },
+  "3-8": {
+   "maps": [
+    {
+     "map": "Tuscan",
+     "scoreA": 2,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Echo Cipher",
+       "name": "thehidz",
+       "k": 14,
+       "a": 2,
+       "d": 15,
+       "mvp": 0,
+       "score": 35
+      },
+      {
+       "team": "Echo Cipher",
+       "name": "okjustsmd",
+       "k": 5,
+       "a": 1,
+       "d": 14,
+       "mvp": 1,
+       "score": 13
+      },
+      {
+       "team": "Echo Cipher",
+       "name": "CodedEcho",
+       "k": 5,
+       "a": 0,
+       "d": 13,
+       "mvp": 1,
+       "score": 13
+      },
+      {
+       "team": "Echo Cipher",
+       "name": "anju_o",
+       "k": 5,
+       "a": 0,
+       "d": 15,
+       "mvp": 0,
+       "score": 10
+      },
+      {
+       "team": "Echo Cipher",
+       "name": "twentyrosie",
+       "k": 3,
+       "a": 3,
+       "d": 14,
+       "mvp": 0,
+       "score": 10
+      },
+      {
+       "team": "BeeHyve",
+       "name": "Tigeraxd",
+       "k": 20,
+       "a": 0,
+       "d": 6,
+       "mvp": 3,
+       "score": 51
+      },
+      {
+       "team": "BeeHyve",
+       "name": "TiniiBee",
+       "k": 14,
+       "a": 1,
+       "d": 8,
+       "mvp": 4,
+       "score": 33
+      },
+      {
+       "team": "BeeHyve",
+       "name": "keikatamori",
+       "k": 14,
+       "a": 1,
+       "d": 4,
+       "mvp": 2,
+       "score": 31
+      },
+      {
+       "team": "BeeHyve",
+       "name": "_froggiee",
+       "k": 13,
+       "a": 2,
+       "d": 8,
+       "mvp": 2,
+       "score": 31
+      },
+      {
+       "team": "BeeHyve",
+       "name": "Hyvred",
+       "k": 10,
+       "a": 0,
+       "d": 6,
+       "mvp": 2,
+       "score": 26
+      }
+     ]
+    }
+   ]
   }
  },
  "nations-cup-qualifier-philippines-2026": {
