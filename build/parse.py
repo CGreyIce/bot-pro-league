@@ -1136,42 +1136,6 @@ def main():
                 t["originIso"] = origin_iso
                 t["originCountry"] = next((p.get("nat", "") for p in t["roster"] if p.get("iso") == origin_iso), "")
 
-    # ---- map profiles for ad-hoc amateur teams (for the veto simulator) — in-progress events ----
-    # Same lifecycle as the team override above: available while the event is live, gone once it
-    # finishes (unless a team is promoted to pro and gains its own page). The team has no games of
-    # its own, so each map is either ESTIMATED (the average of its roster players' real per-map win
-    # rates, e.g. from the Nations Cup) or, where no player has played that map, a seeded projection
-    # around a base set by the roster's average Rating Points.
-    adhoc_map_teams = []
-    for tr in tournaments:
-        if tr["slug"] not in manual_slugs_a or tr.get("champion") or "nations-cup" in tr["slug"]:
-            continue                          # national teams are temporary; not veto teams
-        for row in tr.get("attending", []):
-            if row.get("teamSlug"):
-                continue
-            rs = [slug_to_player[pl["slug"]]["rating"] for pl in row["players"]
-                  if pl.get("slug") and slug_to_player.get(pl["slug"]) and slug_to_player[pl["slug"]].get("rating") is not None]
-            avg = sum(rs) / len(rs) if rs else 1.0
-            base = max(0.38, min(0.60, 0.5 + (avg - 1.0) * 0.9))
-            stats = {}
-            for cm in POOL_MAPS:
-                wrs, sample = [], 0                       # roster players who've actually played this map
-                for pl in row["players"]:
-                    w, l = player_map_rec.get(pl.get("slug"), {}).get(cm, [0, 0])
-                    if w + l > 0:
-                        wrs.append(w / (w + l)); sample += w + l
-                if wrs:                                   # estimate from the players' own map form
-                    stats[cm] = {"w": 0, "l": 0, "g": 0, "wr": round(sum(wrs) / len(wrs), 3),
-                                 "real": False, "est": True, "estN": len(wrs), "estMaps": sample}
-                else:                                     # nobody has played it -> seeded projection
-                    off = (_seed(row["team"] + "|" + cm) % 4200) / 10000.0 - 0.21
-                    stats[cm] = {"w": 0, "l": 0, "g": 0, "wr": round(max(0.20, min(0.82, base + off)), 3),
-                                 "real": False, "est": False}
-            order = sorted(POOL_MAPS, key=lambda cm: (-stats[cm]["wr"], cm))
-            adhoc_map_teams.append({"name": row["team"], "slug": "adhoc-" + norm_key(row["team"]),
-                                    "mapStats": stats, "bestMaps": order[:2],
-                                    "worstMaps": [order[-1], order[-2]], "adhoc": True, "event": tr["name"]})
-
     # Per-map W/L keyed by team DISPLAY NAME, across every event. Ad-hoc and national teams carry
     # no team slug (aTeam/bTeam are null), so slug-based map_rec above misses them — this keys off
     # the a/b names instead. Scanned each build, so recording any new game's scoreboard feeds it.
@@ -1188,6 +1152,48 @@ def main():
                 a, b = m.get("a"), m.get("b")
                 if a: _name_map_rec[a][cm][0 if sa > sb else 1] += 1
                 if b: _name_map_rec[b][cm][1 if sa > sb else 0] += 1
+
+    # ---- map profiles for ad-hoc amateur teams (for the veto simulator) — in-progress events ----
+    # Same lifecycle as the team override above: available while the event is live, gone once it
+    # finishes (unless a team is promoted to pro and gains its own page). Per map, in priority:
+    #   1) the team's OWN recorded games once it has a real sample (2+ maps),
+    #   2) else ESTIMATED — the average of its roster players' real per-map win rates (e.g. Nations
+    #      Cup form), which the team's own results replace as they come in,
+    #   3) else a seeded projection around a base set by the roster's average Rating Points.
+    adhoc_map_teams = []
+    for tr in tournaments:
+        if tr["slug"] not in manual_slugs_a or tr.get("champion") or "nations-cup" in tr["slug"]:
+            continue                          # national teams are temporary; not veto teams
+        for row in tr.get("attending", []):
+            if row.get("teamSlug"):
+                continue
+            rs = [slug_to_player[pl["slug"]]["rating"] for pl in row["players"]
+                  if pl.get("slug") and slug_to_player.get(pl["slug"]) and slug_to_player[pl["slug"]].get("rating") is not None]
+            avg = sum(rs) / len(rs) if rs else 1.0
+            base = max(0.38, min(0.60, 0.5 + (avg - 1.0) * 0.9))
+            stats = {}
+            for cm in POOL_MAPS:
+                tw, tl = _name_map_rec.get(row["team"], {}).get(cm, [0, 0]); tg = tw + tl
+                if tg >= 2:                               # the team's OWN games -> real, replaces the estimate
+                    stats[cm] = {"w": tw, "l": tl, "g": tg, "wr": round(tw / tg, 3), "real": True, "est": False}
+                    continue
+                wrs, sample = [], 0                       # else: roster players who've actually played this map
+                for pl in row["players"]:
+                    w, l = player_map_rec.get(pl.get("slug"), {}).get(cm, [0, 0])
+                    if w + l > 0:
+                        wrs.append(w / (w + l)); sample += w + l
+                if wrs:                                   # estimate from the players' own map form
+                    stats[cm] = {"w": tw, "l": tl, "g": 0, "wr": round(sum(wrs) / len(wrs), 3),
+                                 "real": False, "est": True, "estN": len(wrs), "estMaps": sample}
+                else:                                     # nobody has played it -> seeded projection
+                    off = (_seed(row["team"] + "|" + cm) % 4200) / 10000.0 - 0.21
+                    stats[cm] = {"w": tw, "l": tl, "g": 0, "wr": round(max(0.20, min(0.82, base + off)), 3),
+                                 "real": False, "est": False}
+            order = sorted(POOL_MAPS, key=lambda cm: (-stats[cm]["wr"], cm))
+            adhoc_map_teams.append({"name": row["team"], "slug": "adhoc-" + norm_key(row["team"]),
+                                    "mapStats": stats, "bestMaps": order[:2],
+                                    "worstMaps": [order[-1], order[-2]], "adhoc": True, "event": tr["name"]})
+
     # A nation team is exactly the squad that won its qualifier (same five players), matched by
     # roster so an all-star pick that differs falls back to the seeded profile.
     _qual_squad_by_roster = {}
