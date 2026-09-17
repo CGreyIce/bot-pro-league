@@ -366,6 +366,7 @@ def to_standard(man):
         "finalStandings": tournament_placements(man),
         "seeds": man.get("seeds", {}),
         "predictionsLocked": bool(man.get("predictionsLocked")),
+        "completed": bool(man.get("completed")),
         "noHonors": bool(man.get("noHonors")),
         "nationTeam": man.get("nationTeam"),
     }
@@ -389,7 +390,8 @@ def list_manual():
         if fn.endswith(".json"):
             m = json.load(open(os.path.join(MANUAL, fn), encoding="utf-8"))
             out.append({"slug": m["slug"], "name": m["name"], "tier": m["tier"], "date": m["date"],
-                        "stages": len(m.get("stages", [])), "predictionsLocked": bool(m.get("predictionsLocked"))})
+                        "stages": len(m.get("stages", [])), "predictionsLocked": bool(m.get("predictionsLocked")),
+                        "completed": bool(m.get("completed"))})
     return out
 
 # ---------------- mutations ----------------
@@ -421,6 +423,43 @@ def set_predictions_locked(slug, locked):
     man = load(slug)
     if not man: return None
     man["predictionsLocked"] = bool(locked)
+    save(man); return man
+
+def _freeze_rosters(slug):
+    """Snapshot the event's current resolved line-ups into hist_rosters.json so a later roster
+    change can't retroactively rewrite who played this finished event ('the roster that played')."""
+    data_path = os.path.join(ROOT, "site", "data.json")
+    if not os.path.exists(data_path):
+        return
+    try:
+        d = json.load(open(data_path, encoding="utf-8"))
+    except Exception:
+        return
+    tr = next((t for t in d.get("tournaments", []) if t.get("slug") == slug), None)
+    if not tr:
+        return
+    rows = []
+    for r in tr.get("attending", []):
+        players = [{"name": p["name"], "captain": bool(p.get("captain")), "curSlug": p.get("slug")}
+                   for p in r.get("players", []) if p.get("name")]
+        if players:
+            rows.append({"team": r.get("team"), "teamSlug": r.get("teamSlug"), "players": players})
+    if not rows:
+        return
+    hp = os.path.join(ROOT, "data", "hist_rosters.json")
+    hist = json.load(open(hp, encoding="utf-8")) if os.path.exists(hp) else {}
+    hist[slug] = rows
+    json.dump(hist, open(hp, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+def set_completed(slug, completed):
+    """Mark an event finished. On completion its rosters are frozen (pinned) so they stay 'the
+    roster that played', and it's archived off the active admin list. Reopening just un-archives
+    it (the pinned rosters remain until it's completed again)."""
+    man = load(slug)
+    if not man: return None
+    man["completed"] = bool(completed)
+    if man["completed"]:
+        _freeze_rosters(slug)
     save(man); return man
 
 def _stage(man, sid):

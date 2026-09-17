@@ -1728,16 +1728,30 @@ async function renderAdmin(){
   }
   _adminTeams = state.teams || [];
   const tiers = [["major","Major"],["s","S-Tier"],["a","A-Tier"]];
-  const listHtml = state.tournaments.length ? state.tournaments.map(t=>`
+  const _active = state.tournaments.filter(t=>!t.completed);
+  const _done = state.tournaments.filter(t=>t.completed);
+  const _tierBadge = t=>`<span class="event-tier ${TIER_CLASS[t.tier]}">${esc((t.tier==='major'?'MAJ':t.tier==='s'?'S':'A'))}</span>`;
+  const listHtml = _active.length ? _active.map(t=>`
       <div class="adm-trow">
-        <span class="event-tier ${TIER_CLASS[t.tier]}">${esc((t.tier==='major'?'MAJ':t.tier==='s'?'S':'A'))}</span>
+        ${_tierBadge(t)}
         <a href="#/admin" data-edit="${esc(t.slug)}" class="adm-name">${esc(t.name)}</a>
         <span class="muted" style="font-size:12px">${esc(t.date)} · ${t.stages} stage${t.stages===1?'':'s'}</span>
         <a href="#/tournament/${esc(t.slug)}" class="muted" style="font-size:12px">view →</a>
         <button class="adm-predlock ${t.predictionsLocked?'on':''}" data-predlock="${esc(t.slug)}" data-locked="${t.predictionsLocked?1:0}"
           title="${t.predictionsLocked?'Predictions are locked — click to reopen them':'Start this tournament — lock predictions so no new entries or edits are accepted'}">${t.predictionsLocked?'🔒 Predictions locked':'▶ Start (lock predictions)'}</button>
+        <button class="adm-complete" data-complete="${esc(t.slug)}" title="Mark finished — freezes the rosters that played and moves it to Completed">✓ Complete</button>
         <button class="adm-del" data-del="${esc(t.slug)}" title="Delete">✕</button>
-      </div>`).join("") : '<p class="muted">No admin tournaments yet.</p>';
+      </div>`).join("") : '<p class="muted">No active tournaments.</p>';
+  const doneHtml = _done.length ? `<details class="adm-archived" style="margin-top:12px">
+      <summary style="cursor:pointer;color:var(--muted);font-size:13px;padding:4px 0">Completed events (${_done.length})</summary>
+      ${_done.map(t=>`<div class="adm-trow" style="opacity:.85">
+        ${_tierBadge(t)}
+        <span class="adm-name">${esc(t.name)}</span>
+        <span class="muted" style="font-size:12px">${esc(t.date)} · rosters frozen</span>
+        <a href="#/tournament/${esc(t.slug)}" class="muted" style="font-size:12px">view →</a>
+        <button class="adm-reopen" data-reopen="${esc(t.slug)}" title="Reopen for editing (rosters stay frozen until re-completed)">↩ Reopen</button>
+      </div>`).join("")}
+    </details>` : '';
 
   app.innerHTML = `
     <h2 class="section-title"><span class="accent-bar"></span>Admin <span class="muted" style="font-size:11px">· editing enabled</span></h2>
@@ -1766,6 +1780,7 @@ async function renderAdmin(){
       <div>
         <h3 class="rec-group" style="margin-top:0">Your Tournaments</h3>
         <div class="adm-list">${listHtml}</div>
+        ${doneHtml}
         <div id="adm-editor" style="margin-top:18px"></div>
       </div>
     </div>
@@ -1875,6 +1890,19 @@ async function renderAdmin(){
     if(!locking && !confirm("Reopen predictions for this tournament? People will be able to enter and edit predictions again.")) return;
     b.disabled=true; b.textContent = locking?"Locking…":"Reopening…";
     await apiPost("/api/predlock",{slug:b.dataset.predlock, locked:locking});
+    await reloadData(); renderAdmin();
+  });
+  app.querySelectorAll("[data-complete]").forEach(b=>b.onclick=async e=>{
+    e.preventDefault();
+    if(!confirm("Mark this tournament completed?\n\nThe rosters that played will be frozen (they won't change if a player later switches teams), and it moves to the Completed section. Remember to Publish afterwards.")) return;
+    b.disabled=true; b.textContent="Completing…";
+    await apiPost("/api/complete",{slug:b.dataset.complete, completed:true});
+    await reloadData(); renderAdmin();
+  });
+  app.querySelectorAll("[data-reopen]").forEach(b=>b.onclick=async e=>{
+    e.preventDefault();
+    b.disabled=true; b.textContent="Reopening…";
+    await apiPost("/api/complete",{slug:b.dataset.reopen, completed:false});
     await reloadData(); renderAdmin();
   });
   setupSoloAdmin();

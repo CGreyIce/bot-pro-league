@@ -159,6 +159,8 @@ class Handler(SimpleHTTPRequestHandler):
                 return self._json(200, {"ok": ok, "msg": msg})
             elif path == "/api/predlock":
                 man = manual.set_predictions_locked(b["slug"], b.get("locked", True))
+            elif path == "/api/complete":
+                man = manual.set_completed(b["slug"], b.get("completed", True))
             elif path == "/api/delete":
                 manual.delete(b["slug"]); ok, msg = regenerate()
                 return self._json(200, {"ok": ok, "msg": msg})

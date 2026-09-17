@@ -8192,7 +8192,7 @@
      "iso": "us",
      "provisional": false,
      "rating": 1.014,
-     "ratingPoints": 1204,
+     "ratingPoints": 1203,
      "tier": "Emerald",
      "level": 6,
      "kpm": 15.0,
@@ -11783,7 +11783,7 @@
      "tier": "Master",
      "level": 7,
      "kpm": 16.3,
-     "rankDelta": 15,
+     "rankDelta": 0,
      "bio": "simply_perezoso is a two-time BPL champion and an Level 7 rifler for Neverland. The Singaporean's titles span the 2020 Tournament Minor 3 and the 2024 Legends Stage, marking her as one of the club's more experienced hands.",
      "gender": "F",
      "teamHistory": [
@@ -12018,7 +12018,7 @@
      "tier": "Master",
      "level": 7,
      "kpm": 17.0,
-     "rankDelta": 9,
+     "rankDelta": 0,
      "soloStats": {
       "kills": 266,
       "deaths": 284,
@@ -12356,7 +12356,7 @@
      "tier": "Gold",
      "level": 5,
      "kpm": 14.1,
-     "rankDelta": 12,
+     "rankDelta": 0,
      "soloStats": {
       "kills": 143,
       "deaths": 133,
@@ -12606,11 +12606,11 @@
      "iso": "nl",
      "provisional": false,
      "rating": 0.96,
-     "ratingPoints": 994,
+     "ratingPoints": 993,
      "tier": "Silver",
      "level": 4,
      "kpm": 14.6,
-     "rankDelta": 8,
+     "rankDelta": 0,
      "bio": "Sayucchi is a Level 4 rifler for Neverland, a Dutch fragger with a winning record and a rare European passport in the roster.",
      "gender": "F",
      "teamHistory": [
@@ -14216,7 +14216,7 @@
      "iso": "my",
      "provisional": false,
      "rating": 0.974,
-     "ratingPoints": 1048,
+     "ratingPoints": 1047,
      "tier": "Gold",
      "level": 4,
      "kpm": 15.3,
@@ -15206,7 +15206,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 0.963,
-     "ratingPoints": 1007,
+     "ratingPoints": 1006,
      "tier": "Silver",
      "level": 4,
      "kpm": 15.1,
@@ -20116,7 +20116,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 0.905,
-     "ratingPoints": 781,
+     "ratingPoints": 780,
      "tier": "Iron",
      "level": 3,
      "kpm": 12.8,
@@ -21159,7 +21159,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.044,
-     "ratingPoints": 1323,
+     "ratingPoints": 1322,
      "tier": "Diamond",
      "level": 6,
      "kpm": 16.2,
@@ -25524,11 +25524,11 @@
    "slug": "opal",
    "key": "opal",
    "logo": "assets/teams/Opal.png",
-   "map_wins": 64,
+   "map_wins": 65,
    "map_losses": 56,
    "map_ties": 2,
-   "total_maps": 122,
-   "wlr": 0.533,
+   "total_maps": 123,
+   "wlr": 0.537,
    "a_tier_wins": 0,
    "s_tier_wins": 0,
    "major_wins": 0,
@@ -25561,50 +25561,50 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.631,
+     "wr": 0.635,
      "real": false
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.662,
+     "wr": 0.666,
      "real": false
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.567,
+     "wr": 0.571,
      "real": false
     },
     "Cache": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.506,
+     "wr": 0.51,
      "real": false
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.658,
+     "wr": 0.662,
      "real": false
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.451,
+     "wr": 0.455,
      "real": false
     },
     "Anubis": {
-     "w": 0,
+     "w": 1,
      "l": 1,
-     "g": 1,
-     "wr": 0.409,
-     "real": false
+     "g": 2,
+     "wr": 0.5,
+     "real": true
     }
    },
    "bestMaps": [
@@ -25612,8 +25612,8 @@
     "Tuscan"
    ],
    "worstMaps": [
-    "Anubis",
-    "Vertigo"
+    "Vertigo",
+    "Anubis"
    ],
    "bio": "Opal are a Singaporean team long on games and experience if still chasing that breakthrough title. Consistent and hard to beat on their day, they remain a dangerous floater in any group.",
    "roster": [
@@ -25621,17 +25621,17 @@
      "name": "joyyy_cheng",
      "team": "Opal",
      "pool": "pro",
-     "kills": 376,
-     "assists": 93,
-     "deaths": 367,
-     "mvp": 55,
+     "kills": 392,
+     "assists": 95,
+     "deaths": 383,
+     "mvp": 58,
      "kdr": 1.02,
-     "wins": 8,
+     "wins": 9,
      "losses": 14,
-     "winrate": 0.364,
+     "winrate": 0.391,
      "ot": 4,
      "role": "IGL",
-     "maps": 22,
+     "maps": 23,
      "orig_rank": "Silver",
      "orig_level": "Level 3",
      "orig_rating": 1490.0,
@@ -25639,11 +25639,11 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.077,
-     "ratingPoints": 1452,
+     "rating": 1.079,
+     "ratingPoints": 1457,
      "tier": "Master",
      "level": 7,
-     "kpm": 17.1,
+     "kpm": 17.0,
      "rankDelta": 0,
      "soloStats": {
       "kills": 95,
@@ -26099,10 +26099,10 @@
          "captain": false
         },
         {
-         "hist": "Scorpium",
-         "name": "Scorpium",
-         "slug": "scorpium",
-         "iso": "my",
+         "hist": "kuro_mi",
+         "name": "kuro_mi",
+         "slug": "kuro-mi",
+         "iso": "sg",
          "captain": false
         },
         {
@@ -26113,10 +26113,10 @@
          "captain": false
         },
         {
-         "hist": "kuro_mi",
-         "name": "kuro_mi",
-         "slug": "kuro-mi",
-         "iso": "sg",
+         "hist": "Scorpium",
+         "name": "Scorpium",
+         "slug": "scorpium",
+         "iso": "my",
          "captain": false
         }
        ]
@@ -26172,17 +26172,17 @@
      "name": "lumi.nyaa",
      "team": "Opal",
      "pool": "pro",
-     "kills": 358,
-     "assists": 96,
-     "deaths": 376,
-     "mvp": 42,
-     "kdr": 0.95,
-     "wins": 8,
+     "kills": 381,
+     "assists": 98,
+     "deaths": 390,
+     "mvp": 45,
+     "kdr": 0.98,
+     "wins": 9,
      "losses": 14,
-     "winrate": 0.364,
+     "winrate": 0.391,
      "ot": 4,
      "role": "Rifler",
-     "maps": 22,
+     "maps": 23,
      "orig_rank": "Bronze",
      "orig_level": "Level 3",
      "orig_rating": 1319.0,
@@ -26190,12 +26190,12 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.036,
-     "ratingPoints": 1289,
+     "rating": 1.047,
+     "ratingPoints": 1332,
      "tier": "Diamond",
      "level": 6,
-     "kpm": 16.3,
-     "rankDelta": 0,
+     "kpm": 16.6,
+     "rankDelta": 27,
      "soloStats": {
       "kills": 126,
       "deaths": 130,
@@ -26245,10 +26245,10 @@
          "captain": false
         },
         {
-         "hist": "Scorpium",
-         "name": "Scorpium",
-         "slug": "scorpium",
-         "iso": "my",
+         "hist": "kuro_mi",
+         "name": "kuro_mi",
+         "slug": "kuro-mi",
+         "iso": "sg",
          "captain": false
         },
         {
@@ -26259,10 +26259,10 @@
          "captain": false
         },
         {
-         "hist": "kuro_mi",
-         "name": "kuro_mi",
-         "slug": "kuro-mi",
-         "iso": "sg",
+         "hist": "Scorpium",
+         "name": "Scorpium",
+         "slug": "scorpium",
+         "iso": "my",
          "captain": false
         }
        ]
@@ -26315,20 +26315,608 @@
      ]
     },
     {
+     "name": "kuro_mi",
+     "team": "Opal",
+     "pool": "pro",
+     "kills": 419,
+     "assists": 92,
+     "deaths": 461,
+     "mvp": 61,
+     "kdr": 0.91,
+     "wins": 11,
+     "losses": 15,
+     "winrate": 0.423,
+     "ot": 4,
+     "role": "Rifler",
+     "maps": 26,
+     "orig_rank": "Bronze",
+     "orig_level": "Level 3",
+     "orig_rating": 1375.0,
+     "slug": "kuro-mi",
+     "nat": "Singapore",
+     "iso": "sg",
+     "provisional": false,
+     "rating": 1.028,
+     "ratingPoints": 1259,
+     "tier": "Emerald",
+     "level": 6,
+     "kpm": 16.1,
+     "rankDelta": 10,
+     "soloStats": {
+      "kills": 129,
+      "deaths": 130,
+      "assists": 7,
+      "mvp": 21,
+      "wins": 3,
+      "losses": 5,
+      "maps": 8,
+      "kdr": 0.99,
+      "winrate": 0.375,
+      "rating": 0.967,
+      "ratingPoints": 1022,
+      "tier": "Silver",
+      "level": 4,
+      "soloRank": 179,
+      "soloTotal": 239,
+      "rankDelta": 0,
+      "provisional": false
+     },
+     "bio": "kuro_mi is a Level 6 rifler for Opal, a Singaporean contributing to a developing roster.",
+     "gender": "M",
+     "teamHistory": [
+      {
+       "team": "FateChanger",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "DestonKnee",
+         "name": "Kai",
+         "slug": "kai",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "InfiniteBreaker",
+         "name": "InfiniteBreaker",
+         "slug": "infinitebreaker",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Mike",
+         "name": "Mike",
+         "slug": "mike",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Nataleste",
+         "name": "Nataleste",
+         "slug": "nataleste",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Kuro_mi",
+         "name": "kuro_mi",
+         "slug": "kuro-mi",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "TacKTicK",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "AcroBlaze",
+         "name": "AcroBlaze",
+         "slug": "acroblaze",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "nattyuwus",
+         "name": "nattyuwus",
+         "slug": "nattyuwus",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Niiiice",
+         "name": "Baer",
+         "slug": "baer",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Kuro_mi",
+         "name": "kuro_mi",
+         "slug": "kuro-mi",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "livingitupbt",
+         "name": "Solaonix",
+         "slug": "solaonix",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "D1mensi0n",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "Kuro_mi",
+         "name": "kuro_mi",
+         "slug": "kuro-mi",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "infiniteholic",
+         "name": "KrinoJ",
+         "slug": "krinoj",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "tiger.lark",
+         "name": "tiger.lark",
+         "slug": "tiger-lark",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "MugCowPayLucky",
+         "name": "MugCowPayLucky",
+         "slug": "mugcowpaylucky",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "rach.elx_",
+         "name": "rach.elx_",
+         "slug": "rach-elx",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Opal",
+       "teamSlug": "opal",
+       "isPro": true,
+       "years": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "joyyy_cheng",
+         "name": "joyyy_cheng",
+         "slug": "joyyy-cheng",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "lumi.nyaa",
+         "name": "lumi.nyaa",
+         "slug": "lumi-nyaa",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "kuro_mi",
+         "name": "kuro_mi",
+         "slug": "kuro-mi",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Seireiix",
+         "name": "Seireiix",
+         "slug": "seireiix",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Scorpium",
+         "name": "Scorpium",
+         "slug": "scorpium",
+         "iso": "my",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "SG Squad 1",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Laburi",
+         "name": "Laburi",
+         "slug": "laburi",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "y.uuno",
+         "name": "y.uuno",
+         "slug": "y-uuno",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "rebebx",
+         "name": "rebebx",
+         "slug": "rebebx",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "tapiyokaaa",
+         "name": "tapiyokaaa",
+         "slug": "tapiyokaaa",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "kuro_mi",
+         "name": "kuro_mi",
+         "slug": "kuro-mi",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Seireiix",
+     "team": "Opal",
+     "pool": "pro",
+     "kills": 364,
+     "assists": 59,
+     "deaths": 370,
+     "mvp": 54,
+     "kdr": 0.98,
+     "wins": 8,
+     "losses": 14,
+     "winrate": 0.364,
+     "ot": 4,
+     "role": "Awper",
+     "maps": 22,
+     "orig_rank": "Bronze",
+     "orig_level": "Level 3",
+     "orig_rating": 1476.0,
+     "slug": "seireiix",
+     "nat": "Singapore",
+     "iso": "sg",
+     "provisional": false,
+     "rating": 1.026,
+     "ratingPoints": 1252,
+     "tier": "Emerald",
+     "level": 6,
+     "kpm": 16.5,
+     "rankDelta": 1,
+     "bio": "Seireiix is a Level 6 AWPer for Opal, a Singaporean sniper anchoring the team's defensive rounds.",
+     "gender": "M",
+     "teamHistory": [
+      {
+       "team": "Gothic Storm",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "Seireiix",
+         "name": "Seireiix",
+         "slug": "seireiix",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "meowcolmz",
+         "name": "Meowcolmz",
+         "slug": "meowcolmz",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "S.GT",
+         "name": "S.GT",
+         "slug": "s-gt",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Nataleste",
+         "name": "Nataleste",
+         "slug": "nataleste",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Redandb1ue",
+         "name": "Redandb1ue",
+         "slug": "redandb1ue",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "cAps lOckEd",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "EXaCT",
+         "name": "EXaCT",
+         "slug": "exact",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "AshaZ",
+         "name": "MoonRaika",
+         "slug": "moonraika",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "S.GT",
+         "name": "S.GT",
+         "slug": "s-gt",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "seireiix",
+         "name": "Seireiix",
+         "slug": "seireiix",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Pearlim",
+         "name": "Pearlim",
+         "slug": "pearlim",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Moonlite",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "Luneforrune",
+         "name": "Luneforrune",
+         "slug": "luneforrune",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "Soozy",
+         "name": "Soozy",
+         "slug": "soozy",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "seireiix",
+         "name": "Seireiix",
+         "slug": "seireiix",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "kn",
+         "name": "kn",
+         "slug": "kn",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "plainyingying",
+         "name": "plainyingying",
+         "slug": "plainyingying",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Coloria",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "Redandb1ue",
+         "name": "Redandb1ue",
+         "slug": "redandb1ue",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "Zoweya",
+         "name": "Zoweya",
+         "slug": "zoweya",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "seireiix",
+         "name": "Seireiix",
+         "slug": "seireiix",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "kitties258",
+         "name": "kitties258",
+         "slug": "kitties258",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "joyyy_cheng",
+         "name": "joyyy_cheng",
+         "slug": "joyyy-cheng",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Opal",
+       "teamSlug": "opal",
+       "isPro": true,
+       "years": [
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "joyyy_cheng",
+         "name": "joyyy_cheng",
+         "slug": "joyyy-cheng",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "lumi.nyaa",
+         "name": "lumi.nyaa",
+         "slug": "lumi-nyaa",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "kuro_mi",
+         "name": "kuro_mi",
+         "slug": "kuro-mi",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Seireiix",
+         "name": "Seireiix",
+         "slug": "seireiix",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Scorpium",
+         "name": "Scorpium",
+         "slug": "scorpium",
+         "iso": "my",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "SG Squad 7",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "capplecrow",
+         "name": "capplecrow",
+         "slug": "capplecrow",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "Seireiix",
+         "name": "Seireiix",
+         "slug": "seireiix",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "kenzieyii",
+         "name": "kenzieyii",
+         "slug": "kenzieyii",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Hyvred",
+         "name": "Hyvred",
+         "slug": "hyvred",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Volatus",
+         "name": "Lyrazal",
+         "slug": "lyrazal",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      }
+     ]
+    },
+    {
      "name": "Scorpium",
      "team": "Opal",
      "pool": "pro",
-     "kills": 400,
-     "assists": 85,
-     "deaths": 409,
-     "mvp": 54,
-     "kdr": 0.98,
-     "wins": 10,
+     "kills": 414,
+     "assists": 87,
+     "deaths": 430,
+     "mvp": 55,
+     "kdr": 0.96,
+     "wins": 11,
      "losses": 15,
-     "winrate": 0.4,
+     "winrate": 0.423,
      "ot": 4,
      "role": "Awper",
-     "maps": 25,
+     "maps": 26,
      "orig_rank": "Bronze",
      "orig_level": "Level 3",
      "orig_rating": 1444.0,
@@ -26336,12 +26924,12 @@
      "nat": "Malaysia",
      "iso": "my",
      "provisional": false,
-     "rating": 1.03,
-     "ratingPoints": 1266,
-     "tier": "Diamond",
+     "rating": 1.023,
+     "ratingPoints": 1241,
+     "tier": "Emerald",
      "level": 6,
-     "kpm": 16.0,
-     "rankDelta": 0,
+     "kpm": 15.9,
+     "rankDelta": -16,
      "soloStats": {
       "kills": 73,
       "deaths": 103,
@@ -26616,10 +27204,10 @@
          "captain": false
         },
         {
-         "hist": "Scorpium",
-         "name": "Scorpium",
-         "slug": "scorpium",
-         "iso": "my",
+         "hist": "kuro_mi",
+         "name": "kuro_mi",
+         "slug": "kuro-mi",
+         "iso": "sg",
          "captain": false
         },
         {
@@ -26630,10 +27218,10 @@
          "captain": false
         },
         {
-         "hist": "kuro_mi",
-         "name": "kuro_mi",
-         "slug": "kuro-mi",
-         "iso": "sg",
+         "hist": "Scorpium",
+         "name": "Scorpium",
+         "slug": "scorpium",
+         "iso": "my",
          "captain": false
         }
        ]
@@ -26679,594 +27267,6 @@
          "name": "Yarimell",
          "slug": "yarimell",
          "iso": "my",
-         "captain": false
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "name": "Seireiix",
-     "team": "Opal",
-     "pool": "pro",
-     "kills": 351,
-     "assists": 55,
-     "deaths": 354,
-     "mvp": 51,
-     "kdr": 0.99,
-     "wins": 7,
-     "losses": 14,
-     "winrate": 0.333,
-     "ot": 4,
-     "role": "Awper",
-     "maps": 21,
-     "orig_rank": "Bronze",
-     "orig_level": "Level 3",
-     "orig_rating": 1476.0,
-     "slug": "seireiix",
-     "nat": "Singapore",
-     "iso": "sg",
-     "provisional": false,
-     "rating": 1.025,
-     "ratingPoints": 1248,
-     "tier": "Emerald",
-     "level": 6,
-     "kpm": 16.7,
-     "rankDelta": 0,
-     "bio": "Seireiix is a Level 6 AWPer for Opal, a Singaporean sniper anchoring the team's defensive rounds.",
-     "gender": "M",
-     "teamHistory": [
-      {
-       "team": "Gothic Storm",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2021"
-       ],
-       "roster": [
-        {
-         "hist": "Seireiix",
-         "name": "Seireiix",
-         "slug": "seireiix",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "meowcolmz",
-         "name": "Meowcolmz",
-         "slug": "meowcolmz",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "S.GT",
-         "name": "S.GT",
-         "slug": "s-gt",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Nataleste",
-         "name": "Nataleste",
-         "slug": "nataleste",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Redandb1ue",
-         "name": "Redandb1ue",
-         "slug": "redandb1ue",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "cAps lOckEd",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2021"
-       ],
-       "roster": [
-        {
-         "hist": "EXaCT",
-         "name": "EXaCT",
-         "slug": "exact",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "AshaZ",
-         "name": "MoonRaika",
-         "slug": "moonraika",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "S.GT",
-         "name": "S.GT",
-         "slug": "s-gt",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "seireiix",
-         "name": "Seireiix",
-         "slug": "seireiix",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Pearlim",
-         "name": "Pearlim",
-         "slug": "pearlim",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Moonlite",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2021"
-       ],
-       "roster": [
-        {
-         "hist": "Luneforrune",
-         "name": "Luneforrune",
-         "slug": "luneforrune",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "Soozy",
-         "name": "Soozy",
-         "slug": "soozy",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "seireiix",
-         "name": "Seireiix",
-         "slug": "seireiix",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "kn",
-         "name": "kn",
-         "slug": "kn",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "plainyingying",
-         "name": "plainyingying",
-         "slug": "plainyingying",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Coloria",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2021"
-       ],
-       "roster": [
-        {
-         "hist": "Redandb1ue",
-         "name": "Redandb1ue",
-         "slug": "redandb1ue",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "Zoweya",
-         "name": "Zoweya",
-         "slug": "zoweya",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "seireiix",
-         "name": "Seireiix",
-         "slug": "seireiix",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "kitties258",
-         "name": "kitties258",
-         "slug": "kitties258",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "joyyy_cheng",
-         "name": "joyyy_cheng",
-         "slug": "joyyy-cheng",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Opal",
-       "teamSlug": "opal",
-       "isPro": true,
-       "years": [
-        "2022",
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "joyyy_cheng",
-         "name": "joyyy_cheng",
-         "slug": "joyyy-cheng",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "lumi.nyaa",
-         "name": "lumi.nyaa",
-         "slug": "lumi-nyaa",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Scorpium",
-         "name": "Scorpium",
-         "slug": "scorpium",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "Seireiix",
-         "name": "Seireiix",
-         "slug": "seireiix",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "kuro_mi",
-         "name": "kuro_mi",
-         "slug": "kuro-mi",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "SG Squad 7",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "capplecrow",
-         "name": "capplecrow",
-         "slug": "capplecrow",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "Seireiix",
-         "name": "Seireiix",
-         "slug": "seireiix",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "kenzieyii",
-         "name": "kenzieyii",
-         "slug": "kenzieyii",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Hyvred",
-         "name": "Hyvred",
-         "slug": "hyvred",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Volatus",
-         "name": "Lyrazal",
-         "slug": "lyrazal",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "name": "kuro_mi",
-     "team": "Opal",
-     "pool": "pro",
-     "kills": 402,
-     "assists": 89,
-     "deaths": 442,
-     "mvp": 58,
-     "kdr": 0.91,
-     "wins": 10,
-     "losses": 15,
-     "winrate": 0.4,
-     "ot": 4,
-     "role": "Rifler",
-     "maps": 25,
-     "orig_rank": "Bronze",
-     "orig_level": "Level 3",
-     "orig_rating": 1375.0,
-     "slug": "kuro-mi",
-     "nat": "Singapore",
-     "iso": "sg",
-     "provisional": false,
-     "rating": 1.025,
-     "ratingPoints": 1248,
-     "tier": "Emerald",
-     "level": 6,
-     "kpm": 16.1,
-     "rankDelta": 0,
-     "soloStats": {
-      "kills": 129,
-      "deaths": 130,
-      "assists": 7,
-      "mvp": 21,
-      "wins": 3,
-      "losses": 5,
-      "maps": 8,
-      "kdr": 0.99,
-      "winrate": 0.375,
-      "rating": 0.967,
-      "ratingPoints": 1022,
-      "tier": "Silver",
-      "level": 4,
-      "soloRank": 179,
-      "soloTotal": 239,
-      "rankDelta": 0,
-      "provisional": false
-     },
-     "bio": "kuro_mi is a Level 6 rifler for Opal, a Singaporean contributing to a developing roster.",
-     "gender": "M",
-     "teamHistory": [
-      {
-       "team": "FateChanger",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2021"
-       ],
-       "roster": [
-        {
-         "hist": "DestonKnee",
-         "name": "Kai",
-         "slug": "kai",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "InfiniteBreaker",
-         "name": "InfiniteBreaker",
-         "slug": "infinitebreaker",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Mike",
-         "name": "Mike",
-         "slug": "mike",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Nataleste",
-         "name": "Nataleste",
-         "slug": "nataleste",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Kuro_mi",
-         "name": "kuro_mi",
-         "slug": "kuro-mi",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "TacKTicK",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2021"
-       ],
-       "roster": [
-        {
-         "hist": "AcroBlaze",
-         "name": "AcroBlaze",
-         "slug": "acroblaze",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "nattyuwus",
-         "name": "nattyuwus",
-         "slug": "nattyuwus",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Niiiice",
-         "name": "Baer",
-         "slug": "baer",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Kuro_mi",
-         "name": "kuro_mi",
-         "slug": "kuro-mi",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "livingitupbt",
-         "name": "Solaonix",
-         "slug": "solaonix",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "D1mensi0n",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2021"
-       ],
-       "roster": [
-        {
-         "hist": "Kuro_mi",
-         "name": "kuro_mi",
-         "slug": "kuro-mi",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "infiniteholic",
-         "name": "KrinoJ",
-         "slug": "krinoj",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "tiger.lark",
-         "name": "tiger.lark",
-         "slug": "tiger-lark",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "MugCowPayLucky",
-         "name": "MugCowPayLucky",
-         "slug": "mugcowpaylucky",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "rach.elx_",
-         "name": "rach.elx_",
-         "slug": "rach-elx",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Opal",
-       "teamSlug": "opal",
-       "isPro": true,
-       "years": [
-        "2022",
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "joyyy_cheng",
-         "name": "joyyy_cheng",
-         "slug": "joyyy-cheng",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "lumi.nyaa",
-         "name": "lumi.nyaa",
-         "slug": "lumi-nyaa",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Scorpium",
-         "name": "Scorpium",
-         "slug": "scorpium",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "Seireiix",
-         "name": "Seireiix",
-         "slug": "seireiix",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "kuro_mi",
-         "name": "kuro_mi",
-         "slug": "kuro-mi",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "SG Squad 1",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "Laburi",
-         "name": "Laburi",
-         "slug": "laburi",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "y.uuno",
-         "name": "y.uuno",
-         "slug": "y-uuno",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "rebebx",
-         "name": "rebebx",
-         "slug": "rebebx",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "tapiyokaaa",
-         "name": "tapiyokaaa",
-         "slug": "tapiyokaaa",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "kuro_mi",
-         "name": "kuro_mi",
-         "slug": "kuro-mi",
-         "iso": "sg",
          "captain": false
         }
        ]
@@ -27552,6 +27552,12 @@
      "l": 2
     },
     {
+     "opp": "aeternum",
+     "oppName": "Aeternum",
+     "w": 2,
+     "l": 0
+    },
+    {
      "opp": "new-jade",
      "oppName": "New Jade",
      "w": 2,
@@ -27612,12 +27618,6 @@
      "l": 0
     },
     {
-     "opp": "aeternum",
-     "oppName": "Aeternum",
-     "w": 1,
-     "l": 0
-    },
-    {
      "opp": "sacred-raven",
      "oppName": "Sacred Raven",
      "w": 1,
@@ -27667,16 +27667,6 @@
     }
    ],
    "recentResults": [
-    {
-     "date": "2025-10-10",
-     "event": "BPL Legends Stage 2025",
-     "eventSlug": "BPLLStage25",
-     "opp": "Technomancy",
-     "oppSlug": "technomancy",
-     "result": "L",
-     "sf": 9,
-     "sa": 13
-    },
     {
      "date": "2025-10-10",
      "event": "BPL Legends Stage 2025",
@@ -27766,9 +27756,19 @@
      "result": "L",
      "sf": 14,
      "sa": 16
+    },
+    {
+     "date": "2026-09-01",
+     "event": "Bot Pro Cup 2026",
+     "eventSlug": "bot-pro-cup-2026",
+     "opp": "Aeternum",
+     "oppSlug": "aeternum",
+     "result": "W",
+     "sf": 13,
+     "sa": 11
     }
    ],
-   "streak": "L3",
+   "streak": "W1",
    "longestWinStreak": {
     "len": 8,
     "startEvent": "BPL Major SRR",
@@ -29641,7 +29641,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.123,
-     "ratingPoints": 1631,
+     "ratingPoints": 1630,
      "tier": "Champion",
      "level": 8,
      "kpm": 17.7,
@@ -34889,7 +34889,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.082,
-     "ratingPoints": 1471,
+     "ratingPoints": 1470,
      "tier": "Grandmaster",
      "level": 7,
      "kpm": 16.3,
@@ -41041,7 +41041,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.118,
-     "ratingPoints": 1612,
+     "ratingPoints": 1611,
      "tier": "Champion",
      "level": 8,
      "kpm": 17.2,
@@ -45775,283 +45775,6 @@
    "bio": "Unforgettable are a Singaporean team with two lower-tier titles to their name and one of the busiest schedules in the league — a grinder's team that thrives on volume and cohesion.",
    "roster": [
     {
-     "name": "WO4TK",
-     "team": "Unforgettable",
-     "pool": "pro",
-     "kills": 341,
-     "assists": 44,
-     "deaths": 316,
-     "mvp": 36,
-     "kdr": 1.08,
-     "wins": 7,
-     "losses": 13,
-     "winrate": 0.35,
-     "ot": 1,
-     "role": "IGL",
-     "maps": 20,
-     "orig_rank": "Bronze",
-     "orig_level": "Level 3",
-     "orig_rating": 1358.0,
-     "slug": "wo4tk",
-     "nat": "Singapore",
-     "iso": "sg",
-     "provisional": false,
-     "rating": 1.016,
-     "ratingPoints": 1210,
-     "tier": "Emerald",
-     "level": 6,
-     "kpm": 17.1,
-     "rankDelta": 0,
-     "soloStats": {
-      "kills": 109,
-      "deaths": 114,
-      "assists": 18,
-      "mvp": 21,
-      "wins": 2,
-      "losses": 4,
-      "maps": 6,
-      "kdr": 0.96,
-      "winrate": 0.333,
-      "rating": 0.967,
-      "ratingPoints": 1021,
-      "tier": "Silver",
-      "level": 4,
-      "soloRank": 180,
-      "soloTotal": 239,
-      "rankDelta": 0,
-      "provisional": false
-     },
-     "bio": "WO4TK is the in-game leader for Unforgettable, a Singaporean caller whose 1.08 K/D shows he can frag while directing.",
-     "gender": "M",
-     "teamHistory": [
-      {
-       "team": "Ornate Garden",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2023"
-       ],
-       "roster": [
-        {
-         "hist": "NekoSoji",
-         "name": "NekoSoji",
-         "slug": "nekosoji",
-         "iso": "my",
-         "captain": true
-        },
-        {
-         "hist": "SkuxxNinja44",
-         "name": "SkuxxNinja44",
-         "slug": "skuxxninja44",
-         "iso": "nz",
-         "captain": false
-        },
-        {
-         "hist": "WO4TK",
-         "name": "WO4TK",
-         "slug": "wo4tk",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "winda",
-         "name": "winda",
-         "slug": "winda",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "kokushi_vampir",
-         "name": "kokushi_vampir",
-         "slug": "kokushi-vampir",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "D3V14NT",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2023"
-       ],
-       "roster": [
-        {
-         "hist": "Stylus",
-         "name": "Stylus",
-         "slug": "stylus",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "ShizuyaUmiko",
-         "name": "ShizuyaUmiko",
-         "slug": "shizuyaumiko",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "Kyan",
-         "name": "Kyan",
-         "slug": "kyan",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "WO4TK",
-         "name": "WO4TK",
-         "slug": "wo4tk",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Luneforrune",
-         "name": "Luneforrune",
-         "slug": "luneforrune",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "ToTheTop",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2024"
-       ],
-       "roster": [
-        {
-         "hist": "TiF2",
-         "name": "TiF2",
-         "slug": "tif2",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "koen",
-         "name": "koen",
-         "slug": "koen",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "Kyu",
-         "name": "Kyu",
-         "slug": "kyu",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "WO4TK",
-         "name": "WO4TK",
-         "slug": "wo4tk",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "EXaCT",
-         "name": "EXaCT",
-         "slug": "exact",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Unforgettable",
-       "teamSlug": "unforgettable",
-       "isPro": true,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "WO4TK",
-         "name": "WO4TK",
-         "slug": "wo4tk",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "_kellyxleox_",
-         "name": "_kellyxleox_",
-         "slug": "kellyxleox",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "dudriduo_",
-         "name": "dudriduo_",
-         "slug": "dudriduo",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "Sakami",
-         "name": "Sakami",
-         "slug": "sakami",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Joshiwahhh",
-         "name": "Joshiwahhh",
-         "slug": "joshiwahhh",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "SG Squad 33",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "WO4TK",
-         "name": "WO4TK",
-         "slug": "wo4tk",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "Sakami",
-         "name": "Sakami",
-         "slug": "sakami",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "azzuto",
-         "name": "azzuto",
-         "slug": "azzuto",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "DelphoxLuna",
-         "name": "DelphoxLuna",
-         "slug": "delphoxluna",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "milkenut",
-         "name": "milkenut",
-         "slug": "milkenut",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      }
-     ]
-    },
-    {
      "name": "_kellyxleox_",
      "team": "Unforgettable",
      "pool": "pro",
@@ -46096,17 +45819,17 @@
        ],
        "roster": [
         {
-         "hist": "WO4TK",
-         "name": "WO4TK",
-         "slug": "wo4tk",
-         "iso": "sg",
-         "captain": false
-        },
-        {
          "hist": "_kellyxleox_",
          "name": "_kellyxleox_",
          "slug": "kellyxleox",
          "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "WO4TK",
+         "name": "WO4TK",
+         "slug": "wo4tk",
+         "iso": "sg",
          "captain": false
         },
         {
@@ -46279,6 +46002,283 @@
        "tierLabel": "A-Tier",
        "year": "2021",
        "team": "Unforgettable"
+      }
+     ]
+    },
+    {
+     "name": "WO4TK",
+     "team": "Unforgettable",
+     "pool": "pro",
+     "kills": 341,
+     "assists": 44,
+     "deaths": 316,
+     "mvp": 36,
+     "kdr": 1.08,
+     "wins": 7,
+     "losses": 13,
+     "winrate": 0.35,
+     "ot": 1,
+     "role": "IGL",
+     "maps": 20,
+     "orig_rank": "Bronze",
+     "orig_level": "Level 3",
+     "orig_rating": 1358.0,
+     "slug": "wo4tk",
+     "nat": "Singapore",
+     "iso": "sg",
+     "provisional": false,
+     "rating": 1.015,
+     "ratingPoints": 1210,
+     "tier": "Emerald",
+     "level": 6,
+     "kpm": 17.1,
+     "rankDelta": 0,
+     "soloStats": {
+      "kills": 109,
+      "deaths": 114,
+      "assists": 18,
+      "mvp": 21,
+      "wins": 2,
+      "losses": 4,
+      "maps": 6,
+      "kdr": 0.96,
+      "winrate": 0.333,
+      "rating": 0.967,
+      "ratingPoints": 1021,
+      "tier": "Silver",
+      "level": 4,
+      "soloRank": 180,
+      "soloTotal": 239,
+      "rankDelta": 0,
+      "provisional": false
+     },
+     "bio": "WO4TK is the in-game leader for Unforgettable, a Singaporean caller whose 1.08 K/D shows he can frag while directing.",
+     "gender": "M",
+     "teamHistory": [
+      {
+       "team": "Ornate Garden",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2023"
+       ],
+       "roster": [
+        {
+         "hist": "NekoSoji",
+         "name": "NekoSoji",
+         "slug": "nekosoji",
+         "iso": "my",
+         "captain": true
+        },
+        {
+         "hist": "SkuxxNinja44",
+         "name": "SkuxxNinja44",
+         "slug": "skuxxninja44",
+         "iso": "nz",
+         "captain": false
+        },
+        {
+         "hist": "WO4TK",
+         "name": "WO4TK",
+         "slug": "wo4tk",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "winda",
+         "name": "winda",
+         "slug": "winda",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "kokushi_vampir",
+         "name": "kokushi_vampir",
+         "slug": "kokushi-vampir",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "D3V14NT",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2023"
+       ],
+       "roster": [
+        {
+         "hist": "Stylus",
+         "name": "Stylus",
+         "slug": "stylus",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "ShizuyaUmiko",
+         "name": "ShizuyaUmiko",
+         "slug": "shizuyaumiko",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "Kyan",
+         "name": "Kyan",
+         "slug": "kyan",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "WO4TK",
+         "name": "WO4TK",
+         "slug": "wo4tk",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Luneforrune",
+         "name": "Luneforrune",
+         "slug": "luneforrune",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "ToTheTop",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2024"
+       ],
+       "roster": [
+        {
+         "hist": "TiF2",
+         "name": "TiF2",
+         "slug": "tif2",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "koen",
+         "name": "koen",
+         "slug": "koen",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "Kyu",
+         "name": "Kyu",
+         "slug": "kyu",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "WO4TK",
+         "name": "WO4TK",
+         "slug": "wo4tk",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "EXaCT",
+         "name": "EXaCT",
+         "slug": "exact",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Unforgettable",
+       "teamSlug": "unforgettable",
+       "isPro": true,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "_kellyxleox_",
+         "name": "_kellyxleox_",
+         "slug": "kellyxleox",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "WO4TK",
+         "name": "WO4TK",
+         "slug": "wo4tk",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "dudriduo_",
+         "name": "dudriduo_",
+         "slug": "dudriduo",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "Sakami",
+         "name": "Sakami",
+         "slug": "sakami",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Joshiwahhh",
+         "name": "Joshiwahhh",
+         "slug": "joshiwahhh",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "SG Squad 33",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "WO4TK",
+         "name": "WO4TK",
+         "slug": "wo4tk",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "Sakami",
+         "name": "Sakami",
+         "slug": "sakami",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "azzuto",
+         "name": "azzuto",
+         "slug": "azzuto",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "DelphoxLuna",
+         "name": "DelphoxLuna",
+         "slug": "delphoxluna",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "milkenut",
+         "name": "milkenut",
+         "slug": "milkenut",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
       }
      ]
     },
@@ -46457,17 +46457,17 @@
        ],
        "roster": [
         {
-         "hist": "WO4TK",
-         "name": "WO4TK",
-         "slug": "wo4tk",
-         "iso": "sg",
-         "captain": false
-        },
-        {
          "hist": "_kellyxleox_",
          "name": "_kellyxleox_",
          "slug": "kellyxleox",
          "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "WO4TK",
+         "name": "WO4TK",
+         "slug": "wo4tk",
+         "iso": "sg",
          "captain": false
         },
         {
@@ -46631,17 +46631,17 @@
        ],
        "roster": [
         {
-         "hist": "WO4TK",
-         "name": "WO4TK",
-         "slug": "wo4tk",
-         "iso": "sg",
-         "captain": false
-        },
-        {
          "hist": "_kellyxleox_",
          "name": "_kellyxleox_",
          "slug": "kellyxleox",
          "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "WO4TK",
+         "name": "WO4TK",
+         "slug": "wo4tk",
+         "iso": "sg",
          "captain": false
         },
         {
@@ -46923,17 +46923,17 @@
        ],
        "roster": [
         {
-         "hist": "WO4TK",
-         "name": "WO4TK",
-         "slug": "wo4tk",
-         "iso": "sg",
-         "captain": false
-        },
-        {
          "hist": "_kellyxleox_",
          "name": "_kellyxleox_",
          "slug": "kellyxleox",
          "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "WO4TK",
+         "name": "WO4TK",
+         "slug": "wo4tk",
+         "iso": "sg",
          "captain": false
         },
         {
@@ -50973,7 +50973,7 @@
      "iso": "my",
      "provisional": false,
      "rating": 0.905,
-     "ratingPoints": 781,
+     "ratingPoints": 780,
      "tier": "Iron",
      "level": 3,
      "kpm": 13.3,
@@ -51541,10 +51541,10 @@
    "key": "aeternum",
    "logo": "assets/teams/Aeternum.png",
    "map_wins": 37,
-   "map_losses": 48,
+   "map_losses": 49,
    "map_ties": 2,
-   "total_maps": 87,
-   "wlr": 0.435,
+   "total_maps": 88,
+   "wlr": 0.43,
    "a_tier_wins": 1,
    "s_tier_wins": 0,
    "major_wins": 0,
@@ -51575,49 +51575,49 @@
      "w": 0,
      "l": 1,
      "g": 1,
-     "wr": 0.41,
+     "wr": 0.405,
      "real": false
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.385,
+     "wr": 0.38,
      "real": false
     },
     "Inferno": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.554,
+     "wr": 0.549,
      "real": false
     },
     "Cache": {
      "w": 0,
      "l": 1,
      "g": 1,
-     "wr": 0.61,
+     "wr": 0.605,
      "real": false
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.301,
+     "wr": 0.296,
      "real": false
     },
     "Vertigo": {
      "w": 0,
      "l": 1,
      "g": 1,
-     "wr": 0.229,
+     "wr": 0.224,
      "real": false
     },
     "Anubis": {
      "w": 0,
-     "l": 0,
-     "g": 0,
-     "wr": 0.27,
+     "l": 1,
+     "g": 1,
+     "wr": 0.265,
      "real": false
     }
    },
@@ -51632,20 +51632,225 @@
    "bio": "Aeternum are a Singaporean team with a Minor League title in the cabinet, built around the veteran presence of Marsinss and CrimsynFlames.",
    "roster": [
     {
+     "name": "CrimsynFlames",
+     "team": "Aeternum",
+     "pool": "pro",
+     "kills": 387,
+     "assists": 65,
+     "deaths": 390,
+     "mvp": 56,
+     "kdr": 0.99,
+     "wins": 10,
+     "losses": 13,
+     "winrate": 0.435,
+     "ot": 0,
+     "role": "Rifler",
+     "maps": 23,
+     "orig_rank": "Gold",
+     "orig_level": "Level 4",
+     "orig_rating": 1759.0,
+     "slug": "crimsynflames",
+     "nat": "Singapore",
+     "iso": "sg",
+     "provisional": false,
+     "rating": 1.038,
+     "ratingPoints": 1300,
+     "tier": "Diamond",
+     "level": 6,
+     "kpm": 16.8,
+     "rankDelta": 44,
+     "soloStats": {
+      "kills": 133,
+      "deaths": 133,
+      "assists": 24,
+      "mvp": 24,
+      "wins": 6,
+      "losses": 3,
+      "maps": 9,
+      "kdr": 1.0,
+      "winrate": 0.667,
+      "rating": 1.06,
+      "ratingPoints": 1383,
+      "tier": "Master",
+      "level": 7,
+      "soloRank": 39,
+      "soloTotal": 239,
+      "rankDelta": 0,
+      "provisional": false
+     },
+     "bio": "CrimsynFlames is an Level 6 rifler for Aeternum, a Singaporean with a title dating to BPL Tournament Minor 6 in 2021. An experienced hand on a competitive roster.",
+     "gender": "F",
+     "teamHistory": [
+      {
+       "team": "Love&Stuff",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "Keyboard Rage",
+         "name": "Solec",
+         "slug": "solec",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "mayday",
+         "name": "CrimsynFlames",
+         "slug": "crimsynflames",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "crazywhoopies",
+         "name": "crazywhoopies",
+         "slug": "crazywhoopies",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "InfiniteHolic",
+         "name": "KrinoJ",
+         "slug": "krinoj",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Dirfun",
+         "name": "Dirfun",
+         "slug": "dirfun",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Aeternum",
+       "teamSlug": "aeternum",
+       "isPro": true,
+       "years": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "CrimsynFlames",
+         "name": "CrimsynFlames",
+         "slug": "crimsynflames",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Marsinss",
+         "name": "Marsinss",
+         "slug": "marsinss",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Applezxc",
+         "name": "Applezxc",
+         "slug": "applezxc",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Suzuyunn",
+         "name": "Suzuyunn",
+         "slug": "suzuyunn",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "perk",
+         "name": "perk",
+         "slug": "perk",
+         "iso": "my",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "SG Squad 17",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "NipNip",
+         "name": "NipNip",
+         "slug": "nipnip",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "boopydoopy",
+         "name": "boopydoopy",
+         "slug": "boopydoopy",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "d.chong",
+         "name": "d.chong",
+         "slug": "d-chong",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "CrimsynFlames",
+         "name": "CrimsynFlames",
+         "slug": "crimsynflames",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "pashionfruit18",
+         "name": "pashionfruit18",
+         "slug": "pashionfruit18",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      }
+     ],
+     "aka": [
+      "mayday"
+     ],
+     "titles": [
+      {
+       "event": "BPL Tournament Minor 6",
+       "slug": "BotProLeague6",
+       "tier": "a",
+       "tierLabel": "A-Tier",
+       "year": "2021",
+       "team": "Aeternum"
+      }
+     ]
+    },
+    {
      "name": "Marsinss",
      "team": "Aeternum",
      "pool": "pro",
-     "kills": 367,
-     "assists": 63,
-     "deaths": 369,
+     "kills": 375,
+     "assists": 65,
+     "deaths": 384,
      "mvp": 55,
-     "kdr": 0.99,
+     "kdr": 0.98,
      "wins": 11,
-     "losses": 12,
-     "winrate": 0.478,
+     "losses": 13,
+     "winrate": 0.458,
      "ot": 0,
      "role": "Awper",
-     "maps": 23,
+     "maps": 24,
      "orig_rank": "Gold",
      "orig_level": "Level 4",
      "orig_rating": 1811.0,
@@ -51653,12 +51858,12 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.028,
-     "ratingPoints": 1259,
+     "rating": 1.017,
+     "ratingPoints": 1217,
      "tier": "Emerald",
      "level": 6,
-     "kpm": 16.0,
-     "rankDelta": 0,
+     "kpm": 15.6,
+     "rankDelta": -29,
      "soloStats": {
       "kills": 68,
       "deaths": 84,
@@ -51826,6 +52031,13 @@
        ],
        "roster": [
         {
+         "hist": "CrimsynFlames",
+         "name": "CrimsynFlames",
+         "slug": "crimsynflames",
+         "iso": "sg",
+         "captain": false
+        },
+        {
          "hist": "Marsinss",
          "name": "Marsinss",
          "slug": "marsinss",
@@ -51836,13 +52048,6 @@
          "hist": "Applezxc",
          "name": "Applezxc",
          "slug": "applezxc",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "CrimsynFlames",
-         "name": "CrimsynFlames",
-         "slug": "crimsynflames",
          "iso": "sg",
          "captain": false
         },
@@ -51913,17 +52118,17 @@
      "name": "Applezxc",
      "team": "Aeternum",
      "pool": "pro",
-     "kills": 343,
-     "assists": 66,
-     "deaths": 344,
+     "kills": 355,
+     "assists": 71,
+     "deaths": 363,
      "mvp": 49,
-     "kdr": 1.0,
+     "kdr": 0.98,
      "wins": 10,
-     "losses": 12,
-     "winrate": 0.455,
+     "losses": 13,
+     "winrate": 0.435,
      "ot": 0,
      "role": "Fill",
-     "maps": 22,
+     "maps": 23,
      "orig_rank": "Gold",
      "orig_level": "Level 4",
      "orig_rating": 1761.0,
@@ -51931,12 +52136,12 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.024,
-     "ratingPoints": 1245,
+     "rating": 1.016,
+     "ratingPoints": 1213,
      "tier": "Emerald",
      "level": 6,
-     "kpm": 15.6,
-     "rankDelta": 0,
+     "kpm": 15.4,
+     "rankDelta": -17,
      "soloStats": {
       "kills": 130,
       "deaths": 154,
@@ -52108,6 +52313,13 @@
        ],
        "roster": [
         {
+         "hist": "CrimsynFlames",
+         "name": "CrimsynFlames",
+         "slug": "crimsynflames",
+         "iso": "sg",
+         "captain": false
+        },
+        {
          "hist": "Marsinss",
          "name": "Marsinss",
          "slug": "marsinss",
@@ -52118,13 +52330,6 @@
          "hist": "Applezxc",
          "name": "Applezxc",
          "slug": "applezxc",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "CrimsynFlames",
-         "name": "CrimsynFlames",
-         "slug": "crimsynflames",
          "iso": "sg",
          "captain": false
         },
@@ -52202,225 +52407,20 @@
      ]
     },
     {
-     "name": "CrimsynFlames",
-     "team": "Aeternum",
-     "pool": "pro",
-     "kills": 357,
-     "assists": 65,
-     "deaths": 375,
-     "mvp": 49,
-     "kdr": 0.95,
-     "wins": 10,
-     "losses": 12,
-     "winrate": 0.455,
-     "ot": 0,
-     "role": "Rifler",
-     "maps": 22,
-     "orig_rank": "Gold",
-     "orig_level": "Level 4",
-     "orig_rating": 1759.0,
-     "slug": "crimsynflames",
-     "nat": "Singapore",
-     "iso": "sg",
-     "provisional": false,
-     "rating": 1.019,
-     "ratingPoints": 1226,
-     "tier": "Emerald",
-     "level": 6,
-     "kpm": 16.2,
-     "rankDelta": 0,
-     "soloStats": {
-      "kills": 133,
-      "deaths": 133,
-      "assists": 24,
-      "mvp": 24,
-      "wins": 6,
-      "losses": 3,
-      "maps": 9,
-      "kdr": 1.0,
-      "winrate": 0.667,
-      "rating": 1.06,
-      "ratingPoints": 1383,
-      "tier": "Master",
-      "level": 7,
-      "soloRank": 39,
-      "soloTotal": 239,
-      "rankDelta": 0,
-      "provisional": false
-     },
-     "bio": "CrimsynFlames is an Level 6 rifler for Aeternum, a Singaporean with a title dating to BPL Tournament Minor 6 in 2021. An experienced hand on a competitive roster.",
-     "gender": "F",
-     "teamHistory": [
-      {
-       "team": "Love&Stuff",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2021"
-       ],
-       "roster": [
-        {
-         "hist": "Keyboard Rage",
-         "name": "Solec",
-         "slug": "solec",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "mayday",
-         "name": "CrimsynFlames",
-         "slug": "crimsynflames",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "crazywhoopies",
-         "name": "crazywhoopies",
-         "slug": "crazywhoopies",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "InfiniteHolic",
-         "name": "KrinoJ",
-         "slug": "krinoj",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Dirfun",
-         "name": "Dirfun",
-         "slug": "dirfun",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Aeternum",
-       "teamSlug": "aeternum",
-       "isPro": true,
-       "years": [
-        "2021",
-        "2022",
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "Marsinss",
-         "name": "Marsinss",
-         "slug": "marsinss",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Applezxc",
-         "name": "Applezxc",
-         "slug": "applezxc",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "CrimsynFlames",
-         "name": "CrimsynFlames",
-         "slug": "crimsynflames",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Suzuyunn",
-         "name": "Suzuyunn",
-         "slug": "suzuyunn",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "perk",
-         "name": "perk",
-         "slug": "perk",
-         "iso": "my",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "SG Squad 17",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "NipNip",
-         "name": "NipNip",
-         "slug": "nipnip",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "boopydoopy",
-         "name": "boopydoopy",
-         "slug": "boopydoopy",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "d.chong",
-         "name": "d.chong",
-         "slug": "d-chong",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "CrimsynFlames",
-         "name": "CrimsynFlames",
-         "slug": "crimsynflames",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "pashionfruit18",
-         "name": "pashionfruit18",
-         "slug": "pashionfruit18",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      }
-     ],
-     "aka": [
-      "mayday"
-     ],
-     "titles": [
-      {
-       "event": "BPL Tournament Minor 6",
-       "slug": "BotProLeague6",
-       "tier": "a",
-       "tierLabel": "A-Tier",
-       "year": "2021",
-       "team": "Aeternum"
-      }
-     ]
-    },
-    {
      "name": "Suzuyunn",
      "team": "Aeternum",
      "pool": "pro",
-     "kills": 371,
+     "kills": 393,
      "assists": 74,
-     "deaths": 407,
-     "mvp": 55,
-     "kdr": 0.91,
+     "deaths": 422,
+     "mvp": 58,
+     "kdr": 0.93,
      "wins": 12,
-     "losses": 12,
-     "winrate": 0.5,
+     "losses": 13,
+     "winrate": 0.48,
      "ot": 0,
      "role": "IGL",
-     "maps": 24,
+     "maps": 25,
      "orig_rank": "Silver",
      "orig_level": "Level 4",
      "orig_rating": 1671.0,
@@ -52428,12 +52428,12 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.011,
-     "ratingPoints": 1194,
-     "tier": "Platinum",
-     "level": 5,
-     "kpm": 15.5,
-     "rankDelta": 0,
+     "rating": 1.016,
+     "ratingPoints": 1212,
+     "tier": "Emerald",
+     "level": 6,
+     "kpm": 15.7,
+     "rankDelta": 15,
      "soloStats": {
       "kills": 118,
       "deaths": 138,
@@ -52453,7 +52453,7 @@
       "rankDelta": 0,
       "provisional": false
      },
-     "bio": "Suzuyunn is a Level 5 in-game leader for Aeternum, a Singaporean caller with a winning record for the roster.",
+     "bio": "Suzuyunn is a Level 6 in-game leader for Aeternum, a Singaporean caller with a winning record for the roster.",
      "gender": "M",
      "teamHistory": [
       {
@@ -52557,6 +52557,13 @@
        ],
        "roster": [
         {
+         "hist": "CrimsynFlames",
+         "name": "CrimsynFlames",
+         "slug": "crimsynflames",
+         "iso": "sg",
+         "captain": false
+        },
+        {
          "hist": "Marsinss",
          "name": "Marsinss",
          "slug": "marsinss",
@@ -52567,13 +52574,6 @@
          "hist": "Applezxc",
          "name": "Applezxc",
          "slug": "applezxc",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "CrimsynFlames",
-         "name": "CrimsynFlames",
-         "slug": "crimsynflames",
          "iso": "sg",
          "captain": false
         },
@@ -52647,17 +52647,17 @@
      "name": "perk",
      "team": "Aeternum",
      "pool": "pro",
-     "kills": 337,
-     "assists": 70,
-     "deaths": 378,
-     "mvp": 37,
-     "kdr": 0.89,
+     "kills": 351,
+     "assists": 74,
+     "deaths": 397,
+     "mvp": 38,
+     "kdr": 0.88,
      "wins": 10,
-     "losses": 13,
-     "winrate": 0.435,
+     "losses": 14,
+     "winrate": 0.417,
      "ot": 0,
      "role": "Awper",
-     "maps": 23,
+     "maps": 24,
      "orig_rank": "Silver",
      "orig_level": "Level 4",
      "orig_rating": 1646.0,
@@ -52665,12 +52665,12 @@
      "nat": "Malaysia",
      "iso": "my",
      "provisional": false,
-     "rating": 0.968,
-     "ratingPoints": 1025,
+     "rating": 0.964,
+     "ratingPoints": 1009,
      "tier": "Silver",
      "level": 4,
-     "kpm": 14.7,
-     "rankDelta": 0,
+     "kpm": 14.6,
+     "rankDelta": -7,
      "soloStats": {
       "kills": 130,
       "deaths": 131,
@@ -52751,6 +52751,13 @@
        ],
        "roster": [
         {
+         "hist": "CrimsynFlames",
+         "name": "CrimsynFlames",
+         "slug": "crimsynflames",
+         "iso": "sg",
+         "captain": false
+        },
+        {
          "hist": "Marsinss",
          "name": "Marsinss",
          "slug": "marsinss",
@@ -52761,13 +52768,6 @@
          "hist": "Applezxc",
          "name": "Applezxc",
          "slug": "applezxc",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "CrimsynFlames",
-         "name": "CrimsynFlames",
-         "slug": "crimsynflames",
          "iso": "sg",
          "captain": false
         },
@@ -53166,6 +53166,12 @@
      "l": 1
     },
     {
+     "opp": "opal",
+     "oppName": "Opal",
+     "w": 0,
+     "l": 2
+    },
+    {
      "opp": "division20",
      "oppName": "division20",
      "w": 0,
@@ -53298,12 +53304,6 @@
      "l": 1
     },
     {
-     "opp": "opal",
-     "oppName": "Opal",
-     "w": 0,
-     "l": 1
-    },
-    {
      "opp": "diamondones",
      "oppName": "DiamondOnes",
      "w": 0,
@@ -53311,16 +53311,6 @@
     }
    ],
    "recentResults": [
-    {
-     "date": "2025-06-12",
-     "event": "BPL Ranking Reshuffle 2025",
-     "eventSlug": "BPLRR2025",
-     "opp": "Alcheministry",
-     "oppSlug": "alcheministry",
-     "result": "L",
-     "sf": 8,
-     "sa": 13
-    },
     {
      "date": "2025-10-10",
      "event": "BPL Conquerors Stage 2025",
@@ -53410,9 +53400,19 @@
      "result": "L",
      "sf": 8,
      "sa": 13
+    },
+    {
+     "date": "2026-09-01",
+     "event": "Bot Pro Cup 2026",
+     "eventSlug": "bot-pro-cup-2026",
+     "opp": "Opal",
+     "oppSlug": "opal",
+     "result": "L",
+     "sf": 11,
+     "sa": 13
     }
    ],
-   "streak": "L4",
+   "streak": "L5",
    "longestWinStreak": {
     "len": 6,
     "startEvent": "BPL Tournament Minor 6",
@@ -55699,7 +55699,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.007,
+     "rating": 1.006,
      "ratingPoints": 1175,
      "tier": "Platinum",
      "level": 5,
@@ -70552,17 +70552,17 @@
          "captain": false
         },
         {
-         "hist": "Shinomiya Runa",
-         "name": "Shinomiya Runa",
-         "slug": "shinomiya-runa",
-         "iso": "jp",
-         "captain": false
-        },
-        {
          "hist": "ShizuyaUmiko",
          "name": "ShizuyaUmiko",
          "slug": "shizuyaumiko",
          "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "Shinomiya Runa",
+         "name": "Shinomiya Runa",
+         "slug": "shinomiya-runa",
+         "iso": "jp",
          "captain": false
         },
         {
@@ -70730,17 +70730,17 @@
          "captain": false
         },
         {
-         "hist": "Shinomiya Runa",
-         "name": "Shinomiya Runa",
-         "slug": "shinomiya-runa",
-         "iso": "jp",
-         "captain": false
-        },
-        {
          "hist": "ShizuyaUmiko",
          "name": "ShizuyaUmiko",
          "slug": "shizuyaumiko",
          "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "Shinomiya Runa",
+         "name": "Shinomiya Runa",
+         "slug": "shinomiya-runa",
+         "iso": "jp",
          "captain": false
         },
         {
@@ -70838,229 +70838,6 @@
          "name": "cassiopeiarawr",
          "slug": "cassiopeiarawr",
          "iso": "au",
-         "captain": false
-        }
-       ]
-      }
-     ],
-     "titles": [
-      {
-       "event": "Bot Pro Minor League 15",
-       "slug": "BotProLeague15",
-       "tier": "a",
-       "tierLabel": "A-Tier",
-       "year": "2026",
-       "team": "Flood Flashers"
-      }
-     ]
-    },
-    {
-     "name": "Shinomiya Runa",
-     "team": "Flood Flashers",
-     "pool": "pro",
-     "kills": 423,
-     "assists": 53,
-     "deaths": 416,
-     "mvp": 54,
-     "kdr": 1.02,
-     "wins": 19,
-     "losses": 10,
-     "winrate": 0.655,
-     "ot": 0,
-     "role": "Rifler",
-     "maps": 29,
-     "orig_rank": "Iron",
-     "orig_level": "Level 3",
-     "orig_rating": 1156.0,
-     "slug": "shinomiya-runa",
-     "nat": "Japan",
-     "iso": "jp",
-     "provisional": false,
-     "rating": 0.988,
-     "ratingPoints": 1101,
-     "tier": "Gold",
-     "level": 5,
-     "kpm": 14.6,
-     "rankDelta": 0,
-     "bio": "Shinomiya Runa is a Japanese rifler for Flood Flashers, a Level 5 fragger who was part of the Bot Pro Minor League 15-winning roster.",
-     "gender": "F",
-     "teamHistory": [
-      {
-       "team": "VisualClarity",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "VSSMB",
-         "name": "VSSMB",
-         "slug": "vssmb",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Shinomiya Runa",
-         "name": "Shinomiya Runa",
-         "slug": "shinomiya-runa",
-         "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "MKakili",
-         "name": "MKakili",
-         "slug": "mkakili",
-         "iso": "au",
-         "captain": false
-        },
-        {
-         "hist": "KiokoCheiko",
-         "name": "KiokoCheiko",
-         "slug": "kiokocheiko",
-         "iso": "ph",
-         "captain": false
-        },
-        {
-         "hist": "RumiRumi",
-         "name": "RumiRumi",
-         "slug": "rumirumi",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Flood Flashers",
-       "teamSlug": "flood-flashers",
-       "isPro": true,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "Emily_melody",
-         "name": "Emily_melody",
-         "slug": "emily-melody",
-         "iso": "tw",
-         "captain": false
-        },
-        {
-         "hist": "cassiopeiarawr",
-         "name": "cassiopeiarawr",
-         "slug": "cassiopeiarawr",
-         "iso": "au",
-         "captain": false
-        },
-        {
-         "hist": "Shinomiya Runa",
-         "name": "Shinomiya Runa",
-         "slug": "shinomiya-runa",
-         "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "ShizuyaUmiko",
-         "name": "ShizuyaUmiko",
-         "slug": "shizuyaumiko",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "Komori Met",
-         "name": "Komori Met",
-         "slug": "komori-met",
-         "iso": "jp",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "JP Squad 4",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "Tosaki Mimi",
-         "name": "Tosaki Mimi",
-         "slug": "tosaki-mimi",
-         "iso": "jp",
-         "captain": true
-        },
-        {
-         "hist": "Tachibana Hinano",
-         "name": "Tachibana Hinano",
-         "slug": "tachibana-hinano",
-         "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "Ginjo Saine",
-         "name": "Ginjo Saine",
-         "slug": "ginjo-saine",
-         "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "Shinomiya Runa",
-         "name": "Shinomiya Runa",
-         "slug": "shinomiya-runa",
-         "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "Miki Nakai",
-         "name": "Miki Nakai",
-         "slug": "miki-nakai",
-         "iso": "jp",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Team Japan",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "Tosaki Mimi",
-         "name": "Tosaki Mimi",
-         "slug": "tosaki-mimi",
-         "iso": "jp",
-         "captain": true
-        },
-        {
-         "hist": "Tachibana Hinano",
-         "name": "Tachibana Hinano",
-         "slug": "tachibana-hinano",
-         "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "Ginjo Saine",
-         "name": "Ginjo Saine",
-         "slug": "ginjo-saine",
-         "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "Shinomiya Runa",
-         "name": "Shinomiya Runa",
-         "slug": "shinomiya-runa",
-         "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "Miki Nakai",
-         "name": "Miki Nakai",
-         "slug": "miki-nakai",
-         "iso": "jp",
          "captain": false
         }
        ]
@@ -71375,17 +71152,17 @@
          "captain": false
         },
         {
-         "hist": "Shinomiya Runa",
-         "name": "Shinomiya Runa",
-         "slug": "shinomiya-runa",
-         "iso": "jp",
-         "captain": false
-        },
-        {
          "hist": "ShizuyaUmiko",
          "name": "ShizuyaUmiko",
          "slug": "shizuyaumiko",
          "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "Shinomiya Runa",
+         "name": "Shinomiya Runa",
+         "slug": "shinomiya-runa",
+         "iso": "jp",
          "captain": false
         },
         {
@@ -71438,6 +71215,229 @@
          "name": "BaBaYaGa",
          "slug": "babayaga",
          "iso": "my",
+         "captain": false
+        }
+       ]
+      }
+     ],
+     "titles": [
+      {
+       "event": "Bot Pro Minor League 15",
+       "slug": "BotProLeague15",
+       "tier": "a",
+       "tierLabel": "A-Tier",
+       "year": "2026",
+       "team": "Flood Flashers"
+      }
+     ]
+    },
+    {
+     "name": "Shinomiya Runa",
+     "team": "Flood Flashers",
+     "pool": "pro",
+     "kills": 423,
+     "assists": 53,
+     "deaths": 416,
+     "mvp": 54,
+     "kdr": 1.02,
+     "wins": 19,
+     "losses": 10,
+     "winrate": 0.655,
+     "ot": 0,
+     "role": "Rifler",
+     "maps": 29,
+     "orig_rank": "Iron",
+     "orig_level": "Level 3",
+     "orig_rating": 1156.0,
+     "slug": "shinomiya-runa",
+     "nat": "Japan",
+     "iso": "jp",
+     "provisional": false,
+     "rating": 0.987,
+     "ratingPoints": 1101,
+     "tier": "Gold",
+     "level": 5,
+     "kpm": 14.6,
+     "rankDelta": 0,
+     "bio": "Shinomiya Runa is a Japanese rifler for Flood Flashers, a Level 5 fragger who was part of the Bot Pro Minor League 15-winning roster.",
+     "gender": "F",
+     "teamHistory": [
+      {
+       "team": "VisualClarity",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "VSSMB",
+         "name": "VSSMB",
+         "slug": "vssmb",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Shinomiya Runa",
+         "name": "Shinomiya Runa",
+         "slug": "shinomiya-runa",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "MKakili",
+         "name": "MKakili",
+         "slug": "mkakili",
+         "iso": "au",
+         "captain": false
+        },
+        {
+         "hist": "KiokoCheiko",
+         "name": "KiokoCheiko",
+         "slug": "kiokocheiko",
+         "iso": "ph",
+         "captain": false
+        },
+        {
+         "hist": "RumiRumi",
+         "name": "RumiRumi",
+         "slug": "rumirumi",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Flood Flashers",
+       "teamSlug": "flood-flashers",
+       "isPro": true,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Emily_melody",
+         "name": "Emily_melody",
+         "slug": "emily-melody",
+         "iso": "tw",
+         "captain": false
+        },
+        {
+         "hist": "cassiopeiarawr",
+         "name": "cassiopeiarawr",
+         "slug": "cassiopeiarawr",
+         "iso": "au",
+         "captain": false
+        },
+        {
+         "hist": "ShizuyaUmiko",
+         "name": "ShizuyaUmiko",
+         "slug": "shizuyaumiko",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "Shinomiya Runa",
+         "name": "Shinomiya Runa",
+         "slug": "shinomiya-runa",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Komori Met",
+         "name": "Komori Met",
+         "slug": "komori-met",
+         "iso": "jp",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "JP Squad 4",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Tosaki Mimi",
+         "name": "Tosaki Mimi",
+         "slug": "tosaki-mimi",
+         "iso": "jp",
+         "captain": true
+        },
+        {
+         "hist": "Tachibana Hinano",
+         "name": "Tachibana Hinano",
+         "slug": "tachibana-hinano",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Ginjo Saine",
+         "name": "Ginjo Saine",
+         "slug": "ginjo-saine",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Shinomiya Runa",
+         "name": "Shinomiya Runa",
+         "slug": "shinomiya-runa",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Miki Nakai",
+         "name": "Miki Nakai",
+         "slug": "miki-nakai",
+         "iso": "jp",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Team Japan",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Tosaki Mimi",
+         "name": "Tosaki Mimi",
+         "slug": "tosaki-mimi",
+         "iso": "jp",
+         "captain": true
+        },
+        {
+         "hist": "Tachibana Hinano",
+         "name": "Tachibana Hinano",
+         "slug": "tachibana-hinano",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Ginjo Saine",
+         "name": "Ginjo Saine",
+         "slug": "ginjo-saine",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Shinomiya Runa",
+         "name": "Shinomiya Runa",
+         "slug": "shinomiya-runa",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Miki Nakai",
+         "name": "Miki Nakai",
+         "slug": "miki-nakai",
+         "iso": "jp",
          "captain": false
         }
        ]
@@ -71617,17 +71617,17 @@
          "captain": false
         },
         {
-         "hist": "Shinomiya Runa",
-         "name": "Shinomiya Runa",
-         "slug": "shinomiya-runa",
-         "iso": "jp",
-         "captain": false
-        },
-        {
          "hist": "ShizuyaUmiko",
          "name": "ShizuyaUmiko",
          "slug": "shizuyaumiko",
          "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "Shinomiya Runa",
+         "name": "Shinomiya Runa",
+         "slug": "shinomiya-runa",
+         "iso": "jp",
          "captain": false
         },
         {
@@ -78326,7 +78326,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.089,
-     "ratingPoints": 1497,
+     "ratingPoints": 1496,
      "tier": "Grandmaster",
      "level": 7,
      "kpm": 15.9,
@@ -89221,7 +89221,7 @@
      "iso": "us",
      "provisional": false,
      "rating": 1.029,
-     "ratingPoints": 1263,
+     "ratingPoints": 1262,
      "tier": "Emerald",
      "level": 6,
      "kpm": 16.0,
@@ -91368,7 +91368,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.031,
-     "ratingPoints": 1270,
+     "ratingPoints": 1269,
      "tier": "Diamond",
      "level": 6,
      "kpm": 16.1,
@@ -97377,7 +97377,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 0.997,
-     "ratingPoints": 1137,
+     "ratingPoints": 1136,
      "tier": "Platinum",
      "level": 5,
      "kpm": 14.4,
@@ -98911,7 +98911,7 @@
      "iso": "au",
      "provisional": false,
      "rating": 0.911,
-     "ratingPoints": 803,
+     "ratingPoints": 802,
      "tier": "Iron",
      "level": 3,
      "kpm": 11.3,
@@ -102982,7 +102982,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.031,
-    "ratingPoints": 1270,
+    "ratingPoints": 1269,
     "tier": "Diamond",
     "level": 6,
     "kpm": 16.1,
@@ -105780,17 +105780,17 @@
     "name": "Marsinss",
     "team": "Aeternum",
     "pool": "pro",
-    "kills": 367,
-    "assists": 63,
-    "deaths": 369,
+    "kills": 375,
+    "assists": 65,
+    "deaths": 384,
     "mvp": 55,
-    "kdr": 0.99,
+    "kdr": 0.98,
     "wins": 11,
-    "losses": 12,
-    "winrate": 0.478,
+    "losses": 13,
+    "winrate": 0.458,
     "ot": 0,
     "role": "Awper",
-    "maps": 23,
+    "maps": 24,
     "orig_rank": "Gold",
     "orig_level": "Level 4",
     "orig_rating": 1811.0,
@@ -105798,12 +105798,12 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.028,
-    "ratingPoints": 1259,
+    "rating": 1.017,
+    "ratingPoints": 1217,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 16.0,
-    "rankDelta": 0,
+    "kpm": 15.6,
+    "rankDelta": -29,
     "soloStats": {
      "kills": 68,
      "deaths": 84,
@@ -105971,6 +105971,13 @@
       ],
       "roster": [
        {
+        "hist": "CrimsynFlames",
+        "name": "CrimsynFlames",
+        "slug": "crimsynflames",
+        "iso": "sg",
+        "captain": false
+       },
+       {
         "hist": "Marsinss",
         "name": "Marsinss",
         "slug": "marsinss",
@@ -105981,13 +105988,6 @@
         "hist": "Applezxc",
         "name": "Applezxc",
         "slug": "applezxc",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "CrimsynFlames",
-        "name": "CrimsynFlames",
-        "slug": "crimsynflames",
         "iso": "sg",
         "captain": false
        },
@@ -106058,17 +106058,17 @@
     "name": "Applezxc",
     "team": "Aeternum",
     "pool": "pro",
-    "kills": 343,
-    "assists": 66,
-    "deaths": 344,
+    "kills": 355,
+    "assists": 71,
+    "deaths": 363,
     "mvp": 49,
-    "kdr": 1.0,
+    "kdr": 0.98,
     "wins": 10,
-    "losses": 12,
-    "winrate": 0.455,
+    "losses": 13,
+    "winrate": 0.435,
     "ot": 0,
     "role": "Fill",
-    "maps": 22,
+    "maps": 23,
     "orig_rank": "Gold",
     "orig_level": "Level 4",
     "orig_rating": 1761.0,
@@ -106076,12 +106076,12 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.024,
-    "ratingPoints": 1245,
+    "rating": 1.016,
+    "ratingPoints": 1213,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 15.6,
-    "rankDelta": 0,
+    "kpm": 15.4,
+    "rankDelta": -17,
     "soloStats": {
      "kills": 130,
      "deaths": 154,
@@ -106253,6 +106253,13 @@
       ],
       "roster": [
        {
+        "hist": "CrimsynFlames",
+        "name": "CrimsynFlames",
+        "slug": "crimsynflames",
+        "iso": "sg",
+        "captain": false
+       },
+       {
         "hist": "Marsinss",
         "name": "Marsinss",
         "slug": "marsinss",
@@ -106263,13 +106270,6 @@
         "hist": "Applezxc",
         "name": "Applezxc",
         "slug": "applezxc",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "CrimsynFlames",
-        "name": "CrimsynFlames",
-        "slug": "crimsynflames",
         "iso": "sg",
         "captain": false
        },
@@ -106350,17 +106350,17 @@
     "name": "CrimsynFlames",
     "team": "Aeternum",
     "pool": "pro",
-    "kills": 357,
+    "kills": 387,
     "assists": 65,
-    "deaths": 375,
-    "mvp": 49,
-    "kdr": 0.95,
+    "deaths": 390,
+    "mvp": 56,
+    "kdr": 0.99,
     "wins": 10,
-    "losses": 12,
-    "winrate": 0.455,
+    "losses": 13,
+    "winrate": 0.435,
     "ot": 0,
     "role": "Rifler",
-    "maps": 22,
+    "maps": 23,
     "orig_rank": "Gold",
     "orig_level": "Level 4",
     "orig_rating": 1759.0,
@@ -106368,12 +106368,12 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.019,
-    "ratingPoints": 1226,
-    "tier": "Emerald",
+    "rating": 1.038,
+    "ratingPoints": 1300,
+    "tier": "Diamond",
     "level": 6,
-    "kpm": 16.2,
-    "rankDelta": 0,
+    "kpm": 16.8,
+    "rankDelta": 44,
     "soloStats": {
      "kills": 133,
      "deaths": 133,
@@ -106455,6 +106455,13 @@
       ],
       "roster": [
        {
+        "hist": "CrimsynFlames",
+        "name": "CrimsynFlames",
+        "slug": "crimsynflames",
+        "iso": "sg",
+        "captain": false
+       },
+       {
         "hist": "Marsinss",
         "name": "Marsinss",
         "slug": "marsinss",
@@ -106465,13 +106472,6 @@
         "hist": "Applezxc",
         "name": "Applezxc",
         "slug": "applezxc",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "CrimsynFlames",
-        "name": "CrimsynFlames",
-        "slug": "crimsynflames",
         "iso": "sg",
         "captain": false
        },
@@ -106555,17 +106555,17 @@
     "name": "Suzuyunn",
     "team": "Aeternum",
     "pool": "pro",
-    "kills": 371,
+    "kills": 393,
     "assists": 74,
-    "deaths": 407,
-    "mvp": 55,
-    "kdr": 0.91,
+    "deaths": 422,
+    "mvp": 58,
+    "kdr": 0.93,
     "wins": 12,
-    "losses": 12,
-    "winrate": 0.5,
+    "losses": 13,
+    "winrate": 0.48,
     "ot": 0,
     "role": "IGL",
-    "maps": 24,
+    "maps": 25,
     "orig_rank": "Silver",
     "orig_level": "Level 4",
     "orig_rating": 1671.0,
@@ -106573,12 +106573,12 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.011,
-    "ratingPoints": 1194,
-    "tier": "Platinum",
-    "level": 5,
-    "kpm": 15.5,
-    "rankDelta": 0,
+    "rating": 1.016,
+    "ratingPoints": 1212,
+    "tier": "Emerald",
+    "level": 6,
+    "kpm": 15.7,
+    "rankDelta": 15,
     "soloStats": {
      "kills": 118,
      "deaths": 138,
@@ -106598,7 +106598,7 @@
      "rankDelta": 0,
      "provisional": false
     },
-    "bio": "Suzuyunn is a Level 5 in-game leader for Aeternum, a Singaporean caller with a winning record for the roster.",
+    "bio": "Suzuyunn is a Level 6 in-game leader for Aeternum, a Singaporean caller with a winning record for the roster.",
     "gender": "M",
     "teamHistory": [
      {
@@ -106702,6 +106702,13 @@
       ],
       "roster": [
        {
+        "hist": "CrimsynFlames",
+        "name": "CrimsynFlames",
+        "slug": "crimsynflames",
+        "iso": "sg",
+        "captain": false
+       },
+       {
         "hist": "Marsinss",
         "name": "Marsinss",
         "slug": "marsinss",
@@ -106712,13 +106719,6 @@
         "hist": "Applezxc",
         "name": "Applezxc",
         "slug": "applezxc",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "CrimsynFlames",
-        "name": "CrimsynFlames",
-        "slug": "crimsynflames",
         "iso": "sg",
         "captain": false
        },
@@ -106792,17 +106792,17 @@
     "name": "perk",
     "team": "Aeternum",
     "pool": "pro",
-    "kills": 337,
-    "assists": 70,
-    "deaths": 378,
-    "mvp": 37,
-    "kdr": 0.89,
+    "kills": 351,
+    "assists": 74,
+    "deaths": 397,
+    "mvp": 38,
+    "kdr": 0.88,
     "wins": 10,
-    "losses": 13,
-    "winrate": 0.435,
+    "losses": 14,
+    "winrate": 0.417,
     "ot": 0,
     "role": "Awper",
-    "maps": 23,
+    "maps": 24,
     "orig_rank": "Silver",
     "orig_level": "Level 4",
     "orig_rating": 1646.0,
@@ -106810,12 +106810,12 @@
     "nat": "Malaysia",
     "iso": "my",
     "provisional": false,
-    "rating": 0.968,
-    "ratingPoints": 1025,
+    "rating": 0.964,
+    "ratingPoints": 1009,
     "tier": "Silver",
     "level": 4,
-    "kpm": 14.7,
-    "rankDelta": 0,
+    "kpm": 14.6,
+    "rankDelta": -7,
     "soloStats": {
      "kills": 130,
      "deaths": 131,
@@ -106896,6 +106896,13 @@
       ],
       "roster": [
        {
+        "hist": "CrimsynFlames",
+        "name": "CrimsynFlames",
+        "slug": "crimsynflames",
+        "iso": "sg",
+        "captain": false
+       },
+       {
         "hist": "Marsinss",
         "name": "Marsinss",
         "slug": "marsinss",
@@ -106906,13 +106913,6 @@
         "hist": "Applezxc",
         "name": "Applezxc",
         "slug": "applezxc",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "CrimsynFlames",
-        "name": "CrimsynFlames",
-        "slug": "crimsynflames",
         "iso": "sg",
         "captain": false
        },
@@ -107005,7 +107005,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.082,
-    "ratingPoints": 1471,
+    "ratingPoints": 1470,
     "tier": "Grandmaster",
     "level": 7,
     "kpm": 16.3,
@@ -109665,7 +109665,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.118,
-    "ratingPoints": 1612,
+    "ratingPoints": 1611,
     "tier": "Champion",
     "level": 8,
     "kpm": 17.2,
@@ -125842,7 +125842,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.123,
-    "ratingPoints": 1631,
+    "ratingPoints": 1630,
     "tier": "Champion",
     "level": 8,
     "kpm": 17.7,
@@ -130827,7 +130827,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.089,
-    "ratingPoints": 1497,
+    "ratingPoints": 1496,
     "tier": "Grandmaster",
     "level": 7,
     "kpm": 15.9,
@@ -134534,17 +134534,17 @@
         "captain": false
        },
        {
-        "hist": "Shinomiya Runa",
-        "name": "Shinomiya Runa",
-        "slug": "shinomiya-runa",
-        "iso": "jp",
-        "captain": false
-       },
-       {
         "hist": "ShizuyaUmiko",
         "name": "ShizuyaUmiko",
         "slug": "shizuyaumiko",
         "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "Shinomiya Runa",
+        "name": "Shinomiya Runa",
+        "slug": "shinomiya-runa",
+        "iso": "jp",
         "captain": false
        },
        {
@@ -134821,17 +134821,17 @@
         "captain": false
        },
        {
-        "hist": "Shinomiya Runa",
-        "name": "Shinomiya Runa",
-        "slug": "shinomiya-runa",
-        "iso": "jp",
-        "captain": false
-       },
-       {
         "hist": "ShizuyaUmiko",
         "name": "ShizuyaUmiko",
         "slug": "shizuyaumiko",
         "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "Shinomiya Runa",
+        "name": "Shinomiya Runa",
+        "slug": "shinomiya-runa",
+        "iso": "jp",
         "captain": false
        },
        {
@@ -135063,17 +135063,17 @@
         "captain": false
        },
        {
-        "hist": "Shinomiya Runa",
-        "name": "Shinomiya Runa",
-        "slug": "shinomiya-runa",
-        "iso": "jp",
-        "captain": false
-       },
-       {
         "hist": "ShizuyaUmiko",
         "name": "ShizuyaUmiko",
         "slug": "shizuyaumiko",
         "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "Shinomiya Runa",
+        "name": "Shinomiya Runa",
+        "slug": "shinomiya-runa",
+        "iso": "jp",
         "captain": false
        },
        {
@@ -135440,17 +135440,17 @@
         "captain": false
        },
        {
-        "hist": "Shinomiya Runa",
-        "name": "Shinomiya Runa",
-        "slug": "shinomiya-runa",
-        "iso": "jp",
-        "captain": false
-       },
-       {
         "hist": "ShizuyaUmiko",
         "name": "ShizuyaUmiko",
         "slug": "shizuyaumiko",
         "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "Shinomiya Runa",
+        "name": "Shinomiya Runa",
+        "slug": "shinomiya-runa",
+        "iso": "jp",
         "captain": false
        },
        {
@@ -135541,7 +135541,7 @@
     "nat": "Japan",
     "iso": "jp",
     "provisional": false,
-    "rating": 0.988,
+    "rating": 0.987,
     "ratingPoints": 1101,
     "tier": "Gold",
     "level": 5,
@@ -135618,17 +135618,17 @@
         "captain": false
        },
        {
-        "hist": "Shinomiya Runa",
-        "name": "Shinomiya Runa",
-        "slug": "shinomiya-runa",
-        "iso": "jp",
-        "captain": false
-       },
-       {
         "hist": "ShizuyaUmiko",
         "name": "ShizuyaUmiko",
         "slug": "shizuyaumiko",
         "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "Shinomiya Runa",
+        "name": "Shinomiya Runa",
+        "slug": "shinomiya-runa",
+        "iso": "jp",
         "captain": false
        },
        {
@@ -139994,7 +139994,7 @@
     "iso": "my",
     "provisional": false,
     "rating": 0.974,
-    "ratingPoints": 1048,
+    "ratingPoints": 1047,
     "tier": "Gold",
     "level": 4,
     "kpm": 15.3,
@@ -140984,7 +140984,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.963,
-    "ratingPoints": 1007,
+    "ratingPoints": 1006,
     "tier": "Silver",
     "level": 4,
     "kpm": 15.1,
@@ -144547,7 +144547,7 @@
     "tier": "Master",
     "level": 7,
     "kpm": 16.3,
-    "rankDelta": 15,
+    "rankDelta": 0,
     "bio": "simply_perezoso is a two-time BPL champion and an Level 7 rifler for Neverland. The Singaporean's titles span the 2020 Tournament Minor 3 and the 2024 Legends Stage, marking her as one of the club's more experienced hands.",
     "gender": "F",
     "teamHistory": [
@@ -144782,7 +144782,7 @@
     "tier": "Gold",
     "level": 5,
     "kpm": 14.1,
-    "rankDelta": 12,
+    "rankDelta": 0,
     "soloStats": {
      "kills": 143,
      "deaths": 133,
@@ -145036,7 +145036,7 @@
     "tier": "Master",
     "level": 7,
     "kpm": 17.0,
-    "rankDelta": 9,
+    "rankDelta": 0,
     "soloStats": {
      "kills": 266,
      "deaths": 284,
@@ -145605,11 +145605,11 @@
     "iso": "nl",
     "provisional": false,
     "rating": 0.96,
-    "ratingPoints": 994,
+    "ratingPoints": 993,
     "tier": "Silver",
     "level": 4,
     "kpm": 14.6,
-    "rankDelta": 8,
+    "rankDelta": 0,
     "bio": "Sayucchi is a Level 4 rifler for Neverland, a Dutch fragger with a winning record and a rare European passport in the roster.",
     "gender": "F",
     "teamHistory": [
@@ -148228,17 +148228,17 @@
     "name": "joyyy_cheng",
     "team": "Opal",
     "pool": "pro",
-    "kills": 376,
-    "assists": 93,
-    "deaths": 367,
-    "mvp": 55,
+    "kills": 392,
+    "assists": 95,
+    "deaths": 383,
+    "mvp": 58,
     "kdr": 1.02,
-    "wins": 8,
+    "wins": 9,
     "losses": 14,
-    "winrate": 0.364,
+    "winrate": 0.391,
     "ot": 4,
     "role": "IGL",
-    "maps": 22,
+    "maps": 23,
     "orig_rank": "Silver",
     "orig_level": "Level 3",
     "orig_rating": 1490.0,
@@ -148246,11 +148246,11 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.077,
-    "ratingPoints": 1452,
+    "rating": 1.079,
+    "ratingPoints": 1457,
     "tier": "Master",
     "level": 7,
-    "kpm": 17.1,
+    "kpm": 17.0,
     "rankDelta": 0,
     "soloStats": {
      "kills": 95,
@@ -148706,10 +148706,10 @@
         "captain": false
        },
        {
-        "hist": "Scorpium",
-        "name": "Scorpium",
-        "slug": "scorpium",
-        "iso": "my",
+        "hist": "kuro_mi",
+        "name": "kuro_mi",
+        "slug": "kuro-mi",
+        "iso": "sg",
         "captain": false
        },
        {
@@ -148720,10 +148720,10 @@
         "captain": false
        },
        {
-        "hist": "kuro_mi",
-        "name": "kuro_mi",
-        "slug": "kuro-mi",
-        "iso": "sg",
+        "hist": "Scorpium",
+        "name": "Scorpium",
+        "slug": "scorpium",
+        "iso": "my",
         "captain": false
        }
       ]
@@ -148779,17 +148779,17 @@
     "name": "Seireiix",
     "team": "Opal",
     "pool": "pro",
-    "kills": 351,
-    "assists": 55,
-    "deaths": 354,
-    "mvp": 51,
-    "kdr": 0.99,
-    "wins": 7,
+    "kills": 364,
+    "assists": 59,
+    "deaths": 370,
+    "mvp": 54,
+    "kdr": 0.98,
+    "wins": 8,
     "losses": 14,
-    "winrate": 0.333,
+    "winrate": 0.364,
     "ot": 4,
     "role": "Awper",
-    "maps": 21,
+    "maps": 22,
     "orig_rank": "Bronze",
     "orig_level": "Level 3",
     "orig_rating": 1476.0,
@@ -148797,12 +148797,12 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.025,
-    "ratingPoints": 1248,
+    "rating": 1.026,
+    "ratingPoints": 1252,
     "tier": "Emerald",
     "level": 6,
-    "kpm": 16.7,
-    "rankDelta": 0,
+    "kpm": 16.5,
+    "rankDelta": 1,
     "bio": "Seireiix is a Level 6 AWPer for Opal, a Singaporean sniper anchoring the team's defensive rounds.",
     "gender": "M",
     "teamHistory": [
@@ -149013,10 +149013,10 @@
         "captain": false
        },
        {
-        "hist": "Scorpium",
-        "name": "Scorpium",
-        "slug": "scorpium",
-        "iso": "my",
+        "hist": "kuro_mi",
+        "name": "kuro_mi",
+        "slug": "kuro-mi",
+        "iso": "sg",
         "captain": false
        },
        {
@@ -149027,10 +149027,10 @@
         "captain": false
        },
        {
-        "hist": "kuro_mi",
-        "name": "kuro_mi",
-        "slug": "kuro-mi",
-        "iso": "sg",
+        "hist": "Scorpium",
+        "name": "Scorpium",
+        "slug": "scorpium",
+        "iso": "my",
         "captain": false
        }
       ]
@@ -149086,17 +149086,17 @@
     "name": "Scorpium",
     "team": "Opal",
     "pool": "pro",
-    "kills": 400,
-    "assists": 85,
-    "deaths": 409,
-    "mvp": 54,
-    "kdr": 0.98,
-    "wins": 10,
+    "kills": 414,
+    "assists": 87,
+    "deaths": 430,
+    "mvp": 55,
+    "kdr": 0.96,
+    "wins": 11,
     "losses": 15,
-    "winrate": 0.4,
+    "winrate": 0.423,
     "ot": 4,
     "role": "Awper",
-    "maps": 25,
+    "maps": 26,
     "orig_rank": "Bronze",
     "orig_level": "Level 3",
     "orig_rating": 1444.0,
@@ -149104,12 +149104,12 @@
     "nat": "Malaysia",
     "iso": "my",
     "provisional": false,
-    "rating": 1.03,
-    "ratingPoints": 1266,
-    "tier": "Diamond",
+    "rating": 1.023,
+    "ratingPoints": 1241,
+    "tier": "Emerald",
     "level": 6,
-    "kpm": 16.0,
-    "rankDelta": 0,
+    "kpm": 15.9,
+    "rankDelta": -16,
     "soloStats": {
      "kills": 73,
      "deaths": 103,
@@ -149384,10 +149384,10 @@
         "captain": false
        },
        {
-        "hist": "Scorpium",
-        "name": "Scorpium",
-        "slug": "scorpium",
-        "iso": "my",
+        "hist": "kuro_mi",
+        "name": "kuro_mi",
+        "slug": "kuro-mi",
+        "iso": "sg",
         "captain": false
        },
        {
@@ -149398,10 +149398,10 @@
         "captain": false
        },
        {
-        "hist": "kuro_mi",
-        "name": "kuro_mi",
-        "slug": "kuro-mi",
-        "iso": "sg",
+        "hist": "Scorpium",
+        "name": "Scorpium",
+        "slug": "scorpium",
+        "iso": "my",
         "captain": false
        }
       ]
@@ -149457,17 +149457,17 @@
     "name": "kuro_mi",
     "team": "Opal",
     "pool": "pro",
-    "kills": 402,
-    "assists": 89,
-    "deaths": 442,
-    "mvp": 58,
+    "kills": 419,
+    "assists": 92,
+    "deaths": 461,
+    "mvp": 61,
     "kdr": 0.91,
-    "wins": 10,
+    "wins": 11,
     "losses": 15,
-    "winrate": 0.4,
+    "winrate": 0.423,
     "ot": 4,
     "role": "Rifler",
-    "maps": 25,
+    "maps": 26,
     "orig_rank": "Bronze",
     "orig_level": "Level 3",
     "orig_rating": 1375.0,
@@ -149475,12 +149475,12 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.025,
-    "ratingPoints": 1248,
+    "rating": 1.028,
+    "ratingPoints": 1259,
     "tier": "Emerald",
     "level": 6,
     "kpm": 16.1,
-    "rankDelta": 0,
+    "rankDelta": 10,
     "soloStats": {
      "kills": 129,
      "deaths": 130,
@@ -149665,10 +149665,10 @@
         "captain": false
        },
        {
-        "hist": "Scorpium",
-        "name": "Scorpium",
-        "slug": "scorpium",
-        "iso": "my",
+        "hist": "kuro_mi",
+        "name": "kuro_mi",
+        "slug": "kuro-mi",
+        "iso": "sg",
         "captain": false
        },
        {
@@ -149679,10 +149679,10 @@
         "captain": false
        },
        {
-        "hist": "kuro_mi",
-        "name": "kuro_mi",
-        "slug": "kuro-mi",
-        "iso": "sg",
+        "hist": "Scorpium",
+        "name": "Scorpium",
+        "slug": "scorpium",
+        "iso": "my",
         "captain": false
        }
       ]
@@ -149738,17 +149738,17 @@
     "name": "lumi.nyaa",
     "team": "Opal",
     "pool": "pro",
-    "kills": 358,
-    "assists": 96,
-    "deaths": 376,
-    "mvp": 42,
-    "kdr": 0.95,
-    "wins": 8,
+    "kills": 381,
+    "assists": 98,
+    "deaths": 390,
+    "mvp": 45,
+    "kdr": 0.98,
+    "wins": 9,
     "losses": 14,
-    "winrate": 0.364,
+    "winrate": 0.391,
     "ot": 4,
     "role": "Rifler",
-    "maps": 22,
+    "maps": 23,
     "orig_rank": "Bronze",
     "orig_level": "Level 3",
     "orig_rating": 1319.0,
@@ -149756,12 +149756,12 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.036,
-    "ratingPoints": 1289,
+    "rating": 1.047,
+    "ratingPoints": 1332,
     "tier": "Diamond",
     "level": 6,
-    "kpm": 16.3,
-    "rankDelta": 0,
+    "kpm": 16.6,
+    "rankDelta": 27,
     "soloStats": {
      "kills": 126,
      "deaths": 130,
@@ -149811,10 +149811,10 @@
         "captain": false
        },
        {
-        "hist": "Scorpium",
-        "name": "Scorpium",
-        "slug": "scorpium",
-        "iso": "my",
+        "hist": "kuro_mi",
+        "name": "kuro_mi",
+        "slug": "kuro-mi",
+        "iso": "sg",
         "captain": false
        },
        {
@@ -149825,10 +149825,10 @@
         "captain": false
        },
        {
-        "hist": "kuro_mi",
-        "name": "kuro_mi",
-        "slug": "kuro-mi",
-        "iso": "sg",
+        "hist": "Scorpium",
+        "name": "Scorpium",
+        "slug": "scorpium",
+        "iso": "my",
         "captain": false
        }
       ]
@@ -153264,7 +153264,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.905,
-    "ratingPoints": 781,
+    "ratingPoints": 780,
     "tier": "Iron",
     "level": 3,
     "kpm": 12.8,
@@ -156186,7 +156186,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.007,
+    "rating": 1.006,
     "ratingPoints": 1175,
     "tier": "Platinum",
     "level": 5,
@@ -162195,7 +162195,7 @@
     "iso": "my",
     "provisional": false,
     "rating": 0.905,
-    "ratingPoints": 781,
+    "ratingPoints": 780,
     "tier": "Iron",
     "level": 3,
     "kpm": 13.3,
@@ -163317,7 +163317,7 @@
     "iso": "us",
     "provisional": false,
     "rating": 1.014,
-    "ratingPoints": 1204,
+    "ratingPoints": 1203,
     "tier": "Emerald",
     "level": 6,
     "kpm": 15.0,
@@ -164111,7 +164111,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.044,
-    "ratingPoints": 1323,
+    "ratingPoints": 1322,
     "tier": "Diamond",
     "level": 6,
     "kpm": 16.2,
@@ -167956,17 +167956,17 @@
       ],
       "roster": [
        {
-        "hist": "WO4TK",
-        "name": "WO4TK",
-        "slug": "wo4tk",
-        "iso": "sg",
-        "captain": false
-       },
-       {
         "hist": "_kellyxleox_",
         "name": "_kellyxleox_",
         "slug": "kellyxleox",
         "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "WO4TK",
+        "name": "WO4TK",
+        "slug": "wo4tk",
+        "iso": "sg",
         "captain": false
        },
        {
@@ -168084,17 +168084,17 @@
       ],
       "roster": [
        {
-        "hist": "WO4TK",
-        "name": "WO4TK",
-        "slug": "wo4tk",
-        "iso": "sg",
-        "captain": false
-       },
-       {
         "hist": "_kellyxleox_",
         "name": "_kellyxleox_",
         "slug": "kellyxleox",
         "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "WO4TK",
+        "name": "WO4TK",
+        "slug": "wo4tk",
+        "iso": "sg",
         "captain": false
        },
        {
@@ -168361,17 +168361,17 @@
       ],
       "roster": [
        {
-        "hist": "WO4TK",
-        "name": "WO4TK",
-        "slug": "wo4tk",
-        "iso": "sg",
-        "captain": false
-       },
-       {
         "hist": "_kellyxleox_",
         "name": "_kellyxleox_",
         "slug": "kellyxleox",
         "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "WO4TK",
+        "name": "WO4TK",
+        "slug": "wo4tk",
+        "iso": "sg",
         "captain": false
        },
        {
@@ -168521,7 +168521,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.016,
+    "rating": 1.015,
     "ratingPoints": 1210,
     "tier": "Emerald",
     "level": 6,
@@ -168693,17 +168693,17 @@
       ],
       "roster": [
        {
-        "hist": "WO4TK",
-        "name": "WO4TK",
-        "slug": "wo4tk",
-        "iso": "sg",
-        "captain": false
-       },
-       {
         "hist": "_kellyxleox_",
         "name": "_kellyxleox_",
         "slug": "kellyxleox",
         "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "WO4TK",
+        "name": "WO4TK",
+        "slug": "wo4tk",
+        "iso": "sg",
         "captain": false
        },
        {
@@ -168930,17 +168930,17 @@
       ],
       "roster": [
        {
-        "hist": "WO4TK",
-        "name": "WO4TK",
-        "slug": "wo4tk",
-        "iso": "sg",
-        "captain": false
-       },
-       {
         "hist": "_kellyxleox_",
         "name": "_kellyxleox_",
         "slug": "kellyxleox",
         "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "WO4TK",
+        "name": "WO4TK",
+        "slug": "wo4tk",
+        "iso": "sg",
         "captain": false
        },
        {
@@ -169269,7 +169269,7 @@
     "iso": "us",
     "provisional": false,
     "rating": 1.029,
-    "ratingPoints": 1263,
+    "ratingPoints": 1262,
     "tier": "Emerald",
     "level": 6,
     "kpm": 16.0,
@@ -171521,7 +171521,7 @@
     "tier": "Master",
     "level": 7,
     "kpm": 16.2,
-    "rankDelta": -14,
+    "rankDelta": 0,
     "bio": "obvMX is a Singaporean rifler and one of the league's biggest scorers, a free agent with 971 kills to his name and a Level 7 rating.",
     "gender": "M",
     "teamTourney": "Bot Pro Cup 2026",
@@ -172064,7 +172064,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.16,
-    "ratingPoints": 1776,
+    "ratingPoints": 1775,
     "tier": "Champion",
     "level": 9,
     "kpm": 19.6,
@@ -173077,7 +173077,7 @@
     "tier": "Champion",
     "level": 8,
     "kpm": 19.3,
-    "rankDelta": -1,
+    "rankDelta": 0,
     "soloStats": {
      "kills": 110,
      "deaths": 107,
@@ -174884,7 +174884,7 @@
     "tier": "Bronze",
     "level": 3,
     "kpm": 13.5,
-    "rankDelta": -21,
+    "rankDelta": 0,
     "bio": "Tosaki Mimi is a Japanese AWPer and a Level 3 free agent whose 622 kills mark her a busy amateur sniper.",
     "gender": "F",
     "teamTourney": "Bot Pro Cup 2026",
@@ -175936,7 +175936,7 @@
     "tier": "Silver",
     "level": 4,
     "kpm": 13.8,
-    "rankDelta": -23,
+    "rankDelta": 0,
     "bio": "Aranionja is a Singaporean AWPer and a Level 4 free agent whose kill volume marks her as a capable amateur sniper.",
     "gender": "F",
     "teamTourney": "Bot Pro Cup 2026",
@@ -178160,7 +178160,7 @@
     "iso": "au",
     "provisional": false,
     "rating": 1.082,
-    "ratingPoints": 1470,
+    "ratingPoints": 1469,
     "tier": "Grandmaster",
     "level": 7,
     "kpm": 18.4,
@@ -199823,7 +199823,7 @@
     "iso": "us",
     "provisional": false,
     "rating": 0.931,
-    "ratingPoints": 883,
+    "ratingPoints": 882,
     "tier": "Bronze",
     "level": 3,
     "kpm": 13.2,
@@ -201326,7 +201326,7 @@
     "nat": "Japan",
     "iso": "jp",
     "provisional": false,
-    "rating": 0.987,
+    "rating": 0.986,
     "ratingPoints": 1097,
     "tier": "Gold",
     "level": 5,
@@ -202054,7 +202054,7 @@
     "nat": "USA",
     "iso": "us",
     "provisional": false,
-    "rating": 1.04,
+    "rating": 1.039,
     "ratingPoints": 1304,
     "tier": "Diamond",
     "level": 6,
@@ -212071,7 +212071,7 @@
     "nat": "Japan",
     "iso": "jp",
     "provisional": false,
-    "rating": 1.035,
+    "rating": 1.034,
     "ratingPoints": 1285,
     "tier": "Diamond",
     "level": 6,
@@ -216011,7 +216011,7 @@
     "iso": "kr",
     "provisional": false,
     "rating": 0.997,
-    "ratingPoints": 1139,
+    "ratingPoints": 1138,
     "tier": "Platinum",
     "level": 5,
     "kpm": 15.9,
@@ -218512,7 +218512,7 @@
     "iso": "us",
     "provisional": false,
     "rating": 1.031,
-    "ratingPoints": 1272,
+    "ratingPoints": 1271,
     "tier": "Diamond",
     "level": 6,
     "kpm": 16.9,
@@ -222839,7 +222839,7 @@
     "iso": "my",
     "provisional": false,
     "rating": 1.009,
-    "ratingPoints": 1185,
+    "ratingPoints": 1184,
     "tier": "Platinum",
     "level": 5,
     "kpm": 14.8,
@@ -229945,7 +229945,7 @@
     "iso": "au",
     "provisional": false,
     "rating": 0.911,
-    "ratingPoints": 803,
+    "ratingPoints": 802,
     "tier": "Iron",
     "level": 3,
     "kpm": 11.3,
@@ -231410,7 +231410,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.997,
-    "ratingPoints": 1137,
+    "ratingPoints": 1136,
     "tier": "Platinum",
     "level": 5,
     "kpm": 14.4,
@@ -237309,11 +237309,11 @@
  },
  "pool_avg": {
   "pro": {
-   "kdr": 0.9956965174129353,
-   "kpm": 15.218703503828307,
-   "mvp": 2.128788948177245,
-   "apm": 2.271732319665937,
-   "wr": 0.4682786069651741
+   "kdr": 0.9957462686567164,
+   "kpm": 15.21964964417581,
+   "mvp": 2.12901453951575,
+   "apm": 2.270816906396533,
+   "wr": 0.46836069651741297
   },
   "amateur": {
    "kdr": 1.0,
@@ -290193,14 +290193,135 @@
        "i": 9,
        "a": "Opal",
        "b": "Aeternum",
-       "sa": null,
-       "sb": null,
-       "w": 0,
+       "sa": 13,
+       "sb": 11,
+       "w": 1,
        "aTeam": "opal",
        "bTeam": "aeternum",
        "bo": 1,
        "tp": false,
-       "ts": null
+       "ts": 1789653504,
+       "stats": {
+        "maps": [
+         {
+          "map": "Anubis",
+          "scoreA": 13,
+          "scoreB": 11,
+          "players": [
+           {
+            "team": "Opal",
+            "name": "lumi.nyaa",
+            "k": 23,
+            "a": 2,
+            "d": 14,
+            "mvp": 3,
+            "score": 62,
+            "slug": "lumi-nyaa",
+            "iso": "sg"
+           },
+           {
+            "team": "Opal",
+            "name": "joyyy_cheng",
+            "k": 16,
+            "a": 2,
+            "d": 16,
+            "mvp": 3,
+            "score": 48,
+            "slug": "joyyy-cheng",
+            "iso": "sg"
+           },
+           {
+            "team": "Opal",
+            "name": "kuro_mi",
+            "k": 17,
+            "a": 3,
+            "d": 19,
+            "mvp": 3,
+            "score": 45,
+            "slug": "kuro-mi",
+            "iso": "sg"
+           },
+           {
+            "team": "Opal",
+            "name": "Seireiix",
+            "k": 13,
+            "a": 4,
+            "d": 16,
+            "mvp": 3,
+            "score": 41,
+            "slug": "seireiix",
+            "iso": "sg"
+           },
+           {
+            "team": "Opal",
+            "name": "Scorpium",
+            "k": 14,
+            "a": 2,
+            "d": 21,
+            "mvp": 1,
+            "score": 34,
+            "slug": "scorpium",
+            "iso": "my"
+           },
+           {
+            "team": "Aeternum",
+            "name": "CrimsynFlames",
+            "k": 30,
+            "a": 0,
+            "d": 15,
+            "mvp": 7,
+            "score": 75,
+            "slug": "crimsynflames",
+            "iso": "sg"
+           },
+           {
+            "team": "Aeternum",
+            "name": "Suzuyunn",
+            "k": 22,
+            "a": 0,
+            "d": 15,
+            "mvp": 3,
+            "score": 55,
+            "slug": "suzuyunn",
+            "iso": "sg"
+           },
+           {
+            "team": "Aeternum",
+            "name": "perk",
+            "k": 14,
+            "a": 4,
+            "d": 19,
+            "mvp": 1,
+            "score": 36,
+            "slug": "perk",
+            "iso": "my"
+           },
+           {
+            "team": "Aeternum",
+            "name": "Applezxc",
+            "k": 12,
+            "a": 5,
+            "d": 19,
+            "mvp": 0,
+            "score": 33,
+            "slug": "applezxc",
+            "iso": "sg"
+           },
+           {
+            "team": "Aeternum",
+            "name": "Marsinss",
+            "k": 8,
+            "a": 2,
+            "d": 15,
+            "mvp": 0,
+            "score": 23,
+            "slug": "marsinss",
+            "iso": "sg"
+           }
+          ]
+         }
+        ]
+       }
       },
       {
        "i": 10,
@@ -299886,14 +300007,135 @@
          "i": 9,
          "a": "Opal",
          "b": "Aeternum",
-         "sa": null,
-         "sb": null,
-         "w": 0,
+         "sa": 13,
+         "sb": 11,
+         "w": 1,
          "aTeam": "opal",
          "bTeam": "aeternum",
          "bo": 1,
          "tp": false,
-         "ts": null
+         "ts": 1789653504,
+         "stats": {
+          "maps": [
+           {
+            "map": "Anubis",
+            "scoreA": 13,
+            "scoreB": 11,
+            "players": [
+             {
+              "team": "Opal",
+              "name": "lumi.nyaa",
+              "k": 23,
+              "a": 2,
+              "d": 14,
+              "mvp": 3,
+              "score": 62,
+              "slug": "lumi-nyaa",
+              "iso": "sg"
+             },
+             {
+              "team": "Opal",
+              "name": "joyyy_cheng",
+              "k": 16,
+              "a": 2,
+              "d": 16,
+              "mvp": 3,
+              "score": 48,
+              "slug": "joyyy-cheng",
+              "iso": "sg"
+             },
+             {
+              "team": "Opal",
+              "name": "kuro_mi",
+              "k": 17,
+              "a": 3,
+              "d": 19,
+              "mvp": 3,
+              "score": 45,
+              "slug": "kuro-mi",
+              "iso": "sg"
+             },
+             {
+              "team": "Opal",
+              "name": "Seireiix",
+              "k": 13,
+              "a": 4,
+              "d": 16,
+              "mvp": 3,
+              "score": 41,
+              "slug": "seireiix",
+              "iso": "sg"
+             },
+             {
+              "team": "Opal",
+              "name": "Scorpium",
+              "k": 14,
+              "a": 2,
+              "d": 21,
+              "mvp": 1,
+              "score": 34,
+              "slug": "scorpium",
+              "iso": "my"
+             },
+             {
+              "team": "Aeternum",
+              "name": "CrimsynFlames",
+              "k": 30,
+              "a": 0,
+              "d": 15,
+              "mvp": 7,
+              "score": 75,
+              "slug": "crimsynflames",
+              "iso": "sg"
+             },
+             {
+              "team": "Aeternum",
+              "name": "Suzuyunn",
+              "k": 22,
+              "a": 0,
+              "d": 15,
+              "mvp": 3,
+              "score": 55,
+              "slug": "suzuyunn",
+              "iso": "sg"
+             },
+             {
+              "team": "Aeternum",
+              "name": "perk",
+              "k": 14,
+              "a": 4,
+              "d": 19,
+              "mvp": 1,
+              "score": 36,
+              "slug": "perk",
+              "iso": "my"
+             },
+             {
+              "team": "Aeternum",
+              "name": "Applezxc",
+              "k": 12,
+              "a": 5,
+              "d": 19,
+              "mvp": 0,
+              "score": 33,
+              "slug": "applezxc",
+              "iso": "sg"
+             },
+             {
+              "team": "Aeternum",
+              "name": "Marsinss",
+              "k": 8,
+              "a": 2,
+              "d": 15,
+              "mvp": 0,
+              "score": 23,
+              "slug": "marsinss",
+              "iso": "sg"
+             }
+            ]
+           }
+          ]
+         }
         },
         {
          "i": 10,
@@ -299942,45 +300184,45 @@
       },
       {
        "rank": 5,
+       "name": "Opal",
+       "teamSlug": "opal",
+       "w": 1,
+       "l": 1
+      },
+      {
+       "rank": 6,
        "name": "Ivory Vanguard",
        "teamSlug": null,
        "w": 1,
        "l": 1
       },
       {
-       "rank": 6,
+       "rank": 7,
        "name": "Rebellium",
        "teamSlug": null,
        "w": 1,
        "l": 1
       },
       {
-       "rank": 7,
-       "name": "Opal",
-       "teamSlug": "opal",
-       "w": 0,
-       "l": 1
-      },
-      {
        "rank": 8,
-       "name": "Aeternum",
-       "teamSlug": "aeternum",
-       "w": 0,
-       "l": 1
-      },
-      {
-       "rank": 9,
        "name": "Thunderveil",
        "teamSlug": null,
        "w": 0,
        "l": 1
       },
       {
-       "rank": 10,
+       "rank": 9,
        "name": "Cyanide",
        "teamSlug": "cyanide",
        "w": 0,
        "l": 1
+      },
+      {
+       "rank": 10,
+       "name": "Aeternum",
+       "teamSlug": "aeternum",
+       "w": 0,
+       "l": 2
       }
      ],
      "teams": [
@@ -302285,288 +302527,288 @@
     },
     {
      "rank": 31,
+     "name": "Opal",
+     "teamSlug": "opal",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 32,
      "name": "PepegaX",
      "teamSlug": "pepegax",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 32,
+     "rank": 33,
      "name": "Radiant Coil",
      "teamSlug": null,
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 33,
+     "rank": 34,
      "name": "Rebellium",
      "teamSlug": null,
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 34,
+     "rank": 35,
      "name": "Round Loss Bonus",
      "teamSlug": "round-loss-bonus",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 35,
+     "rank": 36,
      "name": "Syzygy",
      "teamSlug": "syzygy",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 36,
+     "rank": 37,
      "name": "Technomancy",
      "teamSlug": "technomancy",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 37,
+     "rank": 38,
      "name": "Ukiyo",
      "teamSlug": "ukiyo",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 38,
+     "rank": 39,
      "name": "Voidborne",
      "teamSlug": null,
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 39,
+     "rank": 40,
      "name": "5PERCENT",
      "teamSlug": "5percent",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 40,
+     "rank": 41,
      "name": "Aurora Pact",
      "teamSlug": null,
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 41,
+     "rank": 42,
      "name": "Bloom E-Sports",
      "teamSlug": "bloom-e-sports",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 42,
+     "rank": 43,
      "name": "Infernum E-Sports",
      "teamSlug": "infernum-e-sports",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 43,
+     "rank": 44,
      "name": "Kiedz",
      "teamSlug": "kiedz",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 44,
+     "rank": 45,
      "name": "Raven Song",
      "teamSlug": "raven-song",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 45,
+     "rank": 46,
      "name": "Sacred Raven",
      "teamSlug": "sacred-raven",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 46,
+     "rank": 47,
      "name": "Starling Coven",
      "teamSlug": null,
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 47,
+     "rank": 48,
      "name": "Stormfront",
      "teamSlug": null,
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 48,
+     "rank": 49,
      "name": "The Nomads",
      "teamSlug": "the-nomads",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 49,
+     "rank": 50,
      "name": "Wraithborne",
      "teamSlug": null,
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 50,
+     "rank": 51,
      "name": "0v3",
      "teamSlug": "0v3",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 51,
-     "name": "Aimpunch",
-     "teamSlug": "aimpunch",
-     "result": "Group Stage",
-     "tie": true
-    },
-    {
      "rank": 52,
-     "name": "Ashfall",
-     "teamSlug": null,
-     "result": "Group Stage",
-     "tie": true
-    },
-    {
-     "rank": 53,
-     "name": "Echo Cipher",
-     "teamSlug": null,
-     "result": "Group Stage",
-     "tie": true
-    },
-    {
-     "rank": 54,
-     "name": "Kagerou Collective",
-     "teamSlug": null,
-     "result": "Group Stage",
-     "tie": true
-    },
-    {
-     "rank": 55,
-     "name": "Masmark",
-     "teamSlug": "masmark",
-     "result": "Group Stage",
-     "tie": true
-    },
-    {
-     "rank": 56,
-     "name": "Sakura Sovereign",
-     "teamSlug": null,
-     "result": "Group Stage",
-     "tie": true
-    },
-    {
-     "rank": 57,
-     "name": "Setting Sun",
-     "teamSlug": "setting-sun",
-     "result": "Group Stage",
-     "tie": true
-    },
-    {
-     "rank": 58,
-     "name": "Unforgettable",
-     "teamSlug": "unforgettable",
-     "result": "Group Stage",
-     "tie": true
-    },
-    {
-     "rank": 59,
      "name": "Aeternum",
      "teamSlug": "aeternum",
      "result": "Group Stage",
      "tie": true
     },
     {
+     "rank": 53,
+     "name": "Aimpunch",
+     "teamSlug": "aimpunch",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 54,
+     "name": "Ashfall",
+     "teamSlug": null,
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 55,
+     "name": "Echo Cipher",
+     "teamSlug": null,
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 56,
+     "name": "Kagerou Collective",
+     "teamSlug": null,
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 57,
+     "name": "Masmark",
+     "teamSlug": "masmark",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 58,
+     "name": "Sakura Sovereign",
+     "teamSlug": null,
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 59,
+     "name": "Setting Sun",
+     "teamSlug": "setting-sun",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
      "rank": 60,
+     "name": "Unforgettable",
+     "teamSlug": "unforgettable",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 61,
      "name": "Aspire",
      "teamSlug": "aspire",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 61,
+     "rank": 62,
      "name": "Astral Bloom",
      "teamSlug": "astral-bloom",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 62,
+     "rank": 63,
      "name": "Crimson Meridian",
      "teamSlug": null,
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 63,
+     "rank": 64,
      "name": "Cyanide",
      "teamSlug": "cyanide",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 64,
+     "rank": 65,
      "name": "entity",
      "teamSlug": "entity",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 65,
+     "rank": 66,
      "name": "Feral Instinct",
      "teamSlug": null,
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 66,
+     "rank": 67,
      "name": "Lemon Tree",
      "teamSlug": "lemon-tree",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 67,
+     "rank": 68,
      "name": "Moonlit Tempo",
      "teamSlug": "moonlit-tempo",
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 68,
+     "rank": 69,
      "name": "Nightbloom",
      "teamSlug": null,
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 69,
+     "rank": 70,
      "name": "Nightshade",
      "teamSlug": null,
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 70,
+     "rank": 71,
      "name": "Northwind",
      "teamSlug": null,
-     "result": "Group Stage",
-     "tie": true
-    },
-    {
-     "rank": 71,
-     "name": "Opal",
-     "teamSlug": "opal",
      "result": "Group Stage",
      "tie": true
     },
@@ -304314,17 +304556,17 @@
        "captain": false
       },
       {
-       "hist": "Shinomiya Runa",
-       "name": "Shinomiya Runa",
-       "slug": "shinomiya-runa",
-       "iso": "jp",
-       "captain": false
-      },
-      {
        "hist": "ShizuyaUmiko",
        "name": "ShizuyaUmiko",
        "slug": "shizuyaumiko",
        "iso": "my",
+       "captain": false
+      },
+      {
+       "hist": "Shinomiya Runa",
+       "name": "Shinomiya Runa",
+       "slug": "shinomiya-runa",
+       "iso": "jp",
        "captain": false
       },
       {
@@ -304874,17 +305116,17 @@
      "teamSlug": "unforgettable",
      "players": [
       {
-       "hist": "WO4TK",
-       "name": "WO4TK",
-       "slug": "wo4tk",
-       "iso": "sg",
-       "captain": false
-      },
-      {
        "hist": "_kellyxleox_",
        "name": "_kellyxleox_",
        "slug": "kellyxleox",
        "iso": "my",
+       "captain": false
+      },
+      {
+       "hist": "WO4TK",
+       "name": "WO4TK",
+       "slug": "wo4tk",
+       "iso": "sg",
        "captain": false
       },
       {
@@ -305257,10 +305499,10 @@
        "captain": false
       },
       {
-       "hist": "Scorpium",
-       "name": "Scorpium",
-       "slug": "scorpium",
-       "iso": "my",
+       "hist": "kuro_mi",
+       "name": "kuro_mi",
+       "slug": "kuro-mi",
+       "iso": "sg",
        "captain": false
       },
       {
@@ -305271,10 +305513,10 @@
        "captain": false
       },
       {
-       "hist": "kuro_mi",
-       "name": "kuro_mi",
-       "slug": "kuro-mi",
-       "iso": "sg",
+       "hist": "Scorpium",
+       "name": "Scorpium",
+       "slug": "scorpium",
+       "iso": "my",
        "captain": false
       }
      ]
@@ -305283,6 +305525,13 @@
      "team": "Aeternum",
      "teamSlug": "aeternum",
      "players": [
+      {
+       "hist": "CrimsynFlames",
+       "name": "CrimsynFlames",
+       "slug": "crimsynflames",
+       "iso": "sg",
+       "captain": false
+      },
       {
        "hist": "Marsinss",
        "name": "Marsinss",
@@ -305294,13 +305543,6 @@
        "hist": "Applezxc",
        "name": "Applezxc",
        "slug": "applezxc",
-       "iso": "sg",
-       "captain": false
-      },
-      {
-       "hist": "CrimsynFlames",
-       "name": "CrimsynFlames",
-       "slug": "crimsynflames",
        "iso": "sg",
        "captain": false
       },
@@ -324235,10 +324477,10 @@
        "captain": false
       },
       {
-       "hist": "Scorpium",
-       "name": "Scorpium",
-       "slug": "scorpium",
-       "iso": "my",
+       "hist": "kuro_mi",
+       "name": "kuro_mi",
+       "slug": "kuro-mi",
+       "iso": "sg",
        "captain": false
       },
       {
@@ -324249,10 +324491,10 @@
        "captain": false
       },
       {
-       "hist": "kuro_mi",
-       "name": "kuro_mi",
-       "slug": "kuro-mi",
-       "iso": "sg",
+       "hist": "Scorpium",
+       "name": "Scorpium",
+       "slug": "scorpium",
+       "iso": "my",
        "captain": false
       }
      ]
@@ -324276,17 +324518,17 @@
        "captain": false
       },
       {
-       "hist": "Shinomiya Runa",
-       "name": "Shinomiya Runa",
-       "slug": "shinomiya-runa",
-       "iso": "jp",
-       "captain": false
-      },
-      {
        "hist": "ShizuyaUmiko",
        "name": "ShizuyaUmiko",
        "slug": "shizuyaumiko",
        "iso": "my",
+       "captain": false
+      },
+      {
+       "hist": "Shinomiya Runa",
+       "name": "Shinomiya Runa",
+       "slug": "shinomiya-runa",
+       "iso": "jp",
        "captain": false
       },
       {
@@ -324508,17 +324750,17 @@
      "teamSlug": "unforgettable",
      "players": [
       {
-       "hist": "WO4TK",
-       "name": "WO4TK",
-       "slug": "wo4tk",
-       "iso": "sg",
-       "captain": false
-      },
-      {
        "hist": "_kellyxleox_",
        "name": "_kellyxleox_",
        "slug": "kellyxleox",
        "iso": "my",
+       "captain": false
+      },
+      {
+       "hist": "WO4TK",
+       "name": "WO4TK",
+       "slug": "wo4tk",
+       "iso": "sg",
        "captain": false
       },
       {
@@ -324713,6 +324955,13 @@
      "teamSlug": "aeternum",
      "players": [
       {
+       "hist": "CrimsynFlames",
+       "name": "CrimsynFlames",
+       "slug": "crimsynflames",
+       "iso": "sg",
+       "captain": false
+      },
+      {
        "hist": "Marsinss",
        "name": "Marsinss",
        "slug": "marsinss",
@@ -324723,13 +324972,6 @@
        "hist": "Applezxc",
        "name": "Applezxc",
        "slug": "applezxc",
-       "iso": "sg",
-       "captain": false
-      },
-      {
-       "hist": "CrimsynFlames",
-       "name": "CrimsynFlames",
-       "slug": "crimsynflames",
        "iso": "sg",
        "captain": false
       },
