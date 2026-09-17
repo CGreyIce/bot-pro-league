@@ -21978,6 +21978,19 @@
    ]
   }
  ],
+ "audax-esse-bpl-invitational-2026": [
+  {
+   "team": "Masmark",
+   "teamSlug": "masmark",
+   "players": [
+    { "name": "Xyrolizea", "captain": true, "curSlug": "xyrolizea" },
+    { "name": "XuehuaVT", "captain": false, "curSlug": "xuehuavt" },
+    { "name": "urnisa_", "captain": false, "curSlug": "urnisa" },
+    { "name": "kn", "captain": false, "curSlug": "kn" },
+    { "name": "estellyy", "captain": false, "curSlug": "estellyy" }
+   ]
+  }
+ ],
  "audax-esse-bpl-invitational-2025": [
   {
    "team": "Aimpunch",

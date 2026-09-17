@@ -142586,7 +142586,8 @@
       "years": [
        "2023",
        "2024",
-       "2025"
+       "2025",
+       "2026"
       ],
       "roster": [
        {
@@ -323929,6 +323930,47 @@
    "nationTeam": null,
    "attending": [
     {
+     "team": "Masmark",
+     "teamSlug": "masmark",
+     "players": [
+      {
+       "hist": "Xyrolizea",
+       "name": "Xyrolizea",
+       "slug": "xyrolizea",
+       "iso": "sg",
+       "captain": true
+      },
+      {
+       "hist": "XuehuaVT",
+       "name": "XueHuaVT",
+       "slug": "xuehuavt",
+       "iso": "us",
+       "captain": false
+      },
+      {
+       "hist": "urnisa_",
+       "name": "urnisa_",
+       "slug": "urnisa",
+       "iso": "my",
+       "captain": false
+      },
+      {
+       "hist": "kn",
+       "name": "kn",
+       "slug": "kn",
+       "iso": "my",
+       "captain": false
+      },
+      {
+       "hist": "estellyy",
+       "name": "estellyy.",
+       "slug": "estellyy",
+       "iso": "sg",
+       "captain": false
+      }
+     ]
+    },
+    {
      "team": "Aimpunch",
      "teamSlug": "aimpunch",
      "players": [
@@ -324088,47 +324130,6 @@
        "name": "FeatBri",
        "slug": "featbri",
        "iso": "us",
-       "captain": false
-      }
-     ]
-    },
-    {
-     "team": "Masmark",
-     "teamSlug": "masmark",
-     "players": [
-      {
-       "hist": "Xyrolizea",
-       "name": "Xyrolizea",
-       "slug": "xyrolizea",
-       "iso": "sg",
-       "captain": false
-      },
-      {
-       "hist": "XueHuaVT",
-       "name": "XueHuaVT",
-       "slug": "xuehuavt",
-       "iso": "us",
-       "captain": false
-      },
-      {
-       "hist": "HikariiFloofie",
-       "name": "HikariiFloofie",
-       "slug": "hikariifloofie",
-       "iso": "my",
-       "captain": false
-      },
-      {
-       "hist": "urnisa_",
-       "name": "urnisa_",
-       "slug": "urnisa",
-       "iso": "my",
-       "captain": false
-      },
-      {
-       "hist": "kn",
-       "name": "kn",
-       "slug": "kn",
-       "iso": "my",
        "captain": false
       }
      ]
@@ -388717,18 +388718,6 @@
   },
   {
    "type": "transfer",
-   "player": "HikariiFloofie",
-   "playerSlug": "hikariifloofie",
-   "iso": "my",
-   "fromTeam": "MY Squad 4",
-   "fromSlug": null,
-   "toTeam": "Team Malaysia",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "transfer",
    "player": "Eris Suzukami",
    "playerSlug": "eris-suzukami",
    "iso": "kr",
@@ -388759,6 +388748,18 @@
    "fromTeam": "Aurora Pact",
    "fromSlug": null,
    "toTeam": "Team Canada",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
+   "type": "transfer",
+   "player": "HikariiFloofie",
+   "playerSlug": "hikariifloofie",
+   "iso": "my",
+   "fromTeam": "MY Squad 4",
+   "fromSlug": null,
+   "toTeam": "Team Malaysia",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-27"
@@ -392905,18 +392906,6 @@
   },
   {
    "type": "transfer",
-   "player": "HikariiFloofie",
-   "playerSlug": "hikariifloofie",
-   "iso": "my",
-   "fromTeam": "Masmark",
-   "fromSlug": "masmark",
-   "toTeam": "MY Squad 4",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-20"
-  },
-  {
-   "type": "transfer",
    "player": "Acryii_",
    "playerSlug": "acryii",
    "iso": "sg",
@@ -393043,6 +393032,18 @@
    "fromTeam": "Ashfall",
    "fromSlug": null,
    "toTeam": "JP Squad 5",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-20"
+  },
+  {
+   "type": "transfer",
+   "player": "HikariiFloofie",
+   "playerSlug": "hikariifloofie",
+   "iso": "my",
+   "fromTeam": "Masmark",
+   "fromSlug": "masmark",
+   "toTeam": "MY Squad 4",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-20"
