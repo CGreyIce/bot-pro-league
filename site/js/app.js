@@ -600,6 +600,7 @@ function renderPlayer(slug){
         <div class="ib-row"><span class="k">Level</span><span class="v">${p.level||'—'} / 10</span></div>
         <div class="ib-row"><span class="k">Record</span><span class="v">${p.wins}-${p.losses} (${pct(p.winrate)})</span></div>
         <div class="ib-row"><span class="k">Maps</span><span class="v">${p.maps}</span></div>
+        ${p.playsWith?`<div class="ib-row"><span class="k">Plays with</span><span class="v"><a href="#/player/${p.playsWith.slug}" style="color:var(--link)">${flag(p.playsWith.iso)}${esc(p.playsWith.name)}</a> <span class="muted" style="font-size:11px">· ${p.playsWith.games} solo game${p.playsWith.games===1?'':'s'}</span></span></div>`:''}
       </div>
       ${(p.teamHistory&&p.teamHistory.length)?`
       <div class="infobox teamhist">
@@ -2191,7 +2192,7 @@ function setupSoloAdmin(){
     const out=$("#sq-randout"), rmsg=$("#sq-randmsg");
     const line=soloRandomLineup(SOLO_HALF*2);
     if(!line){ out.hidden=false; out.value=""; rmsg.textContent=`Need at least ${SOLO_HALF*2} ranked solo players to build a lineup.`; return; }
-    fillTeams(line.names.slice(0,SOLO_HALF), line.names.slice(SOLO_HALF));
+    fillTeams(line.teamA, line.teamB);            // stack-mates kept on the same side where they fit
     out.hidden=false; out.value=line.str; out.focus(); out.select();
     let copied=false; try{ copied=document.execCommand("copy"); }catch(e){}
     rmsg.textContent=(copied?"Copied. ":"")+`${line.rankLo}–${line.rankHi} in Solo Queue · filled both teams`;
@@ -2287,14 +2288,36 @@ function soloBotName(p){
   const nm = (t && t.tag) ? `${t.tag} ${p.name}` : p.name;
   return { text: /\s/.test(nm) ? `"${nm}"` : nm, tagged: !!(t && t.tag) };
 }
-// a random block of n similarly-ranked Solo Queue players -> a bot_add string
+// split the picked players into two teams of SOLO_HALF, keeping stack-mates together where they fit
+function splitByStacks(players){
+  const bySlug={}; players.forEach(p=>bySlug[p.slug]=p);
+  const present=new Set(players.map(p=>p.slug));
+  const adj={}; players.forEach(p=>adj[p.slug]=new Set());
+  (DATA.stacks||[]).forEach(st=>{ const inn=(st.players||[]).filter(s=>present.has(s));
+    for(let i=0;i<inn.length;i++) for(let j=i+1;j<inn.length;j++){ adj[inn[i]].add(inn[j]); adj[inn[j]].add(inn[i]); } });
+  const seen=new Set(), comps=[];                 // connected components = groups that queue together
+  players.forEach(p=>{ if(seen.has(p.slug)) return; const stk=[p.slug], members=[]; seen.add(p.slug);
+    while(stk.length){ const x=stk.pop(); members.push(x); adj[x].forEach(y=>{ if(!seen.has(y)){ seen.add(y); stk.push(y); } }); }
+    comps.push(members); });
+  const H=SOLO_HALF, teams=[[],[]];
+  comps.sort((a,b)=>b.length-a.length).forEach(m=>{
+    const fits=[0,1].filter(t=>teams[t].length+m.length<=H).sort((x,y)=>teams[x].length-teams[y].length);
+    if(fits.length){ m.forEach(s=>teams[fits[0]].push(s)); }
+    else m.forEach(s=>{ const t=teams[0].length<=teams[1].length?0:1; (teams[t].length<H?teams[t]:teams[1-t]).push(s); });
+  });
+  while(teams[0].length>H) teams[1].push(teams[0].pop());   // force 5/5 if a big group overflowed
+  while(teams[1].length>H) teams[0].push(teams[1].pop());
+  return [teams[0].map(s=>bySlug[s].name), teams[1].map(s=>bySlug[s].name)];
+}
+// a random block of n similarly-ranked Solo Queue players -> a bot_add string + stack-aware teams
 function soloRandomLineup(n){
   const ranked = soloLeague().filter(p=>p.rating!=null).sort((a,b)=>b.rating-a.rating);
   if(ranked.length < n) return null;
   const start = Math.floor(Math.random()*(ranked.length - n + 1));
   const pick = ranked.slice(start, start+n);
   const parts = pick.map(soloBotName);
-  return { str: parts.map(x=>`bot_add ${x.text};`).join(" "), names: pick.map(p=>p.name),
+  const [teamA, teamB] = splitByStacks(pick);
+  return { str: parts.map(x=>`bot_add ${x.text};`).join(" "), names: pick.map(p=>p.name), teamA, teamB,
            rankLo: "#"+(start+1), rankHi: "#"+(start+n), teams: parts.filter(x=>x.tagged).length };
 }
 // snapshot of the solo-queue ranking (rated players, rating desc — mirrors parse.py's solo_ranked)

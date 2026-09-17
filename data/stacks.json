@@ -1,0 +1,180 @@
+[
+ {
+  "type": "duo",
+  "players": [
+   "eris-suzukami",
+   "crimsynflames"
+  ],
+  "source": "manual"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "shinomiya-runa",
+   "amayui-moka"
+  ],
+  "source": "manual"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "nyuii",
+   "baer"
+  ],
+  "source": "manual"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "remia-aotsuki",
+   "tachibana-hinano"
+  ],
+  "source": "manual"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "eris-suzukami",
+   "tatsumaki-chise"
+  ],
+  "source": "manual"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "asterisks",
+   "capplecrow"
+  ],
+  "source": "manual"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "baer",
+   "perk"
+  ],
+  "source": "manual"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "hyvred",
+   "ice"
+  ],
+  "source": "manual"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "tiniibee",
+   "hyvred"
+  ],
+  "source": "manual"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "hyvred",
+   "remia-aotsuki"
+  ],
+  "source": "manual"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "skiazelle",
+   "raviaseir"
+  ],
+  "source": "manual"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "ice",
+   "sayucchi"
+  ],
+  "source": "manual"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "88exp",
+   "tigeraxd"
+  ],
+  "source": "manual"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "eris-suzukami",
+   "crimsynflames",
+   "crex"
+  ],
+  "source": "manual"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "eris-suzukami",
+   "shinomiya-runa",
+   "amayui-moka"
+  ],
+  "source": "manual"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "dumbo",
+   "itzmaigo",
+   "ice"
+  ],
+  "source": "manual"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "baer",
+   "kai",
+   "ice"
+  ],
+  "source": "manual"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "suzuyunn",
+   "ice",
+   "zarlard"
+  ],
+  "source": "manual"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "remia-aotsuki",
+   "eris-suzukami",
+   "kisaragi-ren"
+  ],
+  "source": "manual"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "hanarisu",
+   "aleaka",
+   "milliannavt"
+  ],
+  "source": "manual"
+ },
+ {
+  "type": "full",
+  "players": [
+   "suzuyunn",
+   "ice",
+   "itzmaigo",
+   "djsalty",
+   "dumbo"
+  ],
+  "source": "manual"
+ }
+]

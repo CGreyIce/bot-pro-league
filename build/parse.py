@@ -1015,6 +1015,65 @@ def main():
             if p.get("shadowAmateur"):
                 continue
             pmap.setdefault(norm_key(p["name"]), p)
+
+    # ---- solo-queue co-play: teammates in recorded solo games ----
+    # "played with" = same team in a solo game; a game's teams are its winners vs its losers, so
+    # only games with both sides are usable (an all-loss legacy entry can't be split into teams).
+    def _canon(nm):
+        k = norm_key(nm); nn = old2new.get(k); return norm_key(nn) if nn else k
+    co_play = defaultdict(int)                    # frozenset({nkA, nkB}) -> games together
+    for g in solo_sb:
+        wnr = [_canon(pl.get("name", "")) for pl in g.get("players", []) if pl.get("won")]
+        lsr = [_canon(pl.get("name", "")) for pl in g.get("players", []) if not pl.get("won")]
+        if not wnr or not lsr:
+            continue
+        for side in (wnr, lsr):
+            for i in range(len(side)):
+                for j in range(i + 1, len(side)):
+                    if side[i] and side[j] and side[i] != side[j]:
+                        co_play[frozenset((side[i], side[j]))] += 1
+    STACKS_MIN = 3                                # shared solo games before a pair counts as a stack
+    # each player's most-frequent solo-queue partner (shown on the profile; pros included if they queue)
+    for p in (pro + amateur + solo):
+        pk = norm_key(p["name"]); best, bestc = None, 0
+        for pair, c in co_play.items():
+            if pk in pair and c > bestc:
+                bestc, best = c, next(iter(pair - {pk}), None)
+        bp = pmap.get(best) if best else None
+        if bp and bp["slug"] != p["slug"]:
+            p["playsWith"] = {"slug": bp["slug"], "name": bp["name"], "iso": bp.get("iso", ""), "games": bestc}
+    # stacks fed to the admin random-lineup generator: the hand-kept list + auto-detected ones.
+    def _sl(nk_):                                 # canonical slug for a normalized name
+        bp = pmap.get(nk_); return bp["slug"] if bp else None
+    sp = os.path.join(DATA, "stacks.json")
+    _manual = json.load(open(sp, encoding="utf-8")) if os.path.exists(sp) else []
+    _valid = {p["slug"] for pool in (pro, amateur, solo) for p in pool}
+    stacks = [s for s in _manual if all(x in _valid for x in s.get("players", []))]
+    _have = {frozenset(s["players"]) for s in stacks}
+    hot = {pair for pair, c in co_play.items() if c >= STACKS_MIN}
+    _hadj = defaultdict(set)
+    for pair in hot:
+        a, b = tuple(pair); _hadj[a].add(b); _hadj[b].add(a)
+    _trio_pairs = set()
+    _hnodes = sorted(_hadj)
+    for i in range(len(_hnodes)):                 # auto trios: three players all mutually hot
+        for j in range(i + 1, len(_hnodes)):
+            if frozenset((_hnodes[i], _hnodes[j])) not in hot: continue
+            for k in range(j + 1, len(_hnodes)):
+                a, b, c = _hnodes[i], _hnodes[j], _hnodes[k]
+                if frozenset((a, c)) in hot and frozenset((b, c)) in hot:
+                    slugs = [_sl(a), _sl(b), _sl(c)]
+                    if all(slugs) and frozenset(slugs) not in _have:
+                        stacks.append({"type": "trio", "players": slugs, "source": "auto"})
+                        _have.add(frozenset(slugs))
+                        _trio_pairs |= {frozenset((a, b)), frozenset((a, c)), frozenset((b, c))}
+    for pair in hot:                              # auto duos: hot pairs not folded into a trio/manual
+        if pair in _trio_pairs: continue
+        a, b = [_sl(x) for x in pair]
+        if a and b and frozenset((a, b)) not in _have:
+            stacks.append({"type": "duo", "players": [a, b], "source": "auto", "games": co_play[pair]})
+            _have.add(frozenset((a, b)))
+
     hist_path = os.path.join(DATA, "hist_rosters.json")
     hist_rosters = json.load(open(hist_path, encoding="utf-8")) if os.path.exists(hist_path) else {}
     team_by_key2 = {t["key"]: t for t in teams}
@@ -1563,6 +1622,7 @@ def main():
         "nationMapTeams": nation_map_teams,
         "qualifierMapTeams": qualifier_map_teams,
         "soloGameStats": solo_game_stats,
+        "stacks": stacks,
     }
     os.makedirs(SITE, exist_ok=True)
     with open(os.path.join(SITE, "data.json"), "w", encoding="utf-8") as f:
