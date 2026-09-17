@@ -12484,6 +12484,511 @@
      ]
     }
    ]
+  },
+  "7-6": {
+   "maps": [
+    {
+     "map": "Cache",
+     "scoreA": 13,
+     "scoreB": 4,
+     "players": [
+      {
+       "team": "Wraithborne",
+       "name": "ProPHOcy_",
+       "k": 17,
+       "a": 2,
+       "d": 8,
+       "mvp": 4,
+       "score": 49
+      },
+      {
+       "team": "Wraithborne",
+       "name": "RIHSURI",
+       "k": 19,
+       "a": 1,
+       "d": 7,
+       "mvp": 3,
+       "score": 47
+      },
+      {
+       "team": "Wraithborne",
+       "name": "voidnw",
+       "k": 15,
+       "a": 4,
+       "d": 7,
+       "mvp": 2,
+       "score": 41
+      },
+      {
+       "team": "Wraithborne",
+       "name": "rattecs",
+       "k": 13,
+       "a": 2,
+       "d": 9,
+       "mvp": 2,
+       "score": 34
+      },
+      {
+       "team": "Wraithborne",
+       "name": "Pattsuu",
+       "k": 11,
+       "a": 4,
+       "d": 11,
+       "mvp": 2,
+       "score": 28
+      },
+      {
+       "team": "Aurora Pact",
+       "name": "Arya Kuroha",
+       "k": 14,
+       "a": 0,
+       "d": 14,
+       "mvp": 3,
+       "score": 34
+      },
+      {
+       "team": "Aurora Pact",
+       "name": "stitchkyui",
+       "k": 10,
+       "a": 0,
+       "d": 15,
+       "mvp": 0,
+       "score": 26
+      },
+      {
+       "team": "Aurora Pact",
+       "name": "Niamocha",
+       "k": 10,
+       "a": 2,
+       "d": 15,
+       "mvp": 1,
+       "score": 23
+      },
+      {
+       "team": "Aurora Pact",
+       "name": "LeilaMayadah",
+       "k": 5,
+       "a": 0,
+       "d": 15,
+       "mvp": 0,
+       "score": 17
+      },
+      {
+       "team": "Aurora Pact",
+       "name": "haze_vt",
+       "k": 3,
+       "a": 0,
+       "d": 16,
+       "mvp": 0,
+       "score": 6
+      }
+     ]
+    }
+   ]
+  },
+  "7-7": {
+   "maps": [
+    {
+     "map": "Dust2",
+     "scoreA": 16,
+     "scoreB": 12,
+     "players": [
+      {
+       "team": "Sacred Raven",
+       "name": "matcha",
+       "k": 34,
+       "a": 1,
+       "d": 18,
+       "mvp": 7,
+       "score": 79
+      },
+      {
+       "team": "Sacred Raven",
+       "name": "Asterisks",
+       "k": 25,
+       "a": 3,
+       "d": 20,
+       "mvp": 2,
+       "score": 61
+      },
+      {
+       "team": "Sacred Raven",
+       "name": "capplecrow",
+       "k": 17,
+       "a": 5,
+       "d": 21,
+       "mvp": 4,
+       "score": 44
+      },
+      {
+       "team": "Sacred Raven",
+       "name": "skysbeautylai",
+       "k": 16,
+       "a": 2,
+       "d": 19,
+       "mvp": 2,
+       "score": 40
+      },
+      {
+       "team": "Sacred Raven",
+       "name": "Wellson111",
+       "k": 14,
+       "a": 1,
+       "d": 21,
+       "mvp": 1,
+       "score": 31
+      },
+      {
+       "team": "The Nomads",
+       "name": "Nikorasu",
+       "k": 27,
+       "a": 4,
+       "d": 20,
+       "mvp": 2,
+       "score": 64
+      },
+      {
+       "team": "The Nomads",
+       "name": "luciddoob",
+       "k": 22,
+       "a": 3,
+       "d": 20,
+       "mvp": 4,
+       "score": 51
+      },
+      {
+       "team": "The Nomads",
+       "name": "Redandb1ue",
+       "k": 19,
+       "a": 1,
+       "d": 22,
+       "mvp": 1,
+       "score": 46
+      },
+      {
+       "team": "The Nomads",
+       "name": "Rethnap",
+       "k": 18,
+       "a": 1,
+       "d": 21,
+       "mvp": 2,
+       "score": 41
+      },
+      {
+       "team": "The Nomads",
+       "name": "mominichi",
+       "k": 13,
+       "a": 3,
+       "d": 23,
+       "mvp": 3,
+       "score": 34
+      }
+     ]
+    }
+   ]
+  },
+  "7-8": {
+   "maps": [
+    {
+     "map": "Dust2",
+     "scoreA": 16,
+     "scoreB": 14,
+     "players": [
+      {
+       "team": "Bloom E-Sports",
+       "name": "lumpydayo",
+       "k": 31,
+       "a": 3,
+       "d": 24,
+       "mvp": 6,
+       "score": 74
+      },
+      {
+       "team": "Bloom E-Sports",
+       "name": "VeniceC",
+       "k": 21,
+       "a": 1,
+       "d": 19,
+       "mvp": 3,
+       "score": 58
+      },
+      {
+       "team": "Bloom E-Sports",
+       "name": "fleurcoz",
+       "k": 18,
+       "a": 5,
+       "d": 27,
+       "mvp": 2,
+       "score": 46
+      },
+      {
+       "team": "Bloom E-Sports",
+       "name": "plainyingying",
+       "k": 19,
+       "a": 1,
+       "d": 22,
+       "mvp": 1,
+       "score": 46
+      },
+      {
+       "team": "Bloom E-Sports",
+       "name": "winda",
+       "k": 15,
+       "a": 1,
+       "d": 20,
+       "mvp": 4,
+       "score": 39
+      },
+      {
+       "team": "Supernova",
+       "name": "Jenakai",
+       "k": 24,
+       "a": 2,
+       "d": 19,
+       "mvp": 4,
+       "score": 64
+      },
+      {
+       "team": "Supernova",
+       "name": "L2Strike",
+       "k": 23,
+       "a": 3,
+       "d": 22,
+       "mvp": 3,
+       "score": 57
+      },
+      {
+       "team": "Supernova",
+       "name": "Hamzyy",
+       "k": 23,
+       "a": 1,
+       "d": 19,
+       "mvp": 5,
+       "score": 53
+      },
+      {
+       "team": "Supernova",
+       "name": "rach.elx_",
+       "k": 21,
+       "a": 1,
+       "d": 23,
+       "mvp": 2,
+       "score": 52
+      },
+      {
+       "team": "Supernova",
+       "name": "KiokoCheiko",
+       "k": 21,
+       "a": 4,
+       "d": 21,
+       "mvp": 0,
+       "score": 52
+      }
+     ]
+    }
+   ]
+  },
+  "7-9": {
+   "maps": [
+    {
+     "map": "Vertigo",
+     "scoreA": 9,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Lemon Tree",
+       "name": "JWQI",
+       "k": 19,
+       "a": 4,
+       "d": 16,
+       "mvp": 3,
+       "score": 49
+      },
+      {
+       "team": "Lemon Tree",
+       "name": "MoonRaika",
+       "k": 14,
+       "a": 3,
+       "d": 19,
+       "mvp": 1,
+       "score": 37
+      },
+      {
+       "team": "Lemon Tree",
+       "name": "Meowcolmz",
+       "k": 13,
+       "a": 0,
+       "d": 18,
+       "mvp": 2,
+       "score": 33
+      },
+      {
+       "team": "Lemon Tree",
+       "name": "kkayyteeee",
+       "k": 11,
+       "a": 2,
+       "d": 17,
+       "mvp": 2,
+       "score": 32
+      },
+      {
+       "team": "Lemon Tree",
+       "name": "luminmochi",
+       "k": 9,
+       "a": 3,
+       "d": 17,
+       "mvp": 1,
+       "score": 25
+      },
+      {
+       "team": "Northwind",
+       "name": "MizukiiMoon",
+       "k": 23,
+       "a": 5,
+       "d": 12,
+       "mvp": 3,
+       "score": 64
+      },
+      {
+       "team": "Northwind",
+       "name": "Karoni",
+       "k": 17,
+       "a": 2,
+       "d": 11,
+       "mvp": 4,
+       "score": 50
+      },
+      {
+       "team": "Northwind",
+       "name": "MilliannaVT",
+       "k": 17,
+       "a": 1,
+       "d": 13,
+       "mvp": 3,
+       "score": 43
+      },
+      {
+       "team": "Northwind",
+       "name": "Airizu",
+       "k": 17,
+       "a": 4,
+       "d": 16,
+       "mvp": 2,
+       "score": 43
+      },
+      {
+       "team": "Northwind",
+       "name": "MiyaLeile",
+       "k": 12,
+       "a": 4,
+       "d": 15,
+       "mvp": 1,
+       "score": 37
+      }
+     ]
+    }
+   ]
+  },
+  "7-10": {
+   "maps": [
+    {
+     "map": "Vertigo",
+     "scoreA": 1,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Astral Bloom",
+       "name": "Tachibana Hinano",
+       "k": 8,
+       "a": 1,
+       "d": 13,
+       "mvp": 1,
+       "score": 17
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Eris Suzukami",
+       "k": 6,
+       "a": 2,
+       "d": 13,
+       "mvp": 0,
+       "score": 16
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Tsumugi Kokage",
+       "k": 6,
+       "a": 0,
+       "d": 14,
+       "mvp": 0,
+       "score": 12
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Remia Aotsuki",
+       "k": 4,
+       "a": 0,
+       "d": 13,
+       "mvp": 0,
+       "score": 8
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Shiranami Ramune",
+       "k": 2,
+       "a": 1,
+       "d": 13,
+       "mvp": 0,
+       "score": 5
+      },
+      {
+       "team": "xPlosiv",
+       "name": "tapiyokaaa",
+       "k": 18,
+       "a": 0,
+       "d": 4,
+       "mvp": 4,
+       "score": 45
+      },
+      {
+       "team": "xPlosiv",
+       "name": "Cursiffe",
+       "k": 16,
+       "a": 0,
+       "d": 6,
+       "mvp": 6,
+       "score": 38
+      },
+      {
+       "team": "xPlosiv",
+       "name": "88EXP",
+       "k": 15,
+       "a": 0,
+       "d": 5,
+       "mvp": 1,
+       "score": 34
+      },
+      {
+       "team": "xPlosiv",
+       "name": "TokieShepherdVT",
+       "k": 11,
+       "a": 0,
+       "d": 5,
+       "mvp": 2,
+       "score": 31
+      },
+      {
+       "team": "xPlosiv",
+       "name": "StrigidaeVT",
+       "k": 6,
+       "a": 0,
+       "d": 6,
+       "mvp": 0,
+       "score": 14
+      }
+     ]
+    }
+   ]
   }
  },
  "nations-cup-qualifier-philippines-2026": {

@@ -1644,8 +1644,17 @@ def main():
                                   "endEvent": best_end["event"], "endSlug": best_end["eventSlug"],
                                   "endDate": best_end["date"]} if best >= 2 else None)
 
+    # ---- news / articles (admin-authored) ----
+    ap = os.path.join(DATA, "articles.json")
+    articles = json.load(open(ap, encoding="utf-8")) if os.path.exists(ap) else []
+    for a in articles:
+        snip = re.sub(r"\s+", " ", a.get("body", "")).strip()
+        a["snippet"] = (snip[:180].rstrip() + "…") if len(snip) > 180 else snip
+    articles.sort(key=lambda a: (a.get("date", ""), a.get("slug", "")), reverse=True)
+
     data = {
         "teams": teams,
+        "articles": articles,
         "players": {"pro": pro, "amateur": amateur, "solo": solo},
         "pool_avg": {"pro": pro_avg, "amateur": am_avg, "solo": solo_avg},
         "weights": WEIGHTS,
