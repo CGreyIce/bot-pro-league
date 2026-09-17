@@ -92586,10 +92586,17 @@
          "captain": false
         },
         {
-         "hist": "Eris Suzukami",
-         "name": "Eris Suzukami",
-         "slug": "eris-suzukami",
-         "iso": "kr",
+         "hist": "Ginjo Saine",
+         "name": "Ginjo Saine",
+         "slug": "ginjo-saine",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Kogara Toto",
+         "name": "Kogara Toto",
+         "slug": "kogara-toto",
+         "iso": "jp",
          "captain": false
         },
         {
@@ -92600,16 +92607,9 @@
          "captain": false
         },
         {
-         "hist": "Tsumugi Kokage",
-         "name": "Tsumugi Kokage",
-         "slug": "tsumugi-kokage",
-         "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "Shiranami Ramune",
-         "name": "Shiranami Ramune",
-         "slug": "shiranami-ramune",
+         "hist": "Yumeno Akari",
+         "name": "Yumeno Akari",
+         "slug": "yumeno-akari",
          "iso": "jp",
          "captain": false
         }
@@ -92708,55 +92708,172 @@
      ]
     },
     {
-     "name": "Eris Suzukami",
+     "name": "Ginjo Saine",
      "team": "Astral Bloom",
      "pool": "pro",
-     "kills": 478,
-     "assists": 67,
-     "deaths": 459,
-     "mvp": 63,
-     "kdr": 1.04,
+     "kills": 389,
+     "assists": 33,
+     "deaths": 356,
+     "mvp": 61,
+     "kdr": 1.09,
      "wins": 13,
-     "losses": 18,
-     "winrate": 0.419,
-     "ot": 0,
+     "losses": 10,
+     "winrate": 0.565,
+     "ot": 3,
      "role": "Rifler",
-     "maps": 31,
-     "orig_rank": "Iron",
+     "maps": 23,
+     "orig_rank": "Bronze",
      "orig_level": "Level 3",
-     "orig_rating": 1258.0,
-     "slug": "eris-suzukami",
-     "nat": "Korea",
-     "iso": "kr",
+     "orig_rating": 1003.0,
+     "slug": "ginjo-saine",
+     "amateurOrigin": true,
+     "nat": "Japan",
+     "iso": "jp",
      "provisional": false,
-     "rating": 1.002,
-     "ratingPoints": 1158,
-     "tier": "Platinum",
-     "level": 5,
-     "kpm": 15.4,
+     "rating": 1.043,
+     "ratingPoints": 1317,
+     "tier": "Diamond",
+     "level": 6,
+     "kpm": 16.9,
      "rankDelta": 0,
-     "soloStats": {
-      "kills": 242,
-      "deaths": 219,
-      "assists": 28,
-      "mvp": 36,
-      "wins": 8,
-      "losses": 5,
-      "maps": 13,
-      "kdr": 1.11,
-      "winrate": 0.615,
-      "rating": 1.068,
-      "ratingPoints": 1414,
-      "tier": "Master",
-      "level": 7,
-      "soloRank": 31,
-      "soloTotal": 239,
-      "rankDelta": 0,
-      "provisional": false
-     },
-     "bio": "Eris Suzukami is an Level 5 rifler for Astral Bloom, a Japanese fragger whose 1.04 K/D is a bright spot on a struggling team.",
+     "bio": "Ginjo Saine is a Japanese rifler rated Level 6 in the league, a developing free agent.",
      "gender": "F",
      "teamHistory": [
+      {
+       "team": "Extinction Bay",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "sURF",
+         "name": "sURF",
+         "slug": "surf",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Syrrith",
+         "name": "Syrrith",
+         "slug": "syrrith",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "Nekota Tsuna",
+         "name": "Nekota Tsuna",
+         "slug": "nekota-tsuna",
+         "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "Tosaki Mimi",
+         "name": "Tosaki Mimi",
+         "slug": "tosaki-mimi",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Ginjo Saine",
+         "name": "Ginjo Saine",
+         "slug": "ginjo-saine",
+         "iso": "jp",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Magic Maverick",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Pattsuu",
+         "name": "Pattsuu",
+         "slug": "pattsuu",
+         "iso": "ca",
+         "captain": false
+        },
+        {
+         "hist": "Ginjo Saine",
+         "name": "Ginjo Saine",
+         "slug": "ginjo-saine",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Aweberry",
+         "name": "Aweberry",
+         "slug": "aweberry",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "rebebx",
+         "name": "rebebx",
+         "slug": "rebebx",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "shirou_kitakami",
+         "name": "shirou_kitakami",
+         "slug": "shirou-kitakami",
+         "iso": "us",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "ELITE",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "EXaCT",
+         "name": "EXaCT",
+         "slug": "exact",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Airizu",
+         "name": "Airizu",
+         "slug": "airizu",
+         "iso": "nl",
+         "captain": false
+        },
+        {
+         "hist": "Ginjo Saine",
+         "name": "Ginjo Saine",
+         "slug": "ginjo-saine",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "kimonra",
+         "name": "kimonra",
+         "slug": "kimonra",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "voidnw",
+         "name": "voidnw",
+         "slug": "voidnw",
+         "iso": "us",
+         "captain": false
+        }
+       ]
+      },
       {
        "team": "Astral Bloom",
        "teamSlug": "astral-bloom",
@@ -92773,10 +92890,17 @@
          "captain": false
         },
         {
-         "hist": "Eris Suzukami",
-         "name": "Eris Suzukami",
-         "slug": "eris-suzukami",
-         "iso": "kr",
+         "hist": "Ginjo Saine",
+         "name": "Ginjo Saine",
+         "slug": "ginjo-saine",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Kogara Toto",
+         "name": "Kogara Toto",
+         "slug": "kogara-toto",
+         "iso": "jp",
          "captain": false
         },
         {
@@ -92787,23 +92911,16 @@
          "captain": false
         },
         {
-         "hist": "Tsumugi Kokage",
-         "name": "Tsumugi Kokage",
-         "slug": "tsumugi-kokage",
-         "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "Shiranami Ramune",
-         "name": "Shiranami Ramune",
-         "slug": "shiranami-ramune",
+         "hist": "Yumeno Akari",
+         "name": "Yumeno Akari",
+         "slug": "yumeno-akari",
          "iso": "jp",
          "captain": false
         }
        ]
       },
       {
-       "team": "Team Korea",
+       "team": "JP Squad 4",
        "teamSlug": null,
        "isPro": false,
        "years": [
@@ -92811,24 +92928,219 @@
        ],
        "roster": [
         {
-         "hist": "byeolyuna",
-         "name": "byeolyuna",
-         "slug": "byeolyuna-solo",
-         "iso": "kr",
+         "hist": "Tosaki Mimi",
+         "name": "Tosaki Mimi",
+         "slug": "tosaki-mimi",
+         "iso": "jp",
+         "captain": true
+        },
+        {
+         "hist": "Tachibana Hinano",
+         "name": "Tachibana Hinano",
+         "slug": "tachibana-hinano",
+         "iso": "jp",
          "captain": false
         },
         {
-         "hist": "Eris Suzukami",
-         "name": "Eris Suzukami",
-         "slug": "eris-suzukami",
-         "iso": "kr",
+         "hist": "Ginjo Saine",
+         "name": "Ginjo Saine",
+         "slug": "ginjo-saine",
+         "iso": "jp",
          "captain": false
         },
         {
-         "hist": "GreatMoonAroma",
-         "name": "GreatMoonAroma",
-         "slug": "greatmoonaroma-solo",
-         "iso": "kr",
+         "hist": "Shinomiya Runa",
+         "name": "Shinomiya Runa",
+         "slug": "shinomiya-runa",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Miki Nakai",
+         "name": "Miki Nakai",
+         "slug": "miki-nakai",
+         "iso": "jp",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Team Japan",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Tosaki Mimi",
+         "name": "Tosaki Mimi",
+         "slug": "tosaki-mimi",
+         "iso": "jp",
+         "captain": true
+        },
+        {
+         "hist": "Tachibana Hinano",
+         "name": "Tachibana Hinano",
+         "slug": "tachibana-hinano",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Ginjo Saine",
+         "name": "Ginjo Saine",
+         "slug": "ginjo-saine",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Shinomiya Runa",
+         "name": "Shinomiya Runa",
+         "slug": "shinomiya-runa",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Miki Nakai",
+         "name": "Miki Nakai",
+         "slug": "miki-nakai",
+         "iso": "jp",
+         "captain": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Kogara Toto",
+     "team": "Astral Bloom",
+     "pool": "pro",
+     "kills": 448,
+     "assists": 64,
+     "deaths": 412,
+     "mvp": 71,
+     "kdr": 1.09,
+     "wins": 15,
+     "losses": 14,
+     "winrate": 0.517,
+     "ot": 1,
+     "role": "Rifler",
+     "maps": 29,
+     "orig_rank": "Emerald",
+     "orig_level": "Level 4",
+     "orig_rating": 1974.0,
+     "slug": "kogara-toto",
+     "amateurOrigin": true,
+     "nat": "Japan",
+     "iso": "jp",
+     "provisional": false,
+     "rating": 1.039,
+     "ratingPoints": 1302,
+     "tier": "Diamond",
+     "level": 6,
+     "kpm": 15.4,
+     "rankDelta": 0,
+     "soloStats": {
+      "kills": 83,
+      "deaths": 91,
+      "assists": 18,
+      "mvp": 8,
+      "wins": 4,
+      "losses": 3,
+      "maps": 7,
+      "kdr": 0.91,
+      "winrate": 0.571,
+      "rating": 1.007,
+      "ratingPoints": 1179,
+      "tier": "Platinum",
+      "level": 5,
+      "soloRank": 117,
+      "soloTotal": 239,
+      "rankDelta": 0,
+      "provisional": false
+     },
+     "bio": "Kogara Toto is a Japanese rifler rated Level 6 in the league, a free agent with a tidy 1.09 K/D.",
+     "gender": "F",
+     "teamHistory": [
+      {
+       "team": "Eiromancers",
+       "teamSlug": "eiromancers",
+       "isPro": true,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "RaviasEir",
+         "name": "RaviasEir",
+         "slug": "raviaseir",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Skiazelle",
+         "name": "Skiazelle",
+         "slug": "skiazelle",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Asumi Sena",
+         "name": "Asumi Sena",
+         "slug": "asumi-sena",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Kogara Toto",
+         "name": "Kogara Toto",
+         "slug": "kogara-toto",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "kaikaijins",
+         "name": "kaikaijins",
+         "slug": "kaikaijins",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Stars Bore Witness",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "rattecs",
+         "name": "rattecs",
+         "slug": "rattecs",
+         "iso": "fi",
+         "captain": false
+        },
+        {
+         "hist": "Komori Met",
+         "name": "Komori Met",
+         "slug": "komori-met",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Kogara Toto",
+         "name": "Kogara Toto",
+         "slug": "kogara-toto",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "KrinoJ",
+         "name": "KrinoJ",
+         "slug": "krinoj",
+         "iso": "sg",
          "captain": false
         },
         {
@@ -92837,26 +93149,98 @@
          "slug": "narin-mikure",
          "iso": "kr",
          "captain": false
-        },
-        {
-         "hist": "Nekota Tsuna",
-         "name": "Nekota Tsuna",
-         "slug": "nekota-tsuna",
-         "iso": "kr",
-         "captain": true
         }
        ]
-      }
-     ],
-     "podiums": [
+      },
       {
-       "m": "s",
-       "event": "BPL Nations Cup 2026",
-       "slug": "bpl-nations-cup-2026",
-       "tier": "s",
-       "tierLabel": "S-Tier",
-       "year": "2026",
-       "team": "Team Korea"
+       "team": "Astral Bloom",
+       "teamSlug": "astral-bloom",
+       "isPro": true,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Tachibana Hinano",
+         "name": "Tachibana Hinano",
+         "slug": "tachibana-hinano",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Ginjo Saine",
+         "name": "Ginjo Saine",
+         "slug": "ginjo-saine",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Kogara Toto",
+         "name": "Kogara Toto",
+         "slug": "kogara-toto",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Remia Aotsuki",
+         "name": "Remia Aotsuki",
+         "slug": "remia-aotsuki",
+         "iso": "nl",
+         "captain": false
+        },
+        {
+         "hist": "Yumeno Akari",
+         "name": "Yumeno Akari",
+         "slug": "yumeno-akari",
+         "iso": "jp",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "JP Squad 2",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Kamito",
+         "name": "Kamito",
+         "slug": "kamito",
+         "iso": "jp",
+         "captain": true
+        },
+        {
+         "hist": "Kogara Toto",
+         "name": "Kogara Toto",
+         "slug": "kogara-toto",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Aizawa Ema",
+         "name": "Aizawa Ema",
+         "slug": "aizawa-ema",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Sendo Yuuhi",
+         "name": "Sendo Yuuhi",
+         "slug": "sendo-yuuhi",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Ichinose Uruha",
+         "name": "Ichinose Uruha",
+         "slug": "ichinose-uruha",
+         "iso": "jp",
+         "captain": false
+        }
+       ]
       }
      ]
     },
@@ -92927,10 +93311,17 @@
          "captain": false
         },
         {
-         "hist": "Eris Suzukami",
-         "name": "Eris Suzukami",
-         "slug": "eris-suzukami",
-         "iso": "kr",
+         "hist": "Ginjo Saine",
+         "name": "Ginjo Saine",
+         "slug": "ginjo-saine",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Kogara Toto",
+         "name": "Kogara Toto",
+         "slug": "kogara-toto",
+         "iso": "jp",
          "captain": false
         },
         {
@@ -92941,16 +93332,9 @@
          "captain": false
         },
         {
-         "hist": "Tsumugi Kokage",
-         "name": "Tsumugi Kokage",
-         "slug": "tsumugi-kokage",
-         "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "Shiranami Ramune",
-         "name": "Shiranami Ramune",
-         "slug": "shiranami-ramune",
+         "hist": "Yumeno Akari",
+         "name": "Yumeno Akari",
+         "slug": "yumeno-akari",
          "iso": "jp",
          "captain": false
         }
@@ -93004,185 +93388,177 @@
      ]
     },
     {
-     "name": "Tsumugi Kokage",
+     "name": "Yumeno Akari",
      "team": "Astral Bloom",
      "pool": "pro",
-     "kills": 519,
-     "assists": 105,
-     "deaths": 577,
-     "mvp": 63,
-     "kdr": 0.9,
-     "wins": 12,
-     "losses": 23,
-     "winrate": 0.343,
-     "ot": 0,
-     "role": "Rifler",
-     "maps": 35,
-     "orig_rank": "Bronze",
-     "orig_level": "Level 3",
-     "orig_rating": 1265.0,
-     "slug": "tsumugi-kokage",
-     "nat": "Japan",
-     "iso": "jp",
-     "provisional": false,
-     "rating": 0.967,
-     "ratingPoints": 1021,
-     "tier": "Silver",
-     "level": 4,
-     "kpm": 14.8,
-     "rankDelta": 0,
-     "soloStats": {
-      "kills": 76,
-      "deaths": 89,
-      "assists": 14,
-      "mvp": 10,
-      "wins": 3,
-      "losses": 2,
-      "maps": 5,
-      "kdr": 0.85,
-      "winrate": 0.6,
-      "rating": 1.018,
-      "ratingPoints": 1220,
-      "tier": "Emerald",
-      "level": 6,
-      "soloRank": 99,
-      "soloTotal": 239,
-      "rankDelta": 0,
-      "provisional": false
-     },
-     "bio": "Tsumugi Kokage is a Level 4 rifler for Astral Bloom, a Japanese fragger keeping the scoreboard ticking on a team short of wins.",
-     "gender": "F",
-     "teamHistory": [
-      {
-       "team": "Astral Bloom",
-       "teamSlug": "astral-bloom",
-       "isPro": true,
-       "years": [
-        "2025",
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "Tachibana Hinano",
-         "name": "Tachibana Hinano",
-         "slug": "tachibana-hinano",
-         "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "Eris Suzukami",
-         "name": "Eris Suzukami",
-         "slug": "eris-suzukami",
-         "iso": "kr",
-         "captain": false
-        },
-        {
-         "hist": "Remia Aotsuki",
-         "name": "Remia Aotsuki",
-         "slug": "remia-aotsuki",
-         "iso": "nl",
-         "captain": false
-        },
-        {
-         "hist": "Tsumugi Kokage",
-         "name": "Tsumugi Kokage",
-         "slug": "tsumugi-kokage",
-         "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "Shiranami Ramune",
-         "name": "Shiranami Ramune",
-         "slug": "shiranami-ramune",
-         "iso": "jp",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "JP Squad 3",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "Shiranami Ramune",
-         "name": "Shiranami Ramune",
-         "slug": "shiranami-ramune",
-         "iso": "jp",
-         "captain": true
-        },
-        {
-         "hist": "Shuvimo",
-         "name": "Shuvimo",
-         "slug": "shuvimo",
-         "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "Choya Hanabi",
-         "name": "Choya Hanabi",
-         "slug": "choya-hanabi",
-         "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "Tsumugi Kokage",
-         "name": "Tsumugi Kokage",
-         "slug": "tsumugi-kokage",
-         "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "Kaminari Qpi",
-         "name": "Kaminari Qpi",
-         "slug": "kaminari-qpi",
-         "iso": "jp",
-         "captain": false
-        }
-       ]
-      }
-     ]
-    },
-    {
-     "name": "Shiranami Ramune",
-     "team": "Astral Bloom",
-     "pool": "pro",
-     "kills": 522,
-     "assists": 69,
-     "deaths": 571,
-     "mvp": 76,
-     "kdr": 0.91,
-     "wins": 12,
-     "losses": 23,
-     "winrate": 0.343,
-     "ot": 0,
+     "kills": 255,
+     "assists": 34,
+     "deaths": 285,
+     "mvp": 32,
+     "kdr": 0.89,
+     "wins": 7,
+     "losses": 10,
+     "winrate": 0.412,
+     "ot": 2,
      "role": "Awper",
-     "maps": 35,
-     "orig_rank": "Bronze",
+     "maps": 17,
+     "orig_rank": "Silver",
      "orig_level": "Level 3",
-     "orig_rating": 1361.0,
-     "slug": "shiranami-ramune",
+     "orig_rating": 1222.0,
+     "slug": "yumeno-akari",
+     "amateurOrigin": true,
      "nat": "Japan",
      "iso": "jp",
      "provisional": false,
-     "rating": 0.959,
-     "ratingPoints": 988,
+     "rating": 0.962,
+     "ratingPoints": 1001,
      "tier": "Silver",
      "level": 4,
-     "kpm": 14.9,
+     "kpm": 15.0,
      "rankDelta": 0,
-     "bio": "Shiranami Ramune is a Level 4 AWPer for Astral Bloom, a Japanese sniper holding the line for a team low on wins.",
+     "bio": "Yumeno Akari is a Japanese AWPer rated Level 4 in the league, a developing free agent.",
      "gender": "F",
      "teamHistory": [
+      {
+       "team": "CharacterLimit",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "FumishiroYummy",
+         "name": "FumishiroYummy",
+         "slug": "fumishiroyummy",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Hanabusa Lisa",
+         "name": "Hanabusa Lisa",
+         "slug": "hanabusa-lisa",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "LeilaMayadah",
+         "name": "LeilaMayadah",
+         "slug": "leilamayadah",
+         "iso": "ca",
+         "captain": false
+        },
+        {
+         "hist": "Yumeno Akari",
+         "name": "Yumeno Akari",
+         "slug": "yumeno-akari",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "YinghuVT",
+         "name": "azumiying",
+         "slug": "azumiying",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Zero Tolerance",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Yarimell",
+         "name": "Yarimell",
+         "slug": "yarimell",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "Jasticar",
+         "name": "Jasticar",
+         "slug": "jasticar",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Tosaki Mimi",
+         "name": "Tosaki Mimi",
+         "slug": "tosaki-mimi",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Yumeno Akari",
+         "name": "Yumeno Akari",
+         "slug": "yumeno-akari",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Nightveil Lycoris",
+         "name": "Nightveil Lycoris",
+         "slug": "nightveil-lycoris",
+         "iso": "my",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "MAcKY",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Michimouto",
+         "name": "Michimouto",
+         "slug": "michimouto",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Aweberry",
+         "name": "Aweberry",
+         "slug": "aweberry",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "cwstalVT",
+         "name": "cwstalVT",
+         "slug": "cwstalvt",
+         "iso": "us",
+         "captain": false
+        },
+        {
+         "hist": "KrinoJ",
+         "name": "KrinoJ",
+         "slug": "krinoj",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Yumeno Akari",
+         "name": "Yumeno Akari",
+         "slug": "yumeno-akari",
+         "iso": "jp",
+         "captain": false
+        }
+       ]
+      },
       {
        "team": "Astral Bloom",
        "teamSlug": "astral-bloom",
        "isPro": true,
        "years": [
-        "2025",
         "2026"
        ],
        "roster": [
@@ -93194,10 +93570,17 @@
          "captain": false
         },
         {
-         "hist": "Eris Suzukami",
-         "name": "Eris Suzukami",
-         "slug": "eris-suzukami",
-         "iso": "kr",
+         "hist": "Ginjo Saine",
+         "name": "Ginjo Saine",
+         "slug": "ginjo-saine",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Kogara Toto",
+         "name": "Kogara Toto",
+         "slug": "kogara-toto",
+         "iso": "jp",
          "captain": false
         },
         {
@@ -93208,23 +93591,16 @@
          "captain": false
         },
         {
-         "hist": "Tsumugi Kokage",
-         "name": "Tsumugi Kokage",
-         "slug": "tsumugi-kokage",
-         "iso": "jp",
-         "captain": false
-        },
-        {
-         "hist": "Shiranami Ramune",
-         "name": "Shiranami Ramune",
-         "slug": "shiranami-ramune",
+         "hist": "Yumeno Akari",
+         "name": "Yumeno Akari",
+         "slug": "yumeno-akari",
          "iso": "jp",
          "captain": false
         }
        ]
       },
       {
-       "team": "JP Squad 3",
+       "team": "JP Squad 1",
        "teamSlug": null,
        "isPro": false,
        "years": [
@@ -93232,37 +93608,37 @@
        ],
        "roster": [
         {
-         "hist": "Shiranami Ramune",
-         "name": "Shiranami Ramune",
-         "slug": "shiranami-ramune",
+         "hist": "Hanabusa Lisa",
+         "name": "Hanabusa Lisa",
+         "slug": "hanabusa-lisa",
          "iso": "jp",
          "captain": true
         },
         {
-         "hist": "Shuvimo",
-         "name": "Shuvimo",
-         "slug": "shuvimo",
+         "hist": "Yumeno Akari",
+         "name": "Yumeno Akari",
+         "slug": "yumeno-akari",
          "iso": "jp",
          "captain": false
         },
         {
-         "hist": "Choya Hanabi",
-         "name": "Choya Hanabi",
-         "slug": "choya-hanabi",
+         "hist": "FumishiroYummy",
+         "name": "FumishiroYummy",
+         "slug": "fumishiroyummy",
          "iso": "jp",
          "captain": false
         },
         {
-         "hist": "Tsumugi Kokage",
-         "name": "Tsumugi Kokage",
-         "slug": "tsumugi-kokage",
+         "hist": "Yakumo Beni",
+         "name": "Yakumo Beni",
+         "slug": "yakumo-beni",
          "iso": "jp",
          "captain": false
         },
         {
-         "hist": "Kaminari Qpi",
-         "name": "Kaminari Qpi",
-         "slug": "kaminari-qpi",
+         "hist": "Amayui Moka",
+         "name": "Amayui Moka",
+         "slug": "amayui-moka",
          "iso": "jp",
          "captain": false
         }
@@ -93324,6 +93700,38 @@
    ],
    "rankDelta": 0,
    "formerPlayers": [
+    {
+     "slug": "tsumugi-kokage",
+     "name": "Tsumugi Kokage",
+     "iso": "jp",
+     "years": [
+      "2025",
+      "2026"
+     ],
+     "nowTeam": "Lunar Cadence",
+     "nowTeamSlug": null
+    },
+    {
+     "slug": "shiranami-ramune",
+     "name": "Shiranami Ramune",
+     "iso": "jp",
+     "years": [
+      "2025",
+      "2026"
+     ],
+     "nowTeam": "Lunar Cadence",
+     "nowTeamSlug": null
+    },
+    {
+     "slug": "eris-suzukami",
+     "name": "Eris Suzukami",
+     "iso": "kr",
+     "years": [
+      "2026"
+     ],
+     "nowTeam": "Lunar Cadence",
+     "nowTeamSlug": null
+    },
     {
      "slug": null,
      "name": "Sen Ikuiku",
@@ -97924,8 +98332,8 @@
      "years": [
       "2026"
      ],
-     "nowTeam": "Lunar Cadence",
-     "nowTeamSlug": null
+     "nowTeam": "Astral Bloom",
+     "nowTeamSlug": "astral-bloom"
     },
     {
      "slug": "kimmixd",
@@ -114971,10 +115379,17 @@
         "captain": false
        },
        {
-        "hist": "Eris Suzukami",
-        "name": "Eris Suzukami",
-        "slug": "eris-suzukami",
-        "iso": "kr",
+        "hist": "Ginjo Saine",
+        "name": "Ginjo Saine",
+        "slug": "ginjo-saine",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Kogara Toto",
+        "name": "Kogara Toto",
+        "slug": "kogara-toto",
+        "iso": "jp",
         "captain": false
        },
        {
@@ -114985,16 +115400,9 @@
         "captain": false
        },
        {
-        "hist": "Tsumugi Kokage",
-        "name": "Tsumugi Kokage",
-        "slug": "tsumugi-kokage",
-        "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "Shiranami Ramune",
-        "name": "Shiranami Ramune",
-        "slug": "shiranami-ramune",
+        "hist": "Yumeno Akari",
+        "name": "Yumeno Akari",
+        "slug": "yumeno-akari",
         "iso": "jp",
         "captain": false
        }
@@ -115094,7 +115502,7 @@
    },
    {
     "name": "Shiranami Ramune",
-    "team": "Astral Bloom",
+    "team": "Lunar Cadence",
     "pool": "pro",
     "kills": 522,
     "assists": 69,
@@ -115140,17 +115548,17 @@
         "captain": false
        },
        {
-        "hist": "Eris Suzukami",
-        "name": "Eris Suzukami",
-        "slug": "eris-suzukami",
-        "iso": "kr",
-        "captain": false
-       },
-       {
         "hist": "Remia Aotsuki",
         "name": "Remia Aotsuki",
         "slug": "remia-aotsuki",
         "iso": "nl",
+        "captain": false
+       },
+       {
+        "hist": "Eris Suzukami",
+        "name": "Eris Suzukami",
+        "slug": "eris-suzukami",
+        "iso": "kr",
         "captain": false
        },
        {
@@ -115164,6 +115572,51 @@
         "hist": "Shiranami Ramune",
         "name": "Shiranami Ramune",
         "slug": "shiranami-ramune",
+        "iso": "jp",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Lunar Cadence",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "briant",
+        "name": "briant",
+        "slug": "briant",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Eris Suzukami",
+        "name": "Eris Suzukami",
+        "slug": "eris-suzukami",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Tsumugi Kokage",
+        "name": "Tsumugi Kokage",
+        "slug": "tsumugi-kokage",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Shiranami Ramune",
+        "name": "Shiranami Ramune",
+        "slug": "shiranami-ramune",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Tatsumaki Chise",
+        "name": "Tatsumaki Chise",
+        "slug": "tatsumaki-chise",
         "iso": "jp",
         "captain": false
        }
@@ -115283,10 +115736,17 @@
         "captain": false
        },
        {
-        "hist": "Eris Suzukami",
-        "name": "Eris Suzukami",
-        "slug": "eris-suzukami",
-        "iso": "kr",
+        "hist": "Ginjo Saine",
+        "name": "Ginjo Saine",
+        "slug": "ginjo-saine",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Kogara Toto",
+        "name": "Kogara Toto",
+        "slug": "kogara-toto",
+        "iso": "jp",
         "captain": false
        },
        {
@@ -115297,16 +115757,9 @@
         "captain": false
        },
        {
-        "hist": "Tsumugi Kokage",
-        "name": "Tsumugi Kokage",
-        "slug": "tsumugi-kokage",
-        "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "Shiranami Ramune",
-        "name": "Shiranami Ramune",
-        "slug": "shiranami-ramune",
+        "hist": "Yumeno Akari",
+        "name": "Yumeno Akari",
+        "slug": "yumeno-akari",
         "iso": "jp",
         "captain": false
        }
@@ -115361,7 +115814,7 @@
    },
    {
     "name": "Tsumugi Kokage",
-    "team": "Astral Bloom",
+    "team": "Lunar Cadence",
     "pool": "pro",
     "kills": 519,
     "assists": 105,
@@ -115426,17 +115879,17 @@
         "captain": false
        },
        {
-        "hist": "Eris Suzukami",
-        "name": "Eris Suzukami",
-        "slug": "eris-suzukami",
-        "iso": "kr",
-        "captain": false
-       },
-       {
         "hist": "Remia Aotsuki",
         "name": "Remia Aotsuki",
         "slug": "remia-aotsuki",
         "iso": "nl",
+        "captain": false
+       },
+       {
+        "hist": "Eris Suzukami",
+        "name": "Eris Suzukami",
+        "slug": "eris-suzukami",
+        "iso": "kr",
         "captain": false
        },
        {
@@ -115450,6 +115903,51 @@
         "hist": "Shiranami Ramune",
         "name": "Shiranami Ramune",
         "slug": "shiranami-ramune",
+        "iso": "jp",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Lunar Cadence",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "briant",
+        "name": "briant",
+        "slug": "briant",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Eris Suzukami",
+        "name": "Eris Suzukami",
+        "slug": "eris-suzukami",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Tsumugi Kokage",
+        "name": "Tsumugi Kokage",
+        "slug": "tsumugi-kokage",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Shiranami Ramune",
+        "name": "Shiranami Ramune",
+        "slug": "shiranami-ramune",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Tatsumaki Chise",
+        "name": "Tatsumaki Chise",
+        "slug": "tatsumaki-chise",
         "iso": "jp",
         "captain": false
        }
@@ -115504,7 +116002,7 @@
    },
    {
     "name": "Eris Suzukami",
-    "team": "Astral Bloom",
+    "team": "Lunar Cadence",
     "pool": "pro",
     "kills": 478,
     "assists": 67,
@@ -115568,17 +116066,17 @@
         "captain": false
        },
        {
-        "hist": "Eris Suzukami",
-        "name": "Eris Suzukami",
-        "slug": "eris-suzukami",
-        "iso": "kr",
-        "captain": false
-       },
-       {
         "hist": "Remia Aotsuki",
         "name": "Remia Aotsuki",
         "slug": "remia-aotsuki",
         "iso": "nl",
+        "captain": false
+       },
+       {
+        "hist": "Eris Suzukami",
+        "name": "Eris Suzukami",
+        "slug": "eris-suzukami",
+        "iso": "kr",
         "captain": false
        },
        {
@@ -115592,6 +116090,51 @@
         "hist": "Shiranami Ramune",
         "name": "Shiranami Ramune",
         "slug": "shiranami-ramune",
+        "iso": "jp",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Lunar Cadence",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "briant",
+        "name": "briant",
+        "slug": "briant",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Eris Suzukami",
+        "name": "Eris Suzukami",
+        "slug": "eris-suzukami",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Tsumugi Kokage",
+        "name": "Tsumugi Kokage",
+        "slug": "tsumugi-kokage",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Shiranami Ramune",
+        "name": "Shiranami Ramune",
+        "slug": "shiranami-ramune",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Tatsumaki Chise",
+        "name": "Tatsumaki Chise",
+        "slug": "tatsumaki-chise",
         "iso": "jp",
         "captain": false
        }
@@ -175718,7 +176261,7 @@
    },
    {
     "name": "Kogara Toto",
-    "team": "Lunar Cadence",
+    "team": "Astral Bloom",
     "pool": "pro",
     "kills": 448,
     "assists": 64,
@@ -175766,7 +176309,6 @@
     },
     "bio": "Kogara Toto is a Japanese rifler rated Level 6 in the league, a free agent with a tidy 1.09 K/D.",
     "gender": "F",
-    "teamTourney": "Bot Pro Cup 2026",
     "teamHistory": [
      {
       "team": "Eiromancers",
@@ -175859,31 +176401,17 @@
       ]
      },
      {
-      "team": "Lunar Cadence",
-      "teamSlug": null,
-      "isPro": false,
+      "team": "Astral Bloom",
+      "teamSlug": "astral-bloom",
+      "isPro": true,
       "years": [
        "2026"
       ],
       "roster": [
        {
-        "hist": "briant",
-        "name": "briant",
-        "slug": "briant",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "Yumeno Akari",
-        "name": "Yumeno Akari",
-        "slug": "yumeno-akari",
-        "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "Kogara Toto",
-        "name": "Kogara Toto",
-        "slug": "kogara-toto",
+        "hist": "Tachibana Hinano",
+        "name": "Tachibana Hinano",
+        "slug": "tachibana-hinano",
         "iso": "jp",
         "captain": false
        },
@@ -175895,9 +176423,23 @@
         "captain": false
        },
        {
-        "hist": "Tatsumaki Chise",
-        "name": "Tatsumaki Chise",
-        "slug": "tatsumaki-chise",
+        "hist": "Kogara Toto",
+        "name": "Kogara Toto",
+        "slug": "kogara-toto",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Remia Aotsuki",
+        "name": "Remia Aotsuki",
+        "slug": "remia-aotsuki",
+        "iso": "nl",
+        "captain": false
+       },
+       {
+        "hist": "Yumeno Akari",
+        "name": "Yumeno Akari",
+        "slug": "yumeno-akari",
         "iso": "jp",
         "captain": false
        }
@@ -209170,7 +209712,7 @@
    },
    {
     "name": "Yumeno Akari",
-    "team": "Lunar Cadence",
+    "team": "Astral Bloom",
     "pool": "pro",
     "kills": 255,
     "assists": 34,
@@ -209199,7 +209741,6 @@
     "rankDelta": 0,
     "bio": "Yumeno Akari is a Japanese AWPer rated Level 4 in the league, a developing free agent.",
     "gender": "F",
-    "teamTourney": "Bot Pro Cup 2026",
     "teamHistory": [
      {
       "team": "CharacterLimit",
@@ -209337,31 +209878,17 @@
       ]
      },
      {
-      "team": "Lunar Cadence",
-      "teamSlug": null,
-      "isPro": false,
+      "team": "Astral Bloom",
+      "teamSlug": "astral-bloom",
+      "isPro": true,
       "years": [
        "2026"
       ],
       "roster": [
        {
-        "hist": "briant",
-        "name": "briant",
-        "slug": "briant",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "Yumeno Akari",
-        "name": "Yumeno Akari",
-        "slug": "yumeno-akari",
-        "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "Kogara Toto",
-        "name": "Kogara Toto",
-        "slug": "kogara-toto",
+        "hist": "Tachibana Hinano",
+        "name": "Tachibana Hinano",
+        "slug": "tachibana-hinano",
         "iso": "jp",
         "captain": false
        },
@@ -209373,9 +209900,23 @@
         "captain": false
        },
        {
-        "hist": "Tatsumaki Chise",
-        "name": "Tatsumaki Chise",
-        "slug": "tatsumaki-chise",
+        "hist": "Kogara Toto",
+        "name": "Kogara Toto",
+        "slug": "kogara-toto",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Remia Aotsuki",
+        "name": "Remia Aotsuki",
+        "slug": "remia-aotsuki",
+        "iso": "nl",
+        "captain": false
+       },
+       {
+        "hist": "Yumeno Akari",
+        "name": "Yumeno Akari",
+        "slug": "yumeno-akari",
         "iso": "jp",
         "captain": false
        }
@@ -210620,23 +211161,23 @@
         "captain": false
        },
        {
-        "hist": "Yumeno Akari",
-        "name": "Yumeno Akari",
-        "slug": "yumeno-akari",
+        "hist": "Eris Suzukami",
+        "name": "Eris Suzukami",
+        "slug": "eris-suzukami",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Tsumugi Kokage",
+        "name": "Tsumugi Kokage",
+        "slug": "tsumugi-kokage",
         "iso": "jp",
         "captain": false
        },
        {
-        "hist": "Kogara Toto",
-        "name": "Kogara Toto",
-        "slug": "kogara-toto",
-        "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "Ginjo Saine",
-        "name": "Ginjo Saine",
-        "slug": "ginjo-saine",
+        "hist": "Shiranami Ramune",
+        "name": "Shiranami Ramune",
+        "slug": "shiranami-ramune",
         "iso": "jp",
         "captain": false
        },
@@ -216472,7 +217013,7 @@
    },
    {
     "name": "Ginjo Saine",
-    "team": "Lunar Cadence",
+    "team": "Astral Bloom",
     "pool": "pro",
     "kills": 389,
     "assists": 33,
@@ -216501,7 +217042,6 @@
     "rankDelta": 0,
     "bio": "Ginjo Saine is a Japanese rifler rated Level 6 in the league, a developing free agent.",
     "gender": "F",
-    "teamTourney": "Bot Pro Cup 2026",
     "teamHistory": [
      {
       "team": "Extinction Bay",
@@ -216639,31 +217179,17 @@
       ]
      },
      {
-      "team": "Lunar Cadence",
-      "teamSlug": null,
-      "isPro": false,
+      "team": "Astral Bloom",
+      "teamSlug": "astral-bloom",
+      "isPro": true,
       "years": [
        "2026"
       ],
       "roster": [
        {
-        "hist": "briant",
-        "name": "briant",
-        "slug": "briant",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "Yumeno Akari",
-        "name": "Yumeno Akari",
-        "slug": "yumeno-akari",
-        "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "Kogara Toto",
-        "name": "Kogara Toto",
-        "slug": "kogara-toto",
+        "hist": "Tachibana Hinano",
+        "name": "Tachibana Hinano",
+        "slug": "tachibana-hinano",
         "iso": "jp",
         "captain": false
        },
@@ -216675,9 +217201,23 @@
         "captain": false
        },
        {
-        "hist": "Tatsumaki Chise",
-        "name": "Tatsumaki Chise",
-        "slug": "tatsumaki-chise",
+        "hist": "Kogara Toto",
+        "name": "Kogara Toto",
+        "slug": "kogara-toto",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Remia Aotsuki",
+        "name": "Remia Aotsuki",
+        "slug": "remia-aotsuki",
+        "iso": "nl",
+        "captain": false
+       },
+       {
+        "hist": "Yumeno Akari",
+        "name": "Yumeno Akari",
+        "slug": "yumeno-akari",
         "iso": "jp",
         "captain": false
        }
@@ -226599,23 +227139,23 @@
         "captain": false
        },
        {
-        "hist": "Yumeno Akari",
-        "name": "Yumeno Akari",
-        "slug": "yumeno-akari",
+        "hist": "Eris Suzukami",
+        "name": "Eris Suzukami",
+        "slug": "eris-suzukami",
+        "iso": "kr",
+        "captain": false
+       },
+       {
+        "hist": "Tsumugi Kokage",
+        "name": "Tsumugi Kokage",
+        "slug": "tsumugi-kokage",
         "iso": "jp",
         "captain": false
        },
        {
-        "hist": "Kogara Toto",
-        "name": "Kogara Toto",
-        "slug": "kogara-toto",
-        "iso": "jp",
-        "captain": false
-       },
-       {
-        "hist": "Ginjo Saine",
-        "name": "Ginjo Saine",
-        "slug": "ginjo-saine",
+        "hist": "Shiranami Ramune",
+        "name": "Shiranami Ramune",
+        "slug": "shiranami-ramune",
         "iso": "jp",
         "captain": false
        },
@@ -306490,23 +307030,23 @@
        "captain": false
       },
       {
-       "hist": "Yumeno Akari",
-       "name": "Yumeno Akari",
-       "slug": "yumeno-akari",
+       "hist": "Eris Suzukami",
+       "name": "Eris Suzukami",
+       "slug": "eris-suzukami",
+       "iso": "kr",
+       "captain": false
+      },
+      {
+       "hist": "Tsumugi Kokage",
+       "name": "Tsumugi Kokage",
+       "slug": "tsumugi-kokage",
        "iso": "jp",
        "captain": false
       },
       {
-       "hist": "Kogara Toto",
-       "name": "Kogara Toto",
-       "slug": "kogara-toto",
-       "iso": "jp",
-       "captain": false
-      },
-      {
-       "hist": "Ginjo Saine",
-       "name": "Ginjo Saine",
-       "slug": "ginjo-saine",
+       "hist": "Shiranami Ramune",
+       "name": "Shiranami Ramune",
+       "slug": "shiranami-ramune",
        "iso": "jp",
        "captain": false
       },
@@ -308991,10 +309531,17 @@
        "captain": false
       },
       {
-       "hist": "Eris Suzukami",
-       "name": "Eris Suzukami",
-       "slug": "eris-suzukami",
-       "iso": "kr",
+       "hist": "Ginjo Saine",
+       "name": "Ginjo Saine",
+       "slug": "ginjo-saine",
+       "iso": "jp",
+       "captain": false
+      },
+      {
+       "hist": "Kogara Toto",
+       "name": "Kogara Toto",
+       "slug": "kogara-toto",
+       "iso": "jp",
        "captain": false
       },
       {
@@ -309005,16 +309552,9 @@
        "captain": false
       },
       {
-       "hist": "Tsumugi Kokage",
-       "name": "Tsumugi Kokage",
-       "slug": "tsumugi-kokage",
-       "iso": "jp",
-       "captain": false
-      },
-      {
-       "hist": "Shiranami Ramune",
-       "name": "Shiranami Ramune",
-       "slug": "shiranami-ramune",
+       "hist": "Yumeno Akari",
+       "name": "Yumeno Akari",
+       "slug": "yumeno-akari",
        "iso": "jp",
        "captain": false
       }
@@ -391370,6 +391910,78 @@
  "transfers": [
   {
    "type": "transfer",
+   "player": "Eris Suzukami",
+   "playerSlug": "eris-suzukami",
+   "iso": "kr",
+   "fromTeam": "Astral Bloom",
+   "fromSlug": "astral-bloom",
+   "toTeam": "Lunar Cadence",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-29"
+  },
+  {
+   "type": "transfer",
+   "player": "Tsumugi Kokage",
+   "playerSlug": "tsumugi-kokage",
+   "iso": "jp",
+   "fromTeam": "Astral Bloom",
+   "fromSlug": "astral-bloom",
+   "toTeam": "Lunar Cadence",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-29"
+  },
+  {
+   "type": "transfer",
+   "player": "Shiranami Ramune",
+   "playerSlug": "shiranami-ramune",
+   "iso": "jp",
+   "fromTeam": "Astral Bloom",
+   "fromSlug": "astral-bloom",
+   "toTeam": "Lunar Cadence",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-29"
+  },
+  {
+   "type": "transfer",
+   "player": "Ginjo Saine",
+   "playerSlug": "ginjo-saine",
+   "iso": "jp",
+   "fromTeam": "Lunar Cadence",
+   "fromSlug": null,
+   "toTeam": "Astral Bloom",
+   "toSlug": "astral-bloom",
+   "toPro": true,
+   "date": "2026-09-29"
+  },
+  {
+   "type": "transfer",
+   "player": "Kogara Toto",
+   "playerSlug": "kogara-toto",
+   "iso": "jp",
+   "fromTeam": "Lunar Cadence",
+   "fromSlug": null,
+   "toTeam": "Astral Bloom",
+   "toSlug": "astral-bloom",
+   "toPro": true,
+   "date": "2026-09-29"
+  },
+  {
+   "type": "transfer",
+   "player": "Yumeno Akari",
+   "playerSlug": "yumeno-akari",
+   "iso": "jp",
+   "fromTeam": "Lunar Cadence",
+   "fromSlug": null,
+   "toTeam": "Astral Bloom",
+   "toSlug": "astral-bloom",
+   "toPro": true,
+   "date": "2026-09-29"
+  },
+  {
+   "type": "transfer",
    "player": "estellyy.",
    "playerSlug": "estellyy",
    "iso": "sg",
@@ -392093,8 +392705,8 @@
    "player": "Eris Suzukami",
    "playerSlug": "eris-suzukami",
    "iso": "kr",
-   "fromTeam": "Astral Bloom",
-   "fromSlug": "astral-bloom",
+   "fromTeam": "Lunar Cadence",
+   "fromSlug": null,
    "toTeam": "Team Korea",
    "toSlug": null,
    "toPro": false,
@@ -395201,8 +395813,8 @@
    "player": "Tsumugi Kokage",
    "playerSlug": "tsumugi-kokage",
    "iso": "jp",
-   "fromTeam": "Astral Bloom",
-   "fromSlug": "astral-bloom",
+   "fromTeam": "Lunar Cadence",
+   "fromSlug": null,
    "toTeam": "JP Squad 3",
    "toSlug": null,
    "toPro": false,
@@ -395213,8 +395825,8 @@
    "player": "Shiranami Ramune",
    "playerSlug": "shiranami-ramune",
    "iso": "jp",
-   "fromTeam": "Astral Bloom",
-   "fromSlug": "astral-bloom",
+   "fromTeam": "Lunar Cadence",
+   "fromSlug": null,
    "toTeam": "JP Squad 3",
    "toSlug": null,
    "toPro": false,
@@ -395729,8 +396341,8 @@
    "player": "Yumeno Akari",
    "playerSlug": "yumeno-akari",
    "iso": "jp",
-   "fromTeam": "Lunar Cadence",
-   "fromSlug": null,
+   "fromTeam": "Astral Bloom",
+   "fromSlug": "astral-bloom",
    "toTeam": "JP Squad 1",
    "toSlug": null,
    "toPro": false,
@@ -395825,8 +396437,8 @@
    "player": "Kogara Toto",
    "playerSlug": "kogara-toto",
    "iso": "jp",
-   "fromTeam": "Lunar Cadence",
-   "fromSlug": null,
+   "fromTeam": "Astral Bloom",
+   "fromSlug": "astral-bloom",
    "toTeam": "JP Squad 2",
    "toSlug": null,
    "toPro": false,
@@ -395885,8 +396497,8 @@
    "player": "Ginjo Saine",
    "playerSlug": "ginjo-saine",
    "iso": "jp",
-   "fromTeam": "Lunar Cadence",
-   "fromSlug": null,
+   "fromTeam": "Astral Bloom",
+   "fromSlug": "astral-bloom",
    "toTeam": "JP Squad 4",
    "toSlug": null,
    "toPro": false,
@@ -397202,6 +397814,30 @@
   },
   {
    "type": "transfer",
+   "player": "Tsumugi Kokage",
+   "playerSlug": "tsumugi-kokage",
+   "iso": "jp",
+   "fromTeam": "Astral Bloom",
+   "fromSlug": "astral-bloom",
+   "toTeam": "Lunar Cadence",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "Shiranami Ramune",
+   "playerSlug": "shiranami-ramune",
+   "iso": "jp",
+   "fromTeam": "Astral Bloom",
+   "fromSlug": "astral-bloom",
+   "toTeam": "Lunar Cadence",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
    "player": "rattecs",
    "playerSlug": "rattecs",
    "iso": "fi",
@@ -397706,18 +398342,6 @@
   },
   {
    "type": "transfer",
-   "player": "Yumeno Akari",
-   "playerSlug": "yumeno-akari",
-   "iso": "jp",
-   "fromTeam": "MAcKY",
-   "fromSlug": null,
-   "toTeam": "Lunar Cadence",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-01"
-  },
-  {
-   "type": "transfer",
    "player": "Kaminari Qpi",
    "playerSlug": "kaminari-qpi",
    "iso": "jp",
@@ -397802,18 +398426,6 @@
   },
   {
    "type": "transfer",
-   "player": "Kogara Toto",
-   "playerSlug": "kogara-toto",
-   "iso": "jp",
-   "fromTeam": "Stars Bore Witness",
-   "fromSlug": null,
-   "toTeam": "Lunar Cadence",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-01"
-  },
-  {
-   "type": "transfer",
    "player": "boopydoopy",
    "playerSlug": "boopydoopy",
    "iso": "sg",
@@ -397844,18 +398456,6 @@
    "fromTeam": "Destination2",
    "fromSlug": null,
    "toTeam": "Seraph Dynasty",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-01"
-  },
-  {
-   "type": "transfer",
-   "player": "Ginjo Saine",
-   "playerSlug": "ginjo-saine",
-   "iso": "jp",
-   "fromTeam": "ELITE",
-   "fromSlug": null,
-   "toTeam": "Lunar Cadence",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-01"
@@ -398312,6 +398912,18 @@
    "fromTeam": "Heavenswept",
    "fromSlug": null,
    "toTeam": "Albion Rising",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "Eris Suzukami",
+   "playerSlug": "eris-suzukami",
+   "iso": "kr",
+   "fromTeam": "Astral Bloom",
+   "fromSlug": "astral-bloom",
+   "toTeam": "Lunar Cadence",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-01"
@@ -422962,21 +423574,21 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.5,
+     "wr": 0.0,
      "real": false,
      "est": true,
-     "estN": 2,
-     "estMaps": 3
+     "estN": 4,
+     "estMaps": 5
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.25,
+     "wr": 0.667,
      "real": false,
      "est": true,
-     "estN": 2,
-     "estMaps": 3
+     "estN": 3,
+     "estMaps": 8
     },
     "Inferno": {
      "w": 0,
@@ -422985,8 +423597,8 @@
      "wr": 0.667,
      "real": false,
      "est": true,
-     "estN": 1,
-     "estMaps": 3
+     "estN": 3,
+     "estMaps": 5
     },
     "Cache": {
      "w": 0,
@@ -422995,8 +423607,8 @@
      "wr": 0.167,
      "real": false,
      "est": true,
-     "estN": 3,
-     "estMaps": 4
+     "estN": 4,
+     "estMaps": 10
     },
     "Tuscan": {
      "w": 1,
@@ -423010,30 +423622,30 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.667,
+     "wr": 0.267,
      "real": false,
      "est": true,
      "estN": 3,
-     "estMaps": 3
+     "estMaps": 15
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.5,
+     "wr": 0.25,
      "real": false,
      "est": true,
      "estN": 2,
-     "estMaps": 2
+     "estMaps": 3
     }
    },
    "bestMaps": [
-    "Inferno",
-    "Vertigo"
+    "Dust2",
+    "Inferno"
    ],
    "worstMaps": [
-    "Cache",
-    "Dust2"
+    "Mirage",
+    "Cache"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
