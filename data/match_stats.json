@@ -12989,6 +12989,511 @@
      ]
     }
    ]
+  },
+  "8-6": {
+   "maps": [
+    {
+     "map": "Inferno",
+     "scoreA": 9,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Kiedz",
+       "name": "zuann_",
+       "k": 18,
+       "a": 1,
+       "d": 19,
+       "mvp": 0,
+       "score": 41
+      },
+      {
+       "team": "Kiedz",
+       "name": "Elfy Mint",
+       "k": 17,
+       "a": 1,
+       "d": 16,
+       "mvp": 4,
+       "score": 37
+      },
+      {
+       "team": "Kiedz",
+       "name": "Kairi",
+       "k": 13,
+       "a": 1,
+       "d": 17,
+       "mvp": 3,
+       "score": 32
+      },
+      {
+       "team": "Kiedz",
+       "name": "Illus",
+       "k": 15,
+       "a": 0,
+       "d": 17,
+       "mvp": 2,
+       "score": 32
+      },
+      {
+       "team": "Kiedz",
+       "name": "declaration__",
+       "k": 8,
+       "a": 2,
+       "d": 15,
+       "mvp": 0,
+       "score": 22
+      },
+      {
+       "team": "Starling Coven",
+       "name": "Kurumi Noah",
+       "k": 19,
+       "a": 3,
+       "d": 15,
+       "mvp": 2,
+       "score": 45
+      },
+      {
+       "team": "Starling Coven",
+       "name": "scorn",
+       "k": 18,
+       "a": 2,
+       "d": 12,
+       "mvp": 2,
+       "score": 45
+      },
+      {
+       "team": "Starling Coven",
+       "name": "sakistars",
+       "k": 16,
+       "a": 3,
+       "d": 15,
+       "mvp": 1,
+       "score": 43
+      },
+      {
+       "team": "Starling Coven",
+       "name": "nyxcatto",
+       "k": 15,
+       "a": 1,
+       "d": 14,
+       "mvp": 3,
+       "score": 41
+      },
+      {
+       "team": "Starling Coven",
+       "name": "afayctionate",
+       "k": 16,
+       "a": 4,
+       "d": 15,
+       "mvp": 5,
+       "score": 40
+      }
+     ]
+    }
+   ]
+  },
+  "8-7": {
+   "maps": [
+    {
+     "map": "Tuscan",
+     "scoreA": 7,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "5PERCENT",
+       "name": "TortillaRoll",
+       "k": 17,
+       "a": 4,
+       "d": 16,
+       "mvp": 3,
+       "score": 38
+      },
+      {
+       "team": "5PERCENT",
+       "name": "AngelxAim",
+       "k": 15,
+       "a": 1,
+       "d": 16,
+       "mvp": 2,
+       "score": 35
+      },
+      {
+       "team": "5PERCENT",
+       "name": "Kisaragi Ren",
+       "k": 10,
+       "a": 1,
+       "d": 14,
+       "mvp": 1,
+       "score": 35
+      },
+      {
+       "team": "5PERCENT",
+       "name": "dumbo",
+       "k": 12,
+       "a": 2,
+       "d": 16,
+       "mvp": 1,
+       "score": 30
+      },
+      {
+       "team": "5PERCENT",
+       "name": "Solaonix",
+       "k": 9,
+       "a": 1,
+       "d": 14,
+       "mvp": 0,
+       "score": 20
+      },
+      {
+       "team": "Infernum E-Sports",
+       "name": "siddnely",
+       "k": 24,
+       "a": 3,
+       "d": 10,
+       "mvp": 7,
+       "score": 58
+      },
+      {
+       "team": "Infernum E-Sports",
+       "name": "soapdax",
+       "k": 16,
+       "a": 2,
+       "d": 15,
+       "mvp": 2,
+       "score": 42
+      },
+      {
+       "team": "Infernum E-Sports",
+       "name": "Dirfun",
+       "k": 12,
+       "a": 1,
+       "d": 14,
+       "mvp": 2,
+       "score": 35
+      },
+      {
+       "team": "Infernum E-Sports",
+       "name": "chiyoriinn",
+       "k": 12,
+       "a": 2,
+       "d": 13,
+       "mvp": 0,
+       "score": 33
+      },
+      {
+       "team": "Infernum E-Sports",
+       "name": "Historia",
+       "k": 12,
+       "a": 1,
+       "d": 11,
+       "mvp": 2,
+       "score": 31
+      }
+     ]
+    }
+   ]
+  },
+  "8-8": {
+   "maps": [
+    {
+     "map": "Tuscan",
+     "scoreA": 7,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Raven Song",
+       "name": "ebi",
+       "k": 22,
+       "a": 1,
+       "d": 15,
+       "mvp": 3,
+       "score": 53
+      },
+      {
+       "team": "Raven Song",
+       "name": "des506",
+       "k": 14,
+       "a": 2,
+       "d": 13,
+       "mvp": 3,
+       "score": 37
+      },
+      {
+       "team": "Raven Song",
+       "name": "treblest",
+       "k": 10,
+       "a": 2,
+       "d": 16,
+       "mvp": 1,
+       "score": 29
+      },
+      {
+       "team": "Raven Song",
+       "name": "koen",
+       "k": 6,
+       "a": 2,
+       "d": 18,
+       "mvp": 0,
+       "score": 15
+      },
+      {
+       "team": "Raven Song",
+       "name": "CRex",
+       "k": 3,
+       "a": 1,
+       "d": 18,
+       "mvp": 0,
+       "score": 8
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "Karasu",
+       "k": 21,
+       "a": 2,
+       "d": 11,
+       "mvp": 3,
+       "score": 48
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "Xevaria",
+       "k": 19,
+       "a": 2,
+       "d": 11,
+       "mvp": 2,
+       "score": 45
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "Just_Ansel",
+       "k": 17,
+       "a": 2,
+       "d": 12,
+       "mvp": 5,
+       "score": 44
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "Dazeido",
+       "k": 14,
+       "a": 3,
+       "d": 10,
+       "mvp": 1,
+       "score": 35
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "kimmixd",
+       "k": 9,
+       "a": 2,
+       "d": 11,
+       "mvp": 2,
+       "score": 25
+      }
+     ]
+    }
+   ]
+  },
+  "8-9": {
+   "maps": [
+    {
+     "map": "Tuscan",
+     "scoreA": 16,
+     "scoreB": 12,
+     "players": [
+      {
+       "team": "Nightbloom",
+       "name": "StrandedPond",
+       "k": 27,
+       "a": 4,
+       "d": 22,
+       "mvp": 4,
+       "score": 63
+      },
+      {
+       "team": "Nightbloom",
+       "name": "rittan0x0",
+       "k": 27,
+       "a": 4,
+       "d": 23,
+       "mvp": 4,
+       "score": 62
+      },
+      {
+       "team": "Nightbloom",
+       "name": "SeaEmV",
+       "k": 21,
+       "a": 5,
+       "d": 18,
+       "mvp": 2,
+       "score": 60
+      },
+      {
+       "team": "Nightbloom",
+       "name": "Nightveil Lycoris",
+       "k": 21,
+       "a": 3,
+       "d": 21,
+       "mvp": 5,
+       "score": 51
+      },
+      {
+       "team": "Nightbloom",
+       "name": "Yarimell",
+       "k": 8,
+       "a": 1,
+       "d": 18,
+       "mvp": 1,
+       "score": 24
+      },
+      {
+       "team": "Aspire",
+       "name": "Hanarisu",
+       "k": 33,
+       "a": 4,
+       "d": 18,
+       "mvp": 7,
+       "score": 84
+      },
+      {
+       "team": "Aspire",
+       "name": "TuxedoCat",
+       "k": 26,
+       "a": 5,
+       "d": 21,
+       "mvp": 3,
+       "score": 64
+      },
+      {
+       "team": "Aspire",
+       "name": "Moira",
+       "k": 20,
+       "a": 3,
+       "d": 21,
+       "mvp": 1,
+       "score": 44
+      },
+      {
+       "team": "Aspire",
+       "name": "Stylus",
+       "k": 13,
+       "a": 2,
+       "d": 21,
+       "mvp": 1,
+       "score": 33
+      },
+      {
+       "team": "Aspire",
+       "name": "caarrietan",
+       "k": 10,
+       "a": 6,
+       "d": 23,
+       "mvp": 0,
+       "score": 28
+      }
+     ]
+    }
+   ]
+  },
+  "8-10": {
+   "maps": [
+    {
+     "map": "Anubis",
+     "scoreA": 13,
+     "scoreB": 11,
+     "players": [
+      {
+       "team": "Moonlit Tempo",
+       "name": "Celtsm",
+       "k": 21,
+       "a": 5,
+       "d": 14,
+       "mvp": 3,
+       "score": 56
+      },
+      {
+       "team": "Moonlit Tempo",
+       "name": "FeatBri",
+       "k": 21,
+       "a": 1,
+       "d": 12,
+       "mvp": 2,
+       "score": 55
+      },
+      {
+       "team": "Moonlit Tempo",
+       "name": "SashimiGoesBloop",
+       "k": 16,
+       "a": 0,
+       "d": 16,
+       "mvp": 4,
+       "score": 47
+      },
+      {
+       "team": "Moonlit Tempo",
+       "name": "Kyan",
+       "k": 16,
+       "a": 3,
+       "d": 17,
+       "mvp": 3,
+       "score": 42
+      },
+      {
+       "team": "Moonlit Tempo",
+       "name": "GoddessAkane",
+       "k": 11,
+       "a": 1,
+       "d": 17,
+       "mvp": 1,
+       "score": 26
+      },
+      {
+       "team": "Tidebreakers",
+       "name": "HiguVT",
+       "k": 22,
+       "a": 1,
+       "d": 17,
+       "mvp": 1,
+       "score": 49
+      },
+      {
+       "team": "Tidebreakers",
+       "name": "sURF",
+       "k": 21,
+       "a": 0,
+       "d": 16,
+       "mvp": 5,
+       "score": 47
+      },
+      {
+       "team": "Tidebreakers",
+       "name": "djsalty_",
+       "k": 14,
+       "a": 3,
+       "d": 18,
+       "mvp": 3,
+       "score": 38
+      },
+      {
+       "team": "Tidebreakers",
+       "name": "KrinoJ",
+       "k": 10,
+       "a": 3,
+       "d": 16,
+       "mvp": 1,
+       "score": 30
+      },
+      {
+       "team": "Tidebreakers",
+       "name": "Yakumo Beni",
+       "k": 9,
+       "a": 1,
+       "d": 18,
+       "mvp": 1,
+       "score": 23
+      }
+     ]
+    }
+   ]
   }
  },
  "nations-cup-qualifier-philippines-2026": {
