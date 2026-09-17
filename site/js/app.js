@@ -1570,7 +1570,7 @@ function playerFormLog(slug){
         const tot=(mp.scoreA||0)+(mp.scoreB||0); if(!tot) return;
         const onA = normKey(pl.team)===normKey(m.a);
         const won = mp.scoreA===mp.scoreB ? null : (onA ? mp.scoreA>mp.scoreB : mp.scoreB>mp.scoreA);
-        out.push({ date:tr.date||'', event:tr.name, eventSlug:tr.slug, ref:(m.i!=null?pfx+m.i:null),
+        out.push({ date:tr.date||'', ts:m.ts||0, event:tr.name, eventSlug:tr.slug, ref:(m.i!=null?pfx+m.i:null),
           opp:(onA?m.b:m.a)||'', score:(onA?`${mp.scoreA}-${mp.scoreB}`:`${mp.scoreB}-${mp.scoreA}`), map:mp.map||'',
           rtg:matchRating(pl.k,pl.a,pl.d,pl.score,tot), won, k:pl.k, d:pl.d });
       });
@@ -1578,7 +1578,11 @@ function playerFormLog(slug){
     if(tr.stages && tr.stages.length) tr.stages.forEach(st=>st.rounds.forEach(rd=>scan(rd.matches, st.id+"-")));
     else (tr.bracket||[]).forEach(rd=>scan(rd.matches, ""));
   });
-  out.sort((a,b)=> (a.date||'').localeCompare(b.date||''));
+  // Order by when each result was actually recorded (ts), not the event's start date, so a
+  // paused-then-resumed event (e.g. Bot Pro Cup, played around the Nations Cup) slots its maps
+  // into the real timeline. Older scraped matches carry no ts and fall back to the event date.
+  const sortKey = x => x.ts ? x.ts*1000 : (Date.parse(x.date||'')||0);
+  out.sort((a,b)=> sortKey(a)-sortKey(b));
   return out;
 }
 // per-map play/win aggregate from a form log → favorite (most played), best & worst (win rate)
