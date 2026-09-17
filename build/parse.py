@@ -634,15 +634,29 @@ def main():
         return {"maps": [{"map": mp.get("map", ""), "scoreA": mp.get("scoreA"), "scoreB": mp.get("scoreB"),
                           "players": resolve_sb_players(mp.get("players", []))} for mp in maps]}
     slug_to_team = {t["slug"]: t for t in teams}
+    def overtime_periods(sa, sb):
+        """OT periods a map's final round score implies. Regulation is MR12 (first to 13);
+        reaching 12-12 forces overtime, and each OT is MR3 (first to 4). So the loser must have
+        >=12 for any OT to have happened, and the winner's rounds past 13 come in blocks of 3
+        (tied OTs) plus the deciding 4. Returns 0 for a regulation or unfinished/tied map."""
+        if sa is None or sb is None:
+            return 0
+        hi, lo = max(sa, sb), min(sa, sb)
+        if lo < 12 or hi == lo:               # never reached 12-12, or a tie/unfinished map
+            return 0
+        return max(1, round((hi - 13) / 3.0))
+
     def merge_scoreboard(m):
         for mp in m["stats"]["maps"]:
             sa, sb = mp.get("scoreA"), mp.get("scoreB")
+            ot_periods = overtime_periods(sa, sb)
             for pl in mp["players"]:
                 tgt = slug_to_player.get(pl.get("slug"))
                 if not tgt:
                     continue
                 tgt["kills"] += int(pl.get("k", 0)); tgt["deaths"] += int(pl.get("d", 0))
                 tgt["assists"] += int(pl.get("a", 0)); tgt["mvp"] += int(pl.get("mvp", 0))
+                tgt["ot"] += ot_periods
                 on_a = norm_key(pl.get("team", "")) == norm_key(m.get("a", ""))
                 if sa is not None and sb is not None and sa != sb:
                     won = (sa > sb) if on_a else (sb > sa)
