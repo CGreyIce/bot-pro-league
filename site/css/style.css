@@ -862,6 +862,18 @@ textarea.adm-in{resize:vertical;font-family:inherit}
 .vt-wr{display:flex;flex-direction:column;gap:2px;font-family:monospace;font-size:11px;color:var(--muted);text-align:right;white-space:nowrap}
 .vt-final{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:14px;font-family:'Chakra Petch';font-weight:700;font-size:16px}
 .vt-chip{display:inline-flex;align-items:center;gap:7px;background:var(--panel);border:1px solid var(--accent);border-radius:8px;padding:5px 12px 5px 5px}
+.vt-ba-list{display:flex;flex-direction:column;gap:10px}
+.vt-ba{background:var(--panel);border:1px solid var(--border);border-radius:9px;padding:9px 12px}
+.vt-ba-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-family:'Chakra Petch';font-size:15px}
+.vt-ba-head .vt-img{width:34px;height:22px;object-fit:cover;border-radius:3px}
+.vt-ba-sides{display:flex;gap:6px;flex-wrap:wrap}
+.vt-ba-sides .ct,.vt-ba-sides .t{font-family:'Inter';font-size:11px;font-weight:600;padding:2px 8px;border-radius:5px}
+.vt-ba-sides .ct{background:rgba(94,160,255,.16);color:#7db0ff}
+.vt-ba-sides .t{background:rgba(255,176,32,.16);color:#e0a020}
+.vt-ba-note{font-size:11px;color:var(--muted)}
+.vt-ba-copy{margin-left:auto;cursor:pointer;font-size:12px;font-weight:600;padding:4px 12px;border-radius:6px;border:1px solid var(--border);background:var(--bg);color:var(--text)}
+.vt-ba-copy:hover{border-color:var(--accent);color:var(--accent)}
+.vt-ba-text{width:100%;margin-top:8px;font-family:monospace;font-size:11px;line-height:1.5;background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:7px 9px;resize:vertical;white-space:pre}
 /* final standings */
 .fs-wrap{max-width:520px}
 .fs-table td{padding:7px 10px}

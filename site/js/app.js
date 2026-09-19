@@ -2142,6 +2142,36 @@ function simulateVeto(A,B,fmt){
   return {steps, decider, played: fmt==="bo1" ? [decider] : steps.filter(s=>s.action==="pick").map(s=>s.map).concat(decider)};
 }
 function vetoMapImg(m){ return `<img class="vt-img" src="assets/maps/${VETO_IMG[m]}" alt="${esc(m)}">`; }
+// For each played map, copyable bot_add lines: the CT team as bot_add_ct "<tag> name",
+// the T team as plain bot_add name. Needs a real roster (pro teams have one; ad-hoc/nation
+// map teams do not), so those show a note instead.
+function vetoServerSetup(A,B,res){
+  const stepByMap={}; res.steps.forEach(s=>{ if(s.action==="pick"||s.action==="decider") stepByMap[s.map]=s; });
+  const ctLine=t=>(t.roster||[]).map(p=>`bot_add_ct "${(t.tag?t.tag+" ":"")}${p.name}";`).join(" ");
+  const tLine =t=>(t.roster||[]).map(p=>`bot_add ${/\s/.test(p.name)?`"${p.name}"`:p.name};`).join(" ");
+  const hasR=t=>!!(t&&t.roster&&t.roster.length);
+  const blocks=res.played.map(m=>{
+    const s=stepByMap[m]; if(!s) return "";
+    const sideTeamObj=s.sideAB==="a"?A:B, otherObj=s.sideAB==="a"?B:A;
+    const ctT = s.startSide==="CT"?sideTeamObj:otherObj;
+    const tT  = s.startSide==="CT"?otherObj:sideTeamObj;
+    if(!hasR(ctT)||!hasR(tT)){
+      const missing=!hasR(ctT)?ctT:tT;
+      return `<div class="vt-ba"><div class="vt-ba-head">${vetoMapImg(m)}<b>${esc(m)}</b>
+        <span class="vt-ba-note">no roster on file for ${esc(missing.name)}</span></div></div>`;
+    }
+    const text=`${ctLine(ctT)}\n${tLine(tT)}`;
+    return `<div class="vt-ba">
+      <div class="vt-ba-head">${vetoMapImg(m)}<b>${esc(m)}</b>
+        <span class="vt-ba-sides"><span class="ct">${esc(ctT.name)} · CT</span> <span class="t">${esc(tT.name)} · T</span></span>
+        <button class="vt-ba-copy" data-copy type="button">Copy</button></div>
+      <textarea class="vt-ba-text" readonly rows="2">${esc(text)}</textarea>
+    </div>`;
+  }).join("");
+  return blocks ? `<h3 class="rec-group" style="margin-top:18px">Server setup · bot_add</h3>
+    <p class="muted" style="font-size:11px;margin:-4px 0 10px">Per played map: CT team on line 1, T team on line 2. Copy into the console.</p>
+    <div class="vt-ba-list">${blocks}</div>` : "";
+}
 function renderVetoResult(A,B,fmt,res){
   const out=$("#veto-out"); if(!out) return;
   const wr=(t,m)=> (t.mapStats&&t.mapStats[m]?t.mapStats[m].wr:0.5);
@@ -2181,7 +2211,14 @@ function renderVetoResult(A,B,fmt,res){
       <div class="vt-final">${fmt==="bo1"?"Map played:":"Maps played:"} ${res.played.map(m=>`<span class="vt-chip">${vetoMapImg(m)}${esc(m)}</span>`).join("")}</div>
     </div>
     <div><h3 class="rec-group" style="margin-top:0">Win-rate by map</h3>${matrix}</div>
-  </div>`;
+  </div>` + vetoServerSetup(A,B,res);
+  out.querySelectorAll("[data-copy]").forEach(btn=>btn.onclick=()=>{
+    const ta=btn.closest(".vt-ba")&&btn.closest(".vt-ba").querySelector(".vt-ba-text"); if(!ta) return;
+    ta.focus(); ta.select();
+    const done=()=>{ btn.textContent="Copied!"; setTimeout(()=>{btn.textContent="Copy";},1200); };
+    if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(ta.value).then(done).catch(()=>{ try{document.execCommand("copy");done();}catch(e){} });
+    else { try{document.execCommand("copy");done();}catch(e){} }
+  });
 }
 
 // the shuffler works on AMATEURS only: everyone (tournament pool + solo-queue-only players)
