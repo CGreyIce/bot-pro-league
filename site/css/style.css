@@ -542,6 +542,7 @@ textarea.adm-in{resize:vertical}
 .adm-pub-btn{margin-top:0;width:auto;white-space:nowrap;padding:10px 20px}
 .adm-pub-btn:disabled{opacity:.6;cursor:default}
 .adm-list{display:flex;flex-direction:column;gap:6px}
+.adm-list-scroll{max-height:440px;overflow-y:auto;padding-right:4px}
 .adm-trow{display:flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:8px 12px}
 .adm-trow .adm-name{font-weight:600;font-family:'Chakra Petch';font-size:15px}
 .adm-trow .adm-name:hover{color:var(--link)}

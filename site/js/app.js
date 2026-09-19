@@ -1938,8 +1938,9 @@ async function renderAdmin(){
           <div id="art-msg" class="muted" style="font-size:12px;margin-top:8px"></div>
         </div>
         <div>
-          <h3 class="rec-group" style="margin-top:0">Published articles</h3>
-          <div id="art-list" class="adm-list"><p class="muted">None yet.</p></div>
+          <h3 class="rec-group" style="margin-top:0">Published articles <span id="art-count" class="muted" style="font-size:11px"></span></h3>
+          <input id="art-filter" class="adm-in" placeholder="Filter by title or date…" style="margin-bottom:8px">
+          <div id="art-list" class="adm-list adm-list-scroll"><p class="muted">None yet.</p></div>
         </div>
       </div>
     </div>
@@ -2341,24 +2342,33 @@ function setupNewsAdmin(){
     $("#art-body").value=""; $("#art-date").value=new Date().toISOString().slice(0,10);
     $("#art-formtitle").textContent="New Article"; $("#art-msg").textContent=""; };
   clearForm();
-  list.innerHTML = arts.length ? arts.map(a=>`<div class="adm-trow" data-artedit="${esc(a.slug)}" style="cursor:pointer" title="Click to edit">
-      <span class="adm-name" style="flex:1;min-width:0">${esc(a.title)}</span>
-      <span class="muted" style="font-size:11px">${esc(a.date||'')}</span>
-      <button class="adm-del" data-artdel="${esc(a.slug)}" title="Delete">✕</button>
-    </div>`).join("") : '<p class="muted">None yet.</p>';
-  list.querySelectorAll("[data-artedit]").forEach(row=>row.onclick=e=>{
-    if(e.target.closest("[data-artdel]")) return;
-    const a=arts.find(x=>x.slug===row.dataset.artedit); if(!a) return;
-    $("#art-slug").value=a.slug; $("#art-title").value=a.title||""; $("#art-date").value=a.date||"";
-    $("#art-author").value=a.author||""; $("#art-body").value=a.body||"";
-    $("#art-formtitle").textContent="Editing: "+a.title; $("#art-msg").textContent="";
-    $("#art-title").scrollIntoView({behavior:"smooth", block:"center"});
-  });
-  list.querySelectorAll("[data-artdel]").forEach(b=>b.onclick=async e=>{
-    e.stopPropagation();
-    if(!confirm("Delete this article?")) return;
-    await apiPost("/api/article/delete",{slug:b.dataset.artdel}); await reloadData(); renderAdmin();
-  });
+  const filterEl=$("#art-filter"), countEl=$("#art-count");
+  const renderList=(q)=>{
+    const term=(q||"").trim().toLowerCase();
+    const shown = term ? arts.filter(a=>(a.title||"").toLowerCase().includes(term)||(a.date||"").includes(term)) : arts;
+    list.innerHTML = !arts.length ? '<p class="muted">None yet.</p>'
+      : (shown.length ? shown.map(a=>`<div class="adm-trow" data-artedit="${esc(a.slug)}" style="cursor:pointer" title="Click to edit">
+        <span class="adm-name" style="flex:1;min-width:0">${esc(a.title)}</span>
+        <span class="muted" style="font-size:11px">${esc(a.date||'')}</span>
+        <button class="adm-del" data-artdel="${esc(a.slug)}" title="Delete">✕</button>
+      </div>`).join("") : '<p class="muted">No matches.</p>');
+    if(countEl) countEl.textContent = arts.length ? `(${term?shown.length+" of ":""}${arts.length})` : "";
+    list.querySelectorAll("[data-artedit]").forEach(row=>row.onclick=e=>{
+      if(e.target.closest("[data-artdel]")) return;
+      const a=arts.find(x=>x.slug===row.dataset.artedit); if(!a) return;
+      $("#art-slug").value=a.slug; $("#art-title").value=a.title||""; $("#art-date").value=a.date||"";
+      $("#art-author").value=a.author||""; $("#art-body").value=a.body||"";
+      $("#art-formtitle").textContent="Editing: "+a.title; $("#art-msg").textContent="";
+      $("#art-title").scrollIntoView({behavior:"smooth", block:"center"});
+    });
+    list.querySelectorAll("[data-artdel]").forEach(b=>b.onclick=async e=>{
+      e.stopPropagation();
+      if(!confirm("Delete this article?")) return;
+      await apiPost("/api/article/delete",{slug:b.dataset.artdel}); await reloadData(); renderAdmin();
+    });
+  };
+  renderList("");
+  if(filterEl) filterEl.oninput=()=>renderList(filterEl.value);
   $("#art-new").onclick=clearForm;
   $("#art-save").onclick=async ()=>{
     const title=$("#art-title").value.trim(), msg=$("#art-msg");
