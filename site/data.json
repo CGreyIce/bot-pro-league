@@ -25546,7 +25546,7 @@
       "2022"
      ],
      "nowTeam": "Prism Divide",
-     "nowTeamSlug": null
+     "nowTeamSlug": "prism-divide"
     },
     {
      "slug": "notccillia",
@@ -25689,6 +25689,12 @@
      "l": 0
     },
     {
+     "opp": "prism-divide",
+     "oppName": "Prism Divide",
+     "w": 0,
+     "l": 1
+    },
+    {
      "opp": "division20",
      "oppName": "division20",
      "w": 0,
@@ -25821,7 +25827,7 @@
      "event": "Bot Pro Cup 2026",
      "eventSlug": "bot-pro-cup-2026",
      "opp": "Prism Divide",
-     "oppSlug": null,
+     "oppSlug": "prism-divide",
      "result": "L",
      "sf": 6,
      "sa": 13
@@ -38969,6 +38975,12 @@
      "l": 0
     },
     {
+     "opp": "prism-divide",
+     "oppName": "Prism Divide",
+     "w": 0,
+     "l": 1
+    },
+    {
      "opp": "flood-flashers",
      "oppName": "Flood Flashers",
      "w": 0,
@@ -39081,7 +39093,7 @@
      "event": "Bot Pro Cup 2026",
      "eventSlug": "bot-pro-cup-2026",
      "opp": "Prism Divide",
-     "oppSlug": null,
+     "oppSlug": "prism-divide",
      "result": "L",
      "sf": 10,
      "sa": 13
@@ -47763,7 +47775,7 @@
       "2021"
      ],
      "nowTeam": "Prism Divide",
-     "nowTeamSlug": null
+     "nowTeamSlug": "prism-divide"
     },
     {
      "slug": "tiger-lark",
@@ -72121,6 +72133,12 @@
      "l": 0
     },
     {
+     "opp": "prism-divide",
+     "oppName": "Prism Divide",
+     "w": 0,
+     "l": 1
+    },
+    {
      "opp": "artisian",
      "oppName": "Artisian",
      "w": 0,
@@ -72195,7 +72213,7 @@
      "event": "Bot Pro Cup 2026",
      "eventSlug": "bot-pro-cup-2026",
      "opp": "Prism Divide",
-     "oppSlug": null,
+     "oppSlug": "prism-divide",
      "result": "L",
      "sf": 9,
      "sa": 13
@@ -74311,7 +74329,7 @@
       "2025"
      ],
      "nowTeam": "Prism Divide",
-     "nowTeamSlug": null
+     "nowTeamSlug": "prism-divide"
     }
    ],
    "h2h": [
@@ -74404,6 +74422,12 @@
      "oppName": "Opal",
      "w": 0,
      "l": 2
+    },
+    {
+     "opp": "prism-divide",
+     "oppName": "Prism Divide",
+     "w": 1,
+     "l": 0
     },
     {
      "opp": "divide-conquer",
@@ -74576,7 +74600,7 @@
      "event": "Bot Pro Cup 2026",
      "eventSlug": "bot-pro-cup-2026",
      "opp": "Prism Divide",
-     "oppSlug": null,
+     "oppSlug": "prism-divide",
      "result": "W",
      "sf": 13,
      "sa": 5
@@ -93615,6 +93639,1766 @@
    }
   },
   {
+   "name": "Prism Divide",
+   "slug": "prism-divide",
+   "key": "prismdivide",
+   "logo": "assets/teams/Prism Divide.png",
+   "map_wins": 4,
+   "map_losses": 1,
+   "map_ties": 0,
+   "total_maps": 5,
+   "wlr": 0.8,
+   "a_tier_wins": 0,
+   "s_tier_wins": 0,
+   "major_wins": 0,
+   "major_playoffs": 0,
+   "events_played": 1,
+   "podiums": 0,
+   "major_podiums": 0,
+   "rank_points": 0,
+   "tag": "PD",
+   "origin": "Bot Pro Cup 2026",
+   "notes": "group winners, promoted to pro",
+   "star": false,
+   "playoffs": {},
+   "rank": 43,
+   "mapStats": {
+    "Mirage": {
+     "w": 1,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
+     "real": true
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.831,
+     "real": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.85,
+     "real": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.819,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 2,
+     "l": 0,
+     "g": 2,
+     "wr": 1.0,
+     "real": true
+    },
+    "Vertigo": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.741,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.706,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Anubis"
+   ],
+   "roster": [
+    {
+     "name": "Codiant",
+     "team": "Prism Divide",
+     "pool": "pro",
+     "kills": 507,
+     "assists": 62,
+     "deaths": 408,
+     "mvp": 87,
+     "kdr": 1.24,
+     "wins": 22,
+     "losses": 11,
+     "winrate": 0.667,
+     "ot": 8,
+     "role": "Rifler",
+     "maps": 33,
+     "orig_rank": "Master",
+     "orig_level": "Level 6",
+     "orig_rating": 2531.0,
+     "slug": "codiant",
+     "amateurOrigin": true,
+     "nat": "Kazakhstan",
+     "iso": "kz",
+     "provisional": false,
+     "rating": 1.087,
+     "ratingPoints": 1487,
+     "tier": "Grandmaster",
+     "level": 7,
+     "kpm": 15.4,
+     "rankDelta": 0,
+     "soloStats": {
+      "kills": 199,
+      "deaths": 191,
+      "assists": 23,
+      "mvp": 24,
+      "wins": 7,
+      "losses": 5,
+      "maps": 12,
+      "kdr": 1.04,
+      "winrate": 0.583,
+      "rating": 1.037,
+      "ratingPoints": 1296,
+      "tier": "Diamond",
+      "level": 6,
+      "soloRank": 64,
+      "soloTotal": 239,
+      "rankDelta": 0,
+      "provisional": false
+     },
+     "bio": "Codiant is a Kazakh rifler and one of the rare Central Asian names in the pool, a Level 7 free agent with a 1.24 K/D and a 64% win rate that hint at real potential.",
+     "gender": "M",
+     "teamHistory": [
+      {
+       "team": "Paper Tigers",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2025"
+       ],
+       "roster": [
+        {
+         "hist": "Ryujin",
+         "name": "Ryujin",
+         "slug": "ryujin",
+         "iso": "my",
+         "captain": true
+        },
+        {
+         "hist": "Jasticar",
+         "name": "Jasticar",
+         "slug": "jasticar",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Codiant",
+         "name": "Codiant",
+         "slug": "codiant",
+         "iso": "kz",
+         "captain": false
+        },
+        {
+         "hist": "TearsofDeath",
+         "name": "TearsofDeath",
+         "slug": "tearsofdeath",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "TRPaki",
+         "name": "TRPaki",
+         "slug": "trpaki",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "False Heart",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Codiant",
+         "name": "Codiant",
+         "slug": "codiant",
+         "iso": "kz",
+         "captain": false
+        },
+        {
+         "hist": "Kurumi Noah",
+         "name": "Kurumi Noah",
+         "slug": "kurumi-noah",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "kimonra",
+         "name": "kimonra",
+         "slug": "kimonra",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "rittan0x0",
+         "name": "rittan0x0",
+         "slug": "rittan0x0",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "ruamamiya",
+         "name": "ruamamiya",
+         "slug": "ruamamiya",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Catastrophy",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Codiant",
+         "name": "Codiant",
+         "slug": "codiant",
+         "iso": "kz",
+         "captain": false
+        },
+        {
+         "hist": "candybar_isblue",
+         "name": "candybar_isblue",
+         "slug": "candybar-isblue",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "ostc.x",
+         "name": "ostc.x",
+         "slug": "ostc-x",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "arcimoon",
+         "name": "arcimoon",
+         "slug": "arcimoon",
+         "iso": "ca",
+         "captain": false
+        },
+        {
+         "hist": "yumezukiyomi",
+         "name": "yumezukiyomi",
+         "slug": "yumezukiyomi",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Prism Divide",
+       "teamSlug": "prism-divide",
+       "isPro": true,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "XueQiii",
+         "name": "XueQiii",
+         "slug": "xueqiii",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "AkanersVT",
+         "name": "AkanersVT",
+         "slug": "akanersvt",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Syrrith",
+         "name": "Syrrith",
+         "slug": "syrrith",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "sayupurin",
+         "name": "sayupurin",
+         "slug": "sayupurin",
+         "iso": "hk",
+         "captain": false
+        },
+        {
+         "hist": "Codiant",
+         "name": "Codiant",
+         "slug": "codiant",
+         "iso": "kz",
+         "captain": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "AkanersVT",
+     "team": "Prism Divide",
+     "pool": "pro",
+     "kills": 551,
+     "assists": 52,
+     "deaths": 490,
+     "mvp": 82,
+     "kdr": 1.12,
+     "wins": 19,
+     "losses": 15,
+     "winrate": 0.559,
+     "ot": 4,
+     "role": "Rifler",
+     "maps": 34,
+     "orig_rank": "Emerald",
+     "orig_level": "Level 5",
+     "orig_rating": 2063.0,
+     "slug": "akanersvt",
+     "amateurOrigin": true,
+     "nat": "Singapore",
+     "iso": "sg",
+     "provisional": false,
+     "rating": 1.041,
+     "ratingPoints": 1309,
+     "tier": "Diamond",
+     "level": 6,
+     "kpm": 16.2,
+     "rankDelta": 0,
+     "soloStats": {
+      "kills": 91,
+      "deaths": 87,
+      "assists": 10,
+      "mvp": 10,
+      "wins": 4,
+      "losses": 4,
+      "maps": 8,
+      "kdr": 1.05,
+      "winrate": 0.5,
+      "rating": 0.993,
+      "ratingPoints": 1123,
+      "tier": "Gold",
+      "level": 5,
+      "soloRank": 134,
+      "soloTotal": 239,
+      "rankDelta": 0,
+      "provisional": false
+     },
+     "bio": "AkanersVT is a Singaporean rifler and a Level 6 free agent, a prolific scorer with over 551 kills in the amateur ranks.",
+     "gender": "F",
+     "teamHistory": [
+      {
+       "team": "Neptune's Grace",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2025"
+       ],
+       "roster": [
+        {
+         "hist": "wushii",
+         "name": "wushii",
+         "slug": "wushii",
+         "iso": "my",
+         "captain": true
+        },
+        {
+         "hist": "zhizyii",
+         "name": "zhizyii",
+         "slug": "zhizyii",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "dla.wo",
+         "name": "dla.wo",
+         "slug": "dla-wo",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Aranionja",
+         "name": "Aranionja",
+         "slug": "aranionja",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "AkanersVT",
+         "name": "AkanersVT",
+         "slug": "akanersvt",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Viceroy",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "AkanersVT",
+         "name": "AkanersVT",
+         "slug": "akanersvt",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "doullan",
+         "name": "doullan",
+         "slug": null,
+         "iso": "",
+         "captain": false
+        },
+        {
+         "hist": "Xevaria",
+         "name": "Xevaria",
+         "slug": "xevaria",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "KiokoCheiko",
+         "name": "KiokoCheiko",
+         "slug": "kiokocheiko",
+         "iso": "ph",
+         "captain": false
+        },
+        {
+         "hist": "cherri_vt",
+         "name": "cherri_vt",
+         "slug": "cherri-vt",
+         "iso": "au",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Mimicry",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Karasu",
+         "name": "Karasu",
+         "slug": "karasu",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "AkanersVT",
+         "name": "AkanersVT",
+         "slug": "akanersvt",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "boopydoopy",
+         "name": "boopydoopy",
+         "slug": "boopydoopy",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "SoapiiSereia",
+         "name": "SoapiiSereia",
+         "slug": "soapiisereia",
+         "iso": "nz",
+         "captain": false
+        },
+        {
+         "hist": "Laurel",
+         "name": "Laurel",
+         "slug": "laurel",
+         "iso": "ph",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Withered Rose",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "AkanersVT",
+         "name": "AkanersVT",
+         "slug": "akanersvt",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "leachubby",
+         "name": "leachubby",
+         "slug": "leachubby",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Nerfox",
+         "name": "Nerfox",
+         "slug": "nerfox",
+         "iso": "pl",
+         "captain": false
+        },
+        {
+         "hist": "afayctionate",
+         "name": "afayctionate",
+         "slug": "afayctionate",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "rittan0x0",
+         "name": "rittan0x0",
+         "slug": "rittan0x0",
+         "iso": "my",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Prism Divide",
+       "teamSlug": "prism-divide",
+       "isPro": true,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "XueQiii",
+         "name": "XueQiii",
+         "slug": "xueqiii",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "AkanersVT",
+         "name": "AkanersVT",
+         "slug": "akanersvt",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Syrrith",
+         "name": "Syrrith",
+         "slug": "syrrith",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "sayupurin",
+         "name": "sayupurin",
+         "slug": "sayupurin",
+         "iso": "hk",
+         "captain": false
+        },
+        {
+         "hist": "Codiant",
+         "name": "Codiant",
+         "slug": "codiant",
+         "iso": "kz",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "SG Squad 15",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "joyyy_cheng",
+         "name": "joyyy_cheng",
+         "slug": "joyyy-cheng",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "luminmochi",
+         "name": "luminmochi",
+         "slug": "luminmochi",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "AkanersVT",
+         "name": "AkanersVT",
+         "slug": "akanersvt",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "m0wmeow",
+         "name": "m0wmeow",
+         "slug": "m0wmeow",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Baer",
+         "name": "Baer",
+         "slug": "baer",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Syrrith",
+     "team": "Prism Divide",
+     "pool": "pro",
+     "kills": 343,
+     "assists": 34,
+     "deaths": 321,
+     "mvp": 47,
+     "kdr": 1.07,
+     "wins": 9,
+     "losses": 12,
+     "winrate": 0.429,
+     "ot": 5,
+     "role": "Rifler",
+     "maps": 21,
+     "orig_rank": "Silver",
+     "orig_level": "Level 3",
+     "orig_rating": 1347.0,
+     "slug": "syrrith",
+     "amateurOrigin": true,
+     "nat": "Malaysia",
+     "iso": "my",
+     "provisional": false,
+     "rating": 1.013,
+     "ratingPoints": 1200,
+     "tier": "Emerald",
+     "level": 5,
+     "kpm": 16.3,
+     "rankDelta": 0,
+     "bio": "Syrrith is a Singaporean rifler and a Level 5 free agent, a fragger with the profile to earn a competitive spot.",
+     "gender": "M",
+     "teamHistory": [
+      {
+       "team": "Ursa Majoris",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2023"
+       ],
+       "roster": [
+        {
+         "hist": "OchakoKiyomi",
+         "name": "OchakoKiyomi",
+         "slug": "ochakokiyomi",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "Syrrith",
+         "name": "Syrrith",
+         "slug": "syrrith",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "KiokoCheiko",
+         "name": "KiokoCheiko",
+         "slug": "kiokocheiko",
+         "iso": "ph",
+         "captain": false
+        },
+        {
+         "hist": "thehidz",
+         "name": "thehidz",
+         "slug": "thehidz",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "holoqqwinny",
+         "name": "azumiying",
+         "slug": "azumiying",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Syzygy",
+       "teamSlug": "syzygy",
+       "isPro": true,
+       "years": [
+        "2024"
+       ],
+       "roster": [
+        {
+         "hist": "le_pyrrhic",
+         "name": "le_pyrrhic",
+         "slug": "le-pyrrhic",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "Syrrith",
+         "name": "Syrrith",
+         "slug": "syrrith",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "TRPaki",
+         "name": "TRPaki",
+         "slug": "trpaki",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "AyanOWOT",
+         "name": "AyanOwOT",
+         "slug": "ayanowot",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "Muraskiiii",
+         "name": "murasakibara_tsuki1",
+         "slug": "murasakibara-tsuki1",
+         "iso": "tw",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Escape Velocity",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2025"
+       ],
+       "roster": [
+        {
+         "hist": "Shuvimo",
+         "name": "Shuvimo",
+         "slug": "shuvimo",
+         "iso": "jp",
+         "captain": true
+        },
+        {
+         "hist": "HiguVT",
+         "name": "HiguVT",
+         "slug": "higuvt",
+         "iso": "au",
+         "captain": false
+        },
+        {
+         "hist": "Syrrith",
+         "name": "Syrrith",
+         "slug": "syrrith",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "Dianya",
+         "name": "Dianya",
+         "slug": "dianya",
+         "iso": "us",
+         "captain": false
+        },
+        {
+         "hist": "Nerfox",
+         "name": "Nerfox",
+         "slug": "nerfox",
+         "iso": "pl",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Extinction Bay",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "sURF",
+         "name": "sURF",
+         "slug": "surf",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Syrrith",
+         "name": "Syrrith",
+         "slug": "syrrith",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "Nekota Tsuna",
+         "name": "Nekota Tsuna",
+         "slug": "nekota-tsuna",
+         "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "Tosaki Mimi",
+         "name": "Tosaki Mimi",
+         "slug": "tosaki-mimi",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Ginjo Saine",
+         "name": "Ginjo Saine",
+         "slug": "ginjo-saine",
+         "iso": "jp",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Prism Divide",
+       "teamSlug": "prism-divide",
+       "isPro": true,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "XueQiii",
+         "name": "XueQiii",
+         "slug": "xueqiii",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "AkanersVT",
+         "name": "AkanersVT",
+         "slug": "akanersvt",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Syrrith",
+         "name": "Syrrith",
+         "slug": "syrrith",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "sayupurin",
+         "name": "sayupurin",
+         "slug": "sayupurin",
+         "iso": "hk",
+         "captain": false
+        },
+        {
+         "hist": "Codiant",
+         "name": "Codiant",
+         "slug": "codiant",
+         "iso": "kz",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "MY Squad 6",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Soozy",
+         "name": "Soozy",
+         "slug": "soozy",
+         "iso": "my",
+         "captain": true
+        },
+        {
+         "hist": "perk",
+         "name": "perk",
+         "slug": "perk",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "Syrrith",
+         "name": "Syrrith",
+         "slug": "syrrith",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "Kyan",
+         "name": "Kyan",
+         "slug": "kyan",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "Loonatic",
+         "name": "Loonatic",
+         "slug": "loonatic",
+         "iso": "my",
+         "captain": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "XueQiii",
+     "team": "Prism Divide",
+     "pool": "pro",
+     "kills": 414,
+     "assists": 45,
+     "deaths": 375,
+     "mvp": 57,
+     "kdr": 1.1,
+     "wins": 14,
+     "losses": 13,
+     "winrate": 0.519,
+     "ot": 2,
+     "role": "IGL",
+     "maps": 27,
+     "orig_rank": "Gold",
+     "orig_level": "Level 4",
+     "orig_rating": 1641.0,
+     "slug": "xueqiii",
+     "amateurOrigin": true,
+     "nat": "Singapore",
+     "iso": "sg",
+     "provisional": false,
+     "rating": 1.012,
+     "ratingPoints": 1195,
+     "tier": "Platinum",
+     "level": 5,
+     "kpm": 15.3,
+     "rankDelta": 0,
+     "soloStats": {
+      "kills": 83,
+      "deaths": 94,
+      "assists": 12,
+      "mvp": 9,
+      "wins": 2,
+      "losses": 4,
+      "maps": 6,
+      "kdr": 0.88,
+      "winrate": 0.333,
+      "rating": 0.955,
+      "ratingPoints": 974,
+      "tier": "Silver",
+      "level": 4,
+      "soloRank": 193,
+      "soloTotal": 239,
+      "rankDelta": 0,
+      "provisional": false
+     },
+     "bio": "XueQiii is a Singaporean in-game leader and a Level 5 free agent, an amateur caller with a level head.",
+     "gender": "F",
+     "teamHistory": [
+      {
+       "team": "TSM Clan",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "Celtsm",
+         "name": "Celtsm",
+         "slug": "celtsm",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "XueQiii",
+         "name": "XueQiii",
+         "slug": "xueqiii",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Astro_Ruckus",
+         "name": "Astro_Ruckus",
+         "slug": "astro-ruckus",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Ryujin",
+         "name": "Ryujin",
+         "slug": "ryujin",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "yinnzx",
+         "name": "yinnzx",
+         "slug": "yinnzx",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Unforgettable",
+       "teamSlug": "unforgettable",
+       "isPro": true,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "Sakami",
+         "name": "Sakami",
+         "slug": "sakami",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "milkenut",
+         "name": "milkenut",
+         "slug": "milkenut",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "XueQiii",
+         "name": "XueQiii",
+         "slug": "xueqiii",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Ziweiv",
+         "name": "Ziweiv",
+         "slug": "ziweiv",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "InfiniteHolic",
+         "name": "KrinoJ",
+         "slug": "krinoj",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Behemoth",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "Laburi",
+         "name": "Laburi",
+         "slug": "laburi",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "Ziweiv",
+         "name": "Ziweiv",
+         "slug": "ziweiv",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "xueqiii",
+         "name": "XueQiii",
+         "slug": "xueqiii",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "notccillia",
+         "name": "notccillia",
+         "slug": "notccillia",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "thehidz",
+         "name": "thehidz",
+         "slug": "thehidz",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Arroast",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "Xueqiii",
+         "name": "XueQiii",
+         "slug": "xueqiii",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "Mike",
+         "name": "Mike",
+         "slug": "mike",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "treblest",
+         "name": "treblest",
+         "slug": "treblest",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Moira",
+         "name": "Moira",
+         "slug": "moira",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "rebebx",
+         "name": "rebebx",
+         "slug": "rebebx",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Delirium",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2022"
+       ],
+       "roster": [
+        {
+         "hist": "XueQiii",
+         "name": "XueQiii",
+         "slug": "xueqiii",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "Astro_Ruckus",
+         "name": "Astro_Ruckus",
+         "slug": "astro-ruckus",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "crazywhoopies",
+         "name": "crazywhoopies",
+         "slug": "crazywhoopies",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Zenn1sm",
+         "name": "zenn1sm",
+         "slug": "zenn1sm",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "AppleOrangePear",
+         "name": "AppleOrangePear",
+         "slug": "appleorangepear",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "entity",
+       "teamSlug": "entity",
+       "isPro": true,
+       "years": [
+        "2022"
+       ],
+       "roster": [
+        {
+         "hist": "notccillia",
+         "name": "notccillia",
+         "slug": "notccillia",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "Moira",
+         "name": "Moira",
+         "slug": "moira",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "milkenut",
+         "name": "milkenut",
+         "slug": "milkenut",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "XueQiii",
+         "name": "XueQiii",
+         "slug": "xueqiii",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "d.chong",
+         "name": "d.chong",
+         "slug": "d-chong",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Ukiyo",
+       "teamSlug": "ukiyo",
+       "isPro": true,
+       "years": [
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+       ],
+       "roster": [
+        {
+         "hist": "Kai",
+         "name": "Kai",
+         "slug": "kai",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "MugCowPayLucky",
+         "name": "MugCowPayLucky",
+         "slug": "mugcowpaylucky",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "XueQiii",
+         "name": "XueQiii",
+         "slug": "xueqiii",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "nattyuwus",
+         "name": "nattyuwus",
+         "slug": "nattyuwus",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "kael",
+         "name": "kael",
+         "slug": "kael",
+         "iso": "my",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Phantom Tea Party",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2025"
+       ],
+       "roster": [
+        {
+         "hist": "rittan0x0",
+         "name": "rittan0x0",
+         "slug": "rittan0x0",
+         "iso": "my",
+         "captain": true
+        },
+        {
+         "hist": "AngelXAim",
+         "name": "AngelxAim",
+         "slug": "angelxaim",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "akuluvr",
+         "name": "akuluvr",
+         "slug": "akuluvr",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "XueQiii",
+         "name": "XueQiii",
+         "slug": "xueqiii",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Jenakai",
+         "name": "Jenakai",
+         "slug": "jenakai",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "K2X2T",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Kaito_Oshino",
+         "name": "Kaito_Oshino",
+         "slug": "kaito-oshino",
+         "iso": "au",
+         "captain": false
+        },
+        {
+         "hist": "KurmitSuicidal",
+         "name": "lukedefabio",
+         "slug": "lukedefabio",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Xyrren",
+         "name": "Xyrren",
+         "slug": "xyrren",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "XueQiii",
+         "name": "XueQiii",
+         "slug": "xueqiii",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "tiger.lark",
+         "name": "tiger.lark",
+         "slug": "tiger-lark",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Obelizk",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "TRPaki",
+         "name": "TRPaki",
+         "slug": "trpaki",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "LeilaMayadah",
+         "name": "LeilaMayadah",
+         "slug": "leilamayadah",
+         "iso": "ca",
+         "captain": false
+        },
+        {
+         "hist": "Ichinose Uruha",
+         "name": "Ichinose Uruha",
+         "slug": "ichinose-uruha",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "XueQiii",
+         "name": "XueQiii",
+         "slug": "xueqiii",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "yukihimeowo",
+         "name": "yukihimeowo",
+         "slug": "yukihimeowo",
+         "iso": "us",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "NIGHTmode",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Xevaria",
+         "name": "Xevaria",
+         "slug": "xevaria",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "CryingNutz",
+         "name": "CryingNutz",
+         "slug": "cryingnutz",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "XueQiii",
+         "name": "XueQiii",
+         "slug": "xueqiii",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "boopydoopy",
+         "name": "boopydoopy",
+         "slug": "boopydoopy",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "thehidz",
+         "name": "thehidz",
+         "slug": "thehidz",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Prism Divide",
+       "teamSlug": "prism-divide",
+       "isPro": true,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "XueQiii",
+         "name": "XueQiii",
+         "slug": "xueqiii",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "AkanersVT",
+         "name": "AkanersVT",
+         "slug": "akanersvt",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Syrrith",
+         "name": "Syrrith",
+         "slug": "syrrith",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "sayupurin",
+         "name": "sayupurin",
+         "slug": "sayupurin",
+         "iso": "hk",
+         "captain": false
+        },
+        {
+         "hist": "Codiant",
+         "name": "Codiant",
+         "slug": "codiant",
+         "iso": "kz",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "SG Squad 31",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "XueQiii",
+         "name": "XueQiii",
+         "slug": "xueqiii",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "Pearlim",
+         "name": "Pearlim",
+         "slug": "pearlim",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "beyouna",
+         "name": "beyouna",
+         "slug": "beyouna",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Sketch",
+         "name": "Sketch",
+         "slug": "sketch",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "kyomikoo",
+         "name": "kyomikoo",
+         "slug": "kyomikoo",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "sayupurin",
+     "team": "Prism Divide",
+     "pool": "pro",
+     "kills": 68,
+     "assists": 7,
+     "deaths": 65,
+     "mvp": 8,
+     "kdr": 1.05,
+     "wins": 4,
+     "losses": 1,
+     "winrate": 0.8,
+     "ot": 0,
+     "role": "Rifler",
+     "maps": 5,
+     "orig_rank": "",
+     "orig_level": "",
+     "orig_rating": 0.0,
+     "slug": "sayupurin",
+     "amateurOrigin": true,
+     "nat": "Hong Kong",
+     "iso": "hk",
+     "provisional": false,
+     "rating": 0.99,
+     "ratingPoints": 1110,
+     "tier": "Gold",
+     "level": 5,
+     "kpm": 13.6,
+     "rankDelta": 0,
+     "bio": "sayupurin is a Hong Kong rifler.",
+     "gender": "F",
+     "teamHistory": [
+      {
+       "team": "Prism Divide",
+       "teamSlug": "prism-divide",
+       "isPro": true,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "XueQiii",
+         "name": "XueQiii",
+         "slug": "xueqiii",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "AkanersVT",
+         "name": "AkanersVT",
+         "slug": "akanersvt",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Syrrith",
+         "name": "Syrrith",
+         "slug": "syrrith",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "sayupurin",
+         "name": "sayupurin",
+         "slug": "sayupurin",
+         "iso": "hk",
+         "captain": false
+        },
+        {
+         "hist": "Codiant",
+         "name": "Codiant",
+         "slug": "codiant",
+         "iso": "kz",
+         "captain": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "region": "SEA",
+   "originIso": "sg",
+   "originCountry": "Singapore",
+   "events": [],
+   "points_breakdown": [],
+   "rankDelta": 0,
+   "formerPlayers": [],
+   "h2h": [
+    {
+     "opp": "flood-flashers",
+     "oppName": "Flood Flashers",
+     "w": 1,
+     "l": 0
+    },
+    {
+     "opp": "divide-conquer",
+     "oppName": "Divide&Conquer",
+     "w": 1,
+     "l": 0
+    },
+    {
+     "opp": "entity",
+     "oppName": "entity",
+     "w": 1,
+     "l": 0
+    },
+    {
+     "opp": "ukiyo",
+     "oppName": "Ukiyo",
+     "w": 0,
+     "l": 1
+    }
+   ],
+   "recentResults": [
+    {
+     "date": "2026-09-01",
+     "event": "Bot Pro Cup 2026",
+     "eventSlug": "bot-pro-cup-2026",
+     "opp": "Flood Flashers",
+     "oppSlug": "flood-flashers",
+     "result": "W",
+     "sf": 13,
+     "sa": 9
+    },
+    {
+     "date": "2026-09-01",
+     "event": "Bot Pro Cup 2026",
+     "eventSlug": "bot-pro-cup-2026",
+     "opp": "Radiant Coil",
+     "oppSlug": null,
+     "result": "W",
+     "sf": 13,
+     "sa": 5
+    },
+    {
+     "date": "2026-09-01",
+     "event": "Bot Pro Cup 2026",
+     "eventSlug": "bot-pro-cup-2026",
+     "opp": "Divide&Conquer",
+     "oppSlug": "divide-conquer",
+     "result": "W",
+     "sf": 13,
+     "sa": 10
+    },
+    {
+     "date": "2026-09-01",
+     "event": "Bot Pro Cup 2026",
+     "eventSlug": "bot-pro-cup-2026",
+     "opp": "Ukiyo",
+     "oppSlug": "ukiyo",
+     "result": "L",
+     "sf": 5,
+     "sa": 13
+    },
+    {
+     "date": "2026-09-01",
+     "event": "Bot Pro Cup 2026",
+     "eventSlug": "bot-pro-cup-2026",
+     "opp": "entity",
+     "oppSlug": "entity",
+     "result": "W",
+     "sf": 13,
+     "sa": 6
+    }
+   ],
+   "streak": "W1",
+   "longestWinStreak": {
+    "len": 3,
+    "startEvent": "Bot Pro Cup 2026",
+    "startDate": "2026-09-01",
+    "endEvent": "Bot Pro Cup 2026",
+    "endSlug": "bot-pro-cup-2026",
+    "endDate": "2026-09-01"
+   }
+  },
+  {
    "name": "Syzygy",
    "slug": "syzygy",
    "key": "syzygy",
@@ -96338,7 +98122,7 @@
       "2024"
      ],
      "nowTeam": "Prism Divide",
-     "nowTeamSlug": null
+     "nowTeamSlug": "prism-divide"
     },
     {
      "slug": "murasakibara-tsuki1",
@@ -171481,7 +173265,6 @@
     },
     "bio": "Codiant is a Kazakh rifler and one of the rare Central Asian names in the pool, a Level 7 free agent with a 1.24 K/D and a 64% win rate that hint at real potential.",
     "gender": "M",
-    "teamTourney": "Bot Pro Cup 2026",
     "teamHistory": [
      {
       "team": "Paper Tigers",
@@ -171620,8 +173403,8 @@
      },
      {
       "team": "Prism Divide",
-      "teamSlug": null,
-      "isPro": false,
+      "teamSlug": "prism-divide",
+      "isPro": true,
       "years": [
        "2026"
       ],
@@ -175598,7 +177381,6 @@
     },
     "bio": "AkanersVT is a Singaporean rifler and a Level 6 free agent, a prolific scorer with over 551 kills in the amateur ranks.",
     "gender": "F",
-    "teamTourney": "Bot Pro Cup 2026",
     "teamHistory": [
      {
       "team": "Neptune's Grace",
@@ -175782,8 +177564,8 @@
      },
      {
       "team": "Prism Divide",
-      "teamSlug": null,
-      "isPro": false,
+      "teamSlug": "prism-divide",
+      "isPro": true,
       "years": [
        "2026"
       ],
@@ -185083,7 +186865,6 @@
     },
     "bio": "XueQiii is a Singaporean in-game leader and a Level 5 free agent, an amateur caller with a level head.",
     "gender": "F",
-    "teamTourney": "Bot Pro Cup 2026",
     "teamHistory": [
      {
       "team": "TSM Clan",
@@ -185585,8 +187366,8 @@
      },
      {
       "team": "Prism Divide",
-      "teamSlug": null,
-      "isPro": false,
+      "teamSlug": "prism-divide",
+      "isPro": true,
       "years": [
        "2026"
       ],
@@ -201497,7 +203278,6 @@
     "rankDelta": 0,
     "bio": "Syrrith is a Singaporean rifler and a Level 5 free agent, a fragger with the profile to earn a competitive spot.",
     "gender": "M",
-    "teamTourney": "Bot Pro Cup 2026",
     "teamHistory": [
      {
       "team": "Ursa Majoris",
@@ -201681,8 +203461,8 @@
      },
      {
       "team": "Prism Divide",
-      "teamSlug": null,
-      "isPro": false,
+      "teamSlug": "prism-divide",
+      "isPro": true,
       "years": [
        "2026"
       ],
@@ -228515,12 +230295,11 @@
     "rankDelta": 0,
     "bio": "sayupurin is a Hong Kong rifler.",
     "gender": "F",
-    "teamTourney": "Bot Pro Cup 2026",
     "teamHistory": [
      {
       "team": "Prism Divide",
-      "teamSlug": null,
-      "isPro": false,
+      "teamSlug": "prism-divide",
+      "isPro": true,
       "years": [
        "2026"
       ],
@@ -283625,7 +285404,7 @@
        "sb": 13,
        "w": 2,
        "aTeam": "flood-flashers",
-       "bTeam": null,
+       "bTeam": "prism-divide",
        "bo": 1,
        "tp": false,
        "ts": 1787962206,
@@ -284032,7 +285811,7 @@
        "sa": 13,
        "sb": 5,
        "w": 1,
-       "aTeam": null,
+       "aTeam": "prism-divide",
        "bTeam": null,
        "bo": 1,
        "tp": false,
@@ -284441,7 +286220,7 @@
        "sb": 13,
        "w": 2,
        "aTeam": "divide-conquer",
-       "bTeam": null,
+       "bTeam": "prism-divide",
        "bo": 1,
        "tp": false,
        "ts": 1789806175,
@@ -284982,7 +286761,7 @@
        "sa": 5,
        "sb": 13,
        "w": 2,
-       "aTeam": null,
+       "aTeam": "prism-divide",
        "bTeam": "ukiyo",
        "bo": 1,
        "tp": false,
@@ -285524,7 +287303,7 @@
        "sa": 13,
        "sb": 6,
        "w": 1,
-       "aTeam": null,
+       "aTeam": "prism-divide",
        "bTeam": "entity",
        "bo": 1,
        "tp": false,
@@ -295974,7 +297753,7 @@
          "sb": 13,
          "w": 2,
          "aTeam": "flood-flashers",
-         "bTeam": null,
+         "bTeam": "prism-divide",
          "bo": 1,
          "tp": false,
          "ts": 1787962206,
@@ -296381,7 +298160,7 @@
          "sa": 13,
          "sb": 5,
          "w": 1,
-         "aTeam": null,
+         "aTeam": "prism-divide",
          "bTeam": null,
          "bo": 1,
          "tp": false,
@@ -296790,7 +298569,7 @@
          "sb": 13,
          "w": 2,
          "aTeam": "divide-conquer",
-         "bTeam": null,
+         "bTeam": "prism-divide",
          "bo": 1,
          "tp": false,
          "ts": 1789806175,
@@ -297331,7 +299110,7 @@
          "sa": 5,
          "sb": 13,
          "w": 2,
-         "aTeam": null,
+         "aTeam": "prism-divide",
          "bTeam": "ukiyo",
          "bo": 1,
          "tp": false,
@@ -297873,7 +299652,7 @@
          "sa": 13,
          "sb": 6,
          "w": 1,
-         "aTeam": null,
+         "aTeam": "prism-divide",
          "bTeam": "entity",
          "bo": 1,
          "tp": false,
@@ -298409,7 +300188,7 @@
       {
        "rank": 1,
        "name": "Prism Divide",
-       "teamSlug": null,
+       "teamSlug": "prism-divide",
        "w": 4,
        "l": 1
       },
@@ -298505,7 +300284,7 @@
       ],
       [
        "Prism Divide",
-       null
+       "prism-divide"
       ]
      ]
     },
@@ -309059,7 +310838,7 @@
     {
      "rank": 2,
      "name": "Prism Divide",
-     "teamSlug": null,
+     "teamSlug": "prism-divide",
      "result": "Group Stage",
      "tie": true
     },
@@ -309694,6 +311473,7 @@
     "BeeHyve": 62,
     "Nightshade": 63,
     "Albion Rising": 64,
+    "prism-divide": 65,
     "Prism Divide": 65,
     "Stormfront": 66,
     "Echo Cipher": 67,
@@ -310945,7 +312725,7 @@
     },
     {
      "team": "Prism Divide",
-     "teamSlug": null,
+     "teamSlug": "prism-divide",
      "players": [
       {
        "hist": "XueQiii",
@@ -397438,7 +399218,7 @@
    "playerSlug": "xueqiii",
    "iso": "sg",
    "fromTeam": "Prism Divide",
-   "fromSlug": null,
+   "fromSlug": "prism-divide",
    "toTeam": "SG Squad 31",
    "toSlug": null,
    "toPro": false,
@@ -398650,7 +400430,7 @@
    "playerSlug": "syrrith",
    "iso": "my",
    "fromTeam": "Prism Divide",
-   "fromSlug": null,
+   "fromSlug": "prism-divide",
    "toTeam": "MY Squad 6",
    "toSlug": null,
    "toPro": false,
@@ -399250,7 +401030,7 @@
    "playerSlug": "akanersvt",
    "iso": "sg",
    "fromTeam": "Prism Divide",
-   "fromSlug": null,
+   "fromSlug": "prism-divide",
    "toTeam": "SG Squad 15",
    "toSlug": null,
    "toPro": false,
@@ -400620,8 +402400,8 @@
    "fromTeam": "NIGHTmode",
    "fromSlug": null,
    "toTeam": "Prism Divide",
-   "toSlug": null,
-   "toPro": false,
+   "toSlug": "prism-divide",
+   "toPro": true,
    "date": "2026-09-01"
   },
   {
@@ -400848,8 +402628,8 @@
    "fromTeam": "Extinction Bay",
    "fromSlug": null,
    "toTeam": "Prism Divide",
-   "toSlug": null,
-   "toPro": false,
+   "toSlug": "prism-divide",
+   "toPro": true,
    "date": "2026-09-01"
   },
   {
@@ -401088,8 +402868,8 @@
    "fromTeam": "Catastrophy",
    "fromSlug": null,
    "toTeam": "Prism Divide",
-   "toSlug": null,
-   "toPro": false,
+   "toSlug": "prism-divide",
+   "toPro": true,
    "date": "2026-09-01"
   },
   {
@@ -401316,8 +403096,8 @@
    "fromTeam": "Withered Rose",
    "fromSlug": null,
    "toTeam": "Prism Divide",
-   "toSlug": null,
-   "toPro": false,
+   "toSlug": "prism-divide",
+   "toPro": true,
    "date": "2026-09-01"
   },
   {
@@ -402264,8 +404044,8 @@
    "fromTeam": null,
    "fromSlug": null,
    "toTeam": "Prism Divide",
-   "toSlug": null,
-   "toPro": false,
+   "toSlug": "prism-divide",
+   "toPro": true,
    "date": "2026-09-01"
   },
   {
@@ -428414,84 +430194,6 @@
    "worstMaps": [
     "Vertigo",
     "Tuscan"
-   ],
-   "adhoc": true,
-   "event": "Bot Pro Cup 2026"
-  },
-  {
-   "name": "Prism Divide",
-   "slug": "adhoc-prismdivide",
-   "mapStats": {
-    "Mirage": {
-     "w": 1,
-     "l": 1,
-     "g": 2,
-     "wr": 0.5,
-     "real": true,
-     "est": false
-    },
-    "Dust2": {
-     "w": 0,
-     "l": 0,
-     "g": 0,
-     "wr": 0.0,
-     "real": false,
-     "est": true,
-     "estN": 1,
-     "estMaps": 1
-    },
-    "Inferno": {
-     "w": 0,
-     "l": 0,
-     "g": 0,
-     "wr": 0.0,
-     "real": false,
-     "est": true,
-     "estN": 2,
-     "estMaps": 2
-    },
-    "Cache": {
-     "w": 0,
-     "l": 0,
-     "g": 0,
-     "wr": 0.376,
-     "real": false,
-     "est": false
-    },
-    "Tuscan": {
-     "w": 2,
-     "l": 0,
-     "g": 2,
-     "wr": 1.0,
-     "real": true,
-     "est": false
-    },
-    "Vertigo": {
-     "w": 1,
-     "l": 0,
-     "g": 0,
-     "wr": 0.9,
-     "real": false,
-     "est": true,
-     "estN": 5,
-     "estMaps": 6
-    },
-    "Anubis": {
-     "w": 0,
-     "l": 0,
-     "g": 0,
-     "wr": 0.332,
-     "real": false,
-     "est": false
-    }
-   },
-   "bestMaps": [
-    "Tuscan",
-    "Vertigo"
-   ],
-   "worstMaps": [
-    "Inferno",
-    "Dust2"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
