@@ -393,12 +393,16 @@ def compute_player_deltas(players, avg, contrib, rating_fn=_rating_value):
 POINTS_HALFLIFE_DAYS = 730             # a result loses half its weight every ~2 years
 TIER_POINT_MULT = {"major": 5.0, "s": 2.5, "a": 1.0}   # Major title=500, S=250, A=100
 def _placement_points(rank):
-    # Playoff finishes are worth the most; group-stage exits still earn a small, standing-scaled
-    # amount, always less than a first-round (rank 9-12) playoff exit.
+    # Playoff placement: title down to a first-round exit. Deeper ranks (older events that list
+    # every team without a stage label) taper off toward the group scale.
     return (100 if rank == 1 else 70 if rank == 2 else 45 if rank <= 4
             else 25 if rank <= 8 else 12 if rank <= 12     # playoffs (down to first round)
-            else 7 if rank <= 16 else 5 if rank <= 24       # top group non-advancers
-            else 3 if rank <= 32 else 2)                    # deeper group finishes
+            else 7 if rank <= 16 else 5 if rank <= 24
+            else 3 if rank <= 32 else 2)
+def _group_points(pos):
+    # A group-stage finish, scored by standing among the event's group cohort (pos: 0 = best).
+    # Always below a first-round (rank 9-12) playoff exit, so making the bracket is worth more.
+    return 8 if pos < 6 else 6 if pos < 12 else 4 if pos < 24 else 2
 def _pdate(s):
     y, m, d = (int(x) for x in s.split("-")); return _date(y, m, d)
 def compute_team_points(teams, tournaments):
@@ -407,28 +411,38 @@ def compute_team_points(teams, tournaments):
     record how each team's rank moved vs. before the most recent completed event."""
     dated = [t["date"] for t in tournaments if t.get("date")]
     ref = max((_pdate(d) for d in dated), default=None)   # newest event = "now"
-    # "completed" = has a winner (champion name) + a date. Use the champion NAME, not the
-    # resolved championTeam slug: an event won by a non-tracked team (e.g. Challengers 2024,
-    # won by "Kabar") still awards placement points to the tracked teams that competed.
-    completed = [tr for tr in tournaments if tr.get("champion") and tr.get("date")]
-    latest_date = max((tr["date"] for tr in completed), default=None)  # most recent event
+    # An event counts once it has a date and a ranking. Completed events (a champion name) award
+    # full placement points; an in-progress event with a finished group stage (e.g. Bot Pro Cup,
+    # no champion yet) still awards the smaller group-stage points now. Champion NAME is used, not
+    # the resolved slug, so an event won by a non-tracked team still credits the teams that competed.
+    counted = [tr for tr in tournaments if tr.get("date") and (tr.get("finalStandings") or tr.get("standings"))]
+    latest_date = max((tr["date"] for tr in counted if tr.get("champion")), default=None)  # most recent completed event
 
     def tally(exclude_latest):
         pts = defaultdict(float); bd = defaultdict(list)
-        for tr in completed:
-            if exclude_latest and tr["date"] == latest_date:
+        for tr in counted:
+            if exclude_latest and tr.get("champion") and tr["date"] == latest_date:
                 continue
             mult = TIER_POINT_MULT.get(tr["tier"], 1.0)
             w = 0.5 ** ((ref - _pdate(tr["date"])).days / POINTS_HALFLIFE_DAYS) if ref else 1.0
             # finalStandings is the COMPLETE ranking (playoffs + group stage) for the newer manual
             # events; older events only have `standings`, which is already complete for them.
-            for s in (tr.get("finalStandings") or tr.get("standings") or []):
-                if s.get("teamSlug"):
-                    p = _placement_points(s["rank"]) * mult * w
-                    pts[s["teamSlug"]] += p
-                    bd[s["teamSlug"]].append({
-                        "event": tr["name"], "slug": tr["slug"], "date": tr["date"],
-                        "tier": tr["tier"], "placement": s["rank"], "points": round(p, 1)})
+            stlist = tr.get("finalStandings") or tr.get("standings") or []
+            # group-stage finishers are scored by their standing among the group cohort; playoff
+            # finishers use the placement scale.
+            grp_ranks = sorted(s["rank"] for s in stlist
+                               if str(s.get("result") or "").startswith("Group") and s.get("rank") is not None)
+            gpos = {r: i for i, r in enumerate(grp_ranks)}
+            for s in stlist:
+                if not s.get("teamSlug"):
+                    continue
+                is_group = str(s.get("result") or "").startswith("Group")
+                base = _group_points(gpos.get(s["rank"], 0)) if is_group else _placement_points(s["rank"])
+                p = base * mult * w
+                pts[s["teamSlug"]] += p
+                bd[s["teamSlug"]].append({
+                    "event": tr["name"], "slug": tr["slug"], "date": tr["date"],
+                    "tier": tr["tier"], "placement": s["rank"], "points": round(p, 1)})
         return pts, bd
 
     pts, breakdown = tally(False)
