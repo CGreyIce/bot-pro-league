@@ -2154,20 +2154,28 @@ function vetoBotName(t,p){
 }
 function vetoServerSetup(A,B,res){
   const stepByMap={}; res.steps.forEach(s=>{ if(s.action==="pick"||s.action==="decider") stepByMap[s.map]=s; });
-  const ctLine=t=>(t.roster||[]).map(p=>`bot_add_ct ${vetoBotName(t,p)};`).join(" ");
-  const tLine =t=>(t.roster||[]).map(p=>`bot_add ${vetoBotName(t,p)};`).join(" ");
-  const hasR=t=>!!(t&&t.roster&&t.roster.length);
+  // resolve a team's roster: pro/provisional teams carry one; ad-hoc/amateur teams (no roster
+  // field) are matched by the pro-pool players whose current team is this team's name.
+  const byTeamName={};
+  (DATA.players.pro||[]).forEach(p=>{ const k=normKey(p.team||""); if(k) (byTeamName[k]=byTeamName[k]||[]).push(p); });
+  const rosterOf=t=>{
+    if(t.roster && t.roster.length) return t.roster;
+    const r=byTeamName[normKey(t.name)];
+    return r ? r.slice().sort((a,b)=>(b.rating||0)-(a.rating||0)) : null;
+  };
+  const line=(t,roster,ct)=>roster.map(p=>`${ct?"bot_add_ct":"bot_add"} ${vetoBotName(t,p)};`).join(" ");
   const blocks=res.played.map(m=>{
     const s=stepByMap[m]; if(!s) return "";
     const sideTeamObj=s.sideAB==="a"?A:B, otherObj=s.sideAB==="a"?B:A;
     const ctT = s.startSide==="CT"?sideTeamObj:otherObj;
     const tT  = s.startSide==="CT"?otherObj:sideTeamObj;
-    if(!hasR(ctT)||!hasR(tT)){
-      const missing=!hasR(ctT)?ctT:tT;
+    const ctR=rosterOf(ctT), tR=rosterOf(tT);
+    if(!ctR||!tR){
+      const missing=!ctR?ctT:tT;
       return `<div class="vt-ba"><div class="vt-ba-head">${vetoMapImg(m)}<b>${esc(m)}</b>
         <span class="vt-ba-note">no roster on file for ${esc(missing.name)}</span></div></div>`;
     }
-    const text=`${ctLine(ctT)}\n${tLine(tT)}`;
+    const text=`${line(ctT,ctR,true)}\n${line(tT,tR,false)}`;
     return `<div class="vt-ba">
       <div class="vt-ba-head">${vetoMapImg(m)}<b>${esc(m)}</b>
         <span class="vt-ba-sides"><span class="ct">${esc(ctT.name)} · CT</span> <span class="t">${esc(tT.name)} · T</span></span>
