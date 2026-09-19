@@ -2145,10 +2145,17 @@ function vetoMapImg(m){ return `<img class="vt-img" src="assets/maps/${VETO_IMG[
 // For each played map, copyable bot_add lines: the CT team as bot_add_ct "<tag> name",
 // the T team as plain bot_add name. Needs a real roster (pro teams have one; ad-hoc/nation
 // map teams do not), so those show a note instead.
+// teams whose in-game bots carry no tag prefix (their bot names are just the player name)
+const VETO_NOTAG = new Set(["beehyve","eiromancers","syzygy"]);
+// bot name for a player: "<tag> name" when the team uses a tag, else just the name; quoted if it has a space
+function vetoBotName(t,p){
+  const nm = (t.tag && !VETO_NOTAG.has(t.slug) ? t.tag+" " : "") + p.name;
+  return /\s/.test(nm) ? `"${nm}"` : nm;
+}
 function vetoServerSetup(A,B,res){
   const stepByMap={}; res.steps.forEach(s=>{ if(s.action==="pick"||s.action==="decider") stepByMap[s.map]=s; });
-  const ctLine=t=>(t.roster||[]).map(p=>`bot_add_ct "${(t.tag?t.tag+" ":"")}${p.name}";`).join(" ");
-  const tLine =t=>(t.roster||[]).map(p=>`bot_add ${/\s/.test(p.name)?`"${p.name}"`:p.name};`).join(" ");
+  const ctLine=t=>(t.roster||[]).map(p=>`bot_add_ct ${vetoBotName(t,p)};`).join(" ");
+  const tLine =t=>(t.roster||[]).map(p=>`bot_add ${vetoBotName(t,p)};`).join(" ");
   const hasR=t=>!!(t&&t.roster&&t.roster.length);
   const blocks=res.played.map(m=>{
     const s=stepByMap[m]; if(!s) return "";
