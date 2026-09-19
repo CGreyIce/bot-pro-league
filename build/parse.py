@@ -393,8 +393,12 @@ def compute_player_deltas(players, avg, contrib, rating_fn=_rating_value):
 POINTS_HALFLIFE_DAYS = 730             # a result loses half its weight every ~2 years
 TIER_POINT_MULT = {"major": 5.0, "s": 2.5, "a": 1.0}   # Major title=500, S=250, A=100
 def _placement_points(rank):
+    # Playoff finishes are worth the most; group-stage exits still earn a small, standing-scaled
+    # amount, always less than a first-round (rank 9-12) playoff exit.
     return (100 if rank == 1 else 70 if rank == 2 else 45 if rank <= 4
-            else 25 if rank <= 8 else 12 if rank <= 16 else 5)
+            else 25 if rank <= 8 else 12 if rank <= 12     # playoffs (down to first round)
+            else 7 if rank <= 16 else 5 if rank <= 24       # top group non-advancers
+            else 3 if rank <= 32 else 2)                    # deeper group finishes
 def _pdate(s):
     y, m, d = (int(x) for x in s.split("-")); return _date(y, m, d)
 def compute_team_points(teams, tournaments):
@@ -416,7 +420,9 @@ def compute_team_points(teams, tournaments):
                 continue
             mult = TIER_POINT_MULT.get(tr["tier"], 1.0)
             w = 0.5 ** ((ref - _pdate(tr["date"])).days / POINTS_HALFLIFE_DAYS) if ref else 1.0
-            for s in tr["standings"]:
+            # finalStandings is the COMPLETE ranking (playoffs + group stage) for the newer manual
+            # events; older events only have `standings`, which is already complete for them.
+            for s in (tr.get("finalStandings") or tr.get("standings") or []):
                 if s.get("teamSlug"):
                     p = _placement_points(s["rank"]) * mult * w
                     pts[s["teamSlug"]] += p
