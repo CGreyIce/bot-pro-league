@@ -193,3 +193,7 @@ bot_add_ct "PD Codiant"; bot_add_ct "PD AkanersVT"; bot_add_ct "PD XueQiii"; bot
 Nightshade (Bot Pro Cup 2026) [playoff qualifiers, promoted to pro]
 bot_add "NS yinnzx"; bot_add "NS JigglyPingu"; bot_add "NS Kyu"; bot_add "NS ItzMaigo"; bot_add "NS KydaSana";
 bot_add_ct "NS yinnzx"; bot_add_ct "NS JigglyPingu"; bot_add_ct "NS Kyu"; bot_add_ct "NS ItzMaigo"; bot_add_ct "NS KydaSana";
+
+Mourningstar (Bot Pro Cup 2026) [playoff qualifiers, promoted to pro]
+bot_add "MouS arcimoon"; bot_add "MouS TearsofDeath"; bot_add "MouS cherri_vt"; bot_add "MouS EXaCT"; bot_add "MouS Jira Jisaki";
+bot_add_ct "MouS arcimoon"; bot_add_ct "MouS TearsofDeath"; bot_add_ct "MouS cherri_vt"; bot_add_ct "MouS EXaCT"; bot_add_ct "MouS Jira Jisaki";
