@@ -127,7 +127,7 @@
      "tier": "Grandmaster",
      "level": 7,
      "kpm": 16.3,
-     "rankDelta": 6,
+     "rankDelta": 0,
      "bio": "The voice behind Aimpunch's championship run, Chiai Fujikawa is a Malaysian in-game leader who calls the shots for one of BPL's most successful teams. A four-time champion — headlined by the 2023 BPL Conquerors Major — he pairs a tactical mind with real firepower, carrying a Level 7 1473 points and a 1.11 K/D that few IGLs can match.",
      "gender": "M",
      "teamHistory": [
@@ -333,7 +333,7 @@
      "tier": "Platinum",
      "level": 5,
      "kpm": 14.8,
-     "rankDelta": 5,
+     "rankDelta": 0,
      "bio": "balililmao is a Singaporean rifler and a four-time BPL champion with Aimpunch, a dependable presence across the club's 2022–2023 title haul. Steady rather than spectacular, she has been a trusted piece of the rotation through some of the league's biggest matches, including the 2023 Conquerors Major.",
      "gender": "F",
      "teamHistory": [
@@ -992,7 +992,7 @@
      "tier": "Platinum",
      "level": 5,
      "kpm": 14.5,
-     "rankDelta": -15,
+     "rankDelta": 0,
      "soloStats": {
       "kills": 118,
       "deaths": 131,
@@ -1188,11 +1188,11 @@
      "iso": "sg",
      "provisional": false,
      "rating": 0.948,
-     "ratingPoints": 945,
+     "ratingPoints": 946,
      "tier": "Silver",
      "level": 4,
      "kpm": 13.1,
-     "rankDelta": -7,
+     "rankDelta": 0,
      "soloStats": {
       "kills": 136,
       "deaths": 107,
@@ -2143,7 +2143,7 @@
       "2025",
       "2026"
      ],
-     "nowTeam": "",
+     "nowTeam": "Feral Instinct",
      "nowTeamSlug": null
     },
     {
@@ -3137,7 +3137,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.068,
+     "rating": 1.069,
      "ratingPoints": 1417,
      "tier": "Master",
      "level": 7,
@@ -3716,7 +3716,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.039,
-     "ratingPoints": 1302,
+     "ratingPoints": 1303,
      "tier": "Diamond",
      "level": 6,
      "kpm": 15.2,
@@ -5632,7 +5632,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 0.967,
+     "rating": 0.968,
      "ratingPoints": 1023,
      "tier": "Silver",
      "level": 4,
@@ -6227,7 +6227,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 0.953,
+     "rating": 0.954,
      "ratingPoints": 969,
      "tier": "Silver",
      "level": 4,
@@ -7805,7 +7805,7 @@
      "iso": "au",
      "provisional": false,
      "rating": 1.062,
-     "ratingPoints": 1390,
+     "ratingPoints": 1391,
      "tier": "Master",
      "level": 7,
      "kpm": 14.7,
@@ -8259,7 +8259,7 @@
      "iso": "my",
      "provisional": false,
      "rating": 1.04,
-     "ratingPoints": 1306,
+     "ratingPoints": 1307,
      "tier": "Diamond",
      "level": 6,
      "kpm": 14.9,
@@ -8658,7 +8658,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 0.969,
+     "rating": 0.97,
      "ratingPoints": 1031,
      "tier": "Gold",
      "level": 4,
@@ -10277,7 +10277,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.066,
-     "ratingPoints": 1408,
+     "ratingPoints": 1409,
      "tier": "Master",
      "level": 7,
      "kpm": 17.2,
@@ -10657,7 +10657,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.057,
+     "rating": 1.058,
      "ratingPoints": 1374,
      "tier": "Master",
      "level": 7,
@@ -12326,7 +12326,7 @@
      "iso": "my",
      "provisional": false,
      "rating": 1.061,
-     "ratingPoints": 1387,
+     "ratingPoints": 1388,
      "tier": "Master",
      "level": 7,
      "kpm": 17.0,
@@ -12664,7 +12664,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 0.987,
-     "ratingPoints": 1100,
+     "ratingPoints": 1101,
      "tier": "Gold",
      "level": 5,
      "kpm": 14.1,
@@ -13042,7 +13042,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 0.953,
-     "ratingPoints": 965,
+     "ratingPoints": 966,
      "tier": "Silver",
      "level": 4,
      "kpm": 13.9,
@@ -14379,7 +14379,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 0.977,
+     "rating": 0.978,
      "ratingPoints": 1062,
      "tier": "Gold",
      "level": 5,
@@ -15514,7 +15514,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 0.961,
+     "rating": 0.962,
      "ratingPoints": 1000,
      "tier": "Silver",
      "level": 4,
@@ -16707,7 +16707,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.089,
-     "ratingPoints": 1495,
+     "ratingPoints": 1496,
      "tier": "Grandmaster",
      "level": 7,
      "kpm": 17.2,
@@ -17126,8 +17126,8 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.066,
-     "ratingPoints": 1409,
+     "rating": 1.067,
+     "ratingPoints": 1410,
      "tier": "Master",
      "level": 7,
      "kpm": 16.0,
@@ -18085,7 +18085,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 0.981,
-     "ratingPoints": 1077,
+     "ratingPoints": 1078,
      "tier": "Gold",
      "level": 5,
      "kpm": 15.1,
@@ -19115,294 +19115,6 @@
    "bio": "Raven Song are a Malaysian team and one of the league's more international entries, an experienced outfit rebuilding toward a return to form.",
    "roster": [
     {
-     "name": "CRex",
-     "team": "Raven Song",
-     "pool": "pro",
-     "kills": 785,
-     "assists": 112,
-     "deaths": 665,
-     "mvp": 105,
-     "kdr": 1.18,
-     "wins": 28,
-     "losses": 18,
-     "winrate": 0.609,
-     "ot": 5,
-     "role": "Rifler",
-     "maps": 46,
-     "orig_rank": "Silver",
-     "orig_level": "Level 3",
-     "orig_rating": 1491.0,
-     "slug": "crex",
-     "nat": "Malaysia",
-     "iso": "my",
-     "provisional": false,
-     "rating": 1.099,
-     "ratingPoints": 1536,
-     "tier": "Grandmaster",
-     "level": 8,
-     "kpm": 17.1,
-     "rankDelta": 0,
-     "soloStats": {
-      "kills": 126,
-      "deaths": 142,
-      "assists": 21,
-      "mvp": 18,
-      "wins": 2,
-      "losses": 7,
-      "maps": 9,
-      "kdr": 0.89,
-      "winrate": 0.222,
-      "rating": 0.91,
-      "ratingPoints": 798,
-      "tier": "Iron",
-      "level": 3,
-      "soloRank": 229,
-      "soloTotal": 239,
-      "rankDelta": 0,
-      "provisional": false
-     },
-     "bio": "CRex is an Level 8 rifler for Raven Song, a Malaysian whose 1.18 K/D has made him one of the team's leading fraggers through their strong AUXE run.",
-     "gender": "M",
-     "teamHistory": [
-      {
-       "team": "Sanctuary",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2023"
-       ],
-       "roster": [
-        {
-         "hist": "kimmixd",
-         "name": "kimmixd",
-         "slug": "kimmixd",
-         "iso": "my",
-         "captain": true
-        },
-        {
-         "hist": "kenzieyii",
-         "name": "kenzieyii",
-         "slug": "kenzieyii",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "bonkersdeedy",
-         "name": "AngelxAim",
-         "slug": "angelxaim",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "kanarivt",
-         "name": "kanarivt",
-         "slug": "kanarivt",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "C.Rex",
-         "name": "CRex",
-         "slug": "crex",
-         "iso": "my",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "nostalgia",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2024"
-       ],
-       "roster": [
-        {
-         "hist": "ssseiso",
-         "name": "ssseiso",
-         "slug": "ssseiso",
-         "iso": "au",
-         "captain": true
-        },
-        {
-         "hist": "nyxcatto",
-         "name": "nyxcatto",
-         "slug": "nyxcatto",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "C.Rex",
-         "name": "CRex",
-         "slug": "crex",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "ProPHocy_",
-         "name": "ProPHOcy_",
-         "slug": "prophocy",
-         "iso": "us",
-         "captain": false
-        },
-        {
-         "hist": "thehidz",
-         "name": "thehidz",
-         "slug": "thehidz",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Raven Song",
-       "teamSlug": "raven-song",
-       "isPro": true,
-       "years": [
-        "2025",
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "CRex",
-         "name": "CRex",
-         "slug": "crex",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "ebi",
-         "name": "ebi",
-         "slug": "ebi",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "des506",
-         "name": "des506",
-         "slug": "des506",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "koen",
-         "name": "koen",
-         "slug": "koen",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "treblest",
-         "name": "treblest",
-         "slug": "treblest",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "MY Squad 4",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "qebo",
-         "name": "qebo",
-         "slug": "qebo",
-         "iso": "my",
-         "captain": true
-        },
-        {
-         "hist": "Yixl",
-         "name": "Yixl",
-         "slug": "yixl",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "CRex",
-         "name": "CRex",
-         "slug": "crex",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "HikariiFloofie",
-         "name": "HikariiFloofie",
-         "slug": "hikariifloofie",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "Nikorasu",
-         "name": "Nikorasu",
-         "slug": "nikorasu",
-         "iso": "my",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Team Malaysia",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "qebo",
-         "name": "qebo",
-         "slug": "qebo",
-         "iso": "my",
-         "captain": true
-        },
-        {
-         "hist": "Yixl",
-         "name": "Yixl",
-         "slug": "yixl",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "CRex",
-         "name": "CRex",
-         "slug": "crex",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "HikariiFloofie",
-         "name": "HikariiFloofie",
-         "slug": "hikariifloofie",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "Nikorasu",
-         "name": "Nikorasu",
-         "slug": "nikorasu",
-         "iso": "my",
-         "captain": false
-        }
-       ]
-      }
-     ],
-     "titles": [
-      {
-       "event": "Audax Esse BPL Invitational 2026",
-       "slug": "audax-esse-bpl-invitational-2026",
-       "tier": "s",
-       "tierLabel": "S-Tier",
-       "year": "2026",
-       "team": "Raven Song"
-      }
-     ]
-    },
-    {
      "name": "ebi",
      "team": "Raven Song",
      "pool": "pro",
@@ -19424,7 +19136,7 @@
      "nat": "Malaysia",
      "iso": "my",
      "provisional": false,
-     "rating": 1.098,
+     "rating": 1.099,
      "ratingPoints": 1534,
      "tier": "Grandmaster",
      "level": 8,
@@ -19690,16 +19402,16 @@
        ],
        "roster": [
         {
-         "hist": "CRex",
-         "name": "CRex",
-         "slug": "crex",
+         "hist": "ebi",
+         "name": "ebi",
+         "slug": "ebi",
          "iso": "my",
          "captain": false
         },
         {
-         "hist": "ebi",
-         "name": "ebi",
-         "slug": "ebi",
+         "hist": "CRex",
+         "name": "CRex",
+         "slug": "crex",
          "iso": "my",
          "captain": false
         },
@@ -19784,6 +19496,294 @@
      ]
     },
     {
+     "name": "CRex",
+     "team": "Raven Song",
+     "pool": "pro",
+     "kills": 785,
+     "assists": 112,
+     "deaths": 665,
+     "mvp": 105,
+     "kdr": 1.18,
+     "wins": 28,
+     "losses": 18,
+     "winrate": 0.609,
+     "ot": 5,
+     "role": "Rifler",
+     "maps": 46,
+     "orig_rank": "Silver",
+     "orig_level": "Level 3",
+     "orig_rating": 1491.0,
+     "slug": "crex",
+     "nat": "Malaysia",
+     "iso": "my",
+     "provisional": false,
+     "rating": 1.099,
+     "ratingPoints": 1536,
+     "tier": "Grandmaster",
+     "level": 8,
+     "kpm": 17.1,
+     "rankDelta": 0,
+     "soloStats": {
+      "kills": 126,
+      "deaths": 142,
+      "assists": 21,
+      "mvp": 18,
+      "wins": 2,
+      "losses": 7,
+      "maps": 9,
+      "kdr": 0.89,
+      "winrate": 0.222,
+      "rating": 0.91,
+      "ratingPoints": 798,
+      "tier": "Iron",
+      "level": 3,
+      "soloRank": 229,
+      "soloTotal": 239,
+      "rankDelta": 0,
+      "provisional": false
+     },
+     "bio": "CRex is an Level 8 rifler for Raven Song, a Malaysian whose 1.18 K/D has made him one of the team's leading fraggers through their strong AUXE run.",
+     "gender": "M",
+     "teamHistory": [
+      {
+       "team": "Sanctuary",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2023"
+       ],
+       "roster": [
+        {
+         "hist": "kimmixd",
+         "name": "kimmixd",
+         "slug": "kimmixd",
+         "iso": "my",
+         "captain": true
+        },
+        {
+         "hist": "kenzieyii",
+         "name": "kenzieyii",
+         "slug": "kenzieyii",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "bonkersdeedy",
+         "name": "AngelxAim",
+         "slug": "angelxaim",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "kanarivt",
+         "name": "kanarivt",
+         "slug": "kanarivt",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "C.Rex",
+         "name": "CRex",
+         "slug": "crex",
+         "iso": "my",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "nostalgia",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2024"
+       ],
+       "roster": [
+        {
+         "hist": "ssseiso",
+         "name": "ssseiso",
+         "slug": "ssseiso",
+         "iso": "au",
+         "captain": true
+        },
+        {
+         "hist": "nyxcatto",
+         "name": "nyxcatto",
+         "slug": "nyxcatto",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "C.Rex",
+         "name": "CRex",
+         "slug": "crex",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "ProPHocy_",
+         "name": "ProPHOcy_",
+         "slug": "prophocy",
+         "iso": "us",
+         "captain": false
+        },
+        {
+         "hist": "thehidz",
+         "name": "thehidz",
+         "slug": "thehidz",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Raven Song",
+       "teamSlug": "raven-song",
+       "isPro": true,
+       "years": [
+        "2025",
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "ebi",
+         "name": "ebi",
+         "slug": "ebi",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "CRex",
+         "name": "CRex",
+         "slug": "crex",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "des506",
+         "name": "des506",
+         "slug": "des506",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "koen",
+         "name": "koen",
+         "slug": "koen",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "treblest",
+         "name": "treblest",
+         "slug": "treblest",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "MY Squad 4",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "qebo",
+         "name": "qebo",
+         "slug": "qebo",
+         "iso": "my",
+         "captain": true
+        },
+        {
+         "hist": "Yixl",
+         "name": "Yixl",
+         "slug": "yixl",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "CRex",
+         "name": "CRex",
+         "slug": "crex",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "HikariiFloofie",
+         "name": "HikariiFloofie",
+         "slug": "hikariifloofie",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "Nikorasu",
+         "name": "Nikorasu",
+         "slug": "nikorasu",
+         "iso": "my",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Team Malaysia",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "qebo",
+         "name": "qebo",
+         "slug": "qebo",
+         "iso": "my",
+         "captain": true
+        },
+        {
+         "hist": "Yixl",
+         "name": "Yixl",
+         "slug": "yixl",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "CRex",
+         "name": "CRex",
+         "slug": "crex",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "HikariiFloofie",
+         "name": "HikariiFloofie",
+         "slug": "hikariifloofie",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "Nikorasu",
+         "name": "Nikorasu",
+         "slug": "nikorasu",
+         "iso": "my",
+         "captain": false
+        }
+       ]
+      }
+     ],
+     "titles": [
+      {
+       "event": "Audax Esse BPL Invitational 2026",
+       "slug": "audax-esse-bpl-invitational-2026",
+       "tier": "s",
+       "tierLabel": "S-Tier",
+       "year": "2026",
+       "team": "Raven Song"
+      }
+     ]
+    },
+    {
      "name": "des506",
      "team": "Raven Song",
      "pool": "pro",
@@ -19806,7 +19806,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 0.991,
-     "ratingPoints": 1114,
+     "ratingPoints": 1115,
      "tier": "Gold",
      "level": 5,
      "kpm": 14.8,
@@ -19869,16 +19869,16 @@
        ],
        "roster": [
         {
-         "hist": "CRex",
-         "name": "CRex",
-         "slug": "crex",
+         "hist": "ebi",
+         "name": "ebi",
+         "slug": "ebi",
          "iso": "my",
          "captain": false
         },
         {
-         "hist": "ebi",
-         "name": "ebi",
-         "slug": "ebi",
+         "hist": "CRex",
+         "name": "CRex",
+         "slug": "crex",
          "iso": "my",
          "captain": false
         },
@@ -20318,16 +20318,16 @@
        ],
        "roster": [
         {
-         "hist": "CRex",
-         "name": "CRex",
-         "slug": "crex",
+         "hist": "ebi",
+         "name": "ebi",
+         "slug": "ebi",
          "iso": "my",
          "captain": false
         },
         {
-         "hist": "ebi",
-         "name": "ebi",
-         "slug": "ebi",
+         "hist": "CRex",
+         "name": "CRex",
+         "slug": "crex",
          "iso": "my",
          "captain": false
         },
@@ -20699,16 +20699,16 @@
        ],
        "roster": [
         {
-         "hist": "CRex",
-         "name": "CRex",
-         "slug": "crex",
+         "hist": "ebi",
+         "name": "ebi",
+         "slug": "ebi",
          "iso": "my",
          "captain": false
         },
         {
-         "hist": "ebi",
-         "name": "ebi",
-         "slug": "ebi",
+         "hist": "CRex",
+         "name": "CRex",
+         "slug": "crex",
          "iso": "my",
          "captain": false
         },
@@ -21476,7 +21476,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.039,
+     "rating": 1.04,
      "ratingPoints": 1304,
      "tier": "Diamond",
      "level": 6,
@@ -23816,10 +23816,10 @@
    "key": "entity",
    "logo": "assets/teams/ntt.png",
    "map_wins": 31,
-   "map_losses": 17,
+   "map_losses": 18,
    "map_ties": 0,
-   "total_maps": 48,
-   "wlr": 0.646,
+   "total_maps": 49,
+   "wlr": 0.633,
    "a_tier_wins": 0,
    "s_tier_wins": 0,
    "major_wins": 0,
@@ -23844,49 +23844,49 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.443,
+     "wr": 0.43,
      "real": false
     },
     "Dust2": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.643,
+     "wr": 0.63,
      "real": false
     },
     "Inferno": {
      "w": 1,
      "l": 0,
      "g": 1,
-     "wr": 0.719,
+     "wr": 0.706,
      "real": false
     },
     "Cache": {
      "w": 1,
      "l": 0,
      "g": 1,
-     "wr": 0.659,
+     "wr": 0.646,
      "real": false
     },
     "Tuscan": {
      "w": 0,
      "l": 1,
      "g": 1,
-     "wr": 0.557,
+     "wr": 0.544,
      "real": false
     },
     "Vertigo": {
      "w": 0,
-     "l": 0,
-     "g": 0,
-     "wr": 0.543,
+     "l": 1,
+     "g": 1,
+     "wr": 0.53,
      "real": false
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.551,
+     "wr": 0.538,
      "real": false
     }
    },
@@ -23904,17 +23904,17 @@
      "name": "Mike",
      "team": "entity",
      "pool": "pro",
-     "kills": 464,
-     "assists": 76,
-     "deaths": 412,
-     "mvp": 69,
-     "kdr": 1.13,
+     "kills": 476,
+     "assists": 77,
+     "deaths": 427,
+     "mvp": 71,
+     "kdr": 1.11,
      "wins": 17,
-     "losses": 9,
-     "winrate": 0.654,
+     "losses": 10,
+     "winrate": 0.63,
      "ot": 0,
      "role": "IGL",
-     "maps": 26,
+     "maps": 27,
      "orig_rank": "Diamond",
      "orig_level": "Level 5",
      "orig_rating": 2153.0,
@@ -23922,12 +23922,12 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.107,
-     "ratingPoints": 1568,
-     "tier": "Champion",
+     "rating": 1.098,
+     "ratingPoints": 1531,
+     "tier": "Grandmaster",
      "level": 8,
-     "kpm": 17.8,
-     "rankDelta": 0,
+     "kpm": 17.6,
+     "rankDelta": -7,
      "soloStats": {
       "kills": 84,
       "deaths": 84,
@@ -24543,17 +24543,17 @@
      "name": "Ryker_Sterling",
      "team": "entity",
      "pool": "pro",
-     "kills": 495,
-     "assists": 89,
-     "deaths": 486,
-     "mvp": 74,
-     "kdr": 1.02,
+     "kills": 503,
+     "assists": 90,
+     "deaths": 502,
+     "mvp": 75,
+     "kdr": 1.0,
      "wins": 19,
-     "losses": 10,
-     "winrate": 0.655,
+     "losses": 11,
+     "winrate": 0.633,
      "ot": 5,
      "role": "Rifler",
-     "maps": 29,
+     "maps": 30,
      "orig_rank": "Emerald",
      "orig_level": "Level 5",
      "orig_rating": 2081.0,
@@ -24561,12 +24561,12 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.077,
-     "ratingPoints": 1449,
+     "rating": 1.064,
+     "ratingPoints": 1400,
      "tier": "Master",
      "level": 7,
-     "kpm": 17.1,
-     "rankDelta": 0,
+     "kpm": 16.8,
+     "rankDelta": -16,
      "soloStats": {
       "kills": 96,
       "deaths": 109,
@@ -24777,17 +24777,17 @@
      "name": "xJavyz",
      "team": "entity",
      "pool": "pro",
-     "kills": 419,
-     "assists": 79,
-     "deaths": 423,
-     "mvp": 62,
-     "kdr": 0.99,
+     "kills": 433,
+     "assists": 80,
+     "deaths": 442,
+     "mvp": 63,
+     "kdr": 0.98,
      "wins": 16,
-     "losses": 10,
-     "winrate": 0.615,
+     "losses": 11,
+     "winrate": 0.593,
      "ot": 1,
      "role": "Rifler",
-     "maps": 26,
+     "maps": 27,
      "orig_rank": "Diamond",
      "orig_level": "Level 5",
      "orig_rating": 2152.0,
@@ -24795,12 +24795,12 @@
      "nat": "Malaysia",
      "iso": "my",
      "provisional": false,
-     "rating": 1.046,
-     "ratingPoints": 1329,
+     "rating": 1.038,
+     "ratingPoints": 1299,
      "tier": "Diamond",
      "level": 6,
-     "kpm": 16.1,
-     "rankDelta": 0,
+     "kpm": 16.0,
+     "rankDelta": -20,
      "bio": "xJavyz is a Level 6 rifler for entity, a Malaysian fragger whose 67% win rate speaks to his impact on a winning team.",
      "gender": "M",
      "teamHistory": [
@@ -24992,17 +24992,17 @@
      "name": "yerm",
      "team": "entity",
      "pool": "pro",
-     "kills": 460,
+     "kills": 476,
      "assists": 80,
-     "deaths": 458,
-     "mvp": 63,
+     "deaths": 475,
+     "mvp": 65,
      "kdr": 1.0,
      "wins": 19,
-     "losses": 10,
-     "winrate": 0.655,
+     "losses": 11,
+     "winrate": 0.633,
      "ot": 0,
      "role": "Awper",
-     "maps": 29,
+     "maps": 30,
      "orig_rank": "Emerald",
      "orig_level": "Level 5",
      "orig_rating": 2052.0,
@@ -25010,12 +25010,12 @@
      "nat": "Malaysia",
      "iso": "my",
      "provisional": false,
-     "rating": 1.034,
-     "ratingPoints": 1282,
+     "rating": 1.03,
+     "ratingPoints": 1269,
      "tier": "Diamond",
      "level": 6,
      "kpm": 15.9,
-     "rankDelta": 0,
+     "rankDelta": -9,
      "soloStats": {
       "kills": 144,
       "deaths": 141,
@@ -25181,17 +25181,17 @@
      "name": "Xrela",
      "team": "entity",
      "pool": "pro",
-     "kills": 344,
+     "kills": 349,
      "assists": 68,
-     "deaths": 358,
+     "deaths": 375,
      "mvp": 51,
-     "kdr": 0.96,
+     "kdr": 0.93,
      "wins": 16,
-     "losses": 9,
-     "winrate": 0.64,
+     "losses": 10,
+     "winrate": 0.615,
      "ot": 0,
      "role": "Rifler",
-     "maps": 25,
+     "maps": 26,
      "orig_rank": "Emerald",
      "orig_level": "Level 5",
      "orig_rating": 2050.0,
@@ -25199,12 +25199,12 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 0.993,
-     "ratingPoints": 1123,
+     "rating": 0.975,
+     "ratingPoints": 1053,
      "tier": "Gold",
      "level": 5,
-     "kpm": 13.8,
-     "rankDelta": 0,
+     "kpm": 13.4,
+     "rankDelta": -37,
      "soloStats": {
       "kills": 157,
       "deaths": 143,
@@ -25730,16 +25730,6 @@
      "date": "2025-10-10",
      "event": "BPL Conquerors Stage 2025",
      "eventSlug": "BPLCStage25",
-     "opp": "The Nomads",
-     "oppSlug": "the-nomads",
-     "result": "W",
-     "sf": 2,
-     "sa": 0
-    },
-    {
-     "date": "2025-10-10",
-     "event": "BPL Conquerors Stage 2025",
-     "eventSlug": "BPLCStage25",
      "opp": "Cosmos",
      "oppSlug": "cosmos",
      "result": "L",
@@ -25825,9 +25815,19 @@
      "result": "W",
      "sf": 13,
      "sa": 8
+    },
+    {
+     "date": "2026-09-01",
+     "event": "Bot Pro Cup 2026",
+     "eventSlug": "bot-pro-cup-2026",
+     "opp": "Prism Divide",
+     "oppSlug": null,
+     "result": "L",
+     "sf": 6,
+     "sa": 13
     }
    ],
-   "streak": "W2",
+   "streak": "L1",
    "longestWinStreak": {
     "len": 7,
     "startEvent": "Audax Esse BPL Invitational 2025",
@@ -26655,7 +26655,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.027,
-     "ratingPoints": 1256,
+     "ratingPoints": 1257,
      "tier": "Emerald",
      "level": 6,
      "kpm": 16.1,
@@ -27242,7 +27242,7 @@
      "nat": "Malaysia",
      "iso": "my",
      "provisional": false,
-     "rating": 1.022,
+     "rating": 1.023,
      "ratingPoints": 1238,
      "tier": "Emerald",
      "level": 6,
@@ -28739,8 +28739,8 @@
      "nat": "Malaysia",
      "iso": "my",
      "provisional": false,
-     "rating": 1.015,
-     "ratingPoints": 1210,
+     "rating": 1.016,
+     "ratingPoints": 1211,
      "tier": "Emerald",
      "level": 6,
      "kpm": 13.9,
@@ -29959,7 +29959,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.122,
-     "ratingPoints": 1626,
+     "ratingPoints": 1627,
      "tier": "Champion",
      "level": 8,
      "kpm": 17.7,
@@ -30490,7 +30490,7 @@
      "iso": "th",
      "provisional": false,
      "rating": 1.02,
-     "ratingPoints": 1226,
+     "ratingPoints": 1227,
      "tier": "Emerald",
      "level": 6,
      "kpm": 14.5,
@@ -32826,8 +32826,8 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.055,
-     "ratingPoints": 1364,
-     "tier": "Diamond",
+     "ratingPoints": 1365,
+     "tier": "Master",
      "level": 7,
      "kpm": 15.5,
      "rankDelta": 0,
@@ -34045,7 +34045,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.013,
-     "ratingPoints": 1202,
+     "ratingPoints": 1203,
      "tier": "Emerald",
      "level": 6,
      "kpm": 14.4,
@@ -34397,7 +34397,7 @@
      "iso": "my",
      "provisional": false,
      "rating": 0.978,
-     "ratingPoints": 1063,
+     "ratingPoints": 1064,
      "tier": "Gold",
      "level": 5,
      "kpm": 14.1,
@@ -35207,7 +35207,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.081,
-     "ratingPoints": 1466,
+     "ratingPoints": 1467,
      "tier": "Grandmaster",
      "level": 7,
      "kpm": 16.3,
@@ -35807,7 +35807,7 @@
      "iso": "my",
      "provisional": false,
      "rating": 0.934,
-     "ratingPoints": 892,
+     "ratingPoints": 893,
      "tier": "Bronze",
      "level": 3,
      "kpm": 13.5,
@@ -40390,7 +40390,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 0.981,
-     "ratingPoints": 1076,
+     "ratingPoints": 1077,
      "tier": "Gold",
      "level": 5,
      "kpm": 14.8,
@@ -41364,8 +41364,8 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.117,
-     "ratingPoints": 1608,
+     "rating": 1.118,
+     "ratingPoints": 1609,
      "tier": "Champion",
      "level": 8,
      "kpm": 17.2,
@@ -43985,7 +43985,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.097,
-     "ratingPoints": 1527,
+     "ratingPoints": 1528,
      "tier": "Grandmaster",
      "level": 7,
      "kpm": 17.3,
@@ -44356,7 +44356,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.067,
+     "rating": 1.068,
      "ratingPoints": 1413,
      "tier": "Master",
      "level": 7,
@@ -44726,7 +44726,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.064,
-     "ratingPoints": 1400,
+     "ratingPoints": 1401,
      "tier": "Master",
      "level": 7,
      "kpm": 16.0,
@@ -46099,6 +46099,237 @@
    "bio": "Unforgettable are a Singaporean team with two lower-tier titles to their name and one of the busiest schedules in the league — a grinder's team that thrives on volume and cohesion.",
    "roster": [
     {
+     "name": "_kellyxleox_",
+     "team": "Unforgettable",
+     "pool": "pro",
+     "kills": 464,
+     "assists": 83,
+     "deaths": 463,
+     "mvp": 63,
+     "kdr": 1.0,
+     "wins": 8,
+     "losses": 21,
+     "winrate": 0.276,
+     "ot": 1,
+     "role": "Rifler",
+     "maps": 29,
+     "orig_rank": "Bronze",
+     "orig_level": "Level 3",
+     "orig_rating": 1378.0,
+     "slug": "kellyxleox",
+     "nat": "Malaysia",
+     "iso": "my",
+     "provisional": false,
+     "rating": 1.015,
+     "ratingPoints": 1207,
+     "tier": "Emerald",
+     "level": 6,
+     "kpm": 16.0,
+     "rankDelta": 0,
+     "bio": "_kellyxleox_ is a Malaysian rifler for Unforgettable, a Level 6 fragger and a winner of Bot Pro League Minor 8.",
+     "gender": "F",
+     "teamHistory": [
+      {
+       "team": "Unforgettable",
+       "teamSlug": "unforgettable",
+       "isPro": true,
+       "years": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "_kellyxleox_",
+         "name": "_kellyxleox_",
+         "slug": "kellyxleox",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "WO4TK",
+         "name": "WO4TK",
+         "slug": "wo4tk",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "dudriduo_",
+         "name": "dudriduo_",
+         "slug": "dudriduo",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "Sakami",
+         "name": "Sakami",
+         "slug": "sakami",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Joshiwahhh",
+         "name": "Joshiwahhh",
+         "slug": "joshiwahhh",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Virago",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "chiyoriinn",
+         "name": "chiyoriinn",
+         "slug": "chiyoriinn",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "livingitupbt",
+         "name": "Solaonix",
+         "slug": "solaonix",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "leachubby",
+         "name": "leachubby",
+         "slug": "leachubby",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Kelly0",
+         "name": "_kellyxleox_",
+         "slug": "kellyxleox",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "tiger.lark",
+         "name": "tiger.lark",
+         "slug": "tiger-lark",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "RadiaKnights",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "Meowcolmz",
+         "name": "Meowcolmz",
+         "slug": "meowcolmz",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "Navikuun",
+         "name": "Navikuun",
+         "slug": "navikuun",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "lenette",
+         "name": "lenette",
+         "slug": "lenette",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Kelly0",
+         "name": "_kellyxleox_",
+         "slug": "kellyxleox",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "livingitupbt",
+         "name": "Solaonix",
+         "slug": "solaonix",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "MY Squad 7",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Nightveil Lycoris",
+         "name": "Nightveil Lycoris",
+         "slug": "nightveil-lycoris",
+         "iso": "my",
+         "captain": true
+        },
+        {
+         "hist": "Reffelexx",
+         "name": "Reffelexx",
+         "slug": "reffelexx",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "rittan0x0",
+         "name": "rittan0x0",
+         "slug": "rittan0x0",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "_kellyxleox_",
+         "name": "_kellyxleox_",
+         "slug": "kellyxleox",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "kimmixd",
+         "name": "kimmixd",
+         "slug": "kimmixd",
+         "iso": "my",
+         "captain": false
+        }
+       ]
+      }
+     ],
+     "aka": [
+      "Kelly0"
+     ],
+     "titles": [
+      {
+       "event": "Bot Pro League Minor 8",
+       "slug": "BotProLeague8",
+       "tier": "a",
+       "tierLabel": "A-Tier",
+       "year": "2021",
+       "team": "Unforgettable"
+      }
+     ]
+    },
+    {
      "name": "WO4TK",
      "team": "Unforgettable",
      "pool": "pro",
@@ -46292,17 +46523,17 @@
        ],
        "roster": [
         {
-         "hist": "WO4TK",
-         "name": "WO4TK",
-         "slug": "wo4tk",
-         "iso": "sg",
-         "captain": false
-        },
-        {
          "hist": "_kellyxleox_",
          "name": "_kellyxleox_",
          "slug": "kellyxleox",
          "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "WO4TK",
+         "name": "WO4TK",
+         "slug": "wo4tk",
+         "iso": "sg",
          "captain": false
         },
         {
@@ -46372,237 +46603,6 @@
          "captain": false
         }
        ]
-      }
-     ]
-    },
-    {
-     "name": "_kellyxleox_",
-     "team": "Unforgettable",
-     "pool": "pro",
-     "kills": 464,
-     "assists": 83,
-     "deaths": 463,
-     "mvp": 63,
-     "kdr": 1.0,
-     "wins": 8,
-     "losses": 21,
-     "winrate": 0.276,
-     "ot": 1,
-     "role": "Rifler",
-     "maps": 29,
-     "orig_rank": "Bronze",
-     "orig_level": "Level 3",
-     "orig_rating": 1378.0,
-     "slug": "kellyxleox",
-     "nat": "Malaysia",
-     "iso": "my",
-     "provisional": false,
-     "rating": 1.014,
-     "ratingPoints": 1206,
-     "tier": "Emerald",
-     "level": 6,
-     "kpm": 16.0,
-     "rankDelta": 0,
-     "bio": "_kellyxleox_ is a Malaysian rifler for Unforgettable, a Level 6 fragger and a winner of Bot Pro League Minor 8.",
-     "gender": "F",
-     "teamHistory": [
-      {
-       "team": "Unforgettable",
-       "teamSlug": "unforgettable",
-       "isPro": true,
-       "years": [
-        "2021",
-        "2022",
-        "2023",
-        "2024",
-        "2025",
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "WO4TK",
-         "name": "WO4TK",
-         "slug": "wo4tk",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "_kellyxleox_",
-         "name": "_kellyxleox_",
-         "slug": "kellyxleox",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "dudriduo_",
-         "name": "dudriduo_",
-         "slug": "dudriduo",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "Sakami",
-         "name": "Sakami",
-         "slug": "sakami",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Joshiwahhh",
-         "name": "Joshiwahhh",
-         "slug": "joshiwahhh",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "Virago",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2021"
-       ],
-       "roster": [
-        {
-         "hist": "chiyoriinn",
-         "name": "chiyoriinn",
-         "slug": "chiyoriinn",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "livingitupbt",
-         "name": "Solaonix",
-         "slug": "solaonix",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "leachubby",
-         "name": "leachubby",
-         "slug": "leachubby",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Kelly0",
-         "name": "_kellyxleox_",
-         "slug": "kellyxleox",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "tiger.lark",
-         "name": "tiger.lark",
-         "slug": "tiger-lark",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "RadiaKnights",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2021"
-       ],
-       "roster": [
-        {
-         "hist": "Meowcolmz",
-         "name": "Meowcolmz",
-         "slug": "meowcolmz",
-         "iso": "sg",
-         "captain": true
-        },
-        {
-         "hist": "Navikuun",
-         "name": "Navikuun",
-         "slug": "navikuun",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "lenette",
-         "name": "lenette",
-         "slug": "lenette",
-         "iso": "sg",
-         "captain": false
-        },
-        {
-         "hist": "Kelly0",
-         "name": "_kellyxleox_",
-         "slug": "kellyxleox",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "livingitupbt",
-         "name": "Solaonix",
-         "slug": "solaonix",
-         "iso": "sg",
-         "captain": false
-        }
-       ]
-      },
-      {
-       "team": "MY Squad 7",
-       "teamSlug": null,
-       "isPro": false,
-       "years": [
-        "2026"
-       ],
-       "roster": [
-        {
-         "hist": "Nightveil Lycoris",
-         "name": "Nightveil Lycoris",
-         "slug": "nightveil-lycoris",
-         "iso": "my",
-         "captain": true
-        },
-        {
-         "hist": "Reffelexx",
-         "name": "Reffelexx",
-         "slug": "reffelexx",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "rittan0x0",
-         "name": "rittan0x0",
-         "slug": "rittan0x0",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "_kellyxleox_",
-         "name": "_kellyxleox_",
-         "slug": "kellyxleox",
-         "iso": "my",
-         "captain": false
-        },
-        {
-         "hist": "kimmixd",
-         "name": "kimmixd",
-         "slug": "kimmixd",
-         "iso": "my",
-         "captain": false
-        }
-       ]
-      }
-     ],
-     "aka": [
-      "Kelly0"
-     ],
-     "titles": [
-      {
-       "event": "Bot Pro League Minor 8",
-       "slug": "BotProLeague8",
-       "tier": "a",
-       "tierLabel": "A-Tier",
-       "year": "2021",
-       "team": "Unforgettable"
       }
      ]
     },
@@ -46781,17 +46781,17 @@
        ],
        "roster": [
         {
-         "hist": "WO4TK",
-         "name": "WO4TK",
-         "slug": "wo4tk",
-         "iso": "sg",
-         "captain": false
-        },
-        {
          "hist": "_kellyxleox_",
          "name": "_kellyxleox_",
          "slug": "kellyxleox",
          "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "WO4TK",
+         "name": "WO4TK",
+         "slug": "wo4tk",
+         "iso": "sg",
          "captain": false
         },
         {
@@ -46955,17 +46955,17 @@
        ],
        "roster": [
         {
-         "hist": "WO4TK",
-         "name": "WO4TK",
-         "slug": "wo4tk",
-         "iso": "sg",
-         "captain": false
-        },
-        {
          "hist": "_kellyxleox_",
          "name": "_kellyxleox_",
          "slug": "kellyxleox",
          "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "WO4TK",
+         "name": "WO4TK",
+         "slug": "wo4tk",
+         "iso": "sg",
          "captain": false
         },
         {
@@ -47247,17 +47247,17 @@
        ],
        "roster": [
         {
-         "hist": "WO4TK",
-         "name": "WO4TK",
-         "slug": "wo4tk",
-         "iso": "sg",
-         "captain": false
-        },
-        {
          "hist": "_kellyxleox_",
          "name": "_kellyxleox_",
          "slug": "kellyxleox",
          "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "WO4TK",
+         "name": "WO4TK",
+         "slug": "wo4tk",
+         "iso": "sg",
          "captain": false
         },
         {
@@ -48331,7 +48331,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.072,
-     "ratingPoints": 1430,
+     "ratingPoints": 1431,
      "tier": "Master",
      "level": 7,
      "kpm": 17.0,
@@ -49362,7 +49362,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 0.948,
-     "ratingPoints": 948,
+     "ratingPoints": 949,
      "tier": "Silver",
      "level": 4,
      "kpm": 14.1,
@@ -52990,7 +52990,7 @@
      "iso": "my",
      "provisional": false,
      "rating": 0.963,
-     "ratingPoints": 1006,
+     "ratingPoints": 1007,
      "tier": "Silver",
      "level": 4,
      "kpm": 14.6,
@@ -53861,7 +53861,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.098,
-     "ratingPoints": 1531,
+     "ratingPoints": 1532,
      "tier": "Grandmaster",
      "level": 8,
      "kpm": 16.4,
@@ -54712,8 +54712,8 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.035,
-     "ratingPoints": 1288,
+     "rating": 1.036,
+     "ratingPoints": 1289,
      "tier": "Diamond",
      "level": 6,
      "kpm": 15.5,
@@ -59146,7 +59146,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.08,
-     "ratingPoints": 1462,
+     "ratingPoints": 1463,
      "tier": "Master",
      "level": 7,
      "kpm": 17.1,
@@ -59620,7 +59620,7 @@
      "nat": "USA",
      "iso": "us",
      "provisional": false,
-     "rating": 1.032,
+     "rating": 1.033,
      "ratingPoints": 1277,
      "tier": "Diamond",
      "level": 6,
@@ -61256,7 +61256,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.016,
-     "ratingPoints": 1211,
+     "ratingPoints": 1212,
      "tier": "Emerald",
      "level": 6,
      "kpm": 13.7,
@@ -61411,7 +61411,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 0.991,
+     "rating": 0.992,
      "ratingPoints": 1117,
      "tier": "Gold",
      "level": 5,
@@ -62703,7 +62703,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 0.929,
+     "rating": 0.93,
      "ratingPoints": 875,
      "tier": "Bronze",
      "level": 3,
@@ -65001,7 +65001,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.002,
+     "rating": 1.003,
      "ratingPoints": 1160,
      "tier": "Platinum",
      "level": 5,
@@ -66655,8 +66655,8 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 0.965,
-     "ratingPoints": 1015,
+     "rating": 0.966,
+     "ratingPoints": 1016,
      "tier": "Silver",
      "level": 4,
      "kpm": 14.2,
@@ -67237,7 +67237,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 0.964,
-     "ratingPoints": 1009,
+     "ratingPoints": 1010,
      "tier": "Silver",
      "level": 4,
      "kpm": 14.9,
@@ -67409,7 +67409,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 0.922,
-     "ratingPoints": 847,
+     "ratingPoints": 848,
      "tier": "Bronze",
      "level": 3,
      "kpm": 13.3,
@@ -68577,7 +68577,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.146,
-     "ratingPoints": 1718,
+     "ratingPoints": 1719,
      "tier": "Champion",
      "level": 8,
      "kpm": 17.5,
@@ -69639,7 +69639,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.007,
-     "ratingPoints": 1178,
+     "ratingPoints": 1179,
      "tier": "Platinum",
      "level": 5,
      "kpm": 14.8,
@@ -70736,7 +70736,7 @@
      "iso": "tw",
      "provisional": false,
      "rating": 1.056,
-     "ratingPoints": 1367,
+     "ratingPoints": 1368,
      "tier": "Master",
      "level": 7,
      "kpm": 16.6,
@@ -71578,7 +71578,7 @@
      "iso": "jp",
      "provisional": false,
      "rating": 0.996,
-     "ratingPoints": 1133,
+     "ratingPoints": 1134,
      "tier": "Platinum",
      "level": 5,
      "kpm": 15.3,
@@ -76494,7 +76494,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 0.921,
-     "ratingPoints": 842,
+     "ratingPoints": 843,
      "tier": "Bronze",
      "level": 3,
      "kpm": 13.3,
@@ -78025,7 +78025,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.155,
-     "ratingPoints": 1754,
+     "ratingPoints": 1755,
      "tier": "Champion",
      "level": 9,
      "kpm": 17.4,
@@ -78484,7 +78484,7 @@
      "nat": "Malaysia",
      "iso": "my",
      "provisional": false,
-     "rating": 1.147,
+     "rating": 1.148,
      "ratingPoints": 1725,
      "tier": "Champion",
      "level": 8,
@@ -81452,7 +81452,7 @@
      "iso": "ph",
      "provisional": false,
      "rating": 1.03,
-     "ratingPoints": 1268,
+     "ratingPoints": 1269,
      "tier": "Diamond",
      "level": 6,
      "kpm": 14.9,
@@ -81816,7 +81816,7 @@
      "iso": "ph",
      "provisional": false,
      "rating": 1.019,
-     "ratingPoints": 1224,
+     "ratingPoints": 1225,
      "tier": "Emerald",
      "level": 6,
      "kpm": 14.6,
@@ -86260,7 +86260,7 @@
      "iso": "my",
      "provisional": false,
      "rating": 1.009,
-     "ratingPoints": 1184,
+     "ratingPoints": 1185,
      "tier": "Platinum",
      "level": 5,
      "kpm": 16.4,
@@ -86630,7 +86630,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.001,
+     "rating": 1.002,
      "ratingPoints": 1156,
      "tier": "Platinum",
      "level": 5,
@@ -87208,7 +87208,7 @@
      "iso": "us",
      "provisional": false,
      "rating": 0.962,
-     "ratingPoints": 1003,
+     "ratingPoints": 1004,
      "tier": "Silver",
      "level": 4,
      "kpm": 14.9,
@@ -88680,7 +88680,7 @@
      "nat": "Singapore",
      "iso": "sg",
      "provisional": false,
-     "rating": 1.093,
+     "rating": 1.094,
      "ratingPoints": 1515,
      "tier": "Grandmaster",
      "level": 7,
@@ -88903,7 +88903,7 @@
      "nat": "USA",
      "iso": "us",
      "provisional": false,
-     "rating": 1.028,
+     "rating": 1.029,
      "ratingPoints": 1261,
      "tier": "Emerald",
      "level": 6,
@@ -89929,7 +89929,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.097,
-     "ratingPoints": 1529,
+     "ratingPoints": 1530,
      "tier": "Grandmaster",
      "level": 7,
      "kpm": 17.5,
@@ -96829,7 +96829,7 @@
      "iso": "sg",
      "provisional": false,
      "rating": 1.08,
-     "ratingPoints": 1461,
+     "ratingPoints": 1462,
      "tier": "Master",
      "level": 7,
      "kpm": 15.3,
@@ -101528,7 +101528,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.921,
-    "ratingPoints": 842,
+    "ratingPoints": 843,
     "tier": "Bronze",
     "level": 3,
     "kpm": 13.3,
@@ -102046,7 +102046,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.097,
-    "ratingPoints": 1529,
+    "ratingPoints": 1530,
     "tier": "Grandmaster",
     "level": 7,
     "kpm": 17.5,
@@ -104064,7 +104064,7 @@
     "iso": "ph",
     "provisional": false,
     "rating": 1.019,
-    "ratingPoints": 1224,
+    "ratingPoints": 1225,
     "tier": "Emerald",
     "level": 6,
     "kpm": 14.6,
@@ -105032,7 +105032,7 @@
     "iso": "ph",
     "provisional": false,
     "rating": 1.03,
-    "ratingPoints": 1268,
+    "ratingPoints": 1269,
     "tier": "Diamond",
     "level": 6,
     "kpm": 14.9,
@@ -107003,7 +107003,7 @@
     "iso": "my",
     "provisional": false,
     "rating": 0.963,
-    "ratingPoints": 1006,
+    "ratingPoints": 1007,
     "tier": "Silver",
     "level": 4,
     "kpm": 14.6,
@@ -107197,7 +107197,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.081,
-    "ratingPoints": 1466,
+    "ratingPoints": 1467,
     "tier": "Grandmaster",
     "level": 7,
     "kpm": 16.3,
@@ -107940,7 +107940,7 @@
     "iso": "my",
     "provisional": false,
     "rating": 0.934,
-    "ratingPoints": 892,
+    "ratingPoints": 893,
     "tier": "Bronze",
     "level": 3,
     "kpm": 13.5,
@@ -108402,7 +108402,7 @@
     "tier": "Grandmaster",
     "level": 7,
     "kpm": 16.3,
-    "rankDelta": 6,
+    "rankDelta": 0,
     "bio": "The voice behind Aimpunch's championship run, Chiai Fujikawa is a Malaysian in-game leader who calls the shots for one of BPL's most successful teams. A four-time champion — headlined by the 2023 BPL Conquerors Major — he pairs a tactical mind with real firepower, carrying a Level 7 1473 points and a 1.11 K/D that few IGLs can match.",
     "gender": "M",
     "teamHistory": [
@@ -108608,7 +108608,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 14.5,
-    "rankDelta": -15,
+    "rankDelta": 0,
     "soloStats": {
      "kills": 118,
      "deaths": 131,
@@ -108808,7 +108808,7 @@
     "tier": "Platinum",
     "level": 5,
     "kpm": 14.8,
-    "rankDelta": 5,
+    "rankDelta": 0,
     "bio": "balililmao is a Singaporean rifler and a four-time BPL champion with Aimpunch, a dependable presence across the club's 2022–2023 title haul. Steady rather than spectacular, she has been a trusted piece of the rotation through some of the league's biggest matches, including the 2023 Conquerors Major.",
     "gender": "F",
     "teamHistory": [
@@ -109463,11 +109463,11 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.948,
-    "ratingPoints": 945,
+    "ratingPoints": 946,
     "tier": "Silver",
     "level": 4,
     "kpm": 13.1,
-    "rankDelta": -7,
+    "rankDelta": 0,
     "soloStats": {
      "kills": 136,
      "deaths": 107,
@@ -109639,7 +109639,7 @@
    },
    {
     "name": "mond33__",
-    "team": "",
+    "team": "Feral Instinct",
     "pool": "pro",
     "kills": 381,
     "assists": 81,
@@ -109660,7 +109660,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.908,
-    "ratingPoints": 792,
+    "ratingPoints": 793,
     "tier": "Iron",
     "level": 3,
     "kpm": 12.3,
@@ -109733,6 +109733,51 @@
         "name": "mond33__",
         "slug": "mond33",
         "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Feral Instinct",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "qebo",
+        "name": "qebo",
+        "slug": "qebo",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "mond33__",
+        "name": "mond33__",
+        "slug": "mond33",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "wushii",
+        "name": "wushii",
+        "slug": "wushii",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "TRPaki",
+        "name": "TRPaki",
+        "slug": "trpaki",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "MKakili",
+        "name": "MKakili",
+        "slug": "mkakili",
+        "iso": "au",
         "captain": false
        }
       ]
@@ -109856,8 +109901,8 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.117,
-    "ratingPoints": 1608,
+    "rating": 1.118,
+    "ratingPoints": 1609,
     "tier": "Champion",
     "level": 8,
     "kpm": 17.2,
@@ -111675,7 +111720,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.066,
-    "ratingPoints": 1408,
+    "ratingPoints": 1409,
     "tier": "Master",
     "level": 7,
     "kpm": 17.2,
@@ -112237,7 +112282,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.057,
+    "rating": 1.058,
     "ratingPoints": 1374,
     "tier": "Master",
     "level": 7,
@@ -115264,7 +115309,7 @@
     "nat": "Japan",
     "iso": "jp",
     "provisional": false,
-    "rating": 0.958,
+    "rating": 0.959,
     "ratingPoints": 988,
     "tier": "Silver",
     "level": 4,
@@ -116781,7 +116826,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.067,
+    "rating": 1.068,
     "ratingPoints": 1413,
     "tier": "Master",
     "level": 7,
@@ -117151,7 +117196,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.064,
-    "ratingPoints": 1400,
+    "ratingPoints": 1401,
     "tier": "Master",
     "level": 7,
     "kpm": 16.0,
@@ -117835,7 +117880,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.097,
-    "ratingPoints": 1527,
+    "ratingPoints": 1528,
     "tier": "Grandmaster",
     "level": 7,
     "kpm": 17.3,
@@ -119759,7 +119804,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.981,
-    "ratingPoints": 1076,
+    "ratingPoints": 1077,
     "tier": "Gold",
     "level": 5,
     "kpm": 14.8,
@@ -120605,7 +120650,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.016,
-    "ratingPoints": 1211,
+    "ratingPoints": 1212,
     "tier": "Emerald",
     "level": 6,
     "kpm": 13.7,
@@ -120760,7 +120805,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 0.991,
+    "rating": 0.992,
     "ratingPoints": 1117,
     "tier": "Gold",
     "level": 5,
@@ -121417,7 +121462,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 0.929,
+    "rating": 0.93,
     "ratingPoints": 875,
     "tier": "Bronze",
     "level": 3,
@@ -123230,7 +123275,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.068,
+    "rating": 1.069,
     "ratingPoints": 1417,
     "tier": "Master",
     "level": 7,
@@ -123610,7 +123655,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.039,
-    "ratingPoints": 1302,
+    "ratingPoints": 1303,
     "tier": "Diamond",
     "level": 6,
     "kpm": 15.2,
@@ -124077,7 +124122,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.001,
+    "rating": 1.002,
     "ratingPoints": 1156,
     "tier": "Platinum",
     "level": 5,
@@ -124655,7 +124700,7 @@
     "iso": "my",
     "provisional": false,
     "rating": 1.009,
-    "ratingPoints": 1184,
+    "ratingPoints": 1185,
     "tier": "Platinum",
     "level": 5,
     "kpm": 16.4,
@@ -125483,7 +125528,7 @@
     "iso": "us",
     "provisional": false,
     "rating": 0.962,
-    "ratingPoints": 1003,
+    "ratingPoints": 1004,
     "tier": "Silver",
     "level": 4,
     "kpm": 14.9,
@@ -126169,7 +126214,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.122,
-    "ratingPoints": 1626,
+    "ratingPoints": 1627,
     "tier": "Champion",
     "level": 8,
     "kpm": 17.7,
@@ -126700,7 +126745,7 @@
     "iso": "th",
     "provisional": false,
     "rating": 1.02,
-    "ratingPoints": 1226,
+    "ratingPoints": 1227,
     "tier": "Emerald",
     "level": 6,
     "kpm": 14.5,
@@ -127999,7 +128044,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.002,
+    "rating": 1.003,
     "ratingPoints": 1160,
     "tier": "Platinum",
     "level": 5,
@@ -131704,7 +131749,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.155,
-    "ratingPoints": 1754,
+    "ratingPoints": 1755,
     "tier": "Champion",
     "level": 9,
     "kpm": 17.4,
@@ -132623,7 +132668,7 @@
     "nat": "Malaysia",
     "iso": "my",
     "provisional": false,
-    "rating": 1.147,
+    "rating": 1.148,
     "ratingPoints": 1725,
     "tier": "Champion",
     "level": 8,
@@ -133345,17 +133390,17 @@
     "name": "Mike",
     "team": "entity",
     "pool": "pro",
-    "kills": 464,
-    "assists": 76,
-    "deaths": 412,
-    "mvp": 69,
-    "kdr": 1.13,
+    "kills": 476,
+    "assists": 77,
+    "deaths": 427,
+    "mvp": 71,
+    "kdr": 1.11,
     "wins": 17,
-    "losses": 9,
-    "winrate": 0.654,
+    "losses": 10,
+    "winrate": 0.63,
     "ot": 0,
     "role": "IGL",
-    "maps": 26,
+    "maps": 27,
     "orig_rank": "Diamond",
     "orig_level": "Level 5",
     "orig_rating": 2153.0,
@@ -133363,12 +133408,12 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.107,
-    "ratingPoints": 1568,
-    "tier": "Champion",
+    "rating": 1.098,
+    "ratingPoints": 1531,
+    "tier": "Grandmaster",
     "level": 8,
-    "kpm": 17.8,
-    "rankDelta": 0,
+    "kpm": 17.6,
+    "rankDelta": -7,
     "soloStats": {
      "kills": 84,
      "deaths": 84,
@@ -133984,17 +134029,17 @@
     "name": "Ryker_Sterling",
     "team": "entity",
     "pool": "pro",
-    "kills": 495,
-    "assists": 89,
-    "deaths": 486,
-    "mvp": 74,
-    "kdr": 1.02,
+    "kills": 503,
+    "assists": 90,
+    "deaths": 502,
+    "mvp": 75,
+    "kdr": 1.0,
     "wins": 19,
-    "losses": 10,
-    "winrate": 0.655,
+    "losses": 11,
+    "winrate": 0.633,
     "ot": 5,
     "role": "Rifler",
-    "maps": 29,
+    "maps": 30,
     "orig_rank": "Emerald",
     "orig_level": "Level 5",
     "orig_rating": 2081.0,
@@ -134002,12 +134047,12 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.077,
-    "ratingPoints": 1449,
+    "rating": 1.064,
+    "ratingPoints": 1400,
     "tier": "Master",
     "level": 7,
-    "kpm": 17.1,
-    "rankDelta": 0,
+    "kpm": 16.8,
+    "rankDelta": -16,
     "soloStats": {
      "kills": 96,
      "deaths": 109,
@@ -134218,17 +134263,17 @@
     "name": "yerm",
     "team": "entity",
     "pool": "pro",
-    "kills": 460,
+    "kills": 476,
     "assists": 80,
-    "deaths": 458,
-    "mvp": 63,
+    "deaths": 475,
+    "mvp": 65,
     "kdr": 1.0,
     "wins": 19,
-    "losses": 10,
-    "winrate": 0.655,
+    "losses": 11,
+    "winrate": 0.633,
     "ot": 0,
     "role": "Awper",
-    "maps": 29,
+    "maps": 30,
     "orig_rank": "Emerald",
     "orig_level": "Level 5",
     "orig_rating": 2052.0,
@@ -134236,12 +134281,12 @@
     "nat": "Malaysia",
     "iso": "my",
     "provisional": false,
-    "rating": 1.034,
-    "ratingPoints": 1282,
+    "rating": 1.03,
+    "ratingPoints": 1269,
     "tier": "Diamond",
     "level": 6,
     "kpm": 15.9,
-    "rankDelta": 0,
+    "rankDelta": -9,
     "soloStats": {
      "kills": 144,
      "deaths": 141,
@@ -134407,17 +134452,17 @@
     "name": "Xrela",
     "team": "entity",
     "pool": "pro",
-    "kills": 344,
+    "kills": 349,
     "assists": 68,
-    "deaths": 358,
+    "deaths": 375,
     "mvp": 51,
-    "kdr": 0.96,
+    "kdr": 0.93,
     "wins": 16,
-    "losses": 9,
-    "winrate": 0.64,
+    "losses": 10,
+    "winrate": 0.615,
     "ot": 0,
     "role": "Rifler",
-    "maps": 25,
+    "maps": 26,
     "orig_rank": "Emerald",
     "orig_level": "Level 5",
     "orig_rating": 2050.0,
@@ -134425,12 +134470,12 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 0.993,
-    "ratingPoints": 1123,
+    "rating": 0.975,
+    "ratingPoints": 1053,
     "tier": "Gold",
     "level": 5,
-    "kpm": 13.8,
-    "rankDelta": 0,
+    "kpm": 13.4,
+    "rankDelta": -37,
     "soloStats": {
      "kills": 157,
      "deaths": 143,
@@ -134551,17 +134596,17 @@
     "name": "xJavyz",
     "team": "entity",
     "pool": "pro",
-    "kills": 419,
-    "assists": 79,
-    "deaths": 423,
-    "mvp": 62,
-    "kdr": 0.99,
+    "kills": 433,
+    "assists": 80,
+    "deaths": 442,
+    "mvp": 63,
+    "kdr": 0.98,
     "wins": 16,
-    "losses": 10,
-    "winrate": 0.615,
+    "losses": 11,
+    "winrate": 0.593,
     "ot": 1,
     "role": "Rifler",
-    "maps": 26,
+    "maps": 27,
     "orig_rank": "Diamond",
     "orig_level": "Level 5",
     "orig_rating": 2152.0,
@@ -134569,12 +134614,12 @@
     "nat": "Malaysia",
     "iso": "my",
     "provisional": false,
-    "rating": 1.046,
-    "ratingPoints": 1329,
+    "rating": 1.038,
+    "ratingPoints": 1299,
     "tier": "Diamond",
     "level": 6,
-    "kpm": 16.1,
-    "rankDelta": 0,
+    "kpm": 16.0,
+    "rankDelta": -20,
     "bio": "xJavyz is a Level 6 rifler for entity, a Malaysian fragger whose 67% win rate speaks to his impact on a winning team.",
     "gender": "M",
     "teamHistory": [
@@ -135008,7 +135053,7 @@
     "iso": "tw",
     "provisional": false,
     "rating": 1.056,
-    "ratingPoints": 1367,
+    "ratingPoints": 1368,
     "tier": "Master",
     "level": 7,
     "kpm": 16.6,
@@ -135250,7 +135295,7 @@
     "iso": "jp",
     "provisional": false,
     "rating": 0.996,
-    "ratingPoints": 1133,
+    "ratingPoints": 1134,
     "tier": "Platinum",
     "level": 5,
     "kpm": 15.3,
@@ -137015,7 +137060,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.089,
-    "ratingPoints": 1495,
+    "ratingPoints": 1496,
     "tier": "Grandmaster",
     "level": 7,
     "kpm": 17.2,
@@ -137560,7 +137605,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.981,
-    "ratingPoints": 1077,
+    "ratingPoints": 1078,
     "tier": "Gold",
     "level": 5,
     "kpm": 15.1,
@@ -137978,8 +138023,8 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.066,
-    "ratingPoints": 1409,
+    "rating": 1.067,
+    "ratingPoints": 1410,
     "tier": "Master",
     "level": 7,
     "kpm": 16.0,
@@ -138812,7 +138857,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.08,
-    "ratingPoints": 1462,
+    "ratingPoints": 1463,
     "tier": "Master",
     "level": 7,
     "kpm": 17.1,
@@ -139106,7 +139151,7 @@
     "nat": "USA",
     "iso": "us",
     "provisional": false,
-    "rating": 1.032,
+    "rating": 1.033,
     "ratingPoints": 1277,
     "tier": "Diamond",
     "level": 6,
@@ -139783,7 +139828,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 0.977,
+    "rating": 0.978,
     "ratingPoints": 1062,
     "tier": "Gold",
     "level": 5,
@@ -140738,7 +140783,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 0.961,
+    "rating": 0.962,
     "ratingPoints": 1000,
     "tier": "Silver",
     "level": 4,
@@ -142240,8 +142285,8 @@
     "nat": "Malaysia",
     "iso": "my",
     "provisional": false,
-    "rating": 1.015,
-    "ratingPoints": 1210,
+    "rating": 1.016,
+    "ratingPoints": 1211,
     "tier": "Emerald",
     "level": 6,
     "kpm": 13.9,
@@ -145150,7 +145195,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.987,
-    "ratingPoints": 1100,
+    "ratingPoints": 1101,
     "tier": "Gold",
     "level": 5,
     "kpm": 14.1,
@@ -145404,7 +145449,7 @@
     "iso": "my",
     "provisional": false,
     "rating": 1.061,
-    "ratingPoints": 1387,
+    "ratingPoints": 1388,
     "tier": "Master",
     "level": 7,
     "kpm": 17.0,
@@ -145742,7 +145787,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.953,
-    "ratingPoints": 965,
+    "ratingPoints": 966,
     "tier": "Silver",
     "level": 4,
     "kpm": 13.9,
@@ -147084,7 +147129,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 0.967,
+    "rating": 0.968,
     "ratingPoints": 1023,
     "tier": "Silver",
     "level": 4,
@@ -147679,7 +147724,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 0.953,
+    "rating": 0.954,
     "ratingPoints": 969,
     "tier": "Silver",
     "level": 4,
@@ -149476,7 +149521,7 @@
     "nat": "Malaysia",
     "iso": "my",
     "provisional": false,
-    "rating": 1.022,
+    "rating": 1.023,
     "ratingPoints": 1238,
     "tier": "Emerald",
     "level": 6,
@@ -149848,7 +149893,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.027,
-    "ratingPoints": 1256,
+    "ratingPoints": 1257,
     "tier": "Emerald",
     "level": 6,
     "kpm": 16.1,
@@ -150275,7 +150320,7 @@
     "iso": "my",
     "provisional": false,
     "rating": 0.978,
-    "ratingPoints": 1063,
+    "ratingPoints": 1064,
     "tier": "Gold",
     "level": 5,
     "kpm": 14.1,
@@ -151687,8 +151732,8 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.055,
-    "ratingPoints": 1364,
-    "tier": "Diamond",
+    "ratingPoints": 1365,
+    "tier": "Master",
     "level": 7,
     "kpm": 15.5,
     "rankDelta": 0,
@@ -152166,7 +152211,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.013,
-    "ratingPoints": 1202,
+    "ratingPoints": 1203,
     "tier": "Emerald",
     "level": 6,
     "kpm": 14.4,
@@ -152517,7 +152562,7 @@
     "nat": "Malaysia",
     "iso": "my",
     "provisional": false,
-    "rating": 1.098,
+    "rating": 1.099,
     "ratingPoints": 1534,
     "tier": "Grandmaster",
     "level": 8,
@@ -152783,16 +152828,16 @@
       ],
       "roster": [
        {
-        "hist": "CRex",
-        "name": "CRex",
-        "slug": "crex",
+        "hist": "ebi",
+        "name": "ebi",
+        "slug": "ebi",
         "iso": "my",
         "captain": false
        },
        {
-        "hist": "ebi",
-        "name": "ebi",
-        "slug": "ebi",
+        "hist": "CRex",
+        "name": "CRex",
+        "slug": "crex",
         "iso": "my",
         "captain": false
        },
@@ -153232,16 +153277,16 @@
       ],
       "roster": [
        {
-        "hist": "CRex",
-        "name": "CRex",
-        "slug": "crex",
+        "hist": "ebi",
+        "name": "ebi",
+        "slug": "ebi",
         "iso": "my",
         "captain": false
        },
        {
-        "hist": "ebi",
-        "name": "ebi",
-        "slug": "ebi",
+        "hist": "CRex",
+        "name": "CRex",
+        "slug": "crex",
         "iso": "my",
         "captain": false
        },
@@ -153475,16 +153520,16 @@
       ],
       "roster": [
        {
-        "hist": "CRex",
-        "name": "CRex",
-        "slug": "crex",
+        "hist": "ebi",
+        "name": "ebi",
+        "slug": "ebi",
         "iso": "my",
         "captain": false
        },
        {
-        "hist": "ebi",
-        "name": "ebi",
-        "slug": "ebi",
+        "hist": "CRex",
+        "name": "CRex",
+        "slug": "crex",
         "iso": "my",
         "captain": false
        },
@@ -153901,16 +153946,16 @@
       ],
       "roster": [
        {
-        "hist": "CRex",
-        "name": "CRex",
-        "slug": "crex",
+        "hist": "ebi",
+        "name": "ebi",
+        "slug": "ebi",
         "iso": "my",
         "captain": false
        },
        {
-        "hist": "ebi",
-        "name": "ebi",
-        "slug": "ebi",
+        "hist": "CRex",
+        "name": "CRex",
+        "slug": "crex",
         "iso": "my",
         "captain": false
        },
@@ -154017,7 +154062,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.991,
-    "ratingPoints": 1114,
+    "ratingPoints": 1115,
     "tier": "Gold",
     "level": 5,
     "kpm": 14.8,
@@ -154080,16 +154125,16 @@
       ],
       "roster": [
        {
-        "hist": "CRex",
-        "name": "CRex",
-        "slug": "crex",
+        "hist": "ebi",
+        "name": "ebi",
+        "slug": "ebi",
         "iso": "my",
         "captain": false
        },
        {
-        "hist": "ebi",
-        "name": "ebi",
-        "slug": "ebi",
+        "hist": "CRex",
+        "name": "CRex",
+        "slug": "crex",
         "iso": "my",
         "captain": false
        },
@@ -154196,7 +154241,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.146,
-    "ratingPoints": 1718,
+    "ratingPoints": 1719,
     "tier": "Champion",
     "level": 8,
     "kpm": 17.5,
@@ -154755,7 +154800,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.007,
-    "ratingPoints": 1178,
+    "ratingPoints": 1179,
     "tier": "Platinum",
     "level": 5,
     "kpm": 14.8,
@@ -155997,7 +156042,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.098,
-    "ratingPoints": 1531,
+    "ratingPoints": 1532,
     "tier": "Grandmaster",
     "level": 8,
     "kpm": 16.4,
@@ -156829,8 +156874,8 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.035,
-    "ratingPoints": 1288,
+    "rating": 1.036,
+    "ratingPoints": 1289,
     "tier": "Diamond",
     "level": 6,
     "kpm": 15.5,
@@ -158727,7 +158772,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.072,
-    "ratingPoints": 1430,
+    "ratingPoints": 1431,
     "tier": "Master",
     "level": 7,
     "kpm": 17.0,
@@ -159170,7 +159215,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.948,
-    "ratingPoints": 948,
+    "ratingPoints": 949,
     "tier": "Silver",
     "level": 4,
     "kpm": 14.1,
@@ -160521,8 +160566,8 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 0.965,
-    "ratingPoints": 1015,
+    "rating": 0.966,
+    "ratingPoints": 1016,
     "tier": "Silver",
     "level": 4,
     "kpm": 14.2,
@@ -161103,7 +161148,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.964,
-    "ratingPoints": 1009,
+    "ratingPoints": 1010,
     "tier": "Silver",
     "level": 4,
     "kpm": 14.9,
@@ -161275,7 +161320,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.922,
-    "ratingPoints": 847,
+    "ratingPoints": 848,
     "tier": "Bronze",
     "level": 3,
     "kpm": 13.3,
@@ -162990,7 +163035,7 @@
     "iso": "au",
     "provisional": false,
     "rating": 1.062,
-    "ratingPoints": 1390,
+    "ratingPoints": 1391,
     "tier": "Master",
     "level": 7,
     "kpm": 14.7,
@@ -163444,7 +163489,7 @@
     "iso": "my",
     "provisional": false,
     "rating": 1.04,
-    "ratingPoints": 1306,
+    "ratingPoints": 1307,
     "tier": "Diamond",
     "level": 6,
     "kpm": 14.9,
@@ -163843,7 +163888,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 0.969,
+    "rating": 0.97,
     "ratingPoints": 1031,
     "tier": "Gold",
     "level": 4,
@@ -164482,7 +164527,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.039,
+    "rating": 1.04,
     "ratingPoints": 1304,
     "tier": "Diamond",
     "level": 6,
@@ -168335,17 +168380,17 @@
       ],
       "roster": [
        {
-        "hist": "WO4TK",
-        "name": "WO4TK",
-        "slug": "wo4tk",
-        "iso": "sg",
-        "captain": false
-       },
-       {
         "hist": "_kellyxleox_",
         "name": "_kellyxleox_",
         "slug": "kellyxleox",
         "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "WO4TK",
+        "name": "WO4TK",
+        "slug": "wo4tk",
+        "iso": "sg",
         "captain": false
        },
        {
@@ -168440,8 +168485,8 @@
     "nat": "Malaysia",
     "iso": "my",
     "provisional": false,
-    "rating": 1.014,
-    "ratingPoints": 1206,
+    "rating": 1.015,
+    "ratingPoints": 1207,
     "tier": "Emerald",
     "level": 6,
     "kpm": 16.0,
@@ -168463,17 +168508,17 @@
       ],
       "roster": [
        {
-        "hist": "WO4TK",
-        "name": "WO4TK",
-        "slug": "wo4tk",
-        "iso": "sg",
-        "captain": false
-       },
-       {
         "hist": "_kellyxleox_",
         "name": "_kellyxleox_",
         "slug": "kellyxleox",
         "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "WO4TK",
+        "name": "WO4TK",
+        "slug": "wo4tk",
+        "iso": "sg",
         "captain": false
        },
        {
@@ -168740,17 +168785,17 @@
       ],
       "roster": [
        {
-        "hist": "WO4TK",
-        "name": "WO4TK",
-        "slug": "wo4tk",
-        "iso": "sg",
-        "captain": false
-       },
-       {
         "hist": "_kellyxleox_",
         "name": "_kellyxleox_",
         "slug": "kellyxleox",
         "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "WO4TK",
+        "name": "WO4TK",
+        "slug": "wo4tk",
+        "iso": "sg",
         "captain": false
        },
        {
@@ -169072,17 +169117,17 @@
       ],
       "roster": [
        {
-        "hist": "WO4TK",
-        "name": "WO4TK",
-        "slug": "wo4tk",
-        "iso": "sg",
-        "captain": false
-       },
-       {
         "hist": "_kellyxleox_",
         "name": "_kellyxleox_",
         "slug": "kellyxleox",
         "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "WO4TK",
+        "name": "WO4TK",
+        "slug": "wo4tk",
+        "iso": "sg",
         "captain": false
        },
        {
@@ -169309,17 +169354,17 @@
       ],
       "roster": [
        {
-        "hist": "WO4TK",
-        "name": "WO4TK",
-        "slug": "wo4tk",
-        "iso": "sg",
-        "captain": false
-       },
-       {
         "hist": "_kellyxleox_",
         "name": "_kellyxleox_",
         "slug": "kellyxleox",
         "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "WO4TK",
+        "name": "WO4TK",
+        "slug": "wo4tk",
+        "iso": "sg",
         "captain": false
        },
        {
@@ -169424,7 +169469,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.093,
+    "rating": 1.094,
     "ratingPoints": 1515,
     "tier": "Grandmaster",
     "level": 7,
@@ -169647,7 +169692,7 @@
     "nat": "USA",
     "iso": "us",
     "provisional": false,
-    "rating": 1.028,
+    "rating": 1.029,
     "ratingPoints": 1261,
     "tier": "Emerald",
     "level": 6,
@@ -171382,17 +171427,17 @@
     "name": "Codiant",
     "team": "Prism Divide",
     "pool": "pro",
-    "kills": 495,
+    "kills": 507,
     "assists": 62,
-    "deaths": 396,
-    "mvp": 85,
-    "kdr": 1.25,
-    "wins": 21,
+    "deaths": 408,
+    "mvp": 87,
+    "kdr": 1.24,
+    "wins": 22,
     "losses": 11,
-    "winrate": 0.656,
+    "winrate": 0.667,
     "ot": 8,
     "role": "Rifler",
-    "maps": 32,
+    "maps": 33,
     "orig_rank": "Master",
     "orig_level": "Level 6",
     "orig_rating": 2531.0,
@@ -171401,12 +171446,12 @@
     "nat": "Kazakhstan",
     "iso": "kz",
     "provisional": false,
-    "rating": 1.091,
-    "ratingPoints": 1505,
+    "rating": 1.087,
+    "ratingPoints": 1488,
     "tier": "Grandmaster",
     "level": 7,
-    "kpm": 15.5,
-    "rankDelta": 0,
+    "kpm": 15.4,
+    "rankDelta": -4,
     "soloStats": {
      "kills": 199,
      "deaths": 191,
@@ -171426,7 +171471,7 @@
      "rankDelta": 0,
      "provisional": false
     },
-    "bio": "Codiant is a Kazakh rifler and one of the rare Central Asian names in the pool, a Level 7 free agent with a 1.25 K/D and a 64% win rate that hint at real potential.",
+    "bio": "Codiant is a Kazakh rifler and one of the rare Central Asian names in the pool, a Level 7 free agent with a 1.24 K/D and a 64% win rate that hint at real potential.",
     "gender": "M",
     "teamTourney": "Bot Pro Cup 2026",
     "teamHistory": [
@@ -174524,8 +174569,8 @@
     "iso": "us",
     "provisional": false,
     "rating": 0.945,
-    "ratingPoints": 935,
-    "tier": "Bronze",
+    "ratingPoints": 936,
+    "tier": "Silver",
     "level": 4,
     "kpm": 13.7,
     "rankDelta": 0,
@@ -174944,10 +174989,10 @@
         "captain": false
        },
        {
-        "hist": "Loonatic",
-        "name": "Loonatic",
-        "slug": "loonatic",
-        "iso": "my",
+        "hist": "mond33__",
+        "name": "mond33__",
+        "slug": "mond33",
+        "iso": "sg",
         "captain": false
        },
        {
@@ -175088,7 +175133,7 @@
     "nat": "Japan",
     "iso": "jp",
     "provisional": false,
-    "rating": 0.962,
+    "rating": 0.963,
     "ratingPoints": 1004,
     "tier": "Silver",
     "level": 4,
@@ -175259,7 +175304,7 @@
     "iso": "jp",
     "provisional": false,
     "rating": 0.934,
-    "ratingPoints": 893,
+    "ratingPoints": 894,
     "tier": "Bronze",
     "level": 3,
     "kpm": 13.5,
@@ -175499,17 +175544,17 @@
     "name": "AkanersVT",
     "team": "Prism Divide",
     "pool": "pro",
-    "kills": 537,
-    "assists": 50,
-    "deaths": 478,
-    "mvp": 80,
+    "kills": 551,
+    "assists": 52,
+    "deaths": 490,
+    "mvp": 82,
     "kdr": 1.12,
-    "wins": 18,
+    "wins": 19,
     "losses": 15,
-    "winrate": 0.545,
+    "winrate": 0.559,
     "ot": 4,
     "role": "Rifler",
-    "maps": 33,
+    "maps": 34,
     "orig_rank": "Emerald",
     "orig_level": "Level 5",
     "orig_rating": 2063.0,
@@ -175518,12 +175563,12 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.04,
-    "ratingPoints": 1307,
+    "rating": 1.041,
+    "ratingPoints": 1309,
     "tier": "Diamond",
     "level": 6,
-    "kpm": 16.3,
-    "rankDelta": 0,
+    "kpm": 16.2,
+    "rankDelta": 1,
     "soloStats": {
      "kills": 91,
      "deaths": 87,
@@ -175543,7 +175588,7 @@
      "rankDelta": 0,
      "provisional": false
     },
-    "bio": "AkanersVT is a Singaporean rifler and a Level 6 free agent, a prolific scorer with over 537 kills in the amateur ranks.",
+    "bio": "AkanersVT is a Singaporean rifler and a Level 6 free agent, a prolific scorer with over 551 kills in the amateur ranks.",
     "gender": "F",
     "teamTourney": "Bot Pro Cup 2026",
     "teamHistory": [
@@ -178107,7 +178152,7 @@
     "iso": "ca",
     "provisional": false,
     "rating": 1.121,
-    "ratingPoints": 1621,
+    "ratingPoints": 1622,
     "tier": "Champion",
     "level": 8,
     "kpm": 19.1,
@@ -178371,7 +178416,7 @@
     "tier": "Diamond",
     "level": 6,
     "kpm": 17.2,
-    "rankDelta": 10,
+    "rankDelta": 0,
     "bio": "SoapiiSereia is a New Zealand rifler and a Level 6 free agent, one of the league's rare Oceanic names and a steady fragger.",
     "gender": "F",
     "teamTourney": "Bot Pro Cup 2026",
@@ -178583,7 +178628,7 @@
     "provisional": false,
     "rating": 1.081,
     "ratingPoints": 1466,
-    "tier": "Master",
+    "tier": "Grandmaster",
     "level": 7,
     "kpm": 18.4,
     "rankDelta": 0,
@@ -179057,7 +179102,7 @@
     "iso": "us",
     "provisional": false,
     "rating": 0.962,
-    "ratingPoints": 1001,
+    "ratingPoints": 1002,
     "tier": "Silver",
     "level": 4,
     "kpm": 13.7,
@@ -180080,12 +180125,12 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 0.981,
+    "rating": 0.982,
     "ratingPoints": 1078,
     "tier": "Gold",
     "level": 5,
     "kpm": 14.3,
-    "rankDelta": 3,
+    "rankDelta": 0,
     "bio": "itswendy_ is a Singaporean in-game leader and an Level 5 free agent, an amateur caller with a composed streak.",
     "gender": "F",
     "teamTourney": "Bot Pro Cup 2026",
@@ -180434,7 +180479,7 @@
     "iso": "ph",
     "provisional": false,
     "rating": 0.969,
-    "ratingPoints": 1028,
+    "ratingPoints": 1029,
     "tier": "Silver",
     "level": 4,
     "kpm": 15.1,
@@ -182010,7 +182055,7 @@
     "nat": "Japan",
     "iso": "jp",
     "provisional": false,
-    "rating": 0.956,
+    "rating": 0.957,
     "ratingPoints": 980,
     "tier": "Silver",
     "level": 4,
@@ -183443,7 +183488,7 @@
     "tier": "Diamond",
     "level": 6,
     "kpm": 17.2,
-    "rankDelta": 10,
+    "rankDelta": 0,
     "bio": "vixi is an Australian rifler rated Level 6 in the league, a free agent whose 1.11 K/D is among the sharpest going.",
     "gender": "F",
     "teamTourney": "Bot Pro Cup 2026",
@@ -183654,7 +183699,7 @@
     "iso": "gb",
     "provisional": false,
     "rating": 0.875,
-    "ratingPoints": 662,
+    "ratingPoints": 663,
     "tier": "Iron",
     "level": 2,
     "kpm": 12.1,
@@ -184699,7 +184744,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.928,
-    "ratingPoints": 870,
+    "ratingPoints": 871,
     "tier": "Bronze",
     "level": 3,
     "kpm": 13.4,
@@ -184984,17 +185029,17 @@
     "name": "XueQiii",
     "team": "Prism Divide",
     "pool": "pro",
-    "kills": 389,
+    "kills": 414,
     "assists": 45,
-    "deaths": 366,
-    "mvp": 52,
-    "kdr": 1.06,
-    "wins": 13,
+    "deaths": 375,
+    "mvp": 57,
+    "kdr": 1.1,
+    "wins": 14,
     "losses": 13,
-    "winrate": 0.5,
+    "winrate": 0.519,
     "ot": 2,
     "role": "IGL",
-    "maps": 26,
+    "maps": 27,
     "orig_rank": "Gold",
     "orig_level": "Level 4",
     "orig_rating": 1641.0,
@@ -185003,12 +185048,12 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 0.994,
-    "ratingPoints": 1128,
+    "rating": 1.012,
+    "ratingPoints": 1195,
     "tier": "Platinum",
     "level": 5,
-    "kpm": 15.0,
-    "rankDelta": 0,
+    "kpm": 15.3,
+    "rankDelta": 48,
     "soloStats": {
      "kills": 83,
      "deaths": 94,
@@ -186199,7 +186244,7 @@
     "tier": "Master",
     "level": 7,
     "kpm": 18.1,
-    "rankDelta": 21,
+    "rankDelta": 0,
     "bio": "dla.wo is a Singaporean rifler and a Level 7 free agent, a fragger whose ceiling looks high should she find a settled team.",
     "gender": "F",
     "teamTourney": "Bot Pro Cup 2026",
@@ -188144,7 +188189,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.061,
-    "ratingPoints": 1387,
+    "ratingPoints": 1388,
     "tier": "Master",
     "level": 7,
     "kpm": 16.5,
@@ -188737,10 +188782,10 @@
         "captain": false
        },
        {
-        "hist": "Loonatic",
-        "name": "Loonatic",
-        "slug": "loonatic",
-        "iso": "my",
+        "hist": "mond33__",
+        "name": "mond33__",
+        "slug": "mond33",
+        "iso": "sg",
         "captain": false
        },
        {
@@ -189177,10 +189222,10 @@
         "captain": false
        },
        {
-        "hist": "Loonatic",
-        "name": "Loonatic",
-        "slug": "loonatic",
-        "iso": "my",
+        "hist": "mond33__",
+        "name": "mond33__",
+        "slug": "mond33",
+        "iso": "sg",
         "captain": false
        },
        {
@@ -191716,7 +191761,7 @@
     "nat": "Indonesia",
     "iso": "id",
     "provisional": false,
-    "rating": 0.922,
+    "rating": 0.923,
     "ratingPoints": 848,
     "tier": "Bronze",
     "level": 3,
@@ -194532,7 +194577,7 @@
     "iso": "us",
     "provisional": false,
     "rating": 0.995,
-    "ratingPoints": 1130,
+    "ratingPoints": 1131,
     "tier": "Platinum",
     "level": 5,
     "kpm": 16.1,
@@ -196166,7 +196211,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.003,
-    "ratingPoints": 1161,
+    "ratingPoints": 1162,
     "tier": "Platinum",
     "level": 5,
     "kpm": 15.4,
@@ -197210,7 +197255,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.018,
-    "ratingPoints": 1220,
+    "ratingPoints": 1221,
     "tier": "Emerald",
     "level": 6,
     "kpm": 17.7,
@@ -198762,7 +198807,7 @@
     "iso": "my",
     "provisional": false,
     "rating": 0.963,
-    "ratingPoints": 1004,
+    "ratingPoints": 1005,
     "tier": "Silver",
     "level": 4,
     "kpm": 14.0,
@@ -200896,7 +200941,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 1.063,
+    "rating": 1.064,
     "ratingPoints": 1398,
     "tier": "Master",
     "level": 7,
@@ -201417,17 +201462,17 @@
     "name": "Syrrith",
     "team": "Prism Divide",
     "pool": "pro",
-    "kills": 325,
-    "assists": 32,
-    "deaths": 312,
-    "mvp": 44,
-    "kdr": 1.04,
-    "wins": 8,
+    "kills": 343,
+    "assists": 34,
+    "deaths": 321,
+    "mvp": 47,
+    "kdr": 1.07,
+    "wins": 9,
     "losses": 12,
-    "winrate": 0.4,
+    "winrate": 0.429,
     "ot": 5,
     "role": "Rifler",
-    "maps": 20,
+    "maps": 21,
     "orig_rank": "Silver",
     "orig_level": "Level 3",
     "orig_rating": 1347.0,
@@ -201436,12 +201481,12 @@
     "nat": "Malaysia",
     "iso": "my",
     "provisional": false,
-    "rating": 1.002,
-    "ratingPoints": 1159,
-    "tier": "Platinum",
+    "rating": 1.013,
+    "ratingPoints": 1200,
+    "tier": "Emerald",
     "level": 5,
-    "kpm": 16.2,
-    "rankDelta": 0,
+    "kpm": 16.3,
+    "rankDelta": 18,
     "bio": "Syrrith is a Singaporean rifler and a Level 5 free agent, a fragger with the profile to earn a competitive spot.",
     "gender": "M",
     "teamTourney": "Bot Pro Cup 2026",
@@ -204337,7 +204382,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.991,
-    "ratingPoints": 1115,
+    "ratingPoints": 1116,
     "tier": "Gold",
     "level": 5,
     "kpm": 15.9,
@@ -206649,7 +206694,7 @@
     "tier": "Iron",
     "level": 2,
     "kpm": 11.8,
-    "rankDelta": -5,
+    "rankDelta": 0,
     "soloStats": {
      "kills": 134,
      "deaths": 152,
@@ -207599,7 +207644,7 @@
     "iso": "my",
     "provisional": false,
     "rating": 0.972,
-    "ratingPoints": 1039,
+    "ratingPoints": 1040,
     "tier": "Gold",
     "level": 4,
     "kpm": 14.1,
@@ -207904,7 +207949,7 @@
     "iso": "au",
     "provisional": false,
     "rating": 0.981,
-    "ratingPoints": 1077,
+    "ratingPoints": 1078,
     "tier": "Gold",
     "level": 5,
     "kpm": 14.0,
@@ -209824,7 +209869,7 @@
     "iso": "us",
     "provisional": false,
     "rating": 0.997,
-    "ratingPoints": 1136,
+    "ratingPoints": 1137,
     "tier": "Platinum",
     "level": 5,
     "kpm": 15.6,
@@ -210318,7 +210363,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.036,
-    "ratingPoints": 1291,
+    "ratingPoints": 1292,
     "tier": "Diamond",
     "level": 6,
     "kpm": 17.2,
@@ -211102,7 +211147,7 @@
     "iso": "is",
     "provisional": false,
     "rating": 1.021,
-    "ratingPoints": 1231,
+    "ratingPoints": 1232,
     "tier": "Emerald",
     "level": 6,
     "kpm": 17.2,
@@ -212486,7 +212531,7 @@
     "iso": "jp",
     "provisional": false,
     "rating": 1.034,
-    "ratingPoints": 1282,
+    "ratingPoints": 1283,
     "tier": "Diamond",
     "level": 6,
     "kpm": 17.9,
@@ -213922,7 +213967,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.026,
-    "ratingPoints": 1251,
+    "ratingPoints": 1252,
     "tier": "Emerald",
     "level": 6,
     "kpm": 16.6,
@@ -215405,7 +215450,7 @@
    },
    {
     "name": "Loonatic",
-    "team": "Feral Instinct",
+    "team": "",
     "pool": "pro",
     "kills": 185,
     "assists": 18,
@@ -215434,7 +215479,6 @@
     "rankDelta": 0,
     "bio": "Loonatic is a Malaysian AWPer and a Level 2 free agent in the amateur ranks.",
     "gender": "M",
-    "teamTourney": "Bot Pro Cup 2026",
     "teamHistory": [
      {
       "team": "Eclipsed",
@@ -215567,51 +215611,6 @@
         "name": "KydaSana",
         "slug": "kydasana",
         "iso": "sg",
-        "captain": false
-       }
-      ]
-     },
-     {
-      "team": "Feral Instinct",
-      "teamSlug": null,
-      "isPro": false,
-      "years": [
-       "2026"
-      ],
-      "roster": [
-       {
-        "hist": "qebo",
-        "name": "qebo",
-        "slug": "qebo",
-        "iso": "my",
-        "captain": false
-       },
-       {
-        "hist": "Loonatic",
-        "name": "Loonatic",
-        "slug": "loonatic",
-        "iso": "my",
-        "captain": false
-       },
-       {
-        "hist": "wushii",
-        "name": "wushii",
-        "slug": "wushii",
-        "iso": "my",
-        "captain": false
-       },
-       {
-        "hist": "TRPaki",
-        "name": "TRPaki",
-        "slug": "trpaki",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "MKakili",
-        "name": "MKakili",
-        "slug": "mkakili",
-        "iso": "au",
         "captain": false
        }
       ]
@@ -216425,7 +216424,7 @@
     "iso": "kr",
     "provisional": false,
     "rating": 0.996,
-    "ratingPoints": 1135,
+    "ratingPoints": 1136,
     "tier": "Platinum",
     "level": 5,
     "kpm": 15.9,
@@ -216651,7 +216650,7 @@
     "iso": "jp",
     "provisional": false,
     "rating": 0.881,
-    "ratingPoints": 684,
+    "ratingPoints": 685,
     "tier": "Iron",
     "level": 2,
     "kpm": 11.7,
@@ -218662,7 +218661,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.953,
-    "ratingPoints": 968,
+    "ratingPoints": 969,
     "tier": "Silver",
     "level": 4,
     "kpm": 13.9,
@@ -226520,7 +226519,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 0.903,
+    "rating": 0.904,
     "ratingPoints": 774,
     "tier": "Iron",
     "level": 3,
@@ -227849,10 +227848,10 @@
         "captain": false
        },
        {
-        "hist": "Loonatic",
-        "name": "Loonatic",
-        "slug": "loonatic",
-        "iso": "my",
+        "hist": "mond33__",
+        "name": "mond33__",
+        "slug": "mond33",
+        "iso": "sg",
         "captain": false
        },
        {
@@ -228481,17 +228480,17 @@
     "name": "sayupurin",
     "team": "Prism Divide",
     "pool": "pro",
-    "kills": 53,
-    "assists": 6,
-    "deaths": 52,
-    "mvp": 7,
-    "kdr": 1.02,
-    "wins": 3,
+    "kills": 68,
+    "assists": 7,
+    "deaths": 65,
+    "mvp": 8,
+    "kdr": 1.05,
+    "wins": 4,
     "losses": 1,
-    "winrate": 0.75,
+    "winrate": 0.8,
     "ot": 0,
     "role": "Rifler",
-    "maps": 4,
+    "maps": 5,
     "orig_rank": "",
     "orig_level": "",
     "orig_rating": 0.0,
@@ -228504,8 +228503,8 @@
     "ratingPoints": 1110,
     "tier": "Gold",
     "level": 5,
-    "kpm": 13.2,
-    "rankDelta": 0,
+    "kpm": 13.6,
+    "rankDelta": 1,
     "bio": "sayupurin is a Hong Kong rifler.",
     "gender": "F",
     "teamTourney": "Bot Pro Cup 2026",
@@ -229535,7 +229534,7 @@
     "nat": "Singapore",
     "iso": "sg",
     "provisional": false,
-    "rating": 0.971,
+    "rating": 0.972,
     "ratingPoints": 1039,
     "tier": "Gold",
     "level": 4,
@@ -231310,7 +231309,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.08,
-    "ratingPoints": 1461,
+    "ratingPoints": 1462,
     "tier": "Master",
     "level": 7,
     "kpm": 15.3,
@@ -234595,7 +234594,7 @@
     "iso": "de",
     "provisional": false,
     "rating": 0.999,
-    "ratingPoints": 1147,
+    "ratingPoints": 1148,
     "tier": "Platinum",
     "level": 5,
     "kpm": 14.5,
@@ -235356,7 +235355,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 0.968,
-    "ratingPoints": 1025,
+    "ratingPoints": 1026,
     "tier": "Silver",
     "level": 4,
     "kpm": 15.2,
@@ -235800,7 +235799,7 @@
     "iso": "sg",
     "provisional": false,
     "rating": 1.001,
-    "ratingPoints": 1153,
+    "ratingPoints": 1154,
     "tier": "Platinum",
     "level": 5,
     "kpm": 16.5,
@@ -237812,11 +237811,11 @@
  },
  "pool_avg": {
   "pro": {
-   "kdr": 0.9969651741293533,
-   "kpm": 15.238104273760447,
-   "mvp": 2.133908955584592,
-   "apm": 2.2678700872250257,
-   "wr": 0.4711417910447761
+   "kdr": 0.9969900497512438,
+   "kpm": 15.237367143481237,
+   "mvp": 2.13330052495992,
+   "apm": 2.2663731583984545,
+   "wr": 0.4711616915422886
   },
   "amateur": {
    "kdr": 1.0,
@@ -285514,14 +285513,135 @@
        "i": 17,
        "a": "Prism Divide",
        "b": "entity",
-       "sa": null,
-       "sb": null,
-       "w": 0,
+       "sa": 13,
+       "sb": 6,
+       "w": 1,
        "aTeam": null,
        "bTeam": "entity",
        "bo": 1,
        "tp": false,
-       "ts": null
+       "ts": 1789816818,
+       "stats": {
+        "maps": [
+         {
+          "map": "Vertigo",
+          "scoreA": 13,
+          "scoreB": 6,
+          "players": [
+           {
+            "team": "Prism Divide",
+            "name": "XueQiii",
+            "k": 25,
+            "a": 0,
+            "d": 9,
+            "mvp": 5,
+            "score": 64,
+            "slug": "xueqiii",
+            "iso": "sg"
+           },
+           {
+            "team": "Prism Divide",
+            "name": "Syrrith",
+            "k": 18,
+            "a": 2,
+            "d": 9,
+            "mvp": 3,
+            "score": 49,
+            "slug": "syrrith",
+            "iso": "my"
+           },
+           {
+            "team": "Prism Divide",
+            "name": "sayupurin",
+            "k": 15,
+            "a": 1,
+            "d": 13,
+            "mvp": 1,
+            "score": 36,
+            "slug": "sayupurin",
+            "iso": "hk"
+           },
+           {
+            "team": "Prism Divide",
+            "name": "AkanersVT",
+            "k": 14,
+            "a": 2,
+            "d": 12,
+            "mvp": 2,
+            "score": 33,
+            "slug": "akanersvt",
+            "iso": "sg"
+           },
+           {
+            "team": "Prism Divide",
+            "name": "Codiant",
+            "k": 12,
+            "a": 0,
+            "d": 12,
+            "mvp": 2,
+            "score": 29,
+            "slug": "codiant",
+            "iso": "kz"
+           },
+           {
+            "team": "entity",
+            "name": "yerm",
+            "k": 16,
+            "a": 0,
+            "d": 17,
+            "mvp": 2,
+            "score": 36,
+            "slug": "yerm",
+            "iso": "my"
+           },
+           {
+            "team": "entity",
+            "name": "Mike",
+            "k": 12,
+            "a": 1,
+            "d": 15,
+            "mvp": 2,
+            "score": 35,
+            "slug": "mike",
+            "iso": "sg"
+           },
+           {
+            "team": "entity",
+            "name": "xJavyz",
+            "k": 14,
+            "a": 1,
+            "d": 19,
+            "mvp": 1,
+            "score": 33,
+            "slug": "xjavyz",
+            "iso": "my"
+           },
+           {
+            "team": "entity",
+            "name": "Ryker_Sterling",
+            "k": 8,
+            "a": 1,
+            "d": 16,
+            "mvp": 1,
+            "score": 17,
+            "slug": "ryker-sterling",
+            "iso": "sg"
+           },
+           {
+            "team": "entity",
+            "name": "Xrela",
+            "k": 5,
+            "a": 0,
+            "d": 17,
+            "mvp": 0,
+            "score": 16,
+            "slug": "xrela",
+            "iso": "sg"
+           }
+          ]
+         }
+        ]
+       }
       },
       {
        "i": 18,
@@ -297379,14 +297499,135 @@
          "i": 17,
          "a": "Prism Divide",
          "b": "entity",
-         "sa": null,
-         "sb": null,
-         "w": 0,
+         "sa": 13,
+         "sb": 6,
+         "w": 1,
          "aTeam": null,
          "bTeam": "entity",
          "bo": 1,
          "tp": false,
-         "ts": null
+         "ts": 1789816818,
+         "stats": {
+          "maps": [
+           {
+            "map": "Vertigo",
+            "scoreA": 13,
+            "scoreB": 6,
+            "players": [
+             {
+              "team": "Prism Divide",
+              "name": "XueQiii",
+              "k": 25,
+              "a": 0,
+              "d": 9,
+              "mvp": 5,
+              "score": 64,
+              "slug": "xueqiii",
+              "iso": "sg"
+             },
+             {
+              "team": "Prism Divide",
+              "name": "Syrrith",
+              "k": 18,
+              "a": 2,
+              "d": 9,
+              "mvp": 3,
+              "score": 49,
+              "slug": "syrrith",
+              "iso": "my"
+             },
+             {
+              "team": "Prism Divide",
+              "name": "sayupurin",
+              "k": 15,
+              "a": 1,
+              "d": 13,
+              "mvp": 1,
+              "score": 36,
+              "slug": "sayupurin",
+              "iso": "hk"
+             },
+             {
+              "team": "Prism Divide",
+              "name": "AkanersVT",
+              "k": 14,
+              "a": 2,
+              "d": 12,
+              "mvp": 2,
+              "score": 33,
+              "slug": "akanersvt",
+              "iso": "sg"
+             },
+             {
+              "team": "Prism Divide",
+              "name": "Codiant",
+              "k": 12,
+              "a": 0,
+              "d": 12,
+              "mvp": 2,
+              "score": 29,
+              "slug": "codiant",
+              "iso": "kz"
+             },
+             {
+              "team": "entity",
+              "name": "yerm",
+              "k": 16,
+              "a": 0,
+              "d": 17,
+              "mvp": 2,
+              "score": 36,
+              "slug": "yerm",
+              "iso": "my"
+             },
+             {
+              "team": "entity",
+              "name": "Mike",
+              "k": 12,
+              "a": 1,
+              "d": 15,
+              "mvp": 2,
+              "score": 35,
+              "slug": "mike",
+              "iso": "sg"
+             },
+             {
+              "team": "entity",
+              "name": "xJavyz",
+              "k": 14,
+              "a": 1,
+              "d": 19,
+              "mvp": 1,
+              "score": 33,
+              "slug": "xjavyz",
+              "iso": "my"
+             },
+             {
+              "team": "entity",
+              "name": "Ryker_Sterling",
+              "k": 8,
+              "a": 1,
+              "d": 16,
+              "mvp": 1,
+              "score": 17,
+              "slug": "ryker-sterling",
+              "iso": "sg"
+             },
+             {
+              "team": "entity",
+              "name": "Xrela",
+              "k": 5,
+              "a": 0,
+              "d": 17,
+              "mvp": 0,
+              "score": 16,
+              "slug": "xrela",
+              "iso": "sg"
+             }
+            ]
+           }
+          ]
+         }
         },
         {
          "i": 18,
@@ -297435,7 +297676,7 @@
        "rank": 1,
        "name": "Prism Divide",
        "teamSlug": null,
-       "w": 3,
+       "w": 4,
        "l": 1
       },
       {
@@ -297447,29 +297688,29 @@
       },
       {
        "rank": 3,
-       "name": "entity",
-       "teamSlug": "entity",
-       "w": 2,
-       "l": 1
-      },
-      {
-       "rank": 4,
        "name": "Divide&Conquer",
        "teamSlug": "divide-conquer",
        "w": 2,
        "l": 2
       },
       {
-       "rank": 5,
+       "rank": 4,
        "name": "Ukiyo",
        "teamSlug": "ukiyo",
        "w": 2,
        "l": 2
       },
       {
-       "rank": 6,
+       "rank": 5,
        "name": "Radiant Coil",
        "teamSlug": null,
+       "w": 2,
+       "l": 2
+      },
+      {
+       "rank": 6,
+       "name": "entity",
+       "teamSlug": "entity",
        "w": 2,
        "l": 2
       },
@@ -308076,15 +308317,15 @@
    "finalStandings": [
     {
      "rank": 1,
-     "name": "Flood Flashers",
-     "teamSlug": "flood-flashers",
+     "name": "Prism Divide",
+     "teamSlug": null,
      "result": "Group Stage",
      "tie": true
     },
     {
      "rank": 2,
-     "name": "Prism Divide",
-     "teamSlug": null,
+     "name": "Flood Flashers",
+     "teamSlug": "flood-flashers",
      "result": "Group Stage",
      "tie": true
     },
@@ -308097,22 +308338,22 @@
     },
     {
      "rank": 4,
+     "name": "entity",
+     "teamSlug": "entity",
+     "result": "Group Stage",
+     "tie": true
+    },
+    {
+     "rank": 5,
      "name": "Radiant Coil",
      "teamSlug": null,
      "result": "Group Stage",
      "tie": true
     },
     {
-     "rank": 5,
+     "rank": 6,
      "name": "Ukiyo",
      "teamSlug": "ukiyo",
-     "result": "Group Stage",
-     "tie": true
-    },
-    {
-     "rank": 6,
-     "name": "entity",
-     "teamSlug": "entity",
      "result": "Group Stage",
      "tie": true
     },
@@ -309898,10 +310139,10 @@
        "captain": false
       },
       {
-       "hist": "Loonatic",
-       "name": "Loonatic",
-       "slug": "loonatic",
-       "iso": "my",
+       "hist": "mond33__",
+       "name": "mond33__",
+       "slug": "mond33",
+       "iso": "sg",
        "captain": false
       },
       {
@@ -310875,17 +311116,17 @@
      "teamSlug": "unforgettable",
      "players": [
       {
-       "hist": "WO4TK",
-       "name": "WO4TK",
-       "slug": "wo4tk",
-       "iso": "sg",
-       "captain": false
-      },
-      {
        "hist": "_kellyxleox_",
        "name": "_kellyxleox_",
        "slug": "kellyxleox",
        "iso": "my",
+       "captain": false
+      },
+      {
+       "hist": "WO4TK",
+       "name": "WO4TK",
+       "slug": "wo4tk",
+       "iso": "sg",
        "captain": false
       },
       {
@@ -311695,16 +311936,16 @@
      "teamSlug": "raven-song",
      "players": [
       {
-       "hist": "CRex",
-       "name": "CRex",
-       "slug": "crex",
+       "hist": "ebi",
+       "name": "ebi",
+       "slug": "ebi",
        "iso": "my",
        "captain": false
       },
       {
-       "hist": "ebi",
-       "name": "ebi",
-       "slug": "ebi",
+       "hist": "CRex",
+       "name": "CRex",
+       "slug": "crex",
        "iso": "my",
        "captain": false
       },
@@ -393999,6 +394240,30 @@
  "transfers": [
   {
    "type": "transfer",
+   "player": "Loonatic",
+   "playerSlug": "loonatic",
+   "iso": "my",
+   "fromTeam": "Feral Instinct",
+   "fromSlug": null,
+   "toTeam": "Free agent",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-10-05"
+  },
+  {
+   "type": "transfer",
+   "player": "mond33__",
+   "playerSlug": "mond33",
+   "iso": "sg",
+   "fromTeam": "Free agent",
+   "fromSlug": null,
+   "toTeam": "Feral Instinct",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-10-05"
+  },
+  {
+   "type": "transfer",
    "player": "Aranionja",
    "playerSlug": "aranionja",
    "iso": "sg",
@@ -395310,8 +395575,8 @@
    "player": "mond33__",
    "playerSlug": "mond33",
    "iso": "sg",
-   "fromTeam": "Aimpunch",
-   "fromSlug": "aimpunch",
+   "fromTeam": "Feral Instinct",
+   "fromSlug": null,
    "toTeam": "SG Squad 38",
    "toSlug": null,
    "toPro": false,
@@ -398646,7 +398911,7 @@
    "player": "Loonatic",
    "playerSlug": "loonatic",
    "iso": "my",
-   "fromTeam": "Feral Instinct",
+   "fromTeam": "Gloria Mundi",
    "fromSlug": null,
    "toTeam": "MY Squad 6",
    "toSlug": null,
@@ -399381,6 +399646,18 @@
    "fromTeam": "Null-Point",
    "fromSlug": null,
    "toTeam": "Radiant Coil",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "mond33__",
+   "playerSlug": "mond33",
+   "iso": "sg",
+   "fromTeam": "Aimpunch",
+   "fromSlug": "aimpunch",
+   "toTeam": "Feral Instinct",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-01"
@@ -400619,18 +400896,6 @@
    "toTeam": "Eiromancers",
    "toSlug": "eiromancers",
    "toPro": true,
-   "date": "2026-09-01"
-  },
-  {
-   "type": "transfer",
-   "player": "Loonatic",
-   "playerSlug": "loonatic",
-   "iso": "my",
-   "fromTeam": "Gloria Mundi",
-   "fromSlug": null,
-   "toTeam": "Feral Instinct",
-   "toSlug": null,
-   "toPro": false,
    "date": "2026-09-01"
   },
   {
@@ -427287,46 +427552,46 @@
      "w": 0,
      "l": 1,
      "g": 0,
-     "wr": 0.25,
+     "wr": 0.312,
      "real": false,
      "est": true,
-     "estN": 5,
-     "estMaps": 10
+     "estN": 4,
+     "estMaps": 9
     },
     "Tuscan": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.75,
+     "wr": 0.6,
      "real": false,
      "est": true,
-     "estN": 4,
-     "estMaps": 4
+     "estN": 5,
+     "estMaps": 6
     },
     "Vertigo": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.556,
+     "wr": 0.833,
      "real": false,
      "est": true,
-     "estN": 3,
-     "estMaps": 5
+     "estN": 2,
+     "estMaps": 4
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.5,
+     "wr": 0.375,
      "real": false,
      "est": true,
-     "estN": 3,
-     "estMaps": 5
+     "estN": 4,
+     "estMaps": 8
     }
    },
    "bestMaps": [
-    "Tuscan",
-    "Vertigo"
+    "Vertigo",
+    "Tuscan"
    ],
    "worstMaps": [
     "Cache",
@@ -427457,7 +427722,7 @@
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.372,
+     "wr": 0.376,
      "real": false,
      "est": false
     },
@@ -427470,31 +427735,31 @@
      "est": false
     },
     "Vertigo": {
-     "w": 0,
+     "w": 1,
      "l": 0,
      "g": 0,
-     "wr": 0.0,
+     "wr": 0.9,
      "real": false,
      "est": true,
-     "estN": 1,
-     "estMaps": 1
+     "estN": 5,
+     "estMaps": 6
     },
     "Anubis": {
      "w": 0,
      "l": 0,
      "g": 0,
-     "wr": 0.327,
+     "wr": 0.332,
      "real": false,
      "est": false
     }
    },
    "bestMaps": [
     "Tuscan",
-    "Mirage"
+    "Vertigo"
    ],
    "worstMaps": [
-    "Vertigo",
-    "Inferno"
+    "Inferno",
+    "Dust2"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
