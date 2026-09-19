@@ -189,3 +189,7 @@ bot_add_ct "SYZ Xyrren"; bot_add_ct "SYZ leachubby"; bot_add_ct "SYZ akuluvr"; b
 Prism Divide (Bot Pro Cup 2026) [group winners, promoted to pro]
 bot_add "PD Codiant"; bot_add "PD AkanersVT"; bot_add "PD XueQiii"; bot_add "PD Syrrith"; bot_add "PD sayupurin";
 bot_add_ct "PD Codiant"; bot_add_ct "PD AkanersVT"; bot_add_ct "PD XueQiii"; bot_add_ct "PD Syrrith"; bot_add_ct "PD sayupurin";
+
+Nightshade (Bot Pro Cup 2026) [playoff qualifiers, promoted to pro]
+bot_add "NS yinnzx"; bot_add "NS JigglyPingu"; bot_add "NS Kyu"; bot_add "NS ItzMaigo"; bot_add "NS KydaSana";
+bot_add_ct "NS yinnzx"; bot_add_ct "NS JigglyPingu"; bot_add_ct "NS Kyu"; bot_add_ct "NS ItzMaigo"; bot_add_ct "NS KydaSana";
