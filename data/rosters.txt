@@ -26,8 +26,8 @@ bot_add "aTL NipNip"; bot_add "aTL BaBaYaGa"; bot_add "aTL EfreetsZ"; bot_add "a
 bot_add_ct "aTL NipNip"; bot_add_ct "aTL BaBaYaGa"; bot_add_ct "aTL EfreetsZ"; bot_add_ct "aTL awtoh"; bot_add_ct "aTL Anndreika";
 
 Aimpunch ☆ (BPL1 Winners) [xmeijixx switch to baililmao, yuuki_ps switched to chiai]
-bot_add "AP Sketch"; bot_add "AP [Idiot] Angelcrutcher"; bot_add "AP mond33__"; bot_add "AP balililmao"; bot_add "AP Chiai Fujikawa";
-bot_add_ct "AP Sketch"; bot_add_ct "AP [Idiot] Angelcrutcher"; bot_add_ct "AP mond33__"; bot_add_ct "AP balililmao"; bot_add_ct "AP Chiai Fujikawa";
+bot_add "AP Sketch"; bot_add "AP [Idiot] Angelcrutcher"; bot_add "AP Aranionja"; bot_add "AP balililmao"; bot_add "AP Chiai Fujikawa";
+bot_add_ct "AP Sketch"; bot_add_ct "AP [Idiot] Angelcrutcher"; bot_add_ct "AP Aranionja"; bot_add_ct "AP balililmao"; bot_add_ct "AP Chiai Fujikawa";
 
 Alcheministry (Bot Pro Cup 2023)
 bot_add "Alc NekoSoji"; bot_add "Alc tanykeat"; bot_add "Alc d.chong"; bot_add "Alc EviKuroneko"; bot_add "Alc hikopiko_"
