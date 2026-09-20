@@ -2873,10 +2873,21 @@ function renderTournament(slug){
         </div>`).join("");
       return `<div class="bround"><div class="brtitle">${esc(rd.title)}</div>${ms}</div>`;
     }).join("")}</div>`;
-  const stageStandings = st => st.standings.length ? `<div class="tablewrap" style="max-width:460px;margin-bottom:12px"><table class="data">
+  const stageStandings = st => {
+    if(!st.standings.length) return '';
+    // once every match in the group is decided, the top 2 have booked their playoff spots
+    const allM = (st.rounds||[]).flatMap(rd=>rd.matches||[]);
+    const done = allM.length>0 && allM.every(m=> m.w===1 || m.w===2);
+    const rows = st.standings.map(s=>{
+      const adv = done && s.rank<=2;
+      return `<tr class="${adv?'grp-adv':''}"><td class="rankcol">${s.rank}</td>
+        <td class="name-cell">${nameOrTeamCrest(s.name,s.teamSlug)}${adv?'<span class="grp-q" title="Qualified for the playoffs">Q</span>':''}</td>
+        <td class="mono">${s.w}</td><td class="mono">${s.l}</td></tr>`;
+    }).join("");
+    return `<div class="tablewrap" style="max-width:460px;margin-bottom:12px"><table class="data">
       <thead><tr><th class="no-sort rankcol">#</th><th class="no-sort">Team</th><th class="no-sort">W</th><th class="no-sort">L</th></tr></thead>
-      <tbody>${st.standings.map(s=>`<tr><td class="rankcol">${s.rank}</td><td class="name-cell">${nameOrTeamCrest(s.name,s.teamSlug)}</td>
-        <td class="mono">${s.w}</td><td class="mono">${s.l}</td></tr>`).join("")}</tbody></table></div>` : '';
+      <tbody>${rows}</tbody></table>${done?'<div class="grp-adv-note">Top 2 advance to the playoffs</div>':''}</div>`;
+  };
   const fmtLabel = f => ({single_elim:"Single Elimination",round_robin:"Round Robin",swiss:"Swiss"}[f]||f);
 
   let bracketBlock;

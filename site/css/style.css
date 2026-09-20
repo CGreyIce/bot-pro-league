@@ -874,6 +874,11 @@ textarea.adm-in{resize:vertical;font-family:inherit}
 .vt-ba-copy{margin-left:auto;cursor:pointer;font-size:12px;font-weight:600;padding:4px 12px;border-radius:6px;border:1px solid var(--border);background:var(--bg);color:var(--text)}
 .vt-ba-copy:hover{border-color:var(--accent);color:var(--accent)}
 .vt-ba-text{width:100%;margin-top:8px;font-family:monospace;font-size:11px;line-height:1.5;background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:7px 9px;resize:vertical;white-space:pre}
+/* group qualification highlight */
+.data tr.grp-adv td{background:rgba(61,220,132,.12)}
+.data tr.grp-adv td:first-child{box-shadow:inset 3px 0 0 var(--good,#3ddc84)}
+.grp-q{display:inline-block;margin-left:7px;font-family:'Chakra Petch';font-weight:700;font-size:10px;line-height:1;padding:3px 6px;border-radius:4px;background:rgba(61,220,132,.18);color:var(--good,#3ddc84);vertical-align:middle}
+.grp-adv-note{font-size:11px;color:var(--good,#3ddc84);margin-top:5px;font-weight:600}
 /* final standings */
 .fs-wrap{max-width:520px}
 .fs-table td{padding:7px 10px}
