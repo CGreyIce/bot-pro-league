@@ -197,3 +197,7 @@ bot_add_ct "NS yinnzx"; bot_add_ct "NS JigglyPingu"; bot_add_ct "NS Kyu"; bot_ad
 Mourningstar (Bot Pro Cup 2026) [playoff qualifiers, promoted to pro]
 bot_add "MouS arcimoon"; bot_add "MouS TearsofDeath"; bot_add "MouS cherri_vt"; bot_add "MouS EXaCT"; bot_add "MouS Jira Jisaki";
 bot_add_ct "MouS arcimoon"; bot_add_ct "MouS TearsofDeath"; bot_add_ct "MouS cherri_vt"; bot_add_ct "MouS EXaCT"; bot_add_ct "MouS Jira Jisaki";
+
+Lunar Cadence (Bot Pro Cup 2026) [playoff qualifiers, promoted to pro]
+bot_add "LuCa briant"; bot_add "LuCa Eris Suzukami"; bot_add "LuCa Tsumugi Kokage"; bot_add "LuCa Shiranami Ramune"; bot_add "LuCa Tatsumaki Chise";
+bot_add_ct "LuCa briant"; bot_add_ct "LuCa Eris Suzukami"; bot_add_ct "LuCa Tsumugi Kokage"; bot_add_ct "LuCa Shiranami Ramune"; bot_add_ct "LuCa Tatsumaki Chise";

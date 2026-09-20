@@ -8732,6 +8732,12 @@
      "l": 0
     },
     {
+     "opp": "lunar-cadence",
+     "oppName": "Lunar Cadence",
+     "w": 0,
+     "l": 1
+    },
+    {
      "opp": "opal",
      "oppName": "Opal",
      "w": 0,
@@ -8876,7 +8882,7 @@
      "event": "Bot Pro Cup 2026",
      "eventSlug": "bot-pro-cup-2026",
      "opp": "Lunar Cadence",
-     "oppSlug": null,
+     "oppSlug": "lunar-cadence",
      "result": "L",
      "sf": 11,
      "sa": 13
@@ -84725,6 +84731,12 @@
      "l": 0
     },
     {
+     "opp": "lunar-cadence",
+     "oppName": "Lunar Cadence",
+     "w": 0,
+     "l": 1
+    },
+    {
      "opp": "aetherline",
      "oppName": "Aetherline",
      "w": 0,
@@ -84827,7 +84839,7 @@
      "event": "Bot Pro Cup 2026",
      "eventSlug": "bot-pro-cup-2026",
      "opp": "Lunar Cadence",
-     "oppSlug": null,
+     "oppSlug": "lunar-cadence",
      "result": "L",
      "sf": 6,
      "sa": 13
@@ -97396,7 +97408,7 @@
       "2026"
      ],
      "nowTeam": "Lunar Cadence",
-     "nowTeamSlug": null
+     "nowTeamSlug": "lunar-cadence"
     },
     {
      "slug": "shiranami-ramune",
@@ -97407,7 +97419,7 @@
       "2026"
      ],
      "nowTeam": "Lunar Cadence",
-     "nowTeamSlug": null
+     "nowTeamSlug": "lunar-cadence"
     },
     {
      "slug": "eris-suzukami",
@@ -97417,7 +97429,7 @@
       "2026"
      ],
      "nowTeam": "Lunar Cadence",
-     "nowTeamSlug": null
+     "nowTeamSlug": "lunar-cadence"
     },
     {
      "slug": null,
@@ -99394,6 +99406,1837 @@
    }
   },
   {
+   "name": "Lunar Cadence",
+   "slug": "lunar-cadence",
+   "key": "lunarcadence",
+   "logo": "assets/teams/Lunar Cadence.png",
+   "map_wins": 4,
+   "map_losses": 1,
+   "map_ties": 0,
+   "total_maps": 5,
+   "wlr": 0.8,
+   "a_tier_wins": 0,
+   "s_tier_wins": 0,
+   "major_wins": 0,
+   "major_playoffs": 0,
+   "events_played": 1,
+   "podiums": 0,
+   "major_podiums": 0,
+   "rank_points": 20,
+   "tag": "LuCa",
+   "origin": "Bot Pro Cup 2026",
+   "notes": "playoff qualifiers, promoted to pro",
+   "star": false,
+   "playoffs": {},
+   "rank": 45,
+   "mapStats": {
+    "Mirage": {
+     "w": 1,
+     "l": 0,
+     "g": 1,
+     "wr": 0.646,
+     "real": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.735,
+     "real": false
+    },
+    "Inferno": {
+     "w": 2,
+     "l": 0,
+     "g": 2,
+     "wr": 1.0,
+     "real": true
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.85,
+     "real": false
+    },
+    "Tuscan": {
+     "w": 1,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
+     "real": true
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.844,
+     "real": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.746,
+     "real": false
+    }
+   },
+   "bestMaps": [
+    "Inferno",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Mirage"
+   ],
+   "roster": [
+    {
+     "name": "briant",
+     "team": "Lunar Cadence",
+     "pool": "pro",
+     "kills": 302,
+     "assists": 37,
+     "deaths": 273,
+     "mvp": 57,
+     "kdr": 1.11,
+     "wins": 7,
+     "losses": 10,
+     "winrate": 0.412,
+     "ot": 5,
+     "role": "IGL",
+     "maps": 17,
+     "orig_rank": "Silver",
+     "orig_level": "Level 3",
+     "orig_rating": 1192.0,
+     "slug": "briant",
+     "amateurOrigin": true,
+     "nat": "Singapore",
+     "iso": "sg",
+     "provisional": false,
+     "rating": 1.078,
+     "ratingPoints": 1455,
+     "tier": "Master",
+     "level": 7,
+     "kpm": 17.8,
+     "rankDelta": 0,
+     "soloStats": {
+      "kills": 106,
+      "deaths": 110,
+      "assists": 20,
+      "mvp": 13,
+      "wins": 2,
+      "losses": 5,
+      "maps": 7,
+      "kdr": 0.96,
+      "winrate": 0.286,
+      "rating": 0.941,
+      "ratingPoints": 921,
+      "tier": "Bronze",
+      "level": 4,
+      "soloRank": 202,
+      "soloTotal": 239,
+      "rankDelta": 0,
+      "provisional": false
+     },
+     "bio": "briant is a Singaporean in-game leader and an Level 7 free agent still searching for a settled roster.",
+     "gender": "M",
+     "teamHistory": [
+      {
+       "team": "Fluff N' Stuff",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "Azukihoshi",
+         "name": "yumezukiyomi",
+         "slug": "yumezukiyomi",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "m0wmeow",
+         "name": "m0wmeow",
+         "slug": "m0wmeow",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "briant",
+         "name": "briant",
+         "slug": "briant",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "tiger.lark",
+         "name": "tiger.lark",
+         "slug": "tiger-lark",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "bluenerd8",
+         "name": "bluenerd8",
+         "slug": "bluenerd8",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "L3gends",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2021"
+       ],
+       "roster": [
+        {
+         "hist": "briant",
+         "name": "briant",
+         "slug": "briant",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "kn",
+         "name": "kn",
+         "slug": "kn",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "winda",
+         "name": "winda",
+         "slug": "winda",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Nutzeru",
+         "name": "Nutzeru",
+         "slug": "nutzeru",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "caarrietan",
+         "name": "caarrietan",
+         "slug": "caarrietan",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "StrikeForce",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2022"
+       ],
+       "roster": [
+        {
+         "hist": "jhjj80",
+         "name": "jhjj80",
+         "slug": "jhjj80",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "JStarWolf",
+         "name": "JStarWolf",
+         "slug": "jstarwolf",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "S.GT",
+         "name": "S.GT",
+         "slug": "s-gt",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Kyan",
+         "name": "Kyan",
+         "slug": "kyan",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "briant",
+         "name": "briant",
+         "slug": "briant",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Dragon's Breath",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2022"
+       ],
+       "roster": [
+        {
+         "hist": "Laburi",
+         "name": "Laburi",
+         "slug": "laburi",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "drip",
+         "name": "perk",
+         "slug": "perk",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "briant",
+         "name": "briant",
+         "slug": "briant",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "thehidz",
+         "name": "thehidz",
+         "slug": "thehidz",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "m0wmeow",
+         "name": "m0wmeow",
+         "slug": "m0wmeow",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Marauders of Oblivion",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2022"
+       ],
+       "roster": [
+        {
+         "hist": "Wellson111",
+         "name": "Wellson111",
+         "slug": "wellson111",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "sneakyyyyy",
+         "name": "sneakyyyyy",
+         "slug": "sneakyyyyy",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Nifela",
+         "name": "Nifela",
+         "slug": "nifela",
+         "iso": "us",
+         "captain": false
+        },
+        {
+         "hist": "kenzieyii",
+         "name": "kenzieyii",
+         "slug": "kenzieyii",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "briant",
+         "name": "briant",
+         "slug": "briant",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Nameless",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2023"
+       ],
+       "roster": [
+        {
+         "hist": "Anony",
+         "name": "Anony",
+         "slug": "anony",
+         "iso": "th",
+         "captain": true
+        },
+        {
+         "hist": "lilraxxx",
+         "name": "lilraxxx",
+         "slug": "lilraxxx",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "RubyyVT",
+         "name": "FeatBri",
+         "slug": "featbri",
+         "iso": "us",
+         "captain": false
+        },
+        {
+         "hist": "briant",
+         "name": "briant",
+         "slug": "briant",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "notccillia",
+         "name": "notccillia",
+         "slug": "notccillia",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Antimatter",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2023"
+       ],
+       "roster": [
+        {
+         "hist": "AcroBlaze",
+         "name": "AcroBlaze",
+         "slug": "acroblaze",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "briant",
+         "name": "briant",
+         "slug": "briant",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Asterisks",
+         "name": "Asterisks",
+         "slug": "asterisks",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "HiguVT",
+         "name": "HiguVT",
+         "slug": "higuvt",
+         "iso": "au",
+         "captain": false
+        },
+        {
+         "hist": "akuluvr",
+         "name": "akuluvr",
+         "slug": "akuluvr",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Bardic Troupe",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2023"
+       ],
+       "roster": [
+        {
+         "hist": "Xyrren",
+         "name": "Xyrren",
+         "slug": "xyrren",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "okjustsmd",
+         "name": "okjustsmd",
+         "slug": "okjustsmd",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "briant",
+         "name": "briant",
+         "slug": "briant",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "akuluvr",
+         "name": "akuluvr",
+         "slug": "akuluvr",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "KurmitSuicidal",
+         "name": "lukedefabio",
+         "slug": "lukedefabio",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "PoubleDump",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2023"
+       ],
+       "roster": [
+        {
+         "hist": "kokushi_vampir",
+         "name": "kokushi_vampir",
+         "slug": "kokushi-vampir",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "nyxcatto",
+         "name": "nyxcatto",
+         "slug": "nyxcatto",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "briant",
+         "name": "briant",
+         "slug": "briant",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Laurel",
+         "name": "Laurel",
+         "slug": "laurel",
+         "iso": "ph",
+         "captain": false
+        },
+        {
+         "hist": "dla.wo",
+         "name": "dla.wo",
+         "slug": "dla-wo",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Kabar",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2024"
+       ],
+       "roster": [
+        {
+         "hist": "kyomikoo",
+         "name": "kyomikoo",
+         "slug": "kyomikoo",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "awtoh",
+         "name": "awtoh",
+         "slug": "awtoh",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "briant",
+         "name": "briant",
+         "slug": "briant",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "afayctionate",
+         "name": "afayctionate",
+         "slug": "afayctionate",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "rebebx",
+         "name": "rebebx",
+         "slug": "rebebx",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Project Jellyfish",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2025"
+       ],
+       "roster": [
+        {
+         "hist": "Yarimell",
+         "name": "Yarimell",
+         "slug": "yarimell",
+         "iso": "my",
+         "captain": true
+        },
+        {
+         "hist": "Ansel",
+         "name": "Just_Ansel",
+         "slug": "just-ansel",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "briant",
+         "name": "briant",
+         "slug": "briant",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "thehidz",
+         "name": "thehidz",
+         "slug": "thehidz",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "YinghuVT",
+         "name": "azumiying",
+         "slug": "azumiying",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Gridlocked",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Vyphogrid",
+         "name": "Vyphogrid",
+         "slug": "vyphogrid",
+         "iso": "ph",
+         "captain": false
+        },
+        {
+         "hist": "Yaekia",
+         "name": "Yaekia",
+         "slug": "yaekia",
+         "iso": "au",
+         "captain": false
+        },
+        {
+         "hist": "CryingNutz",
+         "name": "CryingNutz",
+         "slug": "cryingnutz",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "ErineRurie",
+         "name": "ErineRurie",
+         "slug": "erinerurie",
+         "iso": "my",
+         "captain": false
+        },
+        {
+         "hist": "briant",
+         "name": "briant",
+         "slug": "briant",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Pentaction",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "briant",
+         "name": "briant",
+         "slug": "briant",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Luneforrune",
+         "name": "Luneforrune",
+         "slug": "luneforrune",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "akuluvr",
+         "name": "akuluvr",
+         "slug": "akuluvr",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "obvMX",
+         "name": "obvMX",
+         "slug": "obvmx",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "SachiMizora",
+         "name": "SachiMizora",
+         "slug": "sachimizora",
+         "iso": "au",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Stars Bore Witness",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "rattecs",
+         "name": "rattecs",
+         "slug": "rattecs",
+         "iso": "fi",
+         "captain": false
+        },
+        {
+         "hist": "twentyrosie",
+         "name": "twentyrosie",
+         "slug": "twentyrosie",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "briant",
+         "name": "briant",
+         "slug": "briant",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Nataleste",
+         "name": "Nataleste",
+         "slug": "nataleste",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "bodexx",
+         "name": "bodexx",
+         "slug": "bodexx",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Lunar Cadence",
+       "teamSlug": "lunar-cadence",
+       "isPro": true,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "briant",
+         "name": "briant",
+         "slug": "briant",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Eris Suzukami",
+         "name": "Eris Suzukami",
+         "slug": "eris-suzukami",
+         "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "Tsumugi Kokage",
+         "name": "Tsumugi Kokage",
+         "slug": "tsumugi-kokage",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Shiranami Ramune",
+         "name": "Shiranami Ramune",
+         "slug": "shiranami-ramune",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Tatsumaki Chise",
+         "name": "Tatsumaki Chise",
+         "slug": "tatsumaki-chise",
+         "iso": "jp",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "SG Squad 28",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "briant",
+         "name": "briant",
+         "slug": "briant",
+         "iso": "sg",
+         "captain": true
+        },
+        {
+         "hist": "Jeribean",
+         "name": "Jeribean",
+         "slug": "jeribean",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "lumpydayo",
+         "name": "lumpydayo",
+         "slug": "lumpydayo",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "KrinoJ",
+         "name": "KrinoJ",
+         "slug": "krinoj",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "TiF2",
+         "name": "TiF2",
+         "slug": "tif2",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      }
+     ],
+     "mvpAwards": [
+      {
+       "event": "Bot Pro Cup 2026",
+       "slug": "bot-pro-cup-2026",
+       "year": "2026"
+      }
+     ],
+     "titles": [
+      {
+       "event": "BPL Challengers Stage 2024",
+       "slug": "BPLChalS2024",
+       "tier": "s",
+       "tierLabel": "S-Tier",
+       "year": "2024",
+       "team": "Kabar"
+      }
+     ]
+    },
+    {
+     "name": "Eris Suzukami",
+     "team": "Lunar Cadence",
+     "pool": "pro",
+     "kills": 530,
+     "assists": 70,
+     "deaths": 494,
+     "mvp": 74,
+     "kdr": 1.07,
+     "wins": 16,
+     "losses": 18,
+     "winrate": 0.471,
+     "ot": 3,
+     "role": "Rifler",
+     "maps": 34,
+     "orig_rank": "Iron",
+     "orig_level": "Level 3",
+     "orig_rating": 1258.0,
+     "slug": "eris-suzukami",
+     "nat": "Korea",
+     "iso": "kr",
+     "provisional": false,
+     "rating": 1.019,
+     "ratingPoints": 1223,
+     "tier": "Emerald",
+     "level": 6,
+     "kpm": 15.6,
+     "rankDelta": 0,
+     "soloStats": {
+      "kills": 242,
+      "deaths": 219,
+      "assists": 28,
+      "mvp": 36,
+      "wins": 8,
+      "losses": 5,
+      "maps": 13,
+      "kdr": 1.11,
+      "winrate": 0.615,
+      "rating": 1.068,
+      "ratingPoints": 1414,
+      "tier": "Master",
+      "level": 7,
+      "soloRank": 31,
+      "soloTotal": 239,
+      "rankDelta": 0,
+      "provisional": false
+     },
+     "bio": "Eris Suzukami is an Level 6 rifler for Astral Bloom, a Japanese fragger whose 1.07 K/D is a bright spot on a struggling team.",
+     "gender": "F",
+     "teamHistory": [
+      {
+       "team": "Astral Bloom",
+       "teamSlug": "astral-bloom",
+       "isPro": true,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Tachibana Hinano",
+         "name": "Tachibana Hinano",
+         "slug": "tachibana-hinano",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Remia Aotsuki",
+         "name": "Remia Aotsuki",
+         "slug": "remia-aotsuki",
+         "iso": "nl",
+         "captain": false
+        },
+        {
+         "hist": "Eris Suzukami",
+         "name": "Eris Suzukami",
+         "slug": "eris-suzukami",
+         "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "Tsumugi Kokage",
+         "name": "Tsumugi Kokage",
+         "slug": "tsumugi-kokage",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Shiranami Ramune",
+         "name": "Shiranami Ramune",
+         "slug": "shiranami-ramune",
+         "iso": "jp",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Lunar Cadence",
+       "teamSlug": "lunar-cadence",
+       "isPro": true,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "briant",
+         "name": "briant",
+         "slug": "briant",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Eris Suzukami",
+         "name": "Eris Suzukami",
+         "slug": "eris-suzukami",
+         "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "Tsumugi Kokage",
+         "name": "Tsumugi Kokage",
+         "slug": "tsumugi-kokage",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Shiranami Ramune",
+         "name": "Shiranami Ramune",
+         "slug": "shiranami-ramune",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Tatsumaki Chise",
+         "name": "Tatsumaki Chise",
+         "slug": "tatsumaki-chise",
+         "iso": "jp",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Team Korea",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "byeolyuna",
+         "name": "byeolyuna",
+         "slug": "byeolyuna-solo",
+         "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "Eris Suzukami",
+         "name": "Eris Suzukami",
+         "slug": "eris-suzukami",
+         "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "GreatMoonAroma",
+         "name": "GreatMoonAroma",
+         "slug": "greatmoonaroma-solo",
+         "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "Narin Mikure",
+         "name": "Narin Mikure",
+         "slug": "narin-mikure",
+         "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "Nekota Tsuna",
+         "name": "Nekota Tsuna",
+         "slug": "nekota-tsuna",
+         "iso": "kr",
+         "captain": true
+        }
+       ]
+      }
+     ],
+     "podiums": [
+      {
+       "m": "s",
+       "event": "BPL Nations Cup 2026",
+       "slug": "bpl-nations-cup-2026",
+       "tier": "s",
+       "tierLabel": "S-Tier",
+       "year": "2026",
+       "team": "Team Korea"
+      }
+     ]
+    },
+    {
+     "name": "Tsumugi Kokage",
+     "team": "Lunar Cadence",
+     "pool": "pro",
+     "kills": 569,
+     "assists": 110,
+     "deaths": 618,
+     "mvp": 71,
+     "kdr": 0.92,
+     "wins": 15,
+     "losses": 23,
+     "winrate": 0.395,
+     "ot": 6,
+     "role": "Rifler",
+     "maps": 38,
+     "orig_rank": "Bronze",
+     "orig_level": "Level 3",
+     "orig_rating": 1265.0,
+     "slug": "tsumugi-kokage",
+     "nat": "Japan",
+     "iso": "jp",
+     "provisional": false,
+     "rating": 0.977,
+     "ratingPoints": 1060,
+     "tier": "Gold",
+     "level": 5,
+     "kpm": 15.0,
+     "rankDelta": 0,
+     "soloStats": {
+      "kills": 76,
+      "deaths": 89,
+      "assists": 14,
+      "mvp": 10,
+      "wins": 3,
+      "losses": 2,
+      "maps": 5,
+      "kdr": 0.85,
+      "winrate": 0.6,
+      "rating": 1.018,
+      "ratingPoints": 1220,
+      "tier": "Emerald",
+      "level": 6,
+      "soloRank": 99,
+      "soloTotal": 239,
+      "rankDelta": 0,
+      "provisional": false
+     },
+     "bio": "Tsumugi Kokage is a Level 5 rifler for Astral Bloom, a Japanese fragger keeping the scoreboard ticking on a team short of wins.",
+     "gender": "F",
+     "teamHistory": [
+      {
+       "team": "Astral Bloom",
+       "teamSlug": "astral-bloom",
+       "isPro": true,
+       "years": [
+        "2025",
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Tachibana Hinano",
+         "name": "Tachibana Hinano",
+         "slug": "tachibana-hinano",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Remia Aotsuki",
+         "name": "Remia Aotsuki",
+         "slug": "remia-aotsuki",
+         "iso": "nl",
+         "captain": false
+        },
+        {
+         "hist": "Eris Suzukami",
+         "name": "Eris Suzukami",
+         "slug": "eris-suzukami",
+         "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "Tsumugi Kokage",
+         "name": "Tsumugi Kokage",
+         "slug": "tsumugi-kokage",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Shiranami Ramune",
+         "name": "Shiranami Ramune",
+         "slug": "shiranami-ramune",
+         "iso": "jp",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Lunar Cadence",
+       "teamSlug": "lunar-cadence",
+       "isPro": true,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "briant",
+         "name": "briant",
+         "slug": "briant",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Eris Suzukami",
+         "name": "Eris Suzukami",
+         "slug": "eris-suzukami",
+         "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "Tsumugi Kokage",
+         "name": "Tsumugi Kokage",
+         "slug": "tsumugi-kokage",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Shiranami Ramune",
+         "name": "Shiranami Ramune",
+         "slug": "shiranami-ramune",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Tatsumaki Chise",
+         "name": "Tatsumaki Chise",
+         "slug": "tatsumaki-chise",
+         "iso": "jp",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "JP Squad 3",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Shiranami Ramune",
+         "name": "Shiranami Ramune",
+         "slug": "shiranami-ramune",
+         "iso": "jp",
+         "captain": true
+        },
+        {
+         "hist": "Shuvimo",
+         "name": "Shuvimo",
+         "slug": "shuvimo",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Choya Hanabi",
+         "name": "Choya Hanabi",
+         "slug": "choya-hanabi",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Tsumugi Kokage",
+         "name": "Tsumugi Kokage",
+         "slug": "tsumugi-kokage",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Kaminari Qpi",
+         "name": "Kaminari Qpi",
+         "slug": "kaminari-qpi",
+         "iso": "jp",
+         "captain": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Shiranami Ramune",
+     "team": "Lunar Cadence",
+     "pool": "pro",
+     "kills": 550,
+     "assists": 75,
+     "deaths": 610,
+     "mvp": 79,
+     "kdr": 0.9,
+     "wins": 15,
+     "losses": 23,
+     "winrate": 0.395,
+     "ot": 6,
+     "role": "Awper",
+     "maps": 38,
+     "orig_rank": "Bronze",
+     "orig_level": "Level 3",
+     "orig_rating": 1361.0,
+     "slug": "shiranami-ramune",
+     "nat": "Japan",
+     "iso": "jp",
+     "provisional": false,
+     "rating": 0.948,
+     "ratingPoints": 948,
+     "tier": "Silver",
+     "level": 4,
+     "kpm": 14.5,
+     "rankDelta": 0,
+     "bio": "Shiranami Ramune is a Level 4 AWPer for Astral Bloom, a Japanese sniper holding the line for a team low on wins.",
+     "gender": "F",
+     "teamHistory": [
+      {
+       "team": "Astral Bloom",
+       "teamSlug": "astral-bloom",
+       "isPro": true,
+       "years": [
+        "2025",
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Tachibana Hinano",
+         "name": "Tachibana Hinano",
+         "slug": "tachibana-hinano",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Remia Aotsuki",
+         "name": "Remia Aotsuki",
+         "slug": "remia-aotsuki",
+         "iso": "nl",
+         "captain": false
+        },
+        {
+         "hist": "Eris Suzukami",
+         "name": "Eris Suzukami",
+         "slug": "eris-suzukami",
+         "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "Tsumugi Kokage",
+         "name": "Tsumugi Kokage",
+         "slug": "tsumugi-kokage",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Shiranami Ramune",
+         "name": "Shiranami Ramune",
+         "slug": "shiranami-ramune",
+         "iso": "jp",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Lunar Cadence",
+       "teamSlug": "lunar-cadence",
+       "isPro": true,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "briant",
+         "name": "briant",
+         "slug": "briant",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Eris Suzukami",
+         "name": "Eris Suzukami",
+         "slug": "eris-suzukami",
+         "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "Tsumugi Kokage",
+         "name": "Tsumugi Kokage",
+         "slug": "tsumugi-kokage",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Shiranami Ramune",
+         "name": "Shiranami Ramune",
+         "slug": "shiranami-ramune",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Tatsumaki Chise",
+         "name": "Tatsumaki Chise",
+         "slug": "tatsumaki-chise",
+         "iso": "jp",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "JP Squad 3",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Shiranami Ramune",
+         "name": "Shiranami Ramune",
+         "slug": "shiranami-ramune",
+         "iso": "jp",
+         "captain": true
+        },
+        {
+         "hist": "Shuvimo",
+         "name": "Shuvimo",
+         "slug": "shuvimo",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Choya Hanabi",
+         "name": "Choya Hanabi",
+         "slug": "choya-hanabi",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Tsumugi Kokage",
+         "name": "Tsumugi Kokage",
+         "slug": "tsumugi-kokage",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Kaminari Qpi",
+         "name": "Kaminari Qpi",
+         "slug": "kaminari-qpi",
+         "iso": "jp",
+         "captain": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Tatsumaki Chise",
+     "team": "Lunar Cadence",
+     "pool": "pro",
+     "kills": 161,
+     "assists": 18,
+     "deaths": 199,
+     "mvp": 14,
+     "kdr": 0.81,
+     "wins": 4,
+     "losses": 9,
+     "winrate": 0.308,
+     "ot": 2,
+     "role": "Rifler",
+     "maps": 13,
+     "orig_rank": "Iron",
+     "orig_level": "Level 1",
+     "orig_rating": 266.0,
+     "slug": "tatsumaki-chise",
+     "amateurOrigin": true,
+     "nat": "Japan",
+     "iso": "jp",
+     "provisional": false,
+     "rating": 0.897,
+     "ratingPoints": 747,
+     "tier": "Iron",
+     "level": 2,
+     "kpm": 12.4,
+     "rankDelta": 0,
+     "soloStats": {
+      "kills": 188,
+      "deaths": 174,
+      "assists": 18,
+      "mvp": 31,
+      "wins": 6,
+      "losses": 6,
+      "maps": 12,
+      "kdr": 1.08,
+      "winrate": 0.5,
+      "rating": 1.009,
+      "ratingPoints": 1187,
+      "tier": "Platinum",
+      "level": 5,
+      "soloRank": 112,
+      "soloTotal": 239,
+      "rankDelta": 0,
+      "provisional": false
+     },
+     "bio": "Tatsumaki Chise is a Japanese rifler and a Level 2 free agent, an amateur early in her competitive journey.",
+     "gender": "F",
+     "teamHistory": [
+      {
+       "team": "Summer Days",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Jenakai",
+         "name": "Jenakai",
+         "slug": "jenakai",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Riko Solari",
+         "name": "Riko Solari",
+         "slug": "riko-solari",
+         "iso": "be",
+         "captain": false
+        },
+        {
+         "hist": "zhizyii",
+         "name": "zhizyii",
+         "slug": "zhizyii",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Tatsumaki Chise",
+         "name": "Tatsumaki Chise",
+         "slug": "tatsumaki-chise",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Kaga Sumire",
+         "name": "Kaga Sumire",
+         "slug": "kaga-sumire",
+         "iso": "jp",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Wintornado",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "itswinter__",
+         "name": "itswinter__",
+         "slug": "itswinter",
+         "iso": "us",
+         "captain": false
+        },
+        {
+         "hist": "Tatsumaki Chise",
+         "name": "Tatsumaki Chise",
+         "slug": "tatsumaki-chise",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Arya Kuroha",
+         "name": "Arya Kuroha",
+         "slug": "arya-kuroha",
+         "iso": "us",
+         "captain": false
+        },
+        {
+         "hist": "ssseiso",
+         "name": "ssseiso",
+         "slug": "ssseiso",
+         "iso": "au",
+         "captain": false
+        },
+        {
+         "hist": "Aranionja",
+         "name": "Aranionja",
+         "slug": "aranionja",
+         "iso": "sg",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Umbral Shift",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Narin Mikure",
+         "name": "Narin Mikure",
+         "slug": "narin-mikure",
+         "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "Jira Jisaki",
+         "name": "Jira Jisaki",
+         "slug": "jira-jisaki",
+         "iso": "ph",
+         "captain": false
+        },
+        {
+         "hist": "Hanabusa Lisa",
+         "name": "Hanabusa Lisa",
+         "slug": "hanabusa-lisa",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Tatsumaki Chise",
+         "name": "Tatsumaki Chise",
+         "slug": "tatsumaki-chise",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Amayui Moka",
+         "name": "Amayui Moka",
+         "slug": "amayui-moka",
+         "iso": "jp",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "Lunar Cadence",
+       "teamSlug": "lunar-cadence",
+       "isPro": true,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "briant",
+         "name": "briant",
+         "slug": "briant",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "Eris Suzukami",
+         "name": "Eris Suzukami",
+         "slug": "eris-suzukami",
+         "iso": "kr",
+         "captain": false
+        },
+        {
+         "hist": "Tsumugi Kokage",
+         "name": "Tsumugi Kokage",
+         "slug": "tsumugi-kokage",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Shiranami Ramune",
+         "name": "Shiranami Ramune",
+         "slug": "shiranami-ramune",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Tatsumaki Chise",
+         "name": "Tatsumaki Chise",
+         "slug": "tatsumaki-chise",
+         "iso": "jp",
+         "captain": false
+        }
+       ]
+      },
+      {
+       "team": "JP Squad 5",
+       "teamSlug": null,
+       "isPro": false,
+       "years": [
+        "2026"
+       ],
+       "roster": [
+        {
+         "hist": "Kaga Sumire",
+         "name": "Kaga Sumire",
+         "slug": "kaga-sumire",
+         "iso": "jp",
+         "captain": true
+        },
+        {
+         "hist": "Asumi Sena",
+         "name": "Asumi Sena",
+         "slug": "asumi-sena",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Kurumi Noah",
+         "name": "Kurumi Noah",
+         "slug": "kurumi-noah",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "Tatsumaki Chise",
+         "name": "Tatsumaki Chise",
+         "slug": "tatsumaki-chise",
+         "iso": "jp",
+         "captain": false
+        },
+        {
+         "hist": "AkiraTsukiyono",
+         "name": "AkiraTsukiyono",
+         "slug": "akiratsukiyono",
+         "iso": "jp",
+         "captain": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "region": "East Asia",
+   "originIso": "jp",
+   "originCountry": "Japan",
+   "events": [],
+   "points_breakdown": [
+    {
+     "event": "Bot Pro Cup 2026",
+     "slug": "bot-pro-cup-2026",
+     "date": "2026-09-01",
+     "tier": "s",
+     "placement": 4,
+     "points": 19.5
+    }
+   ],
+   "rankDelta": 0,
+   "formerPlayers": [
+    {
+     "slug": "yumeno-akari",
+     "name": "Yumeno Akari",
+     "iso": "jp",
+     "years": [
+      "2026"
+     ],
+     "nowTeam": "Astral Bloom",
+     "nowTeamSlug": "astral-bloom"
+    },
+    {
+     "slug": "kogara-toto",
+     "name": "Kogara Toto",
+     "iso": "jp",
+     "years": [
+      "2026"
+     ],
+     "nowTeam": "Astral Bloom",
+     "nowTeamSlug": "astral-bloom"
+    },
+    {
+     "slug": "ginjo-saine",
+     "name": "Ginjo Saine",
+     "iso": "jp",
+     "years": [
+      "2026"
+     ],
+     "nowTeam": "Astral Bloom",
+     "nowTeamSlug": "astral-bloom"
+    }
+   ],
+   "h2h": [
+    {
+     "opp": "fruit-basket",
+     "oppName": "Fruit Basket",
+     "w": 1,
+     "l": 0
+    },
+    {
+     "opp": "artisian",
+     "oppName": "Artisian",
+     "w": 1,
+     "l": 0
+    }
+   ],
+   "recentResults": [
+    {
+     "date": "2026-09-01",
+     "event": "Bot Pro Cup 2026",
+     "eventSlug": "bot-pro-cup-2026",
+     "opp": "Fruit Basket",
+     "oppSlug": "fruit-basket",
+     "result": "W",
+     "sf": 13,
+     "sa": 6
+    },
+    {
+     "date": "2026-09-01",
+     "event": "Bot Pro Cup 2026",
+     "eventSlug": "bot-pro-cup-2026",
+     "opp": "Nullpoint",
+     "oppSlug": null,
+     "result": "L",
+     "sf": 16,
+     "sa": 19
+    },
+    {
+     "date": "2026-09-01",
+     "event": "Bot Pro Cup 2026",
+     "eventSlug": "bot-pro-cup-2026",
+     "opp": "Onyx Legion",
+     "oppSlug": null,
+     "result": "W",
+     "sf": 13,
+     "sa": 0
+    },
+    {
+     "date": "2026-09-01",
+     "event": "Bot Pro Cup 2026",
+     "eventSlug": "bot-pro-cup-2026",
+     "opp": "Seraph Dynasty",
+     "oppSlug": null,
+     "result": "W",
+     "sf": 13,
+     "sa": 9
+    },
+    {
+     "date": "2026-09-01",
+     "event": "Bot Pro Cup 2026",
+     "eventSlug": "bot-pro-cup-2026",
+     "opp": "Artisian",
+     "oppSlug": "artisian",
+     "result": "W",
+     "sf": 13,
+     "sa": 11
+    }
+   ],
+   "streak": "W3",
+   "longestWinStreak": {
+    "len": 3,
+    "startEvent": "Bot Pro Cup 2026",
+    "startDate": "2026-09-01",
+    "endEvent": "Bot Pro Cup 2026",
+    "endSlug": "bot-pro-cup-2026",
+    "endDate": "2026-09-01"
+   }
+  },
+  {
    "name": "Nightshade",
    "slug": "nightshade",
    "key": "nightshade",
@@ -99416,7 +101259,7 @@
    "notes": "playoff qualifiers, promoted to pro",
    "star": false,
    "playoffs": {},
-   "rank": 45,
+   "rank": 46,
    "mapStats": {
     "Mirage": {
      "w": 1,
@@ -102316,7 +104159,7 @@
    "notes": "playoff qualifiers, promoted to pro",
    "star": false,
    "playoffs": {},
-   "rank": 46,
+   "rank": 47,
    "mapStats": {
     "Mirage": {
      "w": 0,
@@ -108298,6 +110141,14 @@
   }
  ],
  "articles": [
+  {
+   "slug": "lunar-cadence-reach-playoffs-astral-bloom-trio-back-in-pro",
+   "title": "Lunar Cadence reach the playoffs as the Astral Bloom trio climb back to pro",
+   "date": "2026-10-07",
+   "author": "BPL Staff",
+   "body": "[Lunar Cadence](#/team/lunar-cadence) have booked their place in the Bot Pro Cup 2026 playoffs and, with it, earned pro status. It is a milestone for the whole roster, but it carries a special weight for three players in particular, because this is a redemption story as much as a promotion.\n\nNot long ago, [Eris Suzukami](#/player/eris-suzukami), [Tsumugi Kokage](#/player/tsumugi-kokage) and [Shiranami Ramune](#/player/shiranami-ramune) were shipped out of [Astral Bloom](#/team/astral-bloom) in a three-for-three trade, cast as part of the problem on a team stuck at the bottom of the standings. Rather than fade away, the trio regrouped at [Lunar Cadence](#/team/lunar-cadence), put their heads down, and ground their way back up through the Bot Pro Cup. Now they are pro again, and they did it the hard way.\n\nAround them, [Lunar Cadence](#/team/lunar-cadence) have built a tidy unit. [Shiranami Ramune](#/player/shiranami-ramune) anchors the AWP, [Eris Suzukami](#/player/eris-suzukami) and [Tsumugi Kokage](#/player/tsumugi-kokage) lead the rifle line, and they are joined by in-game leader [briant](#/player/briant) and the young [Tatsumaki Chise](#/player/tatsumaki-chise). It is a lineup that clearly clicked when it mattered most.\n\nAnd here is where it gets interesting. [Astral Bloom](#/team/astral-bloom), who kept [Remia Aotsuki](#/player/remia-aotsuki) and [Tachibana Hinano](#/player/tachibana-hinano) as their core and traded the trio away, are still languishing near the foot of the table on a 7-18 map record. The three players they moved on from just qualified for a pro playoff. It raises an uncomfortable question for the org: what if the problem was never the players who left?\n\nIt would be too easy to call it right now. The sample is small, the playoffs are still to come, and one good run does not rewrite a career. But the early evidence is hard to ignore. [Eris Suzukami](#/player/eris-suzukami), [Tsumugi Kokage](#/player/tsumugi-kokage) and [Shiranami Ramune](#/player/shiranami-ramune) have answered their doubters in the most direct way possible, and the rest of the story will write itself. That is to be seen.",
+   "snippet": "Lunar Cadence have booked their place in the Bot Pro Cup 2026 playoffs and, with it, earned pro status. It is a milestone for the whole roster, but it carries a special weight for…"
+  },
   {
    "slug": "miorine-puts-down-the-awp-for-cyanide",
    "title": "miorine puts down the AWP to rifle for Cyanide",
@@ -124036,8 +125887,8 @@
      },
      {
       "team": "Lunar Cadence",
-      "teamSlug": null,
-      "isPro": false,
+      "teamSlug": "lunar-cadence",
+      "isPro": true,
       "years": [
        "2026"
       ],
@@ -124367,8 +126218,8 @@
      },
      {
       "team": "Lunar Cadence",
-      "teamSlug": null,
-      "isPro": false,
+      "teamSlug": "lunar-cadence",
+      "isPro": true,
       "years": [
        "2026"
       ],
@@ -124554,8 +126405,8 @@
      },
      {
       "team": "Lunar Cadence",
-      "teamSlug": null,
-      "isPro": false,
+      "teamSlug": "lunar-cadence",
+      "isPro": true,
       "years": [
        "2026"
       ],
@@ -219043,7 +220894,6 @@
     },
     "bio": "briant is a Singaporean in-game leader and an Level 7 free agent still searching for a settled roster.",
     "gender": "M",
-    "teamTourney": "Bot Pro Cup 2026",
     "teamHistory": [
      {
       "team": "Fluff N' Stuff",
@@ -219677,8 +221527,8 @@
      },
      {
       "team": "Lunar Cadence",
-      "teamSlug": null,
-      "isPro": false,
+      "teamSlug": "lunar-cadence",
+      "isPro": true,
       "years": [
        "2026"
       ],
@@ -235472,7 +237322,6 @@
     },
     "bio": "Tatsumaki Chise is a Japanese rifler and a Level 2 free agent, an amateur early in her competitive journey.",
     "gender": "F",
-    "teamTourney": "Bot Pro Cup 2026",
     "teamHistory": [
      {
       "team": "Summer Days",
@@ -235611,8 +237460,8 @@
      },
      {
       "team": "Lunar Cadence",
-      "teamSlug": null,
-      "isPro": false,
+      "teamSlug": "lunar-cadence",
+      "isPro": true,
       "years": [
        "2026"
       ],
@@ -303643,7 +305492,7 @@
        "sb": 13,
        "w": 2,
        "aTeam": "fruit-basket",
-       "bTeam": null,
+       "bTeam": "lunar-cadence",
        "bo": 1,
        "tp": false,
        "ts": 1788128760,
@@ -304184,7 +306033,7 @@
        "sa": 16,
        "sb": 19,
        "w": 2,
-       "aTeam": null,
+       "aTeam": "lunar-cadence",
        "bTeam": null,
        "bo": 1,
        "tp": false,
@@ -304995,7 +306844,7 @@
        "sb": 13,
        "w": 2,
        "aTeam": null,
-       "bTeam": null,
+       "bTeam": "lunar-cadence",
        "bo": 1,
        "tp": false,
        "ts": 1789897785,
@@ -305537,7 +307386,7 @@
        "sb": 13,
        "w": 2,
        "aTeam": null,
-       "bTeam": null,
+       "bTeam": "lunar-cadence",
        "bo": 1,
        "tp": false,
        "ts": 1789900322,
@@ -306212,7 +308061,7 @@
        "sa": 13,
        "sb": 11,
        "w": 1,
-       "aTeam": null,
+       "aTeam": "lunar-cadence",
        "bTeam": "artisian",
        "bo": 1,
        "tp": false,
@@ -323134,7 +324983,7 @@
          "sb": 13,
          "w": 2,
          "aTeam": "fruit-basket",
-         "bTeam": null,
+         "bTeam": "lunar-cadence",
          "bo": 1,
          "tp": false,
          "ts": 1788128760,
@@ -323675,7 +325524,7 @@
          "sa": 16,
          "sb": 19,
          "w": 2,
-         "aTeam": null,
+         "aTeam": "lunar-cadence",
          "bTeam": null,
          "bo": 1,
          "tp": false,
@@ -324486,7 +326335,7 @@
          "sb": 13,
          "w": 2,
          "aTeam": null,
-         "bTeam": null,
+         "bTeam": "lunar-cadence",
          "bo": 1,
          "tp": false,
          "ts": 1789897785,
@@ -325028,7 +326877,7 @@
          "sb": 13,
          "w": 2,
          "aTeam": null,
-         "bTeam": null,
+         "bTeam": "lunar-cadence",
          "bo": 1,
          "tp": false,
          "ts": 1789900322,
@@ -325703,7 +327552,7 @@
          "sa": 13,
          "sb": 11,
          "w": 1,
-         "aTeam": null,
+         "aTeam": "lunar-cadence",
          "bTeam": "artisian",
          "bo": 1,
          "tp": false,
@@ -326010,7 +327859,7 @@
       {
        "rank": 1,
        "name": "Lunar Cadence",
-       "teamSlug": null,
+       "teamSlug": "lunar-cadence",
        "w": 4,
        "l": 1
       },
@@ -326109,7 +327958,7 @@
       ],
       [
        "Lunar Cadence",
-       null
+       "lunar-cadence"
       ],
       [
        "Voidborne",
@@ -331089,7 +332938,7 @@
     {
      "rank": 4,
      "name": "Lunar Cadence",
-     "teamSlug": null,
+     "teamSlug": "lunar-cadence",
      "result": "Group Stage",
      "tie": true
     },
@@ -331705,6 +333554,7 @@
     "Crimson Meridian": 57,
     "Northwind": 58,
     "Solstice": 59,
+    "lunar-cadence": 60,
     "Lunar Cadence": 60,
     "Sakura Sovereign": 61,
     "beehyve": 62,
@@ -332103,7 +333953,7 @@
     },
     {
      "team": "Lunar Cadence",
-     "teamSlug": null,
+     "teamSlug": "lunar-cadence",
      "players": [
       {
        "hist": "briant",
@@ -417107,8 +418957,8 @@
    "fromTeam": "Astral Bloom",
    "fromSlug": "astral-bloom",
    "toTeam": "Lunar Cadence",
-   "toSlug": null,
-   "toPro": false,
+   "toSlug": "lunar-cadence",
+   "toPro": true,
    "date": "2026-09-29"
   },
   {
@@ -417119,8 +418969,8 @@
    "fromTeam": "Astral Bloom",
    "fromSlug": "astral-bloom",
    "toTeam": "Lunar Cadence",
-   "toSlug": null,
-   "toPro": false,
+   "toSlug": "lunar-cadence",
+   "toPro": true,
    "date": "2026-09-29"
   },
   {
@@ -417131,8 +418981,8 @@
    "fromTeam": "Astral Bloom",
    "fromSlug": "astral-bloom",
    "toTeam": "Lunar Cadence",
-   "toSlug": null,
-   "toPro": false,
+   "toSlug": "lunar-cadence",
+   "toPro": true,
    "date": "2026-09-29"
   },
   {
@@ -417141,7 +418991,7 @@
    "playerSlug": "ginjo-saine",
    "iso": "jp",
    "fromTeam": "Lunar Cadence",
-   "fromSlug": null,
+   "fromSlug": "lunar-cadence",
    "toTeam": "Astral Bloom",
    "toSlug": "astral-bloom",
    "toPro": true,
@@ -417153,7 +419003,7 @@
    "playerSlug": "kogara-toto",
    "iso": "jp",
    "fromTeam": "Lunar Cadence",
-   "fromSlug": null,
+   "fromSlug": "lunar-cadence",
    "toTeam": "Astral Bloom",
    "toSlug": "astral-bloom",
    "toPro": true,
@@ -417165,7 +419015,7 @@
    "playerSlug": "yumeno-akari",
    "iso": "jp",
    "fromTeam": "Lunar Cadence",
-   "fromSlug": null,
+   "fromSlug": "lunar-cadence",
    "toTeam": "Astral Bloom",
    "toSlug": "astral-bloom",
    "toPro": true,
@@ -417897,7 +419747,7 @@
    "playerSlug": "eris-suzukami",
    "iso": "kr",
    "fromTeam": "Lunar Cadence",
-   "fromSlug": null,
+   "fromSlug": "lunar-cadence",
    "toTeam": "Team Korea",
    "toSlug": null,
    "toPro": false,
@@ -419625,7 +421475,7 @@
    "playerSlug": "briant",
    "iso": "sg",
    "fromTeam": "Lunar Cadence",
-   "fromSlug": null,
+   "fromSlug": "lunar-cadence",
    "toTeam": "SG Squad 28",
    "toSlug": null,
    "toPro": false,
@@ -421005,7 +422855,7 @@
    "playerSlug": "tsumugi-kokage",
    "iso": "jp",
    "fromTeam": "Lunar Cadence",
-   "fromSlug": null,
+   "fromSlug": "lunar-cadence",
    "toTeam": "JP Squad 3",
    "toSlug": null,
    "toPro": false,
@@ -421017,7 +422867,7 @@
    "playerSlug": "shiranami-ramune",
    "iso": "jp",
    "fromTeam": "Lunar Cadence",
-   "fromSlug": null,
+   "fromSlug": "lunar-cadence",
    "toTeam": "JP Squad 3",
    "toSlug": null,
    "toPro": false,
@@ -421869,7 +423719,7 @@
    "playerSlug": "tatsumaki-chise",
    "iso": "jp",
    "fromTeam": "Lunar Cadence",
-   "fromSlug": null,
+   "fromSlug": "lunar-cadence",
    "toTeam": "JP Squad 5",
    "toSlug": null,
    "toPro": false,
@@ -422651,8 +424501,8 @@
    "fromTeam": "Stars Bore Witness",
    "fromSlug": null,
    "toTeam": "Lunar Cadence",
-   "toSlug": null,
-   "toPro": false,
+   "toSlug": "lunar-cadence",
+   "toPro": true,
    "date": "2026-09-01"
   },
   {
@@ -423023,30 +424873,6 @@
    "fromTeam": "BeeHyve",
    "fromSlug": "beehyve",
    "toTeam": "Nightbloom",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-01"
-  },
-  {
-   "type": "transfer",
-   "player": "Tsumugi Kokage",
-   "playerSlug": "tsumugi-kokage",
-   "iso": "jp",
-   "fromTeam": "Astral Bloom",
-   "fromSlug": "astral-bloom",
-   "toTeam": "Lunar Cadence",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-01"
-  },
-  {
-   "type": "transfer",
-   "player": "Shiranami Ramune",
-   "playerSlug": "shiranami-ramune",
-   "iso": "jp",
-   "fromTeam": "Astral Bloom",
-   "fromSlug": "astral-bloom",
-   "toTeam": "Lunar Cadence",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-01"
@@ -423887,8 +425713,8 @@
    "fromTeam": "Umbral Shift",
    "fromSlug": null,
    "toTeam": "Lunar Cadence",
-   "toSlug": null,
-   "toPro": false,
+   "toSlug": "lunar-cadence",
+   "toPro": true,
    "date": "2026-09-01"
   },
   {
@@ -424115,18 +425941,6 @@
    "fromTeam": "Heavenswept",
    "fromSlug": null,
    "toTeam": "Albion Rising",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-01"
-  },
-  {
-   "type": "transfer",
-   "player": "Eris Suzukami",
-   "playerSlug": "eris-suzukami",
-   "iso": "kr",
-   "fromTeam": "Astral Bloom",
-   "fromSlug": "astral-bloom",
-   "toTeam": "Lunar Cadence",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-01"
@@ -448675,88 +450489,6 @@
    "worstMaps": [
     "Vertigo",
     "Inferno"
-   ],
-   "adhoc": true,
-   "event": "Bot Pro Cup 2026"
-  },
-  {
-   "name": "Lunar Cadence",
-   "slug": "adhoc-lunarcadence",
-   "mapStats": {
-    "Mirage": {
-     "w": 1,
-     "l": 0,
-     "g": 0,
-     "wr": 0.567,
-     "real": false,
-     "est": true,
-     "estN": 5,
-     "estMaps": 10
-    },
-    "Dust2": {
-     "w": 0,
-     "l": 0,
-     "g": 0,
-     "wr": 0.667,
-     "real": false,
-     "est": true,
-     "estN": 3,
-     "estMaps": 8
-    },
-    "Inferno": {
-     "w": 2,
-     "l": 0,
-     "g": 2,
-     "wr": 1.0,
-     "real": true,
-     "est": false
-    },
-    "Cache": {
-     "w": 0,
-     "l": 0,
-     "g": 0,
-     "wr": 0.167,
-     "real": false,
-     "est": true,
-     "estN": 4,
-     "estMaps": 10
-    },
-    "Tuscan": {
-     "w": 1,
-     "l": 1,
-     "g": 2,
-     "wr": 0.5,
-     "real": true,
-     "est": false
-    },
-    "Vertigo": {
-     "w": 0,
-     "l": 0,
-     "g": 0,
-     "wr": 0.267,
-     "real": false,
-     "est": true,
-     "estN": 3,
-     "estMaps": 15
-    },
-    "Anubis": {
-     "w": 0,
-     "l": 0,
-     "g": 0,
-     "wr": 0.25,
-     "real": false,
-     "est": true,
-     "estN": 2,
-     "estMaps": 3
-    }
-   },
-   "bestMaps": [
-    "Inferno",
-    "Dust2"
-   ],
-   "worstMaps": [
-    "Cache",
-    "Anubis"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
