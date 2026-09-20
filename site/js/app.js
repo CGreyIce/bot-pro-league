@@ -2146,7 +2146,7 @@ function vetoMapImg(m){ return `<img class="vt-img" src="assets/maps/${VETO_IMG[
 // the T team as plain bot_add name. Needs a real roster (pro teams have one; ad-hoc/nation
 // map teams do not), so those show a note instead.
 // teams whose in-game bots carry no tag prefix (their bot names are just the player name)
-const VETO_NOTAG = new Set(["beehyve","eiromancers","syzygy"]);
+const VETO_NOTAG = new Set(["beehyve","eiromancers"]);
 // bot name for a player: "<tag> name" when the team uses a tag, else just the name; quoted if it has a space
 function vetoBotName(t,p){
   const nm = (t.tag && !VETO_NOTAG.has(t.slug) ? t.tag+" " : "") + p.name;
