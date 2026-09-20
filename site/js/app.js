@@ -383,15 +383,23 @@ function playerMedals(p){
 // Lineup history: horizontal per-player tenure bars across years, Liquipedia-style.
 function lineupTimelineHtml(t){
   const rows = [];
+  // years the player spent on a DIFFERENT team (so a gap between two stints here isn't filled in)
+  const otherYears = slug => {
+    const ph = playerBySlug(slug); const s = new Set();
+    if(ph) (ph.teamHistory||[]).forEach(h=>{
+      if(h.teamSlug!==t.slug && normKey(h.team||'')!==normKey(t.name)) (h.years||[]).forEach(y=>s.add(Number(y)));
+    });
+    return s;
+  };
   (t.roster||[]).forEach(r=>{
     const ph = playerBySlug(r.slug);
     const th = ph && (ph.teamHistory||[]).find(h=>h.teamSlug===t.slug);
     let yrs = th ? th.years.map(Number) : [];
     if(!yrs.length) yrs = [new Date().getFullYear()];
-    rows.push({slug:r.slug, name:r.name, iso:r.iso, role:r.role, years:new Set(yrs), current:true});
+    rows.push({slug:r.slug, name:r.name, iso:r.iso, role:r.role, years:new Set(yrs), other:otherYears(r.slug), current:true});
   });
   (t.formerPlayers||[]).forEach(f=>{
-    rows.push({slug:f.slug, name:f.name, iso:f.iso, role:'', years:new Set((f.years||[]).map(Number)), current:false, nowTeam:f.nowTeam, banned:f.status==='banned', replacedBy:f.replacedBy});
+    rows.push({slug:f.slug, name:f.name, iso:f.iso, role:'', years:new Set((f.years||[]).map(Number)), other:otherYears(f.slug), current:false, nowTeam:f.nowTeam, banned:f.status==='banned', replacedBy:f.replacedBy});
   });
   const withYears = rows.filter(r=>r.years.size);
   if(withYears.length<2) return '';
@@ -412,7 +420,8 @@ function lineupTimelineHtml(t){
   const head = `<div class="lt-row lt-head"><div class="lt-name"></div><div class="lt-cells">${cols.map(y=>`<span class="lt-yr">${String(y).slice(2)}</span>`).join("")}</div></div>`;
   const body = withYears.map(r=>{
     const cells = cols.map(y=>{
-      const on = y>=r.lo && y<=r.hi;
+      // on for recorded years; a gap year is filled only if the player wasn't on another team then
+      const on = r.years.has(y) || (y>=r.lo && y<=r.hi && !r.other.has(y));
       const cls = on ? (r.current?'on cur':'on') : 'off';
       return `<span class="lt-cell ${cls}"></span>`;
     }).join("");
