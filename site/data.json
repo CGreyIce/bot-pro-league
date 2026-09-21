@@ -322397,104 +322397,104 @@
      "matches": [
       {
        "i": 1,
-       "a": "A #1",
-       "b": "H #2",
+       "a": "Prism Divide",
+       "b": "Kiedz",
        "sa": null,
        "sb": null,
        "w": 0,
-       "aTeam": null,
-       "bTeam": null,
+       "aTeam": "prism-divide",
+       "bTeam": "kiedz",
        "bo": 3,
        "tp": false,
        "ts": null
       },
       {
        "i": 2,
-       "a": "H #1",
-       "b": "A #2",
+       "a": "Moonlit Tempo",
+       "b": "Flood Flashers",
        "sa": null,
        "sb": null,
        "w": 0,
-       "aTeam": null,
-       "bTeam": null,
+       "aTeam": "moonlit-tempo",
+       "bTeam": "flood-flashers",
        "bo": 3,
        "tp": false,
        "ts": null
       },
       {
        "i": 3,
-       "a": "D #1",
-       "b": "E #2",
+       "a": "Syzygy",
+       "b": "Artisian",
        "sa": null,
        "sb": null,
        "w": 0,
-       "aTeam": null,
-       "bTeam": null,
+       "aTeam": "syzygy",
+       "bTeam": "artisian",
        "bo": 3,
        "tp": false,
        "ts": null
       },
       {
        "i": 4,
-       "a": "E #1",
-       "b": "D #2",
+       "a": "Lunar Cadence",
+       "b": "The Gigarage",
        "sa": null,
        "sb": null,
        "w": 0,
-       "aTeam": null,
-       "bTeam": null,
+       "aTeam": "lunar-cadence",
+       "bTeam": "the-gigarage",
        "bo": 3,
        "tp": false,
        "ts": null
       },
       {
        "i": 5,
-       "a": "B #1",
-       "b": "G #2",
+       "a": "Cosmos",
+       "b": "Sacred Raven",
        "sa": null,
        "sb": null,
        "w": 0,
-       "aTeam": null,
-       "bTeam": null,
+       "aTeam": "cosmos",
+       "bTeam": "sacred-raven",
        "bo": 3,
        "tp": false,
        "ts": null
       },
       {
        "i": 6,
-       "a": "G #1",
-       "b": "B #2",
+       "a": "Wraithborne",
+       "b": "Nightshade",
        "sa": null,
        "sb": null,
        "w": 0,
-       "aTeam": null,
-       "bTeam": null,
+       "aTeam": "wraithborne",
+       "bTeam": "nightshade",
        "bo": 3,
        "tp": false,
        "ts": null
       },
       {
        "i": 7,
-       "a": "C #1",
-       "b": "F #2",
+       "a": "division20",
+       "b": "Opal",
        "sa": null,
        "sb": null,
        "w": 0,
-       "aTeam": null,
-       "bTeam": null,
+       "aTeam": "division20",
+       "bTeam": "opal",
        "bo": 3,
        "tp": false,
        "ts": null
       },
       {
        "i": 8,
-       "a": "F #1",
-       "b": "C #2",
+       "a": "Solstice",
+       "b": "Mourningstar",
        "sa": null,
        "sb": null,
        "w": 0,
-       "aTeam": null,
-       "bTeam": null,
+       "aTeam": "solstice",
+       "bTeam": "mourningstar",
        "bo": 3,
        "tp": false,
        "ts": null
@@ -322604,21 +322604,8 @@
        "w": 0,
        "aTeam": null,
        "bTeam": null,
-       "bo": 5,
+       "bo": 3,
        "tp": false,
-       "ts": null
-      },
-      {
-       "i": 16,
-       "a": "",
-       "b": "",
-       "sa": null,
-       "sb": null,
-       "w": 0,
-       "aTeam": null,
-       "bTeam": null,
-       "bo": 1,
-       "tp": true,
        "ts": null
       }
      ]
@@ -348610,104 +348597,104 @@
        "matches": [
         {
          "i": 1,
-         "a": "A #1",
-         "b": "H #2",
+         "a": "Prism Divide",
+         "b": "Kiedz",
          "sa": null,
          "sb": null,
          "w": 0,
-         "aTeam": null,
-         "bTeam": null,
+         "aTeam": "prism-divide",
+         "bTeam": "kiedz",
          "bo": 3,
          "tp": false,
          "ts": null
         },
         {
          "i": 2,
-         "a": "H #1",
-         "b": "A #2",
+         "a": "Moonlit Tempo",
+         "b": "Flood Flashers",
          "sa": null,
          "sb": null,
          "w": 0,
-         "aTeam": null,
-         "bTeam": null,
+         "aTeam": "moonlit-tempo",
+         "bTeam": "flood-flashers",
          "bo": 3,
          "tp": false,
          "ts": null
         },
         {
          "i": 3,
-         "a": "D #1",
-         "b": "E #2",
+         "a": "Syzygy",
+         "b": "Artisian",
          "sa": null,
          "sb": null,
          "w": 0,
-         "aTeam": null,
-         "bTeam": null,
+         "aTeam": "syzygy",
+         "bTeam": "artisian",
          "bo": 3,
          "tp": false,
          "ts": null
         },
         {
          "i": 4,
-         "a": "E #1",
-         "b": "D #2",
+         "a": "Lunar Cadence",
+         "b": "The Gigarage",
          "sa": null,
          "sb": null,
          "w": 0,
-         "aTeam": null,
-         "bTeam": null,
+         "aTeam": "lunar-cadence",
+         "bTeam": "the-gigarage",
          "bo": 3,
          "tp": false,
          "ts": null
         },
         {
          "i": 5,
-         "a": "B #1",
-         "b": "G #2",
+         "a": "Cosmos",
+         "b": "Sacred Raven",
          "sa": null,
          "sb": null,
          "w": 0,
-         "aTeam": null,
-         "bTeam": null,
+         "aTeam": "cosmos",
+         "bTeam": "sacred-raven",
          "bo": 3,
          "tp": false,
          "ts": null
         },
         {
          "i": 6,
-         "a": "G #1",
-         "b": "B #2",
+         "a": "Wraithborne",
+         "b": "Nightshade",
          "sa": null,
          "sb": null,
          "w": 0,
-         "aTeam": null,
-         "bTeam": null,
+         "aTeam": "wraithborne",
+         "bTeam": "nightshade",
          "bo": 3,
          "tp": false,
          "ts": null
         },
         {
          "i": 7,
-         "a": "C #1",
-         "b": "F #2",
+         "a": "division20",
+         "b": "Opal",
          "sa": null,
          "sb": null,
          "w": 0,
-         "aTeam": null,
-         "bTeam": null,
+         "aTeam": "division20",
+         "bTeam": "opal",
          "bo": 3,
          "tp": false,
          "ts": null
         },
         {
          "i": 8,
-         "a": "F #1",
-         "b": "C #2",
+         "a": "Solstice",
+         "b": "Mourningstar",
          "sa": null,
          "sb": null,
          "w": 0,
-         "aTeam": null,
-         "bTeam": null,
+         "aTeam": "solstice",
+         "bTeam": "mourningstar",
          "bo": 3,
          "tp": false,
          "ts": null
@@ -348817,21 +348804,8 @@
          "w": 0,
          "aTeam": null,
          "bTeam": null,
-         "bo": 5,
+         "bo": 3,
          "tp": false,
-         "ts": null
-        },
-        {
-         "i": 16,
-         "a": "",
-         "b": "",
-         "sa": null,
-         "sb": null,
-         "w": 0,
-         "aTeam": null,
-         "bTeam": null,
-         "bo": 1,
-         "tp": true,
          "ts": null
         }
        ]
@@ -348840,68 +348814,68 @@
      "standings": [],
      "teams": [
       [
-       "A #1",
-       null
+       "Prism Divide",
+       "prism-divide"
       ],
       [
-       "B #1",
-       null
+       "Cosmos",
+       "cosmos"
       ],
       [
-       "C #1",
-       null
+       "division20",
+       "division20"
       ],
       [
-       "D #1",
-       null
+       "Syzygy",
+       "syzygy"
       ],
       [
-       "E #1",
-       null
+       "Lunar Cadence",
+       "lunar-cadence"
       ],
       [
-       "F #1",
-       null
+       "Solstice",
+       "solstice"
       ],
       [
-       "G #1",
-       null
+       "Wraithborne",
+       "wraithborne"
       ],
       [
-       "H #1",
-       null
+       "Moonlit Tempo",
+       "moonlit-tempo"
       ],
       [
-       "A #2",
-       null
+       "Flood Flashers",
+       "flood-flashers"
       ],
       [
-       "B #2",
-       null
+       "Nightshade",
+       "nightshade"
       ],
       [
-       "C #2",
-       null
+       "Mourningstar",
+       "mourningstar"
       ],
       [
-       "D #2",
-       null
+       "The Gigarage",
+       "the-gigarage"
       ],
       [
-       "E #2",
-       null
+       "Artisian",
+       "artisian"
       ],
       [
-       "F #2",
-       null
+       "Opal",
+       "opal"
       ],
       [
-       "G #2",
-       null
+       "Sacred Raven",
+       "sacred-raven"
       ],
       [
-       "H #2",
-       null
+       "Kiedz",
+       "kiedz"
       ]
      ]
     }

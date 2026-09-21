@@ -1897,22 +1897,22 @@
    "format": "single_elim",
    "bestOf": 3,
    "teams": [
-    "A #1",
-    "B #1",
-    "C #1",
-    "D #1",
-    "E #1",
-    "F #1",
-    "G #1",
-    "H #1",
-    "A #2",
-    "B #2",
-    "C #2",
-    "D #2",
-    "E #2",
-    "F #2",
-    "G #2",
-    "H #2"
+    "Prism Divide",
+    "Cosmos",
+    "division20",
+    "Syzygy",
+    "Lunar Cadence",
+    "Solstice",
+    "Wraithborne",
+    "Moonlit Tempo",
+    "Flood Flashers",
+    "Nightshade",
+    "Mourningstar",
+    "The Gigarage",
+    "Artisian",
+    "Opal",
+    "Sacred Raven",
+    "Kiedz"
    ],
    "matches": [
     {
@@ -2091,21 +2091,6 @@
      },
      "fb": {
       "match": 14
-     },
-     "sa": null,
-     "sb": null,
-     "bestOf": 5
-    },
-    {
-     "id": 16,
-     "round": 4,
-     "thirdPlace": true,
-     "bestOf": 1,
-     "fa": {
-      "loserOf": 13
-     },
-     "fb": {
-      "loserOf": 14
      },
      "sa": null,
      "sb": null
