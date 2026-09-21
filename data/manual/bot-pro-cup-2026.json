@@ -1498,47 +1498,144 @@
      "round": 3,
      "a": "Wraithborne",
      "b": "Sacred Raven",
-     "sa": null,
-     "sb": null
+     "sa": 13,
+     "sb": 10,
+     "ts": 1789989522
     },
     {
      "id": 12,
      "round": 3,
      "a": "Bloom E-Sports",
      "b": "Aurora Pact",
-     "sa": null,
-     "sb": null
+     "sa": 16,
+     "sb": 13,
+     "ts": 1789991769
     },
     {
      "id": 13,
      "round": 3,
      "a": "xPlosiv",
      "b": "The Nomads",
-     "sa": null,
-     "sb": null
+     "sa": 13,
+     "sb": 16,
+     "ts": 1789996832
     },
     {
      "id": 14,
      "round": 3,
      "a": "Northwind",
      "b": "Supernova",
-     "sa": null,
-     "sb": null
+     "sa": 13,
+     "sb": 10,
+     "ts": 1790003026
     },
     {
      "id": 15,
      "round": 3,
      "a": "Lemon Tree",
      "b": "Astral Bloom",
-     "sa": null,
-     "sb": null
+     "sa": 13,
+     "sb": 6,
+     "ts": 1790003537
+    },
+    {
+     "id": 16,
+     "round": 4,
+     "a": "Wraithborne",
+     "b": "Bloom E-Sports",
+     "sa": 13,
+     "sb": 2,
+     "ts": 1790004062
+    },
+    {
+     "id": 17,
+     "round": 4,
+     "a": "Sacred Raven",
+     "b": "Lemon Tree",
+     "sa": 13,
+     "sb": 9,
+     "ts": 1790005491
+    },
+    {
+     "id": 18,
+     "round": 4,
+     "a": "The Nomads",
+     "b": "Northwind",
+     "sa": 7,
+     "sb": 13,
+     "ts": 1790006142
+    },
+    {
+     "id": 19,
+     "round": 4,
+     "a": "Aurora Pact",
+     "b": "xPlosiv",
+     "sa": 13,
+     "sb": 10,
+     "ts": 1790006971
+    },
+    {
+     "id": 20,
+     "round": 4,
+     "a": "Supernova",
+     "b": "Astral Bloom",
+     "sa": 7,
+     "sb": 13,
+     "ts": 1790008046
+    },
+    {
+     "id": 21,
+     "round": 5,
+     "a": "Wraithborne",
+     "b": "Northwind",
+     "sa": 13,
+     "sb": 4,
+     "ts": 1790009212
+    },
+    {
+     "id": 22,
+     "round": 5,
+     "a": "Sacred Raven",
+     "b": "Bloom E-Sports",
+     "sa": 13,
+     "sb": 6,
+     "ts": 1790009733
+    },
+    {
+     "id": 23,
+     "round": 5,
+     "a": "Aurora Pact",
+     "b": "Lemon Tree",
+     "sa": 12,
+     "sb": 16,
+     "ts": 1790010484
+    },
+    {
+     "id": 24,
+     "round": 5,
+     "a": "The Nomads",
+     "b": "Astral Bloom",
+     "sa": 2,
+     "sb": 13,
+     "ts": 1790010970
+    },
+    {
+     "id": 25,
+     "round": 5,
+     "a": "xPlosiv",
+     "b": "Supernova",
+     "sa": 10,
+     "sb": 13,
+     "ts": 1790012613
     }
    ],
    "rounds": 5,
    "roundTitles": {
     "1": "Round 1",
     "2": "Round 2",
-    "3": "Round 3"
+    "3": "Round 3",
+    "4": "Round 4",
+    "5": "Round 5"
    }
   },
   {
@@ -1654,47 +1751,144 @@
      "round": 3,
      "a": "Starling Coven",
      "b": "Infernum E-Sports",
-     "sa": null,
-     "sb": null
+     "sa": 9,
+     "sb": 13,
+     "ts": 1790013624
     },
     {
      "id": 12,
      "round": 3,
      "a": "Kiedz",
      "b": "Crimson Meridian",
-     "sa": null,
-     "sb": null
+     "sa": 10,
+     "sb": 13,
+     "ts": 1790014359
     },
     {
      "id": 13,
      "round": 3,
      "a": "5PERCENT",
      "b": "Nightbloom",
-     "sa": null,
-     "sb": null
+     "sa": 13,
+     "sb": 11,
+     "ts": 1790015108
     },
     {
      "id": 14,
      "round": 3,
      "a": "Raven Song",
      "b": "Moonlit Tempo",
-     "sa": null,
-     "sb": null
+     "sa": 9,
+     "sb": 13,
+     "ts": 1790015709
     },
     {
      "id": 15,
      "round": 3,
      "a": "Aspire",
      "b": "Tidebreakers",
-     "sa": null,
-     "sb": null
+     "sa": 9,
+     "sb": 13,
+     "ts": 1790016531
+    },
+    {
+     "id": 16,
+     "round": 4,
+     "a": "Infernum E-Sports",
+     "b": "Moonlit Tempo",
+     "sa": 13,
+     "sb": 16,
+     "ts": 1790017286
+    },
+    {
+     "id": 17,
+     "round": 4,
+     "a": "Starling Coven",
+     "b": "Crimson Meridian",
+     "sa": 13,
+     "sb": 8,
+     "ts": 1790017880
+    },
+    {
+     "id": 18,
+     "round": 4,
+     "a": "5PERCENT",
+     "b": "Kiedz",
+     "sa": 4,
+     "sb": 13,
+     "ts": 1790018371
+    },
+    {
+     "id": 19,
+     "round": 4,
+     "a": "Nightbloom",
+     "b": "Tidebreakers",
+     "sa": 22,
+     "sb": 18,
+     "ts": 1790019386
+    },
+    {
+     "id": 20,
+     "round": 4,
+     "a": "Raven Song",
+     "b": "Aspire",
+     "sa": 14,
+     "sb": 16,
+     "ts": 1790020898
+    },
+    {
+     "id": 21,
+     "round": 5,
+     "a": "Starling Coven",
+     "b": "Moonlit Tempo",
+     "sa": 7,
+     "sb": 13,
+     "ts": 1790021526
+    },
+    {
+     "id": 22,
+     "round": 5,
+     "a": "Infernum E-Sports",
+     "b": "Nightbloom",
+     "sa": 16,
+     "sb": 19,
+     "ts": 1790022576
+    },
+    {
+     "id": 23,
+     "round": 5,
+     "a": "Kiedz",
+     "b": "Raven Song",
+     "sa": 13,
+     "sb": 5,
+     "ts": 1790023163
+    },
+    {
+     "id": 24,
+     "round": 5,
+     "a": "Crimson Meridian",
+     "b": "Aspire",
+     "sa": 13,
+     "sb": 11,
+     "ts": 1790023937
+    },
+    {
+     "id": 25,
+     "round": 5,
+     "a": "5PERCENT",
+     "b": "Tidebreakers",
+     "sa": 13,
+     "sb": 8,
+     "ts": 1790024558
     }
    ],
    "rounds": 5,
    "roundTitles": {
     "1": "Round 1",
     "2": "Round 2",
-    "3": "Round 3"
+    "3": "Round 3",
+    "4": "Round 4",
+    "5": "Round 5"
    }
   },
   {
