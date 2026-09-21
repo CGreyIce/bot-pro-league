@@ -1668,21 +1668,24 @@ def main():
             seq += 1
     for t in teams:
         ms = sorted(allm.get(t["slug"], []), key=lambda x: (x["date"], x["ord"]))
-        best = cur = 0
-        best_start = best_end = cur_start = None
-        for m in ms:
-            if m["res"] == "W":
-                if cur == 0:
-                    cur_start = m
-                cur += 1
-                if cur > best:
-                    best, best_start, best_end = cur, cur_start, m
-            else:
-                cur = 0
-        t["longestWinStreak"] = ({"len": best,
-                                  "startEvent": best_start["event"], "startDate": best_start["date"],
-                                  "endEvent": best_end["event"], "endSlug": best_end["eventSlug"],
-                                  "endDate": best_end["date"]} if best >= 2 else None)
+        def longest_streak(res_char):
+            best = cur = 0
+            best_start = best_end = cur_start = None
+            for m in ms:
+                if m["res"] == res_char:
+                    if cur == 0:
+                        cur_start = m
+                    cur += 1
+                    if cur > best:
+                        best, best_start, best_end = cur, cur_start, m
+                else:
+                    cur = 0
+            return ({"len": best,
+                     "startEvent": best_start["event"], "startDate": best_start["date"],
+                     "endEvent": best_end["event"], "endSlug": best_end["eventSlug"],
+                     "endDate": best_end["date"]} if best >= 2 else None)
+        t["longestWinStreak"] = longest_streak("W")
+        t["longestLossStreak"] = longest_streak("L")
 
     # ---- news / articles (admin-authored) ----
     ap = os.path.join(DATA, "articles.json")
