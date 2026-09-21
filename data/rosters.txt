@@ -205,3 +205,7 @@ bot_add_ct "LuCa briant"; bot_add_ct "LuCa Eris Suzukami"; bot_add_ct "LuCa Tsum
 Solstice (Bot Pro Cup 2026) [playoff qualifiers, promoted to pro]
 bot_add "Sol. Jasticar"; bot_add "Sol. Yaekia"; bot_add "Sol. Luneforrune"; bot_add "Sol. Spinafex"; bot_add "Sol. Riko Solari";
 bot_add_ct "Sol. Jasticar"; bot_add_ct "Sol. Yaekia"; bot_add_ct "Sol. Luneforrune"; bot_add_ct "Sol. Spinafex"; bot_add_ct "Sol. Riko Solari";
+
+Wraithborne (Bot Pro Cup 2026) [playoff qualifiers, promoted to pro]
+bot_add "WRTH ProPHOcy_"; bot_add "WRTH Pattsuu"; bot_add "WRTH voidnw"; bot_add "WRTH rattecs"; bot_add "WRTH RIHSURI";
+bot_add_ct "WRTH ProPHOcy_"; bot_add_ct "WRTH Pattsuu"; bot_add_ct "WRTH voidnw"; bot_add_ct "WRTH rattecs"; bot_add_ct "WRTH RIHSURI";
