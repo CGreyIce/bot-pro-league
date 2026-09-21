@@ -1186,10 +1186,16 @@ def main():
     # (teamSlug is None). Pro players keep their real team. Reverts to "—" once the event finishes
     # (a champion exists), where the promote-to-pro / disband rules then apply.
     _prov_keys = {t["key"] for t in teams if t.get("provisional")}
+    _disb_path = os.path.join(DATA, "disbanded_teams.json")
+    _disbanded = {norm_key(n) for n in (json.load(open(_disb_path, encoding="utf-8")).get("teams", []) if os.path.exists(_disb_path) else [])}
     for tr in tournaments:
         if tr["slug"] not in manual_slugs_a or tr.get("champion") or "nations-cup" in tr["slug"]:
             continue                          # national-team players keep their real club team
         for row in tr.get("attending", []):
+            # disbanded teams stay on the attending roster (who played) but no longer re-home their
+            # players — those revert to free agency (or to a team pinned in the amateur sheet).
+            if norm_key(row["team"]) in _disbanded:
+                continue
             # real pro team page keeps its own roster/team; provisional teams aren't pro yet,
             # so their (amateur) players still show the team name.
             if row.get("teamSlug") and norm_key(row["team"]) not in _prov_keys:

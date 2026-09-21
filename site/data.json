@@ -110836,7 +110836,6 @@
      },
      "bio": "RaviasEir is a Singaporean rifler for Eiromancers, a Level 7 fragger in the league whose 1.19 K/D and heavy MVP count mark her as a standout waiting for a stage.",
      "gender": "F",
-     "teamTourney": "Bot Pro Cup 2026",
      "teamHistory": [
       {
        "team": "Vitrix E-Sports",
@@ -110899,9 +110898,23 @@
          "captain": true
         },
         {
+         "hist": "boopydoopy",
+         "name": "boopydoopy",
+         "slug": "boopydoopy",
+         "iso": "sg",
+         "captain": false
+        },
+        {
          "hist": "RaviasEir",
          "name": "RaviasEir",
          "slug": "raviaseir",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "kanarivt",
+         "name": "kanarivt",
+         "slug": "kanarivt",
          "iso": "sg",
          "captain": false
         },
@@ -111011,7 +111024,6 @@
      },
      "bio": "Skiazelle is a Singaporean in-game leader for Eiromancers, a Level 6 caller in the league whose 1.10 K/D shows she frags while she leads.",
      "gender": "F",
-     "teamTourney": "Bot Pro Cup 2026",
      "teamHistory": [
       {
        "team": "Eiromancers",
@@ -111029,9 +111041,23 @@
          "captain": true
         },
         {
+         "hist": "boopydoopy",
+         "name": "boopydoopy",
+         "slug": "boopydoopy",
+         "iso": "sg",
+         "captain": false
+        },
+        {
          "hist": "RaviasEir",
          "name": "RaviasEir",
          "slug": "raviaseir",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "kanarivt",
+         "name": "kanarivt",
+         "slug": "kanarivt",
          "iso": "sg",
          "captain": false
         },
@@ -111141,7 +111167,6 @@
      },
      "bio": "kaikaijins is a Singaporean rifler and an Level 6 free agent, a sharp amateur with a 1.15 K/D and a 61% win rate.",
      "gender": "F",
-     "teamTourney": "Bot Pro Cup 2026",
      "teamHistory": [
       {
        "team": "Eiromancers",
@@ -111159,9 +111184,23 @@
          "captain": true
         },
         {
+         "hist": "boopydoopy",
+         "name": "boopydoopy",
+         "slug": "boopydoopy",
+         "iso": "sg",
+         "captain": false
+        },
+        {
          "hist": "RaviasEir",
          "name": "RaviasEir",
          "slug": "raviaseir",
+         "iso": "sg",
+         "captain": false
+        },
+        {
+         "hist": "kanarivt",
+         "name": "kanarivt",
+         "slug": "kanarivt",
          "iso": "sg",
          "captain": false
         },
@@ -111398,6 +111437,16 @@
     {
      "slug": "jenakai",
      "name": "Jenakai",
+     "iso": "sg",
+     "years": [
+      "2026"
+     ],
+     "nowTeam": "",
+     "nowTeamSlug": null
+    },
+    {
+     "slug": "boopydoopy",
+     "name": "boopydoopy",
      "iso": "sg",
      "years": [
       "2026"
@@ -123183,6 +123232,51 @@
         "name": "mond33__",
         "slug": "mond33",
         "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Feral Instinct",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "qebo",
+        "name": "qebo",
+        "slug": "qebo",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "mond33__",
+        "name": "mond33__",
+        "slug": "mond33",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "wushii",
+        "name": "wushii",
+        "slug": "wushii",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "TRPaki",
+        "name": "TRPaki",
+        "slug": "trpaki",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "MKakili",
+        "name": "MKakili",
+        "slug": "mkakili",
+        "iso": "au",
         "captain": false
        }
       ]
@@ -156405,6 +156499,44 @@
       ]
      },
      {
+      "team": "Rebellium",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "estellyy.",
+        "name": "estellyy.",
+        "slug": "estellyy",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Tosaki Mimi",
+        "name": "Tosaki Mimi",
+        "slug": "tosaki-mimi",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "rebebx",
+        "name": "rebebx",
+        "slug": "rebebx",
+        "iso": "sg",
+        "captain": true
+       },
+       {
+        "hist": "obvMX",
+        "name": "obvMX",
+        "slug": "obvmx",
+        "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "SG Squad 30",
       "teamSlug": null,
       "isPro": false,
@@ -184681,6 +184813,51 @@
       ]
      },
      {
+      "team": "Kagerou Collective",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "HakoP",
+        "name": "HakoP",
+        "slug": "hakop",
+        "iso": "tw",
+        "captain": false
+       },
+       {
+        "hist": "Kamito",
+        "name": "Kamito",
+        "slug": "kamito",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Sendo Yuuhi",
+        "name": "Sendo Yuuhi",
+        "slug": "sendo-yuuhi",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Aizawa Ema",
+        "name": "Aizawa Ema",
+        "slug": "aizawa-ema",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "FumishiroYummy",
+        "name": "FumishiroYummy",
+        "slug": "fumishiroyummy",
+        "iso": "jp",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "Team Taiwan",
       "teamSlug": null,
       "isPro": false,
@@ -185126,6 +185303,51 @@
         "name": "kenzieyii",
         "slug": "kenzieyii",
         "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Stormfront",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "cwstalVT",
+        "name": "cwstalVT",
+        "slug": "cwstalvt",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "emmabutnormal",
+        "name": "emmabutnormal",
+        "slug": "emmabutnormal",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "yxie",
+        "name": "yxie",
+        "slug": "yxie",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "Dianya",
+        "name": "Dianya",
+        "slug": "dianya",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "pastellows",
+        "name": "pastellows",
+        "slug": "pastellows",
+        "iso": "us",
         "captain": false
        }
       ]
@@ -185578,31 +185800,10 @@
       ],
       "roster": [
        {
-        "hist": "rebebx",
-        "name": "rebebx",
-        "slug": "rebebx",
+        "hist": "estellyy.",
+        "name": "estellyy.",
+        "slug": "estellyy",
         "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "obvMX",
-        "name": "obvMX",
-        "slug": "obvmx",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "Aranionja",
-        "name": "Aranionja",
-        "slug": "aranionja",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "Sadgeboi",
-        "name": "Sadgeboi",
-        "slug": "sadgeboi",
-        "iso": "my",
         "captain": false
        },
        {
@@ -185610,6 +185811,20 @@
         "name": "Tosaki Mimi",
         "slug": "tosaki-mimi",
         "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "rebebx",
+        "name": "rebebx",
+        "slug": "rebebx",
+        "iso": "sg",
+        "captain": true
+       },
+       {
+        "hist": "obvMX",
+        "name": "obvMX",
+        "slug": "obvmx",
+        "iso": "sg",
         "captain": false
        }
       ]
@@ -186638,31 +186853,10 @@
       ],
       "roster": [
        {
-        "hist": "rebebx",
-        "name": "rebebx",
-        "slug": "rebebx",
+        "hist": "estellyy.",
+        "name": "estellyy.",
+        "slug": "estellyy",
         "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "obvMX",
-        "name": "obvMX",
-        "slug": "obvmx",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "Aranionja",
-        "name": "Aranionja",
-        "slug": "aranionja",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "Sadgeboi",
-        "name": "Sadgeboi",
-        "slug": "sadgeboi",
-        "iso": "my",
         "captain": false
        },
        {
@@ -186670,6 +186864,20 @@
         "name": "Tosaki Mimi",
         "slug": "tosaki-mimi",
         "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "rebebx",
+        "name": "rebebx",
+        "slug": "rebebx",
+        "iso": "sg",
+        "captain": true
+       },
+       {
+        "hist": "obvMX",
+        "name": "obvMX",
+        "slug": "obvmx",
+        "iso": "sg",
         "captain": false
        }
       ]
@@ -187737,6 +187945,51 @@
       ]
      },
      {
+      "team": "Ivory Vanguard",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "xmeijixx",
+        "name": "xmeijixx",
+        "slug": "xmeijixx",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "ruamamiya",
+        "name": "ruamamiya",
+        "slug": "ruamamiya",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Michimouto",
+        "name": "Michimouto",
+        "slug": "michimouto",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "bodexx",
+        "name": "bodexx",
+        "slug": "bodexx",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Nataleste",
+        "name": "Nataleste",
+        "slug": "nataleste",
+        "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "SG Squad 3",
       "teamSlug": null,
       "isPro": false,
@@ -187969,6 +188222,51 @@
       ]
      },
      {
+      "team": "Stormfront",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "cwstalVT",
+        "name": "cwstalVT",
+        "slug": "cwstalvt",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "emmabutnormal",
+        "name": "emmabutnormal",
+        "slug": "emmabutnormal",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "yxie",
+        "name": "yxie",
+        "slug": "yxie",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "Dianya",
+        "name": "Dianya",
+        "slug": "dianya",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "pastellows",
+        "name": "pastellows",
+        "slug": "pastellows",
+        "iso": "us",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "US Squad 2",
       "teamSlug": null,
       "isPro": false,
@@ -188183,6 +188481,51 @@
       ]
      },
      {
+      "team": "Feral Instinct",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "qebo",
+        "name": "qebo",
+        "slug": "qebo",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "mond33__",
+        "name": "mond33__",
+        "slug": "mond33",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "wushii",
+        "name": "wushii",
+        "slug": "wushii",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "TRPaki",
+        "name": "TRPaki",
+        "slug": "trpaki",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "MKakili",
+        "name": "MKakili",
+        "slug": "mkakili",
+        "iso": "au",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "AU Squad 1",
       "teamSlug": null,
       "isPro": false,
@@ -188347,6 +188690,51 @@
         "name": "kaikaijins",
         "slug": "kaikaijins",
         "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Sakura Sovereign",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Hanabusa Lisa",
+        "name": "Hanabusa Lisa",
+        "slug": "hanabusa-lisa",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Kaga Sumire",
+        "name": "Kaga Sumire",
+        "slug": "kaga-sumire",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Asumi Sena",
+        "name": "Asumi Sena",
+        "slug": "asumi-sena",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Ichinose Uruha",
+        "name": "Ichinose Uruha",
+        "slug": "ichinose-uruha",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Shuvimo",
+        "name": "Shuvimo",
+        "slug": "shuvimo",
+        "iso": "jp",
         "captain": false
        }
       ]
@@ -188529,31 +188917,10 @@
       ],
       "roster": [
        {
-        "hist": "rebebx",
-        "name": "rebebx",
-        "slug": "rebebx",
+        "hist": "estellyy.",
+        "name": "estellyy.",
+        "slug": "estellyy",
         "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "obvMX",
-        "name": "obvMX",
-        "slug": "obvmx",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "Aranionja",
-        "name": "Aranionja",
-        "slug": "aranionja",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "Sadgeboi",
-        "name": "Sadgeboi",
-        "slug": "sadgeboi",
-        "iso": "my",
         "captain": false
        },
        {
@@ -188561,6 +188928,20 @@
         "name": "Tosaki Mimi",
         "slug": "tosaki-mimi",
         "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "rebebx",
+        "name": "rebebx",
+        "slug": "rebebx",
+        "iso": "sg",
+        "captain": true
+       },
+       {
+        "hist": "obvMX",
+        "name": "obvMX",
+        "slug": "obvmx",
+        "iso": "sg",
         "captain": false
        }
       ]
@@ -190407,6 +190788,51 @@
       ]
      },
      {
+      "team": "Voidborne",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "VSSMB",
+        "name": "VSSMB",
+        "slug": "vssmb",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "JustYoong",
+        "name": "JustYoong",
+        "slug": "justyoong",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "xaeela",
+        "name": "xaeela",
+        "slug": "xaeela",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "kyomikoo",
+        "name": "kyomikoo",
+        "slug": "kyomikoo",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "SachiMizora",
+        "name": "SachiMizora",
+        "slug": "sachimizora",
+        "iso": "au",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "SG Squad 13",
       "teamSlug": null,
       "isPro": false,
@@ -191106,6 +191532,44 @@
       ]
      },
      {
+      "team": "Supernova",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Jenakai",
+        "name": "Jenakai",
+        "slug": "jenakai",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "rach.elx_",
+        "name": "rach.elx_",
+        "slug": "rach-elx",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Hamzyy",
+        "name": "Hamzyy",
+        "slug": "hamzyy",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "KiokoCheiko",
+        "name": "KiokoCheiko",
+        "slug": "kiokocheiko",
+        "iso": "ph",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "PH Squad 1",
       "teamSlug": null,
       "isPro": false,
@@ -191314,6 +191778,51 @@
         "hist": "ProPHOcy_",
         "name": "ProPHOcy_",
         "slug": "prophocy",
+        "iso": "us",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Aurora Pact",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Niamocha",
+        "name": "Niamocha",
+        "slug": "niamocha",
+        "iso": "ca",
+        "captain": false
+       },
+       {
+        "hist": "LeilaMayadah",
+        "name": "LeilaMayadah",
+        "slug": "leilamayadah",
+        "iso": "ca",
+        "captain": false
+       },
+       {
+        "hist": "haze_vt",
+        "name": "haze_vt",
+        "slug": "haze-vt",
+        "iso": "ca",
+        "captain": false
+       },
+       {
+        "hist": "Arya Kuroha",
+        "name": "Arya Kuroha",
+        "slug": "arya-kuroha",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "stitchkyui",
+        "name": "stitchkyui",
+        "slug": "stitchkyui",
         "iso": "us",
         "captain": false
        }
@@ -191529,6 +192038,51 @@
         "name": "anju_o",
         "slug": "anju-o",
         "iso": "ph",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Wanderlight",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "itswendy_",
+        "name": "itswendy_",
+        "slug": "itswendy",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "dla.wo",
+        "name": "dla.wo",
+        "slug": "dla-wo",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "tiger.lark",
+        "name": "tiger.lark",
+        "slug": "tiger-lark",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "vixi",
+        "name": "vixi",
+        "slug": "vixi",
+        "iso": "au",
+        "captain": false
+       },
+       {
+        "hist": "SoapiiSereia",
+        "name": "SoapiiSereia",
+        "slug": "soapiisereia",
+        "iso": "nz",
         "captain": false
        }
       ]
@@ -191961,6 +192515,51 @@
         "captain": false
        }
       ]
+     },
+     {
+      "team": "Albion Rising",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Zarlard",
+        "name": "Zarlard",
+        "slug": "zarlard",
+        "iso": "se",
+        "captain": false
+       },
+       {
+        "hist": "PSYSTRA",
+        "name": "PSYSTRA",
+        "slug": "psystra",
+        "iso": "gb",
+        "captain": false
+       },
+       {
+        "hist": "Aleaka",
+        "name": "Aleaka",
+        "slug": "aleaka",
+        "iso": "gb",
+        "captain": false
+       },
+       {
+        "hist": "Nerfox",
+        "name": "Nerfox",
+        "slug": "nerfox",
+        "iso": "pl",
+        "captain": false
+       },
+       {
+        "hist": "Hanyachi",
+        "name": "Hanyachi",
+        "slug": "hanyachi",
+        "iso": "de",
+        "captain": false
+       }
+      ]
      }
     ]
    },
@@ -192281,6 +192880,51 @@
         "name": "SachiMizora",
         "slug": "sachimizora",
         "iso": "au",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Stormfront",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "cwstalVT",
+        "name": "cwstalVT",
+        "slug": "cwstalvt",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "emmabutnormal",
+        "name": "emmabutnormal",
+        "slug": "emmabutnormal",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "yxie",
+        "name": "yxie",
+        "slug": "yxie",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "Dianya",
+        "name": "Dianya",
+        "slug": "dianya",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "pastellows",
+        "name": "pastellows",
+        "slug": "pastellows",
+        "iso": "us",
         "captain": false
        }
       ]
@@ -193200,6 +193844,51 @@
       ]
      },
      {
+      "team": "Wanderlight",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "itswendy_",
+        "name": "itswendy_",
+        "slug": "itswendy",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "dla.wo",
+        "name": "dla.wo",
+        "slug": "dla-wo",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "tiger.lark",
+        "name": "tiger.lark",
+        "slug": "tiger-lark",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "vixi",
+        "name": "vixi",
+        "slug": "vixi",
+        "iso": "au",
+        "captain": false
+       },
+       {
+        "hist": "SoapiiSereia",
+        "name": "SoapiiSereia",
+        "slug": "soapiisereia",
+        "iso": "nz",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "SG Squad 23",
       "teamSlug": null,
       "isPro": false,
@@ -193693,6 +194382,51 @@
         "hist": "nyxcatto",
         "name": "nyxcatto",
         "slug": "nyxcatto",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Laurel",
+        "name": "Laurel",
+        "slug": "laurel",
+        "iso": "ph",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Radiant Coil",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "JStarWolf",
+        "name": "JStarWolf",
+        "slug": "jstarwolf",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Aweberry",
+        "name": "Aweberry",
+        "slug": "aweberry",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "kenzieyii",
+        "name": "kenzieyii",
+        "slug": "kenzieyii",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "kimonra",
+        "name": "kimonra",
+        "slug": "kimonra",
         "iso": "sg",
         "captain": false
        },
@@ -194685,6 +195419,51 @@
       ]
      },
      {
+      "team": "Emberfall",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "KurmitSuicidal",
+        "name": "lukedefabio",
+        "slug": "lukedefabio",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "swoopsy",
+        "name": "swoopsy",
+        "slug": "swoopsy",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "YinghuVT",
+        "name": "azumiying",
+        "slug": "azumiying",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "RumiRumi",
+        "name": "RumiRumi",
+        "slug": "rumirumi",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "PenguChi",
+        "name": "PenguChi",
+        "slug": "penguchi",
+        "iso": "ph",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "SG Squad 4",
       "teamSlug": null,
       "isPro": false,
@@ -195396,6 +196175,51 @@
       ]
      },
      {
+      "team": "Kagerou Collective",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "HakoP",
+        "name": "HakoP",
+        "slug": "hakop",
+        "iso": "tw",
+        "captain": false
+       },
+       {
+        "hist": "Kamito",
+        "name": "Kamito",
+        "slug": "kamito",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Sendo Yuuhi",
+        "name": "Sendo Yuuhi",
+        "slug": "sendo-yuuhi",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Aizawa Ema",
+        "name": "Aizawa Ema",
+        "slug": "aizawa-ema",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "FumishiroYummy",
+        "name": "FumishiroYummy",
+        "slug": "fumishiroyummy",
+        "iso": "jp",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "JP Squad 1",
       "teamSlug": null,
       "isPro": false,
@@ -196023,6 +196847,51 @@
       ]
      },
      {
+      "team": "Tidebreakers",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "sURF",
+        "name": "sURF",
+        "slug": "surf",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "djsalty_",
+        "name": "djsalty_",
+        "slug": "djsalty",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Yakumo Beni",
+        "name": "Yakumo Beni",
+        "slug": "yakumo-beni",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "HiguVT",
+        "name": "HiguVT",
+        "slug": "higuvt",
+        "iso": "au",
+        "captain": false
+       },
+       {
+        "hist": "KrinoJ",
+        "name": "KrinoJ",
+        "slug": "krinoj",
+        "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "JP Squad 1",
       "teamSlug": null,
       "isPro": false,
@@ -196187,6 +197056,51 @@
         "name": "shirou_kitakami",
         "slug": "shirou-kitakami",
         "iso": "us",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Wanderlight",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "itswendy_",
+        "name": "itswendy_",
+        "slug": "itswendy",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "dla.wo",
+        "name": "dla.wo",
+        "slug": "dla-wo",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "tiger.lark",
+        "name": "tiger.lark",
+        "slug": "tiger-lark",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "vixi",
+        "name": "vixi",
+        "slug": "vixi",
+        "iso": "au",
+        "captain": false
+       },
+       {
+        "hist": "SoapiiSereia",
+        "name": "SoapiiSereia",
+        "slug": "soapiisereia",
+        "iso": "nz",
         "captain": false
        }
       ]
@@ -196446,6 +197360,51 @@
         "name": "Sendo Yuuhi",
         "slug": "sendo-yuuhi",
         "iso": "jp",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Albion Rising",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Zarlard",
+        "name": "Zarlard",
+        "slug": "zarlard",
+        "iso": "se",
+        "captain": false
+       },
+       {
+        "hist": "PSYSTRA",
+        "name": "PSYSTRA",
+        "slug": "psystra",
+        "iso": "gb",
+        "captain": false
+       },
+       {
+        "hist": "Aleaka",
+        "name": "Aleaka",
+        "slug": "aleaka",
+        "iso": "gb",
+        "captain": false
+       },
+       {
+        "hist": "Nerfox",
+        "name": "Nerfox",
+        "slug": "nerfox",
+        "iso": "pl",
+        "captain": false
+       },
+       {
+        "hist": "Hanyachi",
+        "name": "Hanyachi",
+        "slug": "hanyachi",
+        "iso": "de",
         "captain": false
        }
       ]
@@ -196816,6 +197775,51 @@
         "hist": "yumezukiyomi",
         "name": "yumezukiyomi",
         "slug": "yumezukiyomi",
+        "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Onyx Legion",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Ryujin",
+        "name": "Ryujin",
+        "slug": "ryujin",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "NOTORIOUS47",
+        "name": "NOTORIOUS47",
+        "slug": "notorious47",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "ErineRurie",
+        "name": "ErineRurie",
+        "slug": "erinerurie",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "CryingNutz",
+        "name": "CryingNutz",
+        "slug": "cryingnutz",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "ostc.x",
+        "name": "ostc.x",
+        "slug": "ostc-x",
         "iso": "sg",
         "captain": false
        }
@@ -197398,6 +198402,51 @@
         "hist": "ruamamiya",
         "name": "ruamamiya",
         "slug": "ruamamiya",
+        "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Ivory Vanguard",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "xmeijixx",
+        "name": "xmeijixx",
+        "slug": "xmeijixx",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "ruamamiya",
+        "name": "ruamamiya",
+        "slug": "ruamamiya",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Michimouto",
+        "name": "Michimouto",
+        "slug": "michimouto",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "bodexx",
+        "name": "bodexx",
+        "slug": "bodexx",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Nataleste",
+        "name": "Nataleste",
+        "slug": "nataleste",
         "iso": "sg",
         "captain": false
        }
@@ -199618,6 +200667,51 @@
       ]
      },
      {
+      "team": "Wanderlight",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "itswendy_",
+        "name": "itswendy_",
+        "slug": "itswendy",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "dla.wo",
+        "name": "dla.wo",
+        "slug": "dla-wo",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "tiger.lark",
+        "name": "tiger.lark",
+        "slug": "tiger-lark",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "vixi",
+        "name": "vixi",
+        "slug": "vixi",
+        "iso": "au",
+        "captain": false
+       },
+       {
+        "hist": "SoapiiSereia",
+        "name": "SoapiiSereia",
+        "slug": "soapiisereia",
+        "iso": "nz",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "SG Squad 9",
       "teamSlug": null,
       "isPro": false,
@@ -200119,6 +201213,51 @@
         "name": "Ichinose Uruha",
         "slug": "ichinose-uruha",
         "iso": "jp",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Tidebreakers",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "sURF",
+        "name": "sURF",
+        "slug": "surf",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "djsalty_",
+        "name": "djsalty_",
+        "slug": "djsalty",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Yakumo Beni",
+        "name": "Yakumo Beni",
+        "slug": "yakumo-beni",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "HiguVT",
+        "name": "HiguVT",
+        "slug": "higuvt",
+        "iso": "au",
+        "captain": false
+       },
+       {
+        "hist": "KrinoJ",
+        "name": "KrinoJ",
+        "slug": "krinoj",
+        "iso": "sg",
         "captain": false
        }
       ]
@@ -200684,6 +201823,51 @@
       ]
      },
      {
+      "team": "Radiant Coil",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "JStarWolf",
+        "name": "JStarWolf",
+        "slug": "jstarwolf",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Aweberry",
+        "name": "Aweberry",
+        "slug": "aweberry",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "kenzieyii",
+        "name": "kenzieyii",
+        "slug": "kenzieyii",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "kimonra",
+        "name": "kimonra",
+        "slug": "kimonra",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Laurel",
+        "name": "Laurel",
+        "slug": "laurel",
+        "iso": "ph",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "SG Squad 40",
       "teamSlug": null,
       "isPro": false,
@@ -201047,6 +202231,51 @@
         "name": "yukihimeowo",
         "slug": "yukihimeowo",
         "iso": "us",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Feral Instinct",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "qebo",
+        "name": "qebo",
+        "slug": "qebo",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "mond33__",
+        "name": "mond33__",
+        "slug": "mond33",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "wushii",
+        "name": "wushii",
+        "slug": "wushii",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "TRPaki",
+        "name": "TRPaki",
+        "slug": "trpaki",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "MKakili",
+        "name": "MKakili",
+        "slug": "mkakili",
+        "iso": "au",
         "captain": false
        }
       ]
@@ -201441,6 +202670,51 @@
         "name": "Hamzyy",
         "slug": "hamzyy",
         "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Feral Instinct",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "qebo",
+        "name": "qebo",
+        "slug": "qebo",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "mond33__",
+        "name": "mond33__",
+        "slug": "mond33",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "wushii",
+        "name": "wushii",
+        "slug": "wushii",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "TRPaki",
+        "name": "TRPaki",
+        "slug": "trpaki",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "MKakili",
+        "name": "MKakili",
+        "slug": "mkakili",
+        "iso": "au",
         "captain": false
        }
       ]
@@ -203255,6 +204529,51 @@
       ]
      },
      {
+      "team": "Radiant Coil",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "JStarWolf",
+        "name": "JStarWolf",
+        "slug": "jstarwolf",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Aweberry",
+        "name": "Aweberry",
+        "slug": "aweberry",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "kenzieyii",
+        "name": "kenzieyii",
+        "slug": "kenzieyii",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "kimonra",
+        "name": "kimonra",
+        "slug": "kimonra",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Laurel",
+        "name": "Laurel",
+        "slug": "laurel",
+        "iso": "ph",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "SG Squad 7",
       "teamSlug": null,
       "isPro": false,
@@ -203464,6 +204783,51 @@
         "name": "akuluvr",
         "slug": "akuluvr",
         "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Voidborne",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "VSSMB",
+        "name": "VSSMB",
+        "slug": "vssmb",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "JustYoong",
+        "name": "JustYoong",
+        "slug": "justyoong",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "xaeela",
+        "name": "xaeela",
+        "slug": "xaeela",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "kyomikoo",
+        "name": "kyomikoo",
+        "slug": "kyomikoo",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "SachiMizora",
+        "name": "SachiMizora",
+        "slug": "sachimizora",
+        "iso": "au",
         "captain": false
        }
       ]
@@ -204484,6 +205848,51 @@
       ]
      },
      {
+      "team": "Onyx Legion",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Ryujin",
+        "name": "Ryujin",
+        "slug": "ryujin",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "NOTORIOUS47",
+        "name": "NOTORIOUS47",
+        "slug": "notorious47",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "ErineRurie",
+        "name": "ErineRurie",
+        "slug": "erinerurie",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "CryingNutz",
+        "name": "CryingNutz",
+        "slug": "cryingnutz",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "ostc.x",
+        "name": "ostc.x",
+        "slug": "ostc-x",
+        "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "MY Squad 5",
       "teamSlug": null,
       "isPro": false,
@@ -205062,6 +206471,51 @@
         "name": "ProPHOcy_",
         "slug": "prophocy",
         "iso": "us",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Albion Rising",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Zarlard",
+        "name": "Zarlard",
+        "slug": "zarlard",
+        "iso": "se",
+        "captain": false
+       },
+       {
+        "hist": "PSYSTRA",
+        "name": "PSYSTRA",
+        "slug": "psystra",
+        "iso": "gb",
+        "captain": false
+       },
+       {
+        "hist": "Aleaka",
+        "name": "Aleaka",
+        "slug": "aleaka",
+        "iso": "gb",
+        "captain": false
+       },
+       {
+        "hist": "Nerfox",
+        "name": "Nerfox",
+        "slug": "nerfox",
+        "iso": "pl",
+        "captain": false
+       },
+       {
+        "hist": "Hanyachi",
+        "name": "Hanyachi",
+        "slug": "hanyachi",
+        "iso": "de",
         "captain": false
        }
       ]
@@ -206468,6 +207922,51 @@
       ]
      },
      {
+      "team": "Emberfall",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "KurmitSuicidal",
+        "name": "lukedefabio",
+        "slug": "lukedefabio",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "swoopsy",
+        "name": "swoopsy",
+        "slug": "swoopsy",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "YinghuVT",
+        "name": "azumiying",
+        "slug": "azumiying",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "RumiRumi",
+        "name": "RumiRumi",
+        "slug": "rumirumi",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "PenguChi",
+        "name": "PenguChi",
+        "slug": "penguchi",
+        "iso": "ph",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "SG Squad 22",
       "teamSlug": null,
       "isPro": false,
@@ -206982,6 +208481,51 @@
         "name": "bodexx",
         "slug": "bodexx",
         "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Echo Cipher",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "okjustsmd",
+        "name": "okjustsmd",
+        "slug": "okjustsmd",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "CodedEcho",
+        "name": "CodedEcho",
+        "slug": "codedecho",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "thehidz",
+        "name": "thehidz",
+        "slug": "thehidz",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "twentyrosie",
+        "name": "twentyrosie",
+        "slug": "twentyrosie",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "anju_o",
+        "name": "anju_o",
+        "slug": "anju-o",
+        "iso": "ph",
         "captain": false
        }
       ]
@@ -207636,6 +209180,51 @@
         "name": "Yumeno Akari",
         "slug": "yumeno-akari",
         "iso": "jp",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Stormfront",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "cwstalVT",
+        "name": "cwstalVT",
+        "slug": "cwstalvt",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "emmabutnormal",
+        "name": "emmabutnormal",
+        "slug": "emmabutnormal",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "yxie",
+        "name": "yxie",
+        "slug": "yxie",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "Dianya",
+        "name": "Dianya",
+        "slug": "dianya",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "pastellows",
+        "name": "pastellows",
+        "slug": "pastellows",
+        "iso": "us",
         "captain": false
        }
       ]
@@ -210006,6 +211595,51 @@
       ]
      },
      {
+      "team": "Echo Cipher",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "okjustsmd",
+        "name": "okjustsmd",
+        "slug": "okjustsmd",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "CodedEcho",
+        "name": "CodedEcho",
+        "slug": "codedecho",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "thehidz",
+        "name": "thehidz",
+        "slug": "thehidz",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "twentyrosie",
+        "name": "twentyrosie",
+        "slug": "twentyrosie",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "anju_o",
+        "name": "anju_o",
+        "slug": "anju-o",
+        "iso": "ph",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "SG Squad 16",
       "teamSlug": null,
       "isPro": false,
@@ -210509,6 +212143,51 @@
       ]
      },
      {
+      "team": "Onyx Legion",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Ryujin",
+        "name": "Ryujin",
+        "slug": "ryujin",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "NOTORIOUS47",
+        "name": "NOTORIOUS47",
+        "slug": "notorious47",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "ErineRurie",
+        "name": "ErineRurie",
+        "slug": "erinerurie",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "CryingNutz",
+        "name": "CryingNutz",
+        "slug": "cryingnutz",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "ostc.x",
+        "name": "ostc.x",
+        "slug": "ostc-x",
+        "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "MY Squad 10",
       "teamSlug": null,
       "isPro": false,
@@ -210910,6 +212589,51 @@
       ]
      },
      {
+      "team": "Onyx Legion",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Ryujin",
+        "name": "Ryujin",
+        "slug": "ryujin",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "NOTORIOUS47",
+        "name": "NOTORIOUS47",
+        "slug": "notorious47",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "ErineRurie",
+        "name": "ErineRurie",
+        "slug": "erinerurie",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "CryingNutz",
+        "name": "CryingNutz",
+        "slug": "cryingnutz",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "ostc.x",
+        "name": "ostc.x",
+        "slug": "ostc-x",
+        "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "MY Squad 5",
       "teamSlug": null,
       "isPro": false,
@@ -211186,6 +212910,51 @@
         "name": "ssseiso",
         "slug": "ssseiso",
         "iso": "au",
+        "captain": false
+       },
+       {
+        "hist": "anju_o",
+        "name": "anju_o",
+        "slug": "anju-o",
+        "iso": "ph",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Echo Cipher",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "okjustsmd",
+        "name": "okjustsmd",
+        "slug": "okjustsmd",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "CodedEcho",
+        "name": "CodedEcho",
+        "slug": "codedecho",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "thehidz",
+        "name": "thehidz",
+        "slug": "thehidz",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "twentyrosie",
+        "name": "twentyrosie",
+        "slug": "twentyrosie",
+        "iso": "sg",
         "captain": false
        },
        {
@@ -211839,6 +213608,51 @@
         "name": "djsalty_",
         "slug": "djsalty",
         "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Emberfall",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "KurmitSuicidal",
+        "name": "lukedefabio",
+        "slug": "lukedefabio",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "swoopsy",
+        "name": "swoopsy",
+        "slug": "swoopsy",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "YinghuVT",
+        "name": "azumiying",
+        "slug": "azumiying",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "RumiRumi",
+        "name": "RumiRumi",
+        "slug": "rumirumi",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "PenguChi",
+        "name": "PenguChi",
+        "slug": "penguchi",
+        "iso": "ph",
         "captain": false
        }
       ]
@@ -213520,6 +215334,51 @@
       ]
      },
      {
+      "team": "Kagerou Collective",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "HakoP",
+        "name": "HakoP",
+        "slug": "hakop",
+        "iso": "tw",
+        "captain": false
+       },
+       {
+        "hist": "Kamito",
+        "name": "Kamito",
+        "slug": "kamito",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Sendo Yuuhi",
+        "name": "Sendo Yuuhi",
+        "slug": "sendo-yuuhi",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Aizawa Ema",
+        "name": "Aizawa Ema",
+        "slug": "aizawa-ema",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "FumishiroYummy",
+        "name": "FumishiroYummy",
+        "slug": "fumishiroyummy",
+        "iso": "jp",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "JP Squad 2",
       "teamSlug": null,
       "isPro": false,
@@ -213753,6 +215612,51 @@
       ]
      },
      {
+      "team": "Ashfall",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "AkiraTsukiyono",
+        "name": "AkiraTsukiyono",
+        "slug": "akiratsukiyono",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Kaga Nazuna",
+        "name": "Kaga Nazuna",
+        "slug": "kaga-nazuna",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Juno Umezono",
+        "name": "Juno Umezono",
+        "slug": "juno-umezono",
+        "iso": "ph",
+        "captain": false
+       },
+       {
+        "hist": "aoi_chibi",
+        "name": "aoi_chibi",
+        "slug": "aoi-chibi",
+        "iso": "au",
+        "captain": false
+       },
+       {
+        "hist": "Kojadayo",
+        "name": "Kojadayo",
+        "slug": "kojadayo",
+        "iso": "is",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "JP Squad 6",
       "teamSlug": null,
       "isPro": false,
@@ -213935,6 +215839,51 @@
         "hist": "Kamito",
         "name": "Kamito",
         "slug": "kamito",
+        "iso": "jp",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Kagerou Collective",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "HakoP",
+        "name": "HakoP",
+        "slug": "hakop",
+        "iso": "tw",
+        "captain": false
+       },
+       {
+        "hist": "Kamito",
+        "name": "Kamito",
+        "slug": "kamito",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Sendo Yuuhi",
+        "name": "Sendo Yuuhi",
+        "slug": "sendo-yuuhi",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Aizawa Ema",
+        "name": "Aizawa Ema",
+        "slug": "aizawa-ema",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "FumishiroYummy",
+        "name": "FumishiroYummy",
+        "slug": "fumishiroyummy",
         "iso": "jp",
         "captain": false
        }
@@ -216175,6 +218124,51 @@
       ]
      },
      {
+      "team": "Tidebreakers",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "sURF",
+        "name": "sURF",
+        "slug": "surf",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "djsalty_",
+        "name": "djsalty_",
+        "slug": "djsalty",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Yakumo Beni",
+        "name": "Yakumo Beni",
+        "slug": "yakumo-beni",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "HiguVT",
+        "name": "HiguVT",
+        "slug": "higuvt",
+        "iso": "au",
+        "captain": false
+       },
+       {
+        "hist": "KrinoJ",
+        "name": "KrinoJ",
+        "slug": "krinoj",
+        "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "SG Squad 22",
       "teamSlug": null,
       "isPro": false,
@@ -216887,6 +218881,44 @@
       ]
      },
      {
+      "team": "Supernova",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Jenakai",
+        "name": "Jenakai",
+        "slug": "jenakai",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "rach.elx_",
+        "name": "rach.elx_",
+        "slug": "rach-elx",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Hamzyy",
+        "name": "Hamzyy",
+        "slug": "hamzyy",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "KiokoCheiko",
+        "name": "KiokoCheiko",
+        "slug": "kiokocheiko",
+        "iso": "ph",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "SG Squad 23",
       "teamSlug": null,
       "isPro": false,
@@ -217095,6 +219127,51 @@
         "hist": "Sendo Yuuhi",
         "name": "Sendo Yuuhi",
         "slug": "sendo-yuuhi",
+        "iso": "jp",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Kagerou Collective",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "HakoP",
+        "name": "HakoP",
+        "slug": "hakop",
+        "iso": "tw",
+        "captain": false
+       },
+       {
+        "hist": "Kamito",
+        "name": "Kamito",
+        "slug": "kamito",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Sendo Yuuhi",
+        "name": "Sendo Yuuhi",
+        "slug": "sendo-yuuhi",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Aizawa Ema",
+        "name": "Aizawa Ema",
+        "slug": "aizawa-ema",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "FumishiroYummy",
+        "name": "FumishiroYummy",
+        "slug": "fumishiroyummy",
         "iso": "jp",
         "captain": false
        }
@@ -218884,6 +220961,51 @@
       ]
      },
      {
+      "team": "Wanderlight",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "itswendy_",
+        "name": "itswendy_",
+        "slug": "itswendy",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "dla.wo",
+        "name": "dla.wo",
+        "slug": "dla-wo",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "tiger.lark",
+        "name": "tiger.lark",
+        "slug": "tiger-lark",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "vixi",
+        "name": "vixi",
+        "slug": "vixi",
+        "iso": "au",
+        "captain": false
+       },
+       {
+        "hist": "SoapiiSereia",
+        "name": "SoapiiSereia",
+        "slug": "soapiisereia",
+        "iso": "nz",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "SG Squad 32",
       "teamSlug": null,
       "isPro": false,
@@ -219933,6 +222055,51 @@
       ]
      },
      {
+      "team": "Sakura Sovereign",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Hanabusa Lisa",
+        "name": "Hanabusa Lisa",
+        "slug": "hanabusa-lisa",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Kaga Sumire",
+        "name": "Kaga Sumire",
+        "slug": "kaga-sumire",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Asumi Sena",
+        "name": "Asumi Sena",
+        "slug": "asumi-sena",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Ichinose Uruha",
+        "name": "Ichinose Uruha",
+        "slug": "ichinose-uruha",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Shuvimo",
+        "name": "Shuvimo",
+        "slug": "shuvimo",
+        "iso": "jp",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "JP Squad 3",
       "teamSlug": null,
       "isPro": false,
@@ -220758,6 +222925,44 @@
       ]
      },
      {
+      "team": "Supernova",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Jenakai",
+        "name": "Jenakai",
+        "slug": "jenakai",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "rach.elx_",
+        "name": "rach.elx_",
+        "slug": "rach-elx",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Hamzyy",
+        "name": "Hamzyy",
+        "slug": "hamzyy",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "KiokoCheiko",
+        "name": "KiokoCheiko",
+        "slug": "kiokocheiko",
+        "iso": "ph",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "SG Squad 21",
       "teamSlug": null,
       "isPro": false,
@@ -221459,6 +223664,51 @@
         "hist": "bodexx",
         "name": "bodexx",
         "slug": "bodexx",
+        "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Ivory Vanguard",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "xmeijixx",
+        "name": "xmeijixx",
+        "slug": "xmeijixx",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "ruamamiya",
+        "name": "ruamamiya",
+        "slug": "ruamamiya",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Michimouto",
+        "name": "Michimouto",
+        "slug": "michimouto",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "bodexx",
+        "name": "bodexx",
+        "slug": "bodexx",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Nataleste",
+        "name": "Nataleste",
+        "slug": "nataleste",
         "iso": "sg",
         "captain": false
        }
@@ -222415,6 +224665,51 @@
         "captain": false
        }
       ]
+     },
+     {
+      "team": "Ashfall",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "AkiraTsukiyono",
+        "name": "AkiraTsukiyono",
+        "slug": "akiratsukiyono",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Kaga Nazuna",
+        "name": "Kaga Nazuna",
+        "slug": "kaga-nazuna",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Juno Umezono",
+        "name": "Juno Umezono",
+        "slug": "juno-umezono",
+        "iso": "ph",
+        "captain": false
+       },
+       {
+        "hist": "aoi_chibi",
+        "name": "aoi_chibi",
+        "slug": "aoi-chibi",
+        "iso": "au",
+        "captain": false
+       },
+       {
+        "hist": "Kojadayo",
+        "name": "Kojadayo",
+        "slug": "kojadayo",
+        "iso": "is",
+        "captain": false
+       }
+      ]
      }
     ]
    },
@@ -223235,6 +225530,51 @@
       ]
      },
      {
+      "team": "Echo Cipher",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "okjustsmd",
+        "name": "okjustsmd",
+        "slug": "okjustsmd",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "CodedEcho",
+        "name": "CodedEcho",
+        "slug": "codedecho",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "thehidz",
+        "name": "thehidz",
+        "slug": "thehidz",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "twentyrosie",
+        "name": "twentyrosie",
+        "slug": "twentyrosie",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "anju_o",
+        "name": "anju_o",
+        "slug": "anju-o",
+        "iso": "ph",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "SG Squad 21",
       "teamSlug": null,
       "isPro": false,
@@ -223494,6 +225834,51 @@
       ]
      },
      {
+      "team": "Voidborne",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "VSSMB",
+        "name": "VSSMB",
+        "slug": "vssmb",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "JustYoong",
+        "name": "JustYoong",
+        "slug": "justyoong",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "xaeela",
+        "name": "xaeela",
+        "slug": "xaeela",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "kyomikoo",
+        "name": "kyomikoo",
+        "slug": "kyomikoo",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "SachiMizora",
+        "name": "SachiMizora",
+        "slug": "sachimizora",
+        "iso": "au",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "AU Squad 4",
       "teamSlug": null,
       "isPro": false,
@@ -223657,6 +226042,51 @@
         "hist": "Amayui Moka",
         "name": "Amayui Moka",
         "slug": "amayui-moka",
+        "iso": "jp",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Sakura Sovereign",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Hanabusa Lisa",
+        "name": "Hanabusa Lisa",
+        "slug": "hanabusa-lisa",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Kaga Sumire",
+        "name": "Kaga Sumire",
+        "slug": "kaga-sumire",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Asumi Sena",
+        "name": "Asumi Sena",
+        "slug": "asumi-sena",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Ichinose Uruha",
+        "name": "Ichinose Uruha",
+        "slug": "ichinose-uruha",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Shuvimo",
+        "name": "Shuvimo",
+        "slug": "shuvimo",
         "iso": "jp",
         "captain": false
        }
@@ -224837,6 +227267,51 @@
       ]
      },
      {
+      "team": "Ivory Vanguard",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "xmeijixx",
+        "name": "xmeijixx",
+        "slug": "xmeijixx",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "ruamamiya",
+        "name": "ruamamiya",
+        "slug": "ruamamiya",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Michimouto",
+        "name": "Michimouto",
+        "slug": "michimouto",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "bodexx",
+        "name": "bodexx",
+        "slug": "bodexx",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Nataleste",
+        "name": "Nataleste",
+        "slug": "nataleste",
+        "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "SG Squad 2",
       "teamSlug": null,
       "isPro": false,
@@ -225644,6 +228119,51 @@
       ]
      },
      {
+      "team": "Emberfall",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "KurmitSuicidal",
+        "name": "lukedefabio",
+        "slug": "lukedefabio",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "swoopsy",
+        "name": "swoopsy",
+        "slug": "swoopsy",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "YinghuVT",
+        "name": "azumiying",
+        "slug": "azumiying",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "RumiRumi",
+        "name": "RumiRumi",
+        "slug": "rumirumi",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "PenguChi",
+        "name": "PenguChi",
+        "slug": "penguchi",
+        "iso": "ph",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "SG Squad 19",
       "teamSlug": null,
       "isPro": false,
@@ -225808,6 +228328,51 @@
         "name": "Aranionja",
         "slug": "aranionja",
         "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Aurora Pact",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Niamocha",
+        "name": "Niamocha",
+        "slug": "niamocha",
+        "iso": "ca",
+        "captain": false
+       },
+       {
+        "hist": "LeilaMayadah",
+        "name": "LeilaMayadah",
+        "slug": "leilamayadah",
+        "iso": "ca",
+        "captain": false
+       },
+       {
+        "hist": "haze_vt",
+        "name": "haze_vt",
+        "slug": "haze-vt",
+        "iso": "ca",
+        "captain": false
+       },
+       {
+        "hist": "Arya Kuroha",
+        "name": "Arya Kuroha",
+        "slug": "arya-kuroha",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "stitchkyui",
+        "name": "stitchkyui",
+        "slug": "stitchkyui",
+        "iso": "us",
         "captain": false
        }
       ]
@@ -227595,6 +230160,51 @@
       ]
      },
      {
+      "team": "Sakura Sovereign",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Hanabusa Lisa",
+        "name": "Hanabusa Lisa",
+        "slug": "hanabusa-lisa",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Kaga Sumire",
+        "name": "Kaga Sumire",
+        "slug": "kaga-sumire",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Asumi Sena",
+        "name": "Asumi Sena",
+        "slug": "asumi-sena",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Ichinose Uruha",
+        "name": "Ichinose Uruha",
+        "slug": "ichinose-uruha",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Shuvimo",
+        "name": "Shuvimo",
+        "slug": "shuvimo",
+        "iso": "jp",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "JP Squad 5",
       "teamSlug": null,
       "isPro": false,
@@ -228175,6 +230785,51 @@
         "captain": false
        }
       ]
+     },
+     {
+      "team": "Albion Rising",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Zarlard",
+        "name": "Zarlard",
+        "slug": "zarlard",
+        "iso": "se",
+        "captain": false
+       },
+       {
+        "hist": "PSYSTRA",
+        "name": "PSYSTRA",
+        "slug": "psystra",
+        "iso": "gb",
+        "captain": false
+       },
+       {
+        "hist": "Aleaka",
+        "name": "Aleaka",
+        "slug": "aleaka",
+        "iso": "gb",
+        "captain": false
+       },
+       {
+        "hist": "Nerfox",
+        "name": "Nerfox",
+        "slug": "nerfox",
+        "iso": "pl",
+        "captain": false
+       },
+       {
+        "hist": "Hanyachi",
+        "name": "Hanyachi",
+        "slug": "hanyachi",
+        "iso": "de",
+        "captain": false
+       }
+      ]
      }
     ]
    },
@@ -228341,6 +230996,44 @@
         "name": "Hamzyy",
         "slug": "hamzyy",
         "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Supernova",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Jenakai",
+        "name": "Jenakai",
+        "slug": "jenakai",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "rach.elx_",
+        "name": "rach.elx_",
+        "slug": "rach-elx",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Hamzyy",
+        "name": "Hamzyy",
+        "slug": "hamzyy",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "KiokoCheiko",
+        "name": "KiokoCheiko",
+        "slug": "kiokocheiko",
+        "iso": "ph",
         "captain": false
        }
       ]
@@ -228669,6 +231362,51 @@
       ]
      },
      {
+      "team": "Radiant Coil",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "JStarWolf",
+        "name": "JStarWolf",
+        "slug": "jstarwolf",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Aweberry",
+        "name": "Aweberry",
+        "slug": "aweberry",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "kenzieyii",
+        "name": "kenzieyii",
+        "slug": "kenzieyii",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "kimonra",
+        "name": "kimonra",
+        "slug": "kimonra",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Laurel",
+        "name": "Laurel",
+        "slug": "laurel",
+        "iso": "ph",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "SG Squad 23",
       "teamSlug": null,
       "isPro": false,
@@ -228942,6 +231680,51 @@
         "name": "djsalty_",
         "slug": "djsalty",
         "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Aurora Pact",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Niamocha",
+        "name": "Niamocha",
+        "slug": "niamocha",
+        "iso": "ca",
+        "captain": false
+       },
+       {
+        "hist": "LeilaMayadah",
+        "name": "LeilaMayadah",
+        "slug": "leilamayadah",
+        "iso": "ca",
+        "captain": false
+       },
+       {
+        "hist": "haze_vt",
+        "name": "haze_vt",
+        "slug": "haze-vt",
+        "iso": "ca",
+        "captain": false
+       },
+       {
+        "hist": "Arya Kuroha",
+        "name": "Arya Kuroha",
+        "slug": "arya-kuroha",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "stitchkyui",
+        "name": "stitchkyui",
+        "slug": "stitchkyui",
+        "iso": "us",
         "captain": false
        }
       ]
@@ -229415,6 +232198,51 @@
         "name": "Yumeno Akari",
         "slug": "yumeno-akari",
         "iso": "jp",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Ivory Vanguard",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "xmeijixx",
+        "name": "xmeijixx",
+        "slug": "xmeijixx",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "ruamamiya",
+        "name": "ruamamiya",
+        "slug": "ruamamiya",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Michimouto",
+        "name": "Michimouto",
+        "slug": "michimouto",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "bodexx",
+        "name": "bodexx",
+        "slug": "bodexx",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Nataleste",
+        "name": "Nataleste",
+        "slug": "nataleste",
+        "iso": "sg",
         "captain": false
        }
       ]
@@ -230776,6 +233604,51 @@
       ]
      },
      {
+      "team": "Radiant Coil",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "JStarWolf",
+        "name": "JStarWolf",
+        "slug": "jstarwolf",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Aweberry",
+        "name": "Aweberry",
+        "slug": "aweberry",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "kenzieyii",
+        "name": "kenzieyii",
+        "slug": "kenzieyii",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "kimonra",
+        "name": "kimonra",
+        "slug": "kimonra",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Laurel",
+        "name": "Laurel",
+        "slug": "laurel",
+        "iso": "ph",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "SG Squad 30",
       "teamSlug": null,
       "isPro": false,
@@ -232061,6 +234934,51 @@
       ]
      },
      {
+      "team": "Aurora Pact",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Niamocha",
+        "name": "Niamocha",
+        "slug": "niamocha",
+        "iso": "ca",
+        "captain": false
+       },
+       {
+        "hist": "LeilaMayadah",
+        "name": "LeilaMayadah",
+        "slug": "leilamayadah",
+        "iso": "ca",
+        "captain": false
+       },
+       {
+        "hist": "haze_vt",
+        "name": "haze_vt",
+        "slug": "haze-vt",
+        "iso": "ca",
+        "captain": false
+       },
+       {
+        "hist": "Arya Kuroha",
+        "name": "Arya Kuroha",
+        "slug": "arya-kuroha",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "stitchkyui",
+        "name": "stitchkyui",
+        "slug": "stitchkyui",
+        "iso": "us",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "Team Canada",
       "teamSlug": null,
       "isPro": false,
@@ -232522,6 +235440,51 @@
         "name": "djsalty_",
         "slug": "djsalty",
         "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Emberfall",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "KurmitSuicidal",
+        "name": "lukedefabio",
+        "slug": "lukedefabio",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "swoopsy",
+        "name": "swoopsy",
+        "slug": "swoopsy",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "YinghuVT",
+        "name": "azumiying",
+        "slug": "azumiying",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "RumiRumi",
+        "name": "RumiRumi",
+        "slug": "rumirumi",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "PenguChi",
+        "name": "PenguChi",
+        "slug": "penguchi",
+        "iso": "ph",
         "captain": false
        }
       ]
@@ -233803,6 +236766,51 @@
       ]
      },
      {
+      "team": "Onyx Legion",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Ryujin",
+        "name": "Ryujin",
+        "slug": "ryujin",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "NOTORIOUS47",
+        "name": "NOTORIOUS47",
+        "slug": "notorious47",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "ErineRurie",
+        "name": "ErineRurie",
+        "slug": "erinerurie",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "CryingNutz",
+        "name": "CryingNutz",
+        "slug": "cryingnutz",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "ostc.x",
+        "name": "ostc.x",
+        "slug": "ostc-x",
+        "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "MY Squad 3",
       "teamSlug": null,
       "isPro": false,
@@ -234012,6 +237020,51 @@
         "name": "Ichinose Uruha",
         "slug": "ichinose-uruha",
         "iso": "jp",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Ashfall",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "AkiraTsukiyono",
+        "name": "AkiraTsukiyono",
+        "slug": "akiratsukiyono",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Kaga Nazuna",
+        "name": "Kaga Nazuna",
+        "slug": "kaga-nazuna",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Juno Umezono",
+        "name": "Juno Umezono",
+        "slug": "juno-umezono",
+        "iso": "ph",
+        "captain": false
+       },
+       {
+        "hist": "aoi_chibi",
+        "name": "aoi_chibi",
+        "slug": "aoi-chibi",
+        "iso": "au",
+        "captain": false
+       },
+       {
+        "hist": "Kojadayo",
+        "name": "Kojadayo",
+        "slug": "kojadayo",
+        "iso": "is",
         "captain": false
        }
       ]
@@ -234334,6 +237387,51 @@
         "hist": "djsalty_",
         "name": "djsalty_",
         "slug": "djsalty",
+        "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Tidebreakers",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "sURF",
+        "name": "sURF",
+        "slug": "surf",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "djsalty_",
+        "name": "djsalty_",
+        "slug": "djsalty",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Yakumo Beni",
+        "name": "Yakumo Beni",
+        "slug": "yakumo-beni",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "HiguVT",
+        "name": "HiguVT",
+        "slug": "higuvt",
+        "iso": "au",
+        "captain": false
+       },
+       {
+        "hist": "KrinoJ",
+        "name": "KrinoJ",
+        "slug": "krinoj",
         "iso": "sg",
         "captain": false
        }
@@ -235875,6 +238973,51 @@
       ]
      },
      {
+      "team": "Tidebreakers",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "sURF",
+        "name": "sURF",
+        "slug": "surf",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "djsalty_",
+        "name": "djsalty_",
+        "slug": "djsalty",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "Yakumo Beni",
+        "name": "Yakumo Beni",
+        "slug": "yakumo-beni",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "HiguVT",
+        "name": "HiguVT",
+        "slug": "higuvt",
+        "iso": "au",
+        "captain": false
+       },
+       {
+        "hist": "KrinoJ",
+        "name": "KrinoJ",
+        "slug": "krinoj",
+        "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "SG Squad 28",
       "teamSlug": null,
       "isPro": false,
@@ -236912,6 +240055,51 @@
       ]
      },
      {
+      "team": "Voidborne",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "VSSMB",
+        "name": "VSSMB",
+        "slug": "vssmb",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "JustYoong",
+        "name": "JustYoong",
+        "slug": "justyoong",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "xaeela",
+        "name": "xaeela",
+        "slug": "xaeela",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "kyomikoo",
+        "name": "kyomikoo",
+        "slug": "kyomikoo",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "SachiMizora",
+        "name": "SachiMizora",
+        "slug": "sachimizora",
+        "iso": "au",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "SG Squad 31",
       "teamSlug": null,
       "isPro": false,
@@ -237427,6 +240615,51 @@
         "hist": "Ichinose Uruha",
         "name": "Ichinose Uruha",
         "slug": "ichinose-uruha",
+        "iso": "jp",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Sakura Sovereign",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Hanabusa Lisa",
+        "name": "Hanabusa Lisa",
+        "slug": "hanabusa-lisa",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Kaga Sumire",
+        "name": "Kaga Sumire",
+        "slug": "kaga-sumire",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Asumi Sena",
+        "name": "Asumi Sena",
+        "slug": "asumi-sena",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Ichinose Uruha",
+        "name": "Ichinose Uruha",
+        "slug": "ichinose-uruha",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Shuvimo",
+        "name": "Shuvimo",
+        "slug": "shuvimo",
         "iso": "jp",
         "captain": false
        }
@@ -237987,6 +241220,51 @@
       ]
      },
      {
+      "team": "Feral Instinct",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "qebo",
+        "name": "qebo",
+        "slug": "qebo",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "mond33__",
+        "name": "mond33__",
+        "slug": "mond33",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "wushii",
+        "name": "wushii",
+        "slug": "wushii",
+        "iso": "my",
+        "captain": false
+       },
+       {
+        "hist": "TRPaki",
+        "name": "TRPaki",
+        "slug": "trpaki",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "MKakili",
+        "name": "MKakili",
+        "slug": "mkakili",
+        "iso": "au",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "MY Squad 4",
       "teamSlug": null,
       "isPro": false,
@@ -238158,6 +241436,51 @@
         "name": "Laurel",
         "slug": "laurel",
         "iso": "ph",
+        "captain": false
+       }
+      ]
+     },
+     {
+      "team": "Albion Rising",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Zarlard",
+        "name": "Zarlard",
+        "slug": "zarlard",
+        "iso": "se",
+        "captain": false
+       },
+       {
+        "hist": "PSYSTRA",
+        "name": "PSYSTRA",
+        "slug": "psystra",
+        "iso": "gb",
+        "captain": false
+       },
+       {
+        "hist": "Aleaka",
+        "name": "Aleaka",
+        "slug": "aleaka",
+        "iso": "gb",
+        "captain": false
+       },
+       {
+        "hist": "Nerfox",
+        "name": "Nerfox",
+        "slug": "nerfox",
+        "iso": "pl",
+        "captain": false
+       },
+       {
+        "hist": "Hanyachi",
+        "name": "Hanyachi",
+        "slug": "hanyachi",
+        "iso": "de",
         "captain": false
        }
       ]
@@ -238367,6 +241690,51 @@
     "gender": "F",
     "teamHistory": [
      {
+      "team": "Voidborne",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "VSSMB",
+        "name": "VSSMB",
+        "slug": "vssmb",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "JustYoong",
+        "name": "JustYoong",
+        "slug": "justyoong",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "xaeela",
+        "name": "xaeela",
+        "slug": "xaeela",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "kyomikoo",
+        "name": "kyomikoo",
+        "slug": "kyomikoo",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "SachiMizora",
+        "name": "SachiMizora",
+        "slug": "sachimizora",
+        "iso": "au",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "SG Squad 35",
       "teamSlug": null,
       "isPro": false,
@@ -238443,7 +241811,54 @@
     "kpm": 19.0,
     "rankDelta": 0,
     "bio": "aoi_chibi is a Australian rifler.",
-    "gender": "F"
+    "gender": "F",
+    "teamHistory": [
+     {
+      "team": "Ashfall",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "AkiraTsukiyono",
+        "name": "AkiraTsukiyono",
+        "slug": "akiratsukiyono",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Kaga Nazuna",
+        "name": "Kaga Nazuna",
+        "slug": "kaga-nazuna",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Juno Umezono",
+        "name": "Juno Umezono",
+        "slug": "juno-umezono",
+        "iso": "ph",
+        "captain": false
+       },
+       {
+        "hist": "aoi_chibi",
+        "name": "aoi_chibi",
+        "slug": "aoi-chibi",
+        "iso": "au",
+        "captain": false
+       },
+       {
+        "hist": "Kojadayo",
+        "name": "Kojadayo",
+        "slug": "kojadayo",
+        "iso": "is",
+        "captain": false
+       }
+      ]
+     }
+    ]
    },
    {
     "name": "sayupurin",
@@ -238556,6 +241971,51 @@
     "bio": "haze_vt is a Canadian rifler.",
     "gender": "F",
     "teamHistory": [
+     {
+      "team": "Aurora Pact",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Niamocha",
+        "name": "Niamocha",
+        "slug": "niamocha",
+        "iso": "ca",
+        "captain": false
+       },
+       {
+        "hist": "LeilaMayadah",
+        "name": "LeilaMayadah",
+        "slug": "leilamayadah",
+        "iso": "ca",
+        "captain": false
+       },
+       {
+        "hist": "haze_vt",
+        "name": "haze_vt",
+        "slug": "haze-vt",
+        "iso": "ca",
+        "captain": false
+       },
+       {
+        "hist": "Arya Kuroha",
+        "name": "Arya Kuroha",
+        "slug": "arya-kuroha",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "stitchkyui",
+        "name": "stitchkyui",
+        "slug": "stitchkyui",
+        "iso": "us",
+        "captain": false
+       }
+      ]
+     },
      {
       "team": "Team Canada",
       "teamSlug": null,
@@ -239091,6 +242551,51 @@
     "gender": "F",
     "teamHistory": [
      {
+      "team": "Stormfront",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "cwstalVT",
+        "name": "cwstalVT",
+        "slug": "cwstalvt",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "emmabutnormal",
+        "name": "emmabutnormal",
+        "slug": "emmabutnormal",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "yxie",
+        "name": "yxie",
+        "slug": "yxie",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "Dianya",
+        "name": "Dianya",
+        "slug": "dianya",
+        "iso": "us",
+        "captain": false
+       },
+       {
+        "hist": "pastellows",
+        "name": "pastellows",
+        "slug": "pastellows",
+        "iso": "us",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "US Squad 5",
       "teamSlug": null,
       "isPro": false,
@@ -239169,6 +242674,51 @@
     "bio": "AkiraTsukiyono is a Japanese rifler.",
     "gender": "F",
     "teamHistory": [
+     {
+      "team": "Ashfall",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "AkiraTsukiyono",
+        "name": "AkiraTsukiyono",
+        "slug": "akiratsukiyono",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Kaga Nazuna",
+        "name": "Kaga Nazuna",
+        "slug": "kaga-nazuna",
+        "iso": "jp",
+        "captain": false
+       },
+       {
+        "hist": "Juno Umezono",
+        "name": "Juno Umezono",
+        "slug": "juno-umezono",
+        "iso": "ph",
+        "captain": false
+       },
+       {
+        "hist": "aoi_chibi",
+        "name": "aoi_chibi",
+        "slug": "aoi-chibi",
+        "iso": "au",
+        "captain": false
+       },
+       {
+        "hist": "Kojadayo",
+        "name": "Kojadayo",
+        "slug": "kojadayo",
+        "iso": "is",
+        "captain": false
+       }
+      ]
+     },
      {
       "team": "JP Squad 5",
       "teamSlug": null,
@@ -239372,6 +242922,51 @@
     "bio": "CodedEcho is a Singaporean solo-queue player rated Level 5, a ladder regular with a perfect early record.",
     "gender": "F",
     "teamHistory": [
+     {
+      "team": "Echo Cipher",
+      "teamSlug": null,
+      "isPro": false,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "okjustsmd",
+        "name": "okjustsmd",
+        "slug": "okjustsmd",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "CodedEcho",
+        "name": "CodedEcho",
+        "slug": "codedecho",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "thehidz",
+        "name": "thehidz",
+        "slug": "thehidz",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "twentyrosie",
+        "name": "twentyrosie",
+        "slug": "twentyrosie",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "anju_o",
+        "name": "anju_o",
+        "slug": "anju-o",
+        "iso": "ph",
+        "captain": false
+       }
+      ]
+     },
      {
       "team": "SG Squad 37",
       "teamSlug": null,
@@ -240714,7 +244309,6 @@
     },
     "bio": "Skiazelle is a Singaporean in-game leader for Eiromancers, a Level 6 caller in the league whose 1.10 K/D shows she frags while she leads.",
     "gender": "F",
-    "teamTourney": "Bot Pro Cup 2026",
     "teamHistory": [
      {
       "team": "Eiromancers",
@@ -240732,9 +244326,23 @@
         "captain": true
        },
        {
+        "hist": "boopydoopy",
+        "name": "boopydoopy",
+        "slug": "boopydoopy",
+        "iso": "sg",
+        "captain": false
+       },
+       {
         "hist": "RaviasEir",
         "name": "RaviasEir",
         "slug": "raviaseir",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "kanarivt",
+        "name": "kanarivt",
+        "slug": "kanarivt",
         "iso": "sg",
         "captain": false
        },
@@ -240962,6 +244570,51 @@
       ]
      },
      {
+      "team": "Eiromancers",
+      "teamSlug": "eiromancers",
+      "isPro": true,
+      "years": [
+       "2026"
+      ],
+      "roster": [
+       {
+        "hist": "Skiazelle",
+        "name": "Skiazelle",
+        "slug": "skiazelle",
+        "iso": "sg",
+        "captain": true
+       },
+       {
+        "hist": "boopydoopy",
+        "name": "boopydoopy",
+        "slug": "boopydoopy",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "RaviasEir",
+        "name": "RaviasEir",
+        "slug": "raviaseir",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "kanarivt",
+        "name": "kanarivt",
+        "slug": "kanarivt",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "kaikaijins",
+        "name": "kaikaijins",
+        "slug": "kaikaijins",
+        "iso": "sg",
+        "captain": false
+       }
+      ]
+     },
+     {
       "team": "SG Squad 17",
       "teamSlug": null,
       "isPro": false,
@@ -241058,7 +244711,6 @@
     },
     "bio": "RaviasEir is a Singaporean rifler for Eiromancers, a Level 7 fragger in the league whose 1.19 K/D and heavy MVP count mark her as a standout waiting for a stage.",
     "gender": "F",
-    "teamTourney": "Bot Pro Cup 2026",
     "teamHistory": [
      {
       "team": "Vitrix E-Sports",
@@ -241121,9 +244773,23 @@
         "captain": true
        },
        {
+        "hist": "boopydoopy",
+        "name": "boopydoopy",
+        "slug": "boopydoopy",
+        "iso": "sg",
+        "captain": false
+       },
+       {
         "hist": "RaviasEir",
         "name": "RaviasEir",
         "slug": "raviaseir",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "kanarivt",
+        "name": "kanarivt",
+        "slug": "kanarivt",
         "iso": "sg",
         "captain": false
        },
@@ -241423,16 +245089,23 @@
       ],
       "roster": [
        {
-        "hist": "RaviasEir",
-        "name": "RaviasEir",
-        "slug": "raviaseir",
+        "hist": "Skiazelle",
+        "name": "Skiazelle",
+        "slug": "skiazelle",
+        "iso": "sg",
+        "captain": true
+       },
+       {
+        "hist": "boopydoopy",
+        "name": "boopydoopy",
+        "slug": "boopydoopy",
         "iso": "sg",
         "captain": false
        },
        {
-        "hist": "Skiazelle",
-        "name": "Skiazelle",
-        "slug": "skiazelle",
+        "hist": "RaviasEir",
+        "name": "RaviasEir",
+        "slug": "raviaseir",
         "iso": "sg",
         "captain": false
        },
@@ -241444,16 +245117,9 @@
         "captain": false
        },
        {
-        "hist": "Jenakai",
-        "name": "Jenakai",
-        "slug": "jenakai",
-        "iso": "sg",
-        "captain": false
-       },
-       {
-        "hist": "ruamamiya",
-        "name": "ruamamiya",
-        "slug": "ruamamiya",
+        "hist": "kaikaijins",
+        "name": "kaikaijins",
+        "slug": "kaikaijins",
         "iso": "sg",
         "captain": false
        }
@@ -241556,7 +245222,6 @@
     },
     "bio": "kaikaijins is a Singaporean rifler and an Level 6 free agent, a sharp amateur with a 1.15 K/D and a 61% win rate.",
     "gender": "F",
-    "teamTourney": "Bot Pro Cup 2026",
     "teamHistory": [
      {
       "team": "Eiromancers",
@@ -241574,9 +245239,23 @@
         "captain": true
        },
        {
+        "hist": "boopydoopy",
+        "name": "boopydoopy",
+        "slug": "boopydoopy",
+        "iso": "sg",
+        "captain": false
+       },
+       {
         "hist": "RaviasEir",
         "name": "RaviasEir",
         "slug": "raviaseir",
+        "iso": "sg",
+        "captain": false
+       },
+       {
+        "hist": "kanarivt",
+        "name": "kanarivt",
+        "slug": "kanarivt",
         "iso": "sg",
         "captain": false
        },
@@ -345272,6 +348951,13 @@
        "captain": true
       },
       {
+       "hist": "boopydoopy",
+       "name": "boopydoopy",
+       "slug": "boopydoopy",
+       "iso": "sg",
+       "captain": false
+      },
+      {
        "hist": "RaviasEir",
        "name": "RaviasEir",
        "slug": "raviaseir",
@@ -345279,9 +348965,50 @@
        "captain": false
       },
       {
+       "hist": "kanarivt",
+       "name": "kanarivt",
+       "slug": "kanarivt",
+       "iso": "sg",
+       "captain": false
+      },
+      {
        "hist": "kaikaijins",
        "name": "kaikaijins",
        "slug": "kaikaijins",
+       "iso": "sg",
+       "captain": false
+      }
+     ]
+    },
+    {
+     "team": "Rebellium",
+     "teamSlug": null,
+     "players": [
+      {
+       "hist": "estellyy.",
+       "name": "estellyy.",
+       "slug": "estellyy",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "Tosaki Mimi",
+       "name": "Tosaki Mimi",
+       "slug": "tosaki-mimi",
+       "iso": "jp",
+       "captain": false
+      },
+      {
+       "hist": "rebebx",
+       "name": "rebebx",
+       "slug": "rebebx",
+       "iso": "sg",
+       "captain": true
+      },
+      {
+       "hist": "obvMX",
+       "name": "obvMX",
+       "slug": "obvmx",
        "iso": "sg",
        "captain": false
       }
@@ -345370,6 +349097,88 @@
      ]
     },
     {
+     "team": "Sakura Sovereign",
+     "teamSlug": null,
+     "players": [
+      {
+       "hist": "Hanabusa Lisa",
+       "name": "Hanabusa Lisa",
+       "slug": "hanabusa-lisa",
+       "iso": "jp",
+       "captain": false
+      },
+      {
+       "hist": "Kaga Sumire",
+       "name": "Kaga Sumire",
+       "slug": "kaga-sumire",
+       "iso": "jp",
+       "captain": false
+      },
+      {
+       "hist": "Asumi Sena",
+       "name": "Asumi Sena",
+       "slug": "asumi-sena",
+       "iso": "jp",
+       "captain": false
+      },
+      {
+       "hist": "Ichinose Uruha",
+       "name": "Ichinose Uruha",
+       "slug": "ichinose-uruha",
+       "iso": "jp",
+       "captain": false
+      },
+      {
+       "hist": "Shuvimo",
+       "name": "Shuvimo",
+       "slug": "shuvimo",
+       "iso": "jp",
+       "captain": false
+      }
+     ]
+    },
+    {
+     "team": "Kagerou Collective",
+     "teamSlug": null,
+     "players": [
+      {
+       "hist": "HakoP",
+       "name": "HakoP",
+       "slug": "hakop",
+       "iso": "tw",
+       "captain": false
+      },
+      {
+       "hist": "Kamito",
+       "name": "Kamito",
+       "slug": "kamito",
+       "iso": "jp",
+       "captain": false
+      },
+      {
+       "hist": "Sendo Yuuhi",
+       "name": "Sendo Yuuhi",
+       "slug": "sendo-yuuhi",
+       "iso": "jp",
+       "captain": false
+      },
+      {
+       "hist": "Aizawa Ema",
+       "name": "Aizawa Ema",
+       "slug": "aizawa-ema",
+       "iso": "jp",
+       "captain": false
+      },
+      {
+       "hist": "FumishiroYummy",
+       "name": "FumishiroYummy",
+       "slug": "fumishiroyummy",
+       "iso": "jp",
+       "captain": false
+      }
+     ]
+    },
+    {
      "team": "Seraph Dynasty",
      "teamSlug": null,
      "players": [
@@ -345406,6 +349215,47 @@
        "name": "Miki Nakai",
        "slug": "miki-nakai",
        "iso": "jp",
+       "captain": false
+      }
+     ]
+    },
+    {
+     "team": "Ivory Vanguard",
+     "teamSlug": null,
+     "players": [
+      {
+       "hist": "xmeijixx",
+       "name": "xmeijixx",
+       "slug": "xmeijixx",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "ruamamiya",
+       "name": "ruamamiya",
+       "slug": "ruamamiya",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "Michimouto",
+       "name": "Michimouto",
+       "slug": "michimouto",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "bodexx",
+       "name": "bodexx",
+       "slug": "bodexx",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "Nataleste",
+       "name": "Nataleste",
+       "slug": "nataleste",
+       "iso": "sg",
        "captain": false
       }
      ]
@@ -345452,6 +349302,88 @@
      ]
     },
     {
+     "team": "Voidborne",
+     "teamSlug": null,
+     "players": [
+      {
+       "hist": "VSSMB",
+       "name": "VSSMB",
+       "slug": "vssmb",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "JustYoong",
+       "name": "JustYoong",
+       "slug": "justyoong",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "xaeela",
+       "name": "xaeela",
+       "slug": "xaeela",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "kyomikoo",
+       "name": "kyomikoo",
+       "slug": "kyomikoo",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "SachiMizora",
+       "name": "SachiMizora",
+       "slug": "sachimizora",
+       "iso": "au",
+       "captain": false
+      }
+     ]
+    },
+    {
+     "team": "Onyx Legion",
+     "teamSlug": null,
+     "players": [
+      {
+       "hist": "Ryujin",
+       "name": "Ryujin",
+       "slug": "ryujin",
+       "iso": "my",
+       "captain": false
+      },
+      {
+       "hist": "NOTORIOUS47",
+       "name": "NOTORIOUS47",
+       "slug": "notorious47",
+       "iso": "my",
+       "captain": false
+      },
+      {
+       "hist": "ErineRurie",
+       "name": "ErineRurie",
+       "slug": "erinerurie",
+       "iso": "my",
+       "captain": false
+      },
+      {
+       "hist": "CryingNutz",
+       "name": "CryingNutz",
+       "slug": "cryingnutz",
+       "iso": "my",
+       "captain": false
+      },
+      {
+       "hist": "ostc.x",
+       "name": "ostc.x",
+       "slug": "ostc-x",
+       "iso": "sg",
+       "captain": false
+      }
+     ]
+    },
+    {
      "team": "Syzygy",
      "teamSlug": "syzygy",
      "players": [
@@ -345488,6 +349420,47 @@
        "name": "leachubby",
        "slug": "leachubby",
        "iso": "sg",
+       "captain": false
+      }
+     ]
+    },
+    {
+     "team": "Stormfront",
+     "teamSlug": null,
+     "players": [
+      {
+       "hist": "cwstalVT",
+       "name": "cwstalVT",
+       "slug": "cwstalvt",
+       "iso": "us",
+       "captain": false
+      },
+      {
+       "hist": "emmabutnormal",
+       "name": "emmabutnormal",
+       "slug": "emmabutnormal",
+       "iso": "us",
+       "captain": false
+      },
+      {
+       "hist": "yxie",
+       "name": "yxie",
+       "slug": "yxie",
+       "iso": "us",
+       "captain": false
+      },
+      {
+       "hist": "Dianya",
+       "name": "Dianya",
+       "slug": "dianya",
+       "iso": "us",
+       "captain": false
+      },
+      {
+       "hist": "pastellows",
+       "name": "pastellows",
+       "slug": "pastellows",
+       "iso": "us",
        "captain": false
       }
      ]
@@ -345575,6 +349548,88 @@
      ]
     },
     {
+     "team": "Radiant Coil",
+     "teamSlug": null,
+     "players": [
+      {
+       "hist": "JStarWolf",
+       "name": "JStarWolf",
+       "slug": "jstarwolf",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "Aweberry",
+       "name": "Aweberry",
+       "slug": "aweberry",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "kenzieyii",
+       "name": "kenzieyii",
+       "slug": "kenzieyii",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "kimonra",
+       "name": "kimonra",
+       "slug": "kimonra",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "Laurel",
+       "name": "Laurel",
+       "slug": "laurel",
+       "iso": "ph",
+       "captain": false
+      }
+     ]
+    },
+    {
+     "team": "Emberfall",
+     "teamSlug": null,
+     "players": [
+      {
+       "hist": "KurmitSuicidal",
+       "name": "lukedefabio",
+       "slug": "lukedefabio",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "swoopsy",
+       "name": "swoopsy",
+       "slug": "swoopsy",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "YinghuVT",
+       "name": "azumiying",
+       "slug": "azumiying",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "RumiRumi",
+       "name": "RumiRumi",
+       "slug": "rumirumi",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "PenguChi",
+       "name": "PenguChi",
+       "slug": "penguchi",
+       "iso": "ph",
+       "captain": false
+      }
+     ]
+    },
+    {
      "team": "Nightbloom",
      "teamSlug": null,
      "players": [
@@ -345610,6 +349665,122 @@
        "hist": "SeaEmV",
        "name": "SeaEmV",
        "slug": "seaemv",
+       "iso": "ph",
+       "captain": false
+      }
+     ]
+    },
+    {
+     "team": "Supernova",
+     "teamSlug": null,
+     "players": [
+      {
+       "hist": "Jenakai",
+       "name": "Jenakai",
+       "slug": "jenakai",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "rach.elx_",
+       "name": "rach.elx_",
+       "slug": "rach-elx",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "Hamzyy",
+       "name": "Hamzyy",
+       "slug": "hamzyy",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "KiokoCheiko",
+       "name": "KiokoCheiko",
+       "slug": "kiokocheiko",
+       "iso": "ph",
+       "captain": false
+      }
+     ]
+    },
+    {
+     "team": "Aurora Pact",
+     "teamSlug": null,
+     "players": [
+      {
+       "hist": "Niamocha",
+       "name": "Niamocha",
+       "slug": "niamocha",
+       "iso": "ca",
+       "captain": false
+      },
+      {
+       "hist": "LeilaMayadah",
+       "name": "LeilaMayadah",
+       "slug": "leilamayadah",
+       "iso": "ca",
+       "captain": false
+      },
+      {
+       "hist": "haze_vt",
+       "name": "haze_vt",
+       "slug": "haze-vt",
+       "iso": "ca",
+       "captain": false
+      },
+      {
+       "hist": "Arya Kuroha",
+       "name": "Arya Kuroha",
+       "slug": "arya-kuroha",
+       "iso": "us",
+       "captain": false
+      },
+      {
+       "hist": "stitchkyui",
+       "name": "stitchkyui",
+       "slug": "stitchkyui",
+       "iso": "us",
+       "captain": false
+      }
+     ]
+    },
+    {
+     "team": "Echo Cipher",
+     "teamSlug": null,
+     "players": [
+      {
+       "hist": "okjustsmd",
+       "name": "okjustsmd",
+       "slug": "okjustsmd",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "CodedEcho",
+       "name": "CodedEcho",
+       "slug": "codedecho",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "thehidz",
+       "name": "thehidz",
+       "slug": "thehidz",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "twentyrosie",
+       "name": "twentyrosie",
+       "slug": "twentyrosie",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "anju_o",
+       "name": "anju_o",
+       "slug": "anju-o",
        "iso": "ph",
        "captain": false
       }
@@ -345693,6 +349864,47 @@
        "name": "bloodbane",
        "slug": "bloodbane",
        "iso": "au",
+       "captain": false
+      }
+     ]
+    },
+    {
+     "team": "Albion Rising",
+     "teamSlug": null,
+     "players": [
+      {
+       "hist": "Zarlard",
+       "name": "Zarlard",
+       "slug": "zarlard",
+       "iso": "se",
+       "captain": false
+      },
+      {
+       "hist": "PSYSTRA",
+       "name": "PSYSTRA",
+       "slug": "psystra",
+       "iso": "gb",
+       "captain": false
+      },
+      {
+       "hist": "Aleaka",
+       "name": "Aleaka",
+       "slug": "aleaka",
+       "iso": "gb",
+       "captain": false
+      },
+      {
+       "hist": "Nerfox",
+       "name": "Nerfox",
+       "slug": "nerfox",
+       "iso": "pl",
+       "captain": false
+      },
+      {
+       "hist": "Hanyachi",
+       "name": "Hanyachi",
+       "slug": "hanyachi",
+       "iso": "de",
        "captain": false
       }
      ]
@@ -345821,6 +350033,88 @@
      ]
     },
     {
+     "team": "Feral Instinct",
+     "teamSlug": null,
+     "players": [
+      {
+       "hist": "qebo",
+       "name": "qebo",
+       "slug": "qebo",
+       "iso": "my",
+       "captain": false
+      },
+      {
+       "hist": "mond33__",
+       "name": "mond33__",
+       "slug": "mond33",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "wushii",
+       "name": "wushii",
+       "slug": "wushii",
+       "iso": "my",
+       "captain": false
+      },
+      {
+       "hist": "TRPaki",
+       "name": "TRPaki",
+       "slug": "trpaki",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "MKakili",
+       "name": "MKakili",
+       "slug": "mkakili",
+       "iso": "au",
+       "captain": false
+      }
+     ]
+    },
+    {
+     "team": "Wanderlight",
+     "teamSlug": null,
+     "players": [
+      {
+       "hist": "itswendy_",
+       "name": "itswendy_",
+       "slug": "itswendy",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "dla.wo",
+       "name": "dla.wo",
+       "slug": "dla-wo",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "tiger.lark",
+       "name": "tiger.lark",
+       "slug": "tiger-lark",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "vixi",
+       "name": "vixi",
+       "slug": "vixi",
+       "iso": "au",
+       "captain": false
+      },
+      {
+       "hist": "SoapiiSereia",
+       "name": "SoapiiSereia",
+       "slug": "soapiisereia",
+       "iso": "nz",
+       "captain": false
+      }
+     ]
+    },
+    {
      "team": "Prism Divide",
      "teamSlug": "prism-divide",
      "players": [
@@ -345857,6 +350151,47 @@
        "name": "Codiant",
        "slug": "codiant",
        "iso": "kz",
+       "captain": false
+      }
+     ]
+    },
+    {
+     "team": "Tidebreakers",
+     "teamSlug": null,
+     "players": [
+      {
+       "hist": "sURF",
+       "name": "sURF",
+       "slug": "surf",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "djsalty_",
+       "name": "djsalty_",
+       "slug": "djsalty",
+       "iso": "sg",
+       "captain": false
+      },
+      {
+       "hist": "Yakumo Beni",
+       "name": "Yakumo Beni",
+       "slug": "yakumo-beni",
+       "iso": "jp",
+       "captain": false
+      },
+      {
+       "hist": "HiguVT",
+       "name": "HiguVT",
+       "slug": "higuvt",
+       "iso": "au",
+       "captain": false
+      },
+      {
+       "hist": "KrinoJ",
+       "name": "KrinoJ",
+       "slug": "krinoj",
+       "iso": "sg",
        "captain": false
       }
      ]
@@ -345939,6 +350274,47 @@
        "name": "Riko Solari",
        "slug": "riko-solari",
        "iso": "be",
+       "captain": false
+      }
+     ]
+    },
+    {
+     "team": "Ashfall",
+     "teamSlug": null,
+     "players": [
+      {
+       "hist": "AkiraTsukiyono",
+       "name": "AkiraTsukiyono",
+       "slug": "akiratsukiyono",
+       "iso": "jp",
+       "captain": false
+      },
+      {
+       "hist": "Kaga Nazuna",
+       "name": "Kaga Nazuna",
+       "slug": "kaga-nazuna",
+       "iso": "jp",
+       "captain": false
+      },
+      {
+       "hist": "Juno Umezono",
+       "name": "Juno Umezono",
+       "slug": "juno-umezono",
+       "iso": "ph",
+       "captain": false
+      },
+      {
+       "hist": "aoi_chibi",
+       "name": "aoi_chibi",
+       "slug": "aoi-chibi",
+       "iso": "au",
+       "captain": false
+      },
+      {
+       "hist": "Kojadayo",
+       "name": "Kojadayo",
+       "slug": "kojadayo",
+       "iso": "is",
        "captain": false
       }
      ]
@@ -430384,7 +434760,7 @@
    "player": "LeilaMayadah",
    "playerSlug": "leilamayadah",
    "iso": "ca",
-   "fromTeam": "ACoS",
+   "fromTeam": "Aurora Pact",
    "fromSlug": null,
    "toTeam": "Team Canada",
    "toSlug": null,
@@ -430396,7 +434772,7 @@
    "player": "PSYSTRA",
    "playerSlug": "psystra",
    "iso": "gb",
-   "fromTeam": "Loudmouth",
+   "fromTeam": "Albion Rising",
    "fromSlug": null,
    "toTeam": "Team United Kingdom",
    "toSlug": null,
@@ -430420,7 +434796,7 @@
    "player": "HakoP",
    "playerSlug": "hakop",
    "iso": "tw",
-   "fromTeam": "Hako's Angels",
+   "fromTeam": "Kagerou Collective",
    "fromSlug": null,
    "toTeam": "Team Taiwan",
    "toSlug": null,
@@ -430528,7 +434904,7 @@
    "player": "Aleaka",
    "playerSlug": "aleaka",
    "iso": "gb",
-   "fromTeam": "Radiant Dawn",
+   "fromTeam": "Albion Rising",
    "fromSlug": null,
    "toTeam": "Team United Kingdom",
    "toSlug": null,
@@ -430552,7 +434928,7 @@
    "player": "Niamocha",
    "playerSlug": "niamocha",
    "iso": "ca",
-   "fromTeam": "Radiant Dawn",
+   "fromTeam": "Aurora Pact",
    "fromSlug": null,
    "toTeam": "Team Canada",
    "toSlug": null,
@@ -430708,7 +435084,7 @@
    "player": "Hanyachi",
    "playerSlug": "hanyachi",
    "iso": "de",
-   "fromTeam": "Heavenswept",
+   "fromTeam": "Albion Rising",
    "fromSlug": null,
    "toTeam": "Team Germany",
    "toSlug": null,
@@ -430735,6 +435111,18 @@
    "fromTeam": "JP Squad 4",
    "fromSlug": null,
    "toTeam": "Team Japan",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-27"
+  },
+  {
+   "type": "transfer",
+   "player": "haze_vt",
+   "playerSlug": "haze-vt",
+   "iso": "ca",
+   "fromTeam": "Aurora Pact",
+   "fromSlug": null,
+   "toTeam": "Team Canada",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-27"
@@ -430771,18 +435159,6 @@
    "fromTeam": null,
    "fromSlug": null,
    "toTeam": "Team Taiwan",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-27"
-  },
-  {
-   "type": "debut",
-   "player": "haze_vt",
-   "playerSlug": "haze-vt",
-   "iso": "ca",
-   "fromTeam": null,
-   "fromSlug": null,
-   "toTeam": "Team Canada",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-27"
@@ -431008,7 +435384,7 @@
    "player": "rach.elx_",
    "playerSlug": "rach-elx",
    "iso": "sg",
-   "fromTeam": "ACoS",
+   "fromTeam": "Supernova",
    "fromSlug": null,
    "toTeam": "SG Squad 23",
    "toSlug": null,
@@ -431020,7 +435396,7 @@
    "player": "tiger.lark",
    "playerSlug": "tiger-lark",
    "iso": "sg",
-   "fromTeam": "Animal Farm",
+   "fromTeam": "Wanderlight",
    "fromSlug": null,
    "toTeam": "SG Squad 32",
    "toSlug": null,
@@ -431068,7 +435444,7 @@
    "player": "kenzieyii",
    "playerSlug": "kenzieyii",
    "iso": "sg",
-   "fromTeam": "Null-Point",
+   "fromTeam": "Radiant Coil",
    "fromSlug": null,
    "toTeam": "SG Squad 7",
    "toSlug": null,
@@ -431152,8 +435528,8 @@
    "player": "mond33__",
    "playerSlug": "mond33",
    "iso": "sg",
-   "fromTeam": "Aimpunch",
-   "fromSlug": "aimpunch",
+   "fromTeam": "Feral Instinct",
+   "fromSlug": null,
    "toTeam": "SG Squad 38",
    "toSlug": null,
    "toPro": false,
@@ -431164,7 +435540,7 @@
    "player": "xmeijixx",
    "playerSlug": "xmeijixx",
    "iso": "sg",
-   "fromTeam": "Moonshine",
+   "fromTeam": "Ivory Vanguard",
    "fromSlug": null,
    "toTeam": "SG Squad 3",
    "toSlug": null,
@@ -431200,7 +435576,7 @@
    "player": "ostc.x",
    "playerSlug": "ostc-x",
    "iso": "sg",
-   "fromTeam": "Catastrophy",
+   "fromTeam": "Onyx Legion",
    "fromSlug": null,
    "toTeam": "SG Squad 24",
    "toSlug": null,
@@ -431296,7 +435672,7 @@
    "player": "okjustsmd",
    "playerSlug": "okjustsmd",
    "iso": "sg",
-   "fromTeam": "Amend",
+   "fromTeam": "Echo Cipher",
    "fromSlug": null,
    "toTeam": "SG Squad 16",
    "toSlug": null,
@@ -431392,7 +435768,7 @@
    "player": "lukedefabio",
    "playerSlug": "lukedefabio",
    "iso": "sg",
-   "fromTeam": "Null-Point",
+   "fromTeam": "Emberfall",
    "fromSlug": null,
    "toTeam": "SG Squad 4",
    "toSlug": null,
@@ -431440,7 +435816,7 @@
    "player": "KrinoJ",
    "playerSlug": "krinoj",
    "iso": "sg",
-   "fromTeam": "MAcKY",
+   "fromTeam": "Tidebreakers",
    "fromSlug": null,
    "toTeam": "SG Squad 28",
    "toSlug": null,
@@ -431728,7 +436104,7 @@
    "player": "dla.wo",
    "playerSlug": "dla-wo",
    "iso": "sg",
-   "fromTeam": "Gloria Mundi",
+   "fromTeam": "Wanderlight",
    "fromSlug": null,
    "toTeam": "SG Squad 9",
    "toSlug": null,
@@ -431896,7 +436272,7 @@
    "player": "thehidz",
    "playerSlug": "thehidz",
    "iso": "sg",
-   "fromTeam": "NIGHTmode",
+   "fromTeam": "Echo Cipher",
    "fromSlug": null,
    "toTeam": "SG Squad 21",
    "toSlug": null,
@@ -432088,8 +436464,8 @@
    "player": "Ryujin",
    "playerSlug": "ryujin",
    "iso": "my",
-   "fromTeam": "Eiromancers",
-   "fromSlug": "eiromancers",
+   "fromTeam": "Onyx Legion",
+   "fromSlug": null,
    "toTeam": "MY Squad 5",
    "toSlug": null,
    "toPro": false,
@@ -432232,7 +436608,7 @@
    "player": "Nataleste",
    "playerSlug": "nataleste",
    "iso": "sg",
-   "fromTeam": "Stars Bore Witness",
+   "fromTeam": "Ivory Vanguard",
    "fromSlug": null,
    "toTeam": "SG Squad 2",
    "toSlug": null,
@@ -432256,8 +436632,8 @@
    "player": "Jenakai",
    "playerSlug": "jenakai",
    "iso": "sg",
-   "fromTeam": "Eiromancers",
-   "fromSlug": "eiromancers",
+   "fromTeam": "Supernova",
+   "fromSlug": null,
    "toTeam": "SG Squad 21",
    "toSlug": null,
    "toPro": false,
@@ -432604,7 +436980,7 @@
    "player": "JStarWolf",
    "playerSlug": "jstarwolf",
    "iso": "sg",
-   "fromTeam": "Heavenswept",
+   "fromTeam": "Radiant Coil",
    "fromSlug": null,
    "toTeam": "SG Squad 30",
    "toSlug": null,
@@ -432724,7 +437100,7 @@
    "player": "swoopsy",
    "playerSlug": "swoopsy",
    "iso": "sg",
-   "fromTeam": "Gridlocked",
+   "fromTeam": "Emberfall",
    "fromSlug": null,
    "toTeam": "SG Squad 19",
    "toSlug": null,
@@ -432928,7 +437304,7 @@
    "player": "NOTORIOUS47",
    "playerSlug": "notorious47",
    "iso": "my",
-   "fromTeam": "Loudmouth",
+   "fromTeam": "Onyx Legion",
    "fromSlug": null,
    "toTeam": "MY Squad 5",
    "toSlug": null,
@@ -432940,7 +437316,7 @@
    "player": "HiguVT",
    "playerSlug": "higuvt",
    "iso": "au",
-   "fromTeam": "Roving Highlands",
+   "fromTeam": "Tidebreakers",
    "fromSlug": null,
    "toTeam": "AU Squad 4",
    "toSlug": null,
@@ -432976,7 +437352,7 @@
    "player": "Laurel",
    "playerSlug": "laurel",
    "iso": "ph",
-   "fromTeam": "Heavenswept",
+   "fromTeam": "Radiant Coil",
    "fromSlug": null,
    "toTeam": "PH Squad 1",
    "toSlug": null,
@@ -433024,7 +437400,7 @@
    "player": "KiokoCheiko",
    "playerSlug": "kiokocheiko",
    "iso": "ph",
-   "fromTeam": "VisualClarity",
+   "fromTeam": "Supernova",
    "fromSlug": null,
    "toTeam": "PH Squad 1",
    "toSlug": null,
@@ -433084,7 +437460,7 @@
    "player": "CryingNutz",
    "playerSlug": "cryingnutz",
    "iso": "my",
-   "fromTeam": "NIGHTmode",
+   "fromTeam": "Onyx Legion",
    "fromSlug": null,
    "toTeam": "MY Squad 10",
    "toSlug": null,
@@ -433216,8 +437592,8 @@
    "player": "estellyy.",
    "playerSlug": "estellyy",
    "iso": "sg",
-   "fromTeam": "Masmark",
-   "fromSlug": "masmark",
+   "fromTeam": "Rebellium",
+   "fromSlug": null,
    "toTeam": "SG Squad 30",
    "toSlug": null,
    "toPro": false,
@@ -433324,7 +437700,7 @@
    "player": "TRPaki",
    "playerSlug": "trpaki",
    "iso": "sg",
-   "fromTeam": "Obelizk",
+   "fromTeam": "Feral Instinct",
    "fromSlug": null,
    "toTeam": "SG Squad 26",
    "toSlug": null,
@@ -433456,7 +437832,7 @@
    "player": "wushii",
    "playerSlug": "wushii",
    "iso": "my",
-   "fromTeam": "Neo-Polaris",
+   "fromTeam": "Feral Instinct",
    "fromSlug": null,
    "toTeam": "MY Squad 3",
    "toSlug": null,
@@ -433504,8 +437880,8 @@
    "player": "azumiying",
    "playerSlug": "azumiying",
    "iso": "sg",
-   "fromTeam": "Syzygy",
-   "fromSlug": "syzygy",
+   "fromTeam": "Emberfall",
+   "fromSlug": null,
    "toTeam": "SG Squad 18",
    "toSlug": null,
    "toPro": false,
@@ -433552,7 +437928,7 @@
    "player": "Dianya",
    "playerSlug": "dianya",
    "iso": "us",
-   "fromTeam": "Amend",
+   "fromTeam": "Stormfront",
    "fromSlug": null,
    "toTeam": "US Squad 6",
    "toSlug": null,
@@ -433624,7 +438000,7 @@
    "player": "sURF",
    "playerSlug": "surf",
    "iso": "sg",
-   "fromTeam": "Loudmouth",
+   "fromTeam": "Tidebreakers",
    "fromSlug": null,
    "toTeam": "SG Squad 22",
    "toSlug": null,
@@ -433648,7 +438024,7 @@
    "player": "Shuvimo",
    "playerSlug": "shuvimo",
    "iso": "jp",
-   "fromTeam": "Gridlocked",
+   "fromTeam": "Sakura Sovereign",
    "fromSlug": null,
    "toTeam": "JP Squad 3",
    "toSlug": null,
@@ -433708,7 +438084,7 @@
    "player": "Aweberry",
    "playerSlug": "aweberry",
    "iso": "sg",
-   "fromTeam": "MAcKY",
+   "fromTeam": "Radiant Coil",
    "fromSlug": null,
    "toTeam": "SG Squad 23",
    "toSlug": null,
@@ -433720,7 +438096,7 @@
    "player": "kyomikoo",
    "playerSlug": "kyomikoo",
    "iso": "sg",
-   "fromTeam": "Roving Highlands",
+   "fromTeam": "Voidborne",
    "fromSlug": null,
    "toTeam": "SG Squad 31",
    "toSlug": null,
@@ -433744,7 +438120,7 @@
    "player": "itswendy_",
    "playerSlug": "itswendy",
    "iso": "sg",
-   "fromTeam": "Eternal Vengeance Group",
+   "fromTeam": "Wanderlight",
    "fromSlug": null,
    "toTeam": "SG Squad 23",
    "toSlug": null,
@@ -433864,8 +438240,8 @@
    "player": "PenguChi",
    "playerSlug": "penguchi",
    "iso": "ph",
-   "fromTeam": "Syzygy",
-   "fromSlug": "syzygy",
+   "fromTeam": "Emberfall",
+   "fromSlug": null,
    "toTeam": "PH Squad 2",
    "toSlug": null,
    "toPro": false,
@@ -433888,7 +438264,7 @@
    "player": "anju_o",
    "playerSlug": "anju-o",
    "iso": "ph",
-   "fromTeam": "Leviathan",
+   "fromTeam": "Echo Cipher",
    "fromSlug": null,
    "toTeam": "PH Squad 1",
    "toSlug": null,
@@ -433912,7 +438288,7 @@
    "player": "twentyrosie",
    "playerSlug": "twentyrosie",
    "iso": "sg",
-   "fromTeam": "Stars Bore Witness",
+   "fromTeam": "Echo Cipher",
    "fromSlug": null,
    "toTeam": "SG Squad 14",
    "toSlug": null,
@@ -433924,7 +438300,7 @@
    "player": "pastellows",
    "playerSlug": "pastellows",
    "iso": "us",
-   "fromTeam": "Null-Point",
+   "fromTeam": "Stormfront",
    "fromSlug": null,
    "toTeam": "US Squad 1",
    "toSlug": null,
@@ -433948,8 +438324,8 @@
    "player": "ruamamiya",
    "playerSlug": "ruamamiya",
    "iso": "sg",
-   "fromTeam": "Eiromancers",
-   "fromSlug": "eiromancers",
+   "fromTeam": "Ivory Vanguard",
+   "fromSlug": null,
    "toTeam": "SG Squad 22",
    "toSlug": null,
    "toPro": false,
@@ -433972,8 +438348,8 @@
    "player": "stitchkyui",
    "playerSlug": "stitchkyui",
    "iso": "us",
-   "fromTeam": "Syzygy",
-   "fromSlug": "syzygy",
+   "fromTeam": "Aurora Pact",
+   "fromSlug": null,
    "toTeam": "US Squad 3",
    "toSlug": null,
    "toPro": false,
@@ -433984,8 +438360,8 @@
    "player": "djsalty_",
    "playerSlug": "djsalty",
    "iso": "sg",
-   "fromTeam": "Syzygy",
-   "fromSlug": "syzygy",
+   "fromTeam": "Tidebreakers",
+   "fromSlug": null,
    "toTeam": "SG Squad 27",
    "toSlug": null,
    "toPro": false,
@@ -434044,7 +438420,7 @@
    "player": "RumiRumi",
    "playerSlug": "rumirumi",
    "iso": "sg",
-   "fromTeam": "VisualClarity",
+   "fromTeam": "Emberfall",
    "fromSlug": null,
    "toTeam": "SG Squad 22",
    "toSlug": null,
@@ -434056,7 +438432,7 @@
    "player": "FumishiroYummy",
    "playerSlug": "fumishiroyummy",
    "iso": "jp",
-   "fromTeam": "Nightmode",
+   "fromTeam": "Kagerou Collective",
    "fromSlug": null,
    "toTeam": "JP Squad 1",
    "toSlug": null,
@@ -434104,7 +438480,7 @@
    "player": "SachiMizora",
    "playerSlug": "sachimizora",
    "iso": "au",
-   "fromTeam": "Amend",
+   "fromTeam": "Voidborne",
    "fromSlug": null,
    "toTeam": "AU Squad 4",
    "toSlug": null,
@@ -434140,7 +438516,7 @@
    "player": "JustYoong",
    "playerSlug": "justyoong",
    "iso": "sg",
-   "fromTeam": "Cross-X",
+   "fromTeam": "Voidborne",
    "fromSlug": null,
    "toTeam": "SG Squad 13",
    "toSlug": null,
@@ -434164,7 +438540,7 @@
    "player": "vixi",
    "playerSlug": "vixi",
    "iso": "au",
-   "fromTeam": "Tempest Deluxe",
+   "fromTeam": "Wanderlight",
    "fromSlug": null,
    "toTeam": "AU Squad 3",
    "toSlug": null,
@@ -434176,7 +438552,7 @@
    "player": "emmabutnormal",
    "playerSlug": "emmabutnormal",
    "iso": "us",
-   "fromTeam": "Murder of the Universe",
+   "fromTeam": "Stormfront",
    "fromSlug": null,
    "toTeam": "US Squad 2",
    "toSlug": null,
@@ -434236,7 +438612,7 @@
    "player": "bodexx",
    "playerSlug": "bodexx",
    "iso": "sg",
-   "fromTeam": "Stars Bore Witness",
+   "fromTeam": "Ivory Vanguard",
    "fromSlug": null,
    "toTeam": "SG Squad 2",
    "toSlug": null,
@@ -434260,7 +438636,7 @@
    "player": "Kaga Nazuna",
    "playerSlug": "kaga-nazuna",
    "iso": "jp",
-   "fromTeam": "Amend",
+   "fromTeam": "Ashfall",
    "fromSlug": null,
    "toTeam": "JP Squad 6",
    "toSlug": null,
@@ -434272,7 +438648,7 @@
    "player": "Sendo Yuuhi",
    "playerSlug": "sendo-yuuhi",
    "iso": "jp",
-   "fromTeam": "Loudmouth",
+   "fromTeam": "Kagerou Collective",
    "fromSlug": null,
    "toTeam": "JP Squad 2",
    "toSlug": null,
@@ -434296,7 +438672,7 @@
    "player": "Ichinose Uruha",
    "playerSlug": "ichinose-uruha",
    "iso": "jp",
-   "fromTeam": "Roving Highlands",
+   "fromTeam": "Sakura Sovereign",
    "fromSlug": null,
    "toTeam": "JP Squad 2",
    "toSlug": null,
@@ -434308,7 +438684,7 @@
    "player": "Aizawa Ema",
    "playerSlug": "aizawa-ema",
    "iso": "jp",
-   "fromTeam": "Loudmouth",
+   "fromTeam": "Kagerou Collective",
    "fromSlug": null,
    "toTeam": "JP Squad 2",
    "toSlug": null,
@@ -434332,7 +438708,7 @@
    "player": "Juno Umezono",
    "playerSlug": "juno-umezono",
    "iso": "ph",
-   "fromTeam": "Roving Highlands",
+   "fromTeam": "Ashfall",
    "fromSlug": null,
    "toTeam": "PH Squad 2",
    "toSlug": null,
@@ -434344,7 +438720,7 @@
    "player": "Hanabusa Lisa",
    "playerSlug": "hanabusa-lisa",
    "iso": "jp",
-   "fromTeam": "Umbral Shift",
+   "fromTeam": "Sakura Sovereign",
    "fromSlug": null,
    "toTeam": "JP Squad 1",
    "toSlug": null,
@@ -434380,7 +438756,7 @@
    "player": "Hamzyy",
    "playerSlug": "hamzyy",
    "iso": "sg",
-   "fromTeam": "Neo-Polaris",
+   "fromTeam": "Supernova",
    "fromSlug": null,
    "toTeam": "SG Squad 41",
    "toSlug": null,
@@ -434440,8 +438816,8 @@
    "player": "Asumi Sena",
    "playerSlug": "asumi-sena",
    "iso": "jp",
-   "fromTeam": "Eiromancers",
-   "fromSlug": "eiromancers",
+   "fromTeam": "Sakura Sovereign",
+   "fromSlug": null,
    "toTeam": "JP Squad 5",
    "toSlug": null,
    "toPro": false,
@@ -434476,8 +438852,8 @@
    "player": "boopydoopy",
    "playerSlug": "boopydoopy",
    "iso": "sg",
-   "fromTeam": "NIGHTmode",
-   "fromSlug": null,
+   "fromTeam": "Eiromancers",
+   "fromSlug": "eiromancers",
    "toTeam": "SG Squad 17",
    "toSlug": null,
    "toPro": false,
@@ -434536,7 +438912,7 @@
    "player": "kimonra",
    "playerSlug": "kimonra",
    "iso": "sg",
-   "fromTeam": "ELITE",
+   "fromTeam": "Radiant Coil",
    "fromSlug": null,
    "toTeam": "SG Squad 40",
    "toSlug": null,
@@ -434548,7 +438924,7 @@
    "player": "ErineRurie",
    "playerSlug": "erinerurie",
    "iso": "my",
-   "fromTeam": "Amend",
+   "fromTeam": "Onyx Legion",
    "fromSlug": null,
    "toTeam": "MY Squad 3",
    "toSlug": null,
@@ -434560,7 +438936,7 @@
    "player": "VSSMB",
    "playerSlug": "vssmb",
    "iso": "sg",
-   "fromTeam": "Vision",
+   "fromTeam": "Voidborne",
    "fromSlug": null,
    "toTeam": "SG Squad 36",
    "toSlug": null,
@@ -434572,7 +438948,7 @@
    "player": "MKakili",
    "playerSlug": "mkakili",
    "iso": "au",
-   "fromTeam": "Neo-Polaris",
+   "fromTeam": "Feral Instinct",
    "fromSlug": null,
    "toTeam": "AU Squad 1",
    "toSlug": null,
@@ -434584,7 +438960,7 @@
    "player": "Michimouto",
    "playerSlug": "michimouto",
    "iso": "sg",
-   "fromTeam": "MAcKY",
+   "fromTeam": "Ivory Vanguard",
    "fromSlug": null,
    "toTeam": "SG Squad 22",
    "toSlug": null,
@@ -434596,7 +438972,7 @@
    "player": "Yakumo Beni",
    "playerSlug": "yakumo-beni",
    "iso": "jp",
-   "fromTeam": "Moonshine",
+   "fromTeam": "Tidebreakers",
    "fromSlug": null,
    "toTeam": "JP Squad 1",
    "toSlug": null,
@@ -434644,7 +439020,7 @@
    "player": "cwstalVT",
    "playerSlug": "cwstalvt",
    "iso": "us",
-   "fromTeam": "MAcKY",
+   "fromTeam": "Stormfront",
    "fromSlug": null,
    "toTeam": "US Squad 1",
    "toSlug": null,
@@ -434656,7 +439032,7 @@
    "player": "Arya Kuroha",
    "playerSlug": "arya-kuroha",
    "iso": "us",
-   "fromTeam": "Wintornado",
+   "fromTeam": "Aurora Pact",
    "fromSlug": null,
    "toTeam": "US Squad 2",
    "toSlug": null,
@@ -434704,7 +439080,7 @@
    "player": "Kaga Sumire",
    "playerSlug": "kaga-sumire",
    "iso": "jp",
-   "fromTeam": "Destination2",
+   "fromTeam": "Sakura Sovereign",
    "fromSlug": null,
    "toTeam": "JP Squad 5",
    "toSlug": null,
@@ -434860,7 +439236,7 @@
    "player": "Kamito",
    "playerSlug": "kamito",
    "iso": "jp",
-   "fromTeam": "Eternal Vengeance Group",
+   "fromTeam": "Kagerou Collective",
    "fromSlug": null,
    "toTeam": "JP Squad 2",
    "toSlug": null,
@@ -434872,8 +439248,8 @@
    "player": "qebo",
    "playerSlug": "qebo",
    "iso": "my",
-   "fromTeam": "BeeHyve",
-   "fromSlug": "beehyve",
+   "fromTeam": "Feral Instinct",
+   "fromSlug": null,
    "toTeam": "MY Squad 4",
    "toSlug": null,
    "toPro": false,
@@ -434929,6 +439305,18 @@
   },
   {
    "type": "transfer",
+   "player": "xaeela",
+   "playerSlug": "xaeela",
+   "iso": "sg",
+   "fromTeam": "Voidborne",
+   "fromSlug": null,
+   "toTeam": "SG Squad 35",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-20"
+  },
+  {
+   "type": "transfer",
    "player": "sengjung123",
    "playerSlug": "sengjung123",
    "iso": "sg",
@@ -434941,12 +439329,36 @@
   },
   {
    "type": "transfer",
+   "player": "yxie",
+   "playerSlug": "yxie",
+   "iso": "us",
+   "fromTeam": "Stormfront",
+   "fromSlug": null,
+   "toTeam": "US Squad 5",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-20"
+  },
+  {
+   "type": "transfer",
    "player": "iceenblue",
    "playerSlug": "iceenblue",
    "iso": "us",
    "fromTeam": "Frostbyte",
    "fromSlug": null,
    "toTeam": "US Squad 5",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-20"
+  },
+  {
+   "type": "transfer",
+   "player": "CodedEcho",
+   "playerSlug": "codedecho",
+   "iso": "sg",
+   "fromTeam": "Echo Cipher",
+   "fromSlug": null,
+   "toTeam": "SG Squad 37",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-20"
@@ -434983,6 +439395,18 @@
    "fromTeam": "Starling Coven",
    "fromSlug": null,
    "toTeam": "SG Squad 36",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-20"
+  },
+  {
+   "type": "transfer",
+   "player": "AkiraTsukiyono",
+   "playerSlug": "akiratsukiyono",
+   "iso": "jp",
+   "fromTeam": "Ashfall",
+   "fromSlug": null,
+   "toTeam": "JP Squad 5",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-20"
@@ -435037,18 +439461,6 @@
   },
   {
    "type": "debut",
-   "player": "AkiraTsukiyono",
-   "playerSlug": "akiratsukiyono",
-   "iso": "jp",
-   "fromTeam": null,
-   "fromSlug": null,
-   "toTeam": "JP Squad 5",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-20"
-  },
-  {
-   "type": "debut",
    "player": "tedstyx",
    "playerSlug": "tedstyx-solo",
    "iso": "my",
@@ -435079,30 +439491,6 @@
    "fromTeam": null,
    "fromSlug": null,
    "toTeam": "SG Squad 11",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-20"
-  },
-  {
-   "type": "debut",
-   "player": "xaeela",
-   "playerSlug": "xaeela",
-   "iso": "sg",
-   "fromTeam": null,
-   "fromSlug": null,
-   "toTeam": "SG Squad 35",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-20"
-  },
-  {
-   "type": "debut",
-   "player": "CodedEcho",
-   "playerSlug": "codedecho",
-   "iso": "sg",
-   "fromTeam": null,
-   "fromSlug": null,
-   "toTeam": "SG Squad 37",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-20"
@@ -435145,18 +439533,6 @@
   },
   {
    "type": "debut",
-   "player": "yxie",
-   "playerSlug": "yxie",
-   "iso": "us",
-   "fromTeam": null,
-   "fromSlug": null,
-   "toTeam": "US Squad 5",
-   "toSlug": null,
-   "toPro": false,
-   "date": "2026-09-20"
-  },
-  {
-   "type": "debut",
    "player": "ReigyuuVT",
    "playerSlug": "reigyuuvt",
    "iso": "us",
@@ -435181,6 +439557,30 @@
   },
   {
    "type": "transfer",
+   "player": "rach.elx_",
+   "playerSlug": "rach-elx",
+   "iso": "sg",
+   "fromTeam": "ACoS",
+   "fromSlug": null,
+   "toTeam": "Supernova",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "tiger.lark",
+   "playerSlug": "tiger-lark",
+   "iso": "sg",
+   "fromTeam": "Animal Farm",
+   "fromSlug": null,
+   "toTeam": "Wanderlight",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
    "player": "Luneforrune",
    "playerSlug": "luneforrune",
    "iso": "sg",
@@ -435193,6 +439593,54 @@
   },
   {
    "type": "transfer",
+   "player": "kenzieyii",
+   "playerSlug": "kenzieyii",
+   "iso": "sg",
+   "fromTeam": "Null-Point",
+   "fromSlug": null,
+   "toTeam": "Radiant Coil",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "mond33__",
+   "playerSlug": "mond33",
+   "iso": "sg",
+   "fromTeam": "Aimpunch",
+   "fromSlug": "aimpunch",
+   "toTeam": "Feral Instinct",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "xmeijixx",
+   "playerSlug": "xmeijixx",
+   "iso": "sg",
+   "fromTeam": "Moonshine",
+   "fromSlug": null,
+   "toTeam": "Ivory Vanguard",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "ostc.x",
+   "playerSlug": "ostc-x",
+   "iso": "sg",
+   "fromTeam": "Catastrophy",
+   "fromSlug": null,
+   "toTeam": "Onyx Legion",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
    "player": "EXaCT",
    "playerSlug": "exact",
    "iso": "sg",
@@ -435201,6 +439649,42 @@
    "toTeam": "Mourningstar",
    "toSlug": "mourningstar",
    "toPro": true,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "okjustsmd",
+   "playerSlug": "okjustsmd",
+   "iso": "sg",
+   "fromTeam": "Amend",
+   "fromSlug": null,
+   "toTeam": "Echo Cipher",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "lukedefabio",
+   "playerSlug": "lukedefabio",
+   "iso": "sg",
+   "fromTeam": "Null-Point",
+   "fromSlug": null,
+   "toTeam": "Emberfall",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "KrinoJ",
+   "playerSlug": "krinoj",
+   "iso": "sg",
+   "fromTeam": "MAcKY",
+   "fromSlug": null,
+   "toTeam": "Tidebreakers",
+   "toSlug": null,
+   "toPro": false,
    "date": "2026-09-01"
   },
   {
@@ -435253,6 +439737,18 @@
   },
   {
    "type": "transfer",
+   "player": "dla.wo",
+   "playerSlug": "dla-wo",
+   "iso": "sg",
+   "fromTeam": "Gloria Mundi",
+   "fromSlug": null,
+   "toTeam": "Wanderlight",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
    "player": "TearsofDeath",
    "playerSlug": "tearsofdeath",
    "iso": "sg",
@@ -435261,6 +439757,18 @@
    "toTeam": "Mourningstar",
    "toSlug": "mourningstar",
    "toPro": true,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "thehidz",
+   "playerSlug": "thehidz",
+   "iso": "sg",
+   "fromTeam": "NIGHTmode",
+   "fromSlug": null,
+   "toTeam": "Echo Cipher",
+   "toSlug": null,
+   "toPro": false,
    "date": "2026-09-01"
   },
   {
@@ -435277,12 +439785,48 @@
   },
   {
    "type": "transfer",
+   "player": "Ryujin",
+   "playerSlug": "ryujin",
+   "iso": "my",
+   "fromTeam": "Eiromancers",
+   "fromSlug": "eiromancers",
+   "toTeam": "Onyx Legion",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
    "player": "yumezukiyomi",
    "playerSlug": "yumezukiyomi",
    "iso": "sg",
    "fromTeam": "Catastrophy",
    "fromSlug": null,
    "toTeam": "Dreamstate",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "Nataleste",
+   "playerSlug": "nataleste",
+   "iso": "sg",
+   "fromTeam": "Stars Bore Witness",
+   "fromSlug": null,
+   "toTeam": "Ivory Vanguard",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "Jenakai",
+   "playerSlug": "jenakai",
+   "iso": "sg",
+   "fromTeam": "Eiromancers",
+   "fromSlug": "eiromancers",
+   "toTeam": "Supernova",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-01"
@@ -435325,6 +439869,66 @@
   },
   {
    "type": "transfer",
+   "player": "JStarWolf",
+   "playerSlug": "jstarwolf",
+   "iso": "sg",
+   "fromTeam": "Heavenswept",
+   "fromSlug": null,
+   "toTeam": "Radiant Coil",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "swoopsy",
+   "playerSlug": "swoopsy",
+   "iso": "sg",
+   "fromTeam": "Gridlocked",
+   "fromSlug": null,
+   "toTeam": "Emberfall",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "NOTORIOUS47",
+   "playerSlug": "notorious47",
+   "iso": "my",
+   "fromTeam": "Loudmouth",
+   "fromSlug": null,
+   "toTeam": "Onyx Legion",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "HiguVT",
+   "playerSlug": "higuvt",
+   "iso": "au",
+   "fromTeam": "Roving Highlands",
+   "fromSlug": null,
+   "toTeam": "Tidebreakers",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "Laurel",
+   "playerSlug": "laurel",
+   "iso": "ph",
+   "fromTeam": "Heavenswept",
+   "fromSlug": null,
+   "toTeam": "Radiant Coil",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
    "player": "afayctionate",
    "playerSlug": "afayctionate",
    "iso": "sg",
@@ -435349,6 +439953,18 @@
   },
   {
    "type": "transfer",
+   "player": "KiokoCheiko",
+   "playerSlug": "kiokocheiko",
+   "iso": "ph",
+   "fromTeam": "VisualClarity",
+   "fromSlug": null,
+   "toTeam": "Supernova",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
    "player": "Nightveil Lycoris",
    "playerSlug": "nightveil-lycoris",
    "iso": "my",
@@ -435361,12 +439977,36 @@
   },
   {
    "type": "transfer",
+   "player": "CryingNutz",
+   "playerSlug": "cryingnutz",
+   "iso": "my",
+   "fromTeam": "NIGHTmode",
+   "fromSlug": null,
+   "toTeam": "Onyx Legion",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
    "player": "nyxcatto",
    "playerSlug": "nyxcatto",
    "iso": "sg",
    "fromTeam": "Heavenswept",
    "fromSlug": null,
    "toTeam": "Starling Coven",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "estellyy.",
+   "playerSlug": "estellyy",
+   "iso": "sg",
+   "fromTeam": "Masmark",
+   "fromSlug": "masmark",
+   "toTeam": "Rebellium",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-01"
@@ -435397,6 +440037,30 @@
   },
   {
    "type": "transfer",
+   "player": "TRPaki",
+   "playerSlug": "trpaki",
+   "iso": "sg",
+   "fromTeam": "Obelizk",
+   "fromSlug": null,
+   "toTeam": "Feral Instinct",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "wushii",
+   "playerSlug": "wushii",
+   "iso": "my",
+   "fromTeam": "Neo-Polaris",
+   "fromSlug": null,
+   "toTeam": "Feral Instinct",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
    "player": "Syrrith",
    "playerSlug": "syrrith",
    "iso": "my",
@@ -435409,6 +440073,18 @@
   },
   {
    "type": "transfer",
+   "player": "azumiying",
+   "playerSlug": "azumiying",
+   "iso": "sg",
+   "fromTeam": "Syzygy",
+   "fromSlug": "syzygy",
+   "toTeam": "Emberfall",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
    "player": "cherri_vt",
    "playerSlug": "cherri-vt",
    "iso": "au",
@@ -435417,6 +440093,18 @@
    "toTeam": "Mourningstar",
    "toSlug": "mourningstar",
    "toPro": true,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "Dianya",
+   "playerSlug": "dianya",
+   "iso": "us",
+   "fromTeam": "Amend",
+   "fromSlug": null,
+   "toTeam": "Stormfront",
+   "toSlug": null,
+   "toPro": false,
    "date": "2026-09-01"
   },
   {
@@ -435453,6 +440141,66 @@
    "toTeam": "Wraithborne",
    "toSlug": "wraithborne",
    "toPro": true,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "sURF",
+   "playerSlug": "surf",
+   "iso": "sg",
+   "fromTeam": "Loudmouth",
+   "fromSlug": null,
+   "toTeam": "Tidebreakers",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "Shuvimo",
+   "playerSlug": "shuvimo",
+   "iso": "jp",
+   "fromTeam": "Gridlocked",
+   "fromSlug": null,
+   "toTeam": "Sakura Sovereign",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "Aweberry",
+   "playerSlug": "aweberry",
+   "iso": "sg",
+   "fromTeam": "MAcKY",
+   "fromSlug": null,
+   "toTeam": "Radiant Coil",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "kyomikoo",
+   "playerSlug": "kyomikoo",
+   "iso": "sg",
+   "fromTeam": "Roving Highlands",
+   "fromSlug": null,
+   "toTeam": "Voidborne",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "itswendy_",
+   "playerSlug": "itswendy",
+   "iso": "sg",
+   "fromTeam": "Eternal Vengeance Group",
+   "fromSlug": null,
+   "toTeam": "Wanderlight",
+   "toSlug": null,
+   "toPro": false,
    "date": "2026-09-01"
   },
   {
@@ -435505,6 +440253,30 @@
   },
   {
    "type": "transfer",
+   "player": "PenguChi",
+   "playerSlug": "penguchi",
+   "iso": "ph",
+   "fromTeam": "Syzygy",
+   "fromSlug": "syzygy",
+   "toTeam": "Emberfall",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "anju_o",
+   "playerSlug": "anju-o",
+   "iso": "ph",
+   "fromTeam": "Leviathan",
+   "fromSlug": null,
+   "toTeam": "Echo Cipher",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
    "player": "Codiant",
    "playerSlug": "codiant",
    "iso": "kz",
@@ -435529,6 +440301,30 @@
   },
   {
    "type": "transfer",
+   "player": "twentyrosie",
+   "playerSlug": "twentyrosie",
+   "iso": "sg",
+   "fromTeam": "Stars Bore Witness",
+   "fromSlug": null,
+   "toTeam": "Echo Cipher",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "pastellows",
+   "playerSlug": "pastellows",
+   "iso": "us",
+   "fromTeam": "Null-Point",
+   "fromSlug": null,
+   "toTeam": "Stormfront",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
    "player": "Yaekia",
    "playerSlug": "yaekia",
    "iso": "au",
@@ -435537,6 +440333,18 @@
    "toTeam": "Solstice",
    "toSlug": "solstice",
    "toPro": true,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "ruamamiya",
+   "playerSlug": "ruamamiya",
+   "iso": "sg",
+   "fromTeam": "Eiromancers",
+   "fromSlug": "eiromancers",
+   "toTeam": "Ivory Vanguard",
+   "toSlug": null,
+   "toPro": false,
    "date": "2026-09-01"
   },
   {
@@ -435553,12 +440361,48 @@
   },
   {
    "type": "transfer",
+   "player": "stitchkyui",
+   "playerSlug": "stitchkyui",
+   "iso": "us",
+   "fromTeam": "Syzygy",
+   "fromSlug": "syzygy",
+   "toTeam": "Aurora Pact",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "djsalty_",
+   "playerSlug": "djsalty",
+   "iso": "sg",
+   "fromTeam": "Syzygy",
+   "fromSlug": "syzygy",
+   "toTeam": "Tidebreakers",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
    "player": "Kaito_Oshino",
    "playerSlug": "kaito-oshino",
    "iso": "au",
    "fromTeam": "ACoS",
    "fromSlug": null,
    "toTeam": "Nullpoint",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "LeilaMayadah",
+   "playerSlug": "leilamayadah",
+   "iso": "ca",
+   "fromTeam": "ACoS",
+   "fromSlug": null,
+   "toTeam": "Aurora Pact",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-01"
@@ -435577,6 +440421,42 @@
   },
   {
    "type": "transfer",
+   "player": "PSYSTRA",
+   "playerSlug": "psystra",
+   "iso": "gb",
+   "fromTeam": "Loudmouth",
+   "fromSlug": null,
+   "toTeam": "Albion Rising",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "RumiRumi",
+   "playerSlug": "rumirumi",
+   "iso": "sg",
+   "fromTeam": "VisualClarity",
+   "fromSlug": null,
+   "toTeam": "Emberfall",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "FumishiroYummy",
+   "playerSlug": "fumishiroyummy",
+   "iso": "jp",
+   "fromTeam": "Nightmode",
+   "fromSlug": null,
+   "toTeam": "Kagerou Collective",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
    "player": "arcimoon",
    "playerSlug": "arcimoon",
    "iso": "ca",
@@ -435585,6 +440465,30 @@
    "toTeam": "Mourningstar",
    "toSlug": "mourningstar",
    "toPro": true,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "Nerfox",
+   "playerSlug": "nerfox",
+   "iso": "pl",
+   "fromTeam": "Withered Rose",
+   "fromSlug": null,
+   "toTeam": "Albion Rising",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "HakoP",
+   "playerSlug": "hakop",
+   "iso": "tw",
+   "fromTeam": "Hako's Angels",
+   "fromSlug": null,
+   "toTeam": "Kagerou Collective",
+   "toSlug": null,
+   "toPro": false,
    "date": "2026-09-01"
   },
   {
@@ -435613,6 +440517,18 @@
   },
   {
    "type": "transfer",
+   "player": "SachiMizora",
+   "playerSlug": "sachimizora",
+   "iso": "au",
+   "fromTeam": "Amend",
+   "fromSlug": null,
+   "toTeam": "Voidborne",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
    "player": "JigglyPingu",
    "playerSlug": "jigglypingu",
    "iso": "sg",
@@ -435637,6 +440553,18 @@
   },
   {
    "type": "transfer",
+   "player": "JustYoong",
+   "playerSlug": "justyoong",
+   "iso": "sg",
+   "fromTeam": "Cross-X",
+   "fromSlug": null,
+   "toTeam": "Voidborne",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
    "player": "ItzMaigo",
    "playerSlug": "itzmaigo",
    "iso": "sg",
@@ -435645,6 +440573,30 @@
    "toTeam": "Nightshade",
    "toSlug": "nightshade",
    "toPro": true,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "vixi",
+   "playerSlug": "vixi",
+   "iso": "au",
+   "fromTeam": "Tempest Deluxe",
+   "fromSlug": null,
+   "toTeam": "Wanderlight",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "emmabutnormal",
+   "playerSlug": "emmabutnormal",
+   "iso": "us",
+   "fromTeam": "Murder of the Universe",
+   "fromSlug": null,
+   "toTeam": "Stormfront",
+   "toSlug": null,
+   "toPro": false,
    "date": "2026-09-01"
   },
   {
@@ -435673,12 +440625,108 @@
   },
   {
    "type": "transfer",
+   "player": "bodexx",
+   "playerSlug": "bodexx",
+   "iso": "sg",
+   "fromTeam": "Stars Bore Witness",
+   "fromSlug": null,
+   "toTeam": "Ivory Vanguard",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
    "player": "Karasu",
    "playerSlug": "karasu",
    "iso": "my",
    "fromTeam": "Radiant Dawn",
    "fromSlug": null,
    "toTeam": "Crimson Meridian",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "Kaga Nazuna",
+   "playerSlug": "kaga-nazuna",
+   "iso": "jp",
+   "fromTeam": "Amend",
+   "fromSlug": null,
+   "toTeam": "Ashfall",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "Sendo Yuuhi",
+   "playerSlug": "sendo-yuuhi",
+   "iso": "jp",
+   "fromTeam": "Loudmouth",
+   "fromSlug": null,
+   "toTeam": "Kagerou Collective",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "Ichinose Uruha",
+   "playerSlug": "ichinose-uruha",
+   "iso": "jp",
+   "fromTeam": "Roving Highlands",
+   "fromSlug": null,
+   "toTeam": "Sakura Sovereign",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "Aizawa Ema",
+   "playerSlug": "aizawa-ema",
+   "iso": "jp",
+   "fromTeam": "Loudmouth",
+   "fromSlug": null,
+   "toTeam": "Kagerou Collective",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "Juno Umezono",
+   "playerSlug": "juno-umezono",
+   "iso": "ph",
+   "fromTeam": "Roving Highlands",
+   "fromSlug": null,
+   "toTeam": "Ashfall",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "Aleaka",
+   "playerSlug": "aleaka",
+   "iso": "gb",
+   "fromTeam": "Radiant Dawn",
+   "fromSlug": null,
+   "toTeam": "Albion Rising",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "Hanabusa Lisa",
+   "playerSlug": "hanabusa-lisa",
+   "iso": "jp",
+   "fromTeam": "Umbral Shift",
+   "fromSlug": null,
+   "toTeam": "Sakura Sovereign",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-01"
@@ -435709,6 +440757,18 @@
   },
   {
    "type": "transfer",
+   "player": "Hamzyy",
+   "playerSlug": "hamzyy",
+   "iso": "sg",
+   "fromTeam": "Neo-Polaris",
+   "fromSlug": null,
+   "toTeam": "Supernova",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
    "player": "Tigeraxd",
    "playerSlug": "tigeraxd",
    "iso": "au",
@@ -435716,6 +440776,42 @@
    "fromSlug": null,
    "toTeam": "BeeHyve",
    "toSlug": "beehyve",
+   "toPro": true,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "Niamocha",
+   "playerSlug": "niamocha",
+   "iso": "ca",
+   "fromTeam": "Radiant Dawn",
+   "fromSlug": null,
+   "toTeam": "Aurora Pact",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "Asumi Sena",
+   "playerSlug": "asumi-sena",
+   "iso": "jp",
+   "fromTeam": "Eiromancers",
+   "fromSlug": "eiromancers",
+   "toTeam": "Sakura Sovereign",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "boopydoopy",
+   "playerSlug": "boopydoopy",
+   "iso": "sg",
+   "fromTeam": "NIGHTmode",
+   "fromSlug": null,
+   "toTeam": "Eiromancers",
+   "toSlug": "eiromancers",
    "toPro": true,
    "date": "2026-09-01"
   },
@@ -435745,12 +440841,84 @@
   },
   {
    "type": "transfer",
+   "player": "kimonra",
+   "playerSlug": "kimonra",
+   "iso": "sg",
+   "fromTeam": "ELITE",
+   "fromSlug": null,
+   "toTeam": "Radiant Coil",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "ErineRurie",
+   "playerSlug": "erinerurie",
+   "iso": "my",
+   "fromTeam": "Amend",
+   "fromSlug": null,
+   "toTeam": "Onyx Legion",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
    "player": "MizukiiMoon",
    "playerSlug": "mizukiimoon",
    "iso": "it",
    "fromTeam": "Moonshine",
    "fromSlug": null,
    "toTeam": "Northwind",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "VSSMB",
+   "playerSlug": "vssmb",
+   "iso": "sg",
+   "fromTeam": "Vision",
+   "fromSlug": null,
+   "toTeam": "Voidborne",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "MKakili",
+   "playerSlug": "mkakili",
+   "iso": "au",
+   "fromTeam": "Neo-Polaris",
+   "fromSlug": null,
+   "toTeam": "Feral Instinct",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "Michimouto",
+   "playerSlug": "michimouto",
+   "iso": "sg",
+   "fromTeam": "MAcKY",
+   "fromSlug": null,
+   "toTeam": "Ivory Vanguard",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "Yakumo Beni",
+   "playerSlug": "yakumo-beni",
+   "iso": "jp",
+   "fromTeam": "Moonshine",
+   "fromSlug": null,
+   "toTeam": "Tidebreakers",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-01"
@@ -435765,6 +440933,18 @@
    "toTeam": "Mourningstar",
    "toSlug": "mourningstar",
    "toPro": true,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "SoapiiSereia",
+   "playerSlug": "soapiisereia",
+   "iso": "nz",
+   "fromTeam": "Leviathan",
+   "fromSlug": null,
+   "toTeam": "Wanderlight",
+   "toSlug": null,
+   "toPro": false,
    "date": "2026-09-01"
   },
   {
@@ -435801,6 +440981,30 @@
    "toTeam": "Wraithborne",
    "toSlug": "wraithborne",
    "toPro": true,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "cwstalVT",
+   "playerSlug": "cwstalvt",
+   "iso": "us",
+   "fromTeam": "MAcKY",
+   "fromSlug": null,
+   "toTeam": "Stormfront",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "Arya Kuroha",
+   "playerSlug": "arya-kuroha",
+   "iso": "us",
+   "fromTeam": "Wintornado",
+   "fromSlug": null,
+   "toTeam": "Aurora Pact",
+   "toSlug": null,
+   "toPro": false,
    "date": "2026-09-01"
   },
   {
@@ -435853,12 +441057,36 @@
   },
   {
    "type": "transfer",
+   "player": "Kaga Sumire",
+   "playerSlug": "kaga-sumire",
+   "iso": "jp",
+   "fromTeam": "Destination2",
+   "fromSlug": null,
+   "toTeam": "Sakura Sovereign",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
    "player": "Dazeido",
    "playerSlug": "dazeido",
    "iso": "id",
    "fromTeam": "Eternal Vengeance Group",
    "fromSlug": null,
    "toTeam": "Crimson Meridian",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "Kojadayo",
+   "playerSlug": "kojadayo",
+   "iso": "is",
+   "fromTeam": "Team Stranded",
+   "fromSlug": null,
+   "toTeam": "Ashfall",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-01"
@@ -435925,6 +441153,18 @@
   },
   {
    "type": "transfer",
+   "player": "Zarlard",
+   "playerSlug": "zarlard",
+   "iso": "se",
+   "fromTeam": "Murder of the Universe",
+   "fromSlug": null,
+   "toTeam": "Albion Rising",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
    "player": "yukihimeowo",
    "playerSlug": "yukihimeowo",
    "iso": "us",
@@ -435973,12 +441213,36 @@
   },
   {
    "type": "transfer",
+   "player": "Kamito",
+   "playerSlug": "kamito",
+   "iso": "jp",
+   "fromTeam": "Eternal Vengeance Group",
+   "fromSlug": null,
+   "toTeam": "Kagerou Collective",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
    "player": "MiyaLeile",
    "playerSlug": "miyaleile",
    "iso": "nl",
    "fromTeam": "BeeHyve",
    "fromSlug": "beehyve",
    "toTeam": "Northwind",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "transfer",
+   "player": "qebo",
+   "playerSlug": "qebo",
+   "iso": "my",
+   "fromTeam": "BeeHyve",
+   "fromSlug": "beehyve",
+   "toTeam": "Feral Instinct",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-01"
@@ -436008,6 +441272,18 @@
    "date": "2026-09-01"
   },
   {
+   "type": "transfer",
+   "player": "Hanyachi",
+   "playerSlug": "hanyachi",
+   "iso": "de",
+   "fromTeam": "Heavenswept",
+   "fromSlug": null,
+   "toTeam": "Albion Rising",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
    "type": "debut",
    "player": "AnjuValse",
    "playerSlug": "anjuvalse",
@@ -436033,6 +441309,18 @@
   },
   {
    "type": "debut",
+   "player": "xaeela",
+   "playerSlug": "xaeela",
+   "iso": "sg",
+   "fromTeam": null,
+   "fromSlug": null,
+   "toTeam": "Voidborne",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "debut",
    "player": "sengjung123",
    "playerSlug": "sengjung123",
    "iso": "sg",
@@ -436041,6 +441329,18 @@
    "toTeam": "Syzygy",
    "toSlug": "syzygy",
    "toPro": true,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "debut",
+   "player": "yxie",
+   "playerSlug": "yxie",
+   "iso": "us",
+   "fromTeam": null,
+   "fromSlug": null,
+   "toTeam": "Stormfront",
+   "toSlug": null,
+   "toPro": false,
    "date": "2026-09-01"
   },
   {
@@ -436063,6 +441363,30 @@
    "fromTeam": null,
    "fromSlug": null,
    "toTeam": "Nightbloom",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "debut",
+   "player": "haze_vt",
+   "playerSlug": "haze-vt",
+   "iso": "ca",
+   "fromTeam": null,
+   "fromSlug": null,
+   "toTeam": "Aurora Pact",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "debut",
+   "player": "CodedEcho",
+   "playerSlug": "codedecho",
+   "iso": "sg",
+   "fromTeam": null,
+   "fromSlug": null,
+   "toTeam": "Echo Cipher",
    "toSlug": null,
    "toPro": false,
    "date": "2026-09-01"
@@ -436113,6 +441437,30 @@
    "toTeam": "Prism Divide",
    "toSlug": "prism-divide",
    "toPro": true,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "debut",
+   "player": "AkiraTsukiyono",
+   "playerSlug": "akiratsukiyono",
+   "iso": "jp",
+   "fromTeam": null,
+   "fromSlug": null,
+   "toTeam": "Ashfall",
+   "toSlug": null,
+   "toPro": false,
+   "date": "2026-09-01"
+  },
+  {
+   "type": "debut",
+   "player": "aoi_chibi",
+   "playerSlug": "aoi-chibi",
+   "iso": "au",
+   "fromTeam": null,
+   "fromSlug": null,
+   "toTeam": "Ashfall",
+   "toSlug": null,
+   "toPro": false,
    "date": "2026-09-01"
   },
   {
@@ -459986,6 +465334,88 @@
  ],
  "adhocMapTeams": [
   {
+   "name": "Rebellium",
+   "slug": "adhoc-rebellium",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 10
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.583,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 5
+    },
+    "Inferno": {
+     "w": 1,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
+     "real": true,
+     "est": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 6
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.667,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 4
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.4,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 10
+    },
+    "Anubis": {
+     "w": 1,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
+     "real": true,
+     "est": false
+    }
+   },
+   "bestMaps": [
+    "Tuscan",
+    "Dust2"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Mirage"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
    "name": "Crimson Meridian",
    "slug": "adhoc-crimsonmeridian",
    "mapStats": {
@@ -460070,6 +465500,168 @@
    "event": "Bot Pro Cup 2026"
   },
   {
+   "name": "Sakura Sovereign",
+   "slug": "adhoc-sakurasovereign",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 7
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.25,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 3
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 2,
+     "g": 2,
+     "wr": 0.0,
+     "real": true,
+     "est": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
+    },
+    "Tuscan": {
+     "w": 1,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
+     "real": true,
+     "est": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.333,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 4
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Inferno"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Kagerou Collective",
+   "slug": "adhoc-kageroucollective",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 3,
+     "g": 3,
+     "wr": 0.0,
+     "real": true,
+     "est": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 4
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.302,
+     "real": false,
+     "est": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.067,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 8
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 3
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.8,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 5
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.519,
+     "real": false,
+     "est": false
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Mirage"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
    "name": "Seraph Dynasty",
    "slug": "adhoc-seraphdynasty",
    "mapStats": {
@@ -460148,6 +465740,328 @@
    ],
    "worstMaps": [
     "Mirage",
+    "Inferno"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Ivory Vanguard",
+   "slug": "adhoc-ivoryvanguard",
+   "mapStats": {
+    "Mirage": {
+     "w": 2,
+     "l": 0,
+     "g": 2,
+     "wr": 1.0,
+     "real": true,
+     "est": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.505,
+     "real": false,
+     "est": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 6
+    },
+    "Cache": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 5
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.345,
+     "real": false,
+     "est": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 7
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Dust2"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Inferno"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Voidborne",
+   "slug": "adhoc-voidborne",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.339,
+     "real": false,
+     "est": false
+    },
+    "Inferno": {
+     "w": 1,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
+     "real": true,
+     "est": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 3
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.1,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 6
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.623,
+     "real": false,
+     "est": false
+    },
+    "Anubis": {
+     "w": 1,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
+     "real": true,
+     "est": false
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Anubis"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Cache"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Onyx Legion",
+   "slug": "adhoc-onyxlegion",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 4
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.067,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 7
+    },
+    "Cache": {
+     "w": 1,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
+     "real": true,
+     "est": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.1,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 8
+    },
+    "Anubis": {
+     "w": 1,
+     "l": 0,
+     "g": 0,
+     "wr": 0.9,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 6
+    }
+   },
+   "bestMaps": [
+    "Anubis",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Dust2"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Stormfront",
+   "slug": "adhoc-stormfront",
+   "mapStats": {
+    "Mirage": {
+     "w": 2,
+     "l": 0,
+     "g": 2,
+     "wr": 1.0,
+     "real": true,
+     "est": false
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.567,
+     "real": false,
+     "est": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.1,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 10
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.2,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 5
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.2,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 7
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.39,
+     "real": false,
+     "est": false
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Dust2"
+   ],
+   "worstMaps": [
+    "Vertigo",
     "Inferno"
    ],
    "adhoc": true,
@@ -460314,6 +466228,168 @@
    "event": "Bot Pro Cup 2026"
   },
   {
+   "name": "Radiant Coil",
+   "slug": "adhoc-radiantcoil",
+   "mapStats": {
+    "Mirage": {
+     "w": 1,
+     "l": 0,
+     "g": 0,
+     "wr": 0.8,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 8
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
+    },
+    "Inferno": {
+     "w": 1,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
+     "real": true,
+     "est": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.548,
+     "real": false,
+     "est": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.05,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 9
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 3
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.75,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 3
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Mirage"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Tuscan"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Emberfall",
+   "slug": "adhoc-emberfall",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 6
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 2
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.481,
+     "real": false,
+     "est": false
+    },
+    "Cache": {
+     "w": 1,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
+     "real": true,
+     "est": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
+    },
+    "Vertigo": {
+     "w": 1,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
+     "real": true,
+     "est": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Dust2"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Anubis"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
    "name": "Nightbloom",
    "slug": "adhoc-nightbloom",
    "mapStats": {
@@ -460387,6 +466463,252 @@
    "worstMaps": [
     "Mirage",
     "Inferno"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Supernova",
+   "slug": "adhoc-supernova",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 2,
+     "g": 2,
+     "wr": 0.0,
+     "real": true,
+     "est": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.604,
+     "real": false,
+     "est": false
+    },
+    "Cache": {
+     "w": 1,
+     "l": 0,
+     "g": 0,
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 4
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.125,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 5
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 4
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Inferno"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Dust2"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Aurora Pact",
+   "slug": "adhoc-aurorapact",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.4,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 9
+    },
+    "Dust2": {
+     "w": 1,
+     "l": 0,
+     "g": 0,
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 7
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.167,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 4
+    },
+    "Cache": {
+     "w": 0,
+     "l": 2,
+     "g": 2,
+     "wr": 0.0,
+     "real": true,
+     "est": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
+    },
+    "Vertigo": {
+     "w": 1,
+     "l": 0,
+     "g": 0,
+     "wr": 0.7,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 9
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.554,
+     "real": false,
+     "est": false
+    }
+   },
+   "bestMaps": [
+    "Dust2",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Cache"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Echo Cipher",
+   "slug": "adhoc-echocipher",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.5,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 7
+    },
+    "Dust2": {
+     "w": 1,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
+     "real": true,
+     "est": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.667,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 3
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 6
+    },
+    "Tuscan": {
+     "w": 1,
+     "l": 1,
+     "g": 2,
+     "wr": 0.5,
+     "real": true,
+     "est": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.583,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 6
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 2
+    }
+   },
+   "bestMaps": [
+    "Anubis",
+    "Cache"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Mirage"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -460469,6 +466791,88 @@
    "worstMaps": [
     "Mirage",
     "Anubis"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Albion Rising",
+   "slug": "adhoc-albionrising",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 7
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 3
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 2
+    },
+    "Tuscan": {
+     "w": 1,
+     "l": 2,
+     "g": 3,
+     "wr": 0.333,
+     "real": true,
+     "est": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.514,
+     "real": false,
+     "est": false
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 2
+    }
+   },
+   "bestMaps": [
+    "Anubis",
+    "Dust2"
+   ],
+   "worstMaps": [
+    "Mirage",
+    "Inferno"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
@@ -460646,6 +467050,254 @@
    "event": "Bot Pro Cup 2026"
   },
   {
+   "name": "Feral Instinct",
+   "slug": "adhoc-feralinstinct",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.444,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 6
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.167,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 10
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.375,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 5
+    },
+    "Cache": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.312,
+     "real": false,
+     "est": true,
+     "estN": 4,
+     "estMaps": 9
+    },
+    "Tuscan": {
+     "w": 1,
+     "l": 0,
+     "g": 0,
+     "wr": 0.767,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 11
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.833,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 4
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.2,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 13
+    }
+   },
+   "bestMaps": [
+    "Vertigo",
+    "Tuscan"
+   ],
+   "worstMaps": [
+    "Dust2",
+    "Anubis"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Wanderlight",
+   "slug": "adhoc-wanderlight",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.333,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 3
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 5
+    },
+    "Cache": {
+     "w": 0,
+     "l": 2,
+     "g": 2,
+     "wr": 0.0,
+     "real": true,
+     "est": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
+    },
+    "Anubis": {
+     "w": 1,
+     "l": 0,
+     "g": 0,
+     "wr": 1.0,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 5
+    }
+   },
+   "bestMaps": [
+    "Anubis",
+    "Dust2"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Tuscan"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Tidebreakers",
+   "slug": "adhoc-tidebreakers",
+   "mapStats": {
+    "Mirage": {
+     "w": 1,
+     "l": 0,
+     "g": 0,
+     "wr": 0.9,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 6
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.504,
+     "real": false,
+     "est": false
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.337,
+     "real": false,
+     "est": false
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 3,
+     "estMaps": 3
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.36,
+     "real": false,
+     "est": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 4,
+     "g": 4,
+     "wr": 0.0,
+     "real": true,
+     "est": false
+    }
+   },
+   "bestMaps": [
+    "Mirage",
+    "Dust2"
+   ],
+   "worstMaps": [
+    "Vertigo",
+    "Cache"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
    "name": "Nullpoint",
    "slug": "adhoc-nullpoint",
    "mapStats": {
@@ -460719,6 +467371,88 @@
    "worstMaps": [
     "Cache",
     "Vertigo"
+   ],
+   "adhoc": true,
+   "event": "Bot Pro Cup 2026"
+  },
+  {
+   "name": "Ashfall",
+   "slug": "adhoc-ashfall",
+   "mapStats": {
+    "Mirage": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 6
+    },
+    "Dust2": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.067,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 7
+    },
+    "Inferno": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 1,
+     "estMaps": 1
+    },
+    "Cache": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.554,
+     "real": false,
+     "est": false
+    },
+    "Tuscan": {
+     "w": 0,
+     "l": 2,
+     "g": 2,
+     "wr": 0.0,
+     "real": true,
+     "est": false
+    },
+    "Vertigo": {
+     "w": 0,
+     "l": 1,
+     "g": 0,
+     "wr": 0.1,
+     "real": false,
+     "est": true,
+     "estN": 5,
+     "estMaps": 7
+    },
+    "Anubis": {
+     "w": 0,
+     "l": 0,
+     "g": 0,
+     "wr": 0.0,
+     "real": false,
+     "est": true,
+     "estN": 2,
+     "estMaps": 2
+    }
+   },
+   "bestMaps": [
+    "Cache",
+    "Vertigo"
+   ],
+   "worstMaps": [
+    "Tuscan",
+    "Mirage"
    ],
    "adhoc": true,
    "event": "Bot Pro Cup 2026"
