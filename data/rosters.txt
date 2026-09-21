@@ -158,8 +158,8 @@ bot_add "GGR gigichiii_"; bot_add "GGR bluenerd8"; bot_add "GGR yunaeyo"; bot_ad
 bot_add_ct "GGR gigichiii_"; bot_add_ct "GGR bluenerd8"; bot_add_ct "GGR yunaeyomedia"; bot_add_ct "GGR mmirawr_"; bot_add_ct "GGR YoJareddo";
 
 The Nomads (BPL11 Winners)
-bot_add "Tnm Rethnap"; bot_add "Tnm luciddoob"; bot_add "Tnm Redandb1ue"; bot_add "Tnm mominichi"; bot_add "Tnm Nikorasu";
-bot_add_ct "Tnm Rethnap"; bot_add_ct "Tnm luciddoob"; bot_add_ct "Tnm Redandb1ue"; bot_add_ct "Tnm mominichi"; bot_add_ct "Tnm Nikorasu";
+bot_add "Tnm Rethnap"; bot_add "Tnm luciddoob"; bot_add "Tnm Sadgeboi"; bot_add "Tnm L2Strike"; bot_add "Tnm Nikorasu";
+bot_add_ct "Tnm Rethnap"; bot_add_ct "Tnm luciddoob"; bot_add_ct "Tnm Sadgeboi"; bot_add_ct "Tnm L2Strike"; bot_add_ct "Tnm Nikorasu";
 
 Ukiyo (BPL10 Runners-up Special) [XueQiii switched with Acryii_]
 bot_add "uKy Kai"; bot_add "uKy MugCowPayLucky"; bot_add "uKy Acryii_"; bot_add "uKy nattyuwus"; bot_add "uKy kael";
