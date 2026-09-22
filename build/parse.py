@@ -411,17 +411,18 @@ def compute_team_points(teams, tournaments):
     record how each team's rank moved vs. before the most recent completed event."""
     dated = [t["date"] for t in tournaments if t.get("date")]
     ref = max((_pdate(d) for d in dated), default=None)   # newest event = "now"
-    # An event counts once it has a date and a ranking. Completed events (a champion name) award
-    # full placement points; an in-progress event with a finished group stage (e.g. Bot Pro Cup,
-    # no champion yet) still awards the smaller group-stage points now. Champion NAME is used, not
-    # the resolved slug, so an event won by a non-tracked team still credits the teams that competed.
-    counted = [tr for tr in tournaments if tr.get("date") and (tr.get("finalStandings") or tr.get("standings"))]
-    latest_date = max((tr["date"] for tr in counted if tr.get("champion")), default=None)  # most recent completed event
+    # Only COMPLETED events award points: a champion name plus a date. An in-progress event (no
+    # champion yet, e.g. Bot Pro Cup while the playoffs are still being played) awards nothing until
+    # it finishes. Champion NAME is used, not the resolved slug, so an event won by a non-tracked
+    # team still credits the tracked teams that competed. Group-stage finishers still earn their
+    # smaller points, but only once the whole event is done.
+    counted = [tr for tr in tournaments if tr.get("champion") and tr.get("date")]
+    latest_date = max((tr["date"] for tr in counted), default=None)  # most recent completed event
 
     def tally(exclude_latest):
         pts = defaultdict(float); bd = defaultdict(list)
         for tr in counted:
-            if exclude_latest and tr.get("champion") and tr["date"] == latest_date:
+            if exclude_latest and tr["date"] == latest_date:
                 continue
             mult = TIER_POINT_MULT.get(tr["tier"], 1.0)
             w = 0.5 ** ((ref - _pdate(tr["date"])).days / POINTS_HALFLIFE_DAYS) if ref else 1.0
