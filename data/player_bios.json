@@ -75,6 +75,10 @@
   "gender": "M",
   "bio": "Suzuyunn is a Platinum-tier in-game leader for Aeternum, a Singaporean caller with a winning record for the roster."
  },
+ "perk": {
+  "gender": "NB",
+  "bio": "perk is a Platinum-tier AWPer for Aeternum, a Singaporean sniper holding down the team's defensive rounds."
+ },
  "nipnip": {
   "gender": "M",
   "bio": "NipNip is the in-game leader for Aetherline, a Singaporean caller who tops the scoreboard as often as not — 522 kills and 95 MVP rounds while running the team, at a 64% win rate."
@@ -230,6 +234,10 @@
  "l1feless": {
   "gender": "M",
   "bio": "l1feless is a Silver-tier AWPer for Bluebird, an Indonesian sniper and one of the pool's few Indonesian names."
+ },
+ "lyrazal": {
+  "gender": "NB",
+  "bio": "Lyrazal is the in-game leader for Bluebird, a Singaporean caller and Gold-tier talent."
  },
  "lenette": {
   "gender": "F",
@@ -470,6 +478,10 @@
  "zuann": {
   "gender": "F",
   "bio": "zuann_ is a Singaporean rifler for Kiedz, a Platinum-tier fragger and a winner of BPL Tournament Minor 5."
+ },
+ "luminmochi": {
+  "gender": "F",
+  "bio": "luminmochi holds the AWP for Lemon Tree, a Singaporean sniper and two-time BPL winner. Her honours — the 2022 Bot Pro Cup and the 2024 Conquerors Stage — speak to a player who has delivered on the sport's bigger stages."
  },
  "meowcolmz": {
   "gender": "M",
@@ -827,29 +839,9 @@
   "gender": "M",
   "bio": "StrigidaeVT is an Emerald-tier rifler for xPlosiv, a Singaporean whose 1.28 K/D belies a short sample. A winner of Bot Pro Minor League 14, he makes the most of every opportunity."
  },
- "hyvred": {
+ "hikariifloofie": {
   "gender": "F",
-  "bio": "Hyvred is a Singaporean rifler for BeeHyve, an Emerald-tier amateur with room to develop."
- },
- "tiniibee": {
-  "gender": "F",
-  "bio": "TiniiBee is an Australian rifler for BeeHyve, an Iron-tier amateur early in her competitive path."
- },
- "kanarivt": {
-  "gender": "F",
-  "bio": "kanarivt is a Singaporean rifler for Eiromancers, a Grandmaster in the amateur pool whose 562 kills mark her as one of its most prolific names."
- },
- "raviaseir": {
-  "gender": "F",
-  "bio": "RaviasEir is a Singaporean rifler for Eiromancers, a Champion-tier fragger in the amateur pool whose 1.25 K/D and heavy MVP count mark her as a standout waiting for a stage."
- },
- "skiazelle": {
-  "gender": "F",
-  "bio": "Skiazelle is a Singaporean in-game leader for Eiromancers, a Diamond-tier caller in the amateur pool whose 1.13 K/D shows she frags while she leads."
- },
- "xyrren": {
-  "gender": "M",
-  "bio": "Xyrren is a Singaporean in-game leader for Syzygy, a Gold-tier caller in the amateur ranks."
+  "bio": "HikariiFloofie is a Malaysian rifler for Masmark, rated 1.03 (Diamond)."
  },
  "mizukiimoon": {
   "gender": "F",
@@ -883,10 +875,6 @@
   "gender": "F",
   "bio": "rebebx is the highest-rated player in the amateur pool, a Singaporean rifler whose staggering 1.44 K/D and 548 kills make her one of the most feared free agents in the scene. A trophy has so far eluded her — but on current form, few would bet against her claiming one."
  },
- "kaikaijins": {
-  "gender": "F",
-  "bio": "kaikaijins is a Singaporean rifler and an Emerald-tier free agent, a sharp amateur with a 1.15 K/D and a 61% win rate."
- },
  "sadgeboi": {
   "gender": "M",
   "bio": "Sadgeboi is a Malaysian in-game leader and one of the amateur pool's elite, a free agent whose 1.32 K/D is remarkable for a player who also runs the calling. Silverware is the only thing missing from his profile."
@@ -919,10 +907,6 @@
   "gender": "F",
   "bio": "candybar_isblue is a Singaporean rifler rated Champion in the amateur pool, a free agent whose 1.22 K/D marks her as a genuine talent still awaiting her first trophy."
  },
- "leachubby": {
-  "gender": "F",
-  "bio": "leachubby is a Singaporean rifler and a Diamond-tier free agent, a consistent scorer in the amateur ranks."
- },
  "kogaratoto": {
   "gender": "F",
   "bio": "Kogara Toto is a Japanese rifler rated Diamond in the amateur pool, a free agent with a tidy 1.15 K/D."
@@ -938,10 +922,6 @@
  "justyoong": {
   "gender": "M",
   "bio": "JustYoong is a Singaporean rifler and a Master-tier free agent, a dependable fragger with the profile to earn a competitive spot."
- },
- "boopydoopy": {
-  "gender": "F",
-  "bio": "boopydoopy is a Singaporean AWPer and a Gold-tier free agent whose kill count marks her a capable amateur sniper."
  },
  "xevaria": {
   "gender": "M",
@@ -983,6 +963,10 @@
   "gender": "M",
   "bio": "Laurel is a Filipino rifler rated Emerald in the amateur pool, a free agent whose kill volume marks him as a name to watch."
  },
+ "lukedefabio": {
+  "gender": "M",
+  "bio": "lukedefabio is a Singaporean in-game leader and a Grandmaster in the amateur pool, a free agent whose 1.12 K/D marks him as a caller who can also hold his own in a firefight."
+ },
  "kuruminoah": {
   "gender": "F",
   "bio": "Kurumi Noah is a Japanese rifler and a Gold-tier free agent with a winning amateur record."
@@ -1002,10 +986,6 @@
  "yakumobeni": {
   "gender": "F",
   "bio": "Yakumo Beni is a Japanese rifler and a Platinum-tier free agent with a winning amateur record."
- },
- "froggiee": {
-  "gender": "F",
-  "bio": "_froggiee is an Australian AWPer and an Iron-tier free agent whose 59% win rate is a bright spot on a developing profile."
  },
  "vixi": {
   "gender": "F",
@@ -1074,10 +1054,6 @@
  "vssmb": {
   "gender": "M",
   "bio": "VSSMB is a Singaporean in-game leader and a Gold-tier free agent with a winning amateur record."
- },
- "akuluvr": {
-  "gender": "F",
-  "bio": "akuluvr is a Singaporean rifler rated Platinum in the amateur pool, a steady free agent."
  },
  "jasticar": {
   "gender": "F",
@@ -1219,10 +1195,6 @@
   "gender": "F",
   "bio": "yinnzx is a Singaporean rifler in the amateur pool, currently a free agent, whose title at Bot Pro League Minor 10 proves she can win at the top level."
  },
- "keikatamori": {
-  "gender": "M",
-  "bio": "keikatamori is an Australian rifler and a Platinum-tier free agent among the pool's Oceanic names."
- },
  "tigerlark": {
   "gender": "F",
   "bio": "tiger.lark is a Singaporean rifler rated Iron in the amateur pool, an amateur still developing her game."
@@ -1299,9 +1271,9 @@
   "gender": "F",
   "bio": "Pattsuu is a Canadian in-game leader and a Gold-tier free agent, a rare North American caller in the amateur ranks."
  },
- "ayanowot": {
-  "gender": "M",
-  "bio": "AyanOwOT is a Singaporean AWPer and a Silver-tier free agent in the amateur ranks."
+ "morisottovt": {
+  "gender": "NB",
+  "bio": "MoriSottoVT is an American AWPer and a Silver-tier free agent in the amateur ranks."
  },
  "loonatic": {
   "gender": "M",
@@ -1399,10 +1371,6 @@
   "gender": "F",
   "bio": "ErineRurie is a Malaysian rifler and a Platinum-tier free agent whose 1.10 K/D hints at more than her record shows."
  },
- "tigeraxd": {
-  "gender": "M",
-  "bio": "Tigeraxd is an Australian in-game leader and a Platinum-tier free agent, a caller whose results have yet to match his rating."
- },
  "junoumezono": {
   "gender": "F",
   "bio": "Juno Umezono is a Japanese rifler rated Bronze in the amateur pool, a developing free agent."
@@ -1461,55 +1429,51 @@
  },
  "iceenblue": {
   "gender": "F",
-  "bio": "iceenblue is a American AWPer."
+  "bio": "iceenblue is a American AWPer for Frostbyte, rated 0.94 (Bronze)."
  },
  "xaeela": {
   "gender": "F",
-  "bio": "xaeela is a Singaporean rifler."
+  "bio": "xaeela is a Singaporean rifler, rated 1.04 (Diamond)."
  },
  "aoichibi": {
   "gender": "F",
-  "bio": "aoi_chibi is a Australian rifler."
+  "bio": "aoi_chibi is a Australian rifler, rated 1.00 (Platinum)."
  },
  "sayupurin": {
   "gender": "F",
-  "bio": "sayupurin is a Hong Kong rifler."
- },
- "sengjung123": {
-  "gender": "M",
-  "bio": "sengjung123 is a Singaporean rifler."
+  "bio": "sayupurin is a Hong Kong rifler for Prism Divide, rated 0.98 (Gold)."
  },
  "hazevt": {
   "gender": "F",
-  "bio": "haze_vt is a Canadian rifler."
+  "bio": "haze_vt is a Canadian rifler, rated 1.01 (Platinum)."
  },
  "anjuvalse": {
   "gender": "M",
-  "bio": "AnjuValse is a rifler/igl."
+  "bio": "AnjuValse is a rifler/igl for Seraph Dynasty, rated 1.00 (Platinum)."
  },
  "seaemv": {
   "gender": "F",
-  "bio": "SeaEmV is a Filipino rifler."
+  "bio": "SeaEmV is a Filipino rifler for Nightbloom, a Master-tier standout rated 1.06."
  },
  "sakistars": {
   "gender": "F",
-  "bio": "sakistars is a Singaporean AWPer."
+  "bio": "sakistars is a Singaporean AWPer for Starling Coven, rated 0.96 (Silver)."
  },
  "mikinakai": {
   "gender": "F",
-  "bio": "Miki Nakai is a Japanese rifler."
+  "bio": "Miki Nakai is a Japanese rifler for Seraph Dynasty, a Master-tier standout rated 1.07. On the server she pairs that with a 1.22 K/D."
  },
  "yxie": {
   "gender": "F",
-  "bio": "yxie is a American rifler."
+  "bio": "yxie is a American rifler, rated 0.98 (Gold)."
  },
  "akiratsukiyono": {
   "gender": "F",
-  "bio": "AkiraTsukiyono is a Japanese rifler."
+  "bio": "AkiraTsukiyono is a Japanese rifler, rated 0.93 (Bronze)."
  },
  "rihsuri": {
   "gender": "F",
-  "bio": "RIHSURI is a American rifler."
+  "bio": "RIHSURI is a American rifler for Wraithborne, one of the league's elite at 1.09 (Grandmaster). She backs it up with a 1.50 career K/D."
  },
  "codedecho": {
   "gender": "F",
@@ -1518,6 +1482,206 @@
  "miruaamaochi": {
   "gender": "F",
   "bio": "miruaamaochi is a Japanese solo-queue player rated Platinum, a perfect early record hinting at more to come."
+ },
+ "tigeraxd": {
+  "gender": "M",
+  "bio": "Tigeraxd is an Australian in-game leader and a Platinum-tier free agent, a caller whose results have yet to match his rating."
+ },
+ "froggiee": {
+  "gender": "F",
+  "bio": "_froggiee is an Australian AWPer and an Iron-tier free agent whose 59% win rate is a bright spot on a developing profile."
+ },
+ "tiniibee": {
+  "gender": "F",
+  "bio": "TiniiBee is an Australian rifler for BeeHyve, an Iron-tier amateur early in her competitive path."
+ },
+ "hyvred": {
+  "gender": "F",
+  "bio": "Hyvred is a Singaporean rifler for BeeHyve, an Emerald-tier amateur with room to develop."
+ },
+ "keikatamori": {
+  "gender": "M",
+  "bio": "keikatamori is an Australian rifler and a Platinum-tier free agent among the pool's Oceanic names."
+ },
+ "skiazelle": {
+  "gender": "F",
+  "bio": "Skiazelle is a Singaporean in-game leader for Eiromancers, a Diamond-tier caller in the amateur pool whose 1.13 K/D shows she frags while she leads."
+ },
+ "boopydoopy": {
+  "gender": "F",
+  "bio": "boopydoopy is a Singaporean AWPer and a Gold-tier free agent whose kill count marks her a capable amateur sniper."
+ },
+ "raviaseir": {
+  "gender": "F",
+  "bio": "RaviasEir is a Singaporean rifler for Eiromancers, a Champion-tier fragger in the amateur pool whose 1.25 K/D and heavy MVP count mark her as a standout waiting for a stage."
+ },
+ "kanarivt": {
+  "gender": "F",
+  "bio": "kanarivt is a Singaporean rifler for Eiromancers, a Grandmaster in the amateur pool whose 562 kills mark her as one of its most prolific names."
+ },
+ "kaikaijins": {
+  "gender": "F",
+  "bio": "kaikaijins is a Singaporean rifler and an Emerald-tier free agent, a sharp amateur with a 1.15 K/D and a 61% win rate."
+ },
+ "xyrren": {
+  "gender": "M",
+  "bio": "Xyrren is a Singaporean in-game leader for Syzygy, a Gold-tier caller in the amateur ranks."
+ },
+ "ayanowot": {
+  "gender": "M",
+  "bio": "AyanOwOT is a Singaporean AWPer and a Silver-tier free agent in the amateur ranks."
+ },
+ "akuluvr": {
+  "gender": "F",
+  "bio": "akuluvr is a Singaporean rifler rated Platinum in the amateur pool, a steady free agent."
+ },
+ "sengjung123": {
+  "gender": "M",
+  "bio": "sengjung123 is a Singaporean rifler for Syzygy, rated 1.00 (Platinum)."
+ },
+ "leachubby": {
+  "gender": "F",
+  "bio": "leachubby is a Singaporean rifler and a Diamond-tier free agent, a consistent scorer in the amateur ranks."
+ },
+ "koohaaruuu": {
+  "gender": "NB",
+  "bio": "koohaaruuu is a rifler."
+ },
+ "miyomille": {
+  "gender": "NB",
+  "bio": "miyomille is a Australian AWPer, rated 0.94 (Bronze)."
+ },
+ "reigyuuvt": {
+  "gender": "NB",
+  "bio": "ReigyuuVT is a American rifler, rated 0.98 (Gold)."
+ },
+ "soapboxdanny": {
+  "gender": "NB",
+  "bio": "Soapbox_Danny is a German rifler, rated 1.00 (Platinum)."
+ },
+ "sportsocke": {
+  "gender": "NB",
+  "bio": "Sportsocke is a German rifler, rated 1.00 (Platinum)."
+ },
+ "mokaiyu": {
+  "gender": "NB",
+  "bio": "Mokaiyu_ is a Filipino rifler."
+ },
+ "voicethemirai": {
+  "gender": "NB",
+  "bio": "VoicetheMirai is a Singaporean AWPer, rated 0.99 (Platinum)."
+ },
+ "plushyoshii": {
+  "gender": "NB",
+  "bio": "plushyoshii is a American rifler, rated 1.00 (Platinum)."
+ },
+ "rinamizuu": {
+  "gender": "NB",
+  "bio": "rinamizuu is a American rifler."
+ },
+ "somebodynewish": {
+  "gender": "NB",
+  "bio": "somebodynewish is a rifler."
+ },
+ "snowybluebell": {
+  "gender": "NB",
+  "bio": "snowybluebell is a Australian AWPer, rated 0.95 (Silver)."
+ },
+ "valekuroshio": {
+  "gender": "NB",
+  "bio": "Vale_Kuroshio is a Malaysian in-game leader, rated 1.01 (Platinum)."
+ },
+ "amanezenvt": {
+  "gender": "NB",
+  "bio": "AmaneZenVT is a Swedish in-game leader."
+ },
+ "wizstara": {
+  "gender": "NB",
+  "bio": "wizstara is a British rifler, rated 0.95 (Silver)."
+ },
+ "deedeepupvt": {
+  "gender": "NB",
+  "bio": "deedeepup_vt is a rifler."
+ },
+ "kineto46": {
+  "gender": "NB",
+  "bio": "KinEto46 is a Taiwanese in-game leader, rated 1.01 (Emerald)."
+ },
+ "yuvirei": {
+  "gender": "NB",
+  "bio": "yuvirei is a Singaporean AWPer, rated 0.97 (Silver)."
+ },
+ "itzsune": {
+  "gender": "NB",
+  "bio": "ItzSune is a American rifler."
+ },
+ "mikuryne": {
+  "gender": "NB",
+  "bio": "Mikuryne is a Indonesian rifler for Aspire, a Master-tier standout rated 1.06. On the server they pairs that with a 1.22 K/D."
+ },
+ "chiyoaqua": {
+  "gender": "NB",
+  "bio": "ChiyoAqua is a Dutch rifler."
+ },
+ "reruzensky": {
+  "gender": "NB",
+  "bio": "Reruzensky is a Indonesian rifler, rated 1.03 (Diamond)."
+ },
+ "spicywolfie": {
+  "gender": "NB",
+  "bio": "SpicyWolfie is a Indonesian in-game leader, rated 1.01 (Platinum)."
+ },
+ "kimhuaying": {
+  "gender": "NB",
+  "bio": "kimhuaying is a Singaporean rifler, rated 1.00 (Platinum)."
+ },
+ "chisascarlett": {
+  "gender": "NB",
+  "bio": "Chisa_Scarlett is a Singaporean rifler for Aspire, rated 1.01 (Emerald)."
+ },
+ "soslim": {
+  "gender": "NB",
+  "bio": "SoSlim_ is a American rifler."
+ },
+ "nevesten": {
+  "gender": "M",
+  "bio": "nevesten is a Singaporean rifler."
+ },
+ "frozonemonke": {
+  "gender": "M",
+  "bio": "frozonemonke is a Malaysian rifler."
+ },
+ "chinnievt": {
+  "gender": "M",
+  "bio": "chinnievt is a American rifler."
+ },
+ "akshiokla": {
+  "gender": "M",
+  "bio": "AKShiokla is a Singaporean AWPer."
+ },
+ "jootdaee": {
+  "gender": "F",
+  "bio": "jootdaee is a American rifler."
+ },
+ "arctrooperfives2755555": {
+  "gender": "M",
+  "bio": "arctrooperfives2755555 is a Singaporean rifler."
+ },
+ "diabet0": {
+  "gender": "M",
+  "bio": "diabet0_ is a British rifler."
+ },
+ "itzfrenzy": {
+  "gender": "M",
+  "bio": "itzfrenzy is a Filipino rifler."
+ },
+ "hazielvamp": {
+  "gender": "M",
+  "bio": "hazielvamp is a Dutch AWPer."
+ },
+ "shita1m": {
+  "gender": "M",
+  "bio": "shita1m is a Malaysian rifler."
  },
  "djassaulty": {
   "gender": "M",
@@ -1539,24 +1703,80 @@
   "gender": "M",
   "bio": "ItzMaigay is a solo-queue regular rated Gold, a ladder grinder building a body of work one game at a time."
  },
- "lyrazal": {
-  "gender": "F",
-  "bio": "Lyrazal is the in-game leader for Bluebird, a Singaporean caller and Gold-tier talent."
+ "miruuxdvt": {
+  "gender": "NB",
+  "bio": "MiruuxdVT is a Singaporean rifler, rated 1.02 (Emerald) in the solo-queue pool."
  },
- "perk": {
-  "gender": "M",
-  "bio": "perk is a Platinum-tier AWPer for Aeternum, a Singaporean sniper holding down the team's defensive rounds."
+ "byeolyuna": {
+  "gender": "NB",
+  "bio": "byeolyuna is a Korean rifler, rated 1.05 (Diamond) in the solo-queue pool."
  },
- "morisottovt": {
-  "gender": "M",
-  "bio": "MoriSottoVT is an American AWPer and a Silver-tier free agent in the amateur ranks."
+ "greatmoonaroma": {
+  "gender": "NB",
+  "bio": "GreatMoonAroma is a Korean rifler, rated 1.07 (Master) in the solo-queue pool. On the server they pairs that with a 1.22 K/D."
  },
- "lukedefabio": {
-  "gender": "M",
-  "bio": "lukedefabio is a Singaporean in-game leader and a Grandmaster in the amateur pool, a free agent whose 1.12 K/D marks him as a caller who can also hold his own in a firefight."
+ "raivyrain": {
+  "gender": "NB",
+  "bio": "RaivyRain is a German AWPer, rated 0.99 (Gold) in the solo-queue pool."
  },
- "luminmochi": {
-  "gender": "F",
-  "bio": "luminmochi holds the AWP for Lemon Tree, a Singaporean sniper and two-time BPL winner. Her honours — the 2022 Bot Pro Cup and the 2024 Conquerors Stage — speak to a player who has delivered on the sport's bigger stages."
+ "zeromacabre": {
+  "gender": "NB",
+  "bio": "zero_macabre is a French rifler."
+ },
+ "tedstyx": {
+  "gender": "NB",
+  "bio": "tedstyx is a Malaysian in-game leader, rated 1.01 (Platinum) in the solo-queue pool."
+ },
+ "rdarius": {
+  "gender": "NB",
+  "bio": "RDarius is a AWPer."
+ },
+ "colour": {
+  "gender": "NB",
+  "bio": "colour is a Thai AWPer, rated 1.02 (Emerald) in the solo-queue pool."
+ },
+ "nico": {
+  "gender": "NB",
+  "bio": "Nico is a Thai rifler, rated 1.02 (Emerald) in the solo-queue pool."
+ },
+ "sozu": {
+  "gender": "NB",
+  "bio": "sozu is a rifler."
+ },
+ "renren": {
+  "gender": "NB",
+  "bio": "renren. is a rifler."
+ },
+ "syberiak": {
+  "gender": "NB",
+  "bio": "SyberiaK is a French rifler."
+ },
+ "ixc999": {
+  "gender": "NB",
+  "bio": "ixc999 is a Hong Kong AWPer."
+ },
+ "summer": {
+  "gender": "NB",
+  "bio": "SUMMER is a Thai rifler, rated 1.02 (Emerald) in the solo-queue pool."
+ },
+ "flava": {
+  "gender": "NB",
+  "bio": "FLAVA is a in-game leader."
+ },
+ "jackgia2002": {
+  "gender": "NB",
+  "bio": "jackgia2002 is a rifler."
+ },
+ "icycrowvt": {
+  "gender": "NB",
+  "bio": "IcyCrowVT is a in-game leader."
+ },
+ "suoh": {
+  "gender": "NB",
+  "bio": "suoh is a AWPer."
+ },
+ "darklite": {
+  "gender": "NB",
+  "bio": "DarkLite is a rifler."
  }
 }
