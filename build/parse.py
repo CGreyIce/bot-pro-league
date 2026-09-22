@@ -1703,10 +1703,23 @@ def main():
     hof_path = os.path.join(DATA, "hall_of_fame.json")
     hall_of_fame = json.load(open(hof_path, encoding="utf-8")) if os.path.exists(hof_path) else {"players": [], "teams": []}
 
+    # ---- all-time biggest single rank climb (persisted so it STICKS past the event that set it) ----
+    # rankDelta only reflects the most recent match, so it resets each build. We remember the largest
+    # positive climb ever observed in data/rank_climb_record.json and only overwrite it when beaten.
+    rc_path = os.path.join(DATA, "rank_climb_record.json")
+    rank_climb = json.load(open(rc_path, encoding="utf-8")) if os.path.exists(rc_path) else {}
+    _ref_date = max((t["date"] for t in tournaments if t.get("date")), default="")
+    _best = max((p for p in pro if (p.get("rankDelta") or 0) > 0), key=lambda p: p["rankDelta"], default=None)
+    if _best and _best["rankDelta"] > rank_climb.get("delta", 0):
+        rank_climb = {"slug": _best["slug"], "name": _best["name"],
+                      "delta": _best["rankDelta"], "date": _ref_date}
+        json.dump(rank_climb, open(rc_path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
     data = {
         "teams": teams,
         "articles": articles,
         "hallOfFame": hall_of_fame,
+        "rankClimbRecord": rank_climb or None,
         "players": {"pro": pro, "amateur": amateur, "solo": solo},
         "pool_avg": {"pro": pro_avg, "amateur": am_avg, "solo": solo_avg},
         "weights": WEIGHTS,

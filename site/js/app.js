@@ -931,6 +931,7 @@ function renderRecords(){
   const topMvpRate=[...qualified].sort((a,b)=>(b.mvp/b.maps)-(a.mvp/a.maps))[0];
   const topClimb=[...pro].sort((a,b)=>(b.rankDelta||0)-(a.rankDelta||0))[0];
   const topDeaths=maxBy(pro,'deaths');
+  const climbRec=DATA.rankClimbRecord;   // all-time biggest rank climb (persisted, sticks)
   const pStreak=playerLongestStreak();
   const soloAll=soloLeague().filter(p=>p.maps>0);
   const soloRated=[...soloAll].filter(p=>p.ratingPoints!=null).sort((a,b)=>b.ratingPoints-a.ratingPoints);
@@ -990,7 +991,7 @@ function renderRecords(){
       ${recCard("Most OT Games", topOT.name, topOT.ot, `#/player/${topOT.slug}`)}
       ${recCard("Highest MVP Rate", topMvpRate.name, (topMvpRate.mvp/topMvpRate.maps).toFixed(2)+" /map", `#/player/${topMvpRate.slug}`)}
       ${pStreak&&pStreak.len?recCard("Longest Win Streak", pStreak.name, pStreak.len+" maps", `#/player/${pStreak.slug}`):''}
-      ${topClimb&&topClimb.rankDelta>0?recCard("Biggest Rank Climb", topClimb.name, "▲"+topClimb.rankDelta, `#/player/${topClimb.slug}`):''}
+      ${climbRec&&climbRec.delta>0?recCard("Biggest Rank Climb", climbRec.name, "▲"+climbRec.delta, `#/player/${climbRec.slug}`):''}
       ${recCard("Most Deaths", topDeaths.name, topDeaths.deaths, `#/player/${topDeaths.slug}`)}
     </div>
     <h3 class="rec-group">Matches &amp; Single-Map Feats</h3>
