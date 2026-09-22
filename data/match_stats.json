@@ -24696,11 +24696,601 @@
       {
        "team": "Tidebreakers",
        "name": "djsalty_",
-       "k": 110,
+       "k": 11,
        "a": 2,
        "d": 15,
        "mvp": 0,
        "score": 23
+      }
+     ]
+    }
+   ]
+  },
+  "9-1": {
+   "maps": [
+    {
+     "map": "Inferno",
+     "scoreA": 2,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Prism Divide",
+       "name": "Syrrith",
+       "k": 11,
+       "a": 1,
+       "d": 13,
+       "mvp": 1,
+       "score": 23
+      },
+      {
+       "team": "Prism Divide",
+       "name": "AkanersVT",
+       "k": 8,
+       "a": 4,
+       "d": 14,
+       "mvp": 1,
+       "score": 20
+      },
+      {
+       "team": "Prism Divide",
+       "name": "sayupurin",
+       "k": 7,
+       "a": 2,
+       "d": 13,
+       "mvp": 0,
+       "score": 16
+      },
+      {
+       "team": "Prism Divide",
+       "name": "XueQiii",
+       "k": 6,
+       "a": 1,
+       "d": 14,
+       "mvp": 0,
+       "score": 15
+      },
+      {
+       "team": "Prism Divide",
+       "name": "Codiant",
+       "k": 3,
+       "a": 0,
+       "d": 14,
+       "mvp": 0,
+       "score": 6
+      },
+      {
+       "team": "Kiedz",
+       "name": "zuann_",
+       "k": 19,
+       "a": 1,
+       "d": 2,
+       "mvp": 5,
+       "score": 52
+      },
+      {
+       "team": "Kiedz",
+       "name": "Kairi",
+       "k": 14,
+       "a": 2,
+       "d": 6,
+       "mvp": 0,
+       "score": 34
+      },
+      {
+       "team": "Kiedz",
+       "name": "declaration__",
+       "k": 13,
+       "a": 0,
+       "d": 9,
+       "mvp": 2,
+       "score": 30
+      },
+      {
+       "team": "Kiedz",
+       "name": "Illus",
+       "k": 10,
+       "a": 0,
+       "d": 7,
+       "mvp": 4,
+       "score": 27
+      },
+      {
+       "team": "Kiedz",
+       "name": "Elfy Mint",
+       "k": 11,
+       "a": 1,
+       "d": 11,
+       "mvp": 2,
+       "score": 23
+      }
+     ]
+    },
+    {
+     "map": "Vertigo",
+     "scoreA": 13,
+     "scoreB": 11,
+     "players": [
+      {
+       "team": "Prism Divide",
+       "name": "AkanersVT",
+       "k": 34,
+       "a": 1,
+       "d": 17,
+       "mvp": 4,
+       "score": 72
+      },
+      {
+       "team": "Prism Divide",
+       "name": "Syrrith",
+       "k": 24,
+       "a": 3,
+       "d": 17,
+       "mvp": 2,
+       "score": 53
+      },
+      {
+       "team": "Prism Divide",
+       "name": "sayupurin",
+       "k": 17,
+       "a": 0,
+       "d": 16,
+       "mvp": 3,
+       "score": 38
+      },
+      {
+       "team": "Prism Divide",
+       "name": "XueQiii",
+       "k": 14,
+       "a": 3,
+       "d": 18,
+       "mvp": 2,
+       "score": 38
+      },
+      {
+       "team": "Prism Divide",
+       "name": "Codiant",
+       "k": 9,
+       "a": 2,
+       "d": 18,
+       "mvp": 2,
+       "score": 27
+      },
+      {
+       "team": "Kiedz",
+       "name": "Elfy Mint",
+       "k": 24,
+       "a": 1,
+       "d": 18,
+       "mvp": 3,
+       "score": 54
+      },
+      {
+       "team": "Kiedz",
+       "name": "Kairi",
+       "k": 19,
+       "a": 3,
+       "d": 18,
+       "mvp": 3,
+       "score": 52
+      },
+      {
+       "team": "Kiedz",
+       "name": "declaration__",
+       "k": 15,
+       "a": 4,
+       "d": 21,
+       "mvp": 2,
+       "score": 43
+      },
+      {
+       "team": "Kiedz",
+       "name": "Illus",
+       "k": 15,
+       "a": 5,
+       "d": 20,
+       "mvp": 2,
+       "score": 38
+      },
+      {
+       "team": "Kiedz",
+       "name": "zuann_",
+       "k": 13,
+       "a": 2,
+       "d": 21,
+       "mvp": 1,
+       "score": 31
+      }
+     ]
+    },
+    {
+     "map": "Mirage",
+     "scoreA": 13,
+     "scoreB": 10,
+     "players": [
+      {
+       "team": "Prism Divide",
+       "name": "XueQiii",
+       "k": 30,
+       "a": 3,
+       "d": 13,
+       "mvp": 3,
+       "score": 70
+      },
+      {
+       "team": "Prism Divide",
+       "name": "AkanersVT",
+       "k": 18,
+       "a": 4,
+       "d": 16,
+       "mvp": 2,
+       "score": 49
+      },
+      {
+       "team": "Prism Divide",
+       "name": "Codiant",
+       "k": 20,
+       "a": 2,
+       "d": 15,
+       "mvp": 5,
+       "score": 45
+      },
+      {
+       "team": "Prism Divide",
+       "name": "sayupurin",
+       "k": 13,
+       "a": 2,
+       "d": 17,
+       "mvp": 3,
+       "score": 36
+      },
+      {
+       "team": "Prism Divide",
+       "name": "Syrrith",
+       "k": 4,
+       "a": 1,
+       "d": 16,
+       "mvp": 0,
+       "score": 11
+      },
+      {
+       "team": "Kiedz",
+       "name": "zuann_",
+       "k": 21,
+       "a": 2,
+       "d": 17,
+       "mvp": 4,
+       "score": 50
+      },
+      {
+       "team": "Kiedz",
+       "name": "Kairi",
+       "k": 17,
+       "a": 1,
+       "d": 17,
+       "mvp": 2,
+       "score": 42
+      },
+      {
+       "team": "Kiedz",
+       "name": "Illus",
+       "k": 15,
+       "a": 3,
+       "d": 17,
+       "mvp": 2,
+       "score": 37
+      },
+      {
+       "team": "Kiedz",
+       "name": "Elfy Mint",
+       "k": 12,
+       "a": 3,
+       "d": 17,
+       "mvp": 2,
+       "score": 37
+      },
+      {
+       "team": "Kiedz",
+       "name": "declaration__",
+       "k": 12,
+       "a": 4,
+       "d": 17,
+       "mvp": 0,
+       "score": 31
+      }
+     ]
+    }
+   ]
+  },
+  "9-2": {
+   "maps": [
+    {
+     "map": "Mirage",
+     "scoreA": 6,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Moonlit Tempo",
+       "name": "FeatBri",
+       "k": 17,
+       "a": 1,
+       "d": 14,
+       "mvp": 2,
+       "score": 44
+      },
+      {
+       "team": "Moonlit Tempo",
+       "name": "SashimiGoesBloop",
+       "k": 15,
+       "a": 1,
+       "d": 18,
+       "mvp": 2,
+       "score": 35
+      },
+      {
+       "team": "Moonlit Tempo",
+       "name": "GoddessAkane",
+       "k": 11,
+       "a": 2,
+       "d": 17,
+       "mvp": 1,
+       "score": 25
+      },
+      {
+       "team": "Moonlit Tempo",
+       "name": "Celtsm",
+       "k": 7,
+       "a": 0,
+       "d": 16,
+       "mvp": 1,
+       "score": 20
+      },
+      {
+       "team": "Moonlit Tempo",
+       "name": "Kyan",
+       "k": 7,
+       "a": 1,
+       "d": 15,
+       "mvp": 0,
+       "score": 17
+      },
+      {
+       "team": "Flood Flashers",
+       "name": "Komori Met",
+       "k": 25,
+       "a": 2,
+       "d": 8,
+       "mvp": 5,
+       "score": 62
+      },
+      {
+       "team": "Flood Flashers",
+       "name": "Emily_melody",
+       "k": 15,
+       "a": 2,
+       "d": 12,
+       "mvp": 3,
+       "score": 37
+      },
+      {
+       "team": "Flood Flashers",
+       "name": "cassiopeiarawr",
+       "k": 16,
+       "a": 0,
+       "d": 10,
+       "mvp": 2,
+       "score": 37
+      },
+      {
+       "team": "Flood Flashers",
+       "name": "Shinomiya Runa",
+       "k": 12,
+       "a": 4,
+       "d": 11,
+       "mvp": 1,
+       "score": 36
+      },
+      {
+       "team": "Flood Flashers",
+       "name": "ShizuyaUmiko",
+       "k": 12,
+       "a": 5,
+       "d": 16,
+       "mvp": 2,
+       "score": 32
+      }
+     ]
+    },
+    {
+     "map": "Dust2",
+     "scoreA": 13,
+     "scoreB": 8,
+     "players": [
+      {
+       "team": "Moonlit Tempo",
+       "name": "Kyan",
+       "k": 24,
+       "a": 1,
+       "d": 13,
+       "mvp": 4,
+       "score": 61
+      },
+      {
+       "team": "Moonlit Tempo",
+       "name": "FeatBri",
+       "k": 23,
+       "a": 0,
+       "d": 10,
+       "mvp": 1,
+       "score": 52
+      },
+      {
+       "team": "Moonlit Tempo",
+       "name": "Celtsm",
+       "k": 15,
+       "a": 3,
+       "d": 13,
+       "mvp": 3,
+       "score": 40
+      },
+      {
+       "team": "Moonlit Tempo",
+       "name": "SashimiGoesBloop",
+       "k": 15,
+       "a": 2,
+       "d": 15,
+       "mvp": 4,
+       "score": 37
+      },
+      {
+       "team": "Moonlit Tempo",
+       "name": "GoddessAkane",
+       "k": 11,
+       "a": 2,
+       "d": 12,
+       "mvp": 1,
+       "score": 35
+      },
+      {
+       "team": "Flood Flashers",
+       "name": "ShizuyaUmiko",
+       "k": 18,
+       "a": 2,
+       "d": 15,
+       "mvp": 4,
+       "score": 52
+      },
+      {
+       "team": "Flood Flashers",
+       "name": "Shinomiya Runa",
+       "k": 13,
+       "a": 1,
+       "d": 19,
+       "mvp": 1,
+       "score": 33
+      },
+      {
+       "team": "Flood Flashers",
+       "name": "Komori Met",
+       "k": 11,
+       "a": 1,
+       "d": 17,
+       "mvp": 1,
+       "score": 33
+      },
+      {
+       "team": "Flood Flashers",
+       "name": "Emily_melody",
+       "k": 12,
+       "a": 3,
+       "d": 18,
+       "mvp": 1,
+       "score": 30
+      },
+      {
+       "team": "Flood Flashers",
+       "name": "cassiopeiarawr",
+       "k": 9,
+       "a": 2,
+       "d": 19,
+       "mvp": 1,
+       "score": 23
+      }
+     ]
+    },
+    {
+     "map": "Anubis",
+     "scoreA": 18,
+     "scoreB": 22,
+     "players": [
+      {
+       "team": "Moonlit Tempo",
+       "name": "Celtsm",
+       "k": 42,
+       "a": 2,
+       "d": 28,
+       "mvp": 6,
+       "score": 101
+      },
+      {
+       "team": "Moonlit Tempo",
+       "name": "SashimiGoesBloop",
+       "k": 29,
+       "a": 2,
+       "d": 32,
+       "mvp": 5,
+       "score": 69
+      },
+      {
+       "team": "Moonlit Tempo",
+       "name": "GoddessAkane",
+       "k": 25,
+       "a": 2,
+       "d": 31,
+       "mvp": 2,
+       "score": 58
+      },
+      {
+       "team": "Moonlit Tempo",
+       "name": "FeatBri",
+       "k": 21,
+       "a": 5,
+       "d": 31,
+       "mvp": 2,
+       "score": 55
+      },
+      {
+       "team": "Moonlit Tempo",
+       "name": "Kyan",
+       "k": 20,
+       "a": 2,
+       "d": 31,
+       "mvp": 3,
+       "score": 54
+      },
+      {
+       "team": "Flood Flashers",
+       "name": "ShizuyaUmiko",
+       "k": 40,
+       "a": 4,
+       "d": 24,
+       "mvp": 7,
+       "score": 100
+      },
+      {
+       "team": "Flood Flashers",
+       "name": "Emily_melody",
+       "k": 34,
+       "a": 9,
+       "d": 28,
+       "mvp": 5,
+       "score": 96
+      },
+      {
+       "team": "Flood Flashers",
+       "name": "cassiopeiarawr",
+       "k": 30,
+       "a": 4,
+       "d": 29,
+       "mvp": 6,
+       "score": 81
+      },
+      {
+       "team": "Flood Flashers",
+       "name": "Shinomiya Runa",
+       "k": 25,
+       "a": 2,
+       "d": 25,
+       "mvp": 2,
+       "score": 63
+      },
+      {
+       "team": "Flood Flashers",
+       "name": "Komori Met",
+       "k": 24,
+       "a": 2,
+       "d": 31,
+       "mvp": 2,
+       "score": 57
       }
      ]
     }
