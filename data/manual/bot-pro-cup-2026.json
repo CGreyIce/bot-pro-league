@@ -2080,8 +2080,9 @@
      "fb": {
       "match": 10
      },
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1790163653
     },
     {
      "id": 14,
@@ -2092,8 +2093,9 @@
      "fb": {
       "match": 12
      },
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1790169849
     },
     {
      "id": 15,
@@ -2104,8 +2106,21 @@
      "fb": {
       "match": 14
      },
-     "sa": null,
-     "sb": null
+     "sa": 1,
+     "sb": 3,
+     "ts": 1790174261
+    },
+    {
+     "id": 16,
+     "round": 4,
+     "fa": {
+      "loserOf": 13
+     },
+     "fb": {
+      "loserOf": 14
+     },
+     "bestOf": null,
+     "thirdPlace": true
     }
    ],
    "roundTitles": {
