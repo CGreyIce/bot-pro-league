@@ -27954,6 +27954,895 @@
      ]
     }
    ]
+  },
+  "9-13": {
+   "maps": [
+    {
+     "map": "Tuscan",
+     "scoreA": 13,
+     "scoreB": 5,
+     "players": [
+      {
+       "team": "Prism Divide",
+       "name": "sayupurin",
+       "k": 22,
+       "a": 1,
+       "d": 9,
+       "mvp": 4,
+       "score": 62
+      },
+      {
+       "team": "Prism Divide",
+       "name": "Syrrith",
+       "k": 22,
+       "a": 3,
+       "d": 10,
+       "mvp": 2,
+       "score": 54
+      },
+      {
+       "team": "Prism Divide",
+       "name": "Codiant",
+       "k": 15,
+       "a": 1,
+       "d": 10,
+       "mvp": 3,
+       "score": 40
+      },
+      {
+       "team": "Prism Divide",
+       "name": "XueQiii",
+       "k": 11,
+       "a": 0,
+       "d": 10,
+       "mvp": 3,
+       "score": 25
+      },
+      {
+       "team": "Prism Divide",
+       "name": "AkanersVT",
+       "k": 9,
+       "a": 3,
+       "d": 11,
+       "mvp": 1,
+       "score": 25
+      },
+      {
+       "team": "The Gigarage",
+       "name": "YoJareddo",
+       "k": 13,
+       "a": 2,
+       "d": 17,
+       "mvp": 1,
+       "score": 34
+      },
+      {
+       "team": "The Gigarage",
+       "name": "yunaeyo",
+       "k": 12,
+       "a": 3,
+       "d": 16,
+       "mvp": 1,
+       "score": 27
+      },
+      {
+       "team": "The Gigarage",
+       "name": "gigichiii_",
+       "k": 10,
+       "a": 2,
+       "d": 17,
+       "mvp": 1,
+       "score": 22
+      },
+      {
+       "team": "The Gigarage",
+       "name": "bluenerd8",
+       "k": 8,
+       "a": 2,
+       "d": 15,
+       "mvp": 1,
+       "score": 20
+      },
+      {
+       "team": "The Gigarage",
+       "name": "mmirawr_",
+       "k": 7,
+       "a": 1,
+       "d": 14,
+       "mvp": 1,
+       "score": 19
+      }
+     ]
+    },
+    {
+     "map": "Dust2",
+     "scoreA": 13,
+     "scoreB": 10,
+     "players": [
+      {
+       "team": "Prism Divide",
+       "name": "sayupurin",
+       "k": 20,
+       "a": 3,
+       "d": 18,
+       "mvp": 1,
+       "score": 49
+      },
+      {
+       "team": "Prism Divide",
+       "name": "XueQiii",
+       "k": 18,
+       "a": 4,
+       "d": 17,
+       "mvp": 4,
+       "score": 47
+      },
+      {
+       "team": "Prism Divide",
+       "name": "AkanersVT",
+       "k": 16,
+       "a": 1,
+       "d": 15,
+       "mvp": 3,
+       "score": 39
+      },
+      {
+       "team": "Prism Divide",
+       "name": "Syrrith",
+       "k": 15,
+       "a": 1,
+       "d": 17,
+       "mvp": 3,
+       "score": 39
+      },
+      {
+       "team": "Prism Divide",
+       "name": "Codiant",
+       "k": 11,
+       "a": 3,
+       "d": 18,
+       "mvp": 2,
+       "score": 31
+      },
+      {
+       "team": "The Gigarage",
+       "name": "mmirawr_",
+       "k": 21,
+       "a": 4,
+       "d": 18,
+       "mvp": 1,
+       "score": 52
+      },
+      {
+       "team": "The Gigarage",
+       "name": "YoJareddo",
+       "k": 18,
+       "a": 2,
+       "d": 18,
+       "mvp": 3,
+       "score": 48
+      },
+      {
+       "team": "The Gigarage",
+       "name": "gigichiii_",
+       "k": 16,
+       "a": 3,
+       "d": 12,
+       "mvp": 3,
+       "score": 44
+      },
+      {
+       "team": "The Gigarage",
+       "name": "bluenerd8",
+       "k": 15,
+       "a": 1,
+       "d": 17,
+       "mvp": 2,
+       "score": 41
+      },
+      {
+       "team": "The Gigarage",
+       "name": "yunaeyo",
+       "k": 15,
+       "a": 4,
+       "d": 15,
+       "mvp": 1,
+       "score": 39
+      }
+     ]
+    }
+   ]
+  },
+  "9-14": {
+   "maps": [
+    {
+     "map": "Dust2",
+     "scoreA": 6,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Cosmos",
+       "name": "sneakyyyyy",
+       "k": 15,
+       "a": 1,
+       "d": 15,
+       "mvp": 3,
+       "score": 39
+      },
+      {
+       "team": "Cosmos",
+       "name": "kokushi_vampir",
+       "k": 12,
+       "a": 2,
+       "d": 15,
+       "mvp": 1,
+       "score": 35
+      },
+      {
+       "team": "Cosmos",
+       "name": "azzuto",
+       "k": 15,
+       "a": 1,
+       "d": 15,
+       "mvp": 1,
+       "score": 32
+      },
+      {
+       "team": "Cosmos",
+       "name": "DelphoxLuna",
+       "k": 9,
+       "a": 2,
+       "d": 17,
+       "mvp": 1,
+       "score": 28
+      },
+      {
+       "team": "Cosmos",
+       "name": "inaxho",
+       "k": 7,
+       "a": 0,
+       "d": 15,
+       "mvp": 0,
+       "score": 15
+      },
+      {
+       "team": "Opal",
+       "name": "joyyy_cheng",
+       "k": 20,
+       "a": 2,
+       "d": 10,
+       "mvp": 3,
+       "score": 51
+      },
+      {
+       "team": "Opal",
+       "name": "kuro_mi",
+       "k": 20,
+       "a": 1,
+       "d": 12,
+       "mvp": 0,
+       "score": 44
+      },
+      {
+       "team": "Opal",
+       "name": "lumi.nyaa",
+       "k": 13,
+       "a": 4,
+       "d": 12,
+       "mvp": 5,
+       "score": 37
+      },
+      {
+       "team": "Opal",
+       "name": "Scorpium",
+       "k": 14,
+       "a": 2,
+       "d": 11,
+       "mvp": 4,
+       "score": 37
+      },
+      {
+       "team": "Opal",
+       "name": "Seireiix",
+       "k": 10,
+       "a": 2,
+       "d": 13,
+       "mvp": 1,
+       "score": 25
+      }
+     ]
+    },
+    {
+     "map": "Anubis",
+     "scoreA": 20,
+     "scoreB": 22,
+     "players": [
+      {
+       "team": "Cosmos",
+       "name": "azzuto",
+       "k": 44,
+       "a": 5,
+       "d": 26,
+       "mvp": 13,
+       "score": 105
+      },
+      {
+       "team": "Cosmos",
+       "name": "kokushi_vampir",
+       "k": 39,
+       "a": 2,
+       "d": 30,
+       "mvp": 4,
+       "score": 96
+      },
+      {
+       "team": "Cosmos",
+       "name": "sneakyyyyy",
+       "k": 27,
+       "a": 7,
+       "d": 32,
+       "mvp": 2,
+       "score": 70
+      },
+      {
+       "team": "Cosmos",
+       "name": "inaxho",
+       "k": 23,
+       "a": 2,
+       "d": 31,
+       "mvp": 1,
+       "score": 53
+      },
+      {
+       "team": "Cosmos",
+       "name": "DelphoxLuna",
+       "k": 20,
+       "a": 4,
+       "d": 30,
+       "mvp": 0,
+       "score": 51
+      },
+      {
+       "team": "Opal",
+       "name": "kuro_mi",
+       "k": 33,
+       "a": 5,
+       "d": 33,
+       "mvp": 7,
+       "score": 86
+      },
+      {
+       "team": "Opal",
+       "name": "lumi.nyaa",
+       "k": 34,
+       "a": 3,
+       "d": 29,
+       "mvp": 5,
+       "score": 81
+      },
+      {
+       "team": "Opal",
+       "name": "joyyy_cheng",
+       "k": 29,
+       "a": 7,
+       "d": 27,
+       "mvp": 3,
+       "score": 74
+      },
+      {
+       "team": "Opal",
+       "name": "Scorpium",
+       "k": 27,
+       "a": 4,
+       "d": 32,
+       "mvp": 1,
+       "score": 68
+      },
+      {
+       "team": "Opal",
+       "name": "Seireiix",
+       "k": 26,
+       "a": 2,
+       "d": 32,
+       "mvp": 6,
+       "score": 62
+      }
+     ]
+    }
+   ]
+  },
+  "9-15": {
+   "maps": [
+    {
+     "map": "Vertigo",
+     "scoreA": 7,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Prism Divide",
+       "name": "sayupurin",
+       "k": 18,
+       "a": 1,
+       "d": 15,
+       "mvp": 1,
+       "score": 45
+      },
+      {
+       "team": "Prism Divide",
+       "name": "Syrrith",
+       "k": 16,
+       "a": 3,
+       "d": 16,
+       "mvp": 2,
+       "score": 38
+      },
+      {
+       "team": "Prism Divide",
+       "name": "AkanersVT",
+       "k": 10,
+       "a": 0,
+       "d": 15,
+       "mvp": 3,
+       "score": 28
+      },
+      {
+       "team": "Prism Divide",
+       "name": "XueQiii",
+       "k": 12,
+       "a": 1,
+       "d": 16,
+       "mvp": 1,
+       "score": 25
+      },
+      {
+       "team": "Prism Divide",
+       "name": "Codiant",
+       "k": 9,
+       "a": 0,
+       "d": 16,
+       "mvp": 0,
+       "score": 19
+      },
+      {
+       "team": "Opal",
+       "name": "kuro_mi",
+       "k": 26,
+       "a": 3,
+       "d": 13,
+       "mvp": 5,
+       "score": 62
+      },
+      {
+       "team": "Opal",
+       "name": "lumi.nyaa",
+       "k": 16,
+       "a": 2,
+       "d": 13,
+       "mvp": 5,
+       "score": 40
+      },
+      {
+       "team": "Opal",
+       "name": "joyyy_cheng",
+       "k": 14,
+       "a": 2,
+       "d": 13,
+       "mvp": 1,
+       "score": 34
+      },
+      {
+       "team": "Opal",
+       "name": "Seireiix",
+       "k": 12,
+       "a": 3,
+       "d": 13,
+       "mvp": 1,
+       "score": 31
+      },
+      {
+       "team": "Opal",
+       "name": "Scorpium",
+       "k": 10,
+       "a": 2,
+       "d": 13,
+       "mvp": 1,
+       "score": 25
+      }
+     ]
+    },
+    {
+     "map": "Anubis",
+     "scoreA": 11,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Prism Divide",
+       "name": "Syrrith",
+       "k": 19,
+       "a": 2,
+       "d": 17,
+       "mvp": 2,
+       "score": 56
+      },
+      {
+       "team": "Prism Divide",
+       "name": "sayupurin",
+       "k": 22,
+       "a": 4,
+       "d": 20,
+       "mvp": 2,
+       "score": 52
+      },
+      {
+       "team": "Prism Divide",
+       "name": "AkanersVT",
+       "k": 14,
+       "a": 0,
+       "d": 18,
+       "mvp": 3,
+       "score": 33
+      },
+      {
+       "team": "Prism Divide",
+       "name": "Codiant",
+       "k": 13,
+       "a": 2,
+       "d": 19,
+       "mvp": 3,
+       "score": 31
+      },
+      {
+       "team": "Prism Divide",
+       "name": "XueQiii",
+       "k": 7,
+       "a": 0,
+       "d": 22,
+       "mvp": 1,
+       "score": 17
+      },
+      {
+       "team": "Opal",
+       "name": "lumi.nyaa",
+       "k": 28,
+       "a": 2,
+       "d": 18,
+       "mvp": 5,
+       "score": 64
+      },
+      {
+       "team": "Opal",
+       "name": "joyyy_cheng",
+       "k": 20,
+       "a": 2,
+       "d": 14,
+       "mvp": 1,
+       "score": 46
+      },
+      {
+       "team": "Opal",
+       "name": "kuro_mi",
+       "k": 19,
+       "a": 1,
+       "d": 13,
+       "mvp": 4,
+       "score": 43
+      },
+      {
+       "team": "Opal",
+       "name": "Scorpium",
+       "k": 15,
+       "a": 3,
+       "d": 16,
+       "mvp": 2,
+       "score": 43
+      },
+      {
+       "team": "Opal",
+       "name": "Seireiix",
+       "k": 14,
+       "a": 5,
+       "d": 14,
+       "mvp": 1,
+       "score": 39
+      }
+     ]
+    },
+    {
+     "map": "Mirage",
+     "scoreA": 13,
+     "scoreB": 0,
+     "players": [
+      {
+       "team": "Prism Divide",
+       "name": "AkanersVT",
+       "k": 16,
+       "a": 1,
+       "d": 3,
+       "mvp": 4,
+       "score": 46
+      },
+      {
+       "team": "Prism Divide",
+       "name": "sayupurin",
+       "k": 17,
+       "a": 0,
+       "d": 5,
+       "mvp": 3,
+       "score": 38
+      },
+      {
+       "team": "Prism Divide",
+       "name": "Codiant",
+       "k": 13,
+       "a": 0,
+       "d": 2,
+       "mvp": 1,
+       "score": 32
+      },
+      {
+       "team": "Prism Divide",
+       "name": "XueQiii",
+       "k": 10,
+       "a": 0,
+       "d": 2,
+       "mvp": 3,
+       "score": 31
+      },
+      {
+       "team": "Prism Divide",
+       "name": "Syrrith",
+       "k": 9,
+       "a": 0,
+       "d": 4,
+       "mvp": 2,
+       "score": 23
+      },
+      {
+       "team": "Opal",
+       "name": "joyyy_cheng",
+       "k": 5,
+       "a": 2,
+       "d": 13,
+       "mvp": 0,
+       "score": 12
+      },
+      {
+       "team": "Opal",
+       "name": "kuro_mi",
+       "k": 4,
+       "a": 0,
+       "d": 13,
+       "mvp": 0,
+       "score": 10
+      },
+      {
+       "team": "Opal",
+       "name": "lumi.nyaa",
+       "k": 2,
+       "a": 4,
+       "d": 13,
+       "mvp": 0,
+       "score": 8
+      },
+      {
+       "team": "Opal",
+       "name": "Scorpium",
+       "k": 2,
+       "a": 2,
+       "d": 13,
+       "mvp": 0,
+       "score": 8
+      },
+      {
+       "team": "Opal",
+       "name": "Seireiix",
+       "k": 3,
+       "a": 0,
+       "d": 13,
+       "mvp": 0,
+       "score": 6
+      }
+     ]
+    },
+    {
+     "map": "Inferno",
+     "scoreA": 3,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Prism Divide",
+       "name": "XueQiii",
+       "k": 14,
+       "a": 2,
+       "d": 13,
+       "mvp": 1,
+       "score": 34
+      },
+      {
+       "team": "Prism Divide",
+       "name": "AkanersVT",
+       "k": 9,
+       "a": 1,
+       "d": 14,
+       "mvp": 1,
+       "score": 21
+      },
+      {
+       "team": "Prism Divide",
+       "name": "sayupurin",
+       "k": 8,
+       "a": 3,
+       "d": 14,
+       "mvp": 1,
+       "score": 19
+      },
+      {
+       "team": "Prism Divide",
+       "name": "Syrrith",
+       "k": 9,
+       "a": 0,
+       "d": 15,
+       "mvp": 0,
+       "score": 18
+      },
+      {
+       "team": "Prism Divide",
+       "name": "Codiant",
+       "k": 3,
+       "a": 3,
+       "d": 14,
+       "mvp": 0,
+       "score": 11
+      },
+      {
+       "team": "Opal",
+       "name": "joyyy_cheng",
+       "k": 20,
+       "a": 0,
+       "d": 8,
+       "mvp": 4,
+       "score": 46
+      },
+      {
+       "team": "Opal",
+       "name": "Seireiix",
+       "k": 18,
+       "a": 0,
+       "d": 8,
+       "mvp": 3,
+       "score": 44
+      },
+      {
+       "team": "Opal",
+       "name": "kuro_mi",
+       "k": 15,
+       "a": 0,
+       "d": 10,
+       "mvp": 3,
+       "score": 35
+      },
+      {
+       "team": "Opal",
+       "name": "lumi.nyaa",
+       "k": 10,
+       "a": 0,
+       "d": 9,
+       "mvp": 2,
+       "score": 26
+      },
+      {
+       "team": "Opal",
+       "name": "Scorpium",
+       "k": 7,
+       "a": 2,
+       "d": 8,
+       "mvp": 1,
+       "score": 24
+      }
+     ]
+    }
+   ]
+  },
+  "9-16": {
+   "maps": [
+    {
+     "map": "Split",
+     "scoreA": 11,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "The Gigarage",
+       "name": "yunaeyo",
+       "k": 14,
+       "a": 3,
+       "d": 15,
+       "mvp": 4,
+       "score": 46
+      },
+      {
+       "team": "The Gigarage",
+       "name": "mmirawr_",
+       "k": 17,
+       "a": 1,
+       "d": 13,
+       "mvp": 2,
+       "score": 44
+      },
+      {
+       "team": "The Gigarage",
+       "name": "bluenerd8",
+       "k": 15,
+       "a": 1,
+       "d": 17,
+       "mvp": 2,
+       "score": 37
+      },
+      {
+       "team": "The Gigarage",
+       "name": "YoJareddo",
+       "k": 15,
+       "a": 2,
+       "d": 18,
+       "mvp": 1,
+       "score": 37
+      },
+      {
+       "team": "The Gigarage",
+       "name": "gigichiii_",
+       "k": 8,
+       "a": 2,
+       "d": 18,
+       "mvp": 2,
+       "score": 24
+      },
+      {
+       "team": "Cosmos",
+       "name": "kokushi_vampir",
+       "k": 25,
+       "a": 2,
+       "d": 14,
+       "mvp": 6,
+       "score": 67
+      },
+      {
+       "team": "Cosmos",
+       "name": "azzuto",
+       "k": 19,
+       "a": 1,
+       "d": 14,
+       "mvp": 1,
+       "score": 45
+      },
+      {
+       "team": "Cosmos",
+       "name": "inaxho",
+       "k": 12,
+       "a": 3,
+       "d": 16,
+       "mvp": 2,
+       "score": 37
+      },
+      {
+       "team": "Cosmos",
+       "name": "DelphoxLuna",
+       "k": 12,
+       "a": 3,
+       "d": 10,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "Cosmos",
+       "name": "sneakyyyyy",
+       "k": 13,
+       "a": 0,
+       "d": 15,
+       "mvp": 1,
+       "score": 31
+      }
+     ]
+    }
+   ]
   }
  },
  "nations-cup-qualifier-philippines-2026": {

@@ -2120,7 +2120,10 @@
       "loserOf": 14
      },
      "bestOf": null,
-     "thirdPlace": true
+     "thirdPlace": true,
+     "sa": 11,
+     "sb": 13,
+     "ts": 1790175016
     }
    ],
    "roundTitles": {
@@ -2210,5 +2213,6 @@
   "Seraph Dynasty": 76,
   "Ashfall": 77
  },
- "predictionsLocked": true
+ "predictionsLocked": true,
+ "completed": true
 }
