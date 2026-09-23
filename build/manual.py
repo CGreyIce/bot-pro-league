@@ -376,7 +376,29 @@ def path(slug): return os.path.join(MANUAL, slug + ".json")
 def load(slug):
     p = path(slug)
     return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else None
+def ensure_third_place(man):
+    """S-Tier and Major events always get a 3rd-place decider between the two beaten
+    semifinalists. Adds one to any single-elim stage that has a real final (fed by two
+    semifinals) and does not already have a third-place match. Idempotent."""
+    if man.get("tier") not in ("s", "major"):
+        return
+    for stage in man.get("stages", []):
+        if stage.get("format") != "single_elim":
+            continue
+        ms = stage.get("matches", [])
+        if not ms or any(m.get("thirdPlace") for m in ms):
+            continue
+        reals = [m for m in ms if not m.get("thirdPlace")]
+        final = max(reals, key=lambda m: m["id"])
+        fa, fb = final.get("fa", {}), final.get("fb", {})
+        if "match" in fa and "match" in fb:            # a real final fed by two semifinals
+            nid = max(m["id"] for m in ms) + 1
+            ms.append({"id": nid, "round": final["round"],
+                       "fa": {"loserOf": fa["match"]}, "fb": {"loserOf": fb["match"]},
+                       "bestOf": None, "thirdPlace": True})
+
 def save(man):
+    ensure_third_place(man)
     json.dump(man, open(path(man["slug"]), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     json.dump(to_standard(man), open(os.path.join(TDIR, man["slug"] + ".json"), "w", encoding="utf-8"),
               ensure_ascii=False)

@@ -207,6 +207,18 @@
      },
      "sa": null,
      "sb": null
+    },
+    {
+     "id": 16,
+     "round": 4,
+     "fa": {
+      "loserOf": 13
+     },
+     "fb": {
+      "loserOf": 14
+     },
+     "bestOf": null,
+     "thirdPlace": true
     }
    ],
    "roundTitles": {
