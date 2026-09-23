@@ -330,6 +330,16 @@ def tournament_placements(man):
         out.append({"rank": rank, "name": nm, "result": "Group Stage", "tie": True}); rank += 1
     return out
 
+def _display_seeds(man):
+    """Seed-number badges for the bracket. Use an explicit man['seeds'] map if set, otherwise
+    derive it from the single-elim stage's team order (position 1 = seed 1, and so on)."""
+    if man.get("seeds"):
+        return man["seeds"]
+    elim = next((st for st in man.get("stages", []) if st.get("format") == "single_elim"), None)
+    if elim and elim.get("teams"):
+        return {nm: i + 1 for i, nm in enumerate(elim["teams"])}
+    return {}
+
 def to_standard(man):
     stages = [stage_to_standard(s) for s in man["stages"]]
     # champion = decisive result of the last stage
@@ -364,7 +374,7 @@ def to_standard(man):
         "manual": True, "champion": champion, "stages": stages,
         "participants": parts, "matches": flat, "roundTitles": {},
         "finalStandings": tournament_placements(man),
-        "seeds": man.get("seeds", {}),
+        "seeds": _display_seeds(man),
         "predictionsLocked": bool(man.get("predictionsLocked")),
         "completed": bool(man.get("completed")),
         "noHonors": bool(man.get("noHonors")),
