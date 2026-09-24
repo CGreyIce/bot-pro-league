@@ -43922,5 +43922,795 @@
     }
    ]
   }
+ },
+ "nova-initia-invitational-i": {
+  "1-1": {
+   "maps": [
+    {
+     "map": "Vertigo",
+     "scoreA": 9,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Artisian",
+       "name": "SanCtuary",
+       "k": 23,
+       "a": 2,
+       "d": 17,
+       "mvp": 6,
+       "score": 50
+      },
+      {
+       "team": "Artisian",
+       "name": "Skyllabtw",
+       "k": 12,
+       "a": 3,
+       "d": 14,
+       "mvp": 1,
+       "score": 37
+      },
+      {
+       "team": "Artisian",
+       "name": "Yixl",
+       "k": 15,
+       "a": 0,
+       "d": 16,
+       "mvp": 1,
+       "score": 35
+      },
+      {
+       "team": "Artisian",
+       "name": "KTenshi",
+       "k": 10,
+       "a": 1,
+       "d": 15,
+       "mvp": 1,
+       "score": 24
+      },
+      {
+       "team": "Artisian",
+       "name": "rebellioniite",
+       "k": 11,
+       "a": 2,
+       "d": 18,
+       "mvp": 0,
+       "score": 24
+      },
+      {
+       "team": "Lunar Cadence",
+       "name": "briant",
+       "k": 20,
+       "a": 4,
+       "d": 15,
+       "mvp": 4,
+       "score": 46
+      },
+      {
+       "team": "Lunar Cadence",
+       "name": "Shiranami Ramune",
+       "k": 17,
+       "a": 2,
+       "d": 14,
+       "mvp": 4,
+       "score": 44
+      },
+      {
+       "team": "Lunar Cadence",
+       "name": "Eris Suzukami",
+       "k": 17,
+       "a": 2,
+       "d": 15,
+       "mvp": 3,
+       "score": 41
+      },
+      {
+       "team": "Lunar Cadence",
+       "name": "Tatsumaki Chise",
+       "k": 14,
+       "a": 1,
+       "d": 15,
+       "mvp": 2,
+       "score": 35
+      },
+      {
+       "team": "Lunar Cadence",
+       "name": "Tsumugi Kokage",
+       "k": 12,
+       "a": 2,
+       "d": 12,
+       "mvp": 0,
+       "score": 33
+      }
+     ]
+    },
+    {
+     "map": "Inferno",
+     "scoreA": 13,
+     "scoreB": 1,
+     "players": [
+      {
+       "team": "Artisian",
+       "name": "rebellioniite",
+       "k": 22,
+       "a": 0,
+       "d": 7,
+       "mvp": 3,
+       "score": 52
+      },
+      {
+       "team": "Artisian",
+       "name": "SanCtuary",
+       "k": 19,
+       "a": 0,
+       "d": 6,
+       "mvp": 5,
+       "score": 47
+      },
+      {
+       "team": "Artisian",
+       "name": "KTenshi",
+       "k": 16,
+       "a": 0,
+       "d": 4,
+       "mvp": 4,
+       "score": 41
+      },
+      {
+       "team": "Artisian",
+       "name": "Yixl",
+       "k": 7,
+       "a": 0,
+       "d": 8,
+       "mvp": 1,
+       "score": 17
+      },
+      {
+       "team": "Artisian",
+       "name": "Skyllabtw",
+       "k": 5,
+       "a": 0,
+       "d": 8,
+       "mvp": 0,
+       "score": 10
+      },
+      {
+       "team": "Lunar Cadence",
+       "name": "briant",
+       "k": 12,
+       "a": 1,
+       "d": 13,
+       "mvp": 1,
+       "score": 29
+      },
+      {
+       "team": "Lunar Cadence",
+       "name": "Eris Suzukami",
+       "k": 6,
+       "a": 2,
+       "d": 14,
+       "mvp": 0,
+       "score": 14
+      },
+      {
+       "team": "Lunar Cadence",
+       "name": "Tsumugi Kokage",
+       "k": 6,
+       "a": 1,
+       "d": 14,
+       "mvp": 0,
+       "score": 13
+      },
+      {
+       "team": "Lunar Cadence",
+       "name": "Shiranami Ramune",
+       "k": 6,
+       "a": 1,
+       "d": 14,
+       "mvp": 0,
+       "score": 13
+      },
+      {
+       "team": "Lunar Cadence",
+       "name": "Tatsumaki Chise",
+       "k": 3,
+       "a": 3,
+       "d": 14,
+       "mvp": 0,
+       "score": 9
+      }
+     ]
+    },
+    {
+     "map": "Mirage",
+     "scoreA": 13,
+     "scoreB": 10,
+     "players": [
+      {
+       "team": "Artisian",
+       "name": "Skyllabtw",
+       "k": 22,
+       "a": 3,
+       "d": 15,
+       "mvp": 5,
+       "score": 55
+      },
+      {
+       "team": "Artisian",
+       "name": "SanCtuary",
+       "k": 19,
+       "a": 1,
+       "d": 17,
+       "mvp": 4,
+       "score": 45
+      },
+      {
+       "team": "Artisian",
+       "name": "rebellioniite",
+       "k": 17,
+       "a": 3,
+       "d": 14,
+       "mvp": 2,
+       "score": 43
+      },
+      {
+       "team": "Artisian",
+       "name": "Yixl",
+       "k": 15,
+       "a": 0,
+       "d": 14,
+       "mvp": 1,
+       "score": 40
+      },
+      {
+       "team": "Artisian",
+       "name": "KTenshi",
+       "k": 14,
+       "a": 1,
+       "d": 13,
+       "mvp": 1,
+       "score": 33
+      },
+      {
+       "team": "Lunar Cadence",
+       "name": "Tsumugi Kokage",
+       "k": 20,
+       "a": 0,
+       "d": 17,
+       "mvp": 4,
+       "score": 50
+      },
+      {
+       "team": "Lunar Cadence",
+       "name": "Tatsumaki Chise",
+       "k": 14,
+       "a": 2,
+       "d": 19,
+       "mvp": 1,
+       "score": 38
+      },
+      {
+       "team": "Lunar Cadence",
+       "name": "Shiranami Ramune",
+       "k": 15,
+       "a": 3,
+       "d": 18,
+       "mvp": 2,
+       "score": 34
+      },
+      {
+       "team": "Lunar Cadence",
+       "name": "Eris Suzukami",
+       "k": 13,
+       "a": 2,
+       "d": 16,
+       "mvp": 2,
+       "score": 33
+      },
+      {
+       "team": "Lunar Cadence",
+       "name": "briant",
+       "k": 11,
+       "a": 3,
+       "d": 17,
+       "mvp": 1,
+       "score": 29
+      }
+     ]
+    }
+   ]
+  },
+  "1-2": {
+   "maps": [
+    {
+     "map": "Vertigo",
+     "scoreA": 13,
+     "scoreB": 1,
+     "players": [
+      {
+       "team": "xPlosiv",
+       "name": "StrigidaeVT",
+       "k": 18,
+       "a": 1,
+       "d": 6,
+       "mvp": 0,
+       "score": 42
+      },
+      {
+       "team": "xPlosiv",
+       "name": "TokieShepherdVT",
+       "k": 14,
+       "a": 1,
+       "d": 7,
+       "mvp": 6,
+       "score": 38
+      },
+      {
+       "team": "xPlosiv",
+       "name": "88EXP",
+       "k": 14,
+       "a": 1,
+       "d": 7,
+       "mvp": 2,
+       "score": 35
+      },
+      {
+       "team": "xPlosiv",
+       "name": "tapiyokaaa",
+       "k": 15,
+       "a": 0,
+       "d": 6,
+       "mvp": 2,
+       "score": 33
+      },
+      {
+       "team": "xPlosiv",
+       "name": "Cursiffe",
+       "k": 8,
+       "a": 0,
+       "d": 8,
+       "mvp": 3,
+       "score": 23
+      },
+      {
+       "team": "5PERCENT",
+       "name": "Kisaragi Ren",
+       "k": 12,
+       "a": 0,
+       "d": 13,
+       "mvp": 1,
+       "score": 28
+      },
+      {
+       "team": "5PERCENT",
+       "name": "Solaonix",
+       "k": 6,
+       "a": 2,
+       "d": 14,
+       "mvp": 0,
+       "score": 15
+      },
+      {
+       "team": "5PERCENT",
+       "name": "dumbo",
+       "k": 5,
+       "a": 3,
+       "d": 14,
+       "mvp": 0,
+       "score": 15
+      },
+      {
+       "team": "5PERCENT",
+       "name": "TortillaRoll",
+       "k": 6,
+       "a": 1,
+       "d": 14,
+       "mvp": 0,
+       "score": 13
+      },
+      {
+       "team": "5PERCENT",
+       "name": "AngelxAim",
+       "k": 5,
+       "a": 1,
+       "d": 14,
+       "mvp": 0,
+       "score": 12
+      }
+     ]
+    },
+    {
+     "map": "Mirage",
+     "scoreA": 13,
+     "scoreB": 11,
+     "players": [
+      {
+       "team": "xPlosiv",
+       "name": "TokieShepherdVT",
+       "k": 18,
+       "a": 1,
+       "d": 15,
+       "mvp": 4,
+       "score": 43
+      },
+      {
+       "team": "xPlosiv",
+       "name": "tapiyokaaa",
+       "k": 16,
+       "a": 3,
+       "d": 18,
+       "mvp": 3,
+       "score": 41
+      },
+      {
+       "team": "xPlosiv",
+       "name": "Cursiffe",
+       "k": 17,
+       "a": 0,
+       "d": 15,
+       "mvp": 3,
+       "score": 40
+      },
+      {
+       "team": "xPlosiv",
+       "name": "StrigidaeVT",
+       "k": 14,
+       "a": 1,
+       "d": 15,
+       "mvp": 2,
+       "score": 40
+      },
+      {
+       "team": "xPlosiv",
+       "name": "88EXP",
+       "k": 13,
+       "a": 1,
+       "d": 18,
+       "mvp": 1,
+       "score": 29
+      },
+      {
+       "team": "5PERCENT",
+       "name": "dumbo",
+       "k": 20,
+       "a": 1,
+       "d": 17,
+       "mvp": 4,
+       "score": 53
+      },
+      {
+       "team": "5PERCENT",
+       "name": "TortillaRoll",
+       "k": 19,
+       "a": 2,
+       "d": 15,
+       "mvp": 1,
+       "score": 47
+      },
+      {
+       "team": "5PERCENT",
+       "name": "Kisaragi Ren",
+       "k": 18,
+       "a": 1,
+       "d": 15,
+       "mvp": 3,
+       "score": 42
+      },
+      {
+       "team": "5PERCENT",
+       "name": "Solaonix",
+       "k": 16,
+       "a": 0,
+       "d": 14,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "5PERCENT",
+       "name": "AngelxAim",
+       "k": 8,
+       "a": 0,
+       "d": 17,
+       "mvp": 1,
+       "score": 20
+      }
+     ]
+    }
+   ]
+  },
+  "1-3": {
+   "maps": [
+    {
+     "map": "Tuscan",
+     "scoreA": 10,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Round Loss Bonus",
+       "name": "murasakibara_tsuki1",
+       "k": 21,
+       "a": 1,
+       "d": 19,
+       "mvp": 4,
+       "score": 49
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "caturteer",
+       "k": 18,
+       "a": 2,
+       "d": 16,
+       "mvp": 3,
+       "score": 46
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "le_pyrrhic",
+       "k": 16,
+       "a": 3,
+       "d": 18,
+       "mvp": 0,
+       "score": 39
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "daifuku.wu",
+       "k": 11,
+       "a": 3,
+       "d": 17,
+       "mvp": 1,
+       "score": 33
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "TiF2",
+       "k": 11,
+       "a": 4,
+       "d": 20,
+       "mvp": 2,
+       "score": 28
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Yumeno Akari",
+       "k": 24,
+       "a": 1,
+       "d": 13,
+       "mvp": 5,
+       "score": 63
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Ginjo Saine",
+       "k": 15,
+       "a": 6,
+       "d": 15,
+       "mvp": 3,
+       "score": 44
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Tachibana Hinano",
+       "k": 17,
+       "a": 4,
+       "d": 17,
+       "mvp": 2,
+       "score": 43
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Kogara Toto",
+       "k": 19,
+       "a": 1,
+       "d": 18,
+       "mvp": 0,
+       "score": 43
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Remia Aotsuki",
+       "k": 15,
+       "a": 4,
+       "d": 14,
+       "mvp": 3,
+       "score": 42
+      }
+     ]
+    },
+    {
+     "map": "Vertigo",
+     "scoreA": 13,
+     "scoreB": 10,
+     "players": [
+      {
+       "team": "Round Loss Bonus",
+       "name": "TiF2",
+       "k": 28,
+       "a": 3,
+       "d": 12,
+       "mvp": 3,
+       "score": 75
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "caturteer",
+       "k": 18,
+       "a": 0,
+       "d": 17,
+       "mvp": 4,
+       "score": 41
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "murasakibara_tsuki1",
+       "k": 14,
+       "a": 1,
+       "d": 17,
+       "mvp": 3,
+       "score": 35
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "daifuku.wu",
+       "k": 12,
+       "a": 3,
+       "d": 17,
+       "mvp": 2,
+       "score": 34
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "le_pyrrhic",
+       "k": 13,
+       "a": 0,
+       "d": 16,
+       "mvp": 1,
+       "score": 27
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Remia Aotsuki",
+       "k": 22,
+       "a": 1,
+       "d": 14,
+       "mvp": 2,
+       "score": 50
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Kogara Toto",
+       "k": 13,
+       "a": 4,
+       "d": 19,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Ginjo Saine",
+       "k": 16,
+       "a": 0,
+       "d": 18,
+       "mvp": 3,
+       "score": 34
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Yumeno Akari",
+       "k": 14,
+       "a": 1,
+       "d": 17,
+       "mvp": 2,
+       "score": 35
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Tachibana Hinano",
+       "k": 14,
+       "a": 1,
+       "d": 17,
+       "mvp": 1,
+       "score": 29
+      }
+     ]
+    },
+    {
+     "map": "Inferno",
+     "scoreA": 13,
+     "scoreB": 6,
+     "players": [
+      {
+       "team": "Round Loss Bonus",
+       "name": "caturteer",
+       "k": 26,
+       "a": 1,
+       "d": 8,
+       "mvp": 7,
+       "score": 60
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "daifuku.wu",
+       "k": 25,
+       "a": 1,
+       "d": 13,
+       "mvp": 4,
+       "score": 56
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "murasakibara_tsuki1",
+       "k": 11,
+       "a": 3,
+       "d": 14,
+       "mvp": 0,
+       "score": 30
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "le_pyrrhic",
+       "k": 10,
+       "a": 0,
+       "d": 13,
+       "mvp": 1,
+       "score": 24
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "TiF2",
+       "k": 7,
+       "a": 2,
+       "d": 11,
+       "mvp": 1,
+       "score": 21
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Tachibana Hinano",
+       "k": 13,
+       "a": 4,
+       "d": 15,
+       "mvp": 2,
+       "score": 38
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Kogara Toto",
+       "k": 15,
+       "a": 1,
+       "d": 16,
+       "mvp": 1,
+       "score": 33
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Yumeno Akari",
+       "k": 13,
+       "a": 1,
+       "d": 16,
+       "mvp": 1,
+       "score": 30
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Remia Aotsuki",
+       "k": 11,
+       "a": 1,
+       "d": 15,
+       "mvp": 1,
+       "score": 25
+      },
+      {
+       "team": "Astral Bloom",
+       "name": "Ginjo Saine",
+       "k": 7,
+       "a": 1,
+       "d": 17,
+       "mvp": 1,
+       "score": 15
+      }
+     ]
+    }
+   ]
+  }
  }
 }

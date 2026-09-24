@@ -37,8 +37,9 @@
      "fb": {
       "seed": 16
      },
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1790236719
     },
     {
      "id": 2,
@@ -49,8 +50,9 @@
      "fb": {
       "seed": 9
      },
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1790238009
     },
     {
      "id": 3,
@@ -61,8 +63,9 @@
      "fb": {
       "seed": 13
      },
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1790239903
     },
     {
      "id": 4,
@@ -228,5 +231,6 @@
     "4": "Final"
    }
   }
- ]
+ ],
+ "predictionsLocked": true
 }
