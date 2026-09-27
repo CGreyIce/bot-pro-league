@@ -46089,6 +46089,301 @@
      ]
     }
    ]
+  },
+  "1-9": {
+   "maps": [
+    {
+     "map": "Vertigo",
+     "scoreA": 11,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Artisian",
+       "name": "KTenshi",
+       "k": 25,
+       "a": 2,
+       "d": 16,
+       "mvp": 4,
+       "score": 61
+      },
+      {
+       "team": "Artisian",
+       "name": "Yixl",
+       "k": 19,
+       "a": 1,
+       "d": 19,
+       "mvp": 2,
+       "score": 50
+      },
+      {
+       "team": "Artisian",
+       "name": "SanCtuary",
+       "k": 20,
+       "a": 1,
+       "d": 20,
+       "mvp": 3,
+       "score": 46
+      },
+      {
+       "team": "Artisian",
+       "name": "rebellioniite",
+       "k": 9,
+       "a": 3,
+       "d": 19,
+       "mvp": 1,
+       "score": 27
+      },
+      {
+       "team": "Artisian",
+       "name": "Skyllabtw",
+       "k": 9,
+       "a": 1,
+       "d": 22,
+       "mvp": 1,
+       "score": 21
+      },
+      {
+       "team": "xPlosiv",
+       "name": "88EXP",
+       "k": 23,
+       "a": 0,
+       "d": 19,
+       "mvp": 4,
+       "score": 52
+      },
+      {
+       "team": "xPlosiv",
+       "name": "Cursiffe",
+       "k": 21,
+       "a": 1,
+       "d": 16,
+       "mvp": 2,
+       "score": 51
+      },
+      {
+       "team": "xPlosiv",
+       "name": "tapiyokaaa",
+       "k": 17,
+       "a": 3,
+       "d": 15,
+       "mvp": 3,
+       "score": 47
+      },
+      {
+       "team": "xPlosiv",
+       "name": "TokieShepherdVT",
+       "k": 18,
+       "a": 0,
+       "d": 17,
+       "mvp": 3,
+       "score": 41
+      },
+      {
+       "team": "xPlosiv",
+       "name": "StrigidaeVT",
+       "k": 15,
+       "a": 3,
+       "d": 17,
+       "mvp": 1,
+       "score": 38
+      }
+     ]
+    },
+    {
+     "map": "Mirage",
+     "scoreA": 13,
+     "scoreB": 9,
+     "players": [
+      {
+       "team": "Artisian",
+       "name": "rebellioniite",
+       "k": 21,
+       "a": 5,
+       "d": 13,
+       "mvp": 4,
+       "score": 55
+      },
+      {
+       "team": "Artisian",
+       "name": "Skyllabtw",
+       "k": 18,
+       "a": 5,
+       "d": 13,
+       "mvp": 3,
+       "score": 54
+      },
+      {
+       "team": "Artisian",
+       "name": "SanCtuary",
+       "k": 21,
+       "a": 2,
+       "d": 15,
+       "mvp": 4,
+       "score": 49
+      },
+      {
+       "team": "Artisian",
+       "name": "Yixl",
+       "k": 12,
+       "a": 1,
+       "d": 13,
+       "mvp": 2,
+       "score": 31
+      },
+      {
+       "team": "Artisian",
+       "name": "KTenshi",
+       "k": 10,
+       "a": 3,
+       "d": 16,
+       "mvp": 0,
+       "score": 29
+      },
+      {
+       "team": "xPlosiv",
+       "name": "Cursiffe",
+       "k": 19,
+       "a": 3,
+       "d": 16,
+       "mvp": 3,
+       "score": 50
+      },
+      {
+       "team": "xPlosiv",
+       "name": "StrigidaeVT",
+       "k": 15,
+       "a": 6,
+       "d": 16,
+       "mvp": 3,
+       "score": 45
+      },
+      {
+       "team": "xPlosiv",
+       "name": "tapiyokaaa",
+       "k": 14,
+       "a": 2,
+       "d": 16,
+       "mvp": 0,
+       "score": 38
+      },
+      {
+       "team": "xPlosiv",
+       "name": "TokieShepherdVT",
+       "k": 14,
+       "a": 1,
+       "d": 18,
+       "mvp": 1,
+       "score": 37
+      },
+      {
+       "team": "xPlosiv",
+       "name": "88EXP",
+       "k": 8,
+       "a": 1,
+       "d": 16,
+       "mvp": 2,
+       "score": 22
+      }
+     ]
+    },
+    {
+     "map": "Dust2",
+     "scoreA": 20,
+     "scoreB": 22,
+     "players": [
+      {
+       "team": "Artisian",
+       "name": "SanCtuary",
+       "k": 34,
+       "a": 9,
+       "d": 32,
+       "mvp": 6,
+       "score": 85
+      },
+      {
+       "team": "Artisian",
+       "name": "KTenshi",
+       "k": 30,
+       "a": 6,
+       "d": 31,
+       "mvp": 5,
+       "score": 79
+      },
+      {
+       "team": "Artisian",
+       "name": "Skyllabtw",
+       "k": 33,
+       "a": 4,
+       "d": 26,
+       "mvp": 7,
+       "score": 76
+      },
+      {
+       "team": "Artisian",
+       "name": "rebellioniite",
+       "k": 25,
+       "a": 6,
+       "d": 30,
+       "mvp": 1,
+       "score": 65
+      },
+      {
+       "team": "Artisian",
+       "name": "Yixl",
+       "k": 25,
+       "a": 1,
+       "d": 29,
+       "mvp": 1,
+       "score": 60
+      },
+      {
+       "team": "xPlosiv",
+       "name": "StrigidaeVT",
+       "k": 33,
+       "a": 5,
+       "d": 27,
+       "mvp": 6,
+       "score": 87
+      },
+      {
+       "team": "xPlosiv",
+       "name": "TokieShepherdVT",
+       "k": 30,
+       "a": 5,
+       "d": 29,
+       "mvp": 4,
+       "score": 82
+      },
+      {
+       "team": "xPlosiv",
+       "name": "Cursiffe",
+       "k": 31,
+       "a": 4,
+       "d": 28,
+       "mvp": 5,
+       "score": 80
+      },
+      {
+       "team": "xPlosiv",
+       "name": "tapiyokaaa",
+       "k": 25,
+       "a": 8,
+       "d": 32,
+       "mvp": 3,
+       "score": 67
+      },
+      {
+       "team": "xPlosiv",
+       "name": "88EXP",
+       "k": 29,
+       "a": 0,
+       "d": 31,
+       "mvp": 4,
+       "score": 65
+      }
+     ]
+    }
+   ]
   }
  }
 }
