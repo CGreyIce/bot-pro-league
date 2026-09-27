@@ -45006,6 +45006,301 @@
      ]
     }
    ]
+  },
+  "1-5": {
+   "maps": [
+    {
+     "map": "Cache",
+     "scoreA": 1,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "New Jade",
+       "name": "jenapoppins",
+       "k": 5,
+       "a": 4,
+       "d": 14,
+       "mvp": 0,
+       "score": 14
+      },
+      {
+       "team": "New Jade",
+       "name": "VPLH",
+       "k": 6,
+       "a": 1,
+       "d": 13,
+       "mvp": 0,
+       "score": 13
+      },
+      {
+       "team": "New Jade",
+       "name": "Jeribean",
+       "k": 6,
+       "a": 1,
+       "d": 14,
+       "mvp": 0,
+       "score": 13
+      },
+      {
+       "team": "New Jade",
+       "name": "Astro_Ruckus",
+       "k": 4,
+       "a": 3,
+       "d": 13,
+       "mvp": 0,
+       "score": 11
+      },
+      {
+       "team": "New Jade",
+       "name": "crazywhoopies",
+       "k": 5,
+       "a": 0,
+       "d": 13,
+       "mvp": 1,
+       "score": 10
+      },
+      {
+       "team": "Mourningstar",
+       "name": "cherri_vt",
+       "k": 18,
+       "a": 0,
+       "d": 6,
+       "mvp": 3,
+       "score": 44
+      },
+      {
+       "team": "Mourningstar",
+       "name": "TearsofDeath",
+       "k": 14,
+       "a": 0,
+       "d": 6,
+       "mvp": 5,
+       "score": 36
+      },
+      {
+       "team": "Mourningstar",
+       "name": "Jira Jisaki",
+       "k": 13,
+       "a": 1,
+       "d": 6,
+       "mvp": 2,
+       "score": 35
+      },
+      {
+       "team": "Mourningstar",
+       "name": "EXaCT",
+       "k": 13,
+       "a": 0,
+       "d": 5,
+       "mvp": 3,
+       "score": 31
+      },
+      {
+       "team": "Mourningstar",
+       "name": "arcimoon",
+       "k": 9,
+       "a": 0,
+       "d": 3,
+       "mvp": 0,
+       "score": 27
+      }
+     ]
+    },
+    {
+     "map": "Vertigo",
+     "scoreA": 13,
+     "scoreB": 8,
+     "players": [
+      {
+       "team": "New Jade",
+       "name": "VPLH",
+       "k": 23,
+       "a": 1,
+       "d": 14,
+       "mvp": 4,
+       "score": 59
+      },
+      {
+       "team": "New Jade",
+       "name": "crazywhoopies",
+       "k": 17,
+       "a": 1,
+       "d": 15,
+       "mvp": 2,
+       "score": 40
+      },
+      {
+       "team": "New Jade",
+       "name": "jenapoppins",
+       "k": 17,
+       "a": 0,
+       "d": 13,
+       "mvp": 3,
+       "score": 39
+      },
+      {
+       "team": "New Jade",
+       "name": "Jeribean",
+       "k": 17,
+       "a": 1,
+       "d": 17,
+       "mvp": 3,
+       "score": 37
+      },
+      {
+       "team": "New Jade",
+       "name": "Astro_Ruckus",
+       "k": 10,
+       "a": 1,
+       "d": 13,
+       "mvp": 1,
+       "score": 26
+      },
+      {
+       "team": "Mourningstar",
+       "name": "TearsofDeath",
+       "k": 26,
+       "a": 0,
+       "d": 16,
+       "mvp": 5,
+       "score": 63
+      },
+      {
+       "team": "Mourningstar",
+       "name": "Jira Jisaki",
+       "k": 10,
+       "a": 1,
+       "d": 16,
+       "mvp": 0,
+       "score": 34
+      },
+      {
+       "team": "Mourningstar",
+       "name": "cherri_vt",
+       "k": 14,
+       "a": 0,
+       "d": 15,
+       "mvp": 2,
+       "score": 32
+      },
+      {
+       "team": "Mourningstar",
+       "name": "arcimoon",
+       "k": 13,
+       "a": 1,
+       "d": 19,
+       "mvp": 1,
+       "score": 29
+      },
+      {
+       "team": "Mourningstar",
+       "name": "EXaCT",
+       "k": 8,
+       "a": 3,
+       "d": 19,
+       "mvp": 0,
+       "score": 22
+      }
+     ]
+    },
+    {
+     "map": "Tuscan",
+     "scoreA": 3,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "New Jade",
+       "name": "jenapoppins",
+       "k": 17,
+       "a": 3,
+       "d": 14,
+       "mvp": 2,
+       "score": 37
+      },
+      {
+       "team": "New Jade",
+       "name": "Jeribean",
+       "k": 8,
+       "a": 4,
+       "d": 13,
+       "mvp": 0,
+       "score": 20
+      },
+      {
+       "team": "New Jade",
+       "name": "crazywhoopies",
+       "k": 6,
+       "a": 4,
+       "d": 14,
+       "mvp": 0,
+       "score": 18
+      },
+      {
+       "team": "New Jade",
+       "name": "Astro_Ruckus",
+       "k": 6,
+       "a": 2,
+       "d": 15,
+       "mvp": 0,
+       "score": 17
+      },
+      {
+       "team": "New Jade",
+       "name": "VPLH",
+       "k": 7,
+       "a": 2,
+       "d": 14,
+       "mvp": 1,
+       "score": 16
+      },
+      {
+       "team": "Mourningstar",
+       "name": "Jira Jisaki",
+       "k": 15,
+       "a": 0,
+       "d": 7,
+       "mvp": 2,
+       "score": 42
+      },
+      {
+       "team": "Mourningstar",
+       "name": "TearsofDeath",
+       "k": 17,
+       "a": 2,
+       "d": 11,
+       "mvp": 4,
+       "score": 41
+      },
+      {
+       "team": "Mourningstar",
+       "name": "arcimoon",
+       "k": 14,
+       "a": 0,
+       "d": 7,
+       "mvp": 3,
+       "score": 36
+      },
+      {
+       "team": "Mourningstar",
+       "name": "EXaCT",
+       "k": 13,
+       "a": 1,
+       "d": 10,
+       "mvp": 2,
+       "score": 32
+      },
+      {
+       "team": "Mourningstar",
+       "name": "cherri_vt",
+       "k": 11,
+       "a": 0,
+       "d": 9,
+       "mvp": 2,
+       "score": 29
+      }
+     ]
+    }
+   ]
   }
  }
 }
