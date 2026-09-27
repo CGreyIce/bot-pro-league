@@ -45301,6 +45301,301 @@
      ]
     }
    ]
+  },
+  "1-6": {
+   "maps": [
+    {
+     "map": "Tuscan",
+     "scoreA": 13,
+     "scoreB": 11,
+     "players": [
+      {
+       "team": "Cyanide",
+       "name": "Soozy",
+       "k": 19,
+       "a": 5,
+       "d": 15,
+       "mvp": 5,
+       "score": 50
+      },
+      {
+       "team": "Cyanide",
+       "name": "heavenweeps",
+       "k": 18,
+       "a": 3,
+       "d": 15,
+       "mvp": 1,
+       "score": 48
+      },
+      {
+       "team": "Cyanide",
+       "name": "miorine",
+       "k": 19,
+       "a": 5,
+       "d": 15,
+       "mvp": 0,
+       "score": 48
+      },
+      {
+       "team": "Cyanide",
+       "name": "Decrease",
+       "k": 19,
+       "a": 2,
+       "d": 17,
+       "mvp": 3,
+       "score": 44
+      },
+      {
+       "team": "Cyanide",
+       "name": "Ziweiv",
+       "k": 12,
+       "a": 2,
+       "d": 17,
+       "mvp": 4,
+       "score": 28
+      },
+      {
+       "team": "Syzygy",
+       "name": "akuluvr",
+       "k": 23,
+       "a": 3,
+       "d": 16,
+       "mvp": 5,
+       "score": 63
+      },
+      {
+       "team": "Syzygy",
+       "name": "Xyrren",
+       "k": 18,
+       "a": 2,
+       "d": 18,
+       "mvp": 2,
+       "score": 43
+      },
+      {
+       "team": "Syzygy",
+       "name": "sengjung123",
+       "k": 18,
+       "a": 0,
+       "d": 18,
+       "mvp": 1,
+       "score": 43
+      },
+      {
+       "team": "Syzygy",
+       "name": "leachubby",
+       "k": 13,
+       "a": 3,
+       "d": 19,
+       "mvp": 3,
+       "score": 33
+      },
+      {
+       "team": "Syzygy",
+       "name": "AyanOwOT",
+       "k": 7,
+       "a": 4,
+       "d": 16,
+       "mvp": 0,
+       "score": 22
+      }
+     ]
+    },
+    {
+     "map": "Inferno",
+     "scoreA": 11,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Cyanide",
+       "name": "Decrease",
+       "k": 21,
+       "a": 1,
+       "d": 17,
+       "mvp": 4,
+       "score": 50
+      },
+      {
+       "team": "Cyanide",
+       "name": "miorine",
+       "k": 13,
+       "a": 2,
+       "d": 17,
+       "mvp": 3,
+       "score": 40
+      },
+      {
+       "team": "Cyanide",
+       "name": "Soozy",
+       "k": 16,
+       "a": 3,
+       "d": 17,
+       "mvp": 2,
+       "score": 40
+      },
+      {
+       "team": "Cyanide",
+       "name": "Ziweiv",
+       "k": 12,
+       "a": 3,
+       "d": 19,
+       "mvp": 1,
+       "score": 30
+      },
+      {
+       "team": "Cyanide",
+       "name": "heavenweeps",
+       "k": 11,
+       "a": 1,
+       "d": 17,
+       "mvp": 1,
+       "score": 29
+      },
+      {
+       "team": "Syzygy",
+       "name": "sengjung123",
+       "k": 28,
+       "a": 1,
+       "d": 15,
+       "mvp": 5,
+       "score": 68
+      },
+      {
+       "team": "Syzygy",
+       "name": "akuluvr",
+       "k": 18,
+       "a": 2,
+       "d": 13,
+       "mvp": 3,
+       "score": 50
+      },
+      {
+       "team": "Syzygy",
+       "name": "leachubby",
+       "k": 13,
+       "a": 3,
+       "d": 15,
+       "mvp": 1,
+       "score": 38
+      },
+      {
+       "team": "Syzygy",
+       "name": "Xyrren",
+       "k": 15,
+       "a": 0,
+       "d": 15,
+       "mvp": 3,
+       "score": 32
+      },
+      {
+       "team": "Syzygy",
+       "name": "AyanOwOT",
+       "k": 13,
+       "a": 1,
+       "d": 15,
+       "mvp": 1,
+       "score": 28
+      }
+     ]
+    },
+    {
+     "map": "Mirage",
+     "scoreA": 8,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Cyanide",
+       "name": "miorine",
+       "k": 19,
+       "a": 1,
+       "d": 19,
+       "mvp": 3,
+       "score": 44
+      },
+      {
+       "team": "Cyanide",
+       "name": "Soozy",
+       "k": 13,
+       "a": 2,
+       "d": 16,
+       "mvp": 4,
+       "score": 37
+      },
+      {
+       "team": "Cyanide",
+       "name": "Decrease",
+       "k": 14,
+       "a": 2,
+       "d": 19,
+       "mvp": 0,
+       "score": 32
+      },
+      {
+       "team": "Cyanide",
+       "name": "Ziweiv",
+       "k": 10,
+       "a": 2,
+       "d": 15,
+       "mvp": 1,
+       "score": 26
+      },
+      {
+       "team": "Cyanide",
+       "name": "heavenweeps",
+       "k": 7,
+       "a": 2,
+       "d": 18,
+       "mvp": 0,
+       "score": 21
+      },
+      {
+       "team": "Syzygy",
+       "name": "leachubby",
+       "k": 22,
+       "a": 1,
+       "d": 11,
+       "mvp": 5,
+       "score": 59
+      },
+      {
+       "team": "Syzygy",
+       "name": "sengjung123",
+       "k": 22,
+       "a": 2,
+       "d": 12,
+       "mvp": 3,
+       "score": 52
+      },
+      {
+       "team": "Syzygy",
+       "name": "akuluvr",
+       "k": 16,
+       "a": 3,
+       "d": 15,
+       "mvp": 2,
+       "score": 44
+      },
+      {
+       "team": "Syzygy",
+       "name": "Xyrren",
+       "k": 14,
+       "a": 6,
+       "d": 12,
+       "mvp": 2,
+       "score": 42
+      },
+      {
+       "team": "Syzygy",
+       "name": "AyanOwOT",
+       "k": 13,
+       "a": 1,
+       "d": 13,
+       "mvp": 1,
+       "score": 36
+      }
+     ]
+    }
+   ]
   }
  }
 }
