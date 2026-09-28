@@ -154,8 +154,9 @@
      "fb": {
       "match": 4
      },
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1790579038
     },
     {
      "id": 11,
@@ -166,8 +167,9 @@
      "fb": {
       "match": 6
      },
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1790581228
     },
     {
      "id": 12,
@@ -178,8 +180,9 @@
      "fb": {
       "match": 8
      },
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1790582553
     },
     {
      "id": 13,
@@ -190,8 +193,9 @@
      "fb": {
       "match": 10
      },
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1790589995
     },
     {
      "id": 14,
@@ -202,8 +206,9 @@
      "fb": {
       "match": 12
      },
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1790592902
     },
     {
      "id": 15,
@@ -214,8 +219,9 @@
      "fb": {
       "match": 14
      },
-     "sa": null,
-     "sb": null
+     "sa": 3,
+     "sb": 2,
+     "ts": 1790596797
     },
     {
      "id": 16,
@@ -227,7 +233,10 @@
       "loserOf": 14
      },
      "bestOf": null,
-     "thirdPlace": true
+     "thirdPlace": true,
+     "sa": 13,
+     "sb": 8,
+     "ts": 1790593646
     }
    ],
    "roundTitles": {

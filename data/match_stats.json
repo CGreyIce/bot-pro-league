@@ -46384,6 +46384,1683 @@
      ]
     }
    ]
+  },
+  "1-10": {
+   "maps": [
+    {
+     "map": "Dust2",
+     "scoreA": 13,
+     "scoreB": 10,
+     "players": [
+      {
+       "team": "Round Loss Bonus",
+       "name": "caturteer",
+       "k": 22,
+       "a": 1,
+       "d": 13,
+       "mvp": 4,
+       "score": 53
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "murasakibara_tsuki1",
+       "k": 20,
+       "a": 1,
+       "d": 12,
+       "mvp": 4,
+       "score": 48
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "daifuku.wu",
+       "k": 17,
+       "a": 5,
+       "d": 15,
+       "mvp": 4,
+       "score": 47
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "TiF2",
+       "k": 16,
+       "a": 1,
+       "d": 14,
+       "mvp": 0,
+       "score": 40
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "le_pyrrhic",
+       "k": 12,
+       "a": 3,
+       "d": 15,
+       "mvp": 1,
+       "score": 33
+      },
+      {
+       "team": "Caelum Scala",
+       "name": "lenette",
+       "k": 20,
+       "a": 1,
+       "d": 17,
+       "mvp": 3,
+       "score": 55
+      },
+      {
+       "team": "Caelum Scala",
+       "name": "Nyuii",
+       "k": 19,
+       "a": 0,
+       "d": 16,
+       "mvp": 4,
+       "score": 43
+      },
+      {
+       "team": "Caelum Scala",
+       "name": "4_naru",
+       "k": 13,
+       "a": 1,
+       "d": 18,
+       "mvp": 2,
+       "score": 33
+      },
+      {
+       "team": "Caelum Scala",
+       "name": "Baer",
+       "k": 10,
+       "a": 1,
+       "d": 19,
+       "mvp": 0,
+       "score": 21
+      },
+      {
+       "team": "Caelum Scala",
+       "name": "kyyltn",
+       "k": 6,
+       "a": 2,
+       "d": 18,
+       "mvp": 1,
+       "score": 18
+      }
+     ]
+    },
+    {
+     "map": "Mirage",
+     "scoreA": 13,
+     "scoreB": 11,
+     "players": [
+      {
+       "team": "Round Loss Bonus",
+       "name": "caturteer",
+       "k": 23,
+       "a": 3,
+       "d": 15,
+       "mvp": 3,
+       "score": 58
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "murasakibara_tsuki1",
+       "k": 21,
+       "a": 3,
+       "d": 16,
+       "mvp": 3,
+       "score": 55
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "daifuku.wu",
+       "k": 21,
+       "a": 2,
+       "d": 16,
+       "mvp": 3,
+       "score": 48
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "TiF2",
+       "k": 16,
+       "a": 1,
+       "d": 14,
+       "mvp": 3,
+       "score": 40
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "le_pyrrhic",
+       "k": 8,
+       "a": 5,
+       "d": 18,
+       "mvp": 1,
+       "score": 24
+      },
+      {
+       "team": "Caelum Scala",
+       "name": "4_naru",
+       "k": 23,
+       "a": 3,
+       "d": 18,
+       "mvp": 5,
+       "score": 56
+      },
+      {
+       "team": "Caelum Scala",
+       "name": "Nyuii",
+       "k": 16,
+       "a": 2,
+       "d": 18,
+       "mvp": 3,
+       "score": 42
+      },
+      {
+       "team": "Caelum Scala",
+       "name": "kyyltn",
+       "k": 14,
+       "a": 1,
+       "d": 17,
+       "mvp": 2,
+       "score": 40
+      },
+      {
+       "team": "Caelum Scala",
+       "name": "lenette",
+       "k": 13,
+       "a": 1,
+       "d": 16,
+       "mvp": 1,
+       "score": 38
+      },
+      {
+       "team": "Caelum Scala",
+       "name": "Baer",
+       "k": 13,
+       "a": 1,
+       "d": 20,
+       "mvp": 0,
+       "score": 27
+      }
+     ]
+    }
+   ]
+  },
+  "1-11": {
+   "maps": [
+    {
+     "map": "Tuscan",
+     "scoreA": 13,
+     "scoreB": 8,
+     "players": [
+      {
+       "team": "Mourningstar",
+       "name": "cherri_vt",
+       "k": 17,
+       "a": 3,
+       "d": 9,
+       "mvp": 1,
+       "score": 47
+      },
+      {
+       "team": "Mourningstar",
+       "name": "TearsofDeath",
+       "k": 19,
+       "a": 0,
+       "d": 14,
+       "mvp": 5,
+       "score": 44
+      },
+      {
+       "team": "Mourningstar",
+       "name": "Jira Jisaki",
+       "k": 14,
+       "a": 1,
+       "d": 14,
+       "mvp": 3,
+       "score": 44
+      },
+      {
+       "team": "Mourningstar",
+       "name": "arcimoon",
+       "k": 16,
+       "a": 0,
+       "d": 10,
+       "mvp": 4,
+       "score": 42
+      },
+      {
+       "team": "Mourningstar",
+       "name": "EXaCT",
+       "k": 15,
+       "a": 6,
+       "d": 15,
+       "mvp": 0,
+       "score": 41
+      },
+      {
+       "team": "Syzygy",
+       "name": "AyanOwOT",
+       "k": 14,
+       "a": 3,
+       "d": 16,
+       "mvp": 1,
+       "score": 38
+      },
+      {
+       "team": "Syzygy",
+       "name": "akuluvr",
+       "k": 15,
+       "a": 1,
+       "d": 16,
+       "mvp": 3,
+       "score": 37
+      },
+      {
+       "team": "Syzygy",
+       "name": "leachubby",
+       "k": 13,
+       "a": 1,
+       "d": 16,
+       "mvp": 3,
+       "score": 36
+      },
+      {
+       "team": "Syzygy",
+       "name": "Xyrren",
+       "k": 11,
+       "a": 1,
+       "d": 16,
+       "mvp": 1,
+       "score": 30
+      },
+      {
+       "team": "Syzygy",
+       "name": "sengjung123",
+       "k": 9,
+       "a": 1,
+       "d": 17,
+       "mvp": 0,
+       "score": 23
+      }
+     ]
+    },
+    {
+     "map": "Inferno",
+     "scoreA": 14,
+     "scoreB": 16,
+     "players": [
+      {
+       "team": "Mourningstar",
+       "name": "EXaCT",
+       "k": 26,
+       "a": 1,
+       "d": 23,
+       "mvp": 5,
+       "score": 68
+      },
+      {
+       "team": "Mourningstar",
+       "name": "TearsofDeath",
+       "k": 17,
+       "a": 2,
+       "d": 24,
+       "mvp": 6,
+       "score": 50
+      },
+      {
+       "team": "Mourningstar",
+       "name": "Jira Jisaki",
+       "k": 18,
+       "a": 0,
+       "d": 24,
+       "mvp": 2,
+       "score": 48
+      },
+      {
+       "team": "Mourningstar",
+       "name": "cherri_vt",
+       "k": 12,
+       "a": 1,
+       "d": 23,
+       "mvp": 1,
+       "score": 31
+      },
+      {
+       "team": "Mourningstar",
+       "name": "arcimoon",
+       "k": 13,
+       "a": 0,
+       "d": 25,
+       "mvp": 0,
+       "score": 29
+      },
+      {
+       "team": "Syzygy",
+       "name": "leachubby",
+       "k": 35,
+       "a": 2,
+       "d": 19,
+       "mvp": 3,
+       "score": 83
+      },
+      {
+       "team": "Syzygy",
+       "name": "sengjung123",
+       "k": 32,
+       "a": 3,
+       "d": 15,
+       "mvp": 8,
+       "score": 79
+      },
+      {
+       "team": "Syzygy",
+       "name": "Xyrren",
+       "k": 17,
+       "a": 8,
+       "d": 17,
+       "mvp": 2,
+       "score": 50
+      },
+      {
+       "team": "Syzygy",
+       "name": "akuluvr",
+       "k": 20,
+       "a": 2,
+       "d": 17,
+       "mvp": 1,
+       "score": 49
+      },
+      {
+       "team": "Syzygy",
+       "name": "AyanOwOT",
+       "k": 15,
+       "a": 3,
+       "d": 18,
+       "mvp": 2,
+       "score": 35
+      }
+     ]
+    },
+    {
+     "map": "Anubis",
+     "scoreA": 13,
+     "scoreB": 9,
+     "players": [
+      {
+       "team": "Mourningstar",
+       "name": "cherri_vt",
+       "k": 27,
+       "a": 4,
+       "d": 17,
+       "mvp": 6,
+       "score": 63
+      },
+      {
+       "team": "Mourningstar",
+       "name": "Jira Jisaki",
+       "k": 20,
+       "a": 4,
+       "d": 15,
+       "mvp": 3,
+       "score": 46
+      },
+      {
+       "team": "Mourningstar",
+       "name": "TearsofDeath",
+       "k": 15,
+       "a": 1,
+       "d": 15,
+       "mvp": 2,
+       "score": 35
+      },
+      {
+       "team": "Mourningstar",
+       "name": "EXaCT",
+       "k": 9,
+       "a": 4,
+       "d": 15,
+       "mvp": 1,
+       "score": 24
+      },
+      {
+       "team": "Mourningstar",
+       "name": "arcimoon",
+       "k": 9,
+       "a": 0,
+       "d": 15,
+       "mvp": 1,
+       "score": 24
+      },
+      {
+       "team": "Syzygy",
+       "name": "Xyrren",
+       "k": 22,
+       "a": 0,
+       "d": 14,
+       "mvp": 4,
+       "score": 49
+      },
+      {
+       "team": "Syzygy",
+       "name": "leachubby",
+       "k": 18,
+       "a": 2,
+       "d": 16,
+       "mvp": 2,
+       "score": 47
+      },
+      {
+       "team": "Syzygy",
+       "name": "akuluvr",
+       "k": 16,
+       "a": 4,
+       "d": 18,
+       "mvp": 0,
+       "score": 40
+      },
+      {
+       "team": "Syzygy",
+       "name": "sengjung123",
+       "k": 11,
+       "a": 1,
+       "d": 17,
+       "mvp": 2,
+       "score": 23
+      },
+      {
+       "team": "Syzygy",
+       "name": "AyanOwOT",
+       "k": 10,
+       "a": 0,
+       "d": 15,
+       "mvp": 1,
+       "score": 22
+      }
+     ]
+    }
+   ]
+  },
+  "1-12": {
+   "maps": [
+    {
+     "map": "Mirage",
+     "scoreA": 13,
+     "scoreB": 6,
+     "players": [
+      {
+       "team": "Nightshade",
+       "name": "yinnzx",
+       "k": 20,
+       "a": 0,
+       "d": 16,
+       "mvp": 4,
+       "score": 44
+      },
+      {
+       "team": "Nightshade",
+       "name": "Kyu",
+       "k": 16,
+       "a": 1,
+       "d": 16,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "Nightshade",
+       "name": "ItzMaigo",
+       "k": 12,
+       "a": 0,
+       "d": 11,
+       "mvp": 2,
+       "score": 30
+      },
+      {
+       "team": "Nightshade",
+       "name": "KydaSana",
+       "k": 12,
+       "a": 2,
+       "d": 14,
+       "mvp": 3,
+       "score": 29
+      },
+      {
+       "team": "Nightshade",
+       "name": "JigglyPingu",
+       "k": 10,
+       "a": 1,
+       "d": 11,
+       "mvp": 2,
+       "score": 23
+      },
+      {
+       "team": "Aspire",
+       "name": "TuxedoCat",
+       "k": 19,
+       "a": 1,
+       "d": 15,
+       "mvp": 0,
+       "score": 44
+      },
+      {
+       "team": "Aspire",
+       "name": "Hanarisu",
+       "k": 15,
+       "a": 0,
+       "d": 14,
+       "mvp": 2,
+       "score": 35
+      },
+      {
+       "team": "Aspire",
+       "name": "Chisa_Scarlett",
+       "k": 13,
+       "a": 0,
+       "d": 13,
+       "mvp": 2,
+       "score": 29
+      },
+      {
+       "team": "Aspire",
+       "name": "caarrietan",
+       "k": 11,
+       "a": 3,
+       "d": 14,
+       "mvp": 1,
+       "score": 29
+      },
+      {
+       "team": "Aspire",
+       "name": "Mikuryne",
+       "k": 10,
+       "a": 2,
+       "d": 14,
+       "mvp": 1,
+       "score": 24
+      }
+     ]
+    },
+    {
+     "map": "Inferno",
+     "scoreA": 13,
+     "scoreB": 9,
+     "players": [
+      {
+       "team": "Nightshade",
+       "name": "ItzMaigo",
+       "k": 20,
+       "a": 4,
+       "d": 12,
+       "mvp": 3,
+       "score": 57
+      },
+      {
+       "team": "Nightshade",
+       "name": "JigglyPingu",
+       "k": 22,
+       "a": 5,
+       "d": 13,
+       "mvp": 5,
+       "score": 54
+      },
+      {
+       "team": "Nightshade",
+       "name": "yinnzx",
+       "k": 14,
+       "a": 3,
+       "d": 14,
+       "mvp": 4,
+       "score": 38
+      },
+      {
+       "team": "Nightshade",
+       "name": "KydaSana",
+       "k": 13,
+       "a": 1,
+       "d": 18,
+       "mvp": 0,
+       "score": 31
+      },
+      {
+       "team": "Nightshade",
+       "name": "Kyu",
+       "k": 12,
+       "a": 2,
+       "d": 14,
+       "mvp": 1,
+       "score": 28
+      },
+      {
+       "team": "Aspire",
+       "name": "caarrietan",
+       "k": 19,
+       "a": 1,
+       "d": 17,
+       "mvp": 1,
+       "score": 39
+      },
+      {
+       "team": "Aspire",
+       "name": "Chisa_Scarlett",
+       "k": 15,
+       "a": 3,
+       "d": 15,
+       "mvp": 3,
+       "score": 38
+      },
+      {
+       "team": "Aspire",
+       "name": "TuxedoCat",
+       "k": 12,
+       "a": 0,
+       "d": 17,
+       "mvp": 2,
+       "score": 33
+      },
+      {
+       "team": "Aspire",
+       "name": "Mikuryne",
+       "k": 13,
+       "a": 1,
+       "d": 16,
+       "mvp": 3,
+       "score": 31
+      },
+      {
+       "team": "Aspire",
+       "name": "Hanarisu",
+       "k": 12,
+       "a": 2,
+       "d": 16,
+       "mvp": 0,
+       "score": 28
+      }
+     ]
+    }
+   ]
+  },
+  "1-13": {
+   "maps": [
+    {
+     "map": "Inferno",
+     "scoreA": 24,
+     "scoreB": 9,
+     "players": [
+      {
+       "team": "xPlosiv",
+       "name": "Cursiffe",
+       "k": 21,
+       "a": 2,
+       "d": 13,
+       "mvp": 6,
+       "score": 56
+      },
+      {
+       "team": "xPlosiv",
+       "name": "tapiyokaaa",
+       "k": 19,
+       "a": 0,
+       "d": 11,
+       "mvp": 2,
+       "score": 46
+      },
+      {
+       "team": "xPlosiv",
+       "name": "88EXP",
+       "k": 18,
+       "a": 2,
+       "d": 13,
+       "mvp": 1,
+       "score": 41
+      },
+      {
+       "team": "xPlosiv",
+       "name": "StrigidaeVT",
+       "k": 15,
+       "a": 4,
+       "d": 12,
+       "mvp": 1,
+       "score": 38
+      },
+      {
+       "team": "xPlosiv",
+       "name": "TokieShepherdVT",
+       "k": 13,
+       "a": 1,
+       "d": 16,
+       "mvp": 3,
+       "score": 27
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "le_pyrrhic",
+       "k": 15,
+       "a": 0,
+       "d": 16,
+       "mvp": 4,
+       "score": 45
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "daifuku.wu",
+       "k": 15,
+       "a": 1,
+       "d": 17,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "murasakibara_tsuki1",
+       "k": 15,
+       "a": 0,
+       "d": 19,
+       "mvp": 0,
+       "score": 32
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "caturteer",
+       "k": 9,
+       "a": 2,
+       "d": 17,
+       "mvp": 2,
+       "score": 27
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "TiF2",
+       "k": 11,
+       "a": 1,
+       "d": 17,
+       "mvp": 1,
+       "score": 26
+      }
+     ]
+    },
+    {
+     "map": "Dust2",
+     "scoreA": 13,
+     "scoreB": 1,
+     "players": [
+      {
+       "team": "xPlosiv",
+       "name": "TokieShepherdVT",
+       "k": 20,
+       "a": 1,
+       "d": 5,
+       "mvp": 5,
+       "score": 49
+      },
+      {
+       "team": "xPlosiv",
+       "name": "Cursiffe",
+       "k": 18,
+       "a": 0,
+       "d": 6,
+       "mvp": 3,
+       "score": 39
+      },
+      {
+       "team": "xPlosiv",
+       "name": "88EXP",
+       "k": 14,
+       "a": 0,
+       "d": 5,
+       "mvp": 2,
+       "score": 33
+      },
+      {
+       "team": "xPlosiv",
+       "name": "tapiyokaaa",
+       "k": 12,
+       "a": 0,
+       "d": 7,
+       "mvp": 2,
+       "score": 25
+      },
+      {
+       "team": "xPlosiv",
+       "name": "StrigidaeVT",
+       "k": 6,
+       "a": 0,
+       "d": 5,
+       "mvp": 1,
+       "score": 17
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "caturteer",
+       "k": 8,
+       "a": 0,
+       "d": 14,
+       "mvp": 0,
+       "score": 20
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "murasakibara_tsuki1",
+       "k": 6,
+       "a": 0,
+       "d": 14,
+       "mvp": 1,
+       "score": 16
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "daifuku.wu",
+       "k": 6,
+       "a": 3,
+       "d": 14,
+       "mvp": 0,
+       "score": 15
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "TiF2",
+       "k": 5,
+       "a": 2,
+       "d": 14,
+       "mvp": 0,
+       "score": 12
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "le_pyrrhic",
+       "k": 3,
+       "a": 5,
+       "d": 14,
+       "mvp": 0,
+       "score": 11
+      }
+     ]
+    }
+   ]
+  },
+  "1-14": {
+   "maps": [
+    {
+     "map": "Cache",
+     "scoreA": 16,
+     "scoreB": 14,
+     "players": [
+      {
+       "team": "Mourningstar",
+       "name": "Jira Jisaki",
+       "k": 24,
+       "a": 3,
+       "d": 22,
+       "mvp": 3,
+       "score": 58
+      },
+      {
+       "team": "Mourningstar",
+       "name": "cherri_vt",
+       "k": 23,
+       "a": 0,
+       "d": 22,
+       "mvp": 3,
+       "score": 56
+      },
+      {
+       "team": "Mourningstar",
+       "name": "EXaCT",
+       "k": 21,
+       "a": 4,
+       "d": 18,
+       "mvp": 3,
+       "score": 55
+      },
+      {
+       "team": "Mourningstar",
+       "name": "TearsofDeath",
+       "k": 20,
+       "a": 4,
+       "d": 23,
+       "mvp": 6,
+       "score": 50
+      },
+      {
+       "team": "Mourningstar",
+       "name": "arcimoon",
+       "k": 18,
+       "a": 4,
+       "d": 24,
+       "mvp": 1,
+       "score": 43
+      },
+      {
+       "team": "Nightshade",
+       "name": "Kyu",
+       "k": 30,
+       "a": 2,
+       "d": 22,
+       "mvp": 3,
+       "score": 72
+      },
+      {
+       "team": "Nightshade",
+       "name": "JigglyPingu",
+       "k": 22,
+       "a": 0,
+       "d": 22,
+       "mvp": 4,
+       "score": 53
+      },
+      {
+       "team": "Nightshade",
+       "name": "ItzMaigo",
+       "k": 20,
+       "a": 4,
+       "d": 20,
+       "mvp": 4,
+       "score": 51
+      },
+      {
+       "team": "Nightshade",
+       "name": "yinnzx",
+       "k": 20,
+       "a": 1,
+       "d": 21,
+       "mvp": 1,
+       "score": 45
+      },
+      {
+       "team": "Nightshade",
+       "name": "KydaSana",
+       "k": 17,
+       "a": 0,
+       "d": 21,
+       "mvp": 2,
+       "score": 42
+      }
+     ]
+    },
+    {
+     "map": "Mirage",
+     "scoreA": 13,
+     "scoreB": 11,
+     "players": [
+      {
+       "team": "Mourningstar",
+       "name": "EXaCT",
+       "k": 24,
+       "a": 2,
+       "d": 17,
+       "mvp": 6,
+       "score": 55
+      },
+      {
+       "team": "Mourningstar",
+       "name": "Jira Jisaki",
+       "k": 22,
+       "a": 4,
+       "d": 17,
+       "mvp": 4,
+       "score": 54
+      },
+      {
+       "team": "Mourningstar",
+       "name": "arcimoon",
+       "k": 18,
+       "a": 2,
+       "d": 16,
+       "mvp": 2,
+       "score": 53
+      },
+      {
+       "team": "Mourningstar",
+       "name": "cherri_vt",
+       "k": 17,
+       "a": 7,
+       "d": 16,
+       "mvp": 1,
+       "score": 43
+      },
+      {
+       "team": "Mourningstar",
+       "name": "TearsofDeath",
+       "k": 13,
+       "a": 2,
+       "d": 15,
+       "mvp": 0,
+       "score": 30
+      },
+      {
+       "team": "Nightshade",
+       "name": "Kyu",
+       "k": 20,
+       "a": 2,
+       "d": 19,
+       "mvp": 3,
+       "score": 44
+      },
+      {
+       "team": "Nightshade",
+       "name": "KydaSana",
+       "k": 19,
+       "a": 0,
+       "d": 17,
+       "mvp": 1,
+       "score": 40
+      },
+      {
+       "team": "Nightshade",
+       "name": "yinnzx",
+       "k": 16,
+       "a": 4,
+       "d": 20,
+       "mvp": 3,
+       "score": 38
+      },
+      {
+       "team": "Nightshade",
+       "name": "ItzMaigo",
+       "k": 12,
+       "a": 2,
+       "d": 19,
+       "mvp": 3,
+       "score": 29
+      },
+      {
+       "team": "Nightshade",
+       "name": "JigglyPingu",
+       "k": 14,
+       "a": 1,
+       "d": 19,
+       "mvp": 1,
+       "score": 29
+      }
+     ]
+    }
+   ]
+  },
+  "1-16": {
+   "maps": [
+    {
+     "map": "Split",
+     "scoreA": 13,
+     "scoreB": 8,
+     "players": [
+      {
+       "team": "Round Loss Bonus",
+       "name": "murasakibara_tsuki1",
+       "k": 19,
+       "a": 3,
+       "d": 14,
+       "mvp": 5,
+       "score": 55
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "daifuku.wu",
+       "k": 23,
+       "a": 1,
+       "d": 13,
+       "mvp": 3,
+       "score": 53
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "caturteer",
+       "k": 17,
+       "a": 1,
+       "d": 12,
+       "mvp": 5,
+       "score": 42
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "TiF2",
+       "k": 11,
+       "a": 1,
+       "d": 16,
+       "mvp": 0,
+       "score": 26
+      },
+      {
+       "team": "Round Loss Bonus",
+       "name": "le_pyrrhic",
+       "k": 6,
+       "a": 4,
+       "d": 14,
+       "mvp": 0,
+       "score": 18
+      },
+      {
+       "team": "Nightshade",
+       "name": "JigglyPingu",
+       "k": 21,
+       "a": 1,
+       "d": 14,
+       "mvp": 2,
+       "score": 52
+      },
+      {
+       "team": "Nightshade",
+       "name": "ItzMaigo",
+       "k": 12,
+       "a": 2,
+       "d": 13,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "Nightshade",
+       "name": "yinnzx",
+       "k": 14,
+       "a": 0,
+       "d": 17,
+       "mvp": 1,
+       "score": 31
+      },
+      {
+       "team": "Nightshade",
+       "name": "KydaSana",
+       "k": 11,
+       "a": 0,
+       "d": 16,
+       "mvp": 2,
+       "score": 26
+      },
+      {
+       "team": "Nightshade",
+       "name": "Kyu",
+       "k": 11,
+       "a": 0,
+       "d": 16,
+       "mvp": 1,
+       "score": 25
+      }
+     ]
+    }
+   ]
+  },
+  "1-15": {
+   "maps": [
+    {
+     "map": "Inferno",
+     "scoreA": 6,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "xPlosiv",
+       "name": "Cursiffe",
+       "k": 18,
+       "a": 0,
+       "d": 15,
+       "mvp": 2,
+       "score": 43
+      },
+      {
+       "team": "xPlosiv",
+       "name": "TokieShepherdVT",
+       "k": 13,
+       "a": 1,
+       "d": 15,
+       "mvp": 2,
+       "score": 34
+      },
+      {
+       "team": "xPlosiv",
+       "name": "88EXP",
+       "k": 11,
+       "a": 0,
+       "d": 16,
+       "mvp": 0,
+       "score": 28
+      },
+      {
+       "team": "xPlosiv",
+       "name": "tapiyokaaa",
+       "k": 7,
+       "a": 1,
+       "d": 17,
+       "mvp": 1,
+       "score": 21
+      },
+      {
+       "team": "xPlosiv",
+       "name": "StrigidaeVT",
+       "k": 8,
+       "a": 2,
+       "d": 16,
+       "mvp": 1,
+       "score": 20
+      },
+      {
+       "team": "Mourningstar",
+       "name": "EXaCT",
+       "k": 26,
+       "a": 0,
+       "d": 10,
+       "mvp": 6,
+       "score": 60
+      },
+      {
+       "team": "Mourningstar",
+       "name": "arcimoon",
+       "k": 15,
+       "a": 0,
+       "d": 9,
+       "mvp": 2,
+       "score": 45
+      },
+      {
+       "team": "Mourningstar",
+       "name": "TearsofDeath",
+       "k": 17,
+       "a": 1,
+       "d": 12,
+       "mvp": 2,
+       "score": 39
+      },
+      {
+       "team": "Mourningstar",
+       "name": "cherri_vt",
+       "k": 11,
+       "a": 2,
+       "d": 13,
+       "mvp": 1,
+       "score": 28
+      },
+      {
+       "team": "Mourningstar",
+       "name": "Jira Jisaki",
+       "k": 10,
+       "a": 3,
+       "d": 13,
+       "mvp": 2,
+       "score": 23
+      }
+     ]
+    },
+    {
+     "map": "Tuscan",
+     "scoreA": 13,
+     "scoreB": 9,
+     "players": [
+      {
+       "team": "xPlosiv",
+       "name": "TokieShepherdVT",
+       "k": 26,
+       "a": 1,
+       "d": 13,
+       "mvp": 5,
+       "score": 56
+      },
+      {
+       "team": "xPlosiv",
+       "name": "88EXP",
+       "k": 19,
+       "a": 3,
+       "d": 16,
+       "mvp": 2,
+       "score": 51
+      },
+      {
+       "team": "xPlosiv",
+       "name": "tapiyokaaa",
+       "k": 18,
+       "a": 2,
+       "d": 13,
+       "mvp": 3,
+       "score": 42
+      },
+      {
+       "team": "xPlosiv",
+       "name": "Cursiffe",
+       "k": 12,
+       "a": 1,
+       "d": 14,
+       "mvp": 2,
+       "score": 32
+      },
+      {
+       "team": "xPlosiv",
+       "name": "StrigidaeVT",
+       "k": 11,
+       "a": 1,
+       "d": 14,
+       "mvp": 1,
+       "score": 29
+      },
+      {
+       "team": "Mourningstar",
+       "name": "EXaCT",
+       "k": 29,
+       "a": 1,
+       "d": 16,
+       "mvp": 6,
+       "score": 66
+      },
+      {
+       "team": "Mourningstar",
+       "name": "Jira Jisaki",
+       "k": 15,
+       "a": 2,
+       "d": 17,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "Mourningstar",
+       "name": "arcimoon",
+       "k": 12,
+       "a": 2,
+       "d": 18,
+       "mvp": 0,
+       "score": 30
+      },
+      {
+       "team": "Mourningstar",
+       "name": "TearsofDeath",
+       "k": 9,
+       "a": 2,
+       "d": 17,
+       "mvp": 1,
+       "score": 20
+      },
+      {
+       "team": "Mourningstar",
+       "name": "cherri_vt",
+       "k": 5,
+       "a": 2,
+       "d": 18,
+       "mvp": 0,
+       "score": 20
+      }
+     ]
+    },
+    {
+     "map": "Anubis",
+     "scoreA": 13,
+     "scoreB": 1,
+     "players": [
+      {
+       "team": "xPlosiv",
+       "name": "88EXP",
+       "k": 18,
+       "a": 1,
+       "d": 3,
+       "mvp": 5,
+       "score": 46
+      },
+      {
+       "team": "xPlosiv",
+       "name": "TokieShepherdVT",
+       "k": 15,
+       "a": 0,
+       "d": 4,
+       "mvp": 3,
+       "score": 39
+      },
+      {
+       "team": "xPlosiv",
+       "name": "Cursiffe",
+       "k": 15,
+       "a": 0,
+       "d": 5,
+       "mvp": 3,
+       "score": 39
+      },
+      {
+       "team": "xPlosiv",
+       "name": "tapiyokaaa",
+       "k": 10,
+       "a": 0,
+       "d": 5,
+       "mvp": 2,
+       "score": 26
+      },
+      {
+       "team": "xPlosiv",
+       "name": "StrigidaeVT",
+       "k": 8,
+       "a": 0,
+       "d": 4,
+       "mvp": 0,
+       "score": 18
+      },
+      {
+       "team": "Mourningstar",
+       "name": "EXaCT",
+       "k": 7,
+       "a": 1,
+       "d": 13,
+       "mvp": 1,
+       "score": 15
+      },
+      {
+       "team": "Mourningstar",
+       "name": "arcimoon",
+       "k": 5,
+       "a": 1,
+       "d": 13,
+       "mvp": 0,
+       "score": 11
+      },
+      {
+       "team": "Mourningstar",
+       "name": "Jira Jisaki",
+       "k": 4,
+       "a": 0,
+       "d": 13,
+       "mvp": 0,
+       "score": 9
+      },
+      {
+       "team": "Mourningstar",
+       "name": "cherri_vt",
+       "k": 3,
+       "a": 3,
+       "d": 13,
+       "mvp": 0,
+       "score": 9
+      },
+      {
+       "team": "Mourningstar",
+       "name": "TearsofDeath",
+       "k": 2,
+       "a": 1,
+       "d": 14,
+       "mvp": 0,
+       "score": 7
+      }
+     ]
+    },
+    {
+     "map": "Dust2",
+     "scoreA": 10,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "xPlosiv",
+       "name": "Cursiffe",
+       "k": 21,
+       "a": 8,
+       "d": 16,
+       "mvp": 1,
+       "score": 56
+      },
+      {
+       "team": "xPlosiv",
+       "name": "88EXP",
+       "k": 17,
+       "a": 4,
+       "d": 17,
+       "mvp": 3,
+       "score": 45
+      },
+      {
+       "team": "xPlosiv",
+       "name": "TokieShepherdVT",
+       "k": 17,
+       "a": 3,
+       "d": 17,
+       "mvp": 2,
+       "score": 41
+      },
+      {
+       "team": "xPlosiv",
+       "name": "StrigidaeVT",
+       "k": 16,
+       "a": 1,
+       "d": 20,
+       "mvp": 1,
+       "score": 36
+      },
+      {
+       "team": "xPlosiv",
+       "name": "tapiyokaaa",
+       "k": 12,
+       "a": 3,
+       "d": 19,
+       "mvp": 3,
+       "score": 34
+      },
+      {
+       "team": "Mourningstar",
+       "name": "Jira Jisaki",
+       "k": 23,
+       "a": 3,
+       "d": 16,
+       "mvp": 2,
+       "score": 58
+      },
+      {
+       "team": "Mourningstar",
+       "name": "TearsofDeath",
+       "k": 22,
+       "a": 3,
+       "d": 19,
+       "mvp": 3,
+       "score": 51
+      },
+      {
+       "team": "Mourningstar",
+       "name": "EXaCT",
+       "k": 18,
+       "a": 4,
+       "d": 16,
+       "mvp": 5,
+       "score": 49
+      },
+      {
+       "team": "Mourningstar",
+       "name": "arcimoon",
+       "k": 14,
+       "a": 2,
+       "d": 15,
+       "mvp": 2,
+       "score": 33
+      },
+      {
+       "team": "Mourningstar",
+       "name": "cherri_vt",
+       "k": 12,
+       "a": 1,
+       "d": 17,
+       "mvp": 1,
+       "score": 28
+      }
+     ]
+    },
+    {
+     "map": "Mirage",
+     "scoreA": 13,
+     "scoreB": 3,
+     "players": [
+      {
+       "team": "xPlosiv",
+       "name": "StrigidaeVT",
+       "k": 18,
+       "a": 1,
+       "d": 9,
+       "mvp": 1,
+       "score": 42
+      },
+      {
+       "team": "xPlosiv",
+       "name": "Cursiffe",
+       "k": 15,
+       "a": 3,
+       "d": 6,
+       "mvp": 2,
+       "score": 39
+      },
+      {
+       "team": "xPlosiv",
+       "name": "TokieShepherdVT",
+       "k": 16,
+       "a": 1,
+       "d": 7,
+       "mvp": 2,
+       "score": 34
+      },
+      {
+       "team": "xPlosiv",
+       "name": "tapiyokaaa",
+       "k": 13,
+       "a": 1,
+       "d": 7,
+       "mvp": 6,
+       "score": 32
+      },
+      {
+       "team": "xPlosiv",
+       "name": "88EXP",
+       "k": 13,
+       "a": 0,
+       "d": 9,
+       "mvp": 2,
+       "score": 30
+      },
+      {
+       "team": "Mourningstar",
+       "name": "Jira Jisaki",
+       "k": 14,
+       "a": 1,
+       "d": 14,
+       "mvp": 1,
+       "score": 32
+      },
+      {
+       "team": "Mourningstar",
+       "name": "TearsofDeath",
+       "k": 9,
+       "a": 2,
+       "d": 15,
+       "mvp": 1,
+       "score": 23
+      },
+      {
+       "team": "Mourningstar",
+       "name": "arcimoon",
+       "k": 7,
+       "a": 2,
+       "d": 15,
+       "mvp": 1,
+       "score": 16
+      },
+      {
+       "team": "Mourningstar",
+       "name": "cherri_vt",
+       "k": 5,
+       "a": 0,
+       "d": 16,
+       "mvp": 0,
+       "score": 12
+      },
+      {
+       "team": "Mourningstar",
+       "name": "EXaCT",
+       "k": 3,
+       "a": 2,
+       "d": 15,
+       "mvp": 0,
+       "score": 9
+      }
+     ]
+    }
+   ]
   }
  }
 }
