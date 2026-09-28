@@ -985,6 +985,9 @@ def main():
                 added.add(tslug)
     for t in teams:
         t["events"].sort(key=lambda e: e["date"], reverse=True)
+        # keep Events Played in sync with the actual event history (the sheet value goes stale as
+        # new events are recorded); never drop below the sheet's scraped-history count.
+        t["events_played"] = max(int(t.get("events_played", 0) or 0), len(t["events"]))
 
     # ---- team trophy counts recomputed from championships (event tier is source of truth) ----
     # Challengers & Legends stages count as S-Tier; only the Conquerors stage is a Major title.
