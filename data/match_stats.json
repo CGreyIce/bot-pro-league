@@ -48062,5 +48062,411 @@
     }
    ]
   }
+ },
+ "bpl-challengers-stage-2026": {
+  "1-1": {
+   "maps": [
+    {
+     "map": "Cache",
+     "scoreA": 22,
+     "scoreB": 20,
+     "players": [
+      {
+       "team": "Nullpoint",
+       "name": "Kaito_Oshino",
+       "k": 43,
+       "a": 2,
+       "d": 24,
+       "mvp": 7,
+       "score": 101
+      },
+      {
+       "team": "Nullpoint",
+       "name": "zhizyii",
+       "k": 38,
+       "a": 1,
+       "d": 27,
+       "mvp": 4,
+       "score": 88
+      },
+      {
+       "team": "Nullpoint",
+       "name": "ssseiso",
+       "k": 26,
+       "a": 4,
+       "d": 25,
+       "mvp": 6,
+       "score": 67
+      },
+      {
+       "team": "Nullpoint",
+       "name": "UtsuhoNull",
+       "k": 23,
+       "a": 2,
+       "d": 32,
+       "mvp": 1,
+       "score": 61
+      },
+      {
+       "team": "Nullpoint",
+       "name": "candybar_isblue",
+       "k": 17,
+       "a": 3,
+       "d": 28,
+       "mvp": 4,
+       "score": 43
+      },
+      {
+       "team": "Frozen Simians",
+       "name": "frozonemonke",
+       "k": 34,
+       "a": 0,
+       "d": 29,
+       "mvp": 3,
+       "score": 79
+      },
+      {
+       "team": "Frozen Simians",
+       "name": "wushii",
+       "k": 31,
+       "a": 4,
+       "d": 32,
+       "mvp": 6,
+       "score": 74
+      },
+      {
+       "team": "Frozen Simians",
+       "name": "MiruuxdVT",
+       "k": 30,
+       "a": 4,
+       "d": 28,
+       "mvp": 6,
+       "score": 74
+      },
+      {
+       "team": "Frozen Simians",
+       "name": "Hanyachi",
+       "k": 24,
+       "a": 3,
+       "d": 29,
+       "mvp": 3,
+       "score": 66
+      },
+      {
+       "team": "Frozen Simians",
+       "name": "yuvirei",
+       "k": 17,
+       "a": 0,
+       "d": 29,
+       "mvp": 2,
+       "score": 48
+      }
+     ]
+    }
+   ]
+  },
+  "1-2": {
+   "maps": [
+    {
+     "map": "Anubis",
+     "scoreA": 10,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Kamikaze Collective",
+       "name": "aoi_chibi",
+       "k": 28,
+       "a": 2,
+       "d": 16,
+       "mvp": 4,
+       "score": 75
+      },
+      {
+       "team": "Kamikaze Collective",
+       "name": "Kamito",
+       "k": 18,
+       "a": 0,
+       "d": 19,
+       "mvp": 1,
+       "score": 43
+      },
+      {
+       "team": "Kamikaze Collective",
+       "name": "Shuvimo",
+       "k": 16,
+       "a": 1,
+       "d": 19,
+       "mvp": 2,
+       "score": 41
+      },
+      {
+       "team": "Kamikaze Collective",
+       "name": "kanarivt",
+       "k": 15,
+       "a": 4,
+       "d": 14,
+       "mvp": 2,
+       "score": 41
+      },
+      {
+       "team": "Kamikaze Collective",
+       "name": "sozu",
+       "k": 10,
+       "a": 7,
+       "d": 20,
+       "mvp": 1,
+       "score": 29
+      },
+      {
+       "team": "Starling Coven",
+       "name": "sakistars",
+       "k": 19,
+       "a": 2,
+       "d": 17,
+       "mvp": 6,
+       "score": 63
+      },
+      {
+       "team": "Starling Coven",
+       "name": "nyxcatto",
+       "k": 23,
+       "a": 3,
+       "d": 15,
+       "mvp": 3,
+       "score": 57
+      },
+      {
+       "team": "Starling Coven",
+       "name": "afayctionate",
+       "k": 18,
+       "a": 3,
+       "d": 18,
+       "mvp": 2,
+       "score": 47
+      },
+      {
+       "team": "Starling Coven",
+       "name": "Kurumi Noah",
+       "k": 14,
+       "a": 4,
+       "d": 19,
+       "mvp": 2,
+       "score": 41
+      },
+      {
+       "team": "Starling Coven",
+       "name": "scorn",
+       "k": 14,
+       "a": 1,
+       "d": 18,
+       "mvp": 0,
+       "score": 32
+      }
+     ]
+    }
+   ]
+  },
+  "1-3": {
+   "maps": [
+    {
+     "map": "Dust2",
+     "scoreA": 13,
+     "scoreB": 3,
+     "players": [
+      {
+       "team": "Crystal Laurels",
+       "name": "xaeela",
+       "k": 16,
+       "a": 2,
+       "d": 8,
+       "mvp": 4,
+       "score": 45
+      },
+      {
+       "team": "Crystal Laurels",
+       "name": "Laurel",
+       "k": 15,
+       "a": 0,
+       "d": 9,
+       "mvp": 4,
+       "score": 38
+      },
+      {
+       "team": "Crystal Laurels",
+       "name": "Jenakai",
+       "k": 13,
+       "a": 0,
+       "d": 6,
+       "mvp": 2,
+       "score": 31
+      },
+      {
+       "team": "Crystal Laurels",
+       "name": "cwstalVT",
+       "k": 11,
+       "a": 3,
+       "d": 10,
+       "mvp": 2,
+       "score": 30
+      },
+      {
+       "team": "Crystal Laurels",
+       "name": "CryingNutz",
+       "k": 8,
+       "a": 1,
+       "d": 12,
+       "mvp": 1,
+       "score": 20
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "DarkLite",
+       "k": 14,
+       "a": 0,
+       "d": 13,
+       "mvp": 1,
+       "score": 28
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "KrinoJ",
+       "k": 11,
+       "a": 3,
+       "d": 13,
+       "mvp": 0,
+       "score": 26
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "tedstyx",
+       "k": 6,
+       "a": 5,
+       "d": 12,
+       "mvp": 0,
+       "score": 19
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "Tosaki Mimi",
+       "k": 7,
+       "a": 1,
+       "d": 12,
+       "mvp": 2,
+       "score": 18
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "PenguChi",
+       "k": 7,
+       "a": 4,
+       "d": 13,
+       "mvp": 0,
+       "score": 18
+      }
+     ]
+    }
+   ]
+  },
+  "1-4": {
+   "maps": [
+    {
+     "map": "Tuscan",
+     "scoreA": 13,
+     "scoreB": 10,
+     "players": [
+      {
+       "team": "Hanabi Union",
+       "name": "TRPaki",
+       "k": 28,
+       "a": 3,
+       "d": 15,
+       "mvp": 5,
+       "score": 67
+      },
+      {
+       "team": "Hanabi Union",
+       "name": "Kojadayo",
+       "k": 20,
+       "a": 4,
+       "d": 15,
+       "mvp": 3,
+       "score": 53
+      },
+      {
+       "team": "Hanabi Union",
+       "name": "Hanabusa Lisa",
+       "k": 17,
+       "a": 1,
+       "d": 13,
+       "mvp": 2,
+       "score": 41
+      },
+      {
+       "team": "Hanabi Union",
+       "name": "diabet0_",
+       "k": 14,
+       "a": 2,
+       "d": 15,
+       "mvp": 1,
+       "score": 32
+      },
+      {
+       "team": "Hanabi Union",
+       "name": "PSYSTRA",
+       "k": 9,
+       "a": 5,
+       "d": 15,
+       "mvp": 2,
+       "score": 27
+      },
+      {
+       "team": "Frostcrow",
+       "name": "Ichinose Uruha",
+       "k": 26,
+       "a": 3,
+       "d": 16,
+       "mvp": 4,
+       "score": 67
+      },
+      {
+       "team": "Frostcrow",
+       "name": "IcyCrowVT",
+       "k": 14,
+       "a": 2,
+       "d": 15,
+       "mvp": 1,
+       "score": 42
+      },
+      {
+       "team": "Frostcrow",
+       "name": "Michimouto",
+       "k": 14,
+       "a": 2,
+       "d": 20,
+       "mvp": 3,
+       "score": 30
+      },
+      {
+       "team": "Frostcrow",
+       "name": "swoopsy",
+       "k": 10,
+       "a": 3,
+       "d": 18,
+       "mvp": 0,
+       "score": 27
+      },
+      {
+       "team": "Frostcrow",
+       "name": "Aleaka",
+       "k": 9,
+       "a": 1,
+       "d": 19,
+       "mvp": 2,
+       "score": 19
+      }
+     ]
+    }
+   ]
+  }
  }
 }

@@ -1,0 +1,376 @@
+{
+ "slug": "bpl-challengers-stage-2026",
+ "name": "BPL Challengers Stage 2026",
+ "tier": "s",
+ "date": "2026-10-11",
+ "stages": [
+  {
+   "id": 1,
+   "name": "Group A",
+   "format": "swiss",
+   "bestOf": 1,
+   "rounds": 5,
+   "teams": [
+    "Nullpoint",
+    "Kamikaze Collective",
+    "Crystal Laurels",
+    "Hanabi Union",
+    "Frozen Simians",
+    "Starling Coven",
+    "Ashen Styx",
+    "Frostcrow"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "a": "Nullpoint",
+     "b": "Frozen Simians",
+     "sa": 22,
+     "sb": 20,
+     "ts": 1790855382
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "a": "Kamikaze Collective",
+     "b": "Starling Coven",
+     "sa": 10,
+     "sb": 13,
+     "ts": 1790858905
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "a": "Crystal Laurels",
+     "b": "Ashen Styx",
+     "sa": 13,
+     "sb": 3,
+     "ts": 1790861520
+    },
+    {
+     "id": 4,
+     "round": 1,
+     "a": "Hanabi Union",
+     "b": "Frostcrow",
+     "sa": 13,
+     "sb": 10,
+     "ts": 1790865297
+    },
+    {
+     "id": 5,
+     "round": 2,
+     "a": "Crystal Laurels",
+     "b": "Hanabi Union",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 6,
+     "round": 2,
+     "a": "Starling Coven",
+     "b": "Nullpoint",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 7,
+     "round": 2,
+     "a": "Frozen Simians",
+     "b": "Frostcrow",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 8,
+     "round": 2,
+     "a": "Kamikaze Collective",
+     "b": "Ashen Styx",
+     "sa": null,
+     "sb": null
+    }
+   ],
+   "roundTitles": {
+    "1": "Round 1",
+    "2": "Round 2",
+    "3": "Round 3",
+    "4": "Round 4",
+    "5": "Round 5"
+   }
+  },
+  {
+   "id": 2,
+   "name": "Group B",
+   "format": "swiss",
+   "bestOf": 1,
+   "rounds": 5,
+   "teams": [
+    "Pastel Mocha",
+    "Lunar Rain",
+    "Dreamstate",
+    "Zen Lotus",
+    "Seraph Dynasty",
+    "Perfectly Abnormal",
+    "BeeHyve",
+    "Notorious Hollow"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "a": "Pastel Mocha",
+     "b": "Seraph Dynasty",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "a": "Lunar Rain",
+     "b": "Perfectly Abnormal",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "a": "Dreamstate",
+     "b": "BeeHyve",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 1,
+     "a": "Zen Lotus",
+     "b": "Notorious Hollow",
+     "sa": null,
+     "sb": null
+    }
+   ],
+   "roundTitles": {
+    "1": "Round 1",
+    "2": "Round 2",
+    "3": "Round 3",
+    "4": "Round 4",
+    "5": "Round 5"
+   }
+  },
+  {
+   "id": 3,
+   "name": "Group C",
+   "format": "swiss",
+   "bestOf": 1,
+   "rounds": 5,
+   "teams": [
+    "Pandora's Rebels",
+    "Boop Battalion",
+    "Nightfang Covenant",
+    "Endless Summer",
+    "Snowbell Syndicate",
+    "Crimson Meridian",
+    "Northwind",
+    "Millefiore"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "a": "Pandora's Rebels",
+     "b": "Snowbell Syndicate",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "a": "Boop Battalion",
+     "b": "Crimson Meridian",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "a": "Nightfang Covenant",
+     "b": "Northwind",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 1,
+     "a": "Endless Summer",
+     "b": "Millefiore",
+     "sa": null,
+     "sb": null
+    }
+   ],
+   "roundTitles": {
+    "1": "Round 1",
+    "2": "Round 2",
+    "3": "Round 3",
+    "4": "Round 4",
+    "5": "Round 5"
+   }
+  },
+  {
+   "id": 4,
+   "name": "Group D",
+   "format": "swiss",
+   "bestOf": 1,
+   "rounds": 5,
+   "teams": [
+    "Eiromancers",
+    "Special Forces",
+    "Nightbloom",
+    "Meiji Restoration",
+    "Neon Flava",
+    "Frostbyte",
+    "Thunderveil",
+    "Ryujin Dynasty"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "a": "Eiromancers",
+     "b": "Neon Flava",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "a": "Special Forces",
+     "b": "Frostbyte",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "a": "Nightbloom",
+     "b": "Thunderveil",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 1,
+     "a": "Meiji Restoration",
+     "b": "Ryujin Dynasty",
+     "sa": null,
+     "sb": null
+    }
+   ],
+   "roundTitles": {
+    "1": "Round 1",
+    "2": "Round 2",
+    "3": "Round 3",
+    "4": "Round 4",
+    "5": "Round 5"
+   }
+  },
+  {
+   "id": 5,
+   "name": "Group E",
+   "format": "swiss",
+   "bestOf": 1,
+   "rounds": 5,
+   "teams": [
+    "Defiant Order",
+    "Chromatic Foxes",
+    "Riptide Syndicate",
+    "Kuroshio Tide",
+    "Mirai Fates",
+    "Ember Wolves",
+    "Maple Macabre",
+    "Salted Stars"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "a": "Defiant Order",
+     "b": "Mirai Fates",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "a": "Chromatic Foxes",
+     "b": "Ember Wolves",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "a": "Riptide Syndicate",
+     "b": "Maple Macabre",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 1,
+     "a": "Kuroshio Tide",
+     "b": "Salted Stars",
+     "sa": null,
+     "sb": null
+    }
+   ],
+   "roundTitles": {
+    "1": "Round 1",
+    "2": "Round 2",
+    "3": "Round 3",
+    "4": "Round 4",
+    "5": "Round 5"
+   }
+  }
+ ],
+ "seeds": {
+  "Eiromancers": 4,
+  "Crystal Laurels": 11,
+  "Nightfang Covenant": 13,
+  "Notorious Hollow": 39,
+  "Chromatic Foxes": 6,
+  "Hanabi Union": 20,
+  "Riptide Syndicate": 15,
+  "Neon Flava": 24,
+  "Pastel Mocha": 2,
+  "Kuroshio Tide": 16,
+  "Ashen Styx": 31,
+  "Boop Battalion": 8,
+  "Frostcrow": 40,
+  "Defiant Order": 5,
+  "Ryujin Dynasty": 37,
+  "Zen Lotus": 19,
+  "Meiji Restoration": 17,
+  "Pandora's Rebels": 3,
+  "Ember Wolves": 26,
+  "Endless Summer": 18,
+  "Maple Macabre": 35,
+  "Perfectly Abnormal": 29,
+  "Snowbell Syndicate": 23,
+  "Kamikaze Collective": 10,
+  "Salted Stars": 36,
+  "Millefiore": 38,
+  "Lunar Rain": 9,
+  "Mirai Fates": 25,
+  "Frozen Simians": 21,
+  "Special Forces": 7,
+  "BeeHyve": 32,
+  "Crimson Meridian": 28,
+  "Dreamstate": 12,
+  "Frostbyte": 27,
+  "Nightbloom": 14,
+  "Northwind": 33,
+  "Nullpoint": 1,
+  "Seraph Dynasty": 22,
+  "Starling Coven": 30,
+  "Thunderveil": 34
+ }
+}

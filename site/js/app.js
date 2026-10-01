@@ -2171,7 +2171,8 @@ function vetoServerSetup(A,B,res){
   // resolve a team's roster: pro/provisional teams carry one; ad-hoc/amateur teams (no roster
   // field) are matched by the pro-pool players whose current team is this team's name.
   const byTeamName={};
-  (DATA.players.pro||[]).forEach(p=>{ const k=normKey(p.team||""); if(k) (byTeamName[k]=byTeamName[k]||[]).push(p); });
+  [...(DATA.players.pro||[]),...(DATA.players.amateur||[]),...(DATA.players.solo||[])]
+    .forEach(p=>{ const k=normKey(p.team||""); if(k) (byTeamName[k]=byTeamName[k]||[]).push(p); });
   const rosterOf=t=>{
     if(t.roster && t.roster.length) return t.roster;
     const r=byTeamName[normKey(t.name)];

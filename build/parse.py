@@ -1206,9 +1206,11 @@ def main():
                 continue
             for pl in row["players"]:
                 p = slug_to_player.get(pl.get("slug"))
-                # amateur-origin players (no real pro team) show their tournament team; the pro+amateur
-                # pools are merged now, so key off amateurOrigin rather than the (uniform) pool field.
-                if p and p.get("amateurOrigin"):
+                # show the tournament team for anyone with no real pro team right now: amateur-origin
+                # players (the pro+amateur pools are merged, so key off amateurOrigin, not pool) AND
+                # pro-origin free agents (no current team) — otherwise a free agent on an ad-hoc roster
+                # would silently drop out of the line-up (and the veto bot_add lines).
+                if p and (p.get("amateurOrigin") or not (p.get("team") or "").strip()):
                     p["team"] = row["team"]
                     p["teamTourney"] = tr["name"]
 
