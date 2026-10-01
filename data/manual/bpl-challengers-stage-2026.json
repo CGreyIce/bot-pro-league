@@ -12,7 +12,7 @@
    "rounds": 5,
    "teams": [
     "Nullpoint",
-    "Kamikaze Collective",
+    "Divine Wind",
     "Crystal Laurels",
     "Hanabi Union",
     "Frozen Simians",
@@ -33,7 +33,7 @@
     {
      "id": 2,
      "round": 1,
-     "a": "Kamikaze Collective",
+     "a": "Divine Wind",
      "b": "Starling Coven",
      "sa": 10,
      "sb": 13,
@@ -62,30 +62,67 @@
      "round": 2,
      "a": "Crystal Laurels",
      "b": "Hanabi Union",
-     "sa": null,
-     "sb": null
+     "sa": 13,
+     "sb": 7,
+     "ts": 1790881817
     },
     {
      "id": 6,
      "round": 2,
      "a": "Starling Coven",
      "b": "Nullpoint",
-     "sa": null,
-     "sb": null
+     "sa": 14,
+     "sb": 16,
+     "ts": 1790884280
     },
     {
      "id": 7,
      "round": 2,
      "a": "Frozen Simians",
      "b": "Frostcrow",
-     "sa": null,
-     "sb": null
+     "sa": 13,
+     "sb": 11,
+     "ts": 1790886696
     },
     {
      "id": 8,
      "round": 2,
-     "a": "Kamikaze Collective",
+     "a": "Divine Wind",
      "b": "Ashen Styx",
+     "sa": 5,
+     "sb": 13,
+     "ts": 1790888284
+    },
+    {
+     "id": 9,
+     "round": 3,
+     "a": "Crystal Laurels",
+     "b": "Nullpoint",
+     "sa": 0,
+     "sb": 2,
+     "ts": 1790892127
+    },
+    {
+     "id": 10,
+     "round": 3,
+     "a": "Starling Coven",
+     "b": "Frozen Simians",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 11,
+     "round": 3,
+     "a": "Ashen Styx",
+     "b": "Hanabi Union",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 12,
+     "round": 3,
+     "a": "Frostcrow",
+     "b": "Divine Wind",
      "sa": null,
      "sb": null
     }
@@ -355,7 +392,7 @@
   "Maple Macabre": 35,
   "Perfectly Abnormal": 29,
   "Snowbell Syndicate": 23,
-  "Kamikaze Collective": 10,
+  "Divine Wind": 10,
   "Salted Stars": 36,
   "Millefiore": 38,
   "Lunar Rain": 9,

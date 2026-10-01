@@ -900,7 +900,8 @@ def main():
     # standalone Solo Queue pool = players with no pro/amateur (tournament) profile
     solo = [p for p in solo if norm_key(p["name"]) not in tourney_names]
 
-    # ---- player bios (broadcast descriptions; data/player_bios.json from gen_bios.py) ----
+    # ---- player bios: provisional copy from the previous build (gender + early fallback only).
+    # The real bios are regenerated from live data at the END of the build by bio_engine.py. ----
     bios_path = os.path.join(DATA, "player_bios.json")
     if os.path.exists(bios_path):
         bios = json.load(open(bios_path, encoding="utf-8"))
@@ -1719,6 +1720,12 @@ def main():
         rank_climb = {"slug": _best["slug"], "name": _best["name"],
                       "delta": _best["rankDelta"], "date": _ref_date}
         json.dump(rank_climb, open(rc_path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+    # ---- player bios: regenerated from the finished live data on every build (build/bio_engine.py),
+    # so they always match current team/role/rank/stats/results. Hand-written lore notes
+    # (data/player_bio_notes.json) ride along only while the facts they were written against hold.
+    from bio_engine import build_bios
+    build_bios(pro, amateur, solo, tournaments, teams, hall_of_fame, DATA, rank_climb)
 
     data = {
         "teams": teams,
