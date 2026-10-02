@@ -125,6 +125,39 @@
      "round": 3,
      "a": "Frostcrow",
      "b": "Divine Wind",
+     "sa": 2,
+     "sb": 1,
+     "ts": 1790945574
+    },
+    {
+     "id": 13,
+     "round": 4,
+     "a": "Nullpoint",
+     "b": "Hanabi Union",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 14,
+     "round": 4,
+     "a": "Crystal Laurels",
+     "b": "Starling Coven",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 15,
+     "round": 4,
+     "a": "Frozen Simians",
+     "b": "Divine Wind",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 16,
+     "round": 4,
+     "a": "Ashen Styx",
+     "b": "Frostcrow",
      "sa": null,
      "sb": null
     }
