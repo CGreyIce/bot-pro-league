@@ -107,8 +107,9 @@
      "round": 3,
      "a": "Starling Coven",
      "b": "Frozen Simians",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1790931558
     },
     {
      "id": 11,
@@ -409,5 +410,6 @@
   "Seraph Dynasty": 22,
   "Starling Coven": 30,
   "Thunderveil": 34
- }
+ },
+ "predictionsLocked": true
 }

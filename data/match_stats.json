@@ -49069,6 +49069,204 @@
      ]
     }
    ]
+  },
+  "1-10": {
+   "maps": [
+    {
+     "map": "Anubis",
+     "scoreA": 13,
+     "scoreB": 10,
+     "players": [
+      {
+       "team": "Starling Coven",
+       "name": "Kurumi Noah",
+       "k": 20,
+       "a": 2,
+       "d": 15,
+       "mvp": 5,
+       "score": 58
+      },
+      {
+       "team": "Starling Coven",
+       "name": "afayctionate",
+       "k": 23,
+       "a": 3,
+       "d": 16,
+       "mvp": 3,
+       "score": 53
+      },
+      {
+       "team": "Starling Coven",
+       "name": "scorn",
+       "k": 17,
+       "a": 4,
+       "d": 16,
+       "mvp": 5,
+       "score": 48
+      },
+      {
+       "team": "Starling Coven",
+       "name": "nyxcatto",
+       "k": 16,
+       "a": 3,
+       "d": 15,
+       "mvp": 0,
+       "score": 43
+      },
+      {
+       "team": "Starling Coven",
+       "name": "sakistars",
+       "k": 11,
+       "a": 2,
+       "d": 15,
+       "mvp": 0,
+       "score": 28
+      },
+      {
+       "team": "Frozen Simians",
+       "name": "frozonemonke",
+       "k": 19,
+       "a": 1,
+       "d": 17,
+       "mvp": 3,
+       "score": 53
+      },
+      {
+       "team": "Frozen Simians",
+       "name": "wushii",
+       "k": 18,
+       "a": 1,
+       "d": 15,
+       "mvp": 3,
+       "score": 46
+      },
+      {
+       "team": "Frozen Simians",
+       "name": "Hanyachi",
+       "k": 19,
+       "a": 2,
+       "d": 17,
+       "mvp": 2,
+       "score": 46
+      },
+      {
+       "team": "Frozen Simians",
+       "name": "MiruuxdVT",
+       "k": 12,
+       "a": 2,
+       "d": 20,
+       "mvp": 1,
+       "score": 34
+      },
+      {
+       "team": "Frozen Simians",
+       "name": "yuvirei",
+       "k": 9,
+       "a": 0,
+       "d": 18,
+       "mvp": 1,
+       "score": 24
+      }
+     ]
+    },
+    {
+     "map": "Tuscan",
+     "scoreA": 13,
+     "scoreB": 10,
+     "players": [
+      {
+       "team": "Starling Coven",
+       "name": "Kurumi Noah",
+       "k": 23,
+       "a": 0,
+       "d": 13,
+       "mvp": 3,
+       "score": 49
+      },
+      {
+       "team": "Starling Coven",
+       "name": "scorn",
+       "k": 18,
+       "a": 3,
+       "d": 11,
+       "mvp": 2,
+       "score": 46
+      },
+      {
+       "team": "Starling Coven",
+       "name": "afayctionate",
+       "k": 17,
+       "a": 2,
+       "d": 19,
+       "mvp": 3,
+       "score": 39
+      },
+      {
+       "team": "Starling Coven",
+       "name": "sakistars",
+       "k": 15,
+       "a": 1,
+       "d": 18,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "Starling Coven",
+       "name": "nyxcatto",
+       "k": 15,
+       "a": 2,
+       "d": 15,
+       "mvp": 3,
+       "score": 35
+      },
+      {
+       "team": "Frozen Simians",
+       "name": "wushii",
+       "k": 20,
+       "a": 4,
+       "d": 19,
+       "mvp": 1,
+       "score": 45
+      },
+      {
+       "team": "Frozen Simians",
+       "name": "Hanyachi",
+       "k": 17,
+       "a": 4,
+       "d": 16,
+       "mvp": 2,
+       "score": 44
+      },
+      {
+       "team": "Frozen Simians",
+       "name": "frozonemonke",
+       "k": 17,
+       "a": 2,
+       "d": 18,
+       "mvp": 3,
+       "score": 40
+      },
+      {
+       "team": "Frozen Simians",
+       "name": "yuvirei",
+       "k": 13,
+       "a": 1,
+       "d": 15,
+       "mvp": 2,
+       "score": 31
+      },
+      {
+       "team": "Frozen Simians",
+       "name": "MiruuxdVT",
+       "k": 9,
+       "a": 2,
+       "d": 20,
+       "mvp": 2,
+       "score": 22
+      }
+     ]
+    }
+   ]
   }
  }
 }
