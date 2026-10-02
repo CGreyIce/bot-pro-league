@@ -777,7 +777,28 @@ function renderRankings(){
 }
 
 // ---------- Results feed ----------
-let _allMatches = null;
+let _allMatches = null, _allMapScores = null;
+// every played map's round score: the per-map scoreboards where recorded (so each map of a Bo3
+// counts), else the match score when it IS a round score (a Bo1: 13+ total rounds, not "2-1")
+function allMapScores(){
+  if(_allMapScores) return _allMapScores;
+  const out = [];
+  (DATA.tournaments||[]).forEach(tr=>{
+    const ms = (tr.stages&&tr.stages.length) ? tr.stages.flatMap(st=>st.rounds.flatMap(rd=>rd.matches))
+                                             : (tr.bracket||[]).flatMap(rd=>rd.matches);
+    ms.forEach(m=>{
+      if(m.w!==1 && m.w!==2) return;
+      if(m.a==="(bye)" || m.b==="(bye)") return;
+      const scored = ((m.stats&&m.stats.maps)||[]).filter(mp=>mp.scoreA!=null&&mp.scoreB!=null&&mp.scoreA!==""&&mp.scoreB!=="");
+      const base = {a:m.a, b:m.b, eventSlug:tr.slug, date:tr.date, ts:m.ts};
+      if(scored.length) scored.forEach(mp=>out.push({...base, sa:+mp.scoreA, sb:+mp.scoreB, map:mp.map||""}));
+      else if(m.sa!=null && m.sb!=null && m.sa+m.sb>=13) out.push({...base, sa:m.sa, sb:m.sb, map:""});
+    });
+  });
+  // same order as allMatches() (newest first), so ties resolve exactly as the records always have
+  out.sort((x,y)=> x.date<y.date?1 : x.date>y.date?-1 : (y.ts||0)-(x.ts||0));
+  _allMapScores = out; return out;
+}
 function allMatches(){
   if(_allMatches) return _allMatches;
   const out = [];
@@ -898,10 +919,11 @@ function renderRecords(){
   (DATA.tournaments||[]).forEach(tr=>{ if(tr.championTeam) titles[tr.championTeam]=(titles[tr.championTeam]||0)+1; });
   const mostTitles = Object.entries(titles).sort((a,b)=>b[1]-a[1]).slice(0,5)
     .map(([slug,n])=>({slug, name:(teamBySlug(slug)||{}).name||slug, n}));
-  // biggest blowout (Bo1 round scores)
-  let blow=null;
-  allMatches().forEach(m=>{ if(m.sa!=null&&m.sb!=null){ const tot=m.sa+m.sb, marg=Math.abs(m.sa-m.sb);
-    if(tot>=13&&tot<=32&&(!blow||marg>blow.marg)) blow={marg, m}; }});
+  // biggest blowout + highest-scoring map: every played map (Bo3 maps included, OT uncapped)
+  let blow=null, highScore=null;
+  allMapScores().forEach(m=>{ const tot=m.sa+m.sb, marg=Math.abs(m.sa-m.sb);
+    if(!blow||marg>blow.marg) blow={marg, m};
+    if(!highScore||tot>highScore.tot) highScore={tot, m}; });
   const bestStreak = [...teams].filter(t=>t.streak&&t.streak[0]==="W").sort((a,b)=>parseInt(b.streak.slice(1))-parseInt(a.streak.slice(1)))[0];
   const allTimeStreak = [...teams].filter(t=>t.longestWinStreak).sort((a,b)=>b.longestWinStreak.len-a.longestWinStreak.len)[0];
   const worstStreak = [...teams].filter(t=>t.streak&&t.streak[0]==="L").sort((a,b)=>parseInt(b.streak.slice(1))-parseInt(a.streak.slice(1)))[0];
@@ -950,9 +972,6 @@ function renderRecords(){
       +`${e.tagline?`<div class="hof-tag">${esc(e.tagline)}</div>`:''}<div class="hof-blurb">${esc(e.blurb||'')}</div>`
       +`${e.article?`<a class="hof-link" href="#/article/${e.article}">Read the full story →</a>`:''}</div>`; };
   const hofHtml=[...(hof.players||[]).map(hofPCard),...(hof.teams||[]).map(hofTCard)].filter(Boolean).join("");
-  let highScore=null;
-  allMatches().forEach(m=>{ if(m.sa!=null&&m.sb!=null){ const tot=m.sa+m.sb;
-    if(tot>=13&&tot<=60&&(!highScore||tot>highScore.tot)) highScore={tot,m}; }});
   const smLink=r=>r.slug?`#/player/${r.slug}`:(r.ref?`#/match/${r.eventSlug}/${r.ref}`:`#/tournament/${r.eventSlug}`);
   app.innerHTML = `
     <h2 class="section-title"><span class="accent-bar"></span>Records &amp; Hall of Fame</h2>
@@ -996,10 +1015,10 @@ function renderRecords(){
     </div>
     <h3 class="rec-group">Matches &amp; Single-Map Feats</h3>
     <div class="rec-grid">
-      ${blow?recCard("Biggest Blowout", `${blow.m.w===1?blow.m.a:blow.m.b} vs ${blow.m.w===1?blow.m.b:blow.m.a}`,
-        `${Math.max(blow.m.sa,blow.m.sb)}–${Math.min(blow.m.sa,blow.m.sb)}`, `#/tournament/${blow.m.eventSlug}`):''}
+      ${blow?recCard("Biggest Blowout", `${esc(blow.m.sa>=blow.m.sb?blow.m.a:blow.m.b)} vs ${esc(blow.m.sa>=blow.m.sb?blow.m.b:blow.m.a)}`,
+        `${Math.max(blow.m.sa,blow.m.sb)}–${Math.min(blow.m.sa,blow.m.sb)}${blow.m.map?` · ${esc(blow.m.map)}`:''}`, `#/tournament/${blow.m.eventSlug}`):''}
       ${highScore?recCard("Highest-Scoring Map", `${esc(highScore.m.a)} vs ${esc(highScore.m.b)}`,
-        `${highScore.m.sa}–${highScore.m.sb} · ${highScore.tot} rds`, `#/tournament/${highScore.m.eventSlug}`):''}
+        `${highScore.m.sa}–${highScore.m.sb} · ${highScore.tot} rds${highScore.m.map?` · ${esc(highScore.m.map)}`:''}`, `#/tournament/${highScore.m.eventSlug}`):''}
       ${smr.topK?recCard("Most Kills in a Map", smr.topK.name, smr.topK.val+(smr.topK.map?' · '+esc(smr.topK.map):''), smLink(smr.topK)):''}
       ${smr.topRtg?recCard("Best Single-Map Rating", smr.topRtg.name, smr.topRtg.val.toFixed(2)+(smr.topRtg.map?' · '+esc(smr.topRtg.map):''), smLink(smr.topRtg)):''}
       ${smr.topOT?recCard("Most Overtimes in a Map", `${esc(smr.topOT.map||'Map')} · ${smr.topOT.score}`, smr.topOT.val+" OT"+(smr.topOT.val>1?"s":""), smLink(smr.topOT)):''}
@@ -1857,7 +1876,7 @@ function renderSfMaps(match){
 
 // ---------- Admin (local editing) ----------
 let adminEditing = null, _adminTeams = [], _adminOn = false;
-async function reloadData(){ try{ DATA = await loadData(5); _allMatches=null; _proSlugs=null; _soloLeague=null; }catch(e){} }
+async function reloadData(){ try{ DATA = await loadData(5); _allMatches=null; _allMapScores=null; _proSlugs=null; _soloLeague=null; }catch(e){} }
 function apiPost(p, body){ return fetch(p,{method:"POST",headers:{"Content-Type":"text/plain"},body:JSON.stringify(body)}).then(r=>r.json()).catch(e=>({ok:false,error:String(e)})); }
 async function renderAdmin(){
   app.innerHTML = `<div class="loading">Connecting to admin…</div>`;

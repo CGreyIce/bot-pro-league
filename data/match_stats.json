@@ -50552,6 +50552,301 @@
      ]
     }
    ]
+  },
+  "1-17": {
+   "maps": [
+    {
+     "map": "Mirage",
+     "scoreA": 19,
+     "scoreB": 22,
+     "players": [
+      {
+       "team": "Nullpoint",
+       "name": "UtsuhoNull",
+       "k": 33,
+       "a": 3,
+       "d": 28,
+       "mvp": 5,
+       "score": 87
+      },
+      {
+       "team": "Nullpoint",
+       "name": "zhizyii",
+       "k": 35,
+       "a": 3,
+       "d": 29,
+       "mvp": 5,
+       "score": 85
+      },
+      {
+       "team": "Nullpoint",
+       "name": "candybar_isblue",
+       "k": 27,
+       "a": 3,
+       "d": 31,
+       "mvp": 2,
+       "score": 71
+      },
+      {
+       "team": "Nullpoint",
+       "name": "ssseiso",
+       "k": 24,
+       "a": 3,
+       "d": 26,
+       "mvp": 3,
+       "score": 63
+      },
+      {
+       "team": "Nullpoint",
+       "name": "Kaito_Oshino",
+       "k": 22,
+       "a": 4,
+       "d": 29,
+       "mvp": 4,
+       "score": 59
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "KrinoJ",
+       "k": 42,
+       "a": 3,
+       "d": 28,
+       "mvp": 8,
+       "score": 107
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "PenguChi",
+       "k": 28,
+       "a": 5,
+       "d": 30,
+       "mvp": 4,
+       "score": 72
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "tedstyx",
+       "k": 26,
+       "a": 4,
+       "d": 30,
+       "mvp": 5,
+       "score": 69
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "DarkLite",
+       "k": 25,
+       "a": 3,
+       "d": 26,
+       "mvp": 2,
+       "score": 65
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "Tosaki Mimi",
+       "k": 22,
+       "a": 1,
+       "d": 27,
+       "mvp": 3,
+       "score": 62
+      }
+     ]
+    },
+    {
+     "map": "Dust2",
+     "scoreA": 19,
+     "scoreB": 17,
+     "players": [
+      {
+       "team": "Nullpoint",
+       "name": "candybar_isblue",
+       "k": 36,
+       "a": 4,
+       "d": 25,
+       "mvp": 5,
+       "score": 95
+      },
+      {
+       "team": "Nullpoint",
+       "name": "zhizyii",
+       "k": 31,
+       "a": 4,
+       "d": 27,
+       "mvp": 3,
+       "score": 70
+      },
+      {
+       "team": "Nullpoint",
+       "name": "UtsuhoNull",
+       "k": 25,
+       "a": 4,
+       "d": 24,
+       "mvp": 6,
+       "score": 68
+      },
+      {
+       "team": "Nullpoint",
+       "name": "ssseiso",
+       "k": 22,
+       "a": 4,
+       "d": 26,
+       "mvp": 4,
+       "score": 59
+      },
+      {
+       "team": "Nullpoint",
+       "name": "Kaito_Oshino",
+       "k": 17,
+       "a": 3,
+       "d": 27,
+       "mvp": 1,
+       "score": 43
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "DarkLite",
+       "k": 36,
+       "a": 1,
+       "d": 27,
+       "mvp": 7,
+       "score": 79
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "PenguChi",
+       "k": 30,
+       "a": 4,
+       "d": 22,
+       "mvp": 3,
+       "score": 72
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "Tosaki Mimi",
+       "k": 19,
+       "a": 3,
+       "d": 28,
+       "mvp": 3,
+       "score": 56
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "KrinoJ",
+       "k": 23,
+       "a": 2,
+       "d": 27,
+       "mvp": 1,
+       "score": 56
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "tedstyx",
+       "k": 21,
+       "a": 4,
+       "d": 27,
+       "mvp": 3,
+       "score": 50
+      }
+     ]
+    },
+    {
+     "map": "Tuscan",
+     "scoreA": 13,
+     "scoreB": 9,
+     "players": [
+      {
+       "team": "Nullpoint",
+       "name": "Kaito_Oshino",
+       "k": 34,
+       "a": 0,
+       "d": 11,
+       "mvp": 8,
+       "score": 77
+      },
+      {
+       "team": "Nullpoint",
+       "name": "ssseiso",
+       "k": 23,
+       "a": 4,
+       "d": 18,
+       "mvp": 3,
+       "score": 56
+      },
+      {
+       "team": "Nullpoint",
+       "name": "UtsuhoNull",
+       "k": 12,
+       "a": 6,
+       "d": 15,
+       "mvp": 1,
+       "score": 36
+      },
+      {
+       "team": "Nullpoint",
+       "name": "zhizyii",
+       "k": 13,
+       "a": 3,
+       "d": 18,
+       "mvp": 1,
+       "score": 31
+      },
+      {
+       "team": "Nullpoint",
+       "name": "candybar_isblue",
+       "k": 6,
+       "a": 2,
+       "d": 15,
+       "mvp": 0,
+       "score": 17
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "Tosaki Mimi",
+       "k": 18,
+       "a": 1,
+       "d": 16,
+       "mvp": 0,
+       "score": 43
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "PenguChi",
+       "k": 16,
+       "a": 2,
+       "d": 18,
+       "mvp": 4,
+       "score": 42
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "tedstyx",
+       "k": 18,
+       "a": 1,
+       "d": 17,
+       "mvp": 4,
+       "score": 41
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "KrinoJ",
+       "k": 15,
+       "a": 3,
+       "d": 17,
+       "mvp": 1,
+       "score": 40
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "DarkLite",
+       "k": 10,
+       "a": 4,
+       "d": 20,
+       "mvp": 0,
+       "score": 31
+      }
+     ]
+    }
+   ]
   }
  }
 }

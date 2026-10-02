@@ -170,8 +170,9 @@
      "round": 5,
      "a": "Nullpoint",
      "b": "Ashen Styx",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1790960837
     },
     {
      "id": 18,
