@@ -49267,6 +49267,204 @@
      ]
     }
    ]
+  },
+  "1-11": {
+   "maps": [
+    {
+     "map": "Tuscan",
+     "scoreA": 9,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Ashen Styx",
+       "name": "DarkLite",
+       "k": 21,
+       "a": 1,
+       "d": 18,
+       "mvp": 2,
+       "score": 51
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "KrinoJ",
+       "k": 15,
+       "a": 4,
+       "d": 15,
+       "mvp": 2,
+       "score": 40
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "PenguChi",
+       "k": 17,
+       "a": 1,
+       "d": 18,
+       "mvp": 4,
+       "score": 39
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "tedstyx",
+       "k": 10,
+       "a": 1,
+       "d": 17,
+       "mvp": 1,
+       "score": 27
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "Tosaki Mimi",
+       "k": 8,
+       "a": 3,
+       "d": 16,
+       "mvp": 0,
+       "score": 20
+      },
+      {
+       "team": "Hanabi Union",
+       "name": "Hanabusa Lisa",
+       "k": 23,
+       "a": 3,
+       "d": 17,
+       "mvp": 4,
+       "score": 55
+      },
+      {
+       "team": "Hanabi Union",
+       "name": "diabet0_",
+       "k": 19,
+       "a": 2,
+       "d": 12,
+       "mvp": 2,
+       "score": 47
+      },
+      {
+       "team": "Hanabi Union",
+       "name": "Kojadayo",
+       "k": 18,
+       "a": 3,
+       "d": 12,
+       "mvp": 4,
+       "score": 44
+      },
+      {
+       "team": "Hanabi Union",
+       "name": "PSYSTRA",
+       "k": 12,
+       "a": 3,
+       "d": 15,
+       "mvp": 2,
+       "score": 34
+      },
+      {
+       "team": "Hanabi Union",
+       "name": "TRPaki",
+       "k": 12,
+       "a": 2,
+       "d": 15,
+       "mvp": 1,
+       "score": 26
+      }
+     ]
+    },
+    {
+     "map": "Mirage",
+     "scoreA": 11,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Ashen Styx",
+       "name": "tedstyx",
+       "k": 26,
+       "a": 1,
+       "d": 15,
+       "mvp": 5,
+       "score": 69
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "PenguChi",
+       "k": 20,
+       "a": 1,
+       "d": 15,
+       "mvp": 4,
+       "score": 54
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "Tosaki Mimi",
+       "k": 17,
+       "a": 1,
+       "d": 20,
+       "mvp": 1,
+       "score": 41
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "DarkLite",
+       "k": 12,
+       "a": 2,
+       "d": 19,
+       "mvp": 0,
+       "score": 30
+      },
+      {
+       "team": "Ashen Styx",
+       "name": "KrinoJ",
+       "k": 8,
+       "a": 1,
+       "d": 21,
+       "mvp": 1,
+       "score": 21
+      },
+      {
+       "team": "Hanabi Union",
+       "name": "PSYSTRA",
+       "k": 21,
+       "a": 5,
+       "d": 19,
+       "mvp": 1,
+       "score": 53
+      },
+      {
+       "team": "Hanabi Union",
+       "name": "Kojadayo",
+       "k": 21,
+       "a": 1,
+       "d": 17,
+       "mvp": 2,
+       "score": 49
+      },
+      {
+       "team": "Hanabi Union",
+       "name": "Hanabusa Lisa",
+       "k": 17,
+       "a": 0,
+       "d": 15,
+       "mvp": 5,
+       "score": 47
+      },
+      {
+       "team": "Hanabi Union",
+       "name": "diabet0_",
+       "k": 18,
+       "a": 2,
+       "d": 14,
+       "mvp": 2,
+       "score": 45
+      },
+      {
+       "team": "Hanabi Union",
+       "name": "TRPaki",
+       "k": 13,
+       "a": 0,
+       "d": 18,
+       "mvp": 3,
+       "score": 34
+      }
+     ]
+    }
+   ]
   }
  }
 }

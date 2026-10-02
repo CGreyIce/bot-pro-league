@@ -116,8 +116,9 @@
      "round": 3,
      "a": "Ashen Styx",
      "b": "Hanabi Union",
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1790943841
     },
     {
      "id": 12,
