@@ -179,24 +179,27 @@
      "round": 5,
      "a": "Crystal Laurels",
      "b": "Frozen Simians",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1791052186
     },
     {
      "id": 19,
      "round": 5,
      "a": "Starling Coven",
      "b": "Frostcrow",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1791054557
     },
     {
      "id": 20,
      "round": 5,
      "a": "Hanabi Union",
      "b": "Divine Wind",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1791056025
     }
    ],
    "roundTitles": {
@@ -229,8 +232,9 @@
      "round": 1,
      "a": "Pastel Mocha",
      "b": "Seraph Dynasty",
-     "sa": null,
-     "sb": null
+     "sa": 17,
+     "sb": 19,
+     "ts": 1791057550
     },
     {
      "id": 2,
