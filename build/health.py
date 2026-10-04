@@ -154,13 +154,16 @@ def run(data, data_dir):
                 h.add("error", "Players", f"{p['name']}'s bio says #{n} but the Players page shows #{page_rank.get(p['slug'])}.", f"#/player/{p['slug']}")
     active = {pl.get("slug") for tr in live for row in tr.get("attending", []) for pl in row.get("players", [])}
     recent = {p["slug"] for p in players if any(str(y) >= "2026" for h_ in (p.get("teamHistory") or []) for y in h_.get("years", []))}
+    gp = os.path.join(data_dir, "player_gender.json")
+    genders = json.load(open(gp, encoding="utf-8")) if os.path.exists(gp) else {}
     for p in players:
         if p["slug"] not in active and p["slug"] not in recent:
             continue
         if not p.get("iso"):
             h.add("warning", "Players", f"{p['name']} has no country, so no flag or nationality in their bio.", f"#/player/{p['slug']}")
-        if p.get("gender") not in ("M", "F"):
+        if p.get("gender") not in ("M", "F") and genders.get(norm(p["name"])) != "NB":   # NB = chosen they/them
             h.add("info", "Players", f"{p['name']} has no gender on file, so their bio uses they/them.", f"#/player/{p['slug']}")
+            h.issues[-1]["fix"] = {"kind": "gender", "player": p["name"], "slug": p["slug"]}
 
     # ---- 8. name changes point at real players
     ncp = os.path.join(data_dir, "name_changes.json")

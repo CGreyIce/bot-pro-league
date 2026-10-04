@@ -1885,7 +1885,8 @@ function adminHealthHtml(){
   const c = hl.counts||{}, issues = hl.issues||[];
   const item = i=>`<div class="hl-item hl-${i.level}"><span class="hl-dot"></span><span class="hl-check">${esc(i.check)}</span>
     <span class="hl-msg">${esc(i.msg)}</span>${i.link?`<a class="hl-link" href="${esc(i.link)}">view →</a>`:''}</div>`;
-  const serious = issues.filter(i=>i.level!=="info"), notes = issues.filter(i=>i.level==="info");
+  const serious = issues.filter(i=>i.level!=="info"), notes = issues.filter(i=>i.level==="info" && !i.fix);
+  const genderFix = issues.filter(i=>i.fix && i.fix.kind==="gender");
   const ok = !c.error && !c.warning;
   const head = ok ? `<span class="hl-ok">✓ All checks passed</span>`
     : `${c.error?`<span class="hl-pill hl-error">${c.error} error${c.error===1?'':'s'}</span>`:''}${c.warning?`<span class="hl-pill hl-warning">${c.warning} warning${c.warning===1?'':'s'}</span>`:''}`;
@@ -1893,8 +1894,46 @@ function adminHealthHtml(){
     <div class="hl-head"><span class="adm-pub-t" style="font-size:14px">Site Health</span>${head}
       <span class="muted" style="font-size:11px;margin-left:auto">checked at last build · ${esc((hl.generated||'').replace('T',' '))}</span></div>
     ${serious.length?`<div class="hl-list">${serious.map(item).join("")}</div>`:''}
+    ${genderFix.length?genderFixHtml(genderFix):''}
+    ${_gfDone?`<div class="gf-done">✓ ${esc(_gfDone)}</div>`:''}
     ${notes.length?`<details class="hl-notes"><summary>${notes.length} note${notes.length===1?'':'s'} (FYI)</summary><div class="hl-list">${notes.map(item).join("")}</div></details>`:''}
   </div>`;
+}
+// quick fix: set many players' genders at once (He / She / They), saved in one go
+let _gfDone = null;
+function genderFixHtml(fixes){
+  const rows = fixes.map(i=>{
+    const p = rsAllPlayers().find(x=>x.slug===i.fix.slug) || {};
+    return `<div class="gf-row" data-gfname="${esc(i.fix.player)}">
+      <span class="gf-who">${flag(p.iso)}<a href="#/player/${esc(i.fix.slug)}">${esc(i.fix.player)}</a>
+        <span class="muted">${esc(p.team||"Free agent")}</span></span>
+      <span class="gf-btns"><button type="button" data-g="F">She</button><button type="button" data-g="M">He</button><button type="button" data-g="NB">They</button></span>
+    </div>`; }).join("");
+  return `<details class="hl-fix" open><summary><b>Missing genders</b> <span class="muted">· ${fixes.length} player${fixes.length===1?'':'s'}: pick She / He / They for each, then save them all at once</span></summary>
+    <div class="gf-grid">${rows}</div>
+    <div class="gf-foot"><button id="gf-save" class="adm-btn" style="margin:0" disabled>Save 0 genders</button>
+      <span class="muted" style="font-size:11px">"They" is saved as a deliberate they/them choice, so it leaves this list too.</span>
+      <span id="gf-msg" style="font-size:12px"></span></div>
+  </details>`;
+}
+function setupGenderFix(){
+  const save = $("#gf-save"); if(!save) return;
+  const picks = {};
+  document.querySelectorAll(".gf-row").forEach(row=>{
+    row.querySelectorAll("[data-g]").forEach(b=>b.onclick=()=>{
+      const name=row.dataset.gfname, on = picks[name]!==b.dataset.g;
+      row.querySelectorAll("[data-g]").forEach(x=>x.classList.remove("on"));
+      if(on){ picks[name]=b.dataset.g; b.classList.add("on"); } else delete picks[name];
+      const n=Object.keys(picks).length; save.disabled=!n; save.textContent=`Save ${n} gender${n===1?'':'s'}`;
+    });
+  });
+  save.onclick=async ()=>{
+    save.disabled=true; save.textContent="Saving…";
+    const r = await apiPost("/api/roster", {action:"genders", genders:picks, dryRun:false});
+    if(!r.ok){ $("#gf-msg").style.color="var(--accent2,#ff6b6b)"; $("#gf-msg").textContent=r.error||r.msg||"Failed."; save.disabled=false; return; }
+    _gfDone = (r.changes||[])[0] || "Saved.";
+    await reloadData(); renderAdmin();
+  };
 }
 async function renderAdmin(){
   app.innerHTML = `<div class="loading">Connecting to admin…</div>`;
@@ -2129,6 +2168,7 @@ async function renderAdmin(){
   setupNewsAdmin();
   setupSoloAdmin();
   setupRosterAdmin();
+  setupGenderFix(); _gfDone = null;
   setupShuffler();
   setupMapVeto();
   if(adminEditing) openEditor(adminEditing);

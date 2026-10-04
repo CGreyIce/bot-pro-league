@@ -27,6 +27,7 @@ SITE = os.path.join(ROOT, "site")
 LOGO_DIR = os.path.join(ROOT, "assets", "teams")
 
 FREE_AGENT = "Free agent"
+PRONOUNS = {"M": "he/him", "F": "she/her", "NB": "they/them"}
 # amateur-sheet rows on these teams are dropped from the pool by parse.py (they're pro teams)
 AMATEUR_EXCLUDED = {"floodflashers", "xplosiv", "5percent"}
 
@@ -352,9 +353,9 @@ class Roster:
         self.allp.lines.append(f"{name}\t{country}"); self.allp.dirty = True
         self.note(f"New player {name}: {country}, {role or 'no role'}, " +
                   (f"team {team}." if team and norm(team) != norm(FREE_AGENT) else "free agent."))
-        if gender in ("M", "F"):
+        if gender in ("M", "F", "NB"):
             self.gender[norm(name)] = gender; self.dirty_json.add("player_gender.json")
-            self.note(f"Gender: {gender} ({'he/him' if gender == 'M' else 'she/her'} in their bio).")
+            self.note(f"Gender: {gender} ({PRONOUNS[gender]} in their bio).")
         if team and norm(team) != norm(FREE_AGENT):
             self._log_move(name, FREE_AGENT, self.page_team(team) or team, when or self.league_today())
 
@@ -381,14 +382,27 @@ class Roster:
         if gender:
             if gender not in ("M", "F", "NB"):
                 raise RosterError("Gender must be M, F or NB.")
-            if gender == "NB":
-                self.gender.pop(norm(name), None)
-            else:
-                self.gender[norm(name)] = gender
+            self.gender[norm(name)] = gender                # "NB" stored explicitly = chosen they/them
             self.dirty_json.add("player_gender.json")
             self.note(f"{name}: gender → {gender}.")
         if not (role or country or gender):
             raise RosterError("Nothing to change.")
+
+    def set_genders(self, mapping):
+        """Bulk gender update: {player name: "M" | "F" | "NB"} (NB = they/them, chosen on purpose)."""
+        if not mapping:
+            raise RosterError("Pick at least one gender.")
+        counts = {"M": 0, "F": 0, "NB": 0}
+        for name, g in mapping.items():
+            if g not in counts:
+                raise RosterError(f"'{g}' isn't a valid gender for {name} (use M, F or NB).")
+            p = self.player(name)
+            self.gender[norm(p["name"])] = g
+            counts[g] += 1
+        self.dirty_json.add("player_gender.json")
+        parts = [f"{n} {PRONOUNS[g]}" for g, n in (("F", counts["F"]), ("M", counts["M"]), ("NB", counts["NB"])) if n]
+        n = len(mapping)
+        self.note(f"Set {n} gender{'' if n == 1 else 's'}: {', '.join(parts)}. Their bios update on the rebuild.")
 
     def rename_player(self, old, new):
         p = self.player(old)
@@ -701,6 +715,7 @@ ACTIONS = {
     "promote": lambda r, b: r.promote_team(b.get("name"), b.get("tag"), b.get("players", []), b.get("logo"),
                                            bool(b.get("provisional")), b.get("origin", ""), b.get("notes", "")),
     "disband": lambda r, b: r.disband(b.get("team"), b.get("date")),
+    "genders": lambda r, b: r.set_genders(b.get("genders") or {}),
 }
 
 
