@@ -21,6 +21,18 @@ os.makedirs(TDIR, exist_ok=True)
 def slugify(s):
     return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", (s or "").lower())).strip("-")
 
+def is_placement(m):
+    """Placement-bracket matches sit outside the main tree: the 3rd-place match, any decider with
+    a `place` (its winner takes that place, the loser the next one, e.g. place 5 -> 5th/6th), and
+    `classif` semis that only feed deciders (e.g. the 5th-8th semifinals)."""
+    return bool(m.get("thirdPlace") or m.get("place") or m.get("classif"))
+
+def placement_of(m):
+    return m.get("place") or (3 if m.get("thirdPlace") else None)
+
+def ordinal(n):
+    return f"{n}{'th' if 10 <= n % 100 <= 20 else {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th')}"
+
 # ---------------- generators ----------------
 def seed_order(p):
     order = [1, 2]
@@ -187,10 +199,11 @@ def _elim_resolved(stage):
     for m in stage["matches"]:
         a, b = team_of(m["fa"]), team_of(m["fb"]); w = winner_of(m["id"])
         wi = 1 if (w and w == a) else 2 if (w and w == b) else 0
-        walk = (a and is_bye(m["fb"])) or (b and is_bye(m["fa"]))
+        # a slot facing an out-of-range seed is a bye even before the bracket is seeded (TBD vs bye)
+        walk = is_bye(m["fb"]) or is_bye(m["fa"])
         res[m["id"]] = {"a": a, "b": b, "w": wi, "bye": walk}
-    # the final is the last real match — a 3rd-place decider must never be mistaken for it
-    final_id = max((m["id"] for m in stage["matches"] if not m.get("thirdPlace")), default=None)
+    # the final is the last real match — a placement decider must never be mistaken for it
+    final_id = max((m["id"] for m in stage["matches"] if not is_placement(m)), default=None)
     champ = winner_of(final_id) if final_id else None
     return res, champ
 
@@ -227,7 +240,7 @@ def stage_standings(stage, res):
         # explicit podium: champion, runner-up (final loser), then the 3rd-place decider's
         # winner and loser — so a lost semifinal doesn't get mis-sorted by round-diff
         top = []
-        finals = [m for m in stage["matches"] if not m.get("thirdPlace")]
+        finals = [m for m in stage["matches"] if not is_placement(m)]
         fin = max(finals, key=lambda m: m["id"]) if finals else None
         if champ:
             top.append(champ)
@@ -235,13 +248,13 @@ def stage_standings(stage, res):
             ru = fr.get("b") if fr.get("w") == 1 else fr.get("a") if fr.get("w") == 2 else None
             if ru:
                 top.append(ru)
-        tp = next((m for m in stage["matches"] if m.get("thirdPlace")), None)
-        if tp:
-            tr = res.get(tp["id"], {})
+        for pm in sorted((m for m in stage["matches"] if placement_of(m)), key=placement_of):
+            tr = res.get(pm["id"], {})
             if tr.get("w") in (1, 2):
                 top.append(tr["a"] if tr["w"] == 1 else tr["b"])
                 top.append(tr["b"] if tr["w"] == 1 else tr["a"])
-        order = [n for n in top if n] + [n for n in order if n not in top]
+        top = list(dict.fromkeys(n for n in top if n))
+        order = top + [n for n in order if n not in top]
     return [{"name": n, "w": rec[n]["w"], "l": rec[n]["l"]} for n in order]
 
 # ---------------- to standard schema ----------------
@@ -257,7 +270,8 @@ def stage_to_standard(stage):
                             "b": b or ("(bye)" if rr.get("bye") else ""),
                             "sc": [m.get("sa"), m.get("sb")] if m.get("sa") is not None else "",
                             "w": rr["w"], "st": "complete" if rr["w"] else "pending",
-                            "grp": False, "tp": bool(m.get("thirdPlace")),
+                            "grp": False, "tp": bool(m.get("thirdPlace")), "pl": is_placement(m),
+                            "plt": m.get("placeLabel") or ("Third Place Match" if m.get("thirdPlace") else None),
                             "bo": m.get("bestOf", stage.get("bestOf", 1)), "ts": m.get("ts")})
     return {
         "id": stage["id"], "name": stage["name"], "format": stage["format"],
@@ -277,7 +291,7 @@ def tournament_placements(man):
     playoff = next((s for s in reversed(stages) if s["format"] == "single_elim"), None)
     if playoff and any(m.get("sa") is not None for m in playoff["matches"]):
         res, champ = _elim_resolved(playoff)
-        real = [m for m in playoff["matches"] if not m.get("thirdPlace")]
+        real = [m for m in playoff["matches"] if not is_placement(m)]
         titles = playoff.get("roundTitles", {})
         seed_of = {t: i for i, t in enumerate(playoff["teams"])}
         maxRound = max(m["round"] for m in real)
@@ -288,15 +302,17 @@ def tournament_placements(man):
             ru = fr.get("b") if fr.get("w") == 1 else fr.get("a") if fr.get("w") == 2 else None
             if ru:
                 out.append({"rank": 2, "name": ru, "result": "Runner-up"}); placed.add(ru)
-        tp = next((m for m in playoff["matches"] if m.get("thirdPlace")), None)
-        if tp:
-            tr = res.get(tp["id"], {})
+        # placement deciders (3rd place, 5th-8th, 9th...): winner takes `place`, loser `place + 1`
+        for pm in sorted((m for m in playoff["matches"] if placement_of(m)), key=placement_of):
+            tr = res.get(pm["id"], {})
             if tr.get("w") in (1, 2):
+                pl = placement_of(pm)
                 w = tr["a"] if tr["w"] == 1 else tr["b"]; l = tr["b"] if tr["w"] == 1 else tr["a"]
                 if w and w not in placed:
-                    out.append({"rank": 3, "name": w, "result": "3rd Place"}); placed.add(w)
+                    out.append({"rank": pl, "name": w, "result": f"{ordinal(pl)} Place"}); placed.add(w)
                 if l and l not in placed:
-                    out.append({"rank": 4, "name": l, "result": "4th Place"}); placed.add(l)
+                    out.append({"rank": pl + 1, "name": l, "result": f"{ordinal(pl + 1)} Place"}); placed.add(l)
+        out.sort(key=lambda e: e["rank"])
         losers_by_round = {}
         for m in real:
             r = res.get(m["id"], {})
@@ -398,7 +414,7 @@ def ensure_third_place(man):
         ms = stage.get("matches", [])
         if not ms or any(m.get("thirdPlace") for m in ms):
             continue
-        reals = [m for m in ms if not m.get("thirdPlace")]
+        reals = [m for m in ms if not is_placement(m)]
         final = max(reals, key=lambda m: m["id"])
         fa, fb = final.get("fa", {}), final.get("fb", {})
         if "match" in fa and "match" in fb:            # a real final fed by two semifinals
@@ -407,7 +423,44 @@ def ensure_third_place(man):
                        "fa": {"loserOf": fa["match"]}, "fb": {"loserOf": fb["match"]},
                        "bestOf": None, "thirdPlace": True})
 
+def _group_complete(st):
+    total = st.get("rounds", SWISS_DEFAULT_ROUNDS)
+    rounds = {m["round"] for m in st["matches"]}
+    return (rounds == set(range(1, total + 1)) and
+            all(m.get("sa") is not None and m.get("sb") is not None for m in st["matches"]))
+
+def auto_seed_playoffs(man):
+    """A playoff stage with autoSeed "swiss_top2" fills itself from the swiss groups: once EVERY
+    group is complete, the group winners take seeds 1..G and the runners-up G+1..2G, each ordered
+    by wins, then losses, then round difference. Re-evaluated on every save until a playoff score
+    exists (so a corrected group score re-seeds); while groups are unfinished the slots stay TBD."""
+    po = next((s for s in man.get("stages", []) if s.get("autoSeed") == "swiss_top2"), None)
+    if not po or any(m.get("sa") is not None for m in po["matches"]):
+        return
+    groups = [s for s in man["stages"] if s.get("format") == "swiss"]
+    n = len(po["teams"])
+    if groups and all(_group_complete(g) for g in groups):
+        winners, runners = [], []
+        for g in groups:
+            res, _ = stage_resolved(g)
+            st = stage_standings(g, res)
+            rec = swiss_records(g)
+            key = lambda nm: (-rec[nm]["w"], rec[nm]["l"], -rec[nm]["diff"], nm.lower())
+            if len(st) >= 2:
+                winners.append((key(st[0]["name"]), st[0]["name"]))
+                runners.append((key(st[1]["name"]), st[1]["name"]))
+        order = [nm for _, nm in sorted(winners)] + [nm for _, nm in sorted(runners)]
+        if len(order) == n:
+            man.setdefault("groupSeeds", man.get("seeds") or {})
+            po["teams"] = order
+            man["seeds"] = {nm: i + 1 for i, nm in enumerate(order)}
+            return
+    po["teams"] = [""] * n                                  # not ready: every slot TBD
+    if "groupSeeds" in man:
+        man["seeds"] = man["groupSeeds"]
+
 def save(man):
+    auto_seed_playoffs(man)
     ensure_third_place(man)
     json.dump(man, open(path(man["slug"]), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     json.dump(to_standard(man), open(os.path.join(TDIR, man["slug"] + ".json"), "w", encoding="utf-8"),

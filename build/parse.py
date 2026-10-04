@@ -1744,9 +1744,14 @@ def main():
         "soloGameStats": solo_game_stats,
         "stacks": stacks,
     }
+    # ---- site health check (build/health.py): results go to the log + the admin Site Health panel ----
+    from health import run as run_health
+    data["health"] = run_health(data, DATA)
+
     os.makedirs(SITE, exist_ok=True)
     with open(os.path.join(SITE, "data.json"), "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=1)
+        # compact: no indentation (it was ~40% of the file), the site parses it the same
+        json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
 
     # sync team logos into the deployable site folder so site/ is self-contained
     import shutil

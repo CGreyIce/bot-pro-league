@@ -442,6 +442,297 @@
     "4": "Round 4",
     "5": "Round 5"
    }
+  },
+  {
+   "id": 6,
+   "name": "Playoffs",
+   "format": "single_elim",
+   "bestOf": 3,
+   "teams": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "autoSeed": "swiss_top2",
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "fa": {
+      "seed": 1
+     },
+     "fb": {
+      "seed": 16
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "fa": {
+      "seed": 8
+     },
+     "fb": {
+      "seed": 9
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "fa": {
+      "seed": 4
+     },
+     "fb": {
+      "seed": 13
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 1,
+     "fa": {
+      "seed": 5
+     },
+     "fb": {
+      "seed": 12
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 5,
+     "round": 1,
+     "fa": {
+      "seed": 2
+     },
+     "fb": {
+      "seed": 15
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 6,
+     "round": 1,
+     "fa": {
+      "seed": 7
+     },
+     "fb": {
+      "seed": 10
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 7,
+     "round": 1,
+     "fa": {
+      "seed": 3
+     },
+     "fb": {
+      "seed": 14
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 8,
+     "round": 1,
+     "fa": {
+      "seed": 6
+     },
+     "fb": {
+      "seed": 11
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 9,
+     "round": 2,
+     "fa": {
+      "match": 1
+     },
+     "fb": {
+      "match": 2
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 10,
+     "round": 2,
+     "fa": {
+      "match": 3
+     },
+     "fb": {
+      "match": 4
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 11,
+     "round": 2,
+     "fa": {
+      "match": 5
+     },
+     "fb": {
+      "match": 6
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 12,
+     "round": 2,
+     "fa": {
+      "match": 7
+     },
+     "fb": {
+      "match": 8
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 13,
+     "round": 3,
+     "fa": {
+      "match": 9
+     },
+     "fb": {
+      "match": 10
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 14,
+     "round": 3,
+     "fa": {
+      "match": 11
+     },
+     "fb": {
+      "match": 12
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 15,
+     "round": 4,
+     "fa": {
+      "match": 13
+     },
+     "fb": {
+      "match": 14
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "round": 4,
+     "fa": {
+      "loserOf": 13
+     },
+     "fb": {
+      "loserOf": 14
+     },
+     "thirdPlace": true,
+     "placeLabel": "Third Place Match",
+     "id": 16,
+     "sa": null,
+     "sb": null
+    },
+    {
+     "round": 3,
+     "fa": {
+      "loserOf": 9
+     },
+     "fb": {
+      "loserOf": 10
+     },
+     "classif": true,
+     "placeLabel": "5th-8th Place Semifinals",
+     "id": 17,
+     "sa": null,
+     "sb": null
+    },
+    {
+     "round": 3,
+     "fa": {
+      "loserOf": 11
+     },
+     "fb": {
+      "loserOf": 12
+     },
+     "classif": true,
+     "placeLabel": "5th-8th Place Semifinals",
+     "id": 18,
+     "sa": null,
+     "sb": null
+    },
+    {
+     "round": 4,
+     "fa": {
+      "match": 17
+     },
+     "fb": {
+      "match": 18
+     },
+     "place": 5,
+     "placeLabel": "5th Place Match",
+     "id": 19,
+     "sa": null,
+     "sb": null
+    },
+    {
+     "round": 4,
+     "fa": {
+      "loserOf": 17
+     },
+     "fb": {
+      "loserOf": 18
+     },
+     "place": 7,
+     "placeLabel": "7th Place Match",
+     "id": 20,
+     "sa": null,
+     "sb": null
+    },
+    {
+     "round": 2,
+     "fa": {
+      "loserOf": 2
+     },
+     "fb": {
+      "loserOf": 6
+     },
+     "place": 9,
+     "placeLabel": "9th Place Match",
+     "id": 21,
+     "sa": null,
+     "sb": null
+    }
+   ],
+   "roundTitles": {
+    "1": "Play-in",
+    "2": "Quarterfinals",
+    "3": "Semifinals",
+    "4": "Final"
+   }
   }
  ],
  "seeds": {

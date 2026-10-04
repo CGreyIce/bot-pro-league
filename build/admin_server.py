@@ -13,6 +13,7 @@ from urllib.parse import urlparse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import manual
+import roster
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.path.join(ROOT, "site")
@@ -103,6 +104,8 @@ class Handler(SimpleHTTPRequestHandler):
         if path == "/api/state":
             return self._json(200, {"ok": True, "admin": True,
                                     "tournaments": manual.list_manual(), "teams": team_names()})
+        if path == "/api/roster/meta":
+            return self._json(200, {"ok": True, **roster.meta()})
         if path == "/api/solo/list":
             return self._json(200, {"ok": True, "games": load_solo()})
         if path.startswith("/api/manual/"):
@@ -191,6 +194,16 @@ class Handler(SimpleHTTPRequestHandler):
             elif path == "/api/delete":
                 manual.delete(b["slug"]); ok, msg = regenerate()
                 return self._json(200, {"ok": ok, "msg": msg})
+            elif path == "/api/roster":
+                # roster tools: dryRun -> preview of every change; otherwise apply + rebuild
+                try:
+                    res = roster.run(b.get("action"), b, dry_run=bool(b.get("dryRun", True)))
+                except roster.RosterError as e:
+                    return self._json(400, {"ok": False, "error": str(e)})
+                if b.get("dryRun", True):
+                    return self._json(200, {"ok": True, "changes": res["changes"]})
+                ok, msg = regenerate()
+                return self._json(200, {"ok": ok, "changes": res["changes"], "msg": msg})
             elif path == "/api/publish":
                 ok, msg = git_publish()
                 return self._json(200, {"ok": ok, "msg": msg})

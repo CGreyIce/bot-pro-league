@@ -1878,6 +1878,24 @@ function renderSfMaps(match){
 let adminEditing = null, _adminTeams = [], _adminOn = false;
 async function reloadData(){ try{ DATA = await loadData(5); _allMatches=null; _allMapScores=null; _proSlugs=null; _soloLeague=null; }catch(e){} }
 function apiPost(p, body){ return fetch(p,{method:"POST",headers:{"Content-Type":"text/plain"},body:JSON.stringify(body)}).then(r=>r.json()).catch(e=>({ok:false,error:String(e)})); }
+// Site Health panel (admin): results of build/health.py, recomputed on every build
+function adminHealthHtml(){
+  const hl = DATA.health;
+  if(!hl) return '';
+  const c = hl.counts||{}, issues = hl.issues||[];
+  const item = i=>`<div class="hl-item hl-${i.level}"><span class="hl-dot"></span><span class="hl-check">${esc(i.check)}</span>
+    <span class="hl-msg">${esc(i.msg)}</span>${i.link?`<a class="hl-link" href="${esc(i.link)}">view →</a>`:''}</div>`;
+  const serious = issues.filter(i=>i.level!=="info"), notes = issues.filter(i=>i.level==="info");
+  const ok = !c.error && !c.warning;
+  const head = ok ? `<span class="hl-ok">✓ All checks passed</span>`
+    : `${c.error?`<span class="hl-pill hl-error">${c.error} error${c.error===1?'':'s'}</span>`:''}${c.warning?`<span class="hl-pill hl-warning">${c.warning} warning${c.warning===1?'':'s'}</span>`:''}`;
+  return `<div class="adm-health ${ok?'ok':'bad'}">
+    <div class="hl-head"><span class="adm-pub-t" style="font-size:14px">Site Health</span>${head}
+      <span class="muted" style="font-size:11px;margin-left:auto">checked at last build · ${esc((hl.generated||'').replace('T',' '))}</span></div>
+    ${serious.length?`<div class="hl-list">${serious.map(item).join("")}</div>`:''}
+    ${notes.length?`<details class="hl-notes"><summary>${notes.length} note${notes.length===1?'':'s'} (FYI)</summary><div class="hl-list">${notes.map(item).join("")}</div></details>`:''}
+  </div>`;
+}
 async function renderAdmin(){
   app.innerHTML = `<div class="loading">Connecting to admin…</div>`;
   let state = null;
@@ -1930,6 +1948,7 @@ async function renderAdmin(){
       </div>
       <button id="adm-publish" class="adm-btn adm-pub-btn">Publish to GitHub</button>
     </div>
+    ${adminHealthHtml()}
     <div class="profile-grid" style="grid-template-columns:300px 1fr">
       <div class="infobox" style="padding:14px">
         <div class="ib-title" style="margin:-14px -14px 12px">New Tournament</div>
@@ -1949,6 +1968,15 @@ async function renderAdmin(){
         <div class="adm-list">${listHtml}</div>
         ${doneHtml}
         <div id="adm-editor" style="margin-top:18px"></div>
+      </div>
+    </div>
+    <div class="adm-roster" style="margin-top:26px">
+      <h2 class="section-title"><span class="accent-bar"></span>Roster Tools</h2>
+      <p class="muted" style="font-size:12px;margin:-4px 0 12px">Transfers, new players, renames, promotions and disbands. Every change shows a preview first; nothing is saved until you press <strong>Apply</strong>.</p>
+      <div class="tabs rs-tabs">${RS_TABS.map(([k,l])=>`<button data-rstab="${k}" class="${k===rosterTab?'active':''}">${l}</button>`).join("")}</div>
+      <div class="profile-grid" style="grid-template-columns:380px 1fr">
+        <div class="infobox" style="padding:14px"><div id="rs-form"></div></div>
+        <div id="rs-preview" class="rs-preview"><p class="muted" style="font-size:12px">Fill in the form and press <strong>Preview changes</strong>.</p></div>
       </div>
     </div>
     <div class="adm-news" style="margin-top:26px">
@@ -2100,6 +2128,7 @@ async function renderAdmin(){
   });
   setupNewsAdmin();
   setupSoloAdmin();
+  setupRosterAdmin();
   setupShuffler();
   setupMapVeto();
   if(adminEditing) openEditor(adminEditing);
@@ -2421,6 +2450,115 @@ function generateTeams(players, lockedGroups, groupByCountry=true){
 }
 
 // ---- news/articles admin (write + publish articles) ----
+// ---------------- Roster Tools (admin) ----------------
+const RS_TABS = [["transfer","Transfer"],["add","Add player"],["edit","Edit player"],["rename","Rename"],["promote","Promote to pro"],["disband","Disband"]];
+let rosterTab = "transfer", _rsMeta = null, _rsDone = null, _rsLogo = null;
+function rsAllPlayers(){ return [...(DATA.players.pro||[]),...(DATA.players.amateur||[]),...(DATA.players.solo||[])]; }
+function rsFindPlayer(name){ const k=normKey(name); return k ? rsAllPlayers().find(p=>normKey(p.name)===k) : null; }
+function rsTeamNames(){
+  // team pages + every amateur/ad-hoc team name in use (sheet teams, live-event teams)
+  const names = new Map();
+  (DATA.teams||[]).forEach(t=>names.set(normKey(t.name), t.name));
+  rsAllPlayers().forEach(p=>{ if(p.team && !names.has(normKey(p.team))) names.set(normKey(p.team), p.team); });
+  (DATA.tournaments||[]).filter(t=>!t.champion).forEach(t=>(t.attending||[]).forEach(r=>{ if(r.team && !names.has(normKey(r.team))) names.set(normKey(r.team), r.team); }));
+  return [...names.values()].sort((a,b)=>a.localeCompare(b));
+}
+function rsSuggestRoster(team){
+  // latest event line-up under this name, else the players currently on it
+  const k = normKey(team); if(!k) return [];
+  const evs = [...(DATA.tournaments||[])].sort((a,b)=>(b.date||"").localeCompare(a.date||""));
+  for(const t of evs){ const row=(t.attending||[]).find(r=>normKey(r.team)===k); if(row) return row.players.map(p=>p.name); }
+  return rsAllPlayers().filter(p=>normKey(p.team)===k).map(p=>p.name);
+}
+// the league calendar runs ahead of real time: default to the later of local today and the
+// latest in-world date already on the site (articles, transfers)
+function rsLeagueToday(){
+  const d=new Date(), local=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+  return [local, ...(DATA.articles||[]).map(a=>a.date||""), ...(DATA.transfers||[]).map(t=>t.date||"")].reduce((a,b)=>b>a?b:a, "");
+}
+function rsField(label, html){ return `<label class="adm-l">${label}</label>${html}`; }
+function rsInput(id, list, ph="", val=""){ return `<input id="${id}" class="adm-in"${list?` list="${list}"`:''} placeholder="${esc(ph)}" value="${esc(val)}" autocomplete="off">`; }
+function rsSelect(id, opts, blank){ return `<select id="${id}" class="adm-in">${blank!=null?`<option value="">${esc(blank)}</option>`:''}${opts.map(o=>`<option>${esc(o)}</option>`).join("")}</select>`; }
+function rsFormHtml(tab){
+  const m=_rsMeta||{countries:[],roles:[]}, today=rsLeagueToday();
+  const hint = id=>`<div id="${id}" class="rs-hint"></div>`;
+  if(tab==="transfer") return rsField("Player", rsInput("rs-player","rs-dl-players","e.g. Sadgeboi")) + hint("rs-player-hint")
+    + rsField("Move to", rsInput("rs-to","rs-dl-teams","a team, or Free agent")) + rsField("Date", `<input id="rs-date" class="adm-in" type="date" value="${today}">`);
+  if(tab==="add") return rsField("Name", rsInput("rs-name","","exact in-game name"))
+    + `<div style="display:flex;gap:8px"><div style="flex:1">${rsField("Country", rsSelect("rs-country", m.countries, "pick one"))}</div><div style="flex:1">${rsField("Gender", rsSelect("rs-gender", ["F","M","NB"], "pick one"))}</div></div>`
+    + rsField("Role", rsSelect("rs-role", m.roles, "pick one")) + rsField("Team (optional)", rsInput("rs-team","rs-dl-teams","Free agent"));
+  if(tab==="edit") return rsField("Player", rsInput("rs-player","rs-dl-players","e.g. miorine")) + hint("rs-player-hint")
+    + `<p class="muted" style="font-size:11px;margin:6px 0 0">Leave a field on "no change" to keep it.</p>`
+    + rsField("Role", rsSelect("rs-role", m.roles, "no change")) + rsField("Country", rsSelect("rs-country", m.countries, "no change"))
+    + rsField("Gender", rsSelect("rs-gender", ["F","M","NB"], "no change"));
+  if(tab==="rename") return rsField("What", rsSelect("rs-kind", ["Player","Team"]))
+    + rsField("Current name", rsInput("rs-old","rs-dl-players","")) + rsField("New name", rsInput("rs-new","","new name"));
+  if(tab==="promote") return rsField("Team", rsInput("rs-pteam","rs-dl-teams","e.g. the Challengers champion"))
+    + `<div style="display:flex;gap:8px"><div style="flex:1">${rsField("In-game tag", rsInput("rs-tag","","e.g. PD"))}</div><div style="flex:2">${rsField("Origin (optional)", rsInput("rs-origin","","e.g. BPL Challengers Stage 2026"))}</div></div>`
+    + rsField("Roster (5)", [0,1,2,3,4].map(i=>rsInput("rs-p"+i,"rs-dl-players","player "+(i+1))).join(""))
+    + rsField("Logo", `<input id="rs-logo" type="file" accept="image/*" class="adm-in"><div id="rs-logo-prev" class="rs-logo-prev"></div>`)
+    + `<label class="rs-check"><input id="rs-prov" type="checkbox"> Provisional (team page, but not ranked yet)</label>`;
+  if(tab==="disband") return rsField("Team", rsInput("rs-dteam","rs-dl-teams","team to disband")) + hint("rs-dteam-hint")
+    + `<p class="muted" style="font-size:11px;margin:6px 0 0">Everyone currently on the team becomes a free agent. Past event rosters and the team page (if any) stay.</p>`;
+  return "";
+}
+function rsCollect(tab){
+  const v=id=>{ const e=$("#"+id); return e?e.value.trim():""; };
+  if(tab==="transfer") return {action:"transfer", player:v("rs-player"), to:v("rs-to")||"Free agent", date:v("rs-date")};
+  if(tab==="add") return {action:"add", name:v("rs-name"), country:v("rs-country"), gender:v("rs-gender"), role:v("rs-role"), team:v("rs-team")};
+  if(tab==="edit") return {action:"edit", player:v("rs-player"), role:v("rs-role"), country:v("rs-country"), gender:v("rs-gender")};
+  if(tab==="rename") return {action: v("rs-kind")==="Team"?"rename_team":"rename_player", old:v("rs-old"), new:v("rs-new")};
+  if(tab==="promote") return {action:"promote", name:v("rs-pteam"), tag:v("rs-tag"), origin:v("rs-origin"),
+    players:[0,1,2,3,4].map(i=>v("rs-p"+i)).filter(Boolean), provisional:$("#rs-prov").checked, logo:_rsLogo};
+  if(tab==="disband") return {action:"disband", team:v("rs-dteam")};
+}
+function rsPreviewHtml(res, applied){
+  const items=(res.changes||[]).map(c=>`<li class="${c.startsWith("\u26a0")?'rs-warn':''}">${esc(c)}</li>`).join("");
+  return `<div class="rs-box ${applied?'done':''}">
+    <div class="rs-box-t">${applied?'\u2713 Done: saved and rebuilt':'Preview: nothing saved yet'}</div>
+    <ul class="rs-list">${items||'<li class="muted">No changes.</li>'}</ul>
+    ${applied?'':`<div style="display:flex;gap:8px;margin-top:10px"><button id="rs-apply" class="adm-btn" style="margin:0">Apply changes</button>
+      <button id="rs-cancel" class="adm-btn" style="margin:0;background:var(--panel);border:1px solid var(--border);color:var(--text)">Cancel</button></div>`}
+  </div>`;
+}
+async function setupRosterAdmin(){
+  const form=$("#rs-form"), prev=$("#rs-preview"); if(!form) return;
+  if(!_rsMeta){ const r=await fetch("/api/roster/meta").then(r=>r.json()).catch(()=>null); _rsMeta = (r&&r.ok)?r:{countries:[],roles:[]}; }
+  // shared autocomplete lists
+  ["rs-dl-players","rs-dl-teams"].forEach(id=>{ const old=$("#"+id); if(old) old.remove(); });
+  const mk=(id,vals)=>{ const dl=document.createElement("datalist"); dl.id=id; dl.innerHTML=vals.map(v=>`<option value="${esc(v)}">`).join(""); document.body.appendChild(dl); };
+  mk("rs-dl-players", [...new Set(rsAllPlayers().map(p=>p.name))].sort((a,b)=>a.localeCompare(b)));
+  mk("rs-dl-teams", ["Free agent", ...rsTeamNames()]);
+  const draw=()=>{
+    form.innerHTML = rsFormHtml(rosterTab) + `<button id="rs-preview-btn" class="adm-btn" style="margin-top:12px">Preview changes</button><div id="rs-msg" class="muted" style="font-size:12px;margin-top:8px"></div>`;
+    _rsLogo = null;
+    const ph=$("#rs-player"), hh=$("#rs-player-hint");
+    if(ph&&hh) ph.oninput=()=>{ const p=rsFindPlayer(ph.value); hh.innerHTML = p ? `${flag(p.iso)} ${esc(p.name)} \u00b7 ${esc(p.team||"Free agent")} \u00b7 ${esc(p.role||"no role")} \u00b7 ${esc(p.nat||"no country")}` : ""; };
+    const kind=$("#rs-kind"), old=$("#rs-old"); if(kind&&old) kind.onchange=()=>old.setAttribute("list", kind.value==="Team"?"rs-dl-teams":"rs-dl-players");
+    const pt=$("#rs-pteam"); if(pt) pt.onchange=()=>{ const r=rsSuggestRoster(pt.value); [0,1,2,3,4].forEach(i=>{ const e=$("#rs-p"+i); if(e && !e.value) e.value=r[i]||""; }); };
+    const lg=$("#rs-logo"); if(lg) lg.onchange=()=>{ const f=lg.files[0]; if(!f){ _rsLogo=null; return; }
+      const fr=new FileReader(); fr.onload=()=>{ _rsLogo=fr.result; $("#rs-logo-prev").innerHTML=`<img src="${_rsLogo}" alt="">`; }; fr.readAsDataURL(f); };
+    const dt=$("#rs-dteam"), dh=$("#rs-dteam-hint");
+    if(dt&&dh) dt.oninput=()=>{ const ms=rsAllPlayers().filter(p=>normKey(p.team)===normKey(dt.value)); dh.textContent = ms.length ? "Current players: "+ms.map(p=>p.name).join(", ") : ""; };
+    $("#rs-preview-btn").onclick=async ()=>{
+      const msg=$("#rs-msg"), body=rsCollect(rosterTab); msg.style.color=""; msg.textContent="Checking\u2026";
+      const r=await apiPost("/api/roster", {...body, dryRun:true});
+      if(!r.ok){ msg.style.color="var(--accent2,#ff6b6b)"; msg.textContent=r.error||"Something went wrong."; prev.innerHTML=""; return; }
+      msg.textContent=""; prev.innerHTML=rsPreviewHtml(r,false);
+      $("#rs-cancel").onclick=()=>{ prev.innerHTML=""; };
+      $("#rs-apply").onclick=async ()=>{
+        $("#rs-apply").disabled=true; $("#rs-apply").textContent="Saving\u2026";
+        const a=await apiPost("/api/roster", {...body, dryRun:false});
+        if(!a.ok){ msg.style.color="var(--accent2,#ff6b6b)"; msg.textContent=a.error||a.msg||"Failed."; $("#rs-apply").disabled=false; $("#rs-apply").textContent="Apply changes"; return; }
+        _rsDone=a; await reloadData(); renderAdmin();
+      };
+    };
+  };
+  document.querySelectorAll("[data-rstab]").forEach(b=>b.onclick=()=>{ rosterTab=b.dataset.rstab;
+    document.querySelectorAll("[data-rstab]").forEach(x=>x.classList.toggle("active", x===b)); prev.innerHTML=""; draw(); });
+  draw();
+  if(_rsDone){ prev.innerHTML=rsPreviewHtml(_rsDone,true); _rsDone=null; document.querySelector(".adm-roster").scrollIntoView({block:"start"}); }
+}
 function setupNewsAdmin(){
   const list=$("#art-list"); if(!list) return;
   const arts = DATA.articles||[];
@@ -2867,13 +3005,18 @@ function renderTournament(slug){
   const mref = (m, pfx)=> (m.i!=null ? ` data-match="${pfx}${m.i}"` : '');
   const treeMatch = (m, pfx="", slot, round)=>`<div class="bkt-match"${mref(m,pfx)}${slot!=null?` data-round="${round}" data-slot="${slot}"`:''}>${treeTeam(m,'a')}${treeTeam(m,'b')}</div>`;
   const isByeMatch = m => m.a==="(bye)" || m.b==="(bye)";
-  // a 3rd-place decider floats on its own — pulled out of the main tree
+  // placement deciders (3rd place, 5th-8th, 9th...) float on their own, pulled out of the main
+  // tree and grouped under their label in match order
+  const isPlacementMatch = m => m.tp || m.pl;
   const thirdPlaceBox = (rounds, pfx="")=>{
-    const tps = (rounds||[]).flatMap(rd=>rd.matches.filter(m=>m.tp));
-    if(!tps.length) return '';
-    return `<div class="bkt-third">
-      <div class="bkt-third-title">Third Place Match</div>
-      ${tps.map(m=>`<div class="bkt-third-match">${treeMatch(m,pfx)}</div>`).join("")}</div>`;
+    const pms = (rounds||[]).flatMap(rd=>rd.matches.filter(isPlacementMatch)).sort((x,y)=>(x.i||0)-(y.i||0));
+    if(!pms.length) return '';
+    const groups = [];
+    pms.forEach(m=>{ const t = m.plt || "Third Place Match";
+      let g = groups.find(x=>x.t===t); if(!g){ g={t, ms:[]}; groups.push(g); } g.ms.push(m); });
+    return groups.map(g=>`<div class="bkt-third">
+      <div class="bkt-third-title">${esc(g.t)}</div>
+      ${g.ms.map(m=>`<div class="bkt-third-match">${treeMatch(m,pfx)}</div>`).join("")}</div>`).join("");
   };
   const treeSection = (title, rounds, pfx="", tagged)=>{
     if(!rounds.length) return '';
@@ -2881,7 +3024,7 @@ function renderTournament(slug){
     // when `tagged`, stamp each match with its real round + full-round slot so connectors
     // link to the true parent (match at round r, slot s feeds round r+1, slot floor(s/2)).
     const cols = rounds.map((rd,ri)=>{
-        const matches = rd.matches.map((m,slot)=>({m,slot})).filter(x=>!isByeMatch(x.m) && !x.m.tp);
+        const matches = rd.matches.map((m,slot)=>({m,slot})).filter(x=>!isByeMatch(x.m) && !isPlacementMatch(x.m));
         if(!matches.length) return '';
         return `<div class="bkt-round">
         <div class="bkt-round-title">${esc(rd.title)}</div>

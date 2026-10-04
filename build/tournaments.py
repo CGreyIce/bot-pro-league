@@ -103,7 +103,7 @@ def process_manual(raw, team_map, alias):
                 row = {"i": m.get("i"), "a": an, "b": bn, "sa": sa, "sb": sb,
                        "w": m.get("w", 0), "aTeam": aslug, "bTeam": bslug,
                        "bo": m.get("bo", st.get("bestOf", 1)), "tp": m.get("tp", False),
-                       "ts": m.get("ts")}
+                       "pl": m.get("pl"), "plt": m.get("plt"), "ts": m.get("ts")}
                 rows.append(row)
                 combined.append({**row, "stageId": st["id"]})
             title = st.get("roundTitles", {}).get(str(r), f"Round {r}")
