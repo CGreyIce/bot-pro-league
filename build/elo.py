@@ -100,11 +100,25 @@ def apply(pro, tournaments, avg, weights, tier_fn, level_cuts, contrib_fn, norm_
         rv, i = round(v), idx[s]
         return 1 + sum(1 for o in order if o in elo and (round(elo[o]) > rv or (round(elo[o]) == rv and idx[o] < i)))
 
+    # peak rank (osu!-style "Highest Rank"): the whole ladder is re-ranked after every recorded match,
+    # so a player can peak when rivals lose too. Ties keep the FIRST date the rank was reached.
+    peak = {}
+    def update_peaks(when):
+        lad = sorted((s for s in order if s in elo), key=lambda s: (-round(elo[s]), idx[s]))
+        for i, s in enumerate(lad):
+            if s not in peak or i + 1 < peak[s][0]:
+                peak[s] = (i + 1, when)
+    # tracking starts with the first match that has a real record time: a stray old scoreboard without
+    # one must not backdate the (career-seeded) starting ladder to years ago
+    start_n = next((i for i, (_, _, m) in enumerate(recorded) if m.get("ts")), None)
+
     cutoff = (now_ts - 7 * 86400) if now_ts else None
     snap, last_prev, last_players = None, {}, set()
     traj = defaultdict(list)
     started = set()
     for n, (key, tr, m) in enumerate(recorded):
+        if n == start_n:
+            update_peaks(tr.get("date", ""))                 # the ladder when recorded play began
         if cutoff is not None and snap is None and key > cutoff:
             snap = {s: rank_of(s) for s in order}           # ranks just before the 7-day window
         in_match = {}
@@ -157,8 +171,14 @@ def apply(pro, tournaments, avg, weights, tier_fn, level_cuts, contrib_fn, norm_
             w, l = maps_won[s]
             traj[s].append([tr["slug"], tr["name"], tr.get("date", ""), round(elo[s]), rank_of(s), opp or "",
                             "W" if w > l else "L" if l > w else "D"])
+        if in_match and start_n is not None and n >= start_n:
+            update_peaks(tr.get("date", ""))
         if n == len(recorded) - 1:                         # the most recent match drives the rank arrows
             last_prev, last_players = before, set(in_match)
+
+    for p in pro:
+        if p["slug"] in peak:
+            p["peak"] = {"rank": peak[p["slug"]][0], "date": peak[p["slug"]][1]}
 
     # write the new numbers onto the players
     for p in pro:

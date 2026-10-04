@@ -12,6 +12,7 @@ Output (compact, to keep data.json small):
   data["historyEvents"]  = [[slug, name, date], ...]                 shared event table
   player["rh"] = [[eventIdx, pts, rank, opponent, result], ...]    result W/L/D, "S" = start, eventIdx -1 = now
   team["rh"]   = [[eventIdx, pts, rank, played], ...]               played 1 = the team played that event
+  team["peak"] = {"rank", "date"}   best rank + the first date it was reached (players' peak comes from elo.py)
 """
 
 
@@ -47,5 +48,15 @@ def build(pro, teams):
         if h[-1][1] != tm.get("rank_points") or h[-1][2] != tm.get("rank"):
             h.append([-1, tm.get("rank_points"), tm.get("rank"), 0])
         tm["rh"] = h
+
+    # team peak rank: best rank across the as-of-each-event tables (first date reached); "now" = newest event
+    now_date = max((e[2] for e in events if e[2]), default="")
+    for tm in teams:
+        best = None
+        for e, pts, rk, played in tm.get("rh") or []:
+            if rk and (best is None or rk < best[0]):
+                best = (rk, events[e][2] if e >= 0 else now_date)
+        if best:
+            tm["peak"] = {"rank": best[0], "date": best[1]}
 
     return {"events": events}

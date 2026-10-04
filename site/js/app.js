@@ -518,7 +518,7 @@ function renderTeam(slug){
       </div>
       ${t.provisional
         ? `<div class="ph-rank"><div class="big" style="font-size:15px;color:var(--muted)">Unranked</div><div class="lbl">Not yet pro</div></div>`
-        : `<div class="ph-rank"><div class="big">#${t.rank}</div><div class="lbl">BPL Rank</div></div>`}
+        : `<div class="ph-rank"${peakAttr(t.peak)}><div class="big">#${t.rank}</div><div class="lbl">BPL Rank</div></div>`}
       <div class="ph-rank"><div class="big">${t.rank_points}</div><div class="lbl">Points</div></div>
     </div>
     ${t.bio?`<div class="player-bio">${esc(t.bio)}</div>`:''}
@@ -528,7 +528,7 @@ function renderTeam(slug){
       <div class="infobox">
         <div class="ib-title">Team Info</div>
         <div class="ib-row"><span class="k">Tag</span><span class="v">${esc(t.tag||'—')}</span></div>
-        <div class="ib-row"><span class="k">${t.provisional?'Status':'BPL Rank'}</span><span class="v">${t.provisional?`Provisional · ${t.rank_points} pts`:`#${t.rank} · ${t.rank_points} pts`}</span></div>
+        <div class="ib-row"><span class="k">${t.provisional?'Status':'BPL Rank'}</span><span class="v"${t.provisional?'':peakAttr(t.peak)}>${t.provisional?`Provisional · ${t.rank_points} pts`:`#${t.rank} · ${t.rank_points} pts`}</span></div>
         ${t.teamElo?`<div class="ib-row" title="Results Elo from every completed match (1500 = average). It adds or removes ranking points on top of event placements."><span class="k">Results form</span><span class="v">${t.teamElo} Elo <span style="color:${t.eloPart>=0?'var(--good)':'var(--accent2)'}">(${t.eloPart>=0?'+':''}${t.eloPart} pts)</span></span></div>`:''}
         <div class="ib-row"><span class="k">Region</span><span class="v">${t.region?esc(t.region):'—'}</span></div>
         <div class="ib-row"><span class="k">Country</span><span class="v">${t.originIso?`${flag(t.originIso)} ${esc(t.originCountry||'')}`:'—'}</span></div>
@@ -670,7 +670,7 @@ function renderPlayer(slug){
         <div class="ph-sub">${p.nat?esc(p.nat)+' · ':''}${p.role?esc(p.role)+' · ':''}${t?`<a href="#/team/${t.slug}" style="color:var(--link)">${esc(t.name)}</a>`:esc(p.team||'Teamless')} · ${poolName}</div>
         <div style="margin-top:10px">${p.level?`${levelChip(p.level)}<span class="levelchip" style="margin-left:8px">Level ${p.level}</span>`:'<span class="muted">Unranked</span>'}</div>
       </div>
-      ${pr?`<div class="ph-rank"><div class="big">#${pr.rank}</div><div class="lbl">Pro Rank</div></div>`:''}
+      ${pr?`<div class="ph-rank"${peakAttr(p.peak)}><div class="big">#${pr.rank}</div><div class="lbl">Pro Rank</div></div>`:''}
       <div class="ph-rank"><div class="big">${p.ratingPoints!=null?p.ratingPoints:'—'}</div><div class="lbl">Rating Points</div></div>
     </div>
     ${p.bio?`<div class="player-bio">${esc(p.bio)}</div>`:''}
@@ -683,7 +683,7 @@ function renderPlayer(slug){
         <div class="ib-row"><span class="k">Role</span><span class="v">${esc(p.role||'—')}</span></div>
         <div class="ib-row"><span class="k">Pool</span><span class="v">${poolName}</span></div>
         <div class="ib-row"><span class="k">Rating Points</span><span class="v">${p.ratingPoints!=null?p.ratingPoints:'—'}</span></div>
-        ${pr?`<div class="ib-row"><span class="k">Pro Rank</span><span class="v">#${pr.rank} <span class="muted" style="font-size:11px">of ${pr.total}</span></span></div>`:''}
+        ${pr?`<div class="ib-row"><span class="k">Pro Rank</span><span class="v"${peakAttr(p.peak)}>#${pr.rank} <span class="muted" style="font-size:11px">of ${pr.total}</span></span></div>`:''}
         <div class="ib-row"><span class="k">Level</span><span class="v">${p.level||'—'} / 10</span></div>
         <div class="ib-row"><span class="k">Record</span><span class="v">${p.wins}-${p.losses} (${pct(p.winrate)})</span></div>
         <div class="ib-row"><span class="k">Maps</span><span class="v">${p.maps}</span></div>
@@ -1896,6 +1896,28 @@ function setupHistoryCharts(){
     const svg = ev.target.closest && ev.target.closest(".hc-svg");
     if(svg){ const hit=nearest(svg, ev); if(hit && hit.c.pts[hit.i].slug) location.hash = "#/tournament/"+hit.c.pts[hit.i].slug; }
   });
+}
+// ---- peak rank pop-out (osu!-style "Highest Rank: #1 on 2 Oct 2026") on profile ranks ----
+const PEAK_MONTHS=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function fmtPeakDate(d){ const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(d||""); return m?`${+m[3]} ${PEAK_MONTHS[+m[2]-1]} ${m[1]}`:""; }
+function peakAttr(pk){ return pk&&pk.rank ? ` data-peak-rank="${pk.rank}" data-peak-date="${esc(pk.date||"")}" tabindex="0"` : ""; }
+function setupPeakTip(){
+  let tip=document.getElementById("peak-tip");
+  if(!tip){ tip=document.createElement("div"); tip.id="peak-tip"; tip.style.display="none"; document.body.appendChild(tip); }
+  const show=el=>{
+    const d=fmtPeakDate(el.dataset.peakDate);
+    tip.innerHTML=`Highest Rank: <b>#${esc(el.dataset.peakRank)}</b>${d?` on ${d}`:""}`;
+    tip.style.display="block";
+    const r=el.getBoundingClientRect(), w=tip.offsetWidth;
+    tip.style.left=Math.max(8, Math.min(document.documentElement.clientWidth-w-8, r.left+window.scrollX+r.width/2-w/2))+"px";
+    tip.style.top=(r.top+window.scrollY-tip.offsetHeight-10)+"px";
+  };
+  document.addEventListener("mouseover", e=>{ const el=e.target.closest&&e.target.closest("[data-peak-rank]"); if(el) show(el); });
+  document.addEventListener("mouseout", e=>{ const el=e.target.closest&&e.target.closest("[data-peak-rank]");
+    if(el && !(e.relatedTarget && el.contains(e.relatedTarget))) tip.style.display="none"; });
+  document.addEventListener("focusin", e=>{ const el=e.target.closest&&e.target.closest("[data-peak-rank]"); if(el) show(el); });
+  document.addEventListener("focusout", ()=>{ tip.style.display="none"; });
+  window.addEventListener("hashchange", ()=>{ tip.style.display="none"; });
 }
 function setupFormTip(){
   let tip=document.getElementById("form-tip");
@@ -3938,6 +3960,7 @@ loadData().then(async d=>{
   setupRosterPop();
   setupFormTip();
   setupHistoryCharts();
+  setupPeakTip();
   setupNav();
   window.addEventListener("hashchange", router);
   router();
