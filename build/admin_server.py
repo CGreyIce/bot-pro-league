@@ -40,6 +40,17 @@ def load_articles():
 def save_articles(lst):
     json.dump(lst, open(ARTICLES, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
+DRAFTS = os.path.join(ROOT, "data", "article_drafts.json")
+
+def load_drafts():
+    try:
+        return json.load(open(DRAFTS, encoding="utf-8"))
+    except Exception:
+        return []
+
+def save_drafts(lst):
+    json.dump(lst, open(DRAFTS, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
 def regenerate():
     """Re-run the data pipeline so the site reflects the latest manual edits."""
     r = subprocess.run([sys.executable, os.path.join(ROOT, "build", "parse.py")],
@@ -104,6 +115,8 @@ class Handler(SimpleHTTPRequestHandler):
         if path == "/api/state":
             return self._json(200, {"ok": True, "admin": True,
                                     "tournaments": manual.list_manual(), "teams": team_names()})
+        if path == "/api/drafts":
+            return self._json(200, {"ok": True, "drafts": load_drafts()})
         if path == "/api/roster/meta":
             return self._json(200, {"ok": True, **roster.meta()})
         if path == "/api/solo/list":
@@ -185,8 +198,14 @@ class Handler(SimpleHTTPRequestHandler):
                        "body": b.get("body") or ""}
                 arts = [a for a in arts if a.get("slug") != slug]      # replace when editing
                 arts.append(art)
-                save_articles(arts); ok, msg = regenerate()
+                save_articles(arts)
+                if b.get("draftId"):                                 # publishing a draft removes it
+                    save_drafts([d for d in load_drafts() if d.get("id") != b["draftId"]])
+                ok, msg = regenerate()
                 return self._json(200, {"ok": ok, "msg": msg, "slug": slug})
+            elif path == "/api/draft/delete":
+                save_drafts([d for d in load_drafts() if d.get("id") != b.get("id")])
+                return self._json(200, {"ok": True})
             elif path == "/api/article/delete":
                 save_articles([a for a in load_articles() if a.get("slug") != b.get("slug")])
                 ok, msg = regenerate()

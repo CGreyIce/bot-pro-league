@@ -118,6 +118,11 @@ def run(data, data_dir):
         for kind, slug in LINK_RE.findall(body):
             if slug not in targets[kind]:
                 h.add("error", "Articles", f"'{a.get('title')}' links to a {kind} that doesn't exist: {slug}", link)
+        for nm in a.get("unresolved", []):
+            h.add("error", "Articles", f"'{a.get('title')}' has a [[{nm}]] link that doesn't match any player, team or event.", link)
+        for nm in a.get("ambiguous", []):
+            h.add("warning", "Articles", f"'{a.get('title')}': [[{nm}]] matches more than one page (linked the team). "
+                  f"Write [[player:{nm}]] or [[event:{nm}]] to pick another.", link)
         if "—" in body or "–" in body:
             h.add("warning", "Articles", f"'{a.get('title')}' contains an em/en dash (house style: none).", link)
         if re.search(r"\bsides?\b", body, re.I):

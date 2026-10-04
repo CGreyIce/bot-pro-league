@@ -235,6 +235,7 @@ function renderHome(){
         <a href="#/news" class="muted" style="margin-left:auto;font-size:12px">All news →</a></h2>
       <div class="news-list">${DATA.articles.slice(0,3).map(newsCard).join('')}</div>
     </div>`:''}
+    ${storylinesHtml()}
     <div class="grid home-grid">
       <div>
         <h2 class="section-title"><span class="accent-bar"></span>Top Teams</h2>
@@ -264,6 +265,26 @@ function renderHome(){
         </div>
       </div>
     </div>`;
+}
+
+// ---- Storylines (build/storylines.py: what just happened, recomputed every build) ----
+const STORY_ICON = {live:"●", record:"★", champion:"🏆", promotion:"⬆", transfer:"⇄", top:"♛",
+  upset:"⚡", climbers:"▲", streak:"🔥", milestone:"◆"};
+function storylinesHtml(){
+  const cards = DATA.storylines||[]; if(!cards.length) return '';
+  const now = Date.now()/1000;
+  const card = c=>{
+    const fresh = c.ts && (now-c.ts) < 7*86400;
+    const body = c.items
+      ? `<div class="story-items">${c.items.map(i=>`<a class="si-row" href="${esc(i.link)}"><span>${esc(i.name)}</span><b>${esc(i.val)}</b></a>`).join("")}</div>`
+      : `<div class="story-text">${esc(c.text||"")}</div>`;
+    return `<div class="story story-${esc(c.kind)}">
+      <div class="story-hd"><span class="story-label"><span class="story-ic">${STORY_ICON[c.kind]||"•"}</span>${esc(c.label)}</span>${fresh?'<span class="story-new">NEW</span>':''}</div>
+      <a class="story-title" href="${esc(c.link||'#/')}">${esc(c.title)}</a>${body}</div>`;
+  };
+  return `<div class="home-stories">
+    <h2 class="section-title"><span class="accent-bar"></span>Storylines <span class="muted" style="font-size:11px">what's happening in the league right now</span></h2>
+    <div class="story-grid">${cards.map(card).join("")}</div></div>`;
 }
 
 // ---- News / Articles ----
@@ -2163,12 +2184,16 @@ async function renderAdmin(){
             <div style="flex:1"><label class="adm-l">Author (optional)</label><input id="art-author" class="adm-in" placeholder="BPL Staff"></div>
           </div>
           <label class="adm-l">Body</label>
-          <textarea id="art-body" class="adm-in" rows="10" placeholder="Write the article here…&#10;&#10;Blank line between paragraphs."></textarea>
+          <input type="hidden" id="art-draft">
+          <div class="art-wrap"><textarea id="art-body" class="adm-in" rows="10" placeholder="Write the article here…&#10;&#10;Blank line between paragraphs. Type [[ to link a player, team or event."></textarea>
+          <div id="art-ac" class="art-ac" hidden></div></div>
+          <div class="muted" style="font-size:11px;margin-top:4px">Links: type <code>[[</code> and pick a name, e.g. <code>[[rebebx]]</code>. Custom text: <code>[[Aimpunch|the champions]]</code>.</div>
           <button id="art-save" class="adm-btn" style="margin-top:8px">Save article</button>
           <button id="art-new" class="adm-btn" style="margin-top:6px;background:var(--panel);border:1px solid var(--border);color:var(--text)">+ New (clear)</button>
           <div id="art-msg" class="muted" style="font-size:12px;margin-top:8px"></div>
         </div>
         <div>
+          <div id="art-drafts"></div>
           <h3 class="rec-group" style="margin-top:0">Published articles <span id="art-count" class="muted" style="font-size:11px"></span></h3>
           <input id="art-filter" class="adm-in" placeholder="Filter by title or date…" style="margin-bottom:8px">
           <div id="art-list" class="adm-list adm-list-scroll"><p class="muted">None yet.</p></div>
@@ -2730,11 +2755,83 @@ async function setupRosterAdmin(){
   draw();
   if(_rsDone){ prev.innerHTML=rsPreviewHtml(_rsDone,true); _rsDone=null; document.querySelector(".adm-roster").scrollIntoView({block:"start"}); }
 }
+// ---- auto news drafts (build/storylines.py writes them; the admin edits + publishes or discards) ----
+async function loadDrafts(){
+  const box=$("#art-drafts"); if(!box) return;
+  const r=await fetch("/api/drafts").then(r=>r.json()).catch(()=>null);
+  const ds=(r&&r.ok&&r.drafts)||[];
+  if(!ds.length){ box.innerHTML=""; return; }
+  box.innerHTML=`<h3 class="rec-group" style="margin-top:0">Drafts <span class="muted" style="font-size:11px">(${ds.length}) written automatically from what just happened; edit, then save to publish</span></h3>
+    <div class="adm-list adm-list-scroll" style="margin-bottom:14px">${ds.slice().reverse().map(d=>`<div class="adm-trow draft-row">
+      <span class="draft-kind">${esc(d.kind)}</span>
+      <span class="adm-name" style="flex:1;min-width:0">${esc(d.title)}${d.note?`<div class="draft-note">${esc(d.note)}</div>`:''}</span>
+      <button class="adm-btn draft-edit" data-dedit="${esc(d.id)}" style="margin:0;padding:3px 10px;font-size:11px">Edit</button>
+      <button class="adm-del" data-ddel="${esc(d.id)}" title="Discard draft">\u2715</button></div>`).join("")}</div>`;
+  box.querySelectorAll("[data-dedit]").forEach(b=>b.onclick=()=>{
+    const d=ds.find(x=>x.id===b.dataset.dedit); if(!d) return;
+    $("#art-slug").value=""; $("#art-title").value=d.title; $("#art-date").value=d.date||rsLeagueToday();
+    $("#art-author").value="BPL Staff"; $("#art-body").value=d.body; $("#art-draft").value=d.id;
+    $("#art-formtitle").textContent="Draft: "+d.title; $("#art-msg").textContent=d.note||"";
+    $("#art-title").scrollIntoView({behavior:"smooth", block:"center"});
+  });
+  box.querySelectorAll("[data-ddel]").forEach(b=>b.onclick=async ()=>{
+    if(!confirm("Discard this draft? It won't be written again.")) return;
+    await apiPost("/api/draft/delete",{id:b.dataset.ddel}); loadDrafts();
+  });
+}
+// [[ autocomplete for the article editor: players, teams and events
+function linkTargets(){
+  const out=[], seen={};
+  const add=(name,kind,sub)=>{ const k=normKey(name); if(!k) return; (seen[k]=seen[k]||[]).push(kind); out.push({name,kind,sub,k}); };
+  (DATA.teams||[]).forEach(t=>add(t.name,"team", t.provisional?"provisional":(t.rank?"#"+t.rank+" in BPL":"")));
+  [...(DATA.players.pro||[]),...(DATA.players.solo||[])].forEach(p=>add(p.name,"player", p.team?p.team:"free agent"));
+  (DATA.tournaments||[]).forEach(t=>add(t.name,"event", t.date||"event"));
+  out.forEach(o=>o.ambiguous=seen[o.k].length>1);
+  return out;
+}
+function setupLinkAutocomplete(ta, box){
+  if(!ta||!box) return;
+  let targets=null, items=[], sel=0, q=null;
+  const close=()=>{ box.hidden=true; q=null; };
+  const query=()=>{ const pos=ta.selectionStart, before=ta.value.slice(0,pos);
+    const m=before.match(/\[\[([^\[\]|\n]{0,40})$/); return m?m[1]:null; };
+  const draw=()=>{
+    box.innerHTML=items.map((o,i)=>`<div class="ac-row ${i===sel?'on':''}" data-i="${i}"><span class="ac-kind ac-${o.kind}">${o.kind}</span>
+      <span class="ac-name">${esc(o.name)}</span><span class="ac-sub">${esc(o.sub)}</span></div>`).join("");
+    box.querySelectorAll(".ac-row").forEach(r=>r.onmousedown=e=>{ e.preventDefault(); sel=+r.dataset.i; accept(); });
+  };
+  const update=()=>{
+    q=query(); if(q==null){ close(); return; }
+    targets=targets||linkTargets();
+    const t=q.replace(/^(player|team|event)\s*:\s*/i,"").toLowerCase(), nk=normKey(t);
+    items=targets.filter(o=>!nk || o.k.includes(nk) || o.name.toLowerCase().includes(t))
+      .sort((a,b)=>(b.k.startsWith(nk)-a.k.startsWith(nk)) || a.name.localeCompare(b.name)).slice(0,8);
+    if(!items.length){ close(); return; }
+    sel=Math.min(sel,items.length-1); box.hidden=false; draw();
+  };
+  const accept=()=>{
+    const o=items[sel]; if(!o||q==null) return;
+    const pos=ta.selectionStart, start=pos-q.length;
+    const ins=(o.ambiguous?o.kind+":":"")+o.name+"]]";
+    const after=ta.value.slice(pos).replace(/^[^\[\]\n]*\]\]/, "");      // replace any half-typed name + ]]
+    ta.value=ta.value.slice(0,start)+ins+after; const c=start+ins.length; ta.setSelectionRange(c,c); close(); ta.focus();
+  };
+  ta.addEventListener("input", ()=>{ sel=0; update(); });
+  ta.addEventListener("click", update);
+  ta.addEventListener("blur", ()=>setTimeout(close,150));
+  ta.addEventListener("keydown", e=>{
+    if(box.hidden) return;
+    if(e.key==="ArrowDown"){ sel=(sel+1)%items.length; draw(); e.preventDefault(); }
+    else if(e.key==="ArrowUp"){ sel=(sel-1+items.length)%items.length; draw(); e.preventDefault(); }
+    else if(e.key==="Enter"||e.key==="Tab"){ accept(); e.preventDefault(); }
+    else if(e.key==="Escape"){ close(); e.preventDefault(); }
+  });
+}
 function setupNewsAdmin(){
   const list=$("#art-list"); if(!list) return;
   const arts = DATA.articles||[];
   const clearForm=()=>{ $("#art-slug").value=""; $("#art-title").value=""; $("#art-author").value="";
-    $("#art-body").value=""; $("#art-date").value=new Date().toISOString().slice(0,10);
+    $("#art-body").value=""; $("#art-date").value=rsLeagueToday(); $("#art-draft").value="";
     $("#art-formtitle").textContent="New Article"; $("#art-msg").textContent=""; };
   clearForm();
   const filterEl=$("#art-filter"), countEl=$("#art-count");
@@ -2752,7 +2849,7 @@ function setupNewsAdmin(){
       if(e.target.closest("[data-artdel]")) return;
       const a=arts.find(x=>x.slug===row.dataset.artedit); if(!a) return;
       $("#art-slug").value=a.slug; $("#art-title").value=a.title||""; $("#art-date").value=a.date||"";
-      $("#art-author").value=a.author||""; $("#art-body").value=a.body||"";
+      $("#art-author").value=a.author||""; $("#art-body").value=a.src||a.body||""; $("#art-draft").value="";
       $("#art-formtitle").textContent="Editing: "+a.title; $("#art-msg").textContent="";
       $("#art-title").scrollIntoView({behavior:"smooth", block:"center"});
     });
@@ -2764,12 +2861,14 @@ function setupNewsAdmin(){
   };
   renderList("");
   if(filterEl) filterEl.oninput=()=>renderList(filterEl.value);
+  setupLinkAutocomplete($("#art-body"), $("#art-ac"));
+  loadDrafts();
   $("#art-new").onclick=clearForm;
   $("#art-save").onclick=async ()=>{
     const title=$("#art-title").value.trim(), msg=$("#art-msg");
     if(!title){ msg.style.color="var(--accent2,#ff6b6b)"; msg.textContent="Enter a title."; return; }
     msg.style.color=""; msg.textContent="Saving…";
-    const r=await apiPost("/api/article/save",{slug:$("#art-slug").value.trim(), title,
+    const r=await apiPost("/api/article/save",{slug:$("#art-slug").value.trim(), title, draftId:$("#art-draft").value||undefined,
       date:$("#art-date").value, author:$("#art-author").value.trim(), body:$("#art-body").value});
     if(r.ok){ await reloadData(); renderAdmin(); }
     else { msg.style.color="var(--accent2,#ff6b6b)"; msg.textContent="Error: "+(r.msg||r.error||"failed"); }

@@ -852,7 +852,11 @@ def main():
                 o["w"] += 1 if won else 0; o["l"] += 0 if won else 1
         return out
     latest_contrib = scoreboard_contrib(max(sb_matches, key=lambda x: x[0])[1]) if sb_matches else {}
-    compute_player_deltas(pro, pro_avg, latest_contrib)
+    # pro Rating Points = opponent-aware Elo + performance (build/elo.py), seeded from the career
+    # (stat-formula) rating above; it also sets the rank arrows and each player's chart trajectory
+    import elo, time as _time
+    _elo = elo.apply(pro, tournaments, pro_avg, WEIGHTS, tier_for, _LEVEL_CUTS, scoreboard_contrib, norm_key,
+                     now_ts=_time.time())
     compute_player_deltas(amateur, am_avg, latest_contrib)
     compute_player_deltas(solo, solo_avg, solo_contrib, rating_fn=_solo_rating_value)   # solo arrows follow the last solo game
 
@@ -1697,7 +1701,17 @@ def main():
     # ---- news / articles (admin-authored) ----
     ap = os.path.join(DATA, "articles.json")
     articles = json.load(open(ap, encoding="utf-8")) if os.path.exists(ap) else []
+    # [[wiki links]] -> real links (the editor keeps the original in "src"); unknown names are reported
+    import wikilinks
+    _wix = wikilinks.Index(pro + amateur + solo, teams, tournaments, DATA)
     for a in articles:
+        if "[[" in (a.get("body") or ""):
+            a["src"] = a["body"]
+            a["body"], _unres, _amb = wikilinks.resolve(a["src"], _wix)
+            if _unres:
+                a["unresolved"] = _unres
+            if _amb:
+                a["ambiguous"] = _amb
         raw = a.get("body", "")
         raw = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", raw)   # [text](url) -> text
         raw = re.sub(r"\*\*([^*]+)\*\*", r"\1", raw).replace("*", "")   # drop bold/italic markers
@@ -1730,10 +1744,8 @@ def main():
     # ---- rating / ranking history (build/history.py): rebuilt from recorded scoreboards (players)
     # and completed events (teams) every build, so profile charts always end on the live numbers ----
     import history
-    import time as _time
-    _hist = history.build(pro, teams, tournaments, pro_avg, WEIGHTS, points_for, scoreboard_contrib, norm_key,
-                          (_placement_points, _group_points, TIER_POINT_MULT, POINTS_HALFLIFE_DAYS, _pdate),
-                          now_ts=_time.time())
+    _hist = history.build(pro, teams, tournaments,
+                          (_placement_points, _group_points, TIER_POINT_MULT, POINTS_HALFLIFE_DAYS, _pdate))
     history_events = _hist["events"]
 
     data = {
@@ -1754,6 +1766,10 @@ def main():
         "soloGameStats": solo_game_stats,
         "stacks": stacks,
     }
+    # ---- storylines + auto news drafts (build/storylines.py): what just happened since the last build ----
+    import storylines
+    data["storylines"] = storylines.run(data, DATA, climbers=_elo["climbers"])
+
     # ---- site health check (build/health.py): results go to the log + the admin Site Health panel ----
     from health import run as run_health
     data["health"] = run_health(data, DATA)
