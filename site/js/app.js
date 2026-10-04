@@ -529,6 +529,7 @@ function renderTeam(slug){
         <div class="ib-title">Team Info</div>
         <div class="ib-row"><span class="k">Tag</span><span class="v">${esc(t.tag||'—')}</span></div>
         <div class="ib-row"><span class="k">${t.provisional?'Status':'BPL Rank'}</span><span class="v">${t.provisional?`Provisional · ${t.rank_points} pts`:`#${t.rank} · ${t.rank_points} pts`}</span></div>
+        ${t.teamElo?`<div class="ib-row" title="Results Elo from every completed match (1500 = average). It adds or removes ranking points on top of event placements."><span class="k">Results form</span><span class="v">${t.teamElo} Elo <span style="color:${t.eloPart>=0?'var(--good)':'var(--accent2)'}">(${t.eloPart>=0?'+':''}${t.eloPart} pts)</span></span></div>`:''}
         <div class="ib-row"><span class="k">Region</span><span class="v">${t.region?esc(t.region):'—'}</span></div>
         <div class="ib-row"><span class="k">Country</span><span class="v">${t.originIso?`${flag(t.originIso)} ${esc(t.originCountry||'')}`:'—'}</span></div>
         <div class="ib-row"><span class="k">Origin</span><span class="v">${esc(t.origin||'—')}</span></div>
@@ -575,7 +576,12 @@ function renderTeam(slug){
         }).join("")}</div>`:''}
         ${lineupTimelineHtml(t)}
         ${(t.events&&t.events.length)?(()=>{
-          const pb={}; (t.points_breakdown||[]).forEach(b=>pb[b.slug]=(pb[b.slug]||0)+b.points);
+          const pb={}, pbd={}; (t.points_breakdown||[]).forEach(b=>{ pb[b.slug]=(pb[b.slug]||0)+b.points; pbd[b.slug]=b; });
+          const mult=b=>{ if(!b||b.field==null) return ''; const tags=[];
+            if(Math.abs(b.field-1)>=0.005) tags.push(`<span class="pts-mult ${b.field>1?'up':'down'}" title="Field strength: how strong the teams they beat were">×${b.field.toFixed(2)}</span>`);
+            if(b.core<1) tags.push(`<span class="pts-mult down" title="Core rule: fewer than 3 of the players who earned this are still on the team">core ×${b.core}</span>`);
+            return tags.join(''); };
+          const tip=b=>b&&b.base!=null?` title="${b.base} placement pts × ${b.field} field × ${b.core} core"`:'';
           return `
         <h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Tournament Results <span class="muted" style="font-size:11px">(${t.events.length})</span></h2>
         <div class="tablewrap"><table class="data">
@@ -585,8 +591,9 @@ function renderTeam(slug){
             <td><span class="event-tier ${TIER_CLASS[e.tier]}">${esc(e.tierLabel.toUpperCase())}</span></td>
             <td class="name-cell"><a href="#/tournament/${e.slug}">${esc(e.name)}</a></td>
             <td>${e.isChampion?'<span class="star">★</span> <strong>Champion</strong>':(e.placementLabel?esc(e.placementLabel):'#'+e.placement)}</td>
-            <td class="mono" style="color:var(--accent)">${pb[e.slug]!=null?'+'+Math.round(pb[e.slug]):'—'}</td>
-          </tr>`).join("")}</tbody></table></div>`;})():''}
+            <td class="mono" style="color:var(--accent)"${tip(pbd[e.slug])}>${pb[e.slug]!=null?'+'+Math.round(pb[e.slug]):'—'}${mult(pbd[e.slug])}</td>
+          </tr>`).join("")}</tbody></table></div>
+        ${t.teamElo?`<div class="muted" style="font-size:11px;margin-top:6px">Ranking points = placements (decaying over 2 years) × field strength × core rule, plus results form: ${t.eloPart>=0?'+':''}${t.eloPart} pts from a ${t.teamElo} results Elo.</div>`:''}`;})():''}
         <h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Playoff & S-Tier History</h2>
         ${playoffHtml}
         ${(t.h2h&&t.h2h.length)?`

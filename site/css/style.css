@@ -585,6 +585,8 @@ textarea.adm-in{resize:vertical}
 .gf-btns button.on{background:var(--link);border-color:var(--link);color:#0b0f17;font-weight:700}
 .gf-foot{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:10px}
 .gf-done{margin-top:10px;color:var(--good);font-size:12.5px;font-weight:600}
+.pts-mult{display:inline-block;margin-left:6px;font-size:10px;font-weight:700;padding:1px 5px;border-radius:4px;background:var(--bg)}
+.pts-mult.up{color:var(--good)}.pts-mult.down{color:var(--accent2)}
 .home-stories{margin-bottom:22px}
 .story-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:10px}
 .story{position:relative;background:var(--panel);border:1px solid var(--border);border-left:3px solid var(--muted);border-radius:10px;padding:10px 12px 11px;min-width:0}

@@ -1174,6 +1174,12 @@ def main():
                 })
         tr["attending"] = att
 
+    # ---- BPL team ranking (build/team_rank.py): opponent-weighted placements + results Elo + core rule.
+    # Needs the attending rosters above (ad-hoc squad strength, who earned each result), so it runs here
+    # and supersedes the placement-only compute_team_points() pass earlier in the build.
+    import team_rank
+    team_rank.apply(teams, tournaments, pro + amateur + solo, TIER_POINT_MULT, _placement_points, _group_points)
+
     # ---- Nations Cup: each nation's team = the winning squad from its qualifier ----
     # A qualifier carries "nationTeam" (e.g. "Team Singapore"); once it has a champion (the
     # winning squad), copy that squad's five players onto the matching Nations Cup team. Until
@@ -1744,8 +1750,7 @@ def main():
     # ---- rating / ranking history (build/history.py): rebuilt from recorded scoreboards (players)
     # and completed events (teams) every build, so profile charts always end on the live numbers ----
     import history
-    _hist = history.build(pro, teams, tournaments,
-                          (_placement_points, _group_points, TIER_POINT_MULT, POINTS_HALFLIFE_DAYS, _pdate))
+    _hist = history.build(pro, teams)
     history_events = _hist["events"]
 
     data = {

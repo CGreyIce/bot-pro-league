@@ -16,5 +16,14 @@
   "title": "rebebx is the new #1",
   "text": "Top of the player rankings at 1816 points, passing Laburi",
   "link": "#/player/rebebx"
+ },
+ {
+  "id": "top:team:cosmos:2026-10-14",
+  "type": "top",
+  "ts": 1791153023,
+  "date": "2026-10-14",
+  "title": "Cosmos take over #1",
+  "text": "Top of the BPL ranking with 839 points",
+  "link": "#/team/cosmos"
  }
 ]
