@@ -1727,11 +1727,21 @@ def main():
     from bio_engine import build_bios
     build_bios(pro, amateur, solo, tournaments, teams, hall_of_fame, DATA, rank_climb)
 
+    # ---- rating / ranking history (build/history.py): rebuilt from recorded scoreboards (players)
+    # and completed events (teams) every build, so profile charts always end on the live numbers ----
+    import history
+    import time as _time
+    _hist = history.build(pro, teams, tournaments, pro_avg, WEIGHTS, points_for, scoreboard_contrib, norm_key,
+                          (_placement_points, _group_points, TIER_POINT_MULT, POINTS_HALFLIFE_DAYS, _pdate),
+                          now_ts=_time.time())
+    history_events = _hist["events"]
+
     data = {
         "teams": teams,
         "articles": articles,
         "hallOfFame": hall_of_fame,
         "rankClimbRecord": rank_climb or None,
+        "historyEvents": history_events,
         "players": {"pro": pro, "amateur": amateur, "solo": solo},
         "pool_avg": {"pro": pro_avg, "amateur": am_avg, "solo": solo_avg},
         "weights": WEIGHTS,

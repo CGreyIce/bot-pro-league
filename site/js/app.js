@@ -533,6 +533,8 @@ function renderTeam(slug){
           const title = `${r.result==='W'?'Won':'Lost'} vs ${esc(r.opp||'?')}${r.sf!=null?` (${r.sf}-${r.sa})`:''} · ${esc(r.event)}`;
           return `<a class="formpill ${r.result==='W'?'fw':'fl'}" href="#/tournament/${r.eventSlug}" title="${title}">${r.result}</a>`;
         }).join("")}</div>`:''}
+        ${t.provisional?'':historyChartHtml("t-"+t.slug, teamHistorySeries(t), {title:"Ranking History", ptsLabel:"BPL points", time:true,
+          note:"BPL points and rank after every completed event · filled dots = events they played"})}
         <h2 class="section-title"><span class="accent-bar"></span>Roster</h2>
         <div class="roster">${rosterHtml||'<p class="muted">No roster on record.</p>'}</div>
         ${(t.formerPlayers&&t.formerPlayers.length)?`
@@ -706,6 +708,8 @@ function renderPlayer(slug){
           return `<h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>Recent Form
             <span class="muted" style="font-size:11px">last ${last.length} map${last.length===1?'':'s'} · ${w}-${l} · ${avg.toFixed(2)} avg RTG</span></h2>
             <div class="form-row">${formDots(log)}${formSpark(log)}</div>`; })()}
+        ${historyChartHtml("p-"+p.slug, playerHistorySeries(p), {title:"Rating History", ptsLabel:"Rating points",
+          note:"after every recorded match · hover for details, click a point to open the event"})}
         ${(()=>{ const ms=playerMapStats(playerFormLog(p.slug)); if(!ms) return '';
           const wr=m=>`${Math.round(m.wr*100)}% <span class="pmap-rec">${m.w}-${m.l}</span>`;
           const bg=m=> VETO_IMG[m.map] ? `<div class="pmap-bg" style="background-image:url('assets/maps/${VETO_IMG[m.map]}')"></div>` : '';
@@ -1737,6 +1741,133 @@ function formSpark(log){
   const bars=rec.map((x,i)=>{ const h=Math.max(3,(H-6)*((x.rtg-lo)/((hi-lo)||1)));
     return `<rect class="fs-bar" x="${i*(BW+GAP)}" y="${H-h}" width="${BW}" height="${h}" rx="2" fill="${rtgColor(x.rtg)}" ${formDotAttrs(x)}></rect>`; }).join("");
   return `<svg class="form-spark" width="${rec.length*(BW+GAP)}" height="${H}" aria-label="recent rating trend">${bars}</svg>`;
+}
+// ---------------- rating / ranking history charts ----------------
+// Series come from build/history.py (rebuilt every build). Players: one point per recorded match,
+// grouped into event bands. Teams: points/rank after every completed event, on a time axis.
+const _hc = {};
+function playerHistorySeries(p){
+  const ev = DATA.historyEvents||[];
+  return (p.rh||[]).map(([e,pts,rk,opp,res])=>({ pts, rk, e,
+    ev: e>=0 ? ev[e][1] : "Now", date: e>=0 ? ev[e][2] : "", slug: e>=0 ? ev[e][0] : "", res,
+    sub: res==="S" ? "Before their first recorded match" : res==="N" ? "Today: other players' results have moved the ladder"
+       : `${res==="W"?"Won":res==="L"?"Lost":"Drew"} vs ${opp||"?"}` }));
+}
+function teamHistorySeries(t){
+  const ev = DATA.historyEvents||[];
+  const now = (DATA.tournaments||[]).map(x=>x.date||"").reduce((a,b)=>b>a?b:a,"");
+  return (t.rh||[]).map(([e,pts,rk,played])=>({ pts, rk, e, played: !!played,
+    ev: e>=0 ? ev[e][1] : "Now", date: e>=0 ? ev[e][2] : now, slug: e>=0 ? ev[e][0] : "",
+    sub: e<0 ? "Today (older results keep decaying)" : played ? "Played this event" : "Didn't play: other results and decay moved the table" }));
+}
+function historyChartHtml(id, pts, opts){
+  if(!pts || pts.length<2) return '';
+  _hc[id] = {pts, time:!!opts.time, mode:(_hc[id]&&_hc[id].mode)||"pts", ptsLabel:opts.ptsLabel||"Points"};
+  const m = _hc[id].mode;
+  return `<h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>${esc(opts.title)}
+      <span class="hc-toggle" data-hcid="${id}"><button type="button" data-hcmode="pts" class="${m==='pts'?'on':''}">${esc(_hc[id].ptsLabel)}</button><button type="button" data-hcmode="rk" class="${m==='rk'?'on':''}">Rank</button></span></h2>
+    <div class="hc" id="hc-${id}" data-hcid="${id}">${hcSvg(id)}</div>
+    ${opts.note?`<div class="hc-note">${esc(opts.note)}</div>`:''}`;
+}
+function hcNice(lo, hi, n, integer){   // the largest "nice" step that still gives >= 3 ticks in lo..hi
+  const span = hi-lo || 1, mag = Math.pow(10, Math.floor(Math.log10(span/n)));
+  const ks = integer ? [1,2,5] : [1,2,2.5,5];
+  const steps = [mag/10, mag, mag*10].flatMap(m=>ks.map(k=>k*m)).filter(st=>!integer || (st>=1 && Number.isInteger(st)));
+  const ticksFor = st=>{ const out=[]; for(let v=Math.ceil(lo/st-1e-9)*st; v<=hi+1e-9; v+=st) out.push(Math.round(v*100)/100); return out; };
+  let best = ticksFor(steps[0]);
+  for(const st of steps){ const t=ticksFor(st); if(t.length>=3 && t.length<=n+2) best=t; }
+  return best;
+}
+function hcSvg(id){
+  const c=_hc[id], P=c.pts, n=P.length, W=820, H=230, L=48, R=14, T=12, B=c.time?24:36;
+  const key = c.mode==="rk" ? "rk" : "pts";
+  const vals = P.map(p=>p[key]).filter(v=>v!=null);
+  if(!vals.length) return '<p class="muted" style="font-size:12px">No ranked history yet.</p>';
+  let lo=Math.min(...vals), hi=Math.max(...vals);
+  if(key==="pts"){ const pad=(hi-lo)*0.12||20; lo-=pad; hi+=pad; } else { lo=Math.max(1,lo-1); hi=hi+1; }
+  const ys = v => key==="rk" ? T+(v-lo)/((hi-lo)||1)*(H-T-B) : T+(hi-v)/((hi-lo)||1)*(H-T-B);
+  let xs;
+  if(c.time){ const ts=P.map(p=>Date.parse(p.date)), t0=Math.min(...ts), t1=Math.max(...ts);
+    xs = ts.map(t=> t1>t0 ? L+(t-t0)/(t1-t0)*(W-L-R) : (L+W-R)/2); }
+  else xs = P.map((_,i)=> L+(n>1 ? i/(n-1) : .5)*(W-L-R));
+  c.geo = {xs, W, H, L, R, T, B, ys:P.map(p=>p[key]!=null?ys(p[key]):null)};
+  // y grid
+  const ticks = key==="rk" ? hcNice(lo,hi,4,true).filter(v=>v>=1) : hcNice(lo,hi,4);
+  const grid = ticks.map(v=>`<line class="hc-grid" x1="${L}" x2="${W-R}" y1="${ys(v).toFixed(1)}" y2="${ys(v).toFixed(1)}"/>
+    <text class="hc-ylab" x="${L-7}" y="${(ys(v)+4).toFixed(1)}" text-anchor="end">${key==="rk"?"#"+v:v}</text>`).join("");
+  // x: event bands (players) or year ticks (teams)
+  let xaxis = "";
+  if(c.time){
+    const y0=new Date(P[0].date).getFullYear(), y1=new Date(P[n-1].date).getFullYear(), ts0=Date.parse(P[0].date), ts1=Date.parse(P[n-1].date);
+    for(let y=y0+1; y<=y1; y++){ const x=L+(Date.parse(y+"-01-01")-ts0)/((ts1-ts0)||1)*(W-L-R);
+      xaxis += `<line class="hc-grid" x1="${x.toFixed(1)}" x2="${x.toFixed(1)}" y1="${T}" y2="${H-B}"/><text class="hc-xlab" x="${x.toFixed(1)}" y="${H-8}" text-anchor="middle">${y}</text>`; }
+  } else {
+    const bands=[]; P.forEach((p,i)=>{ const k=p.e>=0?p.e:"now"; const b=bands[bands.length-1]; if(b&&b.k===k) b.j=i; else bands.push({k, i, j:i, name:p.ev}); });
+    const half = n>1 ? (W-L-R)/(n-1)/2 : 20;
+    xaxis = bands.map((b,bi)=>{ const x0=Math.max(L, xs[b.i]-half), x1=Math.min(W-R, xs[b.j]+half), w=x1-x0;
+      const chars=Math.floor(w/6.2), lab = chars>=4 ? (b.name.length>chars ? b.name.slice(0,chars-1)+"\u2026" : b.name) : "";
+      return `<rect class="hc-band ${bi%2?'odd':''}" x="${x0.toFixed(1)}" y="${T}" width="${w.toFixed(1)}" height="${H-T-B}"/>
+        ${lab?`<text class="hc-xlab" x="${((x0+x1)/2).toFixed(1)}" y="${H-B+15}" text-anchor="middle">${esc(lab)}</text>`:''}`; }).join("");
+  }
+  // line (broken where a value is missing) + area
+  let d="", started=false; P.forEach((p,i)=>{ const v=p[key]; if(v==null){ started=false; return; }
+    d += `${started?"L":"M"}${xs[i].toFixed(1)},${ys(v).toFixed(1)}`; started=true; });
+  const idx = P.map((p,i)=>p[key]!=null?i:-1).filter(i=>i>=0);
+  const area = key==="pts" && idx.length>1 ? `<path class="hc-area" d="${d}L${xs[idx[idx.length-1]].toFixed(1)},${H-B}L${xs[idx[0]].toFixed(1)},${H-B}Z"/>` : '';
+  const dots = P.map((p,i)=>{ if(p[key]==null) return '';
+    const cls = c.time ? (p.played?'hc-dot played':'hc-dot') : `hc-dot r${p.res||''}`;
+    if(c.time && !p.played && p.e>=0) return '';
+    return `<circle class="${cls}" cx="${xs[i].toFixed(1)}" cy="${ys(p[key]).toFixed(1)}" r="${c.time?3.2:3.4}"/>`; }).join("");
+  return `<svg class="hc-svg" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" data-hcid="${id}">
+    <defs><linearGradient id="hcg-${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--accent)" stop-opacity=".28"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></linearGradient></defs>
+    ${xaxis}${grid}
+    ${area.replace('class="hc-area"', `class="hc-area" fill="url(#hcg-${id})"`)}
+    <path class="hc-line" d="${d}"/>${dots}
+    <line class="hc-guide" x1="0" x2="0" y1="${T}" y2="${H-B}" style="display:none"/>
+    <circle class="hc-focus" r="5.5" cx="0" cy="0" style="display:none"/>
+    <rect class="hc-hit" x="${L}" y="${T}" width="${W-L-R}" height="${H-T-B}"/>
+  </svg>`;
+}
+function setupHistoryCharts(){
+  let tip=document.getElementById("form-tip");
+  if(!tip){ tip=document.createElement("div"); tip.id="form-tip"; tip.style.display="none"; document.body.appendChild(tip); }
+  let active=null;
+  const nearest=(svg, ev)=>{ const c=_hc[svg.dataset.hcid]; if(!c||!c.geo) return null;
+    const r=svg.getBoundingClientRect(), vx=(ev.clientX-r.left)/r.width*c.geo.W;
+    let best=-1, bd=1e9; c.geo.xs.forEach((x,i)=>{ if(c.geo.ys[i]==null) return; const dd=Math.abs(x-vx); if(dd<bd){ bd=dd; best=i; } });
+    return best<0?null:{c, i:best, r}; };
+  const hide=()=>{ if(!active) return; active.querySelector(".hc-guide").style.display="none"; active.querySelector(".hc-focus").style.display="none"; tip.style.display="none"; active=null; };
+  document.addEventListener("mousemove", ev=>{
+    const svg = ev.target.closest && ev.target.closest(".hc-svg");
+    if(!svg){ hide(); return; }
+    const hit = nearest(svg, ev); if(!hit) return;
+    if(active && active!==svg) hide();
+    active = svg;
+    const {c, i, r} = hit, p=c.pts[i], g=c.geo, x=g.xs[i], y=g.ys[i];
+    const guide=svg.querySelector(".hc-guide"), focus=svg.querySelector(".hc-focus");
+    guide.setAttribute("x1",x); guide.setAttribute("x2",x); guide.style.display="";
+    focus.setAttribute("cx",x); focus.setAttribute("cy",y); focus.style.display="";
+    const prev = c.pts.slice(0,i).reverse().find(q=>q.pts!=null);
+    const dp = prev ? p.pts-prev.pts : 0, dr = (prev && prev.rk!=null && p.rk!=null) ? prev.rk-p.rk : 0;
+    const chg = prev ? `<span class="hc-chg ${dp>0?'up':dp<0?'down':''}">${dp>0?'+':''}${dp} pts</span>${dr?` <span class="hc-chg ${dr>0?'up':'down'}">${dr>0?'\u25b2':'\u25bc'}${Math.abs(dr)}</span>`:''}` : '';
+    tip.innerHTML = `<div class="ft-rtg">${p.pts!=null?p.pts:"-"} <span>pts</span>${p.rk!=null?` <span style="font-size:16px;color:var(--text)">#${p.rk}</span>`:''}</div>
+      ${chg?`<div class="ft-sub">${chg}</div>`:''}
+      <div class="ft-sub">${esc(p.sub)}</div>
+      <div class="ft-ev">${esc(p.ev)}${p.date?" \u00b7 "+esc(p.date):""}</div>`;
+    tip.style.display="block";
+    const px = r.left + window.scrollX + x/g.W*r.width, py = r.top + window.scrollY + y/g.H*r.height;
+    const w = tip.offsetWidth||160;
+    tip.style.left = Math.max(8, Math.min(document.documentElement.clientWidth-w-8, px-w/2))+"px";
+    tip.style.top = (py - tip.offsetHeight - 12)+"px";
+  });
+  document.addEventListener("click", ev=>{
+    const b = ev.target.closest && ev.target.closest("[data-hcmode]");
+    if(b){ const id=b.parentElement.dataset.hcid, c=_hc[id]; if(!c) return;
+      c.mode=b.dataset.hcmode; b.parentElement.querySelectorAll("button").forEach(x=>x.classList.toggle("on", x===b));
+      const box=document.getElementById("hc-"+id); if(box) box.innerHTML=hcSvg(id); hide(); return; }
+    const svg = ev.target.closest && ev.target.closest(".hc-svg");
+    if(svg){ const hit=nearest(svg, ev); if(hit && hit.c.pts[hit.i].slug) location.hash = "#/tournament/"+hit.c.pts[hit.i].slug; }
+  });
 }
 function setupFormTip(){
   let tip=document.getElementById("form-tip");
@@ -3700,6 +3831,7 @@ loadData().then(async d=>{
   setupSearch();
   setupRosterPop();
   setupFormTip();
+  setupHistoryCharts();
   setupNav();
   window.addEventListener("hashchange", router);
   router();
