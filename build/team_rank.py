@@ -4,7 +4,7 @@ HLTV-style core rule and a 2-year half-life.
 
   team points = sum over completed events of
                   placement points x tier x 2-year decay x FIELD x CORE
-              + BETA x CORE_now x (results Elo - 1500)
+              + BETA x CORE_now x (results Elo - 1500)      (a penalty is capped at half the placement points)
 
   FIELD  how strong the teams you beat in that event were, blended 50/50 with the whole field
          (0.6x .. 1.4x). A title won against top teams is worth more than one won against weak ones.
@@ -24,6 +24,7 @@ from datetime import date
 
 SCALE, ALPHA, K, BETA = 600, 0.2, 32, 1.0
 FIELD_DIV, FMIN, FMAX = 500, 0.6, 1.4
+FORM_FLOOR = 0.5            # the results-Elo penalty is capped at this share of a team's placement points
 HALF = 730
 CORE = {3: 1.0, 2: 0.6, 1: 0.35, 0: 0.2}
 
@@ -137,8 +138,10 @@ def apply(teams, tournaments, players, tier_mult, placement_points, group_points
                 e = 1500 + (e - 1500) * 0.5 ** (max(0, (ref - last_s[ts]).days) / HALF)
             ev = latest_ev.get(ts)
             cf = _core(ev_roster.get((ts, ev)) if ev else None, rosters(ts))
-            out[ts] = {"place": tot.get(ts, 0.0), "elo": e, "eloPart": BETA * cf * (e - 1500), "core": cf}
-            out[ts]["total"] = max(0.0, out[ts]["place"] + out[ts]["eloPart"])
+            place = tot.get(ts, 0.0)
+            # bad form can cost a team at most half of what it earned in events, never wipe it out
+            part = max(BETA * cf * (e - 1500), -FORM_FLOOR * place)
+            out[ts] = {"place": place, "elo": e, "eloPart": part, "core": cf, "total": max(0.0, place + part)}
         return out, bd
 
     def rank_map(tbl):
