@@ -714,9 +714,8 @@ function renderPlayer(slug){
         ${p.earnings?`<div class="ib-row"><span class="k">Earnings</span><span class="v">${fmtUSD(p.earnings)}</span></div>`:''}
         ${p.playsWith?`<div class="ib-row"><span class="k">Plays with</span><span class="v"><a href="#/player/${p.playsWith.slug}" style="color:var(--link)">${flag(p.playsWith.iso)}${esc(p.playsWith.name)}</a> <span class="muted" style="font-size:11px">· ${p.playsWith.games} solo game${p.playsWith.games===1?'':'s'}</span></span></div>`:''}
       </div>
-      ${(p.prizeHistory&&p.prizeHistory.length)?`<div class="infobox prize-box"><div class="ib-title">Prize Money <span class="muted" style="font-size:11px;font-weight:400">${fmtUSD(p.earnings)}</span></div>
-        ${p.prizeHistory.slice(0,8).map(h=>`<a class="pz-row" href="#/tournament/${esc(h.slug)}"><span class="pz-ev">${esc(h.event)}<span class="muted"> · ${placeOrd(h.place)} with ${esc(h.team)}</span></span><span class="pz-amt">${fmtUSD(h.amount)}</span></a>`).join("")}
-        ${p.prizeHistory.length>8?`<div class="muted" style="font-size:11px;padding:4px 14px 10px">+ ${p.prizeHistory.length-8} more</div>`:''}</div>`:''}
+      ${(p.prizeHistory&&p.prizeHistory.length)?`<div class="infobox prize-box"><div class="ib-title">Prize Money <span class="muted" style="font-size:11px;font-weight:400">${fmtUSD(p.earnings)} · ${p.prizeHistory.length} event${p.prizeHistory.length===1?'':'s'}</span></div>
+        <div class="pz-list">${p.prizeHistory.map(h=>`<a class="pz-row" href="#/tournament/${esc(h.slug)}" title="${esc(`${h.event}: ${placeOrd(h.place)} with ${h.team}, ${fmtUSD(h.amount)}`)}"><span class="pz-ev">${esc(h.event)}<span class="muted"> · ${placeOrd(h.place)} with ${esc(h.team)}</span></span><span class="pz-amt">${fmtUSD(h.amount)}</span></a>`).join("")}</div></div>`:''}
       ${(p.teamHistory&&p.teamHistory.length)?`
       <div class="infobox teamhist">
         <div class="ib-title">Career Teams</div>
@@ -3568,10 +3567,17 @@ function renderTournament(slug){
     return `<span${hov!=null?hov:rAttr(name, teamSlug)}>${seedTag(name,teamSlug)}${inner}</span>`;
   };
 
+  // prize money sits in the standings rows themselves (build/prizes.py): team prize + per-player share
+  const prizeBy = {}; (tr.prizes||[]).forEach(x=>{ prizeBy[x.rank+'|'+normKey(x.name)] = x; });
+  const hasPrizes = !!(tr.prizes&&tr.prizes.length);
+  const prizeCell = s => { if(!hasPrizes) return ''; const x = prizeBy[s.rank+'|'+normKey(s.name)];
+    return x ? `<td class="prize-cell" title="${esc(`Prize money: ${fmtUSD(x.amount)} for the team${x.perPlayer!=null?`, ${fmtUSD(x.perPlayer)} per player`:''}`)}"><b>${fmtUSD(x.amount)}</b>${x.perPlayer!=null?`<span>${fmtUSD(x.perPlayer)} each</span>`:''}</td>`
+      : '<td class="prize-cell"><span class="muted">—</span></td>'; };
+  const prizeNote = hasPrizes ? `<span class="muted" style="font-size:11px;font-weight:400;text-transform:none;letter-spacing:0"> · ${fmtUSD(tr.prizePool)} prize pool</span>` : '';
   const standRows = tr.standings.map(s=>`<tr>
       <td class="rankcol">${s.rank}</td>
       <td class="name-cell">${crest(s.name, s.teamSlug)}</td>
-      <td class="mono">${s.w}-${s.l}</td>
+      <td class="mono">${s.w}-${s.l}</td>${prizeCell(s)}
     </tr>`).join("");
 
   const isElim = /elimination/.test(tr.type);
@@ -3676,26 +3682,21 @@ function renderTournament(slug){
          <span class="muted" style="font-size:11px">(${tr.attending.length}) · hover for roster</span></h2>
        <div class="attend-wall">${wall}</div>` : '';
 
-  const prizeSection = (tr.prizes&&tr.prizes.length) ? `
-    <h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Prize Money
-      <span class="muted" style="font-size:11px">${fmtUSD(tr.prizePool)} · split equally between each team's players</span></h2>
-    <div class="tablewrap prize-wrap"><table class="data prize-table"><thead><tr><th class="no-sort">Place</th><th class="no-sort">Team</th><th class="no-sort">Prize</th><th class="no-sort">Per player</th></tr></thead>
-      <tbody>${tr.prizes.map(x=>`<tr><td class="mono">${placeOrd(x.rank)}</td><td class="name-cell">${crest(x.name, x.teamSlug)}</td>
-        <td class="mono">${fmtUSD(x.amount)}</td><td class="mono muted">${x.perPlayer!=null?fmtUSD(x.perPlayer):'—'}</td></tr>`).join("")}</tbody></table></div>` : '';
   const fs = tr.finalStandings || [];
   const fsMedal = r => r===1?'🥇':r===2?'🥈':r===3?'🥉':'';
   const fsResultCls = res => res==='Champion'?'fs-champ':res==='Runner-up'?'fs-ru':res==='3rd Place'?'fs-3rd':res==='Group Stage'?'fs-grp':'';
   const fsRow = s => `<tr>
       <td class="rankcol fs-rank">${(s.rank<=3?fsMedal(s.rank)+' ':'')}${s.rank}</td>
       <td class="name-cell">${crest(s.name, s.teamSlug)}</td>
-      <td><span class="fs-result ${fsResultCls(s.result)}">${esc(s.result)}</span></td></tr>`;
+      <td><span class="fs-result ${fsResultCls(s.result)}">${esc(s.result)}</span></td>${prizeCell(s)}</tr>`;
   const fsPlayoff = fs.filter(s=>s.result!=='Group Stage');
   const fsGroup = fs.filter(s=>s.result==='Group Stage');
   const finalStandingsSection = fs.length ? `
-    <h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Final Standings</h2>
-    <div class="tablewrap fs-wrap"><table class="data fs-table"><tbody>${fsPlayoff.map(fsRow).join("")}</tbody></table></div>
+    <h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Final Standings${hasPrizes?`
+      <span class="muted" style="font-size:11px">${fmtUSD(tr.prizePool)} prize pool · split equally between each team's players</span>`:''}</h2>
+    <div class="tablewrap fs-wrap${hasPrizes?' fs-prize':''}"><table class="data fs-table"><tbody>${fsPlayoff.map(fsRow).join("")}</tbody></table></div>
     ${fsGroup.length?`<details class="fs-details"><summary>Group stage — ${fsGroup.length} teams that didn't advance</summary>
-       <div class="tablewrap fs-wrap"><table class="data fs-table"><tbody>${fsGroup.map(fsRow).join("")}</tbody></table></div></details>`:''}` : '';
+       <div class="tablewrap fs-wrap${hasPrizes?' fs-prize':''}"><table class="data fs-table"><tbody>${fsGroup.map(fsRow).join("")}</tbody></table></div></details>`:''}` : '';
 
   app.innerHTML = `
     <div class="crumb"><a href="#/tournaments">Tournaments</a><span class="sep">/</span>${esc(tr.name)}</div>
@@ -3715,18 +3716,16 @@ function renderTournament(slug){
       </div>
       ${champT&&champT.logo?`<img class="crest" src="${esc(champT.logo)}" alt="">`:''}
     </div>
-    ${tr.stages ? '' : `<div class="profile-grid">
+    ${tr.stages ? '' : `<div class="profile-grid${hasPrizes?' pg-prize':''}">
       <div class="infobox">
-        <div class="ib-title">Final Standings</div>
+        <div class="ib-title">Final Standings${prizeNote}</div>
         <div class="tablewrap" style="border:0;border-radius:0"><table class="data">
           <tbody>${standRows}</tbody></table></div>
       </div>
       <div>${wallSection || (tr.manual?'':'<div class="muted">No roster data.</div>')}</div>
     </div>
-    ${prizeSection}
     <h2 class="section-title" style="margin-top:24px"><span class="accent-bar"></span>${isElim?'Bracket':'Match Results'}</h2>`}
     ${tr.stages ? finalStandingsSection : ''}
-    ${tr.stages ? prizeSection : ''}
     ${tr.stages ? wallSection : ''}
     ${bracketBlock}`;
 
