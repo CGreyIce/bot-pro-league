@@ -3078,10 +3078,10 @@ function rsFormHtml(tab){
   if(tab==="transfer") return rsField("Player", rsInput("rs-player","rs-dl-players","e.g. Sadgeboi")) + hint("rs-player-hint")
     + rsField("Move to", rsInput("rs-to","rs-dl-teams","a team, or Free agent"))
     + rsField("Transfer fee (USD)", `<input id="rs-fee" class="adm-in" inputmode="numeric" placeholder="$0">`) + hint("rs-fee-hint")
-    + rsField("Date", `<input id="rs-date" class="adm-in" type="date" value="${today}">`);
+    + rsField("Date", `<input id="rs-date" class="adm-in" type="date" value="${today}">`) + `<label class="rs-check"><input id="rs-live" type="checkbox" checked> Also update running events' line-ups (only teams that haven't played there yet)</label>`;
   if(tab==="add") return rsField("Name", rsInput("rs-name","","exact in-game name"))
     + `<div style="display:flex;gap:8px"><div style="flex:1">${rsField("Country", rsSelect("rs-country", m.countries, "pick one"))}</div><div style="flex:1">${rsField("Gender", rsSelect("rs-gender", ["F","M","NB"], "pick one"))}</div></div>`
-    + rsField("Role", rsSelect("rs-role", m.roles, "pick one")) + rsField("Team (optional)", rsInput("rs-team","rs-dl-teams","Free agent"));
+    + rsField("Role", rsSelect("rs-role", m.roles, "pick one")) + rsField("Team (optional)", rsInput("rs-team","rs-dl-teams","Free agent")) + `<label class="rs-check"><input id="rs-live" type="checkbox" checked> Also update running events' line-ups (only teams that haven't played there yet)</label>`;
   if(tab==="edit") return rsField("Player", rsInput("rs-player","rs-dl-players","e.g. miorine")) + hint("rs-player-hint")
     + `<p class="muted" style="font-size:11px;margin:6px 0 0">Leave a field on "no change" to keep it.</p>`
     + rsField("Role", rsSelect("rs-role", m.roles, "no change")) + rsField("Country", rsSelect("rs-country", m.countries, "no change"))
@@ -3099,8 +3099,9 @@ function rsFormHtml(tab){
 }
 function rsCollect(tab){
   const v=id=>{ const e=$("#"+id); return e?e.value.trim():""; };
-  if(tab==="transfer") return {action:"transfer", player:v("rs-player"), to:v("rs-to")||"Free agent", date:v("rs-date"), fee:parseUSD(v("rs-fee"))};
-  if(tab==="add") return {action:"add", name:v("rs-name"), country:v("rs-country"), gender:v("rs-gender"), role:v("rs-role"), team:v("rs-team")};
+  const live = $("#rs-live") ? $("#rs-live").checked : true;
+  if(tab==="transfer") return {action:"transfer", player:v("rs-player"), to:v("rs-to")||"Free agent", date:v("rs-date"), fee:parseUSD(v("rs-fee")), liveSync:live};
+  if(tab==="add") return {action:"add", name:v("rs-name"), country:v("rs-country"), gender:v("rs-gender"), role:v("rs-role"), team:v("rs-team"), liveSync:live};
   if(tab==="edit") return {action:"edit", player:v("rs-player"), role:v("rs-role"), country:v("rs-country"), gender:v("rs-gender")};
   if(tab==="rename") return {action: v("rs-kind")==="Team"?"rename_team":"rename_player", old:v("rs-old"), new:v("rs-new")};
   if(tab==="promote") return {action:"promote", name:v("rs-pteam"), tag:v("rs-tag"), origin:v("rs-origin"),

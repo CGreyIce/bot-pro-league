@@ -270,6 +270,45 @@ class Roster:
             self.am.dirty = True
         return team
 
+    # ---- running events keep their own saved line-ups (data/hist_rosters.json); keep them in step
+    @property
+    def hist(self):
+        if not hasattr(self, "_hist"):
+            self._hist = load_json("hist_rosters.json", {})
+        return self._hist
+
+    def _sync_live(self, player, frm, to):
+        """A transfer / new signing also updates the saved line-ups of RUNNING events, for teams that
+        haven't played a match there yet: out of the old team's line-up, into the new team's. Teams that
+        have already played keep the line-up that played (a note says so)."""
+        for tr in self.data.get("tournaments", []):
+            rows = self.hist.get(tr["slug"])
+            if tr.get("champion") or not rows:
+                continue
+            ms = ([m for st in tr["stages"] for rd in st["rounds"] for m in rd["matches"]] if tr.get("stages")
+                  else [m for rd in tr.get("bracket", []) for m in rd["matches"]])
+            played = {norm(m.get(k)) for m in ms if (m.get("w") in (1, 2) or m.get("stats")) and "(bye)" not in (m.get("a"), m.get("b"))
+                      for k in ("a", "b")}
+            for row in rows:
+                team, here = row.get("team", ""), any(norm(x.get("name")) == norm(player) for x in row.get("players", []))
+                if here and norm(team) != norm(to):
+                    if norm(team) in played:
+                        self.note(f"{tr['name']}: {team} have already played, so their event line-up keeps {player} "
+                                  "(the line-up that played).")
+                        continue
+                    row["players"] = [x for x in row["players"] if norm(x.get("name")) != norm(player)]
+                    self.dirty_json.add("hist_rosters.json")
+                    self.note(f"{tr['name']}: {player} leaves {poss(team)} line-up ({len(row['players'])} players now).")
+                elif not here and to and norm(team) == norm(to):
+                    if norm(team) in played:
+                        self.note(f"{tr['name']}: {team} have already played, so {player} isn't added to their event line-up.")
+                        continue
+                    row["players"].append({"name": player, "captain": False})
+                    self.dirty_json.add("hist_rosters.json")
+                    n = len(row["players"])
+                    self.note(f"{tr['name']}: {player} joins {poss(team)} line-up ({n} players now)."
+                              + ("" if n == 5 else f" ⚠ That's {n}, not 5: move someone out too."))
+
     def _live_warning(self, p, new_team):
         """Warn when a player is on a LIVE event roster for a team other than `new_team`."""
         manual_dir = os.path.join(DATA, "manual")
@@ -279,6 +318,9 @@ class Roster:
                 continue
             for row in tr.get("attending", []):
                 if any(pl.get("slug") == p.get("slug") for pl in row.get("players", [])) and norm(row["team"]) != norm(new_team):
+                    saved = next((r for r in self.hist.get(tr["slug"], []) if norm(r.get("team")) == norm(row["team"])), None)
+                    if saved is not None and not any(norm(x.get("name")) == norm(p["name"]) for x in saved.get("players", [])):
+                        continue                          # _sync_live already took them out of that line-up
                     self.note(f"⚠ {p['name']} is playing for {row['team']} at {tr['name']} (still running). The event "
                               f"roster keeps them, but {poss(row['team'])} live line-up and veto bot_add lines will miss "
                               f"them until it ends. Site Health will flag this.")
@@ -322,7 +364,7 @@ class Roster:
     def team_data(self, name):
         return next((t for t in self.data.get("teams", []) if norm(t["name"]) == norm(name)), None)
 
-    def transfer(self, player, to, when=None, log=True, fee=0):
+    def transfer(self, player, to, when=None, log=True, fee=0, live_sync=True):
         p = self.player(player)
         when = when or self.league_today()
         frm = self.current_team(p)
@@ -359,9 +401,11 @@ class Roster:
         if log:
             self._log_move(p["name"], frm, to_lbl, when, fee)
         self._rtxt_move(p["name"], frm, to_lbl)
+        if live_sync:
+            self._sync_live(p["name"], frm, target)
         self._live_warning(p, to_lbl)
 
-    def add_player(self, name, country, gender, role, team="", when=None):
+    def add_player(self, name, country, gender, role, team="", when=None, live_sync=True):
         name = (name or "").strip()
         if not name:
             raise RosterError("Name is required.")
@@ -384,6 +428,8 @@ class Roster:
             self.note(f"Gender: {gender} ({PRONOUNS[gender]} in their bio).")
         if team and norm(team) != norm(FREE_AGENT):
             self._log_move(name, FREE_AGENT, self.page_team(team) or team, when or self.league_today())
+            if live_sync:
+                self._sync_live(name, FREE_AGENT, team.strip())
 
     def edit_player(self, player, role=None, country=None, gender=None):
         p = self.player(player)
@@ -725,7 +771,7 @@ class Roster:
         files = {"player_gender.json": self.gender, "roster_moves.json": self.moves,
                  "provisional_teams.json": self.prov, "disbanded_teams.json": self.disb,
                  "name_changes.json": self.namech, "team_changes.json": self.teamch,
-                 "player_bio_notes.json": self.notes}
+                 "player_bio_notes.json": self.notes, "hist_rosters.json": getattr(self, "_hist", None)}
         for f in self.dirty_json:
             save_json(f, files[f], indent=2 if f in ("name_changes.json", "team_changes.json", "provisional_teams.json") else 1)
         for fn in self.extra_writes:
@@ -733,8 +779,9 @@ class Roster:
 
 
 ACTIONS = {
-    "transfer": lambda r, b: r.transfer(b.get("player"), b.get("to"), b.get("date"), fee=b.get("fee") or 0),
-    "add": lambda r, b: r.add_player(b.get("name"), b.get("country"), b.get("gender", ""), b.get("role", ""), b.get("team", ""), b.get("date")),
+    "transfer": lambda r, b: r.transfer(b.get("player"), b.get("to"), b.get("date"), fee=b.get("fee") or 0, live_sync=b.get("liveSync", True)),
+    "add": lambda r, b: r.add_player(b.get("name"), b.get("country"), b.get("gender", ""), b.get("role", ""), b.get("team", ""), b.get("date"),
+                                     live_sync=b.get("liveSync", True)),
     "edit": lambda r, b: r.edit_player(b.get("player"), b.get("role") or None, b.get("country") or None, b.get("gender") or None),
     "rename_player": lambda r, b: r.rename_player(b.get("old"), b.get("new")),
     "rename_team": lambda r, b: r.rename_team(b.get("old"), b.get("new")),
