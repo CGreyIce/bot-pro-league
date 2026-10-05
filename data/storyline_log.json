@@ -25,5 +25,14 @@
   "title": "Cosmos take over #1",
   "text": "Top of the BPL ranking with 839 points",
   "link": "#/team/cosmos"
+ },
+ {
+  "id": "milestone:yukihimeowo:kills:500",
+  "type": "milestone",
+  "ts": 1791226396,
+  "date": "2026-10-16",
+  "title": "yukihimeowo: 500 career kills",
+  "text": "yukihimeowo reached 500 career kills",
+  "link": "#/player/yukihimeowo"
  }
 ]

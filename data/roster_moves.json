@@ -1,23 +1,140 @@
 [
- {"date": "2026-09-28", "player": "estellyy.", "from": "Masmark", "to": "Free agent"},
- {"date": "2026-09-28", "player": "HikariiFloofie", "from": "Free agent", "to": "Masmark"},
- {"date": "2026-09-29", "player": "Eris Suzukami", "from": "Astral Bloom", "to": "Lunar Cadence"},
- {"date": "2026-09-29", "player": "Tsumugi Kokage", "from": "Astral Bloom", "to": "Lunar Cadence"},
- {"date": "2026-09-29", "player": "Shiranami Ramune", "from": "Astral Bloom", "to": "Lunar Cadence"},
- {"date": "2026-09-29", "player": "Ginjo Saine", "from": "Lunar Cadence", "to": "Astral Bloom"},
- {"date": "2026-09-29", "player": "Kogara Toto", "from": "Lunar Cadence", "to": "Astral Bloom"},
- {"date": "2026-09-29", "player": "Yumeno Akari", "from": "Lunar Cadence", "to": "Astral Bloom"},
- {"date": "2026-09-30", "player": "Stylus", "from": "Aspire", "to": "Free agent"},
- {"date": "2026-09-30", "player": "Moira", "from": "Aspire", "to": "Free agent"},
- {"date": "2026-09-30", "player": "Chisa_Scarlett", "from": "Free agent", "to": "Aspire"},
- {"date": "2026-09-30", "player": "Mikuryne", "from": "Free agent", "to": "Aspire"},
- {"date": "2026-10-04", "player": "Aranionja", "from": "Rebellium", "to": "Aimpunch"},
- {"date": "2026-10-04", "player": "mond33__", "from": "Aimpunch", "to": "Free agent"},
- {"date": "2026-10-04", "player": "estellyy.", "from": "Free agent", "to": "Rebellium"},
- {"date": "2026-10-05", "player": "Loonatic", "from": "Feral Instinct", "to": "Free agent"},
- {"date": "2026-10-05", "player": "mond33__", "from": "Free agent", "to": "Feral Instinct"},
- {"date": "2026-10-09", "player": "mominichi", "from": "The Nomads", "to": "Free agent"},
- {"date": "2026-10-09", "player": "Redandb1ue", "from": "The Nomads", "to": "Free agent"},
- {"date": "2026-10-09", "player": "Sadgeboi", "from": "Rebellium", "to": "The Nomads"},
- {"date": "2026-10-09", "player": "L2Strike", "from": "Supernova", "to": "The Nomads"}
+ {
+  "date": "2026-09-28",
+  "player": "estellyy.",
+  "from": "Masmark",
+  "to": "Free agent"
+ },
+ {
+  "date": "2026-09-28",
+  "player": "HikariiFloofie",
+  "from": "Free agent",
+  "to": "Masmark"
+ },
+ {
+  "date": "2026-09-29",
+  "player": "Eris Suzukami",
+  "from": "Astral Bloom",
+  "to": "Lunar Cadence"
+ },
+ {
+  "date": "2026-09-29",
+  "player": "Tsumugi Kokage",
+  "from": "Astral Bloom",
+  "to": "Lunar Cadence"
+ },
+ {
+  "date": "2026-09-29",
+  "player": "Shiranami Ramune",
+  "from": "Astral Bloom",
+  "to": "Lunar Cadence"
+ },
+ {
+  "date": "2026-09-29",
+  "player": "Ginjo Saine",
+  "from": "Lunar Cadence",
+  "to": "Astral Bloom"
+ },
+ {
+  "date": "2026-09-29",
+  "player": "Kogara Toto",
+  "from": "Lunar Cadence",
+  "to": "Astral Bloom"
+ },
+ {
+  "date": "2026-09-29",
+  "player": "Yumeno Akari",
+  "from": "Lunar Cadence",
+  "to": "Astral Bloom"
+ },
+ {
+  "date": "2026-09-30",
+  "player": "Stylus",
+  "from": "Aspire",
+  "to": "Free agent"
+ },
+ {
+  "date": "2026-09-30",
+  "player": "Moira",
+  "from": "Aspire",
+  "to": "Free agent"
+ },
+ {
+  "date": "2026-09-30",
+  "player": "Chisa_Scarlett",
+  "from": "Free agent",
+  "to": "Aspire"
+ },
+ {
+  "date": "2026-09-30",
+  "player": "Mikuryne",
+  "from": "Free agent",
+  "to": "Aspire"
+ },
+ {
+  "date": "2026-10-04",
+  "player": "Aranionja",
+  "from": "Rebellium",
+  "to": "Aimpunch"
+ },
+ {
+  "date": "2026-10-04",
+  "player": "mond33__",
+  "from": "Aimpunch",
+  "to": "Free agent"
+ },
+ {
+  "date": "2026-10-04",
+  "player": "estellyy.",
+  "from": "Free agent",
+  "to": "Rebellium"
+ },
+ {
+  "date": "2026-10-05",
+  "player": "Loonatic",
+  "from": "Feral Instinct",
+  "to": "Free agent"
+ },
+ {
+  "date": "2026-10-05",
+  "player": "mond33__",
+  "from": "Free agent",
+  "to": "Feral Instinct"
+ },
+ {
+  "date": "2026-10-09",
+  "player": "mominichi",
+  "from": "The Nomads",
+  "to": "Free agent"
+ },
+ {
+  "date": "2026-10-09",
+  "player": "Redandb1ue",
+  "from": "The Nomads",
+  "to": "Free agent"
+ },
+ {
+  "date": "2026-10-09",
+  "player": "Sadgeboi",
+  "from": "Rebellium",
+  "to": "The Nomads"
+ },
+ {
+  "date": "2026-10-09",
+  "player": "L2Strike",
+  "from": "Supernova",
+  "to": "The Nomads"
+ },
+ {
+  "date": "2026-10-16",
+  "player": "iceenblue",
+  "from": "Frostbyte",
+  "to": "Free agent"
+ },
+ {
+  "date": "2026-10-16",
+  "player": "Kritial",
+  "from": "Free agent",
+  "to": "Frostbyte"
+ }
 ]

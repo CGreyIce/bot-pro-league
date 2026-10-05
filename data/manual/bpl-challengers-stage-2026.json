@@ -136,7 +136,7 @@
      "b": "Hanabi Union",
      "sa": 2,
      "sb": 0,
-     "ts": 1790948237
+     "ts": 1791216231
     },
     {
      "id": 14,
@@ -241,22 +241,94 @@
      "round": 1,
      "a": "Lunar Rain",
      "b": "Perfectly Abnormal",
-     "sa": null,
-     "sb": null
+     "sa": 13,
+     "sb": 1,
+     "ts": 1791216944
     },
     {
      "id": 3,
      "round": 1,
      "a": "Dreamstate",
      "b": "BeeHyve",
-     "sa": null,
-     "sb": null
+     "sa": 13,
+     "sb": 8,
+     "ts": 1791217590
     },
     {
      "id": 4,
      "round": 1,
      "a": "Zen Lotus",
      "b": "Notorious Hollow",
+     "sa": 10,
+     "sb": 13,
+     "ts": 1791218904
+    },
+    {
+     "id": 5,
+     "round": 2,
+     "a": "Lunar Rain",
+     "b": "Dreamstate",
+     "sa": 5,
+     "sb": 13,
+     "ts": 1791219460
+    },
+    {
+     "id": 6,
+     "round": 2,
+     "a": "Notorious Hollow",
+     "b": "Seraph Dynasty",
+     "sa": 22,
+     "sb": 20,
+     "ts": 1791221805
+    },
+    {
+     "id": 7,
+     "round": 2,
+     "a": "Pastel Mocha",
+     "b": "Zen Lotus",
+     "sa": 13,
+     "sb": 8,
+     "ts": 1791223571
+    },
+    {
+     "id": 8,
+     "round": 2,
+     "a": "BeeHyve",
+     "b": "Perfectly Abnormal",
+     "sa": 13,
+     "sb": 9,
+     "ts": 1791224293
+    },
+    {
+     "id": 9,
+     "round": 3,
+     "a": "Dreamstate",
+     "b": "Notorious Hollow",
+     "sa": 0,
+     "sb": 2,
+     "ts": 1791226395
+    },
+    {
+     "id": 10,
+     "round": 3,
+     "a": "Lunar Rain",
+     "b": "Pastel Mocha",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 11,
+     "round": 3,
+     "a": "Seraph Dynasty",
+     "b": "BeeHyve",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 12,
+     "round": 3,
+     "a": "Zen Lotus",
+     "b": "Perfectly Abnormal",
      "sa": null,
      "sb": null
     }

@@ -134,7 +134,7 @@
   "lunar-cadence",
   "astral-bloom"
  ],
- "movesSeen": 21,
+ "movesSeen": 23,
  "top": {
   "player": "rebebx",
   "team": "cosmos"
@@ -1201,9 +1201,9 @@
    "mvp": 101
   },
   "choya-hanabi": {
-   "maps": 55,
-   "kills": 809,
-   "mvp": 115
+   "maps": 56,
+   "kills": 846,
+   "mvp": 122
   },
   "karasu": {
    "maps": 48,
@@ -1221,9 +1221,9 @@
    "mvp": 115
   },
   "pastellows": {
-   "maps": 43,
-   "kills": 758,
-   "mvp": 118
+   "maps": 44,
+   "kills": 781,
+   "mvp": 123
   },
   "obvmx": {
    "maps": 63,
@@ -1246,9 +1246,9 @@
    "mvp": 89
   },
   "emmabutnormal": {
-   "maps": 40,
-   "kills": 547,
-   "mvp": 71
+   "maps": 42,
+   "kills": 568,
+   "mvp": 73
   },
   "mkakili": {
    "maps": 35,
@@ -1306,34 +1306,34 @@
    "mvp": 63
   },
   "niamocha": {
-   "maps": 28,
-   "kills": 542,
-   "mvp": 94
+   "maps": 29,
+   "kills": 556,
+   "mvp": 97
   },
   "soapiisereia": {
-   "maps": 26,
-   "kills": 444,
-   "mvp": 62
+   "maps": 28,
+   "kills": 473,
+   "mvp": 66
   },
   "bloodbane": {
-   "maps": 31,
-   "kills": 557,
-   "mvp": 78
+   "maps": 35,
+   "kills": 624,
+   "mvp": 89
   },
   "zarlard": {
-   "maps": 27,
-   "kills": 363,
-   "mvp": 55
+   "maps": 31,
+   "kills": 446,
+   "mvp": 70
   },
   "dianya": {
-   "maps": 27,
-   "kills": 386,
-   "mvp": 57
+   "maps": 29,
+   "kills": 410,
+   "mvp": 61
   },
   "yumezukiyomi": {
-   "maps": 24,
-   "kills": 408,
-   "mvp": 51
+   "maps": 28,
+   "kills": 461,
+   "mvp": 60
   },
   "itswendy": {
    "maps": 24,
@@ -1371,9 +1371,9 @@
    "mvp": 66
   },
   "yakumo-beni": {
-   "maps": 26,
-   "kills": 399,
-   "mvp": 43
+   "maps": 28,
+   "kills": 427,
+   "mvp": 48
   },
   "vixi": {
    "maps": 23,
@@ -1451,9 +1451,9 @@
    "mvp": 73
   },
   "kenzieyii": {
-   "maps": 17,
-   "kills": 301,
-   "mvp": 48
+   "maps": 18,
+   "kills": 313,
+   "mvp": 49
   },
   "vssmb": {
    "maps": 22,
@@ -1471,9 +1471,9 @@
    "mvp": 43
   },
   "notorious47": {
-   "maps": 25,
-   "kills": 326,
-   "mvp": 46
+   "maps": 29,
+   "kills": 401,
+   "mvp": 57
   },
   "vyphogrid": {
    "maps": 22,
@@ -1511,9 +1511,9 @@
    "mvp": 96
   },
   "yukihimeowo": {
-   "maps": 28,
-   "kills": 429,
-   "mvp": 46
+   "maps": 32,
+   "kills": 507,
+   "mvp": 55
   },
   "yano-kuromu": {
    "maps": 27,
@@ -1561,8 +1561,8 @@
    "mvp": 66
   },
   "azumiying": {
-   "maps": 20,
-   "kills": 367,
+   "maps": 22,
+   "kills": 389,
    "mvp": 50
   },
   "aurasinvt": {
@@ -1586,9 +1586,9 @@
    "mvp": 69
   },
   "sendo-yuuhi": {
-   "maps": 22,
-   "kills": 370,
-   "mvp": 53
+   "maps": 24,
+   "kills": 399,
+   "mvp": 59
   },
   "kaga-nazuna": {
    "maps": 26,
@@ -1601,9 +1601,9 @@
    "mvp": 44
   },
   "bajiru-en": {
-   "maps": 20,
-   "kills": 363,
-   "mvp": 60
+   "maps": 24,
+   "kills": 420,
+   "mvp": 69
   },
   "exact": {
    "maps": 33,
@@ -1626,9 +1626,9 @@
    "mvp": 34
   },
   "aizawa-ema": {
-   "maps": 20,
-   "kills": 313,
-   "mvp": 41
+   "maps": 24,
+   "kills": 391,
+   "mvp": 53
   },
   "yinnzx": {
    "maps": 29,
@@ -1671,9 +1671,9 @@
    "mvp": 39
   },
   "bodexx": {
-   "maps": 18,
-   "kills": 252,
-   "mvp": 31
+   "maps": 20,
+   "kills": 284,
+   "mvp": 33
   },
   "briant": {
    "maps": 23,
@@ -1686,9 +1686,9 @@
    "mvp": 73
   },
   "thehidz": {
-   "maps": 18,
-   "kills": 267,
-   "mvp": 31
+   "maps": 22,
+   "kills": 358,
+   "mvp": 50
   },
   "sachimizora": {
    "maps": 20,
@@ -1731,9 +1731,9 @@
    "mvp": 60
   },
   "morisottovt": {
-   "maps": 18,
-   "kills": 239,
-   "mvp": 26
+   "maps": 22,
+   "kills": 269,
+   "mvp": 29
   },
   "loonatic": {
    "maps": 15,
@@ -1751,9 +1751,9 @@
    "mvp": 25
   },
   "nekota-tsuna": {
-   "maps": 26,
-   "kills": 421,
-   "mvp": 57
+   "maps": 27,
+   "kills": 450,
+   "mvp": 59
   },
   "kaga-sumire": {
    "maps": 21,
@@ -1771,8 +1771,8 @@
    "mvp": 25
   },
   "hamzyy": {
-   "maps": 19,
-   "kills": 286,
+   "maps": 21,
+   "kills": 303,
    "mvp": 31
   },
   "aweberry": {
@@ -1781,9 +1781,9 @@
    "mvp": 31
   },
   "stitchkyui": {
-   "maps": 25,
-   "kills": 369,
-   "mvp": 50
+   "maps": 27,
+   "kills": 399,
+   "mvp": 53
   },
   "voidnw": {
    "maps": 26,
@@ -1886,14 +1886,14 @@
    "mvp": 48
   },
   "narin-mikure": {
-   "maps": 23,
-   "kills": 301,
-   "mvp": 33
+   "maps": 24,
+   "kills": 321,
+   "mvp": 34
   },
   "kyomikoo": {
-   "maps": 13,
-   "kills": 149,
-   "mvp": 16
+   "maps": 17,
+   "kills": 212,
+   "mvp": 20
   },
   "tatsumaki-chise": {
    "maps": 19,
@@ -1946,14 +1946,14 @@
    "mvp": 33
   },
   "haze-vt": {
-   "maps": 8,
-   "kills": 142,
-   "mvp": 16
+   "maps": 10,
+   "kills": 164,
+   "mvp": 18
   },
   "anjuvalse": {
-   "maps": 6,
-   "kills": 109,
-   "mvp": 14
+   "maps": 7,
+   "kills": 145,
+   "mvp": 20
   },
   "seaemv": {
    "maps": 5,
@@ -1966,9 +1966,9 @@
    "mvp": 29
   },
   "miki-nakai": {
-   "maps": 18,
-   "kills": 330,
-   "mvp": 52
+   "maps": 19,
+   "kills": 354,
+   "mvp": 56
   },
   "yxie": {
    "maps": 7,
@@ -1996,29 +1996,29 @@
    "mvp": 17
   },
   "tigeraxd": {
-   "maps": 19,
-   "kills": 325,
-   "mvp": 53
+   "maps": 21,
+   "kills": 369,
+   "mvp": 63
   },
   "froggiee": {
-   "maps": 37,
-   "kills": 478,
-   "mvp": 57
+   "maps": 39,
+   "kills": 497,
+   "mvp": 58
   },
   "tiniibee": {
-   "maps": 13,
-   "kills": 169,
-   "mvp": 26
+   "maps": 15,
+   "kills": 197,
+   "mvp": 29
   },
   "hyvred": {
-   "maps": 14,
-   "kills": 204,
-   "mvp": 26
+   "maps": 16,
+   "kills": 235,
+   "mvp": 31
   },
   "keikatamori": {
-   "maps": 23,
-   "kills": 357,
-   "mvp": 53
+   "maps": 25,
+   "kills": 384,
+   "mvp": 55
   },
   "skiazelle": {
    "maps": 32,
@@ -2131,9 +2131,9 @@
    "mvp": 4
   },
   "amanezenvt": {
-   "maps": 0,
-   "kills": 0,
-   "mvp": 0
+   "maps": 2,
+   "kills": 39,
+   "mvp": 6
   },
   "wizstara": {
    "maps": 2,
@@ -2146,9 +2146,9 @@
    "mvp": 0
   },
   "kineto46": {
-   "maps": 5,
-   "kills": 88,
-   "mvp": 14
+   "maps": 7,
+   "kills": 105,
+   "mvp": 16
   },
   "yuvirei": {
    "maps": 17,
@@ -2156,9 +2156,9 @@
    "mvp": 21
   },
   "itzsune": {
-   "maps": 1,
-   "kills": 23,
-   "mvp": 3
+   "maps": 2,
+   "kills": 31,
+   "mvp": 4
   },
   "mikuryne": {
    "maps": 16,
@@ -2244,6 +2244,11 @@
    "maps": 0,
    "kills": 0,
    "mvp": 0
+  },
+  "kritial": {
+   "maps": 0,
+   "kills": 0,
+   "mvp": 0
   }
  },
  "upsetsSeen": [
@@ -2252,6 +2257,9 @@
   "upset:bpl-challengers-stage-2026:1-6",
   "upset:bpl-challengers-stage-2026:1-8",
   "upset:bpl-challengers-stage-2026:2-1",
+  "upset:bpl-challengers-stage-2026:2-4",
+  "upset:bpl-challengers-stage-2026:2-6",
+  "upset:bpl-challengers-stage-2026:2-9",
   "upset:nations-cup-qualifier-singapore-2026:1-43",
   "upset:nova-initia-invitational-i:1-12",
   "upset:nova-initia-invitational-i:1-7",
