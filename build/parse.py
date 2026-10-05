@@ -424,7 +424,7 @@ def compute_team_points(teams, tournaments):
         for tr in counted:
             if exclude_latest and tr["date"] == latest_date:
                 continue
-            mult = TIER_POINT_MULT.get(tr["tier"], 1.0)
+            mult = tr.get("pointsMult") or TIER_POINT_MULT.get(tr["tier"], 1.0)
             w = 0.5 ** ((ref - _pdate(tr["date"])).days / POINTS_HALFLIFE_DAYS) if ref else 1.0
             # finalStandings is the COMPLETE ranking (playoffs + group stage) for the newer manual
             # events; older events only have `standings`, which is already complete for them.
@@ -637,6 +637,9 @@ def main():
     team_map = {t["key"]: {"name": t["name"], "slug": t["slug"]} for t in teams}
     team_alias = tourney_mod.load_team_alias(ROOT)  # norm(old team) -> norm(current team)
     tournaments = tourney_mod.process_all(team_map, team_alias)
+    # prize pools set each S-Tier event's sub-tier ("S-Tier 2") and ranking weight (build/prizes.py)
+    import prizes as prize_mod
+    prize_mod.apply_tiers(tournaments, prize_mod.load(DATA))
 
     # ---- per-match scoreboards: attach to matches AND merge into player career totals ----
     msp = os.path.join(DATA, "match_stats.json")
@@ -1177,6 +1180,9 @@ def main():
     # ---- BPL team ranking (build/team_rank.py): opponent-weighted placements + results Elo + core rule.
     # Needs the attending rosters above (ad-hoc squad strength, who earned each result), so it runs here
     # and supersedes the placement-only compute_team_points() pass earlier in the build.
+    # prize money: payouts by placement, split between each team's line-up (needs the rosters above)
+    prize_mod.apply_earnings(tournaments, pro + amateur + solo, teams)
+
     import team_rank
     team_rank.apply(teams, tournaments, pro + amateur + solo, TIER_POINT_MULT, _placement_points, _group_points)
     import elo as _elo_mod                 # win chance for upcoming/live matches (from the line-ups' Rating Points)

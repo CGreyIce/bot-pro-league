@@ -79,6 +79,24 @@ def deploy_guard():
     return (f"Not published: the deploy guard found {len(probs)} problem{'s' if len(probs) != 1 else ''}. "
             "The live site is unchanged. Fix these first: " + " | ".join(probs[:3]) + more)
 
+def save_prize_pools(updates):
+    """Merge {event slug: prize pool in USD} into data/prize_pools.json. 0 / None / "" removes an entry.
+    Returns the number of events changed."""
+    path = os.path.join(ROOT, "data", "prize_pools.json")
+    pools = json.load(open(path, encoding="utf-8")) if os.path.exists(path) else {}
+    changed = 0
+    for slug, v in (updates or {}).items():
+        try:
+            amount = int(float(str(v).replace(",", "").replace("$", "").strip())) if v not in (None, "") else 0
+        except ValueError:
+            continue
+        if amount > 0 and pools.get(slug) != amount:
+            pools[slug] = amount; changed += 1
+        elif amount <= 0 and slug in pools:
+            pools.pop(slug); changed += 1
+    json.dump(dict(sorted(pools.items())), open(path, "w", encoding="utf-8"), indent=1)
+    return changed
+
 def git_publish():
     """Stage all changes, commit, and push to GitHub (which auto-deploys the site).
     Returns (ok, human-readable message)."""
@@ -169,8 +187,14 @@ class Handler(SimpleHTTPRequestHandler):
                 if not b.get("name"):
                     return self._json(400, {"ok": False, "error": "name required"})
                 man = manual.create(b["name"], b.get("tier", "a"), b.get("date", ""))
+                if b.get("prizePool"):
+                    save_prize_pools({man["slug"]: b["prizePool"]})
                 ok, msg = regenerate()
                 return self._json(200, {"ok": ok, "slug": man["slug"], "msg": msg})
+            elif path == "/api/prizepools":
+                n = save_prize_pools(b.get("pools") or {})
+                ok, msg = regenerate()
+                return self._json(200, {"ok": ok, "changed": n, "msg": msg})
             elif path == "/api/stage/add":
                 man = manual.add_stage(b["slug"], b.get("name", ""), b.get("format", "single_elim"),
                                        b.get("teams", []), b.get("bestOf", 1))

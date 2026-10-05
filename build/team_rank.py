@@ -112,7 +112,7 @@ def apply(teams, tournaments, players, tier_mult, placement_points, group_points
             if tr["date"] > asof:
                 break
             w = 0.5 ** ((ref - _pdate(tr["date"])).days / HALF)
-            mult = tier_mult.get(tr["tier"], 1.0)
+            mult = tr.get("pointsMult") or tier_mult.get(tr["tier"], 1.0)     # S-Tier sub-tiers (build/prizes.py)
             stl = tr.get("finalStandings") or tr.get("standings") or []
             grp = sorted(s["rank"] for s in stl if str(s.get("result") or "").startswith("Group") and s.get("rank") is not None)
             gpos = {r: j for j, r in enumerate(grp)}
@@ -128,7 +128,7 @@ def apply(teams, tournaments, players, tier_mult, placement_points, group_points
                 v = base * mult * w * fm * cf
                 tot[ts] += v
                 if with_breakdown:
-                    bd[ts].append({"event": tr["name"], "slug": tr["slug"], "date": tr["date"], "tier": tr["tier"],
+                    bd[ts].append({"event": tr["name"], "slug": tr["slug"], "date": tr["date"], "tier": tr["tier"], "tierLabel": tr.get("tierLabel"),
                                    "placement": s["rank"], "points": round(v, 1), "base": round(base * mult * w, 1),
                                    "field": round(fm, 2), "core": cf})
         out = {}

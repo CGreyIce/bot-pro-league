@@ -561,6 +561,7 @@ function renderTeam(slug){
         <div class="ib-row"><span class="k">Events played</span><span class="v">${t.events_played}</span></div>
         <div class="ib-row"><span class="k">Podiums</span><span class="v">${t.podiums} (${t.major_podiums} major)</span></div>
         <div class="ib-row"><span class="k">Trophies</span><span class="v">${trophies.length?esc(trophies.join(' · ')):'—'}</span></div>
+        ${t.earnings?`<div class="ib-row" title="Prize money won under this team's name, before it is split between the players"><span class="k">Earnings</span><span class="v">${fmtUSD(t.earnings)}</span></div>`:''}
       </div>
       ${teamCabinetHtml(t)}
       </div>
@@ -710,8 +711,12 @@ function renderPlayer(slug){
         <div class="ib-row"><span class="k">Level</span><span class="v">${p.level||'—'} / 10</span></div>
         <div class="ib-row"><span class="k">Record</span><span class="v">${p.wins}-${p.losses} (${pct(p.winrate)})</span></div>
         <div class="ib-row"><span class="k">Maps</span><span class="v">${p.maps}</span></div>
+        ${p.earnings?`<div class="ib-row"><span class="k">Earnings</span><span class="v">${fmtUSD(p.earnings)}</span></div>`:''}
         ${p.playsWith?`<div class="ib-row"><span class="k">Plays with</span><span class="v"><a href="#/player/${p.playsWith.slug}" style="color:var(--link)">${flag(p.playsWith.iso)}${esc(p.playsWith.name)}</a> <span class="muted" style="font-size:11px">· ${p.playsWith.games} solo game${p.playsWith.games===1?'':'s'}</span></span></div>`:''}
       </div>
+      ${(p.prizeHistory&&p.prizeHistory.length)?`<div class="infobox prize-box"><div class="ib-title">Prize Money <span class="muted" style="font-size:11px;font-weight:400">${fmtUSD(p.earnings)}</span></div>
+        ${p.prizeHistory.slice(0,8).map(h=>`<a class="pz-row" href="#/tournament/${esc(h.slug)}"><span class="pz-ev">${esc(h.event)}<span class="muted"> · ${placeOrd(h.place)} with ${esc(h.team)}</span></span><span class="pz-amt">${fmtUSD(h.amount)}</span></a>`).join("")}
+        ${p.prizeHistory.length>8?`<div class="muted" style="font-size:11px;padding:4px 14px 10px">+ ${p.prizeHistory.length-8} more</div>`:''}</div>`:''}
       ${(p.teamHistory&&p.teamHistory.length)?`
       <div class="infobox teamhist">
         <div class="ib-title">Career Teams</div>
@@ -1068,6 +1073,13 @@ function renderRecords(){
       ${climbRec&&climbRec.delta>0?recCard("Biggest Rank Climb", climbRec.name, "▲"+climbRec.delta, `#/player/${climbRec.slug}`):''}
       ${recCard("Most Deaths", topDeaths.name, topDeaths.deaths, `#/player/${topDeaths.slug}`)}
     </div>
+    ${(()=>{ const ps=allPlayers().filter(p=>p.earnings).sort((a,b)=>b.earnings-a.earnings).slice(0,10);
+      const ts=DATA.teams.filter(t=>t.earnings).sort((a,b)=>b.earnings-a.earnings).slice(0,10);
+      const tbl=(rows,cell)=>`<div class="tablewrap"><table class="data"><tbody>${rows.map((x,i)=>`<tr><td class="rankcol">${i+1}</td><td class="name-cell">${cell(x)}</td><td class="mono">${fmtUSD(x.earnings)}</td></tr>`).join("")}</tbody></table></div>`;
+      return `<h3 class="rec-group">Top Earners <span class="muted" style="font-size:11px">prize money from events with a prize pool</span></h3>
+      ${ps.length?`<div class="earn-grid"><div><div class="earn-h">Players</div>${tbl(ps,p=>playerLink(p))}</div>
+        <div><div class="earn-h">Teams</div>${tbl(ts,t=>`<a href="#/team/${t.slug}">${esc(t.name)}</a>`)}</div></div>`
+        :'<p class="muted">Prize money shows up here once events have prize pools.</p>'}`; })()}
     <h3 class="rec-group">Matches &amp; Single-Map Feats</h3>
     <div class="rec-grid">
       ${blow?recCard("Biggest Blowout", `${esc(blow.m.sa>=blow.m.sb?blow.m.a:blow.m.b)} vs ${esc(blow.m.sa>=blow.m.sb?blow.m.b:blow.m.a)}`,
@@ -2297,6 +2309,7 @@ function adminHealthHtml(){
     <span class="hl-msg">${esc(i.msg)}</span>${i.link?`<a class="hl-link" href="${esc(i.link)}">view →</a>`:''}</div>`;
   const serious = issues.filter(i=>i.level!=="info"), notes = issues.filter(i=>i.level==="info" && !i.fix);
   const genderFix = issues.filter(i=>i.fix && i.fix.kind==="gender");
+  const prizeFix = issues.filter(i=>i.fix && i.fix.kind==="prize");
   const ok = !c.error && !c.warning;
   const head = ok ? `<span class="hl-ok">✓ All checks passed</span>`
     : `${c.error?`<span class="hl-pill hl-error">${c.error} error${c.error===1?'':'s'}</span>`:''}${c.warning?`<span class="hl-pill hl-warning">${c.warning} warning${c.warning===1?'':'s'}</span>`:''}`;
@@ -2306,6 +2319,8 @@ function adminHealthHtml(){
     ${serious.length?`<div class="hl-list">${serious.map(item).join("")}</div>`:''}
     ${genderFix.length?genderFixHtml(genderFix):''}
     ${_gfDone?`<div class="gf-done">✓ ${esc(_gfDone)}</div>`:''}
+    ${prizeFix.length?prizeFixHtml(prizeFix):''}
+    ${_pfDone?`<div class="gf-done">✓ ${esc(_pfDone)}</div>`:''}
     ${notes.length?`<details class="hl-notes"><summary>${notes.length} note${notes.length===1?'':'s'} (FYI)</summary><div class="hl-list">${notes.map(item).join("")}</div></details>`:''}
   </div>`;
 }
@@ -2325,6 +2340,36 @@ function genderFixHtml(fixes){
       <span class="muted" style="font-size:11px">"They" is saved as a deliberate they/them choice, so it leaves this list too.</span>
       <span id="gf-msg" style="font-size:12px"></span></div>
   </details>`;
+}
+// quick fix: type the prize pool of every event that doesn't have one, saved in one go
+let _pfDone = null;
+function prizeFixHtml(fixes){
+  const rows = fixes.map(i=>{ const f=i.fix, tr=(DATA.tournaments||[]).find(t=>t.slug===f.slug)||{tier:f.tier,tierLabel:f.tier};
+    return `<div class="pf-row" data-pfslug="${esc(f.slug)}" data-pftier="${esc(f.tier)}">
+      <span class="pf-ev">${tierBadgeEvent(tr)} <a href="#/tournament/${esc(f.slug)}">${esc(f.name)}</a> <span class="muted">${fmtDate(f.date)}</span></span>
+      <span class="pf-in"><input class="adm-in pf-amt" inputmode="numeric" placeholder="$ prize pool"><span class="pf-sub muted"></span></span>
+    </div>`; }).join("");
+  return `<details class="hl-fix" open><summary><b>Missing prize pools</b> <span class="muted">· ${fixes.length} event${fixes.length===1?'':'s'}: type each prize pool in dollars, then save them all at once</span></summary>
+    <div class="muted" style="font-size:11px;margin:4px 0 8px">${esc(PRIZE_HINT)} Until an event has a prize pool it pays no prize money and keeps its plain tier weight.</div>
+    <div class="pf-grid">${rows}</div>
+    <div class="gf-foot"><button id="pf-save" class="adm-btn" style="margin:0" disabled>Save 0 prize pools</button><span id="pf-msg" style="font-size:12px"></span></div>
+  </details>`;
+}
+function setupPrizeFix(){
+  const save = $("#pf-save"); if(!save) return;
+  const collect=()=>{ const out={}; document.querySelectorAll(".pf-row").forEach(r=>{ const v=parseUSD(r.querySelector(".pf-amt").value); if(v) out[r.dataset.pfslug]=v; }); return out; };
+  document.querySelectorAll(".pf-row").forEach(r=>{
+    const inp=r.querySelector(".pf-amt"), lab=r.querySelector(".pf-sub");
+    inp.oninput=()=>{ const v=parseUSD(inp.value); lab.textContent = v ? (subTierFor(r.dataset.pftier, v) ? '→ '+subTierFor(r.dataset.pftier, v) : fmtUSD(v)) : '';
+      const n=Object.keys(collect()).length; save.disabled=!n; save.textContent=`Save ${n} prize pool${n===1?'':'s'}`; };
+  });
+  save.onclick=async ()=>{
+    const pools=collect(); save.disabled=true; save.textContent="Saving…";
+    const r = await apiPost("/api/prizepools", {pools});
+    if(!r.ok){ $("#pf-msg").style.color="var(--accent2,#ff6b6b)"; $("#pf-msg").textContent=r.error||r.msg||"Failed."; save.disabled=false; return; }
+    _pfDone = `Saved ${r.changed} prize pool${r.changed===1?'':'s'}. Earnings and rankings are updated.`;
+    await reloadData(); renderAdmin();
+  };
 }
 function setupGenderFix(){
   const save = $("#gf-save"); if(!save) return;
@@ -2410,6 +2455,8 @@ async function renderAdmin(){
           <div style="flex:1"><label class="adm-l">Date</label>
             <input id="adm-date" class="adm-in" type="date"></div>
         </div>
+        <label class="adm-l" title="${esc(PRIZE_HINT)}">Prize pool (USD) <span id="adm-prize-sub" class="muted"></span></label>
+        <input id="adm-prize" class="adm-in" inputmode="numeric" placeholder="e.g. 250,000">
         <button id="adm-create" class="adm-btn">Create tournament</button>
         <div id="adm-msg" class="muted" style="font-size:12px;margin-top:8px">Create it, then add stages (a bracket, groups, swiss…) in the editor.</div>
       </div>
@@ -2544,11 +2591,13 @@ async function renderAdmin(){
     msg.textContent = r.msg || (r.ok?"Published.":"Publish failed.");
     msg.style.color = r.ok ? "var(--good)" : "var(--accent2, #ff6b6b)";
   };
+  const prizeSub=()=>{ const v=parseUSD($("#adm-prize").value); $("#adm-prize-sub").textContent = v ? (subTierFor($("#adm-tier").value, v) ? '· '+subTierFor($("#adm-tier").value, v) : '· '+fmtUSD(v)) : ''; };
+  $("#adm-prize").oninput = prizeSub; $("#adm-tier").addEventListener("change", prizeSub);
   $("#adm-create").onclick = async ()=>{
     const name = $("#adm-name").value.trim();
     if(!name){ $("#adm-msg").textContent = "Enter a name."; return; }
     $("#adm-msg").textContent = "Creating…";
-    const r = await apiPost("/api/create",{name, tier:$("#adm-tier").value, date:$("#adm-date").value});
+    const r = await apiPost("/api/create",{name, tier:$("#adm-tier").value, date:$("#adm-date").value, prizePool:parseUSD($("#adm-prize").value)||null});
     if(r.ok){ await reloadData(); adminEditing = r.slug; renderAdmin(); }
     else $("#adm-msg").textContent = "Error: "+(r.error||"failed");
   };
@@ -2584,6 +2633,7 @@ async function renderAdmin(){
   setupSoloAdmin();
   setupRosterAdmin();
   setupGenderFix(); _gfDone = null;
+  setupPrizeFix(); _pfDone = null;
   setupShuffler();
   setupMapVeto();
   if(adminEditing) openEditor(adminEditing);
@@ -3447,6 +3497,12 @@ async function openEditor(slug){
 }
 
 const TIER_CLASS = {major:"et-major", s:"et-s", a:"et-a"};
+// prize money (build/prizes.py): S-Tier sub-tiers come from the prize pool
+const PRIZE_HINT = "S-Tier events: $1,000,000+ is S-Tier 1 (2.5x points), $250,000+ is S-Tier 2 (1.75x), less is S-Tier 3 (1.25x). Majors and A-Tier aren't split.";
+function fmtUSD(v){ return v==null ? '—' : '$'+Math.round(v).toLocaleString('en-US'); }
+function parseUSD(v){ const n=parseFloat(String(v||'').replace(/[$,\s]/g,'')); return isFinite(n)&&n>0 ? Math.round(n) : 0; }
+function subTierFor(tier, pool){ if(tier!=='s'||!pool) return ''; return pool>=1000000?'S-Tier 1':pool>=250000?'S-Tier 2':'S-Tier 3'; }
+function placeOrd(n){ const v=n%100; return n+(v>=11&&v<=13?'th':n%10===1?'st':n%10===2?'nd':n%10===3?'rd':'th'); }
 function tierBadgeEvent(tr){ return `<span class="event-tier ${TIER_CLASS[tr.tier]}">${esc(tr.tierLabel.toUpperCase())}</span>`; }
 function fmtDate(iso){ if(!iso) return ""; const [y,m,d]=iso.split("-"); const mo=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][+m-1]; return `${mo} ${+d}, ${y}`; }
 function champLabel(tr){ return /elimination/.test(tr.type) ? "Champion" : "1st Place"; }
@@ -3469,6 +3525,7 @@ function renderTournaments(){
       <td>${tr.format}</td>
       <td class="mono">${tr.participantCount}</td>
       <td>${nameOrTeamCrest(tr.champion, tr.championTeam)}</td>
+      <td class="mono">${tr.prizePool?fmtUSD(tr.prizePool):'<span class="muted">—</span>'}</td>
     </tr>`).join("");
   const tab=(k,l)=>`<button data-tf="${k}" class="${k===tourneyFilter?'active':''}">${l} <span style="opacity:.7">${counts[k]}</span></button>`;
   app.innerHTML = `
@@ -3476,7 +3533,7 @@ function renderTournaments(){
     <div class="tabs">${tab("all","All")}${tab("major","Majors")}${tab("s","S-Tier")}${tab("a","A-Tier")}</div>
     <div class="tablewrap"><table class="data">
       <thead><tr><th class="no-sort">Date</th><th class="no-sort">Tier</th><th class="no-sort">Event</th>
-        <th class="no-sort">Format</th><th class="no-sort">Teams</th><th class="no-sort">Winner</th></tr></thead>
+        <th class="no-sort">Format</th><th class="no-sort">Teams</th><th class="no-sort">Winner</th><th class="no-sort">Prize pool</th></tr></thead>
       <tbody>${rows}</tbody></table></div>`;
   app.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{tourneyFilter=b.dataset.tf;renderTournaments();});
 }
@@ -3619,6 +3676,12 @@ function renderTournament(slug){
          <span class="muted" style="font-size:11px">(${tr.attending.length}) · hover for roster</span></h2>
        <div class="attend-wall">${wall}</div>` : '';
 
+  const prizeSection = (tr.prizes&&tr.prizes.length) ? `
+    <h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Prize Money
+      <span class="muted" style="font-size:11px">${fmtUSD(tr.prizePool)} · split equally between each team's players</span></h2>
+    <div class="tablewrap prize-wrap"><table class="data prize-table"><thead><tr><th class="no-sort">Place</th><th class="no-sort">Team</th><th class="no-sort">Prize</th><th class="no-sort">Per player</th></tr></thead>
+      <tbody>${tr.prizes.map(x=>`<tr><td class="mono">${placeOrd(x.rank)}</td><td class="name-cell">${crest(x.name, x.teamSlug)}</td>
+        <td class="mono">${fmtUSD(x.amount)}</td><td class="mono muted">${x.perPlayer!=null?fmtUSD(x.perPlayer):'—'}</td></tr>`).join("")}</tbody></table></div>` : '';
   const fs = tr.finalStandings || [];
   const fsMedal = r => r===1?'🥇':r===2?'🥈':r===3?'🥉':'';
   const fsResultCls = res => res==='Champion'?'fs-champ':res==='Runner-up'?'fs-ru':res==='3rd Place'?'fs-3rd':res==='Group Stage'?'fs-grp':'';
@@ -3640,6 +3703,8 @@ function renderTournament(slug){
       <div class="ph-main">
         <h1>${esc(tr.name)} ${tierBadgeEvent(tr)}</h1>
         <div class="ph-sub">${fmtDate(tr.date)} · ${tr.format} · ${tr.participantCount} teams</div>
+        ${tr.prizePool||_adminOn?`<div class="tp-prize">Prize pool: <b>${tr.prizePool?fmtUSD(tr.prizePool):'<span class="muted">not set</span>'}</b>
+          ${_adminOn?`<span class="tp-edit"><input id="tp-prize" class="adm-in" inputmode="numeric" value="${tr.prizePool||''}" placeholder="$ prize pool" title="${esc(PRIZE_HINT)}"><button id="tp-prize-save" class="loadmore">Save</button><span id="tp-prize-msg" class="muted"></span></span>`:''}</div>`:''}
         <div style="margin-top:12px;font-size:15px">${champLabel(tr)}:
           <strong style="font-size:18px;font-family:'Chakra Petch'">${crest(tr.champion, tr.championTeam)}</strong></div>
         ${tr.mvp ? `<div class="tourn-mvp">⭐ <span class="muted">${tr.champion?'Tournament MVP':'MVP so far'}:</span>
@@ -3658,13 +3723,21 @@ function renderTournament(slug){
       </div>
       <div>${wallSection || (tr.manual?'':'<div class="muted">No roster data.</div>')}</div>
     </div>
+    ${prizeSection}
     <h2 class="section-title" style="margin-top:24px"><span class="accent-bar"></span>${isElim?'Bracket':'Match Results'}</h2>`}
     ${tr.stages ? finalStandingsSection : ''}
+    ${tr.stages ? prizeSection : ''}
     ${tr.stages ? wallSection : ''}
     ${bracketBlock}`;
 
   // draw bracket connector lines once laid out
   drawAllConnectors(document);
+  const tps = $("#tp-prize-save");
+  if(tps) tps.onclick = async ()=>{
+    $("#tp-prize-msg").textContent = "Saving…";
+    const r = await apiPost("/api/prizepools", {pools:{[tr.slug]: parseUSD($("#tp-prize").value)||null}});
+    if(r.ok){ await reloadData(); renderTournament(slug); } else $("#tp-prize-msg").textContent = "Error: "+(r.error||r.msg||"failed");
+  };
   // click a match: played matches open an HLTV-style card; unplayed jump to the match page.
   // (team-name links still work; they navigate to the team page.)
   app.querySelectorAll("[data-match]").forEach(el=>el.addEventListener("click", e=>{

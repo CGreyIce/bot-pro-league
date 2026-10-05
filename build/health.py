@@ -209,6 +209,17 @@ def run(data, data_dir):
             if norm(new) not in names:
                 h.add("warning", "Players", f"Name change '{old}' -> '{new}': no player called '{new}' exists.")
 
+    # ---- 9. prize pools: every event needs one (the admin's quick fix lists them with an input each)
+    tier_name = {"major": "Major", "s": "S-Tier", "a": "A-Tier"}
+    for tr in sorted(tours, key=lambda t: t.get("date") or "", reverse=True):
+        link = f"#/tournament/{tr['slug']}"
+        if not tr.get("prizePool"):
+            h.add("info", "Prize pools", f"{tr['name']} has no prize pool yet: it pays no prize money and keeps the "
+                  f"plain {tier_name.get(tr['tier'], tr['tier'])} weight.", link)
+            h.issues[-1]["fix"] = {"kind": "prize", "slug": tr["slug"], "name": tr["name"], "tier": tr["tier"], "date": tr.get("date")}
+        elif tr["tier"] == "s" and tr["prizePool"] < 100_000:
+            h.add("info", "Prize pools", f"{tr['name']}: ${tr['prizePool']:,} is under $100,000, so it counts as S-Tier 3.", link)
+
     order = {"error": 0, "warning": 1, "info": 2}
     h.issues.sort(key=lambda i: (order[i["level"]], i["check"]))
     counts = {lv: sum(1 for i in h.issues if i["level"] == lv) for lv in order}

@@ -1167,4 +1167,28 @@ textarea.adm-in{resize:vertical;font-family:inherit}
 .t20-chips a:hover{border-color:var(--accent);color:var(--text)}
 .t20-chips a.on{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
 .t20-pn{display:flex;justify-content:space-between;gap:12px;margin-top:12px;font-size:13px}
+/* prize pools & earnings (build/prizes.py) */
+.tp-prize{margin-top:8px;font-size:14px}
+.tp-prize b{font-family:'Chakra Petch',sans-serif;color:var(--good)}
+.tp-edit{display:inline-flex;align-items:center;gap:6px;margin-left:10px}
+.tp-edit input{width:140px;padding:4px 8px}
+.tp-edit .loadmore{margin:0;padding:4px 12px}
+.prize-wrap{max-width:640px}
+.prize-table td:nth-child(3){font-weight:700;color:var(--good)}
+.prize-box{margin-top:12px}
+.pz-row{display:flex;justify-content:space-between;gap:10px;padding:8px 14px;border-top:1px solid var(--border);font-size:12.5px;color:var(--text)}
+.prize-box .ib-title+.pz-row{border-top:none}
+.pz-row:hover .pz-ev{color:var(--link)}
+.pz-ev{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pz-amt{font-family:'Chakra Petch',sans-serif;font-weight:700;color:var(--good);white-space:nowrap}
+.earn-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:900px}
+.earn-h{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:6px}
+.pf-grid{display:flex;flex-direction:column;gap:4px;max-height:420px;overflow:auto}
+.pf-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:4px 6px;border-radius:6px}
+.pf-row:hover{background:var(--panel2)}
+.pf-ev{font-size:13px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pf-in{display:flex;align-items:center;gap:8px;flex:0 0 auto}
+.pf-in input{width:140px;padding:4px 8px}
+.pf-sub{font-size:11px;min-width:64px}
+@media(max-width:760px){.earn-grid{grid-template-columns:1fr}.pf-row{flex-wrap:wrap}}
 
