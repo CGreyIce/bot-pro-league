@@ -36828,7 +36828,7 @@
        "k": 7,
        "a": 0,
        "d": 15,
-       "mvp": 1,
+       "mvp": 0,
        "score": 18
       },
       {
@@ -47080,7 +47080,7 @@
    "maps": [
     {
      "map": "Inferno",
-     "scoreA": 24,
+     "scoreA": 13,
      "scoreB": 9,
      "players": [
       {
