@@ -1408,7 +1408,7 @@
   "utsuhonull": {
    "maps": 27,
    "kills": 555,
-   "mvp": 93
+   "mvp": 94
   },
   "dla-wo": {
    "maps": 20,
@@ -1613,7 +1613,7 @@
   "zhizyii": {
    "maps": 28,
    "kills": 587,
-   "mvp": 75
+   "mvp": 76
   },
   "surf": {
    "maps": 19,
@@ -1808,7 +1808,7 @@
   "scorn": {
    "maps": 21,
    "kills": 336,
-   "mvp": 57
+   "mvp": 56
   },
   "jstarwolf": {
    "maps": 14,
@@ -1963,7 +1963,7 @@
   "sakistars": {
    "maps": 15,
    "kills": 228,
-   "mvp": 30
+   "mvp": 29
   },
   "miki-nakai": {
    "maps": 18,
@@ -2249,6 +2249,7 @@
  "upsetsSeen": [
   "upset:bpl-challengers-stage-2026:1-10",
   "upset:bpl-challengers-stage-2026:1-12",
+  "upset:bpl-challengers-stage-2026:1-6",
   "upset:bpl-challengers-stage-2026:1-8",
   "upset:bpl-challengers-stage-2026:2-1",
   "upset:nova-initia-invitational-i:1-12",

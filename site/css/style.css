@@ -1154,3 +1154,17 @@ textarea.adm-in{resize:vertical;font-family:inherit}
 .fy-pf span{font-size:11px}
 .fy-pf.tot{justify-content:center;border-color:var(--good)}
 @media(max-width:900px){.fy-grid{grid-template-columns:1fr}.fy-side{position:static}.fy-how{grid-template-columns:1fr}}
+/* Top 20 Players of the Year: News page year cards + countdown navigation on each article */
+.t20-years{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.t20-card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
+.t20-y{font-family:'Chakra Petch',sans-serif;font-size:24px;font-weight:700;color:var(--accent);line-height:1}
+.t20-1{font-size:13px;margin:6px 0 12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.t20-links{display:flex;gap:14px;font-size:12px}
+.t20-nav{margin-top:26px;border-top:1px solid var(--border);padding-top:16px}
+.t20-nav-t{font-family:'Chakra Petch',sans-serif;font-weight:700;margin-bottom:10px}
+.t20-chips{display:flex;flex-wrap:wrap;gap:5px}
+.t20-chips a{min-width:32px;height:28px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);border-radius:6px;font-size:12px;color:var(--muted)}
+.t20-chips a:hover{border-color:var(--accent);color:var(--text)}
+.t20-chips a.on{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
+.t20-pn{display:flex;justify-content:space-between;gap:12px;margin-top:12px;font-size:13px}
+

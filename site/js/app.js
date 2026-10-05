@@ -306,11 +306,33 @@ function newsCard(a){
     ${snip?`<div class="news-snip">${esc(snip.length>180?snip.slice(0,180).trimEnd()+"…":snip)}</div>`:''}
     ${a.author?`<div class="news-author">${esc(a.author)}</div>`:''}</a>`;
 }
+// "Top 20 Players of the Year" countdown series: slugs top-20-players-<year>-<rank>-<name>, #20 published first
+const T20_RE = /^top-20-players-(\d{4})-(\d{2})-/;
+function t20Series(year){
+  return (DATA.articles||[]).map(a=>({a, m:T20_RE.exec(a.slug)})).filter(x=>x.m && x.m[1]===String(year))
+    .map(x=>({a:x.a, rank:+x.m[2]})).sort((p,q)=>q.rank-p.rank);        // #20 ... #1, the reading order
+}
+function t20Name(a){ return a.title.replace(/^Top 20 Players of \d{4}: #\d+ /, ''); }
 function renderNews(){
   const arts = DATA.articles||[];
+  const regular = arts.filter(a=>!T20_RE.test(a.slug));
+  const years = [...new Set(arts.map(a=>(T20_RE.exec(a.slug)||[])[1]).filter(Boolean))].sort((a,b)=>b-a);
+  const t20 = years.length ? `<h2 class="section-title" style="margin-top:28px"><span class="accent-bar"></span>Top 20 Players of the Year
+      <span class="muted" style="font-size:11px">a countdown, one player a day</span></h2>
+    <div class="t20-years">${years.map(y=>{ const s=t20Series(y), one=s.find(x=>x.rank===1), first=s[0];
+      return `<div class="t20-card"><div class="t20-y">${y}</div>
+        <div class="t20-1"><span class="muted">#1</span> ${one?esc(t20Name(one.a)):'<span class="muted">coming soon</span>'}</div>
+        <div class="t20-links">${first?`<a href="#/article/${esc(first.a.slug)}">Start at #${first.rank} →</a>`:''}${one?`<a href="#/article/${esc(one.a.slug)}">Full list</a>`:''}</div></div>`; }).join('')}</div>` : '';
   app.innerHTML = `<h2 class="section-title"><span class="accent-bar"></span>News</h2>`+
-    (arts.length ? `<div class="news-list">${arts.map(newsCard).join('')}</div>`
-                 : '<p class="muted">No articles yet.</p>');
+    (regular.length ? `<div class="news-list">${regular.map(newsCard).join('')}</div>` : (years.length?'':'<p class="muted">No articles yet.</p>'))+t20;
+}
+function t20NavHtml(a){
+  const m = T20_RE.exec(a.slug); if(!m) return '';
+  const s = t20Series(m[1]), i = s.findIndex(x=>x.a===a), prev = s[i-1], next = s[i+1];
+  return `<div class="t20-nav"><div class="t20-nav-t">Top 20 Players of ${m[1]}</div>
+    <div class="t20-chips">${s.map(x=>`<a class="${x.a===a?'on':''}" href="#/article/${esc(x.a.slug)}" title="${esc('#'+x.rank+' '+t20Name(x.a))}">${x.rank}</a>`).join('')}</div>
+    <div class="t20-pn">${prev?`<a href="#/article/${esc(prev.a.slug)}">← #${prev.rank} ${esc(t20Name(prev.a))}</a>`:'<span></span>'}
+      ${next?`<a href="#/article/${esc(next.a.slug)}">#${next.rank} ${esc(t20Name(next.a))} →</a>`:''}</div></div>`;
 }
 function renderArticle(slug){
   const a = (DATA.articles||[]).find(x=>x.slug===slug);
@@ -323,6 +345,7 @@ function renderArticle(slug){
       <div class="article-date">${fmtArticleDate(a.date)}${a.author?' · '+esc(a.author):''}</div>
       <h1 class="article-title">${esc(a.title)}</h1>
       <div class="article-body">${articleBodyHtml(a.body)}</div>
+      ${t20NavHtml(a)}
     </article>
     ${others.length?`<h2 class="section-title" style="margin-top:26px"><span class="accent-bar"></span>More news</h2>
       <div class="news-list">${others.map(newsCard).join('')}</div>`:''}`;
