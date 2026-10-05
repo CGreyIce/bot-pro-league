@@ -35,6 +35,13 @@ def expect(a, b):
     return 1 / (1 + 10 ** ((b - a) / SCALE))
 
 
+def series_chance(p, bo):
+    """Chance to win a best-of-`bo` series given a per-map win chance p (maps independent)."""
+    need = bo // 2 + 1
+    from math import comb
+    return sum(comb(need - 1 + k, k) * p ** need * (1 - p) ** k for k in range(need))
+
+
 def _key(tr, m):
     if m.get("ts"):
         return m["ts"]
@@ -124,7 +131,9 @@ def apply(pro, tournaments, avg, weights, tier_fn, level_cuts, contrib_fn, norm_
         in_match = {}
         maps_won = defaultdict(lambda: [0, 0])
         before = {}
-        for mp in m["stats"]["maps"]:
+        path = {}                                           # slug -> rating after each map (match page swings)
+        side_of = {}
+        for mi, mp in enumerate(m["stats"]["maps"]):
             sa, sb = mp.get("scoreA"), mp.get("scoreB")
             if sa is None or sb is None:
                 continue
@@ -165,8 +174,20 @@ def apply(pro, tournaments, avg, weights, tier_fn, level_cuts, contrib_fn, norm_
                     in_match[s] = m.get("b") if side == "a" else m.get("a")
                     maps_won[s][0 if S == 1 else 1] += 1 if S in (0, 1) else 0
             for s, d in deltas.items():
+                path.setdefault(s, [before[s]] + [None] * len(m["stats"]["maps"]))
                 elo[s] += d
+                path[s][mi + 1] = elo[s]
                 played[s] += 1
+            for side in sides:
+                for s, _ in sides[side]:
+                    side_of[s] = side
+        if path:
+            # rating swings for the match page: rounded points before + after every map (None = sat out),
+            # so the per-map changes always add up to the total shown; plus the pre-match win chance
+            m["elo"] = {s: [None if v is None else int(round(v)) for v in pts] for s, pts in path.items()}
+            pre = {k: [path[s][0] for s in path if side_of.get(s) == k] for k in ("a", "b")}
+            if len(pre["a"]) >= 3 and len(pre["b"]) >= 3:
+                m["odds"] = round(series_chance(expect(sum(pre["a"]) / len(pre["a"]), sum(pre["b"]) / len(pre["b"])), m.get("bo") or 1), 3)
         for s, opp in in_match.items():
             w, l = maps_won[s]
             traj[s].append([tr["slug"], tr["name"], tr.get("date", ""), round(elo[s]), rank_of(s), opp or "",
@@ -213,3 +234,26 @@ def apply(pro, tournaments, avg, weights, tier_fn, level_cuts, contrib_fn, norm_
         climbers.sort(key=lambda x: (-x["gain"], x["to"]))
     print(f"elo: {len(plays)} players rated from {len(recorded)} recorded matches")
     return {"climbers": climbers[:5]}
+
+
+def upcoming_odds(tournaments, pro, norm_key):
+    """Win chance for matches not played yet (upcoming / live): the current Rating Points of each team's
+    line-up at that event (its attending roster). Played matches keep the pre-match chance apply() stored
+    from the ratings at the time. Needs 3+ rated players per team, like the played matches."""
+    pts = {p["slug"]: p["ratingPoints"] for p in pro if p.get("ratingPoints") is not None}
+    n = 0
+    for tr in tournaments:
+        if tr.get("champion"):
+            continue
+        line = {norm_key(r["team"]): [pts[pl["slug"]] for pl in r.get("players", []) if pl.get("slug") in pts]
+                for r in tr.get("attending", [])}
+        ms = ([m for st in tr["stages"] for rd in st["rounds"] for m in rd["matches"]] if tr.get("stages")
+              else [m for rd in tr.get("bracket", []) for m in rd["matches"]])
+        for m in ms:
+            if m.get("w") in (1, 2) or not m.get("a") or not m.get("b") or "(bye)" in (m["a"], m["b"]):
+                continue
+            ra, rb = line.get(norm_key(m["a"])) or [], line.get(norm_key(m["b"])) or []
+            if len(ra) >= 3 and len(rb) >= 3:
+                m["odds"] = round(series_chance(expect(sum(ra) / len(ra), sum(rb) / len(rb)), m.get("bo") or 1), 3)
+                n += 1
+    return n

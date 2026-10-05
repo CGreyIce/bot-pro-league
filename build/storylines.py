@@ -22,7 +22,8 @@ TIER_PTS = {"major": 500, "s": 250, "a": 100}
 MILESTONES = {"maps": [50, 100, 150, 200, 250, 300, 400, 500],
               "kills": [500, 1000, 1500, 2000, 2500, 3000, 4000, 5000],
               "mvp": [100, 150, 200, 250, 300, 400, 500]}
-UPSET_CARD, UPSET_DRAFT = 60, 200          # rating-point gap between line-ups for a card / a draft
+UPSET_CARD, UPSET_DRAFT = 60, 200          # rating-point gap between line-ups for a card / a draft (no odds)
+UPSET_CARD_P, UPSET_DRAFT_P = 0.47, 0.40   # winner's pre-match win chance (match page "Upset" tag = < 0.40)
 ROLE = {"igl": "in-game leader", "awper": "AWPer", "awp": "AWPer", "rifler": "rifler", "fill": "support player"}
 
 
@@ -524,23 +525,36 @@ class Storylines:
             for ref, rtitle, st, m in _iter_matches(tr):
                 if not _played(m) or not m.get("ts") or m["ts"] <= since:
                     continue
-                st_ = st_ or self.strengths(tr)
                 w, l = (m["a"], m["b"]) if m["w"] == 1 else (m["b"], m["a"])
-                sw, sl = st_.get(wikilinks.norm(w)), st_.get(wikilinks.norm(l))
-                if sw is None or sl is None or sl - sw < UPSET_CARD:
-                    continue
+                chance = None
+                if m.get("odds") is not None and m.get("elo"):
+                    # line-ups as they were before the match (build/elo.py), not today's ratings
+                    chance = m["odds"] if m["w"] == 1 else 1 - m["odds"]
+                    team_of = {pl.get("slug"): wikilinks.norm(pl.get("team")) for mp in m["stats"]["maps"] for pl in mp.get("players", [])}
+                    pre = lambda nm: [v[0] for s_, v in m["elo"].items() if team_of.get(s_) == wikilinks.norm(nm)]
+                    pw_, pl_ = pre(w), pre(l)
+                    sw, sl = (sum(pw_) / len(pw_) if pw_ else None), (sum(pl_) / len(pl_) if pl_ else None)
+                    if sw is None or sl is None or chance >= UPSET_CARD_P:
+                        continue
+                else:
+                    st_ = st_ or self.strengths(tr)
+                    sw, sl = st_.get(wikilinks.norm(w)), st_.get(wikilinks.norm(l))
+                    if sw is None or sl is None or sl - sw < UPSET_CARD:
+                        continue
                 score = f"{m['sa']}-{m['sb']}" if m["w"] == 1 else f"{m['sb']}-{m['sa']}"
                 where = f"{st['name']}, {rtitle.lower()}" if st and st.get("format") == "swiss" else rtitle.lower()
                 out.append({"gap": round(sl - sw), "w": w, "l": l, "score": score, "event": tr["name"], "slug": tr["slug"],
-                            "ref": ref, "round": where, "ts": m["ts"], "wa": round(sw), "la": round(sl), "m": m})
-        out.sort(key=lambda x: -x["gap"])
+                            "ref": ref, "round": where, "ts": m["ts"], "wa": round(sw), "la": round(sl), "m": m,
+                            "chance": chance})
+        out.sort(key=lambda x: (x["chance"] if x["chance"] is not None else 0.5, -x["gap"]))
         return out
 
     def detect_upsets(self):
         seen = set(self.state.get("upsetsSeen", []))
         for u in self.upsets(self.now - 7 * DAY):
             key = f"upset:{u['slug']}:{u['ref']}"
-            if u["gap"] >= UPSET_DRAFT and key not in seen and not self.first:
+            big = round(u["chance"] * 100) < UPSET_DRAFT_P * 100 if u["chance"] is not None else u["gap"] >= UPSET_DRAFT
+            if big and key not in seen and not self.first:
                 top = None
                 for mp in (u["m"].get("stats") or {}).get("maps", []):
                     for pl in mp.get("players", []):
@@ -548,8 +562,9 @@ class Storylines:
                             if top is None or (pl.get("k") or 0) > top[1]:
                                 top = (pl.get("name"), pl.get("k") or 0)
                 body = (f"{self.L(u['w'])} beat {self.L(u['l'])} {u['score']} at {self.L(u['event'])}"
-                        f"{' (' + u['round'] + ')' if u['round'] else ''}. On paper it was a mismatch: {u['l']}'s line-up "
-                        f"averages {u['la']} rating points, {u['w']}'s just {u['wa']}.")
+                        f"{' (' + u['round'] + ')' if u['round'] else ''}. On paper {u['l']} were the favourites: their line-up "
+                        f"averaged {u['la']} rating points, {u['w']}'s just {u['wa']}"
+                        + (f", giving {u['w']} a {round(u['chance'] * 100)}% chance before the match." if u["chance"] is not None else "."))
                 if top:
                     body += f"\n\n{self.L(top[0])} led the way with {top[1]} kills."
                 self.emit(key, "upset", f"{u['w']} stun {u['l']}", f"{u['score']} at {_clean(u['event'])}",
@@ -608,7 +623,8 @@ class Storylines:
         if ups and not shown_upset:
             u = ups[0]
             out.append({"kind": "upset", "label": "Upset of the week", "title": f"{u['w']} beat {u['l']} {u['score']}",
-                        "text": f"Line-ups averaging {u['wa']} vs {u['la']} rating points ({_clean(u['event'])})",
+                        "text": (f"{round(u['chance'] * 100)}% chance before the match ({_clean(u['event'])})" if u["chance"] is not None
+                                 else f"Line-ups averaging {u['wa']} vs {u['la']} rating points ({_clean(u['event'])})"),
                         "link": f"#/match/{u['slug']}/{u['ref']}", "ts": u["ts"]})
         cl = [c for c in self.climbers if c["gain"] >= 3][:3]
         if cl:

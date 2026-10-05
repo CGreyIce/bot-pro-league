@@ -5,6 +5,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Skip the deploy guard (emergencies only)"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -25,6 +30,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      # Deploy guard: a build with Site Health errors, broken JSON or a JavaScript syntax error is never
+      # published; the live site stays on the last good version. (Warnings never block.)
+      - name: Deploy guard
+        if: ${{ !inputs.force }}
+        run: |
+          python3 build/deploy_check.py
+          for f in site/js/*.js; do node --check "$f" || { echo "::error::JavaScript syntax error in $f"; exit 1; }; done
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload site/ as the Pages artifact

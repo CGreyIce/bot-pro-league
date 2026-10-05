@@ -7,7 +7,7 @@ Run:  python build/admin_server.py [port]   (default 8099)
 Then open http://localhost:8099/#/admin
 The public/static deploy never runs this, so the Admin page is read-only there.
 """
-import json, os, subprocess, sys
+import json, os, shutil, subprocess, sys
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import urlparse
 
@@ -57,11 +57,36 @@ def regenerate():
                        capture_output=True, text=True)
     return r.returncode == 0, (r.stderr or r.stdout)[-500:]
 
+def deploy_guard():
+    """The same check GitHub runs before deploying (build/deploy_check.py + a JS syntax check).
+    Returns None if the build is fine to publish, else a message listing what's wrong."""
+    sys.path.insert(0, os.path.join(ROOT, "build"))
+    import importlib, deploy_check
+    probs = importlib.reload(deploy_check).problems()
+    node = shutil.which("node")
+    if node:
+        for f in sorted(os.listdir(os.path.join(ROOT, "site", "js"))):
+            if f.endswith(".js"):
+                r = subprocess.run([node, "--check", os.path.join(ROOT, "site", "js", f)], capture_output=True, text=True)
+                if r.returncode != 0:
+                    lines = r.stderr.strip().splitlines()
+                    where = next((l.rsplit(":", 1)[-1] for l in lines[:1] if ":" in l), "?")
+                    err = next((l for l in lines if "Error" in l), lines[-1] if lines else "?")
+                    probs.append(f"JavaScript syntax error in site/js/{f} line {where}: {err[:140]}")
+    if not probs:
+        return None
+    more = f" (+{len(probs) - 3} more, see Site Health)" if len(probs) > 3 else ""
+    return (f"Not published: the deploy guard found {len(probs)} problem{'s' if len(probs) != 1 else ''}. "
+            "The live site is unchanged. Fix these first: " + " | ".join(probs[:3]) + more)
+
 def git_publish():
     """Stage all changes, commit, and push to GitHub (which auto-deploys the site).
     Returns (ok, human-readable message)."""
     def run(args):
         return subprocess.run(["git"] + args, cwd=ROOT, capture_output=True, text=True)
+    blocked = deploy_guard()
+    if blocked:
+        return False, blocked
     try:
         add = run(["add", "-A"])
         if add.returncode != 0:

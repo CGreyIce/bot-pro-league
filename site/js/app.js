@@ -175,7 +175,7 @@ const routes = {
   "results": renderResults, "records": renderRecords, "compare": renderCompare,
   "transfers": renderTransfers, "matches": renderMatches, "awards": renderAwards, "maps": renderMaps,
   "compareteams": renderTeamCompare, "stats": renderStats,
-  "admin": renderAdmin, "match": renderMatch, "predict": renderPredict, "prophets": renderProphets,
+  "admin": renderAdmin, "match": renderMatch, "predict": renderPredict, "prophets": renderProphets, "fantasy": renderFantasy,
   "news": renderNews, "article": renderArticle,
 };
 function parseHash(){
@@ -1142,7 +1142,7 @@ function renderMatches(){
       if(!m.a && !m.b) return;              // fully TBD (both unknown)
       upcoming.push({event:tr.name,eventSlug:tr.slug,date:tr.date,tier:tr.tier,tierLabel:tr.tierLabel,
         ongoing:true, stage:stName, round:rd.title,
-        a:m.a,aTeam:m.aTeam,b:m.b,bTeam:m.bTeam,
+        a:m.a,aTeam:m.aTeam,b:m.b,bTeam:m.bTeam,odds:m.odds,
         ref: stId!=null ? `${stId}-${m.i}` : (m.i!=null?`${m.i}`:null)});
     }));
     if(tr.stages) tr.stages.forEach(st=>scan(st.rounds,st.name,st.id));
@@ -1167,7 +1167,7 @@ function renderMatches(){
             <span class="mt-a">${teamSide(u.a,u.aTeam)}</span>
             <span class="mt-vs">vs</span>
             <span class="mt-b">${teamSide(u.b,u.bTeam)}</span>
-          </span>
+          </span>${oddsChip(u)}
         </div>`).join("")}
       </div>`).join("") : '<p class="muted">No upcoming or live matches. See <a href="#/results">Results</a>.</p>';
   const recent = allMatches().slice(0,12);
@@ -1608,6 +1608,7 @@ function renderMatch(){
         ${match.w?`<div class="muted" style="font-size:12px">${esc(match.w===1?match.a:match.b)} won</div>`:'<div class="muted" style="font-size:12px">not played</div>'}</div>
       ${side(match.b, match.bTeam, match.sb, match.w===2)}
     </div>
+    ${oddsBarHtml(match)}
     ${h2hHtml}
     ${previewHtml}
     ${sbHtml || (rosters?`<h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Rosters</h2><div class="m-rosters">${rosters}</div>`:'')}
@@ -1639,6 +1640,38 @@ function rtgColor(r){
   if(r>=1.10) return 'var(--good)';
   if(r<0.90)  return 'var(--accent2, #ff6b6b)';
   return 'var(--text)';
+}
+// ---------- win chance + rating swings (build/elo.py) ----------
+// m.odds = team A's chance to win the series: from the line-ups' Rating Points before the match (played)
+// or right now (upcoming). m.elo[slug] = [points before, after map 1, after map 2, ...] (null = sat out).
+const ODDS_NOTE = "From the two line-ups' Rating Points (the player Elo) before the match. BPL is close: the favourite wins about 54% of matches, so most chances sit between 40% and 60%.";
+function oddsSplit(m){ if(m.odds==null) return null; const a=Math.round(m.odds*100); return [a,100-a]; }
+function isUpset(m){ return m.odds!=null && (m.w===1||m.w===2) && Math.round((m.w===1?m.odds:1-m.odds)*100) < 40; }
+function oddsBarHtml(m, compact){
+  const sp=oddsSplit(m); if(!sp) return '';
+  const played=m.w===1||m.w===2, [pa,pb]=sp;
+  const head=`<div class="odds-head"><span>${played?'Pre-match win chance':'Win chance'}</span>${isUpset(m)?'<span class="odds-upset">Upset</span>':''}<span class="odds-q" title="${esc(ODDS_NOTE)}">?</span></div>`;
+  return `<div class="odds${compact?' compact':''}">${head}
+    <div class="odds-row"><span class="odds-p ${pa>pb?'fav':''}">${pa}%</span>
+      <span class="odds-bar"><i style="width:${pa}%"></i><b style="width:${pb}%"></b></span>
+      <span class="odds-p r ${pb>pa?'fav':''}">${pb}%</span></div></div>`;
+}
+function oddsChip(m){
+  const sp=oddsSplit(m); if(!sp) return '';
+  return `<span class="odds-chip" title="${esc('Win chance: '+(m.a||'')+' '+sp[0]+'% · '+sp[1]+'% '+(m.b||'')+'. '+ODDS_NOTE)}"><b class="${sp[0]>sp[1]?'fav':''}">${sp[0]}%</b><i></i><b class="${sp[1]>sp[0]?'fav':''}">${sp[1]}%</b></span>`;
+}
+// rating change for one player: the whole match (mapIdx null) or one map; null if not rated
+function eloSwing(m, slug, mapIdx){
+  const path=m.elo&&slug?m.elo[slug]:null; if(!path) return null;
+  if(mapIdx==null){ const last=[...path].reverse().find(v=>v!=null); return {from:path[0], to:last, d:last-path[0]}; }
+  const to=path[mapIdx+1]; if(to==null) return null;
+  let from=null; for(let i=mapIdx;i>=0;i--){ if(path[i]!=null){ from=path[i]; break; } }
+  return {from, to, d:to-from};
+}
+function swingCell(sw){
+  if(!sw) return '<td class="mono muted">–</td>';
+  const c=sw.d>0?'var(--good)':sw.d<0?'var(--accent2,#ff6b6b)':'var(--muted)';
+  return `<td class="mono sb-elo" style="color:${c}" title="Rating Points ${sw.from} → ${sw.to}">${sw.d>0?'+':sw.d<0?'−':'±'}${Math.abs(sw.d)}</td>`;
 }
 // ---------- HLTV-style match card (click a played bracket match) ----------
 function matchCardHTML(tr, m, ref){
@@ -1690,7 +1723,7 @@ function matchCardHTML(tr, m, ref){
     }
   }
   const btn = `<a class="mc-btn" href="#/match/${tr.slug}/${ref}">Match page</a>`;
-  return `<div class="mc-card">${head}${mapsHtml}${lineHtml}${btn}</div>`;
+  return `<div class="mc-card">${head}${m.odds!=null?`<div class="mc-odds">${oddsBarHtml(m,true)}</div>`:''}${mapsHtml}${lineHtml}${btn}</div>`;
 }
 function matchCardEl(){
   let ov = document.getElementById("match-card-ov");
@@ -1947,6 +1980,7 @@ function renderScoreboard(){
   const match = _sbMatch; if(!match) return;
   const c = document.getElementById("sb-container"); if(!c) return;
   const maps = match.stats.maps;
+  const hasElo = !!(match.elo && Object.keys(match.elo).length);
   const view = _sbTab === 'all' ? aggregateMaps(maps) : maps[_sbTab].players;
   const rounds = _sbTab === 'all'
     ? maps.reduce((s,mp)=>s+((mp.scoreA||0)+(mp.scoreB||0)),0)
@@ -1961,13 +1995,13 @@ function renderScoreboard(){
       <div class="tablewrap"><table class="data sb-table">
         <thead><tr><th class="no-sort">Player</th><th class="no-sort">K</th><th class="no-sort">A</th><th class="no-sort">D</th>
           <th class="no-sort">+/–</th><th class="no-sort">MVP</th><th class="no-sort">Score</th>
-          <th class="no-sort" title="BPL match rating (HLTV-style, ~1.00 = average)">RTG</th></tr></thead>
+          <th class="no-sort" title="BPL match rating (HLTV-style, ~1.00 = average)">RTG</th>${hasElo?`<th class="no-sort" title="Rating Points change from ${_sbTab==='all'?'this match':'this map'} (player Elo). Hover a number for before → after.">Δ Pts</th>`:''}</tr></thead>
         <tbody>${players.map(p=>{const pm=p.k-p.d; const rtg=matchRating(p.k,p.a,p.d,p.score,rounds); return `<tr>
           <td class="name-cell">${flag(p.iso)}${p.slug?`<a href="#/player/${p.slug}">${esc(p.name)}</a>`:esc(p.name)}</td>
           <td class="mono">${p.k}</td><td class="mono">${p.a}</td><td class="mono">${p.d}</td>
           <td class="mono" style="color:${pm>0?'var(--good)':pm<0?'var(--accent2)':'var(--muted)'}">${pm>0?'+':''}${pm}</td>
           <td class="mono">${p.mvp?'★'+p.mvp:'–'}</td><td class="mono">${p.score}</td>
-          <td class="mono sb-rtg" style="color:${rtgColor(rtg)}">${rtg!=null?rtg.toFixed(2):'–'}</td></tr>`;}).join("")}</tbody>
+          <td class="mono sb-rtg" style="color:${rtgColor(rtg)}">${rtg!=null?rtg.toFixed(2):'–'}</td>${hasElo?swingCell(eloSwing(match,p.slug,_sbTab==='all'?null:_sbTab)):''}</tr>`;}).join("")}</tbody>
       </table></div></div>`;
   };
   const tabs = maps.length > 1 ? `<div class="tabs" style="margin-bottom:10px">
@@ -2002,12 +2036,14 @@ function openStatsForm(slug, ref, match){
       <datalist id="allplayers">${allPlayers().map(p=>`<option value="${esc(p.name)}">`).join("")}</datalist>
       ${dl("sf-roster-a", rosterA)}${dl("sf-roster-b", rosterB)}
       ${dl("sf-maps-list", mapPool)}
+      ${qeBoxHtml(match)}
       <div id="sf-maps"></div>
       <button id="sf-addmap" class="loadmore" style="margin-top:6px">+ Add map</button>
       <div style="margin-top:12px"><button id="sf-save" class="adm-btn" style="max-width:220px">Save all maps</button>
         <span id="sf-msg" class="muted" style="font-size:12px;margin-left:10px"></span></div>
     </div>`;
   renderSfMaps(match);
+  setupQuickEntry(match, rosterA, rosterB);
   $("#sf-addmap").onclick = ()=>{ collectSf(match); _sfMaps.push({map:"", players:[]}); renderSfMaps(match); };
   $("#sf-save").onclick = async ()=>{
     collectSf(match);
@@ -2015,6 +2051,176 @@ function openStatsForm(slug, ref, match){
     const res = await apiPost("/api/matchstats", {slug, ref, maps:_sfMaps});
     if(res.ok){ await reloadData(); renderMatch(); } else $("#sf-msg").textContent = "Error: "+(res.error||"failed");
   };
+}
+// ---- quick scoreboard entry: type or paste the whole match as text; checked live, then fills the grid ----
+// One line per map ("Mirage 13 11"), then one line per player ("ebi 24 3 15 3 62"). Names can be the first
+// few letters or have a typo: they're matched to the two line-ups, which also tells which team they're on.
+// Checks use rules that held on 500+ recorded BPL maps: a team's kills can't exceed the other team's deaths,
+// and a team's MVP stars equal the rounds it won.
+const QE_ORDERS = {kadms:["k","a","d","mvp","score"], kdams:["k","d","a","mvp","score"], kdasm:["k","d","a","score","mvp"], kadsm:["k","a","d","score","mvp"]};
+const QE_LABEL = {k:"K", a:"A", d:"D", mvp:"MVP", score:"Score"};
+const QE_EXTRA_MAPS = ["Split","Nuke","Overpass","Ancient","Train","Office"];
+function qeOrderKey(){ try{ const k=localStorage.getItem("bpl_qe_order"); return QE_ORDERS[k]?k:"kadms"; }catch(e){ return "kadms"; } }
+function qeMapName(w){ const k=normKey(String(w||"").replace(/^de_/i,"")); return SF_MAP_POOL.concat(QE_EXTRA_MAPS).find(m=>normKey(m)===k)||null; }
+function qeLev(a,b){
+  const dp=Array.from({length:a.length+1},(_,i)=>[i]);
+  for(let j=1;j<=b.length;j++) dp[0][j]=j;
+  for(let i=1;i<=a.length;i++) for(let j=1;j<=b.length;j++)
+    dp[i][j]=Math.min(dp[i-1][j]+1, dp[i][j-1]+1, dp[i-1][j-1]+(a[i-1]===b[j-1]?0:1));
+  return dp[a.length][b.length];
+}
+function qeResolve(name, cands){
+  const k=normKey(name); if(!k) return null;
+  for(const test of [c=>normKey(c.name)===k, c=>normKey(c.name).startsWith(k), c=>normKey(c.name).includes(k)]){
+    const hit=cands.filter(test);
+    if(hit.length===1) return {c:hit[0], exact:normKey(hit[0].name)===k};
+    if(hit.length>1) return {amb:hit};
+  }
+  // typo tolerance: distance to the whole name or to its start (so "notorius" still finds NOTORIOUS47)
+  const dist=c=>{ const n=normKey(c.name); return Math.min(qeLev(k,n), ...[-1,0,1].map(o=>k.length+o>=3?qeLev(k,n.slice(0,k.length+o)):99)); };
+  const sc=cands.map(c=>({c, d:dist(c)})).sort((x,y)=>x.d-y.d);
+  if(sc.length && sc[0].d<=Math.max(1,Math.floor(k.length/4)) && (sc.length===1||sc[1].d>sc[0].d)) return {c:sc[0].c, exact:false};
+  return null;
+}
+function qeValidScore(a,b){             // MR12 (first to 13), overtime MR3 first to 4: 16-14, 19-17, ...
+  const hi=Math.max(a,b), lo=Math.min(a,b);
+  if(hi===13) return lo<=11;
+  return hi>13 && (hi-16)%3===0 && lo>=hi-4 && lo<=hi-2;
+}
+function qeParse(text, match, rosterA, rosterB){
+  const order=QE_ORDERS[qeOrderKey()];
+  const lineup=[...(rosterA||[]).map(n=>({name:n, team:match.a})), ...(rosterB||[]).map(n=>({name:n, team:match.b}))];
+  const everyone=allPlayers().map(p=>({name:p.name, team:null}));
+  const maps=[], lineErrs=[]; let cur=null;
+  const newMap=(name,sa,sb)=>{ cur={map:name||"", scoreA:sa, scoreB:sb, rows:[]}; maps.push(cur); };
+  text.split(/\r?\n/).forEach((raw,ln)=>{
+    const line=raw.replace(/[★*]/g," ").trim(); if(!line || line.startsWith("#")) return;
+    const hm=line.match(/^(?:map\s*\d*\s*[:.\-]?\s*)?([a-z_0-9]+)(?:\s+(\d+)\s*[-:–\s]\s*(\d+))?\s*$/i);
+    if(hm && qeMapName(hm[1])){ newMap(qeMapName(hm[1]), hm[2]!=null?+hm[2]:null, hm[3]!=null?+hm[3]:null); return; }
+    const toks=line.split(/[\s,;|]+/).filter(Boolean), nums=[];
+    while(toks.length && /^\d+$/.test(toks[toks.length-1])) nums.unshift(+toks.pop());
+    while(nums.length>5) toks.push(String(nums.shift()));          // a name that ends in a number ("Player 2")
+    const name=toks.join(" ");
+    if(!name){ lineErrs.push(`Line ${ln+1}: no player name.`); return; }
+    if(nums.length!==5){ lineErrs.push(`Line ${ln+1} (${name}): expected 5 numbers (${order.map(c=>QE_LABEL[c]).join(" ")}), found ${nums.length}.`); return; }
+    if(!cur) newMap("", null, null);
+    const st={}; order.forEach((c,i)=>st[c]=nums[i]);
+    const r=qeResolve(name, lineup);
+    if(r&&r.c) cur.rows.push({typed:name, name:r.c.name, team:r.c.team, exact:r.exact, ...st});
+    else if(r&&r.amb) cur.rows.push({typed:name, name, team:null, amb:r.amb.map(c=>c.name), ...st});
+    else { const g=qeResolve(name, everyone);
+      cur.rows.push({typed:name, name:g&&g.c?g.c.name:name, team:null, stand:!!(g&&g.c), unknown:!(g&&g.c), exact:!!(g&&g.c&&g.exact), ...st}); }
+  });
+  // players outside both line-ups (stand-ins / unknown): put them on the team that's short
+  maps.forEach(mp=>{
+    mp.rows.filter(r=>!r.team).forEach(r=>{
+      const nA=mp.rows.filter(x=>x.team===match.a).length, nB=mp.rows.filter(x=>x.team===match.b).length;
+      r.team = nA<5 && (nA<=nB || nB>=5) ? match.a : match.b; r.guessTeam=true;
+    });
+    mp.checks=qeChecks(mp, match);
+  });
+  // whole-match check: maps won vs the result entered in the bracket
+  const matchErrs=[];
+  if(match.w===1||match.w===2){
+    let wa=0,wb=0; maps.forEach(mp=>{ if(mp.scoreA!=null&&mp.scoreB!=null){ if(mp.scoreA>mp.scoreB) wa++; else if(mp.scoreB>mp.scoreA) wb++; } });
+    const bo=match.bo||1;
+    if((wa||wb) && (bo>1 ? (wa!==match.sa||wb!==match.sb) : ((wa>wb?1:2)!==match.w)))
+      matchErrs.push({lv:"bad", t:`These maps make it ${wa}-${wb}, but the bracket result is ${match.w===1?match.a:match.b} winning${bo>1?` ${Math.max(match.sa,match.sb)}-${Math.min(match.sa,match.sb)}`:''}.`});
+  }
+  return {maps, lineErrs, matchErrs, order};
+}
+function qeChecks(mp, match){
+  const out=[], A=mp.rows.filter(r=>r.team===match.a), B=mp.rows.filter(r=>r.team===match.b);
+  const sum=(rs,c)=>rs.reduce((t,r)=>t+(r[c]||0),0);
+  [[match.a,A],[match.b,B]].forEach(([nm,rs])=>{ if(rs.length!==5) out.push({lv:"bad", t:`${nm} has ${rs.length} player${rs.length===1?'':'s'} (needs 5).`}); });
+  const seen={}; mp.rows.forEach(r=>{ const k=normKey(r.name); if(seen[k]) out.push({lv:"bad", t:`${r.name} is listed twice.`}); seen[k]=1; });
+  mp.rows.forEach(r=>{
+    if(r.amb) out.push({lv:"bad", t:`"${r.typed}" could be ${r.amb.join(" or ")}: type a bit more of the name.`});
+    else if(r.unknown) out.push({lv:"warn", t:`"${r.typed}" isn't a known player; it will be saved as typed (on ${r.team}).`});
+    else if(r.stand) out.push({lv:"warn", t:`${r.name} isn't in either line-up at this event; put on ${r.team} (fix in the grid if wrong).`});
+  });
+  if(A.length&&B.length){
+    const kA=sum(A,"k"), kB=sum(B,"k"), dA=sum(A,"d"), dB=sum(B,"d");
+    [[match.a,kA,match.b,dB],[match.b,kB,match.a,dA]].forEach(([x,k,y,d])=>{
+      if(k>d) out.push({lv:"bad", t:`${x}'s kills (${k}) are more than ${y}'s deaths (${d}). That can't happen, so a K or D is off.`});
+      else if(d-k>=4) out.push({lv:"warn", t:`${y} have ${d-k} deaths that weren't kills by ${x} (${d} deaths, ${k} kills). Usually 0 to 2: check the K and D columns.`});
+    });
+    if(mp.scoreA!=null&&mp.scoreB!=null){
+      const mA=sum(A,"mvp"), mB=sum(B,"mvp");
+      if(mA===mp.scoreB && mB===mp.scoreA && mA!==mB)
+        out.push({lv:"bad", t:`The MVP stars say ${mA>mB?match.a:match.b} won ${Math.max(mA,mB)}-${Math.min(mA,mB)}. Is the map score the wrong way round? (left number = ${match.a})`});
+      else {
+        if(mA!==mp.scoreA) out.push({lv:"warn", t:`${match.a}'s MVP stars (${mA}) should equal the rounds they won (${mp.scoreA}).`});
+        if(mB!==mp.scoreB) out.push({lv:"warn", t:`${match.b}'s MVP stars (${mB}) should equal the rounds they won (${mp.scoreB}).`});
+      }
+    }
+  }
+  if(mp.scoreA!=null&&mp.scoreB!=null&&!qeValidScore(mp.scoreA,mp.scoreB)) out.push({lv:"warn", t:`${mp.scoreA}-${mp.scoreB} isn't a possible final score (MR12, overtime first to 4).`});
+  if(!mp.map) out.push({lv:"warn", t:"No map name: start the map with a line like \"Mirage 13 11\"."});
+  return out;
+}
+function qeBoxHtml(match){
+  const ok=qeOrderKey();
+  return `<details class="qe" ${match.stats?'':'open'}><summary><b>Quick entry</b> <span class="muted">· type or paste the whole scoreboard as text, checked as you type</span></summary>
+    <div class="qe-help">A line per map (<code>Mirage 13 11</code>, left score = ${esc(match.a||'team A')}), then a line per player:
+      <code>name</code> + the numbers in this order:
+      <select id="qe-order" class="adm-in">${Object.keys(QE_ORDERS).map(k=>`<option value="${k}" ${k===ok?'selected':''}>${QE_ORDERS[k].map(c=>QE_LABEL[c]).join(" ")}</option>`).join("")}</select>.
+      The first few letters of a name are enough; the team is worked out from the line-ups.</div>
+    <div class="qe-cols"><textarea id="qe-text" class="adm-in" rows="14" spellcheck="false" placeholder="Mirage 13 11&#10;ebi 24 3 15 3 62&#10;crex 21 5 14 2 55&#10;…&#10;&#10;Inferno 16 14&#10;…"></textarea>
+      <div id="qe-preview" class="qe-preview"><span class="muted">The parsed scoreboard and checks show here.</span></div></div>
+    <div class="qe-foot"><button id="qe-apply" class="adm-btn" style="margin:0;max-width:220px" disabled>Fill the form below</button>
+      <span id="qe-msg" class="muted" style="font-size:12px"></span></div></details>`;
+}
+function qeToText(maps, match, order){
+  return maps.map(mp=>{
+    const head=`${mp.map||'Map'}${mp.scoreA!=null?` ${mp.scoreA} ${mp.scoreB}`:''}`;
+    const rows=[match.a,match.b].flatMap(t=>(mp.players||[]).filter(p=>normKey(p.team)===normKey(t)))
+      .map(p=>`${p.name} ${order.map(c=>p[c]!=null?p[c]:0).join(" ")}`);
+    return [head,...rows].join("\n");
+  }).join("\n\n");
+}
+function setupQuickEntry(match, rosterA, rosterB){
+  const ta=$("#qe-text"); if(!ta) return;
+  const existing = match.stats&&match.stats.maps&&match.stats.maps.length ? match.stats.maps : null;
+  if(existing) ta.value=qeToText(existing, match, QE_ORDERS[qeOrderKey()]);
+  let parsed=null;
+  const draw=()=>{
+    parsed=qeParse(ta.value, match, rosterA, rosterB);
+    const pv=$("#qe-preview"), btn=$("#qe-apply");
+    if(!ta.value.trim()){ pv.innerHTML='<span class="muted">The parsed scoreboard and checks show here.</span>'; btn.disabled=true; $("#qe-msg").textContent=''; return; }
+    const issue=i=>`<div class="qe-i qe-${i.lv}">${i.lv==='bad'?'✗':'!'} ${esc(i.t)}</div>`;
+    const team=(mp,nm)=>{ const rs=mp.rows.filter(r=>r.team===nm);
+      return `<div class="qe-team"><div class="qe-tn">${esc(nm||'?')}</div>${rs.map(r=>`<div class="qe-r">
+        <span class="qe-n ${r.amb||r.unknown?'bad':r.stand||r.guessTeam?'warn':''}" title="${esc('typed: '+r.typed)}">${esc(r.amb?r.typed+'?':r.name)}${!r.exact&&!r.amb&&!r.unknown?` <i>${esc(r.typed)}</i>`:''}</span>
+        ${["k","a","d","mvp","score"].map(c=>`<span>${r[c]}</span>`).join("")}</div>`).join("")}</div>`; };
+    pv.innerHTML = parsed.lineErrs.map(t=>issue({lv:"bad",t})).join("") + parsed.matchErrs.map(issue).join("") +
+      parsed.maps.map((mp,i)=>`<div class="qe-map"><div class="qe-mh">Map ${i+1}${mp.map?' · '+esc(mp.map):''}${mp.scoreA!=null?` <b>${mp.scoreA}-${mp.scoreB}</b>`:''}</div>
+        <div class="qe-hdr"><span></span><span>K</span><span>A</span><span>D</span><span>MVP</span><span>Score</span></div>
+        ${team(mp,match.a)}${team(mp,match.b)}
+        ${mp.checks.length?mp.checks.map(issue).join(""):'<div class="qe-i qe-ok">✓ Kills, deaths, MVPs and score all add up.</div>'}</div>`).join("");
+    const bad=parsed.lineErrs.length + parsed.matchErrs.length + parsed.maps.reduce((t,mp)=>t+mp.checks.filter(c=>c.lv==='bad').length,0);
+    btn.disabled=!parsed.maps.length;
+    $("#qe-msg").textContent = !parsed.maps.length ? '' : bad ? `${bad} problem${bad===1?'':'s'} marked ✗: you can still fill the form and fix them there.` : 'Looks good.';
+    $("#qe-msg").style.color = bad ? 'var(--accent2,#ff6b6b)' : 'var(--good)';
+    return bad;
+  };
+  ta.addEventListener("input", draw);
+  $("#qe-order").onchange=e=>{
+    const before=QE_ORDERS[qeOrderKey()];
+    try{ localStorage.setItem("bpl_qe_order", e.target.value); }catch(_){}
+    // untouched prefilled text: rewrite it in the new column order
+    if(existing && ta.value===qeToText(existing, match, before)) ta.value=qeToText(existing, match, QE_ORDERS[e.target.value]);
+    draw();
+  };
+  $("#qe-apply").onclick=()=>{
+    if(!parsed||!parsed.maps.length) return;
+    _sfMaps = parsed.maps.map(mp=>({map:mp.map, scoreA:mp.scoreA, scoreB:mp.scoreB,
+      players: mp.rows.map(r=>({team:r.team, name:r.amb?r.typed:r.name, k:r.k, a:r.a, d:r.d, mvp:r.mvp, score:r.score}))}));
+    renderSfMaps(match);
+    $("#qe-msg").textContent="Filled. Check the grid, then press Save all maps."; $("#qe-msg").style.color="var(--good)";
+    $("#sf-maps").scrollIntoView({behavior:"smooth", block:"start"});
+  };
+  if(ta.value && draw()) document.querySelector("details.qe").open = true;   // a saved scoreboard that fails a check
 }
 function collectSf(match){
   _sfMaps = [...document.querySelectorAll(".sf-map")].map(bl=>{
@@ -2164,6 +2370,7 @@ async function renderAdmin(){
       <div>
         <div class="adm-pub-t">⬆ Publish to the live site</div>
         <div class="muted" style="font-size:12px">Push all your latest edits to GitHub — the public site updates about a minute later.</div>
+        ${(DATA.health&&DATA.health.counts&&DATA.health.counts.error)?`<div style="font-size:12px;margin-top:6px;color:var(--accent2,#ff6b6b)">Deploy guard: Site Health has ${DATA.health.counts.error} error${DATA.health.counts.error===1?'':'s'} below, so publishing is blocked until they're fixed. The live site stays as it is.</div>`:''}
         <div id="adm-pubmsg" style="font-size:12px;margin-top:6px"></div>
       </div>
       <button id="adm-publish" class="adm-btn adm-pub-btn">Publish to GitHub</button>
@@ -3416,6 +3623,7 @@ function renderTournament(slug){
           <a href="#/player/${tr.mvp.slug}" class="tm-mvp-name">${flag(tr.mvp.iso)}${esc(tr.mvp.name)}</a>
           <span class="muted" style="font-size:12px">${tr.mvp.mvpRounds} MVP round${tr.mvp.mvpRounds===1?'':'s'}${tr.mvp.team&&tr.mvp.team!=='—'?' · '+esc(tr.mvp.team):''}</span></div>` : ''}
         ${predSupported(tr) ? `<a class="predict-btn" href="#/predict/${tr.slug}">🔮 ${tr.champion?'Predictions & leaderboard':'Make your predictions'}</a>` : ''}
+        ${fantasySupported(tr) ? `<a class="predict-btn fy-btn" href="#/fantasy/${tr.slug}">⚡ ${fantasyLock(tr).locked?'Fantasy leaderboard':'Pick your fantasy team'}</a>` : ''}
       </div>
       ${champT&&champT.logo?`<img class="crest" src="${esc(champT.logo)}" alt="">`:''}
     </div>
@@ -3574,6 +3782,234 @@ function setupNav(){
   menu.addEventListener("click", e=>{ if(e.target.closest("a")) close(); });   // close after picking a link
   window.addEventListener("hashchange", close);                                 // and on any route change
 }
+// ================= FANTASY BPL =================
+// Per event, HLTV-style: pick 5 players from the teams attending, under a $1,000,000 budget, max 2 from one
+// team. Prices come from each player's Rating Points before the event (cheapest $100k, best $300k). Picks lock
+// when the event's first match is played; an entry saved after that moment doesn't count. Points come from
+// the real scoreboards. Entries are stored with the predictions (same Firebase, "fantasy:<event>" keys).
+const FANTASY = {budget:1000000, size:5, perTeam:2, minPrice:100000, maxPrice:300000,
+  pts:{k:2, a:1, d:-1, mvp:4, win:10}};
+const FANTASY_RULES = `Kill +${FANTASY.pts.k} · Assist +${FANTASY.pts.a} · Death ${FANTASY.pts.d} · MVP star +${FANTASY.pts.mvp} · Map won +${FANTASY.pts.win}`;
+function fantasyMatches(tr){
+  return tr.stages ? tr.stages.flatMap(st=>st.rounds.flatMap(rd=>rd.matches.map(m=>({m, ref:`${st.id}-${m.i}`}))))
+    : (tr.bracket||[]).flatMap(rd=>rd.matches.map(m=>({m, ref:`${m.i}`})));
+}
+const fantasyPlayed = m => (m.w===1||m.w===2) && m.a!=="(bye)" && m.b!=="(bye)";
+// picks lock at the first real result; ts = when it was recorded (null = locked, time unknown)
+function fantasyLock(tr){
+  const played=fantasyMatches(tr).map(x=>x.m).filter(fantasyPlayed);
+  if(!played.length) return {locked:false, ts:null};
+  const ts=played.map(m=>m.ts).filter(Boolean);
+  return {locked:true, ts:ts.length?Math.min(...ts):null};
+}
+function fantasySupported(tr){
+  if(!tr || /qualifier/i.test(tr.slug)) return false;
+  const att=(tr.attending||[]).filter(r=>(r.players||[]).filter(p=>p.slug).length>=3);
+  if(att.length<4) return false;
+  if(!tr.champion) return true;                                            // upcoming / live
+  const played=fantasyMatches(tr).map(x=>x.m).filter(fantasyPlayed);       // finished: most matches have scoreboards
+  return played.length>0 && played.filter(m=>m.stats&&m.stats.maps&&m.stats.maps.length).length >= played.length/2;
+}
+// the player pool with prices from Rating Points before the event (the first recorded match's "before")
+function fantasyPool(tr){
+  const before={};
+  fantasyMatches(tr).map(x=>x.m).filter(m=>m.elo).sort((a,b)=>(a.ts||0)-(b.ts||0))
+    .forEach(m=>Object.entries(m.elo).forEach(([s,path])=>{ if(!(s in before)) before[s]=path[0]; }));
+  const pool=[];
+  (tr.attending||[]).forEach(row=>(row.players||[]).forEach(pl=>{
+    if(!pl.slug || pool.some(x=>x.slug===pl.slug)) return;
+    const p=playerBySlug(pl.slug); if(!p) return;
+    const rp = before[pl.slug]!=null ? before[pl.slug] : p.ratingPoints;
+    if(rp==null) return;
+    pool.push({slug:pl.slug, name:p.name, iso:p.iso, team:row.team, teamSlug:row.teamSlug, rp});
+  }));
+  const rs=pool.map(x=>x.rp).sort((a,b)=>a-b), q=f=>rs[Math.min(rs.length-1, Math.max(0, Math.round(f*(rs.length-1))))];
+  const lo=q(0.05), hi=q(0.95);
+  pool.forEach(x=>{
+    const t = hi>lo ? Math.max(0, Math.min(1, (x.rp-lo)/(hi-lo))) : 0.5;
+    x.price = Math.round((FANTASY.minPrice + t*(FANTASY.maxPrice-FANTASY.minPrice))/5000)*5000;
+  });
+  return pool;
+}
+// fantasy points per player from the event's recorded scoreboards
+function fantasyPoints(tr){
+  const out={}, P=FANTASY.pts;
+  fantasyMatches(tr).forEach(({m})=>{
+    ((m.stats&&m.stats.maps)||[]).forEach(mp=>{
+      if(mp.scoreA==null||mp.scoreB==null) return;
+      (mp.players||[]).forEach(pl=>{
+        if(!pl.slug) return;
+        const isA=normKey(pl.team)===normKey(m.a), won=isA ? mp.scoreA>mp.scoreB : mp.scoreB>mp.scoreA;
+        const o=out[pl.slug]||(out[pl.slug]={pts:0, maps:0, k:0, a:0, d:0, mvp:0, wins:0});
+        o.maps++; o.k+=pl.k||0; o.a+=pl.a||0; o.d+=pl.d||0; o.mvp+=pl.mvp||0; o.wins+=won?1:0;
+        o.pts += (pl.k||0)*P.k + (pl.a||0)*P.a + (pl.d||0)*P.d + (pl.mvp||0)*P.mvp + (won?P.win:0);
+      });
+    });
+  });
+  return out;
+}
+function fantasyCheck(picks, pool){
+  const by=Object.fromEntries(pool.map(x=>[x.slug,x])), sel=picks.map(s=>by[s]).filter(Boolean);
+  const cost=sel.reduce((t,x)=>t+x.price,0), per={};
+  sel.forEach(x=>per[x.team]=(per[x.team]||0)+1);
+  const errs=[];
+  if(cost>FANTASY.budget) errs.push(`Over budget by ${fmtMoney(cost-FANTASY.budget)}.`);
+  Object.entries(per).forEach(([t,n])=>{ if(n>FANTASY.perTeam) errs.push(`Max ${FANTASY.perTeam} players from ${t}.`); });
+  return {sel, cost, errs, full:sel.length===FANTASY.size};
+}
+function fmtMoney(v){ return v>=1000000 ? `$${(v/1000000).toFixed(v%1000000?2:0)}M` : `$${Math.round(v/1000)}k`; }
+// best possible line-up under the rules (search over the top scorers; the optimum is always among them)
+function fantasyPerfect(pool, pts){
+  const cand=pool.filter(x=>pts[x.slug]).map(x=>({...x, pts:pts[x.slug].pts})).sort((a,b)=>b.pts-a.pts).slice(0,36);
+  let best=null; const pick=[];
+  (function go(i, cost, score, per){
+    if(pick.length===FANTASY.size){ if(!best||score>best.score) best={score, picks:[...pick]}; return; }
+    if(i>=cand.length) return;
+    // bound: even the next best players can't beat the best found
+    let ub=score; for(let j=i, n=pick.length; j<cand.length && n<FANTASY.size; j++, n++) ub+=Math.max(0,cand[j].pts);
+    if(best && ub<=best.score) return;
+    const c=cand[i];
+    if(cost+c.price<=FANTASY.budget && (per[c.team]||0)<FANTASY.perTeam){
+      pick.push(c); per[c.team]=(per[c.team]||0)+1;
+      go(i+1, cost+c.price, score+c.pts, per);
+      pick.pop(); per[c.team]--;
+    }
+    go(i+1, cost, score, per);
+  })(0, 0, 0, {});
+  return best;
+}
+const FantasyStore = {
+  key: slug => 'fantasy:'+slug,
+  async save(entry){ return PredictBackend.saveDoc(entry.event+'__'+entry.uid, entry, 'bpl_fant_'); },
+  async loadAll(slug){ return PredictBackend.queryEvent(this.key(slug), 'bpl_fant_'); },
+};
+
+function renderFantasy(slug){
+  if(slug) return renderFantasyEvent(slug);
+  const evs=(DATA.tournaments||[]).filter(fantasySupported).sort((a,b)=>(a.date<b.date?1:-1));
+  const card=tr=>{ const lk=fantasyLock(tr);
+    const st = !lk.locked ? '<span class="fy-st open">Open for picks</span>' : !tr.champion ? '<span class="fy-st live">● Live</span>' : '<span class="fy-st done">Finished</span>';
+    return `<a class="fy-ev" href="#/fantasy/${tr.slug}">${tierBadgeEvent(tr)}<span class="fy-evn">${esc(tr.name)}</span><span class="muted">${fmtDate(tr.date)}</span>${st}</a>`; };
+  const open=evs.filter(t=>!fantasyLock(t).locked), rest=evs.filter(t=>fantasyLock(t).locked);
+  app.innerHTML = `<h2 class="section-title"><span class="accent-bar"></span>Fantasy BPL
+      <span class="muted" style="font-size:11px">${PredictBackend.isShared?'shared leaderboards':'saved in this browser'}</span></h2>
+    <div class="fy-how">
+      <div><b>1. Pick 5 players</b><span>from the teams at an event, with a ${fmtMoney(FANTASY.budget)} budget and at most ${FANTASY.perTeam} from one team. Better-rated players cost more.</span></div>
+      <div><b>2. Picks lock</b><span>when the event's first match is played. Change your team as often as you like before that.</span></div>
+      <div><b>3. Score points</b><span>from the real scoreboards: ${esc(FANTASY_RULES)}.</span></div>
+    </div>
+    <h3 class="rec-group">Open for picks</h3>
+    <div class="fy-evs">${open.map(card).join("") || '<p class="muted">No event is open right now. The next one opens as soon as it is created, with its teams.</p>'}</div>
+    <h3 class="rec-group" style="margin-top:22px">Live &amp; finished</h3>
+    <div class="fy-evs">${rest.map(card).join("") || '<p class="muted">None yet.</p>'}</div>`;
+}
+async function renderFantasyEvent(slug){
+  const tr=(DATA.tournaments||[]).find(t=>t.slug===slug);
+  if(!tr || !fantasySupported(tr)){ app.innerHTML=notFound("Fantasy event"); return; }
+  const lk=fantasyLock(tr), pool=fantasyPool(tr), pts=fantasyPoints(tr), me=predUser();
+  const head=`<div class="crumb"><a href="#/fantasy">Fantasy</a><span class="sep">/</span>${esc(tr.name)}</div>
+    <div class="fy-head"><div><h1>${esc(tr.name)} ${tierBadgeEvent(tr)}</h1>
+      <div class="muted" style="font-size:13px">${!lk.locked?'Open for picks: they lock when the first match is played.':tr.champion?'Finished.':'Live: picks are locked, points update with every scoreboard.'}
+        · ${esc(FANTASY_RULES)}</div></div>
+      <a class="predict-btn" href="#/tournament/${tr.slug}" style="margin:0">Event page →</a></div>`;
+  app.innerHTML = head + `<div id="fy-body"><p class="muted">Loading…</p></div>`;
+  let entries=[]; try{ entries=await FantasyStore.loadAll(slug); }catch(e){ entries=[]; }
+  const mine=entries.find(e=>e.uid===me.uid);
+  if(!lk.locked) fantasyPickUI(tr, pool, mine, entries);
+  else fantasyResultsUI(tr, pool, pts, entries, lk, me);
+}
+function fantasyPickUI(tr, pool, mine, entries){
+  const me=predUser();
+  let picks = mine ? mine.picks.filter(s=>pool.some(x=>x.slug===s)) : [];
+  let sort='team', q='';
+  const body=$("#fy-body");
+  const draw=()=>{
+    const chk=fantasyCheck(picks, pool), left=FANTASY.budget-chk.cost;
+    let list=pool.filter(x=>!q || normKey(x.name).includes(normKey(q)) || normKey(x.team).includes(normKey(q)));
+    list = sort==='price' ? list.sort((a,b)=>b.price-a.price||b.rp-a.rp) : sort==='cheap' ? list.sort((a,b)=>a.price-b.price||b.rp-a.rp)
+      : list.sort((a,b)=>a.team.localeCompare(b.team)||b.price-a.price);
+    const teamCount={}; chk.sel.forEach(x=>teamCount[x.team]=(teamCount[x.team]||0)+1);
+    const cheapest=Math.min(...pool.map(x=>x.price));
+    const row=x=>{ const on=picks.includes(x.slug);
+      // also keep enough money for the cheapest player in every slot still open after this one
+      const reserve=Math.max(0, FANTASY.size-picks.length-1)*cheapest;
+      const blocked=!on && (picks.length>=FANTASY.size || x.price>left-reserve || (teamCount[x.team]||0)>=FANTASY.perTeam);
+      return `<div class="fy-p ${on?'on':''} ${blocked?'blocked':''}" data-s="${esc(x.slug)}">
+        <span class="fy-pn">${flag(x.iso)}${esc(x.name)}</span><span class="fy-pt muted">${esc(x.team)}</span>
+        <span class="fy-rp mono">${x.rp}</span><span class="fy-pr">${fmtMoney(x.price)}</span>
+        <span class="fy-add">${on?'✓':'+'}</span></div>`; };
+    const groups = sort==='team' ? Object.entries(list.reduce((g,x)=>((g[x.team]=g[x.team]||[]).push(x),g),{}))
+        .map(([t,xs])=>`<div class="fy-tg">${esc(t)}</div>${xs.map(row).join("")}`).join("") : list.map(row).join("");
+    const slots=[...Array(FANTASY.size)].map((_,i)=>{ const x=chk.sel[i];
+      return x ? `<div class="fy-slot"><span>${flag(x.iso)}<b>${esc(x.name)}</b><i class="muted">${esc(x.team)}</i></span><span class="fy-pr">${fmtMoney(x.price)}</span><button class="fy-rm" data-s="${esc(x.slug)}" title="Remove">×</button></div>`
+        : `<div class="fy-slot empty">Player ${i+1}</div>`; }).join("");
+    const pct=Math.min(100, chk.cost/FANTASY.budget*100);
+    body.innerHTML=`<div class="fy-grid">
+      <div class="fy-pool"><div class="fy-tools"><input id="fy-q" class="adm-in" placeholder="Search players or teams…" value="${esc(q)}">
+          <select id="fy-sort" class="adm-in"><option value="team">By team</option><option value="price">Most expensive</option><option value="cheap">Cheapest</option></select></div>
+        <div class="fy-ph"><span>Player</span><span>Team</span><span>Rating</span><span>Price</span><span></span></div>
+        <div class="fy-list">${groups||'<p class="muted" style="padding:10px">No players match.</p>'}</div></div>
+      <div class="fy-side"><div class="fy-card"><div class="fy-ct">Your team</div>${slots}
+        <div class="fy-budget"><div class="fy-bar"><i style="width:${pct}%" class="${chk.cost>FANTASY.budget?'over':''}"></i></div>
+          <div class="fy-bt"><span>Spent <b>${fmtMoney(chk.cost)}</b></span><span>Left <b class="${left<0?'neg':''}">${fmtMoney(Math.abs(left))}${left<0?' over':''}</b></span></div></div>
+        ${chk.errs.map(e=>`<div class="qe-i qe-bad">✗ ${esc(e)}</div>`).join("")}
+        <input id="fy-name" class="adm-in" maxlength="40" placeholder="Your name (shown on the leaderboard)" value="${esc(me.name||(mine&&mine.name)||'')}">
+        <button id="fy-save" class="adm-btn" style="margin-top:8px" ${chk.full&&!chk.errs.length?'':'disabled'}>${mine?'Update my team':'Save my team'}</button>
+        <div id="fy-msg" class="muted" style="font-size:12px;margin-top:6px">${mine?`Saved ${new Date(mine.savedAt).toLocaleString()}. You can change it until the first match.`:''}</div></div>
+        ${entries.length?`<div class="fy-card"><div class="fy-ct">${entries.length} team${entries.length===1?'':'s'} entered</div>
+          <div class="muted" style="font-size:12px">${entries.map(e=>esc(e.name||'anon')).join(", ")}. Picks stay hidden until they lock.</div></div>`:''}</div></div>`;
+    body.querySelectorAll(".fy-p").forEach(el=>el.onclick=()=>{
+      const s=el.dataset.s;
+      if(picks.includes(s)) picks=picks.filter(x=>x!==s); else if(!el.classList.contains("blocked")) picks.push(s);
+      draw();
+    });
+    body.querySelectorAll(".fy-rm").forEach(b=>b.onclick=()=>{ picks=picks.filter(x=>x!==b.dataset.s); draw(); });
+    const qi=$("#fy-q"); qi.oninput=()=>{ q=qi.value; const pos=qi.selectionStart; draw(); const n=$("#fy-q"); n.focus(); n.setSelectionRange(pos,pos); };
+    $("#fy-sort").value=sort; $("#fy-sort").onchange=e=>{ sort=e.target.value; draw(); };
+    $("#fy-name").oninput=e=>{ try{ localStorage.setItem('bpl_pname', e.target.value); }catch(_){} };
+    $("#fy-save").onclick=async ()=>{
+      const name=$("#fy-name").value.trim();
+      if(!name){ $("#fy-msg").textContent="Add your name first."; $("#fy-msg").style.color="var(--accent2)"; return; }
+      const c=fantasyCheck(picks, pool); if(!c.full||c.errs.length) return;
+      const entry={kind:'fantasy', event:FantasyStore.key(tr.slug), uid:me.uid, name:name.slice(0,40), picks:[...picks], cost:c.cost, savedAt:Date.now()};
+      $("#fy-save").disabled=true; $("#fy-msg").textContent="Saving…";
+      try{ await FantasyStore.save(entry); mine=entry; const i=entries.findIndex(e=>e.uid===me.uid); if(i>=0) entries[i]=entry; else entries.push(entry);
+        draw(); $("#fy-msg").textContent="Saved! Your team is in."; $("#fy-msg").style.color="var(--good)"; }
+      catch(e){ $("#fy-save").disabled=false; $("#fy-msg").textContent="Couldn't save: "+e.message; $("#fy-msg").style.color="var(--accent2)"; }
+    };
+  };
+  draw();
+}
+function fantasyResultsUI(tr, pool, pts, entries, lk, me){
+  const by=Object.fromEntries(pool.map(x=>[x.slug,x]));
+  const pp=s=>pts[s]?pts[s].pts:0;
+  const valid=entries.filter(e=>Array.isArray(e.picks) && (!lk.ts || !e.savedAt || e.savedAt<=lk.ts*1000));
+  const late=entries.length-valid.length;
+  const board=valid.map(e=>({...e, total:e.picks.reduce((t,s)=>t+pp(s),0)})).sort((a,b)=>b.total-a.total||(a.savedAt||0)-(b.savedAt||0));
+  const pRow=s=>{ const x=by[s]||{name:(playerBySlug(s)||{}).name||s}, o=pts[s];
+    return `<span class="fy-chip">${flag(x.iso)}<a href="#/player/${esc(s)}">${esc(x.name)}</a> <b>${o?o.pts:0}</b></span>`; };
+  const boardHtml = board.length ? `<div class="tablewrap"><table class="data fy-board"><thead><tr><th>#</th><th>Manager</th><th>Team</th><th>Points</th></tr></thead><tbody>
+      ${board.map((e,i)=>`<tr class="${e.uid===me.uid?'fy-me':''}"><td class="rankcol">${i+1}</td><td class="name-cell">${esc(e.name||'anon')}${e.uid===me.uid?' <span class="muted">(you)</span>':''}</td>
+        <td>${e.picks.map(pRow).join("")}</td><td class="mono fy-tot">${e.total}</td></tr>`).join("")}</tbody></table></div>
+      ${late?`<p class="muted" style="font-size:12px">${late} team${late===1?' was':'s were'} saved after picks locked and ${late===1?"doesn't":"don't"} count.</p>`:''}`
+    : `<p class="muted">Nobody entered a fantasy team for this event${tr.champion?'':' before picks locked'}.</p>`;
+  const top=pool.filter(x=>pts[x.slug]).map(x=>({...x, ...pts[x.slug]})).sort((a,b)=>b.pts-a.pts);
+  const value=[...top].filter(x=>x.maps>=2).sort((a,b)=>b.pts/b.price-a.pts/a.price).slice(0,5);
+  const perfect=fantasyPerfect(pool, pts);
+  const topHtml = top.length ? `<div class="tablewrap"><table class="data"><thead><tr><th>#</th><th>Player</th><th>Team</th><th>Price</th><th>Maps</th><th>K</th><th>D</th><th>MVP</th><th>Points</th></tr></thead><tbody>
+      ${top.slice(0,15).map((x,i)=>`<tr><td class="rankcol">${i+1}</td><td class="name-cell">${flag(x.iso)}<a href="#/player/${x.slug}">${esc(x.name)}</a></td><td class="muted">${esc(x.team)}</td>
+        <td>${fmtMoney(x.price)}</td><td class="mono">${x.maps}</td><td class="mono">${x.k}</td><td class="mono">${x.d}</td><td class="mono">${x.mvp}</td><td class="mono fy-tot">${x.pts}</td></tr>`).join("")}</tbody></table></div>`
+    : '<p class="muted">No scoreboards recorded yet.</p>';
+  $("#fy-body").innerHTML = `
+    <h2 class="section-title"><span class="accent-bar"></span>Leaderboard</h2>${boardHtml}
+    ${perfect?`<h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>${tr.champion?'The perfect team':'The perfect team so far'}
+        <span class="muted" style="font-size:11px">best possible 5 under the budget and team limit</span></h2>
+      <div class="fy-perfect">${perfect.picks.map(x=>`<div class="fy-pf">${flag(x.iso)}<a href="#/player/${x.slug}">${esc(x.name)}</a><span class="muted">${esc(x.team)} · ${fmtMoney(x.price)}</span><b>${x.pts}</b></div>`).join("")}
+        <div class="fy-pf tot"><span>Total</span><span class="muted">${fmtMoney(perfect.picks.reduce((t,x)=>t+x.price,0))}</span><b>${perfect.score}</b></div></div>`:''}
+    ${value.length?`<h3 class="rec-group" style="margin-top:18px">Best value <span class="muted" style="font-size:11px">points per $100k</span></h3>
+      <div class="fy-perfect">${value.map(x=>`<div class="fy-pf">${flag(x.iso)}<a href="#/player/${x.slug}">${esc(x.name)}</a><span class="muted">${fmtMoney(x.price)} · ${x.pts} pts</span><b>${(x.pts/x.price*100000).toFixed(1)}</b></div>`).join("")}</div>`:''}
+    <h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Top fantasy scorers</h2>${topHtml}`;
+}
 // ================= PREDICTIONS =================
 const PredictBackend = (function(){
   const cfg = window.BPL_FIREBASE || {};
@@ -3607,8 +4043,16 @@ const PredictBackend = (function(){
       if(isShared){ await load(); const d=await db.collection('predictions').doc(event+'__'+uid).get(); return d.exists?d.data():null; }
       const v=localStorage.getItem('bpl_pred_'+event+'_'+uid); return v?JSON.parse(v):null;
     },
+    async saveDoc(id, doc, localPrefix){
+      if(isShared){ await load(); await db.collection('predictions').doc(id).set(doc); }
+      else { localStorage.setItem(localPrefix+id, JSON.stringify(doc)); }
+    },
+    async queryEvent(event, localPrefix){
+      if(isShared){ await load(); const snap=await db.collection('predictions').where('event','==',event).get(); return snap.docs.map(d=>d.data()); }
+      const out=[]; for(let i=0;i<localStorage.length;i++){ const k=localStorage.key(i); if(k.indexOf(localPrefix+event+'__')===0){ try{ out.push(JSON.parse(localStorage.getItem(k))); }catch(e){} } } return out;
+    },
     async loadEverything(){
-      if(isShared){ await load(); const snap=await db.collection('predictions').get(); return snap.docs.map(d=>d.data()); }
+      if(isShared){ await load(); const snap=await db.collection('predictions').get(); return snap.docs.map(d=>d.data()).filter(d=>d.kind!=='fantasy'); }
       const out=[]; for(let i=0;i<localStorage.length;i++){ const k=localStorage.key(i); if(k.indexOf('bpl_pred_')===0){ try{ out.push(JSON.parse(localStorage.getItem(k))); }catch(e){} } } return out;
     }
   };

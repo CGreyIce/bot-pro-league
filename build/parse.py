@@ -1179,6 +1179,8 @@ def main():
     # and supersedes the placement-only compute_team_points() pass earlier in the build.
     import team_rank
     team_rank.apply(teams, tournaments, pro + amateur + solo, TIER_POINT_MULT, _placement_points, _group_points)
+    import elo as _elo_mod                 # win chance for upcoming/live matches (from the line-ups' Rating Points)
+    print(f"odds: {_elo_mod.upcoming_odds(tournaments, pro, norm_key)} upcoming matches priced")
 
     # ---- Nations Cup: each nation's team = the winning squad from its qualifier ----
     # A qualifier carries "nationTeam" (e.g. "Team Singapore"); once it has a champion (the

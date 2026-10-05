@@ -28,6 +28,36 @@ class Health:
         self.issues.append({"level": level, "check": check, "msg": msg, "link": link})
 
 
+def typo_checks(h, tr, m, ref, mi, mp):
+    """Likely typos in a saved map scoreboard (the same rules the admin Quick entry checks as you type).
+    They held on 500+ recorded maps: a team's kills never exceed the other team's deaths (deaths can be a
+    little higher: bomb, fall and self damage), and a team's MVP stars equal the rounds it won."""
+    sa, sb = mp.get("scoreA"), mp.get("scoreB")
+    A = [p for p in mp.get("players", []) if norm(p.get("team")) == norm(m.get("a"))]
+    B = [p for p in mp.get("players", []) if norm(p.get("team")) == norm(m.get("b"))]
+    if sa is None or sb is None or len(A) != 5 or len(B) != 5:
+        return
+    sm = lambda rs, c: sum(p.get(c) or 0 for p in rs)
+    where = f"{tr['name']}: {m.get('a')} vs {m.get('b')}, map {mi + 1}{' (' + mp['map'] + ')' if mp.get('map') else ''} {sa}-{sb}"
+    link = f"#/match/{tr['slug']}/{ref}"
+    mA, mB = sm(A, "mvp"), sm(B, "mvp")
+    if mA == sb and mB == sa and mA != mB:
+        win = m.get("a") if mA > mB else m.get("b")
+        h.add("warning", "Scoreboards", f"{where}: the MVP stars say {win} won {max(mA, mB)}-{min(mA, mB)}. "
+              "The map score may be the wrong way round, which would change the result.", link)
+        return
+    notes = []
+    for x, k, y, d in ((m.get("a"), sm(A, "k"), m.get("b"), sm(B, "d")), (m.get("b"), sm(B, "k"), m.get("a"), sm(A, "d"))):
+        if k > d:
+            notes.append(f"{x}'s kills ({k}) are more than {y}'s deaths ({d})")
+        elif d - k >= 4:
+            notes.append(f"{y} have {d - k} deaths that weren't kills by {x}")
+    if mA != sa or mB != sb:
+        notes.append(f"MVP stars ({mA}-{mB}) don't match the rounds won")
+    if notes:
+        h.add("info", "Scoreboards", f"Possible typo · {where}: " + "; ".join(notes) + ".", link)
+
+
 def run(data, data_dir):
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     import manual
@@ -104,7 +134,8 @@ def run(data, data_dir):
                     if derived and m.get("sa") is not None and (m["sa"], m["sb"]) != tuple(derived):
                         h.add("warning", "Scoreboards", f"{tr['name']}: {m.get('a')} vs {m.get('b')} is recorded as {m['sa']}-{m['sb']} "
                               f"but its map scoreboards add up to {derived[0]}-{derived[1]}.", f"#/tournament/{tr['slug']}")
-                    for mp in maps:
+                    for mi, mp in enumerate(maps):
+                        typo_checks(h, tr, m, f"{st['id']}-{m['i']}", mi, mp)
                         for pl in mp.get("players", []):
                             if not pl.get("slug") and tr.get("date", "") >= "2026":
                                 h.add("warning", "Scoreboards", f"{tr['name']}: scoreboard player '{pl.get('name')}' ({mp.get('map')}) "
