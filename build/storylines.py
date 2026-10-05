@@ -358,8 +358,12 @@ class Storylines:
                 body.append(f"**The run.** On the way to the final they got past {_join(path)}.")
         if tr.get("mvp"):
             mv = tr["mvp"]
-            body.append(f"**The MVP.** {self.L(mv['name'])} was the standout player of the event, with {mv.get('mvpRounds')} "
-                        f"MVP rounds and {mv.get('kills')} kills.")
+            if mv.get("rating") is not None:
+                body.append(f"**The MVP.** {self.L(mv['name'])} was the standout player of the event, with a {mv['rating']:.2f} "
+                            f"rating over {mv.get('maps')} maps, {mv.get('kills')} kills and {mv.get('mvpRounds')} MVP rounds.")
+            else:
+                body.append(f"**The MVP.** {self.L(mv['name'])} was the standout player of the event, with {mv.get('mvpRounds')} "
+                            f"MVP rounds and {mv.get('kills')} kills.")
         row = next((r for r in tr.get("attending", []) if wikilinks.norm(r.get("team")) == k), None)
         if row and row.get("players"):
             body.append(f"**The roster.** The title-winning line-up: {_join([self.L(p['name']) for p in row['players']])}.")

@@ -291,14 +291,17 @@ class Roster:
         dates += [a.get("date", "") for a in self.data.get("articles", [])]
         return max(d for d in dates if d)
 
-    def _log_move(self, player, frm, to, when):
+    def _log_move(self, player, frm, to, when, fee=0):
         prev = max((m.get("date", "") for m in self.moves if norm(m.get("player")) == norm(player)), default="")
         if prev and when < prev:
             self.note(f"⚠ Dated {when}, which is before {poss(player)} previous move ({prev}). The Transfers "
                       "page sorts by date, so pick a later date.")
-        self.moves.append({"date": when, "player": player, "from": frm, "to": to})
+        mv = {"date": when, "player": player, "from": frm, "to": to}
+        if fee:
+            mv["fee"] = int(fee)
+        self.moves.append(mv)
         self.dirty_json.add("roster_moves.json")
-        self.note(f"Transfers page: {player}, {frm} → {to} ({when}).")
+        self.note(f"Transfers page: {player}, {frm} → {to} ({when})" + (f" for ${int(fee):,}." if fee else "."))
 
     def _rtxt_move(self, player, frm, to):
         blocks = roster_blocks(self.rtxt)
@@ -316,13 +319,36 @@ class Roster:
                 self.note(f"rosters.txt: add {player} to {poss(b_to['name'])} bot_add lines.")
 
     # ================================================================ actions
-    def transfer(self, player, to, when=None, log=True):
+    def team_data(self, name):
+        return next((t for t in self.data.get("teams", []) if norm(t["name"]) == norm(name)), None)
+
+    def transfer(self, player, to, when=None, log=True, fee=0):
         p = self.player(player)
         when = when or self.league_today()
         frm = self.current_team(p)
         to = (to or "").strip()
         if not to or norm(to) in (norm(FREE_AGENT), "freeagent", "none"):
             to = ""
+        try:
+            fee = int(float(str(fee or 0).replace(",", "").replace("$", "")))
+        except ValueError:
+            raise RosterError("The transfer fee must be a number of dollars.")
+        if fee < 0:
+            raise RosterError("The transfer fee can't be negative.")
+        if fee:
+            # fees: paid by the buying team to the selling team (build/economy.py turns them into budgets)
+            if norm(frm) == norm(FREE_AGENT):
+                raise RosterError(f"{p['name']} is a free agent, so there's no fee: set it to $0.")
+            if not to:
+                raise RosterError("Releasing a player to free agency has no fee: set it to $0.")
+            buyer = self.page_team(to)
+            if not buyer:
+                raise RosterError(f"{to} has no team page, so it has no budget to pay a fee: set it to $0.")
+            budget = (self.team_data(buyer) or {}).get("budget", 0) or 0
+            if fee > budget:
+                raise RosterError(f"{buyer} can't afford ${fee:,}: their budget is ${budget:,}. Lower the fee or pick another team.")
+            self.note(f"Fee: {buyer} pays ${fee:,}" + (f" to {self.page_team(frm)}" if self.page_team(frm) else "")
+                      + f". {buyer}'s budget goes from ${budget:,} to ${budget - fee:,}.")
         target = self._set_team(p["name"], to, p.get("role", ""))
         to_lbl = target or FREE_AGENT
         if norm(frm) == norm(to_lbl):
@@ -331,7 +357,7 @@ class Roster:
         if not self.page_team(to_lbl) and target:
             self.note(f"Note: {target} has no team page, so {p['name']} shows it as an amateur team.")
         if log:
-            self._log_move(p["name"], frm, to_lbl, when)
+            self._log_move(p["name"], frm, to_lbl, when, fee)
         self._rtxt_move(p["name"], frm, to_lbl)
         self._live_warning(p, to_lbl)
 
@@ -707,7 +733,7 @@ class Roster:
 
 
 ACTIONS = {
-    "transfer": lambda r, b: r.transfer(b.get("player"), b.get("to"), b.get("date")),
+    "transfer": lambda r, b: r.transfer(b.get("player"), b.get("to"), b.get("date"), fee=b.get("fee") or 0),
     "add": lambda r, b: r.add_player(b.get("name"), b.get("country"), b.get("gender", ""), b.get("role", ""), b.get("team", ""), b.get("date")),
     "edit": lambda r, b: r.edit_player(b.get("player"), b.get("role") or None, b.get("country") or None, b.get("gender") or None),
     "rename_player": lambda r, b: r.rename_player(b.get("old"), b.get("new")),

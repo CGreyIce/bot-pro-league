@@ -14,6 +14,7 @@ from urllib.parse import urlparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import manual
 import roster
+import wrapup
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.path.join(ROOT, "site")
@@ -164,6 +165,15 @@ class Handler(SimpleHTTPRequestHandler):
             return self._json(200, {"ok": True, **roster.meta()})
         if path == "/api/solo/list":
             return self._json(200, {"ok": True, "games": load_solo()})
+        if path.startswith("/api/wrapup/"):
+            try:
+                return self._json(200, {"ok": True, **wrapup.suggest(path[len("/api/wrapup/"):])})
+            except roster.RosterError as e:
+                return self._json(400, {"ok": False, "error": str(e)})
+        if path == "/api/seeds":
+            from urllib.parse import parse_qs
+            name = (parse_qs(urlparse(self.path).query).get("name") or [""])[0]
+            return self._json(200, {"ok": True, "seeds": wrapup.seeds_for(name)})
         if path.startswith("/api/manual/"):
             slug = path[len("/api/manual/"):]
             man = manual.load(slug)
@@ -266,6 +276,16 @@ class Handler(SimpleHTTPRequestHandler):
                 # roster tools: dryRun -> preview of every change; otherwise apply + rebuild
                 try:
                     res = roster.run(b.get("action"), b, dry_run=bool(b.get("dryRun", True)))
+                except roster.RosterError as e:
+                    return self._json(400, {"ok": False, "error": str(e)})
+                if b.get("dryRun", True):
+                    return self._json(200, {"ok": True, "changes": res["changes"]})
+                ok, msg = regenerate()
+                return self._json(200, {"ok": ok, "changes": res["changes"], "msg": msg})
+            elif path == "/api/wrapup":
+                # event wrap-up: dryRun -> preview of every change; otherwise apply + rebuild
+                try:
+                    res = wrapup.run(b.get("slug"), b.get("rules") or {}, dry_run=bool(b.get("dryRun", True)))
                 except roster.RosterError as e:
                     return self._json(400, {"ok": False, "error": str(e)})
                 if b.get("dryRun", True):

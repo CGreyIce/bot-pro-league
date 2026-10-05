@@ -1197,4 +1197,45 @@ textarea.adm-in{resize:vertical;font-family:inherit}
 .pf-in input{width:140px;padding:4px 8px}
 .pf-sub{font-size:11px;min-width:64px}
 @media(max-width:760px){.earn-grid{grid-template-columns:1fr}.pf-row{flex-wrap:wrap}}
-
+/* economy (build/economy.py) */
+.tf-fee{color:var(--good);font-weight:600}
+.earn-tabs{margin-bottom:10px}
+/* yearly awards, player of the month, rivalries (build/awards.py) */
+.ya-year{margin-bottom:16px}
+.ya-y{font-family:'Chakra Petch',sans-serif;font-size:22px;font-weight:700;color:var(--accent);margin-bottom:6px}
+.ya-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+.ya-card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:10px 12px}
+.ya-h{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:6px}
+.ya-b{font-size:14px;font-weight:600;line-height:1.4}
+.ya-b .team-inline{font-weight:600}
+.ya-sub{display:block;font-size:11.5px;font-weight:400;color:var(--muted);margin-top:3px}
+.aw-shelf{display:flex;flex-wrap:wrap;gap:6px;padding:10px 12px}
+.aw-chip{display:inline-flex;align-items:center;gap:5px;background:var(--panel2);border:1px solid var(--border);border-radius:14px;padding:3px 10px;font-size:12px;color:var(--text)}
+.aw-chip:hover{border-color:var(--accent)}
+.riv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:12px}
+.riv-card{position:relative;background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
+.riv-n{position:absolute;top:10px;left:14px;font-family:'Chakra Petch',sans-serif;font-size:12px;color:var(--muted)}
+.riv-teams{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;margin-top:10px}
+.riv-t{display:flex;align-items:center;gap:8px;font-weight:700;color:var(--text);min-width:0}
+.riv-t span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.riv-t.r{justify-content:flex-end;text-align:right}
+.riv-t img,.riv-t .mc-noimg{width:34px;height:34px;object-fit:contain;flex:0 0 auto}
+.riv-rec{font-family:'Chakra Petch',sans-serif;font-size:24px;display:flex;gap:6px;align-items:center}
+.riv-rec b{color:var(--muted)}.riv-rec b.lead{color:var(--text)}
+.riv-meta{font-size:12px;color:var(--muted);margin-top:10px;text-align:center}
+.riv-meta b{color:var(--text)}
+.riv-last{font-size:11.5px;margin-top:4px;text-align:center}
+.riv-h2h{display:block;text-align:center;font-size:12px;margin-top:8px}
+@media(max-width:820px){.riv-grid{grid-template-columns:1fr}}
+/* event wrap-up (admin) */
+.ae-wrap{margin:10px 0 14px}
+.wu-rules{display:flex;flex-direction:column;gap:6px;margin:8px 0}
+.wu-sub{margin:0 0 4px 24px;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.wu-n{width:56px !important;display:inline-block;padding:2px 6px;margin:0 2px}
+.wu-team{display:flex;align-items:center;gap:8px;font-size:12.5px}
+.wu-team span{min-width:180px}
+.wu-tag{width:110px !important;padding:3px 6px}
+.as-seedbtn{margin:0 0 6px;padding:4px 12px}
+.adm-wrapbox:not(:empty){margin:4px 0 12px 8px}
+.adm-wrap{background:var(--panel2);border:1px solid var(--border);color:var(--text);border-radius:6px;padding:3px 9px;font-size:12px;cursor:pointer}
+.adm-wrap:hover{border-color:var(--accent)}

@@ -84,6 +84,7 @@ def apply(teams, tournaments, players, tier_mult, placement_points, group_points
             (sa, ea, wa), (sb, eb, wb) = sides
             strengths += [ea, eb]
             E = 1 / (1 + 10 ** ((eb - ea) / SCALE))
+            m["tE"] = round(E, 3)                 # team A's pre-match chance from results Elo (yearly Best Upset)
             y = 1 if m["w"] == 1 else 0
             wgt = min(wa, wb)
             if sa:

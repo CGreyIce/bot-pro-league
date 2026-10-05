@@ -1182,6 +1182,9 @@ def main():
     # and supersedes the placement-only compute_team_points() pass earlier in the build.
     # prize money: payouts by placement, split between each team's line-up (needs the rosters above)
     prize_mod.apply_earnings(tournaments, pro + amateur + solo, teams)
+    # market values, transfer fees and team budgets (build/economy.py)
+    import economy
+    economy.apply(pro, pro + amateur + solo, teams, tournaments, DATA)
 
     import team_rank
     team_rank.apply(teams, tournaments, pro + amateur + solo, TIER_POINT_MULT, _placement_points, _group_points)
@@ -1469,7 +1472,7 @@ def main():
             transfers.append({
                 "type": "transfer", "player": p["name"], "playerSlug": p["slug"], "iso": p.get("iso", ""),
                 "fromTeam": fromName, "fromSlug": fromSlug, "toTeam": toName, "toSlug": toSlug,
-                "toPro": bool(toSlug), "date": mv.get("date", cur_date)})
+                "toPro": bool(toSlug), "date": mv.get("date", cur_date), "fee": int(mv.get("fee") or 0) or None})
         transfers.sort(key=lambda t: t["date"], reverse=True)
 
     # ---- per-team former players (inverted from historical attending rosters) ----
@@ -1592,12 +1595,17 @@ def main():
             for rd in rounds:
                 for m in rd["matches"]:
                     for mp in m.get("stats", {}).get("maps", []):
+                        R = (mp.get("scoreA") or 0) + (mp.get("scoreB") or 0)
                         for pl in mp.get("players", []):
                             s = pl.get("slug")
                             if not s:
                                 continue
-                            a = agg.setdefault(s, {"mvp": 0, "k": 0, "team": ""})
+                            a = agg.setdefault(s, {"mvp": 0, "k": 0, "team": "", "maps": 0, "rt": 0.0})
                             a["mvp"] += int(pl.get("mvp", 0)); a["k"] += int(pl.get("k", 0))
+                            if R:
+                                a["maps"] += 1
+                                a["rt"] += (0.44 * (pl.get("k", 0) / R / 0.707) + 0.25 * ((R - pl.get("d", 0)) / R / 0.293)
+                                            + 0.24 * (pl.get("score", 0) / R / 1.793) + 0.07 * (pl.get("a", 0) / R / 0.108))
                             if pl.get("team"):
                                 a["team"] = pl["team"]   # team the player represented in THIS event
         # scan stages OR the flattened bracket — never both (a multi-stage event stores every
@@ -1608,7 +1616,14 @@ def main():
         else:
             _scan(tr.get("bracket", []))
         if agg:
-            best = max(agg.items(), key=lambda kv: (kv[1]["mvp"], kv[1]["k"]))
+            # MVP = best average HLTV-style map rating among players who played at least half as many maps
+            # as the busiest player (so deep runs count); MVP rounds break ties. No usable scores -> MVP rounds.
+            most = max(a["maps"] for a in agg.values())
+            pool = {s_: a for s_, a in agg.items() if most and a["maps"] >= max(2, most / 2)}
+            if pool:
+                best = max(pool.items(), key=lambda kv: (kv[1]["rt"] / kv[1]["maps"], kv[1]["mvp"]))
+            else:
+                best = max(agg.items(), key=lambda kv: (kv[1]["mvp"], kv[1]["k"]))
             p = slug_to_player.get(best[0])
             if p:
                 p.setdefault("mvpAwards", []).append({
@@ -1616,7 +1631,8 @@ def main():
                 # crown the event MVP on the tournament too (for the tournament page)
                 tr["mvp"] = {"name": p["name"], "slug": p["slug"], "iso": p.get("iso", ""),
                              "team": best[1].get("team") or p.get("team", ""),   # in-event team
-                             "mvpRounds": best[1]["mvp"], "kills": best[1]["k"]}
+                             "mvpRounds": best[1]["mvp"], "kills": best[1]["k"], "maps": best[1]["maps"],
+                             "rating": round(best[1]["rt"] / best[1]["maps"], 2) if pool else None}
     for p in (pro + amateur + solo):
         if p.get("titles"):
             p["titles"].sort(key=lambda x: x["year"], reverse=True)
@@ -1779,6 +1795,10 @@ def main():
         "soloGameStats": solo_game_stats,
         "stacks": stacks,
     }
+    # ---- yearly awards + Player of the Month (build/awards.py) ----
+    import awards
+    data.update(awards.run(tournaments, pro + amateur + solo, teams, articles))
+
     # ---- storylines + auto news drafts (build/storylines.py): what just happened since the last build ----
     import storylines
     data["storylines"] = storylines.run(data, DATA, climbers=_elo["climbers"])

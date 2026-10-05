@@ -175,7 +175,7 @@ const routes = {
   "results": renderResults, "records": renderRecords, "compare": renderCompare,
   "transfers": renderTransfers, "matches": renderMatches, "awards": renderAwards, "maps": renderMaps,
   "compareteams": renderTeamCompare, "stats": renderStats,
-  "admin": renderAdmin, "match": renderMatch, "predict": renderPredict, "prophets": renderProphets, "fantasy": renderFantasy,
+  "admin": renderAdmin, "match": renderMatch, "predict": renderPredict, "prophets": renderProphets, "fantasy": renderFantasy, "rivalries": renderRivalries,
   "news": renderNews, "article": renderArticle,
 };
 function parseHash(){
@@ -364,10 +364,13 @@ function renderTeams(){
     ["Major", t=>t.major_wins, "mono"],
     ["Podiums", t=>t.podiums, "mono"],
     ["Events", t=>t.events_played, "mono"],
+    ["Earnings", t=>t.earnings?fmtUSDc(t.earnings):'—', "mono", t=>t.earnings||0],
+    ["Squad value", t=>t.squadValue?fmtUSDc(t.squadValue):'—', "mono", t=>t.squadValue||0],
   ];
   const proTeams = DATA.teams.filter(t=>!t.provisional);
   app.innerHTML = `<h2 class="section-title"><span class="accent-bar"></span>Team Ranking · ${proTeams.length} pro teams
-      <a href="#/compareteams" class="muted" style="margin-left:auto;font-size:12px">⇄ Compare teams</a></h2>
+      <a href="#/rivalries" class="muted" style="margin-left:auto;font-size:12px">⚔ Rivalries</a>
+      <a href="#/compareteams" class="muted" style="margin-left:14px;font-size:12px">⇄ Compare teams</a></h2>
     ${sortableTable(proTeams, cols, "rank")}`;
 }
 
@@ -562,6 +565,10 @@ function renderTeam(slug){
         <div class="ib-row"><span class="k">Podiums</span><span class="v">${t.podiums} (${t.major_podiums} major)</span></div>
         <div class="ib-row"><span class="k">Trophies</span><span class="v">${trophies.length?esc(trophies.join(' · ')):'—'}</span></div>
         ${t.earnings?`<div class="ib-row" title="Prize money won under this team's name, before it is split between the players"><span class="k">Earnings</span><span class="v">${fmtUSD(t.earnings)}</span></div>`:''}
+        ${t.budget!=null&&(t.budget||t.feesIn||t.feesOut)?`<div class="ib-row" title="${esc(`Prize money ${fmtUSD(t.earnings||0)} - fees paid ${fmtUSD(t.feesOut||0)} + fees received ${fmtUSD(t.feesIn||0)}`)}"><span class="k">Budget</span><span class="v" style="${t.budget<0?'color:var(--accent2)':''}">${fmtUSD(t.budget)}</span></div>`:''}
+        ${(()=>{ const r=rivalsOf(t.slug)[0]; if(!r) return ''; const me=r.x===t.slug, o=me?r.y:r.x, w=me?r.xw:r.yw, l=me?r.yw:r.xw;
+          return `<div class="ib-row" title="Their biggest rivalry: most meetings, finals and close series"><span class="k">Biggest rival</span><span class="v"><a href="#/rivalries" style="color:var(--link)">${esc((teamBySlug(o)||{}).name||o)}</a> <span class="muted" style="font-size:11px">${w}-${l}</span></span></div>`; })()}
+        ${t.squadValue?`<div class="ib-row" title="Combined market value of the current roster"><span class="k">Squad value</span><span class="v">${fmtUSD(t.squadValue)}</span></div>`:''}
       </div>
       ${teamCabinetHtml(t)}
       </div>
@@ -651,6 +658,8 @@ function renderPlayers(){
     ["MVP", p=>p.mvp, "mono"],
     ["Maps", p=>p.maps, "mono"],
     ["Win%", p=>p.maps?pct(p.winrate):'—', "mono", p=>p.winrate],
+    ...(pool==="pro"?[["Value", p=>p.marketValue?fmtUSDc(p.marketValue):'—', "mono", p=>p.marketValue||0],
+                      ["Earnings", p=>p.earnings?fmtUSDc(p.earnings):'—', "mono", p=>p.earnings||0]]:[]),
   ];
   app.innerHTML = `<h2 class="section-title"><span class="accent-bar"></span>Player Leaderboard
       <a href="#/compare" class="muted" style="margin-left:auto;font-size:12px">⇄ Compare players</a></h2>
@@ -711,9 +720,14 @@ function renderPlayer(slug){
         <div class="ib-row"><span class="k">Level</span><span class="v">${p.level||'—'} / 10</span></div>
         <div class="ib-row"><span class="k">Record</span><span class="v">${p.wins}-${p.losses} (${pct(p.winrate)})</span></div>
         <div class="ib-row"><span class="k">Maps</span><span class="v">${p.maps}</span></div>
+        ${p.marketValue?`<div class="ib-row" title="${esc(valueTip(p))}"><span class="k">Market value</span><span class="v">${fmtUSD(p.marketValue)}</span></div>`:''}
         ${p.earnings?`<div class="ib-row"><span class="k">Earnings</span><span class="v">${fmtUSD(p.earnings)}</span></div>`:''}
         ${p.playsWith?`<div class="ib-row"><span class="k">Plays with</span><span class="v"><a href="#/player/${p.playsWith.slug}" style="color:var(--link)">${flag(p.playsWith.iso)}${esc(p.playsWith.name)}</a> <span class="muted" style="font-size:11px">· ${p.playsWith.games} solo game${p.playsWith.games===1?'':'s'}</span></span></div>`:''}
       </div>
+      ${(p.awards&&p.awards.length)?`<div class="infobox prize-box"><div class="ib-title">Awards</div>
+        <div class="aw-shelf">${p.awards.slice().sort((a,b)=>String(b.year).localeCompare(String(a.year))).map(a=>{ const ic=a.award==='Player of the Year'?'🏆':a.award==='Rookie of the Year'?'🌱':a.award==='Most Improved Player'?'📈':'⭐';
+          const yr=String(a.year).includes('-')?(()=>{const [y,m]=String(a.year).split('-'); return ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][+m-1]+' '+y;})():a.year;
+          return `<a class="aw-chip" href="#/awards">${ic} ${esc(a.award)} <span class="muted">${esc(String(yr))}</span></a>`; }).join("")}</div></div>`:''}
       ${(p.prizeHistory&&p.prizeHistory.length)?`<div class="infobox prize-box"><div class="ib-title">Prize Money <span class="muted" style="font-size:11px;font-weight:400">${fmtUSD(p.earnings)} · ${p.prizeHistory.length} event${p.prizeHistory.length===1?'':'s'}</span></div>
         <div class="pz-list">${p.prizeHistory.map(h=>`<a class="pz-row" href="#/tournament/${esc(h.slug)}" title="${esc(`${h.event}: ${placeOrd(h.place)} with ${h.team}, ${fmtUSD(h.amount)}`)}"><span class="pz-ev">${esc(h.event)}<span class="muted"> · ${placeOrd(h.place)} with ${esc(h.team)}</span></span><span class="pz-amt">${fmtUSD(h.amount)}</span></a>`).join("")}</div></div>`:''}
       ${(p.teamHistory&&p.teamHistory.length)?`
@@ -1012,6 +1026,12 @@ function renderRecords(){
   const topMvpRate=[...qualified].sort((a,b)=>(b.mvp/b.maps)-(a.mvp/a.maps))[0];
   const topClimb=[...pro].sort((a,b)=>(b.rankDelta||0)-(a.rankDelta||0))[0];
   const topDeaths=maxBy(pro,'deaths');
+  // prize money (build/prizes.py): all-time earnings, players across every pool, teams by their own winnings
+  const topEarner = allPlayers().filter(p=>p.earnings).sort((a,b)=>b.earnings-a.earnings)[0];
+  const topEarnTeam = teams.filter(t=>t.earnings).sort((a,b)=>b.earnings-a.earnings)[0];
+  const topValue = pro.filter(p=>p.marketValue).sort((a,b)=>b.marketValue-a.marketValue)[0];
+  const bigFee = (DATA.transfers||[]).filter(t=>t.fee).sort((a,b)=>b.fee-a.fee)[0];
+  const payday = allPlayers().flatMap(p=>(p.prizeHistory||[]).map(h=>({p, h}))).sort((a,b)=>b.h.amount-a.h.amount)[0];
   const climbRec=DATA.rankClimbRecord;   // all-time biggest rank climb (persisted, sticks)
   const pStreak=playerLongestStreak();
   const soloAll=soloLeague().filter(p=>p.maps>0);
@@ -1046,6 +1066,7 @@ function renderRecords(){
       ${recCard("Highest Win Rate", topTeamWR.name, pct(topTeamWR.wlr), `#/team/${topTeamWR.slug}`)}
       ${mostSTier.s_tier_wins?recCard("Most S-Tier Titles", mostSTier.name, mostSTier.s_tier_wins+"×", `#/team/${mostSTier.slug}`):''}
       ${mostATier&&mostATier.a_tier_wins?recCard("Most A-Tier Titles", mostATier.name, mostATier.a_tier_wins+"×", `#/team/${mostATier.slug}`):''}
+      ${topEarnTeam?recCard("Highest-Earning Team", topEarnTeam.name, fmtUSD(topEarnTeam.earnings), `#/team/${topEarnTeam.slug}`):''}
       ${mostFinals&&finalsCount(mostFinals)?recCard("Most Finals Reached", mostFinals.name, finalsCount(mostFinals)+"×", `#/team/${mostFinals.slug}`):''}
       ${recCard("Most Map Wins", mostMapWins.name, mostMapWins.map_wins, `#/team/${mostMapWins.slug}`)}
       ${allTimeStreak?recCard("Longest Win Streak (all-time)", allTimeStreak.name, allTimeStreak.longestWinStreak.len+" wins", `#/team/${allTimeStreak.slug}`):''}
@@ -1056,6 +1077,10 @@ function renderRecords(){
     <h3 class="rec-group">Players <span class="muted" style="font-size:11px">(pro; rate stats min 12 maps)</span></h3>
     <div class="rec-grid">
       ${recCard("Most Rating Points", topRating.name, topRating.ratingPoints, `#/player/${topRating.slug}`)}
+      ${topEarner?recCard("Highest Earner", topEarner.name, fmtUSD(topEarner.earnings), `#/player/${topEarner.slug}`):''}
+      ${payday?recCard("Biggest Single Payday", payday.p.name, `${fmtUSD(payday.h.amount)} · ${esc(payday.h.event)}`, `#/player/${payday.p.slug}`):''}
+      ${topValue?recCard("Highest Market Value", topValue.name, fmtUSD(topValue.marketValue), `#/player/${topValue.slug}`):''}
+      ${bigFee?recCard("Biggest Transfer Fee", bigFee.player, `${fmtUSD(bigFee.fee)} · to ${esc(bigFee.toTeam||'')}`, `#/player/${bigFee.playerSlug}`):''}
       ${recCard("Best K/D Ratio", topKdr.name, topKdr.kdr.toFixed(2), `#/player/${topKdr.slug}`)}
       ${recCard("Most Total Kills", topKills.name, topKills.kills, `#/player/${topKills.slug}`)}
       ${recCard("Most MVPs", topMvp.name, topMvp.mvp, `#/player/${topMvp.slug}`)}
@@ -1072,13 +1097,7 @@ function renderRecords(){
       ${climbRec&&climbRec.delta>0?recCard("Biggest Rank Climb", climbRec.name, "▲"+climbRec.delta, `#/player/${climbRec.slug}`):''}
       ${recCard("Most Deaths", topDeaths.name, topDeaths.deaths, `#/player/${topDeaths.slug}`)}
     </div>
-    ${(()=>{ const ps=allPlayers().filter(p=>p.earnings).sort((a,b)=>b.earnings-a.earnings).slice(0,10);
-      const ts=DATA.teams.filter(t=>t.earnings).sort((a,b)=>b.earnings-a.earnings).slice(0,10);
-      const tbl=(rows,cell)=>`<div class="tablewrap"><table class="data"><tbody>${rows.map((x,i)=>`<tr><td class="rankcol">${i+1}</td><td class="name-cell">${cell(x)}</td><td class="mono">${fmtUSD(x.earnings)}</td></tr>`).join("")}</tbody></table></div>`;
-      return `<h3 class="rec-group">Top Earners <span class="muted" style="font-size:11px">prize money from events with a prize pool</span></h3>
-      ${ps.length?`<div class="earn-grid"><div><div class="earn-h">Players</div>${tbl(ps,p=>playerLink(p))}</div>
-        <div><div class="earn-h">Teams</div>${tbl(ts,t=>`<a href="#/team/${t.slug}">${esc(t.name)}</a>`)}</div></div>`
-        :'<p class="muted">Prize money shows up here once events have prize pools.</p>'}`; })()}
+    <div id="earn-box">${earnBoardHtml()}</div>
     <h3 class="rec-group">Matches &amp; Single-Map Feats</h3>
     <div class="rec-grid">
       ${blow?recCard("Biggest Blowout", `${esc(blow.m.sa>=blow.m.sb?blow.m.a:blow.m.b)} vs ${esc(blow.m.sa>=blow.m.sb?blow.m.b:blow.m.a)}`,
@@ -1104,6 +1123,23 @@ function renderRecords(){
         <td class="mono" style="color:${rtgColor(x.avg)}"><strong>${x.avg.toFixed(2)}</strong></td>
         <td>${formDots(x.log)}</td></tr>`).join("")}</tbody></table></div>`; })()}`;
 }
+// Top Earners on the Records page: all-time or one year (players from their prize history, teams from event payouts)
+let _earnYear = 'all';
+function earnBoardHtml(){
+  const yr = _earnYear, inYear = d => yr==='all' || String(d||'').startsWith(yr);
+  const years = [...new Set((DATA.tournaments||[]).filter(t=>t.prizes&&t.prizes.length).map(t=>(t.date||'').slice(0,4)))].sort((a,b)=>b-a);
+  const ps = allPlayers().map(p=>({p, v:(p.prizeHistory||[]).filter(h=>inYear(h.date)).reduce((t,h)=>t+h.amount,0)})).filter(x=>x.v).sort((a,b)=>b.v-a.v).slice(0,10);
+  const tsum = {}; (DATA.tournaments||[]).forEach(tr=>{ if(!inYear(tr.date)) return; (tr.prizes||[]).forEach(x=>{ if(x.teamSlug) tsum[x.teamSlug]=(tsum[x.teamSlug]||0)+x.amount; }); });
+  const ts = Object.entries(tsum).map(([s,v])=>({t:teamBySlug(s), v})).filter(x=>x.t).sort((a,b)=>b.v-a.v).slice(0,10);
+  const tbl=(rows,cell)=>`<div class="tablewrap"><table class="data"><tbody>${rows.map((x,i)=>`<tr><td class="rankcol">${i+1}</td><td class="name-cell">${cell(x)}</td><td class="mono">${fmtUSD(x.v)}</td></tr>`).join("")}</tbody></table></div>`;
+  return `<h3 class="rec-group">Top Earners <span class="muted" style="font-size:11px">prize money from events with a prize pool</span></h3>
+    ${years.length?`<div class="tabs earn-tabs">${['all',...years].map(y=>`<button data-ey="${y}" class="${y===yr?'active':''}">${y==='all'?'All-time':y}</button>`).join("")}</div>`:''}
+    ${ps.length?`<div class="earn-grid"><div><div class="earn-h">Players</div>${tbl(ps,x=>playerLink(x.p))}</div>
+      <div><div class="earn-h">Teams</div>${tbl(ts,x=>`<a href="#/team/${x.t.slug}">${esc(x.t.name)}</a>`)}</div></div>`
+      :'<p class="muted">Prize money shows up here once events have prize pools.</p>'}`;
+}
+document.addEventListener("click", e=>{ const b=e.target.closest("[data-ey]"); if(!b) return;
+  _earnYear=b.dataset.ey; const box=document.getElementById("earn-box"); if(box) box.innerHTML=earnBoardHtml(); });
 // players with the best average RTG over their last few recorded maps
 function inFormPlayers(){
   const byslug={};
@@ -1151,6 +1187,7 @@ function renderTransfers(){
       <td style="text-align:right">${teamCellT(t.fromTeam,t.fromSlug)}</td>
       <td class="tf-arrow ${dir}">→</td>
       <td>${teamCellT(t.toTeam,t.toSlug)}</td>
+      <td class="mono tf-fee">${t.fee?fmtUSDc(t.fee):'<span class="muted">—</span>'}</td>
     </tr>`;
   }).join("");
   const tab=(k,l,n)=>`<button data-ts="${k}" class="${k===_transferScope?'active':''}">${l} <span style="opacity:.7">${n}</span></button>`;
@@ -1159,7 +1196,7 @@ function renderTransfers(){
     <p class="muted" style="font-size:12px;margin:-6px 0 12px"><span style="color:var(--good)">Green</span> joined · <span style="color:var(--accent2)">red</span> left</p>
     <div class="tabs">${tab("pro","Pro teams",proMoves.length)}${tab("all","All",all.length)}</div>
     <div class="tablewrap"><table class="data results-table"><thead><tr>
-      <th class="no-sort">Date</th><th class="no-sort">Player</th><th class="no-sort" style="text-align:right">From</th><th class="no-sort"></th><th class="no-sort">To</th>
+      <th class="no-sort">Date</th><th class="no-sort">Player</th><th class="no-sort" style="text-align:right">From</th><th class="no-sort"></th><th class="no-sort">To</th><th class="no-sort">Fee</th>
     </tr></thead><tbody>${rows}</tbody></table></div>
     ${list.length>_transferShown?`<div style="text-align:center;margin-top:14px"><button id="tf-more" class="loadmore">Load more (${list.length-_transferShown} left)</button></div>`:''}`;
   app.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{_transferScope=b.dataset.ts;_transferShown=60;renderTransfers();});
@@ -1254,48 +1291,94 @@ function renderAwards(){
      <td class="mono" style="font-weight:700;color:var(--accent)">${d.n}</td>
      <td class="mono">${d.major||'—'}</td><td class="mono">${d.s||'—'}</td><td class="mono">${d.a||'—'}</td>
    </tr>`).join("");
-  const seen={}, rivalries=[];
-  DATA.teams.forEach(t=>(t.h2h||[]).forEach(h=>{
-    const key=[t.slug,h.opp].sort().join("|");
-    if(seen[key]) return; seen[key]=1;
-    rivalries.push({aSlug:t.slug,aName:t.name,bSlug:h.opp,bName:h.oppName,aw:h.w,bw:h.l,games:h.w+h.l});
-  }));
-  const topRiv=rivalries.filter(r=>r.games>=3).sort((a,b)=>b.games-a.games).slice(0,8);
-  const rivHtml=topRiv.map(r=>`<tr>
-     <td class="name-cell" style="text-align:right">${nameOrTeamCrest(r.aName,r.aSlug)}</td>
-     <td class="mono" style="font-weight:700">${r.aw}<span class="muted"> – </span>${r.bw}</td>
-     <td class="name-cell">${nameOrTeamCrest(r.bName,r.bSlug)}</td>
-     <td class="mono muted" style="font-size:12px">${r.games} maps</td></tr>`).join("");
-  const mvps=[];
-  (DATA.tournaments||[]).forEach(tr=>{
-    const agg={};
-    const scanM=rounds=>rounds.forEach(rd=>rd.matches.forEach(m=>{ if(!m.stats)return; m.stats.maps.forEach(mp=>(mp.players||[]).forEach(pl=>{
-      if(!pl.slug)return; const a=agg[pl.slug]=agg[pl.slug]||{name:pl.name,slug:pl.slug,iso:pl.iso,k:0,mvp:0}; a.k+=pl.k||0; a.mvp+=pl.mvp||0; })); }));
-    if(tr.stages&&tr.stages.length) tr.stages.forEach(st=>scanM(st.rounds)); else scanM(tr.bracket||[]);
-    const arr=Object.values(agg); if(!arr.length) return;
-    arr.sort((a,b)=>b.mvp-a.mvp||b.k-a.k);
-    mvps.push({event:tr.name,slug:tr.slug,p:arr[0]});
-  });
-  const mvpHtml = mvps.length ? mvps.map(x=>`<tr>
-      <td class="name-cell"><a href="#/tournament/${x.slug}">${esc(x.event)}</a></td>
-      <td class="name-cell">${flag(x.p.iso)}<a href="#/player/${x.p.slug}">${esc(x.p.name)}</a></td>
-      <td class="mono">${x.p.mvp} MVP · ${x.p.k}K</td></tr>`).join("")
+  const rivHtml=rivalryList().slice(0,5).map(r=>`<tr>
+     <td class="name-cell" style="text-align:right">${nameOrTeamCrest(r.xName,r.x)}</td>
+     <td class="mono" style="font-weight:700">${r.xw}<span class="muted"> – </span>${r.yw}</td>
+     <td class="name-cell">${nameOrTeamCrest(r.yName,r.y)}</td>
+     <td class="mono muted" style="font-size:12px">${r.n} meetings${r.finals?` · ${r.finals} final${r.finals===1?'':'s'}`:''}</td></tr>`).join("");
+  // event MVPs: the site's pick (build/parse.py), by HLTV-style rating where scoreboards exist
+  const mvps=(DATA.tournaments||[]).filter(tr=>tr.mvp).sort((a,b)=>(b.date||'').localeCompare(a.date||''));
+  const mvpHtml = mvps.length ? mvps.map(tr=>`<tr>
+      <td class="name-cell"><a href="#/tournament/${tr.slug}">${esc(tr.name)}</a></td>
+      <td class="name-cell">${flag(tr.mvp.iso)}<a href="#/player/${tr.mvp.slug}">${esc(tr.mvp.name)}</a> <span class="muted" style="font-size:11px">${esc(tr.mvp.team||'')}</span></td>
+      <td class="mono">${tr.mvp.rating!=null?`${tr.mvp.rating.toFixed(2)} rating · ${tr.mvp.maps} maps`:`${tr.mvp.mvpRounds} MVP · ${tr.mvp.kills}K`}</td></tr>`).join("")
     : `<tr><td colspan="3" class="muted">No scoreboards recorded yet.</td></tr>`;
   app.innerHTML=`
     <h2 class="section-title"><span class="accent-bar"></span>Awards</h2>
-    <h3 class="rec-group">🏆 Champions Cabinet <span class="muted" style="font-size:11px">(${ts.length} titles)</span></h3>
+    ${yearAwardsHtml()}
+    ${potmHtml()}
+    <h3 class="rec-group" style="margin-top:26px">🏆 Champions Cabinet <span class="muted" style="font-size:11px">(${ts.length} titles)</span></h3>
     ${cabinet}
     <h3 class="rec-group" style="margin-top:26px">Most Decorated Teams</h3>
     <div class="tablewrap"><table class="data"><thead><tr>
       <th class="no-sort">#</th><th class="no-sort">Team</th><th class="no-sort">Titles</th>
       <th class="no-sort">Major</th><th class="no-sort">S</th><th class="no-sort">A</th></tr></thead>
       <tbody>${decHtml}</tbody></table></div>
-    <h3 class="rec-group" style="margin-top:26px">Biggest Rivalries <span class="muted" style="font-size:11px">(most maps, pro vs pro)</span></h3>
+    <h3 class="rec-group" style="margin-top:26px">Biggest Rivalries <a href="#/rivalries" class="muted" style="font-size:11px;margin-left:6px">all rivalries →</a></h3>
     <div class="tablewrap"><table class="data"><tbody>${rivHtml}</tbody></table></div>
     <h3 class="rec-group" style="margin-top:26px">Event MVPs</h3>
     <div class="tablewrap"><table class="data"><tbody>${mvpHtml}</tbody></table></div>`;
 }
 
+// ---------- yearly awards (build/awards.py) ----------
+const AWARD_DEFS = [["poy","Player of the Year","🏆"],["rookie","Rookie of the Year","🌱"],["improved","Most Improved","📈"],["team","Team of the Year","🛡"],["upset","Best Upset","⚡"]];
+function yearAwardsHtml(){
+  const ya = DATA.yearAwards||{}; const years = Object.keys(ya).sort((a,b)=>b-a);
+  if(!years.length) return '';
+  const pl = x=>{ const p=playerBySlug(x.slug); return `${p?flag(p.iso):''}<a href="#/player/${esc(x.slug)}">${esc(x.name)}</a>`; };
+  const card = (k, x)=>{ const d=AWARD_DEFS.find(a=>a[0]===k);
+    const body = k==='team' ? `${nameOrTeamCrest(x.name, x.slug)}<span class="ya-sub">${x.pts} placement pts that year</span>`
+      : k==='upset' ? `<a href="${x.ref?`#/match/${esc(x.slug)}/${esc(x.ref)}`:`#/tournament/${esc(x.slug)}`}">${esc(x.winner)} beat ${esc(x.loser)}${x.score?' '+esc(x.score):''}</a><span class="ya-sub">${Math.round(x.chance*100)}% chance before the match · ${esc(x.event)}</span>`
+      : k==='improved' ? `${pl(x)}<span class="ya-sub">#${x.from} → #${x.to} on the year's player list</span>`
+      : k==='rookie' ? `${pl(x)}<span class="ya-sub">first BPL season · #${x.rank} that year</span>`
+      : `${pl(x)}<span class="ya-sub">#1 in the <a href="#/news">Top 20 Players of the Year</a></span>`;
+    return `<div class="ya-card"><div class="ya-h">${d[2]} ${d[1]}</div><div class="ya-b">${body}</div></div>`; };
+  const pending = !ya['2026'] ? `<div class="ya-year"><div class="ya-y">2026</div><p class="muted" style="margin:4px 0 0;font-size:13px">The 2026 awards are handed out after the BPL Conquerors Stage 2026.</p></div>` : '';
+  return `<h3 class="rec-group">Yearly Awards</h3>${pending}
+    ${years.map(y=>`<div class="ya-year"><div class="ya-y">${y}</div><div class="ya-grid">${AWARD_DEFS.filter(a=>ya[y][a[0]]).map(a=>card(a[0], ya[y][a[0]])).join("")}</div></div>`).join("")}`;
+}
+function potmHtml(){
+  const ms = (DATA.playerOfMonth||[]).slice().reverse(); if(!ms.length) return '';
+  const mname = m=>{ const [y,mo]=m.split('-'); return ["January","February","March","April","May","June","July","August","September","October","November","December"][+mo-1]+' '+y; };
+  return `<h3 class="rec-group" style="margin-top:22px">Player of the Month <span class="muted" style="font-size:11px">best average rating in a month · min 8 maps</span></h3>
+    <div class="tablewrap" style="max-width:640px"><table class="data"><tbody>${ms.map(x=>`<tr><td class="mono muted">${mname(x.month)}</td>
+      <td class="name-cell">${flag(x.iso)}<a href="#/player/${esc(x.slug)}">${esc(x.name)}</a> <span class="muted" style="font-size:11px">${esc(x.team||'')}</span></td>
+      <td class="mono" style="color:${rtgColor(x.rating)}"><b>${x.rating.toFixed(2)}</b> <span class="muted">· ${x.maps} maps</span></td></tr>`).join("")}</tbody></table></div>`;
+}
+// ---------- rivalries ----------
+let _rivals = null;
+function rivalryList(){
+  if(_rivals) return _rivals;
+  const pairs = {};
+  allMatches().forEach(m=>{
+    if(!m.aTeam || !m.bTeam || m.aTeam===m.bTeam) return;
+    const [x,y]=[m.aTeam,m.bTeam].sort(), k=x+'|'+y;
+    const r = pairs[k] || (pairs[k]={x, y, xName:(teamBySlug(x)||{}).name||x, yName:(teamBySlug(y)||{}).name||y, xw:0, yw:0, finals:0, close:0, meets:[]});
+    ((m.w===1?m.aTeam:m.bTeam)===x) ? r.xw++ : r.yw++;
+    if(/final/i.test(m.round||'') && !/semi|quarter|loser|lower|last chance/i.test(m.round||'')) r.finals++;
+    if(m.sa!=null && m.sb!=null){ const hi=Math.max(m.sa,m.sb), d=Math.abs(m.sa-m.sb); if((hi<=5 && d===1) || (hi>5 && d<=3)) r.close++; }
+    r.meets.push(m);
+  });
+  _rivals = Object.values(pairs).filter(r=>r.xw+r.yw>=3).map(r=>{ r.n=r.xw+r.yw;
+    r.score = r.n + 3*r.finals + 1.5*r.close + 4*(Math.min(r.xw,r.yw)/Math.max(r.xw,r.yw)); return r; }).sort((a,b)=>b.score-a.score);
+  return _rivals;
+}
+function rivalsOf(slug){ return rivalryList().filter(r=>r.x===slug||r.y===slug); }
+function renderRivalries(){
+  const list = rivalryList().slice(0,24);
+  const crestOf = s=>{ const t=teamBySlug(s); return t&&t.logo?`<img src="${esc(t.logo)}" alt="">`:`<span class="mc-noimg">${initials((t||{}).name||'?')}</span>`; };
+  app.innerHTML = `<h2 class="section-title"><span class="accent-bar"></span>Rivalries
+      <span class="muted" style="font-size:11px">the league's biggest match-ups: most meetings, finals, close series and even records</span></h2>
+    <div class="riv-grid">${list.map((r,i)=>{ const last=r.meets[0]; const lead = r.xw===r.yw ? 'Dead even' : `${r.xw>r.yw?r.xName:r.yName} lead`;
+      return `<div class="riv-card"><div class="riv-n">#${i+1}</div>
+        <div class="riv-teams"><a class="riv-t" href="#/team/${r.x}">${crestOf(r.x)}<span>${esc(r.xName)}</span></a>
+          <div class="riv-rec"><b class="${r.xw>r.yw?'lead':''}">${r.xw}</b><span>–</span><b class="${r.yw>r.xw?'lead':''}">${r.yw}</b></div>
+          <a class="riv-t r" href="#/team/${r.y}"><span>${esc(r.yName)}</span>${crestOf(r.y)}</a></div>
+        <div class="riv-meta">${r.n} meetings · ${r.finals} final${r.finals===1?'':'s'} · ${r.close} close series · <b>${esc(lead)}</b></div>
+        ${last?`<div class="riv-last muted">Last: ${fmtDate(last.date)} · <a href="#/tournament/${last.eventSlug}">${esc(last.event)}</a> · ${esc(last.a)} ${last.sa??''}-${last.sb??''} ${esc(last.b)}</div>`:''}
+        <a class="riv-h2h" href="#/compareteams" data-cmp="${r.x}|${r.y}">Compare the two teams →</a></div>`; }).join("")}</div>`;
+  app.querySelectorAll("[data-cmp]").forEach(a=>a.onclick=()=>{ const [x,y]=a.dataset.cmp.split("|"); tcmpA=x; tcmpB=y; });
+}
 // ---------- Maps ----------
 function renderMaps(){
   const maps={}, teamMap={}, results=[];
@@ -2297,7 +2380,7 @@ function renderSfMaps(match){
 
 // ---------- Admin (local editing) ----------
 let adminEditing = null, _adminTeams = [], _adminOn = false;
-async function reloadData(){ try{ DATA = await loadData(5); _allMatches=null; _allMapScores=null; _proSlugs=null; _soloLeague=null; }catch(e){} }
+async function reloadData(){ try{ DATA = await loadData(5); _allMatches=null; _rivals=null; _allMapScores=null; _proSlugs=null; _soloLeague=null; }catch(e){} }
 function apiPost(p, body){ return fetch(p,{method:"POST",headers:{"Content-Type":"text/plain"},body:JSON.stringify(body)}).then(r=>r.json()).catch(e=>({ok:false,error:String(e)})); }
 // Site Health panel (admin): results of build/health.py, recomputed on every build
 function adminHealthHtml(){
@@ -2427,8 +2510,9 @@ async function renderAdmin(){
         <span class="adm-name">${esc(t.name)}</span>
         <span class="muted" style="font-size:12px">${esc(t.date)} · rosters frozen</span>
         <a href="#/tournament/${esc(t.slug)}" class="muted" style="font-size:12px">view →</a>
+        <button class="adm-wrap" data-wrap="${esc(t.slug)}" title="Apply this event's end-of-event rules (promotions, disbands, seeds) and draft the recap">🏁 Wrap up</button>
         <button class="adm-reopen" data-reopen="${esc(t.slug)}" title="Reopen for editing (rosters stay frozen until re-completed)">↩ Reopen</button>
-      </div>`).join("")}
+      </div><div class="adm-wrapbox" data-wrapbox="${esc(t.slug)}"></div>`).join("")}
     </details>` : '';
 
   app.innerHTML = `
@@ -2601,6 +2685,11 @@ async function renderAdmin(){
     else $("#adm-msg").textContent = "Error: "+(r.error||"failed");
   };
   app.querySelectorAll("[data-edit]").forEach(a=>a.onclick=e=>{e.preventDefault();adminEditing=a.dataset.edit;openEditor(a.dataset.edit);});
+  app.querySelectorAll("[data-wrap]").forEach(b=>b.onclick=()=>{
+    const box=app.querySelector(`[data-wrapbox="${b.dataset.wrap}"]`), open=!!box.innerHTML;
+    app.querySelectorAll("[data-wrapbox]").forEach(x=>x.innerHTML="");          // one wrap-up panel at a time
+    if(!open){ box.innerHTML='<div class="loading" style="padding:8px">Loading…</div>'; setupWrapUp(b.dataset.wrap, async ()=>{ await reloadData(); renderAdmin(); }, box); }
+  });
   app.querySelectorAll("[data-del]").forEach(b=>b.onclick=async e=>{
     e.preventDefault();
     if(!confirm("Delete this tournament?")) return;
@@ -2987,7 +3076,9 @@ function rsFormHtml(tab){
   const m=_rsMeta||{countries:[],roles:[]}, today=rsLeagueToday();
   const hint = id=>`<div id="${id}" class="rs-hint"></div>`;
   if(tab==="transfer") return rsField("Player", rsInput("rs-player","rs-dl-players","e.g. Sadgeboi")) + hint("rs-player-hint")
-    + rsField("Move to", rsInput("rs-to","rs-dl-teams","a team, or Free agent")) + rsField("Date", `<input id="rs-date" class="adm-in" type="date" value="${today}">`);
+    + rsField("Move to", rsInput("rs-to","rs-dl-teams","a team, or Free agent"))
+    + rsField("Transfer fee (USD)", `<input id="rs-fee" class="adm-in" inputmode="numeric" placeholder="$0">`) + hint("rs-fee-hint")
+    + rsField("Date", `<input id="rs-date" class="adm-in" type="date" value="${today}">`);
   if(tab==="add") return rsField("Name", rsInput("rs-name","","exact in-game name"))
     + `<div style="display:flex;gap:8px"><div style="flex:1">${rsField("Country", rsSelect("rs-country", m.countries, "pick one"))}</div><div style="flex:1">${rsField("Gender", rsSelect("rs-gender", ["F","M","NB"], "pick one"))}</div></div>`
     + rsField("Role", rsSelect("rs-role", m.roles, "pick one")) + rsField("Team (optional)", rsInput("rs-team","rs-dl-teams","Free agent"));
@@ -3008,7 +3099,7 @@ function rsFormHtml(tab){
 }
 function rsCollect(tab){
   const v=id=>{ const e=$("#"+id); return e?e.value.trim():""; };
-  if(tab==="transfer") return {action:"transfer", player:v("rs-player"), to:v("rs-to")||"Free agent", date:v("rs-date")};
+  if(tab==="transfer") return {action:"transfer", player:v("rs-player"), to:v("rs-to")||"Free agent", date:v("rs-date"), fee:parseUSD(v("rs-fee"))};
   if(tab==="add") return {action:"add", name:v("rs-name"), country:v("rs-country"), gender:v("rs-gender"), role:v("rs-role"), team:v("rs-team")};
   if(tab==="edit") return {action:"edit", player:v("rs-player"), role:v("rs-role"), country:v("rs-country"), gender:v("rs-gender")};
   if(tab==="rename") return {action: v("rs-kind")==="Team"?"rename_team":"rename_player", old:v("rs-old"), new:v("rs-new")};
@@ -3038,6 +3129,26 @@ async function setupRosterAdmin(){
     _rsLogo = null;
     const ph=$("#rs-player"), hh=$("#rs-player-hint");
     if(ph&&hh) ph.oninput=()=>{ const p=rsFindPlayer(ph.value); hh.innerHTML = p ? `${flag(p.iso)} ${esc(p.name)} \u00b7 ${esc(p.team||"Free agent")} \u00b7 ${esc(p.role||"no role")} \u00b7 ${esc(p.nat||"no country")}` : ""; };
+    // transfer fee: suggested from the player's market value; free agents and releases cost nothing;
+    // the buying team's budget is shown, and the server refuses a fee it can't afford
+    const fee=$("#rs-fee"), to=$("#rs-to"), fh=$("#rs-fee-hint");
+    if(fee && ph && to){
+      let touched=false;
+      const feeHint=()=>{ const pl=rsFindPlayer(ph.value), tm=(DATA.teams||[]).find(t=>normKey(t.name)===normKey(to.value));
+        const free=!!pl && !pl.team, release=!to.value || normKey(to.value)==="freeagent";
+        fee.disabled = free || release;
+        if(fee.disabled) fee.value=''; else if(!touched && !fee.value && pl && pl.marketValue) fee.value=pl.marketValue.toLocaleString('en-US');
+        const f=parseUSD(fee.value); let h=[];
+        if(pl && pl.marketValue) h.push(`Market value ${fmtUSD(pl.marketValue)}.`);
+        if(free) h.push('Free agents join for free.'); else if(release && pl) h.push('Releases have no fee.');
+        if(tm && tm.budget!=null && !fee.disabled) h.push(`${tm.name}'s budget: ${fmtUSD(tm.budget)}${f?` → ${fmtUSD(tm.budget-f)} after the fee`:''}.`);
+        if(tm && f>tm.budget) h.push("They can't afford this.");
+        fh.textContent=h.join(' '); fh.style.color = tm && f>tm.budget ? 'var(--accent2,#ff6b6b)' : ''; };
+      fee.oninput=()=>{ touched=true; feeHint(); };
+      const prevIn=ph.oninput;
+      ph.oninput=()=>{ if(prevIn) prevIn(); touched=false; fee.value=''; feeHint(); };   // new player: fresh suggestion
+      to.oninput=feeHint;
+    }
     const kind=$("#rs-kind"), old=$("#rs-old"); if(kind&&old) kind.onchange=()=>old.setAttribute("list", kind.value==="Team"?"rs-dl-teams":"rs-dl-players");
     const pt=$("#rs-pteam"); if(pt) pt.onchange=()=>{ const r=rsSuggestRoster(pt.value); [0,1,2,3,4].forEach(i=>{ const e=$("#rs-p"+i); if(e && !e.value) e.value=r[i]||""; }); };
     const lg=$("#rs-logo"); if(lg) lg.onchange=()=>{ const f=lg.files[0]; if(!f){ _rsLogo=null; return; }
@@ -3397,6 +3508,54 @@ function showSoloRankSummary(before, after, participantKeys){
   document.addEventListener("keydown", function esc(e){ if(e.key==="Escape"){ close(); document.removeEventListener("keydown", esc); } });
 }
 
+// ---- event wrap-up (build/wrapup.py): the event's end-of-event rules in one go, previewed before saving ----
+async function setupWrapUp(slug, reload, box){
+  box = box || $("#ae-wrap"); if(!box) return;
+  const r=await fetch("/api/wrapup/"+slug).then(x=>x.json()).catch(()=>null);
+  if(!r||!r.ok){ box.innerHTML=''; return; }
+  const R=r.rules, st=r.standings, nonPro=s=>s.status!=="pro";
+  const champ=st.find(s=>s.rank===1)||{name:r.champion,status:"pro"};
+  box.innerHTML=`<details class="hl-fix" ${r.wrapped?'':'open'}><summary><b>Wrap up this event</b> <span class="muted">· ${r.wrapped?`wrapped up on ${esc(r.wrapped.date)}; running it again only applies what's left`:`apply the end-of-event rules in one go: preview first, nothing saves until you apply`}</span></summary>
+    <div class="wu-rules">
+      <label class="rs-check"><input type="checkbox" id="wu-cp" ${R.champion_pro&&nonPro(champ)?'checked':''} ${nonPro(champ)?'':'disabled'}> <b>Champion turns pro</b> <span class="muted">· ${esc(champ.name)}${nonPro(champ)?'':' are already a pro team'}</span></label>
+      <div class="wu-sub" id="wu-cp-f">${nonPro(champ)?`<input id="wu-cp-tag" class="adm-in" placeholder="in-game tag, e.g. PD" style="max-width:180px"> <input id="wu-cp-logo" type="file" accept="image/*" class="adm-in" style="max-width:260px"> <span class="muted" style="font-size:11px">line-up: ${esc(champ.players.join(", "))}</span>`:''}</div>
+      <label class="rs-check"><input type="checkbox" id="wu-tp" ${R.top_pro?'checked':''}> <b>Top <input id="wu-tp-n" class="adm-in wu-n" type="number" min="1" value="${(R.top_pro&&R.top_pro.n)||8}"> turn pro</b> <span class="muted">· teams without a pro page; each needs a tag</span></label>
+      <div class="wu-sub" id="wu-tp-list"></div>
+      <label class="rs-check"><input type="checkbox" id="wu-dr" ${R.disband_rest?'checked':''}> <b>Disband everyone outside the top <input id="wu-dr-n" class="adm-in wu-n" type="number" min="1" value="${(R.disband_rest&&R.disband_rest.n)||8}"></b> <span class="muted">· only teams without a full pro page; their players become free agents</span></label>
+      <div class="wu-sub muted" id="wu-dr-list" style="font-size:11px"></div>
+      <label class="rs-check"><input type="checkbox" id="wu-sd" ${R.seeds?'checked':''}> <b>Seed the next event</b></label>
+      <div class="wu-sub"><input id="wu-sd-t" class="adm-in" placeholder="next event's exact name" value="${esc((R.seeds&&R.seeds.target)||'')}" style="max-width:280px"> top <input id="wu-sd-n" class="adm-in wu-n" type="number" min="1" value="${(R.seeds&&R.seeds.count)||Math.min(10,st.length)}"> <span class="muted" style="font-size:11px">by final placement</span></div>
+      <label class="rs-check"><input type="checkbox" id="wu-rc" ${R.recap?'checked':''}> <b>Write a recap draft</b> <span class="muted">· final, run, MVP, prize money and upset; goes to Drafts</span></label>
+    </div>
+    <button id="wu-prev" class="adm-btn" style="max-width:220px;margin-top:8px">Preview wrap-up</button><span id="wu-msg" class="muted" style="font-size:12px;margin-left:10px"></span>
+    <div id="wu-out"></div></details>`;
+  let cpLogo=null; const lg=$("#wu-cp-logo");
+  if(lg) lg.onchange=()=>{ const f=lg.files[0]; if(!f){cpLogo=null;return;} const fr=new FileReader(); fr.onload=()=>{cpLogo=fr.result;}; fr.readAsDataURL(f); };
+  const drawLists=()=>{ const n=+$("#wu-tp-n").value||0, k=+$("#wu-dr-n").value||0;
+    const ups=st.filter(s=>s.rank<=n && nonPro(s) && !($("#wu-cp").checked && s.rank===1));
+    $("#wu-tp-list").innerHTML = $("#wu-tp").checked ? (ups.length ? ups.map(s=>`<div class="wu-team"><span>${s.rank}. ${esc(s.name)}</span><input class="adm-in wu-tag" data-team="${esc(s.name)}" placeholder="tag"></div>`).join("") : '<span class="muted" style="font-size:11px">Every team in the top '+n+' already has a pro page.</span>') : '';
+    const out=st.filter(s=>s.rank>k && s.status!=="pro");
+    $("#wu-dr-list").textContent = $("#wu-dr").checked ? (out.length ? 'Would disband: '+out.map(s=>s.name).join(", ") : 'No teams outside the top '+k+' to disband.') : ''; };
+  ["wu-tp","wu-tp-n","wu-dr","wu-dr-n","wu-cp"].forEach(id=>$("#"+id).addEventListener("input", drawLists)); drawLists();
+  const collect=()=>{ const rules={};
+    if($("#wu-cp").checked) rules.champion_pro={tag:($("#wu-cp-tag")||{}).value||"", logo:cpLogo};
+    if($("#wu-tp").checked){ const teams={}; document.querySelectorAll(".wu-tag").forEach(i=>teams[i.dataset.team]={tag:i.value}); rules.top_pro={n:+$("#wu-tp-n").value, teams}; }
+    if($("#wu-dr").checked) rules.disband_rest={n:+$("#wu-dr-n").value};
+    if($("#wu-sd").checked) rules.seeds={target:$("#wu-sd-t").value, count:+$("#wu-sd-n").value};
+    if($("#wu-rc").checked) rules.recap=true;
+    return rules; };
+  $("#wu-prev").onclick=async ()=>{
+    const msg=$("#wu-msg"), rules=collect(); msg.style.color=""; msg.textContent="Checking…";
+    const res=await apiPost("/api/wrapup",{slug, rules, dryRun:true});
+    if(!res.ok){ msg.style.color="var(--accent2,#ff6b6b)"; msg.textContent=res.error||"Something went wrong."; $("#wu-out").innerHTML=""; return; }
+    msg.textContent=""; $("#wu-out").innerHTML=rsPreviewHtml(res,false);
+    $("#rs-cancel").onclick=()=>{ $("#wu-out").innerHTML=""; };
+    $("#rs-apply").onclick=async ()=>{ $("#rs-apply").disabled=true; $("#rs-apply").textContent="Saving…";
+      const a=await apiPost("/api/wrapup",{slug, rules, dryRun:false});
+      if(!a.ok){ msg.style.color="var(--accent2,#ff6b6b)"; msg.textContent=a.error||a.msg||"Failed."; $("#rs-apply").disabled=false; $("#rs-apply").textContent="Apply changes"; return; }
+      await reload(); const o=$("#wu-out"); if(o) o.innerHTML=rsPreviewHtml(a,true); };
+  };
+}
 async function openEditor(slug){
   adminEditing = slug;
   const ed = $("#adm-editor"); if(!ed) return;
@@ -3451,6 +3610,7 @@ async function openEditor(slug){
     <div class="ae-head"><strong style="font-family:Chakra Petch;font-size:18px">${esc(man.name)}</strong>
       ${r.champion?`<span class="ae-champ">🏆 ${esc(r.champion)}</span>`:'<span class="muted">in progress</span>'}
       <a href="#/tournament/${esc(slug)}" class="muted" style="margin-left:auto;font-size:12px">open event page →</a></div>
+    ${r.champion?'<div id="ae-wrap" class="ae-wrap"></div>':''}
     ${stagesHtml || '<p class="muted">No stages yet — add one below.</p>'}
     <div class="ae-addstage">
       <div class="ib-title" style="margin-bottom:10px">Add Stage</div>
@@ -3463,11 +3623,18 @@ async function openEditor(slug){
         <div><label class="adm-l">Best of</label><input id="as-bo" class="adm-in" type="number" min="1" value="1" style="width:70px"></div>
       </div>
       <label class="adm-l">Teams — one per line (seed order for a bracket)</label>
+      <div id="as-seeds"></div>
       <textarea id="as-teams" class="adm-in" rows="5" placeholder="Aimpunch&#10;Cosmos&#10;…"></textarea>
       <button id="as-add" class="adm-btn" style="max-width:200px">Add stage</button>
     </div>`;
 
   // ---- wiring ----
+  if(r.champion) setupWrapUp(slug, reload);
+  fetch("/api/seeds?name="+encodeURIComponent(man.name)).then(x=>x.json()).then(x=>{
+    const box=$("#as-seeds"); if(!box || !x.ok || !x.seeds) return;
+    box.innerHTML = `<button type="button" class="loadmore as-seedbtn">Fill with the ${x.seeds.teams.length} seeds from ${esc(x.seeds.from)}</button>`;
+    box.querySelector("button").onclick=()=>{ $("#as-teams").value = x.seeds.teams.join("\n"); };
+  }).catch(()=>{});
   ed.querySelectorAll(".ae-match").forEach(mn=>mn.querySelectorAll(".ae-sc").forEach(i=>i.addEventListener("change", async ()=>{
     const sa=mn.querySelector(".ae-a").value, sb=mn.querySelector(".ae-b").value;
     await apiPost("/api/score",{slug, sid:+mn.dataset.sid, matchId:+mn.dataset.mid, sa:sa===''?null:+sa, sb:sb===''?null:+sb}); reload();
@@ -3498,7 +3665,12 @@ async function openEditor(slug){
 const TIER_CLASS = {major:"et-major", s:"et-s", a:"et-a"};
 // prize money (build/prizes.py): S-Tier sub-tiers come from the prize pool
 const PRIZE_HINT = "S-Tier events: $1,000,000+ is S-Tier 1 (2.5x points), $250,000+ is S-Tier 2 (1.75x), less is S-Tier 3 (1.25x). Majors and A-Tier aren't split.";
-function fmtUSD(v){ return v==null ? '—' : '$'+Math.round(v).toLocaleString('en-US'); }
+function fmtUSD(v){ return v==null ? '—' : (v<0?'-$':'$')+Math.abs(Math.round(v)).toLocaleString('en-US'); }
+function fmtUSDc(v){ if(v==null) return '—'; const a=Math.abs(v), sg=v<0?'-':'';
+  return a>=1e6 ? `${sg}$${(a/1e6).toFixed(2).replace(/\.?0+$/,'')}M` : a>=1e3 ? `${sg}$${Math.round(a/1e3)}k` : `${sg}$${Math.round(a)}`; }
+function valueTip(p){ const v=p.valueParts; if(!v) return '';
+  return `Market value from Rating Points (${fmtUSD(v.base)} base)`+(v.titles?`, +${v.titles*5}% for ${v.titles} title${v.titles===1?'':'s'} in the last year`:'')
+    +(v.recentPrize?`, up to +15% for ${fmtUSD(v.recentPrize)} prize money in the last year`:'')+(v.active?'':', -30% for no events in the last year')+'.'; }
 function parseUSD(v){ const n=parseFloat(String(v||'').replace(/[$,\s]/g,'')); return isFinite(n)&&n>0 ? Math.round(n) : 0; }
 function subTierFor(tier, pool){ if(tier!=='s'||!pool) return ''; return pool>=1000000?'S-Tier 1':pool>=250000?'S-Tier 2':'S-Tier 3'; }
 function placeOrd(n){ const v=n%100; return n+(v>=11&&v<=13?'th':n%10===1?'st':n%10===2?'nd':n%10===3?'rd':'th'); }
@@ -3710,7 +3882,7 @@ function renderTournament(slug){
           <strong style="font-size:18px;font-family:'Chakra Petch'">${crest(tr.champion, tr.championTeam)}</strong></div>
         ${tr.mvp ? `<div class="tourn-mvp">⭐ <span class="muted">${tr.champion?'Tournament MVP':'MVP so far'}:</span>
           <a href="#/player/${tr.mvp.slug}" class="tm-mvp-name">${flag(tr.mvp.iso)}${esc(tr.mvp.name)}</a>
-          <span class="muted" style="font-size:12px">${tr.mvp.mvpRounds} MVP round${tr.mvp.mvpRounds===1?'':'s'}${tr.mvp.team&&tr.mvp.team!=='—'?' · '+esc(tr.mvp.team):''}</span></div>` : ''}
+          <span class="muted" style="font-size:12px">${tr.mvp.rating!=null?`${tr.mvp.rating.toFixed(2)} rating over ${tr.mvp.maps} maps`:`${tr.mvp.mvpRounds} MVP round${tr.mvp.mvpRounds===1?'':'s'}`}${tr.mvp.team&&tr.mvp.team!=='—'?' · '+esc(tr.mvp.team):''}</span></div>` : ''}
         ${predSupported(tr) ? `<a class="predict-btn" href="#/predict/${tr.slug}">🔮 ${tr.champion?'Predictions & leaderboard':'Make your predictions'}</a>` : ''}
         ${fantasySupported(tr) ? `<a class="predict-btn fy-btn" href="#/fantasy/${tr.slug}">⚡ ${fantasyLock(tr).locked?'Fantasy leaderboard':'Pick your fantasy team'}</a>` : ''}
       </div>
@@ -3996,7 +4168,38 @@ function renderFantasy(slug){
     <h3 class="rec-group">Open for picks</h3>
     <div class="fy-evs">${open.map(card).join("") || '<p class="muted">No event is open right now. The next one opens as soon as it is created, with its teams.</p>'}</div>
     <h3 class="rec-group" style="margin-top:22px">Live &amp; finished</h3>
-    <div class="fy-evs">${rest.map(card).join("") || '<p class="muted">None yet.</p>'}</div>`;
+    <div class="fy-evs">${rest.map(card).join("") || '<p class="muted">None yet.</p>'}</div>
+    <div id="fy-season"></div>`;
+  fantasySeason(rest);
+}
+// season leaderboard: every manager's points added up over the year's locked events (late entries don't count)
+let _fySeasonYear = null;
+async function fantasySeason(events){
+  const box=$("#fy-season"); if(!box) return;
+  const years=[...new Set(events.map(t=>(t.date||'').slice(0,4)))].filter(Boolean).sort((a,b)=>b-a);
+  if(!years.length) return;
+  const yr = _fySeasonYear && years.includes(_fySeasonYear) ? _fySeasonYear : years[0];
+  box.innerHTML = `<h3 class="rec-group" style="margin-top:22px">Season leaderboard</h3><p class="muted">Loading…</p>`;
+  const totals={};
+  for(const tr of events.filter(t=>(t.date||'').startsWith(yr))){
+    let entries=[]; try{ entries=await FantasyStore.loadAll(tr.slug); }catch(e){}
+    if(!entries.length) continue;
+    const lk=fantasyLock(tr), pts=fantasyPoints(tr);
+    entries.filter(e=>Array.isArray(e.picks) && (!lk.ts || !e.savedAt || e.savedAt<=lk.ts*1000)).forEach(e=>{
+      const t=e.picks.reduce((a,s)=>a+(pts[s]?pts[s].pts:0),0);
+      const u=totals[e.uid]||(totals[e.uid]={name:e.name||'anon', total:0, events:0, best:null});
+      u.name=e.name||u.name; u.total+=t; u.events++; if(!u.best||t>u.best.pts) u.best={pts:t, event:tr.name};
+    });
+  }
+  const board=Object.entries(totals).map(([uid,u])=>({uid,...u})).sort((a,b)=>b.total-a.total), me=predUser().uid;
+  if(!$("#fy-season")) return;
+  $("#fy-season").innerHTML = `<h3 class="rec-group" style="margin-top:22px">Season leaderboard <span class="muted" style="font-size:11px">fantasy points added up over every event of the year</span></h3>
+    ${years.length>1?`<div class="tabs">${years.map(y=>`<button data-fyy="${y}" class="${y===yr?'active':''}">${y}</button>`).join("")}</div>`:''}
+    ${board.length?`<div class="tablewrap" style="max-width:720px"><table class="data"><thead><tr><th>#</th><th>Manager</th><th>Events</th><th>Best event</th><th>Points</th></tr></thead><tbody>
+      ${board.map((u,i)=>`<tr class="${u.uid===me?'fy-me':''}"><td class="rankcol">${i===0?'👑':i+1}</td><td class="name-cell">${esc(u.name)}${u.uid===me?' <span class="muted">(you)</span>':''}</td>
+        <td class="mono">${u.events}</td><td class="muted" style="font-size:12px">${u.best?`${u.best.pts} at ${esc(u.best.event)}`:''}</td><td class="mono fy-tot">${u.total}</td></tr>`).join("")}</tbody></table></div>`
+      :`<p class="muted">No fantasy teams entered in ${yr} yet. The season champion is whoever scores the most across all of the year's events.</p>`}`;
+  document.querySelectorAll("[data-fyy]").forEach(b=>b.onclick=()=>{ _fySeasonYear=b.dataset.fyy; fantasySeason(events); });
 }
 async function renderFantasyEvent(slug){
   const tr=(DATA.tournaments||[]).find(t=>t.slug===slug);
