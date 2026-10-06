@@ -43,5 +43,23 @@
   "title": "Niamocha: 100 MVP rounds",
   "text": "Niamocha reached 100 MVP rounds",
   "link": "#/player/niamocha"
+ },
+ {
+  "id": "milestone:froggiee:kills:500",
+  "type": "milestone",
+  "ts": 1791326210,
+  "date": "2026-10-16",
+  "title": "_froggiee: 500 career kills",
+  "text": "_froggiee reached 500 career kills",
+  "link": "#/player/froggiee"
+ },
+ {
+  "id": "milestone:soapiisereia:kills:500",
+  "type": "milestone",
+  "ts": 1791328796,
+  "date": "2026-10-16",
+  "title": "SoapiiSereia: 500 career kills",
+  "text": "SoapiiSereia reached 500 career kills",
+  "link": "#/player/soapiisereia"
  }
 ]
