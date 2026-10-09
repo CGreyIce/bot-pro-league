@@ -1239,3 +1239,10 @@ textarea.adm-in{resize:vertical;font-family:inherit}
 .adm-wrapbox:not(:empty){margin:4px 0 12px 8px}
 .adm-wrap{background:var(--panel2);border:1px solid var(--border);color:var(--text);border-radius:6px;padding:3px 9px;font-size:12px;cursor:pointer}
 .adm-wrap:hover{border-color:var(--accent)}
+/* final leaderboard (no playoff) */
+.lb-wrap{max-width:820px}
+.lb-table td{padding:8px 10px}
+.lb-table tr.lb-champ td{background:rgba(255,200,87,.06)}
+.lb-rec{font-weight:700}
+.lb-tb{font-size:9px;color:var(--muted);border:1px solid var(--border);border-radius:3px;padding:0 3px;vertical-align:middle}
+

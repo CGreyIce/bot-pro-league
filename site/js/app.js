@@ -3677,7 +3677,7 @@ function subTierFor(tier, pool){ if(tier!=='s'||!pool) return ''; return pool>=1
 function placeOrd(n){ const v=n%100; return n+(v>=11&&v<=13?'th':n%10===1?'st':n%10===2?'nd':n%10===3?'rd':'th'); }
 function tierBadgeEvent(tr){ return `<span class="event-tier ${TIER_CLASS[tr.tier]}">${esc(tr.tierLabel.toUpperCase())}</span>`; }
 function fmtDate(iso){ if(!iso) return ""; const [y,m,d]=iso.split("-"); const mo=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][+m-1]; return `${mo} ${+d}, ${y}`; }
-function champLabel(tr){ return /elimination/.test(tr.type) ? "Champion" : "1st Place"; }
+function champLabel(tr){ return (/elimination/.test(tr.type) || tr.leaderboard) ? "Champion" : "1st Place"; }
 function nameOrTeam(name, teamSlug){ return teamSlug ? `<a href="#/team/${teamSlug}" style="color:var(--link)">${esc(name)}</a>` : esc(name||"—"); }
 function nameOrTeamCrest(name, teamSlug){
   if(!name) return '—';
@@ -3862,9 +3862,33 @@ function renderTournament(slug){
       <td class="rankcol fs-rank">${(s.rank<=3?fsMedal(s.rank)+' ':'')}${s.rank}</td>
       <td class="name-cell">${crest(s.name, s.teamSlug)}</td>
       <td><span class="fs-result ${fsResultCls(s.result)}">${esc(s.result)}</span></td>${prizeCell(s)}</tr>`;
+  // final leaderboard (no playoff games): the top teams of every group ranked on their group results
+  const lb = tr.leaderboard;
+  const lbSection = (lb && lb.rows && lb.rows.length) ? (()=>{
+    const fsBy = {}; fs.forEach(s=>fsBy[normKey(s.name)]=s);
+    const rdiff = r=>r.rf-r.ra, sgn = v=>v>0?'+'+v:String(v);
+    const rows = lb.rows.map(r=>{ const st = fsBy[normKey(r.name)] || {rank:r.rank, name:r.name};
+      const badge = lb.complete ? (r.rank===1?'<span class="fs-result fs-champ">Champion</span>':'') : '';
+      return `<tr class="${r.rank===1&&lb.complete?'lb-champ':''}">
+        <td class="rankcol fs-rank">${lb.complete&&r.rank<=3?fsMedal(r.rank)+' ':''}${r.rank}</td>
+        <td class="name-cell">${crest(r.name, r.teamSlug)} ${badge}</td>
+        <td class="muted">${esc(r.group)} · ${r.groupPlace===1?'1st':'2nd'}</td>
+        <td class="mono lb-rec">${r.w}-${r.l}</td>
+        <td class="mono">${r.mw}-${r.ml}</td>
+        <td class="mono" style="color:${rdiff(r)>0?'var(--good)':rdiff(r)<0?'var(--accent2)':'var(--muted)'}" title="${r.rf} rounds won, ${r.ra} lost${r.tiebreak?` · tie broken by ${r.tiebreak}`:''}">${sgn(rdiff(r))}${r.tiebreak?' <span class="lb-tb">TB</span>':''}</td>
+        ${lb.complete&&hasPrizes?prizeCell({rank:st.rank, name:st.name}):''}</tr>`; }).join("");
+    return `<h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>${lb.complete?'Final Leaderboard':'Projected Leaderboard'}
+        <span class="muted" style="font-size:11px">${lb.complete?`top ${lb.perGroup} of each group, ranked on their group results · #1 is the champion${hasPrizes?' · '+fmtUSD(tr.prizePool)+' prize pool':''}`
+          :`the current top ${lb.perGroup} of each group · updates with every result · final once all groups finish`}</span></h2>
+      <div class="tablewrap fs-wrap lb-wrap"><table class="data fs-table lb-table">
+        <thead><tr><th class="no-sort">#</th><th class="no-sort">Team</th><th class="no-sort">Group</th><th class="no-sort">Record</th><th class="no-sort">Maps</th><th class="no-sort" title="Round difference across all their group games">Rounds</th>${lb.complete&&hasPrizes?'<th class="no-sort" style="text-align:right">Prize</th>':''}</tr></thead>
+        <tbody>${rows}</tbody></table></div>
+      ${!lb.complete&&lb.pending&&lb.pending.length?`<div class="muted" style="font-size:12px;margin-top:6px">${esc(lb.pending.join(", ").replace(/, ([^,]*)$/," and $1"))} ${lb.pending.length===1?"hasn't":"haven't"} started yet: their top ${lb.perGroup} join the table once they play.</div>`:''}
+      <div class="muted" style="font-size:11px;margin-top:6px">Ranked by wins, then losses, then round difference. Tied teams from the same group keep their group order (head-to-head, then rounds). TB = tie broken.</div>`; })() : '';
   const fsPlayoff = fs.filter(s=>s.result!=='Group Stage');
   const fsGroup = fs.filter(s=>s.result==='Group Stage');
-  const finalStandingsSection = fs.length ? `
+  const finalStandingsSection = lb ? (lbSection + (fsGroup.length&&lb.complete?`<details class="fs-details"><summary>Group stage — ${fsGroup.length} teams that didn't qualify</summary>
+       <div class="tablewrap fs-wrap${hasPrizes?' fs-prize':''}"><table class="data fs-table"><tbody>${fsGroup.map(fsRow).join("")}</tbody></table></div></details>`:'')) : fs.length ? `
     <h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Final Standings${hasPrizes?`
       <span class="muted" style="font-size:11px">${fmtUSD(tr.prizePool)} prize pool · split equally between each team's players</span>`:''}</h2>
     <div class="tablewrap fs-wrap${hasPrizes?' fs-prize':''}"><table class="data fs-table"><tbody>${fsPlayoff.map(fsRow).join("")}</tbody></table></div>
@@ -4455,8 +4479,9 @@ function actualResults(tr){
   const fs=tr.finalStandings||[]; const has=labels=>fs.filter(s=>labels.includes(s.result)).map(s=>s.name);
   return { groups, champ:(fs.find(s=>s.result==='Champion')||{}).name,
            ru:(fs.find(s=>s.result==='Runner-up')||{}).name,
-           f4:has(['Champion','Runner-up','3rd Place','4th Place']),
-           f8:has(['Champion','Runner-up','3rd Place','4th Place','Quarterfinals']) };
+           // by final rank, so bracket events and leaderboard events (no playoff games) score the same way
+           f4:fs.filter(s=>s.result!=='Group Stage' && s.rank<=4).map(s=>s.name),
+           f8:fs.filter(s=>s.result!=='Group Stage' && s.rank<=8).map(s=>s.name) };
 }
 function scorePrediction(pred, tr, actual){
   if(!actual) return null;

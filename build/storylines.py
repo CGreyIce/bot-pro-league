@@ -607,7 +607,8 @@ class Storylines:
                 cards.append({"kind": "live", "label": "On now", "title": _clean(tr["name"]),
                               "text": f"Group stage: {left} match{'es' if left != 1 else ''} to play "
                                       + (f"(round {lo} of {total})" if lo == hi else f"(groups between round {lo} and {hi} of {total})")
-                                      + (". Top 2 in each group reach the playoffs." if po else "."),
+                                      + (". Top 2 in each group reach the playoffs." if po else
+                                         ". The top 2 of each group make the final leaderboard." if tr.get("leaderboard") else "."),
                               "link": f"#/tournament/{tr['slug']}"})
         return cards
 

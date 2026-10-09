@@ -235,6 +235,9 @@ def stage_standings(stage, res):
             hi, lo = (sa, sb) if r["w"] == 1 else (sb, sa)
             rec[win]["diff"] += hi - lo; rec[lose]["diff"] += lo - hi
     order = sorted(rec.keys(), key=lambda n: (-rec[n]["w"], rec[n]["l"], -rec[n]["diff"], (n or "").lower()))
+    if stage.get("_lbSlug") and stage["format"] == "swiss":
+        stats, h2h = _stage_table(stage, stage["_lbSlug"])
+        order = [n for n, _ in _rank_teams([n for n in order if n in stats], stats, h2h)]
     if stage["format"] == "single_elim":
         _, champ = _elim_resolved(stage)
         # explicit podium: champion, runner-up (final loser), then the 3rd-place decider's
@@ -280,6 +283,113 @@ def stage_to_standard(stage):
         "matches": out_matches, "standings": stage_standings(stage, res),
     }
 
+# ---------------- final leaderboard (no playoff games) ----------------
+def _match_rounds(slug, ref, m):
+    """(rounds for A, rounds for B) of a played match: from its map scoreboards when recorded,
+    else from a Bo1 score (13-9 is rounds); a Bo3 map score alone (2-1) has no round data."""
+    ms = _LB_STATS.get(slug, {}).get(ref, {}).get("maps") or []
+    ra = sum(mp.get("scoreA") or 0 for mp in ms); rb = sum(mp.get("scoreB") or 0 for mp in ms)
+    if ra or rb:
+        return ra, rb
+    sa, sb = m.get("sa"), m.get("sb")
+    if sa is not None and sb is not None and max(sa, sb) >= 13:
+        return sa, sb
+    return 0, 0
+
+_LB_STATS = {}
+def _load_stats():
+    global _LB_STATS
+    try:
+        _LB_STATS = json.load(open(os.path.join(ROOT, "data", "match_stats.json"), encoding="utf-8"))
+    except Exception:
+        _LB_STATS = {}
+
+def _stage_table(stage, slug):
+    """Per-team match W/L, maps, rounds for/against, plus head-to-head wins, from a group's played matches."""
+    stats = {t: {"w": 0, "l": 0, "mw": 0, "ml": 0, "rf": 0, "ra": 0, "played": 0} for t in stage["teams"] if t}
+    h2h = {}
+    for m in stage["matches"]:
+        a, b, sa, sb = m.get("a"), m.get("b"), m.get("sa"), m.get("sb")
+        if sa is None or sb is None or a not in stats or b not in stats or sa == sb:
+            continue
+        win, lose = (a, b) if sa > sb else (b, a)
+        stats[win]["w"] += 1; stats[lose]["l"] += 1
+        stats[a]["played"] += 1; stats[b]["played"] += 1
+        mapsA, mapsB = (sa, sb) if max(sa, sb) <= 5 else ((1, 0) if sa > sb else (0, 1))
+        stats[a]["mw"] += mapsA; stats[a]["ml"] += mapsB; stats[b]["mw"] += mapsB; stats[b]["ml"] += mapsA
+        ra, rb = _match_rounds(slug, f"{stage['id']}-{m['id']}", m)
+        stats[a]["rf"] += ra; stats[a]["ra"] += rb; stats[b]["rf"] += rb; stats[b]["ra"] += ra
+        h2h[(win, lose)] = h2h.get((win, lose), 0) + 1
+    return stats, h2h
+
+def _rank_teams(names, stats, h2h):
+    """Wins, then losses, then head-to-head (only when every tied team played each other), then round
+    difference, then map difference. Returns [(name, tiebreak or None)] best first."""
+    rd = lambda n: stats[n]["rf"] - stats[n]["ra"]
+    names = sorted(names, key=lambda n: (-stats[n]["w"], stats[n]["l"]))
+    out, i = [], 0
+    while i < len(names):
+        j = i
+        while j < len(names) and (stats[names[j]]["w"], stats[names[j]]["l"]) == (stats[names[i]]["w"], stats[names[i]]["l"]):
+            j += 1
+        block = names[i:j]
+        met = len(block) > 1 and all((x, y) in h2h or (y, x) in h2h for x in block for y in block if x != y)
+        hw = {n: (sum(h2h.get((n, o), 0) for o in block if o != n) if met else 0) for n in block}
+        block.sort(key=lambda n: (-hw[n], -rd(n), -(stats[n]["mw"] - stats[n]["ml"]), n.lower()))
+        tb = None
+        if len(block) > 1:
+            tb = "head-to-head" if met and len(set(hw.values())) > 1 else "round difference"
+        out += [(n, tb) for n in block]
+        i = j
+    return out
+
+def leaderboard(man):
+    """man["finalLeaderboard"] = {"perGroup": 2}: instead of a playoff, the top `perGroup` of every
+    swiss group go onto ONE leaderboard ranked purely on their group-stage results (ALGS-style), with
+    the same ordering the event's group tables use: match wins, then losses, then head-to-head (only
+    when every tied team played each other), then round difference, then map difference. #1 is the
+    champion. Returns {"rows", "complete", "perGroup", "pending"} (projected while groups are unfinished)."""
+    cfg = man.get("finalLeaderboard")
+    if not cfg:
+        return None
+    _load_stats()
+    per = int(cfg.get("perGroup", 2))
+    groups = [g for g in man.get("stages", []) if g["format"] == "swiss"]
+    complete = bool(groups) and all(_group_complete(g) for g in groups)
+    allstats, allh2h, quals, pending = {}, {}, [], []
+    for g in groups:
+        stats, h2h = _stage_table(g, man["slug"])
+        allstats.update(stats); allh2h.update(h2h)
+        if not any(st["played"] for st in stats.values()):
+            pending.append(g["name"]); continue
+        for place, (n, _) in enumerate(_rank_teams(list(stats), stats, h2h)[:per], 1):
+            quals.append((n, g["name"], place))
+    info = {n: (gname, place) for n, gname, place in quals}
+    ranked = _rank_teams([q[0] for q in quals], allstats, allh2h)
+    # teams from the same group keep their group order: within each tied block, the slots a group's
+    # teams land in (by round difference) are refilled in group-placing order
+    i = 0
+    while i < len(ranked):
+        j = i
+        key = lambda n: (allstats[n]["w"], allstats[n]["l"])
+        while j < len(ranked) and key(ranked[j][0]) == key(ranked[i][0]):
+            j += 1
+        block = ranked[i:j]
+        for gname in {info[n][0] for n, _ in block}:
+            slots = [k for k, (n, _) in enumerate(block) if info[n][0] == gname]
+            if len(slots) > 1:
+                ordered = sorted((block[k] for k in slots), key=lambda x: info[x[0]][1])
+                for k, item in zip(slots, ordered):
+                    block[k] = (item[0], "group placing")
+        ranked[i:j] = block
+        i = j
+    rows = []
+    for k, (n, tb) in enumerate(ranked, 1):
+        st = allstats[n]
+        rows.append({"rank": k, "name": n, "group": info[n][0], "groupPlace": info[n][1], "w": st["w"], "l": st["l"],
+                     "mw": st["mw"], "ml": st["ml"], "rf": st["rf"], "ra": st["ra"], **({"tiebreak": tb} if tb else {})})
+    return {"rows": rows, "complete": complete, "perGroup": per, "pending": pending}
+
 def tournament_placements(man):
     """Full final standings across the whole event: playoff finishers by bracket
     placement (champion, runner-up, 3rd/4th, then round-by-round tiers), followed by
@@ -288,6 +398,11 @@ def tournament_placements(man):
     if not stages:
         return []
     out, placed = [], set()
+    lb = leaderboard(man)
+    if lb and lb["complete"]:
+        for r in lb["rows"]:
+            res = "Champion" if r["rank"] == 1 else "Runner-up" if r["rank"] == 2 else f"{ordinal(r['rank'])} Place"
+            out.append({"rank": r["rank"], "name": r["name"], "result": res}); placed.add(r["name"])
     playoff = next((s for s in reversed(stages) if s["format"] == "single_elim"), None)
     if playoff and any(m.get("sa") is not None for m in playoff["matches"]):
         res, champ = _elim_resolved(playoff)
@@ -357,10 +472,19 @@ def _display_seeds(man):
     return {}
 
 def to_standard(man):
+    if man.get("finalLeaderboard"):
+        _load_stats()
+        for st in man["stages"]:
+            st["_lbSlug"] = man["slug"]            # in-memory only: group tables use the leaderboard's tiebreaks
     stages = [stage_to_standard(s) for s in man["stages"]]
+    for st in man["stages"]:
+        st.pop("_lbSlug", None)
     # champion = decisive result of the last stage
     champion = None
-    if man["stages"]:
+    lb = leaderboard(man)
+    if lb is not None:
+        champion = lb["rows"][0]["name"] if lb["complete"] and lb["rows"] else None
+    elif man["stages"]:
         last = man["stages"][-1]
         if last["format"] == "single_elim":
             _, champion = _elim_resolved(last)
@@ -395,6 +519,7 @@ def to_standard(man):
         "completed": bool(man.get("completed")),
         "noHonors": bool(man.get("noHonors")),
         "nationTeam": man.get("nationTeam"),
+        "leaderboard": lb,
     }
 
 # ---------------- persistence ----------------
@@ -465,6 +590,25 @@ def save(man):
     json.dump(man, open(path(man["slug"]), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     json.dump(to_standard(man), open(os.path.join(TDIR, man["slug"] + ".json"), "w", encoding="utf-8"),
               ensure_ascii=False)
+def refresh_standards():
+    """Rewrite every manual event's standard file from its current data (run at the start of each build),
+    so standings that depend on other files (scoreboards -> round difference) are never stale.
+    Only files whose content changed are written. Returns the slugs rewritten."""
+    done = []
+    for f in sorted(os.listdir(MANUAL)):
+        if not f.endswith(".json"):
+            continue
+        man = load(f[:-5])
+        if not man:
+            continue
+        out = os.path.join(TDIR, man["slug"] + ".json")
+        new = json.dumps(to_standard(man), ensure_ascii=False)
+        old = open(out, encoding="utf-8").read() if os.path.exists(out) else None
+        if new != old:
+            open(out, "w", encoding="utf-8").write(new)
+            done.append(man["slug"])
+    return done
+
 def delete(slug):
     for d in (MANUAL, TDIR):
         p = os.path.join(d, slug + ".json")

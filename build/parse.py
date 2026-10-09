@@ -633,6 +633,10 @@ def main():
     old2new = {norm_key(k): v for k, v in json.load(open(ncp, encoding="utf-8")).items()} if os.path.exists(ncp) else {}
 
     # ---- tournaments (built early so recorded scoreboards can feed player stats) ----
+    import manual as _manual
+    _fresh = _manual.refresh_standards()          # manual events: standings always from the latest scores + scoreboards
+    if _fresh:
+        print(f"manual events refreshed: {', '.join(_fresh)}")
     import tournaments as tourney_mod
     team_map = {t["key"]: {"name": t["name"], "slug": t["slug"]} for t in teams}
     team_alias = tourney_mod.load_team_alias(ROOT)  # norm(old team) -> norm(current team)

@@ -165,7 +165,18 @@ def process_manual(raw, team_map, alias):
         "predictionsLocked": bool(raw.get("predictionsLocked")),
         "noHonors": bool(raw.get("noHonors")),
         "nationTeam": raw.get("nationTeam"),
+        "leaderboard": _lb_out(raw.get("leaderboard"), resolve),
     }
+
+def _lb_out(lb, resolve):
+    """Final leaderboard (manual events without a playoff): resolve team names to pages."""
+    if not lb:
+        return None
+    rows = []
+    for r in lb.get("rows", []):
+        dn, sl = resolve(r["name"])
+        rows.append({**r, "name": dn, "teamSlug": sl})
+    return {**lb, "rows": rows}
 
 def process_one(raw, team_map, alias):
     if raw.get("stages"):
