@@ -1246,3 +1246,97 @@ textarea.adm-in{resize:vertical;font-family:inherit}
 .lb-rec{font-weight:700}
 .lb-tb{font-size:9px;color:var(--muted);border:1px solid var(--border);border-radius:3px;padding:0 3px;vertical-align:middle}
 .aw-chip.t20 b{color:var(--accent);font-family:'Chakra Petch',sans-serif}
+
+/* team colours: the team page header takes the logo's colour (or the one set in admin) */
+.profile-head .ph-main,.profile-head .crest,.profile-head .ph-rank{position:relative;z-index:1}
+.profile-head .ph-mark{position:absolute;right:-30px;top:50%;transform:translateY(-50%) rotate(-8deg);height:240px;width:240px;object-fit:contain;opacity:.06;pointer-events:none}
+.profile-head.tc{background:linear-gradient(115deg,var(--panel2),var(--panel));background:linear-gradient(115deg,color-mix(in srgb,var(--tc) 34%,var(--panel2)) 0%,color-mix(in srgb,var(--tc) 12%,var(--panel)) 50%,var(--panel) 100%);border-color:color-mix(in srgb,var(--tc) 40%,var(--border))}
+.profile-head.tc::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--tc)}
+.profile-head.tc::after{background:radial-gradient(circle,color-mix(in srgb,var(--tc) 30%,transparent),transparent 70%)}
+.profile-head.tc .ph-rank .big,.profile-head.tc .tag{color:var(--tct)}
+.profile-head.tc .ph-mark{opacity:.09}
+.tc-edit{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:-8px 0 16px;font-size:12px}
+.tc-edit input[type=color]{width:38px;height:28px;border:1px solid var(--border);border-radius:6px;background:var(--panel);padding:2px;cursor:pointer}
+
+/* trophy cabinet: trophies on wooden shelves, sized by tier */
+.tshelf{--row:124px;display:flex;flex-wrap:wrap;align-items:flex-end;gap:0 4px;padding:0 14px;margin-bottom:20px;border:1px solid var(--border);border-radius:12px;overflow:hidden;
+  background:linear-gradient(to bottom,transparent calc(var(--row) - 17px),#5a4631 calc(var(--row) - 17px),#3a2d20 calc(var(--row) - 5px),rgba(0,0,0,.55) calc(var(--row) - 5px),transparent var(--row)) 0 0/100% var(--row) repeat-y,
+    radial-gradient(ellipse at 50% -30%,rgba(255,226,160,.12),transparent 65%),linear-gradient(180deg,#131b2d,#0b1120)}
+.trophy-item{height:var(--row);width:74px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end}
+.trophy-item .trophy{display:block;filter:drop-shadow(0 3px 3px rgba(0,0,0,.55));transition:transform .18s,filter .18s}
+.trophy-item:hover .trophy{transform:translateY(-4px);filter:drop-shadow(0 8px 12px rgba(255,214,130,.35))}
+.trophy-yr{height:12px;line-height:12px;margin:0 0 5px;font:700 9.5px 'Chakra Petch',sans-serif;letter-spacing:.6px;color:#efdcb8}
+.trophy-item.k-major .trophy-yr{color:#ffe58a}
+
+/* live scores */
+.live-pill{display:inline-flex;align-items:center;background:rgba(255,61,100,.15);color:#ff5c7a;border:1px solid rgba(255,61,100,.45);border-radius:10px;padding:0 8px;font-size:11px;font-weight:700;letter-spacing:.5px;animation:livepulse 1.6s ease-in-out infinite}
+.live-ago{font-size:12px;color:var(--muted);margin-left:6px}
+.live-dot{color:#ff3d64;animation:livepulse 1.6s ease-in-out infinite}
+@keyframes livepulse{50%{opacity:.5}}
+@media (prefers-reduced-motion:reduce){.live-pill,.live-dot{animation:none}}
+#live-toast{position:fixed;right:16px;bottom:16px;z-index:999;background:var(--panel2);border:1px solid var(--good);color:var(--text);padding:9px 14px;border-radius:9px;font-size:13px;opacity:0;transform:translateY(8px);transition:.25s;pointer-events:none;max-width:calc(100vw - 32px)}
+#live-toast.show{opacity:1;transform:none}
+#live-toast.bad{border-color:var(--accent2)}
+.adm-live{background:var(--panel);border:1px solid var(--border);border-radius:10px;margin:0 0 18px}
+.adm-live:empty{display:none}
+.lv-head{display:flex;align-items:center;gap:8px;padding:11px 14px;font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:15px;flex-wrap:wrap}
+.lv-head .muted{font-family:'Inter',sans-serif;font-weight:400;font-size:12px}
+.lv-state{font:700 11px 'Inter',sans-serif;padding:1px 8px;border-radius:10px;text-transform:uppercase;letter-spacing:.5px}
+.lv-state.on{background:rgba(46,230,166,.15);color:var(--good)}
+.lv-state.off{background:var(--chip);color:var(--muted)}
+.lv-body{padding:0 14px 14px;font-size:13px}
+.lv-toggle{display:flex;align-items:center;gap:8px;cursor:pointer}
+.lv-setup{margin-top:12px;font-size:13px}
+.lv-setup summary{cursor:pointer;color:var(--link)}
+.lv-setup ol{margin:8px 0;padding-left:20px;line-height:1.6}
+.lv-pre{background:var(--bg);border:1px solid var(--border);border-radius:7px;padding:10px 12px;font-size:12px;overflow-x:auto;white-space:pre;margin:6px 0}
+
+/* BPL-dle */
+.dle-modes{margin-left:auto;display:inline-flex;border:1px solid var(--border);border-radius:8px;overflow:hidden}
+.dle-modes button{background:var(--panel);color:var(--muted);border:0;padding:5px 12px;font:600 12px 'Inter',sans-serif;cursor:pointer}
+.dle-modes button.active{background:var(--accent-grad);color:#fff}
+.dle-intro{font-size:13px;margin:-4px 0 14px;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+.dle-key{display:inline-flex;gap:5px;align-items:center;font-size:11px}
+.dle-key span{padding:1px 7px;border-radius:4px;color:#fff}
+.dle-tile.t-g,.dle-key .t-g{background:#1f9d63}
+.dle-tile.t-y,.dle-key .t-y{background:#bf8f12}
+.dle-tile.t-x,.dle-key .t-x{background:#2a3349}
+.dle-input{position:relative;max-width:520px;margin:0 auto 16px}
+.dle-input input{width:100%;box-sizing:border-box;background:var(--panel);border:1px solid var(--border2);border-radius:10px;color:var(--text);padding:12px 14px;font-size:15px;outline:none}
+.dle-input input:focus{border-color:var(--accent)}
+.dle-sug{display:none;position:absolute;left:0;right:0;top:calc(100% + 4px);background:var(--panel2);border:1px solid var(--border2);border-radius:10px;overflow:hidden;z-index:20;box-shadow:0 10px 30px rgba(0,0,0,.45)}
+.dle-sug.show{display:block}
+.dle-opt{display:flex;align-items:center;gap:8px;padding:9px 12px;cursor:pointer;font-size:14px}
+.dle-opt .muted{margin-left:auto;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dle-opt.sel,.dle-opt:hover{background:var(--chip)}
+.dle-board{display:flex;flex-direction:column;gap:10px;max-width:760px;margin:0 auto}
+.dle-row{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:10px 12px}
+.dle-row.fresh{animation:dlein .35s ease-out}
+.dle-row.win{border-color:#1f9d63;box-shadow:0 0 0 1px #1f9d63 inset}
+.dle-name{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:15px;margin-bottom:8px}
+.dle-tiles{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}
+.dle-tile{border-radius:7px;padding:6px 4px;text-align:center;color:#fff;min-width:0}
+.dle-lbl{display:block;font-size:9.5px;text-transform:uppercase;letter-spacing:.6px;opacity:.75}
+.dle-v{display:block;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dle-ar{margin-left:3px}
+@keyframes dlein{from{opacity:0;transform:translateY(-6px)}}
+@media (prefers-reduced-motion:reduce){.dle-row.fresh{animation:none}}
+@media (max-width:620px){.dle-tiles{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.dle-end{max-width:760px;margin:0 auto 16px;text-align:center;padding:16px;border-radius:12px;border:1px solid var(--border);background:var(--panel)}
+.dle-end.won{border-color:#1f9d63;background:linear-gradient(180deg,rgba(31,157,99,.16),var(--panel))}
+.dle-end-t{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:22px;margin-bottom:6px}
+.dle-end-btns{display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px}
+.dle-help{max-width:760px;margin:16px auto 0;font-size:13px;color:var(--muted)}
+.dle-help summary{cursor:pointer;color:var(--link)}
+.dle-help ul{line-height:1.7;padding-left:20px}
+.dle-card{display:flex;align-items:center;gap:12px;padding:12px 14px;margin-bottom:18px;border-radius:12px;border:1px solid var(--border2);background:linear-gradient(120deg,rgba(255,106,61,.14),var(--panel) 60%);color:var(--text)}
+.dle-card:hover{border-color:var(--accent)}
+.dle-card.done{background:var(--panel)}
+.dle-card-ico{font-size:26px}
+.dle-card-body{display:flex;flex-direction:column;gap:2px;flex:1;min-width:0;font-size:12px}
+.dle-card-body b{font-family:'Chakra Petch',sans-serif;font-size:16px}
+.dle-card-go{font-weight:700;color:var(--accent);font-size:13px;white-space:nowrap}
+
+/* BPL generation badge (player profile header) */
+.gen-badge{display:inline-flex;align-items:center;height:22px;padding:0 9px;margin-left:8px;border-radius:5px;background:var(--chip);border:1px solid var(--border2);color:var(--cool);font-weight:700;font-size:12px;vertical-align:middle;cursor:default}
+.gen-badge.founder{background:linear-gradient(120deg,rgba(255,210,61,.22),rgba(255,138,61,.14));border-color:rgba(255,210,61,.6);color:#ffd96a}

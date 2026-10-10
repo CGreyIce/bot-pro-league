@@ -292,6 +292,15 @@ class Handler(SimpleHTTPRequestHandler):
                     return self._json(200, {"ok": True, "changes": res["changes"]})
                 ok, msg = regenerate()
                 return self._json(200, {"ok": ok, "changes": res["changes"], "msg": msg})
+            elif path == "/api/teamcolor":
+                # team page header colour; color=None goes back to the colour taken from the logo
+                import extras
+                try:
+                    extras.save_team_color(os.path.join(ROOT, "data"), b["team"], b.get("color"))
+                except ValueError as e:
+                    return self._json(400, {"ok": False, "error": str(e)})
+                ok, msg = regenerate()
+                return self._json(200, {"ok": ok, "msg": msg})
             elif path == "/api/publish":
                 ok, msg = git_publish()
                 return self._json(200, {"ok": ok, "msg": msg})

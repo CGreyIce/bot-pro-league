@@ -7,7 +7,7 @@ BPL Rating per player (normalized within each pool), and writes site/data.json.
 Run:  python build/parse.py
 Re-run any time the source data changes.
 """
-import csv, hashlib, json, os, re, sys, unicodedata
+import csv, hashlib, json, os, re, sys, time, unicodedata
 from collections import defaultdict
 from datetime import date as _date
 
@@ -1802,6 +1802,14 @@ def main():
         "soloGameStats": solo_game_stats,
         "stacks": stacks,
     }
+    # ---- team page colours + the BPL-dle daily game schedule (build/extras.py) ----
+    import extras
+    extras.team_colors(teams, LOGO_DIR, SITE, DATA)
+    extras.generations(pro + amateur + solo, tournaments)
+    data["dle"] = extras.dle(pro, DATA)
+    # build time (ms): live scores pushed from admin after this build are newer than this data.json
+    data["builtAt"] = int(time.time() * 1000)
+
     # ---- yearly awards + Player of the Month (build/awards.py) ----
     import awards
     data.update(awards.run(tournaments, pro + amateur + solo, teams, articles))

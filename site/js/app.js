@@ -175,7 +175,7 @@ const routes = {
   "results": renderResults, "records": renderRecords, "compare": renderCompare,
   "transfers": renderTransfers, "matches": renderMatches, "awards": renderAwards, "maps": renderMaps,
   "compareteams": renderTeamCompare, "stats": renderStats,
-  "admin": renderAdmin, "match": renderMatch, "predict": renderPredict, "prophets": renderProphets, "fantasy": renderFantasy, "rivalries": renderRivalries,
+  "admin": renderAdmin, "match": renderMatch, "predict": renderPredict, "prophets": renderProphets, "fantasy": renderFantasy, "rivalries": renderRivalries, "dle": renderDle,
   "news": renderNews, "article": renderArticle,
 };
 function parseHash(){
@@ -247,13 +247,15 @@ function renderHome(){
         <div style="margin-top:10px"><a href="#/teams" class="muted">View full ranking →</a></div>
       </div>
       <div>
+        ${(()=>{ const st = dleStatus(); return `<a class="dle-card${st.done?' done':''}" href="#/dle"><span class="dle-card-ico">🎯</span>
+          <span class="dle-card-body"><b>BPL-dle #${st.num}</b><span class="muted">Guess today's mystery player · ${esc(st.text)}</span></span><span class="dle-card-go">${st.done?'Practice →':'Play →'}</span></a>`; })()}
         ${(DATA.tournaments&&DATA.tournaments.length)?`
         <h2 class="section-title"><span class="accent-bar"></span>Latest Results</h2>
         <div class="leader-card" style="margin-bottom:18px">
           ${DATA.tournaments.slice(0,6).map(tr=>`<a class="leader-row lr-result" href="#/tournament/${tr.slug}" style="align-items:center">
             <span class="event-tier ${TIER_CLASS[tr.tier]}">${esc(tr.tierLabel[0]==='M'?'MAJ':tr.tierLabel[0]==='S'?'S':'A')}</span>
             <span class="lr-name" style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(tr.name)}</span>
-            ${tr.champion?`<span class="lr-val" style="font-size:12px;white-space:nowrap;flex:0 0 auto">🏆 ${esc(tr.champion)}</span>`:'<span class="lr-val muted" style="font-size:11px;white-space:nowrap;flex:0 0 auto">ongoing</span>'}</a>`).join("")}
+            ${tr.champion?`<span class="lr-val" style="font-size:12px;white-space:nowrap;flex:0 0 auto">🏆 ${esc(tr.champion)}</span>`:`<span class="lr-val muted" style="font-size:11px;white-space:nowrap;flex:0 0 auto">${LIVE.seen[tr.slug]?'<span class="live-dot">●</span> live':'ongoing'}</span>`}</a>`).join("")}
           <div style="margin-top:8px"><a href="#/tournaments" class="muted" style="font-size:12px">All tournaments →</a></div>
         </div>`:''}
         <h2 class="section-title"><span class="accent-bar"></span>Stat Leaders <span class="muted" style="font-size:11px">(pro)</span></h2>
@@ -389,7 +391,7 @@ function teamCabinetHtml(t){
   meds.sort((a,b)=>(b.e.date||'').localeCompare(a.e.date||''));
   const g=meds.filter(x=>x.m==='g').length, s=meds.filter(x=>x.m==='s').length, b=meds.filter(x=>x.m==='b').length;
   return `<div class="infobox cabinet">
-    <div class="ib-title">Trophy Cabinet</div>
+    <div class="ib-title">Podium Finishes</div>
     <div class="medal-tally">
       ${g?`<span class="mt">🥇 ${g}</span>`:''}${s?`<span class="mt">🥈 ${s}</span>`:''}${b?`<span class="mt">🥉 ${b}</span>`:''}
     </div>
@@ -536,7 +538,8 @@ function renderTeam(slug){
 
   app.innerHTML = `
     <div class="crumb"><a href="#/teams">Teams</a><span class="sep">/</span>${esc(t.name)}</div>
-    <div class="profile-head">
+    <div class="profile-head${t.color?' tc':''}"${t.color?` style="--tc:${esc(t.color)};--tct:${esc(t.colorText||t.color)}"`:''}>
+      ${t.logo?`<img class="ph-mark" src="${esc(t.logo)}" alt="" aria-hidden="true">`:''}
       ${t.logo?`<img class="crest" src="${esc(t.logo)}" alt="">`:''}
       <div class="ph-main">
         <h1>${t.originIso?`<span class="th-flag" title="${esc(t.originCountry||'')}">${flag(t.originIso)}</span>`:''}${esc(t.name)} ${t.star?'<span class="star" title="Major winner">★</span>':''} ${t.tag?`<span class="tag">${esc(t.tag)}</span>`:''}${t.provisional?' <span class="prov-badge" title="Has a profile but is not a pro team yet">PROVISIONAL</span>':''}</h1>
@@ -547,6 +550,9 @@ function renderTeam(slug){
         : `<div class="ph-rank"${peakAttr(t.peak)}><div class="big">#${t.rank}</div><div class="lbl">BPL Rank</div></div>`}
       <div class="ph-rank"><div class="big">${t.rank_points}</div><div class="lbl">Points</div></div>
     </div>
+    ${_adminOn?`<div class="tc-edit"><span class="muted">Header colour</span><input type="color" id="tc-pick" value="${esc(t.color||'#ff6a3d')}">
+      <button id="tc-save" class="loadmore">Save</button>${t.colorSource==='admin'?'<button id="tc-reset" class="loadmore">Use logo colour</button>':''}
+      <span class="muted" style="font-size:11px">${t.colorSource==='admin'?'set by you':t.colorSource==='logo'?'taken from the logo':'logo has no clear colour'}</span><span id="tc-msg" class="muted" style="font-size:11px"></span></div>`:''}
     ${t.bio?`<div class="player-bio">${esc(t.bio)}</div>`:''}
 
     <div class="profile-grid">
@@ -573,6 +579,8 @@ function renderTeam(slug){
       ${teamCabinetHtml(t)}
       </div>
       <div>
+        ${(()=>{ const tt = teamTrophies(t); return tt.length ? `<h2 class="section-title" style="margin-top:0"><span class="accent-bar"></span>Trophy Cabinet
+          <span class="muted" style="font-size:11px">${trophyTally(tt)}</span></h2>${trophyShelfHtml(tt)}` : ''; })()}
         <div class="statgrid">
           ${stat(t.total_maps,"Maps Played")}
           ${stat(pct(t.wlr),"Win Rate",true)}
@@ -638,6 +646,14 @@ function renderTeam(slug){
               <td class="mono">${wr}%</td></tr>`;}).join("")}</tbody></table></div>`:''}
       </div>
     </div>`;
+  if(_adminOn && $("#tc-save")){
+    const send = async color=>{ $("#tc-msg").textContent = "Saving…";
+      const r = await apiPost("/api/teamcolor", {team: t.slug, color});
+      if(r.ok){ await reloadData(); renderTeam(t.slug); } else $("#tc-msg").textContent = "Error: "+(r.error||"failed"); };
+    $("#tc-pick").oninput = e=>{ const h = $(".profile-head"); h.classList.add("tc"); h.style.setProperty("--tc", e.target.value); h.style.setProperty("--tct", e.target.value); };
+    $("#tc-save").onclick = ()=>send($("#tc-pick").value);
+    const rs = $("#tc-reset"); if(rs) rs.onclick = ()=>send(null);
+  }
 }
 
 let playersPool = "pro", playersSort = {key:"Rating Points", dir:-1};
@@ -687,6 +703,17 @@ function proRankOf(p){
   const i=ranked.findIndex(x=>x.slug===p.slug);
   return i<0?null:{rank:i+1, total:ranked.length};
 }
+// BPL generation: the year of a player's first tournament. 2020 players are the Founders, 2021 the
+// 1st Generation, 2022 the 2nd and so on; no tournament yet counts as joining this year (build/extras.py).
+function genLabel(g){ return g===0 ? 'Founder' : `${placeOrd(g)} Generation`; }
+function genTip(p){
+  return p.joinedNoEvent ? `Hasn't played a BPL tournament yet, so counted as joining in ${p.joined}`
+    : `Joined the BPL in ${p.joined}${p.debutEvent?` · first tournament: ${p.debutEvent.name}`:''}`;
+}
+function genBadge(p){
+  if(p.generation==null) return '';
+  return `<span class="gen-badge${p.generation===0?' founder':''}" title="${esc(genTip(p))}">${p.generation===0?'★ ':''}${genLabel(p.generation)}</span>`;
+}
 function renderPlayer(slug){
   const p = playerBySlug(slug);
   if(!p){ app.innerHTML = notFound("Player"); return; }
@@ -701,7 +728,7 @@ function renderPlayer(slug){
       <div class="ph-main">
         <h1>${flag(p.iso)}${esc(p.name)}</h1>
         <div class="ph-sub">${p.nat?esc(p.nat)+' · ':''}${p.role?esc(p.role)+' · ':''}${t?`<a href="#/team/${t.slug}" style="color:var(--link)">${esc(t.name)}</a>`:esc(p.team||'Teamless')} · ${poolName}</div>
-        <div style="margin-top:10px">${p.level?`${levelChip(p.level)}<span class="levelchip" style="margin-left:8px">Level ${p.level}</span>`:'<span class="muted">Unranked</span>'}</div>
+        <div style="margin-top:10px">${p.level?`${levelChip(p.level)}<span class="levelchip" style="margin-left:8px">Level ${p.level}</span>`:'<span class="muted">Unranked</span>'}${genBadge(p)}</div>
       </div>
       ${pr?`<div class="ph-rank"${peakAttr(p.peak)}><div class="big">#${pr.rank}</div><div class="lbl">Pro Rank</div></div>`:''}
       <div class="ph-rank"><div class="big">${p.ratingPoints!=null?p.ratingPoints:'—'}</div><div class="lbl">Rating Points</div></div>
@@ -715,6 +742,9 @@ function renderPlayer(slug){
         <div class="ib-row"><span class="k">Team</span><span class="v">${t?`<a href="#/team/${t.slug}" style="color:var(--link)">${esc(t.name)}</a>`:esc(p.team||'—')}</span></div>
         <div class="ib-row"><span class="k">Role</span><span class="v">${esc(p.role||'—')}</span></div>
         <div class="ib-row"><span class="k">Pool</span><span class="v">${poolName}</span></div>
+        ${p.joined?`<div class="ib-row" title="${esc(genTip(p))}"><span class="k">Joined BPL</span><span class="v">${p.joined} · ${genLabel(p.generation)}</span></div>`:''}
+        ${p.debutEvent?`<div class="ib-row"><span class="k">Debut event</span><span class="v" style="font-size:12px"><a href="#/tournament/${esc(p.debutEvent.slug)}" style="color:var(--link)">${esc(p.debutEvent.name)}</a></span></div>`
+          :p.joinedNoEvent?`<div class="ib-row"><span class="k">Debut event</span><span class="v muted" style="font-size:12px">None yet</span></div>`:''}
         <div class="ib-row"><span class="k">Rating Points</span><span class="v">${p.ratingPoints!=null?p.ratingPoints:'—'}</span></div>
         ${pr?`<div class="ib-row"><span class="k">Pro Rank</span><span class="v"${peakAttr(p.peak)}>#${pr.rank} <span class="muted" style="font-size:11px">of ${pr.total}</span></span></div>`:''}
         <div class="ib-row"><span class="k">Level</span><span class="v">${p.level||'—'} / 10</span></div>
@@ -811,7 +841,10 @@ function renderPlayer(slug){
              <span class="honor-ico">⭐</span>
              <span class="honor-body"><span class="honor-ev">${esc(a.event)}</span>
              <span class="honor-sub">Event MVP · ${a.year}</span></span></a>`).join("");
-          return `<h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>Achievements
+          const tt = playerTrophies(p);
+          return `${tt.length?`<h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>Trophy Cabinet
+            <span class="muted" style="font-size:11px">${trophyTally(tt)}</span></h2>${trophyShelfHtml(tt, true)}`:''}
+            <h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>Achievements
             <span class="muted" style="font-size:11px">${tally.join(' · ')}</span></h2>
             <div class="honors">${medHtml}${mvpHtml}</div>`;
         })()}
@@ -2382,8 +2415,10 @@ function renderSfMaps(match){
 
 // ---------- Admin (local editing) ----------
 let adminEditing = null, _adminTeams = [], _adminOn = false;
-async function reloadData(){ try{ DATA = await loadData(5); _allMatches=null; _rivals=null; _allMapScores=null; _proSlugs=null; _soloLeague=null; }catch(e){} }
-function apiPost(p, body){ return fetch(p,{method:"POST",headers:{"Content-Type":"text/plain"},body:JSON.stringify(body)}).then(r=>r.json()).catch(e=>({ok:false,error:String(e)})); }
+async function reloadData(){ try{ DATA = await loadData(5); _allMatches=null; _rivals=null; _allMapScores=null; _proSlugs=null; _soloLeague=null; livePushDirty(); }catch(e){} }
+function apiPost(p, body){ return fetch(p,{method:"POST",headers:{"Content-Type":"text/plain"},body:JSON.stringify(body)}).then(r=>r.json())
+  .then(res=>{ if(res && res.ok && body && body.slug && LIVE_PATHS.test(p)) LivePush.dirty.add(body.slug); return res; })   // sent live after the reload
+  .catch(e=>({ok:false,error:String(e)})); }
 // Site Health panel (admin): results of build/health.py, recomputed on every build
 function adminHealthHtml(){
   const hl = DATA.health;
@@ -2529,6 +2564,7 @@ async function renderAdmin(){
       <button id="adm-publish" class="adm-btn adm-pub-btn">Publish to GitHub</button>
     </div>
     ${adminHealthHtml()}
+    <div id="adm-live" class="adm-live"></div>
     <div class="profile-grid" style="grid-template-columns:300px 1fr">
       <div class="infobox" style="padding:14px">
         <div class="ib-title" style="margin:-14px -14px 12px">New Tournament</div>
@@ -2668,6 +2704,7 @@ async function renderAdmin(){
       <div id="veto-out"></div>
     </div>`;
 
+  setupLivePanel();
   $("#adm-publish").onclick = async ()=>{
     const btn=$("#adm-publish"), msg=$("#adm-pubmsg");
     btn.disabled=true; const orig=btn.textContent; btn.textContent="Publishing…"; msg.textContent="";
@@ -3902,7 +3939,7 @@ function renderTournament(slug){
     <div class="profile-head">
       <div class="ph-main">
         <h1>${esc(tr.name)} ${tierBadgeEvent(tr)}</h1>
-        <div class="ph-sub">${fmtDate(tr.date)} · ${tr.format} · ${tr.participantCount} teams</div>
+        <div class="ph-sub">${fmtDate(tr.date)} · ${tr.format} · ${tr.participantCount} teams${LIVE.seen[tr.slug]?' · '+livePill(tr.slug):''}</div>
         ${tr.prizePool||_adminOn?`<div class="tp-prize">Prize pool: <b>${tr.prizePool?fmtUSD(tr.prizePool):'<span class="muted">not set</span>'}</b>
           ${_adminOn?`<span class="tp-edit"><input id="tp-prize" class="adm-in" inputmode="numeric" value="${tr.prizePool||''}" placeholder="$ prize pool" title="${esc(PRIZE_HINT)}"><button id="tp-prize-save" class="loadmore">Save</button><span id="tp-prize-msg" class="muted"></span></span>`:''}</div>`:''}
         <div style="margin-top:12px;font-size:15px">${champLabel(tr)}:
@@ -4055,6 +4092,368 @@ function setupSearch(){
   input.addEventListener("focus", run);
   document.addEventListener("click", e=>{ if(!e.target.closest(".search")) box.classList.remove("show"); });
   box.addEventListener("click", ()=>{ box.classList.remove("show"); input.value=""; });
+}
+
+// ================= FIREBASE (shared loader) =================
+// Predictions, fantasy and live scores share one Firebase app. The SDK is only loaded when a page needs it.
+const FB_V = "10.12.2";
+let _fbReady = null, _fbAuthReady = null;
+function fbScript(src){ return new Promise((res,rej)=>{ const s=document.createElement('script'); s.src=src; s.onload=res; s.onerror=rej; document.head.appendChild(s); }); }
+function fbLoad(){
+  if(_fbReady) return _fbReady;
+  const cfg = window.BPL_FIREBASE || {};
+  _fbReady = !(cfg.apiKey && cfg.projectId) ? Promise.resolve(null)
+    : fbScript(`https://www.gstatic.com/firebasejs/${FB_V}/firebase-app-compat.js`)
+        .then(()=>fbScript(`https://www.gstatic.com/firebasejs/${FB_V}/firebase-firestore-compat.js`))
+        .then(()=>{ if(!firebase.apps.length) firebase.initializeApp(cfg); return firebase.firestore(); });
+  return _fbReady;
+}
+function fbAuth(){
+  if(_fbAuthReady) return _fbAuthReady;
+  _fbAuthReady = fbLoad().then(db=>db ? fbScript(`https://www.gstatic.com/firebasejs/${FB_V}/firebase-auth-compat.js`).then(()=>firebase.auth()) : null);
+  return _fbAuthReady;
+}
+function fbUser(auth){ return new Promise(r=>{ const un=auth.onAuthStateChanged(u=>{ un(); r(u); }); }); }
+
+// ================= LIVE SCORES =================
+// A score entered in admin reaches the public site within seconds, without a Publish. After each change the
+// admin page writes that event's freshly built tournament (from its local data.json) to Firestore live/<slug>.
+// Every open page swaps it in while it is newer than the published data.json (builtAt), so brackets, group
+// tables and the leaderboard all move. The next Publish makes data.json newer again and the live copy is ignored.
+// Player and team stats, Elo and rankings still update at Publish.
+const LIVE = {seen:{}, pending:false};
+const LIVE_PATHS = /^\/api\/(score|matchstats|match\/|stage\/|round\/|complete|predlock)/;
+const LIVE_ROUTES = ["home","matches","results","tournament","match"];
+function liveStart(){
+  if(_adminOn) return;                                    // admin has the fresh local data already
+  const slugs = (DATA.tournaments||[]).filter(t=>t.stages && !t.champion).map(t=>t.slug);
+  if(!slugs.length) return;
+  fbLoad().then(db=>{ if(!db) return;
+    slugs.forEach(s=>db.collection('live').doc(s).onSnapshot(snap=>liveApply(snap.exists?snap.data():null), ()=>{}));
+  }).catch(()=>{});
+}
+function liveApply(doc){
+  if(!doc || !doc.json || !doc.slug) return;
+  if((doc.builtAt||0) <= (DATA.builtAt||0)) return;      // the published data.json already has this
+  if((LIVE.seen[doc.slug]||0) >= doc.builtAt) return;
+  let tr; try{ tr = JSON.parse(doc.json); }catch(e){ return; }
+  const i = DATA.tournaments.findIndex(t=>t.slug===doc.slug); if(i<0) return;
+  if(doc.noStats) liveKeepStats(DATA.tournaments[i], tr);
+  DATA.tournaments[i] = tr; LIVE.seen[doc.slug] = doc.builtAt;
+  _allMatches = null; _allMapScores = null; _rivals = null;
+  liveRerender();
+}
+// a very large event is sent without its scoreboards: keep the ones this page already has
+function liveKeepStats(old, tr){
+  const key = (st,m)=>st.id+'-'+m.i, had = {};
+  (old.stages||[]).forEach(st=>st.rounds.forEach(rd=>rd.matches.forEach(m=>{ if(m.stats) had[key(st,m)] = m.stats; })));
+  (tr.stages||[]).forEach(st=>st.rounds.forEach(rd=>rd.matches.forEach(m=>{ if(!m.stats && had[key(st,m)]) m.stats = had[key(st,m)]; })));
+}
+function liveRerender(){
+  const {route, arg} = parseHash();
+  if(!LIVE_ROUTES.includes(route)) return;
+  const a = document.activeElement;
+  if(a && /^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName)){ LIVE.pending = true; return; }   // don't wipe what they're typing
+  LIVE.pending = false;
+  const y = window.scrollY;
+  PAGE_ROSTERS = []; PAGE_MAPSCORES = [];
+  (routes[route]||renderHome)(arg);
+  window.scrollTo(0, y);
+}
+document.addEventListener("focusout", ()=>setTimeout(()=>{ if(LIVE.pending) liveRerender(); }, 50));
+function livePill(slug){
+  const at = LIVE.seen[slug]; if(!at) return '';
+  const mins = Math.max(0, Math.round((Date.now()-at)/60000));
+  return `<span class="live-pill" title="Scores on this page update live, ahead of the next full site update">● LIVE</span><span class="live-ago">updated ${mins<1?'just now':mins+' min ago'}</span>`;
+}
+
+// ---- admin side: send changed events live ----
+const LivePush = {dirty:new Set()};
+function livePushOn(){ try{ return localStorage.getItem('bpl_live_send')!=='0'; }catch(e){ return true; } }
+function liveToast(msg, bad){
+  let el = $("#live-toast");
+  if(!el){ el = document.createElement("div"); el.id = "live-toast"; document.body.appendChild(el); }
+  el.className = bad ? "bad show" : "show"; el.textContent = msg;
+  clearTimeout(el._t); el._t = setTimeout(()=>el.classList.remove("show"), bad?6000:2600);
+}
+async function livePushDirty(){
+  if(!_adminOn || !LivePush.dirty.size) return;
+  const slugs = [...LivePush.dirty]; LivePush.dirty.clear();
+  if(!livePushOn()) return;
+  let auth, user;
+  try{ auth = await fbAuth(); if(!auth) return; user = await fbUser(auth); }catch(e){ return; }
+  if(!user) return;                                       // not signed in: nothing goes live
+  const db = await fbLoad();
+  for(const slug of slugs){
+    const tr = (DATA.tournaments||[]).find(t=>t.slug===slug); if(!tr) continue;
+    let json = JSON.stringify(tr), noStats = false;
+    if(json.length > 900000){
+      const lite = JSON.parse(json);
+      (lite.stages||[]).forEach(st=>st.rounds.forEach(rd=>rd.matches.forEach(m=>{ delete m.stats; })));
+      json = JSON.stringify(lite); noStats = true;
+    }
+    if(json.length > 1000000){ liveToast(`${tr.name} is too big to send live`, true); continue; }
+    try{
+      await db.collection('live').doc(slug).set({slug, builtAt: DATA.builtAt||Date.now(), json, noStats,
+        at: firebase.firestore.FieldValue.serverTimestamp()});
+      liveToast(`● Sent live: ${tr.name}`);
+      LIVE.lastPush = {name: tr.name, at: Date.now()};
+      const st = $("#lv-last"); if(st) st.textContent = `Last sent: ${tr.name}, just now`;
+    }catch(e){
+      liveToast(/permission/i.test(e.message||'') ? "Live send blocked: finish step 2 in Admin → Live scores" : "Live send failed: "+(e.message||e), true);
+    }
+  }
+}
+function liveRulesBlock(uid){
+  return `    match /live/{doc} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.uid == "${uid}";
+    }`;
+}
+async function setupLivePanel(){
+  const box = $("#adm-live"); if(!box) return;
+  const cfg = window.BPL_FIREBASE || {};
+  if(!(cfg.apiKey && cfg.projectId)){ box.innerHTML = `<div class="lv-head">📡 Live scores <span class="muted">· needs the Firebase config in js/firebase-config.js</span></div>`; return; }
+  box.innerHTML = `<div class="lv-head">📡 Live scores <span class="muted">· connecting…</span></div>`;
+  let auth;
+  try{ auth = await fbAuth(); }catch(e){ box.innerHTML = `<div class="lv-head">📡 Live scores <span class="muted">· couldn't load Firebase (offline?)</span></div>`; return; }
+  const user = await fbUser(auth);
+  const on = livePushOn();
+  if(!user){
+    box.innerHTML = `<div class="lv-head">📡 Live scores <span class="lv-state off">off</span></div>
+      <div class="lv-body">
+        <p class="muted" style="margin:0 0 10px">Sign in once and every score you save here shows on the public site within seconds, before you Publish. Brackets, groups and the leaderboard update; player stats and rankings wait for Publish.</p>
+        <button id="lv-signin" class="adm-btn" style="max-width:230px">Sign in with Google</button>
+        <div id="lv-msg" class="muted" style="font-size:12px;margin-top:8px"></div>
+        <details class="lv-setup"><summary>First time? One step in the Firebase console</summary>
+          <ol><li>Open <a href="https://console.firebase.google.com/project/${esc(cfg.projectId)}/authentication/providers" target="_blank" rel="noopener">Firebase → Authentication → Sign-in method</a> (press <b>Get started</b> if asked), choose <b>Google</b>, switch it on and Save.</li>
+          <li>Then come back and press <b>Sign in with Google</b>. Use <b>localhost</b> in the address bar, not 127.0.0.1.</li></ol></details>
+      </div>`;
+    $("#lv-signin").onclick = async ()=>{
+      $("#lv-msg").textContent = "Opening Google sign-in…";
+      try{ await auth.signInWithPopup(new firebase.auth.GoogleAuthProvider()); setupLivePanel(); }
+      catch(e){
+        const c = e.code||'';
+        $("#lv-msg").innerHTML = c==='auth/operation-not-allowed' || c==='auth/configuration-not-found' ? "Google sign-in isn't switched on yet: do the step under <b>First time?</b> below."
+          : c==='auth/unauthorized-domain' ? "This address isn't allowed: open the admin at <b>http://localhost:8098</b>."
+          : c==='auth/popup-closed-by-user' ? "Sign-in window closed." : esc(e.message||String(e));
+      }
+    };
+    return;
+  }
+  box.innerHTML = `<div class="lv-head">📡 Live scores <span class="lv-state ${on?'on':'off'}">${on?'on':'paused'}</span>
+      <span class="muted" style="font-size:12px;margin-left:auto">${esc(user.email||user.displayName||'signed in')} · <a href="#/admin" id="lv-signout" class="muted">sign out</a></span></div>
+    <div class="lv-body">
+      <label class="lv-toggle"><input type="checkbox" id="lv-on" ${on?'checked':''}> Send every score I save to the public site straight away</label>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+        <button id="lv-test" class="loadmore">Test the connection</button>
+        <button id="lv-now" class="loadmore">Send running events now</button>
+      </div>
+      <div id="lv-last" class="muted" style="font-size:12px;margin-top:8px">${LIVE.lastPush?`Last sent: ${esc(LIVE.lastPush.name)}`:''}</div>
+      <details class="lv-setup" id="lv-rules"><summary>Step 2 (once): let only you send live scores</summary>
+        <ol><li>Open <a href="https://console.firebase.google.com/project/${esc(cfg.projectId)}/firestore/rules" target="_blank" rel="noopener">Firestore → Rules</a>.</li>
+        <li>Paste this block on a new line just <b>above</b> the last two <code>}</code> lines (keep your predictions rules as they are), then press <b>Publish</b>:</li></ol>
+        <pre class="lv-pre" id="lv-pre">${esc(liveRulesBlock(user.uid))}</pre>
+        <button id="lv-copy" class="loadmore">Copy block</button>
+        <p class="muted" style="font-size:12px">The long code is your account's ID, so nobody else can post scores. Press <b>Test the connection</b> afterwards.</p></details>
+    </div>`;
+  $("#lv-on").onchange = e=>{ try{ localStorage.setItem('bpl_live_send', e.target.checked?'1':'0'); }catch(_){}; setupLivePanel(); };
+  $("#lv-signout").onclick = async e=>{ e.preventDefault(); await auth.signOut(); setupLivePanel(); };
+  $("#lv-copy").onclick = ()=>{ navigator.clipboard && navigator.clipboard.writeText(liveRulesBlock(user.uid)); $("#lv-copy").textContent = "Copied ✓"; };
+  $("#lv-test").onclick = async ()=>{
+    const msg = $("#lv-last"); msg.textContent = "Testing…";
+    try{ const db = await fbLoad(); await db.collection('live').doc('_test').set({slug:'_test', at: firebase.firestore.FieldValue.serverTimestamp()});
+      msg.innerHTML = `<span style="color:var(--good)">✓ Connected. Scores you save will go live.</span>`; }
+    catch(e){ msg.innerHTML = /permission/i.test(e.message||'') ? `<span style="color:var(--accent2)">Blocked: do Step 2 below, then test again.</span>` : esc(e.message||String(e));
+      if(/permission/i.test(e.message||'')) $("#lv-rules").open = true; }
+  };
+  $("#lv-now").onclick = ()=>{
+    (DATA.tournaments||[]).filter(t=>t.stages && !t.champion).forEach(t=>LivePush.dirty.add(t.slug));
+    if(!LivePush.dirty.size){ $("#lv-last").textContent = "No running events to send."; return; }
+    const was = livePushOn(); if(!was){ $("#lv-last").textContent = "Live sending is paused: tick the box first."; LivePush.dirty.clear(); return; }
+    livePushDirty();
+  };
+}
+
+// ================= TROPHY CABINET =================
+// Real trophies on a shelf: Major gold, S-Tier silver, A-Tier bronze. Bigger events get bigger trophies
+// (Major, then S-Tier 1/2/3 from the prize pool, then A-Tier).
+const TROPHY_KIND = {
+  major:{h:84, c:["#7a5a0c","#ffe58a","#ffc72e","#8f6a10"], star:true},
+  s1:{h:70, c:["#5d6880","#ffffff","#c9d3e6","#6e7a93"]},
+  s2:{h:63, c:["#5d6880","#f4f7fd","#bcc7dc","#6e7a93"]},
+  s3:{h:58, c:["#5d6880","#eef2f9","#b3bed3","#6e7a93"]},
+  a:{h:50, c:["#6b3d1c","#f2b98a","#c98a5a","#7a4a26"]},
+};
+function trophyKind(tier, sub){ return tier==='major' ? 'major' : tier==='s' ? (sub===2?'s2':sub===3?'s3':'s1') : 'a'; }
+function trophySvg(kind){
+  const k = TROPHY_KIND[kind], id = 'tg-'+kind, g = `url(#${id})`;
+  return `<svg class="trophy" viewBox="0 0 64 84" height="${k.h}" width="${Math.round(k.h*64/84)}" aria-hidden="true">
+    <defs><linearGradient id="${id}" x1="0" x2="1"><stop offset="0" stop-color="${k.c[0]}"/><stop offset=".38" stop-color="${k.c[1]}"/>
+      <stop offset=".62" stop-color="${k.c[2]}"/><stop offset="1" stop-color="${k.c[3]}"/></linearGradient></defs>
+    <path d="M15 13h-6a8 8 0 0 0 0 16c3 0 5.5-1 7.5-2.6M49 13h6a8 8 0 0 1 0 16c-3 0-5.5-1-7.5-2.6" fill="none" stroke="${g}" stroke-width="4" stroke-linecap="round"/>
+    <path d="M12 6h40v12c0 14-8.5 23-20 23S12 32 12 18z" fill="${g}"/>
+    <path d="M18 9h5v9c0 7 2.5 13 6 16-6-2-11-8-11-16z" fill="#fff" opacity=".28"/>
+    ${k.star?`<path d="M32 13l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z" fill="#fff6cf" opacity=".9"/>`:''}
+    <path d="M28.5 41h7l-1 9h-5z" fill="${g}"/>
+    <path d="M23 50h18l2 5H21z" fill="${g}"/>
+    <rect x="17" y="55" width="30" height="20" rx="2" fill="#1d2232" stroke="${g}" stroke-width="1.5"/>
+    <rect x="22.5" y="60.5" width="19" height="9" rx="1.2" fill="${g}" opacity=".9"/>
+  </svg>`;
+}
+// items: [{slug, name, year, tier, sub, team}]
+function trophyShelfHtml(items, showTeam){
+  if(!items.length) return '';
+  const order = {major:0, s1:1, s2:2, s3:3, a:4};
+  items = items.map(x=>({...x, kind:trophyKind(x.tier, x.sub)}))
+    .sort((a,b)=>order[a.kind]-order[b.kind] || String(b.year).localeCompare(String(a.year)));
+  return `<div class="tshelf">${items.map(x=>{
+    const tierName = x.kind==='major'?'Major':x.kind==='a'?'A-Tier':`S-Tier ${x.kind.slice(1)}`;
+    const tip = `${x.name} · ${tierName} · ${x.year}${showTeam&&x.team?' · with '+x.team:''}`;
+    return `<a class="trophy-item k-${x.kind}" href="#/tournament/${esc(x.slug)}" title="${esc(tip)}">
+      ${trophySvg(x.kind)}<span class="trophy-yr">${esc(String(x.year))}</span></a>`; }).join("")}</div>`;
+}
+function trophyTally(items){
+  const n = k=>items.filter(x=>k(x)).length, parts = [];
+  const mj = n(x=>x.tier==='major'), s = n(x=>x.tier==='s'), a = n(x=>x.tier!=='major'&&x.tier!=='s');
+  if(mj) parts.push(`${mj} Major${mj>1?'s':''}`); if(s) parts.push(`${s} S-Tier`); if(a) parts.push(`${a} A-Tier`);
+  return `${items.length} title${items.length===1?'':'s'} · ${parts.join(' · ')}`;
+}
+function teamTrophies(t){
+  const trBy = {}; (DATA.tournaments||[]).forEach(x=>trBy[x.slug]=x);
+  return (t.events||[]).filter(e=>e.isChampion).map(e=>({slug:e.slug, name:e.name, year:(e.date||'').slice(0,4),
+    tier:e.tier, sub:(trBy[e.slug]||{}).subTier}));
+}
+function playerTrophies(p){
+  const trBy = {}; (DATA.tournaments||[]).forEach(x=>trBy[x.slug]=x);
+  return (p.titles||[]).map(tt=>({slug:tt.slug, name:tt.event, year:tt.year, tier:tt.tier, sub:(trBy[tt.slug]||{}).subTier, team:tt.team}));
+}
+
+// ================= BPL-dle =================
+// Guess the mystery BPL player in 6 tries. Everyone gets the same player each day (Singapore time), from
+// the schedule build/extras.py writes; practice mode picks a random one. Green = exact, yellow = close,
+// arrows point toward the answer.
+const DLE_TRIES = 6;
+const DLE_REGION = {};
+[["Southeast Asia","sg my id ph th vn bn kh mm la tl"],["East Asia","jp kr cn tw hk mo mn"],["Oceania","au nz"],
+ ["North America","us ca mx"],["South America","br ar cl co pe uy ve"],["Central Asia","kz uz kg tj tm"],
+ ["South Asia","in pk bd lk np"],["Middle East","ae sa tr il qa kw jo lb eg"],["Africa","za ng ke ma"],
+ ["Europe","gb nl de se pl ua fr is it fi be gr ba cz ie es pt dk no ch at ru hu ro rs hr si sk bg lt lv ee by"]]
+  .forEach(([r,isos])=>isos.split(" ").forEach(i=>DLE_REGION[i]=r));
+let _dle = null;   // {mode, answer, guesses, date, num}
+function sgtToday(){ return new Date(Date.now()+8*3600e3).toISOString().slice(0,10); }
+function dayDiff(a, b){ return Math.round((Date.parse(b+"T00:00:00Z")-Date.parse(a+"T00:00:00Z"))/864e5); }
+function dlePool(){ return (DATA.players.pro||[]).filter(p=>p.slug); }
+function dleDebut(p){ return p.joined || null; }
+function dleDaily(){
+  const d = DATA.dle, today = sgtToday(), pool = dlePool();
+  const num = d ? Math.max(1, dayDiff(d.start, today)+1) : 1;
+  let slug = null, yslug = null;
+  if(d){ try{
+    const days = JSON.parse(atob(d.days.split("").reverse().join(""))).reverse();
+    slug = days[num-1-d.from]; yslug = days[num-2-d.from];
+  }catch(e){} }
+  const by = s=>pool.find(p=>p.slug===s);
+  let ans = slug && by(slug);
+  if(!ans){ let h = 0; for(const c of today) h = (h*31 + c.charCodeAt(0))>>>0; ans = pool[h % pool.length]; }   // schedule ran out
+  return {answer: ans, num, date: today, yesterday: yslug && by(yslug)};
+}
+function dleLoad(date){ try{ const s = JSON.parse(localStorage.getItem('bpl_dle_v1')||'null'); return s && s.date===date ? s.guesses : []; }catch(e){ return []; } }
+function dleSave(){ if(_dle.mode!=='daily') return; try{ localStorage.setItem('bpl_dle_v1', JSON.stringify({date:_dle.date, guesses:_dle.guesses})); }catch(e){} }
+function dleStatus(){
+  const g = dleDaily(), gs = dleLoad(g.date);
+  const won = gs.includes(g.answer.slug), lost = !won && gs.length>=DLE_TRIES;
+  return {num: g.num, text: won ? `Solved in ${gs.length}/${DLE_TRIES} ✓` : lost ? 'Out of guesses today' : gs.length ? `${gs.length}/${DLE_TRIES} guesses so far` : 'Not played yet', done: won||lost};
+}
+function dleClues(g, a){
+  const cmpNum = (gv, av, near)=>{
+    if(gv==null || av==null) return {c: gv==null&&av==null ? 'g' : 'x', v: gv==null ? '—' : gv, arrow: ''};
+    return {c: gv===av ? 'g' : Math.abs(gv-av)<=near ? 'y' : 'x', v: gv, arrow: gv===av ? '' : av>gv ? '↑' : '↓'};
+  };
+  const gTeam = g.team||'', aTeam = a.team||'';
+  const played = new Set((a.teamHistory||[]).map(t=>normKey(t.team)));
+  const team = {c: normKey(gTeam)===normKey(aTeam) ? 'g' : gTeam && played.has(normKey(gTeam)) ? 'y' : 'x', v: gTeam||'Free agent',
+    tip: (gTeam||'Free agent') + (gTeam && normKey(gTeam)!==normKey(aTeam) && played.has(normKey(gTeam)) ? ': the mystery player has played for this team before' : '')};
+  const nat = {c: g.iso===a.iso ? 'g' : DLE_REGION[g.iso] && DLE_REGION[g.iso]===DLE_REGION[a.iso] ? 'y' : 'x', v: flag(g.iso)+(g.iso||'?').toUpperCase(), html:true,
+    tip: g.iso!==a.iso && DLE_REGION[g.iso]===DLE_REGION[a.iso] ? `Same region (${DLE_REGION[g.iso]})` : (g.nat||'')};
+  const gr = new Set(String(g.role||'').split('/')), ar = new Set(String(a.role||'').split('/'));
+  const role = {c: g.role===a.role ? 'g' : [...gr].some(r=>ar.has(r)) ? 'y' : 'x', v: g.role||'—'};
+  return [team, nat, role, cmpNum(g.ratingPoints, a.ratingPoints, 60), cmpNum(dleDebut(g), dleDebut(a), 1), cmpNum((g.titles||[]).length, (a.titles||[]).length, 1)];
+}
+const DLE_COLS = ["Team","Nation","Role","Rating","Debut","Titles"];
+function dleNewGame(mode){
+  if(mode==='daily'){ const g = dleDaily(); _dle = {mode, answer:g.answer, num:g.num, date:g.date, yesterday:g.yesterday, guesses:dleLoad(g.date)}; }
+  else { const pool = dlePool(); _dle = {mode, answer: pool[Math.floor(Math.random()*pool.length)], guesses:[]}; }
+}
+function renderDle(){
+  if(!_dle || (_dle.mode==='daily' && _dle.date!==sgtToday())) dleNewGame('daily');
+  const D = _dle, a = D.answer, by = s=>playerBySlug(s);
+  const won = D.guesses.includes(a.slug), over = won || D.guesses.length>=DLE_TRIES;
+  const rows = D.guesses.map(s=>{ const g = by(s); if(!g) return '';
+    const cl = dleClues(g, a);
+    return `<div class="dle-row${g.slug===a.slug?' win':''}${s===D.fresh?' fresh':''}"><div class="dle-name">${flag(g.iso)}${esc(g.name)}</div>
+      <div class="dle-tiles">${cl.map((c,i)=>`<div class="dle-tile t-${c.c}"${c.tip?` title="${esc(c.tip)}"`:''}><span class="dle-lbl">${DLE_COLS[i]}</span>
+        <span class="dle-v">${c.html?c.v:esc(String(c.v))}${c.arrow?`<b class="dle-ar">${c.arrow}</b>`:''}</span></div>`).join("")}</div></div>`; }).join("");
+  D.fresh = null;                                          // only the newest guess animates in
+  const left = DLE_TRIES - D.guesses.length;
+  const endHtml = over ? `<div class="dle-end ${won?'won':'lost'}">
+      <div class="dle-end-t">${won?`🎯 Got it in ${D.guesses.length}/${DLE_TRIES}!`:'Out of guesses'}</div>
+      <div>The mystery player was <a href="#/player/${a.slug}">${flag(a.iso)}<b>${esc(a.name)}</b></a>${a.team?` <span class="muted">(${esc(a.team)})</span>`:''}</div>
+      <div class="dle-end-btns">${D.mode==='daily'?`<button id="dle-share" class="adm-btn" style="max-width:190px">Copy result</button>
+        <span class="muted" style="font-size:12px">Next player in <b id="dle-cd"></b></span>`:''}
+        <button id="dle-again" class="loadmore">${D.mode==='daily'?'Play practice':'New practice player'}</button></div>
+    </div>` : '';
+  app.innerHTML = `
+    <h2 class="section-title"><span class="accent-bar"></span>BPL-dle <span class="muted" style="font-size:12px">${D.mode==='daily'?`#${D.num} · daily`:'practice'}</span>
+      <span class="dle-modes"><button data-dmode="daily" class="${D.mode==='daily'?'active':''}">Daily</button><button data-dmode="practice" class="${D.mode==='practice'?'active':''}">Practice</button></span></h2>
+    <p class="muted dle-intro">Guess the mystery BPL player in ${DLE_TRIES} tries. Any of the league's ${dlePool().length} pro players can be the answer.
+      <span class="dle-key"><span class="t-g">exact</span><span class="t-y">close</span><span class="t-x">no</span> · arrows point toward the answer</span></p>
+    ${!over?`<div class="dle-input"><input id="dle-in" type="text" autocomplete="off" placeholder="Type a player… (${left} ${left===1?'guess':'guesses'} left)"><div id="dle-sug" class="dle-sug"></div></div>`:''}
+    ${endHtml}
+    <div class="dle-board">${rows || '<p class="muted" style="text-align:center;padding:18px 0">Your guesses show up here.</p>'}</div>
+    <details class="dle-help"><summary>How the clues work</summary><ul>
+      <li><b>Team</b>: their current team. Yellow means the mystery player has played for that team before.</li>
+      <li><b>Nation</b>: yellow means the same region (e.g. Southeast Asia).</li>
+      <li><b>Role</b>: Rifler, Awper, IGL or Fill. Yellow means they share part of it (Rifler/IGL).</li>
+      <li><b>Rating</b>: Rating Points. Yellow is within 60.</li>
+      <li><b>Debut</b>: the year of their first BPL event. Yellow is one year off.</li>
+      <li><b>Titles</b>: events they've won. Yellow is one off.</li></ul></details>
+    ${D.mode==='daily' && D.yesterday && over ? `<p class="muted" style="font-size:12px;margin-top:10px">Yesterday's player: <a href="#/player/${D.yesterday.slug}">${esc(D.yesterday.name)}</a></p>`:''}`;
+  app.querySelectorAll("[data-dmode]").forEach(b=>b.onclick=()=>{ dleNewGame(b.dataset.dmode); renderDle(); });
+  const again = $("#dle-again"); if(again) again.onclick = ()=>{ dleNewGame('practice'); renderDle(); };
+  const sh = $("#dle-share"); if(sh) sh.onclick = ()=>{
+    const grid = D.guesses.map(s=>dleClues(by(s), a).map(c=>c.c==='g'?'🟩':c.c==='y'?'🟨':'⬛').join("")).join("\n");
+    const txt = `BPL-dle #${D.num} ${won?D.guesses.length:'X'}/${DLE_TRIES}\n${grid}\n${location.origin}${location.pathname}#/dle`;
+    (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(()=>{ sh.textContent = "Copied ✓"; }, ()=>{ prompt("Copy your result:", txt); });
+  };
+  const cd = $("#dle-cd");
+  if(cd){ const tick = ()=>{ if(!document.body.contains(cd)) return clearInterval(t);
+      const now = Date.now()+8*3600e3, left = 864e5 - (now % 864e5), h = Math.floor(left/36e5), m = Math.floor(left%36e5/6e4), s = Math.floor(left%6e4/1e3);
+      cd.textContent = `${h}h ${String(m).padStart(2,'0')}m ${String(s).padStart(2,'0')}s`; if(left < 1500) renderDle(); };
+    const t = setInterval(tick, 1000); tick(); }
+  const inp = $("#dle-in"); if(!inp) return;
+  const sug = $("#dle-sug"); let hits = [], sel = 0;
+  const guess = p=>{ if(!p || D.guesses.includes(p.slug)) return; D.guesses.push(p.slug); D.fresh = p.slug; dleSave(); renderDle(); const n = $("#dle-in"); if(n) n.focus(); };
+  const draw = ()=>{
+    sug.innerHTML = hits.map((p,i)=>`<div class="dle-opt${i===sel?' sel':''}" data-i="${i}">${flag(p.iso)}<b>${esc(p.name)}</b><span class="muted">${esc(p.team||'Free agent')}</span></div>`).join("");
+    sug.classList.toggle("show", hits.length>0);
+    sug.querySelectorAll(".dle-opt").forEach(o=>o.onmousedown = e=>{ e.preventDefault(); guess(hits[+o.dataset.i]); });
+  };
+  inp.oninput = ()=>{
+    const q = normKey(inp.value); sel = 0;
+    if(!q){ hits = []; return draw(); }
+    const names = p=>[p.name].concat(p.aka||[]).map(normKey);
+    const pool = dlePool().filter(p=>!D.guesses.includes(p.slug));
+    hits = pool.filter(p=>names(p).some(n=>n.startsWith(q))).concat(pool.filter(p=>!names(p).some(n=>n.startsWith(q)) && names(p).some(n=>n.includes(q)))).slice(0,8);
+    draw();
+  };
+  inp.onkeydown = e=>{
+    if(e.key==="ArrowDown"){ sel = Math.min(sel+1, hits.length-1); draw(); e.preventDefault(); }
+    else if(e.key==="ArrowUp"){ sel = Math.max(sel-1, 0); draw(); e.preventDefault(); }
+    else if(e.key==="Enter"){ guess(hits[sel]); }
+    else if(e.key==="Escape"){ hits = []; draw(); }
+  };
+  inp.focus();
 }
 
 // ---------- boot ----------
@@ -4342,15 +4741,7 @@ const PredictBackend = (function(){
   let db = null, ready = null;
   function load(){
     if(ready) return ready;
-    ready = new Promise((resolve,reject)=>{
-      if(!isShared){ resolve(null); return; }
-      const add=(src,cb)=>{ const s=document.createElement('script'); s.src=src; s.onload=cb; s.onerror=reject; document.head.appendChild(s); };
-      add("https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js", ()=>{
-        add("https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js", ()=>{
-          try{ firebase.initializeApp(cfg); db=firebase.firestore(); resolve(db); }catch(e){ reject(e); }
-        });
-      });
-    });
+    ready = fbLoad().then(d=>{ db = d; return d; });
     return ready;
   }
   const lkey = p => `bpl_pred_${p.event}_${p.uid}`;
@@ -4734,6 +5125,7 @@ loadData().then(async d=>{
   setupNav();
   window.addEventListener("hashchange", router);
   router();
+  setTimeout(liveStart, 1200);   // live scores: only loads Firebase while an event is running
 }).catch(e=>{ app.innerHTML = `<div class="notice"><h2>Couldn't load data</h2><p>${esc(e.message)}</p>
   <p class="muted">If you opened index.html directly, run a local server instead (browsers block fetch on file://).</p></div>`; });
 

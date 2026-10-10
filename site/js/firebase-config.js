@@ -22,6 +22,9 @@
 //   4. Project settings (gear) → General → "Your apps" → Web (</>) → register app
 //        → copy the firebaseConfig values into the object below.
 //   5. Save this file, then Publish the site (Admin → Publish).
+//
+// Live scores use the same project: Admin → Live scores walks you through signing in with Google
+// and adding a "live" block to the rules, so only your account can post scores.
 window.BPL_FIREBASE = {
   apiKey: "AIzaSyBHqs1-KFunG49VDMVv-v63MeZb7SmMuP4",
   authDomain: "predictions-database.firebaseapp.com",
