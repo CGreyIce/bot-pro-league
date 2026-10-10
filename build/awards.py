@@ -199,5 +199,25 @@ def run(tournaments, players, teams, articles):
     potm = player_of_month(tournaments, by_slug)
     for x in potm:
         give(x["slug"], "Player of the Month", x["month"])
-    print(f"awards: {len(out)} years of awards, {len(potm)} Players of the Month")
+    # Top 20 Players of the Year (the published countdown articles): every listed player gets their placing.
+    # The #1 already holds Player of the Year for that year, so they don't get a second chip for it.
+    by_name = {}
+    for p in players:
+        for nm in [p["name"]] + list(p.get("aka") or []):
+            by_name.setdefault(_norm(nm), p["slug"])
+    t20 = 0
+    for a in articles:
+        m = re.match(r"top-20-players-(\d{4})-(\d{2})-", a.get("slug", ""))
+        nm = re.search(r"#\d+ (.+)$", a.get("title", ""))
+        if not m or not nm:
+            continue
+        year, rank, slug = int(m.group(1)), int(m.group(2)), by_name.get(_norm(nm.group(1)))
+        if not slug:
+            continue
+        if rank == 1 and any(x["award"] == "Player of the Year" and x["year"] == year for x in by_slug[slug].get("awards", [])):
+            continue
+        by_slug[slug].setdefault("awards", []).append({"award": f"Top 20 Players of {year}", "year": year, "rank": rank,
+                                                       "link": f"#/article/{a['slug']}"})
+        t20 += 1
+    print(f"awards: {len(out)} years of awards, {len(potm)} Players of the Month, {t20} Top 20 placings")
     return {"yearAwards": out, "playerOfMonth": potm}

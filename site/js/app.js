@@ -725,7 +725,9 @@ function renderPlayer(slug){
         ${p.playsWith?`<div class="ib-row"><span class="k">Plays with</span><span class="v"><a href="#/player/${p.playsWith.slug}" style="color:var(--link)">${flag(p.playsWith.iso)}${esc(p.playsWith.name)}</a> <span class="muted" style="font-size:11px">· ${p.playsWith.games} solo game${p.playsWith.games===1?'':'s'}</span></span></div>`:''}
       </div>
       ${(p.awards&&p.awards.length)?`<div class="infobox prize-box"><div class="ib-title">Awards</div>
-        <div class="aw-shelf">${p.awards.slice().sort((a,b)=>String(b.year).localeCompare(String(a.year))).map(a=>{ const ic=a.award==='Player of the Year'?'🏆':a.award==='Rookie of the Year'?'🌱':a.award==='Most Improved Player'?'📈':'⭐';
+        <div class="aw-shelf">${p.awards.slice().sort((a,b)=>String(b.year).slice(0,4).localeCompare(String(a.year).slice(0,4)) || (a.rank?1:0)-(b.rank?1:0) || (a.rank||0)-(b.rank||0)).map(a=>{
+          if(a.rank) return `<a class="aw-chip t20" href="${esc(a.link||'#/news')}" title="${esc(`${placeOrd(a.rank)} best player of ${a.year} in the BPL Top 20 Players of the Year · read the article`)}">🏅 <b>#${a.rank}</b> Top 20 Players of ${esc(String(a.year))}</a>`;
+          const ic=a.award==='Player of the Year'?'🏆':a.award==='Rookie of the Year'?'🌱':a.award==='Most Improved Player'?'📈':'⭐';
           const yr=String(a.year).includes('-')?(()=>{const [y,m]=String(a.year).split('-'); return ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][+m-1]+' '+y;})():a.year;
           return `<a class="aw-chip" href="#/awards">${ic} ${esc(a.award)} <span class="muted">${esc(String(yr))}</span></a>`; }).join("")}</div></div>`:''}
       ${(p.prizeHistory&&p.prizeHistory.length)?`<div class="infobox prize-box"><div class="ib-title">Prize Money <span class="muted" style="font-size:11px;font-weight:400">${fmtUSD(p.earnings)} · ${p.prizeHistory.length} event${p.prizeHistory.length===1?'':'s'}</span></div>

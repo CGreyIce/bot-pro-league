@@ -1245,4 +1245,4 @@ textarea.adm-in{resize:vertical;font-family:inherit}
 .lb-table tr.lb-champ td{background:rgba(255,200,87,.06)}
 .lb-rec{font-weight:700}
 .lb-tb{font-size:9px;color:var(--muted);border:1px solid var(--border);border-radius:3px;padding:0 3px;vertical-align:middle}
-
+.aw-chip.t20 b{color:var(--accent);font-family:'Chakra Petch',sans-serif}
