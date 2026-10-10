@@ -118,8 +118,8 @@ bot_add "Neverland Resent"; bot_add "Neverland simply_perezoso"; bot_add "Neverl
 bot_add_ct "Neverland Resent"; bot_add_ct "Neverland simply_perezoso"; bot_add_ct "Neverland Ice"; bot_add_ct "Neverland adrina.ii"; bot_add_ct "Neverland Sayucchi";
 
 New Jade (BPL Legends Stage 2022)
-bot_add "NJ VPLH"; bot_add "NJ Jeribean"; bot_add "NJ Astro_Ruckus"; bot_add "NJ jenapoppins"; bot_add "NJ crazywhoopies";
-bot_add_ct "NJ VPLH"; bot_add_ct "NJ Jeribean"; bot_add_ct "NJ Astro_Ruckus"; bot_add_ct "NJ jenapoppins"; bot_add_ct "NJ crazywhoopies";
+bot_add "NJ VPLH"; bot_add "NJ Jeribean"; bot_add "NJ Astro_Ruckus"; bot_add "NJ jenapoppins";
+bot_add_ct "NJ VPLH"; bot_add_ct "NJ Jeribean"; bot_add_ct "NJ Astro_Ruckus"; bot_add_ct "NJ jenapoppins";
 
 Opal (Bot Pro Cup 2022)
 bot_add "OPAL Scorpium"; bot_add "OPAL Seireiix"; bot_add "OPAL joyyy_cheng"; bot_add "OPAL kuro_mi"; bot_add "OPAL lumi.nyaa";

@@ -134,7 +134,7 @@
   "lunar-cadence",
   "astral-bloom"
  ],
- "movesSeen": 23,
+ "movesSeen": 27,
  "top": {
   "player": "rebebx",
   "team": "cosmos"
@@ -1195,6 +1195,11 @@
    "kills": 236,
    "mvp": 35
   },
+  "kojadayo": {
+   "maps": 23,
+   "kills": 437,
+   "mvp": 73
+  },
   "mizukiimoon": {
    "maps": 49,
    "kills": 773,
@@ -1679,11 +1684,6 @@
    "maps": 23,
    "kills": 402,
    "mvp": 72
-  },
-  "kojadayo": {
-   "maps": 23,
-   "kills": 437,
-   "mvp": 73
   },
   "thehidz": {
    "maps": 24,
@@ -2269,6 +2269,8 @@
  "drafted": [
   "record:highestMap:65+mostKillsMap:58+mostOT:7",
   "top:player:rebebx:2026-10-14",
-  "top:team:cosmos:2026-10-14"
+  "top:team:cosmos:2026-10-14",
+  "transfer:newjade:2026-10-16:crazywhoopies",
+  "transfer:newjade:2026-10-16:kojadayo"
  ]
 }

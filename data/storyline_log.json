@@ -61,5 +61,23 @@
   "title": "SoapiiSereia: 500 career kills",
   "text": "SoapiiSereia reached 500 career kills",
   "link": "#/player/soapiisereia"
+ },
+ {
+  "id": "transfer:newjade:2026-10-16:crazywhoopies",
+  "type": "transfer",
+  "ts": 1791643628,
+  "date": "2026-10-16",
+  "title": "New Jade part ways with crazywhoopies",
+  "text": "out: crazywhoopies",
+  "link": "#/team/new-jade"
+ },
+ {
+  "id": "transfer:newjade:2026-10-16:kojadayo",
+  "type": "transfer",
+  "ts": 1791643659,
+  "date": "2026-10-16",
+  "title": "New Jade sign Kojadayo",
+  "text": "in: Kojadayo",
+  "link": "#/team/new-jade"
  }
 ]

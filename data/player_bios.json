@@ -577,7 +577,7 @@
  },
  "crazywhoopies": {
   "gender": "F",
-  "bio": "crazywhoopies is a Singaporean AWPer in her fifth straight year with New Jade. At #396 of 422 (Level 2, 736 points), she is still working up the ladder. Her 0.80 K/D sits near the bottom of the league, but her teams have taken 53% of 38 maps. She has won two BPL titles, headlined by the BPL Legends Stage 2025. She has played 23 BPL events since 2021. Her most recent outing was the Nova Initia Invitational I with New Jade, going out in the Round of 16."
+  "bio": "crazywhoopies is a Singaporean AWPer, currently a free agent. At #396 of 422 (Level 2, 736 points), she is still working up the ladder. Her 0.80 K/D sits near the bottom of the league, but her teams have taken 53% of 38 maps. She has won two BPL titles, headlined by the BPL Legends Stage 2025. She previously played for New Jade. She has played 23 BPL events since 2021. Her most recent outing was the Nova Initia Invitational I with New Jade, going out in the Round of 16."
  },
  "joyyycheng": {
   "gender": "F",
@@ -842,6 +842,10 @@
  "hikariifloofie": {
   "gender": "F",
   "bio": "HikariiFloofie is a Malaysian rifler playing for Masmark. She is ranked #124 of 422 in the league, at Level 6 with 1279 points. She has a 1.10 K/D and a 64% win rate across 14 maps. Her best finish is a top-four run at the BPL Nations Cup, Malaysia Qualifier 2026. She has played 3 BPL events, all in 2026. She most recently represented Team Malaysia at the BPL Nations Cup 2026, going out in the Round of 16."
+ },
+ "kojadayo": {
+  "gender": "F",
+  "bio": "Kojadayo is an Icelandic rifler suiting up for Hanabi Union at BPL Challengers Stage 2026. She is ranked #165 of 422 in the league, at Level 6 with 1226 points. She has a 1.10 K/D and a 35% win rate across 23 maps. Her 73 MVP rounds rank in the league's top 4%. She has played 4 BPL events, all in 2026."
  },
  "mizukiimoon": {
   "gender": "F",
@@ -1121,7 +1125,7 @@
  },
  "cryingnutz": {
   "gender": "M",
-  "bio": "CryingNutz (formerly known as nutzcrying) is a Malaysian rifler suiting up for Crystal Laurels at BPL Challengers Stage 2026. He is ranked #165 of 422 in the league, at Level 6 with 1226 points. He has a 1.09 K/D and a 48% win rate across 29 maps. He has played 13 BPL events since 2023."
+  "bio": "CryingNutz (formerly known as nutzcrying) is a Malaysian rifler suiting up for Crystal Laurels at BPL Challengers Stage 2026. He is ranked #166 of 422 in the league, at Level 6 with 1226 points. He has a 1.09 K/D and a 48% win rate across 29 maps. He has played 13 BPL events since 2023."
  },
  "ryujin": {
   "gender": "M",
@@ -1230,10 +1234,6 @@
  "briant": {
   "gender": "M",
   "bio": "briant is a Singaporean in-game leader playing for Lunar Cadence. He is ranked #143 of 422 in the league, at Level 6 with 1255 points. He has a 1.10 K/D and a 39% win rate across 23 maps. His 72 MVP rounds rank in the league's top 4%. He won the BPL Challengers Stage 2024 with Kabar. He has played 19 BPL events since 2021. His most recent outing was the Nova Initia Invitational I with Lunar Cadence, going out in the Round of 16."
- },
- "kojadayo": {
-  "gender": "F",
-  "bio": "Kojadayo is an Icelandic rifler suiting up for Hanabi Union at BPL Challengers Stage 2026. She is ranked #166 of 422 in the league, at Level 6 with 1226 points. She has a 1.10 K/D and a 35% win rate across 23 maps. Her 73 MVP rounds rank in the league's top 4%. She has played 4 BPL events, all in 2026."
  },
  "thehidz": {
   "gender": "M",
@@ -1429,7 +1429,7 @@
  },
  "iceenblue": {
   "gender": "F",
-  "bio": "iceenblue is an American AWPer, currently a free agent. At #261 of 422 (Level 5, 1108 points), she is still working up the ladder. Her 0.79 K/D sits near the bottom of the league, but her teams have taken 50% of 8 maps. Her most recent outing was the Bot Pro Cup 2026 with Frostbyte, going out in the group stage."
+  "bio": "iceenblue is an American AWPer playing for Hanabi Union. At #261 of 422 (Level 5, 1108 points), she is still working up the ladder. Her 0.79 K/D sits near the bottom of the league, but her teams have taken 50% of 8 maps. Her most recent outing was the Bot Pro Cup 2026 with Frostbyte, going out in the group stage."
  },
  "xaeela": {
   "gender": "F",

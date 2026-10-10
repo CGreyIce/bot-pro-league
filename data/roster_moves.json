@@ -136,5 +136,30 @@
   "player": "Kritial",
   "from": "Free agent",
   "to": "Frostbyte"
+ },
+ {
+  "date": "2026-10-16",
+  "player": "crazywhoopies",
+  "from": "New Jade",
+  "to": "Free agent"
+ },
+ {
+  "date": "2026-10-16",
+  "player": "Kojadayo",
+  "from": "Hanabi Union",
+  "to": "New Jade",
+  "fee": 185000
+ },
+ {
+  "date": "2026-10-16",
+  "player": "iceenblue",
+  "from": "Free agent",
+  "to": "Hanabi Union"
+ },
+ {
+  "date": "2026-10-16",
+  "player": "Kojadayo",
+  "from": "New Jade",
+  "to": "Free agent"
  }
 ]
