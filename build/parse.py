@@ -633,8 +633,8 @@ def main():
     old2new = {norm_key(k): v for k, v in json.load(open(ncp, encoding="utf-8")).items()} if os.path.exists(ncp) else {}
 
     # ---- tournaments (built early so recorded scoreboards can feed player stats) ----
-    import manual as _manual
-    _fresh = _manual.refresh_standards()          # manual events: standings always from the latest scores + scoreboards
+    import manual as manual_mod
+    _fresh = manual_mod.refresh_standards()          # manual events: standings always from the latest scores + scoreboards
     if _fresh:
         print(f"manual events refreshed: {', '.join(_fresh)}")
     import tournaments as tourney_mod
@@ -1229,6 +1229,9 @@ def main():
             # real pro team page keeps its own roster/team; provisional teams aren't pro yet,
             # so their (amateur) players still show the team name.
             if row.get("teamSlug") and norm_key(row["team"]) not in _prov_keys:
+                continue
+            # a team with no games left in the event no longer re-homes its players (they can move on)
+            if manual_mod.team_finished(tr["slug"], row["team"]):
                 continue
             for pl in row["players"]:
                 p = slug_to_player.get(pl.get("slug"))

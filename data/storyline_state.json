@@ -134,7 +134,7 @@
   "lunar-cadence",
   "astral-bloom"
  ],
- "movesSeen": 27,
+ "movesSeen": 26,
  "top": {
   "player": "rebebx",
   "team": "cosmos"
@@ -2270,7 +2270,14 @@
   "record:highestMap:65+mostKillsMap:58+mostOT:7",
   "top:player:rebebx:2026-10-14",
   "top:team:cosmos:2026-10-14",
+  "transfer:aimpunch:2026-10-04:aranionja+mond33",
+  "transfer:aspire:2026-09-30:chisascarlett+mikuryne+moira+stylus",
+  "transfer:astralbloom:2026-09-29:ginjosaine+kogaratoto+yumenoakari",
+  "transfer:lunarcadence:2026-09-29:erissuzukami+shiranamiramune+tsumugikokage",
+  "transfer:masmark:2026-09-28:estellyy+hikariifloofie",
   "transfer:newjade:2026-10-16:crazywhoopies",
-  "transfer:newjade:2026-10-16:kojadayo"
+  "transfer:newjade:2026-10-16:crazywhoopies+kojadayo",
+  "transfer:newjade:2026-10-16:kojadayo",
+  "transfer:thenomads:2026-10-09:l2strike+mominichi+redandb1ue+sadgeboi"
  ]
 }

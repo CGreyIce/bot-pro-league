@@ -318,6 +318,12 @@ class Roster:
                 continue
             for row in tr.get("attending", []):
                 if any(pl.get("slug") == p.get("slug") for pl in row.get("players", [])) and norm(row["team"]) != norm(new_team):
+                    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+                    import manual
+                    if manual.team_finished(tr["slug"], row["team"]):
+                        self.note(f"{row['team']} have no games left at {tr['name']}, so {p['name']} can move freely "
+                                  "(the event keeps the line-up that played).")
+                        continue
                     saved = next((r for r in self.hist.get(tr["slug"], []) if norm(r.get("team")) == norm(row["team"])), None)
                     if saved is not None and not any(norm(x.get("name")) == norm(p["name"]) for x in saved.get("players", [])):
                         continue                          # _sync_live already took them out of that line-up

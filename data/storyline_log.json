@@ -79,5 +79,68 @@
   "title": "New Jade sign Kojadayo",
   "text": "in: Kojadayo",
   "link": "#/team/new-jade"
+ },
+ {
+  "id": "transfer:masmark:2026-09-28:estellyy+hikariifloofie",
+  "type": "transfer",
+  "ts": 1791644365,
+  "date": "2026-10-16",
+  "title": "Masmark swap estellyy. for HikariiFloofie",
+  "text": "in: HikariiFloofie; out: estellyy.",
+  "link": "#/team/masmark"
+ },
+ {
+  "id": "transfer:lunarcadence:2026-09-29:erissuzukami+shiranamiramune+tsumugikokage",
+  "type": "transfer",
+  "ts": 1791644365,
+  "date": "2026-10-16",
+  "title": "Lunar Cadence sign 3 new players",
+  "text": "in: Eris Suzukami, Tsumugi Kokage and Shiranami Ramune",
+  "link": "#/team/lunar-cadence"
+ },
+ {
+  "id": "transfer:astralbloom:2026-09-29:ginjosaine+kogaratoto+yumenoakari",
+  "type": "transfer",
+  "ts": 1791644365,
+  "date": "2026-10-16",
+  "title": "Astral Bloom sign 3 new players",
+  "text": "in: Ginjo Saine, Kogara Toto and Yumeno Akari",
+  "link": "#/team/astral-bloom"
+ },
+ {
+  "id": "transfer:aspire:2026-09-30:chisascarlett+mikuryne+moira+stylus",
+  "type": "transfer",
+  "ts": 1791644365,
+  "date": "2026-10-16",
+  "title": "Aspire swap Stylus and Moira for Chisa_Scarlett and Mikuryne",
+  "text": "in: Chisa_Scarlett and Mikuryne; out: Stylus and Moira",
+  "link": "#/team/aspire"
+ },
+ {
+  "id": "transfer:aimpunch:2026-10-04:aranionja+mond33",
+  "type": "transfer",
+  "ts": 1791644365,
+  "date": "2026-10-16",
+  "title": "Aimpunch swap mond33__ for Aranionja",
+  "text": "in: Aranionja; out: mond33__",
+  "link": "#/team/aimpunch"
+ },
+ {
+  "id": "transfer:thenomads:2026-10-09:l2strike+mominichi+redandb1ue+sadgeboi",
+  "type": "transfer",
+  "ts": 1791644365,
+  "date": "2026-10-16",
+  "title": "The Nomads swap mominichi and Redandb1ue for Sadgeboi and L2Strike",
+  "text": "in: Sadgeboi and L2Strike; out: mominichi and Redandb1ue",
+  "link": "#/team/the-nomads"
+ },
+ {
+  "id": "transfer:newjade:2026-10-16:crazywhoopies+kojadayo",
+  "type": "transfer",
+  "ts": 1791644365,
+  "date": "2026-10-16",
+  "title": "New Jade swap crazywhoopies for Kojadayo",
+  "text": "in: Kojadayo; out: crazywhoopies",
+  "link": "#/team/new-jade"
  }
 ]

@@ -590,6 +590,29 @@ def save(man):
     json.dump(man, open(path(man["slug"]), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     json.dump(to_standard(man), open(os.path.join(TDIR, man["slug"] + ".json"), "w", encoding="utf-8"),
               ensure_ascii=False)
+def team_finished(slug, team):
+    """True when `team` has no games left in the running manual event `slug`: none of its matches are
+    unplayed, its swiss group is complete, and no playoff still has unseeded slots it could enter.
+    Players of a finished team are free to move: their event line-up stays as it played, but the
+    live-roster rules (profile shows the event team, Site Health, Roster Tools warnings) stop applying."""
+    man = load(slug)
+    if not man or not team:
+        return False
+    n = lambda x: re.sub(r"[^a-z0-9]", "", (x or "").lower())
+    k = n(team)
+    for st in man.get("stages", []):
+        if st["format"] == "single_elim" and any(not t for t in st.get("teams", [])):
+            return False                                    # unseeded playoff: they might still qualify
+        if st["format"] == "swiss" and k in {n(t) for t in st.get("teams", [])} and not _group_complete(st):
+            return False
+        res, _ = stage_resolved(st)
+        for r in res.values():
+            if r.get("w") in (1, 2) or r.get("bye"):
+                continue
+            if k in (n(r.get("a")), n(r.get("b"))):
+                return False
+    return True
+
 def refresh_standards():
     """Rewrite every manual event's standard file from its current data (run at the start of each build),
     so standings that depend on other files (scoreboards -> round difference) are never stale.
