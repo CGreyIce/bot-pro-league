@@ -4236,7 +4236,9 @@ async function setupLivePanel(){
         const c = e.code||'';
         $("#lv-msg").innerHTML = c==='auth/operation-not-allowed' || c==='auth/configuration-not-found' ? "Google sign-in isn't switched on yet: do the step under <b>First time?</b> below."
           : c==='auth/unauthorized-domain' ? "This address isn't allowed: open the admin at <b>http://localhost:8098</b>."
-          : c==='auth/popup-closed-by-user' ? "Sign-in window closed." : esc(e.message||String(e));
+          : c==='auth/popup-closed-by-user' ? "Sign-in window closed."
+          : /requests-from-referer/.test(c+(e.message||'')) ? `Your Firebase key only allows certain websites. In <a href="https://console.cloud.google.com/apis/credentials?project=${esc(cfg.projectId)}" target="_blank" rel="noopener">Google Cloud → Credentials</a>, open <b>Browser key (auto created by Firebase)</b>, add <code>${esc(location.origin)}/*</code> and <code>https://${esc(cfg.authDomain||cfg.projectId+'.firebaseapp.com')}/*</code> under Website restrictions, Save, wait ~5 minutes, then try again.`
+          : esc(e.message||String(e));
       }
     };
     return;
