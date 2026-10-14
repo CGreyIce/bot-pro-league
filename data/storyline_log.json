@@ -196,5 +196,14 @@
   "title": "Bajiru_EN: 500 career kills",
   "text": "Bajiru_EN reached 500 career kills",
   "link": "#/player/bajiru-en"
+ },
+ {
+  "id": "milestone:dianya:kills:500",
+  "type": "milestone",
+  "ts": 1792005748,
+  "date": "2026-10-16",
+  "title": "Dianya: 500 career kills",
+  "text": "Dianya reached 500 career kills",
+  "link": "#/player/dianya"
  }
 ]

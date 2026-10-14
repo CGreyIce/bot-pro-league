@@ -54807,6 +54807,107 @@
      ]
     }
    ]
+  },
+  "2-18": {
+   "maps": [
+    {
+     "map": "Anubis",
+     "scoreA": 8,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Notorious Hollow",
+       "name": "thehidz",
+       "k": 17,
+       "a": 3,
+       "d": 17,
+       "mvp": 2,
+       "score": 46
+      },
+      {
+       "team": "Notorious Hollow",
+       "name": "Aizawa Ema",
+       "k": 15,
+       "a": 1,
+       "d": 16,
+       "mvp": 3,
+       "score": 40
+      },
+      {
+       "team": "Notorious Hollow",
+       "name": "NOTORIOUS47",
+       "k": 13,
+       "a": 2,
+       "d": 18,
+       "mvp": 1,
+       "score": 37
+      },
+      {
+       "team": "Notorious Hollow",
+       "name": "kyomikoo",
+       "k": 14,
+       "a": 1,
+       "d": 15,
+       "mvp": 1,
+       "score": 35
+      },
+      {
+       "team": "Notorious Hollow",
+       "name": "Zarlard",
+       "k": 12,
+       "a": 2,
+       "d": 15,
+       "mvp": 1,
+       "score": 32
+      },
+      {
+       "team": "Perfectly Abnormal",
+       "name": "Hamzyy",
+       "k": 25,
+       "a": 1,
+       "d": 15,
+       "mvp": 6,
+       "score": 61
+      },
+      {
+       "team": "Perfectly Abnormal",
+       "name": "emmabutnormal",
+       "k": 14,
+       "a": 2,
+       "d": 12,
+       "mvp": 3,
+       "score": 42
+      },
+      {
+       "team": "Perfectly Abnormal",
+       "name": "haze_vt",
+       "k": 17,
+       "a": 1,
+       "d": 16,
+       "mvp": 1,
+       "score": 36
+      },
+      {
+       "team": "Perfectly Abnormal",
+       "name": "KinEto46",
+       "k": 13,
+       "a": 1,
+       "d": 13,
+       "mvp": 2,
+       "score": 33
+      },
+      {
+       "team": "Perfectly Abnormal",
+       "name": "Dianya",
+       "k": 12,
+       "a": 1,
+       "d": 15,
+       "mvp": 1,
+       "score": 27
+      }
+     ]
+    }
+   ]
   }
  }
 }
