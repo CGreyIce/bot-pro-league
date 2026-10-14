@@ -169,5 +169,14 @@
   "title": "Yakumo Beni: 500 career kills",
   "text": "Yakumo Beni reached 500 career kills",
   "link": "#/player/yakumo-beni"
+ },
+ {
+  "id": "milestone:nekota-tsuna:kills:500",
+  "type": "milestone",
+  "ts": 1791982319,
+  "date": "2026-10-16",
+  "title": "Nekota Tsuna: 500 career kills",
+  "text": "Nekota Tsuna reached 500 career kills",
+  "link": "#/player/nekota-tsuna"
  }
 ]
