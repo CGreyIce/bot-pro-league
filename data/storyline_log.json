@@ -187,5 +187,14 @@
   "title": "pastellows: 50 maps played",
   "text": "pastellows reached 50 maps played",
   "link": "#/player/pastellows"
+ },
+ {
+  "id": "milestone:bajiru-en:kills:500",
+  "type": "milestone",
+  "ts": 1791991766,
+  "date": "2026-10-16",
+  "title": "Bajiru_EN: 500 career kills",
+  "text": "Bajiru_EN reached 500 career kills",
+  "link": "#/player/bajiru-en"
  }
 ]
