@@ -205,5 +205,14 @@
   "title": "Dianya: 500 career kills",
   "text": "Dianya reached 500 career kills",
   "link": "#/player/dianya"
+ },
+ {
+  "id": "milestone:emmabutnormal:maps:50",
+  "type": "milestone",
+  "ts": 1792008001,
+  "date": "2026-10-16",
+  "title": "emmabutnormal: 50 maps played",
+  "text": "emmabutnormal reached 50 maps played",
+  "link": "#/player/emmabutnormal"
  }
 ]
