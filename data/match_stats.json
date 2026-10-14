@@ -53922,6 +53922,107 @@
      ]
     }
    ]
+  },
+  "2-15": {
+   "maps": [
+    {
+     "map": "Inferno",
+     "scoreA": 13,
+     "scoreB": 9,
+     "players": [
+      {
+       "team": "BeeHyve",
+       "name": "Hyvred",
+       "k": 22,
+       "a": 5,
+       "d": 14,
+       "mvp": 2,
+       "score": 50
+      },
+      {
+       "team": "BeeHyve",
+       "name": "keikatamori",
+       "k": 21,
+       "a": 3,
+       "d": 15,
+       "mvp": 3,
+       "score": 47
+      },
+      {
+       "team": "BeeHyve",
+       "name": "TiniiBee",
+       "k": 20,
+       "a": 0,
+       "d": 14,
+       "mvp": 4,
+       "score": 42
+      },
+      {
+       "team": "BeeHyve",
+       "name": "Tigeraxd",
+       "k": 13,
+       "a": 1,
+       "d": 13,
+       "mvp": 3,
+       "score": 33
+      },
+      {
+       "team": "BeeHyve",
+       "name": "_froggiee",
+       "k": 8,
+       "a": 2,
+       "d": 15,
+       "mvp": 1,
+       "score": 21
+      },
+      {
+       "team": "Lunar Rain",
+       "name": "azumiying",
+       "k": 19,
+       "a": 1,
+       "d": 15,
+       "mvp": 2,
+       "score": 46
+      },
+      {
+       "team": "Lunar Rain",
+       "name": "GreatMoonAroma",
+       "k": 18,
+       "a": 3,
+       "d": 17,
+       "mvp": 2,
+       "score": 42
+      },
+      {
+       "team": "Lunar Rain",
+       "name": "Sendo Yuuhi",
+       "k": 16,
+       "a": 3,
+       "d": 16,
+       "mvp": 2,
+       "score": 37
+      },
+      {
+       "team": "Lunar Rain",
+       "name": "Yakumo Beni",
+       "k": 11,
+       "a": 2,
+       "d": 18,
+       "mvp": 2,
+       "score": 24
+      },
+      {
+       "team": "Lunar Rain",
+       "name": "RaivyRain",
+       "k": 7,
+       "a": 2,
+       "d": 18,
+       "mvp": 1,
+       "score": 17
+      }
+     ]
+    }
+   ]
   }
  }
 }

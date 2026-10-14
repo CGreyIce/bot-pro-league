@@ -4326,15 +4326,29 @@ function liveMarkUpdate(){
   if(route !== 'tournament' && route !== 'match') return;
   const live = liveMatchesNow();
   if(route === 'tournament'){
+    // HLTV-style: a red LIVE strip on top, each team's score on the current map on its own row
+    // (green ahead, red behind) with maps won in brackets.
     app.querySelectorAll('[data-match]').forEach(el=>{
       const lv = live.get(`${arg}|${el.dataset.match}`);
+      const scores = [...el.querySelectorAll('.bscore, .bt-score')];   // team a's row, then team b's
+      let head = el.querySelector('.bm-livehead');
       el.classList.toggle('is-live', !!lv);
-      let bar = el.querySelector('.bm-live');
-      if(!lv){ if(bar) bar.remove(); return; }
-      if(!bar){ bar = document.createElement('div'); bar.className = 'bm-live'; el.appendChild(bar); }
-      // scores are the match's team a / team b, the same order as the box
-      bar.innerHTML = `<span class="bm-live-dot"></span>LIVE · Map ${lv.mapNo}${lv.map?' '+esc(lv.map):''} <b>${lv.scoreA}–${lv.scoreB}</b>${lv.bestOf>1?` <span class="bm-live-ser">(${lv.seriesA}–${lv.seriesB} in maps)</span>`:''}`;
-      bar.title = `${lv.a} vs ${lv.b}: being played right now`;
+      if(!lv){
+        if(head) head.remove();
+        scores.forEach(sp=>{ if(sp.dataset.was!=null){ sp.innerHTML = sp.dataset.was; delete sp.dataset.was; } });
+        return;
+      }
+      if(!head){ head = document.createElement('div'); head.className = 'bm-livehead'; el.prepend(head); }
+      head.innerHTML = `<span class="bm-lh-live"><span class="bm-live-dot"></span>LIVE</span>
+        <span class="bm-lh-map">Map ${lv.mapNo}${lv.map?' · '+esc(lv.map):''}</span>
+        <a class="bm-lh-watch" href="#/match/${esc(arg)}/${esc(el.dataset.match)}">Watch ▸</a>`;
+      const rows = [[lv.scoreA, lv.scoreB, lv.seriesA], [lv.scoreB, lv.scoreA, lv.seriesB]];
+      scores.slice(0, 2).forEach((sp, i)=>{
+        const [mine, theirs, maps] = rows[i];
+        if(sp.dataset.was==null) sp.dataset.was = sp.innerHTML;
+        sp.innerHTML = `<span class="lv-rs ${mine>theirs?'lead':mine<theirs?'trail':''}">${mine}</span>${lv.bestOf>1?`<span class="lv-ms">(${maps})</span>`:''}`;
+      });
+      el.title = `${lv.a} vs ${lv.b}: live now`;
     });
   } else {
     const parts = location.hash.replace(/^#\/?/,"").split("/");
