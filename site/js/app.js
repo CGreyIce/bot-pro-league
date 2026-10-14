@@ -189,6 +189,7 @@ function router(){
   window.scrollTo(0,0);
   PAGE_ROSTERS = []; PAGE_MAPSCORES = [];
   fn(arg);
+  liveMarkUpdate();   // LIVE bars on matches being played right now
   renderPromo();   // re-roll the socials promo on each page for even exposure
   document.querySelectorAll(".mainnav a").forEach(a=>{
     const map={team:"teams",player:"players",tournament:"tournaments",article:"news"};
@@ -4161,6 +4162,7 @@ function liveRerender(){
   const y = window.scrollY;
   PAGE_ROSTERS = []; PAGE_MAPSCORES = [];
   (routes[route]||renderHome)(arg);
+  liveMarkUpdate();
   window.scrollTo(0, y);
 }
 document.addEventListener("focusout", ()=>setTimeout(()=>{ if(LIVE.pending) liveRerender(); }, 50));
@@ -4220,6 +4222,8 @@ async function liveRelayTick(){
   if(!_adminOn) return;
   let lv = null;
   try{ lv = await (await fetch(`http://127.0.0.1:${botsPort()}/api/live`, {cache:'no-store'})).json(); }catch(e){}
+  const localKey = lv && lv.live ? JSON.stringify([lv.slug, lv.ref, lv.mapNo, lv.scoreA, lv.scoreB, lv.seriesA, lv.seriesB]) : '';
+  if(localKey !== LIVE_M.localKey){ LIVE_M.localKey = localKey; LIVE_M.local = localKey ? lv : null; liveMarkUpdate(); }
   if(!lv){ liveRelayShow('BPL Bots app not running'); return; }
   // a finished map just reached a match page: reload and push that event live
   const upAt = lv.lastUpload ? lv.lastUpload.at : 0;
@@ -4291,6 +4295,56 @@ function liveMatchRender(doc){
     ${done?`<div class="ml-maps">${done}</div>`:''}
     <div class="ml-sbs">${team('a')}${team('b')}</div>
   </div>`;
+}
+
+// ---- live matches in round lists and brackets ----
+// Matches being played right now in the BPL Bots app (Firestore live/m--…, written by the admin
+// relay above; the admin page also knows its own relay directly). Tournament pages mark them with a
+// LIVE bar, and the match page header says LIVE instead of "not played".
+const LIVE_M = {fs: new Map(), local: null, localKey: '', started: false};
+function liveMatchesStart(){
+  if(LIVE_M.started) return; LIVE_M.started = true;
+  if(!(DATA.tournaments||[]).some(t=>t.stages && !t.champion)) return;
+  fbLoad().then(db=>{ if(!db) return;
+    db.collection('live').where('kind','==','match').onSnapshot(qs=>{
+      const fs = new Map();
+      qs.forEach(d=>{ const x = d.data();
+        if(x && !x.ended && x.json){ try{ fs.set(`${x.slug}|${x.ref}`, {sent:x.sent||0, lv:JSON.parse(x.json)}); }catch(e){} } });
+      LIVE_M.fs = fs; liveMarkUpdate();
+    }, ()=>{});
+  }).catch(()=>{});
+  setInterval(liveMarkUpdate, 30000);   // a relay that stopped without saying so goes stale after 3 min
+}
+function liveMatchesNow(){
+  const now = Date.now(), out = new Map();
+  LIVE_M.fs.forEach((v,k)=>{ if(now - v.sent < 180000) out.set(k, v.lv); });
+  if(LIVE_M.local) out.set(`${LIVE_M.local.slug}|${LIVE_M.local.ref}`, LIVE_M.local);
+  return out;
+}
+function liveMarkUpdate(){
+  const {route, arg} = parseHash();
+  if(route !== 'tournament' && route !== 'match') return;
+  const live = liveMatchesNow();
+  if(route === 'tournament'){
+    app.querySelectorAll('[data-match]').forEach(el=>{
+      const lv = live.get(`${arg}|${el.dataset.match}`);
+      el.classList.toggle('is-live', !!lv);
+      let bar = el.querySelector('.bm-live');
+      if(!lv){ if(bar) bar.remove(); return; }
+      if(!bar){ bar = document.createElement('div'); bar.className = 'bm-live'; el.appendChild(bar); }
+      // scores are the match's team a / team b, the same order as the box
+      bar.innerHTML = `<span class="bm-live-dot"></span>LIVE · Map ${lv.mapNo}${lv.map?' '+esc(lv.map):''} <b>${lv.scoreA}–${lv.scoreB}</b>${lv.bestOf>1?` <span class="bm-live-ser">(${lv.seriesA}–${lv.seriesB} in maps)</span>`:''}`;
+      bar.title = `${lv.a} vs ${lv.b}: being played right now`;
+    });
+  } else {
+    const parts = location.hash.replace(/^#\/?/,"").split("/");
+    const lv = live.get(`${parts[1]}|${parts.slice(2).join("/")}`);
+    const tag = app.querySelector('.m-mid .m-livetag');
+    if(lv && !tag){
+      const sub = app.querySelector('.m-mid .muted');      // "not played"
+      if(sub){ LIVE_M.wasSub = sub.outerHTML; sub.outerHTML = `<div class="m-livetag"><span class="live-pill">● LIVE</span></div>`; }
+    } else if(!lv && tag && LIVE_M.wasSub){ tag.outerHTML = LIVE_M.wasSub; }
+  }
 }
 
 function liveRulesBlock(uid){
@@ -5220,6 +5274,7 @@ loadData().then(async d=>{
   window.addEventListener("hashchange", router);
   router();
   setTimeout(liveStart, 1200);   // live scores: only loads Firebase while an event is running
+  setTimeout(liveMatchesStart, 1400);   // matches being played right now, for the LIVE bars
   liveRelayStart();              // admin only: relay live map scores from the BPL Bots app
 }).catch(e=>{ app.innerHTML = `<div class="notice"><h2>Couldn't load data</h2><p>${esc(e.message)}</p>
   <p class="muted">If you opened index.html directly, run a local server instead (browsers block fetch on file://).</p></div>`; });

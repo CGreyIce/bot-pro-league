@@ -1363,3 +1363,14 @@ textarea.adm-in{resize:vertical;font-family:inherit}
 .ml-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--border2,#33405f);margin-right:7px}
 .ml-dot.on{background:var(--good)}
 @media (max-width:640px){.ml-sbs{grid-template-columns:1fr}.ml-score b{font-size:26px}.ml-team{font-size:13px}}
+
+/* a match being played right now (round lists, brackets, match page) */
+.bmatch.is-live,.bkt-match.is-live{box-shadow:inset 3px 0 0 #ff3d64;background:linear-gradient(90deg,rgba(255,61,100,.09),transparent 70%)}
+.bkt-match.is-live{border-color:rgba(255,61,100,.55)}
+.bm-live{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:11px;font-weight:700;letter-spacing:.3px;color:#ff5c7a;padding:4px 0 1px}
+.bkt-match .bm-live{padding:3px 8px 4px;font-size:10.5px}
+.bm-live b{color:var(--text)}
+.bm-live-ser{color:var(--muted);font-weight:600}
+.bm-live-dot{width:7px;height:7px;border-radius:50%;background:#ff3d64;animation:livepulse 1.6s ease-in-out infinite}
+.m-livetag{margin-top:4px}
+@media (prefers-reduced-motion:reduce){.bm-live-dot{animation:none}}
