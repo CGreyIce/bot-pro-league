@@ -54512,6 +54512,107 @@
      ]
     }
    ]
+  },
+  "2-17": {
+   "maps": [
+    {
+     "map": "Dust2",
+     "scoreA": 8,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Dreamstate",
+       "name": "Bajiru_EN",
+       "k": 18,
+       "a": 2,
+       "d": 17,
+       "mvp": 3,
+       "score": 43
+      },
+      {
+       "team": "Dreamstate",
+       "name": "MoriSottoVT",
+       "k": 16,
+       "a": 2,
+       "d": 18,
+       "mvp": 1,
+       "score": 42
+      },
+      {
+       "team": "Dreamstate",
+       "name": "yumezukiyomi",
+       "k": 10,
+       "a": 3,
+       "d": 16,
+       "mvp": 2,
+       "score": 27
+      },
+      {
+       "team": "Dreamstate",
+       "name": "bloodbane",
+       "k": 12,
+       "a": 2,
+       "d": 19,
+       "mvp": 1,
+       "score": 27
+      },
+      {
+       "team": "Dreamstate",
+       "name": "yukihimeowo",
+       "k": 10,
+       "a": 2,
+       "d": 18,
+       "mvp": 1,
+       "score": 26
+      },
+      {
+       "team": "Pastel Mocha",
+       "name": "Niamocha",
+       "k": 23,
+       "a": 1,
+       "d": 12,
+       "mvp": 4,
+       "score": 56
+      },
+      {
+       "team": "Pastel Mocha",
+       "name": "RDarius",
+       "k": 23,
+       "a": 0,
+       "d": 11,
+       "mvp": 2,
+       "score": 55
+      },
+      {
+       "team": "Pastel Mocha",
+       "name": "pastellows",
+       "k": 17,
+       "a": 1,
+       "d": 12,
+       "mvp": 5,
+       "score": 45
+      },
+      {
+       "team": "Pastel Mocha",
+       "name": "ItzSune",
+       "k": 16,
+       "a": 3,
+       "d": 16,
+       "mvp": 1,
+       "score": 39
+      },
+      {
+       "team": "Pastel Mocha",
+       "name": "kenzieyii",
+       "k": 9,
+       "a": 5,
+       "d": 15,
+       "mvp": 1,
+       "score": 32
+      }
+     ]
+    }
+   ]
   }
  }
 }

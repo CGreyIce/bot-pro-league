@@ -178,5 +178,14 @@
   "title": "Nekota Tsuna: 500 career kills",
   "text": "Nekota Tsuna reached 500 career kills",
   "link": "#/player/nekota-tsuna"
+ },
+ {
+  "id": "milestone:pastellows:maps:50",
+  "type": "milestone",
+  "ts": 1791991047,
+  "date": "2026-10-16",
+  "title": "pastellows: 50 maps played",
+  "text": "pastellows reached 50 maps played",
+  "link": "#/player/pastellows"
  }
 ]
