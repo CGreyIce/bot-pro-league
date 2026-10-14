@@ -54413,6 +54413,103 @@
        "score": 17
       }
      ]
+    },
+    {
+     "map": "Cache",
+     "scoreA": 10,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Seraph Dynasty",
+       "name": "AnjuValse",
+       "k": 17,
+       "a": 3,
+       "d": 17,
+       "mvp": 3,
+       "score": 47
+      },
+      {
+       "team": "Seraph Dynasty",
+       "name": "Miki Nakai",
+       "k": 15,
+       "a": 4,
+       "d": 19,
+       "mvp": 1,
+       "score": 36
+      },
+      {
+       "team": "Seraph Dynasty",
+       "name": "Narin Mikure",
+       "k": 14,
+       "a": 2,
+       "d": 15,
+       "mvp": 3,
+       "score": 34
+      },
+      {
+       "team": "Seraph Dynasty",
+       "name": "Choya Hanabi",
+       "k": 12,
+       "a": 1,
+       "d": 18,
+       "mvp": 1,
+       "score": 32
+      },
+      {
+       "team": "Seraph Dynasty",
+       "name": "Nekota Tsuna",
+       "k": 8,
+       "a": 1,
+       "d": 16,
+       "mvp": 2,
+       "score": 21
+      },
+      {
+       "team": "Perfectly Abnormal",
+       "name": "haze_vt",
+       "k": 20,
+       "a": 1,
+       "d": 13,
+       "mvp": 3,
+       "score": 53
+      },
+      {
+       "team": "Perfectly Abnormal",
+       "name": "Hamzyy",
+       "k": 23,
+       "a": 2,
+       "d": 15,
+       "mvp": 3,
+       "score": 52
+      },
+      {
+       "team": "Perfectly Abnormal",
+       "name": "KinEto46",
+       "k": 15,
+       "a": 3,
+       "d": 12,
+       "mvp": 3,
+       "score": 44
+      },
+      {
+       "team": "Perfectly Abnormal",
+       "name": "Dianya",
+       "k": 17,
+       "a": 0,
+       "d": 12,
+       "mvp": 3,
+       "score": 37
+      },
+      {
+       "team": "Perfectly Abnormal",
+       "name": "emmabutnormal",
+       "k": 10,
+       "a": 1,
+       "d": 14,
+       "mvp": 1,
+       "score": 24
+      }
+     ]
     }
    ]
   }
