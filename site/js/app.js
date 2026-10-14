@@ -1760,6 +1760,7 @@ function renderMatch(){
         ${match.w?`<div class="muted" style="font-size:12px">${esc(match.w===1?match.a:match.b)} won</div>`:'<div class="muted" style="font-size:12px">not played</div>'}</div>
       ${side(match.b, match.bTeam, match.sb, match.w===2)}
     </div>
+    <div id="m-live"></div>
     ${oddsBarHtml(match)}
     ${h2hHtml}
     ${previewHtml}
@@ -1770,6 +1771,8 @@ function renderMatch(){
   if(maps.length) renderScoreboard();
   const eb = $("#m-editstats");
   if(eb) eb.onclick = ()=>openStatsForm(slug, ref, match);
+  if(!tr.champion && match.w!==1 && match.w!==2) liveMatchWatch(slug, ref);
+  else liveMatchWatch(null);
 }
 let _sbMatch = null, _sbTab = 'all';
 function aggregateMaps(maps){
@@ -4204,6 +4207,92 @@ async function livePushDirty(){
     }
   }
 }
+// ---- live map scores from the BPL Bots app (round by round) ----
+// The app (http://127.0.0.1:8760) knows the score of a BPL match being played in CS:GO. While this
+// signed-in admin page is open it relays that to Firestore live/m--<slug>--<ref>; the match page
+// shows it as a LIVE panel. When the app sends a finished map to the match page, the event is
+// pushed live as usual, so the series score and map scoreboards update too.
+const LiveRelay = {key:null, statsKey:null, at:0, doc:null, upload:0, seen:false, timer:null, state:''};
+function liveRelayOn(){ try{ return localStorage.getItem('bpl_live_relay')!=='0'; }catch(e){ return true; } }
+function botsPort(){ try{ return +localStorage.getItem('bpl_bots_port') || 8760; }catch(e){ return 8760; } }
+function liveRelayShow(text){ LiveRelay.state = text; const el = $("#lv-relay-state"); if(el) el.textContent = text; }
+async function liveRelayTick(){
+  if(!_adminOn) return;
+  let lv = null;
+  try{ lv = await (await fetch(`http://127.0.0.1:${botsPort()}/api/live`, {cache:'no-store'})).json(); }catch(e){}
+  if(!lv){ liveRelayShow('BPL Bots app not running'); return; }
+  // a finished map just reached a match page: reload and push that event live
+  const upAt = lv.lastUpload ? lv.lastUpload.at : 0;
+  if(!LiveRelay.seen){ LiveRelay.seen = true; LiveRelay.upload = upAt; }       // ignore uploads from before this page opened
+  else if(upAt > LiveRelay.upload){
+    LiveRelay.upload = upAt;
+    if(livePushOn()){ LivePush.dirty.add(lv.lastUpload.slug); reloadData(); }
+  }
+  if(!livePushOn() || !liveRelayOn()){ liveRelayShow(lv.live ? 'BPL match running, relay paused' : 'Relay paused'); return; }
+  if(!lv.live && !LiveRelay.doc){ liveRelayShow(lv.game ? 'Game running, not a BPL match' : 'Waiting for a BPL match in the app'); return; }
+  let db = null;
+  try{ const auth = await fbAuth(); const u = auth && await fbUser(auth); db = u ? await fbLoad() : null; }catch(e){}
+  if(!db){ liveRelayShow('Sign in above to relay live scores'); return; }
+  const now = Date.now();
+  try{
+    if(lv.live){
+      const key = JSON.stringify([lv.mapNo, lv.scoreA, lv.scoreB, lv.seriesA, lv.seriesB, lv.mapOver, lv.warmup, lv.aSide]);
+      const statsKey = JSON.stringify(lv.players);
+      // the score: straight away; kills/deaths: at most every 10 s; otherwise a heartbeat each minute
+      if(key===LiveRelay.key && (statsKey===LiveRelay.statsKey || now-LiveRelay.at<10000) && now-LiveRelay.at<60000) return;
+      const id = `m--${lv.slug}--${lv.ref}`;
+      await db.collection('live').doc(id).set({kind:'match', slug:lv.slug, ref:lv.ref, ended:false, sent:now,
+        json: JSON.stringify(lv), at: firebase.firestore.FieldValue.serverTimestamp()});
+      Object.assign(LiveRelay, {key, statsKey, at:now, doc:id});
+      liveRelayShow(`Sending ${lv.a} vs ${lv.b} · map ${lv.mapNo} (${lv.map}) ${lv.scoreA}–${lv.scoreB}`);
+    }else{
+      await db.collection('live').doc(LiveRelay.doc).set({ended:true, sent:now, at: firebase.firestore.FieldValue.serverTimestamp()}, {merge:true});
+      Object.assign(LiveRelay, {key:null, statsKey:null, doc:null});
+      liveRelayShow('Match no longer live');
+    }
+  }catch(e){
+    liveRelayShow(/permission/i.test(e.message||'') ? 'Blocked: do step 2 below' : 'Relay failed: '+(e.message||e));
+  }
+}
+function liveRelayStart(){ if(_adminOn && !LiveRelay.timer) LiveRelay.timer = setInterval(()=>liveRelayTick().catch(()=>{}), 4000); }
+
+// public match page: the LIVE panel
+let _liveMatchUnsub = null;
+function liveMatchWatch(slug, ref){
+  if(_liveMatchUnsub){ _liveMatchUnsub(); _liveMatchUnsub = null; }
+  if(!slug) return;
+  fbLoad().then(db=>{ if(!db) return;
+    const want = location.hash;
+    _liveMatchUnsub = db.collection('live').doc(`m--${slug}--${ref}`).onSnapshot(snap=>{
+      if(location.hash !== want) return;
+      liveMatchRender(snap.exists ? snap.data() : null);
+    }, ()=>{});
+  }).catch(()=>{});
+}
+function liveMatchRender(doc){
+  const box = $("#m-live"); if(!box) return;
+  let lv = null;
+  // stale after 3 minutes without an update (the relay sends at least once a minute)
+  if(doc && !doc.ended && doc.json && Date.now()-(doc.sent||0) < 180000){ try{ lv = JSON.parse(doc.json); }catch(e){} }
+  if(!lv){ box.innerHTML = ''; return; }
+  const sideTag = s=>`<span class="ml-side ${s==='CT'?'ct':'t'}">${s}</span>`;
+  const bSide = lv.aSide==='CT' ? 'T' : 'CT';
+  const team = k=>{
+    const rows = lv.players.filter(p=>p.team===k).map(p=>`<tr class="${p.alive?'':'ml-dead'}"><td><span class="ml-dot ${p.alive?'on':''}"></span>${esc(p.name)}</td><td>${p.k}</td><td>${p.a}</td><td>${p.d}</td></tr>`).join('');
+    return `<table class="ml-sb"><thead><tr><th>${esc(k==='a'?lv.a:lv.b)}</th><th>K</th><th>A</th><th>D</th></tr></thead><tbody>${rows}</tbody></table>`;
+  };
+  const done = (lv.maps||[]).map((m,i)=>`<span class="ml-map">Map ${i+1} ${esc(m.map)} <b>${m.scoreA}–${m.scoreB}</b></span>`).join('');
+  box.innerHTML = `<div class="m-live">
+    <div class="ml-head"><span class="live-pill">● LIVE</span>
+      <span>Map ${lv.mapNo}${lv.bestOf>1?' of '+lv.bestOf:''} · ${esc(lv.map)}</span>
+      <span class="muted">${lv.mapOver ? 'map over' : lv.warmup ? 'warmup' : 'round '+lv.round}</span>
+      ${lv.bestOf>1?`<span class="muted ml-series">Series ${lv.seriesA}–${lv.seriesB}</span>`:''}</div>
+    <div class="ml-score"><span class="ml-team">${esc(lv.a)} ${sideTag(lv.aSide)}</span><b>${lv.scoreA}</b><span class="ml-colon">:</span><b>${lv.scoreB}</b><span class="ml-team r">${sideTag(bSide)} ${esc(lv.b)}</span></div>
+    ${done?`<div class="ml-maps">${done}</div>`:''}
+    <div class="ml-sbs">${team('a')}${team('b')}</div>
+  </div>`;
+}
+
 function liveRulesBlock(uid){
   return `    match /live/{doc} {
       allow read: if true;
@@ -4252,6 +4341,8 @@ async function setupLivePanel(){
         <button id="lv-now" class="loadmore">Send running events now</button>
       </div>
       <div id="lv-last" class="muted" style="font-size:12px;margin-top:8px">${LIVE.lastPush?`Last sent: ${esc(LIVE.lastPush.name)}`:''}</div>
+      <label class="lv-toggle" style="margin-top:12px"><input type="checkbox" id="lv-relay" ${liveRelayOn()?'checked':''}> Relay BPL matches played in the BPL Bots app, round by round (keep this page open)</label>
+      <div id="lv-relay-state" class="muted" style="font-size:12px;margin-top:4px">${esc(LiveRelay.state||'Checking for the BPL Bots app…')}</div>
       <details class="lv-setup" id="lv-rules"><summary>Step 2 (once): let only you send live scores</summary>
         <ol><li>Open <a href="https://console.firebase.google.com/project/${esc(cfg.projectId)}/firestore/rules" target="_blank" rel="noopener">Firestore → Rules</a>.</li>
         <li>Paste this block on a new line just <b>above</b> the last two <code>}</code> lines (keep your predictions rules as they are), then press <b>Publish</b>:</li></ol>
@@ -4260,6 +4351,7 @@ async function setupLivePanel(){
         <p class="muted" style="font-size:12px">The long code is your account's ID, so nobody else can post scores. Press <b>Test the connection</b> afterwards.</p></details>
     </div>`;
   $("#lv-on").onchange = e=>{ try{ localStorage.setItem('bpl_live_send', e.target.checked?'1':'0'); }catch(_){}; setupLivePanel(); };
+  $("#lv-relay").onchange = e=>{ try{ localStorage.setItem('bpl_live_relay', e.target.checked?'1':'0'); }catch(_){}; liveRelayTick().catch(()=>{}); };
   $("#lv-signout").onclick = async e=>{ e.preventDefault(); await auth.signOut(); setupLivePanel(); };
   $("#lv-copy").onclick = ()=>{ navigator.clipboard && navigator.clipboard.writeText(liveRulesBlock(user.uid)); $("#lv-copy").textContent = "Copied ✓"; };
   $("#lv-test").onclick = async ()=>{
@@ -5128,6 +5220,7 @@ loadData().then(async d=>{
   window.addEventListener("hashchange", router);
   router();
   setTimeout(liveStart, 1200);   // live scores: only loads Firebase while an event is running
+  liveRelayStart();              // admin only: relay live map scores from the BPL Bots app
 }).catch(e=>{ app.innerHTML = `<div class="notice"><h2>Couldn't load data</h2><p>${esc(e.message)}</p>
   <p class="muted">If you opened index.html directly, run a local server instead (browsers block fetch on file://).</p></div>`; });
 

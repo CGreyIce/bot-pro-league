@@ -142,5 +142,23 @@
   "title": "New Jade swap crazywhoopies for Kojadayo",
   "text": "in: Kojadayo; out: crazywhoopies",
   "link": "#/team/new-jade"
+ },
+ {
+  "id": "milestone:bloodbane:mvp:100",
+  "type": "milestone",
+  "ts": 1791972363,
+  "date": "2026-10-16",
+  "title": "bloodbane: 100 MVP rounds",
+  "text": "bloodbane reached 100 MVP rounds",
+  "link": "#/player/bloodbane"
+ },
+ {
+  "id": "milestone:yumezukiyomi:kills:500",
+  "type": "milestone",
+  "ts": 1791972363,
+  "date": "2026-10-16",
+  "title": "yumezukiyomi: 500 career kills",
+  "text": "yumezukiyomi reached 500 career kills",
+  "link": "#/player/yumezukiyomi"
  }
 ]

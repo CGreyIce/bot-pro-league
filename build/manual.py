@@ -794,7 +794,10 @@ def _derive_match_score(maps):
     sb = sum(1 for m in scored if int(m["scoreB"]) > int(m["scoreA"]))
     return sa, sb
 
-def save_match_stats(slug, ref, maps):
+def save_match_stats(slug, ref, maps, best_of=None):
+    """best_of (optional, e.g. 3): the series length, for scoreboards uploaded map by map (the
+    BPL Bots launcher). The match result is then only set once a team has won the series; until
+    then it stays unplayed, so a Bo3 with one map in isn't recorded as a 13-8 Bo1."""
     data = json.load(open(MSFILE, encoding="utf-8")) if os.path.exists(MSFILE) else {}
     data.setdefault(slug, {})
     maps = [m for m in (maps or []) if m.get("players")]
@@ -808,6 +811,12 @@ def save_match_stats(slug, ref, maps):
     # auto-set the match result from the scoreboards (manual "stageId-matchId" refs only)
     if maps and "-" in str(ref):
         derived = _derive_match_score(maps)
+        if best_of and int(best_of) > 1:
+            scored = [m for m in maps if m.get("scoreA") is not None and m.get("scoreB") is not None]
+            wa = sum(1 for m in scored if int(m["scoreA"]) > int(m["scoreB"]))
+            wb = sum(1 for m in scored if int(m["scoreB"]) > int(m["scoreA"]))
+            need = int(best_of) // 2 + 1
+            derived = (wa, wb) if max(wa, wb) >= need else (None, None)
         if derived is not None:
             try:
                 sid, mid = str(ref).split("-", 1)

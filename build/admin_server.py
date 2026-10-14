@@ -165,6 +165,9 @@ class Handler(SimpleHTTPRequestHandler):
             return self._json(200, {"ok": True, **roster.meta()})
         if path == "/api/solo/list":
             return self._json(200, {"ok": True, "games": load_solo()})
+        if path == "/api/caps":
+            # What this admin server supports (the BPL Bots launcher checks before uploading).
+            return self._json(200, {"ok": True, "matchstatsBestOf": True})
         if path.startswith("/api/wrapup/"):
             try:
                 return self._json(200, {"ok": True, **wrapup.suggest(path[len("/api/wrapup/"):])})
@@ -225,7 +228,7 @@ class Handler(SimpleHTTPRequestHandler):
             elif path == "/api/round/rename":
                 man = manual.rename_round(b["slug"], b["sid"], b["round"], b.get("title", ""))
             elif path == "/api/matchstats":
-                manual.save_match_stats(b["slug"], b["ref"], b.get("maps", []))
+                manual.save_match_stats(b["slug"], b["ref"], b.get("maps", []), b.get("bestOf"))
                 ok, msg = regenerate()
                 return self._json(200, {"ok": ok, "msg": msg})
             elif path == "/api/solo/add":

@@ -1340,3 +1340,26 @@ textarea.adm-in{resize:vertical;font-family:inherit}
 /* BPL generation badge (player profile header) */
 .gen-badge{display:inline-flex;align-items:center;height:22px;padding:0 9px;margin-left:8px;border-radius:5px;background:var(--chip);border:1px solid var(--border2);color:var(--cool);font-weight:700;font-size:12px;vertical-align:middle;cursor:default}
 .gen-badge.founder{background:linear-gradient(120deg,rgba(255,210,61,.22),rgba(255,138,61,.14));border-color:rgba(255,210,61,.6);color:#ffd96a}
+
+/* live map score on the match page (relayed from the BPL Bots app) */
+.m-live{margin-top:14px;border:1px solid rgba(255,61,100,.4);border-radius:12px;padding:14px 16px;background:linear-gradient(180deg,rgba(255,61,100,.07),rgba(255,61,100,.02))}
+.ml-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:13px;font-weight:600}
+.ml-series{margin-left:auto}
+.ml-score{display:grid;grid-template-columns:1fr auto auto auto 1fr;align-items:center;gap:12px;margin:12px 0 6px}
+.ml-score b{font:700 34px/1 var(--font-display);min-width:40px;text-align:center}
+.ml-colon{color:var(--muted);font:700 26px var(--font-display)}
+.ml-team{font:700 16px var(--font-display);display:flex;align-items:center;gap:8px;justify-content:flex-end}
+.ml-team.r{justify-content:flex-start}
+.ml-side{font-size:11px;font-weight:700;padding:1px 6px;border-radius:5px}
+.ml-side.ct{color:#5aa9ff;background:rgba(90,169,255,.13)} .ml-side.t{color:#e8b84a;background:rgba(232,184,74,.13)}
+.ml-maps{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;font-size:12px;color:var(--muted);margin-bottom:6px}
+.ml-maps b{color:var(--text)}
+.ml-sbs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.ml-sb{width:100%;border-collapse:collapse;font-size:13px}
+.ml-sb th{text-align:right;color:var(--muted);font-weight:600;font-size:11.5px;padding:3px 6px;border-bottom:1px solid var(--border)}
+.ml-sb th:first-child,.ml-sb td:first-child{text-align:left}
+.ml-sb td{padding:4px 6px;text-align:right;font-variant-numeric:tabular-nums;border-bottom:1px solid rgba(255,255,255,.04)}
+.ml-dead td{color:var(--muted)}
+.ml-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--border2,#33405f);margin-right:7px}
+.ml-dot.on{background:var(--good)}
+@media (max-width:640px){.ml-sbs{grid-template-columns:1fr}.ml-score b{font-size:26px}.ml-team{font-size:13px}}
