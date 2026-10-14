@@ -214,5 +214,23 @@
   "title": "emmabutnormal: 50 maps played",
   "text": "emmabutnormal reached 50 maps played",
   "link": "#/player/emmabutnormal"
+ },
+ {
+  "id": "milestone:keikatamori:kills:500",
+  "type": "milestone",
+  "ts": 1792009517,
+  "date": "2026-10-16",
+  "title": "keikatamori: 500 career kills",
+  "text": "keikatamori reached 500 career kills",
+  "link": "#/player/keikatamori"
+ },
+ {
+  "id": "milestone:stitchkyui:kills:500",
+  "type": "milestone",
+  "ts": 1792010545,
+  "date": "2026-10-16",
+  "title": "stitchkyui: 500 career kills",
+  "text": "stitchkyui reached 500 career kills",
+  "link": "#/player/stitchkyui"
  }
 ]
