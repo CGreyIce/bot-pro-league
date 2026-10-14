@@ -160,5 +160,14 @@
   "title": "yumezukiyomi: 500 career kills",
   "text": "yumezukiyomi reached 500 career kills",
   "link": "#/player/yumezukiyomi"
+ },
+ {
+  "id": "milestone:yakumo-beni:kills:500",
+  "type": "milestone",
+  "ts": 1791979517,
+  "date": "2026-10-16",
+  "title": "Yakumo Beni: 500 career kills",
+  "text": "Yakumo Beni reached 500 career kills",
+  "link": "#/player/yakumo-beni"
  }
 ]
