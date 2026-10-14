@@ -232,5 +232,23 @@
   "title": "stitchkyui: 500 career kills",
   "text": "stitchkyui reached 500 career kills",
   "link": "#/player/stitchkyui"
+ },
+ {
+  "id": "milestone:azumiying:kills:500",
+  "type": "milestone",
+  "ts": 1792012608,
+  "date": "2026-10-16",
+  "title": "azumiying: 500 career kills",
+  "text": "azumiying reached 500 career kills",
+  "link": "#/player/azumiying"
+ },
+ {
+  "id": "milestone:sendo-yuuhi:kills:500",
+  "type": "milestone",
+  "ts": 1792013623,
+  "date": "2026-10-16",
+  "title": "Sendo Yuuhi: 500 career kills",
+  "text": "Sendo Yuuhi reached 500 career kills",
+  "link": "#/player/sendo-yuuhi"
  }
 ]
