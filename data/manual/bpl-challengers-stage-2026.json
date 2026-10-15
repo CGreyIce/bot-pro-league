@@ -474,8 +474,9 @@
      "round": 2,
      "a": "Millefiore",
      "b": "Crimson Meridian",
-     "sa": null,
-     "sb": null
+     "sa": 20,
+     "sb": 22,
+     "ts": 1792089314
     },
     {
      "id": 6,

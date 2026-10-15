@@ -259,5 +259,14 @@
   "title": "MizukiiMoon: 50 maps played",
   "text": "MizukiiMoon reached 50 maps played",
   "link": "#/player/mizukiimoon"
+ },
+ {
+  "id": "milestone:karasu:maps:50",
+  "type": "milestone",
+  "ts": 1792089317,
+  "date": "2026-10-16",
+  "title": "Karasu: 50 maps played",
+  "text": "Karasu reached 50 maps played",
+  "link": "#/player/karasu"
  }
 ]

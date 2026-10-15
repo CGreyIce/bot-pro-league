@@ -55805,6 +55805,107 @@
      ]
     }
    ]
+  },
+  "3-5": {
+   "maps": [
+    {
+     "map": "Ancient",
+     "scoreA": 20,
+     "scoreB": 22,
+     "players": [
+      {
+       "team": "Millefiore",
+       "name": "Kaga Nazuna",
+       "k": 38,
+       "a": 3,
+       "d": 29,
+       "mvp": 4,
+       "score": 98
+      },
+      {
+       "team": "Millefiore",
+       "name": "rach.elx_",
+       "k": 39,
+       "a": 5,
+       "d": 30,
+       "mvp": 4,
+       "score": 92
+      },
+      {
+       "team": "Millefiore",
+       "name": "mominichi",
+       "k": 34,
+       "a": 4,
+       "d": 33,
+       "mvp": 5,
+       "score": 85
+      },
+      {
+       "team": "Millefiore",
+       "name": "Asumi Sena",
+       "k": 27,
+       "a": 10,
+       "d": 32,
+       "mvp": 2,
+       "score": 73
+      },
+      {
+       "team": "Millefiore",
+       "name": "miyomille",
+       "k": 21,
+       "a": 1,
+       "d": 30,
+       "mvp": 5,
+       "score": 56
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "Just_Ansel",
+       "k": 37,
+       "a": 6,
+       "d": 32,
+       "mvp": 7,
+       "score": 97
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "Karasu",
+       "k": 38,
+       "a": 4,
+       "d": 32,
+       "mvp": 5,
+       "score": 97
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "Dazeido",
+       "k": 27,
+       "a": 5,
+       "d": 34,
+       "mvp": 5,
+       "score": 77
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "kimmixd",
+       "k": 29,
+       "a": 6,
+       "d": 32,
+       "mvp": 3,
+       "score": 68
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "Xevaria",
+       "k": 22,
+       "a": 5,
+       "d": 30,
+       "mvp": 2,
+       "score": 62
+      }
+     ]
+    }
+   ]
   }
  }
 }
