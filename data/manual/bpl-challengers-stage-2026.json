@@ -456,8 +456,9 @@
      "round": 1,
      "a": "Nightfang Covenant",
      "b": "Northwind",
-     "sa": null,
-     "sb": null
+     "sa": 11,
+     "sb": 13,
+     "ts": 1792071595
     },
     {
      "id": 4,

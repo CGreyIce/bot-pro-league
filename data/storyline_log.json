@@ -250,5 +250,14 @@
   "title": "Sendo Yuuhi: 500 career kills",
   "text": "Sendo Yuuhi reached 500 career kills",
   "link": "#/player/sendo-yuuhi"
+ },
+ {
+  "id": "milestone:mizukiimoon:maps:50",
+  "type": "milestone",
+  "ts": 1792071597,
+  "date": "2026-10-16",
+  "title": "MizukiiMoon: 50 maps played",
+  "text": "MizukiiMoon reached 50 maps played",
+  "link": "#/player/mizukiimoon"
  }
 ]
