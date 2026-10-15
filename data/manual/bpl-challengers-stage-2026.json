@@ -438,8 +438,9 @@
      "round": 1,
      "a": "Pandora's Rebels",
      "b": "Snowbell Syndicate",
-     "sa": null,
-     "sb": null
+     "sa": 9,
+     "sb": 13,
+     "ts": 1792052067
     },
     {
      "id": 2,
