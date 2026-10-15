@@ -657,11 +657,22 @@ function renderTeam(slug){
   }
 }
 
-let playersPool = "pro", playersSort = {key:"Rating Points", dir:-1};
+let playersPool = "pro", playersSort = {key:"Rating Points", dir:-1}, playersCountry = "";
 function poolList(pk){ return pk==="solo" ? soloLeague() : (DATA.players[pk]||[]); }
-function renderPlayers(){
+// Countries in a pool, most players first: [{iso, nat, n}]
+function countryList(list){
+  const by = {};
+  list.forEach(p=>{ if(!p.iso) return; const c = by[p.iso] || (by[p.iso] = {iso:p.iso, nat:p.nat||p.iso.toUpperCase(), n:0}); c.n++; });
+  return Object.values(by).sort((a,b)=>b.n-a.n || a.nat.localeCompare(b.nat));
+}
+// #/players/<iso> shows one country's players, ranked among themselves.
+function renderPlayers(arg){
+  if(arg !== undefined) playersCountry = /^[a-z]{2,8}$/.test(arg||'') ? arg : '';
   const pool = playersPool;
-  const players = poolList(pool);
+  const all = poolList(pool);
+  const countries = countryList(all);
+  const country = countries.find(c=>c.iso===playersCountry);
+  const players = playersCountry ? all.filter(p=>p.iso===playersCountry) : all;
   const cols = [
     ["#", (p,i)=>i+1, "rankcol"],
     ["Player", p=>`<span class="tm-rank">${playerLink(p)}${p.provisional?'<span class="prov-badge" title="Provisional — under 5 maps played">PROV</span>':''}${playersSort.key==="Rating Points"?rankDeltaBadge(p, pool==="solo"?"their last solo game":"their last match"):''}</span>`, "name-cell", p=>p.name],
@@ -680,14 +691,30 @@ function renderPlayers(){
   ];
   app.innerHTML = `<h2 class="section-title"><span class="accent-bar"></span>Player Leaderboard
       <a href="#/compare" class="muted" style="margin-left:auto;font-size:12px">⇄ Compare players</a></h2>
-    <div class="tabs">
-      ${["pro","solo"].map(k=>`<button data-pool="${k}" class="${k===pool?'active':''}">${
-        k==="pro"?"Pro":"Solo Queue"} <span style="opacity:.7">${poolList(k).length}</span></button>`).join("")}
+    <div class="pl-filters">
+      <div class="tabs">
+        ${["pro","solo"].map(k=>`<button data-pool="${k}" class="${k===pool?'active':''}">${
+          k==="pro"?"Pro":"Solo Queue"} <span style="opacity:.7">${poolList(k).length}</span></button>`).join("")}
+      </div>
+      <select id="pl-country" class="pl-country" aria-label="Country">
+        <option value="">🌐 All countries (${countries.length})</option>
+        ${countries.map(c=>`<option value="${esc(c.iso)}"${c.iso===playersCountry?' selected':''}>${esc(c.nat)} · ${c.n}</option>`).join("")}
+        ${playersCountry && !country ? `<option value="${esc(playersCountry)}" selected>${esc(playersCountry.toUpperCase())} · 0</option>` : ''}
+      </select>
     </div>
+    ${playersCountry ? (()=>{
+      const ranked = players.filter(p=>p.ratingPoints!=null).sort((a,b)=>b.ratingPoints-a.ratingPoints);
+      const top = ranked[0];
+      const avg = ranked.length ? Math.round(ranked.reduce((t,p)=>t+p.ratingPoints,0)/ranked.length) : null;
+      const name = country ? country.nat : playersCountry.toUpperCase();
+      return `<div class="country-head">${flag(playersCountry)}<b>${esc(name)}</b>
+        <span class="muted">${players.length} player${players.length===1?'':'s'}${top?` · best: ${playerLink(top)} (${top.ratingPoints} pts)`:''}${avg!=null?` · average ${avg} pts`:''}</span>
+        <a href="#/players" class="muted country-clear">✕ All countries</a></div>`; })() : ''}
     ${pool==="solo"?'<p class="muted" style="font-size:12px;margin:-4px 0 12px">Whole league · under 5 maps stay provisional (unranked) at the bottom.</p>':''}
-    <div id="ptable"></div>`;
+    ${players.length ? '<div id="ptable"></div>' : `<p class="muted">No ${pool==="solo"?"solo queue":"pro"} players from ${esc(country?country.nat:playersCountry.toUpperCase())}.</p>`}`;
   app.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{playersPool=b.dataset.pool;playersSort={key:"Rating Points",dir:-1};renderPlayers();});
-  drawPlayerTable(players, cols);
+  $("#pl-country").onchange = e=>{ location.hash = e.target.value ? "#/players/"+e.target.value : "#/players"; };
+  if(players.length) drawPlayerTable(players, cols);
 }
 function drawPlayerTable(players, cols){
   const sorted = sortData([...players], cols, playersSort);
