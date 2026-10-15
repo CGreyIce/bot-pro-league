@@ -1,3 +1,10 @@
 [
-  {"name": "CGreyIce", "kind": "admin", "ingame": ["Ice"]}
+  {
+    "name": "CGreyIce",
+    "kind": "admin",
+    "ingame": [
+      "Ice"
+    ],
+    "iso": "my"
+  }
 ]
