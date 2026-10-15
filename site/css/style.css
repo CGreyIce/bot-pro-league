@@ -1389,3 +1389,10 @@ textarea.adm-in{resize:vertical;font-family:inherit}
 .country-head b{font-family:'Chakra Petch',sans-serif;font-size:16px}
 .country-head .muted{font-size:12.5px}
 .country-head .country-clear{margin-left:auto;font-size:12px}
+
+/* Human players in Solo Queue: (ADMIN)/(HUMAN) tags and the leaderboard toggle */
+.human-badge{display:inline-flex;align-items:center;height:18px;padding:0 6px;margin-left:7px;border-radius:4px;font:700 10px 'Chakra Petch',sans-serif;letter-spacing:.6px;vertical-align:middle;color:var(--link);border:1px solid rgba(87,182,255,.55);background:rgba(87,182,255,.1);cursor:default}
+.human-badge.admin{color:#ffd96a;border-color:rgba(255,210,61,.6);background:linear-gradient(120deg,rgba(255,210,61,.18),rgba(255,138,61,.1))}
+h1 .human-badge{height:22px;font-size:12px;padding:0 8px;margin-left:10px}
+.pl-humans{display:inline-flex;align-items:center;gap:7px;padding:6px 10px;border:1px solid var(--border);border-radius:7px;background:var(--panel);font:600 13px 'Chakra Petch',sans-serif;cursor:pointer;user-select:none}
+.pl-humans input{accent-color:var(--link);margin:0}

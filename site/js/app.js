@@ -54,7 +54,17 @@ function flag(iso){
   if(iso==="neutral") return `<span class="flag flag-neutral" title="Land of Make Believe"></span>`;
   return `<img class="flag" src="https://flagcdn.com/20x15/${iso}.png" alt="${esc(iso)}" title="${esc(iso.toUpperCase())}" loading="lazy">`;
 }
-function playerLink(p){ return `${flag(p.iso)}<a href="#/player/${p.slug}">${esc(p.name)}</a>`; }
+function playerLink(p){
+  if(p && p.human) return `${flag(p.iso)}<a href="#/human/${p.slug}">${esc(p.name)}</a>${humanBadge(p)}`;
+  return `${flag(p.iso)}<a href="#/player/${p.slug}">${esc(p.name)}</a>`;
+}
+// Human players (Solo Queue only, DATA.soloHumans): an (ADMIN) or (HUMAN) tag after the name.
+function humanBadge(p){
+  const admin = p.kind==="admin";
+  return `<span class="human-badge${admin?' admin':''}" title="${admin?'League admin':'Human player'}: plays Solo Queue against the BPL bots">${admin?'ADMIN':'HUMAN'}</span>`;
+}
+let showHumans = false;
+try { showHumans = localStorage.getItem("bpl_show_humans")==="1"; } catch(e) {}
 // National teams (BPL Nations Cup) use their country flag as the team badge.
 const NATION_ISO = {singapore:'sg',malaysia:'my',philippines:'ph',australia:'au',usa:'us','united states':'us',
   japan:'jp',taiwan:'tw',canada:'ca',netherlands:'nl','united kingdom':'gb',uk:'gb',indonesia:'id',
@@ -169,7 +179,7 @@ function eventTier(name){
 const routes = {
   "": renderHome, "home": renderHome,
   "teams": renderTeams, "team": renderTeam,
-  "players": renderPlayers, "player": renderPlayer,
+  "players": renderPlayers, "player": renderPlayer, "human": renderHuman,
   "tournaments": renderTournaments, "tournament": renderTournament,
   "rankings": renderRankings,
   "results": renderResults, "records": renderRecords, "compare": renderCompare,
@@ -192,7 +202,7 @@ function router(){
   liveMarkUpdate();   // LIVE bars on matches being played right now
   renderPromo();   // re-roll the socials promo on each page for even exposure
   document.querySelectorAll(".mainnav a").forEach(a=>{
-    const map={team:"teams",player:"players",tournament:"tournaments",article:"news"};
+    const map={team:"teams",player:"players",human:"players",tournament:"tournaments",article:"news"};
     a.classList.toggle("active", a.dataset.route === (map[route]||route));
   });
 }
@@ -669,12 +679,15 @@ function countryList(list){
 function renderPlayers(arg){
   if(arg !== undefined) playersCountry = /^[a-z]{2,8}$/.test(arg||'') ? arg : '';
   const pool = playersPool;
-  const all = poolList(pool);
+  // Solo Queue shows the bots; humans (DATA.soloHumans) only when switched on, with no rank number
+  // of their own so the bots' places don't move.
+  const humans = pool==="solo" ? (DATA.soloHumans||[]) : [];
+  const all = humans.length && showHumans ? [...poolList(pool), ...humans] : poolList(pool);
   const countries = countryList(all);
   const country = countries.find(c=>c.iso===playersCountry);
   const players = playersCountry ? all.filter(p=>p.iso===playersCountry) : all;
   const cols = [
-    ["#", (p,i)=>i+1, "rankcol"],
+    ["#", (p,i)=>p.human?'<span class="muted" title="Humans aren\'t ranked against the bots">—</span>':(p._rk||i+1), "rankcol"],
     ["Player", p=>`<span class="tm-rank">${playerLink(p)}${p.provisional?'<span class="prov-badge" title="Provisional — under 5 maps played">PROV</span>':''}${playersSort.key==="Rating Points"?rankDeltaBadge(p, pool==="solo"?"their last solo game":"their last match"):''}</span>`, "name-cell", p=>p.name],
     ["Team", p=>teamCell(p.team), "", p=>p.team],
     ["Role", p=>p.role?`<span class="pill role-pill">${esc(p.role)}</span>`:'—', "", p=>p.role],
@@ -701,6 +714,7 @@ function renderPlayers(arg){
         ${countries.map(c=>`<option value="${esc(c.iso)}"${c.iso===playersCountry?' selected':''}>${esc(c.nat)} · ${c.n}</option>`).join("")}
         ${playersCountry && !country ? `<option value="${esc(playersCountry)}" selected>${esc(playersCountry.toUpperCase())} · 0</option>` : ''}
       </select>
+      ${humans.length ? `<label class="pl-humans" title="People who play Solo Queue against the BPL bots"><input type="checkbox" id="pl-humans"${showHumans?' checked':''}> Show humans &amp; admins <span class="muted">${humans.length}</span></label>` : ''}
     </div>
     ${playersCountry ? (()=>{
       const ranked = players.filter(p=>p.ratingPoints!=null).sort((a,b)=>b.ratingPoints-a.ratingPoints);
@@ -714,10 +728,14 @@ function renderPlayers(arg){
     ${players.length ? '<div id="ptable"></div>' : `<p class="muted">No ${pool==="solo"?"solo queue":"pro"} players from ${esc(country?country.nat:playersCountry.toUpperCase())}.</p>`}`;
   app.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{playersPool=b.dataset.pool;playersSort={key:"Rating Points",dir:-1};renderPlayers();});
   $("#pl-country").onchange = e=>{ location.hash = e.target.value ? "#/players/"+e.target.value : "#/players"; };
+  const ht = $("#pl-humans");
+  if(ht) ht.onchange = ()=>{ showHumans = ht.checked; try { localStorage.setItem("bpl_show_humans", showHumans?"1":"0"); } catch(e) {} renderPlayers(); };
   if(players.length) drawPlayerTable(players, cols);
 }
 function drawPlayerTable(players, cols){
   const sorted = sortData([...players], cols, playersSort);
+  let rk = 0;
+  sorted.forEach(p=>{ if(!p.human) p._rk = ++rk; });   // the rank column counts the bots only
   $("#ptable").innerHTML = tableHtml(sorted, cols, playersSort);
   wireSort($("#ptable"), players, cols, playersSort, (s)=>{playersSort=s;drawPlayerTable(players,cols);});
 }
@@ -742,6 +760,50 @@ function genBadge(p){
   if(p.generation==null) return '';
   return `<span class="gen-badge${p.generation===0?' founder':''}" title="${esc(genTip(p))}">${p.generation===0?'★ ':''}${genLabel(p.generation)}</span>`;
 }
+// #/human/<slug>: a human player's Solo Queue profile (they have no tournament career).
+function renderHuman(slug){
+  const p = (DATA.soloHumans||[]).find(h=>h.slug===slug);
+  if(!p){ app.innerHTML = notFound("Player"); return; }
+  const stat = (v,l,acc)=>`<div class="stat${acc?' accent':''}"><div class="sv">${v}</div><div class="sl">${l}</div></div>`;
+  const bots = soloLeague().filter(b=>b.ratingPoints!=null).length;
+  const place = p.placeAmongBots ? `Would sit <b>#${p.placeAmongBots}</b> of ${bots} on the bots' Solo Queue board`
+    : p.maps ? `Provisional: ${p.maps} of 5 maps played before a rating` : 'No Solo Queue games yet';
+  const gains = DATA.soloGameStats||{};
+  const games = (p.games||[]).map(g=>{
+    const gs = (gains[String(g.id)]||{})[normKey(p.name)];
+    const gain = gs && gs.gain!=null ? `<span style="color:var(${gs.gain>=0?'--good':'--accent2'})">${gs.gain>=0?'+':''}${gs.gain}</span>` : '<span class="muted">—</span>';
+    return `<tr><td class="muted">${esc(g.date||'')}</td><td>${esc(g.map||'—')}</td>
+      <td><span class="form-dot ${g.won?'w':'l'}">${g.won?'W':'L'}</span></td>
+      <td class="mono">${g.k}-${g.d}-${g.a}</td><td class="mono">${g.mvp}</td><td class="mono">${gain}</td></tr>`;
+  }).join("");
+  app.innerHTML = `
+    <div class="crumb"><a href="#/players">Players</a><span class="sep">/</span>${esc(p.name)}</div>
+    <div class="profile-head">
+      <div class="avatar" style="width:88px;height:88px;border-radius:14px;font-size:34px">${initials(p.name)}</div>
+      <div class="ph-main">
+        <h1>${flag(p.iso)}${esc(p.name)}${humanBadge(p)}</h1>
+        <div class="ph-sub">${p.kind==="admin"?'League admin':'Human player'} · Solo Queue only${p.ingame&&p.ingame.length?` · plays as “${esc(p.ingame.join('”, “'))}”`:''}</div>
+        <div style="margin-top:10px">${p.level?`${levelChip(p.level)}<span class="levelchip" style="margin-left:8px">Level ${p.level}</span>`:'<span class="muted">Unranked</span>'}${p.provisional?'<span class="prov-badge" style="margin-left:8px">PROV</span>':''}</div>
+      </div>
+    </div>
+    <h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>Solo Queue
+      <span class="muted" style="font-size:11px">${p.ratingPoints!=null?p.ratingPoints+' pts · ':''}${place}</span></h2>
+    <div class="statgrid">
+      ${stat(p.kills,"Kills")}
+      ${stat(p.deaths,"Deaths")}
+      ${stat(p.maps?p.kdr.toFixed(2):'—',"K/D Ratio",true)}
+      ${stat(p.mvp,"MVPs")}
+      ${stat(p.assists,"Assists")}
+      ${stat((p.kills/Math.max(1,p.maps)).toFixed(1),"Kills / Map")}
+      ${stat(p.wins+'-'+p.losses,"Record")}
+      ${stat(p.maps?pct(p.winrate):'—',"Win Rate")}
+    </div>
+    <p class="muted" style="font-size:12px;margin:10px 0 0">Humans are rated on the same scale as the bots, but kept off the bots' rankings and every other part of the site.</p>
+    <h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Recent Solo Queue games</h2>
+    ${games ? `<div class="tablewrap"><table class="data"><thead><tr><th class="no-sort">Date</th><th class="no-sort">Map</th><th class="no-sort">Result</th><th class="no-sort">K-D-A</th><th class="no-sort">MVP</th><th class="no-sort" title="How the game moved their rating points">Pts</th></tr></thead><tbody>${games}</tbody></table></div>`
+      : '<p class="muted">No games recorded yet.</p>'}`;
+}
+
 function renderPlayer(slug){
   const p = playerBySlug(slug);
   if(!p){ app.innerHTML = notFound("Player"); return; }

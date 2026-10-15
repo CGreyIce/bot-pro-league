@@ -893,6 +893,24 @@ def main():
                         "soloRank": tgt.get("soloRank")}
         solo_game_stats[str(g.get("id"))] = entry
 
+    # ---- human players (Solo Queue only, data/solo_humans.json; build/solo_humans.py) ----
+    # Rated on the bots' scale without touching the bots' averages or ranks, and kept out of
+    # DATA.players so no other part of the site picks them up.
+    import solo_humans as _sh
+    solo_humans = _sh.build(_sh.load(DATA), solo_sb, solo_avg, _solo_rating_value, points_for, tier_for, level_for,
+                            norm_key, {norm_key(p["name"]) for p in pro + amateur + solo},
+                            [p["rating"] for p in solo_ranked], SOLO_MIN_MAPS)
+    for h in solo_humans:                        # their rating-point change per game, for the game popups
+        if h["ratingPoints"] is None:
+            continue
+        for gm in h["games"]:
+            r_before = _solo_rating_value(h["kills"] - gm["k"], h["deaths"] - gm["d"], h["assists"] - gm["a"],
+                                          h["mvp"] - gm["mvp"], h["wins"] - (1 if gm["won"] else 0),
+                                          h["losses"] - (0 if gm["won"] else 1), solo_avg)
+            solo_game_stats.setdefault(str(gm["id"]), {})[norm_key(h["name"])] = {
+                "gain": h["ratingPoints"] - (points_for(r_before) or 0), "ratingPoints": h["ratingPoints"],
+                "soloRank": None, "human": h["kind"]}
+
     solo_lookup = {}
     for p in solo:
         solo_lookup.setdefault(norm_key(p["name"]), p)
@@ -1803,6 +1821,7 @@ def main():
         "nationMapTeams": nation_map_teams,
         "qualifierMapTeams": qualifier_map_teams,
         "soloGameStats": solo_game_stats,
+        "soloHumans": solo_humans,
         "stacks": stacks,
     }
     # ---- team page colours + the BPL-dle daily game schedule (build/extras.py) ----
