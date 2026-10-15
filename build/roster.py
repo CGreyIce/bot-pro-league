@@ -415,8 +415,15 @@ class Roster:
         name = (name or "").strip()
         if not name:
             raise RosterError("Name is required.")
-        if norm(name) in self.by_key or self.pro.find(name) or self.am.find(name) or self.solo.find(name):
+        # Someone with only solo-queue games has no tournament profile yet: adding them gives them one
+        # (their solo queue stats stay as they are and show on the same profile).
+        solo_only = bool(self.solo.find(name)) and not self.pro.find(name) and not self.am.find(name)
+        if not solo_only and (norm(name) in self.by_key or self.pro.find(name) or self.am.find(name) or self.solo.find(name)):
             raise RosterError(f"A player called '{name}' already exists.")
+        if solo_only:
+            name = self.solo.find(name)[0][0]          # keep their exact spelling
+            if not role:
+                role = next((r[14] for r in self.solo.find(name) if len(r) > 14 and r[14].strip()), "")
         iso = country_iso()
         if (country or "").lower() not in iso:
             raise RosterError(f"Unknown country '{country}'. Pick one from the list.")
@@ -426,8 +433,16 @@ class Roster:
         for sh in (self.pro, self.am):
             for r in sh.find(name):
                 r[14] = role or r[14]
-        self.allp.lines.append(f"{name}\t{country}"); self.allp.dirty = True
-        self.note(f"New player {name}: {country}, {role or 'no role'}, " +
+        idx = next((i for i, l in enumerate(self.allp.lines) if norm(l.split("\t")[0]) == norm(name)), None)
+        if idx is None:
+            self.allp.lines.append(f"{name}\t{country}")
+        else:
+            self.allp.lines[idx] = f"{name}\t{country}"
+        self.allp.dirty = True
+        if solo_only:
+            self.note(f"{name} already plays solo queue: they now also get a tournament profile, so their "
+                      f"tournament stats go there (solo queue stats stay as they are).")
+        self.note(f"{'Registered' if solo_only else 'New player'} {name}: {country}, {role or 'no role'}, " +
                   (f"team {team}." if team and norm(team) != norm(FREE_AGENT) else "free agent."))
         if gender in ("M", "F", "NB"):
             self.gender[norm(name)] = gender; self.dirty_json.add("player_gender.json")

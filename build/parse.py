@@ -1230,11 +1230,14 @@ def main():
             # so their (amateur) players still show the team name.
             if row.get("teamSlug") and norm_key(row["team"]) not in _prov_keys:
                 continue
-            # a team with no games left in the event no longer re-homes its players (they can move on)
-            if manual_mod.team_finished(tr["slug"], row["team"]):
-                continue
+            # a team with no games left in the event keeps showing on its players until they're moved
+            # (transferred or released since the event began): then their profile follows the move.
+            # (A leaderboard event like Challengers 2026 has every team "finished" once the groups end.)
+            _done = manual_mod.team_finished(tr["slug"], row["team"])
             for pl in row["players"]:
                 p = slug_to_player.get(pl.get("slug"))
+                if _done and p and manual_mod.moved_since(p["name"], tr.get("date")):
+                    continue
                 # show the tournament team for anyone with no real pro team right now: amateur-origin
                 # players (the pro+amateur pools are merged, so key off amateurOrigin, not pool) AND
                 # pro-origin free agents (no current team) — otherwise a free agent on an ad-hoc roster

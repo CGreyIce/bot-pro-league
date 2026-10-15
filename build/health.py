@@ -92,6 +92,11 @@ def run(data, data_dir):
                 p = by_slug.get(pl["slug"])
                 if not p or nations:
                     continue
+                if p.get("pool") == "solo":
+                    h.add("warning", "Live rosters", f"{p['name']} plays for {team} at {tr['name']} but only has a solo-queue "
+                          f"profile, so their tournament stats land on it. Register them in Roster Tools → Add player.",
+                          f"#/player/{p['slug']}")
+                    continue
                 if not row.get("teamSlug") and norm(p.get("team")) != norm(team)                         and not manual.team_finished(tr["slug"], team):      # no games left: free to move
                     shown = p.get("team") or "free agent"
                     h.add("error", "Live rosters", f"{p['name']} plays for {team} at {tr['name']} but their profile shows "

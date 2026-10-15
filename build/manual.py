@@ -590,6 +590,25 @@ def save(man):
     json.dump(man, open(path(man["slug"]), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     json.dump(to_standard(man), open(os.path.join(TDIR, man["slug"] + ".json"), "w", encoding="utf-8"),
               ensure_ascii=False)
+_moves_cache = {"mtime": None, "moves": []}
+
+
+def moved_since(player, date):
+    """True if the player has a roster move (transfer, release, signing) dated on or after `date`:
+    they've moved on from whatever team they played an earlier event for."""
+    p = os.path.join(ROOT, "data", "roster_moves.json")
+    try:
+        mt = os.path.getmtime(p)
+        if mt != _moves_cache["mtime"]:
+            _moves_cache["moves"] = json.load(open(p, encoding="utf-8"))
+            _moves_cache["mtime"] = mt
+    except Exception:
+        return False
+    n = lambda x: re.sub(r"[^a-z0-9]", "", (x or "").lower())
+    k = n(player)
+    return any(n(m.get("player")) == k and (m.get("date") or "") >= (date or "") for m in _moves_cache["moves"])
+
+
 def team_finished(slug, team):
     """True when `team` has no games left in the running manual event `slug`: none of its matches are
     unplayed, its swiss group is complete, and no playoff still has unseeded slots it could enter.
