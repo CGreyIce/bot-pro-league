@@ -520,5 +520,92 @@
     "won": true
    }
   ]
+ },
+ {
+  "id": 7,
+  "map": "Inferno",
+  "date": "2026-10-16",
+  "players": [
+   {
+    "name": "CGreyIce",
+    "k": 44,
+    "d": 24,
+    "a": 9,
+    "mvp": 7,
+    "won": true
+   },
+   {
+    "name": "Sportsocke",
+    "k": 26,
+    "d": 22,
+    "a": 1,
+    "mvp": 5,
+    "won": true
+   },
+   {
+    "name": "yxie",
+    "k": 21,
+    "d": 19,
+    "a": 2,
+    "mvp": 3,
+    "won": true
+   },
+   {
+    "name": "Remia Aotsuki",
+    "k": 20,
+    "d": 23,
+    "a": 4,
+    "mvp": 3,
+    "won": true
+   },
+   {
+    "name": "sakistars",
+    "k": 14,
+    "d": 21,
+    "a": 2,
+    "mvp": 1,
+    "won": true
+   },
+   {
+    "name": "l1feless",
+    "k": 16,
+    "d": 26,
+    "a": 2,
+    "mvp": 3,
+    "won": false
+   },
+   {
+    "name": "Xrela",
+    "k": 29,
+    "d": 26,
+    "a": 1,
+    "mvp": 4,
+    "won": false
+   },
+   {
+    "name": "Chisa_Scarlett",
+    "k": 20,
+    "d": 25,
+    "a": 3,
+    "mvp": 3,
+    "won": false
+   },
+   {
+    "name": "Kisaragi Ren",
+    "k": 23,
+    "d": 25,
+    "a": 3,
+    "mvp": 2,
+    "won": false
+   },
+   {
+    "name": "JStarWolf",
+    "k": 20,
+    "d": 24,
+    "a": 5,
+    "mvp": 3,
+    "won": false
+   }
+  ]
  }
 ]

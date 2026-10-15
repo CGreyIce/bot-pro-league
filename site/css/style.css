@@ -1396,3 +1396,7 @@ textarea.adm-in{resize:vertical;font-family:inherit}
 h1 .human-badge{height:22px;font-size:12px;padding:0 8px;margin-left:10px}
 .pl-humans{display:inline-flex;align-items:center;gap:7px;padding:6px 10px;border:1px solid var(--border);border-radius:7px;background:var(--panel);font:600 13px 'Chakra Petch',sans-serif;cursor:pointer;user-select:none}
 .pl-humans input{accent-color:var(--link);margin:0}
+
+/* search: humans and admins get their badge colours */
+.search-results .sr-type.sr-admin{color:#ffd96a;font-weight:700}
+.search-results .sr-type.sr-human{color:var(--link);font-weight:700}

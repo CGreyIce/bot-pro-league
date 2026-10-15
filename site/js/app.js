@@ -4169,16 +4169,22 @@ function setupSearch(){
     ...DATA.teams.map(t=>({name:t.name, type:"Team", href:`#/team/${t.slug}`, logo:t.logo})),
     ...allPlayers().map(p=>({name:p.name, type:p.pool==="pro"?"Pro":p.pool==="amateur"?"Amateur":"Solo", href:`#/player/${p.slug}`, sub:p.team})),
     ...(DATA.tournaments||[]).map(t=>({name:t.name, type:"Event", href:`#/tournament/${t.slug}`, sub:t.year})),
+    // humans and league admins (Solo Queue only): found by name, by their in-game name, or by typing "admin" / "human"
+    ...(DATA.soloHumans||[]).map(h=>({name:h.name, type:h.kind==="admin"?"Admin":"Human", href:`#/human/${h.slug}`, iso:h.iso,
+      sub:h.ingame&&h.ingame.length?`plays as ${h.ingame.join(", ")}`:"Solo Queue",
+      terms:[h.name, ...(h.ingame||[]), h.kind==="admin"?"admin":"human"]})),
   ];
   const seen=new Set(); const uniq=index.filter(x=>{const k=x.href;if(seen.has(k))return false;seen.add(k);return true;});
   function run(){
     const q = input.value.trim().toLowerCase();
     if(q.length<2){ box.classList.remove("show"); return; }
-    const hits = uniq.filter(x=>x.name.toLowerCase().includes(q)).slice(0,8);
+    const match = x=>(x.terms||[x.name]).some(t=>String(t).toLowerCase().includes(q));
+    const starts = x=>(x.terms||[x.name]).some(t=>String(t).toLowerCase().startsWith(q)) ? 0 : 1;
+    const hits = uniq.filter(match).map((x,i)=>({x,i,s:starts(x)})).sort((a,b)=>a.s-b.s||a.i-b.i).map(o=>o.x).slice(0,8);
     if(!hits.length){ box.innerHTML=`<a class="muted" style="pointer-events:none">No matches</a>`; box.classList.add("show"); return; }
-    box.innerHTML = hits.map(h=>`<a href="${h.href}">${h.logo?`<img src="${esc(h.logo)}" style="height:20px;width:20px;object-fit:contain">`:''}
+    box.innerHTML = hits.map(h=>`<a href="${h.href}">${h.logo?`<img src="${esc(h.logo)}" style="height:20px;width:20px;object-fit:contain">`:h.iso?flag(h.iso):''}
       <span>${esc(h.name)}${h.sub?` <span class="muted" style="font-size:11px">${esc(h.sub)}</span>`:''}</span>
-      <span class="sr-type">${h.type}</span></a>`).join("");
+      <span class="sr-type${h.type==="Admin"?" sr-admin":h.type==="Human"?" sr-human":""}">${h.type}</span></a>`).join("");
     box.classList.add("show");
   }
   input.addEventListener("input", run);
