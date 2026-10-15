@@ -268,5 +268,23 @@
   "title": "Karasu: 50 maps played",
   "text": "Karasu reached 50 maps played",
   "link": "#/player/karasu"
+ },
+ {
+  "id": "milestone:kiokocheiko:kills:500",
+  "type": "milestone",
+  "ts": 1792103909,
+  "date": "2026-10-16",
+  "title": "KiokoCheiko: 500 career kills",
+  "text": "KiokoCheiko reached 500 career kills",
+  "link": "#/player/kiokocheiko"
+ },
+ {
+  "id": "milestone:boopydoopy:kills:500",
+  "type": "milestone",
+  "ts": 1792103909,
+  "date": "2026-10-16",
+  "title": "boopydoopy: 500 career kills",
+  "text": "boopydoopy reached 500 career kills",
+  "link": "#/player/boopydoopy"
  }
 ]

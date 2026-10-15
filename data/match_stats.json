@@ -56007,6 +56007,107 @@
      ]
     }
    ]
+  },
+  "3-7": {
+   "maps": [
+    {
+     "map": "Dust2",
+     "scoreA": 19,
+     "scoreB": 17,
+     "players": [
+      {
+       "team": "Nightfang Covenant",
+       "name": "KiokoCheiko",
+       "k": 37,
+       "a": 2,
+       "d": 27,
+       "mvp": 4,
+       "score": 80
+      },
+      {
+       "team": "Nightfang Covenant",
+       "name": "JStarWolf",
+       "k": 27,
+       "a": 5,
+       "d": 23,
+       "mvp": 7,
+       "score": 69
+      },
+      {
+       "team": "Nightfang Covenant",
+       "name": "plushyoshii",
+       "k": 25,
+       "a": 3,
+       "d": 19,
+       "mvp": 3,
+       "score": 66
+      },
+      {
+       "team": "Nightfang Covenant",
+       "name": "SyberiaK",
+       "k": 24,
+       "a": 3,
+       "d": 24,
+       "mvp": 3,
+       "score": 62
+      },
+      {
+       "team": "Nightfang Covenant",
+       "name": "hazielvamp",
+       "k": 19,
+       "a": 0,
+       "d": 23,
+       "mvp": 2,
+       "score": 44
+      },
+      {
+       "team": "Boop Battalion",
+       "name": "kimonra",
+       "k": 29,
+       "a": 2,
+       "d": 23,
+       "mvp": 3,
+       "score": 76
+      },
+      {
+       "team": "Boop Battalion",
+       "name": "SoSlim_",
+       "k": 24,
+       "a": 5,
+       "d": 26,
+       "mvp": 4,
+       "score": 70
+      },
+      {
+       "team": "Boop Battalion",
+       "name": "qebo",
+       "k": 22,
+       "a": 5,
+       "d": 27,
+       "mvp": 5,
+       "score": 57
+      },
+      {
+       "team": "Boop Battalion",
+       "name": "Reruzensky",
+       "k": 21,
+       "a": 6,
+       "d": 27,
+       "mvp": 3,
+       "score": 53
+      },
+      {
+       "team": "Boop Battalion",
+       "name": "boopydoopy",
+       "k": 19,
+       "a": 2,
+       "d": 30,
+       "mvp": 2,
+       "score": 45
+      }
+     ]
+    }
+   ]
   }
  }
 }

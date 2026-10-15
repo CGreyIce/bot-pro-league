@@ -492,8 +492,9 @@
      "round": 2,
      "a": "Nightfang Covenant",
      "b": "Boop Battalion",
-     "sa": null,
-     "sb": null
+     "sa": 19,
+     "sb": 17,
+     "ts": 1792103905
     },
     {
      "id": 8,
