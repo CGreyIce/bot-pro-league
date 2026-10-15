@@ -55401,6 +55401,107 @@
      ]
     }
    ]
+  },
+  "3-1": {
+   "maps": [
+    {
+     "map": "Vertigo",
+     "scoreA": 9,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Pandora's Rebels",
+       "name": "HakoP",
+       "k": 19,
+       "a": 2,
+       "d": 17,
+       "mvp": 2,
+       "score": 47
+      },
+      {
+       "team": "Pandora's Rebels",
+       "name": "JustYoong",
+       "k": 15,
+       "a": 7,
+       "d": 20,
+       "mvp": 3,
+       "score": 43
+      },
+      {
+       "team": "Pandora's Rebels",
+       "name": "rebebx",
+       "k": 16,
+       "a": 2,
+       "d": 19,
+       "mvp": 3,
+       "score": 38
+      },
+      {
+       "team": "Pandora's Rebels",
+       "name": "rinamizuu",
+       "k": 10,
+       "a": 5,
+       "d": 18,
+       "mvp": 0,
+       "score": 27
+      },
+      {
+       "team": "Pandora's Rebels",
+       "name": "ruamamiya",
+       "k": 10,
+       "a": 1,
+       "d": 18,
+       "mvp": 1,
+       "score": 25
+      },
+      {
+       "team": "Snowbell Syndicate",
+       "name": "Arya Kuroha",
+       "k": 27,
+       "a": 1,
+       "d": 16,
+       "mvp": 4,
+       "score": 58
+      },
+      {
+       "team": "Snowbell Syndicate",
+       "name": "FumishiroYummy",
+       "k": 22,
+       "a": 2,
+       "d": 12,
+       "mvp": 6,
+       "score": 54
+      },
+      {
+       "team": "Snowbell Syndicate",
+       "name": "itzfrenzy",
+       "k": 18,
+       "a": 0,
+       "d": 14,
+       "mvp": 2,
+       "score": 40
+      },
+      {
+       "team": "Snowbell Syndicate",
+       "name": "snowybluebell",
+       "k": 13,
+       "a": 2,
+       "d": 17,
+       "mvp": 1,
+       "score": 28
+      },
+      {
+       "team": "Snowbell Syndicate",
+       "name": "yxie",
+       "k": 11,
+       "a": 2,
+       "d": 12,
+       "mvp": 0,
+       "score": 26
+      }
+     ]
+    }
+   ]
   }
  }
 }
