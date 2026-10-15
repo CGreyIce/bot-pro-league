@@ -433,5 +433,92 @@
     "won": false
    }
   ]
+ },
+ {
+  "id": 6,
+  "map": "Ancient",
+  "date": "2026-10-15",
+  "players": [
+   {
+    "name": "CGreyIce",
+    "k": 17,
+    "d": 20,
+    "a": 5,
+    "mvp": 1,
+    "won": false
+   },
+   {
+    "name": "VPLH",
+    "k": 13,
+    "d": 20,
+    "a": 1,
+    "mvp": 1,
+    "won": false
+   },
+   {
+    "name": "minMaXXer",
+    "k": 13,
+    "d": 19,
+    "a": 1,
+    "mvp": 1,
+    "won": false
+   },
+   {
+    "name": "dla.wo",
+    "k": 26,
+    "d": 17,
+    "a": 5,
+    "mvp": 6,
+    "won": false
+   },
+   {
+    "name": "KTenshi",
+    "k": 12,
+    "d": 18,
+    "a": 3,
+    "mvp": 2,
+    "won": false
+   },
+   {
+    "name": "Ryker_Sterling",
+    "k": 20,
+    "d": 19,
+    "a": 2,
+    "mvp": 3,
+    "won": true
+   },
+   {
+    "name": "wushii",
+    "k": 11,
+    "d": 17,
+    "a": 5,
+    "mvp": 3,
+    "won": true
+   },
+   {
+    "name": "lukedefabio",
+    "k": 17,
+    "d": 16,
+    "a": 3,
+    "mvp": 1,
+    "won": true
+   },
+   {
+    "name": "simply_perezoso",
+    "k": 23,
+    "d": 14,
+    "a": 0,
+    "mvp": 2,
+    "won": true
+   },
+   {
+    "name": "fleurcoz",
+    "k": 23,
+    "d": 15,
+    "a": 2,
+    "mvp": 4,
+    "won": true
+   }
+  ]
  }
 ]
