@@ -798,6 +798,9 @@ function renderHuman(slug){
       ${stat(p.wins+'-'+p.losses,"Record")}
       ${stat(p.maps?pct(p.winrate):'—',"Win Rate")}
     </div>
+    ${p.playsWith?`<div class="hm-with" title="The teammate they've shared the most Solo Queue games with">🤝 <span class="muted">Most played with</span>
+      ${p.playsWith.human?playerLink(p.playsWith):`<a href="#/player/${esc(p.playsWith.slug)}">${flag(p.playsWith.iso)}${esc(p.playsWith.name)}</a>`}
+      <span class="muted">· ${p.playsWith.games} solo game${p.playsWith.games===1?'':'s'} together</span></div>`:''}
     <p class="muted" style="font-size:12px;margin:10px 0 0">Humans are rated on the same scale as the bots, but kept off the bots' rankings and every other part of the site.</p>
     <h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Recent Solo Queue games</h2>
     ${games ? `<div class="tablewrap"><table class="data"><thead><tr><th class="no-sort">Date</th><th class="no-sort">Map</th><th class="no-sort">Result</th><th class="no-sort">K-D-A</th><th class="no-sort">MVP</th><th class="no-sort" title="How the game moved their rating points">Pts</th></tr></thead><tbody>${games}</tbody></table></div>`

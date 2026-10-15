@@ -1101,15 +1101,34 @@ def main():
                     if side[i] and side[j] and side[i] != side[j]:
                         co_play[frozenset((side[i], side[j]))] += 1
     STACKS_MIN = 3                                # shared solo games before a pair counts as a stack
-    # each player's most-frequent solo-queue partner (shown on the profile; pros included if they queue)
+    # each player's most-frequent solo-queue partner (shown on the profile; pros included if they queue).
+    # Bots only count other bots: humans are kept off bot pages (see build/solo_humans.py).
     for p in (pro + amateur + solo):
         pk = norm_key(p["name"]); best, bestc = None, 0
         for pair, c in co_play.items():
             if pk in pair and c > bestc:
-                bestc, best = c, next(iter(pair - {pk}), None)
+                other = next(iter(pair - {pk}), None)
+                if other in pmap:
+                    bestc, best = c, other
         bp = pmap.get(best) if best else None
         if bp and bp["slug"] != p["slug"]:
             p["playsWith"] = {"slug": bp["slug"], "name": bp["name"], "iso": bp.get("iso", ""), "games": bestc}
+    # humans and admins: their most-frequent teammate too, a bot or another human
+    _h_by_key = {norm_key(h["name"]): h for h in solo_humans}
+    for h in solo_humans:
+        hk = norm_key(h["name"]); best, bestc = None, 0
+        for pair, c in co_play.items():
+            if hk in pair and c > bestc:
+                other = next(iter(pair - {hk}), None)
+                if other in pmap or other in _h_by_key:
+                    bestc, best = c, other
+        if best in pmap:
+            bp = pmap[best]
+            h["playsWith"] = {"slug": bp["slug"], "name": bp["name"], "iso": bp.get("iso", ""), "games": bestc}
+        elif best in _h_by_key:
+            o = _h_by_key[best]
+            h["playsWith"] = {"slug": o["slug"], "name": o["name"], "iso": o.get("iso", ""), "games": bestc,
+                              "human": True, "kind": o["kind"]}
     # stacks fed to the admin random-lineup generator: the hand-kept list + auto-detected ones.
     def _sl(nk_):                                 # canonical slug for a normalized name
         bp = pmap.get(nk_); return bp["slug"] if bp else None
