@@ -694,5 +694,92 @@
     "won": false
    }
   ]
+ },
+ {
+  "id": 9,
+  "map": "Anubis",
+  "date": "2026-10-16",
+  "players": [
+   {
+    "name": "CGreyIce",
+    "k": 18,
+    "d": 22,
+    "a": 7,
+    "mvp": 5,
+    "won": false
+   },
+   {
+    "name": "SkuxxNinja44",
+    "k": 17,
+    "d": 15,
+    "a": 1,
+    "mvp": 3,
+    "won": false
+   },
+   {
+    "name": "Illus",
+    "k": 14,
+    "d": 15,
+    "a": 3,
+    "mvp": 1,
+    "won": false
+   },
+   {
+    "name": "Niito",
+    "k": 13,
+    "d": 17,
+    "a": 3,
+    "mvp": 1,
+    "won": false
+   },
+   {
+    "name": "Acryii_",
+    "k": 19,
+    "d": 18,
+    "a": 1,
+    "mvp": 0,
+    "won": false
+   },
+   {
+    "name": "NekoSoji",
+    "k": 14,
+    "d": 17,
+    "a": 3,
+    "mvp": 2,
+    "won": true
+   },
+   {
+    "name": "sayupurin",
+    "k": 10,
+    "d": 13,
+    "a": 1,
+    "mvp": 1,
+    "won": true
+   },
+   {
+    "name": "Kyan",
+    "k": 24,
+    "d": 20,
+    "a": 3,
+    "mvp": 3,
+    "won": true
+   },
+   {
+    "name": "y1jingg",
+    "k": 24,
+    "d": 16,
+    "a": 4,
+    "mvp": 5,
+    "won": true
+   },
+   {
+    "name": "Dianya",
+    "k": 14,
+    "d": 16,
+    "a": 3,
+    "mvp": 2,
+    "won": true
+   }
+  ]
  }
 ]
