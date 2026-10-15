@@ -55502,6 +55502,107 @@
      ]
     }
    ]
+  },
+  "3-2": {
+   "maps": [
+    {
+     "map": "Anubis",
+     "scoreA": 9,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Boop Battalion",
+       "name": "kimonra",
+       "k": 17,
+       "a": 1,
+       "d": 14,
+       "mvp": 4,
+       "score": 42
+      },
+      {
+       "team": "Boop Battalion",
+       "name": "qebo",
+       "k": 15,
+       "a": 0,
+       "d": 11,
+       "mvp": 0,
+       "score": 36
+      },
+      {
+       "team": "Boop Battalion",
+       "name": "boopydoopy",
+       "k": 13,
+       "a": 5,
+       "d": 18,
+       "mvp": 2,
+       "score": 33
+      },
+      {
+       "team": "Boop Battalion",
+       "name": "Reruzensky",
+       "k": 12,
+       "a": 3,
+       "d": 15,
+       "mvp": 1,
+       "score": 30
+      },
+      {
+       "team": "Boop Battalion",
+       "name": "SoSlim_",
+       "k": 13,
+       "a": 1,
+       "d": 16,
+       "mvp": 2,
+       "score": 27
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "Just_Ansel",
+       "k": 17,
+       "a": 4,
+       "d": 14,
+       "mvp": 3,
+       "score": 45
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "Xevaria",
+       "k": 15,
+       "a": 4,
+       "d": 14,
+       "mvp": 3,
+       "score": 39
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "kimmixd",
+       "k": 17,
+       "a": 1,
+       "d": 12,
+       "mvp": 3,
+       "score": 38
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "Dazeido",
+       "k": 13,
+       "a": 2,
+       "d": 15,
+       "mvp": 3,
+       "score": 31
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "Karasu",
+       "k": 11,
+       "a": 1,
+       "d": 16,
+       "mvp": 1,
+       "score": 24
+      }
+     ]
+    }
+   ]
   }
  }
 }

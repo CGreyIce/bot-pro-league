@@ -447,8 +447,9 @@
      "round": 1,
      "a": "Boop Battalion",
      "b": "Crimson Meridian",
-     "sa": null,
-     "sb": null
+     "sa": 9,
+     "sb": 13,
+     "ts": 1792068434
     },
     {
      "id": 3,
