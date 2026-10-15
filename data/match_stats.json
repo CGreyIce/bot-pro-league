@@ -56108,6 +56108,107 @@
      ]
     }
    ]
+  },
+  "3-8": {
+   "maps": [
+    {
+     "map": "Dust2",
+     "scoreA": 16,
+     "scoreB": 14,
+     "players": [
+      {
+       "team": "Pandora's Rebels",
+       "name": "JustYoong",
+       "k": 34,
+       "a": 2,
+       "d": 20,
+       "mvp": 6,
+       "score": 77
+      },
+      {
+       "team": "Pandora's Rebels",
+       "name": "ruamamiya",
+       "k": 27,
+       "a": 3,
+       "d": 18,
+       "mvp": 3,
+       "score": 74
+      },
+      {
+       "team": "Pandora's Rebels",
+       "name": "HakoP",
+       "k": 21,
+       "a": 6,
+       "d": 18,
+       "mvp": 3,
+       "score": 55
+      },
+      {
+       "team": "Pandora's Rebels",
+       "name": "rinamizuu",
+       "k": 16,
+       "a": 1,
+       "d": 17,
+       "mvp": 2,
+       "score": 40
+      },
+      {
+       "team": "Pandora's Rebels",
+       "name": "rebebx",
+       "k": 11,
+       "a": 4,
+       "d": 24,
+       "mvp": 2,
+       "score": 34
+      },
+      {
+       "team": "Endless Summer",
+       "name": "RumiRumi",
+       "k": 23,
+       "a": 7,
+       "d": 21,
+       "mvp": 4,
+       "score": 63
+      },
+      {
+       "team": "Endless Summer",
+       "name": "SUMMER",
+       "k": 23,
+       "a": 1,
+       "d": 17,
+       "mvp": 3,
+       "score": 58
+      },
+      {
+       "team": "Endless Summer",
+       "name": "nevesten",
+       "k": 20,
+       "a": 5,
+       "d": 27,
+       "mvp": 2,
+       "score": 52
+      },
+      {
+       "team": "Endless Summer",
+       "name": "VSSMB",
+       "k": 18,
+       "a": 0,
+       "d": 23,
+       "mvp": 4,
+       "score": 48
+      },
+      {
+       "team": "Endless Summer",
+       "name": "anju_o",
+       "k": 13,
+       "a": 4,
+       "d": 21,
+       "mvp": 1,
+       "score": 37
+      }
+     ]
+    }
+   ]
   }
  }
 }
