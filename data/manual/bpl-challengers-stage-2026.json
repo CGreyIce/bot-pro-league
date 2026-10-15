@@ -483,8 +483,9 @@
      "round": 2,
      "a": "Snowbell Syndicate",
      "b": "Northwind",
-     "sa": null,
-     "sb": null
+     "sa": 16,
+     "sb": 12,
+     "ts": 1792100564
     },
     {
      "id": 7,
