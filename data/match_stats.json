@@ -55704,6 +55704,107 @@
      ]
     }
    ]
+  },
+  "3-4": {
+   "maps": [
+    {
+     "map": "Inferno",
+     "scoreA": 5,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Endless Summer",
+       "name": "SUMMER",
+       "k": 14,
+       "a": 0,
+       "d": 15,
+       "mvp": 2,
+       "score": 33
+      },
+      {
+       "team": "Endless Summer",
+       "name": "VSSMB",
+       "k": 13,
+       "a": 0,
+       "d": 17,
+       "mvp": 2,
+       "score": 26
+      },
+      {
+       "team": "Endless Summer",
+       "name": "nevesten",
+       "k": 9,
+       "a": 2,
+       "d": 13,
+       "mvp": 0,
+       "score": 21
+      },
+      {
+       "team": "Endless Summer",
+       "name": "anju_o",
+       "k": 8,
+       "a": 2,
+       "d": 17,
+       "mvp": 0,
+       "score": 21
+      },
+      {
+       "team": "Endless Summer",
+       "name": "RumiRumi",
+       "k": 5,
+       "a": 3,
+       "d": 17,
+       "mvp": 1,
+       "score": 13
+      },
+      {
+       "team": "Millefiore",
+       "name": "miyomille",
+       "k": 20,
+       "a": 1,
+       "d": 11,
+       "mvp": 5,
+       "score": 48
+      },
+      {
+       "team": "Millefiore",
+       "name": "Asumi Sena",
+       "k": 19,
+       "a": 3,
+       "d": 13,
+       "mvp": 5,
+       "score": 46
+      },
+      {
+       "team": "Millefiore",
+       "name": "mominichi",
+       "k": 17,
+       "a": 2,
+       "d": 10,
+       "mvp": 1,
+       "score": 42
+      },
+      {
+       "team": "Millefiore",
+       "name": "Kaga Nazuna",
+       "k": 13,
+       "a": 0,
+       "d": 7,
+       "mvp": 1,
+       "score": 28
+      },
+      {
+       "team": "Millefiore",
+       "name": "rach.elx_",
+       "k": 10,
+       "a": 0,
+       "d": 8,
+       "mvp": 1,
+       "score": 24
+      }
+     ]
+    }
+   ]
   }
  }
 }
