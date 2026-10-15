@@ -607,5 +607,92 @@
     "won": false
    }
   ]
+ },
+ {
+  "id": 8,
+  "map": "Mirage",
+  "date": "2026-10-16",
+  "players": [
+   {
+    "name": "CGreyIce",
+    "k": 27,
+    "d": 11,
+    "a": 7,
+    "mvp": 7,
+    "won": true
+   },
+   {
+    "name": "bloodbane",
+    "k": 11,
+    "d": 8,
+    "a": 3,
+    "mvp": 1,
+    "won": true
+   },
+   {
+    "name": "MKakili",
+    "k": 16,
+    "d": 10,
+    "a": 1,
+    "mvp": 2,
+    "won": true
+   },
+   {
+    "name": "chreyll",
+    "k": 10,
+    "d": 10,
+    "a": 0,
+    "mvp": 2,
+    "won": true
+   },
+   {
+    "name": "Kai",
+    "k": 9,
+    "d": 8,
+    "a": 1,
+    "mvp": 1,
+    "won": true
+   },
+   {
+    "name": "cwstalVT",
+    "k": 15,
+    "d": 15,
+    "a": 1,
+    "mvp": 0,
+    "won": false
+   },
+   {
+    "name": "lumi.nyaa",
+    "k": 9,
+    "d": 15,
+    "a": 1,
+    "mvp": 1,
+    "won": false
+   },
+   {
+    "name": "gigichiii_",
+    "k": 9,
+    "d": 14,
+    "a": 0,
+    "mvp": 1,
+    "won": false
+   },
+   {
+    "name": "zuann_",
+    "k": 7,
+    "d": 16,
+    "a": 3,
+    "mvp": 1,
+    "won": false
+   },
+   {
+    "name": "Solaonix",
+    "k": 7,
+    "d": 13,
+    "a": 0,
+    "mvp": 1,
+    "won": false
+   }
+  ]
  }
 ]
