@@ -358,5 +358,41 @@
   "title": "FumishiroYummy: 500 career kills",
   "text": "FumishiroYummy reached 500 career kills",
   "link": "#/player/fumishiroyummy"
+ },
+ {
+  "id": "milestone:karasu:kills:1000",
+  "type": "milestone",
+  "ts": 1792183580,
+  "date": "2026-10-17",
+  "title": "Karasu: 1000 career kills",
+  "text": "Karasu reached 1000 career kills",
+  "link": "#/player/karasu"
+ },
+ {
+  "id": "milestone:hakop:mvp:150",
+  "type": "milestone",
+  "ts": 1792183580,
+  "date": "2026-10-17",
+  "title": "HakoP: 150 MVP rounds",
+  "text": "HakoP reached 150 MVP rounds",
+  "link": "#/player/hakop"
+ },
+ {
+  "id": "milestone:justyoong:mvp:100",
+  "type": "milestone",
+  "ts": 1792183580,
+  "date": "2026-10-17",
+  "title": "JustYoong: 100 MVP rounds",
+  "text": "JustYoong reached 100 MVP rounds",
+  "link": "#/player/justyoong"
+ },
+ {
+  "id": "milestone:xevaria:kills:500",
+  "type": "milestone",
+  "ts": 1792183580,
+  "date": "2026-10-17",
+  "title": "Xevaria: 500 career kills",
+  "text": "Xevaria reached 500 career kills",
+  "link": "#/player/xevaria"
  }
 ]
