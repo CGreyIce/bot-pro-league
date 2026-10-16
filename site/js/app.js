@@ -2261,7 +2261,8 @@ function renderScoreboard(){
 }
 let _sfMaps = [];
 let _sfListA = "allplayers", _sfListB = "allplayers";
-const SF_MAP_POOL = ["Dust2","Anubis","Mirage","Inferno","Vertigo","Cache","Tuscan"];
+// The BPL map pool (Ancient replaced Tuscan in October 2026; old Tuscan games stay as played).
+const SF_MAP_POOL = ["Dust2","Anubis","Mirage","Inferno","Vertigo","Cache","Ancient"];
 function sfTeamRoster(tr, teamName){
   if(!tr || !teamName) return null;
   const row = (tr.attending||[]).find(r=>normKey(r.team)===normKey(teamName));
@@ -2307,7 +2308,7 @@ function openStatsForm(slug, ref, match){
 // and a team's MVP stars equal the rounds it won.
 const QE_ORDERS = {kadms:["k","a","d","mvp","score"], kdams:["k","d","a","mvp","score"], kdasm:["k","d","a","score","mvp"], kadsm:["k","a","d","score","mvp"]};
 const QE_LABEL = {k:"K", a:"A", d:"D", mvp:"MVP", score:"Score"};
-const QE_EXTRA_MAPS = ["Split","Nuke","Overpass","Ancient","Train","Office"];
+const QE_EXTRA_MAPS = ["Tuscan","Split","Nuke","Overpass","Ancient","Train","Office"];
 function qeOrderKey(){ try{ const k=localStorage.getItem("bpl_qe_order"); return QE_ORDERS[k]?k:"kadms"; }catch(e){ return "kadms"; } }
 function qeMapName(w){ const k=normKey(String(w||"").replace(/^de_/i,"")); return SF_MAP_POOL.concat(QE_EXTRA_MAPS).find(m=>normKey(m)===k)||null; }
 function qeLev(a,b){
@@ -2863,12 +2864,12 @@ async function renderAdmin(){
 }
 
 // ---- map veto simulator (admin) ----
-const VETO_MAPS = ["Mirage","Dust2","Inferno","Cache","Tuscan","Vertigo","Anubis"];
-const VETO_IMG = {Mirage:"mirage.jpg",Dust2:"dust2.jpg",Inferno:"inferno.jpg",Cache:"cache.jpg",Tuscan:"tuscan.jpg",Vertigo:"vertigo.jpeg",Anubis:"anubis.jpeg"};
+const VETO_MAPS = ["Mirage","Dust2","Inferno","Cache","Ancient","Vertigo","Anubis"];
+const VETO_IMG = {Mirage:"mirage.jpg",Dust2:"dust2.jpg",Inferno:"inferno.jpg",Cache:"cache.jpg",Ancient:"ancient.jpg",Tuscan:"tuscan.jpg",Vertigo:"vertigo.jpeg",Anubis:"anubis.jpeg"};
 // The team that picks a map doesn't choose sides — the opponent picks which side
 // to start on. We have no CT/T split in the stats, so the choice is deterministic
 // (stable per matchup) with a light lean toward each map's stronger starting side.
-const MAP_SIDE_LEAN = {Mirage:"CT",Dust2:"T",Inferno:"CT",Cache:"CT",Tuscan:"CT",Vertigo:"CT",Anubis:"T"};
+const MAP_SIDE_LEAN = {Mirage:"CT",Dust2:"T",Inferno:"CT",Cache:"CT",Ancient:"CT",Tuscan:"CT",Vertigo:"CT",Anubis:"T"};
 function vetoHash(s){ let h=2166136261>>>0; for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,16777619); } return h>>>0; }
 function vetoSide(chooser, map, A, B){
   const lean = MAP_SIDE_LEAN[map] || "CT";

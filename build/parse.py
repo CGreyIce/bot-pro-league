@@ -747,9 +747,12 @@ def main():
             t["wlr"] = round(t["map_wins"] / denom, 3)
 
     # ---- per-team per-map records (for the map veto simulator) ----
-    # Active map pool of 7 (Split is a custom 3rd-place-only map and is ignored).
-    POOL_MAPS = ["Mirage", "Dust2", "Inferno", "Cache", "Tuscan", "Vertigo", "Anubis"]
-    _mapkey = {m.lower(): m for m in POOL_MAPS}
+    # Active map pool of 7 (Split is a custom 3rd-place-only map and is ignored). Best/worst maps
+    # come from this pool only. Ancient replaced Tuscan in October 2026.
+    POOL_MAPS = ["Mirage", "Dust2", "Inferno", "Cache", "Ancient", "Vertigo", "Anubis"]
+    # Also tracked: Tuscan, out of the rotation, so its past results still show in team map stats.
+    STATS_MAPS = POOL_MAPS + ["Tuscan"]
+    _mapkey = {m.lower(): m for m in STATS_MAPS}
     map_rec = defaultdict(lambda: defaultdict(lambda: [0, 0]))          # team slug -> mapName -> [w, l]
     player_map_rec = defaultdict(lambda: defaultdict(lambda: [0, 0]))   # player slug -> mapName -> [w, l]
     for tr in tournaments:
@@ -785,7 +788,7 @@ def main():
     for t in teams:
         base = t.get("wlr") or 0.5
         stats = {}
-        for cm in POOL_MAPS:
+        for cm in STATS_MAPS:
             w, l = map_rec[t["slug"]].get(cm, [0, 0]); g = w + l
             if g >= 2:                                           # enough real maps -> real win rate
                 wr, real = round(w / g, 3), True
@@ -1346,7 +1349,7 @@ def main():
             avg = sum(rs) / len(rs) if rs else 1.0
             base = max(0.38, min(0.60, 0.5 + (avg - 1.0) * 0.9))
             stats = {}
-            for cm in POOL_MAPS:
+            for cm in STATS_MAPS:
                 tw, tl = _name_map_rec.get(row["team"], {}).get(cm, [0, 0]); tg = tw + tl
                 if tg >= 2:                               # the team's OWN games -> real, replaces the estimate
                     stats[cm] = {"w": tw, "l": tl, "g": tg, "wr": round(tw / tg, 3), "real": True, "est": False}
@@ -1394,7 +1397,7 @@ def main():
             avg = sum(rs) / len(rs) if rs else 1.0
             base = max(0.38, min(0.60, 0.5 + (avg - 1.0) * 0.9))
             stats = {}
-            for cm in POOL_MAPS:
+            for cm in STATS_MAPS:
                 off = (_seed(row["team"] + "|" + cm) % 4200) / 10000.0 - 0.21
                 stats[cm] = {"w": 0, "l": 0, "g": 0, "wr": round(max(0.20, min(0.82, base + off)), 3), "real": False}
             # overlay real form: this nation's own games (as "Team X") + the qualifier squad it
@@ -1403,7 +1406,7 @@ def main():
             squad = _qual_squad_by_roster.get(frozenset(pl["slug"] for pl in row["players"] if pl.get("slug")))
             if squad and squad != row["team"]:
                 names.append(squad)
-            for cm in POOL_MAPS:
+            for cm in STATS_MAPS:
                 w = sum(_name_map_rec[n].get(cm, [0, 0])[0] for n in names)
                 l = sum(_name_map_rec[n].get(cm, [0, 0])[1] for n in names)
                 g = w + l
@@ -1430,7 +1433,7 @@ def main():
             avg = sum(rs) / len(rs) if rs else 1.0
             base = max(0.38, min(0.60, 0.5 + (avg - 1.0) * 0.9))
             stats = {}
-            for cm in POOL_MAPS:
+            for cm in STATS_MAPS:
                 off = (_seed(row["team"] + "|" + cm) % 4200) / 10000.0 - 0.21
                 stats[cm] = {"w": 0, "l": 0, "g": 0, "wr": round(max(0.20, min(0.82, base + off)), 3), "real": False}
             order = sorted(POOL_MAPS, key=lambda cm: (-stats[cm]["wr"], cm))

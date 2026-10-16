@@ -304,5 +304,14 @@
   "title": "JustYoong: 500 career kills",
   "text": "JustYoong reached 500 career kills",
   "link": "#/player/justyoong"
+ },
+ {
+  "id": "milestone:just-ansel:kills:500",
+  "type": "milestone",
+  "ts": 1792140367,
+  "date": "2026-10-16",
+  "title": "Just_Ansel: 500 career kills",
+  "text": "Just_Ansel reached 500 career kills",
+  "link": "#/player/just-ansel"
  }
 ]
