@@ -57787,6 +57787,103 @@
        "score": 21
       }
      ]
+    },
+    {
+     "map": "Vertigo",
+     "scoreA": 13,
+     "scoreB": 11,
+     "players": [
+      {
+       "team": "Northwind",
+       "name": "MizukiiMoon",
+       "k": 18,
+       "a": 3,
+       "d": 16,
+       "mvp": 2,
+       "score": 50
+      },
+      {
+       "team": "Northwind",
+       "name": "Airizu",
+       "k": 21,
+       "a": 2,
+       "d": 13,
+       "mvp": 3,
+       "score": 49
+      },
+      {
+       "team": "Northwind",
+       "name": "MiyaLeile",
+       "k": 19,
+       "a": 5,
+       "d": 16,
+       "mvp": 2,
+       "score": 46
+      },
+      {
+       "team": "Northwind",
+       "name": "Karoni",
+       "k": 21,
+       "a": 0,
+       "d": 16,
+       "mvp": 4,
+       "score": 44
+      },
+      {
+       "team": "Northwind",
+       "name": "MilliannaVT",
+       "k": 15,
+       "a": 2,
+       "d": 15,
+       "mvp": 2,
+       "score": 39
+      },
+      {
+       "team": "Endless Summer",
+       "name": "SUMMER",
+       "k": 20,
+       "a": 6,
+       "d": 21,
+       "mvp": 4,
+       "score": 55
+      },
+      {
+       "team": "Endless Summer",
+       "name": "nevesten",
+       "k": 14,
+       "a": 1,
+       "d": 19,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "Endless Summer",
+       "name": "RumiRumi",
+       "k": 14,
+       "a": 2,
+       "d": 20,
+       "mvp": 2,
+       "score": 35
+      },
+      {
+       "team": "Endless Summer",
+       "name": "VSSMB",
+       "k": 15,
+       "a": 2,
+       "d": 19,
+       "mvp": 2,
+       "score": 33
+      },
+      {
+       "team": "Endless Summer",
+       "name": "anju_o",
+       "k": 8,
+       "a": 1,
+       "d": 20,
+       "mvp": 1,
+       "score": 21
+      }
+     ]
     }
    ]
   }
