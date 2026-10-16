@@ -196,6 +196,7 @@ function parseHash(){
 function router(){
   const {route, arg} = parseHash();
   const fn = routes[route] || renderHome;
+  document.body.dataset.route = route;   // per-page layout tweaks (e.g. the wider player leaderboard)
   window.scrollTo(0,0);
   PAGE_ROSTERS = []; PAGE_MAPSCORES = [];
   fn(arg);
