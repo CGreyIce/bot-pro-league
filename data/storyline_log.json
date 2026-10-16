@@ -313,5 +313,14 @@
   "title": "Just_Ansel: 500 career kills",
   "text": "Just_Ansel reached 500 career kills",
   "link": "#/player/just-ansel"
+ },
+ {
+  "id": "milestone:mominichi:kills:500",
+  "type": "milestone",
+  "ts": 1792142846,
+  "date": "2026-10-16",
+  "title": "mominichi: 500 career kills",
+  "text": "mominichi reached 500 career kills",
+  "link": "#/player/mominichi"
  }
 ]
