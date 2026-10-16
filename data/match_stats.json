@@ -56702,6 +56702,107 @@
      ]
     }
    ]
+  },
+  "3-11": {
+   "maps": [
+    {
+     "map": "Dust2",
+     "scoreA": 13,
+     "scoreB": 8,
+     "players": [
+      {
+       "team": "Northwind",
+       "name": "MilliannaVT",
+       "k": 22,
+       "a": 1,
+       "d": 14,
+       "mvp": 3,
+       "score": 49
+      },
+      {
+       "team": "Northwind",
+       "name": "Karoni",
+       "k": 14,
+       "a": 1,
+       "d": 13,
+       "mvp": 2,
+       "score": 38
+      },
+      {
+       "team": "Northwind",
+       "name": "MiyaLeile",
+       "k": 15,
+       "a": 1,
+       "d": 18,
+       "mvp": 4,
+       "score": 34
+      },
+      {
+       "team": "Northwind",
+       "name": "Airizu",
+       "k": 11,
+       "a": 1,
+       "d": 16,
+       "mvp": 2,
+       "score": 31
+      },
+      {
+       "team": "Northwind",
+       "name": "MizukiiMoon",
+       "k": 13,
+       "a": 0,
+       "d": 14,
+       "mvp": 2,
+       "score": 29
+      },
+      {
+       "team": "Pandora's Rebels",
+       "name": "JustYoong",
+       "k": 21,
+       "a": 2,
+       "d": 13,
+       "mvp": 1,
+       "score": 49
+      },
+      {
+       "team": "Pandora's Rebels",
+       "name": "rebebx",
+       "k": 16,
+       "a": 3,
+       "d": 15,
+       "mvp": 3,
+       "score": 42
+      },
+      {
+       "team": "Pandora's Rebels",
+       "name": "rinamizuu",
+       "k": 17,
+       "a": 0,
+       "d": 16,
+       "mvp": 3,
+       "score": 36
+      },
+      {
+       "team": "Pandora's Rebels",
+       "name": "ruamamiya",
+       "k": 14,
+       "a": 3,
+       "d": 15,
+       "mvp": 1,
+       "score": 35
+      },
+      {
+       "team": "Pandora's Rebels",
+       "name": "HakoP",
+       "k": 7,
+       "a": 4,
+       "d": 16,
+       "mvp": 0,
+       "score": 18
+      }
+     ]
+    }
+   ]
   }
  }
 }
