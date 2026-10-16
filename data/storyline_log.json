@@ -349,5 +349,14 @@
   "title": "RumiRumi: 500 career kills",
   "text": "RumiRumi reached 500 career kills",
   "link": "#/player/rumirumi"
+ },
+ {
+  "id": "milestone:fumishiroyummy:kills:500",
+  "type": "milestone",
+  "ts": 1792177180,
+  "date": "2026-10-17",
+  "title": "FumishiroYummy: 500 career kills",
+  "text": "FumishiroYummy reached 500 career kills",
+  "link": "#/player/fumishiroyummy"
  }
 ]
