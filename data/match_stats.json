@@ -56209,6 +56209,107 @@
      ]
     }
    ]
+  },
+  "3-9": {
+   "maps": [
+    {
+     "map": "Anubis",
+     "scoreA": 8,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Snowbell Syndicate",
+       "name": "FumishiroYummy",
+       "k": 21,
+       "a": 2,
+       "d": 15,
+       "mvp": 3,
+       "score": 47
+      },
+      {
+       "team": "Snowbell Syndicate",
+       "name": "snowybluebell",
+       "k": 17,
+       "a": 3,
+       "d": 17,
+       "mvp": 2,
+       "score": 39
+      },
+      {
+       "team": "Snowbell Syndicate",
+       "name": "yxie",
+       "k": 15,
+       "a": 0,
+       "d": 14,
+       "mvp": 0,
+       "score": 36
+      },
+      {
+       "team": "Snowbell Syndicate",
+       "name": "Arya Kuroha",
+       "k": 10,
+       "a": 2,
+       "d": 17,
+       "mvp": 1,
+       "score": 26
+      },
+      {
+       "team": "Snowbell Syndicate",
+       "name": "itzfrenzy",
+       "k": 6,
+       "a": 3,
+       "d": 18,
+       "mvp": 2,
+       "score": 24
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "Dazeido",
+       "k": 21,
+       "a": 0,
+       "d": 12,
+       "mvp": 5,
+       "score": 49
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "Xevaria",
+       "k": 17,
+       "a": 2,
+       "d": 13,
+       "mvp": 2,
+       "score": 46
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "Karasu",
+       "k": 21,
+       "a": 2,
+       "d": 13,
+       "mvp": 3,
+       "score": 44
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "Just_Ansel",
+       "k": 10,
+       "a": 0,
+       "d": 14,
+       "mvp": 3,
+       "score": 30
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "kimmixd",
+       "k": 12,
+       "a": 2,
+       "d": 17,
+       "mvp": 0,
+       "score": 29
+      }
+     ]
+    }
+   ]
   }
  }
 }
