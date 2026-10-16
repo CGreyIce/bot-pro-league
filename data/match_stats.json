@@ -57589,6 +57589,103 @@
        "score": 22
       }
      ]
+    },
+    {
+     "map": "Cache",
+     "scoreA": 9,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Crimson Meridian",
+       "name": "Karasu",
+       "k": 20,
+       "a": 3,
+       "d": 14,
+       "mvp": 5,
+       "score": 49
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "Dazeido",
+       "k": 19,
+       "a": 2,
+       "d": 17,
+       "mvp": 2,
+       "score": 45
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "Just_Ansel",
+       "k": 17,
+       "a": 1,
+       "d": 15,
+       "mvp": 2,
+       "score": 40
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "kimmixd",
+       "k": 11,
+       "a": 4,
+       "d": 14,
+       "mvp": 0,
+       "score": 28
+      },
+      {
+       "team": "Crimson Meridian",
+       "name": "Xevaria",
+       "k": 8,
+       "a": 4,
+       "d": 15,
+       "mvp": 0,
+       "score": 21
+      },
+      {
+       "team": "Pandora's Rebels",
+       "name": "rinamizuu",
+       "k": 19,
+       "a": 5,
+       "d": 16,
+       "mvp": 5,
+       "score": 49
+      },
+      {
+       "team": "Pandora's Rebels",
+       "name": "ruamamiya",
+       "k": 18,
+       "a": 2,
+       "d": 15,
+       "mvp": 2,
+       "score": 44
+      },
+      {
+       "team": "Pandora's Rebels",
+       "name": "HakoP",
+       "k": 16,
+       "a": 1,
+       "d": 16,
+       "mvp": 2,
+       "score": 40
+      },
+      {
+       "team": "Pandora's Rebels",
+       "name": "JustYoong",
+       "k": 9,
+       "a": 3,
+       "d": 15,
+       "mvp": 2,
+       "score": 32
+      },
+      {
+       "team": "Pandora's Rebels",
+       "name": "rebebx",
+       "k": 13,
+       "a": 2,
+       "d": 13,
+       "mvp": 2,
+       "score": 32
+      }
+     ]
     }
    ]
   }
