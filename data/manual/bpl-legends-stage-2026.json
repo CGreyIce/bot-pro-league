@@ -1,0 +1,218 @@
+{
+ "slug": "bpl-legends-stage-2026",
+ "name": "BPL Legends Stage 2026",
+ "tier": "s",
+ "date": "2026-10-31",
+ "stages": [],
+ "formatLabel": "4 Groups (Swiss)",
+ "formatNote": "48 teams: the pro teams ranked #17–49 and the top 15 of the Challengers Stage. 4 Swiss groups of 12, 5 rounds. The top 4 of each group (16 teams) qualify for the Conquerors Stage. The groups are drawn once the Challengers Stage ends.",
+ "field": [
+  {
+   "team": "Alcheministry",
+   "rank": 17
+  },
+  {
+   "team": "Bluebird",
+   "rank": 18
+  },
+  {
+   "team": "Raven Song",
+   "rank": 19
+  },
+  {
+   "team": "Masmark",
+   "rank": 20
+  },
+  {
+   "team": "Setting Sun",
+   "rank": 21
+  },
+  {
+   "team": "Round Loss Bonus",
+   "rank": 22
+  },
+  {
+   "team": "The Nomads",
+   "rank": 23
+  },
+  {
+   "team": "Divide&Conquer",
+   "rank": 24
+  },
+  {
+   "team": "Technomancy",
+   "rank": 25
+  },
+  {
+   "team": "Moonlit Tempo",
+   "rank": 26
+  },
+  {
+   "team": "Sacred Raven",
+   "rank": 27
+  },
+  {
+   "team": "Kiedz",
+   "rank": 28
+  },
+  {
+   "team": "99Lives",
+   "rank": 29
+  },
+  {
+   "team": "division20",
+   "rank": 30
+  },
+  {
+   "team": "Prism Divide",
+   "rank": 31
+  },
+  {
+   "team": "Caelum Scala",
+   "rank": 32
+  },
+  {
+   "team": "DiamondOnes",
+   "rank": 33
+  },
+  {
+   "team": "Team Neverseen",
+   "rank": 34
+  },
+  {
+   "team": "5PERCENT",
+   "rank": 35
+  },
+  {
+   "team": "Unforgettable",
+   "rank": 36
+  },
+  {
+   "team": "Fruit Basket",
+   "rank": 37
+  },
+  {
+   "team": "Mourningstar",
+   "rank": 38
+  },
+  {
+   "team": "Ukiyo",
+   "rank": 39
+  },
+  {
+   "team": "Aeternum",
+   "rank": 40
+  },
+  {
+   "team": "0v3",
+   "rank": 41
+  },
+  {
+   "team": "Wraithborne",
+   "rank": 42
+  },
+  {
+   "team": "Aspire",
+   "rank": 43
+  },
+  {
+   "team": "Nightshade",
+   "rank": 44
+  },
+  {
+   "team": "Solstice",
+   "rank": 45
+  },
+  {
+   "team": "Syzygy",
+   "rank": 46
+  },
+  {
+   "team": "Cyanide",
+   "rank": 47
+  },
+  {
+   "team": "Lunar Cadence",
+   "rank": 48
+  },
+  {
+   "team": "Astral Bloom",
+   "rank": 49
+  },
+  {
+   "tbc": true,
+   "from": "bpl-challengers-stage-2026",
+   "place": 1
+  },
+  {
+   "tbc": true,
+   "from": "bpl-challengers-stage-2026",
+   "place": 2
+  },
+  {
+   "tbc": true,
+   "from": "bpl-challengers-stage-2026",
+   "place": 3
+  },
+  {
+   "tbc": true,
+   "from": "bpl-challengers-stage-2026",
+   "place": 4
+  },
+  {
+   "tbc": true,
+   "from": "bpl-challengers-stage-2026",
+   "place": 5
+  },
+  {
+   "tbc": true,
+   "from": "bpl-challengers-stage-2026",
+   "place": 6
+  },
+  {
+   "tbc": true,
+   "from": "bpl-challengers-stage-2026",
+   "place": 7
+  },
+  {
+   "tbc": true,
+   "from": "bpl-challengers-stage-2026",
+   "place": 8
+  },
+  {
+   "tbc": true,
+   "from": "bpl-challengers-stage-2026",
+   "place": 9
+  },
+  {
+   "tbc": true,
+   "from": "bpl-challengers-stage-2026",
+   "place": 10
+  },
+  {
+   "tbc": true,
+   "from": "bpl-challengers-stage-2026",
+   "place": 11
+  },
+  {
+   "tbc": true,
+   "from": "bpl-challengers-stage-2026",
+   "place": 12
+  },
+  {
+   "tbc": true,
+   "from": "bpl-challengers-stage-2026",
+   "place": 13
+  },
+  {
+   "tbc": true,
+   "from": "bpl-challengers-stage-2026",
+   "place": 14
+  },
+  {
+   "tbc": true,
+   "from": "bpl-challengers-stage-2026",
+   "place": 15
+  }
+ ]
+}

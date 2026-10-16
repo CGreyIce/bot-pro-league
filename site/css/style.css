@@ -1415,3 +1415,14 @@ h1 .human-badge{height:22px;font-size:12px;padding:0 8px;margin-left:10px}
 .adv-head{font:700 13px 'Chakra Petch',sans-serif;text-transform:uppercase;letter-spacing:.8px;margin:-4px 0 8px}
 .adv-head .muted{font:400 11px Inter,system-ui,sans-serif;text-transform:none;letter-spacing:0}
 .adv-detail{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:12px;margin:-8px 0 18px}
+
+/* Teams Attending before the draw: TBC slots (another event's place N), qualifiers and invites */
+.aw-tile .aw-txt{display:flex;flex-direction:column;line-height:1.15}
+.aw-tile .aw-from{font-size:10.5px;color:var(--muted)}
+.aw-tile.aw-tbc{border-style:dashed;background:transparent}
+.aw-tile.aw-tbc .aw-name{color:var(--muted)}
+.aw-tile.aw-tbc .aw-noimg{font-size:14px}
+.ev-upcoming{background:var(--panel);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:10px;padding:12px 16px;margin:18px 0 4px}
+.ev-upcoming p{margin:8px 0 0;font-size:13px;line-height:1.5}
+.evu-head{font-family:'Chakra Petch';font-weight:700;font-size:15px;display:flex;align-items:center;gap:10px}
+.evu-pill{font-size:11px;letter-spacing:.8px;text-transform:uppercase;background:var(--accent);color:#fff;border-radius:999px;padding:2px 9px}

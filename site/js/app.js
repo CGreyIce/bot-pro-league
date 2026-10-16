@@ -148,6 +148,8 @@ function rosterPopHTML(row){
   const t = row.teamSlug ? teamBySlug(row.teamSlug) : null;
   const teamName = row.teamSlug ? `<a href="#/team/${row.teamSlug}">${esc(row.team)}</a>` : `<strong>${esc(row.team)}</strong>`;
   const head = `<div class="rp-head">${t&&t.logo?`<img src="${esc(t.logo)}" alt="">`:''}${teamName}<span class="rp-close" title="Close">×</span></div>`;
+  if(row.tbc)
+    return head + `<div class="rp-row rp-tbc">TBC — the #${row.tbc.place} team of the <a href="#/tournament/${esc(row.tbc.slug)}">${esc(row.tbc.name)}</a></div>`;
   if(!(row.players||[]).length)
     return head + `<div class="rp-row rp-tbc">TBC — qualifier not yet decided</div>`;
   const rows = (row.players||[]).map(p=>{
@@ -4018,15 +4020,16 @@ function renderTournament(slug){
     // once every match in the group is decided, the top 2 have booked their playoff spots
     const allM = (st.rounds||[]).flatMap(rd=>rd.matches||[]);
     const done = allM.length>0 && allM.every(m=> m.w===1 || m.w===2);
+    const nAdv = tr.leaderboard ? tr.leaderboard.perGroup : 2;
     const rows = st.standings.map(s=>{
-      const adv = done && s.rank<=2;
+      const adv = done && s.rank<=nAdv;
       return `<tr class="${adv?'grp-adv':''}"><td class="rankcol">${s.rank}</td>
-        <td class="name-cell">${nameOrTeamCrest(s.name,s.teamSlug)}${adv?'<span class="grp-q" title="Qualified for the playoffs">Q</span>':''}</td>
+        <td class="name-cell">${nameOrTeamCrest(s.name,s.teamSlug)}${adv?`<span class="grp-q" title="${tr.leaderboard?'On the final leaderboard':'Qualified for the playoffs'}">Q</span>`:''}</td>
         <td class="mono">${s.w}</td><td class="mono">${s.l}</td></tr>`;
     }).join("");
     return `<div class="tablewrap" style="max-width:460px;margin-bottom:12px"><table class="data">
       <thead><tr><th class="no-sort rankcol">#</th><th class="no-sort">Team</th><th class="no-sort">W</th><th class="no-sort">L</th></tr></thead>
-      <tbody>${rows}</tbody></table>${done?'<div class="grp-adv-note">Top 2 advance to the playoffs</div>':''}</div>`;
+      <tbody>${rows}</tbody></table>${done?`<div class="grp-adv-note">${tr.leaderboard?`Top ${nAdv} go onto the final leaderboard`:'Top 2 advance to the playoffs'}</div>`:''}</div>`;
   };
   const fmtLabel = f => ({single_elim:"Single Elimination",round_robin:"Round Robin",swiss:"Swiss"}[f]||f);
 
@@ -4050,9 +4053,14 @@ function renderTournament(slug){
 
   // teams-attending logo wall
   const wall = (tr.attending||[]).map(row=>{
+    // a slot still to be decided: another event's place-N team (e.g. Challengers Stage #3)
+    if(row.tbc) return `<a class="aw-tile aw-tbc" href="#/tournament/${esc(row.tbc.slug)}"${rAttr(row.team,null)}>
+        <span class="aw-noimg">?</span><span class="aw-txt"><span class="aw-name">TBC</span><span class="aw-from">${esc(row.tbc.short)} #${row.tbc.place}</span></span></a>`;
     const t = row.teamSlug ? teamBySlug(row.teamSlug) : null;
     const logo = nationCrest(row.team,22) || (t&&t.logo ? `<img src="${esc(t.logo)}" alt="">` : `<span class="aw-noimg">${initials(row.team)}</span>`);
-    const inner = `${logo}<span class="aw-name">${esc(row.team)}</span>`;
+    const sub = row.via ? `<span class="aw-from" title="${esc(`The #${row.via.place} team of the ${row.via.name}`)}">via ${esc(row.via.short)} #${row.via.place}</span>`
+      : row.inviteRank ? `<span class="aw-from" title="Invited as BPL ranking #${row.inviteRank}">BPL #${row.inviteRank}</span>` : '';
+    const inner = `${logo}${sub?`<span class="aw-txt"><span class="aw-name">${esc(row.team)}</span>${sub}</span>`:`<span class="aw-name">${esc(row.team)}</span>`}`;
     return row.teamSlug
       ? `<a class="aw-tile" href="#/team/${row.teamSlug}"${rAttr(row.team,row.teamSlug)}>${inner}</a>`
       : `<span class="aw-tile"${rAttr(row.team,row.teamSlug)}>${inner}</span>`;
@@ -4102,6 +4110,15 @@ function renderTournament(slug){
     ${fsGroup.length?`<details class="fs-details"><summary>Group stage — ${fsGroup.length} teams that didn't advance</summary>
        <div class="tablewrap fs-wrap${hasPrizes?' fs-prize':''}"><table class="data fs-table"><tbody>${fsGroup.map(fsRow).join("")}</tbody></table></div></details>`:''}` : '';
 
+  const upcoming = !!(tr.field&&tr.field.length) && !(tr.stages&&tr.stages.length);
+  const tbcLeft = (tr.attending||[]).filter(r=>r.tbc);
+  const upcomingSection = upcoming ? `<div class="ev-upcoming">
+      <div class="evu-head"><span class="evu-pill">Upcoming</span> Starts ${fmtDate(tr.date)}</div>
+      ${tr.formatNote?`<p>${esc(tr.formatNote)}</p>`:''}
+      ${tbcLeft.length?`<p class="muted">${tbcLeft.length} place${tbcLeft.length===1?'':'s'} still to be decided: ${[...new Set(tbcLeft.map(r=>r.tbc.slug))].map(sl=>{
+        const r=tbcLeft.find(x=>x.tbc.slug===sl); const n=tbcLeft.filter(x=>x.tbc.slug===sl).length;
+        return `the top ${n} of the <a href="#/tournament/${esc(sl)}">${esc(r.tbc.name)}</a>`; }).join(' and ')} (marked TBC below, filled in when it ends).</p>`:''}
+    </div>` : '';
   app.innerHTML = `
     <div class="crumb"><a href="#/tournaments">Tournaments</a><span class="sep">/</span>${esc(tr.name)}</div>
     <div class="profile-head">
@@ -4110,8 +4127,8 @@ function renderTournament(slug){
         <div class="ph-sub">${fmtDate(tr.date)} · ${tr.format} · ${tr.participantCount} teams${LIVE.seen[tr.slug]?' · '+livePill(tr.slug):''}</div>
         ${tr.prizePool||_adminOn?`<div class="tp-prize">Prize pool: <b>${tr.prizePool?fmtUSD(tr.prizePool):'<span class="muted">not set</span>'}</b>
           ${_adminOn?`<span class="tp-edit"><input id="tp-prize" class="adm-in" inputmode="numeric" value="${tr.prizePool||''}" placeholder="$ prize pool" title="${esc(PRIZE_HINT)}"><button id="tp-prize-save" class="loadmore">Save</button><span id="tp-prize-msg" class="muted"></span></span>`:''}</div>`:''}
-        <div style="margin-top:12px;font-size:15px">${champLabel(tr)}:
-          <strong style="font-size:18px;font-family:'Chakra Petch'">${crest(tr.champion, tr.championTeam)}</strong></div>
+        ${upcoming ? '' : `<div style="margin-top:12px;font-size:15px">${champLabel(tr)}:
+          <strong style="font-size:18px;font-family:'Chakra Petch'">${crest(tr.champion, tr.championTeam)}</strong></div>`}
         ${tr.mvp ? `<div class="tourn-mvp">⭐ <span class="muted">${tr.champion?'Tournament MVP':'MVP so far'}:</span>
           <a href="#/player/${tr.mvp.slug}" class="tm-mvp-name">${flag(tr.mvp.iso)}${esc(tr.mvp.name)}</a>
           <span class="muted" style="font-size:12px">${tr.mvp.rating!=null?`${tr.mvp.rating.toFixed(2)} rating over ${tr.mvp.maps} maps`:`${tr.mvp.mvpRounds} MVP round${tr.mvp.mvpRounds===1?'':'s'}`}${tr.mvp.team&&tr.mvp.team!=='—'?' · '+esc(tr.mvp.team):''}</span></div>` : ''}
@@ -4129,9 +4146,10 @@ function renderTournament(slug){
       <div>${wallSection || (tr.manual?'':'<div class="muted">No roster data.</div>')}</div>
     </div>
     <h2 class="section-title" style="margin-top:24px"><span class="accent-bar"></span>${isElim?'Bracket':'Match Results'}</h2>`}
+    ${upcomingSection}
     ${tr.stages ? finalStandingsSection : ''}
     ${tr.stages ? wallSection : ''}
-    ${bracketBlock}`;
+    ${upcoming ? '' : bracketBlock}`;
 
   // draw bracket connector lines once laid out
   drawAllConnectors(document);
@@ -4829,6 +4847,7 @@ function fantasyLock(tr){
 }
 function fantasySupported(tr){
   if(!tr || /qualifier/i.test(tr.slug)) return false;
+  if((tr.attending||[]).some(r=>r.tbc)) return false;                     // places still TBC: wait for the full field
   const att=(tr.attending||[]).filter(r=>(r.players||[]).filter(p=>p.slug).length>=3);
   if(att.length<4) return false;
   if(!tr.champion) return true;                                            // upcoming / live

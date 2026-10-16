@@ -1263,6 +1263,39 @@ def main():
                 })
         tr["attending"] = att
 
+    # ---- events before their draw (manual "field"): Teams Attending = the field ----
+    # Entrants by name get their team's current roster. A slot {"tbc", "from", "place"} is the place-N
+    # team of another event (e.g. Challengers #1 -> Legends) once that event has a champion, with the
+    # line-up it played there; until then it shows as TBC, marked with where it comes from.
+    _tr_by_slug = {t["slug"]: t for t in tournaments}
+    for tr in tournaments:
+        if not tr.get("field") or tr.get("stages"):
+            continue
+        att = []
+        for e in tr["field"]:
+            if not e.get("tbc"):
+                tm = slug_to_team_a.get(e.get("teamSlug"))
+                att.append({"team": tm["name"] if tm else e.get("team", ""), "teamSlug": tm["slug"] if tm else None,
+                            "inviteRank": e.get("rank"),
+                            "players": [{"hist": rp["name"], "name": rp["name"], "slug": rp["slug"], "iso": rp.get("iso", ""),
+                                         "captain": False} for rp in (tm.get("roster", []) if tm else [])]})
+                continue
+            src = _tr_by_slug.get(e.get("from"))
+            src_name = src["name"] if src else (e.get("from") or "")
+            frm = {"slug": e.get("from"), "name": src_name, "place": e.get("place"),
+                   "short": re.sub(r"^BPL\s+|\s+\d{4}$", "", src_name)}
+            got = None
+            if src and src.get("champion"):
+                got = next((x for x in src.get("finalStandings", []) if x.get("rank") == e.get("place")), None)
+            if got:
+                srow = next((r for r in src.get("attending", []) if (got.get("teamSlug") and r.get("teamSlug") == got["teamSlug"])
+                             or norm_key(r.get("team", "")) == norm_key(got["name"])), None)
+                att.append({"team": got["name"], "teamSlug": got.get("teamSlug"),
+                            "players": srow["players"] if srow else [], "via": frm})
+            else:
+                att.append({"team": f"TBC · {frm['short']} #{e.get('place')}", "teamSlug": None, "players": [], "tbc": frm})
+        tr["attending"] = att
+
     # ---- BPL team ranking (build/team_rank.py): opponent-weighted placements + results Elo + core rule.
     # Needs the attending rosters above (ad-hoc squad strength, who earned each result), so it runs here
     # and supersedes the placement-only compute_team_points() pass earlier in the build.

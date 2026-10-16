@@ -520,6 +520,12 @@ def to_standard(man):
         "noHonors": bool(man.get("noHonors")),
         "nationTeam": man.get("nationTeam"),
         "leaderboard": lb,
+        # Before the groups are drawn: who's in (by name) and the slots still to be decided, each
+        # filled from another event's final standings ({"tbc": true, "from": <event slug>, "place": n}).
+        # parse.py resolves the slots and builds the Teams Attending list from this.
+        "field": man.get("field") or [],
+        "formatLabel": man.get("formatLabel", ""),
+        "formatNote": man.get("formatNote", ""),
     }
 
 # ---------------- persistence ----------------

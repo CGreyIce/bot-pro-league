@@ -151,13 +151,21 @@ def process_manual(raw, team_map, alias):
             fmt += " + Playoffs"
     else:
         fc = _C(fmt_name.get(s["format"], s["format"]) for s in stages)
-        fmt = " + ".join((f"{n}× {f}" if n > 1 else f) for f, n in fc.items()) or "—"
+        fmt = " + ".join((f"{n}× {f}" if n > 1 else f) for f, n in fc.items()) or raw.get("formatLabel") or "—"
+    # the field before the draw: entrants by name (resolved to team pages) and slots still to be decided
+    field = []
+    for e in raw.get("field", []):
+        if e.get("tbc"):
+            field.append({"tbc": True, "from": e.get("from"), "place": e.get("place")})
+        else:
+            dn, sl = resolve(e.get("team", ""))
+            field.append({"team": dn, "teamSlug": sl, "rank": e.get("rank")})   # rank: BPL ranking when invited
     return {
         "slug": slug, "name": name, "date": date, "year": (date[:4] if date else ""),
         "tier": tier, "tierLabel": TIER_LABEL.get(tier, tier),
         "type": raw.get("type", "multi"),
         "format": fmt,
-        "participantCount": len(raw.get("participants", [])),
+        "participantCount": len(raw.get("participants", [])) or len(raw.get("field", [])),
         "champion": champ_name or None, "championTeam": champ_slug,
         "runnerUp": None, "runnerUpTeam": None,
         "standings": overall, "bracket": bracket, "stages": stages_out,
@@ -166,6 +174,8 @@ def process_manual(raw, team_map, alias):
         "noHonors": bool(raw.get("noHonors")),
         "nationTeam": raw.get("nationTeam"),
         "leaderboard": _lb_out(raw.get("leaderboard"), resolve),
+        "field": field,
+        "formatNote": raw.get("formatNote", ""),
     }
 
 def _lb_out(lb, resolve):
@@ -179,7 +189,7 @@ def _lb_out(lb, resolve):
     return {**lb, "rows": rows}
 
 def process_one(raw, team_map, alias):
-    if raw.get("stages"):
+    if raw.get("stages") or raw.get("manual"):     # admin-built (manual) events, even before any stage exists
         return process_manual(raw, team_map, alias)
     slug = raw["slug"]
     # meta from the file itself (manual/admin tournaments), else the hardcoded table

@@ -71,7 +71,7 @@ def suggest(slug):
     rules = {"recap": True}
     if "challengers" in name:
         rules["champion_pro"] = {"tag": "", "logo": None}
-        rules["seeds"] = {"target": f"BPL Legends Stage {year}", "count": min(10, len(st))}
+        rules["seeds"] = {"target": f"BPL Legends Stage {year}", "count": min(15, len(st))}   # the top 3 of each of the 5 groups
     elif "pro cup" in name:
         rules["top_pro"] = {"n": 8, "teams": {}}
         rules["disband_rest"] = {"n": 8}

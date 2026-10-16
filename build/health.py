@@ -78,6 +78,8 @@ def run(data, data_dir):
         nations = "nations-cup" in tr["slug"]
         seen = {}
         for row in tr.get("attending", []):
+            if row.get("tbc"):
+                continue                            # a slot still to be decided (another event's place N)
             team, pls = row.get("team"), row.get("players", [])
             link = f"#/tournament/{tr['slug']}"
             if len(pls) != 5 and not nations:

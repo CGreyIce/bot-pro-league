@@ -1,0 +1,155 @@
+{
+ "slug": "bpl-conquerors-stage-2026",
+ "name": "BPL Conquerors Stage 2026",
+ "tier": "major",
+ "date": "2026-11-28",
+ "stages": [],
+ "formatLabel": "4 Groups (Swiss) + Playoffs",
+ "formatNote": "32 teams: the top 16 of the BPL rankings and the 16 Legends Stage qualifiers. 4 Swiss groups of 8 (4 direct invites and 4 Legends qualifiers in each), 5 rounds. The top 2 of each group go to an 8-team playoff. The groups are drawn once the Legends Stage ends.",
+ "field": [
+  {
+   "team": "Cosmos",
+   "rank": 1
+  },
+  {
+   "team": "Aimpunch",
+   "rank": 2
+  },
+  {
+   "team": "Opal",
+   "rank": 3
+  },
+  {
+   "team": "The Gigarage",
+   "rank": 4
+  },
+  {
+   "team": "Artisian",
+   "rank": 5
+  },
+  {
+   "team": "Neverland",
+   "rank": 6
+  },
+  {
+   "team": "New Jade",
+   "rank": 7
+  },
+  {
+   "team": "entity",
+   "rank": 8
+  },
+  {
+   "team": "Lemon Tree",
+   "rank": 9
+  },
+  {
+   "team": "Aetherline",
+   "rank": 10
+  },
+  {
+   "team": "xPlosiv",
+   "rank": 11
+  },
+  {
+   "team": "degree",
+   "rank": 12
+  },
+  {
+   "team": "Flood Flashers",
+   "rank": 13
+  },
+  {
+   "team": "Infernum E-Sports",
+   "rank": 14
+  },
+  {
+   "team": "PepegaX",
+   "rank": 15
+  },
+  {
+   "team": "Bloom E-Sports",
+   "rank": 16
+  },
+  {
+   "tbc": true,
+   "from": "bpl-legends-stage-2026",
+   "place": 1
+  },
+  {
+   "tbc": true,
+   "from": "bpl-legends-stage-2026",
+   "place": 2
+  },
+  {
+   "tbc": true,
+   "from": "bpl-legends-stage-2026",
+   "place": 3
+  },
+  {
+   "tbc": true,
+   "from": "bpl-legends-stage-2026",
+   "place": 4
+  },
+  {
+   "tbc": true,
+   "from": "bpl-legends-stage-2026",
+   "place": 5
+  },
+  {
+   "tbc": true,
+   "from": "bpl-legends-stage-2026",
+   "place": 6
+  },
+  {
+   "tbc": true,
+   "from": "bpl-legends-stage-2026",
+   "place": 7
+  },
+  {
+   "tbc": true,
+   "from": "bpl-legends-stage-2026",
+   "place": 8
+  },
+  {
+   "tbc": true,
+   "from": "bpl-legends-stage-2026",
+   "place": 9
+  },
+  {
+   "tbc": true,
+   "from": "bpl-legends-stage-2026",
+   "place": 10
+  },
+  {
+   "tbc": true,
+   "from": "bpl-legends-stage-2026",
+   "place": 11
+  },
+  {
+   "tbc": true,
+   "from": "bpl-legends-stage-2026",
+   "place": 12
+  },
+  {
+   "tbc": true,
+   "from": "bpl-legends-stage-2026",
+   "place": 13
+  },
+  {
+   "tbc": true,
+   "from": "bpl-legends-stage-2026",
+   "place": 14
+  },
+  {
+   "tbc": true,
+   "from": "bpl-legends-stage-2026",
+   "place": 15
+  },
+  {
+   "tbc": true,
+   "from": "bpl-legends-stage-2026",
+   "place": 16
+  }
+ ]
+}
