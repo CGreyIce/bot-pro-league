@@ -57098,6 +57098,107 @@
      ]
     }
    ]
+  },
+  "3-13": {
+   "maps": [
+    {
+     "map": "Dust2",
+     "scoreA": 7,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Snowbell Syndicate",
+       "name": "FumishiroYummy",
+       "k": 21,
+       "a": 0,
+       "d": 14,
+       "mvp": 3,
+       "score": 46
+      },
+      {
+       "team": "Snowbell Syndicate",
+       "name": "yxie",
+       "k": 18,
+       "a": 3,
+       "d": 14,
+       "mvp": 3,
+       "score": 46
+      },
+      {
+       "team": "Snowbell Syndicate",
+       "name": "Arya Kuroha",
+       "k": 8,
+       "a": 1,
+       "d": 16,
+       "mvp": 1,
+       "score": 21
+      },
+      {
+       "team": "Snowbell Syndicate",
+       "name": "snowybluebell",
+       "k": 6,
+       "a": 2,
+       "d": 15,
+       "mvp": 0,
+       "score": 16
+      },
+      {
+       "team": "Snowbell Syndicate",
+       "name": "itzfrenzy",
+       "k": 4,
+       "a": 3,
+       "d": 16,
+       "mvp": 0,
+       "score": 16
+      },
+      {
+       "team": "Nightfang Covenant",
+       "name": "KiokoCheiko",
+       "k": 18,
+       "a": 3,
+       "d": 13,
+       "mvp": 2,
+       "score": 45
+      },
+      {
+       "team": "Nightfang Covenant",
+       "name": "plushyoshii",
+       "k": 18,
+       "a": 1,
+       "d": 10,
+       "mvp": 3,
+       "score": 44
+      },
+      {
+       "team": "Nightfang Covenant",
+       "name": "hazielvamp",
+       "k": 14,
+       "a": 5,
+       "d": 11,
+       "mvp": 3,
+       "score": 41
+      },
+      {
+       "team": "Nightfang Covenant",
+       "name": "SyberiaK",
+       "k": 15,
+       "a": 3,
+       "d": 9,
+       "mvp": 2,
+       "score": 37
+      },
+      {
+       "team": "Nightfang Covenant",
+       "name": "JStarWolf",
+       "k": 10,
+       "a": 1,
+       "d": 14,
+       "mvp": 3,
+       "score": 27
+      }
+     ]
+    }
+   ]
   }
  }
 }
