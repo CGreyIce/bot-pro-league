@@ -519,8 +519,9 @@
      "round": 3,
      "a": "Millefiore",
      "b": "Nightfang Covenant",
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1792156613
     },
     {
      "id": 11,

@@ -56603,6 +56603,103 @@
        "score": 31
       }
      ]
+    },
+    {
+     "map": "Mirage",
+     "scoreA": 7,
+     "scoreB": 13,
+     "players": [
+      {
+       "team": "Millefiore",
+       "name": "miyomille",
+       "k": 19,
+       "a": 1,
+       "d": 17,
+       "mvp": 2,
+       "score": 42
+      },
+      {
+       "team": "Millefiore",
+       "name": "Asumi Sena",
+       "k": 14,
+       "a": 3,
+       "d": 16,
+       "mvp": 3,
+       "score": 39
+      },
+      {
+       "team": "Millefiore",
+       "name": "mominichi",
+       "k": 10,
+       "a": 2,
+       "d": 15,
+       "mvp": 0,
+       "score": 27
+      },
+      {
+       "team": "Millefiore",
+       "name": "Kaga Nazuna",
+       "k": 9,
+       "a": 1,
+       "d": 14,
+       "mvp": 1,
+       "score": 22
+      },
+      {
+       "team": "Millefiore",
+       "name": "rach.elx_",
+       "k": 7,
+       "a": 2,
+       "d": 18,
+       "mvp": 1,
+       "score": 16
+      },
+      {
+       "team": "Nightfang Covenant",
+       "name": "hazielvamp",
+       "k": 21,
+       "a": 2,
+       "d": 10,
+       "mvp": 4,
+       "score": 55
+      },
+      {
+       "team": "Nightfang Covenant",
+       "name": "plushyoshii",
+       "k": 23,
+       "a": 0,
+       "d": 12,
+       "mvp": 3,
+       "score": 52
+      },
+      {
+       "team": "Nightfang Covenant",
+       "name": "KiokoCheiko",
+       "k": 15,
+       "a": 2,
+       "d": 12,
+       "mvp": 2,
+       "score": 36
+      },
+      {
+       "team": "Nightfang Covenant",
+       "name": "SyberiaK",
+       "k": 12,
+       "a": 0,
+       "d": 11,
+       "mvp": 3,
+       "score": 27
+      },
+      {
+       "team": "Nightfang Covenant",
+       "name": "JStarWolf",
+       "k": 9,
+       "a": 3,
+       "d": 14,
+       "mvp": 1,
+       "score": 26
+      }
+     ]
     }
    ]
   }
