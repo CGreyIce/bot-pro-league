@@ -185,6 +185,8 @@ class Roster:
         self.namech = load_json("name_changes.json", {})
         self.teamch = load_json("team_changes.json", {})
         self.notes = load_json("player_bio_notes.json", {})
+        self.subroles = load_json("player_subroles.json", {})            # build/subroles.py
+        self.subroles_pin = load_json("player_subroles_override.json", {})
         self.dirty_json = set()
         self.changes = []
         self.extra_writes = []          # callables run on apply (logos, articles...)
@@ -452,9 +454,24 @@ class Roster:
             if live_sync:
                 self._sync_live(name, FREE_AGENT, team.strip())
 
-    def edit_player(self, player, role=None, country=None, gender=None):
+    def edit_player(self, player, role=None, country=None, gender=None, sub_role=None):
         p = self.player(player)
         name = p["name"]
+        if sub_role:
+            # pinned by hand (build/subroles.py places pinned roles first); "auto" hands it back to the build
+            import subroles
+            if sub_role == "auto":
+                if self.subroles_pin.pop(norm(name), None) is None:
+                    raise RosterError(f"{name}'s sub-role isn't pinned.")
+                self.note(f"{name}: sub-role back to automatic (now {p.get('subRole') or 'none'}).")
+            elif sub_role in subroles.SUBROLES:
+                if "awp" in (p.get("role") or "").lower() and not role:
+                    raise RosterError(f"{name} is an AWPer: sub-roles are for riflers (change the role too).")
+                self.subroles_pin[norm(name)] = sub_role
+                self.note(f"{name}: sub-role {p.get('subRole') or 'none'} → {sub_role} (pinned).")
+            else:
+                raise RosterError(f"Unknown sub-role '{sub_role}'.")
+            self.dirty_json.add("player_subroles_override.json")
         if role:
             rows = self.pro.find(name) + self.am.find(name) + self.solo.find(name)
             for r in rows:
@@ -478,7 +495,7 @@ class Roster:
             self.gender[norm(name)] = gender                # "NB" stored explicitly = chosen they/them
             self.dirty_json.add("player_gender.json")
             self.note(f"{name}: gender → {gender}.")
-        if not (role or country or gender):
+        if not (role or country or gender or sub_role):
             raise RosterError("Nothing to change.")
 
     def set_genders(self, mapping):
@@ -512,7 +529,8 @@ class Roster:
         for i, l in enumerate(self.allp.lines):
             if norm(l.split("\t")[0]) == norm(old):
                 self.allp.lines[i] = new + l[len(l.split("\t")[0]):]; self.allp.dirty = True
-        for store, fname in ((self.gender, "player_gender.json"), (self.notes, "player_bio_notes.json")):
+        for store, fname in ((self.gender, "player_gender.json"), (self.notes, "player_bio_notes.json"),
+                             (self.subroles, "player_subroles.json"), (self.subroles_pin, "player_subroles_override.json")):
             if norm(old) in store:
                 store[norm(new)] = store.pop(norm(old)); self.dirty_json.add(fname)
         for k, v in list(self.namech.items()):
@@ -792,7 +810,8 @@ class Roster:
         files = {"player_gender.json": self.gender, "roster_moves.json": self.moves,
                  "provisional_teams.json": self.prov, "disbanded_teams.json": self.disb,
                  "name_changes.json": self.namech, "team_changes.json": self.teamch,
-                 "player_bio_notes.json": self.notes, "hist_rosters.json": getattr(self, "_hist", None)}
+                 "player_bio_notes.json": self.notes, "hist_rosters.json": getattr(self, "_hist", None),
+                 "player_subroles.json": self.subroles, "player_subroles_override.json": self.subroles_pin}
         for f in self.dirty_json:
             save_json(f, files[f], indent=2 if f in ("name_changes.json", "team_changes.json", "provisional_teams.json") else 1)
         for fn in self.extra_writes:
@@ -803,7 +822,8 @@ ACTIONS = {
     "transfer": lambda r, b: r.transfer(b.get("player"), b.get("to"), b.get("date"), fee=b.get("fee") or 0, live_sync=b.get("liveSync", True)),
     "add": lambda r, b: r.add_player(b.get("name"), b.get("country"), b.get("gender", ""), b.get("role", ""), b.get("team", ""), b.get("date"),
                                      live_sync=b.get("liveSync", True)),
-    "edit": lambda r, b: r.edit_player(b.get("player"), b.get("role") or None, b.get("country") or None, b.get("gender") or None),
+    "edit": lambda r, b: r.edit_player(b.get("player"), b.get("role") or None, b.get("country") or None, b.get("gender") or None,
+                                       b.get("subRole") or None),
     "rename_player": lambda r, b: r.rename_player(b.get("old"), b.get("new")),
     "rename_team": lambda r, b: r.rename_team(b.get("old"), b.get("new")),
     "promote": lambda r, b: r.promote_team(b.get("name"), b.get("tag"), b.get("players", []), b.get("logo"),

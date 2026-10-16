@@ -30,13 +30,13 @@ let _soloLeague=null;
 function soloLeague(){
   if(_soloLeague) return _soloLeague;
   const out=[], seen=new Set();
-  const blank=p=>({name:p.name, iso:p.iso, nat:p.nat, team:p.team, role:p.role, slug:p.slug, pool:"solo",
+  const blank=p=>({name:p.name, iso:p.iso, nat:p.nat, team:p.team, role:p.role, subRole:p.subRole, slug:p.slug, pool:"solo",
     kills:0, assists:0, deaths:0, mvp:0, wins:0, losses:0, maps:0, kdr:0, winrate:0, ratingPoints:null, level:null, rating:null});
   (DATA.players.solo||[]).forEach(p=>{ const k=normKey(p.name); if(seen.has(k)) return; seen.add(k); out.push(p); });
   ["pro","amateur"].forEach(pk=>(DATA.players[pk]||[]).forEach(p=>{
     if(p.shadowAmateur) return;                 // shadow is redundant with the amateur entry
     const k=normKey(p.name); if(seen.has(k)) return; seen.add(k);
-    out.push(p.soloStats ? {...p.soloStats, name:p.name, iso:p.iso, nat:p.nat, team:p.team, role:p.role, slug:p.slug, pool:"solo"}
+    out.push(p.soloStats ? {...p.soloStats, name:p.name, iso:p.iso, nat:p.nat, team:p.team, role:p.role, subRole:p.subRole, slug:p.slug, pool:"solo"}
                          : blank(p));
   }));
   return _soloLeague=out;
@@ -63,6 +63,13 @@ function humanBadge(p){
   const admin = p.kind==="admin";
   return `<span class="human-badge${admin?' admin':''}" title="${admin?'League admin':'Human player'}: plays Solo Queue against the BPL bots">${admin?'ADMIN':'HUMAN'}</span>`;
 }
+// Rifler sub-roles (build/subroles.py): IGLs are support, AWPers have none.
+const SUBROLE_NAME = {entry:"Entry", lurker:"Lurker", anchor:"Anchor", support:"Support"};
+const subRoleName = p => SUBROLE_NAME[p.subRole] || '';
+// "Rifler · Entry", "IGL · Support", "Awper"
+const roleText = p => [p.role, subRoleName(p)].filter(Boolean).join(' · ');
+// The leaderboard's short form: a rifler's sub-role, otherwise the role.
+const roleShort = p => (p.subRole && !/igl/i.test(p.role||'') ? subRoleName(p) : p.role) || '';
 let showHumans = false;
 try { showHumans = localStorage.getItem("bpl_show_humans")==="1"; } catch(e) {}
 // Advanced stats, recorded by the BPL Bots plugin (from October 2026, so only on maps since then).
@@ -545,7 +552,7 @@ function renderTeam(slug){
   const rosterHtml = roster.map(p=>`<a class="pcard-mini" href="#/player/${p.slug}">
       <div class="avatar">${initials(p.name)}</div>
       <div><div class="pm-name">${flag(p.iso)}${esc(p.name)}</div>
-      <div class="pm-sub">${esc(p.role||'—')} ${p.ratingPoints!=null?'· '+p.ratingPoints+' pts · Lvl '+p.level:''}</div></div>
+      <div class="pm-sub">${esc(roleText(p)||'—')} ${p.ratingPoints!=null?'· '+p.ratingPoints+' pts · Lvl '+p.level:''}</div></div>
     </a>`).join("");
 
   const stat = (v,l,acc)=>`<div class="stat${acc?' accent':''}"><div class="sv">${v}</div><div class="sl">${l}</div></div>`;
@@ -716,7 +723,7 @@ function renderPlayers(arg){
     ["#", (p,i)=>p.human?'<span class="muted" title="Humans aren\'t ranked against the bots">—</span>':(p._rk||i+1), "rankcol"],
     ["Player", p=>`<span class="tm-rank">${playerLink(p)}${p.provisional?'<span class="prov-badge" title="Provisional — under 5 maps played">PROV</span>':''}${playersSort.key==="Rating Points"?rankDeltaBadge(p, pool==="solo"?"their last solo game":"their last match"):''}</span>`, "name-cell", p=>p.name],
     ["Team", p=>teamCell(p.team), "", p=>p.team],
-    ["Role", p=>p.role?`<span class="pill role-pill">${esc(p.role)}</span>`:'—', "", p=>p.role],
+    ["Role", p=>roleShort(p)?`<span class="pill role-pill" title="${esc(roleText(p))}">${esc(roleShort(p))}</span>`:'—', "", p=>roleShort(p)],
     ["Rating Points", p=>pointsBadge(p.ratingPoints), "mono", p=>p.ratingPoints==null?-1:p.ratingPoints],
     ["Lvl", p=>levelChip(p.level), "", p=>p.level||0],
     ...(playersView==="adv" ? (()=>{
@@ -868,7 +875,7 @@ function renderPlayer(slug){
       <div class="avatar" style="width:88px;height:88px;border-radius:14px;font-size:34px">${initials(p.name)}</div>
       <div class="ph-main">
         <h1>${flag(p.iso)}${esc(p.name)}</h1>
-        <div class="ph-sub">${p.nat?esc(p.nat)+' · ':''}${p.role?esc(p.role)+' · ':''}${t?`<a href="#/team/${t.slug}" style="color:var(--link)">${esc(t.name)}</a>`:esc(p.team||'Teamless')} · ${poolName}</div>
+        <div class="ph-sub">${p.nat?esc(p.nat)+' · ':''}${p.role?esc(roleText(p))+' · ':''}${t?`<a href="#/team/${t.slug}" style="color:var(--link)">${esc(t.name)}</a>`:esc(p.team||'Teamless')} · ${poolName}</div>
         <div style="margin-top:10px">${p.level?`${levelChip(p.level)}<span class="levelchip" style="margin-left:8px">Level ${p.level}</span>`:'<span class="muted">Unranked</span>'}${genBadge(p)}</div>
       </div>
       ${pr?`<div class="ph-rank"${peakAttr(p.peak)}><div class="big">#${pr.rank}</div><div class="lbl">Pro Rank</div></div>`:''}
@@ -882,6 +889,7 @@ function renderPlayer(slug){
         ${p.aka&&p.aka.length?`<div class="ib-row"><span class="k">Also known as</span><span class="v" style="font-size:12px">${p.aka.map(esc).join(', ')}</span></div>`:''}
         <div class="ib-row"><span class="k">Team</span><span class="v">${t?`<a href="#/team/${t.slug}" style="color:var(--link)">${esc(t.name)}</a>`:esc(p.team||'—')}</span></div>
         <div class="ib-row"><span class="k">Role</span><span class="v">${esc(p.role||'—')}</span></div>
+        ${p.subRole?`<div class="ib-row" title="Their job on the team; the BPL bots play it in game"><span class="k">Sub-role</span><span class="v">${esc(subRoleName(p))}</span></div>`:''}
         <div class="ib-row"><span class="k">Pool</span><span class="v">${poolName}</span></div>
         ${p.joined?`<div class="ib-row" title="${esc(genTip(p))}"><span class="k">Joined BPL</span><span class="v">${p.joined} · ${genLabel(p.generation)}</span></div>`:''}
         ${p.debutEvent?`<div class="ib-row"><span class="k">Debut event</span><span class="v" style="font-size:12px"><a href="#/tournament/${esc(p.debutEvent.slug)}" style="color:var(--link)">${esc(p.debutEvent.name)}</a></span></div>`
@@ -3282,7 +3290,9 @@ function rsFormHtml(tab){
   if(tab==="edit") return rsField("Player", rsInput("rs-player","rs-dl-players","e.g. miorine")) + hint("rs-player-hint")
     + `<p class="muted" style="font-size:11px;margin:6px 0 0">Leave a field on "no change" to keep it.</p>`
     + rsField("Role", rsSelect("rs-role", m.roles, "no change")) + rsField("Country", rsSelect("rs-country", m.countries, "no change"))
-    + rsField("Gender", rsSelect("rs-gender", ["F","M","NB"], "no change"));
+    + rsField("Gender", rsSelect("rs-gender", ["F","M","NB"], "no change"))
+    + rsField("Sub-role (riflers)", rsSelect("rs-subrole", ["entry","lurker","anchor","support","auto"], "no change"))
+    + `<p class="muted" style="font-size:11px;margin:4px 0 0">A sub-role picked here is pinned: transfers won't move it. “auto” lets the build choose again.</p>`;
   if(tab==="rename") return rsField("What", rsSelect("rs-kind", ["Player","Team"]))
     + rsField("Current name", rsInput("rs-old","rs-dl-players","")) + rsField("New name", rsInput("rs-new","","new name"));
   if(tab==="promote") return rsField("Team", rsInput("rs-pteam","rs-dl-teams","e.g. the Challengers champion"))
@@ -3299,7 +3309,7 @@ function rsCollect(tab){
   const live = $("#rs-live") ? $("#rs-live").checked : true;
   if(tab==="transfer") return {action:"transfer", player:v("rs-player"), to:v("rs-to")||"Free agent", date:v("rs-date"), fee:parseUSD(v("rs-fee")), liveSync:live};
   if(tab==="add") return {action:"add", name:v("rs-name"), country:v("rs-country"), gender:v("rs-gender"), role:v("rs-role"), team:v("rs-team"), liveSync:live};
-  if(tab==="edit") return {action:"edit", player:v("rs-player"), role:v("rs-role"), country:v("rs-country"), gender:v("rs-gender")};
+  if(tab==="edit") return {action:"edit", player:v("rs-player"), role:v("rs-role"), country:v("rs-country"), gender:v("rs-gender"), subRole:v("rs-subrole")};
   if(tab==="rename") return {action: v("rs-kind")==="Team"?"rename_team":"rename_player", old:v("rs-old"), new:v("rs-new")};
   if(tab==="promote") return {action:"promote", name:v("rs-pteam"), tag:v("rs-tag"), origin:v("rs-origin"),
     players:[0,1,2,3,4].map(i=>v("rs-p"+i)).filter(Boolean), provisional:$("#rs-prov").checked, logo:_rsLogo};

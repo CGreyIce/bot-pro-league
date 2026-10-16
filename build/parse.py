@@ -1869,6 +1869,12 @@ def main():
     _hist = history.build(pro, teams)
     history_events = _hist["events"]
 
+    # ---- rifler sub-roles (entry / lurker / anchor / support), kept with each player (build/subroles.py).
+    # Last thing before the output: every team's line-up is final by now (ad-hoc and provisional
+    # teams are filled in late in the build).
+    import subroles as _subroles
+    _subroles.apply(pro + amateur, DATA, norm_key, lambda p: p.get("rating") or 0)
+
     data = {
         "teams": teams,
         "articles": articles,
