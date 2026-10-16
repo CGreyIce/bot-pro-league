@@ -64,8 +64,8 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:.4px;
 .search-results a:last-child{border-bottom:0}
 .search-results a:hover{background:var(--panel2)}
 .search-results .sr-type{margin-left:auto;font-size:11px;color:var(--muted2);text-transform:uppercase}
-/* Just above the collapsed menu (1341-1430px wide) the full menu + search didn't quite fit: a bit tighter there */
-@media(min-width:1341px) and (max-width:1430px){.mainnav a{padding:8px 5px}.search input{width:118px}}
+/* Just above the collapsed menu (1341-1480px wide) the full menu + search didn't quite fit: a bit tighter there */
+@media(min-width:1341px) and (max-width:1480px){.mainnav a{padding:8px 5px}.search input{width:118px}}
 
 /* ---- responsive nav (hamburger) ---- */
 .nav-collapse{display:contents}
@@ -533,6 +533,8 @@ a.form-dot:hover{transform:translateY(-2px)}
 /* match scoreboard (HLTV-style) */
 .sb-wrap{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 @media(max-width:760px){.sb-wrap{grid-template-columns:1fr}}
+.sb-wrap.sb-stack{grid-template-columns:1fr}
+.sb-wrap>.sb-team{min-width:0}
 .sb-head{display:flex;align-items:center;gap:8px;font-family:'Chakra Petch';font-size:16px;margin-bottom:6px}
 .sb-head img{height:22px;width:22px;object-fit:contain}
 .sb-table th,.sb-table td{padding:7px 8px}
@@ -1408,3 +1410,8 @@ h1 .human-badge{height:22px;font-size:12px;padding:0 8px;margin-left:10px}
 /* human profile: most-played-with teammate */
 .hm-with{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:12px;background:var(--panel);border:1px solid var(--border);border-radius:9px;padding:9px 13px;font-size:14px}
 .hm-with a{color:var(--link);font-weight:600}
+
+/* Advanced stats (BPL Bots plugin): the profile block and the leaderboard's Basic / Advanced switch */
+.adv-head{font:700 13px 'Chakra Petch',sans-serif;text-transform:uppercase;letter-spacing:.8px;margin:-4px 0 8px}
+.adv-head .muted{font:400 11px Inter,system-ui,sans-serif;text-transform:none;letter-spacing:0}
+.adv-detail{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:12px;margin:-8px 0 18px}

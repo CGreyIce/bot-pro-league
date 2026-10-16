@@ -246,6 +246,19 @@ def parse_player_pool(rows, pool):
         print(f"  [{pool}] removed {len(removed)}: {', '.join(removed)}")
     return players
 
+XS_KEYS = ["dmg", "ud", "hs", "fk", "fd", "tk", "k2", "k3", "k4", "k5", "c1", "c2", "c3", "c4", "c5", "kast", "rnd"]
+
+
+def adv_block(x):
+    """Rates from advanced-stat totals: ADR, KAST %, HS %, opening kills/deaths, trades,
+    multi-kill rounds [2k, 3k, 4k, 5k], clutches won [1v1..1v5], utility damage per round."""
+    r = max(1, x["rnd"])
+    return {"maps": x["maps"], "rounds": x["rnd"], "adr": round(x["dmg"] / r, 1),
+            "kast": round(100.0 * x["kast"] / r, 1), "hs": round(100.0 * x["hs"] / max(1, x["k"]), 1),
+            "fk": x["fk"], "fd": x["fd"], "tk": x["tk"], "udr": round(x["ud"] / r, 1),
+            "multi": [x["k2"], x["k3"], x["k4"], x["k5"]], "clutch": [x["c1"], x["c2"], x["c3"], x["c4"], x["c5"]]}
+
+
 def compute_ratings(players, min_maps=0):
     """Normalize within the pool and compute kdr/winrate/rating/tier/level from the
     CURRENT totals. Call AFTER any recorded-scoreboard stats have been merged in.
@@ -674,6 +687,19 @@ def main():
             return 0
         return max(1, round((hi - 13) / 3.0))
 
+    # Advanced stats (ADR, KAST, opening duels, clutches...) from maps the BPL Bots plugin recorded
+    # them for: a scoreboard line with "rnd" (rounds played). Older scoreboards don't have them, so
+    # each player's advanced numbers cover only those maps (adv.maps). Totals here, rates in adv_block.
+    def add_xs(tgt, pl):
+        rnd = int(pl.get("rnd") or 0)
+        if rnd <= 0:
+            return
+        x = tgt.setdefault("_xs", {k: 0 for k in XS_KEYS + ["k", "maps"]})
+        for k in XS_KEYS:
+            x[k] += int(pl.get(k) or 0)
+        x["k"] += int(pl.get("k") or 0)
+        x["maps"] += 1
+
     def merge_scoreboard(m):
         for mp in m["stats"]["maps"]:
             sa, sb = mp.get("scoreA"), mp.get("scoreB")
@@ -685,6 +711,7 @@ def main():
                 tgt["kills"] += int(pl.get("k", 0)); tgt["deaths"] += int(pl.get("d", 0))
                 tgt["assists"] += int(pl.get("a", 0)); tgt["mvp"] += int(pl.get("mvp", 0))
                 tgt["ot"] += ot_periods
+                add_xs(tgt, pl)
                 on_a = norm_key(pl.get("team", "")) == norm_key(m.get("a", ""))
                 if sa is not None and sb is not None and sa != sb:
                     won = (sa > sb) if on_a else (sb > sa)
@@ -816,6 +843,7 @@ def main():
             tgt["kills"] += int(pl.get("k", 0)); tgt["deaths"] += int(pl.get("d", 0))
             tgt["assists"] += int(pl.get("a", 0)); tgt["mvp"] += int(pl.get("mvp", 0))
             tgt["wins"] += 1 if pl.get("won") else 0; tgt["losses"] += 0 if pl.get("won") else 1
+            add_xs(tgt, pl)
 
     # per-player contributions from the MOST RECENT solo game -> drives the solo tab's rank arrows
     # (the tournament scoreboard equivalent, latest_contrib, is built below for the pro/amateur tabs)
@@ -903,6 +931,15 @@ def main():
     solo_humans = _sh.build(_sh.load(DATA), solo_sb, solo_avg, _solo_rating_value, points_for, tier_for, level_for,
                             norm_key, {norm_key(p["name"]) for p in pro + amateur + solo},
                             [p["rating"] for p in solo_ranked], SOLO_MIN_MAPS)
+    hum_by = {norm_key(h["name"]): h for h in solo_humans}
+    for g in solo_sb:                            # their advanced stats, like the bots'
+        for pl in g.get("players", []):
+            h = hum_by.get(norm_key(pl.get("name", "")))
+            if h:
+                add_xs(h, pl)
+    for h in solo_humans:
+        if "_xs" in h:
+            h["adv"] = adv_block(h.pop("_xs"))
     for h in solo_humans:                        # their rating-point change per game, for the game popups
         if h["ratingPoints"] is None:
             continue
@@ -914,6 +951,10 @@ def main():
                 "gain": h["ratingPoints"] - (points_for(r_before) or 0), "ratingPoints": h["ratingPoints"],
                 "soloRank": None, "human": h["kind"]}
 
+    for pool in (pro, amateur, solo):
+        for p in pool:
+            if "_xs" in p:
+                p["adv"] = adv_block(p.pop("_xs"))
     solo_lookup = {}
     for p in solo:
         solo_lookup.setdefault(norm_key(p["name"]), p)
@@ -922,7 +963,8 @@ def main():
                 "wins": sp["wins"], "losses": sp["losses"], "maps": sp["maps"], "kdr": sp["kdr"],
                 "winrate": sp["winrate"], "rating": sp["rating"], "ratingPoints": sp.get("ratingPoints"),
                 "tier": sp["tier"], "level": sp["level"], "soloRank": sp.get("soloRank"), "soloTotal": len(solo_ranked),
-                "rankDelta": sp.get("rankDelta", 0), "provisional": sp.get("provisional", False)}
+                "rankDelta": sp.get("rankDelta", 0), "provisional": sp.get("provisional", False),
+                "adv": sp.get("adv")}
     tourney_names = {norm_key(p["name"]) for p in pro} | {norm_key(p["name"]) for p in amateur}
     for pool in (pro, amateur):
         for p in pool:

@@ -65,6 +65,31 @@ function humanBadge(p){
 }
 let showHumans = false;
 try { showHumans = localStorage.getItem("bpl_show_humans")==="1"; } catch(e) {}
+// Advanced stats, recorded by the BPL Bots plugin (from October 2026, so only on maps since then).
+// A scoreboard line carries the totals (XS_KEYS, build/parse.py); players get p.adv = {maps, rounds,
+// adr, kast, hs, fk, fd, tk, udr, multi:[2k,3k,4k,5k], clutch:[1v1..1v5]}.
+const XS_KEYS = ["dmg","ud","hs","fk","fd","tk","k2","k3","k4","k5","c1","c2","c3","c4","c5","kast","rnd"];
+let playersView = "basic";            // the leaderboard's Basic / Advanced columns
+try { if (localStorage.getItem("bpl_players_view")==="adv") playersView = "adv"; } catch(e) {}
+const total = a=>a.reduce((t,x)=>t+x,0);
+// A stat grid of someone's advanced stats, or '' when they have none yet.
+function advGridHtml(a, stat){
+  if(!a || !a.maps) return '';
+  const multi = ["2k","3k","4k","5k"].map((l,i)=>a.multi[i]?`${a.multi[i]}× ${l}`:'').filter(Boolean).join(' · ') || 'none yet';
+  const clutch = a.clutch.map((n,i)=>n?`${n}× 1v${i+1}`:'').filter(Boolean).join(' · ') || 'none yet';
+  return `<div class="adv-head">Advanced <span class="muted">· ${a.maps} map${a.maps===1?'':'s'}, ${a.rounds} rounds recorded with the BPL Bots plugin</span></div>
+    <div class="statgrid">
+      ${stat(a.adr.toFixed(1),"ADR",true)}
+      ${stat(a.kast.toFixed(1)+'%',"KAST")}
+      ${stat(a.hs.toFixed(0)+'%',"Headshot kills")}
+      ${stat(`${a.fk}–${a.fd}`,"Opening kills–deaths")}
+      ${stat(a.tk,"Trade kills")}
+      ${stat(a.udr.toFixed(1),"Utility dmg / round")}
+      ${stat(total(a.multi.slice(1)),"3k+ rounds")}
+      ${stat(total(a.clutch),"Clutches won")}
+    </div>
+    <div class="adv-detail muted"><span>Multi-kills: ${multi}</span><span>Clutches: ${clutch}</span></div>`;
+}
 // National teams (BPL Nations Cup) use their country flag as the team badge.
 const NATION_ISO = {singapore:'sg',malaysia:'my',philippines:'ph',australia:'au',usa:'us','united states':'us',
   japan:'jp',taiwan:'tw',canada:'ca',netherlands:'nl','united kingdom':'gb',uk:'gb',indonesia:'id',
@@ -694,6 +719,18 @@ function renderPlayers(arg){
     ["Role", p=>p.role?`<span class="pill role-pill">${esc(p.role)}</span>`:'—', "", p=>p.role],
     ["Rating Points", p=>pointsBadge(p.ratingPoints), "mono", p=>p.ratingPoints==null?-1:p.ratingPoints],
     ["Lvl", p=>levelChip(p.level), "", p=>p.level||0],
+    ...(playersView==="adv" ? (()=>{
+      const a = (p,f,none)=>p.adv&&p.adv.maps?f(p.adv):none;
+      return [
+        ["ADR", p=>a(p,x=>x.adr.toFixed(1),'—'), "mono", p=>a(p,x=>x.adr,-1)],
+        ["KAST", p=>a(p,x=>x.kast.toFixed(0)+'%','—'), "mono", p=>a(p,x=>x.kast,-1)],
+        ["HS%", p=>a(p,x=>x.hs.toFixed(0)+'%','—'), "mono", p=>a(p,x=>x.hs,-1)],
+        ["Opening K–D", p=>a(p,x=>`${x.fk}–${x.fd}`,'—'), "mono", p=>a(p,x=>x.fk-x.fd,-1e9)],
+        ["Trades", p=>a(p,x=>x.tk,'—'), "mono", p=>a(p,x=>x.tk,-1)],
+        ["3k+", p=>a(p,x=>total(x.multi.slice(1)),'—'), "mono", p=>a(p,x=>total(x.multi.slice(1)),-1)],
+        ["Clutches", p=>a(p,x=>total(x.clutch),'—'), "mono", p=>a(p,x=>total(x.clutch),-1)],
+        ["Rec. maps", p=>a(p,x=>x.maps,'—'), "mono", p=>a(p,x=>x.maps,0)],
+      ]; })() : [
     ["K", p=>p.kills, "mono"],
     ["D", p=>p.deaths, "mono"],
     ["KDR", p=>p.maps?p.kdr.toFixed(2):'—', "mono", p=>p.kdr],
@@ -702,6 +739,7 @@ function renderPlayers(arg){
     ["Win%", p=>p.maps?pct(p.winrate):'—', "mono", p=>p.winrate],
     ...(pool==="pro"?[["Value", p=>p.marketValue?fmtUSDc(p.marketValue):'—', "mono", p=>p.marketValue||0],
                       ["Earnings", p=>p.earnings?fmtUSDc(p.earnings):'—', "mono", p=>p.earnings||0]]:[]),
+    ]),
   ];
   app.innerHTML = `<h2 class="section-title"><span class="accent-bar"></span>Player Leaderboard
       <a href="#/compare" class="muted" style="margin-left:auto;font-size:12px">⇄ Compare players</a></h2>
@@ -715,6 +753,9 @@ function renderPlayers(arg){
         ${countries.map(c=>`<option value="${esc(c.iso)}"${c.iso===playersCountry?' selected':''}>${esc(c.nat)} · ${c.n}</option>`).join("")}
         ${playersCountry && !country ? `<option value="${esc(playersCountry)}" selected>${esc(playersCountry.toUpperCase())} · 0</option>` : ''}
       </select>
+      <div class="tabs pl-view" title="Advanced: ADR, KAST and the rest, from maps recorded with the BPL Bots plugin">
+        <button data-view="basic" class="${playersView==="basic"?'active':''}">Basic</button><button data-view="adv" class="${playersView==="adv"?'active':''}">Advanced</button>
+      </div>
       ${humans.length ? `<label class="pl-humans" title="People who play Solo Queue against the BPL bots"><input type="checkbox" id="pl-humans"${showHumans?' checked':''}> Show humans &amp; admins <span class="muted">${humans.length}</span></label>` : ''}
     </div>
     ${playersCountry ? (()=>{
@@ -726,8 +767,13 @@ function renderPlayers(arg){
         <span class="muted">${players.length} player${players.length===1?'':'s'}${top?` · best: ${playerLink(top)} (${top.ratingPoints} pts)`:''}${avg!=null?` · average ${avg} pts`:''}</span>
         <a href="#/players" class="muted country-clear">✕ All countries</a></div>`; })() : ''}
     ${pool==="solo"?'<p class="muted" style="font-size:12px;margin:-4px 0 12px">Whole league · under 5 maps stay provisional (unranked) at the bottom.</p>':''}
+    ${playersView==="adv"?'<p class="muted" style="font-size:12px;margin:-4px 0 12px">Advanced stats only exist for maps played with the BPL Bots plugin since October 2026. “Rec. maps” is how many each player has.</p>':''}
     ${players.length ? '<div id="ptable"></div>' : `<p class="muted">No ${pool==="solo"?"solo queue":"pro"} players from ${esc(country?country.nat:playersCountry.toUpperCase())}.</p>`}`;
-  app.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{playersPool=b.dataset.pool;playersSort={key:"Rating Points",dir:-1};renderPlayers();});
+  app.querySelectorAll("[data-pool]").forEach(b=>b.onclick=()=>{playersPool=b.dataset.pool;playersSort={key:playersView==="adv"?"ADR":"Rating Points",dir:-1};renderPlayers();});
+  app.querySelectorAll("[data-view]").forEach(b=>b.onclick=()=>{
+    playersView=b.dataset.view; playersSort={key:playersView==="adv"?"ADR":"Rating Points",dir:-1};
+    try { localStorage.setItem("bpl_players_view", playersView); } catch(e) {}
+    renderPlayers(); });
   $("#pl-country").onchange = e=>{ location.hash = e.target.value ? "#/players/"+e.target.value : "#/players"; };
   const ht = $("#pl-humans");
   if(ht) ht.onchange = ()=>{ showHumans = ht.checked; try { localStorage.setItem("bpl_show_humans", showHumans?"1":"0"); } catch(e) {} renderPlayers(); };
@@ -799,6 +845,7 @@ function renderHuman(slug){
       ${stat(p.wins+'-'+p.losses,"Record")}
       ${stat(p.maps?pct(p.winrate):'—',"Win Rate")}
     </div>
+    ${advGridHtml(p.adv, stat)}
     ${p.playsWith?`<div class="hm-with" title="The teammate they've shared the most Solo Queue games with">🤝 <span class="muted">Most played with</span>
       ${p.playsWith.human?playerLink(p.playsWith):`<a href="#/player/${esc(p.playsWith.slug)}">${flag(p.playsWith.iso)}${esc(p.playsWith.name)}</a>`}
       <span class="muted">· ${p.playsWith.games} solo game${p.playsWith.games===1?'':'s'} together</span></div>`:''}
@@ -884,6 +931,7 @@ function renderPlayer(slug){
           ${stat(p.ot,"OT Played")}
           ${stat(pct(p.winrate),"Win Rate")}
         </div>
+        ${advGridHtml(p.adv, stat)}
         ${p.soloStats?(()=>{const s=p.soloStats;return `
         <h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>Solo Queue
           <span class="muted" style="font-size:11px">${s.level?'Level '+s.level:''}${s.ratingPoints!=null?' · '+s.ratingPoints+' pts':''}${s.soloRank?' · #'+s.soloRank+' of '+s.soloTotal:''}</span></h2>
@@ -896,7 +944,8 @@ function renderPlayer(slug){
           ${stat((s.kills/Math.max(1,s.maps)).toFixed(1),"Kills / Map")}
           ${stat(s.wins+'-'+s.losses,"Record")}
           ${stat(pct(s.winrate),"Win Rate")}
-        </div>`;})():''}
+        </div>
+        ${advGridHtml(s.adv, stat)}`;})():''}
         ${(()=>{ const log=playerFormLog(p.slug); if(!log.length) return '';
           const last=log.slice(-10); const w=last.filter(x=>x.won===true).length, l=last.filter(x=>x.won===false).length;
           const avg=last.reduce((a,x)=>a+x.rtg,0)/last.length;
@@ -1873,8 +1922,9 @@ function aggregateMaps(maps){
   const by = {};
   maps.forEach(mp=>mp.players.forEach(p=>{
     const key = (p.slug||"") + "|" + normKey(p.name) + "|" + normKey(p.team);
-    if(!by[key]) by[key] = {team:p.team, name:p.name, slug:p.slug, iso:p.iso, k:0, a:0, d:0, mvp:0, score:0};
+    if(!by[key]) by[key] = {team:p.team, name:p.name, slug:p.slug, iso:p.iso, k:0, a:0, d:0, mvp:0, score:0, xk:0};
     const t = by[key]; t.k+=p.k||0; t.a+=p.a||0; t.d+=p.d||0; t.mvp+=p.mvp||0; t.score+=p.score||0;
+    if(p.rnd>0){ XS_KEYS.forEach(k=>{ t[k]=(t[k]||0)+(p[k]||0); }); t.xk+=p.k||0; }   // xk: kills on recorded maps (HS%)
   }));
   return Object.values(by);
 }
@@ -2231,6 +2281,10 @@ function renderScoreboard(){
   const maps = match.stats.maps;
   const hasElo = !!(match.elo && Object.keys(match.elo).length);
   const view = _sbTab === 'all' ? aggregateMaps(maps) : maps[_sbTab].players;
+  const hasXs = view.some(p=>p.rnd>0);   // advanced stats recorded (BPL Bots plugin)
+  const xsCells = p => !hasXs ? '' : !(p.rnd>0) ? '<td class="mono muted">–</td>'.repeat(4) :
+    `<td class="mono">${(p.dmg/p.rnd).toFixed(0)}</td><td class="mono">${Math.round(100*p.kast/p.rnd)}%</td>
+     <td class="mono">${Math.round(100*p.hs/Math.max(1,p.xk!=null?p.xk:p.k))}%</td><td class="mono" title="Opening kills–deaths">${p.fk}–${p.fd}</td>`;
   const rounds = _sbTab === 'all'
     ? maps.reduce((s,mp)=>s+((mp.scoreA||0)+(mp.scoreB||0)),0)
     : ((maps[_sbTab].scoreA||0)+(maps[_sbTab].scoreB||0));
@@ -2243,12 +2297,12 @@ function renderScoreboard(){
       <div class="sb-head">${t&&t.logo?`<img src="${esc(t.logo)}" alt="">`:''}<strong>${esc(teamName)}</strong></div>
       <div class="tablewrap"><table class="data sb-table">
         <thead><tr><th class="no-sort">Player</th><th class="no-sort">K</th><th class="no-sort">A</th><th class="no-sort">D</th>
-          <th class="no-sort">+/–</th><th class="no-sort">MVP</th><th class="no-sort">Score</th>
+          <th class="no-sort">+/–</th>${hasXs?'<th class="no-sort" title="Average damage per round">ADR</th><th class="no-sort" title="Rounds with a kill, assist, survival or trade">KAST</th><th class="no-sort" title="Headshot kills">HS%</th><th class="no-sort" title="Opening kills–deaths">FK–FD</th>':''}<th class="no-sort">MVP</th><th class="no-sort">Score</th>
           <th class="no-sort" title="BPL match rating (HLTV-style, ~1.00 = average)">RTG</th>${hasElo?`<th class="no-sort" title="Rating Points change from ${_sbTab==='all'?'this match':'this map'} (player Elo). Hover a number for before → after.">Δ Pts</th>`:''}</tr></thead>
         <tbody>${players.map(p=>{const pm=p.k-p.d; const rtg=matchRating(p.k,p.a,p.d,p.score,rounds); return `<tr>
           <td class="name-cell">${flag(p.iso)}${p.slug?`<a href="#/player/${p.slug}">${esc(p.name)}</a>`:esc(p.name)}</td>
           <td class="mono">${p.k}</td><td class="mono">${p.a}</td><td class="mono">${p.d}</td>
-          <td class="mono" style="color:${pm>0?'var(--good)':pm<0?'var(--accent2)':'var(--muted)'}">${pm>0?'+':''}${pm}</td>
+          <td class="mono" style="color:${pm>0?'var(--good)':pm<0?'var(--accent2)':'var(--muted)'}">${pm>0?'+':''}${pm}</td>${xsCells(p)}
           <td class="mono">${p.mvp?'★'+p.mvp:'–'}</td><td class="mono">${p.score}</td>
           <td class="mono sb-rtg" style="color:${rtgColor(rtg)}">${rtg!=null?rtg.toFixed(2):'–'}</td>${hasElo?swingCell(eloSwing(match,p.slug,_sbTab==='all'?null:_sbTab)):''}</tr>`;}).join("")}</tbody>
       </table></div></div>`;
@@ -2257,7 +2311,8 @@ function renderScoreboard(){
       <button data-tab="all" class="${_sbTab==='all'?'active':''}">All maps</button>
       ${maps.map((mp,i)=>`<button data-tab="${i}" class="${_sbTab===i?'active':''}">Map ${i+1}${mp.map?' · '+esc(mp.map):''}${mp.scoreA!=null?` (${mp.scoreA}–${mp.scoreB})`:''}</button>`).join("")}
     </div>` : (maps[0].map?`<div class="muted" style="font-size:12px;margin-bottom:8px">${esc(maps[0].map)}${maps[0].scoreA!=null?` · ${maps[0].scoreA}–${maps[0].scoreB}`:''}</div>`:'');
-  c.innerHTML = tabs + `<div class="sb-wrap">${block(match.a, match.aTeam)}${block(match.b, match.bTeam)}</div>`;
+  // With the advanced columns two teams no longer fit side by side: one above the other.
+  c.innerHTML = tabs + `<div class="sb-wrap${hasXs?' sb-stack':''}">${block(match.a, match.aTeam)}${block(match.b, match.bTeam)}</div>`;
   c.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{ _sbTab = b.dataset.tab==='all'?'all':+b.dataset.tab; renderScoreboard(); });
 }
 let _sfMaps = [];
@@ -2472,14 +2527,19 @@ function setupQuickEntry(match, rosterA, rosterB){
   };
   if(ta.value && draw()) document.querySelector("details.qe").open = true;   // a saved scoreboard that fails a check
 }
+// The advanced stats aren't in the form, so an edit keeps whatever the line had.
 function collectSf(match){
-  _sfMaps = [...document.querySelectorAll(".sf-map")].map(bl=>{
+  const before = _sfMaps;
+  _sfMaps = [...document.querySelectorAll(".sf-map")].map((bl,mi)=>{
     const num=(el,c)=>{const v=el.querySelector(c).value; return v===''?0:+v;};
     const sa=bl.querySelector(".sf-scA").value, sb=bl.querySelector(".sf-scB").value;
     const players=[];
+    const old=((before[mi]&&before[mi].players)||[]).filter(x=>x.rnd>0);
     bl.querySelectorAll(".sf-row").forEach(r=>{
       const name=r.querySelector(".sf-name").value.trim(); if(!name) return;
-      players.push({team:r.dataset.team, name, k:num(r,".sf-k"), a:num(r,".sf-a"), d:num(r,".sf-d"), mvp:num(r,".sf-mvp"), score:num(r,".sf-score")});
+      const was=old.find(x=>normKey(x.name)===normKey(name)&&normKey(x.team)===normKey(r.dataset.team));
+      const xs={}; if(was) XS_KEYS.forEach(k=>{ xs[k]=was[k]||0; });
+      players.push({team:r.dataset.team, name, k:num(r,".sf-k"), a:num(r,".sf-a"), d:num(r,".sf-d"), mvp:num(r,".sf-mvp"), score:num(r,".sf-score"), ...xs});
     });
     return {map:bl.querySelector(".sf-mapname").value.trim(), scoreA:sa===''?null:+sa, scoreB:sb===''?null:+sb, players};
   });

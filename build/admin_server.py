@@ -16,6 +16,9 @@ import manual
 import roster
 import wrapup
 
+# The BPL Bots plugin's advanced stats on a scoreboard line (same list as parse.XS_KEYS).
+XS_KEYS = ["dmg", "ud", "hs", "fk", "fd", "tk", "k2", "k3", "k4", "k5", "c1", "c2", "c3", "c4", "c5", "kast", "rnd"]
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.path.join(ROOT, "site")
 PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 8099
@@ -234,10 +237,12 @@ class Handler(SimpleHTTPRequestHandler):
             elif path == "/api/solo/add":
                 games = load_solo()
                 nid = max([g.get("id", 0) for g in games], default=0) + 1
+                # the advanced stats ride along when the BPL Bots plugin recorded them (parse.XS_KEYS)
                 players = [{"name": (p.get("name") or "").strip(),
                             "k": int(p.get("k", 0) or 0), "d": int(p.get("d", 0) or 0),
                             "a": int(p.get("a", 0) or 0), "mvp": int(p.get("mvp", 0) or 0),
-                            "won": bool(p.get("won"))}
+                            "won": bool(p.get("won")),
+                            **({k: int(p.get(k, 0) or 0) for k in XS_KEYS} if int(p.get("rnd", 0) or 0) > 0 else {})}
                            for p in b.get("players", []) if (p.get("name") or "").strip()]
                 games.append({"id": nid, "map": b.get("map", ""), "date": b.get("date", ""), "players": players})
                 save_solo(games); ok, msg = regenerate()
