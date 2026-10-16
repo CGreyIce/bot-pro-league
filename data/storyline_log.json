@@ -340,5 +340,14 @@
   "title": "SanCtuary is the new #1",
   "text": "Top of the player rankings at 1782 points, passing rebebx",
   "link": "#/player/sanctuary"
+ },
+ {
+  "id": "milestone:rumirumi:kills:500",
+  "type": "milestone",
+  "ts": 1792173471,
+  "date": "2026-10-17",
+  "title": "RumiRumi: 500 career kills",
+  "text": "RumiRumi reached 500 career kills",
+  "link": "#/player/rumirumi"
  }
 ]

@@ -56999,6 +56999,103 @@
        "score": 20
       }
      ]
+    },
+    {
+     "map": "Anubis",
+     "scoreA": 13,
+     "scoreB": 11,
+     "players": [
+      {
+       "team": "Boop Battalion",
+       "name": "boopydoopy",
+       "k": 22,
+       "a": 0,
+       "d": 18,
+       "mvp": 5,
+       "score": 52
+      },
+      {
+       "team": "Boop Battalion",
+       "name": "SoSlim_",
+       "k": 20,
+       "a": 0,
+       "d": 17,
+       "mvp": 5,
+       "score": 48
+      },
+      {
+       "team": "Boop Battalion",
+       "name": "Reruzensky",
+       "k": 18,
+       "a": 3,
+       "d": 17,
+       "mvp": 2,
+       "score": 40
+      },
+      {
+       "team": "Boop Battalion",
+       "name": "qebo",
+       "k": 12,
+       "a": 3,
+       "d": 18,
+       "mvp": 0,
+       "score": 35
+      },
+      {
+       "team": "Boop Battalion",
+       "name": "kimonra",
+       "k": 12,
+       "a": 3,
+       "d": 18,
+       "mvp": 1,
+       "score": 34
+      },
+      {
+       "team": "Endless Summer",
+       "name": "RumiRumi",
+       "k": 26,
+       "a": 5,
+       "d": 15,
+       "mvp": 4,
+       "score": 62
+      },
+      {
+       "team": "Endless Summer",
+       "name": "nevesten",
+       "k": 17,
+       "a": 3,
+       "d": 16,
+       "mvp": 3,
+       "score": 46
+      },
+      {
+       "team": "Endless Summer",
+       "name": "VSSMB",
+       "k": 18,
+       "a": 3,
+       "d": 19,
+       "mvp": 1,
+       "score": 44
+      },
+      {
+       "team": "Endless Summer",
+       "name": "anju_o",
+       "k": 15,
+       "a": 1,
+       "d": 14,
+       "mvp": 2,
+       "score": 38
+      },
+      {
+       "team": "Endless Summer",
+       "name": "SUMMER",
+       "k": 12,
+       "a": 2,
+       "d": 20,
+       "mvp": 1,
+       "score": 31
+      }
+     ]
     }
    ]
   }
