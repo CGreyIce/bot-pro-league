@@ -394,5 +394,23 @@
   "title": "Xevaria: 500 career kills",
   "text": "Xevaria reached 500 career kills",
   "link": "#/player/xevaria"
+ },
+ {
+  "id": "milestone:milliannavt:kills:500",
+  "type": "milestone",
+  "ts": 1792263934,
+  "date": "2026-10-18",
+  "title": "MilliannaVT: 500 career kills",
+  "text": "MilliannaVT reached 500 career kills",
+  "link": "#/player/milliannavt"
+ },
+ {
+  "id": "milestone:karoni:kills:500",
+  "type": "milestone",
+  "ts": 1792263934,
+  "date": "2026-10-18",
+  "title": "Karoni: 500 career kills",
+  "text": "Karoni reached 500 career kills",
+  "link": "#/player/karoni"
  }
 ]
