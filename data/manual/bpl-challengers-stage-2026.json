@@ -600,8 +600,9 @@
      "round": 5,
      "a": "Nightfang Covenant",
      "b": "Endless Summer",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1792266073
     },
     {
      "id": 20,
