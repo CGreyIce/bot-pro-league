@@ -591,8 +591,9 @@
      "round": 5,
      "a": "Northwind",
      "b": "Crimson Meridian",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1792264611
     },
     {
      "id": 19,
