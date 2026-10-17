@@ -4087,7 +4087,7 @@ function renderTournament(slug){
       return `<tr class="${r.rank===1&&lb.complete?'lb-champ':''}">
         <td class="rankcol fs-rank">${lb.complete&&r.rank<=3?fsMedal(r.rank)+' ':''}${r.rank}</td>
         <td class="name-cell">${crest(r.name, r.teamSlug)} ${badge}</td>
-        <td class="muted">${esc(r.group)} · ${r.groupPlace===1?'1st':'2nd'}</td>
+        <td class="muted">${esc(r.group)} · ${placeOrd(r.groupPlace)}</td>
         <td class="mono lb-rec">${r.w}-${r.l}</td>
         <td class="mono">${r.mw}-${r.ml}</td>
         <td class="mono" style="color:${rdiff(r)>0?'var(--good)':rdiff(r)<0?'var(--accent2)':'var(--muted)'}" title="${r.rf} rounds won, ${r.ra} lost${r.tiebreak?` · tie broken by ${r.tiebreak}`:''}">${sgn(rdiff(r))}${r.tiebreak?' <span class="lb-tb">TB</span>':''}</td>
