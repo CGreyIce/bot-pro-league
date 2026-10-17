@@ -573,6 +573,39 @@
      "round": 4,
      "a": "Millefiore",
      "b": "Boop Battalion",
+     "sa": 0,
+     "sb": 2,
+     "ts": 1792223422
+    },
+    {
+     "id": 17,
+     "round": 5,
+     "a": "Snowbell Syndicate",
+     "b": "Boop Battalion",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 18,
+     "round": 5,
+     "a": "Northwind",
+     "b": "Crimson Meridian",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 19,
+     "round": 5,
+     "a": "Nightfang Covenant",
+     "b": "Endless Summer",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 20,
+     "round": 5,
+     "a": "Pandora's Rebels",
+     "b": "Millefiore",
      "sa": null,
      "sb": null
     }
