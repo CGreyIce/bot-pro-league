@@ -689,8 +689,9 @@
      "round": 2,
      "a": "Thunderveil",
      "b": "Special Forces",
-     "sa": null,
-     "sb": null
+     "sa": 13,
+     "sb": 6,
+     "ts": 1792357277
     },
     {
      "id": 7,

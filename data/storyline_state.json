@@ -1481,9 +1481,9 @@
    "mvp": 61
   },
   "vyphogrid": {
-   "maps": 23,
-   "kills": 398,
-   "mvp": 70
+   "maps": 24,
+   "kills": 412,
+   "mvp": 73
   },
   "aleaka": {
    "maps": 35,
@@ -1521,9 +1521,9 @@
    "mvp": 67
   },
   "yano-kuromu": {
-   "maps": 28,
-   "kills": 314,
-   "mvp": 37
+   "maps": 29,
+   "kills": 323,
+   "mvp": 39
   },
   "cwstalvt": {
    "maps": 26,
@@ -1821,9 +1821,9 @@
    "mvp": 35
   },
   "amayui-moka": {
-   "maps": 16,
-   "kills": 249,
-   "mvp": 29
+   "maps": 17,
+   "kills": 271,
+   "mvp": 33
   },
   "airizu": {
    "maps": 24,
@@ -1906,9 +1906,9 @@
    "mvp": 53
   },
   "kaminari-qpi": {
-   "maps": 22,
-   "kills": 335,
-   "mvp": 36
+   "maps": 23,
+   "kills": 343,
+   "mvp": 37
   },
   "miyaleile": {
    "maps": 18,
@@ -1991,9 +1991,9 @@
    "mvp": 23
   },
   "miruaamaochi": {
-   "maps": 9,
-   "kills": 120,
-   "mvp": 20
+   "maps": 10,
+   "kills": 142,
+   "mvp": 23
   },
   "tigeraxd": {
    "maps": 29,
@@ -2256,29 +2256,29 @@
    "mvp": 16
   },
   "djassaulty": {
-   "maps": 9,
-   "kills": 134,
-   "mvp": 19
+   "maps": 10,
+   "kills": 141,
+   "mvp": 20
   },
   "spectrum-gabriel": {
-   "maps": 10,
-   "kills": 170,
-   "mvp": 25
+   "maps": 11,
+   "kills": 183,
+   "mvp": 27
   },
   "goonuyun": {
-   "maps": 11,
-   "kills": 138,
+   "maps": 12,
+   "kills": 144,
    "mvp": 19
   },
   "icington-the-third": {
-   "maps": 10,
-   "kills": 166,
-   "mvp": 21
+   "maps": 11,
+   "kills": 189,
+   "mvp": 23
   },
   "itzmaigay": {
-   "maps": 10,
-   "kills": 174,
-   "mvp": 29
+   "maps": 11,
+   "kills": 183,
+   "mvp": 30
   },
   "flava": {
    "maps": 3,
@@ -2387,6 +2387,7 @@
   "upset:bpl-challengers-stage-2026:3-20",
   "upset:bpl-challengers-stage-2026:3-3",
   "upset:bpl-challengers-stage-2026:3-4",
+  "upset:bpl-challengers-stage-2026:4-6",
   "upset:nations-cup-qualifier-singapore-2026:1-43",
   "upset:nova-initia-invitational-i:1-12",
   "upset:nova-initia-invitational-i:1-7",
