@@ -430,5 +430,14 @@
   "title": "twentyrosie: 100 MVP rounds",
   "text": "twentyrosie reached 100 MVP rounds",
   "link": "#/player/twentyrosie"
+ },
+ {
+  "id": "milestone:nightveil-lycoris:kills:500",
+  "type": "milestone",
+  "ts": 1792359345,
+  "date": "2026-10-19",
+  "title": "Nightveil Lycoris: 500 career kills",
+  "text": "Nightveil Lycoris reached 500 career kills",
+  "link": "#/player/nightveil-lycoris"
  }
 ]
