@@ -671,6 +671,39 @@
      "round": 1,
      "a": "Meiji Restoration",
      "b": "Ryujin Dynasty",
+     "sa": 13,
+     "sb": 6,
+     "ts": 1792352838
+    },
+    {
+     "id": 5,
+     "round": 2,
+     "a": "Eiromancers",
+     "b": "Meiji Restoration",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 6,
+     "round": 2,
+     "a": "Thunderveil",
+     "b": "Special Forces",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 7,
+     "round": 2,
+     "a": "Frostbyte",
+     "b": "Nightbloom",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 8,
+     "round": 2,
+     "a": "Ryujin Dynasty",
+     "b": "Neon Flava",
      "sa": null,
      "sb": null
     }
