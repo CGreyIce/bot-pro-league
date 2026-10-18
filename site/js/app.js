@@ -49,10 +49,11 @@ function rankDeltaBadge(t, since){
   const up = d>0, n = Math.abs(d);
   return ` <span class="rank-delta ${up?'up':'down'}" title="${up?'Up':'Down'} ${n} place${n>1?'s':''} since ${since||'the last event'}">${up?'▲':'▼'}${n}</span>`;
 }
-function flag(iso){
+// title: the hover label (defaults to the country code)
+function flag(iso, title){
   if(!iso) return '';
-  if(iso==="neutral") return `<span class="flag flag-neutral" title="Land of Make Believe"></span>`;
-  return `<img class="flag" src="https://flagcdn.com/20x15/${iso}.png" alt="${esc(iso)}" title="${esc(iso.toUpperCase())}" loading="lazy">`;
+  if(iso==="neutral") return `<span class="flag flag-neutral" title="${esc(title||"Land of Make Believe")}"></span>`;
+  return `<img class="flag" src="https://flagcdn.com/20x15/${iso}.png" alt="${esc(iso)}" title="${esc(title||iso.toUpperCase())}" loading="lazy">`;
 }
 function playerLink(p){
   if(p && p.human) return `${flag(p.iso)}<a href="#/human/${p.slug}">${esc(p.name)}</a>${humanBadge(p)}`;
@@ -452,14 +453,17 @@ function lineupAvg(ps){ const v=ps.filter(p=>p&&p.ratingPoints!=null).map(p=>p.r
 function regionRankingHtml(region){
   const rows = regionTeams(region.code);
   if(!rows.length) return `<p class="muted">No teams from ${esc(region.label)} yet.</p>`;
-  const flags = ps=>ps.map(p=>p&&p.iso?flag(p.iso):'').join("");
+  // each flag shows the player on hover ("Name · Country") and links to their profile
+  const pflag = p=>{ const full = playerBySlug(p.slug)||p;
+    return `<a href="#/player/${esc(p.slug)}">${flag(p.iso||'neutral', p.name+(full.nat?' · '+full.nat:''))}</a>`; };
+  const flags = ps=>ps.filter(Boolean).map(pflag).join("");
   const nPro = rows.filter(r=>r.kind==="pro").length;
   const body = rows.map((r,i)=>{
     if(r.kind==="am"){ const a=r.a;
       return `<tr class="rr-am"><td class="rankcol">${i+1}</td>
         <td class="name-cell">${a.iso?flag(a.iso):''}<b>${esc(a.name)}</b> <span class="rr-tag">AMATEUR</span></td>
         <td class="muted">—</td><td class="muted">—</td><td class="mono">${a.avgRP!=null?a.avgRP:'—'}</td>
-        <td class="rr-flags">${a.players.map(p=>`<a href="#/player/${p.slug}" title="${esc(p.name)}">${flag(p.iso)}</a>`).join("")}</td>
+        <td class="rr-flags">${flags(a.players)}</td>
         <td class="muted" style="font-size:12px">${a.lastEvent?`<a href="#/tournament/${a.lastEvent.slug}">${esc(a.lastEvent.name)}</a>`:'—'}</td></tr>`; }
     const t=r.t, ps=(t.roster||[]).map(x=>playerBySlug(x.slug));
     return `<tr${r.kind==="prov"?' class="rr-am"':''}><td class="rankcol">${i+1}</td>
