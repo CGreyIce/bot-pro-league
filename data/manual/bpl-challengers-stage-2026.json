@@ -662,8 +662,9 @@
      "round": 1,
      "a": "Nightbloom",
      "b": "Thunderveil",
-     "sa": null,
-     "sb": null
+     "sa": 10,
+     "sb": 13,
+     "ts": 1792351131
     },
     {
      "id": 4,
