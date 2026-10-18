@@ -439,5 +439,32 @@
   "title": "Nightveil Lycoris: 500 career kills",
   "text": "Nightveil Lycoris reached 500 career kills",
   "link": "#/player/nightveil-lycoris"
+ },
+ {
+  "id": "transfer:lemontree:2026-10-19:kkayyteeee+rebebx",
+  "type": "transfer",
+  "ts": 1792360384,
+  "date": "2026-10-19",
+  "title": "Lemon Tree swap kkayyteeee for rebebx",
+  "text": "in: rebebx; out: kkayyteeee",
+  "link": "#/team/lemon-tree"
+ },
+ {
+  "id": "transfer:eiromancers:2026-10-19:codedecho+twentyrosie",
+  "type": "transfer",
+  "ts": 1792360604,
+  "date": "2026-10-19",
+  "title": "Eiromancers sign CodedEcho and twentyrosie",
+  "text": "in: CodedEcho and twentyrosie",
+  "link": "#/team/eiromancers"
+ },
+ {
+  "id": "milestone:twentyrosie:maps:50",
+  "type": "milestone",
+  "ts": 1792360604,
+  "date": "2026-10-19",
+  "title": "twentyrosie: 50 maps played",
+  "text": "twentyrosie reached 50 maps played",
+  "link": "#/player/twentyrosie"
  }
 ]

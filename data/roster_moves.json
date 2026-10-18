@@ -155,5 +155,42 @@
   "player": "iceenblue",
   "from": "Free agent",
   "to": "Hanabi Union"
+ },
+ {
+  "date": "2026-10-19",
+  "player": "kkayyteeee",
+  "from": "Lemon Tree",
+  "to": "Free agent"
+ },
+ {
+  "date": "2026-10-19",
+  "player": "rebebx",
+  "from": "Pandora's Rebels",
+  "to": "Lemon Tree",
+  "fee": 1050000
+ },
+ {
+  "date": "2026-10-19",
+  "player": "iceenblue",
+  "from": "Hanabi Union",
+  "to": "Free agent"
+ },
+ {
+  "date": "2026-10-19",
+  "player": "Aleaka",
+  "from": "Frostcrow",
+  "to": "Hanabi Union"
+ },
+ {
+  "date": "2026-10-19",
+  "player": "CodedEcho",
+  "from": "Free agent",
+  "to": "Eiromancers"
+ },
+ {
+  "date": "2026-10-19",
+  "player": "twentyrosie",
+  "from": "Free agent",
+  "to": "Eiromancers"
  }
 ]

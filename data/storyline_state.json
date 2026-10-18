@@ -134,7 +134,7 @@
   "lunar-cadence",
   "astral-bloom"
  ],
- "movesSeen": 26,
+ "movesSeen": 32,
  "top": {
   "player": "sanctuary",
   "team": "cosmos"
@@ -286,8 +286,8 @@
    "mvp": 55
   },
   "mond33": {
-   "maps": 35,
-   "kills": 420,
+   "maps": 36,
+   "kills": 431,
    "mvp": 51
   },
   "tanykeat": {
@@ -1106,9 +1106,9 @@
    "mvp": 78
   },
   "redandb1ue": {
-   "maps": 30,
-   "kills": 409,
-   "mvp": 47
+   "maps": 31,
+   "kills": 415,
+   "mvp": 48
   },
   "mominichi": {
    "maps": 39,
@@ -1190,6 +1190,11 @@
    "kills": 417,
    "mvp": 41
   },
+  "twentyrosie": {
+   "maps": 59,
+   "kills": 931,
+   "mvp": 137
+  },
   "hikariifloofie": {
    "maps": 14,
    "kills": 236,
@@ -1199,6 +1204,11 @@
    "maps": 23,
    "kills": 437,
    "mvp": 73
+  },
+  "rebebx": {
+   "maps": 46,
+   "kills": 835,
+   "mvp": 126
   },
   "mizukiimoon": {
    "maps": 58,
@@ -1234,11 +1244,6 @@
    "maps": 63,
    "kills": 1047,
    "mvp": 163
-  },
-  "rebebx": {
-   "maps": 46,
-   "kills": 835,
-   "mvp": 126
   },
   "sadgeboi": {
    "maps": 38,
@@ -1510,11 +1515,6 @@
    "kills": 440,
    "mvp": 47
   },
-  "twentyrosie": {
-   "maps": 45,
-   "kills": 696,
-   "mvp": 102
-  },
   "yukihimeowo": {
    "maps": 37,
    "kills": 587,
@@ -1551,9 +1551,9 @@
    "mvp": 70
   },
   "ryujin": {
-   "maps": 22,
-   "kills": 314,
-   "mvp": 45
+   "maps": 23,
+   "kills": 323,
+   "mvp": 46
   },
   "anju-o": {
    "maps": 30,
@@ -1856,9 +1856,9 @@
    "mvp": 43
   },
   "juno-umezono": {
-   "maps": 19,
-   "kills": 256,
-   "mvp": 29
+   "maps": 20,
+   "kills": 274,
+   "mvp": 32
   },
   "djsalty": {
    "maps": 15,
@@ -2116,9 +2116,9 @@
    "mvp": 18
   },
   "somebodynewish": {
-   "maps": 1,
-   "kills": 11,
-   "mvp": 1
+   "maps": 2,
+   "kills": 21,
+   "mvp": 3
   },
   "snowybluebell": {
    "maps": 13,
@@ -2136,14 +2136,14 @@
    "mvp": 22
   },
   "wizstara": {
-   "maps": 3,
-   "kills": 31,
-   "mvp": 1
+   "maps": 4,
+   "kills": 51,
+   "mvp": 3
   },
   "deedeepup-vt": {
-   "maps": 1,
-   "kills": 12,
-   "mvp": 1
+   "maps": 2,
+   "kills": 32,
+   "mvp": 5
   },
   "kineto46": {
    "maps": 15,
@@ -2221,9 +2221,9 @@
    "mvp": 0
   },
   "arctrooperfives2755555": {
-   "maps": 1,
-   "kills": 6,
-   "mvp": 2
+   "maps": 2,
+   "kills": 12,
+   "mvp": 3
   },
   "diabet0": {
    "maps": 8,
@@ -2281,14 +2281,14 @@
    "mvp": 30
   },
   "flava": {
-   "maps": 3,
-   "kills": 42,
-   "mvp": 3
+   "maps": 4,
+   "kills": 56,
+   "mvp": 6
   },
   "ixc999": {
-   "maps": 1,
-   "kills": 11,
-   "mvp": 2
+   "maps": 2,
+   "kills": 27,
+   "mvp": 4
   },
   "tedstyx": {
    "maps": 18,
@@ -2402,6 +2402,8 @@
   "transfer:aimpunch:2026-10-04:aranionja+mond33",
   "transfer:aspire:2026-09-30:chisascarlett+mikuryne+moira+stylus",
   "transfer:astralbloom:2026-09-29:ginjosaine+kogaratoto+yumenoakari",
+  "transfer:eiromancers:2026-10-19:codedecho+twentyrosie",
+  "transfer:lemontree:2026-10-19:kkayyteeee+rebebx",
   "transfer:lunarcadence:2026-09-29:erissuzukami+shiranamiramune+tsumugikokage",
   "transfer:masmark:2026-09-28:estellyy+hikariifloofie",
   "transfer:newjade:2026-10-16:crazywhoopies",

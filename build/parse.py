@@ -74,6 +74,24 @@ REGION_BY_ISO = {
     "ba":"Europe","cz":"Europe","gr":"Europe","lt":"Europe","no":"Europe",
     "kz":"Central Asia",
 }
+def team_region(isos, origin_iso=None):
+    """A team's region from its players' countries: the region most of them come from, or
+    "International" when no region has a majority (e.g. 2 SEA + 2 North America + 1 Oceania).
+    Plurality ties resolve toward the origin country's region."""
+    isos = [i for i in isos if i and i != "neutral"]
+    if not isos:
+        return ""
+    reg_count = defaultdict(int)
+    for i in isos:
+        reg_count[REGION_BY_ISO.get(i, "Other")] += 1
+    top = max(reg_count.values())
+    if len(isos) >= 3 and top * 2 <= len(isos):
+        return "International"
+    tied = [r for r, c in reg_count.items() if c == top]
+    oreg = REGION_BY_ISO.get(origin_iso, "Other") if origin_iso else None
+    return oreg if oreg in tied else sorted(tied)[0]
+
+
 def load_nat():
     d = {}
     path = os.path.join(DATA, "allplayer.txt")
@@ -1014,14 +1032,7 @@ def main():
         for i in isos:
             iso_count[i] += 1
         origin_iso = max(iso_count, key=lambda i: (iso_count[i], i))   # most common country
-        reg_count = defaultdict(int)
-        for i in isos:
-            reg_count[REGION_BY_ISO.get(i, "Other")] += 1
-        top = max(reg_count.values())
-        tied = [r for r, c in reg_count.items() if c == top]
-        origin_region = REGION_BY_ISO.get(origin_iso, "Other")
-        # plurality region; ties resolve toward the origin country's region so the two agree
-        t["region"] = origin_region if origin_region in tied else sorted(tied)[0]
+        t["region"] = team_region(isos, origin_iso)
         t["originIso"] = origin_iso
         t["originCountry"] = next((p.get("nat", "") for p in t["roster"] if p.get("iso") == origin_iso), "")
     # attach each team's event history (matched by teamSlug)
@@ -1290,8 +1301,17 @@ def main():
             if got:
                 srow = next((r for r in src.get("attending", []) if (got.get("teamSlug") and r.get("teamSlug") == got["teamSlug"])
                              or norm_key(r.get("team", "")) == norm_key(got["name"])), None)
-                att.append({"team": got["name"], "teamSlug": got.get("teamSlug"),
-                            "players": srow["players"] if srow else [], "via": frm})
+                # the team as it stands now, not the line-up that played there: a team with a page brings
+                # its current roster; one without brings whoever currently plays for it (players who
+                # left since don't come along, new signings do). The played line-up is the fallback.
+                tm = slug_to_team_a.get(got.get("teamSlug"))
+                if tm:
+                    cur = list(tm.get("roster", []))
+                else:
+                    cur = [p_ for p_ in (pro + amateur) if norm_key(p_.get("team") or "") == norm_key(got["name"])]
+                players = [{"hist": rp["name"], "name": rp["name"], "slug": rp["slug"], "iso": rp.get("iso", ""),
+                            "captain": False} for rp in cur] if cur else (srow["players"] if srow else [])
+                att.append({"team": got["name"], "teamSlug": got.get("teamSlug"), "players": players, "via": frm})
             else:
                 att.append({"team": f"TBC · {frm['short']} #{e.get('place')}", "teamSlug": None, "players": [], "tbc": frm})
         tr["attending"] = att
@@ -1378,13 +1398,7 @@ def main():
                 for i in isos:
                     iso_count[i] += 1
                 origin_iso = max(iso_count, key=lambda i: (iso_count[i], i))
-                reg_count = defaultdict(int)
-                for i in isos:
-                    reg_count[REGION_BY_ISO.get(i, "Other")] += 1
-                top = max(reg_count.values())
-                tied = [r for r, c in reg_count.items() if c == top]
-                oreg = REGION_BY_ISO.get(origin_iso, "Other")
-                t["region"] = oreg if oreg in tied else sorted(tied)[0]
+                t["region"] = team_region(isos, origin_iso)
                 t["originIso"] = origin_iso
                 t["originCountry"] = next((p.get("nat", "") for p in t["roster"] if p.get("iso") == origin_iso), "")
 
@@ -1908,8 +1922,39 @@ def main():
     import subroles as _subroles
     _subroles.apply(pro + amateur, DATA, norm_key, lambda p: p.get("rating") or 0)
 
+    # ---- amateur teams (no team page) for the region rankings: whoever currently plays for each ----
+    _page_keys = {norm_key(t["name"]) for t in teams}
+    _am_players = defaultdict(list)
+    for p_ in pro + amateur:
+        tn = (p_.get("team") or "").strip()
+        if not tn or tn.startswith("Ω") or norm_key(tn) in _page_keys or norm_key(tn) in ("freeagent", "teamless"):
+            continue
+        _am_players[tn].append(p_)
+    _last_event = {}
+    for tr_ in sorted((x for x in tournaments if x.get("date")), key=lambda x: x["date"]):
+        for r_ in tr_.get("attending", []):
+            _last_event[norm_key(r_.get("team", ""))] = {"name": tr_["name"], "slug": tr_["slug"], "date": tr_["date"]}
+    amateur_teams = []
+    for tn, ps in _am_players.items():
+        isos = [x.get("iso") for x in ps]
+        counts = defaultdict(int)
+        for i in isos:
+            if i and i != "neutral":
+                counts[i] += 1
+        origin = max(counts, key=lambda i: (counts[i], i)) if counts else ""
+        rps = [x["ratingPoints"] for x in ps if x.get("ratingPoints") is not None]
+        amateur_teams.append({
+            "name": tn, "region": team_region(isos, origin) or "Other", "iso": origin,
+            "players": [{"slug": x["slug"], "name": x["name"], "iso": x.get("iso", ""), "ratingPoints": x.get("ratingPoints")}
+                        for x in sorted(ps, key=lambda x: -(x.get("ratingPoints") or 0))],
+            "avgRP": round(sum(rps) / len(rps)) if rps else None,
+            "lastEvent": _last_event.get(norm_key(tn)),
+        })
+    amateur_teams.sort(key=lambda a: (-(a["avgRP"] or 0), a["name"].lower()))
+
     data = {
         "teams": teams,
+        "amateurTeams": amateur_teams,
         "articles": articles,
         "hallOfFame": hall_of_fame,
         "rankClimbRecord": rank_climb or None,

@@ -399,7 +399,8 @@ function renderArticle(slug){
       <div class="news-list">${others.map(newsCard).join('')}</div>`:''}`;
 }
 
-function renderTeams(){
+function renderTeams(arg){
+  teamsRegion = REGION_TABS.some(r=>r.code===arg) ? arg : "";
   const cols = [
     ["#", t=>t.rank, "rankcol"],
     ["Team", t=>`<span class="tm-rank">${teamCell(t.name)}${t.star?' <span class="star" title="Major winner">★</span>':''}${rankDeltaBadge(t)}</span>`, "name-cell", t=>t.name],
@@ -416,10 +417,62 @@ function renderTeams(){
     ["Squad value", t=>t.squadValue?fmtUSDc(t.squadValue):'—', "mono", t=>t.squadValue||0],
   ];
   const proTeams = DATA.teams.filter(t=>!t.provisional);
-  app.innerHTML = `<h2 class="section-title"><span class="accent-bar"></span>Team Ranking · ${proTeams.length} pro teams
+  const region = REGION_TABS.find(r=>r.code===teamsRegion);
+  app.innerHTML = `<h2 class="section-title"><span class="accent-bar"></span>Team Ranking · ${region?esc(region.label):`${proTeams.length} pro teams`}
       <a href="#/rivalries" class="muted" style="margin-left:auto;font-size:12px">⚔ Rivalries</a>
       <a href="#/compareteams" class="muted" style="margin-left:14px;font-size:12px">⇄ Compare teams</a></h2>
-    ${sortableTable(proTeams, cols, "rank")}`;
+    <div class="tabs region-tabs">
+      <a href="#/teams" class="${region?'':'active'}">World</a>
+      ${REGION_TABS.map(r=>{ const n=regionTeams(r.code).length;
+        return (n || r.always) ? `<a href="#/teams/${r.code}" class="${r===region?'active':''}" title="${esc(r.label)}">${r.short} <span style="opacity:.7">${n}</span></a>` : ''; }).join("")}
+    </div>
+    ${region ? regionRankingHtml(region) : sortableTable(proTeams, cols, "rank")}`;
+}
+
+// ---- region rankings (#/teams/<code>): the region's pro teams in BPL ranking order, then its amateur teams
+// (no team page, no BPL points) by line-up strength. A team is International when no region has a majority.
+const REGION_TABS = [
+  {code:"na", short:"NA", label:"North America", always:true}, {code:"sa", short:"SA", label:"South America", always:true},
+  {code:"eu", short:"EU", label:"Europe", always:true}, {code:"ea", short:"EA", label:"East Asia", always:true},
+  {code:"sea", short:"SEA", label:"SEA", always:true}, {code:"oce", short:"OCE", label:"Oceania", always:true},
+  {code:"ca", short:"CA", label:"Central Asia"}, {code:"int", short:"INT", label:"International", always:true},
+  {code:"other", short:"Other", label:"Other"},
+];
+let teamsRegion = "";
+function regionTeams(code){
+  const r = REGION_TABS.find(x=>x.code===code); if(!r) return [];
+  const want = code==="other" ? x=>!x.region || x.region==="Other" : x=>x.region===r.label;
+  const pros = DATA.teams.filter(t=>!t.provisional && t.rank && want(t)).sort((a,b)=>a.rank-b.rank).map(t=>({kind:"pro", t}));
+  const rest = DATA.teams.filter(t=>t.provisional && want(t)).map(t=>({kind:"prov", t, avg:lineupAvg((t.roster||[]).map(x=>playerBySlug(x.slug)))}))
+    .concat((DATA.amateurTeams||[]).filter(want).map(a=>({kind:"am", a, avg:a.avgRP})))
+    .sort((x,y)=>(y.avg||0)-(x.avg||0));
+  return pros.concat(rest);
+}
+function lineupAvg(ps){ const v=ps.filter(p=>p&&p.ratingPoints!=null).map(p=>p.ratingPoints); return v.length?Math.round(v.reduce((a,b)=>a+b,0)/v.length):null; }
+function regionRankingHtml(region){
+  const rows = regionTeams(region.code);
+  if(!rows.length) return `<p class="muted">No teams from ${esc(region.label)} yet.</p>`;
+  const flags = ps=>ps.map(p=>p&&p.iso?flag(p.iso):'').join("");
+  const nPro = rows.filter(r=>r.kind==="pro").length;
+  const body = rows.map((r,i)=>{
+    if(r.kind==="am"){ const a=r.a;
+      return `<tr class="rr-am"><td class="rankcol">${i+1}</td>
+        <td class="name-cell">${a.iso?flag(a.iso):''}<b>${esc(a.name)}</b> <span class="rr-tag">AMATEUR</span></td>
+        <td class="muted">—</td><td class="muted">—</td><td class="mono">${a.avgRP!=null?a.avgRP:'—'}</td>
+        <td class="rr-flags">${a.players.map(p=>`<a href="#/player/${p.slug}" title="${esc(p.name)}">${flag(p.iso)}</a>`).join("")}</td>
+        <td class="muted" style="font-size:12px">${a.lastEvent?`<a href="#/tournament/${a.lastEvent.slug}">${esc(a.lastEvent.name)}</a>`:'—'}</td></tr>`; }
+    const t=r.t, ps=(t.roster||[]).map(x=>playerBySlug(x.slug));
+    return `<tr${r.kind==="prov"?' class="rr-am"':''}><td class="rankcol">${i+1}</td>
+      <td class="name-cell"><span class="tm-rank">${teamCell(t.name)}${t.star?' <span class="star" title="Major winner">★</span>':''}${r.kind==="prov"?' <span class="rr-tag">PROVISIONAL</span>':''}</span></td>
+      <td class="mono">${t.rank?'#'+t.rank:'—'}</td><td class="mono" style="color:var(--accent);font-weight:700">${t.rank?t.rank_points:'—'}</td>
+      <td class="mono">${lineupAvg(ps)??'—'}</td><td class="rr-flags">${flags(ps)}</td>
+      <td class="muted" style="font-size:12px">${t.events_played?`${t.events_played} event${t.events_played===1?'':'s'}`:'—'}</td></tr>`;
+  }).join("");
+  return `<p class="muted rr-note">${nPro} pro team${nPro===1?'':'s'} in BPL ranking order, then ${rows.length-nPro} amateur team${rows.length-nPro===1?'':'s'} by line-up strength (average Rating Points of the current players).
+      ${region.code==="int"?' International: no single region has a majority of the team\'s players.':''}</p>
+    <div class="tablewrap"><table class="data region-rank"><thead><tr><th class="no-sort rankcol">#</th><th class="no-sort">Team</th>
+      <th class="no-sort" title="BPL world ranking">World</th><th class="no-sort">Points</th><th class="no-sort" title="Average Rating Points of the current players">Avg RP</th>
+      <th class="no-sort">Players</th><th class="no-sort">Events</th></tr></thead><tbody>${body}</tbody></table></div>`;
 }
 
 // ---------- Achievements / lineup / H2H shared helpers ----------

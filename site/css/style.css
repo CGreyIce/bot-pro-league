@@ -1426,3 +1426,13 @@ h1 .human-badge{height:22px;font-size:12px;padding:0 8px;margin-left:10px}
 .ev-upcoming p{margin:8px 0 0;font-size:13px;line-height:1.5}
 .evu-head{font-family:'Chakra Petch';font-weight:700;font-size:15px;display:flex;align-items:center;gap:10px}
 .evu-pill{font-size:11px;letter-spacing:.8px;text-transform:uppercase;background:var(--accent);color:#fff;border-radius:999px;padding:2px 9px}
+
+/* teams: region rankings */
+.region-tabs a{background:var(--panel);border:1px solid var(--border);color:var(--muted);padding:7px 13px;border-radius:7px;font-family:'Chakra Petch';font-weight:600;font-size:14px;letter-spacing:.5px;transition:.15s}
+.region-tabs a:hover{color:var(--text)}
+.region-tabs a.active{background:var(--accent-grad);color:#0b1120;border-color:transparent}
+.rr-note{font-size:12px;margin:-6px 0 12px}
+.rr-tag{display:inline-block;font:700 10px 'Chakra Petch',sans-serif;letter-spacing:.6px;color:var(--muted);border:1px solid var(--border2);border-radius:4px;padding:0 5px;margin-left:6px;vertical-align:middle}
+.region-rank tr.rr-am td{background:rgba(255,255,255,.012)}
+.rr-flags{white-space:nowrap}
+.rr-flags .flag{margin-right:3px}
