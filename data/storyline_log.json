@@ -412,5 +412,14 @@
   "title": "Karoni: 500 career kills",
   "text": "Karoni reached 500 career kills",
   "link": "#/player/karoni"
+ },
+ {
+  "id": "milestone:skiazelle:kills:500",
+  "type": "milestone",
+  "ts": 1792342978,
+  "date": "2026-10-19",
+  "title": "Skiazelle: 500 career kills",
+  "text": "Skiazelle reached 500 career kills",
+  "link": "#/player/skiazelle"
  }
 ]
