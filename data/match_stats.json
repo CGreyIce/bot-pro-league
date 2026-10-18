@@ -61551,7 +61551,7 @@
        "k": 21,
        "a": 0,
        "d": 14,
-       "mvp": 1,
+       "mvp": 2,
        "score": 46,
        "dmg": 2012,
        "ud": 12,
@@ -62205,7 +62205,7 @@
       {
        "team": "Eiromancers",
        "name": "kaikaijins",
-       "k": 24,
+       "k": 29,
        "a": 3,
        "d": 18,
        "mvp": 5,
@@ -62387,7 +62387,7 @@
       {
        "team": "Meiji Restoration",
        "name": "ostc.x",
-       "k": 17,
+       "k": 22,
        "a": 2,
        "d": 20,
        "mvp": 2,
