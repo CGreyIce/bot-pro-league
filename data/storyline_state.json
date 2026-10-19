@@ -134,7 +134,7 @@
   "lunar-cadence",
   "astral-bloom"
  ],
- "movesSeen": 32,
+ "movesSeen": 37,
  "top": {
   "player": "sanctuary",
   "team": "cosmos"
@@ -2369,6 +2369,31 @@
    "maps": 14,
    "kills": 229,
    "mvp": 36
+  },
+  "gei-gyattamori": {
+   "maps": 0,
+   "kills": 0,
+   "mvp": 0
+  },
+  "chritler": {
+   "maps": 0,
+   "kills": 0,
+   "mvp": 0
+  },
+  "mr-hakolympia": {
+   "maps": 0,
+   "kills": 0,
+   "mvp": 0
+  },
+  "c-m-tribute": {
+   "maps": 0,
+   "kills": 0,
+   "mvp": 0
+  },
+  "awtistoh": {
+   "maps": 0,
+   "kills": 0,
+   "mvp": 0
   }
  },
  "upsetsSeen": [
