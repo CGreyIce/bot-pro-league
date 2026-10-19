@@ -1436,3 +1436,7 @@ h1 .human-badge{height:22px;font-size:12px;padding:0 8px;margin-left:10px}
 .region-rank tr.rr-am td{background:rgba(255,255,255,.012)}
 .rr-flags{white-space:nowrap}
 .rr-flags .flag{margin-right:3px}
+
+/* live scores: who is signed in, with switch / sign-out buttons */
+.lv-who{margin-left:auto;display:flex;align-items:center;gap:8px;flex-wrap:wrap;font:400 12px Inter,sans-serif;color:var(--muted)}
+.lv-who b{color:var(--text)}

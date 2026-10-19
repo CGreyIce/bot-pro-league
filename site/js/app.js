@@ -4612,6 +4612,13 @@ function liveRulesBlock(uid){
       allow write: if request.auth != null && request.auth.uid == "${uid}";
     }`;
 }
+// Always show Google's account picker, so a different account can be chosen (otherwise the popup
+// silently reuses whichever Google account the browser is signed in to).
+function liveSignIn(auth){
+  const p = new firebase.auth.GoogleAuthProvider();
+  p.setCustomParameters({prompt: "select_account"});
+  return auth.signInWithPopup(p);
+}
 async function setupLivePanel(){
   const box = $("#adm-live"); if(!box) return;
   const cfg = window.BPL_FIREBASE || {};
@@ -4633,7 +4640,7 @@ async function setupLivePanel(){
       </div>`;
     $("#lv-signin").onclick = async ()=>{
       $("#lv-msg").textContent = "Opening Google sign-in…";
-      try{ await auth.signInWithPopup(new firebase.auth.GoogleAuthProvider()); setupLivePanel(); }
+      try{ await liveSignIn(auth); setupLivePanel(); }
       catch(e){
         const c = e.code||'';
         $("#lv-msg").innerHTML = c==='auth/operation-not-allowed' || c==='auth/configuration-not-found' ? "Google sign-in isn't switched on yet: do the step under <b>First time?</b> below."
@@ -4646,7 +4653,8 @@ async function setupLivePanel(){
     return;
   }
   box.innerHTML = `<div class="lv-head">📡 Live scores <span class="lv-state ${on?'on':'off'}">${on?'on':'paused'}</span>
-      <span class="muted" style="font-size:12px;margin-left:auto">${esc(user.email||user.displayName||'signed in')} · <a href="#/admin" id="lv-signout" class="muted">sign out</a></span></div>
+      <span class="lv-who">Signed in as <b>${esc(user.email||user.displayName||'?')}</b>
+        <button id="lv-switch" class="loadmore">Switch account</button><button id="lv-signout" class="loadmore">Sign out</button></span></div>
     <div class="lv-body">
       <label class="lv-toggle"><input type="checkbox" id="lv-on" ${on?'checked':''}> Send every score I save to the public site straight away</label>
       <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
@@ -4666,6 +4674,9 @@ async function setupLivePanel(){
   $("#lv-on").onchange = e=>{ try{ localStorage.setItem('bpl_live_send', e.target.checked?'1':'0'); }catch(_){}; setupLivePanel(); };
   $("#lv-relay").onchange = e=>{ try{ localStorage.setItem('bpl_live_relay', e.target.checked?'1':'0'); }catch(_){}; liveRelayTick().catch(()=>{}); };
   $("#lv-signout").onclick = async e=>{ e.preventDefault(); await auth.signOut(); setupLivePanel(); };
+  $("#lv-switch").onclick = async e=>{ e.preventDefault();
+    try{ await auth.signOut(); await liveSignIn(auth); }catch(_){ /* closed the picker: stays signed out */ }
+    setupLivePanel(); };
   $("#lv-copy").onclick = ()=>{ navigator.clipboard && navigator.clipboard.writeText(liveRulesBlock(user.uid)); $("#lv-copy").textContent = "Copied ✓"; };
   $("#lv-test").onclick = async ()=>{
     const msg = $("#lv-last"); msg.textContent = "Testing…";
