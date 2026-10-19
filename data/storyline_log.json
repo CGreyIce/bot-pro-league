@@ -475,5 +475,32 @@
   "title": "xmeijixx: 100 MVP rounds",
   "text": "xmeijixx reached 100 MVP rounds",
   "link": "#/player/xmeijixx"
+ },
+ {
+  "id": "milestone:twentyrosie:kills:1000",
+  "type": "milestone",
+  "ts": 1792427374,
+  "date": "2026-10-20",
+  "title": "twentyrosie: 1000 career kills",
+  "text": "twentyrosie reached 1000 career kills",
+  "link": "#/player/twentyrosie"
+ },
+ {
+  "id": "milestone:shirou-kitakami:kills:500",
+  "type": "milestone",
+  "ts": 1792441342,
+  "date": "2026-10-20",
+  "title": "shirou_kitakami: 500 career kills",
+  "text": "shirou_kitakami reached 500 career kills",
+  "link": "#/player/shirou-kitakami"
+ },
+ {
+  "id": "milestone:itswinter:kills:500",
+  "type": "milestone",
+  "ts": 1792445913,
+  "date": "2026-10-20",
+  "title": "itswinter__: 500 career kills",
+  "text": "itswinter__ reached 500 career kills",
+  "link": "#/player/itswinter"
  }
 ]
