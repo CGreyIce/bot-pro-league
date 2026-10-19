@@ -962,8 +962,9 @@ function renderPlayer(slug){
         ${p.earnings?`<div class="ib-row"><span class="k">Earnings</span><span class="v">${fmtUSD(p.earnings)}</span></div>`:''}
         ${p.playsWith?`<div class="ib-row"><span class="k">Plays with</span><span class="v"><a href="#/player/${p.playsWith.slug}" style="color:var(--link)">${flag(p.playsWith.iso)}${esc(p.playsWith.name)}</a> <span class="muted" style="font-size:11px">· ${p.playsWith.games} solo game${p.playsWith.games===1?'':'s'}</span></span></div>`:''}
       </div>
-      ${(p.awards&&p.awards.length)?`<div class="infobox prize-box"><div class="ib-title">Awards</div>
-        <div class="aw-shelf">${p.awards.slice().sort((a,b)=>String(b.year).slice(0,4).localeCompare(String(a.year).slice(0,4)) || (a.rank?1:0)-(b.rank?1:0) || (a.rank||0)-(b.rank||0)).map(a=>{
+      ${((p.awards&&p.awards.length)||(p.mvpAwards&&p.mvpAwards.length))?`<div class="infobox prize-box"><div class="ib-title">Awards</div>
+        <div class="aw-shelf">${[...(p.awards||[]), ...(p.mvpAwards||[]).map(m=>({...m, mvpOf:true}))].sort((a,b)=>String(b.year).slice(0,4).localeCompare(String(a.year).slice(0,4)) || (a.rank?2:a.mvpOf?1:0)-(b.rank?2:b.mvpOf?1:0) || (a.rank||0)-(b.rank||0)).map(a=>{
+          if(a.mvpOf) return `<a class="aw-chip" href="#/tournament/${esc(a.slug)}" title="${esc(`Event MVP of ${a.event} · open the event`)}">⭐ <span>MVP <span class="muted">· ${esc(a.event)}</span></span></a>`;
           if(a.rank) return `<a class="aw-chip t20" href="${esc(a.link||'#/news')}" title="${esc(`${placeOrd(a.rank)} best player of ${a.year} in the BPL Top 20 Players of the Year · read the article`)}">🏅 <b>#${a.rank}</b> Top 20 Players of ${esc(String(a.year))}</a>`;
           const ic=a.award==='Player of the Year'?'🏆':a.award==='Rookie of the Year'?'🌱':a.award==='Most Improved Player'?'📈':'⭐';
           const yr=String(a.year).includes('-')?(()=>{const [y,m]=String(a.year).split('-'); return ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][+m-1]+' '+y;})():a.year;
@@ -1036,27 +1037,21 @@ function renderPlayer(slug){
             <div class="pmap-cards">${cards}</div>`; })()}
         ${(()=>{
           const med = playerMedals(p);
-          const nMvp = (p.mvpAwards||[]).length;
-          if(!med.all.length && !nMvp) return '';
+          if(!med.all.length) return '';      // (event MVPs sit with the other awards, in the Awards box)
           const tally=[];
           if(med.g) tally.push(`🥇 ${med.g}`);
           if(med.s) tally.push(`🥈 ${med.s}`);
           if(med.b) tally.push(`🥉 ${med.b}`);
-          if(nMvp) tally.push(`⭐ ${nMvp}× MVP`);
           const medHtml = med.all.map(x=>`<a class="honor" href="#/tournament/${x.slug}">
              <span class="honor-ico">${MEDAL_ICO[x.m]}</span>
              <span class="honor-body"><span class="honor-ev">${esc(x.ev)}</span>
              <span class="honor-sub"><span class="event-tier ${TIER_CLASS[x.tier]}">${esc(x.tierLabel.toUpperCase())}</span> ${x.year} · ${esc(x.team)}</span></span></a>`).join("");
-          const mvpHtml = (p.mvpAwards||[]).map(a=>`<a class="honor" href="#/tournament/${a.slug}">
-             <span class="honor-ico">⭐</span>
-             <span class="honor-body"><span class="honor-ev">${esc(a.event)}</span>
-             <span class="honor-sub">Event MVP · ${a.year}</span></span></a>`).join("");
           const tt = playerTrophies(p);
           return `${tt.length?`<h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>Trophy Cabinet
             <span class="muted" style="font-size:11px">${trophyTally(tt)}</span></h2>${trophyShelfHtml(tt, true)}`:''}
             <h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>Achievements
             <span class="muted" style="font-size:11px">${tally.join(' · ')}</span></h2>
-            <div class="honors">${medHtml}${mvpHtml}</div>`;
+            <div class="honors">${medHtml}</div>`;
         })()}
       </div>
     </div>`;
