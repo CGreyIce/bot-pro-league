@@ -466,5 +466,14 @@
   "title": "twentyrosie: 50 maps played",
   "text": "twentyrosie reached 50 maps played",
   "link": "#/player/twentyrosie"
+ },
+ {
+  "id": "milestone:xmeijixx:mvp:100",
+  "type": "milestone",
+  "ts": 1792401477,
+  "date": "2026-10-19",
+  "title": "xmeijixx: 100 MVP rounds",
+  "text": "xmeijixx reached 100 MVP rounds",
+  "link": "#/player/xmeijixx"
  }
 ]
