@@ -502,5 +502,14 @@
   "title": "itswinter__: 500 career kills",
   "text": "itswinter__ reached 500 career kills",
   "link": "#/player/itswinter"
+ },
+ {
+  "id": "milestone:twentyrosie:mvp:150",
+  "type": "milestone",
+  "ts": 1792452148,
+  "date": "2026-10-20",
+  "title": "twentyrosie: 150 MVP rounds",
+  "text": "twentyrosie reached 150 MVP rounds",
+  "link": "#/player/twentyrosie"
  }
 ]

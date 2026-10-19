@@ -1191,9 +1191,9 @@
    "mvp": 41
   },
   "twentyrosie": {
-   "maps": 65,
-   "kills": 1015,
-   "mvp": 148
+   "maps": 66,
+   "kills": 1036,
+   "mvp": 151
   },
   "hikariifloofie": {
    "maps": 14,
@@ -1986,9 +1986,9 @@
    "mvp": 40
   },
   "codedecho": {
-   "maps": 15,
-   "kills": 254,
-   "mvp": 38
+   "maps": 16,
+   "kills": 276,
+   "mvp": 41
   },
   "miruaamaochi": {
    "maps": 16,
@@ -2021,9 +2021,9 @@
    "mvp": 77
   },
   "skiazelle": {
-   "maps": 40,
-   "kills": 634,
-   "mvp": 96
+   "maps": 41,
+   "kills": 660,
+   "mvp": 98
   },
   "boopydoopy": {
    "maps": 42,
@@ -2031,9 +2031,9 @@
    "mvp": 84
   },
   "raviaseir": {
-   "maps": 40,
-   "kills": 677,
-   "mvp": 129
+   "maps": 41,
+   "kills": 693,
+   "mvp": 131
   },
   "kanarivt": {
    "maps": 49,
@@ -2041,9 +2041,9 @@
    "mvp": 122
   },
   "kaikaijins": {
-   "maps": 45,
-   "kills": 705,
-   "mvp": 89
+   "maps": 46,
+   "kills": 723,
+   "mvp": 91
   },
   "xyrren": {
    "maps": 32,
@@ -2256,29 +2256,29 @@
    "mvp": 16
   },
   "djassaulty": {
-   "maps": 16,
-   "kills": 235,
-   "mvp": 36
-  },
-  "spectrum-gabriel": {
    "maps": 17,
-   "kills": 280,
-   "mvp": 42
-  },
-  "goonuyun": {
-   "maps": 18,
-   "kills": 220,
-   "mvp": 30
-  },
-  "icington-the-third": {
-   "maps": 17,
-   "kills": 299,
+   "kills": 251,
    "mvp": 37
   },
+  "spectrum-gabriel": {
+   "maps": 18,
+   "kills": 296,
+   "mvp": 43
+  },
+  "goonuyun": {
+   "maps": 19,
+   "kills": 250,
+   "mvp": 36
+  },
+  "icington-the-third": {
+   "maps": 18,
+   "kills": 313,
+   "mvp": 42
+  },
   "itzmaigay": {
-   "maps": 17,
-   "kills": 280,
-   "mvp": 45
+   "maps": 18,
+   "kills": 302,
+   "mvp": 48
   },
   "flava": {
    "maps": 10,
@@ -2412,6 +2412,7 @@
   "upset:bpl-challengers-stage-2026:3-20",
   "upset:bpl-challengers-stage-2026:3-3",
   "upset:bpl-challengers-stage-2026:3-4",
+  "upset:bpl-challengers-stage-2026:4-17",
   "upset:bpl-challengers-stage-2026:4-6",
   "upset:nations-cup-qualifier-singapore-2026:1-43",
   "upset:nova-initia-invitational-i:1-12",

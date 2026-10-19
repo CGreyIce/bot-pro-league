@@ -788,8 +788,9 @@
      "round": 5,
      "a": "Eiromancers",
      "b": "Special Forces",
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1792452145
     },
     {
      "id": 18,
