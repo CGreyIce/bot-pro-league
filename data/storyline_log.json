@@ -511,5 +511,14 @@
   "title": "twentyrosie: 150 MVP rounds",
   "text": "twentyrosie reached 150 MVP rounds",
   "link": "#/player/twentyrosie"
+ },
+ {
+  "id": "milestone:vyphogrid:kills:500",
+  "type": "milestone",
+  "ts": 1792481198,
+  "date": "2026-10-20",
+  "title": "Vyphogrid: 500 career kills",
+  "text": "Vyphogrid reached 500 career kills",
+  "link": "#/player/vyphogrid"
  }
 ]
