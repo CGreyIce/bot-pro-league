@@ -886,8 +886,9 @@
      "round": 2,
      "a": "Mirai Fates",
      "b": "Maple Macabre",
-     "sa": null,
-     "sb": null
+     "sa": 11,
+     "sb": 13,
+     "ts": 1792504512
     },
     {
      "id": 6,
