@@ -913,6 +913,39 @@
      "round": 2,
      "a": "Riptide Syndicate",
      "b": "Defiant Order",
+     "sa": 11,
+     "sb": 13,
+     "ts": 1792510919
+    },
+    {
+     "id": 9,
+     "round": 3,
+     "a": "Chromatic Foxes",
+     "b": "Maple Macabre",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 10,
+     "round": 3,
+     "a": "Mirai Fates",
+     "b": "Ember Wolves",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 11,
+     "round": 3,
+     "a": "Salted Stars",
+     "b": "Defiant Order",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 12,
+     "round": 3,
+     "a": "Riptide Syndicate",
+     "b": "Kuroshio Tide",
      "sa": null,
      "sb": null
     }
