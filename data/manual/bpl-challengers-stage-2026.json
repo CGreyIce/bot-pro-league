@@ -868,8 +868,9 @@
      "round": 1,
      "a": "Riptide Syndicate",
      "b": "Maple Macabre",
-     "sa": null,
-     "sb": null
+     "sa": 8,
+     "sb": 13,
+     "ts": 1792500002
     },
     {
      "id": 4,
