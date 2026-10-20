@@ -895,8 +895,9 @@
      "round": 2,
      "a": "Salted Stars",
      "b": "Chromatic Foxes",
-     "sa": null,
-     "sb": null
+     "sa": 7,
+     "sb": 13,
+     "ts": 1792506331
     },
     {
      "id": 7,
