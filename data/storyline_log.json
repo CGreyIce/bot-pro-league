@@ -529,5 +529,23 @@
   "title": "Vyphogrid: 100 MVP rounds",
   "text": "Vyphogrid reached 100 MVP rounds",
   "link": "#/player/vyphogrid"
+ },
+ {
+  "id": "milestone:ostc-x:kills:500",
+  "type": "milestone",
+  "ts": 1792487771,
+  "date": "2026-10-20",
+  "title": "ostc.x: 500 career kills",
+  "text": "ostc.x reached 500 career kills",
+  "link": "#/player/ostc-x"
+ },
+ {
+  "id": "milestone:aurasinvt:kills:500",
+  "type": "milestone",
+  "ts": 1792487771,
+  "date": "2026-10-20",
+  "title": "AuraSinVT: 500 career kills",
+  "text": "AuraSinVT reached 500 career kills",
+  "link": "#/player/aurasinvt"
  }
 ]
