@@ -904,8 +904,9 @@
      "round": 2,
      "a": "Ember Wolves",
      "b": "Kuroshio Tide",
-     "sa": null,
-     "sb": null
+     "sa": 13,
+     "sb": 8,
+     "ts": 1792508497
     },
     {
      "id": 8,
