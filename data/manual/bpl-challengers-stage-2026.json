@@ -797,8 +797,9 @@
      "round": 5,
      "a": "Thunderveil",
      "b": "Neon Flava",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1792485290
     },
     {
      "id": 19,

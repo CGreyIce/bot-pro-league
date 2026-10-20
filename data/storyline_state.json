@@ -1486,9 +1486,9 @@
    "mvp": 61
   },
   "vyphogrid": {
-   "maps": 32,
-   "kills": 539,
-   "mvp": 94
+   "maps": 33,
+   "kills": 562,
+   "mvp": 101
   },
   "aleaka": {
    "maps": 35,
@@ -1521,9 +1521,9 @@
    "mvp": 67
   },
   "yano-kuromu": {
-   "maps": 37,
-   "kills": 452,
-   "mvp": 56
+   "maps": 38,
+   "kills": 469,
+   "mvp": 58
   },
   "cwstalvt": {
    "maps": 26,
@@ -1821,9 +1821,9 @@
    "mvp": 35
   },
   "amayui-moka": {
-   "maps": 25,
-   "kills": 428,
-   "mvp": 52
+   "maps": 26,
+   "kills": 445,
+   "mvp": 53
   },
   "airizu": {
    "maps": 24,
@@ -1856,9 +1856,9 @@
    "mvp": 43
   },
   "juno-umezono": {
-   "maps": 28,
-   "kills": 393,
-   "mvp": 49
+   "maps": 29,
+   "kills": 408,
+   "mvp": 51
   },
   "djsalty": {
    "maps": 15,
@@ -1906,9 +1906,9 @@
    "mvp": 53
   },
   "kaminari-qpi": {
-   "maps": 31,
-   "kills": 468,
-   "mvp": 54
+   "maps": 32,
+   "kills": 482,
+   "mvp": 56
   },
   "miyaleile": {
    "maps": 18,
@@ -1991,9 +1991,9 @@
    "mvp": 41
   },
   "miruaamaochi": {
-   "maps": 18,
-   "kills": 278,
-   "mvp": 42
+   "maps": 19,
+   "kills": 291,
+   "mvp": 43
   },
   "tigeraxd": {
    "maps": 29,
@@ -2141,9 +2141,9 @@
    "mvp": 13
   },
   "deedeepup-vt": {
-   "maps": 10,
-   "kills": 176,
-   "mvp": 22
+   "maps": 11,
+   "kills": 192,
+   "mvp": 24
   },
   "kineto46": {
    "maps": 15,
@@ -2221,9 +2221,9 @@
    "mvp": 0
   },
   "arctrooperfives2755555": {
-   "maps": 10,
-   "kills": 149,
-   "mvp": 20
+   "maps": 11,
+   "kills": 164,
+   "mvp": 22
   },
   "diabet0": {
    "maps": 8,
@@ -2281,14 +2281,14 @@
    "mvp": 48
   },
   "flava": {
-   "maps": 12,
-   "kills": 186,
+   "maps": 13,
+   "kills": 194,
    "mvp": 25
   },
   "ixc999": {
-   "maps": 10,
-   "kills": 140,
-   "mvp": 22
+   "maps": 11,
+   "kills": 158,
+   "mvp": 26
   },
   "tedstyx": {
    "maps": 18,
@@ -2413,6 +2413,7 @@
   "upset:bpl-challengers-stage-2026:3-3",
   "upset:bpl-challengers-stage-2026:3-4",
   "upset:bpl-challengers-stage-2026:4-17",
+  "upset:bpl-challengers-stage-2026:4-18",
   "upset:bpl-challengers-stage-2026:4-6",
   "upset:nations-cup-qualifier-singapore-2026:1-43",
   "upset:nova-initia-invitational-i:1-12",

@@ -520,5 +520,14 @@
   "title": "Vyphogrid: 500 career kills",
   "text": "Vyphogrid reached 500 career kills",
   "link": "#/player/vyphogrid"
+ },
+ {
+  "id": "milestone:vyphogrid:mvp:100",
+  "type": "milestone",
+  "ts": 1792485293,
+  "date": "2026-10-20",
+  "title": "Vyphogrid: 100 MVP rounds",
+  "text": "Vyphogrid reached 100 MVP rounds",
+  "link": "#/player/vyphogrid"
  }
 ]
