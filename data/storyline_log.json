@@ -574,5 +574,14 @@
   "title": "Redandb1ue: 500 career kills",
   "text": "Redandb1ue reached 500 career kills",
   "link": "#/player/redandb1ue"
+ },
+ {
+  "id": "milestone:higuvt:kills:500",
+  "type": "milestone",
+  "ts": 1792538142,
+  "date": "2026-10-21",
+  "title": "HiguVT: 500 career kills",
+  "text": "HiguVT reached 500 career kills",
+  "link": "#/player/higuvt"
  }
 ]
