@@ -8,7 +8,7 @@
    "id": 1,
    "name": "Group A",
    "format": "swiss",
-   "bestOf": 1,
+   "bestOf": 3,
    "teams": [
     "Alcheministry",
     "Divide&Conquer",
@@ -82,7 +82,7 @@
    "id": 2,
    "name": "Group B",
    "format": "swiss",
-   "bestOf": 1,
+   "bestOf": 3,
    "teams": [
     "Bluebird",
     "The Nomads",
@@ -156,7 +156,7 @@
    "id": 3,
    "name": "Group C",
    "format": "swiss",
-   "bestOf": 1,
+   "bestOf": 3,
    "teams": [
     "Raven Song",
     "Round Loss Bonus",
@@ -230,7 +230,7 @@
    "id": 4,
    "name": "Group D",
    "format": "swiss",
-   "bestOf": 1,
+   "bestOf": 3,
    "teams": [
     "Masmark",
     "Setting Sun",
@@ -302,7 +302,7 @@
   }
  ],
  "formatLabel": "4 Groups (Swiss)",
- "formatNote": "48 teams: the pro teams ranked #17 and below and the top 15 of the Challengers Stage. 4 Swiss groups of 12, 5 rounds (Bo1 rounds 1-2, Bo3 rounds 3-5). The top 4 of each group (16 teams) qualify for the Conquerors Stage.",
+ "formatNote": "48 teams: the pro teams ranked #17 and below and the top 15 of the Challengers Stage. 4 Swiss groups of 12, 5 rounds, every match a Bo3. The top 4 of each group (16 teams) qualify for the Conquerors Stage.",
  "field": [
   {
    "team": "Alcheministry",
