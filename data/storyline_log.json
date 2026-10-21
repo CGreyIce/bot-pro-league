@@ -853,5 +853,32 @@
   "title": "CrimsynFlames: 500 career kills",
   "text": "CrimsynFlames reached 500 career kills",
   "link": "#/player/crimsynflames"
+ },
+ {
+  "id": "milestone:suzuyunn:kills:500",
+  "type": "milestone",
+  "ts": 1792612485,
+  "date": "2026-10-22",
+  "title": "Suzuyunn: 500 career kills",
+  "text": "Suzuyunn reached 500 career kills",
+  "link": "#/player/suzuyunn"
+ },
+ {
+  "id": "milestone:tanykeat:kills:500",
+  "type": "milestone",
+  "ts": 1792612485,
+  "date": "2026-10-22",
+  "title": "tanykeat: 500 career kills",
+  "text": "tanykeat reached 500 career kills",
+  "link": "#/player/tanykeat"
+ },
+ {
+  "id": "milestone:evikuroneko:kills:500",
+  "type": "milestone",
+  "ts": 1792612485,
+  "date": "2026-10-22",
+  "title": "EviKuroneko: 500 career kills",
+  "text": "EviKuroneko reached 500 career kills",
+  "link": "#/player/evikuroneko"
  }
 ]
