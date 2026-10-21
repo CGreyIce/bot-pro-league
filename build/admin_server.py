@@ -168,6 +168,9 @@ class Handler(SimpleHTTPRequestHandler):
             return self._json(200, {"ok": True, **roster.meta()})
         if path == "/api/solo/list":
             return self._json(200, {"ok": True, "games": load_solo()})
+        if path == "/api/ai/status":
+            import ai_writer
+            return self._json(200, {"ok": True, **ai_writer.status()})
         if path == "/api/caps":
             # What this admin server supports (the BPL Bots launcher checks before uploading).
             return self._json(200, {"ok": True, "matchstatsBestOf": True})
@@ -309,6 +312,19 @@ class Handler(SimpleHTTPRequestHandler):
                     return self._json(400, {"ok": False, "error": str(e)})
                 ok, msg = regenerate()
                 return self._json(200, {"ok": ok, "msg": msg})
+            elif path == "/api/ai/key":
+                # the Chutes key goes to local/ai.json (git-ignored), never into anything that's published
+                import ai_writer
+                ai_writer.save_key((b.get("key") or "").strip() or None)
+                return self._json(200, {"ok": True, **ai_writer.status()})
+            elif path == "/api/ai/draft":
+                import ai_writer, importlib
+                importlib.reload(ai_writer)      # prompt/model tweaks apply without restarting the server
+                try:
+                    out = ai_writer.write(b.get("title") or "", b.get("body") or "", b.get("date") or "")
+                except RuntimeError as e:
+                    return self._json(400, {"ok": False, "error": str(e)})
+                return self._json(200, {"ok": True, **out})
             elif path == "/api/publish":
                 ok, msg = git_publish()
                 return self._json(200, {"ok": ok, "msg": msg})

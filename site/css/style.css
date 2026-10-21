@@ -1440,3 +1440,10 @@ h1 .human-badge{height:22px;font-size:12px;padding:0 8px;margin-left:10px}
 /* live scores: who is signed in, with switch / sign-out buttons */
 .lv-who{margin-left:auto;display:flex;align-items:center;gap:8px;flex-wrap:wrap;font:400 12px Inter,sans-serif;color:var(--muted)}
 .lv-who b{color:var(--text)}
+
+/* admin: Write with AI */
+.ai-box{margin-top:10px;padding:10px 12px;border:1px dashed var(--border2);border-radius:8px;background:rgba(255,255,255,.015)}
+.ai-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.ai-go:disabled{opacity:.6;cursor:default}
+.ai-key{margin-top:8px}
+.ai-key .adm-in{max-width:340px;display:inline-block;margin-right:6px}
