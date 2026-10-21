@@ -637,5 +637,212 @@
   "title": "Nullpoint win BPL Challengers Stage 2026",
   "text": "Champions of BPL Challengers Stage 2026, beating Pastel Mocha in the final",
   "link": "#/tournament/bpl-challengers-stage-2026"
+ },
+ {
+  "id": "promotion:nullpoint",
+  "type": "promotion",
+  "ts": 1792601644,
+  "date": "2026-10-22",
+  "title": "Nullpoint join the pro ranks",
+  "text": "New pro team [0PT], 5 players",
+  "link": "#/team/nullpoint"
+ },
+ {
+  "id": "promotion:pastel-mocha",
+  "type": "promotion",
+  "ts": 1792601644,
+  "date": "2026-10-22",
+  "title": "Pastel Mocha join the pro ranks",
+  "text": "New pro team [PaMo], 5 players",
+  "link": "#/team/pastel-mocha"
+ },
+ {
+  "id": "promotion:beehyve",
+  "type": "promotion",
+  "ts": 1792601644,
+  "date": "2026-10-22",
+  "title": "BeeHyve join the pro ranks",
+  "text": "New pro team [BHYV], 5 players",
+  "link": "#/team/beehyve"
+ },
+ {
+  "id": "milestone:ostc-x:maps:50",
+  "type": "milestone",
+  "ts": 1792601644,
+  "date": "2026-10-22",
+  "title": "ostc.x: 50 maps played",
+  "text": "ostc.x reached 50 maps played",
+  "link": "#/player/ostc-x"
+ },
+ {
+  "id": "milestone:ostc-x:mvp:100",
+  "type": "milestone",
+  "ts": 1792601644,
+  "date": "2026-10-22",
+  "title": "ostc.x: 100 MVP rounds",
+  "text": "ostc.x reached 100 MVP rounds",
+  "link": "#/player/ostc-x"
+ },
+ {
+  "id": "milestone:tiger-lark:kills:500",
+  "type": "milestone",
+  "ts": 1792601644,
+  "date": "2026-10-22",
+  "title": "tiger.lark: 500 career kills",
+  "text": "tiger.lark reached 500 career kills",
+  "link": "#/player/tiger-lark"
+ },
+ {
+  "id": "milestone:higuvt:mvp:100",
+  "type": "milestone",
+  "ts": 1792601644,
+  "date": "2026-10-22",
+  "title": "HiguVT: 100 MVP rounds",
+  "text": "HiguVT reached 100 MVP rounds",
+  "link": "#/player/higuvt"
+ },
+ {
+  "id": "milestone:aurasinvt:maps:50",
+  "type": "milestone",
+  "ts": 1792601644,
+  "date": "2026-10-22",
+  "title": "AuraSinVT: 50 maps played",
+  "text": "AuraSinVT reached 50 maps played",
+  "link": "#/player/aurasinvt"
+ },
+ {
+  "id": "milestone:aurasinvt:mvp:100",
+  "type": "milestone",
+  "ts": 1792601644,
+  "date": "2026-10-22",
+  "title": "AuraSinVT: 100 MVP rounds",
+  "text": "AuraSinVT reached 100 MVP rounds",
+  "link": "#/player/aurasinvt"
+ },
+ {
+  "id": "milestone:fumishiroyummy:mvp:100",
+  "type": "milestone",
+  "ts": 1792601644,
+  "date": "2026-10-22",
+  "title": "FumishiroYummy: 100 MVP rounds",
+  "text": "FumishiroYummy reached 100 MVP rounds",
+  "link": "#/player/fumishiroyummy"
+ },
+ {
+  "id": "milestone:nyxcatto:kills:500",
+  "type": "milestone",
+  "ts": 1792601644,
+  "date": "2026-10-22",
+  "title": "nyxcatto: 500 career kills",
+  "text": "nyxcatto reached 500 career kills",
+  "link": "#/player/nyxcatto"
+ },
+ {
+  "id": "milestone:obvmx:mvp:200",
+  "type": "milestone",
+  "ts": 1792601644,
+  "date": "2026-10-22",
+  "title": "obvMX: 200 MVP rounds",
+  "text": "obvMX reached 200 MVP rounds",
+  "link": "#/player/obvmx"
+ },
+ {
+  "id": "milestone:shuvimo:mvp:100",
+  "type": "milestone",
+  "ts": 1792601644,
+  "date": "2026-10-22",
+  "title": "Shuvimo: 100 MVP rounds",
+  "text": "Shuvimo reached 100 MVP rounds",
+  "link": "#/player/shuvimo"
+ },
+ {
+  "id": "milestone:nerfox:kills:500",
+  "type": "milestone",
+  "ts": 1792601644,
+  "date": "2026-10-22",
+  "title": "Nerfox: 500 career kills",
+  "text": "Nerfox reached 500 career kills",
+  "link": "#/player/nerfox"
+ },
+ {
+  "id": "milestone:kiokocheiko:maps:50",
+  "type": "milestone",
+  "ts": 1792601644,
+  "date": "2026-10-22",
+  "title": "KiokoCheiko: 50 maps played",
+  "text": "KiokoCheiko reached 50 maps played",
+  "link": "#/player/kiokocheiko"
+ },
+ {
+  "id": "milestone:kiokocheiko:mvp:100",
+  "type": "milestone",
+  "ts": 1792601644,
+  "date": "2026-10-22",
+  "title": "KiokoCheiko: 100 MVP rounds",
+  "text": "KiokoCheiko reached 100 MVP rounds",
+  "link": "#/player/kiokocheiko"
+ },
+ {
+  "id": "milestone:dianya:maps:50",
+  "type": "milestone",
+  "ts": 1792601644,
+  "date": "2026-10-22",
+  "title": "Dianya: 50 maps played",
+  "text": "Dianya reached 50 maps played",
+  "link": "#/player/dianya"
+ },
+ {
+  "id": "milestone:dianya:mvp:100",
+  "type": "milestone",
+  "ts": 1792601644,
+  "date": "2026-10-22",
+  "title": "Dianya: 100 MVP rounds",
+  "text": "Dianya reached 100 MVP rounds",
+  "link": "#/player/dianya"
+ },
+ {
+  "id": "milestone:djsalty:kills:500",
+  "type": "milestone",
+  "ts": 1792601644,
+  "date": "2026-10-22",
+  "title": "djsalty_: 500 career kills",
+  "text": "djsalty_ reached 500 career kills",
+  "link": "#/player/djsalty"
+ },
+ {
+  "id": "milestone:kanarivt:maps:50",
+  "type": "milestone",
+  "ts": 1792601644,
+  "date": "2026-10-22",
+  "title": "kanarivt: 50 maps played",
+  "text": "kanarivt reached 50 maps played",
+  "link": "#/player/kanarivt"
+ },
+ {
+  "id": "milestone:keikatamori:mvp:100",
+  "type": "milestone",
+  "ts": 1792601644,
+  "date": "2026-10-22",
+  "title": "keikatamori: 100 MVP rounds",
+  "text": "keikatamori reached 100 MVP rounds",
+  "link": "#/player/keikatamori"
+ },
+ {
+  "id": "milestone:nataleste:kills:500",
+  "type": "milestone",
+  "ts": 1792601644,
+  "date": "2026-10-22",
+  "title": "Nataleste: 500 career kills",
+  "text": "Nataleste reached 500 career kills",
+  "link": "#/player/nataleste"
+ },
+ {
+  "id": "milestone:ryujin:kills:500",
+  "type": "milestone",
+  "ts": 1792601644,
+  "date": "2026-10-22",
+  "title": "Ryujin: 500 career kills",
+  "text": "Ryujin reached 500 career kills",
+  "link": "#/player/ryujin"
  }
 ]

@@ -1080,5 +1080,6 @@
  "predictionsLocked": true,
  "finalLeaderboard": {
   "perGroup": 3
- }
+ },
+ "completed": true
 }
