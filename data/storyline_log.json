@@ -601,5 +601,14 @@
   "title": "lukedefabio: 500 career kills",
   "text": "lukedefabio reached 500 career kills",
   "link": "#/player/lukedefabio"
+ },
+ {
+  "id": "milestone:dla-wo:kills:500",
+  "type": "milestone",
+  "ts": 1792567364,
+  "date": "2026-10-21",
+  "title": "dla.wo: 500 career kills",
+  "text": "dla.wo reached 500 career kills",
+  "link": "#/player/dla-wo"
  }
 ]
