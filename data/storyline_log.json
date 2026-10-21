@@ -583,5 +583,14 @@
   "title": "HiguVT: 500 career kills",
   "text": "HiguVT reached 500 career kills",
   "link": "#/player/higuvt"
+ },
+ {
+  "id": "milestone:vixi:kills:500",
+  "type": "milestone",
+  "ts": 1792553721,
+  "date": "2026-10-21",
+  "title": "vixi: 500 career kills",
+  "text": "vixi reached 500 career kills",
+  "link": "#/player/vixi"
  }
 ]
