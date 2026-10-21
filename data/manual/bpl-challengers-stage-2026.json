@@ -958,8 +958,9 @@
      "round": 4,
      "a": "Chromatic Foxes",
      "b": "Mirai Fates",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1792555385
     },
     {
      "id": 14,
