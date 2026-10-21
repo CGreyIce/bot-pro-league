@@ -564,5 +564,6 @@
  },
  "finalLeaderboard": {
   "perGroup": 4
- }
+ },
+ "predictionsLocked": true
 }
