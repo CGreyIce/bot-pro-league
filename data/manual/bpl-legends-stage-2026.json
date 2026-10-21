@@ -2,10 +2,307 @@
  "slug": "bpl-legends-stage-2026",
  "name": "BPL Legends Stage 2026",
  "tier": "s",
- "date": "2026-10-31",
- "stages": [],
+ "date": "2026-10-22",
+ "stages": [
+  {
+   "id": 1,
+   "name": "Group A",
+   "format": "swiss",
+   "bestOf": 1,
+   "teams": [
+    "Alcheministry",
+    "Divide&Conquer",
+    "Technomancy",
+    "Prism Divide",
+    "Caelum Scala",
+    "Ukiyo",
+    "Aeternum",
+    "Solstice",
+    "Syzygy",
+    "Special Forces",
+    "Northwind",
+    "Notorious Hollow"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "a": "Alcheministry",
+     "b": "Aeternum",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "a": "Divide&Conquer",
+     "b": "Solstice",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "a": "Technomancy",
+     "b": "Syzygy",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 1,
+     "a": "Prism Divide",
+     "b": "Special Forces",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 5,
+     "round": 1,
+     "a": "Caelum Scala",
+     "b": "Northwind",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 6,
+     "round": 1,
+     "a": "Ukiyo",
+     "b": "Notorious Hollow",
+     "sa": null,
+     "sb": null
+    }
+   ],
+   "roundTitles": {
+    "1": "Round 1"
+   },
+   "rounds": 5
+  },
+  {
+   "id": 2,
+   "name": "Group B",
+   "format": "swiss",
+   "bestOf": 1,
+   "teams": [
+    "Bluebird",
+    "The Nomads",
+    "Moonlit Tempo",
+    "Nullpoint",
+    "DiamondOnes",
+    "Mourningstar",
+    "Pastel Mocha",
+    "Nightshade",
+    "Cyanide",
+    "Crystal Laurels",
+    "Chromatic Foxes",
+    "Maple Macabre"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "a": "Bluebird",
+     "b": "Pastel Mocha",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "a": "The Nomads",
+     "b": "Nightshade",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "a": "Moonlit Tempo",
+     "b": "Cyanide",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 1,
+     "a": "Nullpoint",
+     "b": "Crystal Laurels",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 5,
+     "round": 1,
+     "a": "DiamondOnes",
+     "b": "Chromatic Foxes",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 6,
+     "round": 1,
+     "a": "Mourningstar",
+     "b": "Maple Macabre",
+     "sa": null,
+     "sb": null
+    }
+   ],
+   "roundTitles": {
+    "1": "Round 1"
+   },
+   "rounds": 5
+  },
+  {
+   "id": 3,
+   "name": "Group C",
+   "format": "swiss",
+   "bestOf": 1,
+   "teams": [
+    "Raven Song",
+    "Round Loss Bonus",
+    "Sacred Raven",
+    "division20",
+    "Team Neverseen",
+    "Fruit Basket",
+    "0v3",
+    "BeeHyve",
+    "Lunar Cadence",
+    "Defiant Order",
+    "Eiromancers",
+    "Thunderveil"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "a": "Raven Song",
+     "b": "0v3",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "a": "Round Loss Bonus",
+     "b": "BeeHyve",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "a": "Sacred Raven",
+     "b": "Lunar Cadence",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 1,
+     "a": "division20",
+     "b": "Defiant Order",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 5,
+     "round": 1,
+     "a": "Team Neverseen",
+     "b": "Eiromancers",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 6,
+     "round": 1,
+     "a": "Fruit Basket",
+     "b": "Thunderveil",
+     "sa": null,
+     "sb": null
+    }
+   ],
+   "roundTitles": {
+    "1": "Round 1"
+   },
+   "rounds": 5
+  },
+  {
+   "id": 4,
+   "name": "Group D",
+   "format": "swiss",
+   "bestOf": 1,
+   "teams": [
+    "Masmark",
+    "Setting Sun",
+    "Kiedz",
+    "99Lives",
+    "5PERCENT",
+    "Unforgettable",
+    "Wraithborne",
+    "Aspire",
+    "Astral Bloom",
+    "Snowbell Syndicate",
+    "Hanabi Union",
+    "Nightfang Covenant"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "a": "Masmark",
+     "b": "Wraithborne",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "a": "Setting Sun",
+     "b": "Aspire",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "a": "Kiedz",
+     "b": "Astral Bloom",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 1,
+     "a": "99Lives",
+     "b": "Snowbell Syndicate",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 5,
+     "round": 1,
+     "a": "5PERCENT",
+     "b": "Hanabi Union",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 6,
+     "round": 1,
+     "a": "Unforgettable",
+     "b": "Nightfang Covenant",
+     "sa": null,
+     "sb": null
+    }
+   ],
+   "roundTitles": {
+    "1": "Round 1"
+   },
+   "rounds": 5
+  }
+ ],
  "formatLabel": "4 Groups (Swiss)",
- "formatNote": "48 teams: the pro teams ranked #17–49 and the top 15 of the Challengers Stage. 4 Swiss groups of 12, 5 rounds. The top 4 of each group (16 teams) qualify for the Conquerors Stage. The groups are drawn once the Challengers Stage ends.",
+ "formatNote": "48 teams: the pro teams ranked #17 and below and the top 15 of the Challengers Stage. 4 Swiss groups of 12, 5 rounds (Bo1 rounds 1-2, Bo3 rounds 3-5). The top 4 of each group (16 teams) qualify for the Conquerors Stage.",
  "field": [
   {
    "team": "Alcheministry",
@@ -214,5 +511,58 @@
    "from": "bpl-challengers-stage-2026",
    "place": 15
   }
- ]
+ ],
+ "seeds": {
+  "Alcheministry": 1,
+  "Bluebird": 2,
+  "Raven Song": 3,
+  "Masmark": 4,
+  "Setting Sun": 5,
+  "Round Loss Bonus": 6,
+  "The Nomads": 7,
+  "Divide&Conquer": 8,
+  "Technomancy": 9,
+  "Moonlit Tempo": 10,
+  "Sacred Raven": 11,
+  "Kiedz": 12,
+  "99Lives": 13,
+  "division20": 14,
+  "Nullpoint": 15,
+  "Prism Divide": 16,
+  "Caelum Scala": 17,
+  "DiamondOnes": 18,
+  "Team Neverseen": 19,
+  "5PERCENT": 20,
+  "Unforgettable": 21,
+  "Fruit Basket": 22,
+  "Mourningstar": 23,
+  "Ukiyo": 24,
+  "Aeternum": 25,
+  "Pastel Mocha": 26,
+  "0v3": 27,
+  "Wraithborne": 28,
+  "Aspire": 29,
+  "BeeHyve": 30,
+  "Nightshade": 31,
+  "Solstice": 32,
+  "Syzygy": 33,
+  "Cyanide": 34,
+  "Lunar Cadence": 35,
+  "Astral Bloom": 36,
+  "Snowbell Syndicate": 37,
+  "Defiant Order": 38,
+  "Crystal Laurels": 39,
+  "Special Forces": 40,
+  "Northwind": 41,
+  "Chromatic Foxes": 42,
+  "Eiromancers": 43,
+  "Hanabi Union": 44,
+  "Nightfang Covenant": 45,
+  "Thunderveil": 46,
+  "Maple Macabre": 47,
+  "Notorious Hollow": 48
+ },
+ "finalLeaderboard": {
+  "perGroup": 4
+ }
 }
