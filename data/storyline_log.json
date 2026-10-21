@@ -628,5 +628,14 @@
   "title": "estellyy.: 500 career kills",
   "text": "estellyy. reached 500 career kills",
   "link": "#/player/estellyy"
+ },
+ {
+  "id": "champion:bpl-challengers-stage-2026",
+  "type": "champion",
+  "ts": 1792601107,
+  "date": "2026-10-22",
+  "title": "Nullpoint win BPL Challengers Stage 2026",
+  "text": "Champions of BPL Challengers Stage 2026, beating Pastel Mocha in the final",
+  "link": "#/tournament/bpl-challengers-stage-2026"
  }
 ]

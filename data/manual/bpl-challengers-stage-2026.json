@@ -1021,8 +1021,9 @@
      "round": 5,
      "a": "Ember Wolves",
      "b": "Riptide Syndicate",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1792601107
     }
    ],
    "roundTitles": {

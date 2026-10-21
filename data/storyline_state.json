@@ -37,6 +37,7 @@
   }
  },
  "champions": [
+  "bpl-challengers-stage-2026",
   "nova-initia-invitational-i",
   "bpl-nations-cup-2026",
   "nations-cup-qualifier-australia-2026",
@@ -1241,9 +1242,9 @@
    "mvp": 145
   },
   "obvmx": {
-   "maps": 73,
-   "kills": 1204,
-   "mvp": 191
+   "maps": 74,
+   "kills": 1231,
+   "mvp": 195
   },
   "sadgeboi": {
    "maps": 38,
@@ -1261,9 +1262,9 @@
    "mvp": 87
   },
   "mkakili": {
-   "maps": 44,
-   "kills": 801,
-   "mvp": 131
+   "maps": 45,
+   "kills": 821,
+   "mvp": 132
   },
   "asumi-sena": {
    "maps": 41,
@@ -1621,9 +1622,9 @@
    "mvp": 76
   },
   "surf": {
-   "maps": 29,
-   "kills": 440,
-   "mvp": 71
+   "maps": 30,
+   "kills": 452,
+   "mvp": 73
   },
   "rach-elx": {
    "maps": 24,
@@ -1736,9 +1737,9 @@
    "mvp": 36
   },
   "loonatic": {
-   "maps": 25,
-   "kills": 337,
-   "mvp": 42
+   "maps": 26,
+   "kills": 353,
+   "mvp": 44
   },
   "yarimell": {
    "maps": 31,
@@ -1756,9 +1757,9 @@
    "mvp": 78
   },
   "kaga-sumire": {
-   "maps": 30,
-   "kills": 397,
-   "mvp": 58
+   "maps": 31,
+   "kills": 411,
+   "mvp": 60
   },
   "ginjo-saine": {
    "maps": 29,
@@ -1766,9 +1767,9 @@
    "mvp": 76
   },
   "nerfox": {
-   "maps": 26,
-   "kills": 402,
-   "mvp": 45
+   "maps": 27,
+   "kills": 423,
+   "mvp": 48
   },
   "hamzyy": {
    "maps": 29,
@@ -2081,9 +2082,9 @@
    "mvp": 29
   },
   "reigyuuvt": {
-   "maps": 12,
-   "kills": 199,
-   "mvp": 29
+   "maps": 13,
+   "kills": 214,
+   "mvp": 33
   },
   "soapbox-danny": {
    "maps": 16,
@@ -2176,9 +2177,9 @@
    "mvp": 44
   },
   "spicywolfie": {
-   "maps": 18,
-   "kills": 314,
-   "mvp": 47
+   "maps": 19,
+   "kills": 331,
+   "mvp": 50
   },
   "kimhuaying": {
    "maps": 13,
@@ -2241,9 +2242,9 @@
    "mvp": 28
   },
   "shita1m": {
-   "maps": 10,
-   "kills": 138,
-   "mvp": 16
+   "maps": 11,
+   "kills": 148,
+   "mvp": 17
   },
   "kritial": {
    "maps": 10,
@@ -2331,9 +2332,9 @@
    "mvp": 24
   },
   "renren": {
-   "maps": 12,
-   "kills": 186,
-   "mvp": 26
+   "maps": 13,
+   "kills": 204,
+   "mvp": 28
   },
   "nico": {
    "maps": 16,
@@ -2427,6 +2428,7 @@
  ],
  "v": 1,
  "drafted": [
+  "champion:bpl-challengers-stage-2026",
   "record:highestMap:65+mostKillsMap:58+mostOT:7",
   "top:player:rebebx:2026-10-14",
   "top:player:sanctuary:2026-10-16",
