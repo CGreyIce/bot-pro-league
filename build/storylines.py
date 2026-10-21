@@ -608,7 +608,8 @@ class Storylines:
                               "text": f"Group stage: {left} match{'es' if left != 1 else ''} to play "
                                       + (f"(round {lo} of {total})" if lo == hi else f"(groups between round {lo} and {hi} of {total})")
                                       + (". Top 2 in each group reach the playoffs." if po else
-                                         ". The top 2 of each group make the final leaderboard." if tr.get("leaderboard") else "."),
+                                         f". The top {tr['leaderboard'].get('perGroup', 2)} of each group make the final leaderboard."
+                                         if tr.get("leaderboard") else "."),
                               "link": f"#/tournament/{tr['slug']}"})
         return cards
 

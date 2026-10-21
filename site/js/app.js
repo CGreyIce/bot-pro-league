@@ -4190,7 +4190,10 @@ function renderTournament(slug){
         <thead><tr><th class="no-sort">#</th><th class="no-sort">Team</th><th class="no-sort">Group</th><th class="no-sort">Record</th><th class="no-sort">Maps</th><th class="no-sort" title="Round difference across all their group games">Rounds</th>${lb.complete&&hasPrizes?'<th class="no-sort" style="text-align:right">Prize</th>':''}</tr></thead>
         <tbody>${rows}</tbody></table></div>
       ${!lb.complete&&lb.pending&&lb.pending.length?`<div class="muted" style="font-size:12px;margin-top:6px">${esc(lb.pending.join(", ").replace(/, ([^,]*)$/," and $1"))} ${lb.pending.length===1?"hasn't":"haven't"} started yet: their top ${lb.perGroup} join the table once they play.</div>`:''}
-      <div class="muted" style="font-size:11px;margin-top:6px">Ranked by wins, then losses, then round difference. Tied teams from the same group keep their group order (head-to-head, then rounds). TB = tie broken.</div>`; })() : '';
+      <div class="muted" style="font-size:11px;margin-top:6px">Ranked by wins, then losses, then round difference. Tied teams from the same group keep their group order (head-to-head, then rounds). TB = tie broken.</div>`; })()
+    // no group has played yet: say up front that the event ends on one leaderboard, not a playoff bracket
+    : lb ? `<h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Final Leaderboard</h2>
+      <div class="notice" style="text-align:left">No playoffs: the top ${lb.perGroup} of each group (${lb.perGroup*(tr.stages||[]).filter(s=>s.format==='swiss').length} teams) go onto one leaderboard, ranked on their group results. #1 is the champion. It fills in from the first result.</div>` : '';
   const fsPlayoff = fs.filter(s=>s.result!=='Group Stage');
   const fsGroup = fs.filter(s=>s.result==='Group Stage');
   const finalStandingsSection = lb ? (lbSection + (fsGroup.length&&lb.complete?`<details class="fs-details"><summary>Group stage — ${fsGroup.length} teams that didn't qualify</summary>
@@ -5241,6 +5244,30 @@ function seedOrder(n){
   return order;
 }
 function predGroups(tr){ return (tr.stages||[]).filter(s=>s.format!=='single_elim'); }
+// leaderboard events (no playoff, e.g. Challengers/Legends): pick the top N of every group, then rank
+// all the qualifiers on one predicted final leaderboard (#1 = champion) instead of filling a bracket
+function predIsBoard(tr){ return !!(tr && tr.leaderboard); }
+function predPerGroup(tr){ return predIsBoard(tr) ? (tr.leaderboard.perGroup||2) : 2; }
+// the predicted leaderboard: the saved order first, then any newly picked qualifiers (group winners
+// first). null until every group has all its picks.
+function predBoard(tr, pred){
+  const gs=predGroups(tr), per=predPerGroup(tr), quals=[];
+  for(let i=0;i<per;i++) gs.forEach(g=>quals.push(((pred.groups||{})[g.name]||[])[i]||null));
+  if(!quals.length || quals.some(t=>!t) || new Set(quals).size!==quals.length) return null;
+  const qs=new Set(quals), seen=new Set();
+  const out=(pred.board||[]).filter(t=>qs.has(t) && !seen.has(t) && seen.add(t));
+  quals.forEach(t=>{ if(!seen.has(t)){ seen.add(t); out.push(t); } });
+  return out;
+}
+// predicted champ / runner-up / top 4 / top 8: from the leaderboard on leaderboard events, else the bracket.
+// (Leaderboard events predicted before the leaderboard existed fall back to their old bracket.)
+function predPicks(tr, pred){
+  if(predIsBoard(tr) && pred.board && pred.board.length){
+    const b=predBoard(tr,pred)||pred.board;
+    return {champ:b[0]||null, ru:b[1]||null, sf:b.slice(2,4), qf:b.slice(4,8), board:b};
+  }
+  return predPlacements(bracketRounds(predSeeds(tr,pred), pred.bracket||{}));
+}
 // seed list for the prediction bracket: from group picks (winners 1-8, runners 9-16),
 // or — for a pure single-elim event — the bracket's own seed-ordered teams.
 function predSeeds(tr, pred){
@@ -5321,9 +5348,11 @@ function predPlacements(rounds){                   // predicted champ / runner-u
 }
 function actualResults(tr){
   if(!tr.champion) return null;
-  const groups={}; predGroups(tr).forEach(g=>{ groups[g.name]=(g.standings||[]).slice(0,2).map(s=>s.name); });
-  const fs=tr.finalStandings||[]; const has=labels=>fs.filter(s=>labels.includes(s.result)).map(s=>s.name);
+  const per=predPerGroup(tr), lb=tr.leaderboard;
+  const groups={}; predGroups(tr).forEach(g=>{ groups[g.name]=(g.standings||[]).slice(0,per).map(s=>s.name); });
+  const fs=tr.finalStandings||[];
   return { groups, champ:(fs.find(s=>s.result==='Champion')||{}).name,
+           board: lb&&lb.complete ? (lb.rows||[]).map(r=>r.name) : null,
            ru:(fs.find(s=>s.result==='Runner-up')||{}).name,
            // by final rank, so bracket events and leaderboard events (no playoff games) score the same way
            f4:fs.filter(s=>s.result!=='Group Stage' && s.rank<=4).map(s=>s.name),
@@ -5336,11 +5365,12 @@ function scorePrediction(pred, tr, actual){
     const act=actual.groups[g]||[];
     (picks||[]).forEach((team,i)=>{ if(team && act.includes(team)){ pts+=3; if(act[i]===team) pts+=1; } });
   });
-  const pl=predPlacements(bracketRounds(predSeeds(tr,pred), pred.bracket||{}));
+  const pl=predPicks(tr,pred);
   if(pl.champ && pl.champ===actual.champ) pts+=10;
   if(pl.ru && (pl.ru===actual.champ||pl.ru===actual.ru)) pts+=6;
   pl.sf.forEach(t=>{ if(actual.f4.includes(t)) pts+=4; });
   pl.qf.forEach(t=>{ if(actual.f8.includes(t)) pts+=2; });
+  if(pl.board && actual.board) pl.board.forEach((t,i)=>{ if(t && actual.board[i]===t) pts+=1; });   // exact leaderboard spot
   return pts;
 }
 
@@ -5350,8 +5380,8 @@ async function renderPredict(slug){
   const tr = (DATA.tournaments||[]).find(t=>t.slug===slug);
   if(!tr){ app.innerHTML = notFound("Event"); return; }
   if(!predSupported(tr)){ app.innerHTML = `<div class="notice">Predictions aren't available for this event's format.</div>`; return; }
-  _predTr = tr;
-  _predRosters = {};                          // team -> PAGE_ROSTERS index (hover shows the line-up)
+  _predTr = tr; _predAll = null;
+  _predRosters = {};                        // team -> PAGE_ROSTERS index (hover shows the line-up)
   (tr.attending||[]).forEach(row=>{ if(row.players && row.players.length) _predRosters[normKey(row.team)] = rosterIdx({team:row.team, teamSlug:row.teamSlug, players:row.players}); });
   const u = predUser();
   _pred = await PredictBackend.loadMine(slug, u.uid) || { event:slug, uid:u.uid, name:u.name, groups:{}, bracket:{} };
@@ -5361,32 +5391,51 @@ async function renderPredict(slug){
 function drawPredict(){
   const tr=_predTr, pred=_pred; const gs=predGroups(tr);
   const u=predUser();
-  const teamOpt=(sel, list)=>`<option value="">—</option>`+list.map(t=>`<option value="${esc(t[0])}" ${sel===t[0]?'selected':''}>${esc(t[0])}</option>`).join("");
+  const isBoard=predIsBoard(tr), per=predPerGroup(tr);
+  // a team already picked in another slot of the same group can't be picked again
+  const teamOpt=(sel, list, taken)=>`<option value="">—</option>`+list.map(t=>`<option value="${esc(t[0])}" ${sel===t[0]?'selected':''}${sel!==t[0]&&taken.includes(t[0])?' disabled':''}>${esc(t[0])}</option>`).join("");
   const groupCards = gs.map(g=>{
     const pk=(pred.groups[g.name]||[]);
     const chips = g.teams.map(t=>{ const nm=t[0]; const tm=teamByName(nm);
       return `<span class="pg-team"${predRAttr(nm)}>${tm&&tm.logo?`<img class="pg-tlogo" src="${esc(tm.logo)}" alt="">`:''}${esc(nm)}</span>`; }).join("");
     return `<div class="pg-card"><div class="pg-h">${esc(g.name)}</div>
       <div class="pg-teams">${chips}</div>
-      <label class="pg-l">1st <select class="pg-sel" data-g="${esc(g.name)}" data-pos="0">${teamOpt(pk[0], g.teams)}</select></label>
-      <label class="pg-l">2nd <select class="pg-sel" data-g="${esc(g.name)}" data-pos="1">${teamOpt(pk[1], g.teams)}</select></label></div>`;
+      ${Array.from({length:per},(_,i)=>`<label class="pg-l"><span class="pg-pos">${placeOrd(i+1)}</span> <select class="pg-sel" data-g="${esc(g.name)}" data-pos="${i}">${teamOpt(pk[i], g.teams, pk)}</select></label>`).join("")}</div>`;
   }).join("");
-  const seeds=predSeeds(tr,pred);
-  let rounds=bracketRounds(seeds, pred.bracket);
-  if(rounds && prunePicks(rounds, pred.bracket)) rounds=bracketRounds(seeds, pred.bracket);
-  const RL=roundLabels(rounds?rounds.length:0);
-  const bracketHtml = !rounds
-    ? `<p class="muted">Pick a 1st and 2nd for all ${gs.length} groups to unlock the bracket.</p>`
-    : predBracketTree(rounds, RL, m=>{
-        const bt=(t)=>`<div class="pbk-team ${m.pick===t?'pk':''} ${t?'':'tbd'}" data-key="${m.key}" data-team="${esc(t||'')}"${t?predRAttr(t):''}>${t?crestMini(t):'<span class=muted>TBD</span>'}</div>`;
-        return `${bt(m.a)}${bt(m.b)}`;
-      });
-  const pl=predPlacements(rounds);
+  let rounds=null, bracketHtml='', boardHtml='', pl;
+  if(isBoard){
+    const board=predBoard(tr,pred);
+    if(board) pred.board=board;                     // keep the saved order in step with the group picks
+    const where={}; gs.forEach(g=>(pred.groups[g.name]||[]).forEach((t,i)=>{ if(t) where[t]=[g.name.replace('Group ',''), i+1]; }));
+    const tier=i=>i===0?'Champion':i===1?'Runner-up':i===2?'Top 4':i===4?'Top 8':'';
+    boardHtml = !board
+      ? `<p class="muted">Pick the top ${per} of all ${gs.length} groups to unlock the leaderboard.</p>`
+      : `<div class="plb" style="--plb-rows:${Math.ceil(board.length/2)}">${board.map((t,i)=>`<div class="plb-row${i===0?' plb-champ':''}${[0,1,3,7].includes(i)?' plb-cut':''}" draggable="true" data-i="${i}"${predRAttr(t)}>
+          <span class="plb-rk">${i+1}</span>${crestMini(t)}
+          ${where[t]?`<span class="plb-g" title="Your ${placeOrd(where[t][1])} pick in Group ${esc(where[t][0])}">${esc(where[t][0])}${where[t][1]}</span>`:''}
+          ${tier(i)?`<span class="plb-tier">${tier(i)}</span>`:''}
+          <span class="plb-mvs"><button class="plb-mv" data-i="${i}" data-d="-1"${i===0?' disabled':''} title="Move up">▲</button><button class="plb-mv" data-i="${i}" data-d="1"${i===board.length-1?' disabled':''} title="Move down">▼</button></span></div>`).join("")}</div>
+        <div class="muted" style="font-size:11px;margin-top:6px">Scoring: your #1 is the champion +10 · your #2 finishes top 2 +6 · each of your #3-4 finishes top 4 +4 · each of your #5-8 finishes top 8 +2 · every team on its exact spot +1. Group qualifiers: +3 each, +1 for the exact group placing.</div>`;
+    pl=predPicks(tr,pred);
+  } else {
+    const seeds=predSeeds(tr,pred);
+    rounds=bracketRounds(seeds, pred.bracket);
+    if(rounds && prunePicks(rounds, pred.bracket)) rounds=bracketRounds(seeds, pred.bracket);
+    const RL=roundLabels(rounds?rounds.length:0);
+    bracketHtml = !rounds
+      ? `<p class="muted">Pick a 1st and 2nd for all ${gs.length} groups to unlock the bracket.</p>`
+      : predBracketTree(rounds, RL, m=>{
+          const bt=(t)=>`<div class="pbk-team ${m.pick===t?'pk':''} ${t?'':'tbd'}" data-key="${m.key}" data-team="${esc(t||'')}"${t?predRAttr(t):''}>${t?crestMini(t):'<span class=muted>TBD</span>'}</div>`;
+          return `${bt(m.a)}${bt(m.b)}`;
+        });
+    pl=predPlacements(rounds);
+  }
   const actual=actualResults(tr);
   const myScore = actual ? scorePrediction(pred, tr, actual) : null;
   const locked = !!(tr.champion || tr.predictionsLocked);
   const statusMsg = tr.champion ? 'Results are in — predictions locked.'
     : tr.predictionsLocked ? 'The tournament has started — predictions are locked.'
+    : isBoard ? 'Pick your group qualifiers and rank the final leaderboard, then Save.'
     : gs.length ? 'Pick your group qualifiers and bracket, then Save.'
     : 'Pick the bracket winners through to the champion, then Save.';
   app.innerHTML = `
@@ -5403,10 +5452,12 @@ function drawPredict(){
     ${locked?`<div class="notice" style="text-align:left;margin-bottom:14px;border-color:var(--accent)">
       🔒 <strong>${tr.predictionsLocked&&!tr.champion?'This tournament is underway.':'This event is over.'}</strong>
       Predictions are locked — no new entries or edits. See the standings below.</div>`
-    :`${gs.length?`<h3 class="rec-group">Group Qualifiers <span class="muted" style="font-size:11px">top 2 advance</span></h3>
+    :`${gs.length?`<h3 class="rec-group">Group Qualifiers <span class="muted" style="font-size:11px">top ${per} advance${isBoard?' to the final leaderboard':''}</span></h3>
     <div class="pg-grid">${groupCards}</div>
-    <h3 class="rec-group" style="margin-top:18px">Playoff Bracket</h3>`:'<h3 class="rec-group">Bracket <span class="muted" style="font-size:11px">pick every winner</span></h3>'}
-    ${bracketHtml}
+    <h3 class="rec-group" style="margin-top:18px">${isBoard
+      ?`Final Leaderboard <span class="muted" style="font-size:11px">rank your ${gs.length*per} qualifiers · drag or use the arrows · #1 is the champion</span>`
+      :'Playoff Bracket'}</h3>`:'<h3 class="rec-group">Bracket <span class="muted" style="font-size:11px">pick every winner</span></h3>'}
+    ${isBoard?boardHtml:bracketHtml}
     <div style="margin-top:12px;display:flex;gap:10px;align-items:center">
       <button id="pred-save" class="adm-btn" style="max-width:220px">Save prediction</button>
       <span class="muted" style="font-size:12px">Your champion: <strong>${pl.champ?esc(pl.champ):'—'}</strong></span>
@@ -5418,8 +5469,27 @@ function drawPredict(){
   // group selects
   app.querySelectorAll('.pg-sel').forEach(sel=>sel.onchange=()=>{
     const g=sel.dataset.g, pos=+sel.dataset.pos;
-    (pred.groups[g]=pred.groups[g]||[])[pos]=sel.value||null;
+    const arr=(pred.groups[g]=pred.groups[g]||[]), old=arr[pos];
+    arr[pos]=sel.value||null;
+    // swapping a qualifier keeps its spot on the predicted leaderboard
+    if(pred.board && old && sel.value){ const k=pred.board.indexOf(old); if(k>=0 && !pred.board.includes(sel.value)) pred.board[k]=sel.value; }
     drawPredict();
+  });
+  // leaderboard reordering: arrows, or drag a row onto another spot
+  app.querySelectorAll('.plb-mv').forEach(btn=>btn.onclick=e=>{
+    e.stopPropagation(); const b=pred.board, i=+btn.dataset.i, j=i+(+btn.dataset.d);
+    if(!b || j<0 || j>=b.length) return;
+    [b[i],b[j]]=[b[j],b[i]]; drawPredict();
+  });
+  let dragI=null;
+  app.querySelectorAll('.plb-row').forEach(row=>{
+    row.ondragstart=e=>{ dragI=+row.dataset.i; row.classList.add('drag'); e.dataTransfer.effectAllowed='move'; try{ e.dataTransfer.setData('text/plain', String(dragI)); }catch(_){} };
+    row.ondragend=()=>{ row.classList.remove('drag'); app.querySelectorAll('.plb-row.over').forEach(x=>x.classList.remove('over')); };
+    row.ondragover=e=>{ if(dragI==null) return; e.preventDefault(); row.classList.add('over'); };
+    row.ondragleave=()=>row.classList.remove('over');
+    row.ondrop=e=>{ e.preventDefault(); const to=+row.dataset.i, b=pred.board;
+      if(dragI==null || dragI===to || !b) return;
+      const [t]=b.splice(dragI,1); b.splice(to,0,t); dragI=null; drawPredict(); };
   });
   // bracket clicks
   app.querySelectorAll('.pbk-team').forEach(el=>el.onclick=()=>{
@@ -5433,7 +5503,7 @@ function drawPredict(){
     if((pred.name||'').trim().length>40){ $("#pred-savemsg").style.color="var(--accent2,#ff6b6b)"; $("#pred-savemsg").textContent="Name too long — max 40 characters."; return; }
     saveBtn.disabled=true; $("#pred-savemsg").textContent="Saving…";
     pred.name=pred.name.trim(); pred.ts=Date.now();
-    try{ await PredictBackend.save(pred); $("#pred-savemsg").style.color="var(--good)"; $("#pred-savemsg").textContent="Saved!"; loadPredBoard(); }
+    try{ await PredictBackend.save(pred); $("#pred-savemsg").style.color="var(--good)"; $("#pred-savemsg").textContent="Saved!"; loadPredBoard(true); }
     catch(e){ $("#pred-savemsg").style.color="var(--accent2,#ff6b6b)"; $("#pred-savemsg").textContent="Save failed: "+e.message; }
     saveBtn.disabled=false;
   };
@@ -5441,12 +5511,19 @@ function drawPredict(){
   loadPredBoard();
 }
 function crestMini(name){ const t=teamByName(name); return `${t?`<img class="pbk-logo" src="${esc(t.logo||'')}" alt="">`:''}<span class="pbk-nm">${esc(name)}</span>`; }
-async function loadPredBoard(){
+// every saved prediction for the open event, fetched once per visit (and again after a save), so
+// redrawing the page while you pick doesn't re-query the backend on every click
+let _predAll = null;
+async function loadPredBoard(refresh){
   const box=$("#pred-board"); if(!box) return; const tr=_predTr;
-  let all=[]; try{ all=await PredictBackend.loadAll(tr.slug); }catch(e){ box.innerHTML=`<p class="muted">Couldn't load leaderboard: ${esc(e.message)}</p>`; return; }
+  if(refresh || !_predAll || _predAll.slug!==tr.slug){
+    try{ _predAll={slug:tr.slug, list:await PredictBackend.loadAll(tr.slug)}; }
+    catch(e){ box.innerHTML=`<p class="muted">Couldn't load leaderboard: ${esc(e.message)}</p>`; return; }
+  }
+  const all=_predAll.list;
   if(!all.length){ box.innerHTML='<p class="muted">No predictions yet — be the first!</p>'; return; }
   const actual=actualResults(tr);
-  const rows=all.map(p=>({p, name:p.name||'anon', champ:(predPlacements(bracketRounds(predSeeds(tr,p),p.bracket||{}))).champ,
+  const rows=all.map(p=>({p, name:p.name||'anon', champ:predPicks(tr,p).champ,
                           score: actual?scorePrediction(p,tr,actual):null}))
     .sort((a,b)=> (b.score||0)-(a.score||0) || (a.name||'').localeCompare(b.name||''));
   box.innerHTML=`<div class="tablewrap" style="max-width:520px"><table class="data">
@@ -5471,28 +5548,43 @@ function actualReach(tr){   // team -> smallest "teams remaining" stage it reach
 }
 function renderPredDetail(pred){
   const box=$("#pred-detail"); if(!box) return; const tr=_predTr;
-  const gs=predGroups(tr);
+  const gs=predGroups(tr), per=predPerGroup(tr);
   const actual=actualResults(tr);                 // null until the event finishes
   const reach=actual?actualReach(tr):null;
   const groupHtml=`<div class="pd-groups">${gs.map(g=>{ const pk=(pred.groups||{})[g.name]||[];
     const cls=(team,pos)=>{ if(!actual||!team) return ''; const act=actual.groups[g.name]||[];
       return act.includes(team)?(act[pos]===team?' correct exact':' correct'):' wrong'; };
     const q=(team,pos)=>`<span class="pd-q${pos?' pd-q2':''}${cls(team,pos)}">${pos+1} ${team?esc(team):'—'}</span>`;
-    return `<div class="pd-g"><span class="pd-gh">${esc(g.name.replace('Group ',''))}</span>${q(pk[0],0)}${q(pk[1],1)}</div>`; }).join("")}</div>`;
-  const rounds=bracketRounds(predSeeds(tr,pred), pred.bracket||{});
-  const RL=roundLabels(rounds?rounds.length:0);
-  const R=rounds?rounds.length:0;
-  const grade=(team,ri)=>{ if(!reach||!team) return ''; const need=Math.pow(2, R-ri-1);
-    return (reach[normKey(team)]!=null && reach[normKey(team)]<=need)?' correct':' wrong'; };
-  const bracketHtml = rounds ? predBracketTree(rounds, RL, (m,ri)=>{
-      const cell=x=>`<div class="pbk-team ${m.pick===x?'pk':''} ${x?'':'tbd'}${(x&&m.pick===x)?grade(x,ri):''}"${x?predRAttr(x):''}>${x?crestMini(x):'<span class=muted>TBD</span>'}</div>`;
-      return `${cell(m.a)}${cell(m.b)}`; }, 'pbk-ro')
-    : '<p class="muted">Bracket not filled in.</p>';
-  const pl=predPlacements(rounds);
+    return `<div class="pd-g"><span class="pd-gh">${esc(g.name.replace('Group ',''))}</span>${Array.from({length:per},(_,i)=>q(pk[i],i)).join("")}</div>`; }).join("")}</div>`;
+  const pl=predPicks(tr,pred);
+  let finalHtml, finalLabel;
+  if(pl.board){
+    // leaderboard event: their ranked qualifiers, graded on the real final leaderboard
+    finalLabel='Final leaderboard';
+    const actRank={}; (actual&&actual.board||[]).forEach((t,i)=>actRank[normKey(t)]=i+1);
+    const need=i=>i===0?1:i===1?2:i<4?4:i<8?8:null;   // the finish each scored spot has to reach
+    const grade=(t,i)=>{ if(!actual||!actual.board) return ''; const r=actRank[normKey(t)];
+      if(r===i+1) return ' correct exact'; const n=need(i);
+      return (n && r && r<=n) ? ' correct' : (n || !r) ? ' wrong' : ''; };
+    finalHtml=`<div class="plb plb-ro" style="--plb-rows:${Math.ceil(pl.board.length/2)}">${pl.board.map((t,i)=>{ const r=actRank[normKey(t)];
+      return `<div class="plb-row${i===0?' plb-champ':''}${[0,1,3,7].includes(i)?' plb-cut':''}${grade(t,i)}"${predRAttr(t)}>
+        <span class="plb-rk">${i+1}</span>${crestMini(t)}${actual&&actual.board?`<span class="plb-act" title="Their real finish">${r?'#'+r:'out'}</span>`:''}</div>`; }).join("")}</div>`;
+  } else {
+    finalLabel='Playoff bracket';
+    const rounds=bracketRounds(predSeeds(tr,pred), pred.bracket||{});
+    const RL=roundLabels(rounds?rounds.length:0);
+    const R=rounds?rounds.length:0;
+    const grade=(team,ri)=>{ if(!reach||!team) return ''; const need=Math.pow(2, R-ri-1);
+      return (reach[normKey(team)]!=null && reach[normKey(team)]<=need)?' correct':' wrong'; };
+    finalHtml = rounds ? predBracketTree(rounds, RL, (m,ri)=>{
+        const cell=x=>`<div class="pbk-team ${m.pick===x?'pk':''} ${x?'':'tbd'}${(x&&m.pick===x)?grade(x,ri):''}"${x?predRAttr(x):''}>${x?crestMini(x):'<span class=muted>TBD</span>'}</div>`;
+        return `${cell(m.a)}${cell(m.b)}`; }, 'pbk-ro')
+      : `<p class="muted">${predIsBoard(tr)?'Leaderboard':'Bracket'} not filled in.</p>`;
+  }
   box.innerHTML=`<h3 class="rec-group" style="margin-top:0">${esc(pred.name||'anon')}'s prediction
     <span class="muted" style="font-size:11px">champion: ${pl.champ?esc(pl.champ):'—'}</span>
     ${actual?`<span class="pd-legend"><span class="pd-key correct">correct</span><span class="pd-key wrong">wrong</span></span>`:''}</h3>
-    ${gs.length?`<div class="pd-sub muted">Group qualifiers</div>${groupHtml}<div class="pd-sub muted" style="margin-top:10px">Playoff bracket</div>`:''}${bracketHtml}`;
+    ${gs.length?`<div class="pd-sub muted">Group qualifiers</div>${groupHtml}<div class="pd-sub muted" style="margin-top:10px">${finalLabel}</div>`:''}${finalHtml}`;
   drawAllConnectors(box);
   box.scrollIntoView({behavior:'smooth', block:'nearest'});
 }
@@ -5516,7 +5608,7 @@ async function renderProphets(){
     if(actual){
       const sc=scorePrediction(p,tr,actual)||0; u.total+=sc; u.scored++;
       if(sc>u.best){ u.best=sc; u.bestEv=tr.name; }
-      const champ=predPlacements(bracketRounds(predSeeds(tr,p),p.bracket||{})).champ;
+      const champ=predPicks(tr,p).champ;
       if(champ){ u.champTries++; if(champ===actual.champ) u.champHits++; }
     } else { u.pending++; }
   });
@@ -5536,7 +5628,8 @@ async function renderProphets(){
       <td class="mono" title="${esc(u.bestEv||'')}">${u.best||'—'}</td>
       <td class="mono muted">${u.pending||'—'}</td>
     </tr>`).join("")}</tbody></table></div>
-    <p class="muted" style="font-size:11px;margin-top:6px">${rows.length} predictor${rows.length===1?'':'s'} · scoring: correct qualifier +3 (exact spot +1), champion +10, finalist +6, semifinalist +4, quarterfinalist +2.</p>`;
+    <p class="muted" style="font-size:11px;margin-top:6px">${rows.length} predictor${rows.length===1?'':'s'} · scoring: correct qualifier +3 (exact spot +1), champion +10, finalist +6, semifinalist +4, quarterfinalist +2.
+      On leaderboard events (no playoffs) your #1 is the champion pick, #2 the finalist, #3-4 the semifinalists and #5-8 the quarterfinalists, plus +1 for every team on its exact spot.</p>`;
 }
 
 // ---------- creator socials "sponsored" slot (randomized) ----------

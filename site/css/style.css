@@ -906,6 +906,32 @@ textarea.adm-in{resize:vertical;font-family:inherit}
 .pbk-team.pk.wrong::after{content:"✕";margin-left:auto;color:var(--accent2);font-weight:700;flex:0 0 auto}
 .pd-q.correct{color:var(--good)} .pd-q.correct.exact{font-weight:700}
 .pd-q.wrong{color:var(--accent2);text-decoration:line-through;text-decoration-color:rgba(255,61,100,.5)}
+.pg-pos{width:26px;flex-shrink:0}
+/* predicted final leaderboard (leaderboard events: no playoffs). Two columns, 1-8 then 9-16. */
+.plb{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(var(--plb-rows,8),auto);grid-auto-flow:column;gap:5px 14px;max-width:760px}
+.plb-row{display:flex;align-items:center;gap:8px;min-width:0;align-self:start;padding:5px 8px;border:1px solid var(--border);border-radius:7px;background:var(--panel);font-size:12px;color:var(--text);cursor:grab;user-select:none}
+.plb-row:hover{border-color:rgba(123,92,255,.5)}
+.plb-row .pbk-nm{flex:1 1 auto;min-width:0}
+.plb-row.drag{opacity:.45}
+.plb-row.over{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.plb-cut{border-bottom:2px solid rgba(123,92,255,.55)}      /* end of a scoring tier: champion | top 2 | top 4 | top 8 */
+.plb-rk{font-family:'Chakra Petch';font-weight:700;width:20px;text-align:right;color:var(--muted);flex-shrink:0}
+.plb-champ{background:linear-gradient(90deg,rgba(255,196,61,.16),var(--panel) 70%);border-color:rgba(255,196,61,.45)}
+.plb-champ .plb-rk{color:#ffc43d}
+.plb-g{font-size:10px;color:var(--muted);background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:0 4px;flex-shrink:0;cursor:help}
+.plb-tier{font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);flex-shrink:0}
+.plb-mvs{display:flex;gap:2px;flex-shrink:0}
+.plb-mv{background:var(--bg);border:1px solid var(--border);color:var(--muted);border-radius:4px;font-size:9px;line-height:1;padding:3px 5px;cursor:pointer}
+.plb-mv:hover:not(:disabled){color:var(--text);border-color:var(--accent)}
+.plb-mv:disabled{opacity:.3;cursor:default}
+.plb-ro .plb-row{cursor:default}
+.plb-act{font-size:11px;color:var(--muted);flex-shrink:0}
+.plb-row.correct{border-color:rgba(46,230,166,.45);background:rgba(46,230,166,.10)}
+.plb-row.correct .pbk-nm{color:var(--good)}
+.plb-row.correct.exact .pbk-nm{font-weight:700}
+.plb-row.wrong{background:rgba(255,61,100,.08)}
+.plb-row.wrong .pbk-nm{color:var(--accent2);text-decoration:line-through;text-decoration-color:rgba(255,61,100,.5)}
+@media (max-width:640px){.plb{grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-auto-flow:row}}
 .pd-legend{margin-left:8px;font-size:10px;font-weight:400}
 .pd-key{text-transform:uppercase;letter-spacing:.5px;padding:0 5px;border-radius:3px;margin-left:4px}
 .pd-key.correct{background:rgba(46,230,166,.18);color:var(--good)}
