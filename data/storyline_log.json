@@ -610,5 +610,14 @@
   "title": "dla.wo: 500 career kills",
   "text": "dla.wo reached 500 career kills",
   "link": "#/player/dla-wo"
+ },
+ {
+  "id": "milestone:okjustsmd:kills:500",
+  "type": "milestone",
+  "ts": 1792583067,
+  "date": "2026-10-21",
+  "title": "okjustsmd: 500 career kills",
+  "text": "okjustsmd reached 500 career kills",
+  "link": "#/player/okjustsmd"
  }
 ]
