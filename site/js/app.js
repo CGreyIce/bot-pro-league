@@ -2835,6 +2835,7 @@ async function renderAdmin(){
           <div class="art-wrap"><textarea id="art-body" class="adm-in" rows="10" placeholder="Write the article here…&#10;&#10;Blank line between paragraphs. Type [[ to link a player, team or event."></textarea>
           <div id="art-ac" class="art-ac" hidden></div></div>
           <div class="muted" style="font-size:11px;margin-top:4px">Links: type <code>[[</code> and pick a name, e.g. <code>[[rebebx]]</code>. Custom text: <code>[[Aimpunch|the champions]]</code>.</div>
+          <div id="ai-box" class="ai-box"></div>
           <button id="art-save" class="adm-btn" style="margin-top:8px">Save article</button>
           <button id="art-new" class="adm-btn" style="margin-top:6px;background:var(--panel);border:1px solid var(--border);color:var(--text)">+ New (clear)</button>
           <div id="art-msg" class="muted" style="font-size:12px;margin-top:8px"></div>
@@ -3508,6 +3509,43 @@ function setupLinkAutocomplete(ta, box){
     else if(e.key==="Escape"){ close(); e.preventDefault(); }
   });
 }
+// "✨ Write with AI": turns the draft in the editor into a long news article (build/ai_writer.py, via the
+// admin server and the Chutes API). The key is kept on this computer only (local/ai.json, never published).
+let _aiUndo = null;
+async function setupAiBox(){
+  const box=$("#ai-box"); if(!box) return;
+  let st={configured:false};
+  try{ st = await (await fetch("/api/ai/status")).json(); }catch(e){}
+  const keyForm = `<div class="ai-key" id="ai-keyform"${st.configured?' hidden':''}>
+      <input id="ai-key" class="adm-in" type="password" placeholder="Paste your Chutes API key (cpk_…)" autocomplete="off">
+      <button id="ai-savekey" class="loadmore">Save key</button>
+      <div class="muted" style="font-size:11px;margin-top:4px">Kept only on this computer (bot-pro-league/local/ai.json), never published. Each computer needs it once.</div></div>`;
+  box.innerHTML = `<div class="ai-row">
+      <button id="ai-go" class="loadmore ai-go"${st.configured?'':' disabled'}>✨ Write with AI</button>
+      <span class="muted" style="font-size:11px">${st.configured?`long article · ${esc((st.model||'').split('/').pop())} · <a href="#/admin" id="ai-changekey">change key</a>`:'needs your Chutes API key'}</span>
+      ${_aiUndo?'<button id="ai-undo" class="loadmore">↩ Undo</button>':''}
+    </div>${keyForm}<div id="ai-msg" class="muted" style="font-size:12px;margin-top:6px"></div>`;
+  const msg=$("#ai-msg");
+  const ck=$("#ai-changekey"); if(ck) ck.onclick=e=>{ e.preventDefault(); $("#ai-keyform").hidden=false; };
+  $("#ai-savekey").onclick=async ()=>{
+    const k=$("#ai-key").value.trim(); if(!k){ msg.textContent="Paste the key first."; return; }
+    const r=await apiPost("/api/ai/key",{key:k});
+    if(r.ok) setupAiBox(); else msg.textContent="Couldn't save the key: "+(r.error||"failed");
+  };
+  const undo=$("#ai-undo"); if(undo) undo.onclick=()=>{ $("#art-title").value=_aiUndo.title; $("#art-body").value=_aiUndo.body; _aiUndo=null; setupAiBox(); };
+  $("#ai-go").onclick=async ()=>{
+    const title=$("#art-title").value.trim(), body=$("#art-body").value.trim();
+    if(!body){ msg.textContent="Put the facts in the body first (open a draft, or write a few lines with [[links]])."; return; }
+    const btn=$("#ai-go"); btn.disabled=true; btn.textContent="✨ Writing… (up to a minute)"; msg.textContent="";
+    const r=await apiPost("/api/ai/draft",{title, body, date:$("#art-date").value});
+    if(r.ok){
+      _aiUndo={title, body};
+      $("#art-title").value=r.title||title; $("#art-body").value=r.body;
+      await setupAiBox();
+      $("#ai-msg").innerHTML="Written. <b>Read it through before saving:</b> the stats come from the league data, but the AI can still get a detail wrong. Press it again for another version.";
+    } else { btn.disabled=false; btn.textContent="✨ Write with AI"; msg.textContent=r.error||"Something went wrong."; }
+  };
+}
 function setupNewsAdmin(){
   const list=$("#art-list"); if(!list) return;
   const arts = DATA.articles||[];
@@ -3543,6 +3581,7 @@ function setupNewsAdmin(){
   renderList("");
   if(filterEl) filterEl.oninput=()=>renderList(filterEl.value);
   setupLinkAutocomplete($("#art-body"), $("#art-ac"));
+  setupAiBox();
   loadDrafts();
   $("#art-new").onclick=clearForm;
   $("#art-save").onclick=async ()=>{

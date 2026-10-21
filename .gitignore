@@ -14,3 +14,6 @@ Thumbs.db
 
 # local tooling / Claude Code
 .claude/
+
+# local-only settings and secrets (e.g. the Chutes API key for "Write with AI"): never published
+local/
