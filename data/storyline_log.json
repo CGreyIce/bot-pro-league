@@ -592,5 +592,14 @@
   "title": "vixi: 500 career kills",
   "text": "vixi reached 500 career kills",
   "link": "#/player/vixi"
+ },
+ {
+  "id": "milestone:lukedefabio:kills:500",
+  "type": "milestone",
+  "ts": 1792566001,
+  "date": "2026-10-21",
+  "title": "lukedefabio: 500 career kills",
+  "text": "lukedefabio reached 500 career kills",
+  "link": "#/player/lukedefabio"
  }
 ]
