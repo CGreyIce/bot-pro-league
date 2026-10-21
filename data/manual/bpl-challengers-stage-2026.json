@@ -967,8 +967,9 @@
      "round": 4,
      "a": "Maple Macabre",
      "b": "Ember Wolves",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1792561622
     },
     {
      "id": 15,
