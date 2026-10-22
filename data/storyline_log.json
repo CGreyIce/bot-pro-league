@@ -1204,5 +1204,14 @@
   "title": "Luneforrune: 500 career kills",
   "text": "Luneforrune reached 500 career kills",
   "link": "#/player/luneforrune"
+ },
+ {
+  "id": "milestone:thehidz:kills:500",
+  "type": "milestone",
+  "ts": 1792707406,
+  "date": "2026-10-23",
+  "title": "thehidz: 500 career kills",
+  "text": "thehidz reached 500 career kills",
+  "link": "#/player/thehidz"
  }
 ]
