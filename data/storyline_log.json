@@ -889,5 +889,14 @@
   "title": "Solec: 100 MVP rounds",
   "text": "Solec reached 100 MVP rounds",
   "link": "#/player/solec"
+ },
+ {
+  "id": "milestone:4-naru:kills:500",
+  "type": "milestone",
+  "ts": 1792629782,
+  "date": "2026-10-22",
+  "title": "4_naru: 500 career kills",
+  "text": "4_naru reached 500 career kills",
+  "link": "#/player/4-naru"
  }
 ]
