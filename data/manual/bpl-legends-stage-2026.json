@@ -74,12 +74,62 @@
      "round": 1,
      "a": "Ukiyo",
      "b": "Notorious Hollow",
+     "sa": 2,
+     "sb": 0,
+     "ts": 1792637219
+    },
+    {
+     "id": 7,
+     "round": 2,
+     "a": "Divide&Conquer",
+     "b": "Syzygy",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 8,
+     "round": 2,
+     "a": "Ukiyo",
+     "b": "Alcheministry",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 9,
+     "round": 2,
+     "a": "Caelum Scala",
+     "b": "Prism Divide",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 10,
+     "round": 2,
+     "a": "Aeternum",
+     "b": "Northwind",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 11,
+     "round": 2,
+     "a": "Special Forces",
+     "b": "Notorious Hollow",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 12,
+     "round": 2,
+     "a": "Solstice",
+     "b": "Technomancy",
      "sa": null,
      "sb": null
     }
    ],
    "roundTitles": {
-    "1": "Round 1"
+    "1": "Round 1",
+    "2": "Round 2"
    },
    "rounds": 5
   },
