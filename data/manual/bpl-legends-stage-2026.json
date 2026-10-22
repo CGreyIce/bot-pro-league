@@ -83,8 +83,9 @@
      "round": 2,
      "a": "Divide&Conquer",
      "b": "Syzygy",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1792644481
     },
     {
      "id": 8,
