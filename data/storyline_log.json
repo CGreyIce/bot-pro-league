@@ -1114,5 +1114,23 @@
   "title": "MugCowPayLucky: 500 career kills",
   "text": "MugCowPayLucky reached 500 career kills",
   "link": "#/player/mugcowpaylucky"
+ },
+ {
+  "id": "milestone:acryii:kills:500",
+  "type": "milestone",
+  "ts": 1792688780,
+  "date": "2026-10-23",
+  "title": "Acryii_: 500 career kills",
+  "text": "Acryii_ reached 500 career kills",
+  "link": "#/player/acryii"
+ },
+ {
+  "id": "milestone:kael:kills:500",
+  "type": "milestone",
+  "ts": 1792688780,
+  "date": "2026-10-23",
+  "title": "kael: 500 career kills",
+  "text": "kael reached 500 career kills",
+  "link": "#/player/kael"
  }
 ]
