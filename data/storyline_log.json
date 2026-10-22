@@ -934,5 +934,14 @@
   "title": "d.chong: 500 career kills",
   "text": "d.chong reached 500 career kills",
   "link": "#/player/d-chong"
+ },
+ {
+  "id": "milestone:kai:kills:500",
+  "type": "milestone",
+  "ts": 1792648467,
+  "date": "2026-10-22",
+  "title": "Kai: 500 career kills",
+  "text": "Kai reached 500 career kills",
+  "link": "#/player/kai"
  }
 ]
