@@ -916,5 +916,14 @@
   "title": "Zarlard: 500 career kills",
   "text": "Zarlard reached 500 career kills",
   "link": "#/player/zarlard"
+ },
+ {
+  "id": "milestone:lita:mvp:100",
+  "type": "milestone",
+  "ts": 1792642636,
+  "date": "2026-10-22",
+  "title": "LITA: 100 MVP rounds",
+  "text": "LITA reached 100 MVP rounds",
+  "link": "#/player/lita"
  }
 ]
