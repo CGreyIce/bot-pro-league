@@ -1015,5 +1015,23 @@
   "title": "MilliannaVT: 100 MVP rounds",
   "text": "MilliannaVT reached 100 MVP rounds",
   "link": "#/player/milliannavt"
+ },
+ {
+  "id": "milestone:applezxc:kills:500",
+  "type": "milestone",
+  "ts": 1792672474,
+  "date": "2026-10-22",
+  "title": "Applezxc: 500 career kills",
+  "text": "Applezxc reached 500 career kills",
+  "link": "#/player/applezxc"
+ },
+ {
+  "id": "milestone:perk:kills:500",
+  "type": "milestone",
+  "ts": 1792672474,
+  "date": "2026-10-22",
+  "title": "perk: 500 career kills",
+  "text": "perk reached 500 career kills",
+  "link": "#/player/perk"
  }
 ]
