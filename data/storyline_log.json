@@ -1132,5 +1132,23 @@
   "title": "kael: 500 career kills",
   "text": "kael reached 500 career kills",
   "link": "#/player/kael"
+ },
+ {
+  "id": "milestone:laavv:mvp:100",
+  "type": "milestone",
+  "ts": 1792691235,
+  "date": "2026-10-23",
+  "title": "laavv._: 100 MVP rounds",
+  "text": "laavv._ reached 100 MVP rounds",
+  "link": "#/player/laavv"
+ },
+ {
+  "id": "milestone:nattyuwus:mvp:100",
+  "type": "milestone",
+  "ts": 1792691235,
+  "date": "2026-10-23",
+  "title": "nattyuwus: 100 MVP rounds",
+  "text": "nattyuwus reached 100 MVP rounds",
+  "link": "#/player/nattyuwus"
  }
 ]
