@@ -1087,5 +1087,32 @@
   "title": "Spinafex: 500 career kills",
   "text": "Spinafex reached 500 career kills",
   "link": "#/player/spinafex"
+ },
+ {
+  "id": "milestone:solec:maps:50",
+  "type": "milestone",
+  "ts": 1792686445,
+  "date": "2026-10-23",
+  "title": "Solec: 50 maps played",
+  "text": "Solec reached 50 maps played",
+  "link": "#/player/solec"
+ },
+ {
+  "id": "milestone:lita:maps:50",
+  "type": "milestone",
+  "ts": 1792686445,
+  "date": "2026-10-23",
+  "title": "LITA: 50 maps played",
+  "text": "LITA reached 50 maps played",
+  "link": "#/player/lita"
+ },
+ {
+  "id": "milestone:mugcowpaylucky:kills:500",
+  "type": "milestone",
+  "ts": 1792686445,
+  "date": "2026-10-23",
+  "title": "MugCowPayLucky: 500 career kills",
+  "text": "MugCowPayLucky reached 500 career kills",
+  "link": "#/player/mugcowpaylucky"
  }
 ]
