@@ -970,5 +970,23 @@
   "title": "Codiant: 50 maps played",
   "text": "Codiant reached 50 maps played",
   "link": "#/player/codiant"
+ },
+ {
+  "id": "milestone:lenette:mvp:100",
+  "type": "milestone",
+  "ts": 1792656986,
+  "date": "2026-10-22",
+  "title": "lenette: 100 MVP rounds",
+  "text": "lenette reached 100 MVP rounds",
+  "link": "#/player/lenette"
+ },
+ {
+  "id": "milestone:xueqiii:mvp:100",
+  "type": "milestone",
+  "ts": 1792656986,
+  "date": "2026-10-22",
+  "title": "XueQiii: 100 MVP rounds",
+  "text": "XueQiii reached 100 MVP rounds",
+  "link": "#/player/xueqiii"
  }
 ]

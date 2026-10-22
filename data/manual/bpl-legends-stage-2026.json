@@ -101,8 +101,9 @@
      "round": 2,
      "a": "Caelum Scala",
      "b": "Prism Divide",
-     "sa": null,
-     "sb": null
+     "sa": 1,
+     "sb": 2,
+     "ts": 1792656984
     },
     {
      "id": 10,
