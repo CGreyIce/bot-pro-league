@@ -988,5 +988,14 @@
   "title": "XueQiii: 100 MVP rounds",
   "text": "XueQiii reached 100 MVP rounds",
   "link": "#/player/xueqiii"
+ },
+ {
+  "id": "milestone:marsinss:kills:500",
+  "type": "milestone",
+  "ts": 1792661015,
+  "date": "2026-10-22",
+  "title": "Marsinss: 500 career kills",
+  "text": "Marsinss reached 500 career kills",
+  "link": "#/player/marsinss"
  }
 ]
