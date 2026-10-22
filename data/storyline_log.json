@@ -997,5 +997,23 @@
   "title": "Marsinss: 500 career kills",
   "text": "Marsinss reached 500 career kills",
   "link": "#/player/marsinss"
+ },
+ {
+  "id": "milestone:mizukiimoon:kills:1000",
+  "type": "milestone",
+  "ts": 1792669978,
+  "date": "2026-10-22",
+  "title": "MizukiiMoon: 1000 career kills",
+  "text": "MizukiiMoon reached 1000 career kills",
+  "link": "#/player/mizukiimoon"
+ },
+ {
+  "id": "milestone:milliannavt:mvp:100",
+  "type": "milestone",
+  "ts": 1792669978,
+  "date": "2026-10-22",
+  "title": "MilliannaVT: 100 MVP rounds",
+  "text": "MilliannaVT reached 100 MVP rounds",
+  "link": "#/player/milliannavt"
  }
 ]
