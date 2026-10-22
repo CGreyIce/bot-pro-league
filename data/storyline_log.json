@@ -1033,5 +1033,23 @@
   "title": "perk: 500 career kills",
   "text": "perk reached 500 career kills",
   "link": "#/player/perk"
+ },
+ {
+  "id": "milestone:notorious47:kills:500",
+  "type": "milestone",
+  "ts": 1792679468,
+  "date": "2026-10-22",
+  "title": "NOTORIOUS47: 500 career kills",
+  "text": "NOTORIOUS47 reached 500 career kills",
+  "link": "#/player/notorious47"
+ },
+ {
+  "id": "milestone:aizawa-ema:kills:500",
+  "type": "milestone",
+  "ts": 1792679468,
+  "date": "2026-10-22",
+  "title": "Aizawa Ema: 500 career kills",
+  "text": "Aizawa Ema reached 500 career kills",
+  "link": "#/player/aizawa-ema"
  }
 ]
