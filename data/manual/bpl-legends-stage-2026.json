@@ -146,8 +146,9 @@
      "round": 3,
      "a": "Prism Divide",
      "b": "Syzygy",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1792695279
     },
     {
      "id": 15,
