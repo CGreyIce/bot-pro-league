@@ -925,5 +925,14 @@
   "title": "LITA: 100 MVP rounds",
   "text": "LITA reached 100 MVP rounds",
   "link": "#/player/lita"
+ },
+ {
+  "id": "milestone:d-chong:kills:500",
+  "type": "milestone",
+  "ts": 1792646487,
+  "date": "2026-10-22",
+  "title": "d.chong: 500 career kills",
+  "text": "d.chong reached 500 career kills",
+  "link": "#/player/d-chong"
  }
 ]
