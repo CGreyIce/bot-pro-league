@@ -952,5 +952,23 @@
   "title": "AkanersVT: 50 maps played",
   "text": "AkanersVT reached 50 maps played",
   "link": "#/player/akanersvt"
+ },
+ {
+  "id": "milestone:nyuii:mvp:100",
+  "type": "milestone",
+  "ts": 1792654047,
+  "date": "2026-10-22",
+  "title": "Nyuii: 100 MVP rounds",
+  "text": "Nyuii reached 100 MVP rounds",
+  "link": "#/player/nyuii"
+ },
+ {
+  "id": "milestone:codiant:maps:50",
+  "type": "milestone",
+  "ts": 1792654047,
+  "date": "2026-10-22",
+  "title": "Codiant: 50 maps played",
+  "text": "Codiant reached 50 maps played",
+  "link": "#/player/codiant"
  }
 ]
