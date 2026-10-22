@@ -1150,5 +1150,14 @@
   "title": "nattyuwus: 100 MVP rounds",
   "text": "nattyuwus reached 100 MVP rounds",
   "link": "#/player/nattyuwus"
+ },
+ {
+  "id": "milestone:xyrren:kills:500",
+  "type": "milestone",
+  "ts": 1792693214,
+  "date": "2026-10-23",
+  "title": "Xyrren: 500 career kills",
+  "text": "Xyrren reached 500 career kills",
+  "link": "#/player/xyrren"
  }
 ]
