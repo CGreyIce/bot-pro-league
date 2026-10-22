@@ -128,13 +128,63 @@
      "round": 2,
      "a": "Solstice",
      "b": "Technomancy",
+     "sa": 2,
+     "sb": 0,
+     "ts": 1792683846
+    },
+    {
+     "id": 13,
+     "round": 3,
+     "a": "Divide&Conquer",
+     "b": "Ukiyo",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 14,
+     "round": 3,
+     "a": "Prism Divide",
+     "b": "Syzygy",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 15,
+     "round": 3,
+     "a": "Special Forces",
+     "b": "Alcheministry",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 16,
+     "round": 3,
+     "a": "Caelum Scala",
+     "b": "Solstice",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 17,
+     "round": 3,
+     "a": "Northwind",
+     "b": "Notorious Hollow",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 18,
+     "round": 3,
+     "a": "Aeternum",
+     "b": "Technomancy",
      "sa": null,
      "sb": null
     }
    ],
    "roundTitles": {
     "1": "Round 1",
-    "2": "Round 2"
+    "2": "Round 2",
+    "3": "Round 3"
    },
    "rounds": 5
   },
