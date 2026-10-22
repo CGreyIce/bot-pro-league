@@ -898,5 +898,14 @@
   "title": "4_naru: 500 career kills",
   "text": "4_naru reached 500 career kills",
   "link": "#/player/4-naru"
+ },
+ {
+  "id": "milestone:airizu:kills:500",
+  "type": "milestone",
+  "ts": 1792633491,
+  "date": "2026-10-22",
+  "title": "Airizu: 500 career kills",
+  "text": "Airizu reached 500 career kills",
+  "link": "#/player/airizu"
  }
 ]

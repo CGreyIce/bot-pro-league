@@ -65,8 +65,9 @@
      "round": 1,
      "a": "Caelum Scala",
      "b": "Northwind",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1792633489
     },
     {
      "id": 6,
