@@ -1402,5 +1402,14 @@
   "title": "Spectrum Gabriel: 500 career kills",
   "text": "Spectrum Gabriel reached 500 career kills",
   "link": "#/player/spectrum-gabriel"
+ },
+ {
+  "id": "milestone:crimsynflames:mvp:100",
+  "type": "milestone",
+  "ts": 1792794707,
+  "date": "2026-10-24",
+  "title": "CrimsynFlames: 100 MVP rounds",
+  "text": "CrimsynFlames reached 100 MVP rounds",
+  "link": "#/player/crimsynflames"
  }
 ]
