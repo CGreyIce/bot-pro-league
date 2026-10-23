@@ -1321,5 +1321,23 @@
   "title": "Syrrith: 100 MVP rounds",
   "text": "Syrrith reached 100 MVP rounds",
   "link": "#/player/syrrith"
+ },
+ {
+  "id": "milestone:milliannavt:maps:50",
+  "type": "milestone",
+  "ts": 1792781589,
+  "date": "2026-10-24",
+  "title": "MilliannaVT: 50 maps played",
+  "text": "MilliannaVT reached 50 maps played",
+  "link": "#/player/milliannavt"
+ },
+ {
+  "id": "milestone:miyaleile:kills:500",
+  "type": "milestone",
+  "ts": 1792781589,
+  "date": "2026-10-24",
+  "title": "MiyaLeile: 500 career kills",
+  "text": "MiyaLeile reached 500 career kills",
+  "link": "#/player/miyaleile"
  }
 ]
