@@ -1339,5 +1339,41 @@
   "title": "MiyaLeile: 500 career kills",
   "text": "MiyaLeile reached 500 career kills",
   "link": "#/player/miyaleile"
+ },
+ {
+  "id": "milestone:acryii:mvp:100",
+  "type": "milestone",
+  "ts": 1792783601,
+  "date": "2026-10-24",
+  "title": "Acryii_: 100 MVP rounds",
+  "text": "Acryii_ reached 100 MVP rounds",
+  "link": "#/player/acryii"
+ },
+ {
+  "id": "milestone:kai:mvp:100",
+  "type": "milestone",
+  "ts": 1792783601,
+  "date": "2026-10-24",
+  "title": "Kai: 100 MVP rounds",
+  "text": "Kai reached 100 MVP rounds",
+  "link": "#/player/kai"
+ },
+ {
+  "id": "milestone:mizukiimoon:mvp:150",
+  "type": "milestone",
+  "ts": 1792783601,
+  "date": "2026-10-24",
+  "title": "MizukiiMoon: 150 MVP rounds",
+  "text": "MizukiiMoon reached 150 MVP rounds",
+  "link": "#/player/mizukiimoon"
+ },
+ {
+  "id": "milestone:karoni:mvp:100",
+  "type": "milestone",
+  "ts": 1792783601,
+  "date": "2026-10-24",
+  "title": "Karoni: 100 MVP rounds",
+  "text": "Karoni reached 100 MVP rounds",
+  "link": "#/player/karoni"
  }
 ]
