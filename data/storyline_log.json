@@ -1303,5 +1303,14 @@
   "title": "tanykeat: 100 MVP rounds",
   "text": "tanykeat reached 100 MVP rounds",
   "link": "#/player/tanykeat"
+ },
+ {
+  "id": "milestone:zarlard:mvp:100",
+  "type": "milestone",
+  "ts": 1792769097,
+  "date": "2026-10-23",
+  "title": "Zarlard: 100 MVP rounds",
+  "text": "Zarlard reached 100 MVP rounds",
+  "link": "#/player/zarlard"
  }
 ]
