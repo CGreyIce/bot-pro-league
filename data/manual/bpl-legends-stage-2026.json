@@ -209,8 +209,9 @@
      "round": 4,
      "a": "Solstice",
      "b": "Northwind",
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1792752423
     },
     {
      "id": 22,
