@@ -200,8 +200,9 @@
      "round": 4,
      "a": "Divide&Conquer",
      "b": "Special Forces",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1792748711
     },
     {
      "id": 21,

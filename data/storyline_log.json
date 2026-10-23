@@ -1249,5 +1249,41 @@
   "title": "Icington the third: 500 career kills",
   "text": "Icington the third reached 500 career kills",
   "link": "#/player/icington-the-third"
+ },
+ {
+  "id": "milestone:chreyll:maps:50",
+  "type": "milestone",
+  "ts": 1792748713,
+  "date": "2026-10-23",
+  "title": "chreyll: 50 maps played",
+  "text": "chreyll reached 50 maps played",
+  "link": "#/player/chreyll"
+ },
+ {
+  "id": "milestone:laavv:maps:50",
+  "type": "milestone",
+  "ts": 1792748713,
+  "date": "2026-10-23",
+  "title": "laavv._: 50 maps played",
+  "text": "laavv._ reached 50 maps played",
+  "link": "#/player/laavv"
+ },
+ {
+  "id": "milestone:infinitebreaker:maps:50",
+  "type": "milestone",
+  "ts": 1792748713,
+  "date": "2026-10-23",
+  "title": "InfiniteBreaker: 50 maps played",
+  "text": "InfiniteBreaker reached 50 maps played",
+  "link": "#/player/infinitebreaker"
+ },
+ {
+  "id": "milestone:infinitebreaker:mvp:100",
+  "type": "milestone",
+  "ts": 1792748713,
+  "date": "2026-10-23",
+  "title": "InfiniteBreaker: 100 MVP rounds",
+  "text": "InfiniteBreaker reached 100 MVP rounds",
+  "link": "#/player/infinitebreaker"
  }
 ]
