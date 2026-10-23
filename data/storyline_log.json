@@ -1222,5 +1222,23 @@
   "title": "nicsman: 500 career kills",
   "text": "nicsman reached 500 career kills",
   "link": "#/player/nicsman"
+ },
+ {
+  "id": "milestone:codiant:mvp:150",
+  "type": "milestone",
+  "ts": 1792742564,
+  "date": "2026-10-23",
+  "title": "Codiant: 150 MVP rounds",
+  "text": "Codiant reached 150 MVP rounds",
+  "link": "#/player/codiant"
+ },
+ {
+  "id": "milestone:xueqiii:maps:50",
+  "type": "milestone",
+  "ts": 1792742564,
+  "date": "2026-10-23",
+  "title": "XueQiii: 50 maps played",
+  "text": "XueQiii reached 50 maps played",
+  "link": "#/player/xueqiii"
  }
 ]
