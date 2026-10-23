@@ -1411,5 +1411,14 @@
   "title": "CrimsynFlames: 100 MVP rounds",
   "text": "CrimsynFlames reached 100 MVP rounds",
   "link": "#/player/crimsynflames"
+ },
+ {
+  "id": "milestone:carv:kills:500",
+  "type": "milestone",
+  "ts": 1792798486,
+  "date": "2026-10-24",
+  "title": "carv: 500 career kills",
+  "text": "carv reached 500 career kills",
+  "link": "#/player/carv"
  }
 ]
