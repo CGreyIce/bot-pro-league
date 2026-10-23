@@ -1285,5 +1285,14 @@
   "title": "InfiniteBreaker: 100 MVP rounds",
   "text": "InfiniteBreaker reached 100 MVP rounds",
   "link": "#/player/infinitebreaker"
+ },
+ {
+  "id": "milestone:yaekia:mvp:100",
+  "type": "milestone",
+  "ts": 1792750750,
+  "date": "2026-10-23",
+  "title": "Yaekia: 100 MVP rounds",
+  "text": "Yaekia reached 100 MVP rounds",
+  "link": "#/player/yaekia"
  }
 ]
