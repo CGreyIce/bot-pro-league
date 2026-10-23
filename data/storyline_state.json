@@ -220,29 +220,29 @@
    "mvp": 62
   },
   "marsinss": {
-   "maps": 39,
-   "kills": 599,
-   "mvp": 86
+   "maps": 40,
+   "kills": 608,
+   "mvp": 87
   },
   "applezxc": {
-   "maps": 38,
-   "kills": 608,
+   "maps": 39,
+   "kills": 623,
    "mvp": 81
   },
   "crimsynflames": {
-   "maps": 38,
-   "kills": 648,
-   "mvp": 100
+   "maps": 39,
+   "kills": 658,
+   "mvp": 101
   },
   "suzuyunn": {
-   "maps": 40,
-   "kills": 625,
-   "mvp": 90
+   "maps": 41,
+   "kills": 639,
+   "mvp": 93
   },
   "perk": {
-   "maps": 39,
-   "kills": 576,
-   "mvp": 65
+   "maps": 40,
+   "kills": 589,
+   "mvp": 66
   },
   "nipnip": {
    "maps": 44,
@@ -1575,9 +1575,9 @@
    "mvp": 60
   },
   "jasticar": {
-   "maps": 44,
-   "kills": 556,
-   "mvp": 81
+   "maps": 45,
+   "kills": 566,
+   "mvp": 83
   },
   "dazeido": {
    "maps": 35,
@@ -1635,14 +1635,14 @@
    "mvp": 77
   },
   "yaekia": {
-   "maps": 44,
-   "kills": 670,
-   "mvp": 109
+   "maps": 45,
+   "kills": 689,
+   "mvp": 112
   },
   "luneforrune": {
-   "maps": 40,
-   "kills": 555,
-   "mvp": 89
+   "maps": 41,
+   "kills": 568,
+   "mvp": 90
   },
   "okjustsmd": {
    "maps": 28,
@@ -1660,9 +1660,9 @@
    "mvp": 50
   },
   "spinafex": {
-   "maps": 38,
-   "kills": 602,
-   "mvp": 87
+   "maps": 39,
+   "kills": 627,
+   "mvp": 93
   },
   "azumiying": {
    "maps": 30,
@@ -1890,9 +1890,9 @@
    "mvp": 33
   },
   "riko-solari": {
-   "maps": 31,
-   "kills": 388,
-   "mvp": 48
+   "maps": 32,
+   "kills": 399,
+   "mvp": 49
   },
   "penguchi": {
    "maps": 26,
@@ -2430,6 +2430,7 @@
   "upset:bpl-legends-stage-2026:1-15",
   "upset:bpl-legends-stage-2026:1-22",
   "upset:bpl-legends-stage-2026:1-26",
+  "upset:bpl-legends-stage-2026:1-28",
   "upset:bpl-legends-stage-2026:1-3",
   "upset:bpl-legends-stage-2026:1-5",
   "upset:nations-cup-qualifier-singapore-2026:1-43",

@@ -272,8 +272,9 @@
      "round": 5,
      "a": "Solstice",
      "b": "Aeternum",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1792796296
     },
     {
      "id": 29,
