@@ -1240,5 +1240,14 @@
   "title": "XueQiii: 50 maps played",
   "text": "XueQiii reached 50 maps played",
   "link": "#/player/xueqiii"
+ },
+ {
+  "id": "milestone:icington-the-third:kills:500",
+  "type": "milestone",
+  "ts": 1792744664,
+  "date": "2026-10-23",
+  "title": "Icington the third: 500 career kills",
+  "text": "Icington the third reached 500 career kills",
+  "link": "#/player/icington-the-third"
  }
 ]
