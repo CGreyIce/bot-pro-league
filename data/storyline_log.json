@@ -1294,5 +1294,14 @@
   "title": "Yaekia: 100 MVP rounds",
   "text": "Yaekia reached 100 MVP rounds",
   "link": "#/player/yaekia"
+ },
+ {
+  "id": "milestone:tanykeat:mvp:100",
+  "type": "milestone",
+  "ts": 1792754892,
+  "date": "2026-10-23",
+  "title": "tanykeat: 100 MVP rounds",
+  "text": "tanykeat reached 100 MVP rounds",
+  "link": "#/player/tanykeat"
  }
 ]
