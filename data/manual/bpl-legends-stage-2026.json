@@ -263,8 +263,9 @@
      "round": 5,
      "a": "Special Forces",
      "b": "Syzygy",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1792788367
     },
     {
      "id": 28,

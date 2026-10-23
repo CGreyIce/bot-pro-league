@@ -1375,5 +1375,32 @@
   "title": "Karoni: 100 MVP rounds",
   "text": "Karoni reached 100 MVP rounds",
   "link": "#/player/karoni"
+ },
+ {
+  "id": "milestone:ayanowot:kills:500",
+  "type": "milestone",
+  "ts": 1792788370,
+  "date": "2026-10-24",
+  "title": "AyanOwOT: 500 career kills",
+  "text": "AyanOwOT reached 500 career kills",
+  "link": "#/player/ayanowot"
+ },
+ {
+  "id": "milestone:leachubby:maps:50",
+  "type": "milestone",
+  "ts": 1792788370,
+  "date": "2026-10-24",
+  "title": "leachubby: 50 maps played",
+  "text": "leachubby reached 50 maps played",
+  "link": "#/player/leachubby"
+ },
+ {
+  "id": "milestone:spectrum-gabriel:kills:500",
+  "type": "milestone",
+  "ts": 1792788370,
+  "date": "2026-10-24",
+  "title": "Spectrum Gabriel: 500 career kills",
+  "text": "Spectrum Gabriel reached 500 career kills",
+  "link": "#/player/spectrum-gabriel"
  }
 ]
