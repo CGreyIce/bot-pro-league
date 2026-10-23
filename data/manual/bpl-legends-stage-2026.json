@@ -227,8 +227,9 @@
      "round": 4,
      "a": "Caelum Scala",
      "b": "Technomancy",
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1792761604
     },
     {
      "id": 24,
