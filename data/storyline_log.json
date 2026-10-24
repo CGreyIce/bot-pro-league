@@ -1627,5 +1627,32 @@
   "title": "Lyrazal: 500 career kills",
   "text": "Lyrazal reached 500 career kills",
   "link": "#/player/lyrazal"
+ },
+ {
+  "id": "milestone:luciddoob:kills:500",
+  "type": "milestone",
+  "ts": 1792865008,
+  "date": "2026-10-25",
+  "title": "luciddoob: 500 career kills",
+  "text": "luciddoob reached 500 career kills",
+  "link": "#/player/luciddoob"
+ },
+ {
+  "id": "milestone:pastellows:kills:1000",
+  "type": "milestone",
+  "ts": 1792865008,
+  "date": "2026-10-25",
+  "title": "pastellows: 1000 career kills",
+  "text": "pastellows reached 1000 career kills",
+  "link": "#/player/pastellows"
+ },
+ {
+  "id": "milestone:kenzieyii:kills:500",
+  "type": "milestone",
+  "ts": 1792865008,
+  "date": "2026-10-25",
+  "title": "kenzieyii: 500 career kills",
+  "text": "kenzieyii reached 500 career kills",
+  "link": "#/player/kenzieyii"
  }
 ]
