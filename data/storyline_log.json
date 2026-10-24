@@ -1501,5 +1501,23 @@
   "title": "Rethnap: 500 career kills",
   "text": "Rethnap reached 500 career kills",
   "link": "#/player/rethnap"
+ },
+ {
+  "id": "milestone:celtsm:mvp:100",
+  "type": "milestone",
+  "ts": 1792825709,
+  "date": "2026-10-24",
+  "title": "Celtsm: 100 MVP rounds",
+  "text": "Celtsm reached 100 MVP rounds",
+  "link": "#/player/celtsm"
+ },
+ {
+  "id": "milestone:kyan:kills:500",
+  "type": "milestone",
+  "ts": 1792825709,
+  "date": "2026-10-24",
+  "title": "Kyan: 500 career kills",
+  "text": "Kyan reached 500 career kills",
+  "link": "#/player/kyan"
  }
 ]
