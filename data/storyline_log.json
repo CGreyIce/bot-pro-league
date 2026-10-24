@@ -1456,5 +1456,14 @@
   "title": "4_naru: 50 maps played",
   "text": "4_naru reached 50 maps played",
   "link": "#/player/4-naru"
+ },
+ {
+  "id": "milestone:baer:maps:50",
+  "type": "milestone",
+  "ts": 1792805703,
+  "date": "2026-10-24",
+  "title": "Baer: 50 maps played",
+  "text": "Baer reached 50 maps played",
+  "link": "#/player/baer"
  }
 ]
