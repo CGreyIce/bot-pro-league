@@ -1492,5 +1492,14 @@
   "title": "pastellows: 150 MVP rounds",
   "text": "pastellows reached 150 MVP rounds",
   "link": "#/player/pastellows"
+ },
+ {
+  "id": "milestone:rethnap:kills:500",
+  "type": "milestone",
+  "ts": 1792819099,
+  "date": "2026-10-24",
+  "title": "Rethnap: 500 career kills",
+  "text": "Rethnap reached 500 career kills",
+  "link": "#/player/rethnap"
  }
 ]
