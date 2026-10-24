@@ -1672,5 +1672,14 @@
   "title": "miorine: 500 career kills",
   "text": "miorine reached 500 career kills",
   "link": "#/player/miorine"
+ },
+ {
+  "id": "milestone:zhizyii:mvp:100",
+  "type": "milestone",
+  "ts": 1792881073,
+  "date": "2026-10-25",
+  "title": "zhizyii: 100 MVP rounds",
+  "text": "zhizyii reached 100 MVP rounds",
+  "link": "#/player/zhizyii"
  }
 ]
