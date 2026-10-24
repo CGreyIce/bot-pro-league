@@ -1546,5 +1546,14 @@
   "title": "CryingNutz: 500 career kills",
   "text": "CryingNutz reached 500 career kills",
   "link": "#/player/cryingnutz"
+ },
+ {
+  "id": "milestone:itswendy:kills:500",
+  "type": "milestone",
+  "ts": 1792843982,
+  "date": "2026-10-24",
+  "title": "itswendy_: 500 career kills",
+  "text": "itswendy_ reached 500 career kills",
+  "link": "#/player/itswendy"
  }
 ]

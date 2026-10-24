@@ -1480,9 +1480,9 @@
    "mvp": 102
   },
   "itswendy": {
-   "maps": 34,
-   "kills": 485,
-   "mvp": 75
+   "maps": 35,
+   "kills": 500,
+   "mvp": 77
   },
   "laurel": {
    "maps": 42,
@@ -1565,9 +1565,9 @@
    "mvp": 87
   },
   "arcimoon": {
-   "maps": 41,
-   "kills": 546,
-   "mvp": 73
+   "maps": 42,
+   "kills": 558,
+   "mvp": 74
   },
   "vssmb": {
    "maps": 30,
@@ -1605,9 +1605,9 @@
    "mvp": 100
   },
   "tearsofdeath": {
-   "maps": 39,
-   "kills": 634,
-   "mvp": 103
+   "maps": 40,
+   "kills": 662,
+   "mvp": 106
   },
   "rumirumi": {
    "maps": 30,
@@ -1670,9 +1670,9 @@
    "mvp": 67
   },
   "cherri-vt": {
-   "maps": 39,
-   "kills": 525,
-   "mvp": 57
+   "maps": 40,
+   "kills": 541,
+   "mvp": 58
   },
   "syrrith": {
    "maps": 46,
@@ -1700,9 +1700,9 @@
    "mvp": 83
   },
   "exact": {
-   "maps": 33,
-   "kills": 514,
-   "mvp": 85
+   "maps": 34,
+   "kills": 541,
+   "mvp": 89
   },
   "surf": {
    "maps": 30,
@@ -1770,9 +1770,9 @@
    "mvp": 66
   },
   "jira-jisaki": {
-   "maps": 35,
-   "kills": 478,
-   "mvp": 72
+   "maps": 36,
+   "kills": 494,
+   "mvp": 76
   },
   "l2strike": {
    "maps": 26,
@@ -1885,9 +1885,9 @@
    "mvp": 53
   },
   "leilamayadah": {
-   "maps": 27,
-   "kills": 332,
-   "mvp": 33
+   "maps": 28,
+   "kills": 346,
+   "mvp": 36
   },
   "riko-solari": {
    "maps": 32,
@@ -1905,8 +1905,8 @@
    "mvp": 54
   },
   "erinerurie": {
-   "maps": 31,
-   "kills": 476,
+   "maps": 32,
+   "kills": 489,
    "mvp": 75
   },
   "juno-umezono": {
@@ -2315,14 +2315,14 @@
    "mvp": 21
   },
   "jackgia2002": {
-   "maps": 12,
-   "kills": 200,
-   "mvp": 28
+   "maps": 13,
+   "kills": 217,
+   "mvp": 31
   },
   "zero-macabre": {
-   "maps": 10,
-   "kills": 199,
-   "mvp": 30
+   "maps": 11,
+   "kills": 212,
+   "mvp": 32
   },
   "syberiak": {
    "maps": 9,
@@ -2424,6 +2424,7 @@
   "upset:bpl-challengers-stage-2026:5-18",
   "upset:bpl-challengers-stage-2026:5-3",
   "upset:bpl-challengers-stage-2026:5-4",
+  "upset:bpl-challengers-stage-2026:5-5",
   "upset:bpl-legends-stage-2026:1-10",
   "upset:bpl-legends-stage-2026:1-12",
   "upset:bpl-legends-stage-2026:1-13",
