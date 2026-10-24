@@ -1600,5 +1600,14 @@
   "title": "midorissi: 100 MVP rounds",
   "text": "midorissi reached 100 MVP rounds",
   "link": "#/player/midorissi"
+ },
+ {
+  "id": "milestone:kaito-oshino:mvp:100",
+  "type": "milestone",
+  "ts": 1792855304,
+  "date": "2026-10-24",
+  "title": "Kaito_Oshino: 100 MVP rounds",
+  "text": "Kaito_Oshino reached 100 MVP rounds",
+  "link": "#/player/kaito-oshino"
  }
 ]
