@@ -1573,5 +1573,14 @@
   "title": "ErineRurie: 500 career kills",
   "text": "ErineRurie reached 500 career kills",
   "link": "#/player/erinerurie"
+ },
+ {
+  "id": "milestone:sashimigoesbloop:mvp:100",
+  "type": "milestone",
+  "ts": 1792849983,
+  "date": "2026-10-24",
+  "title": "SashimiGoesBloop: 100 MVP rounds",
+  "text": "SashimiGoesBloop reached 100 MVP rounds",
+  "link": "#/player/sashimigoesbloop"
  }
 ]
