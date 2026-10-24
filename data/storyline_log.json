@@ -1681,5 +1681,14 @@
   "title": "zhizyii: 100 MVP rounds",
   "text": "zhizyii reached 100 MVP rounds",
   "link": "#/player/zhizyii"
+ },
+ {
+  "id": "milestone:xolalotl:maps:50",
+  "type": "milestone",
+  "ts": 1792883106,
+  "date": "2026-10-25",
+  "title": "xolalotl: 50 maps played",
+  "text": "xolalotl reached 50 maps played",
+  "link": "#/player/xolalotl"
  }
 ]
