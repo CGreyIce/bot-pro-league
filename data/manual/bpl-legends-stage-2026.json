@@ -281,8 +281,9 @@
      "round": 5,
      "a": "Technomancy",
      "b": "Alcheministry",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1792801315
     },
     {
      "id": 30,

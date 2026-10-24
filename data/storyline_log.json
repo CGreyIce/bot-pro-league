@@ -1420,5 +1420,23 @@
   "title": "carv: 500 career kills",
   "text": "carv reached 500 career kills",
   "link": "#/player/carv"
+ },
+ {
+  "id": "milestone:nekosoji:kills:500",
+  "type": "milestone",
+  "ts": 1792801317,
+  "date": "2026-10-24",
+  "title": "NekoSoji: 500 career kills",
+  "text": "NekoSoji reached 500 career kills",
+  "link": "#/player/nekosoji"
+ },
+ {
+  "id": "milestone:teckiyo:mvp:100",
+  "type": "milestone",
+  "ts": 1792801317,
+  "date": "2026-10-24",
+  "title": "teckiyo: 100 MVP rounds",
+  "text": "teckiyo reached 100 MVP rounds",
+  "link": "#/player/teckiyo"
  }
 ]
