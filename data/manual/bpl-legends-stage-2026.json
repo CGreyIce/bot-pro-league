@@ -329,8 +329,9 @@
      "round": 1,
      "a": "Bluebird",
      "b": "Pastel Mocha",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1792813291
     },
     {
      "id": 2,
