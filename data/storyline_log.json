@@ -1654,5 +1654,23 @@
   "title": "kenzieyii: 500 career kills",
   "text": "kenzieyii reached 500 career kills",
   "link": "#/player/kenzieyii"
+ },
+ {
+  "id": "milestone:ziweiv:kills:500",
+  "type": "milestone",
+  "ts": 1792872857,
+  "date": "2026-10-25",
+  "title": "Ziweiv: 500 career kills",
+  "text": "Ziweiv reached 500 career kills",
+  "link": "#/player/ziweiv"
+ },
+ {
+  "id": "milestone:miorine:kills:500",
+  "type": "milestone",
+  "ts": 1792872857,
+  "date": "2026-10-25",
+  "title": "miorine: 500 career kills",
+  "text": "miorine reached 500 career kills",
+  "link": "#/player/miorine"
  }
 ]
