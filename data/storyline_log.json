@@ -1609,5 +1609,23 @@
   "title": "Kaito_Oshino: 100 MVP rounds",
   "text": "Kaito_Oshino reached 100 MVP rounds",
   "link": "#/player/kaito-oshino"
+ },
+ {
+  "id": "milestone:nutzeru:mvp:100",
+  "type": "milestone",
+  "ts": 1792860304,
+  "date": "2026-10-25",
+  "title": "Nutzeru: 100 MVP rounds",
+  "text": "Nutzeru reached 100 MVP rounds",
+  "link": "#/player/nutzeru"
+ },
+ {
+  "id": "milestone:lyrazal:kills:500",
+  "type": "milestone",
+  "ts": 1792860304,
+  "date": "2026-10-25",
+  "title": "Lyrazal: 500 career kills",
+  "text": "Lyrazal reached 500 career kills",
+  "link": "#/player/lyrazal"
  }
 ]

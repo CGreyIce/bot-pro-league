@@ -401,8 +401,9 @@
      "round": 2,
      "a": "Bluebird",
      "b": "Nightshade",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1792860301
     },
     {
      "id": 10,
