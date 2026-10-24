@@ -1519,5 +1519,32 @@
   "title": "Kyan: 500 career kills",
   "text": "Kyan reached 500 career kills",
   "link": "#/player/kyan"
+ },
+ {
+  "id": "milestone:utsuhonull:mvp:100",
+  "type": "milestone",
+  "ts": 1792830489,
+  "date": "2026-10-24",
+  "title": "UtsuhoNull: 100 MVP rounds",
+  "text": "UtsuhoNull reached 100 MVP rounds",
+  "link": "#/player/utsuhonull"
+ },
+ {
+  "id": "milestone:ssseiso:kills:500",
+  "type": "milestone",
+  "ts": 1792830489,
+  "date": "2026-10-24",
+  "title": "ssseiso: 500 career kills",
+  "text": "ssseiso reached 500 career kills",
+  "link": "#/player/ssseiso"
+ },
+ {
+  "id": "milestone:cryingnutz:kills:500",
+  "type": "milestone",
+  "ts": 1792830489,
+  "date": "2026-10-24",
+  "title": "CryingNutz: 500 career kills",
+  "text": "CryingNutz reached 500 career kills",
+  "link": "#/player/cryingnutz"
  }
 ]
