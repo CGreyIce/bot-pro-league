@@ -365,8 +365,9 @@
      "round": 1,
      "a": "DiamondOnes",
      "b": "Chromatic Foxes",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1792842018
     },
     {
      "id": 6,
