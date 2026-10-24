@@ -1555,5 +1555,23 @@
   "title": "itswendy_: 500 career kills",
   "text": "itswendy_ reached 500 career kills",
   "link": "#/player/itswendy"
+ },
+ {
+  "id": "milestone:jira-jisaki:kills:500",
+  "type": "milestone",
+  "ts": 1792847832,
+  "date": "2026-10-24",
+  "title": "Jira Jisaki: 500 career kills",
+  "text": "Jira Jisaki reached 500 career kills",
+  "link": "#/player/jira-jisaki"
+ },
+ {
+  "id": "milestone:erinerurie:kills:500",
+  "type": "milestone",
+  "ts": 1792847832,
+  "date": "2026-10-24",
+  "title": "ErineRurie: 500 career kills",
+  "text": "ErineRurie reached 500 career kills",
+  "link": "#/player/erinerurie"
  }
 ]
