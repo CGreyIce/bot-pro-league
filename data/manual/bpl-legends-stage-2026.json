@@ -482,6 +482,55 @@
      "round": 3,
      "a": "The Nomads",
      "b": "Chromatic Foxes",
+     "sa": 2,
+     "sb": 0,
+     "ts": 1792919724
+    },
+    {
+     "id": 19,
+     "round": 4,
+     "a": "Nullpoint",
+     "b": "Moonlit Tempo",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 20,
+     "round": 4,
+     "a": "Bluebird",
+     "b": "DiamondOnes",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 21,
+     "round": 4,
+     "a": "Pastel Mocha",
+     "b": "Crystal Laurels",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 22,
+     "round": 4,
+     "a": "Nightshade",
+     "b": "Mourningstar",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 23,
+     "round": 4,
+     "a": "The Nomads",
+     "b": "Cyanide",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 24,
+     "round": 4,
+     "a": "Maple Macabre",
+     "b": "Chromatic Foxes",
      "sa": null,
      "sb": null
     }
@@ -489,7 +538,8 @@
    "roundTitles": {
     "1": "Round 1",
     "2": "Round 2",
-    "3": "Round 3"
+    "3": "Round 3",
+    "4": "Round 4"
    },
    "rounds": 5
   },
