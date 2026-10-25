@@ -1717,5 +1717,23 @@
   "title": "GoddessAkane: 500 career kills",
   "text": "GoddessAkane reached 500 career kills",
   "link": "#/player/goddessakane"
+ },
+ {
+  "id": "milestone:yinnzx:kills:500",
+  "type": "milestone",
+  "ts": 1792897059,
+  "date": "2026-10-25",
+  "title": "yinnzx: 500 career kills",
+  "text": "yinnzx reached 500 career kills",
+  "link": "#/player/yinnzx"
+ },
+ {
+  "id": "milestone:itzmaigo:kills:500",
+  "type": "milestone",
+  "ts": 1792897059,
+  "date": "2026-10-25",
+  "title": "ItzMaigo: 500 career kills",
+  "text": "ItzMaigo reached 500 career kills",
+  "link": "#/player/itzmaigo"
  }
 ]
