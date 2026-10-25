@@ -1753,5 +1753,14 @@
   "title": "okjustsmd: 100 MVP rounds",
   "text": "okjustsmd reached 100 MVP rounds",
   "link": "#/player/okjustsmd"
+ },
+ {
+  "id": "milestone:l2strike:kills:500",
+  "type": "milestone",
+  "ts": 1792912865,
+  "date": "2026-10-25",
+  "title": "L2Strike: 500 career kills",
+  "text": "L2Strike reached 500 career kills",
+  "link": "#/player/l2strike"
  }
 ]
