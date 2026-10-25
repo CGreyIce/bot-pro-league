@@ -1690,5 +1690,23 @@
   "title": "xolalotl: 50 maps played",
   "text": "xolalotl reached 50 maps played",
   "link": "#/player/xolalotl"
+ },
+ {
+  "id": "milestone:notccillia:mvp:150",
+  "type": "milestone",
+  "ts": 1792886712,
+  "date": "2026-10-25",
+  "title": "notccillia: 150 MVP rounds",
+  "text": "notccillia reached 150 MVP rounds",
+  "link": "#/player/notccillia"
+ },
+ {
+  "id": "milestone:lilraxxx:mvp:100",
+  "type": "milestone",
+  "ts": 1792886712,
+  "date": "2026-10-25",
+  "title": "lilraxxx: 100 MVP rounds",
+  "text": "lilraxxx reached 100 MVP rounds",
+  "link": "#/player/lilraxxx"
  }
 ]
