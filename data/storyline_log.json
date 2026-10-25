@@ -1735,5 +1735,14 @@
   "title": "ItzMaigo: 500 career kills",
   "text": "ItzMaigo reached 500 career kills",
   "link": "#/player/itzmaigo"
+ },
+ {
+  "id": "milestone:vixi:mvp:100",
+  "type": "milestone",
+  "ts": 1792910015,
+  "date": "2026-10-25",
+  "title": "vixi: 100 MVP rounds",
+  "text": "vixi reached 100 MVP rounds",
+  "link": "#/player/vixi"
  }
 ]
