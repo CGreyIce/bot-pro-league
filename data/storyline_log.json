@@ -1744,5 +1744,14 @@
   "title": "vixi: 100 MVP rounds",
   "text": "vixi reached 100 MVP rounds",
   "link": "#/player/vixi"
+ },
+ {
+  "id": "milestone:okjustsmd:mvp:100",
+  "type": "milestone",
+  "ts": 1792910321,
+  "date": "2026-10-25",
+  "title": "okjustsmd: 100 MVP rounds",
+  "text": "okjustsmd reached 100 MVP rounds",
+  "link": "#/player/okjustsmd"
  }
 ]
