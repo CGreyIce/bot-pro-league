@@ -527,8 +527,9 @@
      "round": 4,
      "a": "The Nomads",
      "b": "Cyanide",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1793038201
     },
     {
      "id": 24,

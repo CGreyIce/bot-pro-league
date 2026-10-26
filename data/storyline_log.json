@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:soapiisereia:kills:500",
-  "type": "milestone",
-  "ts": 1791328796,
-  "date": "2026-10-16",
-  "title": "SoapiiSereia: 500 career kills",
-  "text": "SoapiiSereia reached 500 career kills",
-  "link": "#/player/soapiisereia"
- },
- {
-  "id": "transfer:newjade:2026-10-16:crazywhoopies",
-  "type": "transfer",
-  "ts": 1791643628,
-  "date": "2026-10-16",
-  "title": "New Jade part ways with crazywhoopies",
-  "text": "out: crazywhoopies",
-  "link": "#/team/new-jade"
- },
- {
-  "id": "transfer:newjade:2026-10-16:kojadayo",
-  "type": "transfer",
-  "ts": 1791643659,
-  "date": "2026-10-16",
-  "title": "New Jade sign Kojadayo",
-  "text": "in: Kojadayo",
-  "link": "#/team/new-jade"
- },
- {
   "id": "transfer:masmark:2026-09-28:estellyy+hikariifloofie",
   "type": "transfer",
   "ts": 1791644365,
@@ -1798,5 +1771,32 @@
   "title": "Rethnap: 100 MVP rounds",
   "text": "Rethnap reached 100 MVP rounds",
   "link": "#/player/rethnap"
+ },
+ {
+  "id": "milestone:heavenweeps:maps:50",
+  "type": "milestone",
+  "ts": 1793038203,
+  "date": "2026-10-27",
+  "title": "heavenweeps: 50 maps played",
+  "text": "heavenweeps reached 50 maps played",
+  "link": "#/player/heavenweeps"
+ },
+ {
+  "id": "milestone:decrease:maps:50",
+  "type": "milestone",
+  "ts": 1793038203,
+  "date": "2026-10-27",
+  "title": "Decrease: 50 maps played",
+  "text": "Decrease reached 50 maps played",
+  "link": "#/player/decrease"
+ },
+ {
+  "id": "milestone:nikorasu:maps:50",
+  "type": "milestone",
+  "ts": 1793038203,
+  "date": "2026-10-27",
+  "title": "Nikorasu: 50 maps played",
+  "text": "Nikorasu reached 50 maps played",
+  "link": "#/player/nikorasu"
  }
 ]
