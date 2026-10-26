@@ -500,8 +500,9 @@
      "round": 4,
      "a": "Bluebird",
      "b": "DiamondOnes",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1793014806
     },
     {
      "id": 21,
