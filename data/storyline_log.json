@@ -1,23 +1,5 @@
 [
  {
-  "id": "record:highestMap:65+mostKillsMap:58+mostOT:7",
-  "type": "record",
-  "ts": 1790953991,
-  "date": "2026-10-14",
-  "title": "3 records broken in one map",
-  "text": "Highest-scoring map: 65 rounds (34-31); Most kills in a map: 58 kills (PenguChi); Most overtimes in a map: 7 overtimes",
-  "link": "#/match/bpl-challengers-stage-2026/1-16"
- },
- {
-  "id": "top:player:rebebx:2026-10-14",
-  "type": "top",
-  "ts": 1791152453,
-  "date": "2026-10-14",
-  "title": "rebebx is the new #1",
-  "text": "Top of the player rankings at 1816 points, passing Laburi",
-  "link": "#/player/rebebx"
- },
- {
   "id": "top:team:cosmos:2026-10-14",
   "type": "top",
   "ts": 1791153023,
@@ -1789,5 +1771,32 @@
   "title": "Jenakai: 500 career kills",
   "text": "Jenakai reached 500 career kills",
   "link": "#/player/jenakai"
+ },
+ {
+  "id": "milestone:niamocha:mvp:150",
+  "type": "milestone",
+  "ts": 1793020308,
+  "date": "2026-10-26",
+  "title": "Niamocha: 150 MVP rounds",
+  "text": "Niamocha reached 150 MVP rounds",
+  "link": "#/player/niamocha"
+ },
+ {
+  "id": "milestone:laurel:maps:50",
+  "type": "milestone",
+  "ts": 1793020308,
+  "date": "2026-10-26",
+  "title": "Laurel: 50 maps played",
+  "text": "Laurel reached 50 maps played",
+  "link": "#/player/laurel"
+ },
+ {
+  "id": "milestone:cwstalvt:mvp:100",
+  "type": "milestone",
+  "ts": 1793020308,
+  "date": "2026-10-26",
+  "title": "cwstalVT: 100 MVP rounds",
+  "text": "cwstalVT reached 100 MVP rounds",
+  "link": "#/player/cwstalvt"
  }
 ]
