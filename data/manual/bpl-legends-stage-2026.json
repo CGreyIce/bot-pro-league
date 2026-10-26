@@ -482,9 +482,15 @@
      "round": 3,
      "a": "The Nomads",
      "b": "Chromatic Foxes",
+<<<<<<< HEAD
      "sa": 1,
      "sb": 2,
      "ts": 1792913059
+=======
+     "sa": 2,
+     "sb": 0,
+     "ts": 1792919724
+>>>>>>> cc21d4f4df767f08695789f5dd96f589fcf767fc
     },
     {
      "id": 19,
