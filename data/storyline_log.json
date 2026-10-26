@@ -1762,5 +1762,14 @@
   "title": "L2Strike: 500 career kills",
   "text": "L2Strike reached 500 career kills",
   "link": "#/player/l2strike"
+ },
+ {
+  "id": "milestone:midorissi:maps:50",
+  "type": "milestone",
+  "ts": 1793013388,
+  "date": "2026-10-26",
+  "title": "midorissi: 50 maps played",
+  "text": "midorissi reached 50 maps played",
+  "link": "#/player/midorissi"
  }
 ]
