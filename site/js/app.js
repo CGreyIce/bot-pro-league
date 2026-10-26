@@ -4173,6 +4173,7 @@ function renderTournament(slug){
   const lbSection = (lb && lb.rows && lb.rows.length) ? (()=>{
     const fsBy = {}; fs.forEach(s=>fsBy[normKey(s.name)]=s);
     const rdiff = r=>r.rf-r.ra, sgn = v=>v>0?'+'+v:String(v);
+    const mapTb = r=>r.tiebreak==='map difference';
     const rows = lb.rows.map(r=>{ const st = fsBy[normKey(r.name)] || {rank:r.rank, name:r.name};
       const badge = lb.complete ? (r.rank===1?'<span class="fs-result fs-champ">Champion</span>':'') : '';
       return `<tr class="${r.rank===1&&lb.complete?'lb-champ':''}">
@@ -4180,8 +4181,8 @@ function renderTournament(slug){
         <td class="name-cell">${crest(r.name, r.teamSlug)} ${badge}</td>
         <td class="muted">${esc(r.group)} · ${placeOrd(r.groupPlace)}</td>
         <td class="mono lb-rec">${r.w}-${r.l}</td>
-        <td class="mono">${r.mw}-${r.ml}</td>
-        <td class="mono" style="color:${rdiff(r)>0?'var(--good)':rdiff(r)<0?'var(--accent2)':'var(--muted)'}" title="${r.rf} rounds won, ${r.ra} lost${r.tiebreak?` · tie broken by ${r.tiebreak}`:''}">${sgn(rdiff(r))}${r.tiebreak?' <span class="lb-tb">TB</span>':''}</td>
+        <td class="mono" title="${r.mw} maps won, ${r.ml} lost${mapTb(r)?' · tie broken by map difference':''}">${r.mw}-${r.ml}${mapTb(r)?' <span class="lb-tb">TB</span>':''}</td>
+        <td class="mono" style="color:${rdiff(r)>0?'var(--good)':rdiff(r)<0?'var(--accent2)':'var(--muted)'}" title="${r.rf} rounds won, ${r.ra} lost${r.tiebreak&&!mapTb(r)?` · tie broken by ${r.tiebreak}`:''}">${sgn(rdiff(r))}${r.tiebreak&&!mapTb(r)?' <span class="lb-tb">TB</span>':''}</td>
         ${lb.complete&&hasPrizes?prizeCell({rank:st.rank, name:st.name}):''}</tr>`; }).join("");
     return `<h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>${lb.complete?'Final Leaderboard':'Projected Leaderboard'}
         <span class="muted" style="font-size:11px">${lb.complete?`top ${lb.perGroup} of each group, ranked on their group results · #1 is the champion${hasPrizes?' · '+fmtUSD(tr.prizePool)+' prize pool':''}`
@@ -4190,7 +4191,9 @@ function renderTournament(slug){
         <thead><tr><th class="no-sort">#</th><th class="no-sort">Team</th><th class="no-sort">Group</th><th class="no-sort">Record</th><th class="no-sort">Maps</th><th class="no-sort" title="Round difference across all their group games">Rounds</th>${lb.complete&&hasPrizes?'<th class="no-sort" style="text-align:right">Prize</th>':''}</tr></thead>
         <tbody>${rows}</tbody></table></div>
       ${!lb.complete&&lb.pending&&lb.pending.length?`<div class="muted" style="font-size:12px;margin-top:6px">${esc(lb.pending.join(", ").replace(/, ([^,]*)$/," and $1"))} ${lb.pending.length===1?"hasn't":"haven't"} started yet: their top ${lb.perGroup} join the table once they play.</div>`:''}
-      <div class="muted" style="font-size:11px;margin-top:6px">Ranked by wins, then losses, then round difference. Tied teams from the same group keep their group order (head-to-head, then rounds). TB = tie broken.</div>`; })()
+      <div class="muted" style="font-size:11px;margin-top:6px">${lb.tiebreak==='maps'
+        ?'Ranked by wins, then losses, then map difference, then round difference. The group tables use the same order. TB = tie broken.'
+        :'Ranked by wins, then losses, then round difference. Tied teams from the same group keep their group order (head-to-head, then rounds). TB = tie broken.'}</div>`; })()
     // no group has played yet: say up front that the event ends on one leaderboard, not a playoff bracket
     : lb ? `<h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Final Leaderboard</h2>
       <div class="notice" style="text-align:left">No playoffs: the top ${lb.perGroup} of each group (${lb.perGroup*(tr.stages||[]).filter(s=>s.format==='swiss').length} teams) go onto one leaderboard, ranked on their group results. #1 is the champion. It fills in from the first result.</div>` : '';

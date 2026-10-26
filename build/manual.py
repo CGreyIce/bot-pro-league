@@ -237,7 +237,7 @@ def stage_standings(stage, res):
     order = sorted(rec.keys(), key=lambda n: (-rec[n]["w"], rec[n]["l"], -rec[n]["diff"], (n or "").lower()))
     if stage.get("_lbSlug") and stage["format"] == "swiss":
         stats, h2h = _stage_table(stage, stage["_lbSlug"])
-        order = [n for n, _ in _rank_teams([n for n in order if n in stats], stats, h2h)]
+        order = [n for n, _ in _rank_teams([n for n in order if n in stats], stats, h2h, stage.get("_lbMapsFirst", False))]
     if stage["format"] == "single_elim":
         _, champ = _elim_resolved(stage)
         # explicit podium: champion, runner-up (final loser), then the 3rd-place decider's
@@ -322,10 +322,15 @@ def _stage_table(stage, slug):
         h2h[(win, lose)] = h2h.get((win, lose), 0) + 1
     return stats, h2h
 
-def _rank_teams(names, stats, h2h):
+def _rank_teams(names, stats, h2h, maps_first=False):
     """Wins, then losses, then head-to-head (only when every tied team played each other), then round
-    difference, then map difference. Returns [(name, tiebreak or None)] best first."""
+    difference, then map difference. Returns [(name, tiebreak or None)] best first.
+    maps_first (finalLeaderboard "tiebreak": "maps", the user's rule from Legends 2026 on): wins, then
+    losses, then map difference, then round difference, with no head-to-head. A 5-0 on 10-1 maps
+    then ranks above a 5-0 on 10-3, which round difference had the other way round (more maps played
+    means more rounds won)."""
     rd = lambda n: stats[n]["rf"] - stats[n]["ra"]
+    md = lambda n: stats[n]["mw"] - stats[n]["ml"]
     names = sorted(names, key=lambda n: (-stats[n]["w"], stats[n]["l"]))
     out, i = [], 0
     while i < len(names):
@@ -333,6 +338,15 @@ def _rank_teams(names, stats, h2h):
         while j < len(names) and (stats[names[j]]["w"], stats[names[j]]["l"]) == (stats[names[i]]["w"], stats[names[i]]["l"]):
             j += 1
         block = names[i:j]
+        if maps_first:
+            block.sort(key=lambda n: (-md(n), -rd(n), n.lower()))
+            for n in block:
+                tb = None
+                if len(block) > 1:
+                    tb = "round difference" if any(md(o) == md(n) for o in block if o != n) else "map difference"
+                out.append((n, tb))
+            i = j
+            continue
         met = len(block) > 1 and all((x, y) in h2h or (y, x) in h2h for x in block for y in block if x != y)
         hw = {n: (sum(h2h.get((n, o), 0) for o in block if o != n) if met else 0) for n in block}
         block.sort(key=lambda n: (-hw[n], -rd(n), -(stats[n]["mw"] - stats[n]["ml"]), n.lower()))
@@ -343,17 +357,23 @@ def _rank_teams(names, stats, h2h):
         i = j
     return out
 
+def _maps_first(man):
+    """The event breaks ties on map difference before round difference (finalLeaderboard "tiebreak": "maps")."""
+    return (man.get("finalLeaderboard") or {}).get("tiebreak") == "maps"
+
 def leaderboard(man):
     """man["finalLeaderboard"] = {"perGroup": 2}: instead of a playoff, the top `perGroup` of every
     swiss group go onto ONE leaderboard ranked purely on their group-stage results (ALGS-style), with
     the same ordering the event's group tables use: match wins, then losses, then head-to-head (only
-    when every tied team played each other), then round difference, then map difference. #1 is the
-    champion. Returns {"rows", "complete", "perGroup", "pending"} (projected while groups are unfinished)."""
+    when every tied team played each other), then round difference, then map difference; with
+    "tiebreak": "maps", wins, losses, map difference, round difference. #1 is the champion.
+    Returns {"rows", "complete", "perGroup", "pending", "tiebreak"} (projected while groups are unfinished)."""
     cfg = man.get("finalLeaderboard")
     if not cfg:
         return None
     _load_stats()
     per = int(cfg.get("perGroup", 2))
+    mf = _maps_first(man)
     groups = [g for g in man.get("stages", []) if g["format"] == "swiss"]
     complete = bool(groups) and all(_group_complete(g) for g in groups)
     allstats, allh2h, quals, pending = {}, {}, [], []
@@ -362,13 +382,14 @@ def leaderboard(man):
         allstats.update(stats); allh2h.update(h2h)
         if not any(st["played"] for st in stats.values()):
             pending.append(g["name"]); continue
-        for place, (n, _) in enumerate(_rank_teams(list(stats), stats, h2h)[:per], 1):
+        for place, (n, _) in enumerate(_rank_teams(list(stats), stats, h2h, mf)[:per], 1):
             quals.append((n, g["name"], place))
     info = {n: (gname, place) for n, gname, place in quals}
-    ranked = _rank_teams([q[0] for q in quals], allstats, allh2h)
+    ranked = _rank_teams([q[0] for q in quals], allstats, allh2h, mf)
     # teams from the same group keep their group order: within each tied block, the slots a group's
-    # teams land in (by round difference) are refilled in group-placing order
-    i = 0
+    # teams land in (by round difference) are refilled in group-placing order. Maps first, the group
+    # order is the same key with no head-to-head, so there's nothing to refill.
+    i = len(ranked) if mf else 0
     while i < len(ranked):
         j = i
         key = lambda n: (allstats[n]["w"], allstats[n]["l"])
@@ -388,7 +409,7 @@ def leaderboard(man):
         st = allstats[n]
         rows.append({"rank": k, "name": n, "group": info[n][0], "groupPlace": info[n][1], "w": st["w"], "l": st["l"],
                      "mw": st["mw"], "ml": st["ml"], "rf": st["rf"], "ra": st["ra"], **({"tiebreak": tb} if tb else {})})
-    return {"rows": rows, "complete": complete, "perGroup": per, "pending": pending}
+    return {"rows": rows, "complete": complete, "perGroup": per, "pending": pending, "tiebreak": "maps" if mf else "rounds"}
 
 def tournament_placements(man):
     """Full final standings across the whole event: playoff finishers by bracket
@@ -476,9 +497,10 @@ def to_standard(man):
         _load_stats()
         for st in man["stages"]:
             st["_lbSlug"] = man["slug"]            # in-memory only: group tables use the leaderboard's tiebreaks
+            st["_lbMapsFirst"] = _maps_first(man)
     stages = [stage_to_standard(s) for s in man["stages"]]
     for st in man["stages"]:
-        st.pop("_lbSlug", None)
+        st.pop("_lbSlug", None); st.pop("_lbMapsFirst", None)
     # champion = decisive result of the last stage
     champion = None
     lb = leaderboard(man)
