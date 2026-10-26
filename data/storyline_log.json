@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:yukihimeowo:kills:500",
-  "type": "milestone",
-  "ts": 1791226396,
-  "date": "2026-10-16",
-  "title": "yukihimeowo: 500 career kills",
-  "text": "yukihimeowo reached 500 career kills",
-  "link": "#/player/yukihimeowo"
- },
- {
   "id": "milestone:niamocha:mvp:100",
   "type": "milestone",
   "ts": 1791231456,
@@ -1798,5 +1789,14 @@
   "title": "EXaCT: 100 MVP rounds",
   "text": "EXaCT reached 100 MVP rounds",
   "link": "#/player/exact"
+ },
+ {
+  "id": "milestone:jigglypingu:kills:500",
+  "type": "milestone",
+  "ts": 1793023982,
+  "date": "2026-10-26",
+  "title": "JigglyPingu: 500 career kills",
+  "text": "JigglyPingu reached 500 career kills",
+  "link": "#/player/jigglypingu"
  }
 ]
