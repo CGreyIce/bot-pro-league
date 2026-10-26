@@ -1,14 +1,5 @@
 [
  {
-  "id": "transfer:lunarcadence:2026-09-29:erissuzukami+shiranamiramune+tsumugikokage",
-  "type": "transfer",
-  "ts": 1791644365,
-  "date": "2026-10-16",
-  "title": "Lunar Cadence sign 3 new players",
-  "text": "in: Eris Suzukami, Tsumugi Kokage and Shiranami Ramune",
-  "link": "#/team/lunar-cadence"
- },
- {
   "id": "transfer:astralbloom:2026-09-29:ginjosaine+kogaratoto+yumenoakari",
   "type": "transfer",
   "ts": 1791644365,
@@ -1798,5 +1789,14 @@
   "title": "candybar_isblue is the new #1",
   "text": "Top of the player rankings at 1792 points, passing SanCtuary",
   "link": "#/player/candybar-isblue"
+ },
+ {
+  "id": "milestone:niamocha:maps:50",
+  "type": "milestone",
+  "ts": 1793055442,
+  "date": "2026-10-27",
+  "title": "Niamocha: 50 maps played",
+  "text": "Niamocha reached 50 maps played",
+  "link": "#/player/niamocha"
  }
 ]
