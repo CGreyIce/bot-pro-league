@@ -1,14 +1,5 @@
 [
  {
-  "id": "transfer:masmark:2026-09-28:estellyy+hikariifloofie",
-  "type": "transfer",
-  "ts": 1791644365,
-  "date": "2026-10-16",
-  "title": "Masmark swap estellyy. for HikariiFloofie",
-  "text": "in: HikariiFloofie; out: estellyy.",
-  "link": "#/team/masmark"
- },
- {
   "id": "transfer:lunarcadence:2026-09-29:erissuzukami+shiranamiramune+tsumugikokage",
   "type": "transfer",
   "ts": 1791644365,
@@ -1798,5 +1789,14 @@
   "title": "Nikorasu: 50 maps played",
   "text": "Nikorasu reached 50 maps played",
   "link": "#/player/nikorasu"
+ },
+ {
+  "id": "top:player:candybar-isblue:2026-10-27",
+  "type": "top",
+  "ts": 1793053667,
+  "date": "2026-10-27",
+  "title": "candybar_isblue is the new #1",
+  "text": "Top of the player rankings at 1792 points, passing SanCtuary",
+  "link": "#/player/candybar-isblue"
  }
 ]

@@ -140,7 +140,7 @@
  ],
  "movesSeen": 100,
  "top": {
-  "player": "sanctuary",
+  "player": "candybar-isblue",
   "team": "cosmos"
  },
  "milestones": {
@@ -1310,53 +1310,53 @@
    "mvp": 126
   },
   "zhizyii": {
-   "maps": 37,
-   "kills": 766,
-   "mvp": 106
+   "maps": 38,
+   "kills": 777,
+   "mvp": 107
   },
   "candybar-isblue": {
-   "maps": 41,
-   "kills": 798,
-   "mvp": 134
+   "maps": 42,
+   "kills": 819,
+   "mvp": 140
   },
   "utsuhonull": {
-   "maps": 36,
-   "kills": 713,
+   "maps": 37,
+   "kills": 726,
    "mvp": 119
   },
   "ssseiso": {
-   "maps": 37,
-   "kills": 617,
-   "mvp": 89
+   "maps": 38,
+   "kills": 631,
+   "mvp": 91
   },
   "kaito-oshino": {
-   "maps": 43,
-   "kills": 765,
-   "mvp": 113
+   "maps": 44,
+   "kills": 784,
+   "mvp": 117
   },
   "niamocha": {
-   "maps": 48,
-   "kills": 877,
-   "mvp": 150
+   "maps": 49,
+   "kills": 901,
+   "mvp": 153
   },
   "rdarius": {
-   "maps": 21,
-   "kills": 287,
-   "mvp": 36
+   "maps": 22,
+   "kills": 299,
+   "mvp": 39
   },
   "pastellows": {
-   "maps": 63,
-   "kills": 1093,
-   "mvp": 173
+   "maps": 64,
+   "kills": 1103,
+   "mvp": 174
   },
   "kenzieyii": {
-   "maps": 37,
-   "kills": 595,
-   "mvp": 90
+   "maps": 38,
+   "kills": 623,
+   "mvp": 94
   },
   "itzsune": {
-   "maps": 21,
-   "kills": 297,
+   "maps": 22,
+   "kills": 312,
    "mvp": 40
   },
   "tigeraxd": {
@@ -2453,6 +2453,7 @@
   "promotion:nullpoint",
   "promotion:pastel-mocha",
   "record:highestMap:65+mostKillsMap:58+mostOT:7",
+  "top:player:candybar-isblue:2026-10-27",
   "top:player:rebebx:2026-10-14",
   "top:player:sanctuary:2026-10-16",
   "top:team:cosmos:2026-10-14",
