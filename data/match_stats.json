@@ -113263,64 +113263,6 @@
    "maps": [
     {
      "map": "Anubis",
-<<<<<<< HEAD
-     "scoreA": 4,
-     "scoreB": 13,
-     "players": [
-      {
-       "team": "The Nomads",
-       "name": "Sadgeboi",
-       "k": 16,
-       "a": 2,
-       "d": 13,
-       "mvp": 1,
-       "score": 34
-      },
-      {
-       "team": "The Nomads",
-       "name": "L2Strike",
-       "k": 12,
-       "a": 1,
-       "d": 13,
-       "mvp": 2,
-       "score": 31
-      },
-      {
-       "team": "The Nomads",
-       "name": "Rethnap",
-       "k": 7,
-       "a": 2,
-       "d": 13,
-       "mvp": 0,
-       "score": 20
-      },
-      {
-       "team": "The Nomads",
-       "name": "luciddoob",
-       "k": 5,
-       "a": 2,
-       "d": 13,
-       "mvp": 1,
-       "score": 14
-      },
-      {
-       "team": "The Nomads",
-       "name": "Nikorasu",
-       "k": 4,
-       "a": 1,
-       "d": 13,
-       "mvp": 0,
-       "score": 11
-      },
-      {
-       "team": "Chromatic Foxes",
-       "name": "jootdaee",
-       "k": 18,
-       "a": 0,
-       "d": 10,
-       "mvp": 1,
-       "score": 38
-=======
      "scoreA": 19,
      "scoreB": 17,
      "players": [
@@ -113401,7 +113343,6 @@
        "c5": 0,
        "kast": 26,
        "rnd": 36
->>>>>>> cc21d4f4df767f08695789f5dd96f589fcf767fc
       },
       {
        "team": "The Nomads",
@@ -113436,9 +113377,6 @@
        "a": 4,
        "d": 25,
        "mvp": 4,
-<<<<<<< HEAD
-       "score": 37
-=======
        "score": 62,
        "dmg": 2367,
        "ud": 45,
@@ -113509,27 +113447,10 @@
        "c5": 0,
        "kast": 25,
        "rnd": 36
->>>>>>> cc21d4f4df767f08695789f5dd96f589fcf767fc
       },
       {
        "team": "Chromatic Foxes",
        "name": "okjustsmd",
-<<<<<<< HEAD
-       "k": 13,
-       "a": 2,
-       "d": 7,
-       "mvp": 3,
-       "score": 32
-      },
-      {
-       "team": "Chromatic Foxes",
-       "name": "Mokaiyu_",
-       "k": 12,
-       "a": 1,
-       "d": 9,
-       "mvp": 3,
-       "score": 30
-=======
        "k": 26,
        "a": 4,
        "d": 24,
@@ -113578,18 +113499,10 @@
        "c5": 0,
        "kast": 24,
        "rnd": 36
->>>>>>> cc21d4f4df767f08695789f5dd96f589fcf767fc
       },
       {
        "team": "Chromatic Foxes",
        "name": "colour",
-<<<<<<< HEAD
-       "k": 7,
-       "a": 2,
-       "d": 8,
-       "mvp": 1,
-       "score": 23
-=======
        "k": 19,
        "a": 0,
        "d": 29,
@@ -113612,34 +113525,10 @@
        "c5": 0,
        "kast": 25,
        "rnd": 36
->>>>>>> cc21d4f4df767f08695789f5dd96f589fcf767fc
       }
      ]
     },
     {
-<<<<<<< HEAD
-     "map": "Dust2",
-     "scoreA": 16,
-     "scoreB": 13,
-     "players": [
-      {
-       "team": "The Nomads",
-       "name": "Sadgeboi",
-       "k": 25,
-       "a": 5,
-       "d": 23,
-       "mvp": 4,
-       "score": 62
-      },
-      {
-       "team": "The Nomads",
-       "name": "luciddoob",
-       "k": 26,
-       "a": 1,
-       "d": 19,
-       "mvp": 6,
-       "score": 61
-=======
      "map": "Cache",
      "scoreA": 13,
      "scoreB": 5,
@@ -113669,45 +113558,10 @@
        "c5": 0,
        "kast": 15,
        "rnd": 18
->>>>>>> cc21d4f4df767f08695789f5dd96f589fcf767fc
       },
       {
        "team": "The Nomads",
        "name": "Rethnap",
-<<<<<<< HEAD
-       "k": 22,
-       "a": 2,
-       "d": 20,
-       "mvp": 3,
-       "score": 59
-      },
-      {
-       "team": "The Nomads",
-       "name": "Nikorasu",
-       "k": 18,
-       "a": 2,
-       "d": 21,
-       "mvp": 2,
-       "score": 45
-      },
-      {
-       "team": "The Nomads",
-       "name": "L2Strike",
-       "k": 14,
-       "a": 4,
-       "d": 21,
-       "mvp": 1,
-       "score": 42
-      },
-      {
-       "team": "Chromatic Foxes",
-       "name": "colour",
-       "k": 27,
-       "a": 1,
-       "d": 20,
-       "mvp": 5,
-       "score": 65
-=======
        "k": 19,
        "a": 1,
        "d": 10,
@@ -113886,7 +113740,6 @@
        "c5": 0,
        "kast": 13,
        "rnd": 18
->>>>>>> cc21d4f4df767f08695789f5dd96f589fcf767fc
       },
       {
        "team": "Chromatic Foxes",
@@ -113895,27 +113748,6 @@
        "a": 1,
        "d": 14,
        "mvp": 2,
-<<<<<<< HEAD
-       "score": 56
-      },
-      {
-       "team": "Chromatic Foxes",
-       "name": "vixi",
-       "k": 19,
-       "a": 5,
-       "d": 20,
-       "mvp": 3,
-       "score": 53
-      },
-      {
-       "team": "Chromatic Foxes",
-       "name": "jootdaee",
-       "k": 19,
-       "a": 1,
-       "d": 24,
-       "mvp": 3,
-       "score": 44
-=======
        "score": 19,
        "dmg": 1054,
        "ud": 0,
@@ -113934,7 +113766,6 @@
        "c5": 0,
        "kast": 11,
        "rnd": 18
->>>>>>> cc21d4f4df767f08695789f5dd96f589fcf767fc
       },
       {
        "team": "Chromatic Foxes",
@@ -113943,106 +113774,6 @@
        "a": 4,
        "d": 16,
        "mvp": 0,
-<<<<<<< HEAD
-       "score": 36
-      }
-     ]
-    },
-    {
-     "map": "Cache",
-     "scoreA": 5,
-     "scoreB": 13,
-     "players": [
-      {
-       "team": "The Nomads",
-       "name": "Sadgeboi",
-       "k": 19,
-       "a": 1,
-       "d": 16,
-       "mvp": 2,
-       "score": 39
-      },
-      {
-       "team": "The Nomads",
-       "name": "L2Strike",
-       "k": 14,
-       "a": 1,
-       "d": 14,
-       "mvp": 2,
-       "score": 35
-      },
-      {
-       "team": "The Nomads",
-       "name": "Rethnap",
-       "k": 7,
-       "a": 2,
-       "d": 14,
-       "mvp": 0,
-       "score": 20
-      },
-      {
-       "team": "The Nomads",
-       "name": "Nikorasu",
-       "k": 6,
-       "a": 2,
-       "d": 16,
-       "mvp": 0,
-       "score": 16
-      },
-      {
-       "team": "The Nomads",
-       "name": "luciddoob",
-       "k": 5,
-       "a": 2,
-       "d": 16,
-       "mvp": 1,
-       "score": 14
-      },
-      {
-       "team": "Chromatic Foxes",
-       "name": "vixi",
-       "k": 18,
-       "a": 1,
-       "d": 11,
-       "mvp": 4,
-       "score": 44
-      },
-      {
-       "team": "Chromatic Foxes",
-       "name": "jootdaee",
-       "k": 20,
-       "a": 0,
-       "d": 11,
-       "mvp": 2,
-       "score": 42
-      },
-      {
-       "team": "Chromatic Foxes",
-       "name": "okjustsmd",
-       "k": 15,
-       "a": 2,
-       "d": 9,
-       "mvp": 3,
-       "score": 36
-      },
-      {
-       "team": "Chromatic Foxes",
-       "name": "Mokaiyu_",
-       "k": 14,
-       "a": 1,
-       "d": 10,
-       "mvp": 3,
-       "score": 34
-      },
-      {
-       "team": "Chromatic Foxes",
-       "name": "colour",
-       "k": 9,
-       "a": 3,
-       "d": 10,
-       "mvp": 1,
-       "score": 30
-=======
        "score": 16,
        "dmg": 892,
        "ud": 0,
@@ -114061,7 +113792,277 @@
        "c5": 0,
        "kast": 9,
        "rnd": 18
->>>>>>> cc21d4f4df767f08695789f5dd96f589fcf767fc
+      }
+     ]
+    }
+   ]
+  },
+  "2-19": {
+   "maps": [
+    {
+     "map": "Inferno",
+     "scoreA": 13,
+     "scoreB": 10,
+     "players": [
+      {
+       "team": "Nullpoint",
+       "name": "UtsuhoNull",
+       "k": 19,
+       "a": 3,
+       "d": 11,
+       "mvp": 5,
+       "score": 54,
+       "dmg": 2143,
+       "ud": 174,
+       "hs": 12,
+       "fk": 2,
+       "fd": 2,
+       "tk": 3,
+       "k2": 2,
+       "k3": 3,
+       "k4": 0,
+       "k5": 0,
+       "c1": 0,
+       "c2": 0,
+       "c3": 1,
+       "c4": 0,
+       "c5": 0,
+       "kast": 19,
+       "rnd": 23
+      },
+      {
+       "team": "Nullpoint",
+       "name": "zhizyii",
+       "k": 23,
+       "a": 2,
+       "d": 16,
+       "mvp": 1,
+       "score": 53,
+       "dmg": 2358,
+       "ud": 0,
+       "hs": 16,
+       "fk": 5,
+       "fd": 0,
+       "tk": 4,
+       "k2": 5,
+       "k3": 2,
+       "k4": 0,
+       "k5": 0,
+       "c1": 0,
+       "c2": 0,
+       "c3": 0,
+       "c4": 0,
+       "c5": 0,
+       "kast": 18,
+       "rnd": 23
+      },
+      {
+       "team": "Nullpoint",
+       "name": "candybar_isblue",
+       "k": 19,
+       "a": 1,
+       "d": 16,
+       "mvp": 5,
+       "score": 50,
+       "dmg": 2054,
+       "ud": 47,
+       "hs": 10,
+       "fk": 3,
+       "fd": 4,
+       "tk": 3,
+       "k2": 4,
+       "k3": 0,
+       "k4": 0,
+       "k5": 1,
+       "c1": 0,
+       "c2": 0,
+       "c3": 0,
+       "c4": 0,
+       "c5": 0,
+       "kast": 15,
+       "rnd": 23
+      },
+      {
+       "team": "Nullpoint",
+       "name": "Kaito_Oshino",
+       "k": 15,
+       "a": 1,
+       "d": 14,
+       "mvp": 2,
+       "score": 42,
+       "dmg": 1364,
+       "ud": 60,
+       "hs": 7,
+       "fk": 1,
+       "fd": 1,
+       "tk": 2,
+       "k2": 3,
+       "k3": 1,
+       "k4": 0,
+       "k5": 0,
+       "c1": 0,
+       "c2": 0,
+       "c3": 0,
+       "c4": 0,
+       "c5": 0,
+       "kast": 18,
+       "rnd": 23
+      },
+      {
+       "team": "Nullpoint",
+       "name": "ssseiso",
+       "k": 12,
+       "a": 0,
+       "d": 15,
+       "mvp": 0,
+       "score": 32,
+       "dmg": 1274,
+       "ud": 1,
+       "hs": 5,
+       "fk": 1,
+       "fd": 4,
+       "tk": 3,
+       "k2": 0,
+       "k3": 1,
+       "k4": 0,
+       "k5": 0,
+       "c1": 0,
+       "c2": 0,
+       "c3": 0,
+       "c4": 0,
+       "c5": 0,
+       "kast": 18,
+       "rnd": 23
+      },
+      {
+       "team": "Moonlit Tempo",
+       "name": "Celtsm",
+       "k": 20,
+       "a": 3,
+       "d": 15,
+       "mvp": 3,
+       "score": 54,
+       "dmg": 2208,
+       "ud": 0,
+       "hs": 16,
+       "fk": 4,
+       "fd": 0,
+       "tk": 9,
+       "k2": 2,
+       "k3": 1,
+       "k4": 0,
+       "k5": 1,
+       "c1": 1,
+       "c2": 1,
+       "c3": 0,
+       "c4": 0,
+       "c5": 0,
+       "kast": 18,
+       "rnd": 23
+      },
+      {
+       "team": "Moonlit Tempo",
+       "name": "GoddessAkane",
+       "k": 16,
+       "a": 1,
+       "d": 19,
+       "mvp": 3,
+       "score": 41,
+       "dmg": 1458,
+       "ud": 0,
+       "hs": 11,
+       "fk": 2,
+       "fd": 2,
+       "tk": 5,
+       "k2": 1,
+       "k3": 1,
+       "k4": 1,
+       "k5": 0,
+       "c1": 0,
+       "c2": 1,
+       "c3": 1,
+       "c4": 0,
+       "c5": 0,
+       "kast": 16,
+       "rnd": 23
+      },
+      {
+       "team": "Moonlit Tempo",
+       "name": "FeatBri",
+       "k": 13,
+       "a": 2,
+       "d": 17,
+       "mvp": 1,
+       "score": 30,
+       "dmg": 1378,
+       "ud": 32,
+       "hs": 6,
+       "fk": 0,
+       "fd": 3,
+       "tk": 4,
+       "k2": 3,
+       "k3": 1,
+       "k4": 0,
+       "k5": 0,
+       "c1": 0,
+       "c2": 0,
+       "c3": 0,
+       "c4": 0,
+       "c5": 0,
+       "kast": 15,
+       "rnd": 23
+      },
+      {
+       "team": "Moonlit Tempo",
+       "name": "SashimiGoesBloop",
+       "k": 11,
+       "a": 0,
+       "d": 18,
+       "mvp": 1,
+       "score": 27,
+       "dmg": 1314,
+       "ud": 83,
+       "hs": 8,
+       "fk": 2,
+       "fd": 1,
+       "tk": 2,
+       "k2": 2,
+       "k3": 0,
+       "k4": 0,
+       "k5": 0,
+       "c1": 1,
+       "c2": 0,
+       "c3": 0,
+       "c4": 0,
+       "c5": 0,
+       "kast": 12,
+       "rnd": 23
+      },
+      {
+       "team": "Moonlit Tempo",
+       "name": "Kyan",
+       "k": 12,
+       "a": 2,
+       "d": 19,
+       "mvp": 2,
+       "score": 26,
+       "dmg": 1394,
+       "ud": 91,
+       "hs": 3,
+       "fk": 3,
+       "fd": 6,
+       "tk": 2,
+       "k2": 2,
+       "k3": 0,
+       "k4": 1,
+       "k5": 0,
+       "c1": 1,
+       "c2": 0,
+       "c3": 0,
+       "c4": 0,
+       "c5": 0,
+       "kast": 16,
+       "rnd": 23
       }
      ]
     }
