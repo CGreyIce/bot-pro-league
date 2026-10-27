@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:bloodbane:mvp:100",
-  "type": "milestone",
-  "ts": 1791972363,
-  "date": "2026-10-16",
-  "title": "bloodbane: 100 MVP rounds",
-  "text": "bloodbane reached 100 MVP rounds",
-  "link": "#/player/bloodbane"
- },
- {
-  "id": "milestone:yumezukiyomi:kills:500",
-  "type": "milestone",
-  "ts": 1791972363,
-  "date": "2026-10-16",
-  "title": "yumezukiyomi: 500 career kills",
-  "text": "yumezukiyomi reached 500 career kills",
-  "link": "#/player/yumezukiyomi"
- },
- {
   "id": "milestone:yakumo-beni:kills:500",
   "type": "milestone",
   "ts": 1791979517,
@@ -1798,5 +1780,23 @@
   "title": "emiiiyu: 50 maps played",
   "text": "emiiiyu reached 50 maps played",
   "link": "#/player/emiiiyu"
+ },
+ {
+  "id": "milestone:leilamayadah:kills:500",
+  "type": "milestone",
+  "ts": 1793097367,
+  "date": "2026-10-27",
+  "title": "LeilaMayadah: 500 career kills",
+  "text": "LeilaMayadah reached 500 career kills",
+  "link": "#/player/leilamayadah"
+ },
+ {
+  "id": "milestone:erinerurie:mvp:100",
+  "type": "milestone",
+  "ts": 1793097367,
+  "date": "2026-10-27",
+  "title": "ErineRurie: 100 MVP rounds",
+  "text": "ErineRurie reached 100 MVP rounds",
+  "link": "#/player/erinerurie"
  }
 ]
