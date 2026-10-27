@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:dianya:kills:500",
-  "type": "milestone",
-  "ts": 1792005748,
-  "date": "2026-10-16",
-  "title": "Dianya: 500 career kills",
-  "text": "Dianya reached 500 career kills",
-  "link": "#/player/dianya"
- },
- {
   "id": "milestone:emmabutnormal:maps:50",
   "type": "milestone",
   "ts": 1792008001,
@@ -1798,5 +1789,14 @@
   "title": "CRex: 50 maps played",
   "text": "CRex reached 50 maps played",
   "link": "#/player/crex"
+ },
+ {
+  "id": "milestone:ebi:maps:50",
+  "type": "milestone",
+  "ts": 1793123291,
+  "date": "2026-10-28",
+  "title": "ebi: 50 maps played",
+  "text": "ebi reached 50 maps played",
+  "link": "#/player/ebi"
  }
 ]

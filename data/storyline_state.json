@@ -145,29 +145,29 @@
  },
  "milestones": {
   "navikuun": {
-   "maps": 27,
-   "kills": 456,
-   "mvp": 79
+   "maps": 28,
+   "kills": 478,
+   "mvp": 82
   },
   "zenn1sm": {
-   "maps": 28,
-   "kills": 441,
-   "mvp": 67
+   "maps": 29,
+   "kills": 456,
+   "mvp": 68
   },
   "potatodepresso": {
-   "maps": 30,
-   "kills": 438,
-   "mvp": 61
+   "maps": 31,
+   "kills": 453,
+   "mvp": 64
   },
   "pearlim": {
-   "maps": 28,
-   "kills": 391,
-   "mvp": 45
+   "maps": 29,
+   "kills": 403,
+   "mvp": 46
   },
   "milkenut": {
-   "maps": 29,
-   "kills": 386,
-   "mvp": 54
+   "maps": 30,
+   "kills": 410,
+   "mvp": 59
   },
   "solaonix": {
    "maps": 31,
@@ -920,29 +920,29 @@
    "mvp": 124
   },
   "ebi": {
-   "maps": 49,
-   "kills": 781,
-   "mvp": 146
+   "maps": 50,
+   "kills": 795,
+   "mvp": 148
   },
   "koen": {
-   "maps": 43,
-   "kills": 576,
-   "mvp": 75
+   "maps": 44,
+   "kills": 580,
+   "mvp": 76
   },
   "crex": {
-   "maps": 51,
-   "kills": 863,
+   "maps": 52,
+   "kills": 868,
    "mvp": 118
   },
   "treblest": {
-   "maps": 45,
-   "kills": 576,
-   "mvp": 74
+   "maps": 46,
+   "kills": 592,
+   "mvp": 76
   },
   "des506": {
-   "maps": 41,
-   "kills": 629,
-   "mvp": 73
+   "maps": 42,
+   "kills": 643,
+   "mvp": 74
   },
   "caturteer": {
    "maps": 59,
@@ -2443,6 +2443,7 @@
   "upset:bpl-legends-stage-2026:2-24",
   "upset:bpl-legends-stage-2026:2-26",
   "upset:bpl-legends-stage-2026:2-28",
+  "upset:bpl-legends-stage-2026:3-1",
   "upset:nations-cup-qualifier-singapore-2026:1-43",
   "upset:nova-initia-invitational-i:1-12",
   "upset:nova-initia-invitational-i:1-7",
