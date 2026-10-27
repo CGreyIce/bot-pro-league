@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:emmabutnormal:maps:50",
-  "type": "milestone",
-  "ts": 1792008001,
-  "date": "2026-10-16",
-  "title": "emmabutnormal: 50 maps played",
-  "text": "emmabutnormal reached 50 maps played",
-  "link": "#/player/emmabutnormal"
- },
- {
   "id": "milestone:keikatamori:kills:500",
   "type": "milestone",
   "ts": 1792009517,
@@ -1798,5 +1789,14 @@
   "title": "ebi: 50 maps played",
   "text": "ebi reached 50 maps played",
   "link": "#/player/ebi"
+ },
+ {
+  "id": "milestone:tigeraxd:kills:500",
+  "type": "milestone",
+  "ts": 1793126263,
+  "date": "2026-10-28",
+  "title": "Tigeraxd: 500 career kills",
+  "text": "Tigeraxd reached 500 career kills",
+  "link": "#/player/tigeraxd"
  }
 ]
