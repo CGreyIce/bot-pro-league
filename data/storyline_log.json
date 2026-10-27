@@ -1,14 +1,5 @@
 [
  {
-  "id": "transfer:aimpunch:2026-10-04:aranionja+mond33",
-  "type": "transfer",
-  "ts": 1791644365,
-  "date": "2026-10-16",
-  "title": "Aimpunch swap mond33__ for Aranionja",
-  "text": "in: Aranionja; out: mond33__",
-  "link": "#/team/aimpunch"
- },
- {
   "id": "transfer:thenomads:2026-10-09:l2strike+mominichi+redandb1ue+sadgeboi",
   "type": "transfer",
   "ts": 1791644365,
@@ -1798,5 +1789,14 @@
   "title": "Laurel: 100 MVP rounds",
   "text": "Laurel reached 100 MVP rounds",
   "link": "#/player/laurel"
+ },
+ {
+  "id": "milestone:sadgeboi:maps:50",
+  "type": "milestone",
+  "ts": 1793089969,
+  "date": "2026-10-27",
+  "title": "Sadgeboi: 50 maps played",
+  "text": "Sadgeboi reached 50 maps played",
+  "link": "#/player/sadgeboi"
  }
 ]
