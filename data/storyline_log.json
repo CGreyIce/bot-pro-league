@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:azumiying:kills:500",
-  "type": "milestone",
-  "ts": 1792012608,
-  "date": "2026-10-16",
-  "title": "azumiying: 500 career kills",
-  "text": "azumiying reached 500 career kills",
-  "link": "#/player/azumiying"
- },
- {
-  "id": "milestone:sendo-yuuhi:kills:500",
-  "type": "milestone",
-  "ts": 1792013623,
-  "date": "2026-10-16",
-  "title": "Sendo Yuuhi: 500 career kills",
-  "text": "Sendo Yuuhi reached 500 career kills",
-  "link": "#/player/sendo-yuuhi"
- },
- {
   "id": "milestone:mizukiimoon:maps:50",
   "type": "milestone",
   "ts": 1792071597,
@@ -1798,5 +1780,23 @@
   "title": "Wellson111: 500 career kills",
   "text": "Wellson111 reached 500 career kills",
   "link": "#/player/wellson111"
+ },
+ {
+  "id": "milestone:y-uuno:mvp:100",
+  "type": "milestone",
+  "ts": 1793139120,
+  "date": "2026-10-28",
+  "title": "y.uuno: 100 MVP rounds",
+  "text": "y.uuno reached 100 MVP rounds",
+  "link": "#/player/y-uuno"
+ },
+ {
+  "id": "milestone:spoods:mvp:100",
+  "type": "milestone",
+  "ts": 1793139120,
+  "date": "2026-10-28",
+  "title": "Spoods: 100 MVP rounds",
+  "text": "Spoods reached 100 MVP rounds",
+  "link": "#/player/spoods"
  }
 ]
