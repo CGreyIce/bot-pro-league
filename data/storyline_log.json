@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:keikatamori:kills:500",
-  "type": "milestone",
-  "ts": 1792009517,
-  "date": "2026-10-16",
-  "title": "keikatamori: 500 career kills",
-  "text": "keikatamori reached 500 career kills",
-  "link": "#/player/keikatamori"
- },
- {
-  "id": "milestone:stitchkyui:kills:500",
-  "type": "milestone",
-  "ts": 1792010545,
-  "date": "2026-10-16",
-  "title": "stitchkyui: 500 career kills",
-  "text": "stitchkyui reached 500 career kills",
-  "link": "#/player/stitchkyui"
- },
- {
   "id": "milestone:azumiying:kills:500",
   "type": "milestone",
   "ts": 1792012608,
@@ -1798,5 +1780,23 @@
   "title": "Tigeraxd: 500 career kills",
   "text": "Tigeraxd reached 500 career kills",
   "link": "#/player/tigeraxd"
+ },
+ {
+  "id": "milestone:capplecrow:mvp:100",
+  "type": "milestone",
+  "ts": 1793132108,
+  "date": "2026-10-28",
+  "title": "capplecrow: 100 MVP rounds",
+  "text": "capplecrow reached 100 MVP rounds",
+  "link": "#/player/capplecrow"
+ },
+ {
+  "id": "milestone:wellson111:kills:500",
+  "type": "milestone",
+  "ts": 1793132108,
+  "date": "2026-10-28",
+  "title": "Wellson111: 500 career kills",
+  "text": "Wellson111 reached 500 career kills",
+  "link": "#/player/wellson111"
  }
 ]
