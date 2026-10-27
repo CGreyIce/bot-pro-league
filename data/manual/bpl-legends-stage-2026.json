@@ -590,8 +590,9 @@
      "round": 5,
      "a": "Nightshade",
      "b": "Chromatic Foxes",
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1793106534
     }
    ],
    "roundTitles": {
