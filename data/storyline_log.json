@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:nekota-tsuna:kills:500",
-  "type": "milestone",
-  "ts": 1791982319,
-  "date": "2026-10-16",
-  "title": "Nekota Tsuna: 500 career kills",
-  "text": "Nekota Tsuna reached 500 career kills",
-  "link": "#/player/nekota-tsuna"
- },
- {
-  "id": "milestone:pastellows:maps:50",
-  "type": "milestone",
-  "ts": 1791991047,
-  "date": "2026-10-16",
-  "title": "pastellows: 50 maps played",
-  "text": "pastellows reached 50 maps played",
-  "link": "#/player/pastellows"
- },
- {
   "id": "milestone:bajiru-en:kills:500",
   "type": "milestone",
   "ts": 1791991766,
@@ -1798,5 +1780,23 @@
   "title": "arcimoon: 50 maps played",
   "text": "arcimoon reached 50 maps played",
   "link": "#/player/arcimoon"
+ },
+ {
+  "id": "milestone:tearsofdeath:maps:50",
+  "type": "milestone",
+  "ts": 1793102776,
+  "date": "2026-10-27",
+  "title": "TearsofDeath: 50 maps played",
+  "text": "TearsofDeath reached 50 maps played",
+  "link": "#/player/tearsofdeath"
+ },
+ {
+  "id": "milestone:cherri-vt:maps:50",
+  "type": "milestone",
+  "ts": 1793102776,
+  "date": "2026-10-27",
+  "title": "cherri_vt: 50 maps played",
+  "text": "cherri_vt reached 50 maps played",
+  "link": "#/player/cherri-vt"
  }
 ]
