@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:bajiru-en:kills:500",
-  "type": "milestone",
-  "ts": 1791991766,
-  "date": "2026-10-16",
-  "title": "Bajiru_EN: 500 career kills",
-  "text": "Bajiru_EN reached 500 career kills",
-  "link": "#/player/bajiru-en"
- },
- {
   "id": "milestone:dianya:kills:500",
   "type": "milestone",
   "ts": 1792005748,
@@ -1798,5 +1789,14 @@
   "title": "cherri_vt: 50 maps played",
   "text": "cherri_vt reached 50 maps played",
   "link": "#/player/cherri-vt"
+ },
+ {
+  "id": "milestone:crex:maps:50",
+  "type": "milestone",
+  "ts": 1793119548,
+  "date": "2026-10-28",
+  "title": "CRex: 50 maps played",
+  "text": "CRex reached 50 maps played",
+  "link": "#/player/crex"
  }
 ]
