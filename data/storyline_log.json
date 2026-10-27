@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:yakumo-beni:kills:500",
-  "type": "milestone",
-  "ts": 1791979517,
-  "date": "2026-10-16",
-  "title": "Yakumo Beni: 500 career kills",
-  "text": "Yakumo Beni reached 500 career kills",
-  "link": "#/player/yakumo-beni"
- },
- {
   "id": "milestone:nekota-tsuna:kills:500",
   "type": "milestone",
   "ts": 1791982319,
@@ -1798,5 +1789,14 @@
   "title": "ErineRurie: 100 MVP rounds",
   "text": "ErineRurie reached 100 MVP rounds",
   "link": "#/player/erinerurie"
+ },
+ {
+  "id": "milestone:arcimoon:maps:50",
+  "type": "milestone",
+  "ts": 1793098967,
+  "date": "2026-10-27",
+  "title": "arcimoon: 50 maps played",
+  "text": "arcimoon reached 50 maps played",
+  "link": "#/player/arcimoon"
  }
 ]
