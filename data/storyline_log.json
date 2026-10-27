@@ -1,14 +1,5 @@
 [
  {
-  "id": "transfer:newjade:2026-10-16:crazywhoopies+kojadayo",
-  "type": "transfer",
-  "ts": 1791644365,
-  "date": "2026-10-16",
-  "title": "New Jade swap crazywhoopies for Kojadayo",
-  "text": "in: Kojadayo; out: crazywhoopies",
-  "link": "#/team/new-jade"
- },
- {
   "id": "milestone:bloodbane:mvp:100",
   "type": "milestone",
   "ts": 1791972363,
@@ -1798,5 +1789,14 @@
   "title": "FeatBri: 50 maps played",
   "text": "FeatBri reached 50 maps played",
   "link": "#/player/featbri"
+ },
+ {
+  "id": "milestone:emiiiyu:maps:50",
+  "type": "milestone",
+  "ts": 1793095594,
+  "date": "2026-10-27",
+  "title": "emiiiyu: 50 maps played",
+  "text": "emiiiyu reached 50 maps played",
+  "link": "#/player/emiiiyu"
  }
 ]
