@@ -1,23 +1,5 @@
 [
  {
-  "id": "transfer:astralbloom:2026-09-29:ginjosaine+kogaratoto+yumenoakari",
-  "type": "transfer",
-  "ts": 1791644365,
-  "date": "2026-10-16",
-  "title": "Astral Bloom sign 3 new players",
-  "text": "in: Ginjo Saine, Kogara Toto and Yumeno Akari",
-  "link": "#/team/astral-bloom"
- },
- {
-  "id": "transfer:aspire:2026-09-30:chisascarlett+mikuryne+moira+stylus",
-  "type": "transfer",
-  "ts": 1791644365,
-  "date": "2026-10-16",
-  "title": "Aspire swap Stylus and Moira for Chisa_Scarlett and Mikuryne",
-  "text": "in: Chisa_Scarlett and Mikuryne; out: Stylus and Moira",
-  "link": "#/team/aspire"
- },
- {
   "id": "transfer:aimpunch:2026-10-04:aranionja+mond33",
   "type": "transfer",
   "ts": 1791644365,
@@ -1798,5 +1780,23 @@
   "title": "Niamocha: 50 maps played",
   "text": "Niamocha reached 50 maps played",
   "link": "#/player/niamocha"
+ },
+ {
+  "id": "milestone:beyouna:mvp:100",
+  "type": "milestone",
+  "ts": 1793087829,
+  "date": "2026-10-27",
+  "title": "beyouna: 100 MVP rounds",
+  "text": "beyouna reached 100 MVP rounds",
+  "link": "#/player/beyouna"
+ },
+ {
+  "id": "milestone:laurel:mvp:100",
+  "type": "milestone",
+  "ts": 1793087829,
+  "date": "2026-10-27",
+  "title": "Laurel: 100 MVP rounds",
+  "text": "Laurel reached 100 MVP rounds",
+  "link": "#/player/laurel"
  }
 ]

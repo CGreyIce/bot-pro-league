@@ -554,8 +554,9 @@
      "round": 5,
      "a": "Bluebird",
      "b": "Crystal Laurels",
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1793087826
     },
     {
      "id": 27,
