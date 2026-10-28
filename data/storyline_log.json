@@ -1,41 +1,5 @@
 [
  {
-  "id": "milestone:vyphogrid:kills:500",
-  "type": "milestone",
-  "ts": 1792481198,
-  "date": "2026-10-20",
-  "title": "Vyphogrid: 500 career kills",
-  "text": "Vyphogrid reached 500 career kills",
-  "link": "#/player/vyphogrid"
- },
- {
-  "id": "milestone:vyphogrid:mvp:100",
-  "type": "milestone",
-  "ts": 1792485293,
-  "date": "2026-10-20",
-  "title": "Vyphogrid: 100 MVP rounds",
-  "text": "Vyphogrid reached 100 MVP rounds",
-  "link": "#/player/vyphogrid"
- },
- {
-  "id": "milestone:ostc-x:kills:500",
-  "type": "milestone",
-  "ts": 1792487771,
-  "date": "2026-10-20",
-  "title": "ostc.x: 500 career kills",
-  "text": "ostc.x reached 500 career kills",
-  "link": "#/player/ostc-x"
- },
- {
-  "id": "milestone:aurasinvt:kills:500",
-  "type": "milestone",
-  "ts": 1792487771,
-  "date": "2026-10-20",
-  "title": "AuraSinVT: 500 career kills",
-  "text": "AuraSinVT reached 500 career kills",
-  "link": "#/player/aurasinvt"
- },
- {
   "id": "milestone:mond33:kills:500",
   "type": "milestone",
   "ts": 1792492142,
@@ -1798,5 +1762,41 @@
   "title": "Amayui Moka: 500 career kills",
   "text": "Amayui Moka reached 500 career kills",
   "link": "#/player/amayui-moka"
+ },
+ {
+  "id": "milestone:shiranami-ramune:maps:50",
+  "type": "milestone",
+  "ts": 1793231133,
+  "date": "2026-10-29",
+  "title": "Shiranami Ramune: 50 maps played",
+  "text": "Shiranami Ramune reached 50 maps played",
+  "link": "#/player/shiranami-ramune"
+ },
+ {
+  "id": "milestone:tsumugi-kokage:maps:50",
+  "type": "milestone",
+  "ts": 1793231133,
+  "date": "2026-10-29",
+  "title": "Tsumugi Kokage: 50 maps played",
+  "text": "Tsumugi Kokage reached 50 maps played",
+  "link": "#/player/tsumugi-kokage"
+ },
+ {
+  "id": "milestone:eris-suzukami:mvp:100",
+  "type": "milestone",
+  "ts": 1793231133,
+  "date": "2026-10-29",
+  "title": "Eris Suzukami: 100 MVP rounds",
+  "text": "Eris Suzukami reached 100 MVP rounds",
+  "link": "#/player/eris-suzukami"
+ },
+ {
+  "id": "milestone:treblest:maps:50",
+  "type": "milestone",
+  "ts": 1793231133,
+  "date": "2026-10-29",
+  "title": "treblest: 50 maps played",
+  "text": "treblest reached 50 maps played",
+  "link": "#/player/treblest"
  }
 ]
