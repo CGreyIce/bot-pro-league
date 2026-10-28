@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:skiazelle:kills:500",
-  "type": "milestone",
-  "ts": 1792342978,
-  "date": "2026-10-19",
-  "title": "Skiazelle: 500 career kills",
-  "text": "Skiazelle reached 500 career kills",
-  "link": "#/player/skiazelle"
- },
- {
   "id": "milestone:twentyrosie:mvp:100",
   "type": "milestone",
   "ts": 1792355643,
@@ -1798,5 +1789,14 @@
   "title": "Tsumugi Kokage: 100 MVP rounds",
   "text": "Tsumugi Kokage reached 100 MVP rounds",
   "link": "#/player/tsumugi-kokage"
+ },
+ {
+  "id": "milestone:jhjj80:kills:500",
+  "type": "milestone",
+  "ts": 1793197245,
+  "date": "2026-10-28",
+  "title": "jhjj80: 500 career kills",
+  "text": "jhjj80 reached 500 career kills",
+  "link": "#/player/jhjj80"
  }
 ]
