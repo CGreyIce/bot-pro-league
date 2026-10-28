@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:kiokocheiko:kills:500",
-  "type": "milestone",
-  "ts": 1792103909,
-  "date": "2026-10-16",
-  "title": "KiokoCheiko: 500 career kills",
-  "text": "KiokoCheiko reached 500 career kills",
-  "link": "#/player/kiokocheiko"
- },
- {
   "id": "milestone:boopydoopy:kills:500",
   "type": "milestone",
   "ts": 1792103909,
@@ -1798,5 +1789,14 @@
   "title": "Skiazelle: 100 MVP rounds",
   "text": "Skiazelle reached 100 MVP rounds",
   "link": "#/player/skiazelle"
+ },
+ {
+  "id": "milestone:phxebe:kills:500",
+  "type": "milestone",
+  "ts": 1793151669,
+  "date": "2026-10-28",
+  "title": "Phxebe: 500 career kills",
+  "text": "Phxebe reached 500 career kills",
+  "link": "#/player/phxebe"
  }
 ]
