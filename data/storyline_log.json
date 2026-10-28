@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:shirou-kitakami:kills:500",
-  "type": "milestone",
-  "ts": 1792441342,
-  "date": "2026-10-20",
-  "title": "shirou_kitakami: 500 career kills",
-  "text": "shirou_kitakami reached 500 career kills",
-  "link": "#/player/shirou-kitakami"
- },
- {
   "id": "milestone:itswinter:kills:500",
   "type": "milestone",
   "ts": 1792445913,
@@ -1798,5 +1789,14 @@
   "title": "kitties258: 500 career kills",
   "text": "kitties258 reached 500 career kills",
   "link": "#/player/kitties258"
+ },
+ {
+  "id": "milestone:potatodepresso:kills:500",
+  "type": "milestone",
+  "ts": 1793226305,
+  "date": "2026-10-29",
+  "title": "potatodepresso: 500 career kills",
+  "text": "potatodepresso reached 500 career kills",
+  "link": "#/player/potatodepresso"
  }
 ]
