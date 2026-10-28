@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:xevaria:kills:500",
-  "type": "milestone",
-  "ts": 1792183580,
-  "date": "2026-10-17",
-  "title": "Xevaria: 500 career kills",
-  "text": "Xevaria reached 500 career kills",
-  "link": "#/player/xevaria"
- },
- {
-  "id": "milestone:milliannavt:kills:500",
-  "type": "milestone",
-  "ts": 1792263934,
-  "date": "2026-10-18",
-  "title": "MilliannaVT: 500 career kills",
-  "text": "MilliannaVT reached 500 career kills",
-  "link": "#/player/milliannavt"
- },
- {
   "id": "milestone:karoni:kills:500",
   "type": "milestone",
   "ts": 1792263934,
@@ -1798,5 +1780,23 @@
   "title": "Nataleste: 100 MVP rounds",
   "text": "Nataleste reached 100 MVP rounds",
   "link": "#/player/nataleste"
+ },
+ {
+  "id": "milestone:murasakibara-tsuki1:mvp:100",
+  "type": "milestone",
+  "ts": 1793192920,
+  "date": "2026-10-28",
+  "title": "murasakibara_tsuki1: 100 MVP rounds",
+  "text": "murasakibara_tsuki1 reached 100 MVP rounds",
+  "link": "#/player/murasakibara-tsuki1"
+ },
+ {
+  "id": "milestone:daifuku-wu:maps:50",
+  "type": "milestone",
+  "ts": 1793192920,
+  "date": "2026-10-28",
+  "title": "daifuku.wu: 50 maps played",
+  "text": "daifuku.wu reached 50 maps played",
+  "link": "#/player/daifuku-wu"
  }
 ]
