@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:fumishiroyummy:kills:500",
-  "type": "milestone",
-  "ts": 1792177180,
-  "date": "2026-10-17",
-  "title": "FumishiroYummy: 500 career kills",
-  "text": "FumishiroYummy reached 500 career kills",
-  "link": "#/player/fumishiroyummy"
- },
- {
   "id": "milestone:karasu:kills:1000",
   "type": "milestone",
   "ts": 1792183580,
@@ -1798,5 +1789,14 @@
   "title": "Eroxis: 100 MVP rounds",
   "text": "Eroxis reached 100 MVP rounds",
   "link": "#/player/eroxis"
+ },
+ {
+  "id": "milestone:navikuun:kills:500",
+  "type": "milestone",
+  "ts": 1793182177,
+  "date": "2026-10-28",
+  "title": "Navikuun: 500 career kills",
+  "text": "Navikuun reached 500 career kills",
+  "link": "#/player/navikuun"
  }
 ]
