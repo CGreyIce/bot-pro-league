@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:hakop:maps:50",
-  "type": "milestone",
-  "ts": 1792107264,
-  "date": "2026-10-16",
-  "title": "HakoP: 50 maps played",
-  "text": "HakoP reached 50 maps played",
-  "link": "#/player/hakop"
- },
- {
-  "id": "milestone:justyoong:kills:500",
-  "type": "milestone",
-  "ts": 1792107264,
-  "date": "2026-10-16",
-  "title": "JustYoong: 500 career kills",
-  "text": "JustYoong reached 500 career kills",
-  "link": "#/player/justyoong"
- },
- {
-  "id": "milestone:just-ansel:kills:500",
-  "type": "milestone",
-  "ts": 1792140367,
-  "date": "2026-10-16",
-  "title": "Just_Ansel: 500 career kills",
-  "text": "Just_Ansel reached 500 career kills",
-  "link": "#/player/just-ansel"
- },
- {
   "id": "milestone:mominichi:kills:500",
   "type": "milestone",
   "ts": 1792142846,
@@ -1798,5 +1771,32 @@
   "title": "Kaminari Qpi: 500 career kills",
   "text": "Kaminari Qpi reached 500 career kills",
   "link": "#/player/kaminari-qpi"
+ },
+ {
+  "id": "milestone:keikatamori:maps:50",
+  "type": "milestone",
+  "ts": 1793165423,
+  "date": "2026-10-28",
+  "title": "keikatamori: 50 maps played",
+  "text": "keikatamori reached 50 maps played",
+  "link": "#/player/keikatamori"
+ },
+ {
+  "id": "milestone:froggiee:maps:50",
+  "type": "milestone",
+  "ts": 1793165423,
+  "date": "2026-10-28",
+  "title": "_froggiee: 50 maps played",
+  "text": "_froggiee reached 50 maps played",
+  "link": "#/player/froggiee"
+ },
+ {
+  "id": "milestone:kaikaijins:mvp:100",
+  "type": "milestone",
+  "ts": 1793165423,
+  "date": "2026-10-28",
+  "title": "kaikaijins: 100 MVP rounds",
+  "text": "kaikaijins reached 100 MVP rounds",
+  "link": "#/player/kaikaijins"
  }
 ]
