@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:twentyrosie:maps:50",
-  "type": "milestone",
-  "ts": 1792360604,
-  "date": "2026-10-19",
-  "title": "twentyrosie: 50 maps played",
-  "text": "twentyrosie reached 50 maps played",
-  "link": "#/player/twentyrosie"
- },
- {
   "id": "milestone:xmeijixx:mvp:100",
   "type": "milestone",
   "ts": 1792401477,
@@ -1798,5 +1789,14 @@
   "title": "Yano Kuromu: 500 career kills",
   "text": "Yano Kuromu reached 500 career kills",
   "link": "#/player/yano-kuromu"
+ },
+ {
+  "id": "milestone:hyvred:kills:500",
+  "type": "milestone",
+  "ts": 1793207697,
+  "date": "2026-10-29",
+  "title": "Hyvred: 500 career kills",
+  "text": "Hyvred reached 500 career kills",
+  "link": "#/player/hyvred"
  }
 ]
