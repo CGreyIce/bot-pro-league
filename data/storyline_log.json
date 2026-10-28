@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:mizukiimoon:maps:50",
-  "type": "milestone",
-  "ts": 1792071597,
-  "date": "2026-10-16",
-  "title": "MizukiiMoon: 50 maps played",
-  "text": "MizukiiMoon reached 50 maps played",
-  "link": "#/player/mizukiimoon"
- },
- {
   "id": "milestone:karasu:maps:50",
   "type": "milestone",
   "ts": 1792089317,
@@ -1798,5 +1789,14 @@
   "title": "Spoods: 100 MVP rounds",
   "text": "Spoods reached 100 MVP rounds",
   "link": "#/player/spoods"
+ },
+ {
+  "id": "milestone:dla-wo:mvp:100",
+  "type": "milestone",
+  "ts": 1793146312,
+  "date": "2026-10-28",
+  "title": "dla.wo: 100 MVP rounds",
+  "text": "dla.wo reached 100 MVP rounds",
+  "link": "#/player/dla-wo"
  }
 ]

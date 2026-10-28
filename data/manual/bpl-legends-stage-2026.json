@@ -656,8 +656,9 @@
      "round": 1,
      "a": "division20",
      "b": "Defiant Order",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1793146309
     },
     {
      "id": 5,
