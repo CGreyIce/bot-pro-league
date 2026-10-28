@@ -1,41 +1,5 @@
 [
  {
-  "id": "milestone:twentyrosie:mvp:100",
-  "type": "milestone",
-  "ts": 1792355643,
-  "date": "2026-10-19",
-  "title": "twentyrosie: 100 MVP rounds",
-  "text": "twentyrosie reached 100 MVP rounds",
-  "link": "#/player/twentyrosie"
- },
- {
-  "id": "milestone:nightveil-lycoris:kills:500",
-  "type": "milestone",
-  "ts": 1792359345,
-  "date": "2026-10-19",
-  "title": "Nightveil Lycoris: 500 career kills",
-  "text": "Nightveil Lycoris reached 500 career kills",
-  "link": "#/player/nightveil-lycoris"
- },
- {
-  "id": "transfer:lemontree:2026-10-19:kkayyteeee+rebebx",
-  "type": "transfer",
-  "ts": 1792360384,
-  "date": "2026-10-19",
-  "title": "Lemon Tree swap kkayyteeee for rebebx",
-  "text": "in: rebebx; out: kkayyteeee",
-  "link": "#/team/lemon-tree"
- },
- {
-  "id": "transfer:eiromancers:2026-10-19:codedecho+twentyrosie",
-  "type": "transfer",
-  "ts": 1792360604,
-  "date": "2026-10-19",
-  "title": "Eiromancers sign CodedEcho and twentyrosie",
-  "text": "in: CodedEcho and twentyrosie",
-  "link": "#/team/eiromancers"
- },
- {
   "id": "milestone:twentyrosie:maps:50",
   "type": "milestone",
   "ts": 1792360604,
@@ -1798,5 +1762,41 @@
   "title": "jhjj80: 500 career kills",
   "text": "jhjj80 reached 500 career kills",
   "link": "#/player/jhjj80"
+ },
+ {
+  "id": "milestone:pashionfruit18:kills:500",
+  "type": "milestone",
+  "ts": 1793199296,
+  "date": "2026-10-28",
+  "title": "pashionfruit18: 500 career kills",
+  "text": "pashionfruit18 reached 500 career kills",
+  "link": "#/player/pashionfruit18"
+ },
+ {
+  "id": "milestone:heyimkaiwen:kills:500",
+  "type": "milestone",
+  "ts": 1793199296,
+  "date": "2026-10-28",
+  "title": "HeyImKaiWen: 500 career kills",
+  "text": "HeyImKaiWen reached 500 career kills",
+  "link": "#/player/heyimkaiwen"
+ },
+ {
+  "id": "milestone:s-gt:kills:500",
+  "type": "milestone",
+  "ts": 1793199296,
+  "date": "2026-10-28",
+  "title": "S.GT: 500 career kills",
+  "text": "S.GT reached 500 career kills",
+  "link": "#/player/s-gt"
+ },
+ {
+  "id": "milestone:yano-kuromu:kills:500",
+  "type": "milestone",
+  "ts": 1793199296,
+  "date": "2026-10-28",
+  "title": "Yano Kuromu: 500 career kills",
+  "text": "Yano Kuromu reached 500 career kills",
+  "link": "#/player/yano-kuromu"
  }
 ]
