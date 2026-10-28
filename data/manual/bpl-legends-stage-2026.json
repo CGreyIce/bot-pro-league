@@ -710,8 +710,9 @@
      "round": 2,
      "a": "Defiant Order",
      "b": "Raven Song",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1793189510
     },
     {
      "id": 11,
