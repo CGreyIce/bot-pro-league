@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:xmeijixx:mvp:100",
-  "type": "milestone",
-  "ts": 1792401477,
-  "date": "2026-10-19",
-  "title": "xmeijixx: 100 MVP rounds",
-  "text": "xmeijixx reached 100 MVP rounds",
-  "link": "#/player/xmeijixx"
- },
- {
-  "id": "milestone:twentyrosie:kills:1000",
-  "type": "milestone",
-  "ts": 1792427374,
-  "date": "2026-10-20",
-  "title": "twentyrosie: 1000 career kills",
-  "text": "twentyrosie reached 1000 career kills",
-  "link": "#/player/twentyrosie"
- },
- {
   "id": "milestone:shirou-kitakami:kills:500",
   "type": "milestone",
   "ts": 1792441342,
@@ -1798,5 +1780,23 @@
   "title": "Hyvred: 500 career kills",
   "text": "Hyvred reached 500 career kills",
   "link": "#/player/hyvred"
+ },
+ {
+  "id": "top:player:laburi:2026-10-29",
+  "type": "top",
+  "ts": 1793216115,
+  "date": "2026-10-29",
+  "title": "Laburi is the new #1",
+  "text": "Top of the player rankings at 1808 points, passing candybar_isblue",
+  "link": "#/player/laburi"
+ },
+ {
+  "id": "milestone:kitties258:kills:500",
+  "type": "milestone",
+  "ts": 1793216115,
+  "date": "2026-10-29",
+  "title": "kitties258: 500 career kills",
+  "text": "kitties258 reached 500 career kills",
+  "link": "#/player/kitties258"
  }
 ]

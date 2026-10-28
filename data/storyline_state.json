@@ -140,7 +140,7 @@
  ],
  "movesSeen": 100,
  "top": {
-  "player": "candybar-isblue",
+  "player": "laburi",
   "team": "cosmos"
  },
  "milestones": {
@@ -595,29 +595,29 @@
    "mvp": 133
   },
   "y-uuno": {
-   "maps": 43,
-   "kills": 706,
+   "maps": 44,
+   "kills": 716,
    "mvp": 118
   },
   "spoods": {
-   "maps": 39,
-   "kills": 657,
-   "mvp": 108
+   "maps": 40,
+   "kills": 685,
+   "mvp": 113
   },
   "laburi": {
-   "maps": 43,
-   "kills": 766,
-   "mvp": 140
+   "maps": 44,
+   "kills": 777,
+   "mvp": 142
   },
   "eroxis": {
-   "maps": 43,
-   "kills": 763,
-   "mvp": 108
+   "maps": 44,
+   "kills": 779,
+   "mvp": 112
   },
   "kitties258": {
-   "maps": 39,
-   "kills": 493,
-   "mvp": 60
+   "maps": 40,
+   "kills": 511,
+   "mvp": 62
   },
   "mike": {
    "maps": 27,
@@ -1230,9 +1230,9 @@
    "mvp": 85
   },
   "twentyrosie": {
-   "maps": 72,
-   "kills": 1139,
-   "mvp": 169
+   "maps": 73,
+   "kills": 1155,
+   "mvp": 170
   },
   "obvmx": {
    "maps": 87,
@@ -2030,9 +2030,9 @@
    "mvp": 40
   },
   "codedecho": {
-   "maps": 22,
-   "kills": 350,
-   "mvp": 48
+   "maps": 23,
+   "kills": 363,
+   "mvp": 51
   },
   "miruaamaochi": {
    "maps": 23,
@@ -2040,9 +2040,9 @@
    "mvp": 46
   },
   "skiazelle": {
-   "maps": 47,
-   "kills": 743,
-   "mvp": 111
+   "maps": 48,
+   "kills": 764,
+   "mvp": 113
   },
   "boopydoopy": {
    "maps": 42,
@@ -2050,14 +2050,14 @@
    "mvp": 84
   },
   "raviaseir": {
-   "maps": 47,
-   "kills": 772,
-   "mvp": 138
+   "maps": 48,
+   "kills": 785,
+   "mvp": 141
   },
   "kaikaijins": {
-   "maps": 52,
-   "kills": 808,
-   "mvp": 105
+   "maps": 53,
+   "kills": 820,
+   "mvp": 107
   },
   "xyrren": {
    "maps": 43,
@@ -2463,6 +2463,7 @@
   "promotion:pastel-mocha",
   "record:highestMap:65+mostKillsMap:58+mostOT:7",
   "top:player:candybar-isblue:2026-10-27",
+  "top:player:laburi:2026-10-29",
   "top:player:rebebx:2026-10-14",
   "top:player:sanctuary:2026-10-16",
   "top:team:cosmos:2026-10-14",

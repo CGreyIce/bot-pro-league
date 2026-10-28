@@ -746,8 +746,9 @@
      "round": 3,
      "a": "division20",
      "b": "Eiromancers",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1793216113
     },
     {
      "id": 15,
