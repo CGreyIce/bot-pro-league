@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:asumi-sena:kills:500",
-  "type": "milestone",
-  "ts": 1792156615,
-  "date": "2026-10-16",
-  "title": "Asumi Sena: 500 career kills",
-  "text": "Asumi Sena reached 500 career kills",
-  "link": "#/player/asumi-sena"
- },
- {
   "id": "top:player:sanctuary:2026-10-16",
   "type": "top",
   "ts": 1792164434,
@@ -1798,5 +1789,14 @@
   "title": "kaikaijins: 50 maps played",
   "text": "kaikaijins reached 50 maps played",
   "link": "#/player/kaikaijins"
+ },
+ {
+  "id": "milestone:hakase:kills:500",
+  "type": "milestone",
+  "ts": 1793170747,
+  "date": "2026-10-28",
+  "title": "Hakase: 500 career kills",
+  "text": "Hakase reached 500 career kills",
+  "link": "#/player/hakase"
  }
 ]
