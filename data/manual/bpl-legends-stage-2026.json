@@ -692,8 +692,9 @@
      "round": 2,
      "a": "Fruit Basket",
      "b": "Sacred Raven",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1793174689
     },
     {
      "id": 9,

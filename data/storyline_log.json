@@ -1,14 +1,5 @@
 [
  {
-  "id": "top:player:sanctuary:2026-10-16",
-  "type": "top",
-  "ts": 1792164434,
-  "date": "2026-10-16",
-  "title": "SanCtuary is the new #1",
-  "text": "Top of the player rankings at 1782 points, passing rebebx",
-  "link": "#/player/sanctuary"
- },
- {
   "id": "milestone:rumirumi:kills:500",
   "type": "milestone",
   "ts": 1792173471,
@@ -1798,5 +1789,14 @@
   "title": "Hakase: 500 career kills",
   "text": "Hakase reached 500 career kills",
   "link": "#/player/hakase"
+ },
+ {
+  "id": "milestone:yuuschan:kills:500",
+  "type": "milestone",
+  "ts": 1793174692,
+  "date": "2026-10-28",
+  "title": "yuuschan: 500 career kills",
+  "text": "yuuschan reached 500 career kills",
+  "link": "#/player/yuuschan"
  }
 ]
