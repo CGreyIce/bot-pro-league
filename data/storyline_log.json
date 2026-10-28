@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:mominichi:kills:500",
-  "type": "milestone",
-  "ts": 1792142846,
-  "date": "2026-10-16",
-  "title": "mominichi: 500 career kills",
-  "text": "mominichi reached 500 career kills",
-  "link": "#/player/mominichi"
- },
- {
   "id": "milestone:asumi-sena:kills:500",
   "type": "milestone",
   "ts": 1792156615,
@@ -1797,6 +1788,15 @@
   "date": "2026-10-28",
   "title": "kaikaijins: 100 MVP rounds",
   "text": "kaikaijins reached 100 MVP rounds",
+  "link": "#/player/kaikaijins"
+ },
+ {
+  "id": "milestone:kaikaijins:maps:50",
+  "type": "milestone",
+  "ts": 1793166888,
+  "date": "2026-10-28",
+  "title": "kaikaijins: 50 maps played",
+  "text": "kaikaijins reached 50 maps played",
   "link": "#/player/kaikaijins"
  }
 ]
