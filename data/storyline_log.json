@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:karasu:maps:50",
-  "type": "milestone",
-  "ts": 1792089317,
-  "date": "2026-10-16",
-  "title": "Karasu: 50 maps played",
-  "text": "Karasu reached 50 maps played",
-  "link": "#/player/karasu"
- },
- {
   "id": "milestone:kiokocheiko:kills:500",
   "type": "milestone",
   "ts": 1792103909,
@@ -1798,5 +1789,14 @@
   "title": "dla.wo: 100 MVP rounds",
   "text": "dla.wo reached 100 MVP rounds",
   "link": "#/player/dla-wo"
+ },
+ {
+  "id": "milestone:skiazelle:mvp:100",
+  "type": "milestone",
+  "ts": 1793148249,
+  "date": "2026-10-28",
+  "title": "Skiazelle: 100 MVP rounds",
+  "text": "Skiazelle reached 100 MVP rounds",
+  "link": "#/player/skiazelle"
  }
 ]
