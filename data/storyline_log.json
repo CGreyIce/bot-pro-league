@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:rumirumi:kills:500",
-  "type": "milestone",
-  "ts": 1792173471,
-  "date": "2026-10-17",
-  "title": "RumiRumi: 500 career kills",
-  "text": "RumiRumi reached 500 career kills",
-  "link": "#/player/rumirumi"
- },
- {
   "id": "milestone:fumishiroyummy:kills:500",
   "type": "milestone",
   "ts": 1792177180,
@@ -1798,5 +1789,14 @@
   "title": "yuuschan: 500 career kills",
   "text": "yuuschan reached 500 career kills",
   "link": "#/player/yuuschan"
+ },
+ {
+  "id": "milestone:eroxis:mvp:100",
+  "type": "milestone",
+  "ts": 1793180030,
+  "date": "2026-10-28",
+  "title": "Eroxis: 100 MVP rounds",
+  "text": "Eroxis reached 100 MVP rounds",
+  "link": "#/player/eroxis"
  }
 ]
