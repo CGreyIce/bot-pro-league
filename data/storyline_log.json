@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:hakop:mvp:150",
-  "type": "milestone",
-  "ts": 1792183580,
-  "date": "2026-10-17",
-  "title": "HakoP: 150 MVP rounds",
-  "text": "HakoP reached 150 MVP rounds",
-  "link": "#/player/hakop"
- },
- {
-  "id": "milestone:justyoong:mvp:100",
-  "type": "milestone",
-  "ts": 1792183580,
-  "date": "2026-10-17",
-  "title": "JustYoong: 100 MVP rounds",
-  "text": "JustYoong reached 100 MVP rounds",
-  "link": "#/player/justyoong"
- },
- {
   "id": "milestone:xevaria:kills:500",
   "type": "milestone",
   "ts": 1792183580,
@@ -1798,5 +1780,23 @@
   "title": "zenn1sm: 500 career kills",
   "text": "zenn1sm reached 500 career kills",
   "link": "#/player/zenn1sm"
+ },
+ {
+  "id": "milestone:ebi:mvp:150",
+  "type": "milestone",
+  "ts": 1793187580,
+  "date": "2026-10-28",
+  "title": "ebi: 150 MVP rounds",
+  "text": "ebi reached 150 MVP rounds",
+  "link": "#/player/ebi"
+ },
+ {
+  "id": "milestone:nataleste:mvp:100",
+  "type": "milestone",
+  "ts": 1793187580,
+  "date": "2026-10-28",
+  "title": "Nataleste: 100 MVP rounds",
+  "text": "Nataleste reached 100 MVP rounds",
+  "link": "#/player/nataleste"
  }
 ]
