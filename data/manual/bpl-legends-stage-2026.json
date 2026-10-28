@@ -719,8 +719,9 @@
      "round": 2,
      "a": "Lunar Cadence",
      "b": "Round Loss Bonus",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1793195227
     },
     {
      "id": 12,

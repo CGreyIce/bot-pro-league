@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:karoni:kills:500",
-  "type": "milestone",
-  "ts": 1792263934,
-  "date": "2026-10-18",
-  "title": "Karoni: 500 career kills",
-  "text": "Karoni reached 500 career kills",
-  "link": "#/player/karoni"
- },
- {
   "id": "milestone:skiazelle:kills:500",
   "type": "milestone",
   "ts": 1792342978,
@@ -1798,5 +1789,14 @@
   "title": "daifuku.wu: 50 maps played",
   "text": "daifuku.wu reached 50 maps played",
   "link": "#/player/daifuku-wu"
+ },
+ {
+  "id": "milestone:tsumugi-kokage:mvp:100",
+  "type": "milestone",
+  "ts": 1793195230,
+  "date": "2026-10-28",
+  "title": "Tsumugi Kokage: 100 MVP rounds",
+  "text": "Tsumugi Kokage reached 100 MVP rounds",
+  "link": "#/player/tsumugi-kokage"
  }
 ]
