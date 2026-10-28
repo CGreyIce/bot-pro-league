@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:boopydoopy:kills:500",
-  "type": "milestone",
-  "ts": 1792103909,
-  "date": "2026-10-16",
-  "title": "boopydoopy: 500 career kills",
-  "text": "boopydoopy reached 500 career kills",
-  "link": "#/player/boopydoopy"
- },
- {
   "id": "milestone:hakop:maps:50",
   "type": "milestone",
   "ts": 1792107264,
@@ -1798,5 +1789,14 @@
   "title": "Phxebe: 500 career kills",
   "text": "Phxebe reached 500 career kills",
   "link": "#/player/phxebe"
+ },
+ {
+  "id": "milestone:kaminari-qpi:kills:500",
+  "type": "milestone",
+  "ts": 1793153694,
+  "date": "2026-10-28",
+  "title": "Kaminari Qpi: 500 career kills",
+  "text": "Kaminari Qpi reached 500 career kills",
+  "link": "#/player/kaminari-qpi"
  }
 ]
