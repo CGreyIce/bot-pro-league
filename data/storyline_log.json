@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:itswinter:kills:500",
-  "type": "milestone",
-  "ts": 1792445913,
-  "date": "2026-10-20",
-  "title": "itswinter__: 500 career kills",
-  "text": "itswinter__ reached 500 career kills",
-  "link": "#/player/itswinter"
- },
- {
-  "id": "milestone:twentyrosie:mvp:150",
-  "type": "milestone",
-  "ts": 1792452148,
-  "date": "2026-10-20",
-  "title": "twentyrosie: 150 MVP rounds",
-  "text": "twentyrosie reached 150 MVP rounds",
-  "link": "#/player/twentyrosie"
- },
- {
   "id": "milestone:vyphogrid:kills:500",
   "type": "milestone",
   "ts": 1792481198,
@@ -1798,5 +1780,23 @@
   "title": "potatodepresso: 500 career kills",
   "text": "potatodepresso reached 500 career kills",
   "link": "#/player/potatodepresso"
+ },
+ {
+  "id": "milestone:lukedefabio:mvp:100",
+  "type": "milestone",
+  "ts": 1793227896,
+  "date": "2026-10-29",
+  "title": "lukedefabio: 100 MVP rounds",
+  "text": "lukedefabio reached 100 MVP rounds",
+  "link": "#/player/lukedefabio"
+ },
+ {
+  "id": "milestone:amayui-moka:kills:500",
+  "type": "milestone",
+  "ts": 1793227896,
+  "date": "2026-10-29",
+  "title": "Amayui Moka: 500 career kills",
+  "text": "Amayui Moka reached 500 career kills",
+  "link": "#/player/amayui-moka"
  }
 ]
