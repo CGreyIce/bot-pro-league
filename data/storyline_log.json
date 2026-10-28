@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:karasu:kills:1000",
-  "type": "milestone",
-  "ts": 1792183580,
-  "date": "2026-10-17",
-  "title": "Karasu: 1000 career kills",
-  "text": "Karasu reached 1000 career kills",
-  "link": "#/player/karasu"
- },
- {
   "id": "milestone:hakop:mvp:150",
   "type": "milestone",
   "ts": 1792183580,
@@ -1798,5 +1789,14 @@
   "title": "Navikuun: 500 career kills",
   "text": "Navikuun reached 500 career kills",
   "link": "#/player/navikuun"
+ },
+ {
+  "id": "milestone:zenn1sm:kills:500",
+  "type": "milestone",
+  "ts": 1793183492,
+  "date": "2026-10-28",
+  "title": "zenn1sm: 500 career kills",
+  "text": "zenn1sm reached 500 career kills",
+  "link": "#/player/zenn1sm"
  }
 ]
