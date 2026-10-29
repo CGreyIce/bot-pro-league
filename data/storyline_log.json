@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:obvmx:mvp:200",
-  "type": "milestone",
-  "ts": 1792601644,
-  "date": "2026-10-22",
-  "title": "obvMX: 200 MVP rounds",
-  "text": "obvMX reached 200 MVP rounds",
-  "link": "#/player/obvmx"
- },
- {
-  "id": "milestone:shuvimo:mvp:100",
-  "type": "milestone",
-  "ts": 1792601644,
-  "date": "2026-10-22",
-  "title": "Shuvimo: 100 MVP rounds",
-  "text": "Shuvimo reached 100 MVP rounds",
-  "link": "#/player/shuvimo"
- },
- {
-  "id": "milestone:nerfox:kills:500",
-  "type": "milestone",
-  "ts": 1792601644,
-  "date": "2026-10-22",
-  "title": "Nerfox: 500 career kills",
-  "text": "Nerfox reached 500 career kills",
-  "link": "#/player/nerfox"
- },
- {
   "id": "milestone:kiokocheiko:maps:50",
   "type": "milestone",
   "ts": 1792601644,
@@ -1798,5 +1771,32 @@
   "title": "cshhp: 500 career kills",
   "text": "cshhp reached 500 career kills",
   "link": "#/player/cshhp"
+ },
+ {
+  "id": "milestone:y-uuno:maps:50",
+  "type": "milestone",
+  "ts": 1793278533,
+  "date": "2026-10-29",
+  "title": "y.uuno: 50 maps played",
+  "text": "y.uuno reached 50 maps played",
+  "link": "#/player/y-uuno"
+ },
+ {
+  "id": "milestone:laburi:maps:50",
+  "type": "milestone",
+  "ts": 1793278533,
+  "date": "2026-10-29",
+  "title": "Laburi: 50 maps played",
+  "text": "Laburi reached 50 maps played",
+  "link": "#/player/laburi"
+ },
+ {
+  "id": "milestone:eroxis:maps:50",
+  "type": "milestone",
+  "ts": 1793278533,
+  "date": "2026-10-29",
+  "title": "Eroxis: 50 maps played",
+  "text": "Eroxis reached 50 maps played",
+  "link": "#/player/eroxis"
  }
 ]
