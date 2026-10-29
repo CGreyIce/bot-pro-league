@@ -1,14 +1,5 @@
 [
  {
-  "id": "champion:bpl-challengers-stage-2026",
-  "type": "champion",
-  "ts": 1792601107,
-  "date": "2026-10-22",
-  "title": "Nullpoint win BPL Challengers Stage 2026",
-  "text": "Champions of BPL Challengers Stage 2026, beating Pastel Mocha in the final",
-  "link": "#/tournament/bpl-challengers-stage-2026"
- },
- {
   "id": "promotion:nullpoint",
   "type": "promotion",
   "ts": 1792601644,
@@ -1798,5 +1789,14 @@
   "title": "BeeHyve stun division20",
   "text": "2-1 at BPL Legends Stage 2026",
   "link": "#/match/bpl-legends-stage-2026/3-19"
+ },
+ {
+  "id": "top:player:candybar-isblue:2026-10-29",
+  "type": "top",
+  "ts": 1793254048,
+  "date": "2026-10-29",
+  "title": "candybar_isblue is the new #1",
+  "text": "Top of the player rankings at 1796 points, passing Laburi",
+  "link": "#/player/candybar-isblue"
  }
 ]
