@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:aurasinvt:mvp:100",
-  "type": "milestone",
-  "ts": 1792601644,
-  "date": "2026-10-22",
-  "title": "AuraSinVT: 100 MVP rounds",
-  "text": "AuraSinVT reached 100 MVP rounds",
-  "link": "#/player/aurasinvt"
- },
- {
-  "id": "milestone:fumishiroyummy:mvp:100",
-  "type": "milestone",
-  "ts": 1792601644,
-  "date": "2026-10-22",
-  "title": "FumishiroYummy: 100 MVP rounds",
-  "text": "FumishiroYummy reached 100 MVP rounds",
-  "link": "#/player/fumishiroyummy"
- },
- {
   "id": "milestone:nyxcatto:kills:500",
   "type": "milestone",
   "ts": 1792601644,
@@ -1798,5 +1780,23 @@
   "title": "Eris Suzukami: 50 maps played",
   "text": "Eris Suzukami reached 50 maps played",
   "link": "#/player/eris-suzukami"
+ },
+ {
+  "id": "milestone:skysbeautylai:mvp:100",
+  "type": "milestone",
+  "ts": 1793271314,
+  "date": "2026-10-29",
+  "title": "skysbeautylai: 100 MVP rounds",
+  "text": "skysbeautylai reached 100 MVP rounds",
+  "link": "#/player/skysbeautylai"
+ },
+ {
+  "id": "milestone:matcha:maps:50",
+  "type": "milestone",
+  "ts": 1793271314,
+  "date": "2026-10-29",
+  "title": "matcha: 50 maps played",
+  "text": "matcha reached 50 maps played",
+  "link": "#/player/matcha"
  }
 ]
