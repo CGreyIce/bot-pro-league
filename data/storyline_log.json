@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:lukedefabio:kills:500",
-  "type": "milestone",
-  "ts": 1792566001,
-  "date": "2026-10-21",
-  "title": "lukedefabio: 500 career kills",
-  "text": "lukedefabio reached 500 career kills",
-  "link": "#/player/lukedefabio"
- },
- {
   "id": "milestone:dla-wo:kills:500",
   "type": "milestone",
   "ts": 1792567364,
@@ -1798,5 +1789,14 @@
   "title": "murasakibara_tsuki1: 50 maps played",
   "text": "murasakibara_tsuki1 reached 50 maps played",
   "link": "#/player/murasakibara-tsuki1"
+ },
+ {
+  "id": "milestone:daifuku-wu:mvp:100",
+  "type": "milestone",
+  "ts": 1793241452,
+  "date": "2026-10-29",
+  "title": "daifuku.wu: 100 MVP rounds",
+  "text": "daifuku.wu reached 100 MVP rounds",
+  "link": "#/player/daifuku-wu"
  }
 ]

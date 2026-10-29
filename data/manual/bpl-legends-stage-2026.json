@@ -782,6 +782,55 @@
      "round": 3,
      "a": "Round Loss Bonus",
      "b": "Team Neverseen",
+     "sa": 1,
+     "sb": 2,
+     "ts": 1793241450
+    },
+    {
+     "id": 19,
+     "round": 4,
+     "a": "BeeHyve",
+     "b": "division20",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 20,
+     "round": 4,
+     "a": "Sacred Raven",
+     "b": "Defiant Order",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 21,
+     "round": 4,
+     "a": "Fruit Basket",
+     "b": "Eiromancers",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 22,
+     "round": 4,
+     "a": "Raven Song",
+     "b": "Thunderveil",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 23,
+     "round": 4,
+     "a": "0v3",
+     "b": "Round Loss Bonus",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 24,
+     "round": 4,
+     "a": "Lunar Cadence",
+     "b": "Team Neverseen",
      "sa": null,
      "sb": null
     }
@@ -789,7 +838,8 @@
    "roundTitles": {
     "1": "Round 1",
     "2": "Round 2",
-    "3": "Round 3"
+    "3": "Round 3",
+    "4": "Round 4"
    },
    "rounds": 5
   },
