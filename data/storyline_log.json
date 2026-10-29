@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:keikatamori:mvp:100",
-  "type": "milestone",
-  "ts": 1792601644,
-  "date": "2026-10-22",
-  "title": "keikatamori: 100 MVP rounds",
-  "text": "keikatamori reached 100 MVP rounds",
-  "link": "#/player/keikatamori"
- },
- {
-  "id": "milestone:nataleste:kills:500",
-  "type": "milestone",
-  "ts": 1792601644,
-  "date": "2026-10-22",
-  "title": "Nataleste: 500 career kills",
-  "text": "Nataleste reached 500 career kills",
-  "link": "#/player/nataleste"
- },
- {
   "id": "milestone:ryujin:kills:500",
   "type": "milestone",
   "ts": 1792601644,
@@ -1798,5 +1780,23 @@
   "title": "Yano Kuromu: 50 maps played",
   "text": "Yano Kuromu reached 50 maps played",
   "link": "#/player/yano-kuromu"
+ },
+ {
+  "id": "milestone:pearlim:kills:500",
+  "type": "milestone",
+  "ts": 1793296066,
+  "date": "2026-10-30",
+  "title": "Pearlim: 500 career kills",
+  "text": "Pearlim reached 500 career kills",
+  "link": "#/player/pearlim"
+ },
+ {
+  "id": "milestone:milkenut:kills:500",
+  "type": "milestone",
+  "ts": 1793296066,
+  "date": "2026-10-30",
+  "title": "milkenut: 500 career kills",
+  "text": "milkenut reached 500 career kills",
+  "link": "#/player/milkenut"
  }
 ]
