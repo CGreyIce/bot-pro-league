@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:crimsynflames:kills:500",
-  "type": "milestone",
-  "ts": 1792610361,
-  "date": "2026-10-22",
-  "title": "CrimsynFlames: 500 career kills",
-  "text": "CrimsynFlames reached 500 career kills",
-  "link": "#/player/crimsynflames"
- },
- {
   "id": "milestone:suzuyunn:kills:500",
   "type": "milestone",
   "ts": 1792612485,
@@ -1798,5 +1789,14 @@
   "title": "Navikuun: 100 MVP rounds",
   "text": "Navikuun reached 100 MVP rounds",
   "link": "#/player/navikuun"
+ },
+ {
+  "id": "milestone:prophocy:maps:50",
+  "type": "milestone",
+  "ts": 1793302606,
+  "date": "2026-10-30",
+  "title": "ProPHOcy_: 50 maps played",
+  "text": "ProPHOcy_ reached 50 maps played",
+  "link": "#/player/prophocy"
  }
 ]

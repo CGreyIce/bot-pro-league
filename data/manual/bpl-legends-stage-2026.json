@@ -929,8 +929,9 @@
      "round": 1,
      "a": "Masmark",
      "b": "Wraithborne",
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1793302603
     },
     {
      "id": 2,
