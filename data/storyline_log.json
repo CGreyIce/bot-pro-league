@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:ostc-x:mvp:100",
-  "type": "milestone",
-  "ts": 1792601644,
-  "date": "2026-10-22",
-  "title": "ostc.x: 100 MVP rounds",
-  "text": "ostc.x reached 100 MVP rounds",
-  "link": "#/player/ostc-x"
- },
- {
-  "id": "milestone:tiger-lark:kills:500",
-  "type": "milestone",
-  "ts": 1792601644,
-  "date": "2026-10-22",
-  "title": "tiger.lark: 500 career kills",
-  "text": "tiger.lark reached 500 career kills",
-  "link": "#/player/tiger-lark"
- },
- {
   "id": "milestone:higuvt:mvp:100",
   "type": "milestone",
   "ts": 1792601644,
@@ -1798,5 +1780,23 @@
   "title": "RaviasEir: 50 maps played",
   "text": "RaviasEir reached 50 maps played",
   "link": "#/player/raviaseir"
+ },
+ {
+  "id": "milestone:crex:kills:1000",
+  "type": "milestone",
+  "ts": 1793259788,
+  "date": "2026-10-29",
+  "title": "CRex: 1000 career kills",
+  "text": "CRex reached 1000 career kills",
+  "link": "#/player/crex"
+ },
+ {
+  "id": "milestone:des506:maps:50",
+  "type": "milestone",
+  "ts": 1793259788,
+  "date": "2026-10-29",
+  "title": "des506: 50 maps played",
+  "text": "des506 reached 50 maps played",
+  "link": "#/player/des506"
  }
 ]
