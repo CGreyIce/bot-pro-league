@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:ryujin:kills:500",
-  "type": "milestone",
-  "ts": 1792601644,
-  "date": "2026-10-22",
-  "title": "Ryujin: 500 career kills",
-  "text": "Ryujin reached 500 career kills",
-  "link": "#/player/ryujin"
- },
- {
   "id": "milestone:crimsynflames:kills:500",
   "type": "milestone",
   "ts": 1792610361,
@@ -1798,5 +1789,14 @@
   "title": "milkenut: 500 career kills",
   "text": "milkenut reached 500 career kills",
   "link": "#/player/milkenut"
+ },
+ {
+  "id": "milestone:navikuun:mvp:100",
+  "type": "milestone",
+  "ts": 1793299023,
+  "date": "2026-10-30",
+  "title": "Navikuun: 100 MVP rounds",
+  "text": "Navikuun reached 100 MVP rounds",
+  "link": "#/player/navikuun"
  }
 ]
