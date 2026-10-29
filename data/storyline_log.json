@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:suzuyunn:kills:500",
-  "type": "milestone",
-  "ts": 1792612485,
-  "date": "2026-10-22",
-  "title": "Suzuyunn: 500 career kills",
-  "text": "Suzuyunn reached 500 career kills",
-  "link": "#/player/suzuyunn"
- },
- {
   "id": "milestone:tanykeat:kills:500",
   "type": "milestone",
   "ts": 1792612485,
@@ -1798,5 +1789,14 @@
   "title": "ProPHOcy_: 50 maps played",
   "text": "ProPHOcy_ reached 50 maps played",
   "link": "#/player/prophocy"
+ },
+ {
+  "id": "milestone:tuxedocat:kills:500",
+  "type": "milestone",
+  "ts": 1793306779,
+  "date": "2026-10-30",
+  "title": "TuxedoCat: 500 career kills",
+  "text": "TuxedoCat reached 500 career kills",
+  "link": "#/player/tuxedocat"
  }
 ]
