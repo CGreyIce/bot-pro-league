@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:nyxcatto:kills:500",
-  "type": "milestone",
-  "ts": 1792601644,
-  "date": "2026-10-22",
-  "title": "nyxcatto: 500 career kills",
-  "text": "nyxcatto reached 500 career kills",
-  "link": "#/player/nyxcatto"
- },
- {
   "id": "milestone:obvmx:mvp:200",
   "type": "milestone",
   "ts": 1792601644,
@@ -1798,5 +1789,14 @@
   "title": "matcha: 50 maps played",
   "text": "matcha reached 50 maps played",
   "link": "#/player/matcha"
+ },
+ {
+  "id": "milestone:cshhp:kills:500",
+  "type": "milestone",
+  "ts": 1793274587,
+  "date": "2026-10-29",
+  "title": "cshhp: 500 career kills",
+  "text": "cshhp reached 500 career kills",
+  "link": "#/player/cshhp"
  }
 ]

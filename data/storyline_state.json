@@ -140,7 +140,7 @@
  ],
  "movesSeen": 100,
  "top": {
-  "player": "laburi",
+  "player": "candybar-isblue",
   "team": "cosmos"
  },
  "milestones": {
@@ -595,29 +595,29 @@
    "mvp": 133
   },
   "y-uuno": {
-   "maps": 47,
-   "kills": 778,
-   "mvp": 124
+   "maps": 48,
+   "kills": 784,
+   "mvp": 125
   },
   "spoods": {
-   "maps": 43,
-   "kills": 731,
+   "maps": 44,
+   "kills": 735,
    "mvp": 119
   },
   "laburi": {
-   "maps": 47,
-   "kills": 827,
+   "maps": 48,
+   "kills": 831,
    "mvp": 153
   },
   "eroxis": {
-   "maps": 47,
-   "kills": 822,
+   "maps": 48,
+   "kills": 828,
    "mvp": 118
   },
   "kitties258": {
-   "maps": 43,
-   "kills": 543,
-   "mvp": 66
+   "maps": 44,
+   "kills": 552,
+   "mvp": 67
   },
   "mike": {
    "maps": 27,
@@ -670,29 +670,29 @@
    "mvp": 69
   },
   "hakase": {
-   "maps": 36,
-   "kills": 639,
-   "mvp": 103
+   "maps": 37,
+   "kills": 656,
+   "mvp": 107
   },
   "phxebe": {
-   "maps": 45,
-   "kills": 626,
-   "mvp": 81
+   "maps": 46,
+   "kills": 645,
+   "mvp": 83
   },
   "yuuschan": {
-   "maps": 37,
-   "kills": 600,
-   "mvp": 85
+   "maps": 38,
+   "kills": 611,
+   "mvp": 88
   },
   "cshhp": {
-   "maps": 35,
-   "kills": 496,
+   "maps": 36,
+   "kills": 502,
    "mvp": 55
   },
   "mango": {
-   "maps": 35,
-   "kills": 512,
-   "mvp": 72
+   "maps": 36,
+   "kills": 529,
+   "mvp": 76
   },
   "historia": {
    "maps": 27,
