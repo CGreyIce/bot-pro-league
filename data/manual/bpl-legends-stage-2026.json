@@ -818,8 +818,9 @@
      "round": 4,
      "a": "Raven Song",
      "b": "Thunderveil",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1793261964
     },
     {
      "id": 23,
