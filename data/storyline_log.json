@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:vixi:kills:500",
-  "type": "milestone",
-  "ts": 1792553721,
-  "date": "2026-10-21",
-  "title": "vixi: 500 career kills",
-  "text": "vixi reached 500 career kills",
-  "link": "#/player/vixi"
- },
- {
   "id": "milestone:lukedefabio:kills:500",
   "type": "milestone",
   "ts": 1792566001,
@@ -1798,5 +1789,14 @@
   "title": "Niito: 100 MVP rounds",
   "text": "Niito reached 100 MVP rounds",
   "link": "#/player/niito"
+ },
+ {
+  "id": "milestone:murasakibara-tsuki1:maps:50",
+  "type": "milestone",
+  "ts": 1793239575,
+  "date": "2026-10-29",
+  "title": "murasakibara_tsuki1: 50 maps played",
+  "text": "murasakibara_tsuki1 reached 50 maps played",
+  "link": "#/player/murasakibara-tsuki1"
  }
 ]
