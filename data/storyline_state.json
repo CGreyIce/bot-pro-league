@@ -93,8 +93,8 @@
   "neverland",
   "new-jade",
   "entity",
-  "aetherline",
   "lemon-tree",
+  "aetherline",
   "xplosiv",
   "degree",
   "flood-flashers",
@@ -345,14 +345,14 @@
    "mvp": 102
   },
   "tuxedocat": {
-   "maps": 32,
-   "kills": 502,
-   "mvp": 68
+   "maps": 33,
+   "kills": 516,
+   "mvp": 70
   },
   "hanarisu": {
-   "maps": 31,
-   "kills": 468,
-   "mvp": 76
+   "maps": 32,
+   "kills": 491,
+   "mvp": 79
   },
   "moira": {
    "maps": 32,
@@ -360,9 +360,9 @@
    "mvp": 64
   },
   "caarrietan": {
-   "maps": 32,
-   "kills": 429,
-   "mvp": 44
+   "maps": 33,
+   "kills": 445,
+   "mvp": 45
   },
   "stylus": {
    "maps": 33,
@@ -995,29 +995,29 @@
    "mvp": 85
   },
   "leveti": {
-   "maps": 36,
-   "kills": 568,
-   "mvp": 94
-  },
-  "jaelyo": {
-   "maps": 36,
-   "kills": 612,
+   "maps": 37,
+   "kills": 585,
    "mvp": 95
   },
+  "jaelyo": {
+   "maps": 37,
+   "kills": 630,
+   "mvp": 97
+  },
   "uzuhii": {
-   "maps": 39,
-   "kills": 638,
-   "mvp": 88
+   "maps": 40,
+   "kills": 652,
+   "mvp": 90
   },
   "rc-ia": {
-   "maps": 41,
-   "kills": 576,
-   "mvp": 70
+   "maps": 42,
+   "kills": 594,
+   "mvp": 75
   },
   "zhiweiingg": {
-   "maps": 41,
-   "kills": 639,
-   "mvp": 86
+   "maps": 42,
+   "kills": 657,
+   "mvp": 89
   },
   "niito": {
    "maps": 45,
@@ -2170,9 +2170,9 @@
    "mvp": 21
   },
   "mikuryne": {
-   "maps": 18,
-   "kills": 314,
-   "mvp": 56
+   "maps": 19,
+   "kills": 337,
+   "mvp": 59
   },
   "chiyoaqua": {
    "maps": 10,
@@ -2195,9 +2195,9 @@
    "mvp": 25
   },
   "chisa-scarlett": {
-   "maps": 14,
-   "kills": 248,
-   "mvp": 29
+   "maps": 15,
+   "kills": 257,
+   "mvp": 31
   },
   "soslim": {
    "maps": 9,
