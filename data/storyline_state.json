@@ -595,28 +595,28 @@
    "mvp": 133
   },
   "y-uuno": {
-   "maps": 46,
-   "kills": 760,
-   "mvp": 123
+   "maps": 47,
+   "kills": 778,
+   "mvp": 124
   },
   "spoods": {
-   "maps": 42,
-   "kills": 711,
-   "mvp": 116
+   "maps": 43,
+   "kills": 731,
+   "mvp": 119
   },
   "laburi": {
-   "maps": 46,
-   "kills": 817,
-   "mvp": 150
+   "maps": 47,
+   "kills": 827,
+   "mvp": 153
   },
   "eroxis": {
-   "maps": 46,
-   "kills": 804,
-   "mvp": 116
+   "maps": 47,
+   "kills": 822,
+   "mvp": 118
   },
   "kitties258": {
-   "maps": 42,
-   "kills": 533,
+   "maps": 43,
+   "kills": 543,
    "mvp": 66
   },
   "mike": {
@@ -1270,9 +1270,9 @@
    "mvp": 148
   },
   "keikatamori": {
-   "maps": 57,
-   "kills": 887,
-   "mvp": 133
+   "maps": 58,
+   "kills": 900,
+   "mvp": 134
   },
   "nataleste": {
    "maps": 45,
@@ -1360,24 +1360,24 @@
    "mvp": 42
   },
   "tigeraxd": {
-   "maps": 39,
-   "kills": 662,
-   "mvp": 103
+   "maps": 40,
+   "kills": 676,
+   "mvp": 105
   },
   "froggiee": {
-   "maps": 57,
-   "kills": 741,
-   "mvp": 90
+   "maps": 58,
+   "kills": 755,
+   "mvp": 91
   },
   "tiniibee": {
-   "maps": 33,
-   "kills": 423,
-   "mvp": 60
+   "maps": 34,
+   "kills": 444,
+   "mvp": 66
   },
   "hyvred": {
-   "maps": 34,
-   "kills": 555,
-   "mvp": 82
+   "maps": 35,
+   "kills": 573,
+   "mvp": 85
   },
   "mizukiimoon": {
    "maps": 72,
@@ -2448,6 +2448,7 @@
   "upset:bpl-legends-stage-2026:3-12",
   "upset:bpl-legends-stage-2026:3-13",
   "upset:bpl-legends-stage-2026:3-18",
+  "upset:bpl-legends-stage-2026:3-19",
   "upset:bpl-legends-stage-2026:3-2",
   "upset:bpl-legends-stage-2026:3-7",
   "upset:bpl-legends-stage-2026:3-8",
@@ -2478,6 +2479,7 @@
   "transfer:newjade:2026-10-16:crazywhoopies",
   "transfer:newjade:2026-10-16:crazywhoopies+kojadayo",
   "transfer:newjade:2026-10-16:kojadayo",
-  "transfer:thenomads:2026-10-09:l2strike+mominichi+redandb1ue+sadgeboi"
+  "transfer:thenomads:2026-10-09:l2strike+mominichi+redandb1ue+sadgeboi",
+  "upset:bpl-legends-stage-2026:3-19"
  ]
 }
