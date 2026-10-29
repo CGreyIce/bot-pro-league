@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:dianya:maps:50",
-  "type": "milestone",
-  "ts": 1792601644,
-  "date": "2026-10-22",
-  "title": "Dianya: 50 maps played",
-  "text": "Dianya reached 50 maps played",
-  "link": "#/player/dianya"
- },
- {
-  "id": "milestone:dianya:mvp:100",
-  "type": "milestone",
-  "ts": 1792601644,
-  "date": "2026-10-22",
-  "title": "Dianya: 100 MVP rounds",
-  "text": "Dianya reached 100 MVP rounds",
-  "link": "#/player/dianya"
- },
- {
   "id": "milestone:djsalty:kills:500",
   "type": "milestone",
   "ts": 1792601644,
@@ -1798,5 +1780,23 @@
   "title": "Nataleste: 50 maps played",
   "text": "Nataleste reached 50 maps played",
   "link": "#/player/nataleste"
+ },
+ {
+  "id": "milestone:le-pyrrhic:maps:50",
+  "type": "milestone",
+  "ts": 1793286800,
+  "date": "2026-10-29",
+  "title": "le_pyrrhic: 50 maps played",
+  "text": "le_pyrrhic reached 50 maps played",
+  "link": "#/player/le-pyrrhic"
+ },
+ {
+  "id": "milestone:tif2:maps:50",
+  "type": "milestone",
+  "ts": 1793286800,
+  "date": "2026-10-29",
+  "title": "TiF2: 50 maps played",
+  "text": "TiF2 reached 50 maps played",
+  "link": "#/player/tif2"
  }
 ]
