@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:okjustsmd:kills:500",
-  "type": "milestone",
-  "ts": 1792583067,
-  "date": "2026-10-21",
-  "title": "okjustsmd: 500 career kills",
-  "text": "okjustsmd reached 500 career kills",
-  "link": "#/player/okjustsmd"
- },
- {
   "id": "milestone:estellyy:kills:500",
   "type": "milestone",
   "ts": 1792585097,
@@ -1798,5 +1789,14 @@
   "title": "Tigeraxd: 100 MVP rounds",
   "text": "Tigeraxd reached 100 MVP rounds",
   "link": "#/player/tigeraxd"
+ },
+ {
+  "id": "milestone:laburi:mvp:150",
+  "type": "milestone",
+  "ts": 1793245325,
+  "date": "2026-10-29",
+  "title": "Laburi: 150 MVP rounds",
+  "text": "Laburi reached 150 MVP rounds",
+  "link": "#/player/laburi"
  }
 ]
