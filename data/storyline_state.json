@@ -93,8 +93,8 @@
   "neverland",
   "new-jade",
   "entity",
-  "lemon-tree",
   "aetherline",
+  "lemon-tree",
   "xplosiv",
   "degree",
   "flood-flashers",
@@ -370,9 +370,9 @@
    "mvp": 53
   },
   "tachibana-hinano": {
-   "maps": 45,
-   "kills": 727,
-   "mvp": 107
+   "maps": 46,
+   "kills": 744,
+   "mvp": 109
   },
   "shiranami-ramune": {
    "maps": 57,
@@ -380,8 +380,8 @@
    "mvp": 103
   },
   "remia-aotsuki": {
-   "maps": 35,
-   "kills": 542,
+   "maps": 36,
+   "kills": 555,
    "mvp": 72
   },
   "tsumugi-kokage": {
@@ -720,29 +720,29 @@
    "mvp": 55
   },
   "elfy-mint": {
-   "maps": 34,
-   "kills": 551,
-   "mvp": 78
+   "maps": 35,
+   "kills": 585,
+   "mvp": 87
   },
   "illus": {
-   "maps": 35,
-   "kills": 551,
-   "mvp": 88
+   "maps": 36,
+   "kills": 577,
+   "mvp": 91
   },
   "kairi": {
-   "maps": 44,
-   "kills": 655,
-   "mvp": 106
+   "maps": 45,
+   "kills": 680,
+   "mvp": 108
   },
   "declaration": {
-   "maps": 35,
-   "kills": 517,
-   "mvp": 64
+   "maps": 36,
+   "kills": 532,
+   "mvp": 66
   },
   "zuann": {
-   "maps": 44,
-   "kills": 714,
-   "mvp": 95
+   "maps": 45,
+   "kills": 735,
+   "mvp": 98
   },
   "luminmochi": {
    "maps": 26,
@@ -1440,9 +1440,9 @@
    "mvp": 148
   },
   "kogara-toto": {
-   "maps": 37,
-   "kills": 567,
-   "mvp": 85
+   "maps": 38,
+   "kills": 595,
+   "mvp": 89
   },
   "aranionja": {
    "maps": 50,
@@ -1735,9 +1735,9 @@
    "mvp": 92
   },
   "yumeno-akari": {
-   "maps": 25,
-   "kills": 374,
-   "mvp": 49
+   "maps": 26,
+   "kills": 392,
+   "mvp": 52
   },
   "voxslefthorn": {
    "maps": 27,
@@ -1825,9 +1825,9 @@
    "mvp": 60
   },
   "ginjo-saine": {
-   "maps": 31,
-   "kills": 496,
-   "mvp": 80
+   "maps": 32,
+   "kills": 535,
+   "mvp": 87
   },
   "hamzyy": {
    "maps": 29,

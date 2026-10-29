@@ -947,8 +947,9 @@
      "round": 1,
      "a": "Kiedz",
      "b": "Astral Bloom",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1793316824
     },
     {
      "id": 4,
