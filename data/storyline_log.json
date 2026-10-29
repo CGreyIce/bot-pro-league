@@ -1,41 +1,5 @@
 [
  {
-  "id": "promotion:nullpoint",
-  "type": "promotion",
-  "ts": 1792601644,
-  "date": "2026-10-22",
-  "title": "Nullpoint join the pro ranks",
-  "text": "New pro team [0PT], 5 players",
-  "link": "#/team/nullpoint"
- },
- {
-  "id": "promotion:pastel-mocha",
-  "type": "promotion",
-  "ts": 1792601644,
-  "date": "2026-10-22",
-  "title": "Pastel Mocha join the pro ranks",
-  "text": "New pro team [PaMo], 5 players",
-  "link": "#/team/pastel-mocha"
- },
- {
-  "id": "promotion:beehyve",
-  "type": "promotion",
-  "ts": 1792601644,
-  "date": "2026-10-22",
-  "title": "BeeHyve join the pro ranks",
-  "text": "New pro team [BHYV], 5 players",
-  "link": "#/team/beehyve"
- },
- {
-  "id": "milestone:ostc-x:maps:50",
-  "type": "milestone",
-  "ts": 1792601644,
-  "date": "2026-10-22",
-  "title": "ostc.x: 50 maps played",
-  "text": "ostc.x reached 50 maps played",
-  "link": "#/player/ostc-x"
- },
- {
   "id": "milestone:ostc-x:mvp:100",
   "type": "milestone",
   "ts": 1792601644,
@@ -1798,5 +1762,41 @@
   "title": "candybar_isblue is the new #1",
   "text": "Top of the player rankings at 1796 points, passing Laburi",
   "link": "#/player/candybar-isblue"
+ },
+ {
+  "id": "milestone:hakase:mvp:100",
+  "type": "milestone",
+  "ts": 1793256043,
+  "date": "2026-10-29",
+  "title": "Hakase: 100 MVP rounds",
+  "text": "Hakase reached 100 MVP rounds",
+  "link": "#/player/hakase"
+ },
+ {
+  "id": "milestone:mango:kills:500",
+  "type": "milestone",
+  "ts": 1793256043,
+  "date": "2026-10-29",
+  "title": "Mango: 500 career kills",
+  "text": "Mango reached 500 career kills",
+  "link": "#/player/mango"
+ },
+ {
+  "id": "milestone:skiazelle:maps:50",
+  "type": "milestone",
+  "ts": 1793256043,
+  "date": "2026-10-29",
+  "title": "Skiazelle: 50 maps played",
+  "text": "Skiazelle reached 50 maps played",
+  "link": "#/player/skiazelle"
+ },
+ {
+  "id": "milestone:raviaseir:maps:50",
+  "type": "milestone",
+  "ts": 1793256043,
+  "date": "2026-10-29",
+  "title": "RaviasEir: 50 maps played",
+  "text": "RaviasEir reached 50 maps played",
+  "link": "#/player/raviaseir"
  }
 ]

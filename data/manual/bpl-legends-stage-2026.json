@@ -809,8 +809,9 @@
      "round": 4,
      "a": "Fruit Basket",
      "b": "Eiromancers",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1793256041
     },
     {
      "id": 22,
