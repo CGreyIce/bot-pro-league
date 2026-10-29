@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:mond33:kills:500",
-  "type": "milestone",
-  "ts": 1792492142,
-  "date": "2026-10-20",
-  "title": "mond33__: 500 career kills",
-  "text": "mond33__ reached 500 career kills",
-  "link": "#/player/mond33"
- },
- {
   "id": "milestone:rittan0x0:mvp:100",
   "type": "milestone",
   "ts": 1792492142,
@@ -1798,5 +1789,14 @@
   "title": "treblest: 50 maps played",
   "text": "treblest reached 50 maps played",
   "link": "#/player/treblest"
+ },
+ {
+  "id": "milestone:briant:kills:500",
+  "type": "milestone",
+  "ts": 1793233789,
+  "date": "2026-10-29",
+  "title": "briant: 500 career kills",
+  "text": "briant reached 500 career kills",
+  "link": "#/player/briant"
  }
 ]
