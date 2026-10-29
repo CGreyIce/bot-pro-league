@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:kiokocheiko:maps:50",
-  "type": "milestone",
-  "ts": 1792601644,
-  "date": "2026-10-22",
-  "title": "KiokoCheiko: 50 maps played",
-  "text": "KiokoCheiko reached 50 maps played",
-  "link": "#/player/kiokocheiko"
- },
- {
   "id": "milestone:kiokocheiko:mvp:100",
   "type": "milestone",
   "ts": 1792601644,
@@ -1798,5 +1789,14 @@
   "title": "Eroxis: 50 maps played",
   "text": "Eroxis reached 50 maps played",
   "link": "#/player/eroxis"
+ },
+ {
+  "id": "milestone:briant:mvp:100",
+  "type": "milestone",
+  "ts": 1793282727,
+  "date": "2026-10-29",
+  "title": "briant: 100 MVP rounds",
+  "text": "briant reached 100 MVP rounds",
+  "link": "#/player/briant"
  }
 ]
