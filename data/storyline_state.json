@@ -93,8 +93,8 @@
   "neverland",
   "new-jade",
   "entity",
-  "aetherline",
   "lemon-tree",
+  "aetherline",
   "xplosiv",
   "degree",
   "flood-flashers",
@@ -145,28 +145,28 @@
  },
  "milestones": {
   "navikuun": {
-   "maps": 34,
-   "kills": 569,
+   "maps": 35,
+   "kills": 577,
    "mvp": 97
   },
   "zenn1sm": {
-   "maps": 35,
-   "kills": 542,
-   "mvp": 78
+   "maps": 36,
+   "kills": 554,
+   "mvp": 79
   },
   "potatodepresso": {
-   "maps": 37,
-   "kills": 517,
+   "maps": 38,
+   "kills": 524,
    "mvp": 70
   },
   "pearlim": {
-   "maps": 35,
-   "kills": 484,
-   "mvp": 58
+   "maps": 36,
+   "kills": 494,
+   "mvp": 60
   },
   "milkenut": {
-   "maps": 36,
-   "kills": 486,
+   "maps": 37,
+   "kills": 495,
    "mvp": 63
   },
   "solaonix": {
@@ -945,29 +945,29 @@
    "mvp": 90
   },
   "caturteer": {
-   "maps": 68,
-   "kills": 1175,
-   "mvp": 213
+   "maps": 69,
+   "kills": 1193,
+   "mvp": 217
   },
   "murasakibara-tsuki1": {
-   "maps": 52,
-   "kills": 841,
-   "mvp": 123
+   "maps": 53,
+   "kills": 853,
+   "mvp": 124
   },
   "le-pyrrhic": {
-   "maps": 48,
-   "kills": 665,
-   "mvp": 90
+   "maps": 49,
+   "kills": 678,
+   "mvp": 92
   },
   "daifuku-wu": {
-   "maps": 55,
-   "kills": 860,
-   "mvp": 102
+   "maps": 56,
+   "kills": 877,
+   "mvp": 106
   },
   "tif2": {
-   "maps": 48,
-   "kills": 639,
-   "mvp": 72
+   "maps": 49,
+   "kills": 649,
+   "mvp": 74
   },
   "capplecrow": {
    "maps": 43,
