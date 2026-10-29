@@ -863,8 +863,9 @@
      "round": 5,
      "a": "Defiant Order",
      "b": "Lunar Cadence",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1793284601
     },
     {
      "id": 28,
