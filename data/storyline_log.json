@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:tanykeat:kills:500",
-  "type": "milestone",
-  "ts": 1792612485,
-  "date": "2026-10-22",
-  "title": "tanykeat: 500 career kills",
-  "text": "tanykeat reached 500 career kills",
-  "link": "#/player/tanykeat"
- },
- {
-  "id": "milestone:evikuroneko:kills:500",
-  "type": "milestone",
-  "ts": 1792612485,
-  "date": "2026-10-22",
-  "title": "EviKuroneko: 500 career kills",
-  "text": "EviKuroneko reached 500 career kills",
-  "link": "#/player/evikuroneko"
- },
- {
   "id": "milestone:solec:mvp:100",
   "type": "milestone",
   "ts": 1792614600,
@@ -1798,5 +1780,23 @@
   "title": "TuxedoCat: 500 career kills",
   "text": "TuxedoCat reached 500 career kills",
   "link": "#/player/tuxedocat"
+ },
+ {
+  "id": "milestone:tachibana-hinano:mvp:100",
+  "type": "milestone",
+  "ts": 1793311219,
+  "date": "2026-10-30",
+  "title": "Tachibana Hinano: 100 MVP rounds",
+  "text": "Tachibana Hinano reached 100 MVP rounds",
+  "link": "#/player/tachibana-hinano"
+ },
+ {
+  "id": "milestone:kairi:mvp:100",
+  "type": "milestone",
+  "ts": 1793311219,
+  "date": "2026-10-30",
+  "title": "Kairi: 100 MVP rounds",
+  "text": "Kairi reached 100 MVP rounds",
+  "link": "#/player/kairi"
  }
 ]
