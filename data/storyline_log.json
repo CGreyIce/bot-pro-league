@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:djsalty:kills:500",
-  "type": "milestone",
-  "ts": 1792601644,
-  "date": "2026-10-22",
-  "title": "djsalty_: 500 career kills",
-  "text": "djsalty_ reached 500 career kills",
-  "link": "#/player/djsalty"
- },
- {
   "id": "milestone:kanarivt:maps:50",
   "type": "milestone",
   "ts": 1792601644,
@@ -1798,5 +1789,14 @@
   "title": "TiF2: 50 maps played",
   "text": "TiF2 reached 50 maps played",
   "link": "#/player/tif2"
+ },
+ {
+  "id": "milestone:raviaseir:mvp:150",
+  "type": "milestone",
+  "ts": 1793292366,
+  "date": "2026-10-30",
+  "title": "RaviasEir: 150 MVP rounds",
+  "text": "RaviasEir reached 150 MVP rounds",
+  "link": "#/player/raviaseir"
  }
 ]
