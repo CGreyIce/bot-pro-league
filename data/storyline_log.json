@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:redandb1ue:kills:500",
-  "type": "milestone",
-  "ts": 1792494289,
-  "date": "2026-10-20",
-  "title": "Redandb1ue: 500 career kills",
-  "text": "Redandb1ue reached 500 career kills",
-  "link": "#/player/redandb1ue"
- },
- {
-  "id": "milestone:higuvt:kills:500",
-  "type": "milestone",
-  "ts": 1792538142,
-  "date": "2026-10-21",
-  "title": "HiguVT: 500 career kills",
-  "text": "HiguVT reached 500 career kills",
-  "link": "#/player/higuvt"
- },
- {
   "id": "milestone:vixi:kills:500",
   "type": "milestone",
   "ts": 1792553721,
@@ -1798,5 +1780,23 @@
   "title": "koen: 50 maps played",
   "text": "koen reached 50 maps played",
   "link": "#/player/koen"
+ },
+ {
+  "id": "milestone:caturteer:mvp:200",
+  "type": "milestone",
+  "ts": 1793237599,
+  "date": "2026-10-29",
+  "title": "caturteer: 200 MVP rounds",
+  "text": "caturteer reached 200 MVP rounds",
+  "link": "#/player/caturteer"
+ },
+ {
+  "id": "milestone:niito:mvp:100",
+  "type": "milestone",
+  "ts": 1793237599,
+  "date": "2026-10-29",
+  "title": "Niito: 100 MVP rounds",
+  "text": "Niito reached 100 MVP rounds",
+  "link": "#/player/niito"
  }
 ]
