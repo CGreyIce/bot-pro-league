@@ -872,8 +872,9 @@
      "round": 5,
      "a": "Raven Song",
      "b": "Round Loss Bonus",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1793288855
     },
     {
      "id": 29,
