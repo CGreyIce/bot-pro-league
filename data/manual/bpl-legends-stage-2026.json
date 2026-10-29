@@ -800,8 +800,9 @@
      "round": 4,
      "a": "Sacred Raven",
      "b": "Defiant Order",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1793251239
     },
     {
      "id": 21,
