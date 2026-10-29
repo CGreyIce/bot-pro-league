@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:kanarivt:maps:50",
-  "type": "milestone",
-  "ts": 1792601644,
-  "date": "2026-10-22",
-  "title": "kanarivt: 50 maps played",
-  "text": "kanarivt reached 50 maps played",
-  "link": "#/player/kanarivt"
- },
- {
   "id": "milestone:keikatamori:mvp:100",
   "type": "milestone",
   "ts": 1792601644,
@@ -1798,5 +1789,14 @@
   "title": "RaviasEir: 150 MVP rounds",
   "text": "RaviasEir reached 150 MVP rounds",
   "link": "#/player/raviaseir"
+ },
+ {
+  "id": "milestone:yano-kuromu:maps:50",
+  "type": "milestone",
+  "ts": 1793293930,
+  "date": "2026-10-30",
+  "title": "Yano Kuromu: 50 maps played",
+  "text": "Yano Kuromu reached 50 maps played",
+  "link": "#/player/yano-kuromu"
  }
 ]

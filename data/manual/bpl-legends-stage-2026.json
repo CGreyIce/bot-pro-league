@@ -881,8 +881,9 @@
      "round": 5,
      "a": "Eiromancers",
      "b": "Thunderveil",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1793293927
     },
     {
      "id": 30,
