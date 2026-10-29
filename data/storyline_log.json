@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:higuvt:mvp:100",
-  "type": "milestone",
-  "ts": 1792601644,
-  "date": "2026-10-22",
-  "title": "HiguVT: 100 MVP rounds",
-  "text": "HiguVT reached 100 MVP rounds",
-  "link": "#/player/higuvt"
- },
- {
-  "id": "milestone:aurasinvt:maps:50",
-  "type": "milestone",
-  "ts": 1792601644,
-  "date": "2026-10-22",
-  "title": "AuraSinVT: 50 maps played",
-  "text": "AuraSinVT reached 50 maps played",
-  "link": "#/player/aurasinvt"
- },
- {
   "id": "milestone:aurasinvt:mvp:100",
   "type": "milestone",
   "ts": 1792601644,
@@ -1798,5 +1780,23 @@
   "title": "des506: 50 maps played",
   "text": "des506 reached 50 maps played",
   "link": "#/player/des506"
+ },
+ {
+  "id": "milestone:shiranami-ramune:mvp:100",
+  "type": "milestone",
+  "ts": 1793269238,
+  "date": "2026-10-29",
+  "title": "Shiranami Ramune: 100 MVP rounds",
+  "text": "Shiranami Ramune reached 100 MVP rounds",
+  "link": "#/player/shiranami-ramune"
+ },
+ {
+  "id": "milestone:eris-suzukami:maps:50",
+  "type": "milestone",
+  "ts": 1793269238,
+  "date": "2026-10-29",
+  "title": "Eris Suzukami: 50 maps played",
+  "text": "Eris Suzukami reached 50 maps played",
+  "link": "#/player/eris-suzukami"
  }
 ]
