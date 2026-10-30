@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:zarlard:kills:500",
-  "type": "milestone",
-  "ts": 1792635627,
-  "date": "2026-10-22",
-  "title": "Zarlard: 500 career kills",
-  "text": "Zarlard reached 500 career kills",
-  "link": "#/player/zarlard"
- },
- {
   "id": "milestone:lita:mvp:100",
   "type": "milestone",
   "ts": 1792642636,
@@ -1798,5 +1789,14 @@
   "title": "minMaXXer: 500 career kills",
   "text": "minMaXXer reached 500 career kills",
   "link": "#/player/minmaxxer"
+ },
+ {
+  "id": "milestone:psystra:kills:500",
+  "type": "milestone",
+  "ts": 1793329459,
+  "date": "2026-10-30",
+  "title": "PSYSTRA: 500 career kills",
+  "text": "PSYSTRA reached 500 career kills",
+  "link": "#/player/psystra"
  }
 ]
