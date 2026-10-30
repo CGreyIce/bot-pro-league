@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:kael:kills:500",
-  "type": "milestone",
-  "ts": 1792688780,
-  "date": "2026-10-23",
-  "title": "kael: 500 career kills",
-  "text": "kael reached 500 career kills",
-  "link": "#/player/kael"
- },
- {
   "id": "milestone:laavv:mvp:100",
   "type": "milestone",
   "ts": 1792691235,
@@ -1798,5 +1789,14 @@
   "title": "_kellyxleox_: 100 MVP rounds",
   "text": "_kellyxleox_ reached 100 MVP rounds",
   "link": "#/player/kellyxleox"
+ },
+ {
+  "id": "milestone:pattsuu:kills:500",
+  "type": "milestone",
+  "ts": 1793395069,
+  "date": "2026-10-31",
+  "title": "Pattsuu: 500 career kills",
+  "text": "Pattsuu reached 500 career kills",
+  "link": "#/player/pattsuu"
  }
 ]
