@@ -720,29 +720,29 @@
    "mvp": 55
   },
   "elfy-mint": {
-   "maps": 35,
-   "kills": 585,
-   "mvp": 87
+   "maps": 36,
+   "kills": 602,
+   "mvp": 90
   },
   "illus": {
-   "maps": 36,
-   "kills": 577,
-   "mvp": 91
+   "maps": 37,
+   "kills": 601,
+   "mvp": 95
   },
   "kairi": {
-   "maps": 45,
-   "kills": 680,
-   "mvp": 108
+   "maps": 46,
+   "kills": 692,
+   "mvp": 110
   },
   "declaration": {
-   "maps": 36,
-   "kills": 532,
+   "maps": 37,
+   "kills": 541,
    "mvp": 66
   },
   "zuann": {
-   "maps": 45,
-   "kills": 735,
-   "mvp": 98
+   "maps": 46,
+   "kills": 753,
+   "mvp": 100
   },
   "luminmochi": {
    "maps": 26,
@@ -1520,8 +1520,8 @@
    "mvp": 120
   },
   "psystra": {
-   "maps": 39,
-   "kills": 526,
+   "maps": 40,
+   "kills": 535,
    "mvp": 62
   },
   "ruamamiya": {
@@ -1550,9 +1550,9 @@
    "mvp": 90
   },
   "trpaki": {
-   "maps": 37,
-   "kills": 612,
-   "mvp": 99
+   "maps": 38,
+   "kills": 634,
+   "mvp": 104
   },
   "wushii": {
    "maps": 39,
@@ -1595,9 +1595,9 @@
    "mvp": 124
   },
   "aleaka": {
-   "maps": 38,
-   "kills": 555,
-   "mvp": 66
+   "maps": 39,
+   "kills": 566,
+   "mvp": 68
   },
   "karoni": {
    "maps": 47,
@@ -1765,9 +1765,9 @@
    "mvp": 55
   },
   "hanabusa-lisa": {
-   "maps": 27,
-   "kills": 484,
-   "mvp": 77
+   "maps": 28,
+   "kills": 506,
+   "mvp": 82
   },
   "jira-jisaki": {
    "maps": 46,
@@ -2235,9 +2235,9 @@
    "mvp": 22
   },
   "diabet0": {
-   "maps": 11,
-   "kills": 206,
-   "mvp": 20
+   "maps": 12,
+   "kills": 219,
+   "mvp": 21
   },
   "itzfrenzy": {
    "maps": 13,

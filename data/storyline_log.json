@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:d-chong:kills:500",
-  "type": "milestone",
-  "ts": 1792646487,
-  "date": "2026-10-22",
-  "title": "d.chong: 500 career kills",
-  "text": "d.chong reached 500 career kills",
-  "link": "#/player/d-chong"
- },
- {
-  "id": "milestone:kai:kills:500",
-  "type": "milestone",
-  "ts": 1792648467,
-  "date": "2026-10-22",
-  "title": "Kai: 500 career kills",
-  "text": "Kai reached 500 career kills",
-  "link": "#/player/kai"
- },
- {
-  "id": "milestone:akanersvt:maps:50",
-  "type": "milestone",
-  "ts": 1792651992,
-  "date": "2026-10-22",
-  "title": "AkanersVT: 50 maps played",
-  "text": "AkanersVT reached 50 maps played",
-  "link": "#/player/akanersvt"
- },
- {
   "id": "milestone:nyuii:mvp:100",
   "type": "milestone",
   "ts": 1792654047,
@@ -1798,5 +1771,32 @@
   "title": "BluBEAR: 500 career kills",
   "text": "BluBEAR reached 500 career kills",
   "link": "#/player/blubear"
+ },
+ {
+  "id": "milestone:zuann:mvp:100",
+  "type": "milestone",
+  "ts": 1793343427,
+  "date": "2026-10-30",
+  "title": "zuann_: 100 MVP rounds",
+  "text": "zuann_ reached 100 MVP rounds",
+  "link": "#/player/zuann"
+ },
+ {
+  "id": "milestone:trpaki:mvp:100",
+  "type": "milestone",
+  "ts": 1793343427,
+  "date": "2026-10-30",
+  "title": "TRPaki: 100 MVP rounds",
+  "text": "TRPaki reached 100 MVP rounds",
+  "link": "#/player/trpaki"
+ },
+ {
+  "id": "milestone:hanabusa-lisa:kills:500",
+  "type": "milestone",
+  "ts": 1793343427,
+  "date": "2026-10-30",
+  "title": "Hanabusa Lisa: 500 career kills",
+  "text": "Hanabusa Lisa reached 500 career kills",
+  "link": "#/player/hanabusa-lisa"
  }
 ]
