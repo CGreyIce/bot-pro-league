@@ -93,8 +93,8 @@
   "neverland",
   "new-jade",
   "entity",
-  "lemon-tree",
   "aetherline",
+  "lemon-tree",
   "xplosiv",
   "degree",
   "flood-flashers",
@@ -170,28 +170,28 @@
    "mvp": 68
   },
   "solaonix": {
-   "maps": 31,
-   "kills": 526,
-   "mvp": 75
+   "maps": 32,
+   "kills": 541,
+   "mvp": 78
   },
   "dumbo": {
-   "maps": 25,
-   "kills": 392,
-   "mvp": 64
+   "maps": 26,
+   "kills": 408,
+   "mvp": 66
   },
   "tortillaroll": {
-   "maps": 18,
-   "kills": 267,
+   "maps": 19,
+   "kills": 273,
    "mvp": 40
   },
   "kisaragi-ren": {
-   "maps": 19,
-   "kills": 284,
+   "maps": 20,
+   "kills": 289,
    "mvp": 36
   },
   "angelxaim": {
-   "maps": 18,
-   "kills": 209,
+   "maps": 19,
+   "kills": 214,
    "mvp": 31
   },
   "sheep": {
@@ -1520,9 +1520,9 @@
    "mvp": 120
   },
   "psystra": {
-   "maps": 36,
-   "kills": 463,
-   "mvp": 53
+   "maps": 37,
+   "kills": 482,
+   "mvp": 56
   },
   "ruamamiya": {
    "maps": 35,
@@ -1550,9 +1550,9 @@
    "mvp": 90
   },
   "trpaki": {
-   "maps": 34,
-   "kills": 558,
-   "mvp": 91
+   "maps": 35,
+   "kills": 568,
+   "mvp": 93
   },
   "wushii": {
    "maps": 39,
@@ -1595,9 +1595,9 @@
    "mvp": 124
   },
   "aleaka": {
-   "maps": 35,
-   "kills": 505,
-   "mvp": 58
+   "maps": 36,
+   "kills": 520,
+   "mvp": 60
   },
   "karoni": {
    "maps": 47,
@@ -1765,9 +1765,9 @@
    "mvp": 55
   },
   "hanabusa-lisa": {
-   "maps": 24,
-   "kills": 418,
-   "mvp": 66
+   "maps": 25,
+   "kills": 435,
+   "mvp": 69
   },
   "jira-jisaki": {
    "maps": 46,
@@ -2235,9 +2235,9 @@
    "mvp": 22
   },
   "diabet0": {
-   "maps": 8,
-   "kills": 152,
-   "mvp": 13
+   "maps": 9,
+   "kills": 171,
+   "mvp": 16
   },
   "itzfrenzy": {
    "maps": 13,
