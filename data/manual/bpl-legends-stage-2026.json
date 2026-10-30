@@ -1064,8 +1064,9 @@
      "round": 3,
      "a": "Wraithborne",
      "b": "Nightfang Covenant",
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1793396439
     },
     {
      "id": 17,
