@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:mizukiimoon:kills:1000",
-  "type": "milestone",
-  "ts": 1792669978,
-  "date": "2026-10-22",
-  "title": "MizukiiMoon: 1000 career kills",
-  "text": "MizukiiMoon reached 1000 career kills",
-  "link": "#/player/mizukiimoon"
- },
- {
-  "id": "milestone:milliannavt:mvp:100",
-  "type": "milestone",
-  "ts": 1792669978,
-  "date": "2026-10-22",
-  "title": "MilliannaVT: 100 MVP rounds",
-  "text": "MilliannaVT reached 100 MVP rounds",
-  "link": "#/player/milliannavt"
- },
- {
   "id": "milestone:applezxc:kills:500",
   "type": "milestone",
   "ts": 1792672474,
@@ -1798,5 +1780,23 @@
   "title": "WO4TK: 500 career kills",
   "text": "WO4TK reached 500 career kills",
   "link": "#/player/wo4tk"
+ },
+ {
+  "id": "milestone:kn:kills:500",
+  "type": "milestone",
+  "ts": 1793365110,
+  "date": "2026-10-30",
+  "title": "kn: 500 career kills",
+  "text": "kn reached 500 career kills",
+  "link": "#/player/kn"
+ },
+ {
+  "id": "milestone:arya-kuroha:kills:500",
+  "type": "milestone",
+  "ts": 1793365110,
+  "date": "2026-10-30",
+  "title": "Arya Kuroha: 500 career kills",
+  "text": "Arya Kuroha reached 500 career kills",
+  "link": "#/player/arya-kuroha"
  }
 ]
