@@ -1028,13 +1028,63 @@
      "round": 2,
      "a": "Masmark",
      "b": "Snowbell Syndicate",
+     "sa": 1,
+     "sb": 2,
+     "ts": 1793369384
+    },
+    {
+     "id": 13,
+     "round": 3,
+     "a": "99Lives",
+     "b": "Setting Sun",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 14,
+     "round": 3,
+     "a": "Kiedz",
+     "b": "Aspire",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 15,
+     "round": 3,
+     "a": "Unforgettable",
+     "b": "Hanabi Union",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 16,
+     "round": 3,
+     "a": "Wraithborne",
+     "b": "Nightfang Covenant",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 17,
+     "round": 3,
+     "a": "Snowbell Syndicate",
+     "b": "5PERCENT",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 18,
+     "round": 3,
+     "a": "Astral Bloom",
+     "b": "Masmark",
      "sa": null,
      "sb": null
     }
    ],
    "roundTitles": {
     "1": "Round 1",
-    "2": "Round 2"
+    "2": "Round 2",
+    "3": "Round 3"
    },
    "rounds": 5
   }
