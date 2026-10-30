@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:airizu:kills:500",
-  "type": "milestone",
-  "ts": 1792633491,
-  "date": "2026-10-22",
-  "title": "Airizu: 500 career kills",
-  "text": "Airizu reached 500 career kills",
-  "link": "#/player/airizu"
- },
- {
   "id": "milestone:zarlard:kills:500",
   "type": "milestone",
   "ts": 1792635627,
@@ -1798,5 +1789,14 @@
   "title": "Ginjo Saine: 500 career kills",
   "text": "Ginjo Saine reached 500 career kills",
   "link": "#/player/ginjo-saine"
+ },
+ {
+  "id": "milestone:minmaxxer:kills:500",
+  "type": "milestone",
+  "ts": 1793320834,
+  "date": "2026-10-30",
+  "title": "minMaXXer: 500 career kills",
+  "text": "minMaXXer reached 500 career kills",
+  "link": "#/player/minmaxxer"
  }
 ]

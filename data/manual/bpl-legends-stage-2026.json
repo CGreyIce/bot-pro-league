@@ -956,8 +956,9 @@
      "round": 1,
      "a": "99Lives",
      "b": "Snowbell Syndicate",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1793320831
     },
     {
      "id": 5,
