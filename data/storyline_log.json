@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:ochakokiyomi:kills:500",
-  "type": "milestone",
-  "ts": 1792683849,
-  "date": "2026-10-22",
-  "title": "OchakoKiyomi: 500 career kills",
-  "text": "OchakoKiyomi reached 500 career kills",
-  "link": "#/player/ochakokiyomi"
- },
- {
-  "id": "milestone:spinafex:kills:500",
-  "type": "milestone",
-  "ts": 1792683849,
-  "date": "2026-10-22",
-  "title": "Spinafex: 500 career kills",
-  "text": "Spinafex reached 500 career kills",
-  "link": "#/player/spinafex"
- },
- {
-  "id": "milestone:solec:maps:50",
-  "type": "milestone",
-  "ts": 1792686445,
-  "date": "2026-10-23",
-  "title": "Solec: 50 maps played",
-  "text": "Solec reached 50 maps played",
-  "link": "#/player/solec"
- },
- {
   "id": "milestone:lita:maps:50",
   "type": "milestone",
   "ts": 1792686445,
@@ -1798,5 +1771,32 @@
   "title": "caarrietan: 500 career kills",
   "text": "caarrietan reached 500 career kills",
   "link": "#/player/caarrietan"
+ },
+ {
+  "id": "milestone:elfy-mint:mvp:100",
+  "type": "milestone",
+  "ts": 1793385246,
+  "date": "2026-10-31",
+  "title": "Elfy Mint: 100 MVP rounds",
+  "text": "Elfy Mint reached 100 MVP rounds",
+  "link": "#/player/elfy-mint"
+ },
+ {
+  "id": "milestone:kairi:maps:50",
+  "type": "milestone",
+  "ts": 1793385246,
+  "date": "2026-10-31",
+  "title": "Kairi: 50 maps played",
+  "text": "Kairi reached 50 maps played",
+  "link": "#/player/kairi"
+ },
+ {
+  "id": "milestone:zuann:maps:50",
+  "type": "milestone",
+  "ts": 1793385246,
+  "date": "2026-10-31",
+  "title": "zuann_: 50 maps played",
+  "text": "zuann_ reached 50 maps played",
+  "link": "#/player/zuann"
  }
 ]
