@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:perk:kills:500",
-  "type": "milestone",
-  "ts": 1792672474,
-  "date": "2026-10-22",
-  "title": "perk: 500 career kills",
-  "text": "perk reached 500 career kills",
-  "link": "#/player/perk"
- },
- {
   "id": "milestone:notorious47:kills:500",
   "type": "milestone",
   "ts": 1792679468,
@@ -1798,5 +1789,14 @@
   "title": "FumishiroYummy: 50 maps played",
   "text": "FumishiroYummy reached 50 maps played",
   "link": "#/player/fumishiroyummy"
+ },
+ {
+  "id": "milestone:m0wmeow:kills:500",
+  "type": "milestone",
+  "ts": 1793374228,
+  "date": "2026-10-30",
+  "title": "m0wmeow: 500 career kills",
+  "text": "m0wmeow reached 500 career kills",
+  "link": "#/player/m0wmeow"
  }
 ]
