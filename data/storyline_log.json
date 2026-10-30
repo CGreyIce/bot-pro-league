@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:teckiyo:kills:500",
-  "type": "milestone",
-  "ts": 1792683849,
-  "date": "2026-10-22",
-  "title": "teckiyo: 500 career kills",
-  "text": "teckiyo reached 500 career kills",
-  "link": "#/player/teckiyo"
- },
- {
   "id": "milestone:ochakokiyomi:kills:500",
   "type": "milestone",
   "ts": 1792683849,
@@ -1798,5 +1789,14 @@
   "title": "zhiweiingg: 100 MVP rounds",
   "text": "zhiweiingg reached 100 MVP rounds",
   "link": "#/player/zhiweiingg"
+ },
+ {
+  "id": "milestone:caarrietan:kills:500",
+  "type": "milestone",
+  "ts": 1793382475,
+  "date": "2026-10-31",
+  "title": "caarrietan: 500 career kills",
+  "text": "caarrietan reached 500 career kills",
+  "link": "#/player/caarrietan"
  }
 ]
