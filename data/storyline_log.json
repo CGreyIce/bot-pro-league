@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:applezxc:kills:500",
-  "type": "milestone",
-  "ts": 1792672474,
-  "date": "2026-10-22",
-  "title": "Applezxc: 500 career kills",
-  "text": "Applezxc reached 500 career kills",
-  "link": "#/player/applezxc"
- },
- {
   "id": "milestone:perk:kills:500",
   "type": "milestone",
   "ts": 1792672474,
@@ -1798,5 +1789,14 @@
   "title": "Arya Kuroha: 500 career kills",
   "text": "Arya Kuroha reached 500 career kills",
   "link": "#/player/arya-kuroha"
+ },
+ {
+  "id": "milestone:fumishiroyummy:maps:50",
+  "type": "milestone",
+  "ts": 1793367039,
+  "date": "2026-10-30",
+  "title": "FumishiroYummy: 50 maps played",
+  "text": "FumishiroYummy reached 50 maps played",
+  "link": "#/player/fumishiroyummy"
  }
 ]
