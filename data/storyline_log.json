@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:xueqiii:mvp:100",
-  "type": "milestone",
-  "ts": 1792656986,
-  "date": "2026-10-22",
-  "title": "XueQiii: 100 MVP rounds",
-  "text": "XueQiii reached 100 MVP rounds",
-  "link": "#/player/xueqiii"
- },
- {
   "id": "milestone:marsinss:kills:500",
   "type": "milestone",
   "ts": 1792661015,
@@ -1798,5 +1789,14 @@
   "title": "jaelyo: 100 MVP rounds",
   "text": "jaelyo reached 100 MVP rounds",
   "link": "#/player/jaelyo"
+ },
+ {
+  "id": "milestone:hanarisu:kills:500",
+  "type": "milestone",
+  "ts": 1793357188,
+  "date": "2026-10-30",
+  "title": "Hanarisu: 500 career kills",
+  "text": "Hanarisu reached 500 career kills",
+  "link": "#/player/hanarisu"
  }
 ]
