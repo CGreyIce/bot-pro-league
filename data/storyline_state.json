@@ -119,8 +119,8 @@
   "prism-divide",
   "caelum-scala",
   "diamondones",
-  "team-neverseen",
   "5percent",
+  "team-neverseen",
   "unforgettable",
   "fruit-basket",
   "mourningstar",
@@ -720,29 +720,29 @@
    "mvp": 55
   },
   "elfy-mint": {
-   "maps": 37,
-   "kills": 620,
-   "mvp": 93
+   "maps": 38,
+   "kills": 642,
+   "mvp": 97
   },
   "illus": {
-   "maps": 38,
-   "kills": 621,
-   "mvp": 100
+   "maps": 39,
+   "kills": 637,
+   "mvp": 102
   },
   "kairi": {
-   "maps": 47,
-   "kills": 705,
-   "mvp": 111
+   "maps": 48,
+   "kills": 719,
+   "mvp": 114
   },
   "declaration": {
-   "maps": 38,
-   "kills": 552,
-   "mvp": 67
+   "maps": 39,
+   "kills": 568,
+   "mvp": 69
   },
   "zuann": {
-   "maps": 47,
-   "kills": 771,
-   "mvp": 103
+   "maps": 48,
+   "kills": 786,
+   "mvp": 105
   },
   "luminmochi": {
    "maps": 26,
@@ -1520,9 +1520,9 @@
    "mvp": 120
   },
   "psystra": {
-   "maps": 41,
-   "kills": 550,
-   "mvp": 64
+   "maps": 42,
+   "kills": 564,
+   "mvp": 67
   },
   "ruamamiya": {
    "maps": 35,
@@ -1550,9 +1550,9 @@
    "mvp": 90
   },
   "trpaki": {
-   "maps": 39,
-   "kills": 643,
-   "mvp": 105
+   "maps": 40,
+   "kills": 655,
+   "mvp": 106
   },
   "wushii": {
    "maps": 39,
@@ -1595,9 +1595,9 @@
    "mvp": 124
   },
   "aleaka": {
-   "maps": 40,
-   "kills": 576,
-   "mvp": 69
+   "maps": 41,
+   "kills": 589,
+   "mvp": 70
   },
   "karoni": {
    "maps": 47,
@@ -1765,8 +1765,8 @@
    "mvp": 55
   },
   "hanabusa-lisa": {
-   "maps": 29,
-   "kills": 517,
+   "maps": 30,
+   "kills": 532,
    "mvp": 83
   },
   "jira-jisaki": {
@@ -2235,9 +2235,9 @@
    "mvp": 22
   },
   "diabet0": {
-   "maps": 13,
-   "kills": 232,
-   "mvp": 23
+   "maps": 14,
+   "kills": 250,
+   "mvp": 28
   },
   "itzfrenzy": {
    "maps": 13,
