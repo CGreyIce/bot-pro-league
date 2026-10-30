@@ -1001,8 +1001,9 @@
      "round": 2,
      "a": "Nightfang Covenant",
      "b": "Setting Sun",
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1793354276
     },
     {
      "id": 10,
