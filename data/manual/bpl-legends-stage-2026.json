@@ -983,8 +983,9 @@
      "round": 2,
      "a": "99Lives",
      "b": "Wraithborne",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1793341366
     },
     {
      "id": 8,

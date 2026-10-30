@@ -93,8 +93,8 @@
   "neverland",
   "new-jade",
   "entity",
-  "aetherline",
   "lemon-tree",
+  "aetherline",
   "xplosiv",
   "degree",
   "flood-flashers",
@@ -119,8 +119,8 @@
   "prism-divide",
   "caelum-scala",
   "diamondones",
-  "5percent",
   "team-neverseen",
+  "5percent",
   "unforgettable",
   "fruit-basket",
   "mourningstar",
@@ -195,29 +195,29 @@
    "mvp": 38
   },
   "sheep": {
-   "maps": 32,
-   "kills": 461,
-   "mvp": 70
+   "maps": 33,
+   "kills": 474,
+   "mvp": 71
   },
   "y1jingg": {
-   "maps": 34,
-   "kills": 579,
-   "mvp": 79
+   "maps": 35,
+   "kills": 592,
+   "mvp": 82
   },
   "minmaxxer": {
-   "maps": 34,
-   "kills": 533,
-   "mvp": 81
+   "maps": 35,
+   "kills": 553,
+   "mvp": 84
   },
   "m0wmeow": {
-   "maps": 31,
-   "kills": 471,
-   "mvp": 79
+   "maps": 32,
+   "kills": 490,
+   "mvp": 80
   },
   "blubear": {
-   "maps": 34,
-   "kills": 490,
-   "mvp": 66
+   "maps": 35,
+   "kills": 507,
+   "mvp": 71
   },
   "marsinss": {
    "maps": 40,
@@ -1505,8 +1505,8 @@
    "mvp": 114
   },
   "prophocy": {
-   "maps": 51,
-   "kills": 651,
+   "maps": 52,
+   "kills": 661,
    "mvp": 70
   },
   "yakumo-beni": {
@@ -1790,9 +1790,9 @@
    "mvp": 71
   },
   "pattsuu": {
-   "maps": 30,
-   "kills": 482,
-   "mvp": 71
+   "maps": 31,
+   "kills": 494,
+   "mvp": 75
   },
   "morisottovt": {
    "maps": 27,
@@ -1845,9 +1845,9 @@
    "mvp": 69
   },
   "voidnw": {
-   "maps": 29,
-   "kills": 455,
-   "mvp": 80
+   "maps": 30,
+   "kills": 466,
+   "mvp": 81
   },
   "michimouto": {
    "maps": 24,
@@ -1875,9 +1875,9 @@
    "mvp": 65
   },
   "rattecs": {
-   "maps": 25,
-   "kills": 318,
-   "mvp": 40
+   "maps": 26,
+   "kills": 333,
+   "mvp": 41
   },
   "amayui-moka": {
    "maps": 38,
@@ -2025,9 +2025,9 @@
    "mvp": 29
   },
   "rihsuri": {
-   "maps": 20,
-   "kills": 320,
-   "mvp": 48
+   "maps": 21,
+   "kills": 339,
+   "mvp": 50
   },
   "codedecho": {
    "maps": 28,

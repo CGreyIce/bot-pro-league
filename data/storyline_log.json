@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:lita:mvp:100",
-  "type": "milestone",
-  "ts": 1792642636,
-  "date": "2026-10-22",
-  "title": "LITA: 100 MVP rounds",
-  "text": "LITA reached 100 MVP rounds",
-  "link": "#/player/lita"
- },
- {
   "id": "milestone:d-chong:kills:500",
   "type": "milestone",
   "ts": 1792646487,
@@ -1798,5 +1789,14 @@
   "title": "PSYSTRA: 500 career kills",
   "text": "PSYSTRA reached 500 career kills",
   "link": "#/player/psystra"
+ },
+ {
+  "id": "milestone:blubear:kills:500",
+  "type": "milestone",
+  "ts": 1793341369,
+  "date": "2026-10-30",
+  "title": "BluBEAR: 500 career kills",
+  "text": "BluBEAR reached 500 career kills",
+  "link": "#/player/blubear"
  }
 ]
