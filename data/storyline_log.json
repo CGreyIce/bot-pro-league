@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:marsinss:kills:500",
-  "type": "milestone",
-  "ts": 1792661015,
-  "date": "2026-10-22",
-  "title": "Marsinss: 500 career kills",
-  "text": "Marsinss reached 500 career kills",
-  "link": "#/player/marsinss"
- },
- {
   "id": "milestone:mizukiimoon:kills:1000",
   "type": "milestone",
   "ts": 1792669978,
@@ -1798,5 +1789,14 @@
   "title": "Hanarisu: 500 career kills",
   "text": "Hanarisu reached 500 career kills",
   "link": "#/player/hanarisu"
+ },
+ {
+  "id": "milestone:wo4tk:kills:500",
+  "type": "milestone",
+  "ts": 1793362923,
+  "date": "2026-10-30",
+  "title": "WO4TK: 500 career kills",
+  "text": "WO4TK reached 500 career kills",
+  "link": "#/player/wo4tk"
  }
 ]
