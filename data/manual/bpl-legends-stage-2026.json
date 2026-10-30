@@ -1037,8 +1037,9 @@
      "round": 3,
      "a": "99Lives",
      "b": "Setting Sun",
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1793379531
     },
     {
      "id": 14,

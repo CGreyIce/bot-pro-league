@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:notorious47:kills:500",
-  "type": "milestone",
-  "ts": 1792679468,
-  "date": "2026-10-22",
-  "title": "NOTORIOUS47: 500 career kills",
-  "text": "NOTORIOUS47 reached 500 career kills",
-  "link": "#/player/notorious47"
- },
- {
-  "id": "milestone:aizawa-ema:kills:500",
-  "type": "milestone",
-  "ts": 1792679468,
-  "date": "2026-10-22",
-  "title": "Aizawa Ema: 500 career kills",
-  "text": "Aizawa Ema reached 500 career kills",
-  "link": "#/player/aizawa-ema"
- },
- {
-  "id": "milestone:skuxxninja44:kills:500",
-  "type": "milestone",
-  "ts": 1792683849,
-  "date": "2026-10-22",
-  "title": "SkuxxNinja44: 500 career kills",
-  "text": "SkuxxNinja44 reached 500 career kills",
-  "link": "#/player/skuxxninja44"
- },
- {
   "id": "milestone:teckiyo:kills:500",
   "type": "milestone",
   "ts": 1792683849,
@@ -1798,5 +1771,32 @@
   "title": "m0wmeow: 500 career kills",
   "text": "m0wmeow reached 500 career kills",
   "link": "#/player/m0wmeow"
+ },
+ {
+  "id": "milestone:sheep:kills:500",
+  "type": "milestone",
+  "ts": 1793379534,
+  "date": "2026-10-31",
+  "title": "Sheep: 500 career kills",
+  "text": "Sheep reached 500 career kills",
+  "link": "#/player/sheep"
+ },
+ {
+  "id": "milestone:uzuhii:mvp:100",
+  "type": "milestone",
+  "ts": 1793379534,
+  "date": "2026-10-31",
+  "title": "Uzuhii: 100 MVP rounds",
+  "text": "Uzuhii reached 100 MVP rounds",
+  "link": "#/player/uzuhii"
+ },
+ {
+  "id": "milestone:zhiweiingg:mvp:100",
+  "type": "milestone",
+  "ts": 1793379534,
+  "date": "2026-10-31",
+  "title": "zhiweiingg: 100 MVP rounds",
+  "text": "zhiweiingg reached 100 MVP rounds",
+  "link": "#/player/zhiweiingg"
  }
 ]
