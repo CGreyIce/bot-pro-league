@@ -1073,8 +1073,9 @@
      "round": 3,
      "a": "Snowbell Syndicate",
      "b": "5PERCENT",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1793403278
     },
     {
      "id": 18,
