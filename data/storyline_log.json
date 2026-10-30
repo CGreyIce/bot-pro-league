@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:laavv:mvp:100",
-  "type": "milestone",
-  "ts": 1792691235,
-  "date": "2026-10-23",
-  "title": "laavv._: 100 MVP rounds",
-  "text": "laavv._ reached 100 MVP rounds",
-  "link": "#/player/laavv"
- },
- {
   "id": "milestone:nattyuwus:mvp:100",
   "type": "milestone",
   "ts": 1792691235,
@@ -1798,5 +1789,14 @@
   "title": "Pattsuu: 500 career kills",
   "text": "Pattsuu reached 500 career kills",
   "link": "#/player/pattsuu"
+ },
+ {
+  "id": "milestone:dumbo:kills:500",
+  "type": "milestone",
+  "ts": 1793398975,
+  "date": "2026-10-31",
+  "title": "dumbo: 500 career kills",
+  "text": "dumbo reached 500 career kills",
+  "link": "#/player/dumbo"
  }
 ]
