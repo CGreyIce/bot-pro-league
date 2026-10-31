@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:icington-the-third:kills:500",
-  "type": "milestone",
-  "ts": 1792744664,
-  "date": "2026-10-23",
-  "title": "Icington the third: 500 career kills",
-  "text": "Icington the third reached 500 career kills",
-  "link": "#/player/icington-the-third"
- },
- {
-  "id": "milestone:chreyll:maps:50",
-  "type": "milestone",
-  "ts": 1792748713,
-  "date": "2026-10-23",
-  "title": "chreyll: 50 maps played",
-  "text": "chreyll reached 50 maps played",
-  "link": "#/player/chreyll"
- },
- {
-  "id": "milestone:laavv:maps:50",
-  "type": "milestone",
-  "ts": 1792748713,
-  "date": "2026-10-23",
-  "title": "laavv._: 50 maps played",
-  "text": "laavv._ reached 50 maps played",
-  "link": "#/player/laavv"
- },
- {
   "id": "milestone:infinitebreaker:maps:50",
   "type": "milestone",
   "ts": 1792748713,
@@ -1798,5 +1771,32 @@
   "title": "minMaXXer: 100 MVP rounds",
   "text": "minMaXXer reached 100 MVP rounds",
   "link": "#/player/minmaxxer"
+ },
+ {
+  "id": "milestone:fumishiroyummy:mvp:150",
+  "type": "milestone",
+  "ts": 1793444586,
+  "date": "2026-10-31",
+  "title": "FumishiroYummy: 150 MVP rounds",
+  "text": "FumishiroYummy reached 150 MVP rounds",
+  "link": "#/player/fumishiroyummy"
+ },
+ {
+  "id": "milestone:kiokocheiko:kills:1000",
+  "type": "milestone",
+  "ts": 1793444586,
+  "date": "2026-10-31",
+  "title": "KiokoCheiko: 1000 career kills",
+  "text": "KiokoCheiko reached 1000 career kills",
+  "link": "#/player/kiokocheiko"
+ },
+ {
+  "id": "milestone:yxie:kills:500",
+  "type": "milestone",
+  "ts": 1793444586,
+  "date": "2026-10-31",
+  "title": "yxie: 500 career kills",
+  "text": "yxie reached 500 career kills",
+  "link": "#/player/yxie"
  }
 ]
