@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:tanykeat:mvp:100",
-  "type": "milestone",
-  "ts": 1792754892,
-  "date": "2026-10-23",
-  "title": "tanykeat: 100 MVP rounds",
-  "text": "tanykeat reached 100 MVP rounds",
-  "link": "#/player/tanykeat"
- },
- {
   "id": "milestone:zarlard:mvp:100",
   "type": "milestone",
   "ts": 1792769097,
@@ -1798,5 +1789,14 @@
   "title": "zhiweiingg: 50 maps played",
   "text": "zhiweiingg reached 50 maps played",
   "link": "#/player/zhiweiingg"
+ },
+ {
+  "id": "milestone:yumeno-akari:kills:500",
+  "type": "milestone",
+  "ts": 1793477259,
+  "date": "2026-11-01",
+  "title": "Yumeno Akari: 500 career kills",
+  "text": "Yumeno Akari reached 500 career kills",
+  "link": "#/player/yumeno-akari"
  }
 ]
