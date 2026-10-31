@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:infinitebreaker:maps:50",
-  "type": "milestone",
-  "ts": 1792748713,
-  "date": "2026-10-23",
-  "title": "InfiniteBreaker: 50 maps played",
-  "text": "InfiniteBreaker reached 50 maps played",
-  "link": "#/player/infinitebreaker"
- },
- {
   "id": "milestone:infinitebreaker:mvp:100",
   "type": "milestone",
   "ts": 1792748713,
@@ -1798,5 +1789,14 @@
   "title": "yxie: 500 career kills",
   "text": "yxie reached 500 career kills",
   "link": "#/player/yxie"
+ },
+ {
+  "id": "milestone:voidnw:kills:500",
+  "type": "milestone",
+  "ts": 1793453271,
+  "date": "2026-10-31",
+  "title": "voidnw: 500 career kills",
+  "text": "voidnw reached 500 career kills",
+  "link": "#/player/voidnw"
  }
 ]
