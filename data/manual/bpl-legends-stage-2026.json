@@ -1109,8 +1109,9 @@
      "round": 4,
      "a": "Nightfang Covenant",
      "b": "Snowbell Syndicate",
-     "sa": null,
-     "sb": null
+     "sa": 1,
+     "sb": 2,
+     "ts": 1793447674
     },
     {
      "id": 22,
