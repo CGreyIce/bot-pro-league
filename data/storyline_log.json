@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:xyrren:kills:500",
-  "type": "milestone",
-  "ts": 1792693214,
-  "date": "2026-10-23",
-  "title": "Xyrren: 500 career kills",
-  "text": "Xyrren reached 500 career kills",
-  "link": "#/player/xyrren"
- },
- {
-  "id": "milestone:d-chong:mvp:100",
-  "type": "milestone",
-  "ts": 1792697390,
-  "date": "2026-10-23",
-  "title": "d.chong: 100 MVP rounds",
-  "text": "d.chong reached 100 MVP rounds",
-  "link": "#/player/d-chong"
- },
- {
-  "id": "milestone:hikopiko:kills:500",
-  "type": "milestone",
-  "ts": 1792697390,
-  "date": "2026-10-23",
-  "title": "hikopiko_: 500 career kills",
-  "text": "hikopiko_ reached 500 career kills",
-  "link": "#/player/hikopiko"
- },
- {
   "id": "milestone:kyyltn:maps:50",
   "type": "milestone",
   "ts": 1792705589,
@@ -1798,5 +1771,32 @@
   "title": "Solaonix: 100 MVP rounds",
   "text": "Solaonix reached 100 MVP rounds",
   "link": "#/player/solaonix"
+ },
+ {
+  "id": "milestone:tachibana-hinano:maps:50",
+  "type": "milestone",
+  "ts": 1793408851,
+  "date": "2026-10-31",
+  "title": "Tachibana Hinano: 50 maps played",
+  "text": "Tachibana Hinano reached 50 maps played",
+  "link": "#/player/tachibana-hinano"
+ },
+ {
+  "id": "milestone:xyrolizea:kills:500",
+  "type": "milestone",
+  "ts": 1793408851,
+  "date": "2026-10-31",
+  "title": "Xyrolizea: 500 career kills",
+  "text": "Xyrolizea reached 500 career kills",
+  "link": "#/player/xyrolizea"
+ },
+ {
+  "id": "milestone:kogara-toto:mvp:100",
+  "type": "milestone",
+  "ts": 1793408851,
+  "date": "2026-10-31",
+  "title": "Kogara Toto: 100 MVP rounds",
+  "text": "Kogara Toto reached 100 MVP rounds",
+  "link": "#/player/kogara-toto"
  }
 ]
