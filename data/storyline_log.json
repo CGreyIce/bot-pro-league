@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:thehidz:kills:500",
-  "type": "milestone",
-  "ts": 1792707406,
-  "date": "2026-10-23",
-  "title": "thehidz: 500 career kills",
-  "text": "thehidz reached 500 career kills",
-  "link": "#/player/thehidz"
- },
- {
-  "id": "milestone:nicsman:kills:500",
-  "type": "milestone",
-  "ts": 1792714815,
-  "date": "2026-10-23",
-  "title": "nicsman: 500 career kills",
-  "text": "nicsman reached 500 career kills",
-  "link": "#/player/nicsman"
- },
- {
   "id": "milestone:codiant:mvp:150",
   "type": "milestone",
   "ts": 1792742564,
@@ -1798,5 +1780,23 @@
   "title": "Ginjo Saine: 100 MVP rounds",
   "text": "Ginjo Saine reached 100 MVP rounds",
   "link": "#/player/ginjo-saine"
+ },
+ {
+  "id": "milestone:y1jingg:mvp:100",
+  "type": "milestone",
+  "ts": 1793436382,
+  "date": "2026-10-31",
+  "title": "y1jingg: 100 MVP rounds",
+  "text": "y1jingg reached 100 MVP rounds",
+  "link": "#/player/y1jingg"
+ },
+ {
+  "id": "milestone:dudriduo:kills:500",
+  "type": "milestone",
+  "ts": 1793436382,
+  "date": "2026-10-31",
+  "title": "dudriduo_: 500 career kills",
+  "text": "dudriduo_ reached 500 career kills",
+  "link": "#/player/dudriduo"
  }
 ]
