@@ -1172,8 +1172,9 @@
      "round": 5,
      "a": "Nightfang Covenant",
      "b": "Aspire",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1793483483
     },
     {
      "id": 29,
