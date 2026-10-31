@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:kyyltn:maps:50",
-  "type": "milestone",
-  "ts": 1792705589,
-  "date": "2026-10-23",
-  "title": "kyyltn: 50 maps played",
-  "text": "kyyltn reached 50 maps played",
-  "link": "#/player/kyyltn"
- },
- {
-  "id": "milestone:jasticar:kills:500",
-  "type": "milestone",
-  "ts": 1792705589,
-  "date": "2026-10-23",
-  "title": "Jasticar: 500 career kills",
-  "text": "Jasticar reached 500 career kills",
-  "link": "#/player/jasticar"
- },
- {
-  "id": "milestone:luneforrune:kills:500",
-  "type": "milestone",
-  "ts": 1792705589,
-  "date": "2026-10-23",
-  "title": "Luneforrune: 500 career kills",
-  "text": "Luneforrune reached 500 career kills",
-  "link": "#/player/luneforrune"
- },
- {
   "id": "milestone:thehidz:kills:500",
   "type": "milestone",
   "ts": 1792707406,
@@ -1798,5 +1771,32 @@
   "title": "Kogara Toto: 100 MVP rounds",
   "text": "Kogara Toto reached 100 MVP rounds",
   "link": "#/player/kogara-toto"
+ },
+ {
+  "id": "milestone:xuehuavt:mvp:100",
+  "type": "milestone",
+  "ts": 1793421916,
+  "date": "2026-10-31",
+  "title": "XueHuaVT: 100 MVP rounds",
+  "text": "XueHuaVT reached 100 MVP rounds",
+  "link": "#/player/xuehuavt"
+ },
+ {
+  "id": "milestone:urnisa:kills:500",
+  "type": "milestone",
+  "ts": 1793421916,
+  "date": "2026-10-31",
+  "title": "urnisa_: 500 career kills",
+  "text": "urnisa_ reached 500 career kills",
+  "link": "#/player/urnisa"
+ },
+ {
+  "id": "milestone:ginjo-saine:mvp:100",
+  "type": "milestone",
+  "ts": 1793421916,
+  "date": "2026-10-31",
+  "title": "Ginjo Saine: 100 MVP rounds",
+  "text": "Ginjo Saine reached 100 MVP rounds",
+  "link": "#/player/ginjo-saine"
  }
 ]
