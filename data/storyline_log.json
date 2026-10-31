@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:zarlard:mvp:100",
-  "type": "milestone",
-  "ts": 1792769097,
-  "date": "2026-10-23",
-  "title": "Zarlard: 100 MVP rounds",
-  "text": "Zarlard reached 100 MVP rounds",
-  "link": "#/player/zarlard"
- },
- {
   "id": "milestone:syrrith:mvp:100",
   "type": "milestone",
   "ts": 1792774377,
@@ -1798,5 +1789,14 @@
   "title": "Yumeno Akari: 500 career kills",
   "text": "Yumeno Akari reached 500 career kills",
   "link": "#/player/yumeno-akari"
+ },
+ {
+  "id": "milestone:jstarwolf:kills:500",
+  "type": "milestone",
+  "ts": 1793479897,
+  "date": "2026-11-01",
+  "title": "JStarWolf: 500 career kills",
+  "text": "JStarWolf reached 500 career kills",
+  "link": "#/player/jstarwolf"
  }
 ]
