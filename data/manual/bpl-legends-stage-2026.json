@@ -1127,8 +1127,9 @@
      "round": 4,
      "a": "Hanabi Union",
      "b": "Wraithborne",
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1793455028
     },
     {
      "id": 24,
