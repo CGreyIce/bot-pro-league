@@ -195,29 +195,29 @@
    "mvp": 46
   },
   "sheep": {
-   "maps": 37,
-   "kills": 572,
-   "mvp": 82
+   "maps": 38,
+   "kills": 604,
+   "mvp": 84
   },
   "y1jingg": {
-   "maps": 39,
-   "kills": 699,
-   "mvp": 100
+   "maps": 40,
+   "kills": 736,
+   "mvp": 108
   },
   "minmaxxer": {
-   "maps": 39,
-   "kills": 657,
-   "mvp": 98
+   "maps": 40,
+   "kills": 680,
+   "mvp": 100
   },
   "m0wmeow": {
-   "maps": 36,
-   "kills": 572,
-   "mvp": 90
+   "maps": 37,
+   "kills": 590,
+   "mvp": 92
   },
   "blubear": {
-   "maps": 39,
-   "kills": 596,
-   "mvp": 81
+   "maps": 40,
+   "kills": 608,
+   "mvp": 83
   },
   "marsinss": {
    "maps": 40,
@@ -1145,29 +1145,29 @@
    "mvp": 68
   },
   "dudriduo": {
-   "maps": 32,
-   "kills": 506,
-   "mvp": 77
-  },
-  "kellyxleox": {
-   "maps": 42,
-   "kills": 740,
-   "mvp": 116
-  },
-  "sakami": {
-   "maps": 41,
-   "kills": 549,
+   "maps": 33,
+   "kills": 540,
    "mvp": 82
   },
+  "kellyxleox": {
+   "maps": 43,
+   "kills": 775,
+   "mvp": 119
+  },
+  "sakami": {
+   "maps": 42,
+   "kills": 565,
+   "mvp": 83
+  },
   "wo4tk": {
-   "maps": 33,
-   "kills": 639,
-   "mvp": 85
+   "maps": 34,
+   "kills": 663,
+   "mvp": 91
   },
   "joshiwahhh": {
-   "maps": 40,
-   "kills": 566,
-   "mvp": 68
+   "maps": 41,
+   "kills": 589,
+   "mvp": 72
   },
   "tapiyokaaa": {
    "maps": 32,
@@ -2455,6 +2455,7 @@
   "upset:bpl-legends-stage-2026:3-8",
   "upset:bpl-legends-stage-2026:4-1",
   "upset:bpl-legends-stage-2026:4-11",
+  "upset:bpl-legends-stage-2026:4-20",
   "upset:bpl-legends-stage-2026:4-5",
   "upset:nations-cup-qualifier-singapore-2026:1-43",
   "upset:nova-initia-invitational-i:1-12",
@@ -2485,6 +2486,7 @@
   "transfer:newjade:2026-10-16:crazywhoopies+kojadayo",
   "transfer:newjade:2026-10-16:kojadayo",
   "transfer:thenomads:2026-10-09:l2strike+mominichi+redandb1ue+sadgeboi",
-  "upset:bpl-legends-stage-2026:3-19"
+  "upset:bpl-legends-stage-2026:3-19",
+  "upset:bpl-legends-stage-2026:4-20"
  ]
 }
