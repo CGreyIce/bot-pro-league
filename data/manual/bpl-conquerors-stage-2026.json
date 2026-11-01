@@ -25,8 +25,9 @@
      "round": 1,
      "a": "Cosmos",
      "b": "Nullpoint",
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1793570927
     },
     {
      "id": 2,
