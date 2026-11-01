@@ -8,7 +8,7 @@
    "id": 1,
    "name": "Group A",
    "format": "swiss",
-   "bestOf": 1,
+   "bestOf": 3,
    "teams": [
     "Cosmos",
     "entity",
@@ -62,7 +62,7 @@
    "id": 2,
    "name": "Group B",
    "format": "swiss",
-   "bestOf": 1,
+   "bestOf": 3,
    "teams": [
     "Aimpunch",
     "New Jade",
@@ -116,7 +116,7 @@
    "id": 3,
    "name": "Group C",
    "format": "swiss",
-   "bestOf": 1,
+   "bestOf": 3,
    "teams": [
     "Opal",
     "Neverland",
@@ -170,7 +170,7 @@
    "id": 4,
    "name": "Group D",
    "format": "swiss",
-   "bestOf": 1,
+   "bestOf": 3,
    "teams": [
     "The Gigarage",
     "Artisian",
@@ -222,7 +222,7 @@
   }
  ],
  "formatLabel": "4 Groups (Swiss) + Playoffs",
- "formatNote": "32 teams: the top 16 of the BPL rankings and the 16 Legends Stage qualifiers. 4 Swiss groups of 8 (4 direct invites and 4 Legends qualifiers in each, seeded by BPL rank and Legends finish), 5 rounds. Teams level on wins and losses are split by map difference, then round difference. The top 2 of each group go to an 8-team playoff.",
+ "formatNote": "32 teams: the top 16 of the BPL rankings and the 16 Legends Stage qualifiers. 4 Swiss groups of 8 (4 direct invites and 4 Legends qualifiers in each, seeded by BPL rank and Legends finish), 5 rounds, every match a Bo3. Teams level on wins and losses are split by map difference, then round difference. The top 2 of each group go to an 8-team playoff: Bo3, with a Bo5 grand final.",
  "field": [
   {
    "team": "Cosmos",
@@ -404,5 +404,6 @@
   "Technomancy": 32
  },
  "tiebreak": "maps",
- "predictions": "playoffs"
+ "predictions": "playoffs",
+ "finalBestOf": 5
 }

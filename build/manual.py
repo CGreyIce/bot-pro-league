@@ -275,7 +275,7 @@ def stage_to_standard(stage):
                             "w": rr["w"], "st": "complete" if rr["w"] else "pending",
                             "grp": False, "tp": bool(m.get("thirdPlace")), "pl": is_placement(m),
                             "plt": m.get("placeLabel") or ("Third Place Match" if m.get("thirdPlace") else None),
-                            "bo": m.get("bestOf", stage.get("bestOf", 1)), "ts": m.get("ts")})
+                            "bo": m.get("bestOf") or stage.get("bestOf", 1), "ts": m.get("ts")})
     return {
         "id": stage["id"], "name": stage["name"], "format": stage["format"],
         "bestOf": stage.get("bestOf", 1), "roundTitles": stage.get("roundTitles", {}),
@@ -711,6 +711,8 @@ def add_stage(slug, name, fmt, teams, best_of=1):
     teams = [t.strip() for t in teams if t and t.strip()]
     if fmt == "single_elim":
         matches, titles = gen_single_elim(teams)
+        if man.get("finalBestOf") and matches:         # e.g. Bo3 bracket with a Bo5 grand final
+            matches[-1]["bestOf"] = int(man["finalBestOf"])
     elif fmt == "round_robin":
         matches, titles = gen_round_robin(teams)
     else:  # swiss — start empty, add matches by hand
