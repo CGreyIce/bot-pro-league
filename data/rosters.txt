@@ -217,3 +217,19 @@ bot_add_ct "0PT zhizyii"; bot_add_ct "0PT candybar_isblue"; bot_add_ct "0PT Utsu
 Pastel Mocha (BPL Challengers Stage 2026 runner-up)
 bot_add "PaMo Niamocha"; bot_add "PaMo RDarius"; bot_add "PaMo pastellows"; bot_add "PaMo kenzieyii"; bot_add "PaMo ItzSune";
 bot_add_ct "PaMo Niamocha"; bot_add_ct "PaMo RDarius"; bot_add_ct "PaMo pastellows"; bot_add_ct "PaMo kenzieyii"; bot_add_ct "PaMo ItzSune";
+
+Crystal Laurels (BPL Legends Stage 2026 6th place)
+bot_add "CL Laurel"; bot_add "CL cwstalVT"; bot_add "CL CryingNutz"; bot_add "CL Jenakai"; bot_add "CL xaeela";
+bot_add_ct "CL Laurel"; bot_add_ct "CL cwstalVT"; bot_add_ct "CL CryingNutz"; bot_add_ct "CL Jenakai"; bot_add_ct "CL xaeela";
+
+Nightfang Covenant (BPL Legends Stage 2026 14th place)
+bot_add "NfC KiokoCheiko"; bot_add "NfC JStarWolf"; bot_add "NfC plushyoshii"; bot_add "NfC hazielvamp"; bot_add "NfC SyberiaK";
+bot_add_ct "NfC KiokoCheiko"; bot_add_ct "NfC JStarWolf"; bot_add_ct "NfC plushyoshii"; bot_add_ct "NfC hazielvamp"; bot_add_ct "NfC SyberiaK";
+
+Northwind (BPL Legends Stage 2026 8th place)
+bot_add "Nwd Airizu"; bot_add "Nwd MizukiiMoon"; bot_add "Nwd MilliannaVT"; bot_add "Nwd Karoni"; bot_add "Nwd MiyaLeile";
+bot_add_ct "Nwd Airizu"; bot_add_ct "Nwd MizukiiMoon"; bot_add_ct "Nwd MilliannaVT"; bot_add_ct "Nwd Karoni"; bot_add_ct "Nwd MiyaLeile";
+
+Special Forces (BPL Legends Stage 2026 13th place)
+bot_add "SF djassaulty"; bot_add "SF Spectrum Gabriel"; bot_add "SF Goonuyun"; bot_add "SF Icington the third"; bot_add "SF ItzMaigay";
+bot_add_ct "SF djassaulty"; bot_add_ct "SF Spectrum Gabriel"; bot_add_ct "SF Goonuyun"; bot_add_ct "SF Icington the third"; bot_add_ct "SF ItzMaigay";

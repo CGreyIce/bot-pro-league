@@ -105,8 +105,8 @@
   "degree",
   "flood-flashers",
   "division20",
-  "infernum-e-sports",
   "bluebird",
+  "infernum-e-sports",
   "raven-song",
   "pepegax",
   "bloom-e-sports",
@@ -125,17 +125,21 @@
   "ukiyo",
   "mourningstar",
   "beehyve",
+  "northwind",
   "team-neverseen",
+  "crystal-laurels",
   "wraithborne",
   "aeternum",
   "pastel-mocha",
   "solstice",
   "5percent",
   "0v3",
+  "special-forces",
   "aspire",
   "nightshade",
   "syzygy",
   "cyanide",
+  "nightfang-covenant",
   "lunar-cadence",
   "astral-bloom"
  ],
@@ -1380,10 +1384,95 @@
    "kills": 598,
    "mvp": 87
   },
+  "laurel": {
+   "maps": 52,
+   "kills": 786,
+   "mvp": 101
+  },
+  "cwstalvt": {
+   "maps": 38,
+   "kills": 696,
+   "mvp": 111
+  },
+  "cryingnutz": {
+   "maps": 41,
+   "kills": 658,
+   "mvp": 87
+  },
+  "jenakai": {
+   "maps": 40,
+   "kills": 541,
+   "mvp": 92
+  },
+  "xaeela": {
+   "maps": 27,
+   "kills": 433,
+   "mvp": 65
+  },
+  "jstarwolf": {
+   "maps": 35,
+   "kills": 526,
+   "mvp": 87
+  },
+  "plushyoshii": {
+   "maps": 24,
+   "kills": 435,
+   "mvp": 72
+  },
+  "hazielvamp": {
+   "maps": 21,
+   "kills": 335,
+   "mvp": 54
+  },
+  "syberiak": {
+   "maps": 21,
+   "kills": 342,
+   "mvp": 40
+  },
   "mizukiimoon": {
    "maps": 72,
    "kills": 1150,
    "mvp": 151
+  },
+  "milliannavt": {
+   "maps": 51,
+   "kills": 735,
+   "mvp": 114
+  },
+  "karoni": {
+   "maps": 47,
+   "kills": 793,
+   "mvp": 100
+  },
+  "miyaleile": {
+   "maps": 32,
+   "kills": 525,
+   "mvp": 82
+  },
+  "djassaulty": {
+   "maps": 30,
+   "kills": 456,
+   "mvp": 71
+  },
+  "spectrum-gabriel": {
+   "maps": 31,
+   "kills": 524,
+   "mvp": 84
+  },
+  "goonuyun": {
+   "maps": 32,
+   "kills": 476,
+   "mvp": 64
+  },
+  "icington-the-third": {
+   "maps": 31,
+   "kills": 566,
+   "mvp": 79
+  },
+  "itzmaigay": {
+   "maps": 31,
+   "kills": 490,
+   "mvp": 71
   },
   "choya-hanabi": {
    "maps": 64,
@@ -1485,11 +1574,6 @@
    "kills": 693,
    "mvp": 99
   },
-  "laurel": {
-   "maps": 52,
-   "kills": 786,
-   "mvp": 101
-  },
   "lukedefabio": {
    "maps": 46,
    "kills": 809,
@@ -1499,11 +1583,6 @@
    "maps": 36,
    "kills": 557,
    "mvp": 75
-  },
-  "milliannavt": {
-   "maps": 51,
-   "kills": 735,
-   "mvp": 114
   },
   "prophocy": {
    "maps": 59,
@@ -1600,11 +1679,6 @@
    "kills": 723,
    "mvp": 88
   },
-  "karoni": {
-   "maps": 47,
-   "kills": 793,
-   "mvp": 100
-  },
   "tearsofdeath": {
    "maps": 50,
    "kills": 860,
@@ -1630,11 +1704,6 @@
    "kills": 597,
    "mvp": 79
   },
-  "cwstalvt": {
-   "maps": 38,
-   "kills": 696,
-   "mvp": 111
-  },
   "yaekia": {
    "maps": 45,
    "kills": 689,
@@ -1649,11 +1718,6 @@
    "maps": 39,
    "kills": 661,
    "mvp": 106
-  },
-  "cryingnutz": {
-   "maps": 41,
-   "kills": 658,
-   "mvp": 87
   },
   "anju-o": {
    "maps": 30,
@@ -1729,11 +1793,6 @@
    "maps": 28,
    "kills": 456,
    "mvp": 69
-  },
-  "jenakai": {
-   "maps": 40,
-   "kills": 541,
-   "mvp": 92
   },
   "yumeno-akari": {
    "maps": 34,
@@ -1870,11 +1929,6 @@
    "kills": 336,
    "mvp": 56
   },
-  "jstarwolf": {
-   "maps": 35,
-   "kills": 526,
-   "mvp": 87
-  },
   "rattecs": {
    "maps": 33,
    "kills": 447,
@@ -1955,11 +2009,6 @@
    "kills": 643,
    "mvp": 76
   },
-  "miyaleile": {
-   "maps": 32,
-   "kills": 525,
-   "mvp": 82
-  },
   "qebo": {
    "maps": 26,
    "kills": 438,
@@ -1974,11 +2023,6 @@
    "maps": 8,
    "kills": 97,
    "mvp": 12
-  },
-  "xaeela": {
-   "maps": 27,
-   "kills": 433,
-   "mvp": 65
   },
   "aoi-chibi": {
    "maps": 14,
@@ -2120,11 +2164,6 @@
    "kills": 163,
    "mvp": 21
   },
-  "plushyoshii": {
-   "maps": 24,
-   "kills": 435,
-   "mvp": 72
-  },
   "rinamizuu": {
    "maps": 9,
    "kills": 137,
@@ -2245,11 +2284,6 @@
    "kills": 405,
    "mvp": 63
   },
-  "hazielvamp": {
-   "maps": 21,
-   "kills": 335,
-   "mvp": 54
-  },
   "shita1m": {
    "maps": 11,
    "kills": 148,
@@ -2259,31 +2293,6 @@
    "maps": 10,
    "kills": 148,
    "mvp": 21
-  },
-  "djassaulty": {
-   "maps": 30,
-   "kills": 456,
-   "mvp": 71
-  },
-  "spectrum-gabriel": {
-   "maps": 31,
-   "kills": 524,
-   "mvp": 84
-  },
-  "goonuyun": {
-   "maps": 32,
-   "kills": 476,
-   "mvp": 64
-  },
-  "icington-the-third": {
-   "maps": 31,
-   "kills": 566,
-   "mvp": 79
-  },
-  "itzmaigay": {
-   "maps": 31,
-   "kills": 490,
-   "mvp": 71
   },
   "flava": {
    "maps": 13,
@@ -2324,11 +2333,6 @@
    "maps": 22,
    "kills": 414,
    "mvp": 63
-  },
-  "syberiak": {
-   "maps": 21,
-   "kills": 342,
-   "mvp": 40
   },
   "colour": {
    "maps": 25,
@@ -2470,8 +2474,12 @@
   "champion:bpl-challengers-stage-2026",
   "champion:bpl-legends-stage-2026",
   "promotion:beehyve",
+  "promotion:crystal-laurels",
+  "promotion:nightfang-covenant",
+  "promotion:northwind",
   "promotion:nullpoint",
   "promotion:pastel-mocha",
+  "promotion:special-forces",
   "record:highestMap:65+mostKillsMap:58+mostOT:7",
   "top:player:candybar-isblue:2026-10-27",
   "top:player:candybar-isblue:2026-10-29",
