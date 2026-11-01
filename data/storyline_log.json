@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:nekosoji:kills:500",
-  "type": "milestone",
-  "ts": 1792801317,
-  "date": "2026-10-24",
-  "title": "NekoSoji: 500 career kills",
-  "text": "NekoSoji reached 500 career kills",
-  "link": "#/player/nekosoji"
- },
- {
   "id": "milestone:teckiyo:mvp:100",
   "type": "milestone",
   "ts": 1792801317,
@@ -1798,5 +1789,14 @@
   "title": "yerm: 500 career kills",
   "text": "yerm reached 500 career kills",
   "link": "#/player/yerm"
+ },
+ {
+  "id": "milestone:karoni:maps:50",
+  "type": "milestone",
+  "ts": 1793577383,
+  "date": "2026-11-02",
+  "title": "Karoni: 50 maps played",
+  "text": "Karoni reached 50 maps played",
+  "link": "#/player/karoni"
  }
 ]
