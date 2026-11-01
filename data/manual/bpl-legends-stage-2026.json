@@ -1469,5 +1469,6 @@
  "finalLeaderboard": {
   "perGroup": 4,
   "tiebreak": "maps"
- }
+ },
+ "completed": true
 }
