@@ -37,6 +37,7 @@
   }
  },
  "champions": [
+  "bpl-legends-stage-2026",
   "bpl-challengers-stage-2026",
   "nova-initia-invitational-i",
   "bpl-nations-cup-2026",
@@ -89,50 +90,50 @@
   "aimpunch",
   "opal",
   "the-gigarage",
+  "nullpoint",
   "artisian",
+  "kiedz",
+  "sacred-raven",
   "neverland",
   "new-jade",
+  "prism-divide",
+  "setting-sun",
   "entity",
   "aetherline",
   "lemon-tree",
   "xplosiv",
   "degree",
   "flood-flashers",
+  "division20",
   "infernum-e-sports",
-  "pepegax",
-  "bloom-e-sports",
-  "alcheministry",
   "bluebird",
   "raven-song",
-  "masmark",
-  "setting-sun",
-  "round-loss-bonus",
-  "the-nomads",
+  "pepegax",
+  "bloom-e-sports",
   "divide-conquer",
-  "technomancy",
   "moonlit-tempo",
-  "sacred-raven",
-  "kiedz",
+  "technomancy",
+  "masmark",
+  "the-nomads",
+  "alcheministry",
   "99lives",
-  "division20",
-  "nullpoint",
-  "prism-divide",
+  "round-loss-bonus",
   "caelum-scala",
-  "diamondones",
-  "5percent",
-  "team-neverseen",
-  "unforgettable",
   "fruit-basket",
-  "mourningstar",
+  "diamondones",
+  "unforgettable",
   "ukiyo",
+  "mourningstar",
+  "beehyve",
+  "team-neverseen",
+  "wraithborne",
   "aeternum",
   "pastel-mocha",
-  "0v3",
-  "wraithborne",
-  "aspire",
-  "beehyve",
-  "nightshade",
   "solstice",
+  "5percent",
+  "0v3",
+  "aspire",
+  "nightshade",
   "syzygy",
   "cyanide",
   "lunar-cadence",
@@ -770,24 +771,24 @@
    "mvp": 47
   },
   "xyrolizea": {
-   "maps": 38,
-   "kills": 551,
-   "mvp": 93
+   "maps": 40,
+   "kills": 581,
+   "mvp": 102
   },
   "xuehuavt": {
-   "maps": 46,
-   "kills": 704,
-   "mvp": 105
+   "maps": 48,
+   "kills": 749,
+   "mvp": 114
   },
   "urnisa": {
-   "maps": 40,
-   "kills": 539,
-   "mvp": 78
+   "maps": 42,
+   "kills": 563,
+   "mvp": 79
   },
   "kn": {
-   "maps": 46,
-   "kills": 624,
-   "mvp": 70
+   "maps": 48,
+   "kills": 644,
+   "mvp": 72
   },
   "estellyy": {
    "maps": 40,
@@ -1295,9 +1296,9 @@
    "mvp": 65
   },
   "hikariifloofie": {
-   "maps": 24,
-   "kills": 395,
-   "mvp": 55
+   "maps": 26,
+   "kills": 438,
+   "mvp": 60
   },
   "kojadayo": {
    "maps": 23,
@@ -1520,9 +1521,9 @@
    "mvp": 120
   },
   "psystra": {
-   "maps": 48,
-   "kills": 632,
-   "mvp": 80
+   "maps": 50,
+   "kills": 664,
+   "mvp": 88
   },
   "ruamamiya": {
    "maps": 35,
@@ -1550,9 +1551,9 @@
    "mvp": 90
   },
   "trpaki": {
-   "maps": 46,
-   "kills": 792,
-   "mvp": 125
+   "maps": 48,
+   "kills": 825,
+   "mvp": 128
   },
   "wushii": {
    "maps": 39,
@@ -1595,9 +1596,9 @@
    "mvp": 124
   },
   "aleaka": {
-   "maps": 47,
-   "kills": 694,
-   "mvp": 83
+   "maps": 49,
+   "kills": 723,
+   "mvp": 88
   },
   "karoni": {
    "maps": 47,
@@ -1765,9 +1766,9 @@
    "mvp": 55
   },
   "hanabusa-lisa": {
-   "maps": 36,
-   "kills": 654,
-   "mvp": 98
+   "maps": 38,
+   "kills": 678,
+   "mvp": 99
   },
   "jira-jisaki": {
    "maps": 46,
@@ -2235,9 +2236,9 @@
    "mvp": 22
   },
   "diabet0": {
-   "maps": 20,
-   "kills": 321,
-   "mvp": 39
+   "maps": 22,
+   "kills": 347,
+   "mvp": 41
   },
   "itzfrenzy": {
    "maps": 24,
@@ -2467,6 +2468,7 @@
  "v": 1,
  "drafted": [
   "champion:bpl-challengers-stage-2026",
+  "champion:bpl-legends-stage-2026",
   "promotion:beehyve",
   "promotion:nullpoint",
   "promotion:pastel-mocha",

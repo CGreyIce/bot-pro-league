@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:miyaleile:kills:500",
-  "type": "milestone",
-  "ts": 1792781589,
-  "date": "2026-10-24",
-  "title": "MiyaLeile: 500 career kills",
-  "text": "MiyaLeile reached 500 career kills",
-  "link": "#/player/miyaleile"
- },
- {
-  "id": "milestone:acryii:mvp:100",
-  "type": "milestone",
-  "ts": 1792783601,
-  "date": "2026-10-24",
-  "title": "Acryii_: 100 MVP rounds",
-  "text": "Acryii_ reached 100 MVP rounds",
-  "link": "#/player/acryii"
- },
- {
-  "id": "milestone:kai:mvp:100",
-  "type": "milestone",
-  "ts": 1792783601,
-  "date": "2026-10-24",
-  "title": "Kai: 100 MVP rounds",
-  "text": "Kai reached 100 MVP rounds",
-  "link": "#/player/kai"
- },
- {
   "id": "milestone:mizukiimoon:mvp:150",
   "type": "milestone",
   "ts": 1792783601,
@@ -1798,5 +1771,32 @@
   "title": "Kisaragi Ren: 500 career kills",
   "text": "Kisaragi Ren reached 500 career kills",
   "link": "#/player/kisaragi-ren"
+ },
+ {
+  "id": "champion:bpl-legends-stage-2026",
+  "type": "champion",
+  "ts": 1793513247,
+  "date": "2026-11-01",
+  "title": "Nullpoint win BPL Legends Stage 2026",
+  "text": "Champions of BPL Legends Stage 2026, beating Kiedz in the final",
+  "link": "#/tournament/bpl-legends-stage-2026"
+ },
+ {
+  "id": "milestone:xyrolizea:mvp:100",
+  "type": "milestone",
+  "ts": 1793513250,
+  "date": "2026-11-01",
+  "title": "Xyrolizea: 100 MVP rounds",
+  "text": "Xyrolizea reached 100 MVP rounds",
+  "link": "#/player/xyrolizea"
+ },
+ {
+  "id": "milestone:psystra:maps:50",
+  "type": "milestone",
+  "ts": 1793513250,
+  "date": "2026-11-01",
+  "title": "PSYSTRA: 50 maps played",
+  "text": "PSYSTRA reached 50 maps played",
+  "link": "#/player/psystra"
  }
 ]
