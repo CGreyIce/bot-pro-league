@@ -1041,13 +1041,18 @@ def main():
         t["events"] = []
     for tr in tournaments:
         added = set()
-        for s in tr["standings"]:
+        # A finished leaderboard event (no playoff: Challengers/Legends 2026) has only its last group's
+        # table as `standings`, so its placements come from the full finalStandings instead. Legends
+        # 2026 had shown Group D's top 3 (Kiedz, Setting Sun, Astral Bloom) as its gold/silver/bronze.
+        board = bool(tr.get("leaderboard") and tr.get("champion") and tr.get("finalStandings"))
+        for s in (tr["finalStandings"] if board else tr["standings"]):
             tm = slug_to_team.get(s["teamSlug"]) if s.get("teamSlug") else None
-            if tm:
+            if tm and tm["slug"] not in added:
                 tm["events"].append({
                     "slug": tr["slug"], "name": tr["name"], "date": tr["date"],
                     "tier": tr["tier"], "tierLabel": tr["tierLabel"],
                     "placement": s["rank"], "isChampion": (tr["championTeam"] == tm["slug"]),
+                    **({"placementLabel": s.get("result") or "Group Stage"} if board else {}),
                 })
                 added.add(tm["slug"])
         # Teams eliminated before the final stage (e.g. the group stage) aren't in the
@@ -1065,7 +1070,7 @@ def main():
                 tm["events"].append({
                     "slug": tr["slug"], "name": tr["name"], "date": tr["date"],
                     "tier": tr["tier"], "tierLabel": tr["tierLabel"],
-                    "placement": s.get("rank"), "isChampion": False,
+                    "placement": s.get("rank"), "isChampion": tr.get("championTeam") == tslug,
                     "placementLabel": s.get("result") or "Group Stage",
                 })
                 added.add(tslug)

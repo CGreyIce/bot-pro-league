@@ -4229,7 +4229,8 @@ function renderTournament(slug){
         ${tr.mvp ? `<div class="tourn-mvp">⭐ <span class="muted">${tr.champion?'Tournament MVP':'MVP so far'}:</span>
           <a href="#/player/${tr.mvp.slug}" class="tm-mvp-name">${flag(tr.mvp.iso)}${esc(tr.mvp.name)}</a>
           <span class="muted" style="font-size:12px">${tr.mvp.rating!=null?`${tr.mvp.rating.toFixed(2)} rating over ${tr.mvp.maps} maps`:`${tr.mvp.mvpRounds} MVP round${tr.mvp.mvpRounds===1?'':'s'}`}${tr.mvp.team&&tr.mvp.team!=='—'?' · '+esc(tr.mvp.team):''}</span></div>` : ''}
-        ${predSupported(tr) ? `<a class="predict-btn" href="#/predict/${tr.slug}">🔮 ${tr.champion?'Predictions & leaderboard':'Make your predictions'}</a>` : ''}
+        ${predSupported(tr) ? `<a class="predict-btn" href="#/predict/${tr.slug}">🔮 ${tr.champion?'Predictions & leaderboard'
+          :predPlayoffsOnly(tr)&&!predSeeds(tr,{}).length?'Playoff predictions open after the groups':'Make your predictions'}</a>` : ''}
         ${fantasySupported(tr) ? `<a class="predict-btn fy-btn" href="#/fantasy/${tr.slug}">⚡ ${fantasyLock(tr).locked?'Fantasy leaderboard':'Pick your fantasy team'}</a>` : ''}
       </div>
       ${champT&&champT.logo?`<img class="crest" src="${esc(champT.logo)}" alt="">`:''}
@@ -5246,7 +5247,15 @@ function seedOrder(n){
   while(order.length<n){ const m=order.length*2+1; order=order.flatMap(s=>[s, m-s]); }
   return order;
 }
-function predGroups(tr){ return (tr.stages||[]).filter(s=>s.format!=='single_elim'); }
+function predGroups(tr){ return predPlayoffsOnly(tr) ? [] : (tr.stages||[]).filter(s=>s.format!=='single_elim'); }
+// "playoffs only" events (predictionsMode "playoffs", Conquerors 2026): no group picks. Predictions are
+// closed until the playoff bracket is added, then cover it alone, and lock at its first result (or ▶ Start).
+function predPlayoffsOnly(tr){ return !!(tr && tr.predictionsMode==='playoffs'); }
+function predPlayoffStage(tr){ return (tr.stages||[]).find(s=>s.format==='single_elim') || null; }
+function predPlayoffStarted(tr){
+  const st=predPlayoffStage(tr);
+  return !!(st && (st.rounds||[]).some(rd=>(rd.matches||[]).some(m=>m.w===1||m.w===2)));
+}
 // leaderboard events (no playoff, e.g. Challengers/Legends): pick the top N of every group, then rank
 // all the qualifiers on one predicted final leaderboard (#1 = champion) instead of filling a bracket
 function predIsBoard(tr){ return !!(tr && tr.leaderboard); }
@@ -5276,7 +5285,7 @@ function predPicks(tr, pred){
 function predSeeds(tr, pred){
   const gs=predGroups(tr);
   if(!gs.length){
-    const st=(tr.stages||[]).find(s=>s.format==='single_elim') || (tr.stages||[])[0];
+    const st=predPlayoffStage(tr) || (predPlayoffsOnly(tr) ? null : (tr.stages||[])[0]);
     return ((st&&st.teams)||[]).map(t=>Array.isArray(t)?t[0]:t);
   }
   const w=[],r=[];
@@ -5285,6 +5294,7 @@ function predSeeds(tr, pred){
 }
 // events that support predictions: group-stage events, or clean power-of-2 single-elim brackets
 function predSupported(tr){
+  if(predPlayoffsOnly(tr)) return true;            // before the bracket, the page says when they open
   if(!tr || !tr.stages || !tr.stages.length) return false;
   if(predGroups(tr).length) return true;
   return predSeeds(tr,{groups:{}}).length>=2;     // any single-elim (byes padded to power of 2)
@@ -5372,7 +5382,8 @@ function scorePrediction(pred, tr, actual){
   if(pl.champ && pl.champ===actual.champ) pts+=10;
   if(pl.ru && (pl.ru===actual.champ||pl.ru===actual.ru)) pts+=6;
   pl.sf.forEach(t=>{ if(actual.f4.includes(t)) pts+=4; });
-  pl.qf.forEach(t=>{ if(actual.f8.includes(t)) pts+=2; });
+  // a playoff-only bracket of 8: every team in it finishes top 8, so quarterfinalist picks earn nothing
+  if(!(predPlayoffsOnly(tr) && predSeeds(tr,pred).length<=8)) pl.qf.forEach(t=>{ if(actual.f8.includes(t)) pts+=2; });
   if(pl.board && actual.board) pl.board.forEach((t,i)=>{ if(t && actual.board[i]===t) pts+=1; });   // exact leaderboard spot
   return pts;
 }
@@ -5383,6 +5394,14 @@ async function renderPredict(slug){
   const tr = (DATA.tournaments||[]).find(t=>t.slug===slug);
   if(!tr){ app.innerHTML = notFound("Event"); return; }
   if(!predSupported(tr)){ app.innerHTML = `<div class="notice">Predictions aren't available for this event's format.</div>`; return; }
+  if(predPlayoffsOnly(tr) && !predSeeds(tr,{}).length){
+    app.innerHTML = `<div class="crumb"><a href="#/tournament/${tr.slug}">${esc(tr.name)}</a><span class="sep">/</span>Predictions</div>
+      <h2 class="section-title"><span class="accent-bar"></span>Predictions · ${esc(tr.name)}</h2>
+      <div class="notice" style="text-align:left">🔒 <strong>Predictions open for the playoffs.</strong>
+        They're closed during the group stage. Once the groups are over and the playoff bracket is set, you pick every playoff winner through to the champion.
+        Predictions then lock when the first playoff match is played.</div>`;
+    return;
+  }
   _predTr = tr; _predAll = null;
   _predRosters = {};                        // team -> PAGE_ROSTERS index (hover shows the line-up)
   (tr.attending||[]).forEach(row=>{ if(row.players && row.players.length) _predRosters[normKey(row.team)] = rosterIdx({team:row.team, teamSlug:row.teamSlug, players:row.players}); });
@@ -5435,8 +5454,10 @@ function drawPredict(){
   }
   const actual=actualResults(tr);
   const myScore = actual ? scorePrediction(pred, tr, actual) : null;
-  const locked = !!(tr.champion || tr.predictionsLocked);
+  const poStarted = predPlayoffsOnly(tr) && predPlayoffStarted(tr);
+  const locked = !!(tr.champion || tr.predictionsLocked || poStarted);
   const statusMsg = tr.champion ? 'Results are in — predictions locked.'
+    : poStarted ? 'The playoffs have started — predictions are locked.'
     : tr.predictionsLocked ? 'The tournament has started — predictions are locked.'
     : isBoard ? 'Pick your group qualifiers and rank the final leaderboard, then Save.'
     : gs.length ? 'Pick your group qualifiers and bracket, then Save.'
@@ -5453,13 +5474,13 @@ function drawPredict(){
       </div>
     </div>
     ${locked?`<div class="notice" style="text-align:left;margin-bottom:14px;border-color:var(--accent)">
-      🔒 <strong>${tr.predictionsLocked&&!tr.champion?'This tournament is underway.':'This event is over.'}</strong>
+      🔒 <strong>${tr.champion?'This event is over.':poStarted?'The playoffs are underway.':'This tournament is underway.'}</strong>
       Predictions are locked — no new entries or edits. See the standings below.</div>`
     :`${gs.length?`<h3 class="rec-group">Group Qualifiers <span class="muted" style="font-size:11px">top ${per} advance${isBoard?' to the final leaderboard':''}</span></h3>
     <div class="pg-grid">${groupCards}</div>
     <h3 class="rec-group" style="margin-top:18px">${isBoard
       ?`Final Leaderboard <span class="muted" style="font-size:11px">rank your ${gs.length*per} qualifiers · drag or use the arrows · #1 is the champion</span>`
-      :'Playoff Bracket'}</h3>`:'<h3 class="rec-group">Bracket <span class="muted" style="font-size:11px">pick every winner</span></h3>'}
+      :'Playoff Bracket'}</h3>`:`<h3 class="rec-group">${predPlayoffsOnly(tr)?'Playoff Bracket':'Bracket'} <span class="muted" style="font-size:11px">pick every winner</span></h3>`}
     ${isBoard?boardHtml:bracketHtml}
     <div style="margin-top:12px;display:flex;gap:10px;align-items:center">
       <button id="pred-save" class="adm-btn" style="max-width:220px">Save prediction</button>

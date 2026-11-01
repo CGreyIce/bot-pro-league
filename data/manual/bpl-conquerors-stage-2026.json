@@ -2,10 +2,227 @@
  "slug": "bpl-conquerors-stage-2026",
  "name": "BPL Conquerors Stage 2026",
  "tier": "major",
- "date": "2026-11-28",
- "stages": [],
+ "date": "2026-11-02",
+ "stages": [
+  {
+   "id": 1,
+   "name": "Group A",
+   "format": "swiss",
+   "bestOf": 1,
+   "teams": [
+    "Cosmos",
+    "entity",
+    "Aetherline",
+    "Bloom E-Sports",
+    "Nullpoint",
+    "Northwind",
+    "BeeHyve",
+    "Technomancy"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "a": "Cosmos",
+     "b": "Nullpoint",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "a": "entity",
+     "b": "Northwind",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "a": "Aetherline",
+     "b": "BeeHyve",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 1,
+     "a": "Bloom E-Sports",
+     "b": "Technomancy",
+     "sa": null,
+     "sb": null
+    }
+   ],
+   "roundTitles": {
+    "1": "Round 1"
+   },
+   "rounds": 5
+  },
+  {
+   "id": 2,
+   "name": "Group B",
+   "format": "swiss",
+   "bestOf": 1,
+   "teams": [
+    "Aimpunch",
+    "New Jade",
+    "Lemon Tree",
+    "PepegaX",
+    "Kiedz",
+    "division20",
+    "Astral Bloom",
+    "Bluebird"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "a": "Aimpunch",
+     "b": "Kiedz",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "a": "New Jade",
+     "b": "division20",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "a": "Lemon Tree",
+     "b": "Astral Bloom",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 1,
+     "a": "PepegaX",
+     "b": "Bluebird",
+     "sa": null,
+     "sb": null
+    }
+   ],
+   "roundTitles": {
+    "1": "Round 1"
+   },
+   "rounds": 5
+  },
+  {
+   "id": 3,
+   "name": "Group C",
+   "format": "swiss",
+   "bestOf": 1,
+   "teams": [
+    "Opal",
+    "Neverland",
+    "xPlosiv",
+    "Infernum E-Sports",
+    "Prism Divide",
+    "Crystal Laurels",
+    "Fruit Basket",
+    "Nightfang Covenant"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "a": "Opal",
+     "b": "Prism Divide",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "a": "Neverland",
+     "b": "Crystal Laurels",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "a": "xPlosiv",
+     "b": "Fruit Basket",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 1,
+     "a": "Infernum E-Sports",
+     "b": "Nightfang Covenant",
+     "sa": null,
+     "sb": null
+    }
+   ],
+   "roundTitles": {
+    "1": "Round 1"
+   },
+   "rounds": 5
+  },
+  {
+   "id": 4,
+   "name": "Group D",
+   "format": "swiss",
+   "bestOf": 1,
+   "teams": [
+    "The Gigarage",
+    "Artisian",
+    "degree",
+    "Flood Flashers",
+    "Sacred Raven",
+    "Setting Sun",
+    "Moonlit Tempo",
+    "Special Forces"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "a": "The Gigarage",
+     "b": "Sacred Raven",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "a": "Artisian",
+     "b": "Setting Sun",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "a": "degree",
+     "b": "Moonlit Tempo",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 1,
+     "a": "Flood Flashers",
+     "b": "Special Forces",
+     "sa": null,
+     "sb": null
+    }
+   ],
+   "roundTitles": {
+    "1": "Round 1"
+   },
+   "rounds": 5
+  }
+ ],
  "formatLabel": "4 Groups (Swiss) + Playoffs",
- "formatNote": "32 teams: the top 16 of the BPL rankings and the 16 Legends Stage qualifiers. 4 Swiss groups of 8 (4 direct invites and 4 Legends qualifiers in each), 5 rounds. The top 2 of each group go to an 8-team playoff. The groups are drawn once the Legends Stage ends.",
+ "formatNote": "32 teams: the top 16 of the BPL rankings and the 16 Legends Stage qualifiers. 4 Swiss groups of 8 (4 direct invites and 4 Legends qualifiers in each, seeded by BPL rank and Legends finish), 5 rounds. Teams level on wins and losses are split by map difference, then round difference. The top 2 of each group go to an 8-team playoff.",
  "field": [
   {
    "team": "Cosmos",
@@ -151,5 +368,41 @@
    "from": "bpl-legends-stage-2026",
    "place": 16
   }
- ]
+ ],
+ "seeds": {
+  "Cosmos": 1,
+  "Aimpunch": 2,
+  "Opal": 3,
+  "The Gigarage": 4,
+  "Artisian": 5,
+  "Neverland": 6,
+  "New Jade": 7,
+  "entity": 8,
+  "Aetherline": 9,
+  "Lemon Tree": 10,
+  "xPlosiv": 11,
+  "degree": 12,
+  "Flood Flashers": 13,
+  "Infernum E-Sports": 14,
+  "PepegaX": 15,
+  "Bloom E-Sports": 16,
+  "Nullpoint": 17,
+  "Kiedz": 18,
+  "Prism Divide": 19,
+  "Sacred Raven": 20,
+  "Setting Sun": 21,
+  "Crystal Laurels": 22,
+  "division20": 23,
+  "Northwind": 24,
+  "BeeHyve": 25,
+  "Astral Bloom": 26,
+  "Fruit Basket": 27,
+  "Moonlit Tempo": 28,
+  "Special Forces": 29,
+  "Nightfang Covenant": 30,
+  "Bluebird": 31,
+  "Technomancy": 32
+ },
+ "tiebreak": "maps",
+ "predictions": "playoffs"
 }

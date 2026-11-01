@@ -32688,5 +32688,131 @@
     }
    ]
   }
+ ],
+ "bpl-conquerors-stage-2026": [
+  {
+   "team": "Crystal Laurels",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Laurel",
+     "captain": false,
+     "curSlug": "laurel"
+    },
+    {
+     "name": "cwstalVT",
+     "captain": false,
+     "curSlug": "cwstalvt"
+    },
+    {
+     "name": "CryingNutz",
+     "captain": false,
+     "curSlug": "cryingnutz"
+    },
+    {
+     "name": "Jenakai",
+     "captain": false,
+     "curSlug": "jenakai"
+    },
+    {
+     "name": "xaeela",
+     "captain": false,
+     "curSlug": "xaeela"
+    }
+   ]
+  },
+  {
+   "team": "Northwind",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "Airizu",
+     "captain": false,
+     "curSlug": "airizu"
+    },
+    {
+     "name": "MizukiiMoon",
+     "captain": false,
+     "curSlug": "mizukiimoon"
+    },
+    {
+     "name": "MilliannaVT",
+     "captain": false,
+     "curSlug": "milliannavt"
+    },
+    {
+     "name": "Karoni",
+     "captain": false,
+     "curSlug": "karoni"
+    },
+    {
+     "name": "MiyaLeile",
+     "captain": false,
+     "curSlug": "miyaleile"
+    }
+   ]
+  },
+  {
+   "team": "Special Forces",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "djassaulty",
+     "captain": false,
+     "curSlug": "djassaulty"
+    },
+    {
+     "name": "Spectrum Gabriel",
+     "captain": false,
+     "curSlug": "spectrum-gabriel"
+    },
+    {
+     "name": "Goonuyun",
+     "captain": false,
+     "curSlug": "goonuyun"
+    },
+    {
+     "name": "Icington the third",
+     "captain": false,
+     "curSlug": "icington-the-third"
+    },
+    {
+     "name": "ItzMaigay",
+     "captain": false,
+     "curSlug": "itzmaigay"
+    }
+   ]
+  },
+  {
+   "team": "Nightfang Covenant",
+   "teamSlug": null,
+   "players": [
+    {
+     "name": "KiokoCheiko",
+     "captain": false,
+     "curSlug": "kiokocheiko"
+    },
+    {
+     "name": "JStarWolf",
+     "captain": false,
+     "curSlug": "jstarwolf"
+    },
+    {
+     "name": "plushyoshii",
+     "captain": false,
+     "curSlug": "plushyoshii"
+    },
+    {
+     "name": "hazielvamp",
+     "captain": false,
+     "curSlug": "hazielvamp"
+    },
+    {
+     "name": "SyberiaK",
+     "captain": false,
+     "curSlug": "syberiak"
+    }
+   ]
+  }
  ]
 }

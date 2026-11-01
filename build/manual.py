@@ -358,8 +358,9 @@ def _rank_teams(names, stats, h2h, maps_first=False):
     return out
 
 def _maps_first(man):
-    """The event breaks ties on map difference before round difference (finalLeaderboard "tiebreak": "maps")."""
-    return (man.get("finalLeaderboard") or {}).get("tiebreak") == "maps"
+    """The event breaks ties on map difference before round difference: finalLeaderboard "tiebreak":
+    "maps" (Legends 2026), or "tiebreak": "maps" on an event with a playoff (Conquerors 2026's groups)."""
+    return (man.get("finalLeaderboard") or {}).get("tiebreak") == "maps" or man.get("tiebreak") == "maps"
 
 def leaderboard(man):
     """man["finalLeaderboard"] = {"perGroup": 2}: instead of a playoff, the top `perGroup` of every
@@ -493,7 +494,7 @@ def _display_seeds(man):
     return {}
 
 def to_standard(man):
-    if man.get("finalLeaderboard"):
+    if man.get("finalLeaderboard") or _maps_first(man):
         _load_stats()
         for st in man["stages"]:
             st["_lbSlug"] = man["slug"]            # in-memory only: group tables use the leaderboard's tiebreaks
@@ -538,6 +539,9 @@ def to_standard(man):
         "finalStandings": tournament_placements(man),
         "seeds": _display_seeds(man),
         "predictionsLocked": bool(man.get("predictionsLocked")),
+        # "playoffs": predictions skip the group stage. They open once the playoff bracket is added
+        # and cover it alone (Conquerors 2026, the user's call).
+        "predictionsMode": man.get("predictions") or None,
         "completed": bool(man.get("completed")),
         "noHonors": bool(man.get("noHonors")),
         "nationTeam": man.get("nationTeam"),
@@ -714,6 +718,9 @@ def add_stage(slug, name, fmt, teams, best_of=1):
     man["stages"].append({"id": _next_stage_id(man), "name": name.strip() or fmt,
                           "format": fmt, "bestOf": int(best_of or 1), "teams": teams,
                           "matches": matches, "roundTitles": titles})
+    # Playoff-only predictions open when the bracket goes in, even if ▶ Start locked them during the groups.
+    if fmt == "single_elim" and man.get("predictions") == "playoffs":
+        man["predictionsLocked"] = False
     save(man); return man
 
 def set_predictions_locked(slug, locked):
