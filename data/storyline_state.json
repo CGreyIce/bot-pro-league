@@ -108,8 +108,8 @@
   "setting-sun",
   "round-loss-bonus",
   "the-nomads",
-  "divide-conquer",
   "technomancy",
+  "divide-conquer",
   "moonlit-tempo",
   "sacred-raven",
   "kiedz",
@@ -170,29 +170,29 @@
    "mvp": 68
   },
   "solaonix": {
-   "maps": 43,
-   "kills": 776,
-   "mvp": 115
+   "maps": 44,
+   "kills": 811,
+   "mvp": 120
   },
   "dumbo": {
-   "maps": 37,
-   "kills": 626,
-   "mvp": 87
+   "maps": 38,
+   "kills": 657,
+   "mvp": 90
   },
   "tortillaroll": {
-   "maps": 30,
-   "kills": 488,
-   "mvp": 69
+   "maps": 31,
+   "kills": 527,
+   "mvp": 75
   },
   "kisaragi-ren": {
-   "maps": 31,
-   "kills": 482,
-   "mvp": 65
+   "maps": 32,
+   "kills": 503,
+   "mvp": 68
   },
   "angelxaim": {
-   "maps": 30,
-   "kills": 379,
-   "mvp": 52
+   "maps": 31,
+   "kills": 398,
+   "mvp": 54
   },
   "sheep": {
    "maps": 40,
@@ -1505,8 +1505,8 @@
    "mvp": 114
   },
   "prophocy": {
-   "maps": 58,
-   "kills": 739,
+   "maps": 59,
+   "kills": 758,
    "mvp": 83
   },
   "yakumo-beni": {
@@ -1790,9 +1790,9 @@
    "mvp": 92
   },
   "pattsuu": {
-   "maps": 37,
-   "kills": 564,
-   "mvp": 82
+   "maps": 38,
+   "kills": 594,
+   "mvp": 86
   },
   "morisottovt": {
    "maps": 27,
@@ -1845,9 +1845,9 @@
    "mvp": 69
   },
   "voidnw": {
-   "maps": 36,
-   "kills": 552,
-   "mvp": 92
+   "maps": 37,
+   "kills": 586,
+   "mvp": 97
   },
   "michimouto": {
    "maps": 24,
@@ -1875,9 +1875,9 @@
    "mvp": 87
   },
   "rattecs": {
-   "maps": 32,
-   "kills": 415,
-   "mvp": 54
+   "maps": 33,
+   "kills": 447,
+   "mvp": 59
   },
   "amayui-moka": {
    "maps": 38,
@@ -2025,9 +2025,9 @@
    "mvp": 29
   },
   "rihsuri": {
-   "maps": 27,
-   "kills": 421,
-   "mvp": 60
+   "maps": 28,
+   "kills": 460,
+   "mvp": 68
   },
   "codedecho": {
    "maps": 28,
