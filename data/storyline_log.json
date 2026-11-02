@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:zhizyii:mvp:100",
-  "type": "milestone",
-  "ts": 1792881073,
-  "date": "2026-10-25",
-  "title": "zhizyii: 100 MVP rounds",
-  "text": "zhizyii reached 100 MVP rounds",
-  "link": "#/player/zhizyii"
- },
- {
-  "id": "milestone:xolalotl:maps:50",
-  "type": "milestone",
-  "ts": 1792883106,
-  "date": "2026-10-25",
-  "title": "xolalotl: 50 maps played",
-  "text": "xolalotl reached 50 maps played",
-  "link": "#/player/xolalotl"
- },
- {
   "id": "milestone:notccillia:mvp:150",
   "type": "milestone",
   "ts": 1792886712,
@@ -1798,5 +1780,23 @@
   "title": "mmirawr_: 50 maps played",
   "text": "mmirawr_ reached 50 maps played",
   "link": "#/player/mmirawr"
+ },
+ {
+  "id": "milestone:rebellioniite:maps:50",
+  "type": "milestone",
+  "ts": 1793644393,
+  "date": "2026-11-03",
+  "title": "rebellioniite: 50 maps played",
+  "text": "rebellioniite reached 50 maps played",
+  "link": "#/player/rebellioniite"
+ },
+ {
+  "id": "milestone:skyllabtw:maps:50",
+  "type": "milestone",
+  "ts": 1793644393,
+  "date": "2026-11-03",
+  "title": "Skyllabtw: 50 maps played",
+  "text": "Skyllabtw reached 50 maps played",
+  "link": "#/player/skyllabtw"
  }
 ]
