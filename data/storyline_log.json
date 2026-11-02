@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:lyrazal:kills:500",
-  "type": "milestone",
-  "ts": 1792860304,
-  "date": "2026-10-25",
-  "title": "Lyrazal: 500 career kills",
-  "text": "Lyrazal reached 500 career kills",
-  "link": "#/player/lyrazal"
- },
- {
-  "id": "milestone:luciddoob:kills:500",
-  "type": "milestone",
-  "ts": 1792865008,
-  "date": "2026-10-25",
-  "title": "luciddoob: 500 career kills",
-  "text": "luciddoob reached 500 career kills",
-  "link": "#/player/luciddoob"
- },
- {
-  "id": "milestone:pastellows:kills:1000",
-  "type": "milestone",
-  "ts": 1792865008,
-  "date": "2026-10-25",
-  "title": "pastellows: 1000 career kills",
-  "text": "pastellows reached 1000 career kills",
-  "link": "#/player/pastellows"
- },
- {
   "id": "milestone:kenzieyii:kills:500",
   "type": "milestone",
   "ts": 1792865008,
@@ -1798,5 +1771,32 @@
   "title": "Cursiffe: 500 career kills",
   "text": "Cursiffe reached 500 career kills",
   "link": "#/player/cursiffe"
+ },
+ {
+  "id": "milestone:resent:kills:500",
+  "type": "milestone",
+  "ts": 1793632477,
+  "date": "2026-11-02",
+  "title": "Resent: 500 career kills",
+  "text": "Resent reached 500 career kills",
+  "link": "#/player/resent"
+ },
+ {
+  "id": "milestone:ice:mvp:100",
+  "type": "milestone",
+  "ts": 1793632477,
+  "date": "2026-11-02",
+  "title": "Ice: 100 MVP rounds",
+  "text": "Ice reached 100 MVP rounds",
+  "link": "#/player/ice"
+ },
+ {
+  "id": "milestone:adrina-ii:kills:500",
+  "type": "milestone",
+  "ts": 1793632477,
+  "date": "2026-11-02",
+  "title": "adrina.ii: 500 career kills",
+  "text": "adrina.ii reached 500 career kills",
+  "link": "#/player/adrina-ii"
  }
 ]
