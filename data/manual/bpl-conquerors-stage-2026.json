@@ -143,12 +143,46 @@
      "round": 1,
      "a": "PepegaX",
      "b": "Bluebird",
+     "sa": 2,
+     "sb": 0,
+     "ts": 1793620551
+    },
+    {
+     "id": 5,
+     "round": 2,
+     "a": "Astral Bloom",
+     "b": "PepegaX",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 6,
+     "round": 2,
+     "a": "Kiedz",
+     "b": "New Jade",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 7,
+     "round": 2,
+     "a": "Aimpunch",
+     "b": "division20",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 8,
+     "round": 2,
+     "a": "Bluebird",
+     "b": "Lemon Tree",
      "sa": null,
      "sb": null
     }
    ],
    "roundTitles": {
-    "1": "Round 1"
+    "1": "Round 1",
+    "2": "Round 2"
    },
    "rounds": 5
   },
