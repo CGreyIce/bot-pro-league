@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:okjustsmd:mvp:100",
-  "type": "milestone",
-  "ts": 1792910321,
-  "date": "2026-10-25",
-  "title": "okjustsmd: 100 MVP rounds",
-  "text": "okjustsmd reached 100 MVP rounds",
-  "link": "#/player/okjustsmd"
- },
- {
-  "id": "milestone:l2strike:kills:500",
-  "type": "milestone",
-  "ts": 1792912865,
-  "date": "2026-10-25",
-  "title": "L2Strike: 500 career kills",
-  "text": "L2Strike reached 500 career kills",
-  "link": "#/player/l2strike"
- },
- {
-  "id": "milestone:midorissi:maps:50",
-  "type": "milestone",
-  "ts": 1793013388,
-  "date": "2026-10-26",
-  "title": "midorissi: 50 maps played",
-  "text": "midorissi reached 50 maps played",
-  "link": "#/player/midorissi"
- },
- {
   "id": "milestone:lilraxxx:maps:50",
   "type": "milestone",
   "ts": 1793014808,
@@ -1798,5 +1771,32 @@
   "title": "Emily_melody: 100 MVP rounds",
   "text": "Emily_melody reached 100 MVP rounds",
   "link": "#/player/emily-melody"
+ },
+ {
+  "id": "milestone:komori-met:kills:500",
+  "type": "milestone",
+  "ts": 1793657467,
+  "date": "2026-11-03",
+  "title": "Komori Met: 500 career kills",
+  "text": "Komori Met reached 500 career kills",
+  "link": "#/player/komori-met"
+ },
+ {
+  "id": "milestone:goonuyun:kills:500",
+  "type": "milestone",
+  "ts": 1793657467,
+  "date": "2026-11-03",
+  "title": "Goonuyun: 500 career kills",
+  "text": "Goonuyun reached 500 career kills",
+  "link": "#/player/goonuyun"
+ },
+ {
+  "id": "milestone:itzmaigay:kills:500",
+  "type": "milestone",
+  "ts": 1793657467,
+  "date": "2026-11-03",
+  "title": "ItzMaigay: 500 career kills",
+  "text": "ItzMaigay reached 500 career kills",
+  "link": "#/player/itzmaigay"
  }
 ]
