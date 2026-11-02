@@ -1,41 +1,5 @@
 [
  {
-  "id": "milestone:ssseiso:kills:500",
-  "type": "milestone",
-  "ts": 1792830489,
-  "date": "2026-10-24",
-  "title": "ssseiso: 500 career kills",
-  "text": "ssseiso reached 500 career kills",
-  "link": "#/player/ssseiso"
- },
- {
-  "id": "milestone:cryingnutz:kills:500",
-  "type": "milestone",
-  "ts": 1792830489,
-  "date": "2026-10-24",
-  "title": "CryingNutz: 500 career kills",
-  "text": "CryingNutz reached 500 career kills",
-  "link": "#/player/cryingnutz"
- },
- {
-  "id": "milestone:itswendy:kills:500",
-  "type": "milestone",
-  "ts": 1792843982,
-  "date": "2026-10-24",
-  "title": "itswendy_: 500 career kills",
-  "text": "itswendy_ reached 500 career kills",
-  "link": "#/player/itswendy"
- },
- {
-  "id": "milestone:jira-jisaki:kills:500",
-  "type": "milestone",
-  "ts": 1792847832,
-  "date": "2026-10-24",
-  "title": "Jira Jisaki: 500 career kills",
-  "text": "Jira Jisaki reached 500 career kills",
-  "link": "#/player/jira-jisaki"
- },
- {
   "id": "milestone:erinerurie:kills:500",
   "type": "milestone",
   "ts": 1792847832,
@@ -1798,5 +1762,41 @@
   "title": "jenapoppins: 500 career kills",
   "text": "jenapoppins reached 500 career kills",
   "link": "#/player/jenapoppins"
+ },
+ {
+  "id": "milestone:kuro-mi:mvp:100",
+  "type": "milestone",
+  "ts": 1793610281,
+  "date": "2026-11-02",
+  "title": "kuro_mi: 100 MVP rounds",
+  "text": "kuro_mi reached 100 MVP rounds",
+  "link": "#/player/kuro-mi"
+ },
+ {
+  "id": "milestone:lumi-nyaa:mvp:100",
+  "type": "milestone",
+  "ts": 1793610281,
+  "date": "2026-11-02",
+  "title": "lumi.nyaa: 100 MVP rounds",
+  "text": "lumi.nyaa reached 100 MVP rounds",
+  "link": "#/player/lumi-nyaa"
+ },
+ {
+  "id": "milestone:akanersvt:mvp:150",
+  "type": "milestone",
+  "ts": 1793610281,
+  "date": "2026-11-02",
+  "title": "AkanersVT: 150 MVP rounds",
+  "text": "AkanersVT reached 150 MVP rounds",
+  "link": "#/player/akanersvt"
+ },
+ {
+  "id": "milestone:sayupurin:kills:500",
+  "type": "milestone",
+  "ts": 1793610281,
+  "date": "2026-11-02",
+  "title": "sayupurin: 500 career kills",
+  "text": "sayupurin reached 500 career kills",
+  "link": "#/player/sayupurin"
  }
 ]
