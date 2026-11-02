@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:jenakai:kills:500",
-  "type": "milestone",
-  "ts": 1793016908,
-  "date": "2026-10-26",
-  "title": "Jenakai: 500 career kills",
-  "text": "Jenakai reached 500 career kills",
-  "link": "#/player/jenakai"
- },
- {
   "id": "milestone:niamocha:mvp:150",
   "type": "milestone",
   "ts": 1793020308,
@@ -1798,5 +1789,14 @@
   "title": "awtoh: 100 MVP rounds",
   "text": "awtoh reached 100 MVP rounds",
   "link": "#/player/awtoh"
+ },
+ {
+  "id": "milestone:ssseiso:mvp:100",
+  "type": "milestone",
+  "ts": 1793662801,
+  "date": "2026-11-03",
+  "title": "ssseiso: 100 MVP rounds",
+  "text": "ssseiso reached 100 MVP rounds",
+  "link": "#/player/ssseiso"
  }
 ]
