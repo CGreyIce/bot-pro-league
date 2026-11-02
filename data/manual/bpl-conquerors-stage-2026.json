@@ -224,8 +224,9 @@
      "round": 1,
      "a": "xPlosiv",
      "b": "Fruit Basket",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1793623810
     },
     {
      "id": 4,
