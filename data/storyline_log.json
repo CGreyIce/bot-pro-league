@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:notccillia:mvp:150",
-  "type": "milestone",
-  "ts": 1792886712,
-  "date": "2026-10-25",
-  "title": "notccillia: 150 MVP rounds",
-  "text": "notccillia reached 150 MVP rounds",
-  "link": "#/player/notccillia"
- },
- {
   "id": "milestone:lilraxxx:mvp:100",
   "type": "milestone",
   "ts": 1792886712,
@@ -1798,5 +1789,14 @@
   "title": "Skyllabtw: 50 maps played",
   "text": "Skyllabtw reached 50 maps played",
   "link": "#/player/skyllabtw"
+ },
+ {
+  "id": "milestone:uzuhii:maps:50",
+  "type": "milestone",
+  "ts": 1793646544,
+  "date": "2026-11-03",
+  "title": "Uzuhii: 50 maps played",
+  "text": "Uzuhii reached 50 maps played",
+  "link": "#/player/uzuhii"
  }
 ]
