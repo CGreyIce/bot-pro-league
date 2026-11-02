@@ -307,8 +307,9 @@
      "round": 1,
      "a": "Artisian",
      "b": "Setting Sun",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1793648380
     },
     {
      "id": 3,
