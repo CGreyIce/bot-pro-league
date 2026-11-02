@@ -52,12 +52,46 @@
      "round": 1,
      "a": "Bloom E-Sports",
      "b": "Technomancy",
+     "sa": 0,
+     "sb": 2,
+     "ts": 1793588635
+    },
+    {
+     "id": 5,
+     "round": 2,
+     "a": "Aetherline",
+     "b": "Nullpoint",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 6,
+     "round": 2,
+     "a": "Technomancy",
+     "b": "Northwind",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 7,
+     "round": 2,
+     "a": "entity",
+     "b": "BeeHyve",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 8,
+     "round": 2,
+     "a": "Bloom E-Sports",
+     "b": "Cosmos",
      "sa": null,
      "sb": null
     }
    ],
    "roundTitles": {
-    "1": "Round 1"
+    "1": "Round 1",
+    "2": "Round 2"
    },
    "rounds": 5
   },
