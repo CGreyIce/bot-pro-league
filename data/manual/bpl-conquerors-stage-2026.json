@@ -298,8 +298,9 @@
      "round": 1,
      "a": "The Gigarage",
      "b": "Sacred Raven",
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1793643202
     },
     {
      "id": 2,
