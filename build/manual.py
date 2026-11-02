@@ -10,7 +10,7 @@ Group stage + playoffs = e.g. two round_robin stages ("Group A/B") + a
 single_elim stage ("Playoffs"). Editable master: data/manual/<slug>.json.
 On save we also write the standard data/tournaments/<slug>.json for parse.py.
 """
-import json, math, os, re, time
+import itertools, json, math, os, re, time
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MANUAL = os.path.join(ROOT, "data", "manual")
@@ -466,7 +466,12 @@ def tournament_placements(man):
                 if t not in placed:
                     out.append({"rank": rank, "name": t, "result": label, "tie": tie}); placed.add(t)
             rank += len(teams)
-    # teams that didn't reach the playoff bracket — rank by their group record
+    # teams that didn't reach the playoff bracket — rank by their group record. Not while the groups are
+    # still being played (an unplayed match, or a swiss round still to draft): nobody's out yet.
+    grps = [s for s in stages if s["format"] in ("swiss", "round_robin")]
+    if any(m.get("sa") is None for s in grps for m in s["matches"]) or any(
+            s["format"] == "swiss" and s.get("rounds") and not _group_complete(s) for s in grps):
+        return out
     grp_rec = {}
     for s in stages:
         if s["format"] not in ("swiss", "round_robin"):
@@ -586,31 +591,78 @@ def _group_complete(st):
     return (rounds == set(range(1, total + 1)) and
             all(m.get("sa") is not None and m.get("sb") is not None for m in st["matches"]))
 
+def _meet_round(order, s, t):
+    """The bracket round in which seeds s and t would meet (1 = first round), given seed_order()."""
+    pa, pb, r = order.index(s), order.index(t), 1
+    while pa // 2 != pb // 2:
+        pa //= 2; pb //= 2; r += 1
+    return r
+
+def _swiss_top2_seeds(man, groups, n):
+    """The playoff's teams in seed order (seed 1 first), or None if the groups don't fill it.
+    Each group's order is the one its table shows (the event's tiebreaks: map difference first when
+    "tiebreak" is "maps"). Group winners take seeds 1..G, ranked across groups on the same key. The
+    runners-up fill G+1..2G so that two teams from the same group meet as late as possible (only in the
+    final for 4 groups / 8 teams), and otherwise the better runner-up gets the better seed."""
+    _load_stats()
+    mf = _maps_first(man)
+    winners, runners, allstats = [], [], {}
+    for g in groups:
+        stats, h2h = _stage_table(g, man["slug"])
+        allstats.update(stats)
+        if man.get("finalLeaderboard") or mf:
+            order = [nm for nm, _ in _rank_teams(list(stats), stats, h2h, mf)]
+        else:
+            res, _ = stage_resolved(g)
+            order = [x["name"] for x in stage_standings(g, res)]
+        if len(order) < 2:
+            return None
+        winners.append((order[0], g["name"])); runners.append((order[1], g["name"]))
+    if 2 * len(winners) != n:
+        return None
+    md = lambda nm: allstats[nm]["mw"] - allstats[nm]["ml"]
+    rd = lambda nm: allstats[nm]["rf"] - allstats[nm]["ra"]
+    key = lambda x: (-allstats[x[0]]["w"], allstats[x[0]]["l"]) + ((-md(x[0]), -rd(x[0])) if mf else (-rd(x[0]), -md(x[0]))) + (x[0].lower(),)
+    winners.sort(key=key); runners.sort(key=key)
+    G = len(winners)
+    p = 1
+    while p < n:
+        p *= 2
+    so = seed_order(p)
+    rounds = int(math.log2(p))
+    group_of = {nm: gname for nm, gname in winners + runners}
+    best = None
+    for perm in itertools.permutations(range(G)):          # perm[k] = which runner gets seed G+1+k
+        teams = [w for w, _ in winners] + [runners[i][0] for i in perm]
+        meets = [0] * rounds
+        for a in range(n):
+            for b in range(a + 1, n):
+                if group_of[teams[a]] == group_of[teams[b]]:
+                    meets[_meet_round(so, a + 1, b + 1) - 1] += 1
+        cost = (tuple(meets), perm)                          # earliest same-group meeting first, then rank order
+        if best is None or cost < best[0]:
+            best = (cost, teams)
+    return best[1]
+
 def auto_seed_playoffs(man):
     """A playoff stage with autoSeed "swiss_top2" fills itself from the swiss groups: once EVERY
-    group is complete, the group winners take seeds 1..G and the runners-up G+1..2G, each ordered
-    by wins, then losses, then round difference. Re-evaluated on every save until a playoff score
-    exists (so a corrected group score re-seeds); while groups are unfinished the slots stay TBD."""
+    group is complete, the top 2 of each group are seeded by _swiss_top2_seeds. Re-evaluated on every
+    save until a playoff score exists (so a corrected group score re-seeds); while groups are
+    unfinished the slots stay TBD. Playoff-only predictions open the moment it seeds."""
     po = next((s for s in man.get("stages", []) if s.get("autoSeed") == "swiss_top2"), None)
     if not po or any(m.get("sa") is not None for m in po["matches"]):
         return
     groups = [s for s in man["stages"] if s.get("format") == "swiss"]
     n = len(po["teams"])
+    was_seeded = all(po["teams"])
     if groups and all(_group_complete(g) for g in groups):
-        winners, runners = [], []
-        for g in groups:
-            res, _ = stage_resolved(g)
-            st = stage_standings(g, res)
-            rec = swiss_records(g)
-            key = lambda nm: (-rec[nm]["w"], rec[nm]["l"], -rec[nm]["diff"], nm.lower())
-            if len(st) >= 2:
-                winners.append((key(st[0]["name"]), st[0]["name"]))
-                runners.append((key(st[1]["name"]), st[1]["name"]))
-        order = [nm for _, nm in sorted(winners)] + [nm for _, nm in sorted(runners)]
-        if len(order) == n:
+        order = _swiss_top2_seeds(man, groups, n)
+        if order:
             man.setdefault("groupSeeds", man.get("seeds") or {})
             po["teams"] = order
             man["seeds"] = {nm: i + 1 for i, nm in enumerate(order)}
+            if not was_seeded and man.get("predictions") == "playoffs":
+                man["predictionsLocked"] = False             # ▶ Start locked them for the groups
             return
     po["teams"] = [""] * n                                  # not ready: every slot TBD
     if "groupSeeds" in man:

@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:teckiyo:mvp:100",
-  "type": "milestone",
-  "ts": 1792801317,
-  "date": "2026-10-24",
-  "title": "teckiyo: 100 MVP rounds",
-  "text": "teckiyo reached 100 MVP rounds",
-  "link": "#/player/teckiyo"
- },
- {
-  "id": "milestone:baer:mvp:100",
-  "type": "milestone",
-  "ts": 1792803351,
-  "date": "2026-10-24",
-  "title": "Baer: 100 MVP rounds",
-  "text": "Baer reached 100 MVP rounds",
-  "link": "#/player/baer"
- },
- {
   "id": "milestone:4-naru:maps:50",
   "type": "milestone",
   "ts": 1792803351,
@@ -1798,5 +1780,23 @@
   "title": "Karoni: 50 maps played",
   "text": "Karoni reached 50 maps played",
   "link": "#/player/karoni"
+ },
+ {
+  "id": "transfer:eiromancers:2026-11-02:codedecho",
+  "type": "transfer",
+  "ts": 1793584078,
+  "date": "2026-11-02",
+  "title": "Eiromancers part ways with CodedEcho",
+  "text": "out: CodedEcho",
+  "link": "#/team/eiromancers"
+ },
+ {
+  "id": "milestone:raviaseir:kills:1000",
+  "type": "milestone",
+  "ts": 1793584078,
+  "date": "2026-11-02",
+  "title": "RaviasEir: 1000 career kills",
+  "text": "RaviasEir reached 1000 career kills",
+  "link": "#/player/raviaseir"
  }
 ]

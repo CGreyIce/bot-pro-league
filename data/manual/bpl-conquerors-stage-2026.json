@@ -222,10 +222,131 @@
     "1": "Round 1"
    },
    "rounds": 5
+  },
+  {
+   "id": 5,
+   "name": "Playoffs",
+   "format": "single_elim",
+   "bestOf": 3,
+   "teams": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "fa": {
+      "seed": 1
+     },
+     "fb": {
+      "seed": 8
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "fa": {
+      "seed": 4
+     },
+     "fb": {
+      "seed": 5
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "fa": {
+      "seed": 2
+     },
+     "fb": {
+      "seed": 7
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 1,
+     "fa": {
+      "seed": 3
+     },
+     "fb": {
+      "seed": 6
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 5,
+     "round": 2,
+     "fa": {
+      "match": 1
+     },
+     "fb": {
+      "match": 2
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 6,
+     "round": 2,
+     "fa": {
+      "match": 3
+     },
+     "fb": {
+      "match": 4
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 7,
+     "round": 3,
+     "fa": {
+      "match": 5
+     },
+     "fb": {
+      "match": 6
+     },
+     "sa": null,
+     "sb": null,
+     "bestOf": 5
+    },
+    {
+     "id": 8,
+     "round": 3,
+     "fa": {
+      "loserOf": 5
+     },
+     "fb": {
+      "loserOf": 6
+     },
+     "bestOf": null,
+     "thirdPlace": true
+    }
+   ],
+   "roundTitles": {
+    "1": "Quarterfinals",
+    "2": "Semifinals",
+    "3": "Final"
+   },
+   "autoSeed": "swiss_top2"
   }
  ],
  "formatLabel": "4 Groups (Swiss) + Playoffs",
- "formatNote": "32 teams: the top 16 of the BPL rankings and the 16 Legends Stage qualifiers. 4 Swiss groups of 8 (4 direct invites and 4 Legends qualifiers in each, seeded by BPL rank and Legends finish), 5 rounds, every match a Bo3. Teams level on wins and losses are split by map difference, then round difference. The top 2 of each group go to an 8-team playoff: Bo3, with a Bo5 grand final.",
+ "formatNote": "32 teams: the top 16 of the BPL rankings and the 16 Legends Stage qualifiers. 4 Swiss groups of 8 (4 direct invites and 4 Legends qualifiers in each, seeded by BPL rank and Legends finish), 5 rounds, every match a Bo3. Teams level on wins and losses are split by map difference, then round difference. The top 2 of each group go to an 8-team playoff (Bo3, with a Bo5 grand final), seeded automatically once every group is finished: group winners face runners-up from other groups, and two teams from the same group can only meet in the final.",
  "field": [
   {
    "team": "Cosmos",

@@ -5286,7 +5286,9 @@ function predSeeds(tr, pred){
   const gs=predGroups(tr);
   if(!gs.length){
     const st=predPlayoffStage(tr) || (predPlayoffsOnly(tr) ? null : (tr.stages||[])[0]);
-    return ((st&&st.teams)||[]).map(t=>Array.isArray(t)?t[0]:t);
+    const seeds=((st&&st.teams)||[]).map(t=>Array.isArray(t)?t[0]:t);
+    // a self-seeding playoff (autoSeed) is all TBD slots until the groups finish: not open yet
+    return predPlayoffsOnly(tr) && seeds.some(t=>!t) ? [] : seeds;
   }
   const w=[],r=[];
   gs.forEach(g=>{ const p=(pred.groups||{})[g.name]||[]; w.push(p[0]||null); r.push(p[1]||null); });

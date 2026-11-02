@@ -143,7 +143,7 @@
   "lunar-cadence",
   "astral-bloom"
  ],
- "movesSeen": 100,
+ "movesSeen": 119,
  "top": {
   "player": "candybar-isblue",
   "team": "cosmos"
@@ -1204,6 +1204,11 @@
    "kills": 794,
    "mvp": 132
   },
+  "raviaseir": {
+   "maps": 67,
+   "kills": 1095,
+   "mvp": 188
+  },
   "ostc-x": {
    "maps": 52,
    "kills": 796,
@@ -2094,11 +2099,6 @@
    "kills": 601,
    "mvp": 84
   },
-  "raviaseir": {
-   "maps": 53,
-   "kills": 873,
-   "mvp": 154
-  },
   "kaikaijins": {
    "maps": 58,
    "kills": 895,
@@ -2492,6 +2492,7 @@
   "transfer:aspire:2026-09-30:chisascarlett+mikuryne+moira+stylus",
   "transfer:astralbloom:2026-09-29:ginjosaine+kogaratoto+yumenoakari",
   "transfer:eiromancers:2026-10-19:codedecho+twentyrosie",
+  "transfer:eiromancers:2026-11-02:codedecho",
   "transfer:lemontree:2026-10-19:kkayyteeee+rebebx",
   "transfer:lunarcadence:2026-09-29:erissuzukami+shiranamiramune+tsumugikokage",
   "transfer:masmark:2026-09-28:estellyy+hikariifloofie",
