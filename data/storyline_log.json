@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:yinnzx:kills:500",
-  "type": "milestone",
-  "ts": 1792897059,
-  "date": "2026-10-25",
-  "title": "yinnzx: 500 career kills",
-  "text": "yinnzx reached 500 career kills",
-  "link": "#/player/yinnzx"
- },
- {
   "id": "milestone:itzmaigo:kills:500",
   "type": "milestone",
   "ts": 1792897059,
@@ -1798,5 +1789,14 @@
   "title": "KTenshi: 50 maps played",
   "text": "KTenshi reached 50 maps played",
   "link": "#/player/ktenshi"
+ },
+ {
+  "id": "milestone:kyan:mvp:100",
+  "type": "milestone",
+  "ts": 1793652060,
+  "date": "2026-11-03",
+  "title": "Kyan: 100 MVP rounds",
+  "text": "Kyan reached 100 MVP rounds",
+  "link": "#/player/kyan"
  }
 ]
