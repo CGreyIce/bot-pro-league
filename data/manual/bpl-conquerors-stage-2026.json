@@ -134,8 +134,9 @@
      "round": 1,
      "a": "Lemon Tree",
      "b": "Astral Bloom",
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1793606887
     },
     {
      "id": 4,
