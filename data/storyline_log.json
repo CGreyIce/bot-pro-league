@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:vixi:mvp:100",
-  "type": "milestone",
-  "ts": 1792910015,
-  "date": "2026-10-25",
-  "title": "vixi: 100 MVP rounds",
-  "text": "vixi reached 100 MVP rounds",
-  "link": "#/player/vixi"
- },
- {
   "id": "milestone:okjustsmd:mvp:100",
   "type": "milestone",
   "ts": 1792910321,
@@ -1798,5 +1789,14 @@
   "title": "SashimiGoesBloop: 50 maps played",
   "text": "SashimiGoesBloop reached 50 maps played",
   "link": "#/player/sashimigoesbloop"
+ },
+ {
+  "id": "milestone:emily-melody:mvp:100",
+  "type": "milestone",
+  "ts": 1793655499,
+  "date": "2026-11-03",
+  "title": "Emily_melody: 100 MVP rounds",
+  "text": "Emily_melody reached 100 MVP rounds",
+  "link": "#/player/emily-melody"
  }
 ]
