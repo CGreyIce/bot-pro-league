@@ -600,29 +600,29 @@
    "mvp": 133
   },
   "y-uuno": {
-   "maps": 52,
-   "kills": 858,
-   "mvp": 135
+   "maps": 53,
+   "kills": 869,
+   "mvp": 137
   },
   "spoods": {
-   "maps": 48,
-   "kills": 808,
+   "maps": 49,
+   "kills": 823,
    "mvp": 131
   },
   "laburi": {
-   "maps": 52,
-   "kills": 890,
-   "mvp": 167
+   "maps": 53,
+   "kills": 899,
+   "mvp": 168
   },
   "eroxis": {
-   "maps": 52,
-   "kills": 904,
-   "mvp": 127
+   "maps": 53,
+   "kills": 915,
+   "mvp": 128
   },
   "kitties258": {
-   "maps": 48,
-   "kills": 592,
-   "mvp": 72
+   "maps": 49,
+   "kills": 602,
+   "mvp": 74
   },
   "mike": {
    "maps": 30,
@@ -850,24 +850,24 @@
    "mvp": 47
   },
   "vplh": {
-   "maps": 33,
-   "kills": 532,
-   "mvp": 108
+   "maps": 34,
+   "kills": 542,
+   "mvp": 111
   },
   "jenapoppins": {
-   "maps": 34,
-   "kills": 496,
-   "mvp": 59
+   "maps": 35,
+   "kills": 509,
+   "mvp": 61
   },
   "jeribean": {
-   "maps": 33,
-   "kills": 435,
+   "maps": 34,
+   "kills": 444,
    "mvp": 60
   },
   "astro-ruckus": {
-   "maps": 33,
-   "kills": 386,
-   "mvp": 48
+   "maps": 34,
+   "kills": 397,
+   "mvp": 49
   },
   "crazywhoopies": {
    "maps": 38,
@@ -1310,9 +1310,9 @@
    "mvp": 60
   },
   "kojadayo": {
-   "maps": 25,
-   "kills": 468,
-   "mvp": 75
+   "maps": 26,
+   "kills": 492,
+   "mvp": 82
   },
   "rebebx": {
    "maps": 46,
@@ -2432,6 +2432,7 @@
   "upset:bpl-challengers-stage-2026:5-5",
   "upset:bpl-conquerors-stage-2026:1-2",
   "upset:bpl-conquerors-stage-2026:1-4",
+  "upset:bpl-conquerors-stage-2026:2-2",
   "upset:bpl-legends-stage-2026:1-10",
   "upset:bpl-legends-stage-2026:1-12",
   "upset:bpl-legends-stage-2026:1-13",
@@ -2501,6 +2502,7 @@
   "transfer:newjade:2026-10-16:crazywhoopies+kojadayo",
   "transfer:newjade:2026-10-16:kojadayo",
   "transfer:thenomads:2026-10-09:l2strike+mominichi+redandb1ue+sadgeboi",
+  "upset:bpl-conquerors-stage-2026:2-2",
   "upset:bpl-legends-stage-2026:3-19",
   "upset:bpl-legends-stage-2026:4-20"
  ]
