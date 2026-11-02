@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:kenzieyii:kills:500",
-  "type": "milestone",
-  "ts": 1792865008,
-  "date": "2026-10-25",
-  "title": "kenzieyii: 500 career kills",
-  "text": "kenzieyii reached 500 career kills",
-  "link": "#/player/kenzieyii"
- },
- {
   "id": "milestone:ziweiv:kills:500",
   "type": "milestone",
   "ts": 1792872857,
@@ -1798,5 +1789,14 @@
   "title": "adrina.ii: 500 career kills",
   "text": "adrina.ii reached 500 career kills",
   "link": "#/player/adrina-ii"
+ },
+ {
+  "id": "milestone:dirfun:mvp:100",
+  "type": "milestone",
+  "ts": 1793636816,
+  "date": "2026-11-03",
+  "title": "Dirfun: 100 MVP rounds",
+  "text": "Dirfun reached 100 MVP rounds",
+  "link": "#/player/dirfun"
  }
 ]

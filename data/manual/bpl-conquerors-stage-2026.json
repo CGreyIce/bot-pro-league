@@ -234,12 +234,46 @@
      "round": 1,
      "a": "Infernum E-Sports",
      "b": "Nightfang Covenant",
+     "sa": 0,
+     "sb": 2,
+     "ts": 1793636814
+    },
+    {
+     "id": 5,
+     "round": 2,
+     "a": "Nightfang Covenant",
+     "b": "xPlosiv",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 6,
+     "round": 2,
+     "a": "Crystal Laurels",
+     "b": "Opal",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 7,
+     "round": 2,
+     "a": "Neverland",
+     "b": "Prism Divide",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 8,
+     "round": 2,
+     "a": "Fruit Basket",
+     "b": "Infernum E-Sports",
      "sa": null,
      "sb": null
     }
    ],
    "roundTitles": {
-    "1": "Round 1"
+    "1": "Round 1",
+    "2": "Round 2"
    },
    "rounds": 5
   },
