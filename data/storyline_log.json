@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:lilraxxx:maps:50",
-  "type": "milestone",
-  "ts": 1793014808,
-  "date": "2026-10-26",
-  "title": "lilraxxx: 50 maps played",
-  "text": "lilraxxx reached 50 maps played",
-  "link": "#/player/lilraxxx"
- },
- {
   "id": "milestone:jenakai:kills:500",
   "type": "milestone",
   "ts": 1793016908,
@@ -1798,5 +1789,14 @@
   "title": "ItzMaigay: 500 career kills",
   "text": "ItzMaigay reached 500 career kills",
   "link": "#/player/itzmaigay"
+ },
+ {
+  "id": "milestone:awtoh:mvp:100",
+  "type": "milestone",
+  "ts": 1793660924,
+  "date": "2026-11-03",
+  "title": "awtoh: 100 MVP rounds",
+  "text": "awtoh reached 100 MVP rounds",
+  "link": "#/player/awtoh"
  }
 ]
