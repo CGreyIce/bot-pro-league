@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:hakase:kills:500",
-  "type": "milestone",
-  "ts": 1793170747,
-  "date": "2026-10-28",
-  "title": "Hakase: 500 career kills",
-  "text": "Hakase reached 500 career kills",
-  "link": "#/player/hakase"
- },
- {
   "id": "milestone:yuuschan:kills:500",
   "type": "milestone",
   "ts": 1793174692,
@@ -1798,5 +1789,14 @@
   "title": "Kaito_Oshino: 50 maps played",
   "text": "Kaito_Oshino reached 50 maps played",
   "link": "#/player/kaito-oshino"
+ },
+ {
+  "id": "record:longestWinStreak:14",
+  "type": "record",
+  "ts": 1793729553,
+  "date": "2026-11-04",
+  "title": "New record: longest win streak",
+  "text": "Nullpoint: 14 wins in a row (BPL Conquerors Stage 2026)",
+  "link": "#/team/nullpoint"
  }
 ]

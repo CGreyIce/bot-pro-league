@@ -16,9 +16,9 @@
    "valueText": "7 overtimes"
   },
   "longestWinStreak": {
-   "value": 13,
-   "holder": "Aimpunch",
-   "valueText": "13 wins in a row"
+   "value": 14,
+   "holder": "Nullpoint",
+   "valueText": "14 wins in a row"
   },
   "mostTitlesTeam": {
    "value": 6,
@@ -1050,29 +1050,29 @@
    "mvp": 68
   },
   "skuxxninja44": {
-   "maps": 44,
-   "kills": 735,
-   "mvp": 120
+   "maps": 45,
+   "kills": 743,
+   "mvp": 121
   },
   "teckiyo": {
-   "maps": 45,
-   "kills": 714,
+   "maps": 46,
+   "kills": 718,
    "mvp": 111
   },
   "ochakokiyomi": {
-   "maps": 45,
-   "kills": 730,
-   "mvp": 108
+   "maps": 46,
+   "kills": 738,
+   "mvp": 109
   },
   "carv": {
-   "maps": 45,
-   "kills": 603,
+   "maps": 46,
+   "kills": 609,
    "mvp": 78
   },
   "nicsman": {
-   "maps": 45,
-   "kills": 674,
-   "mvp": 87
+   "maps": 46,
+   "kills": 677,
+   "mvp": 88
   },
   "gigichiii": {
    "maps": 58,
@@ -1320,29 +1320,29 @@
    "mvp": 132
   },
   "zhizyii": {
-   "maps": 44,
-   "kills": 855,
-   "mvp": 114
+   "maps": 45,
+   "kills": 866,
+   "mvp": 117
   },
   "candybar-isblue": {
-   "maps": 48,
-   "kills": 911,
-   "mvp": 157
+   "maps": 49,
+   "kills": 924,
+   "mvp": 161
   },
   "utsuhonull": {
-   "maps": 43,
-   "kills": 828,
-   "mvp": 134
+   "maps": 44,
+   "kills": 840,
+   "mvp": 136
   },
   "ssseiso": {
-   "maps": 44,
-   "kills": 714,
-   "mvp": 103
+   "maps": 45,
+   "kills": 725,
+   "mvp": 104
   },
   "kaito-oshino": {
-   "maps": 50,
-   "kills": 895,
-   "mvp": 144
+   "maps": 51,
+   "kills": 913,
+   "mvp": 147
   },
   "niamocha": {
    "maps": 50,
@@ -2488,6 +2488,7 @@
   "promotion:pastel-mocha",
   "promotion:special-forces",
   "record:highestMap:65+mostKillsMap:58+mostOT:7",
+  "record:longestWinStreak:14",
   "top:player:candybar-isblue:2026-10-27",
   "top:player:candybar-isblue:2026-10-29",
   "top:player:laburi:2026-10-29",
