@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:kaminari-qpi:kills:500",
-  "type": "milestone",
-  "ts": 1793153694,
-  "date": "2026-10-28",
-  "title": "Kaminari Qpi: 500 career kills",
-  "text": "Kaminari Qpi reached 500 career kills",
-  "link": "#/player/kaminari-qpi"
- },
- {
-  "id": "milestone:keikatamori:maps:50",
-  "type": "milestone",
-  "ts": 1793165423,
-  "date": "2026-10-28",
-  "title": "keikatamori: 50 maps played",
-  "text": "keikatamori reached 50 maps played",
-  "link": "#/player/keikatamori"
- },
- {
-  "id": "milestone:froggiee:maps:50",
-  "type": "milestone",
-  "ts": 1793165423,
-  "date": "2026-10-28",
-  "title": "_froggiee: 50 maps played",
-  "text": "_froggiee reached 50 maps played",
-  "link": "#/player/froggiee"
- },
- {
   "id": "milestone:kaikaijins:mvp:100",
   "type": "milestone",
   "ts": 1793165423,
@@ -1798,5 +1771,32 @@
   "title": "jaelyo: 50 maps played",
   "text": "jaelyo reached 50 maps played",
   "link": "#/player/jaelyo"
+ },
+ {
+  "id": "milestone:gigichiii:mvp:150",
+  "type": "milestone",
+  "ts": 1793722148,
+  "date": "2026-11-04",
+  "title": "gigichiii_: 150 MVP rounds",
+  "text": "gigichiii_ reached 150 MVP rounds",
+  "link": "#/player/gigichiii"
+ },
+ {
+  "id": "milestone:yojareddo:maps:50",
+  "type": "milestone",
+  "ts": 1793722148,
+  "date": "2026-11-04",
+  "title": "YoJareddo: 50 maps played",
+  "text": "YoJareddo reached 50 maps played",
+  "link": "#/player/yojareddo"
+ },
+ {
+  "id": "milestone:djassaulty:kills:500",
+  "type": "milestone",
+  "ts": 1793722148,
+  "date": "2026-11-04",
+  "title": "djassaulty: 500 career kills",
+  "text": "djassaulty reached 500 career kills",
+  "link": "#/player/djassaulty"
  }
 ]
