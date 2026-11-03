@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:tigeraxd:kills:500",
-  "type": "milestone",
-  "ts": 1793126263,
-  "date": "2026-10-28",
-  "title": "Tigeraxd: 500 career kills",
-  "text": "Tigeraxd reached 500 career kills",
-  "link": "#/player/tigeraxd"
- },
- {
-  "id": "milestone:capplecrow:mvp:100",
-  "type": "milestone",
-  "ts": 1793132108,
-  "date": "2026-10-28",
-  "title": "capplecrow: 100 MVP rounds",
-  "text": "capplecrow reached 100 MVP rounds",
-  "link": "#/player/capplecrow"
- },
- {
   "id": "milestone:wellson111:kills:500",
   "type": "milestone",
   "ts": 1793132108,
@@ -1798,5 +1780,23 @@
   "title": "Dirfun: 50 maps played",
   "text": "Dirfun reached 50 maps played",
   "link": "#/player/dirfun"
+ },
+ {
+  "id": "milestone:historia:mvp:100",
+  "type": "milestone",
+  "ts": 1793707429,
+  "date": "2026-11-03",
+  "title": "Historia: 100 MVP rounds",
+  "text": "Historia reached 100 MVP rounds",
+  "link": "#/player/historia"
+ },
+ {
+  "id": "milestone:siddnely:kills:500",
+  "type": "milestone",
+  "ts": 1793707429,
+  "date": "2026-11-03",
+  "title": "siddnely: 500 career kills",
+  "text": "siddnely reached 500 career kills",
+  "link": "#/player/siddnely"
  }
 ]
