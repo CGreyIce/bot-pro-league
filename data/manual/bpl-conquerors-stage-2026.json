@@ -326,8 +326,9 @@
      "round": 2,
      "a": "Crystal Laurels",
      "b": "Opal",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1793699974
     },
     {
      "id": 7,

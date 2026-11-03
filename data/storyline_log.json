@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:cherri-vt:maps:50",
-  "type": "milestone",
-  "ts": 1793102776,
-  "date": "2026-10-27",
-  "title": "cherri_vt: 50 maps played",
-  "text": "cherri_vt reached 50 maps played",
-  "link": "#/player/cherri-vt"
- },
- {
   "id": "milestone:crex:maps:50",
   "type": "milestone",
   "ts": 1793119548,
@@ -1798,5 +1789,14 @@
   "title": "xaeela: 500 career kills",
   "text": "xaeela reached 500 career kills",
   "link": "#/player/xaeela"
+ },
+ {
+  "id": "milestone:joyyy-cheng:mvp:100",
+  "type": "milestone",
+  "ts": 1793699977,
+  "date": "2026-11-03",
+  "title": "joyyy_cheng: 100 MVP rounds",
+  "text": "joyyy_cheng reached 100 MVP rounds",
+  "link": "#/player/joyyy-cheng"
  }
 ]
