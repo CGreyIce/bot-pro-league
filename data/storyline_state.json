@@ -725,29 +725,29 @@
    "mvp": 59
   },
   "elfy-mint": {
-   "maps": 47,
-   "kills": 785,
-   "mvp": 121
+   "maps": 48,
+   "kills": 799,
+   "mvp": 122
   },
   "illus": {
-   "maps": 48,
-   "kills": 804,
-   "mvp": 133
+   "maps": 49,
+   "kills": 824,
+   "mvp": 138
   },
   "kairi": {
-   "maps": 57,
-   "kills": 861,
-   "mvp": 137
+   "maps": 58,
+   "kills": 883,
+   "mvp": 138
   },
   "declaration": {
-   "maps": 48,
-   "kills": 709,
-   "mvp": 84
+   "maps": 49,
+   "kills": 728,
+   "mvp": 86
   },
   "zuann": {
-   "maps": 57,
-   "kills": 963,
-   "mvp": 130
+   "maps": 58,
+   "kills": 988,
+   "mvp": 134
   },
   "luminmochi": {
    "maps": 28,
@@ -850,23 +850,23 @@
    "mvp": 52
   },
   "vplh": {
-   "maps": 34,
-   "kills": 542,
-   "mvp": 111
+   "maps": 35,
+   "kills": 558,
+   "mvp": 114
   },
   "jenapoppins": {
-   "maps": 35,
-   "kills": 509,
-   "mvp": 61
+   "maps": 36,
+   "kills": 524,
+   "mvp": 63
   },
   "jeribean": {
-   "maps": 34,
-   "kills": 444,
-   "mvp": 60
+   "maps": 35,
+   "kills": 459,
+   "mvp": 61
   },
   "astro-ruckus": {
-   "maps": 34,
-   "kills": 397,
+   "maps": 35,
+   "kills": 407,
    "mvp": 49
   },
   "crazywhoopies": {
@@ -1310,9 +1310,9 @@
    "mvp": 60
   },
   "kojadayo": {
-   "maps": 26,
-   "kills": 492,
-   "mvp": 82
+   "maps": 27,
+   "kills": 512,
+   "mvp": 87
   },
   "rebebx": {
    "maps": 48,
