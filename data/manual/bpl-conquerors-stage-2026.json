@@ -317,8 +317,9 @@
      "round": 2,
      "a": "Nightfang Covenant",
      "b": "xPlosiv",
-     "sa": null,
-     "sb": null
+     "sa": 1,
+     "sb": 2,
+     "ts": 1793696992
     },
     {
      "id": 6,
