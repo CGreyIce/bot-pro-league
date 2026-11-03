@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:wellson111:kills:500",
-  "type": "milestone",
-  "ts": 1793132108,
-  "date": "2026-10-28",
-  "title": "Wellson111: 500 career kills",
-  "text": "Wellson111 reached 500 career kills",
-  "link": "#/player/wellson111"
- },
- {
   "id": "milestone:y-uuno:mvp:100",
   "type": "milestone",
   "ts": 1793139120,
@@ -1798,5 +1789,14 @@
   "title": "siddnely: 500 career kills",
   "text": "siddnely reached 500 career kills",
   "link": "#/player/siddnely"
+ },
+ {
+  "id": "milestone:yuuschan:mvp:100",
+  "type": "milestone",
+  "ts": 1793708813,
+  "date": "2026-11-03",
+  "title": "yuuschan: 100 MVP rounds",
+  "text": "yuuschan reached 100 MVP rounds",
+  "link": "#/player/yuuschan"
  }
 ]
