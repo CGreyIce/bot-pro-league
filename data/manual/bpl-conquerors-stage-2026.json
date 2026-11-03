@@ -198,8 +198,9 @@
      "round": 2,
      "a": "Kiedz",
      "b": "New Jade",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1793682865
     },
     {
      "id": 7,
