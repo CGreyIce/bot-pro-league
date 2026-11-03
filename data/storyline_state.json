@@ -625,29 +625,29 @@
    "mvp": 74
   },
   "mike": {
-   "maps": 31,
-   "kills": 535,
-   "mvp": 79
-  },
-  "ryker-sterling": {
-   "maps": 34,
-   "kills": 573,
+   "maps": 32,
+   "kills": 556,
    "mvp": 85
   },
+  "ryker-sterling": {
+   "maps": 35,
+   "kills": 586,
+   "mvp": 86
+  },
   "yerm": {
-   "maps": 34,
-   "kills": 518,
-   "mvp": 72
+   "maps": 35,
+   "kills": 530,
+   "mvp": 73
   },
   "xrela": {
-   "maps": 30,
-   "kills": 404,
-   "mvp": 57
+   "maps": 31,
+   "kills": 420,
+   "mvp": 58
   },
   "xjavyz": {
-   "maps": 31,
-   "kills": 480,
-   "mvp": 65
+   "maps": 32,
+   "kills": 494,
+   "mvp": 66
   },
   "cassiopeiarawr": {
    "maps": 38,
@@ -1280,9 +1280,9 @@
    "mvp": 148
   },
   "keikatamori": {
-   "maps": 63,
-   "kills": 977,
-   "mvp": 150
+   "maps": 64,
+   "kills": 994,
+   "mvp": 153
   },
   "nataleste": {
    "maps": 50,
@@ -1370,24 +1370,24 @@
    "mvp": 42
   },
   "tigeraxd": {
-   "maps": 45,
-   "kills": 755,
-   "mvp": 119
+   "maps": 46,
+   "kills": 770,
+   "mvp": 121
   },
   "froggiee": {
-   "maps": 63,
-   "kills": 829,
-   "mvp": 98
+   "maps": 64,
+   "kills": 841,
+   "mvp": 100
   },
   "tiniibee": {
-   "maps": 39,
-   "kills": 504,
-   "mvp": 72
+   "maps": 40,
+   "kills": 521,
+   "mvp": 74
   },
   "hyvred": {
-   "maps": 40,
-   "kills": 641,
-   "mvp": 90
+   "maps": 41,
+   "kills": 662,
+   "mvp": 94
   },
   "laurel": {
    "maps": 55,
@@ -2432,6 +2432,7 @@
   "upset:bpl-challengers-stage-2026:5-5",
   "upset:bpl-conquerors-stage-2026:1-2",
   "upset:bpl-conquerors-stage-2026:1-4",
+  "upset:bpl-conquerors-stage-2026:1-7",
   "upset:bpl-conquerors-stage-2026:2-2",
   "upset:bpl-legends-stage-2026:1-10",
   "upset:bpl-legends-stage-2026:1-12",

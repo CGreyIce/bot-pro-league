@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:exact:mvp:100",
-  "type": "milestone",
-  "ts": 1793021836,
-  "date": "2026-10-26",
-  "title": "EXaCT: 100 MVP rounds",
-  "text": "EXaCT reached 100 MVP rounds",
-  "link": "#/player/exact"
- },
- {
   "id": "milestone:jigglypingu:kills:500",
   "type": "milestone",
   "ts": 1793023982,
@@ -1798,5 +1789,14 @@
   "title": "TiniiBee: 500 career kills",
   "text": "TiniiBee reached 500 career kills",
   "link": "#/player/tiniibee"
+ },
+ {
+  "id": "milestone:froggiee:mvp:100",
+  "type": "milestone",
+  "ts": 1793671623,
+  "date": "2026-11-03",
+  "title": "_froggiee: 100 MVP rounds",
+  "text": "_froggiee reached 100 MVP rounds",
+  "link": "#/player/froggiee"
  }
 ]
