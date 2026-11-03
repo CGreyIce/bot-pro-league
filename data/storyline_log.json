@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:tsumugi-kokage:mvp:100",
-  "type": "milestone",
-  "ts": 1793195230,
-  "date": "2026-10-28",
-  "title": "Tsumugi Kokage: 100 MVP rounds",
-  "text": "Tsumugi Kokage reached 100 MVP rounds",
-  "link": "#/player/tsumugi-kokage"
- },
- {
-  "id": "milestone:jhjj80:kills:500",
-  "type": "milestone",
-  "ts": 1793197245,
-  "date": "2026-10-28",
-  "title": "jhjj80: 500 career kills",
-  "text": "jhjj80 reached 500 career kills",
-  "link": "#/player/jhjj80"
- },
- {
-  "id": "milestone:pashionfruit18:kills:500",
-  "type": "milestone",
-  "ts": 1793199296,
-  "date": "2026-10-28",
-  "title": "pashionfruit18: 500 career kills",
-  "text": "pashionfruit18 reached 500 career kills",
-  "link": "#/player/pashionfruit18"
- },
- {
   "id": "milestone:heyimkaiwen:kills:500",
   "type": "milestone",
   "ts": 1793199296,
@@ -1798,5 +1771,32 @@
   "title": "azzuto: 50 maps played",
   "text": "azzuto reached 50 maps played",
   "link": "#/player/azzuto"
+ },
+ {
+  "id": "milestone:nipnip:mvp:150",
+  "type": "milestone",
+  "ts": 1793735207,
+  "date": "2026-11-04",
+  "title": "NipNip: 150 MVP rounds",
+  "text": "NipNip reached 150 MVP rounds",
+  "link": "#/player/nipnip"
+ },
+ {
+  "id": "milestone:anndreika:maps:50",
+  "type": "milestone",
+  "ts": 1793735207,
+  "date": "2026-11-04",
+  "title": "Anndreika: 50 maps played",
+  "text": "Anndreika reached 50 maps played",
+  "link": "#/player/anndreika"
+ },
+ {
+  "id": "milestone:sneakyyyyy:maps:50",
+  "type": "milestone",
+  "ts": 1793735207,
+  "date": "2026-11-04",
+  "title": "sneakyyyyy: 50 maps played",
+  "text": "sneakyyyyy reached 50 maps played",
+  "link": "#/player/sneakyyyyy"
  }
 ]
