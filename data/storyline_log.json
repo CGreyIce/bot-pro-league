@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:y-uuno:mvp:100",
-  "type": "milestone",
-  "ts": 1793139120,
-  "date": "2026-10-28",
-  "title": "y.uuno: 100 MVP rounds",
-  "text": "y.uuno reached 100 MVP rounds",
-  "link": "#/player/y-uuno"
- },
- {
-  "id": "milestone:spoods:mvp:100",
-  "type": "milestone",
-  "ts": 1793139120,
-  "date": "2026-10-28",
-  "title": "Spoods: 100 MVP rounds",
-  "text": "Spoods reached 100 MVP rounds",
-  "link": "#/player/spoods"
- },
- {
   "id": "milestone:dla-wo:mvp:100",
   "type": "milestone",
   "ts": 1793146312,
@@ -1798,5 +1780,23 @@
   "title": "yuuschan: 100 MVP rounds",
   "text": "yuuschan reached 100 MVP rounds",
   "link": "#/player/yuuschan"
+ },
+ {
+  "id": "milestone:cassiopeiarawr:mvp:100",
+  "type": "milestone",
+  "ts": 1793712767,
+  "date": "2026-11-03",
+  "title": "cassiopeiarawr: 100 MVP rounds",
+  "text": "cassiopeiarawr reached 100 MVP rounds",
+  "link": "#/player/cassiopeiarawr"
+ },
+ {
+  "id": "milestone:shizuyaumiko:kills:500",
+  "type": "milestone",
+  "ts": 1793712767,
+  "date": "2026-11-03",
+  "title": "ShizuyaUmiko: 500 career kills",
+  "text": "ShizuyaUmiko reached 500 career kills",
+  "link": "#/player/shizuyaumiko"
  }
 ]
