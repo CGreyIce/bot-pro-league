@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:yuuschan:kills:500",
-  "type": "milestone",
-  "ts": 1793174692,
-  "date": "2026-10-28",
-  "title": "yuuschan: 500 career kills",
-  "text": "yuuschan reached 500 career kills",
-  "link": "#/player/yuuschan"
- },
- {
   "id": "milestone:eroxis:mvp:100",
   "type": "milestone",
   "ts": 1793180030,
@@ -1798,5 +1789,14 @@
   "title": "New record: longest win streak",
   "text": "Nullpoint: 14 wins in a row (BPL Conquerors Stage 2026)",
   "link": "#/team/nullpoint"
+ },
+ {
+  "id": "milestone:kokushi-vampir:maps:50",
+  "type": "milestone",
+  "ts": 1793731262,
+  "date": "2026-11-04",
+  "title": "kokushi_vampir: 50 maps played",
+  "text": "kokushi_vampir reached 50 maps played",
+  "link": "#/player/kokushi-vampir"
  }
 ]
