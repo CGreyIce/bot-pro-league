@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:s-gt:kills:500",
-  "type": "milestone",
-  "ts": 1793199296,
-  "date": "2026-10-28",
-  "title": "S.GT: 500 career kills",
-  "text": "S.GT reached 500 career kills",
-  "link": "#/player/s-gt"
- },
- {
   "id": "milestone:yano-kuromu:kills:500",
   "type": "milestone",
   "ts": 1793199296,
@@ -1798,5 +1789,14 @@
   "title": "keikatamori: 1000 career kills",
   "text": "keikatamori reached 1000 career kills",
   "link": "#/player/keikatamori"
+ },
+ {
+  "id": "milestone:miyaleile:mvp:100",
+  "type": "milestone",
+  "ts": 1793741185,
+  "date": "2026-11-04",
+  "title": "MiyaLeile: 100 MVP rounds",
+  "text": "MiyaLeile reached 100 MVP rounds",
+  "link": "#/player/miyaleile"
  }
 ]
