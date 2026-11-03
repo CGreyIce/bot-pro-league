@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:heyimkaiwen:kills:500",
-  "type": "milestone",
-  "ts": 1793199296,
-  "date": "2026-10-28",
-  "title": "HeyImKaiWen: 500 career kills",
-  "text": "HeyImKaiWen reached 500 career kills",
-  "link": "#/player/heyimkaiwen"
- },
- {
   "id": "milestone:s-gt:kills:500",
   "type": "milestone",
   "ts": 1793199296,
@@ -1798,5 +1789,14 @@
   "title": "sneakyyyyy: 50 maps played",
   "text": "sneakyyyyy reached 50 maps played",
   "link": "#/player/sneakyyyyy"
+ },
+ {
+  "id": "milestone:keikatamori:kills:1000",
+  "type": "milestone",
+  "ts": 1793738225,
+  "date": "2026-11-04",
+  "title": "keikatamori: 1000 career kills",
+  "text": "keikatamori reached 1000 career kills",
+  "link": "#/player/keikatamori"
  }
 ]
