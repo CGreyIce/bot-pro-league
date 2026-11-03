@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:crex:maps:50",
-  "type": "milestone",
-  "ts": 1793119548,
-  "date": "2026-10-28",
-  "title": "CRex: 50 maps played",
-  "text": "CRex reached 50 maps played",
-  "link": "#/player/crex"
- },
- {
   "id": "milestone:ebi:maps:50",
   "type": "milestone",
   "ts": 1793123291,
@@ -1798,5 +1789,14 @@
   "title": "joyyy_cheng: 100 MVP rounds",
   "text": "joyyy_cheng reached 100 MVP rounds",
   "link": "#/player/joyyy-cheng"
+ },
+ {
+  "id": "milestone:syrrith:maps:50",
+  "type": "milestone",
+  "ts": 1793701264,
+  "date": "2026-11-03",
+  "title": "Syrrith: 50 maps played",
+  "text": "Syrrith reached 50 maps played",
+  "link": "#/player/syrrith"
  }
 ]
