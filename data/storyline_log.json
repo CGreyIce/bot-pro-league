@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:niamocha:mvp:150",
-  "type": "milestone",
-  "ts": 1793020308,
-  "date": "2026-10-26",
-  "title": "Niamocha: 150 MVP rounds",
-  "text": "Niamocha reached 150 MVP rounds",
-  "link": "#/player/niamocha"
- },
- {
   "id": "milestone:laurel:maps:50",
   "type": "milestone",
   "ts": 1793020308,
@@ -1798,5 +1789,14 @@
   "title": "ssseiso: 100 MVP rounds",
   "text": "ssseiso reached 100 MVP rounds",
   "link": "#/player/ssseiso"
+ },
+ {
+  "id": "milestone:airizu:maps:50",
+  "type": "milestone",
+  "ts": 1793664980,
+  "date": "2026-11-03",
+  "title": "Airizu: 50 maps played",
+  "text": "Airizu reached 50 maps played",
+  "link": "#/player/airizu"
  }
 ]
