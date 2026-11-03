@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:arcimoon:maps:50",
-  "type": "milestone",
-  "ts": 1793098967,
-  "date": "2026-10-27",
-  "title": "arcimoon: 50 maps played",
-  "text": "arcimoon reached 50 maps played",
-  "link": "#/player/arcimoon"
- },
- {
-  "id": "milestone:tearsofdeath:maps:50",
-  "type": "milestone",
-  "ts": 1793102776,
-  "date": "2026-10-27",
-  "title": "TearsofDeath: 50 maps played",
-  "text": "TearsofDeath reached 50 maps played",
-  "link": "#/player/tearsofdeath"
- },
- {
   "id": "milestone:cherri-vt:maps:50",
   "type": "milestone",
   "ts": 1793102776,
@@ -1798,5 +1780,23 @@
   "title": "plushyoshii: 500 career kills",
   "text": "plushyoshii reached 500 career kills",
   "link": "#/player/plushyoshii"
+ },
+ {
+  "id": "milestone:cryingnutz:mvp:100",
+  "type": "milestone",
+  "ts": 1793698490,
+  "date": "2026-11-03",
+  "title": "CryingNutz: 100 MVP rounds",
+  "text": "CryingNutz reached 100 MVP rounds",
+  "link": "#/player/cryingnutz"
+ },
+ {
+  "id": "milestone:xaeela:kills:500",
+  "type": "milestone",
+  "ts": 1793698490,
+  "date": "2026-11-03",
+  "title": "xaeela: 500 career kills",
+  "text": "xaeela reached 500 career kills",
+  "link": "#/player/xaeela"
  }
 ]
