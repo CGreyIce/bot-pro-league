@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:dla-wo:mvp:100",
-  "type": "milestone",
-  "ts": 1793146312,
-  "date": "2026-10-28",
-  "title": "dla.wo: 100 MVP rounds",
-  "text": "dla.wo reached 100 MVP rounds",
-  "link": "#/player/dla-wo"
- },
- {
   "id": "milestone:skiazelle:mvp:100",
   "type": "milestone",
   "ts": 1793148249,
@@ -1798,5 +1789,14 @@
   "title": "ShizuyaUmiko: 500 career kills",
   "text": "ShizuyaUmiko reached 500 career kills",
   "link": "#/player/shizuyaumiko"
+ },
+ {
+  "id": "milestone:altheavt:kills:500",
+  "type": "milestone",
+  "ts": 1793718456,
+  "date": "2026-11-03",
+  "title": "AltheaVT: 500 career kills",
+  "text": "AltheaVT reached 500 career kills",
+  "link": "#/player/altheavt"
  }
 ]
