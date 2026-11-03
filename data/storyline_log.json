@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:kitties258:kills:500",
-  "type": "milestone",
-  "ts": 1793216115,
-  "date": "2026-10-29",
-  "title": "kitties258: 500 career kills",
-  "text": "kitties258 reached 500 career kills",
-  "link": "#/player/kitties258"
- },
- {
-  "id": "milestone:potatodepresso:kills:500",
-  "type": "milestone",
-  "ts": 1793226305,
-  "date": "2026-10-29",
-  "title": "potatodepresso: 500 career kills",
-  "text": "potatodepresso reached 500 career kills",
-  "link": "#/player/potatodepresso"
- },
- {
   "id": "milestone:lukedefabio:mvp:100",
   "type": "milestone",
   "ts": 1793227896,
@@ -1798,5 +1780,23 @@
   "title": "winda: 50 maps played",
   "text": "winda reached 50 maps played",
   "link": "#/player/winda"
+ },
+ {
+  "id": "milestone:remia-aotsuki:mvp:100",
+  "type": "milestone",
+  "ts": 1793748548,
+  "date": "2026-11-04",
+  "title": "Remia Aotsuki: 100 MVP rounds",
+  "text": "Remia Aotsuki reached 100 MVP rounds",
+  "link": "#/player/remia-aotsuki"
+ },
+ {
+  "id": "milestone:elfy-mint:maps:50",
+  "type": "milestone",
+  "ts": 1793748548,
+  "date": "2026-11-04",
+  "title": "Elfy Mint: 50 maps played",
+  "text": "Elfy Mint reached 50 maps played",
+  "link": "#/player/elfy-mint"
  }
 ]
