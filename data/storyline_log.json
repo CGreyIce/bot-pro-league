@@ -1,14 +1,5 @@
 [
  {
-  "id": "top:player:laburi:2026-10-29",
-  "type": "top",
-  "ts": 1793216115,
-  "date": "2026-10-29",
-  "title": "Laburi is the new #1",
-  "text": "Top of the player rankings at 1808 points, passing candybar_isblue",
-  "link": "#/player/laburi"
- },
- {
   "id": "milestone:kitties258:kills:500",
   "type": "milestone",
   "ts": 1793216115,
@@ -1798,5 +1789,14 @@
   "title": "xJavyz: 500 career kills",
   "text": "xJavyz reached 500 career kills",
   "link": "#/player/xjavyz"
+ },
+ {
+  "id": "milestone:winda:maps:50",
+  "type": "milestone",
+  "ts": 1793746653,
+  "date": "2026-11-04",
+  "title": "winda: 50 maps played",
+  "text": "winda reached 50 maps played",
+  "link": "#/player/winda"
  }
 ]
