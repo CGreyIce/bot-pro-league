@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:yano-kuromu:kills:500",
-  "type": "milestone",
-  "ts": 1793199296,
-  "date": "2026-10-28",
-  "title": "Yano Kuromu: 500 career kills",
-  "text": "Yano Kuromu reached 500 career kills",
-  "link": "#/player/yano-kuromu"
- },
- {
-  "id": "milestone:hyvred:kills:500",
-  "type": "milestone",
-  "ts": 1793207697,
-  "date": "2026-10-29",
-  "title": "Hyvred: 500 career kills",
-  "text": "Hyvred reached 500 career kills",
-  "link": "#/player/hyvred"
- },
- {
   "id": "top:player:laburi:2026-10-29",
   "type": "top",
   "ts": 1793216115,
@@ -1798,5 +1780,23 @@
   "title": "MiyaLeile: 100 MVP rounds",
   "text": "MiyaLeile reached 100 MVP rounds",
   "link": "#/player/miyaleile"
+ },
+ {
+  "id": "milestone:venicec:maps:50",
+  "type": "milestone",
+  "ts": 1793743440,
+  "date": "2026-11-04",
+  "title": "VeniceC: 50 maps played",
+  "text": "VeniceC reached 50 maps played",
+  "link": "#/player/venicec"
+ },
+ {
+  "id": "milestone:xjavyz:kills:500",
+  "type": "milestone",
+  "ts": 1793743440,
+  "date": "2026-11-04",
+  "title": "xJavyz: 500 career kills",
+  "text": "xJavyz reached 500 career kills",
+  "link": "#/player/xjavyz"
  }
 ]
