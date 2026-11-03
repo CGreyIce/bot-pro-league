@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:nikorasu:mvp:100",
-  "type": "milestone",
-  "ts": 1793026443,
-  "date": "2026-10-26",
-  "title": "Nikorasu: 100 MVP rounds",
-  "text": "Nikorasu reached 100 MVP rounds",
-  "link": "#/player/nikorasu"
- },
- {
   "id": "milestone:rethnap:mvp:100",
   "type": "milestone",
   "ts": 1793036476,
@@ -1798,5 +1789,14 @@
   "title": "DelphoxLuna: 500 career kills",
   "text": "DelphoxLuna reached 500 career kills",
   "link": "#/player/delphoxluna"
+ },
+ {
+  "id": "milestone:kogara-toto:maps:50",
+  "type": "milestone",
+  "ts": 1793678348,
+  "date": "2026-11-03",
+  "title": "Kogara Toto: 50 maps played",
+  "text": "Kogara Toto reached 50 maps played",
+  "link": "#/player/kogara-toto"
  }
 ]
