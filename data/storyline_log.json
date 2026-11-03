@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:laurel:maps:50",
-  "type": "milestone",
-  "ts": 1793020308,
-  "date": "2026-10-26",
-  "title": "Laurel: 50 maps played",
-  "text": "Laurel reached 50 maps played",
-  "link": "#/player/laurel"
- },
- {
-  "id": "milestone:cwstalvt:mvp:100",
-  "type": "milestone",
-  "ts": 1793020308,
-  "date": "2026-10-26",
-  "title": "cwstalVT: 100 MVP rounds",
-  "text": "cwstalVT reached 100 MVP rounds",
-  "link": "#/player/cwstalvt"
- },
- {
   "id": "milestone:exact:mvp:100",
   "type": "milestone",
   "ts": 1793021836,
@@ -1798,5 +1780,23 @@
   "title": "Airizu: 50 maps played",
   "text": "Airizu reached 50 maps played",
   "link": "#/player/airizu"
+ },
+ {
+  "id": "milestone:keikatamori:mvp:150",
+  "type": "milestone",
+  "ts": 1793669680,
+  "date": "2026-11-03",
+  "title": "keikatamori: 150 MVP rounds",
+  "text": "keikatamori reached 150 MVP rounds",
+  "link": "#/player/keikatamori"
+ },
+ {
+  "id": "milestone:tiniibee:kills:500",
+  "type": "milestone",
+  "ts": 1793669680,
+  "date": "2026-11-03",
+  "title": "TiniiBee: 500 career kills",
+  "text": "TiniiBee reached 500 career kills",
+  "link": "#/player/tiniibee"
  }
 ]
