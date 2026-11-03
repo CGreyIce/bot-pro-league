@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:beyouna:mvp:100",
-  "type": "milestone",
-  "ts": 1793087829,
-  "date": "2026-10-27",
-  "title": "beyouna: 100 MVP rounds",
-  "text": "beyouna reached 100 MVP rounds",
-  "link": "#/player/beyouna"
- },
- {
   "id": "milestone:laurel:mvp:100",
   "type": "milestone",
   "ts": 1793087829,
@@ -1798,5 +1789,14 @@
   "title": "kitties258: 50 maps played",
   "text": "kitties258 reached 50 maps played",
   "link": "#/player/kitties258"
+ },
+ {
+  "id": "milestone:idiot-angelcrutcher:kills:500",
+  "type": "milestone",
+  "ts": 1793687662,
+  "date": "2026-11-03",
+  "title": "[Idiot] AngelCrutcher: 500 career kills",
+  "text": "[Idiot] AngelCrutcher reached 500 career kills",
+  "link": "#/player/idiot-angelcrutcher"
  }
 ]

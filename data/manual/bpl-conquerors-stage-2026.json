@@ -207,8 +207,9 @@
      "round": 2,
      "a": "Aimpunch",
      "b": "division20",
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1793687659
     },
     {
      "id": 8,
