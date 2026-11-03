@@ -382,6 +382,14 @@
     "",
     "",
     "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
     ""
    ],
    "matches": [
@@ -392,7 +400,7 @@
       "seed": 1
      },
      "fb": {
-      "seed": 8
+      "seed": 16
      },
      "sa": null,
      "sb": null
@@ -401,10 +409,10 @@
      "id": 2,
      "round": 1,
      "fa": {
-      "seed": 4
+      "seed": 8
      },
      "fb": {
-      "seed": 5
+      "seed": 9
      },
      "sa": null,
      "sb": null
@@ -413,10 +421,10 @@
      "id": 3,
      "round": 1,
      "fa": {
-      "seed": 2
+      "seed": 4
      },
      "fb": {
-      "seed": 7
+      "seed": 13
      },
      "sa": null,
      "sb": null
@@ -425,16 +433,64 @@
      "id": 4,
      "round": 1,
      "fa": {
-      "seed": 3
+      "seed": 5
      },
      "fb": {
-      "seed": 6
+      "seed": 12
      },
      "sa": null,
      "sb": null
     },
     {
      "id": 5,
+     "round": 1,
+     "fa": {
+      "seed": 2
+     },
+     "fb": {
+      "seed": 15
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 6,
+     "round": 1,
+     "fa": {
+      "seed": 7
+     },
+     "fb": {
+      "seed": 10
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 7,
+     "round": 1,
+     "fa": {
+      "seed": 3
+     },
+     "fb": {
+      "seed": 14
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 8,
+     "round": 1,
+     "fa": {
+      "seed": 6
+     },
+     "fb": {
+      "seed": 11
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 9,
      "round": 2,
      "fa": {
       "match": 1
@@ -446,7 +502,7 @@
      "sb": null
     },
     {
-     "id": 6,
+     "id": 10,
      "round": 2,
      "fa": {
       "match": 3
@@ -458,8 +514,8 @@
      "sb": null
     },
     {
-     "id": 7,
-     "round": 3,
+     "id": 11,
+     "round": 2,
      "fa": {
       "match": 5
      },
@@ -467,32 +523,82 @@
       "match": 6
      },
      "sa": null,
+     "sb": null
+    },
+    {
+     "id": 12,
+     "round": 2,
+     "fa": {
+      "match": 7
+     },
+     "fb": {
+      "match": 8
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 13,
+     "round": 3,
+     "fa": {
+      "match": 9
+     },
+     "fb": {
+      "match": 10
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 14,
+     "round": 3,
+     "fa": {
+      "match": 11
+     },
+     "fb": {
+      "match": 12
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 15,
+     "round": 4,
+     "fa": {
+      "match": 13
+     },
+     "fb": {
+      "match": 14
+     },
+     "sa": null,
      "sb": null,
      "bestOf": 5
     },
     {
-     "id": 8,
-     "round": 3,
+     "id": 16,
+     "round": 4,
      "fa": {
-      "loserOf": 5
+      "loserOf": 13
      },
      "fb": {
-      "loserOf": 6
+      "loserOf": 14
      },
      "bestOf": null,
      "thirdPlace": true
     }
    ],
    "roundTitles": {
-    "1": "Quarterfinals",
-    "2": "Semifinals",
-    "3": "Final"
+    "1": "Round of 16",
+    "2": "Quarterfinals",
+    "3": "Semifinals",
+    "4": "Final"
    },
-   "autoSeed": "swiss_top2"
+   "autoSeed": "leaderboard",
+   "perGroup": 4
   }
  ],
  "formatLabel": "4 Groups (Swiss) + Playoffs",
- "formatNote": "32 teams: the top 16 of the BPL rankings and the 16 Legends Stage qualifiers. 4 Swiss groups of 8 (4 direct invites and 4 Legends qualifiers in each, seeded by BPL rank and Legends finish), 5 rounds, every match a Bo3. Teams level on wins and losses are split by map difference, then round difference. The top 2 of each group go to an 8-team playoff (Bo3, with a Bo5 grand final), seeded automatically once every group is finished: group winners face runners-up from other groups, and two teams from the same group can only meet in the final.",
+ "formatNote": "32 teams: the top 16 of the BPL rankings and the 16 Legends Stage qualifiers. 4 Swiss groups of 8 (4 direct invites and 4 Legends qualifiers in each, seeded by BPL rank and Legends finish), 5 rounds, every match a Bo3. Teams level on wins and losses are split by map difference, then round difference. The top 4 of each group go to a 16-team playoff (Bo3, with a Bo5 grand final). Once every group is finished, the 16 are ranked together on their group results (wins, losses, map difference, round difference) and seeded 1-16 in that order: seed 1 plays seed 16, seed 2 plays seed 15, and so on.",
  "field": [
   {
    "team": "Cosmos",

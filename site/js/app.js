@@ -4108,10 +4108,10 @@ function renderTournament(slug){
     }).join("")}</div>`;
   const stageStandings = st => {
     if(!st.standings.length) return '';
-    // once every match in the group is decided, the top 2 have booked their playoff spots
+    // once every match in the group is decided, the top 2 (or the event's advancePerGroup) have booked their playoff spots
     const allM = (st.rounds||[]).flatMap(rd=>rd.matches||[]);
     const done = allM.length>0 && allM.every(m=> m.w===1 || m.w===2);
-    const nAdv = tr.leaderboard ? tr.leaderboard.perGroup : 2;
+    const nAdv = tr.leaderboard ? tr.leaderboard.perGroup : (tr.advancePerGroup || 2);
     const rows = st.standings.map(s=>{
       const adv = done && s.rank<=nAdv;
       return `<tr class="${adv?'grp-adv':''}"><td class="rankcol">${s.rank}</td>
@@ -4120,7 +4120,7 @@ function renderTournament(slug){
     }).join("");
     return `<div class="tablewrap" style="max-width:460px;margin-bottom:12px"><table class="data">
       <thead><tr><th class="no-sort rankcol">#</th><th class="no-sort">Team</th><th class="no-sort">W</th><th class="no-sort">L</th></tr></thead>
-      <tbody>${rows}</tbody></table>${done?`<div class="grp-adv-note">${tr.leaderboard?`Top ${nAdv} go onto the final leaderboard`:'Top 2 advance to the playoffs'}</div>`:''}</div>`;
+      <tbody>${rows}</tbody></table>${done?`<div class="grp-adv-note">${tr.leaderboard?`Top ${nAdv} go onto the final leaderboard`:`Top ${nAdv} advance to the playoffs`}</div>`:''}</div>`;
   };
   const fmtLabel = f => ({single_elim:"Single Elimination",round_robin:"Round Robin",swiss:"Swiss"}[f]||f);
 

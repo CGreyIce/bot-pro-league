@@ -362,18 +362,19 @@ def _maps_first(man):
     "maps" (Legends 2026), or "tiebreak": "maps" on an event with a playoff (Conquerors 2026's groups)."""
     return (man.get("finalLeaderboard") or {}).get("tiebreak") == "maps" or man.get("tiebreak") == "maps"
 
-def leaderboard(man):
+def leaderboard(man, per=None):
     """man["finalLeaderboard"] = {"perGroup": 2}: instead of a playoff, the top `perGroup` of every
     swiss group go onto ONE leaderboard ranked purely on their group-stage results (ALGS-style), with
     the same ordering the event's group tables use: match wins, then losses, then head-to-head (only
     when every tied team played each other), then round difference, then map difference; with
     "tiebreak": "maps", wins, losses, map difference, round difference. #1 is the champion.
-    Returns {"rows", "complete", "perGroup", "pending", "tiebreak"} (projected while groups are unfinished)."""
+    Returns {"rows", "complete", "perGroup", "pending", "tiebreak"} (projected while groups are unfinished).
+    With `per`, the same board for an event that has a playoff (autoSeed "leaderboard"): internal only."""
     cfg = man.get("finalLeaderboard")
-    if not cfg:
+    if not cfg and per is None:
         return None
     _load_stats()
-    per = int(cfg.get("perGroup", 2))
+    per = int(per if per is not None else cfg.get("perGroup", 2))
     mf = _maps_first(man)
     groups = [g for g in man.get("stages", []) if g["format"] == "swiss"]
     complete = bool(groups) and all(_group_complete(g) for g in groups)
@@ -426,6 +427,7 @@ def tournament_placements(man):
             res = "Champion" if r["rank"] == 1 else "Runner-up" if r["rank"] == 2 else f"{ordinal(r['rank'])} Place"
             out.append({"rank": r["rank"], "name": r["name"], "result": res}); placed.add(r["name"])
     playoff = next((s for s in reversed(stages) if s["format"] == "single_elim"), None)
+    in_bracket = {t for t in playoff["teams"] if t} if playoff else set()   # seeded: they didn't go out in the groups
     if playoff and any(m.get("sa") is not None for m in playoff["matches"]):
         res, champ = _elim_resolved(playoff)
         real = [m for m in playoff["matches"] if not is_placement(m)]
@@ -457,15 +459,17 @@ def tournament_placements(man):
                 loser = r["b"] if r["w"] == 1 else r["a"]
                 if loser and loser not in placed:
                     losers_by_round.setdefault(m["round"], []).append(loser)
-        rank = len(out) + 1
+        size = 2 ** maxRound
         for rnd in sorted(losers_by_round, reverse=True):
             teams = sorted({t for t in losers_by_round[rnd]}, key=lambda t: seed_of.get(t, 999))
             label = titles.get(str(rnd), "Round %d" % rnd)
             tie = len(teams) > 1
+            # a round's losers place just below everyone still in after it (Round of 16 = 9th-16th),
+            # even while later rounds are unplayed
+            rank = max(len(out) + 1, size // 2 ** rnd + 1)
             for t in teams:
                 if t not in placed:
                     out.append({"rank": rank, "name": t, "result": label, "tie": tie}); placed.add(t)
-            rank += len(teams)
     # teams that didn't reach the playoff bracket — rank by their group record. Not while the groups are
     # still being played (an unplayed match, or a swiss round still to draft): nobody's out yet.
     grps = [s for s in stages if s["format"] in ("swiss", "round_robin")]
@@ -481,9 +485,9 @@ def tournament_placements(man):
             nm = row["name"]
             if nm and nm not in grp_rec:
                 grp_rec[nm] = (row["w"], -row["l"])
-    remaining = sorted((nm for nm in grp_rec if nm not in placed),
+    remaining = sorted((nm for nm in grp_rec if nm not in placed and nm not in in_bracket),
                        key=lambda nm: (-grp_rec[nm][0], grp_rec[nm][1], nm.lower()))
-    rank = len(out) + 1
+    rank = max(len(out), len(in_bracket)) + 1
     for nm in remaining:
         out.append({"rank": rank, "name": nm, "result": "Group Stage", "tie": True}); rank += 1
     return out
@@ -551,6 +555,7 @@ def to_standard(man):
         "noHonors": bool(man.get("noHonors")),
         "nationTeam": man.get("nationTeam"),
         "leaderboard": lb,
+        "advancePerGroup": advance_per_group(man),     # group tables mark this many as qualified
         # Before the groups are drawn: who's in (by name) and the slots still to be decided, each
         # filled from another event's final standings ({"tbc": true, "from": <event slug>, "place": n}).
         # parse.py resolves the slots and builds the Teams Attending list from this.
@@ -644,19 +649,34 @@ def _swiss_top2_seeds(man, groups, n):
             best = (cost, teams)
     return best[1]
 
+def advance_per_group(man):
+    """How many of each swiss group reach the self-seeding playoff (None without one)."""
+    po = next((s for s in man.get("stages", []) if s.get("autoSeed")), None)
+    groups = [s for s in man.get("stages", []) if s.get("format") == "swiss"]
+    if not po or not groups:
+        return None
+    return int(po.get("perGroup") or len(po["teams"]) // len(groups))
+
 def auto_seed_playoffs(man):
-    """A playoff stage with autoSeed "swiss_top2" fills itself from the swiss groups: once EVERY
-    group is complete, the top 2 of each group are seeded by _swiss_top2_seeds. Re-evaluated on every
-    save until a playoff score exists (so a corrected group score re-seeds); while groups are
-    unfinished the slots stay TBD. Playoff-only predictions open the moment it seeds."""
-    po = next((s for s in man.get("stages", []) if s.get("autoSeed") == "swiss_top2"), None)
+    """A playoff stage with an autoSeed fills itself from the swiss groups once EVERY group is complete:
+    "swiss_top2": the top 2 of each group, placed by _swiss_top2_seeds;
+    "leaderboard" (Conquerors 2026, the user's call): the top `perGroup` of each group go onto one
+    internal leaderboard, ordered exactly like a finalLeaderboard event's (Legends 2026), and take
+    seeds 1..n from it (1 v n, ...). The board itself is never published.
+    Re-evaluated on every save until a playoff score exists (so a corrected group score re-seeds);
+    while groups are unfinished the slots stay TBD. Playoff-only predictions open the moment it seeds."""
+    po = next((s for s in man.get("stages", []) if s.get("autoSeed") in ("swiss_top2", "leaderboard")), None)
     if not po or any(m.get("sa") is not None for m in po["matches"]):
         return
     groups = [s for s in man["stages"] if s.get("format") == "swiss"]
     n = len(po["teams"])
     was_seeded = all(po["teams"])
     if groups and all(_group_complete(g) for g in groups):
-        order = _swiss_top2_seeds(man, groups, n)
+        if po["autoSeed"] == "leaderboard":
+            order = [r["name"] for r in leaderboard(man, advance_per_group(man))["rows"]]
+            order = order if len(order) == n else None
+        else:
+            order = _swiss_top2_seeds(man, groups, n)
         if order:
             man.setdefault("groupSeeds", man.get("seeds") or {})
             po["teams"] = order
