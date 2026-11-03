@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:ebi:maps:50",
-  "type": "milestone",
-  "ts": 1793123291,
-  "date": "2026-10-28",
-  "title": "ebi: 50 maps played",
-  "text": "ebi reached 50 maps played",
-  "link": "#/player/ebi"
- },
- {
   "id": "milestone:tigeraxd:kills:500",
   "type": "milestone",
   "ts": 1793126263,
@@ -1798,5 +1789,14 @@
   "title": "Syrrith: 50 maps played",
   "text": "Syrrith reached 50 maps played",
   "link": "#/player/syrrith"
+ },
+ {
+  "id": "milestone:dirfun:maps:50",
+  "type": "milestone",
+  "ts": 1793705082,
+  "date": "2026-11-03",
+  "title": "Dirfun: 50 maps played",
+  "text": "Dirfun reached 50 maps played",
+  "link": "#/player/dirfun"
  }
 ]
