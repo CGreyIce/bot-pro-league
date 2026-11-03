@@ -175,6 +175,7 @@ def process_manual(raw, team_map, alias):
         "noHonors": bool(raw.get("noHonors")),
         "nationTeam": raw.get("nationTeam"),
         "leaderboard": _lb_out(raw.get("leaderboard"), resolve),
+        "advancePerGroup": raw.get("advancePerGroup"),   # self-seeding playoff: how many per group qualify
         "field": field,
         "formatNote": raw.get("formatNote", ""),
     }
