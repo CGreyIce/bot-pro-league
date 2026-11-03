@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:skiazelle:mvp:100",
-  "type": "milestone",
-  "ts": 1793148249,
-  "date": "2026-10-28",
-  "title": "Skiazelle: 100 MVP rounds",
-  "text": "Skiazelle reached 100 MVP rounds",
-  "link": "#/player/skiazelle"
- },
- {
-  "id": "milestone:phxebe:kills:500",
-  "type": "milestone",
-  "ts": 1793151669,
-  "date": "2026-10-28",
-  "title": "Phxebe: 500 career kills",
-  "text": "Phxebe reached 500 career kills",
-  "link": "#/player/phxebe"
- },
- {
   "id": "milestone:kaminari-qpi:kills:500",
   "type": "milestone",
   "ts": 1793153694,
@@ -1798,5 +1780,23 @@
   "title": "AltheaVT: 500 career kills",
   "text": "AltheaVT reached 500 career kills",
   "link": "#/player/altheavt"
+ },
+ {
+  "id": "milestone:leveti:maps:50",
+  "type": "milestone",
+  "ts": 1793720038,
+  "date": "2026-11-03",
+  "title": "Leveti: 50 maps played",
+  "text": "Leveti reached 50 maps played",
+  "link": "#/player/leveti"
+ },
+ {
+  "id": "milestone:jaelyo:maps:50",
+  "type": "milestone",
+  "ts": 1793720038,
+  "date": "2026-11-03",
+  "title": "jaelyo: 50 maps played",
+  "text": "jaelyo reached 50 maps played",
+  "link": "#/player/jaelyo"
  }
 ]

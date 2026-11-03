@@ -463,8 +463,9 @@
      "round": 2,
      "a": "degree",
      "b": "Setting Sun",
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1793720036
     },
     {
      "id": 8,
