@@ -70,8 +70,9 @@
      "round": 2,
      "a": "Technomancy",
      "b": "Northwind",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1793668152
     },
     {
      "id": 7,
