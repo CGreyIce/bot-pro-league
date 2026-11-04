@@ -454,6 +454,39 @@
      "round": 3,
      "a": "Infernum E-Sports",
      "b": "Neverland",
+     "sa": 0,
+     "sb": 2,
+     "ts": 1793787866
+    },
+    {
+     "id": 13,
+     "round": 4,
+     "a": "Crystal Laurels",
+     "b": "Prism Divide",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 14,
+     "round": 4,
+     "a": "xPlosiv",
+     "b": "Neverland",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 15,
+     "round": 4,
+     "a": "Opal",
+     "b": "Infernum E-Sports",
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 16,
+     "round": 4,
+     "a": "Nightfang Covenant",
+     "b": "Fruit Basket",
      "sa": null,
      "sb": null
     }
@@ -461,7 +494,8 @@
    "roundTitles": {
     "1": "Round 1",
     "2": "Round 2",
-    "3": "Round 3"
+    "3": "Round 3",
+    "4": "Round 4"
    },
    "rounds": 5
   },
