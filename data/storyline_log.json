@@ -1,41 +1,5 @@
 [
  {
-  "id": "upset:bpl-legends-stage-2026:3-19",
-  "type": "upset",
-  "ts": 1793247581,
-  "date": "2026-10-29",
-  "title": "BeeHyve stun division20",
-  "text": "2-1 at BPL Legends Stage 2026",
-  "link": "#/match/bpl-legends-stage-2026/3-19"
- },
- {
-  "id": "top:player:candybar-isblue:2026-10-29",
-  "type": "top",
-  "ts": 1793254048,
-  "date": "2026-10-29",
-  "title": "candybar_isblue is the new #1",
-  "text": "Top of the player rankings at 1796 points, passing Laburi",
-  "link": "#/player/candybar-isblue"
- },
- {
-  "id": "milestone:hakase:mvp:100",
-  "type": "milestone",
-  "ts": 1793256043,
-  "date": "2026-10-29",
-  "title": "Hakase: 100 MVP rounds",
-  "text": "Hakase reached 100 MVP rounds",
-  "link": "#/player/hakase"
- },
- {
-  "id": "milestone:mango:kills:500",
-  "type": "milestone",
-  "ts": 1793256043,
-  "date": "2026-10-29",
-  "title": "Mango: 500 career kills",
-  "text": "Mango reached 500 career kills",
-  "link": "#/player/mango"
- },
- {
   "id": "milestone:skiazelle:maps:50",
   "type": "milestone",
   "ts": 1793256043,
@@ -1798,5 +1762,41 @@
   "title": "Sayucchi: 500 career kills",
   "text": "Sayucchi reached 500 career kills",
   "link": "#/player/sayucchi"
+ },
+ {
+  "id": "milestone:capplecrow:maps:50",
+  "type": "milestone",
+  "ts": 1793789890,
+  "date": "2026-11-04",
+  "title": "capplecrow: 50 maps played",
+  "text": "capplecrow reached 50 maps played",
+  "link": "#/player/capplecrow"
+ },
+ {
+  "id": "milestone:wellson111:maps:50",
+  "type": "milestone",
+  "ts": 1793789890,
+  "date": "2026-11-04",
+  "title": "Wellson111: 50 maps played",
+  "text": "Wellson111 reached 50 maps played",
+  "link": "#/player/wellson111"
+ },
+ {
+  "id": "milestone:skysbeautylai:maps:50",
+  "type": "milestone",
+  "ts": 1793789890,
+  "date": "2026-11-04",
+  "title": "skysbeautylai: 50 maps played",
+  "text": "skysbeautylai reached 50 maps played",
+  "link": "#/player/skysbeautylai"
+ },
+ {
+  "id": "milestone:asterisks:maps:50",
+  "type": "milestone",
+  "ts": 1793789890,
+  "date": "2026-11-04",
+  "title": "Asterisks: 50 maps played",
+  "text": "Asterisks reached 50 maps played",
+  "link": "#/player/asterisks"
  }
 ]
