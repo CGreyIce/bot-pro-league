@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:nataleste:maps:50",
-  "type": "milestone",
-  "ts": 1793284604,
-  "date": "2026-10-29",
-  "title": "Nataleste: 50 maps played",
-  "text": "Nataleste reached 50 maps played",
-  "link": "#/player/nataleste"
- },
- {
-  "id": "milestone:le-pyrrhic:maps:50",
-  "type": "milestone",
-  "ts": 1793286800,
-  "date": "2026-10-29",
-  "title": "le_pyrrhic: 50 maps played",
-  "text": "le_pyrrhic reached 50 maps played",
-  "link": "#/player/le-pyrrhic"
- },
- {
-  "id": "milestone:tif2:maps:50",
-  "type": "milestone",
-  "ts": 1793286800,
-  "date": "2026-10-29",
-  "title": "TiF2: 50 maps played",
-  "text": "TiF2 reached 50 maps played",
-  "link": "#/player/tif2"
- },
- {
   "id": "milestone:raviaseir:mvp:150",
   "type": "milestone",
   "ts": 1793292366,
@@ -1798,5 +1771,32 @@
   "title": "Airizu: 100 MVP rounds",
   "text": "Airizu reached 100 MVP rounds",
   "link": "#/player/airizu"
+ },
+ {
+  "id": "milestone:plainyingying:maps:50",
+  "type": "milestone",
+  "ts": 1793830137,
+  "date": "2026-11-05",
+  "title": "plainyingying: 50 maps played",
+  "text": "plainyingying reached 50 maps played",
+  "link": "#/player/plainyingying"
+ },
+ {
+  "id": "milestone:fleurcoz:maps:50",
+  "type": "milestone",
+  "ts": 1793830137,
+  "date": "2026-11-05",
+  "title": "fleurcoz: 50 maps played",
+  "text": "fleurcoz reached 50 maps played",
+  "link": "#/player/fleurcoz"
+ },
+ {
+  "id": "milestone:lumpydayo:maps:50",
+  "type": "milestone",
+  "ts": 1793830137,
+  "date": "2026-11-05",
+  "title": "lumpydayo: 50 maps played",
+  "text": "lumpydayo reached 50 maps played",
+  "link": "#/player/lumpydayo"
  }
 ]
