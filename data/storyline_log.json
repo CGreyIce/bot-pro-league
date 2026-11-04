@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:shiranami-ramune:mvp:100",
-  "type": "milestone",
-  "ts": 1793269238,
-  "date": "2026-10-29",
-  "title": "Shiranami Ramune: 100 MVP rounds",
-  "text": "Shiranami Ramune reached 100 MVP rounds",
-  "link": "#/player/shiranami-ramune"
- },
- {
-  "id": "milestone:eris-suzukami:maps:50",
-  "type": "milestone",
-  "ts": 1793269238,
-  "date": "2026-10-29",
-  "title": "Eris Suzukami: 50 maps played",
-  "text": "Eris Suzukami reached 50 maps played",
-  "link": "#/player/eris-suzukami"
- },
- {
   "id": "milestone:skysbeautylai:mvp:100",
   "type": "milestone",
   "ts": 1793271314,
@@ -1798,5 +1780,23 @@
   "title": "SashimiGoesBloop: 150 MVP rounds",
   "text": "SashimiGoesBloop reached 150 MVP rounds",
   "link": "#/player/sashimigoesbloop"
+ },
+ {
+  "id": "milestone:zoweya:mvp:100",
+  "type": "milestone",
+  "ts": 1793804179,
+  "date": "2026-11-04",
+  "title": "Zoweya: 100 MVP rounds",
+  "text": "Zoweya reached 100 MVP rounds",
+  "link": "#/player/zoweya"
+ },
+ {
+  "id": "milestone:anony:kills:500",
+  "type": "milestone",
+  "ts": 1793804179,
+  "date": "2026-11-04",
+  "title": "Anony: 500 career kills",
+  "text": "Anony reached 500 career kills",
+  "link": "#/player/anony"
  }
 ]
