@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:skiazelle:maps:50",
-  "type": "milestone",
-  "ts": 1793256043,
-  "date": "2026-10-29",
-  "title": "Skiazelle: 50 maps played",
-  "text": "Skiazelle reached 50 maps played",
-  "link": "#/player/skiazelle"
- },
- {
-  "id": "milestone:raviaseir:maps:50",
-  "type": "milestone",
-  "ts": 1793256043,
-  "date": "2026-10-29",
-  "title": "RaviasEir: 50 maps played",
-  "text": "RaviasEir reached 50 maps played",
-  "link": "#/player/raviaseir"
- },
- {
   "id": "milestone:crex:kills:1000",
   "type": "milestone",
   "ts": 1793259788,
@@ -1798,5 +1780,23 @@
   "title": "Asterisks: 50 maps played",
   "text": "Asterisks reached 50 maps played",
   "link": "#/player/asterisks"
+ },
+ {
+  "id": "milestone:kyan:maps:50",
+  "type": "milestone",
+  "ts": 1793792026,
+  "date": "2026-11-04",
+  "title": "Kyan: 50 maps played",
+  "text": "Kyan reached 50 maps played",
+  "link": "#/player/kyan"
+ },
+ {
+  "id": "milestone:capplecrow:mvp:150",
+  "type": "milestone",
+  "ts": 1793792026,
+  "date": "2026-11-04",
+  "title": "capplecrow: 150 MVP rounds",
+  "text": "capplecrow reached 150 MVP rounds",
+  "link": "#/player/capplecrow"
  }
 ]
