@@ -800,28 +800,28 @@
    "mvp": 64
   },
   "celtsm": {
-   "maps": 49,
-   "kills": 846,
-   "mvp": 142
+   "maps": 50,
+   "kills": 862,
+   "mvp": 143
   },
   "sashimigoesbloop": {
-   "maps": 54,
-   "kills": 905,
-   "mvp": 149
+   "maps": 55,
+   "kills": 924,
+   "mvp": 153
   },
   "kyan": {
-   "maps": 50,
-   "kills": 760,
-   "mvp": 119
+   "maps": 51,
+   "kills": 776,
+   "mvp": 123
   },
   "goddessakane": {
-   "maps": 48,
-   "kills": 686,
-   "mvp": 91
+   "maps": 49,
+   "kills": 706,
+   "mvp": 95
   },
   "featbri": {
-   "maps": 57,
-   "kills": 850,
+   "maps": 58,
+   "kills": 865,
    "mvp": 87
   },
   "simply-perezoso": {
@@ -975,29 +975,29 @@
    "mvp": 78
   },
   "capplecrow": {
-   "maps": 51,
-   "kills": 901,
-   "mvp": 151
+   "maps": 52,
+   "kills": 913,
+   "mvp": 152
   },
   "wellson111": {
-   "maps": 51,
-   "kills": 822,
+   "maps": 52,
+   "kills": 838,
    "mvp": 115
   },
   "skysbeautylai": {
-   "maps": 51,
-   "kills": 838,
-   "mvp": 126
+   "maps": 52,
+   "kills": 855,
+   "mvp": 131
   },
   "matcha": {
-   "maps": 57,
-   "kills": 958,
+   "maps": 58,
+   "kills": 970,
    "mvp": 144
   },
   "asterisks": {
-   "maps": 51,
-   "kills": 799,
-   "mvp": 93
+   "maps": 52,
+   "kills": 814,
+   "mvp": 98
   },
   "leveti": {
    "maps": 50,
@@ -2443,6 +2443,7 @@
   "upset:bpl-conquerors-stage-2026:3-6",
   "upset:bpl-conquerors-stage-2026:3-9",
   "upset:bpl-conquerors-stage-2026:4-6",
+  "upset:bpl-conquerors-stage-2026:4-9",
   "upset:bpl-legends-stage-2026:1-10",
   "upset:bpl-legends-stage-2026:1-12",
   "upset:bpl-legends-stage-2026:1-13",

@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:crex:kills:1000",
-  "type": "milestone",
-  "ts": 1793259788,
-  "date": "2026-10-29",
-  "title": "CRex: 1000 career kills",
-  "text": "CRex reached 1000 career kills",
-  "link": "#/player/crex"
- },
- {
-  "id": "milestone:des506:maps:50",
-  "type": "milestone",
-  "ts": 1793259788,
-  "date": "2026-10-29",
-  "title": "des506: 50 maps played",
-  "text": "des506 reached 50 maps played",
-  "link": "#/player/des506"
- },
- {
   "id": "milestone:shiranami-ramune:mvp:100",
   "type": "milestone",
   "ts": 1793269238,
@@ -1798,5 +1780,23 @@
   "title": "capplecrow: 150 MVP rounds",
   "text": "capplecrow reached 150 MVP rounds",
   "link": "#/player/capplecrow"
+ },
+ {
+  "id": "milestone:celtsm:maps:50",
+  "type": "milestone",
+  "ts": 1793794105,
+  "date": "2026-11-04",
+  "title": "Celtsm: 50 maps played",
+  "text": "Celtsm reached 50 maps played",
+  "link": "#/player/celtsm"
+ },
+ {
+  "id": "milestone:sashimigoesbloop:mvp:150",
+  "type": "milestone",
+  "ts": 1793794105,
+  "date": "2026-11-04",
+  "title": "SashimiGoesBloop: 150 MVP rounds",
+  "text": "SashimiGoesBloop reached 150 MVP rounds",
+  "link": "#/player/sashimigoesbloop"
  }
 ]
