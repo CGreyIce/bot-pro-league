@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:tigeraxd:mvp:100",
-  "type": "milestone",
-  "ts": 1793243565,
-  "date": "2026-10-29",
-  "title": "Tigeraxd: 100 MVP rounds",
-  "text": "Tigeraxd reached 100 MVP rounds",
-  "link": "#/player/tigeraxd"
- },
- {
   "id": "milestone:laburi:mvp:150",
   "type": "milestone",
   "ts": 1793245325,
@@ -1798,5 +1789,14 @@
   "title": "Phxebe: 100 MVP rounds",
   "text": "Phxebe reached 100 MVP rounds",
   "link": "#/player/phxebe"
+ },
+ {
+  "id": "milestone:soapdax:kills:500",
+  "type": "milestone",
+  "ts": 1793785774,
+  "date": "2026-11-04",
+  "title": "soapdax: 500 career kills",
+  "text": "soapdax reached 500 career kills",
+  "link": "#/player/soapdax"
  }
 ]
