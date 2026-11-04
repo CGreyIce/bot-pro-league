@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:skysbeautylai:mvp:100",
-  "type": "milestone",
-  "ts": 1793271314,
-  "date": "2026-10-29",
-  "title": "skysbeautylai: 100 MVP rounds",
-  "text": "skysbeautylai reached 100 MVP rounds",
-  "link": "#/player/skysbeautylai"
- },
- {
-  "id": "milestone:matcha:maps:50",
-  "type": "milestone",
-  "ts": 1793271314,
-  "date": "2026-10-29",
-  "title": "matcha: 50 maps played",
-  "text": "matcha reached 50 maps played",
-  "link": "#/player/matcha"
- },
- {
   "id": "milestone:cshhp:kills:500",
   "type": "milestone",
   "ts": 1793274587,
@@ -1798,5 +1780,23 @@
   "title": "Anony: 500 career kills",
   "text": "Anony reached 500 career kills",
   "link": "#/player/anony"
+ },
+ {
+  "id": "milestone:candybar-isblue:maps:50",
+  "type": "milestone",
+  "ts": 1793808552,
+  "date": "2026-11-05",
+  "title": "candybar_isblue: 50 maps played",
+  "text": "candybar_isblue reached 50 maps played",
+  "link": "#/player/candybar-isblue"
+ },
+ {
+  "id": "milestone:hyvred:mvp:100",
+  "type": "milestone",
+  "ts": 1793808552,
+  "date": "2026-11-05",
+  "title": "Hyvred: 100 MVP rounds",
+  "text": "Hyvred reached 100 MVP rounds",
+  "link": "#/player/hyvred"
  }
 ]
