@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:laburi:maps:50",
-  "type": "milestone",
-  "ts": 1793278533,
-  "date": "2026-10-29",
-  "title": "Laburi: 50 maps played",
-  "text": "Laburi reached 50 maps played",
-  "link": "#/player/laburi"
- },
- {
   "id": "milestone:eroxis:maps:50",
   "type": "milestone",
   "ts": 1793278533,
@@ -1798,5 +1789,14 @@
   "title": "Tigeraxd: 50 maps played",
   "text": "Tigeraxd reached 50 maps played",
   "link": "#/player/tigeraxd"
+ },
+ {
+  "id": "record:longestWinStreak:15",
+  "type": "record",
+  "ts": 1793811464,
+  "date": "2026-11-05",
+  "title": "New record: longest win streak",
+  "text": "Nullpoint: 15 wins in a row (BPL Conquerors Stage 2026)",
+  "link": "#/team/nullpoint"
  }
 ]

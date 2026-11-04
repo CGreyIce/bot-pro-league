@@ -16,9 +16,9 @@
    "valueText": "7 overtimes"
   },
   "longestWinStreak": {
-   "value": 14,
+   "value": 15,
    "holder": "Nullpoint",
-   "valueText": "14 wins in a row"
+   "valueText": "15 wins in a row"
   },
   "mostTitlesTeam": {
    "value": 6,
@@ -95,8 +95,8 @@
   "kiedz",
   "sacred-raven",
   "neverland",
-  "new-jade",
   "prism-divide",
+  "new-jade",
   "setting-sun",
   "entity",
   "aetherline",
@@ -1280,8 +1280,8 @@
    "mvp": 148
   },
   "keikatamori": {
-   "maps": 68,
-   "kills": 1060,
+   "maps": 69,
+   "kills": 1069,
    "mvp": 165
   },
   "nataleste": {
@@ -1320,29 +1320,29 @@
    "mvp": 140
   },
   "zhizyii": {
-   "maps": 47,
-   "kills": 891,
-   "mvp": 121
+   "maps": 48,
+   "kills": 905,
+   "mvp": 122
   },
   "candybar-isblue": {
-   "maps": 51,
-   "kills": 957,
-   "mvp": 165
+   "maps": 52,
+   "kills": 980,
+   "mvp": 171
   },
   "utsuhonull": {
-   "maps": 46,
-   "kills": 880,
-   "mvp": 141
+   "maps": 47,
+   "kills": 893,
+   "mvp": 143
   },
   "ssseiso": {
-   "maps": 47,
-   "kills": 751,
-   "mvp": 108
+   "maps": 48,
+   "kills": 763,
+   "mvp": 110
   },
   "kaito-oshino": {
-   "maps": 53,
-   "kills": 936,
-   "mvp": 152
+   "maps": 54,
+   "kills": 945,
+   "mvp": 154
   },
   "niamocha": {
    "maps": 50,
@@ -1370,23 +1370,23 @@
    "mvp": 42
   },
   "tigeraxd": {
-   "maps": 50,
-   "kills": 837,
-   "mvp": 129
+   "maps": 51,
+   "kills": 847,
+   "mvp": 130
   },
   "froggiee": {
-   "maps": 68,
-   "kills": 885,
-   "mvp": 110
+   "maps": 69,
+   "kills": 889,
+   "mvp": 111
   },
   "tiniibee": {
-   "maps": 44,
-   "kills": 570,
+   "maps": 45,
+   "kills": 574,
    "mvp": 80
   },
   "hyvred": {
-   "maps": 45,
-   "kills": 731,
+   "maps": 46,
+   "kills": 736,
    "mvp": 103
   },
   "laurel": {
@@ -2498,6 +2498,7 @@
   "promotion:special-forces",
   "record:highestMap:65+mostKillsMap:58+mostOT:7",
   "record:longestWinStreak:14",
+  "record:longestWinStreak:15",
   "top:player:candybar-isblue:2026-10-27",
   "top:player:candybar-isblue:2026-10-29",
   "top:player:laburi:2026-10-29",
