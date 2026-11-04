@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:niito:mvp:100",
-  "type": "milestone",
-  "ts": 1793237599,
-  "date": "2026-10-29",
-  "title": "Niito: 100 MVP rounds",
-  "text": "Niito reached 100 MVP rounds",
-  "link": "#/player/niito"
- },
- {
   "id": "milestone:murasakibara-tsuki1:maps:50",
   "type": "milestone",
   "ts": 1793239575,
@@ -1798,5 +1789,14 @@
   "title": "StrigidaeVT: 500 career kills",
   "text": "StrigidaeVT reached 500 career kills",
   "link": "#/player/strigidaevt"
+ },
+ {
+  "id": "milestone:jstarwolf:mvp:100",
+  "type": "milestone",
+  "ts": 1793772465,
+  "date": "2026-11-04",
+  "title": "JStarWolf: 100 MVP rounds",
+  "text": "JStarWolf reached 100 MVP rounds",
+  "link": "#/player/jstarwolf"
  }
 ]
