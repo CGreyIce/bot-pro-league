@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:cshhp:kills:500",
-  "type": "milestone",
-  "ts": 1793274587,
-  "date": "2026-10-29",
-  "title": "cshhp: 500 career kills",
-  "text": "cshhp reached 500 career kills",
-  "link": "#/player/cshhp"
- },
- {
-  "id": "milestone:y-uuno:maps:50",
-  "type": "milestone",
-  "ts": 1793278533,
-  "date": "2026-10-29",
-  "title": "y.uuno: 50 maps played",
-  "text": "y.uuno reached 50 maps played",
-  "link": "#/player/y-uuno"
- },
- {
   "id": "milestone:laburi:maps:50",
   "type": "milestone",
   "ts": 1793278533,
@@ -1798,5 +1780,23 @@
   "title": "Hyvred: 100 MVP rounds",
   "text": "Hyvred reached 100 MVP rounds",
   "link": "#/player/hyvred"
+ },
+ {
+  "id": "milestone:kaito-oshino:mvp:150",
+  "type": "milestone",
+  "ts": 1793809969,
+  "date": "2026-11-05",
+  "title": "Kaito_Oshino: 150 MVP rounds",
+  "text": "Kaito_Oshino reached 150 MVP rounds",
+  "link": "#/player/kaito-oshino"
+ },
+ {
+  "id": "milestone:tigeraxd:maps:50",
+  "type": "milestone",
+  "ts": 1793809969,
+  "date": "2026-11-05",
+  "title": "Tigeraxd: 50 maps played",
+  "text": "Tigeraxd reached 50 maps played",
+  "link": "#/player/tigeraxd"
  }
 ]
