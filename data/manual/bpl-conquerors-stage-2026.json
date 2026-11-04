@@ -280,8 +280,9 @@
      "round": 3,
      "a": "PepegaX",
      "b": "New Jade",
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1793761205
     },
     {
      "id": 12,

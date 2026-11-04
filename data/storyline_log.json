@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:treblest:maps:50",
-  "type": "milestone",
-  "ts": 1793231133,
-  "date": "2026-10-29",
-  "title": "treblest: 50 maps played",
-  "text": "treblest reached 50 maps played",
-  "link": "#/player/treblest"
- },
- {
   "id": "milestone:briant:kills:500",
   "type": "milestone",
   "ts": 1793233789,
@@ -1798,5 +1789,14 @@
   "title": "Spoods: 150 MVP rounds",
   "text": "Spoods reached 150 MVP rounds",
   "link": "#/player/spoods"
+ },
+ {
+  "id": "milestone:jeribean:kills:500",
+  "type": "milestone",
+  "ts": 1793761207,
+  "date": "2026-11-04",
+  "title": "Jeribean: 500 career kills",
+  "text": "Jeribean reached 500 career kills",
+  "link": "#/player/jeribean"
  }
 ]
