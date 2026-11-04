@@ -525,29 +525,29 @@
    "mvp": 95
   },
   "altheavt": {
-   "maps": 42,
-   "kills": 525,
+   "maps": 43,
+   "kills": 547,
    "mvp": 68
   },
   "zoweya": {
-   "maps": 39,
-   "kills": 658,
-   "mvp": 104
+   "maps": 40,
+   "kills": 674,
+   "mvp": 108
   },
   "anony": {
-   "maps": 37,
-   "kills": 512,
-   "mvp": 80
+   "maps": 38,
+   "kills": 527,
+   "mvp": 84
   },
   "vanixevans": {
-   "maps": 33,
-   "kills": 453,
-   "mvp": 63
+   "maps": 34,
+   "kills": 470,
+   "mvp": 64
   },
   "airawwr": {
-   "maps": 35,
-   "kills": 468,
-   "mvp": 54
+   "maps": 36,
+   "kills": 491,
+   "mvp": 58
   },
   "notccillia": {
    "maps": 62,
@@ -1075,29 +1075,29 @@
    "mvp": 88
   },
   "gigichiii": {
-   "maps": 59,
-   "kills": 888,
-   "mvp": 153
+   "maps": 60,
+   "kills": 903,
+   "mvp": 157
   },
   "yunaeyo": {
-   "maps": 58,
-   "kills": 885,
-   "mvp": 134
+   "maps": 59,
+   "kills": 907,
+   "mvp": 136
   },
   "mmirawr": {
-   "maps": 54,
-   "kills": 822,
-   "mvp": 117
+   "maps": 55,
+   "kills": 837,
+   "mvp": 118
   },
   "yojareddo": {
-   "maps": 52,
-   "kills": 817,
-   "mvp": 103
+   "maps": 53,
+   "kills": 825,
+   "mvp": 104
   },
   "bluenerd8": {
-   "maps": 44,
-   "kills": 564,
-   "mvp": 76
+   "maps": 45,
+   "kills": 576,
+   "mvp": 78
   },
   "rethnap": {
    "maps": 42,
@@ -2443,6 +2443,7 @@
   "upset:bpl-conquerors-stage-2026:3-6",
   "upset:bpl-conquerors-stage-2026:3-9",
   "upset:bpl-conquerors-stage-2026:4-10",
+  "upset:bpl-conquerors-stage-2026:4-12",
   "upset:bpl-conquerors-stage-2026:4-6",
   "upset:bpl-conquerors-stage-2026:4-9",
   "upset:bpl-legends-stage-2026:1-10",
