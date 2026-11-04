@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:caturteer:mvp:200",
-  "type": "milestone",
-  "ts": 1793237599,
-  "date": "2026-10-29",
-  "title": "caturteer: 200 MVP rounds",
-  "text": "caturteer reached 200 MVP rounds",
-  "link": "#/player/caturteer"
- },
- {
   "id": "milestone:niito:mvp:100",
   "type": "milestone",
   "ts": 1793237599,
@@ -1798,5 +1789,14 @@
   "title": "Jenakai: 100 MVP rounds",
   "text": "Jenakai reached 100 MVP rounds",
   "link": "#/player/jenakai"
+ },
+ {
+  "id": "milestone:strigidaevt:kills:500",
+  "type": "milestone",
+  "ts": 1793770296,
+  "date": "2026-11-04",
+  "title": "StrigidaeVT: 500 career kills",
+  "text": "StrigidaeVT reached 500 career kills",
+  "link": "#/player/strigidaevt"
  }
 ]
