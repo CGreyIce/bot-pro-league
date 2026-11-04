@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:eroxis:maps:50",
-  "type": "milestone",
-  "ts": 1793278533,
-  "date": "2026-10-29",
-  "title": "Eroxis: 50 maps played",
-  "text": "Eroxis reached 50 maps played",
-  "link": "#/player/eroxis"
- },
- {
   "id": "milestone:briant:mvp:100",
   "type": "milestone",
   "ts": 1793282727,
@@ -1798,5 +1789,14 @@
   "title": "New record: longest win streak",
   "text": "Nullpoint: 15 wins in a row (BPL Conquerors Stage 2026)",
   "link": "#/team/nullpoint"
+ },
+ {
+  "id": "milestone:mike:mvp:100",
+  "type": "milestone",
+  "ts": 1793825778,
+  "date": "2026-11-05",
+  "title": "Mike: 100 MVP rounds",
+  "text": "Mike reached 100 MVP rounds",
+  "link": "#/player/mike"
  }
 ]
