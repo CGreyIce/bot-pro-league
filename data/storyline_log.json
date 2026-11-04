@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:lukedefabio:mvp:100",
-  "type": "milestone",
-  "ts": 1793227896,
-  "date": "2026-10-29",
-  "title": "lukedefabio: 100 MVP rounds",
-  "text": "lukedefabio reached 100 MVP rounds",
-  "link": "#/player/lukedefabio"
- },
- {
-  "id": "milestone:amayui-moka:kills:500",
-  "type": "milestone",
-  "ts": 1793227896,
-  "date": "2026-10-29",
-  "title": "Amayui Moka: 500 career kills",
-  "text": "Amayui Moka reached 500 career kills",
-  "link": "#/player/amayui-moka"
- },
- {
-  "id": "milestone:shiranami-ramune:maps:50",
-  "type": "milestone",
-  "ts": 1793231133,
-  "date": "2026-10-29",
-  "title": "Shiranami Ramune: 50 maps played",
-  "text": "Shiranami Ramune reached 50 maps played",
-  "link": "#/player/shiranami-ramune"
- },
- {
   "id": "milestone:tsumugi-kokage:maps:50",
   "type": "milestone",
   "ts": 1793231133,
@@ -1798,5 +1771,32 @@
   "title": "Elfy Mint: 50 maps played",
   "text": "Elfy Mint reached 50 maps played",
   "link": "#/player/elfy-mint"
+ },
+ {
+  "id": "upset:bpl-conquerors-stage-2026:2-9",
+  "type": "upset",
+  "ts": 1793750646,
+  "date": "2026-11-04",
+  "title": "Astral Bloom stun Kiedz",
+  "text": "2-0 at BPL Conquerors Stage 2026",
+  "link": "#/match/bpl-conquerors-stage-2026/2-9"
+ },
+ {
+  "id": "milestone:tachibana-hinano:mvp:150",
+  "type": "milestone",
+  "ts": 1793750649,
+  "date": "2026-11-04",
+  "title": "Tachibana Hinano: 150 MVP rounds",
+  "text": "Tachibana Hinano reached 150 MVP rounds",
+  "link": "#/player/tachibana-hinano"
+ },
+ {
+  "id": "milestone:remia-aotsuki:maps:50",
+  "type": "milestone",
+  "ts": 1793750649,
+  "date": "2026-11-04",
+  "title": "Remia Aotsuki: 50 maps played",
+  "text": "Remia Aotsuki reached 50 maps played",
+  "link": "#/player/remia-aotsuki"
  }
 ]
