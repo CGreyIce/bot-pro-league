@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:briant:kills:500",
-  "type": "milestone",
-  "ts": 1793233789,
-  "date": "2026-10-29",
-  "title": "briant: 500 career kills",
-  "text": "briant reached 500 career kills",
-  "link": "#/player/briant"
- },
- {
-  "id": "milestone:koen:maps:50",
-  "type": "milestone",
-  "ts": 1793235688,
-  "date": "2026-10-29",
-  "title": "koen: 50 maps played",
-  "text": "koen reached 50 maps played",
-  "link": "#/player/koen"
- },
- {
   "id": "milestone:caturteer:mvp:200",
   "type": "milestone",
   "ts": 1793237599,
@@ -1798,5 +1780,23 @@
   "title": "Jeribean: 500 career kills",
   "text": "Jeribean reached 500 career kills",
   "link": "#/player/jeribean"
+ },
+ {
+  "id": "milestone:88exp:kills:500",
+  "type": "milestone",
+  "ts": 1793768554,
+  "date": "2026-11-04",
+  "title": "88EXP: 500 career kills",
+  "text": "88EXP reached 500 career kills",
+  "link": "#/player/88exp"
+ },
+ {
+  "id": "milestone:jenakai:mvp:100",
+  "type": "milestone",
+  "ts": 1793768554,
+  "date": "2026-11-04",
+  "title": "Jenakai: 100 MVP rounds",
+  "text": "Jenakai reached 100 MVP rounds",
+  "link": "#/player/jenakai"
  }
 ]
