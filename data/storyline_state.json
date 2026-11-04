@@ -425,29 +425,29 @@
    "mvp": 79
   },
   "beyouna": {
-   "maps": 47,
-   "kills": 771,
-   "mvp": 121
+   "maps": 48,
+   "kills": 787,
+   "mvp": 123
   },
   "nutzeru": {
-   "maps": 51,
-   "kills": 869,
-   "mvp": 122
+   "maps": 52,
+   "kills": 887,
+   "mvp": 126
   },
   "appleorangepear": {
-   "maps": 47,
-   "kills": 741,
-   "mvp": 111
+   "maps": 48,
+   "kills": 761,
+   "mvp": 114
   },
   "l1feless": {
-   "maps": 55,
-   "kills": 728,
-   "mvp": 105
+   "maps": 56,
+   "kills": 739,
+   "mvp": 106
   },
   "lyrazal": {
-   "maps": 47,
-   "kills": 684,
-   "mvp": 85
+   "maps": 48,
+   "kills": 705,
+   "mvp": 88
   },
   "lenette": {
    "maps": 49,
@@ -600,29 +600,29 @@
    "mvp": 133
   },
   "y-uuno": {
-   "maps": 57,
-   "kills": 933,
-   "mvp": 145
-  },
-  "spoods": {
-   "maps": 53,
-   "kills": 894,
+   "maps": 58,
+   "kills": 950,
    "mvp": 146
   },
+  "spoods": {
+   "maps": 54,
+   "kills": 917,
+   "mvp": 151
+  },
   "laburi": {
-   "maps": 57,
-   "kills": 969,
-   "mvp": 180
+   "maps": 58,
+   "kills": 991,
+   "mvp": 184
   },
   "eroxis": {
-   "maps": 57,
-   "kills": 988,
+   "maps": 58,
+   "kills": 999,
    "mvp": 137
   },
   "kitties258": {
-   "maps": 53,
-   "kills": 667,
-   "mvp": 81
+   "maps": 54,
+   "kills": 681,
+   "mvp": 82
   },
   "mike": {
    "maps": 35,
@@ -2434,6 +2434,7 @@
   "upset:bpl-conquerors-stage-2026:1-2",
   "upset:bpl-conquerors-stage-2026:1-4",
   "upset:bpl-conquerors-stage-2026:1-7",
+  "upset:bpl-conquerors-stage-2026:2-10",
   "upset:bpl-conquerors-stage-2026:2-2",
   "upset:bpl-conquerors-stage-2026:2-9",
   "upset:bpl-conquerors-stage-2026:3-1",

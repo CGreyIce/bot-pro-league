@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:eris-suzukami:mvp:100",
-  "type": "milestone",
-  "ts": 1793231133,
-  "date": "2026-10-29",
-  "title": "Eris Suzukami: 100 MVP rounds",
-  "text": "Eris Suzukami reached 100 MVP rounds",
-  "link": "#/player/eris-suzukami"
- },
- {
   "id": "milestone:treblest:maps:50",
   "type": "milestone",
   "ts": 1793231133,
@@ -1798,5 +1789,14 @@
   "title": "Nutzeru: 50 maps played",
   "text": "Nutzeru reached 50 maps played",
   "link": "#/player/nutzeru"
+ },
+ {
+  "id": "milestone:spoods:mvp:150",
+  "type": "milestone",
+  "ts": 1793756941,
+  "date": "2026-11-04",
+  "title": "Spoods: 150 MVP rounds",
+  "text": "Spoods reached 150 MVP rounds",
+  "link": "#/player/spoods"
  }
 ]
