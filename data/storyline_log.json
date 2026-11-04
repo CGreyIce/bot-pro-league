@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:murasakibara-tsuki1:maps:50",
-  "type": "milestone",
-  "ts": 1793239575,
-  "date": "2026-10-29",
-  "title": "murasakibara_tsuki1: 50 maps played",
-  "text": "murasakibara_tsuki1 reached 50 maps played",
-  "link": "#/player/murasakibara-tsuki1"
- },
- {
   "id": "milestone:daifuku-wu:mvp:100",
   "type": "milestone",
   "ts": 1793241452,
@@ -1798,5 +1789,14 @@
   "title": "JStarWolf: 100 MVP rounds",
   "text": "JStarWolf reached 100 MVP rounds",
   "link": "#/player/jstarwolf"
+ },
+ {
+  "id": "milestone:codiant:kills:1000",
+  "type": "milestone",
+  "ts": 1793776614,
+  "date": "2026-11-04",
+  "title": "Codiant: 1000 career kills",
+  "text": "Codiant reached 1000 career kills",
+  "link": "#/player/codiant"
  }
 ]
