@@ -601,8 +601,9 @@
      "round": 3,
      "a": "Setting Sun",
      "b": "Flood Flashers",
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1793797256
     },
     {
      "id": 11,
