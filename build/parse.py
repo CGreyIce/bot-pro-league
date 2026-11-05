@@ -690,8 +690,11 @@ def main():
         return out
     def resolve_sb(rec):
         maps = rec["maps"] if "maps" in rec else [{"map": rec.get("map", ""), "players": rec.get("players", [])}]
-        return {"maps": [{"map": mp.get("map", ""), "scoreA": mp.get("scoreA"), "scoreB": mp.get("scoreB"),
-                          "players": resolve_sb_players(mp.get("players", []))} for mp in maps]}
+        out = {"maps": [{"map": mp.get("map", ""), "scoreA": mp.get("scoreA"), "scoreB": mp.get("scoreB"),
+                         "players": resolve_sb_players(mp.get("players", []))} for mp in maps]}
+        if rec.get("veto"):
+            out["veto"] = rec["veto"]                    # the BPL Bots launcher's map veto for the match
+        return out
     slug_to_team = {t["slug"]: t for t in teams}
     def overtime_periods(sa, sb):
         """OT periods a map's final round score implies. Regulation is MR12 (first to 13);

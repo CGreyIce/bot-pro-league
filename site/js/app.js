@@ -1918,6 +1918,7 @@ function renderMatch(){
           : '<div class="h2h-none muted">First-ever meeting between these two teams.</div>'}
       </div>`;
   }
+  const vetoHtml = matchVetoHtml(match);
   // pre-match preview: rankings + recent form (only when not yet played and both teams known)
   let previewHtml = '';
   if(match.w!==1 && match.w!==2 && match.aTeam && match.bTeam){
@@ -1967,7 +1968,7 @@ function renderMatch(){
     </div>
     <div id="m-live"></div>
     ${oddsBarHtml(match)}
-    ${h2hHtml}
+    ${h2hHtml && vetoHtml ? `<div class="m-duo"><div>${h2hHtml}</div><div>${vetoHtml}</div></div>` : h2hHtml + vetoHtml}
     ${previewHtml}
     ${sbHtml || (rosters?`<h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Rosters</h2><div class="m-rosters">${rosters}</div>`:'')}
     ${_adminOn?`<div style="margin-top:16px"><button id="m-editstats" class="loadmore">${match.stats?'Edit':'Record'} scoreboard</button></div><div id="m-statsform"></div>`:''}
@@ -3057,6 +3058,60 @@ function simulateVeto(A,B,fmt){
   return {steps, decider, played: fmt==="bo1" ? [decider] : steps.filter(s=>s.action==="pick").map(s=>s.map).concat(decider)};
 }
 function vetoMapImg(m){ return `<img class="vt-img" src="assets/maps/${VETO_IMG[m]}" alt="${esc(m)}">`; }
+// A team as BPL Bots' veto sees it (lib/bpl.js + runVeto in its ui/app.js): map stats looked up by
+// name, a pro team's own over the qualifier/nation/tournament lists, best and worst maps re-ranked
+// within the pool. With no stats every map counts as 50%, like the app.
+function vetoTeamFor(name){
+  const key=String(name||'').toLowerCase();
+  let mt=null;
+  for(const list of [DATA.qualifierMapTeams, DATA.nationMapTeams, DATA.adhocMapTeams, DATA.teams])
+    for(const t of list||[]) if(t.mapStats && t.name.toLowerCase()===key) mt=t;
+  if(!mt) return {name, slug:'x-'+key.replace(/[^a-z0-9]+/g,'-'), mapStats:null, bestMaps:[], worstMaps:[]};
+  const wr=m=>mt.mapStats[m]?mt.mapStats[m].wr:0.5;
+  const order=VETO_MAPS.slice().sort((x,y)=>wr(y)-wr(x)||(x<y?-1:1));
+  return {name, slug:mt.slug, mapStats:mt.mapStats, bestMaps:order.slice(0,2), worstMaps:[order[order.length-1],order[order.length-2]]};
+}
+// The match page's Map Veto: the veto BPL Bots launched the match from (stats.veto, sides as the
+// match's team a/b), or for an upcoming match the one the same simulation gives on today's win rates.
+function matchVetoHtml(match){
+  let v=match.stats&&match.stats.veto, projected=false;
+  if(!v||!(v.steps||[]).length){
+    if(match.w===1||match.w===2||!match.a||!match.b||/^(tbd|bye)$/i.test(match.a)||/^(tbd|bye)$/i.test(match.b)) return '';
+    const fmt='bo'+(match.bo===5?5:match.bo===3?3:1);
+    v={fmt, steps:simulateVeto(vetoTeamFor(match.a), vetoTeamFor(match.b), fmt).steps};
+    projected=true;
+  }
+  const nm=k=>k==='a'?match.a:k==='b'?match.b:'';
+  const flip=x=>x==='CT'?'T':'CT';
+  const maps=(match.stats&&match.stats.maps)||[];
+  const playedOrder=v.steps.filter(s=>v.fmt==='bo1'?s.action==='decider':s.action!=='ban').map(s=>s.map);
+  const rows=v.steps.map((s,i)=>{
+    const badge=s.action==='ban'?'<span class="vt-badge ban">BAN</span>':s.action==='pick'?'<span class="vt-badge pick">PICK</span>':'<span class="vt-badge dec">DECIDER</span>';
+    const line=s.action==='decider' ? `${badge} <b>${esc(s.map)}</b> was left over`
+      : `${badge} <span class="mv-team ${s.side}">${esc(nm(s.side))}</span> ${s.action==='ban'?'removed':'picked'} <b>${esc(s.map)}</b>`;
+    let extra='';
+    const k=playedOrder.indexOf(s.map);
+    if(k>=0){
+      const mp=maps.find(x=>normKey(x.map)===normKey(s.map));
+      const done=mp&&mp.scoreA!=null&&mp.scoreB!=null&&mp.scoreA!==mp.scoreB;
+      const res=done ? (()=>{ const aw=mp.scoreA>mp.scoreB, hi=Math.max(mp.scoreA,mp.scoreB), lo=Math.min(mp.scoreA,mp.scoreB);
+          return ` · <span class="mv-team ${aw?'a':'b'}">${esc(aw?match.a:match.b)}</span> won <b class="mono">${hi}–${lo}</b>`; })()
+        : (match.w===1||match.w===2) ? ' · <span class="muted">not needed</span>' : '';
+      const side=s.startSide&&s.sideAB ? ` · ${esc(nm(s.sideAB))} start ${s.startSide}${s.coin?' (coin flip)':''}` : '';
+      extra=`<div class="mv-played">Map ${k+1}${res}${side}</div>`;
+    }
+    return `<div class="mv-step ${s.action}"><span class="mv-n">${i+1}</span>${vetoMapImg(s.map)}
+      <div class="mv-body"><div class="mv-line">${line}</div>${s.reason?`<div class="mv-reason">${esc(s.reason)}</div>`:''}${extra}</div>
+      <div class="mv-wr"><span class="a">${s.wrA!=null?pct(s.wrA):''}</span><span class="b">${s.wrB!=null?pct(s.wrB):''}</span></div></div>`;
+  }).join('');
+  const note = projected ? 'projected from today’s map win rates' : v.rebuilt ? 'BPL Bots’ veto, rebuilt from the win rates before the match' : 'as BPL Bots played it';
+  return `<h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Map Veto</h2>
+    <div class="mv-box">
+      <div class="mv-head"><span>${v.fmt.toUpperCase()} <span class="mv-note">· ${note}</span></span>
+        <span class="mv-legend" title="Each team's win rate on that map on BPL${projected?'':', when the match was played'}">map win rate <span class="a">${esc(match.a)}</span><span class="b">${esc(match.b)}</span></span></div>
+      ${rows}
+    </div>`;
+}
 // For each played map, copyable bot_add lines: the CT team as bot_add_ct "<tag> name",
 // the T team as plain bot_add name. Needs a real roster (pro teams have one; ad-hoc/nation
 // map teams do not), so those show a note instead.

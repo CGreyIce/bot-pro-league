@@ -922,15 +922,20 @@ def _derive_match_score(maps):
     sb = sum(1 for m in scored if int(m["scoreB"]) > int(m["scoreA"]))
     return sa, sb
 
-def save_match_stats(slug, ref, maps, best_of=None):
+def save_match_stats(slug, ref, maps, best_of=None, veto=None):
     """best_of (optional, e.g. 3): the series length, for scoreboards uploaded map by map (the
     BPL Bots launcher). The match result is then only set once a team has won the series; until
-    then it stays unplayed, so a Bo3 with one map in isn't recorded as a 13-8 Bo1."""
+    then it stays unplayed, so a Bo3 with one map in isn't recorded as a 13-8 Bo1.
+    veto (optional): the map veto the launcher played the match from, {"fmt", "steps": [{"side"
+    ("a"/"b"/"d", the match's team a/b), "action" (ban/pick/decider), "map", "reason", "wrA", "wrB",
+    "startSide"/"sideAB"/"coin" on played maps}]}. Without one (the admin's scoreboard form), the
+    match keeps the veto it had."""
     data = json.load(open(MSFILE, encoding="utf-8")) if os.path.exists(MSFILE) else {}
     data.setdefault(slug, {})
     maps = [m for m in (maps or []) if m.get("players")]
     if maps:
-        data[slug][str(ref)] = {"maps": maps}
+        veto = veto or data[slug].get(str(ref), {}).get("veto")
+        data[slug][str(ref)] = {"maps": maps, **({"veto": veto} if veto else {})}
     else:
         data[slug].pop(str(ref), None)
         if not data[slug]:
