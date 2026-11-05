@@ -256,4 +256,15 @@ def upcoming_odds(tournaments, pro, norm_key):
             if len(ra) >= 3 and len(rb) >= 3:
                 m["odds"] = round(series_chance(expect(sum(ra) / len(ra), sum(rb) / len(rb)), m.get("bo") or 1), 3)
                 n += 1
+        # Playoff chances (the site simulates a group's remaining matches, rounds not drawn yet
+        # included): each team's line-up average, and the scale expect() uses, so the site prices a
+        # map exactly like the match pages do.
+        if tr.get("stages"):
+            names = {x for m in ms for x in (m.get("a"), m.get("b")) if x and x != "(bye)"}
+            pts_by = {}
+            for nm in sorted(names):
+                r = line.get(norm_key(nm)) or []
+                if len(r) >= 3:
+                    pts_by[nm] = round(sum(r) / len(r), 1)
+            tr["chanceModel"] = {"scale": SCALE, "pts": pts_by}
     return n

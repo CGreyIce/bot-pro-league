@@ -281,6 +281,7 @@ def stage_to_standard(stage):
         "bestOf": stage.get("bestOf", 1), "roundTitles": stage.get("roundTitles", {}),
         "teams": list(stage.get("teams", [])),
         "matches": out_matches, "standings": stage_standings(stage, res),
+        **({"swissRounds": stage.get("rounds", SWISS_DEFAULT_ROUNDS)} if stage["format"] == "swiss" else {}),
     }
 
 # ---------------- final leaderboard (no playoff games) ----------------
@@ -556,6 +557,7 @@ def to_standard(man):
         "nationTeam": man.get("nationTeam"),
         "leaderboard": lb,
         "advancePerGroup": advance_per_group(man),     # group tables mark this many as qualified
+        "groupTiebreak": "maps" if _maps_first(man) else "rounds",   # how level teams are split (see _rank_teams)
         # Before the groups are drawn: who's in (by name) and the slots still to be decided, each
         # filled from another event's final standings ({"tbc": true, "from": <event slug>, "place": n}).
         # parse.py resolves the slots and builds the Teams Attending list from this.

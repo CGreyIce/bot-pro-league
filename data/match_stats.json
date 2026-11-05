@@ -204753,7 +204753,78 @@
       }
      ]
     }
-   ]
+   ],
+   "veto": {
+    "fmt": "bo3",
+    "steps": [
+     {
+      "side": "a",
+      "action": "ban",
+      "map": "Dust2",
+      "reason": "removes division20's best map (88.9%)",
+      "wrA": 0.514,
+      "wrB": 0.889
+     },
+     {
+      "side": "b",
+      "action": "ban",
+      "map": "Ancient",
+      "reason": "removes Kiedz's best map (75.0%)",
+      "wrA": 0.75,
+      "wrB": 0.5
+     },
+     {
+      "side": "a",
+      "action": "pick",
+      "map": "Mirage",
+      "reason": "Kiedz's strongest left (66.7%)",
+      "wrA": 0.667,
+      "wrB": 0.6,
+      "sideAB": "b",
+      "startSide": "CT",
+      "coin": false
+     },
+     {
+      "side": "b",
+      "action": "pick",
+      "map": "Cache",
+      "reason": "division20's best map (80.0%)",
+      "wrA": 0.5,
+      "wrB": 0.8,
+      "sideAB": "a",
+      "startSide": "CT",
+      "coin": false
+     },
+     {
+      "side": "a",
+      "action": "ban",
+      "map": "Vertigo",
+      "reason": "Kiedz are weakest here (50.0%)",
+      "wrA": 0.5,
+      "wrB": 0.429
+     },
+     {
+      "side": "b",
+      "action": "ban",
+      "map": "Anubis",
+      "reason": "removes Kiedz's best map (66.7%)",
+      "wrA": 0.667,
+      "wrB": 0.0
+     },
+     {
+      "side": "d",
+      "action": "decider",
+      "map": "Inferno",
+      "reason": "the map left after all vetoes",
+      "wrA": 0.6,
+      "wrB": 0.0,
+      "sideAB": "a",
+      "startSide": "CT",
+      "coin": true
+     }
+    ],
+    "rebuilt": true
+   }
   },
   "2-15": {
    "maps": [

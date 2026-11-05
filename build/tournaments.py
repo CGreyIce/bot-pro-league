@@ -114,7 +114,8 @@ def process_manual(raw, team_map, alias):
             standings.append({"rank": i + 1, "name": dn, "teamSlug": sl, "w": s["w"], "l": s["l"]})
         stages_out.append({"id": st["id"], "name": st["name"], "format": st["format"],
                            "bestOf": st.get("bestOf", 1), "rounds": rounds, "standings": standings,
-                           "teams": [resolve(t) for t in st.get("teams", [])]})
+                           "teams": [resolve(t) for t in st.get("teams", [])],
+                           **({"swissRounds": st["swissRounds"]} if st.get("swissRounds") else {})})
     # combined bracket for the feeds (results/H2H/records) — one round-group per stage-round
     bracket = []
     for so in stages_out:
@@ -176,6 +177,7 @@ def process_manual(raw, team_map, alias):
         "nationTeam": raw.get("nationTeam"),
         "leaderboard": _lb_out(raw.get("leaderboard"), resolve),
         "advancePerGroup": raw.get("advancePerGroup"),   # self-seeding playoff: how many per group qualify
+        "groupTiebreak": raw.get("groupTiebreak"),       # "maps" or "rounds": the group tables' tiebreak order
         "field": field,
         "formatNote": raw.get("formatNote", ""),
     }
