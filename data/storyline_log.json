@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:zuann:mvp:100",
-  "type": "milestone",
-  "ts": 1793343427,
-  "date": "2026-10-30",
-  "title": "zuann_: 100 MVP rounds",
-  "text": "zuann_ reached 100 MVP rounds",
-  "link": "#/player/zuann"
- },
- {
-  "id": "milestone:trpaki:mvp:100",
-  "type": "milestone",
-  "ts": 1793343427,
-  "date": "2026-10-30",
-  "title": "TRPaki: 100 MVP rounds",
-  "text": "TRPaki reached 100 MVP rounds",
-  "link": "#/player/trpaki"
- },
- {
   "id": "milestone:hanabusa-lisa:kills:500",
   "type": "milestone",
   "ts": 1793343427,
@@ -1798,5 +1780,23 @@
   "title": "chiyoriinn: 500 career kills",
   "text": "chiyoriinn reached 500 career kills",
   "link": "#/player/chiyoriinn"
+ },
+ {
+  "id": "milestone:scorpium:maps:50",
+  "type": "milestone",
+  "ts": 1793896283,
+  "date": "2026-11-06",
+  "title": "Scorpium: 50 maps played",
+  "text": "Scorpium reached 50 maps played",
+  "link": "#/player/scorpium"
+ },
+ {
+  "id": "milestone:kuro-mi:maps:50",
+  "type": "milestone",
+  "ts": 1793896283,
+  "date": "2026-11-06",
+  "title": "kuro_mi: 50 maps played",
+  "text": "kuro_mi reached 50 maps played",
+  "link": "#/player/kuro-mi"
  }
 ]

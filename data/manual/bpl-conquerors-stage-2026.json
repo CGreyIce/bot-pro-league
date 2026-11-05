@@ -555,8 +555,9 @@
      "round": 4,
      "a": "Opal",
      "b": "Infernum E-Sports",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1793896280
     },
     {
      "id": 16,
