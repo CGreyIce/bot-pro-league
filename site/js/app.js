@@ -1919,6 +1919,12 @@ function renderMatch(){
       </div>`;
   }
   const vetoHtml = matchVetoHtml(match);
+  // A series in progress (BPL Bots sends each map as it ends; the result is only set once the series
+  // is won): the header shows the maps won so far, e.g. 0 – 1 after team b takes the first map.
+  const playedMaps = ((match.stats && match.stats.maps) || []).filter(m=>m.scoreA!=null && m.scoreB!=null && +m.scoreA !== +m.scoreB);
+  const inProgress = match.w!==1 && match.w!==2 && match.sa==null && match.sb==null && playedMaps.length > 0;
+  const headA = inProgress ? playedMaps.filter(m=>+m.scoreA > +m.scoreB).length : match.sa;
+  const headB = inProgress ? playedMaps.filter(m=>+m.scoreB > +m.scoreA).length : match.sb;
   // pre-match preview: rankings + recent form (only when not yet played and both teams known)
   let previewHtml = '';
   if(match.w!==1 && match.w!==2 && match.aTeam && match.bTeam){
@@ -1960,11 +1966,12 @@ function renderMatch(){
     <div class="crumb"><a href="#/tournaments">Tournaments</a><span class="sep">/</span>
       <a href="#/tournament/${esc(slug)}">${esc(tr.name)}</a><span class="sep">/</span>Match</div>
     <div class="m-context">${tierBadgeEvent(tr)} <span class="muted">${esc(stageName?stageName+' · ':'')}${esc(roundTitle)}${match.bo>1?' · Bo'+match.bo:''} · ${fmtDate(tr.date)}</span></div>
-    <div class="m-card">
-      ${side(match.a, match.aTeam, match.sa, match.w===1)}
+    <div class="m-card"${match.w!==1 && match.w!==2 ? ' data-open="1"' : ''}>
+      ${side(match.a, match.aTeam, headA, match.w===1)}
       <div class="m-mid"><div class="m-vs">${(match.sa!=null&&match.sb!=null)?`${match.sa} : ${match.sb}`:'vs'}</div>
-        ${match.w?`<div class="muted" style="font-size:12px">${esc(match.w===1?match.a:match.b)} won</div>`:'<div class="muted" style="font-size:12px">not played</div>'}</div>
-      ${side(match.b, match.bTeam, match.sb, match.w===2)}
+        ${match.w?`<div class="muted" style="font-size:12px">${esc(match.w===1?match.a:match.b)} won</div>`
+          : `<div class="muted" style="font-size:12px">${inProgress ? `in progress · ${playedMaps.length} map${playedMaps.length===1?'':'s'} played` : 'not played'}</div>`}</div>
+      ${side(match.b, match.bTeam, headB, match.w===2)}
     </div>
     <div id="m-live"></div>
     ${oddsBarHtml(match)}
@@ -4699,6 +4706,14 @@ function liveMarkUpdate(){
       const sub = app.querySelector('.m-mid .muted');      // "not played"
       if(sub){ LIVE_M.wasSub = sub.outerHTML; sub.outerHTML = `<div class="m-livetag"><span class="live-pill">● LIVE</span></div>`; }
     } else if(!lv && tag && LIVE_M.wasSub){ tag.outerHTML = LIVE_M.wasSub; }
+    // the maps won so far, straight from the relay (ahead of the next site update)
+    const card = app.querySelector('.m-card[data-open]');
+    const sc = card ? card.querySelectorAll('.m-side .m-score') : [];
+    if(sc.length === 2){
+      if(lv && lv.seriesA!=null && lv.seriesB!=null){
+        sc.forEach((el, i)=>{ if(el.dataset.was==null) el.dataset.was = el.textContent; el.textContent = i ? lv.seriesB : lv.seriesA; });
+      } else sc.forEach(el=>{ if(el.dataset.was!=null){ el.textContent = el.dataset.was; delete el.dataset.was; } });
+    }
   }
 }
 
