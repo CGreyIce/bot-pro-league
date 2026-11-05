@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:minmaxxer:kills:500",
-  "type": "milestone",
-  "ts": 1793320834,
-  "date": "2026-10-30",
-  "title": "minMaXXer: 500 career kills",
-  "text": "minMaXXer reached 500 career kills",
-  "link": "#/player/minmaxxer"
- },
- {
-  "id": "milestone:psystra:kills:500",
-  "type": "milestone",
-  "ts": 1793329459,
-  "date": "2026-10-30",
-  "title": "PSYSTRA: 500 career kills",
-  "text": "PSYSTRA reached 500 career kills",
-  "link": "#/player/psystra"
- },
- {
   "id": "milestone:blubear:kills:500",
   "type": "milestone",
   "ts": 1793341369,
@@ -1798,5 +1780,23 @@
   "title": "yuuki_PS: 1000 career kills",
   "text": "yuuki_PS reached 1000 career kills",
   "link": "#/player/yuuki-ps"
+ },
+ {
+  "id": "milestone:cryingnutz:maps:50",
+  "type": "milestone",
+  "ts": 1793885604,
+  "date": "2026-11-05",
+  "title": "CryingNutz: 50 maps played",
+  "text": "CryingNutz reached 50 maps played",
+  "link": "#/player/cryingnutz"
+ },
+ {
+  "id": "milestone:xueqiii:kills:1000",
+  "type": "milestone",
+  "ts": 1793885604,
+  "date": "2026-11-05",
+  "title": "XueQiii: 1000 career kills",
+  "text": "XueQiii reached 1000 career kills",
+  "link": "#/player/xueqiii"
  }
 ]
