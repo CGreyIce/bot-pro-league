@@ -1,41 +1,5 @@
 [
  {
-  "id": "milestone:raviaseir:mvp:150",
-  "type": "milestone",
-  "ts": 1793292366,
-  "date": "2026-10-30",
-  "title": "RaviasEir: 150 MVP rounds",
-  "text": "RaviasEir reached 150 MVP rounds",
-  "link": "#/player/raviaseir"
- },
- {
-  "id": "milestone:yano-kuromu:maps:50",
-  "type": "milestone",
-  "ts": 1793293930,
-  "date": "2026-10-30",
-  "title": "Yano Kuromu: 50 maps played",
-  "text": "Yano Kuromu reached 50 maps played",
-  "link": "#/player/yano-kuromu"
- },
- {
-  "id": "milestone:pearlim:kills:500",
-  "type": "milestone",
-  "ts": 1793296066,
-  "date": "2026-10-30",
-  "title": "Pearlim: 500 career kills",
-  "text": "Pearlim reached 500 career kills",
-  "link": "#/player/pearlim"
- },
- {
-  "id": "milestone:milkenut:kills:500",
-  "type": "milestone",
-  "ts": 1793296066,
-  "date": "2026-10-30",
-  "title": "milkenut: 500 career kills",
-  "text": "milkenut reached 500 career kills",
-  "link": "#/player/milkenut"
- },
- {
   "id": "milestone:navikuun:mvp:100",
   "type": "milestone",
   "ts": 1793299023,
@@ -1798,5 +1762,41 @@
   "title": "lumpydayo: 50 maps played",
   "text": "lumpydayo reached 50 maps played",
   "link": "#/player/lumpydayo"
+ },
+ {
+  "id": "milestone:tachibana-hinano:kills:1000",
+  "type": "milestone",
+  "ts": 1793838891,
+  "date": "2026-11-05",
+  "title": "Tachibana Hinano: 1000 career kills",
+  "text": "Tachibana Hinano reached 1000 career kills",
+  "link": "#/player/tachibana-hinano"
+ },
+ {
+  "id": "milestone:beyouna:maps:50",
+  "type": "milestone",
+  "ts": 1793838891,
+  "date": "2026-11-05",
+  "title": "beyouna: 50 maps played",
+  "text": "beyouna reached 50 maps played",
+  "link": "#/player/beyouna"
+ },
+ {
+  "id": "milestone:appleorangepear:maps:50",
+  "type": "milestone",
+  "ts": 1793838891,
+  "date": "2026-11-05",
+  "title": "AppleOrangePear: 50 maps played",
+  "text": "AppleOrangePear reached 50 maps played",
+  "link": "#/player/appleorangepear"
+ },
+ {
+  "id": "milestone:lyrazal:maps:50",
+  "type": "milestone",
+  "ts": 1793838891,
+  "date": "2026-11-05",
+  "title": "Lyrazal: 50 maps played",
+  "text": "Lyrazal reached 50 maps played",
+  "link": "#/player/lyrazal"
  }
 ]

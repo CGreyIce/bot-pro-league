@@ -335,8 +335,9 @@
      "round": 4,
      "a": "Astral Bloom",
      "b": "Bluebird",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1793838888
     },
     {
      "id": 14,
