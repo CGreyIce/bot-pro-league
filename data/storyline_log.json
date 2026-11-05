@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:illus:mvp:100",
-  "type": "milestone",
-  "ts": 1793345103,
-  "date": "2026-10-30",
-  "title": "Illus: 100 MVP rounds",
-  "text": "Illus reached 100 MVP rounds",
-  "link": "#/player/illus"
- },
- {
   "id": "milestone:leveti:mvp:100",
   "type": "milestone",
   "ts": 1793352167,
@@ -1798,5 +1789,14 @@
   "title": "SyberiaK: 500 career kills",
   "text": "SyberiaK reached 500 career kills",
   "link": "#/player/syberiak"
+ },
+ {
+  "id": "milestone:yuuschan:maps:50",
+  "type": "milestone",
+  "ts": 1793899434,
+  "date": "2026-11-06",
+  "title": "yuuschan: 50 maps played",
+  "text": "yuuschan reached 50 maps played",
+  "link": "#/player/yuuschan"
  }
 ]
