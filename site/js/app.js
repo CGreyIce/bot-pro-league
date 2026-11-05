@@ -1973,6 +1973,7 @@ function renderMatch(){
           : `<div class="muted" style="font-size:12px">${inProgress ? `in progress · ${playedMaps.length} map${playedMaps.length===1?'':'s'} played` : 'not played'}</div>`}</div>
       ${side(match.b, match.bTeam, headB, match.w===2)}
     </div>
+    <div id="m-stream" class="m-stream" inert></div>
     <div id="m-live"></div>
     ${oddsBarHtml(match)}
     ${h2hHtml && vetoHtml ? `<div class="m-duo"><div>${h2hHtml}</div><div>${vetoHtml}</div></div>` : h2hHtml + vetoHtml}
@@ -4072,6 +4073,216 @@ function renderTournaments(){
   app.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{tourneyFilter=b.dataset.tf;renderTournaments();});
 }
 
+// ---------- playoff chances (Swiss groups still being played) ----------
+// Plays the rest of a group CHANCE_RUNS times: the matches already drawn (a series under way starts
+// from the maps already played), then each round still to come, drawn the way the admin's auto-draft
+// does it (build/manual.py swiss_next_pairs: wins, then map difference, then losses, no rematches).
+// Each map is priced like the match odds (line-up Rating Points, build/elo.py expect) and its score
+// is drawn from the maps this event has recorded. A team's finish uses the event's tiebreaks
+// (manual.py _rank_teams). When few matches are left, every way they can go is also checked, so a
+// team that's through (or out) whatever happens is shown as such rather than as a rounded 100%.
+const CHANCE_RUNS = 10000;
+const _chanceCache = new Map();
+function chanceRng(seed){ return ()=>{ seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+function strHash(s){ let h = 2166136261; for(let i=0;i<s.length;i++){ h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return h>>>0; }
+function groupChances(tr, st){
+  if(st.format !== 'swiss' || tr.champion) return null;
+  const nAdv = tr.leaderboard ? tr.leaderboard.perGroup : tr.advancePerGroup;
+  if(!nAdv) return null;
+  const total = st.swissRounds || 5;
+  const ms = [];
+  (st.rounds||[]).forEach(rd=>(rd.matches||[]).forEach(m=>{ if(m.a && m.b && m.a!=='(bye)' && m.b!=='(bye)') ms.push({m, r: rd.round}); }));
+  if(!ms.length) return null;
+  const teams = [...new Set(ms.flatMap(x=>[x.m.a, x.m.b]).concat((st.standings||[]).map(s=>s.name)))];
+  if(teams.length <= nAdv) return null;
+  const lastRound = Math.max(...ms.map(x=>x.r));
+  if(lastRound >= total && ms.every(x=>x.m.w===1 || x.m.w===2)) return null;   // finished: the table's Q marks take over
+  const smaps = m=>(m.stats && m.stats.maps) || [];
+  const key = JSON.stringify([tr.slug, st.id, total, nAdv, tr.groupTiebreak, tr.chanceModel,
+    ms.map(x=>[x.r, x.m.a, x.m.b, x.m.sa, x.m.sb, x.m.w, x.m.bo, smaps(x.m).map(p=>[p.scoreA, p.scoreB])])]);
+  if(_chanceCache.has(key)) return _chanceCache.get(key);
+  // map scores to draw from: [winner's rounds, loser's rounds] of every map this event has recorded
+  const scores = [];
+  (tr.stages||[]).forEach(s=>(s.rounds||[]).forEach(rd=>(rd.matches||[]).forEach(m=>smaps(m).forEach(p=>{
+    if(p.scoreA!=null && p.scoreB!=null && p.scoreA!==p.scoreB) scores.push([Math.max(p.scoreA,p.scoreB), Math.min(p.scoreA,p.scoreB)]); }))));
+  const res = simulateGroup({tr, st, teams, ms, total, nAdv, lastRound, key,
+    scores: scores.length >= 12 ? scores : [[13,11],[13,10],[13,9],[13,8],[13,7],[13,6],[13,5],[13,3],[16,14],[13,9],[13,7],[13,10]]});
+  _chanceCache.set(key, res);
+  return res;
+}
+function simulateGroup({tr, st, teams, ms, total, nAdv, lastRound, key, scores}){
+  const N = teams.length, idx = new Map(teams.map((t,i)=>[t,i])), lower = teams.map(t=>t.toLowerCase());
+  const cm = tr.chanceModel || {}, scale = cm.scale || 2000, pts = cm.pts || {};
+  const known = teams.map(t=>pts[t]).filter(v=>v!=null);
+  const avg = known.length ? known.reduce((a,b)=>a+b, 0)/known.length : 1500;
+  const str = teams.map(t=>pts[t]!=null ? pts[t] : avg);
+  const pMap = (i,j)=>1/(1+Math.pow(10, (str[j]-str[i])/scale));
+  const mapsFirst = tr.groupTiebreak !== 'rounds';
+  const futureBo = st.bestOf || 1;
+  const pk = (i,j)=> i<j ? i*N+j : j*N+i;
+  const fresh = ()=>({w:new Int16Array(N), l:new Int16Array(N), mw:new Int16Array(N), ml:new Int16Array(N),
+    rf:new Int32Array(N), ra:new Int32Array(N), diff:new Int32Array(N), h2h:new Int16Array(N*N), byes:new Int16Array(N), unk:new Uint8Array(N)});
+  const copy = S=>({w:S.w.slice(), l:S.l.slice(), mw:S.mw.slice(), ml:S.ml.slice(), rf:S.rf.slice(), ra:S.ra.slice(),
+    diff:S.diff.slice(), h2h:S.h2h.slice(), byes:S.byes.slice(), unk:S.unk.slice()});
+  // a finished series: maps (a Bo1 counts 1-0), rounds, and the draw's "diff" (score difference: maps, or a Bo1's rounds)
+  const record = (S, i, j, ga, gb, ra, rb, bo)=>{
+    const aWon = ga > gb, win = aWon ? i : j, lose = aWon ? j : i;
+    const [ma, mb] = bo > 1 ? [ga, gb] : (aWon ? [1,0] : [0,1]);
+    S.w[win]++; S.l[lose]++;
+    S.mw[i] += ma; S.ml[i] += mb; S.mw[j] += mb; S.ml[j] += ma;
+    S.rf[i] += ra; S.ra[i] += rb; S.rf[j] += rb; S.ra[j] += ra;
+    const d = bo > 1 ? ga - gb : ra - rb;
+    S.diff[i] += d; S.diff[j] -= d;
+    S.h2h[win*N+lose]++;
+  };
+  // where things stand
+  const base = fresh(), met = new Set(), pending = [];
+  const playing = {};
+  ms.forEach(({m, r})=>{
+    const i = idx.get(m.a), j = idx.get(m.b);
+    met.add(pk(i,j)); (playing[r] = playing[r] || new Set()).add(i).add(j);
+    const mp = (m.stats && m.stats.maps) || [];
+    let ra = mp.reduce((s,p)=>s+(p.scoreA||0), 0), rb = mp.reduce((s,p)=>s+(p.scoreB||0), 0);
+    if(m.w===1 || m.w===2){
+      const sa = m.sa!=null ? m.sa : (m.w===1 ? 1 : 0), sb = m.sb!=null ? m.sb : (m.w===2 ? 1 : 0);
+      const aWon = m.w===1, win = aWon ? i : j, lose = aWon ? j : i;
+      const [ma, mb] = Math.max(sa, sb) <= 5 ? [sa, sb] : (aWon ? [1,0] : [0,1]);
+      if(!ra && !rb && Math.max(sa, sb) >= 13){ ra = sa; rb = sb; }
+      base.w[win]++; base.l[lose]++;
+      base.mw[i] += ma; base.ml[i] += mb; base.mw[j] += mb; base.ml[j] += ma;
+      base.rf[i] += ra; base.ra[i] += rb; base.rf[j] += rb; base.ra[j] += ra;
+      base.diff[i] += sa - sb; base.diff[j] -= sa - sb;
+      base.h2h[win*N+lose]++;
+    } else {
+      let ga = 0, gb = 0;
+      mp.forEach(p=>{ if(p.scoreA > p.scoreB) ga++; else if(p.scoreB > p.scoreA) gb++; });
+      pending.push({i, j, bo: m.bo || futureBo, ga, gb, ra, rb});
+    }
+  });
+  Object.values(playing).forEach(set=>{ for(let t=0;t<N;t++) if(!set.has(t)) base.byes[t]++; });
+  const need = bo=>Math.floor(bo/2) + 1;
+  // the next round's pairs, exactly as manual.py drafts them
+  const matchUp = (list, metS)=>{
+    if(!list.length) return [];
+    const a = list[0];
+    for(let k=1;k<list.length;k++){
+      if(metS.has(pk(a, list[k]))) continue;
+      const sub = matchUp(list.slice(1, k).concat(list.slice(k+1)), metS);
+      if(sub) return [[a, list[k]], ...sub];
+    }
+    return null;
+  };
+  const draft = (S, metS)=>{
+    let order = [...Array(N).keys()].sort((x,y)=>(S.w[y]-S.w[x]) || (S.diff[y]-S.diff[x]) || (S.l[x]-S.l[y]) || (lower[x]<lower[y] ? -1 : lower[x]>lower[y] ? 1 : 0));
+    if(N % 2){
+      let bye = [...order].reverse().find(t=>S.byes[t]===0); if(bye===undefined) bye = order[N-1];
+      S.byes[bye]++; order = order.filter(t=>t!==bye);
+    }
+    let pairs = matchUp(order, metS);
+    if(!pairs){ pairs = []; for(let k=0;k+1<order.length;k+=2) pairs.push([order[k], order[k+1]]); }
+    return pairs;
+  };
+  // ---- Monte Carlo ----
+  const rnd = chanceRng(strHash(key));
+  const play = (S, i, j, bo, ga, gb, ra, rb)=>{
+    const p = pMap(i, j), n = need(bo);
+    while(ga < n && gb < n){
+      const sc = scores[(rnd()*scores.length)|0];
+      if(rnd() < p){ ga++; ra += sc[0]; rb += sc[1]; } else { gb++; ra += sc[1]; rb += sc[0]; }
+    }
+    record(S, i, j, ga, gb, ra, rb, bo);
+  };
+  const md = (S,t)=>S.mw[t]-S.ml[t], rd = (S,t)=>S.rf[t]-S.ra[t];
+  const finish = (S, tie)=>{
+    const order = [...Array(N).keys()].sort((x,y)=>(S.w[y]-S.w[x]) || (S.l[x]-S.l[y]));
+    const out = [];
+    for(let i=0;i<N;){
+      let j = i; while(j<N && S.w[order[j]]===S.w[order[i]] && S.l[order[j]]===S.l[order[i]]) j++;
+      const block = order.slice(i, j);
+      if(mapsFirst) block.sort((x,y)=>(md(S,y)-md(S,x)) || (rd(S,y)-rd(S,x)) || (tie[x]-tie[y]));
+      else {
+        const metAll = block.length > 1 && block.every(x=>block.every(y=>x===y || S.h2h[x*N+y] || S.h2h[y*N+x]));
+        const hw = t=>metAll ? block.reduce((s,o)=>s+(o!==t ? S.h2h[t*N+o] : 0), 0) : 0;
+        block.sort((x,y)=>(hw(y)-hw(x)) || (rd(S,y)-rd(S,x)) || (md(S,y)-md(S,x)) || (tie[x]-tie[y]));
+      }
+      out.push(...block); i = j;
+    }
+    return out;
+  };
+  const made = new Float64Array(N), tie = new Float64Array(N);
+  for(let run=0; run<CHANCE_RUNS; run++){
+    const S = copy(base), metS = new Set(met);
+    pending.forEach(x=>play(S, x.i, x.j, x.bo, x.ga, x.gb, x.ra, x.rb));
+    for(let r=lastRound+1; r<=total; r++)
+      draft(S, metS).forEach(([i,j])=>{ metS.add(pk(i,j)); play(S, i, j, futureBo, 0, 0, 0, 0); });
+    for(let t=0;t<N;t++) tie[t] = rnd();
+    const o = finish(S, tie);
+    for(let k=0;k<nAdv;k++) made[o[k]]++;
+  }
+  // ---- through / out whatever happens: every way the remaining series can end ----
+  const left = pending.length + (total - lastRound) * Math.floor(N/2);
+  const exact = left <= 8 && (total === lastRound || (futureBo > 1 && pending.every(x=>x.bo > 1)));
+  const through = new Uint8Array(N).fill(exact ? 1 : 0), out = new Uint8Array(N).fill(exact ? 1 : 0);
+  if(exact){
+    const ends = (bo, ga, gb)=>{ const n = need(bo), e = [];
+      if(ga < n && gb < n){ for(let k=gb;k<n;k++) e.push([n, k]); for(let k=ga;k<n;k++) e.push([k, n]); }
+      return e; };
+    const settle = (S, i, j, ga, gb, bo)=>{
+      // rounds are unknown from here on: only maps and the draw's diff are exact (a Bo1 here is the last round, so its diff doesn't matter)
+      const aWon = ga > gb, win = aWon ? i : j, lose = aWon ? j : i;
+      const [ma, mb] = bo > 1 ? [ga, gb] : (aWon ? [1,0] : [0,1]);
+      S.w[win]++; S.l[lose]++; S.mw[i] += ma; S.ml[i] += mb; S.mw[j] += mb; S.ml[j] += ma;
+      S.diff[i] += ga - gb; S.diff[j] -= ga - gb; S.h2h[win*N+lose]++; S.unk[i] = 1; S.unk[j] = 1;
+    };
+    const better = (S,o,t)=>S.w[o]>S.w[t] || (S.w[o]===S.w[t] && S.l[o]<S.l[t]);
+    const same = (S,o,t)=>S.w[o]===S.w[t] && S.l[o]===S.l[t];
+    const leaf = S=>{
+      for(let t=0;t<N;t++){
+        if(!through[t] && !out[t]) continue;
+        let sure = 0, might = 0;
+        for(let o=0;o<N;o++){ if(o===t) continue;
+          if(better(S,o,t)){ sure++; might++; continue; }
+          if(!same(S,o,t)) continue;
+          if(!mapsFirst){ might++; continue; }
+          const dm = md(S,o) - md(S,t);
+          if(dm > 0){ sure++; might++; }
+          else if(dm === 0){
+            if(S.unk[o] || S.unk[t]){ might++; continue; }
+            const dr = rd(S,o) - rd(S,t);
+            if(dr > 0){ sure++; might++; } else if(dr === 0) might++;
+          }
+        }
+        if(might >= nAdv) through[t] = 0;
+        if(sure < nAdv) out[t] = 0;
+      }
+    };
+    const walk = (S, metS, list, k, r)=>{
+      if(k < list.length){
+        const x = list[k];
+        for(const [ga, gb] of ends(x.bo, x.ga, x.gb)){
+          const S2 = copy(S); settle(S2, x.i, x.j, ga, gb, x.bo); walk(S2, metS, list, k+1, r);
+        }
+        return;
+      }
+      if(r > total){ leaf(S); return; }
+      const S2 = copy(S), metS2 = new Set(metS);
+      const pairs = draft(S2, metS2); pairs.forEach(([i,j])=>metS2.add(pk(i,j)));
+      walk(S2, metS2, pairs.map(([i,j])=>({i, j, bo: futureBo, ga: 0, gb: 0})), 0, r+1);
+    };
+    walk(copy(base), new Set(met), pending, 0, lastRound+1);
+  }
+  const res = new Map();
+  teams.forEach((t,i)=>res.set(t, {p: made[i]/CHANCE_RUNS, through: !!through[i], out: !!out[i]}));
+  return res;
+}
+function chanceCell(c){
+  if(!c) return '<td></td>';
+  if(c.through) return `<td class="gc gc-in" title="Through to the playoffs whatever happens in the matches left"><span class="gc-tag">✓ In</span></td>`;
+  if(c.out) return `<td class="gc gc-out" title="Can't finish in the top places any more"><span class="gc-tag">Out</span></td>`;
+  const v = c.p*100, txt = v >= 99.5 ? '>99%' : v < 0.5 ? '<1%' : Math.round(v)+'%';
+  return `<td class="gc"><span class="gc-bar"><i style="width:${Math.max(2, Math.min(100, v)).toFixed(1)}%"></i></span><span class="gc-v">${txt}</span></td>`;
+}
+
 function renderTournament(slug){
   const tr = (DATA.tournaments||[]).find(t=>t.slug===slug);
   if(!tr){ app.innerHTML = notFound("Tournament"); return; }
@@ -4174,15 +4385,19 @@ function renderTournament(slug){
     const allM = (st.rounds||[]).flatMap(rd=>rd.matches||[]);
     const done = allM.length>0 && allM.every(m=> m.w===1 || m.w===2);
     const nAdv = tr.leaderboard ? tr.leaderboard.perGroup : (tr.advancePerGroup || 2);
+    const ch = groupChances(tr, st);            // null once the group is finished (or has no playoff cut)
+    const fin = done && !ch;
     const rows = st.standings.map(s=>{
-      const adv = done && s.rank<=nAdv;
+      const adv = fin && s.rank<=nAdv;
       return `<tr class="${adv?'grp-adv':''}"><td class="rankcol">${s.rank}</td>
         <td class="name-cell">${nameOrTeamCrest(s.name,s.teamSlug)}${adv?`<span class="grp-q" title="${tr.leaderboard?'On the final leaderboard':'Qualified for the playoffs'}">Q</span>`:''}</td>
-        <td class="mono">${s.w}</td><td class="mono">${s.l}</td></tr>`;
+        <td class="mono">${s.w}</td><td class="mono">${s.l}</td>${ch?chanceCell(ch.get(s.name)):''}</tr>`;
     }).join("");
-    return `<div class="tablewrap" style="max-width:460px;margin-bottom:12px"><table class="data">
-      <thead><tr><th class="no-sort rankcol">#</th><th class="no-sort">Team</th><th class="no-sort">W</th><th class="no-sort">L</th></tr></thead>
-      <tbody>${rows}</tbody></table>${done?`<div class="grp-adv-note">${tr.leaderboard?`Top ${nAdv} go onto the final leaderboard`:`Top ${nAdv} advance to the playoffs`}</div>`:''}</div>`;
+    const chHead = tr.leaderboard ? `Top ${nAdv}` : 'Playoffs';
+    return `<div class="tablewrap" style="max-width:${ch?560:460}px;margin-bottom:12px"><table class="data">
+      <thead><tr><th class="no-sort rankcol">#</th><th class="no-sort">Team</th><th class="no-sort">W</th><th class="no-sort">L</th>${ch?`<th class="no-sort gc-h" title="Chance to finish in the top ${nAdv} of the group">${chHead}</th>`:''}</tr></thead>
+      <tbody>${rows}</tbody></table>${fin?`<div class="grp-adv-note">${tr.leaderboard?`Top ${nAdv} go onto the final leaderboard`:`Top ${nAdv} advance to the playoffs`}</div>`:''}
+      ${ch?`<div class="gc-note">${tr.leaderboard?`Top ${nAdv} chance`:'Playoff chance'}: the group's remaining matches played ${CHANCE_RUNS.toLocaleString('en-US')} times, each map priced from the two line-ups' Rating Points like the match odds. <b>✓ In</b>: through whatever happens. <b>Out</b>: can't make the top ${nAdv}.</div>`:''}</div>`;
   };
   const fmtLabel = f => ({single_elim:"Single Elimination",round_robin:"Round Robin",swiss:"Swiss"}[f]||f);
 
@@ -4491,6 +4706,7 @@ function liveApply(doc){
   let tr; try{ tr = JSON.parse(doc.json); }catch(e){ return; }
   const i = DATA.tournaments.findIndex(t=>t.slug===doc.slug); if(i<0) return;
   if(doc.noStats) liveKeepStats(DATA.tournaments[i], tr);
+  liveKeepModel(DATA.tournaments[i], tr);
   DATA.tournaments[i] = tr; LIVE.seen[doc.slug] = doc.builtAt;
   _allMatches = null; _allMapScores = null; _rivals = null;
   liveRerender();
@@ -4500,6 +4716,12 @@ function liveKeepStats(old, tr){
   const key = (st,m)=>st.id+'-'+m.i, had = {};
   (old.stages||[]).forEach(st=>st.rounds.forEach(rd=>rd.matches.forEach(m=>{ if(m.stats) had[key(st,m)] = m.stats; })));
   (tr.stages||[]).forEach(st=>st.rounds.forEach(rd=>rd.matches.forEach(m=>{ if(!m.stats && had[key(st,m)]) m.stats = had[key(st,m)]; })));
+}
+// an admin page on an older build sends the event without the playoff-chance inputs: keep this page's
+function liveKeepModel(old, tr){
+  for(const k of ['chanceModel', 'groupTiebreak']) if(tr[k]==null && old[k]!=null) tr[k] = old[k];
+  const rounds = {}; (old.stages||[]).forEach(st=>{ if(st.swissRounds) rounds[st.id] = st.swissRounds; });
+  (tr.stages||[]).forEach(st=>{ if(!st.swissRounds && rounds[st.id]) st.swissRounds = rounds[st.id]; });
 }
 function liveRerender(){
   const {route, arg} = parseHash();
@@ -4626,6 +4848,7 @@ function liveMatchRender(doc){
   let lv = null;
   // stale after 3 minutes without an update (the relay sends at least once a minute)
   if(doc && !doc.ended && doc.json && Date.now()-(doc.sent||0) < 180000){ try{ lv = JSON.parse(doc.json); }catch(e){} }
+  streamBoxUpdate(lv);
   if(!lv){ box.innerHTML = ''; return; }
   const sideTag = s=>`<span class="ml-side ${s==='CT'?'ct':'t'}">${s}</span>`;
   const bSide = lv.aSide==='CT' ? 'T' : 'CT';
@@ -4643,6 +4866,55 @@ function liveMatchRender(doc){
     ${done?`<div class="ml-maps">${done}</div>`:''}
     <div class="ml-sbs">${team('a')}${team('b')}</div>
   </div>`;
+}
+
+// ---- the stream, on the page of the match being played ----
+// While a match is live (the relay above), its page loads the Twitch player out of sight. The player
+// says straight away whether the channel is on air (ONLINE / OFFLINE, checked 2026-11-06), and the
+// box only opens while it is: no stream, no box. The channel is the one connected in the BPL Bots
+// app (lv.twitch, sent with the live score), else the BPL channel.
+const STREAM_CHANNEL = 'cgrycei';
+let _twitchJs = null;
+function twitchPlayerJs(){
+  if(window.Twitch && window.Twitch.Player) return Promise.resolve();
+  return _twitchJs || (_twitchJs = new Promise((ok, bad)=>{
+    const s = document.createElement('script'); s.src = 'https://player.twitch.tv/js/embed/v1.js'; s.async = true;
+    s.onload = ()=>ok(); s.onerror = ()=>{ _twitchJs = null; bad(new Error('Twitch player blocked')); };
+    document.head.appendChild(s);
+  }));
+}
+let _streamOn = '';      // the channel last seen on air: a redrawn match page (after each map) reopens it at once
+function streamBoxUpdate(lv){
+  const box = $("#m-stream"); if(!box) return;
+  // not on the admin page: that runs on the PC that is streaming
+  const ch = lv && !_adminOn ? String(lv.twitch || STREAM_CHANNEL).toLowerCase().replace(/[^a-z0-9_]/g, '') : '';
+  if(box.dataset.channel === ch) return;            // already set up (or already empty)
+  box.dataset.channel = ch;
+  const show = on=>{ box.classList.toggle('on', on); box.inert = !on; };
+  show(false); box.innerHTML = '';
+  if(!ch){ _streamOn = ''; return; }
+  const wasOn = _streamOn === ch;
+  box.innerHTML = `<div class="ms-head"><span class="live-pill">● LIVE</span><span>On stream now</span>
+      <a class="ms-open" href="https://www.twitch.tv/${ch}" target="_blank" rel="noopener">twitch.tv/${ch} ↗</a></div>
+    <div class="ms-frame"><div id="ms-player"></div></div>`;
+  if(wasOn) show(true);
+  twitchPlayerJs().then(()=>{
+    if(!box.isConnected || box.dataset.channel !== ch) return;
+    const P = window.Twitch.Player;
+    const player = new P('ms-player', {channel: ch, parent: [location.hostname], width: '100%', height: '100%', muted: true, autoplay: wasOn});
+    player.addEventListener(P.ONLINE, ()=>{
+      _streamOn = ch;
+      if(!box.isConnected || box.dataset.channel !== ch) return;
+      show(true);
+      try{ player.setMuted(true); player.play(); }catch(e){}
+    });
+    player.addEventListener(P.OFFLINE, ()=>{
+      if(_streamOn === ch) _streamOn = '';
+      if(!box.isConnected || box.dataset.channel !== ch) return;
+      show(false);
+      try{ player.pause(); }catch(e){}
+    });
+  }).catch(()=>{ if(box.isConnected) show(false); });
 }
 
 // ---- live matches in round lists and brackets ----

@@ -1497,3 +1497,25 @@ h1 .human-badge{height:22px;font-size:12px;padding:0 8px;margin-left:10px}
 .mv-played{font-size:11.5px;margin-top:3px;color:var(--text)}
 .mv-wr{display:flex;flex-direction:column;gap:1px;font-family:monospace;font-size:11px;text-align:right;white-space:nowrap}
 .mv-note{font-family:var(--font-body,inherit);font-weight:500;font-size:11px;color:var(--muted)}
+
+/* playoff chances in a Swiss group still being played (groupChances in app.js) */
+.gc-h{text-align:right}
+.gc{text-align:right;white-space:nowrap;width:1%}
+.gc-bar{display:inline-block;vertical-align:middle;width:56px;height:6px;border-radius:3px;background:rgba(255,255,255,.07);margin-right:8px;overflow:hidden}
+.gc-bar i{display:block;height:100%;border-radius:3px;background:var(--accent-grad)}
+.gc-v{display:inline-block;min-width:38px;font-variant-numeric:tabular-nums;font-weight:700}
+.gc-tag{display:inline-block;font-family:'Chakra Petch';font-size:11px;font-weight:700;line-height:1;padding:4px 8px;border-radius:5px}
+.gc-in .gc-tag{background:rgba(46,230,166,.15);color:var(--good)}
+.gc-out .gc-tag{background:rgba(255,255,255,.06);color:var(--muted2)}
+tr:has(.gc-out) .name-cell{opacity:.75}
+.gc-note{font-size:11px;color:var(--muted);margin-top:6px;line-height:1.45}
+.gc-note b{color:var(--text);font-weight:600}
+@media (max-width:520px){.gc-bar{display:none}}
+
+/* the stream on a live match's page: loaded out of sight, opens only while the channel is on air */
+.m-stream{height:0;overflow:hidden}
+.m-stream.on{height:auto;overflow:visible;margin-top:14px;border:1px solid rgba(145,70,255,.45);border-radius:12px;padding:12px 14px 14px;background:linear-gradient(180deg,rgba(145,70,255,.09),rgba(145,70,255,.02))}
+.ms-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:13px;font-weight:600;margin-bottom:10px}
+.ms-open{margin-left:auto;font-size:12px;color:#b794ff !important}
+.ms-frame{position:relative;width:100%;max-width:960px;margin:0 auto;aspect-ratio:16/9;border-radius:8px;overflow:hidden;background:#000}
+.ms-frame > div, .ms-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
