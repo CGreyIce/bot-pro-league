@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:tachibana-hinano:mvp:100",
-  "type": "milestone",
-  "ts": 1793311219,
-  "date": "2026-10-30",
-  "title": "Tachibana Hinano: 100 MVP rounds",
-  "text": "Tachibana Hinano reached 100 MVP rounds",
-  "link": "#/player/tachibana-hinano"
- },
- {
-  "id": "milestone:kairi:mvp:100",
-  "type": "milestone",
-  "ts": 1793311219,
-  "date": "2026-10-30",
-  "title": "Kairi: 100 MVP rounds",
-  "text": "Kairi reached 100 MVP rounds",
-  "link": "#/player/kairi"
- },
- {
   "id": "milestone:declaration:kills:500",
   "type": "milestone",
   "ts": 1793313508,
@@ -1798,5 +1780,23 @@
   "title": "zuann_: 150 MVP rounds",
   "text": "zuann_ reached 150 MVP rounds",
   "link": "#/player/zuann"
+ },
+ {
+  "id": "milestone:y-uuno:mvp:150",
+  "type": "milestone",
+  "ts": 1793871662,
+  "date": "2026-11-05",
+  "title": "y.uuno: 150 MVP rounds",
+  "text": "y.uuno reached 150 MVP rounds",
+  "link": "#/player/y-uuno"
+ },
+ {
+  "id": "milestone:kairi:mvp:150",
+  "type": "milestone",
+  "ts": 1793871662,
+  "date": "2026-11-05",
+  "title": "Kairi: 150 MVP rounds",
+  "text": "Kairi reached 150 MVP rounds",
+  "link": "#/player/kairi"
  }
 ]
