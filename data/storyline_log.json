@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:sheep:kills:500",
-  "type": "milestone",
-  "ts": 1793379534,
-  "date": "2026-10-31",
-  "title": "Sheep: 500 career kills",
-  "text": "Sheep reached 500 career kills",
-  "link": "#/player/sheep"
- },
- {
   "id": "milestone:uzuhii:mvp:100",
   "type": "milestone",
   "ts": 1793379534,
@@ -1798,5 +1789,14 @@
   "title": "VanixEvans: 500 career kills",
   "text": "VanixEvans reached 500 career kills",
   "link": "#/player/vanixevans"
+ },
+ {
+  "id": "milestone:spectrum-gabriel:mvp:100",
+  "type": "milestone",
+  "ts": 1793915696,
+  "date": "2026-11-06",
+  "title": "Spectrum Gabriel: 100 MVP rounds",
+  "text": "Spectrum Gabriel reached 100 MVP rounds",
+  "link": "#/player/spectrum-gabriel"
  }
 ]
