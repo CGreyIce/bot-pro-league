@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:m0wmeow:kills:500",
-  "type": "milestone",
-  "ts": 1793374228,
-  "date": "2026-10-30",
-  "title": "m0wmeow: 500 career kills",
-  "text": "m0wmeow reached 500 career kills",
-  "link": "#/player/m0wmeow"
- },
- {
   "id": "milestone:sheep:kills:500",
   "type": "milestone",
   "ts": 1793379534,
@@ -1798,5 +1789,14 @@
   "title": "airawwr: 500 career kills",
   "text": "airawwr reached 500 career kills",
   "link": "#/player/airawwr"
+ },
+ {
+  "id": "milestone:vanixevans:kills:500",
+  "type": "milestone",
+  "ts": 1793914005,
+  "date": "2026-11-06",
+  "title": "VanixEvans: 500 career kills",
+  "text": "VanixEvans reached 500 career kills",
+  "link": "#/player/vanixevans"
  }
 ]
