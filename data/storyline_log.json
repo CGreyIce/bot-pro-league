@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:hanarisu:kills:500",
-  "type": "milestone",
-  "ts": 1793357188,
-  "date": "2026-10-30",
-  "title": "Hanarisu: 500 career kills",
-  "text": "Hanarisu reached 500 career kills",
-  "link": "#/player/hanarisu"
- },
- {
   "id": "milestone:wo4tk:kills:500",
   "type": "milestone",
   "ts": 1793362923,
@@ -1798,5 +1789,14 @@
   "title": "Celtsm: 150 MVP rounds",
   "text": "Celtsm reached 150 MVP rounds",
   "link": "#/player/celtsm"
+ },
+ {
+  "id": "milestone:goddessakane:mvp:100",
+  "type": "milestone",
+  "ts": 1793904834,
+  "date": "2026-11-06",
+  "title": "GoddessAkane: 100 MVP rounds",
+  "text": "GoddessAkane reached 100 MVP rounds",
+  "link": "#/player/goddessakane"
  }
 ]
