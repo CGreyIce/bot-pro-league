@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:fumishiroyummy:maps:50",
-  "type": "milestone",
-  "ts": 1793367039,
-  "date": "2026-10-30",
-  "title": "FumishiroYummy: 50 maps played",
-  "text": "FumishiroYummy reached 50 maps played",
-  "link": "#/player/fumishiroyummy"
- },
- {
   "id": "milestone:m0wmeow:kills:500",
   "type": "milestone",
   "ts": 1793374228,
@@ -1798,5 +1789,14 @@
   "title": "Asterisks: 100 MVP rounds",
   "text": "Asterisks reached 100 MVP rounds",
   "link": "#/player/asterisks"
+ },
+ {
+  "id": "milestone:airawwr:kills:500",
+  "type": "milestone",
+  "ts": 1793910827,
+  "date": "2026-11-06",
+  "title": "airawwr: 500 career kills",
+  "text": "airawwr reached 500 career kills",
+  "link": "#/player/airawwr"
  }
 ]
