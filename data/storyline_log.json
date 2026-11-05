@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:prophocy:maps:50",
-  "type": "milestone",
-  "ts": 1793302606,
-  "date": "2026-10-30",
-  "title": "ProPHOcy_: 50 maps played",
-  "text": "ProPHOcy_ reached 50 maps played",
-  "link": "#/player/prophocy"
- },
- {
-  "id": "milestone:tuxedocat:kills:500",
-  "type": "milestone",
-  "ts": 1793306779,
-  "date": "2026-10-30",
-  "title": "TuxedoCat: 500 career kills",
-  "text": "TuxedoCat reached 500 career kills",
-  "link": "#/player/tuxedocat"
- },
- {
   "id": "milestone:tachibana-hinano:mvp:100",
   "type": "milestone",
   "ts": 1793311219,
@@ -1798,5 +1780,23 @@
   "title": "Eroxis: 1000 career kills",
   "text": "Eroxis reached 1000 career kills",
   "link": "#/player/eroxis"
+ },
+ {
+  "id": "milestone:laburi:kills:1000",
+  "type": "milestone",
+  "ts": 1793867708,
+  "date": "2026-11-05",
+  "title": "Laburi: 1000 career kills",
+  "text": "Laburi reached 1000 career kills",
+  "link": "#/player/laburi"
+ },
+ {
+  "id": "milestone:zuann:mvp:150",
+  "type": "milestone",
+  "ts": 1793867708,
+  "date": "2026-11-05",
+  "title": "zuann_: 150 MVP rounds",
+  "text": "zuann_ reached 150 MVP rounds",
+  "link": "#/player/zuann"
  }
 ]

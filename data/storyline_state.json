@@ -95,8 +95,8 @@
   "kiedz",
   "sacred-raven",
   "neverland",
-  "new-jade",
   "prism-divide",
+  "new-jade",
   "setting-sun",
   "entity",
   "aetherline",
@@ -600,28 +600,28 @@
    "mvp": 133
   },
   "y-uuno": {
-   "maps": 59,
-   "kills": 958,
-   "mvp": 146
+   "maps": 60,
+   "kills": 970,
+   "mvp": 147
   },
   "spoods": {
-   "maps": 55,
-   "kills": 921,
-   "mvp": 151
+   "maps": 56,
+   "kills": 935,
+   "mvp": 154
   },
   "laburi": {
-   "maps": 59,
-   "kills": 998,
-   "mvp": 184
+   "maps": 60,
+   "kills": 1019,
+   "mvp": 189
   },
   "eroxis": {
-   "maps": 59,
-   "kills": 1005,
-   "mvp": 138
+   "maps": 60,
+   "kills": 1025,
+   "mvp": 142
   },
   "kitties258": {
-   "maps": 55,
-   "kills": 688,
+   "maps": 56,
+   "kills": 695,
    "mvp": 83
   },
   "mike": {
@@ -725,29 +725,29 @@
    "mvp": 69
   },
   "elfy-mint": {
-   "maps": 52,
-   "kills": 852,
-   "mvp": 129
+   "maps": 53,
+   "kills": 865,
+   "mvp": 130
   },
   "illus": {
-   "maps": 53,
-   "kills": 882,
+   "maps": 54,
+   "kills": 887,
    "mvp": 146
   },
   "kairi": {
-   "maps": 62,
-   "kills": 942,
-   "mvp": 145
+   "maps": 63,
+   "kills": 956,
+   "mvp": 147
   },
   "declaration": {
-   "maps": 53,
-   "kills": 778,
+   "maps": 54,
+   "kills": 787,
    "mvp": 94
   },
   "zuann": {
-   "maps": 62,
-   "kills": 1065,
-   "mvp": 148
+   "maps": 63,
+   "kills": 1075,
+   "mvp": 150
   },
   "luminmochi": {
    "maps": 33,
