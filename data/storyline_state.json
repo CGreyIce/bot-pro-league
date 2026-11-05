@@ -95,8 +95,8 @@
   "kiedz",
   "sacred-raven",
   "neverland",
-  "new-jade",
   "prism-divide",
+  "new-jade",
   "setting-sun",
   "entity",
   "aetherline",
@@ -675,29 +675,29 @@
    "mvp": 80
   },
   "hakase": {
-   "maps": 47,
-   "kills": 823,
+   "maps": 48,
+   "kills": 833,
    "mvp": 134
   },
   "phxebe": {
-   "maps": 56,
-   "kills": 790,
+   "maps": 57,
+   "kills": 798,
    "mvp": 108
   },
   "yuuschan": {
-   "maps": 48,
-   "kills": 766,
-   "mvp": 106
+   "maps": 49,
+   "kills": 776,
+   "mvp": 108
   },
   "cshhp": {
-   "maps": 46,
-   "kills": 618,
-   "mvp": 67
+   "maps": 47,
+   "kills": 631,
+   "mvp": 68
   },
   "mango": {
-   "maps": 46,
-   "kills": 662,
-   "mvp": 91
+   "maps": 47,
+   "kills": 667,
+   "mvp": 92
   },
   "historia": {
    "maps": 37,
@@ -1260,8 +1260,8 @@
    "mvp": 79
   },
   "kiokocheiko": {
-   "maps": 70,
-   "kills": 1187,
+   "maps": 71,
+   "kills": 1193,
    "mvp": 160
   },
   "dianya": {
@@ -1415,24 +1415,24 @@
    "mvp": 84
   },
   "jstarwolf": {
-   "maps": 43,
-   "kills": 661,
-   "mvp": 103
+   "maps": 44,
+   "kills": 681,
+   "mvp": 107
   },
   "plushyoshii": {
-   "maps": 32,
-   "kills": 549,
-   "mvp": 93
+   "maps": 33,
+   "kills": 564,
+   "mvp": 96
   },
   "hazielvamp": {
-   "maps": 29,
-   "kills": 451,
-   "mvp": 69
+   "maps": 30,
+   "kills": 464,
+   "mvp": 71
   },
   "syberiak": {
-   "maps": 29,
-   "kills": 480,
-   "mvp": 55
+   "maps": 30,
+   "kills": 500,
+   "mvp": 59
   },
   "mizukiimoon": {
    "maps": 83,
