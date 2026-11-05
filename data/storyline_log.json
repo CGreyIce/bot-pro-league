@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:wo4tk:kills:500",
-  "type": "milestone",
-  "ts": 1793362923,
-  "date": "2026-10-30",
-  "title": "WO4TK: 500 career kills",
-  "text": "WO4TK reached 500 career kills",
-  "link": "#/player/wo4tk"
- },
- {
-  "id": "milestone:kn:kills:500",
-  "type": "milestone",
-  "ts": 1793365110,
-  "date": "2026-10-30",
-  "title": "kn: 500 career kills",
-  "text": "kn reached 500 career kills",
-  "link": "#/player/kn"
- },
- {
-  "id": "milestone:arya-kuroha:kills:500",
-  "type": "milestone",
-  "ts": 1793365110,
-  "date": "2026-10-30",
-  "title": "Arya Kuroha: 500 career kills",
-  "text": "Arya Kuroha reached 500 career kills",
-  "link": "#/player/arya-kuroha"
- },
- {
   "id": "milestone:fumishiroyummy:maps:50",
   "type": "milestone",
   "ts": 1793367039,
@@ -1798,5 +1771,32 @@
   "title": "GoddessAkane: 100 MVP rounds",
   "text": "GoddessAkane reached 100 MVP rounds",
   "link": "#/player/goddessakane"
+ },
+ {
+  "id": "milestone:matcha:kills:1000",
+  "type": "milestone",
+  "ts": 1793909629,
+  "date": "2026-11-06",
+  "title": "matcha: 1000 career kills",
+  "text": "matcha reached 1000 career kills",
+  "link": "#/player/matcha"
+ },
+ {
+  "id": "milestone:matcha:mvp:150",
+  "type": "milestone",
+  "ts": 1793909629,
+  "date": "2026-11-06",
+  "title": "matcha: 150 MVP rounds",
+  "text": "matcha reached 150 MVP rounds",
+  "link": "#/player/matcha"
+ },
+ {
+  "id": "milestone:asterisks:mvp:100",
+  "type": "milestone",
+  "ts": 1793909629,
+  "date": "2026-11-06",
+  "title": "Asterisks: 100 MVP rounds",
+  "text": "Asterisks reached 100 MVP rounds",
+  "link": "#/player/asterisks"
  }
 ]
