@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:leveti:mvp:100",
-  "type": "milestone",
-  "ts": 1793352167,
-  "date": "2026-10-30",
-  "title": "Leveti: 100 MVP rounds",
-  "text": "Leveti reached 100 MVP rounds",
-  "link": "#/player/leveti"
- },
- {
   "id": "milestone:jaelyo:mvp:100",
   "type": "milestone",
   "ts": 1793352167,
@@ -1798,5 +1789,14 @@
   "title": "yuuschan: 50 maps played",
   "text": "yuuschan reached 50 maps played",
   "link": "#/player/yuuschan"
+ },
+ {
+  "id": "milestone:goddessakane:maps:50",
+  "type": "milestone",
+  "ts": 1793901577,
+  "date": "2026-11-06",
+  "title": "GoddessAkane: 50 maps played",
+  "text": "GoddessAkane reached 50 maps played",
+  "link": "#/player/goddessakane"
  }
 ]
