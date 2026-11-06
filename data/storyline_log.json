@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:xyrolizea:mvp:100",
-  "type": "milestone",
-  "ts": 1793513250,
-  "date": "2026-11-01",
-  "title": "Xyrolizea: 100 MVP rounds",
-  "text": "Xyrolizea reached 100 MVP rounds",
-  "link": "#/player/xyrolizea"
- },
- {
   "id": "milestone:psystra:maps:50",
   "type": "milestone",
   "ts": 1793513250,
@@ -1798,5 +1789,14 @@
   "title": "plushyoshii: 100 MVP rounds",
   "text": "plushyoshii reached 100 MVP rounds",
   "link": "#/player/plushyoshii"
+ },
+ {
+  "id": "milestone:hazielvamp:kills:500",
+  "type": "milestone",
+  "ts": 1793986355,
+  "date": "2026-11-07",
+  "title": "hazielvamp: 500 career kills",
+  "text": "hazielvamp reached 500 career kills",
+  "link": "#/player/hazielvamp"
  }
 ]
