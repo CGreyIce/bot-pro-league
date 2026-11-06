@@ -178,8 +178,9 @@
      "round": 5,
      "a": "Technomancy",
      "b": "Cosmos",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1793936589
     },
     {
      "id": 19,
