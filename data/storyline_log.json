@@ -1,32 +1,5 @@
 [
  {
-  "id": "promotion:northwind",
-  "type": "promotion",
-  "ts": 1793527690,
-  "date": "2026-11-01",
-  "title": "Northwind join the pro ranks",
-  "text": "New pro team [Nwd], 5 players",
-  "link": "#/team/northwind"
- },
- {
-  "id": "promotion:crystal-laurels",
-  "type": "promotion",
-  "ts": 1793527690,
-  "date": "2026-11-01",
-  "title": "Crystal Laurels join the pro ranks",
-  "text": "New pro team [CL], 5 players",
-  "link": "#/team/crystal-laurels"
- },
- {
-  "id": "promotion:special-forces",
-  "type": "promotion",
-  "ts": 1793527690,
-  "date": "2026-11-01",
-  "title": "Special Forces join the pro ranks",
-  "text": "New pro team [SF], 5 players",
-  "link": "#/team/special-forces"
- },
- {
   "id": "promotion:nightfang-covenant",
   "type": "promotion",
   "ts": 1793527690,
@@ -1798,5 +1771,32 @@
   "title": "Hakase: 50 maps played",
   "text": "Hakase reached 50 maps played",
   "link": "#/player/hakase"
+ },
+ {
+  "id": "milestone:cshhp:maps:50",
+  "type": "milestone",
+  "ts": 1793989912,
+  "date": "2026-11-07",
+  "title": "cshhp: 50 maps played",
+  "text": "cshhp reached 50 maps played",
+  "link": "#/player/cshhp"
+ },
+ {
+  "id": "milestone:mango:maps:50",
+  "type": "milestone",
+  "ts": 1793989912,
+  "date": "2026-11-07",
+  "title": "Mango: 50 maps played",
+  "text": "Mango reached 50 maps played",
+  "link": "#/player/mango"
+ },
+ {
+  "id": "milestone:simply-perezoso:mvp:100",
+  "type": "milestone",
+  "ts": 1793989912,
+  "date": "2026-11-07",
+  "title": "simply_perezoso: 100 MVP rounds",
+  "text": "simply_perezoso reached 100 MVP rounds",
+  "link": "#/player/simply-perezoso"
  }
 ]
