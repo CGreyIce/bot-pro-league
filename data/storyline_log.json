@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:voidnw:kills:500",
-  "type": "milestone",
-  "ts": 1793453271,
-  "date": "2026-10-31",
-  "title": "voidnw: 500 career kills",
-  "text": "voidnw reached 500 career kills",
-  "link": "#/player/voidnw"
- },
- {
   "id": "milestone:rc-ia:maps:50",
   "type": "milestone",
   "ts": 1793473464,
@@ -1798,5 +1789,14 @@
   "title": "rebebx: 1000 career kills",
   "text": "rebebx reached 1000 career kills",
   "link": "#/player/rebebx"
+ },
+ {
+  "id": "milestone:sketch:mvp:100",
+  "type": "milestone",
+  "ts": 1793968473,
+  "date": "2026-11-06",
+  "title": "Sketch: 100 MVP rounds",
+  "text": "Sketch reached 100 MVP rounds",
+  "link": "#/player/sketch"
  }
 ]
