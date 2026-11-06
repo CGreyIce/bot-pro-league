@@ -2005,6 +2005,14 @@ def main():
         # compact: no indentation (it was ~40% of the file), the site parses it the same
         json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
 
+    # ---- kill heatmaps (build/heatmaps.py): site/heatmaps/<Map>.json, loaded one map at a time ----
+    try:
+        import heatmaps
+        hm = heatmaps.build(ROOT, data.get("tournaments"))
+        print(f"Heatmaps:            {len(hm)} map(s), {sum(m['kills'] for m in hm)} kills")
+    except Exception as e:                   # never fails the build
+        print("heatmaps skipped:", e)
+
     # sync team logos into the deployable site folder so site/ is self-contained
     import shutil
     site_logos = os.path.join(SITE, "assets", "teams")

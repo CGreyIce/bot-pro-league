@@ -218,7 +218,7 @@ const routes = {
   "tournaments": renderTournaments, "tournament": renderTournament,
   "rankings": renderRankings,
   "results": renderResults, "records": renderRecords, "compare": renderCompare,
-  "transfers": renderTransfers, "matches": renderMatches, "awards": renderAwards, "maps": renderMaps,
+  "transfers": renderTransfers, "matches": renderMatches, "awards": renderAwards, "maps": renderMaps, "heatmaps": renderHeatmaps,
   "compareteams": renderTeamCompare, "stats": renderStats,
   "admin": renderAdmin, "match": renderMatch, "predict": renderPredict, "prophets": renderProphets, "fantasy": renderFantasy, "rivalries": renderRivalries, "dle": renderDle,
   "news": renderNews, "article": renderArticle,
@@ -238,7 +238,7 @@ function router(){
   liveMarkUpdate();   // LIVE bars on matches being played right now
   renderPromo();   // re-roll the socials promo on each page for even exposure
   document.querySelectorAll(".mainnav a").forEach(a=>{
-    const map={team:"teams",player:"players",human:"players",tournament:"tournaments",article:"news"};
+    const map={team:"teams",player:"players",human:"players",tournament:"tournaments",article:"news",heatmaps:"maps"};
     a.classList.toggle("active", a.dataset.route === (map[route]||route));
   });
 }
@@ -1674,7 +1674,8 @@ function renderMaps(){
       <td class="muted" style="font-size:12px">${byMap}</td></tr>`;
   }).join("");
   app.innerHTML=`
-    <h2 class="section-title"><span class="accent-bar"></span>Maps <span class="muted" style="font-size:11px">(${totalMaps} maps recorded)</span></h2>
+    <h2 class="section-title"><span class="accent-bar"></span>Maps <span class="muted" style="font-size:11px">(${totalMaps} maps recorded)</span>
+      <a href="#/heatmaps" class="hm-link">Kill heatmaps →</a></h2>
     <h3 class="rec-group">Map Pool</h3>
     <div class="rec-grid">${mapCards}</div>
     <h3 class="rec-group" style="margin-top:24px">Team Map Records</h3>
@@ -1683,6 +1684,121 @@ function renderMaps(){
       <tbody>${trecHtml}</tbody></table></div>
     <h3 class="rec-group" style="margin-top:24px">Map Results</h3>
     <div class="tablewrap"><table class="data results-table"><tbody>${resHtml}</tbody></table></div>`;
+}
+
+// ---------- Kill heatmaps (6 Nov 2026; build/heatmaps.py) ----------
+// #/heatmaps/<Map>[/team/<name> | /player/<name>]: where the kills (or the deaths) happen on a map,
+// over the map's floor drawn from its nav. The kills come from BPL matches the BPL Bots launcher
+// played since kill positions were recorded. One map's file is loaded at a time.
+const HM = { mode: "kills", side: "all", event: "" };
+const _hmFiles = {};
+function hmFetch(file){
+  if(!_hmFiles[file]) _hmFiles[file] = fetch("heatmaps/"+file+"?x="+encodeURIComponent(DATA.builtAt||"")).then(r=>r.ok?r.json():null).catch(()=>null);
+  return _hmFiles[file];
+}
+async function renderHeatmaps(){
+  const parts = location.hash.replace(/^#\/?/,"").split("/").filter(Boolean).map(decodeURIComponent);
+  app.innerHTML = `<h2 class="section-title"><span class="accent-bar"></span>Kill Heatmaps</h2><div class="loading">Loading…</div>`;
+  const idx = await hmFetch("index.json");
+  const maps = (idx && idx.maps) || [];
+  if(!maps.length){
+    app.innerHTML = `<h2 class="section-title"><span class="accent-bar"></span>Kill Heatmaps</h2>
+      <div class="notice"><h2>No kill data yet</h2><p class="muted">Heatmaps fill up from BPL matches played after 6 November 2026, when kill positions started being recorded.</p></div>`;
+    return;
+  }
+  const m = maps.find(x=>x.map===parts[1]) || maps.slice().sort((a,b)=>b.kills-a.kills)[0];
+  const team = parts[2]==="team" ? parts[3]||"" : "", player = parts[2]==="player" ? parts[3]||"" : "";
+  const d = await hmFetch(m.file);
+  if(!location.hash.startsWith("#/heatmaps")) return;          // left the page while it loaded
+  if(!d){ app.innerHTML = `<div class="notice"><h2>Couldn't load the ${esc(m.map)} heatmap</h2></div>`; return; }
+  const go = (t, p) => { location.hash = "#/heatmaps/"+encodeURIComponent(m.map)+(p ? "/player/"+encodeURIComponent(p) : t ? "/team/"+encodeURIComponent(t) : ""); };
+  const ti = d.teams.indexOf(team), pi = d.players.indexOf(player);
+  // a player's team on this map: the one they've played it for most
+  const teamsOf = new Map();
+  d.kills.forEach(k=>{ [[k[5],k[7]],[k[6],k[8]]].forEach(([p,t])=>{ if(p<0||t<0) return; const c=teamsOf.get(p)||{}; c[t]=(c[t]||0)+1; teamsOf.set(p,c); }); });
+  const mainTeam = (p) => { const c=teamsOf.get(p); if(!c) return -1; return +Object.entries(c).sort((a,b)=>b[1]-a[1])[0][0]; };
+  const shownTeam = ti>=0 ? ti : pi>=0 ? mainTeam(pi) : -1;           // a player's link shows their team
+  const playerList = d.players.map((n,i)=>({n,i})).filter(x=>shownTeam<0 || mainTeam(x.i)===shownTeam).sort((a,b)=>a.n.localeCompare(b.n));
+  const ev = HM.event && d.events.findIndex(e=>e[0]===HM.event);
+  // kills: where the killer stood (by the killer's side); deaths: where the victim fell (by theirs)
+  const pts = [];
+  for(const k of d.kills){
+    if(HM.event && k[10]!==ev) continue;
+    const deaths = HM.mode==="deaths", side = deaths ? 1-k[4] : k[4];
+    if(HM.side==="t" && side!==0 || HM.side==="ct" && side!==1) continue;
+    if(pi>=0 && (deaths ? k[6] : k[5])!==pi) continue;
+    if(pi<0 && ti>=0 && (deaths ? k[8] : k[7])!==ti) continue;
+    pts.push(deaths ? [k[2],k[3]] : [k[0],k[1]]);
+  }
+  const who = player ? esc(player) : team ? esc(team) : "everyone";
+  app.innerHTML = `
+    <h2 class="section-title"><span class="accent-bar"></span>Kill Heatmaps <span class="muted" style="font-size:11px">(${d.kills.length} kills recorded on ${esc(m.map)})</span>
+      <a href="#/maps" class="hm-link">← Maps</a></h2>
+    <div class="tabs hm-maps">${maps.map(x=>`<button data-map="${esc(x.map)}" class="${x.map===m.map?"active":""}">${esc(x.map)} <span class="muted">${x.kills}</span></button>`).join("")}</div>
+    <div class="hm-filters">
+      <div class="tabs hm-seg">${[["kills","Kills"],["deaths","Deaths"]].map(([v,l])=>`<button data-mode="${v}" class="${HM.mode===v?"active":""}">${l}</button>`).join("")}</div>
+      <div class="tabs hm-seg">${[["all","Both sides"],["t","T"],["ct","CT"]].map(([v,l])=>`<button data-side="${v}" class="${HM.side===v?"active":""}">${l}</button>`).join("")}</div>
+      <label>Team <select id="hm-team"><option value="">All teams</option>${d.teams.slice().sort().map(t=>`<option ${shownTeam>=0&&t===d.teams[shownTeam]?"selected":""}>${esc(t)}</option>`).join("")}</select></label>
+      <label>Player <select id="hm-player"><option value="">${shownTeam>=0?"Whole team":"All players"}</option>${playerList.map(x=>`<option ${x.n===player?"selected":""}>${esc(x.n)}</option>`).join("")}</select></label>
+      ${d.events.length>1?`<label>Event <select id="hm-event"><option value="">All events</option>${d.events.map(e=>`<option value="${esc(e[0])}" ${e[0]===HM.event?"selected":""}>${esc(e[1])}</option>`).join("")}</select></label>`:""}
+    </div>
+    <div class="hm-wrap"><canvas id="hm-canvas"></canvas></div>
+    <div class="muted hm-note">${pts.length} ${HM.mode==="kills"?"kills":"deaths"} · ${who}${HM.side!=="all"?" · "+HM.side.toUpperCase()+" side":""} · ${HM.mode==="kills"?"where the killer stood":"where the player died"}. The map is drawn from its bot navigation mesh; kills are recorded from BPL matches since 6 November 2026.</div>`;
+  app.querySelectorAll("[data-map]").forEach(b=>b.onclick=()=>{ location.hash = "#/heatmaps/"+encodeURIComponent(b.dataset.map); });
+  app.querySelectorAll("[data-mode]").forEach(b=>b.onclick=()=>{ HM.mode=b.dataset.mode; renderHeatmaps(); });
+  app.querySelectorAll("[data-side]").forEach(b=>b.onclick=()=>{ HM.side=b.dataset.side; renderHeatmaps(); });
+  $("#hm-team").onchange = e=>go(e.target.value, "");
+  $("#hm-player").onchange = e=>go(shownTeam>=0 ? d.teams[shownTeam] : "", e.target.value);
+  if($("#hm-event")) $("#hm-event").onchange = e=>{ HM.event=e.target.value; renderHeatmaps(); };
+  hmDraw($("#hm-canvas"), d.nav, pts);
+}
+
+// The map's floor (nav areas, higher floors lighter and drawn on top) with the points as heat:
+// soft dots summed on a hidden canvas, then coloured by how many overlap (blue → yellow → red).
+function hmDraw(cv, nav, pts){
+  const areas = nav.areas||[];
+  if(!areas.length) return;
+  let x1=1e9, y1=1e9, x2=-1e9, y2=-1e9, z1=1e9, z2=-1e9;
+  areas.forEach(a=>{ x1=Math.min(x1,a[0]); y1=Math.min(y1,a[1]); x2=Math.max(x2,a[2]); y2=Math.max(y2,a[3]); z1=Math.min(z1,a[4]); z2=Math.max(z2,a[4]); });
+  const pad=120; x1-=pad; y1-=pad; x2+=pad; y2+=pad;
+  const W = Math.min(900, (cv.parentElement.clientWidth||900));
+  const s = W/(x2-x1), H = Math.round((y2-y1)*s);
+  const dpr = window.devicePixelRatio||1;
+  cv.width = W*dpr; cv.height = H*dpr; cv.style.width = W+"px"; cv.style.height = H+"px";
+  const g = cv.getContext("2d");
+  g.scale(dpr,dpr);
+  const X = (x)=>(x-x1)*s, Y = (y)=>(y2-y)*s;          // world y points north: up on screen
+  areas.forEach(a=>{
+    const t = z2>z1 ? (a[4]-z1)/(z2-z1) : .5;
+    g.fillStyle = `rgb(${Math.round(34+t*30)},${Math.round(44+t*34)},${Math.round(68+t*40)})`;
+    g.fillRect(X(a[0]), Y(a[3]), Math.max(1,(a[2]-a[0])*s), Math.max(1,(a[3]-a[1])*s));
+  });
+  // the heat
+  const r = Math.max(7, 70*s);                           // ~70 u around each point
+  const off = document.createElement("canvas"); off.width=cv.width; off.height=cv.height;
+  const o = off.getContext("2d"); o.scale(dpr,dpr);
+  const a = Math.max(.05, Math.min(.35, 6/Math.sqrt(pts.length||1)));
+  pts.forEach(([x,y])=>{
+    const px=X(x), py=Y(y), gr=o.createRadialGradient(px,py,0,px,py,r);
+    gr.addColorStop(0,`rgba(0,0,0,${a})`); gr.addColorStop(1,"rgba(0,0,0,0)");
+    o.fillStyle=gr; o.fillRect(px-r,py-r,2*r,2*r);
+  });
+  const img = o.getImageData(0,0,off.width,off.height), px = img.data;
+  const stops = [[0,[56,120,255]],[.35,[56,214,255]],[.6,[120,255,120]],[.8,[255,210,61]],[1,[255,61,100]]];
+  for(let i=0;i<px.length;i+=4){
+    const v = px[i+3]/255; if(!v) continue;
+    let k=1; while(k<stops.length-1 && v>stops[k][0]) k++;
+    const [p0,c0]=stops[k-1], [p1,c1]=stops[k], f=Math.min(1,Math.max(0,(v-p0)/(p1-p0)));
+    px[i]=c0[0]+(c1[0]-c0[0])*f; px[i+1]=c0[1]+(c1[1]-c0[1])*f; px[i+2]=c0[2]+(c1[2]-c0[2])*f;
+    px[i+3]=Math.min(235, 90+v*200);
+  }
+  o.putImageData(img,0,0);
+  g.setTransform(1,0,0,1,0,0);
+  g.drawImage(off,0,0);
+  g.scale(dpr,dpr);
+  // place names on top
+  g.font = "600 11px Inter, sans-serif"; g.textAlign = "center"; g.textBaseline = "middle";
+  (nav.places||[]).forEach(([n,x,y])=>{ g.fillStyle="rgba(8,12,23,.7)"; const w=g.measureText(n).width+8; g.fillRect(X(x)-w/2,Y(y)-8,w,16); g.fillStyle="#c5cde0"; g.fillText(n,X(x),Y(y)); });
 }
 
 // ---------- Player comparison ----------

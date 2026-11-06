@@ -911,6 +911,32 @@ def del_stage(slug, sid):
 
 # ---------- per-match player scoreboards ----------
 MSFILE = os.path.join(ROOT, "data", "match_stats.json")
+KILLS_DIR = os.path.join(ROOT, "data", "kills")
+
+def save_kills(slug, ref, maps):
+    """The heatmaps' kills (6 Nov 2026): the BPL Bots launcher sends each map it played with a
+    "kills" list ([round, side, killer, killer's team, victim, victim's team, kx, ky, kz, vx, vy, vz,
+    weapon, headshot]). They're taken off the maps here (in place) and kept in
+    data/kills/<slug>/<ref>.json, one list per map in order, since match_stats.json is read whole
+    by the build. A map that comes without them (the admin's scoreboard form, maps already on the
+    page) keeps the ones stored for it, when it's still the same map. build/heatmaps.py reads them."""
+    path = os.path.join(KILLS_DIR, slug, f"{ref}.json")
+    try:
+        old = json.load(open(path, encoding="utf-8")).get("maps", [])
+    except (OSError, ValueError):
+        old = []
+    out = []
+    for i, m in enumerate(maps):
+        k = m.pop("kills", None)
+        if k is None:
+            prev = old[i] if i < len(old) else None
+            k = prev["kills"] if prev and prev.get("map") == m.get("map") else []
+        out.append({"map": m.get("map"), "kills": k})
+    if any(x["kills"] for x in out):
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        json.dump({"maps": out}, open(path, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+    elif os.path.exists(path):
+        os.remove(path)
 def _derive_match_score(maps):
     """From the per-map scoreboards, return (sa, sb) for the match, or None.
     1 map  -> that map's round score (Bo1, e.g. 13-8).
@@ -935,6 +961,7 @@ def save_match_stats(slug, ref, maps, best_of=None, veto=None):
     data = json.load(open(MSFILE, encoding="utf-8")) if os.path.exists(MSFILE) else {}
     data.setdefault(slug, {})
     maps = [m for m in (maps or []) if m.get("players")]
+    save_kills(slug, ref, maps)          # the heatmaps' kills go to their own file, not into match_stats.json
     if maps:
         veto = veto or data[slug].get(str(ref), {}).get("veto")
         data[slug][str(ref)] = {"maps": maps, **({"veto": veto} if veto else {})}

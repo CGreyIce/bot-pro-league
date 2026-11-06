@@ -173,7 +173,7 @@ class Handler(SimpleHTTPRequestHandler):
             return self._json(200, {"ok": True, **ai_writer.status()})
         if path == "/api/caps":
             # What this admin server supports (the BPL Bots launcher checks before uploading).
-            return self._json(200, {"ok": True, "matchstatsBestOf": True, "matchstatsVeto": True})
+            return self._json(200, {"ok": True, "matchstatsBestOf": True, "matchstatsVeto": True, "matchstatsKills": True})
         if path.startswith("/api/wrapup/"):
             try:
                 return self._json(200, {"ok": True, **wrapup.suggest(path[len("/api/wrapup/"):])})

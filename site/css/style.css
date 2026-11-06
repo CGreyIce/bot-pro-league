@@ -1519,3 +1519,14 @@ tr:has(.gc-out) .name-cell{opacity:.75}
 .ms-open{margin-left:auto;font-size:12px;color:#b794ff !important}
 .ms-frame{position:relative;width:100%;max-width:960px;margin:0 auto;aspect-ratio:16/9;border-radius:8px;overflow:hidden;background:#000}
 .ms-frame > div, .ms-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+/* kill heatmaps (#/heatmaps, 6 Nov 2026) */
+.hm-link{float:right;font-family:'Inter',sans-serif;font-size:13px;font-weight:600;color:var(--link);letter-spacing:0;text-transform:none}
+.hm-maps .muted{font-size:11px;margin-left:4px}
+.hm-maps button.active .muted{color:#0b1120}
+.hm-filters{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin:-4px 0 14px}
+.hm-filters .tabs{margin-bottom:0}
+.hm-filters label{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:13px}
+.hm-filters select{background:var(--panel);color:var(--text);border:1px solid var(--border);border-radius:7px;padding:6px 8px;font-size:13px;max-width:220px}
+.hm-wrap{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:12px;display:flex;justify-content:center;overflow:hidden}
+.hm-wrap canvas{display:block;max-width:100%;height:auto}
+.hm-note{font-size:12px;margin-top:8px}

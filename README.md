@@ -36,4 +36,9 @@ Serves the site at `http://localhost:8099/` with the in-browser admin (record sc
 ## Notes
 
 - **Team ranking points** are computed from tournament placements (tier-weighted, 2-year recency decay) in `build/parse.py`.
+- **Kill heatmaps** (`#/heatmaps`, linked from Maps; since 6 Nov 2026):
+  - **Where the kills come from:** the BPL Bots launcher sends each BPL map it plays with its kills (who killed whom, from where, with what). `manual.save_kills` keeps them in `data/kills/<event>/<match>.json`, not in `match_stats.json`, and keeps a map's stored kills when its scoreboard is edited by hand.
+  - **The build:** `build/heatmaps.py` (run by `parse.py`) writes one file per map, `site/heatmaps/<Map>.json`, plus `index.json`. The page loads one map at a time, so `data.json` doesn't grow.
+  - **The map:** its floor is drawn from the map's bot navigation mesh (`data/heatmap_nav/<Map>.json`, exported by bpl-bots `tools/heatmap_nav.py`), not Valve's radar images.
+  - **Filters:** kills or deaths, side, team, player and event.
 - A fan project. Stats from the BPL master sheet; historical brackets imported from Challonge.
