@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:uzuhii:mvp:100",
-  "type": "milestone",
-  "ts": 1793379534,
-  "date": "2026-10-31",
-  "title": "Uzuhii: 100 MVP rounds",
-  "text": "Uzuhii reached 100 MVP rounds",
-  "link": "#/player/uzuhii"
- },
- {
   "id": "milestone:zhiweiingg:mvp:100",
   "type": "milestone",
   "ts": 1793379534,
@@ -1798,5 +1789,14 @@
   "title": "Spectrum Gabriel: 100 MVP rounds",
   "text": "Spectrum Gabriel reached 100 MVP rounds",
   "link": "#/player/spectrum-gabriel"
+ },
+ {
+  "id": "milestone:candybar-isblue:kills:1000",
+  "type": "milestone",
+  "ts": 1793927617,
+  "date": "2026-11-06",
+  "title": "candybar_isblue: 1000 career kills",
+  "text": "candybar_isblue reached 1000 career kills",
+  "link": "#/player/candybar-isblue"
  }
 ]
