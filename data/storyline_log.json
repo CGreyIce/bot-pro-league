@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:tortillaroll:kills:500",
-  "type": "milestone",
-  "ts": 1793493224,
-  "date": "2026-11-01",
-  "title": "TortillaRoll: 500 career kills",
-  "text": "TortillaRoll reached 500 career kills",
-  "link": "#/player/tortillaroll"
- },
- {
   "id": "milestone:kisaragi-ren:kills:500",
   "type": "milestone",
   "ts": 1793493224,
@@ -1798,5 +1789,14 @@
   "title": "Syrrith: 1000 career kills",
   "text": "Syrrith reached 1000 career kills",
   "link": "#/player/syrrith"
+ },
+ {
+  "id": "milestone:jenakai:maps:50",
+  "type": "milestone",
+  "ts": 1793980595,
+  "date": "2026-11-06",
+  "title": "Jenakai: 50 maps played",
+  "text": "Jenakai reached 50 maps played",
+  "link": "#/player/jenakai"
  }
 ]
