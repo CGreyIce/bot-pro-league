@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:raviaseir:kills:1000",
-  "type": "milestone",
-  "ts": 1793584078,
-  "date": "2026-11-02",
-  "title": "RaviasEir: 1000 career kills",
-  "text": "RaviasEir reached 1000 career kills",
-  "link": "#/player/raviaseir"
- },
- {
   "id": "milestone:plainyingying:mvp:100",
   "type": "milestone",
   "ts": 1793587034,
@@ -1798,5 +1789,14 @@
   "title": "djassaulty: 100 MVP rounds",
   "text": "djassaulty reached 100 MVP rounds",
   "link": "#/player/djassaulty"
+ },
+ {
+  "id": "milestone:sanctuary:kills:1000",
+  "type": "milestone",
+  "ts": 1794006480,
+  "date": "2026-11-07",
+  "title": "SanCtuary: 1000 career kills",
+  "text": "SanCtuary reached 1000 career kills",
+  "link": "#/player/sanctuary"
  }
 ]
