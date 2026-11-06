@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:minmaxxer:mvp:100",
-  "type": "milestone",
-  "ts": 1793439517,
-  "date": "2026-10-31",
-  "title": "minMaXXer: 100 MVP rounds",
-  "text": "minMaXXer reached 100 MVP rounds",
-  "link": "#/player/minmaxxer"
- },
- {
-  "id": "milestone:fumishiroyummy:mvp:150",
-  "type": "milestone",
-  "ts": 1793444586,
-  "date": "2026-10-31",
-  "title": "FumishiroYummy: 150 MVP rounds",
-  "text": "FumishiroYummy reached 150 MVP rounds",
-  "link": "#/player/fumishiroyummy"
- },
- {
   "id": "milestone:kiokocheiko:kills:1000",
   "type": "milestone",
   "ts": 1793444586,
@@ -1798,5 +1780,23 @@
   "title": "declaration__: 100 MVP rounds",
   "text": "declaration__ reached 100 MVP rounds",
   "link": "#/player/declaration"
+ },
+ {
+  "id": "milestone:moonraika:kills:500",
+  "type": "milestone",
+  "ts": 1793964513,
+  "date": "2026-11-06",
+  "title": "MoonRaika: 500 career kills",
+  "text": "MoonRaika reached 500 career kills",
+  "link": "#/player/moonraika"
+ },
+ {
+  "id": "milestone:rebebx:mvp:150",
+  "type": "milestone",
+  "ts": 1793964513,
+  "date": "2026-11-06",
+  "title": "rebebx: 150 MVP rounds",
+  "text": "rebebx reached 150 MVP rounds",
+  "link": "#/player/rebebx"
  }
 ]
