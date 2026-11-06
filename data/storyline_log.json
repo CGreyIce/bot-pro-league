@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:elfy-mint:mvp:100",
-  "type": "milestone",
-  "ts": 1793385246,
-  "date": "2026-10-31",
-  "title": "Elfy Mint: 100 MVP rounds",
-  "text": "Elfy Mint reached 100 MVP rounds",
-  "link": "#/player/elfy-mint"
- },
- {
-  "id": "milestone:kairi:maps:50",
-  "type": "milestone",
-  "ts": 1793385246,
-  "date": "2026-10-31",
-  "title": "Kairi: 50 maps played",
-  "text": "Kairi reached 50 maps played",
-  "link": "#/player/kairi"
- },
- {
-  "id": "milestone:zuann:maps:50",
-  "type": "milestone",
-  "ts": 1793385246,
-  "date": "2026-10-31",
-  "title": "zuann_: 50 maps played",
-  "text": "zuann_ reached 50 maps played",
-  "link": "#/player/zuann"
- },
- {
   "id": "milestone:sakami:kills:500",
   "type": "milestone",
   "ts": 1793388684,
@@ -1798,5 +1771,32 @@
   "title": "ssseiso: 50 maps played",
   "text": "ssseiso reached 50 maps played",
   "link": "#/player/ssseiso"
+ },
+ {
+  "id": "record:longestWinStreak:16",
+  "type": "record",
+  "ts": 1793931965,
+  "date": "2026-11-06",
+  "title": "New record: longest win streak",
+  "text": "Nullpoint: 16 wins in a row (BPL Conquerors Stage 2026)",
+  "link": "#/team/nullpoint"
+ },
+ {
+  "id": "milestone:utsuhonull:maps:50",
+  "type": "milestone",
+  "ts": 1793931965,
+  "date": "2026-11-06",
+  "title": "UtsuhoNull: 50 maps played",
+  "text": "UtsuhoNull reached 50 maps played",
+  "link": "#/player/utsuhonull"
+ },
+ {
+  "id": "milestone:utsuhonull:mvp:150",
+  "type": "milestone",
+  "ts": 1793931965,
+  "date": "2026-11-06",
+  "title": "UtsuhoNull: 150 MVP rounds",
+  "text": "UtsuhoNull reached 150 MVP rounds",
+  "link": "#/player/utsuhonull"
  }
 ]

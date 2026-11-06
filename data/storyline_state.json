@@ -16,9 +16,9 @@
    "valueText": "7 overtimes"
   },
   "longestWinStreak": {
-   "value": 15,
+   "value": 16,
    "holder": "Nullpoint",
-   "valueText": "15 wins in a row"
+   "valueText": "16 wins in a row"
   },
   "mostTitlesTeam": {
    "value": 6,
@@ -1295,8 +1295,8 @@
    "mvp": 99
   },
   "airizu": {
-   "maps": 59,
-   "kills": 850,
+   "maps": 60,
+   "kills": 862,
    "mvp": 110
   },
   "ryujin": {
@@ -1320,29 +1320,29 @@
    "mvp": 148
   },
   "zhizyii": {
-   "maps": 50,
-   "kills": 936,
-   "mvp": 126
+   "maps": 51,
+   "kills": 955,
+   "mvp": 130
   },
   "candybar-isblue": {
-   "maps": 54,
-   "kills": 1013,
-   "mvp": 177
+   "maps": 55,
+   "kills": 1035,
+   "mvp": 180
   },
   "utsuhonull": {
-   "maps": 49,
-   "kills": 923,
-   "mvp": 147
+   "maps": 50,
+   "kills": 940,
+   "mvp": 150
   },
   "ssseiso": {
-   "maps": 50,
-   "kills": 790,
-   "mvp": 116
+   "maps": 51,
+   "kills": 807,
+   "mvp": 118
   },
   "kaito-oshino": {
-   "maps": 56,
-   "kills": 972,
-   "mvp": 158
+   "maps": 57,
+   "kills": 979,
+   "mvp": 159
   },
   "niamocha": {
    "maps": 50,
@@ -1435,24 +1435,24 @@
    "mvp": 59
   },
   "mizukiimoon": {
-   "maps": 85,
-   "kills": 1351,
-   "mvp": 183
+   "maps": 86,
+   "kills": 1369,
+   "mvp": 186
   },
   "milliannavt": {
-   "maps": 64,
-   "kills": 894,
+   "maps": 65,
+   "kills": 899,
    "mvp": 136
   },
   "karoni": {
-   "maps": 60,
-   "kills": 983,
-   "mvp": 125
+   "maps": 61,
+   "kills": 998,
+   "mvp": 129
   },
   "miyaleile": {
-   "maps": 45,
-   "kills": 712,
-   "mvp": 105
+   "maps": 46,
+   "kills": 727,
+   "mvp": 108
   },
   "djassaulty": {
    "maps": 39,
@@ -2503,6 +2503,7 @@
   "record:highestMap:65+mostKillsMap:58+mostOT:7",
   "record:longestWinStreak:14",
   "record:longestWinStreak:15",
+  "record:longestWinStreak:16",
   "top:player:candybar-isblue:2026-10-27",
   "top:player:candybar-isblue:2026-10-29",
   "top:player:laburi:2026-10-29",
