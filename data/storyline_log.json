@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:karoni:maps:50",
-  "type": "milestone",
-  "ts": 1793577383,
-  "date": "2026-11-02",
-  "title": "Karoni: 50 maps played",
-  "text": "Karoni reached 50 maps played",
-  "link": "#/player/karoni"
- },
- {
   "id": "transfer:eiromancers:2026-11-02:codedecho",
   "type": "transfer",
   "ts": 1793584078,
@@ -1798,5 +1789,14 @@
   "title": "jaelyo: 150 MVP rounds",
   "text": "jaelyo reached 150 MVP rounds",
   "link": "#/player/jaelyo"
+ },
+ {
+  "id": "milestone:shinomiya-runa:maps:50",
+  "type": "milestone",
+  "ts": 1794000668,
+  "date": "2026-11-07",
+  "title": "Shinomiya Runa: 50 maps played",
+  "text": "Shinomiya Runa reached 50 maps played",
+  "link": "#/player/shinomiya-runa"
  }
 ]
