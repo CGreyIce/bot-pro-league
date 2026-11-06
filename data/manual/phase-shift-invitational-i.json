@@ -1,0 +1,129 @@
+{
+ "slug": "phase-shift-invitational-i",
+ "name": "Phase Shift Invitational I",
+ "tier": "s",
+ "date": "2026-11-06",
+ "stages": [
+  {
+   "id": 1,
+   "name": "Playoffs",
+   "format": "single_elim",
+   "bestOf": 3,
+   "teams": [
+    "Raven Song",
+    "Alcheministry",
+    "DiamondOnes",
+    "Team Neverseen",
+    "Pastel Mocha",
+    "Aspire",
+    "Eiromancers",
+    "Lunar Cadence"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "fa": {
+      "seed": 1
+     },
+     "fb": {
+      "seed": 8
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "fa": {
+      "seed": 4
+     },
+     "fb": {
+      "seed": 5
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "fa": {
+      "seed": 2
+     },
+     "fb": {
+      "seed": 7
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 1,
+     "fa": {
+      "seed": 3
+     },
+     "fb": {
+      "seed": 6
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 5,
+     "round": 2,
+     "fa": {
+      "match": 1
+     },
+     "fb": {
+      "match": 2
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 6,
+     "round": 2,
+     "fa": {
+      "match": 3
+     },
+     "fb": {
+      "match": 4
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 7,
+     "round": 3,
+     "fa": {
+      "match": 5
+     },
+     "fb": {
+      "match": 6
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 8,
+     "round": 3,
+     "fa": {
+      "loserOf": 5
+     },
+     "fb": {
+      "loserOf": 6
+     },
+     "bestOf": null,
+     "thirdPlace": true
+    }
+   ],
+   "roundTitles": {
+    "1": "Quarterfinals",
+    "2": "Semifinals",
+    "3": "Final"
+   }
+  }
+ ],
+ "formatLabel": "8-team single elimination",
+ "formatNote": "8 teams outside the Conquerors Stage, picked across the BPL rankings (#22 to #55) plus Eiromancers. Single elimination, every match a Bo3, seeded by BPL ranking points: 1 plays 8, 2 plays 7, 3 plays 6, 4 plays 5."
+}

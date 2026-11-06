@@ -62,7 +62,7 @@ function playerLink(p){
 // Human players (Solo Queue only, DATA.soloHumans): an (ADMIN) or (HUMAN) tag after the name.
 function humanBadge(p){
   const admin = p.kind==="admin";
-  return `<span class="human-badge${admin?' admin':''}" title="${admin?'League admin':'Human player'}: plays Solo Queue against the BPL bots">${admin?'ADMIN':'HUMAN'}</span>`;
+  return `<span class="human-badge${admin?' admin':''}" title="${admin?'League admin':'Human player'}: a person playing alongside the BPL bots">${admin?'ADMIN':'HUMAN'}</span>`;
 }
 // Rifler sub-roles (build/subroles.py): IGLs are support, AWPers have none.
 const SUBROLE_NAME = {entry:"Entry", lurker:"Lurker", anchor:"Anchor", support:"Support"};
@@ -612,7 +612,14 @@ function renderTeam(slug){
       <div class="avatar">${initials(p.name)}</div>
       <div><div class="pm-name">${flag(p.iso)}${esc(p.name)}</div>
       <div class="pm-sub">${esc(roleText(p)||'—')} ${p.ratingPoints!=null?'· '+p.ratingPoints+' pts · Lvl '+p.level:''}</div></div>
-    </a>`).join("");
+    </a>`).join("") + (t.humans||[]).map(hm=>{
+      // a human on the team (data/solo_humans.json): their own profile, their Pro block's points
+      const h = (DATA.soloHumans||[]).find(x=>x.slug===hm.slug) || hm, pr = h.pro || {};
+      return `<a class="pcard-mini" href="#/human/${esc(hm.slug)}">
+      <div class="avatar">${initials(hm.name)}</div>
+      <div><div class="pm-name">${flag(hm.iso)}${esc(hm.name)}${humanBadge(hm)}</div>
+      <div class="pm-sub">${esc(hm.role||'—')} ${pr.ratingPoints!=null?'· '+pr.ratingPoints+' pts · Lvl '+pr.level:'· plays as the human'}</div></div>
+    </a>`; }).join("");
 
   const stat = (v,l,acc)=>`<div class="stat${acc?' accent':''}"><div class="sv">${v}</div><div class="sl">${l}</div></div>`;
 
@@ -772,8 +779,9 @@ function renderPlayers(arg){
   if(arg !== undefined) playersCountry = /^[a-z]{2,8}$/.test(arg||'') ? arg : '';
   const pool = playersPool;
   // Solo Queue shows the bots; humans (DATA.soloHumans) only when switched on, with no rank number
-  // of their own so the bots' places don't move.
-  const humans = pool==="solo" ? (DATA.soloHumans||[]) : [];
+  // of their own so the bots' places don't move. Pro: the humans on a team (or with tournament
+  // maps), with their Pro block (build/solo_humans.py attach_pro).
+  const humans = pool==="solo" ? (DATA.soloHumans||[]) : proHumans();
   const all = humans.length && showHumans ? [...poolList(pool), ...humans] : poolList(pool);
   const countries = countryList(all);
   const country = countries.find(c=>c.iso===playersCountry);
@@ -822,7 +830,7 @@ function renderPlayers(arg){
       <div class="tabs pl-view" title="Advanced: ADR, KAST and the rest, from maps recorded with the BPL Bots plugin">
         <button data-view="basic" class="${playersView==="basic"?'active':''}">Basic</button><button data-view="adv" class="${playersView==="adv"?'active':''}">Advanced</button>
       </div>
-      ${humans.length ? `<label class="pl-humans" title="People who play Solo Queue against the BPL bots"><input type="checkbox" id="pl-humans"${showHumans?' checked':''}> Show humans &amp; admins <span class="muted">${humans.length}</span></label>` : ''}
+      ${humans.length ? `<label class="pl-humans" title="${pool==="solo"?'People who play Solo Queue against the BPL bots':'People who play for BPL teams alongside the bots'}"><input type="checkbox" id="pl-humans"${showHumans?' checked':''}> Show humans &amp; admins <span class="muted">${humans.length}</span></label>` : ''}
     </div>
     ${playersCountry ? (()=>{
       const ranked = players.filter(p=>p.ratingPoints!=null).sort((a,b)=>b.ratingPoints-a.ratingPoints);
@@ -844,6 +852,12 @@ function renderPlayers(arg){
   const ht = $("#pl-humans");
   if(ht) ht.onchange = ()=>{ showHumans = ht.checked; try { localStorage.setItem("bpl_show_humans", showHumans?"1":"0"); } catch(e) {} renderPlayers(); };
   if(players.length) drawPlayerTable(players, cols);
+}
+// Humans as rows of the Pro table: their Pro block over the profile (team, role, no market value).
+function proHumans(){
+  return (DATA.soloHumans||[]).filter(h=>h.pro && (h.teamSlug || h.pro.maps)).map(h=>({
+    ...h, ...h.pro, games: undefined, pool: "pro", human: true, provisional: false,
+    team: h.teamSlug ? h.team : null, role: h.role || null, earnings: h.earnings || 0 }));
 }
 function drawPlayerTable(players, cols){
   const sorted = sortData([...players], cols, playersSort);
@@ -889,16 +903,35 @@ function renderHuman(slug){
       <td><span class="form-dot ${g.won?'w':'l'}">${g.won?'W':'L'}</span></td>
       <td class="mono">${g.k}-${g.d}-${g.a}</td><td class="mono">${g.mvp}</td><td class="mono">${gain}</td></tr>`;
   }).join("");
+  // Pro: a human on a team (build/solo_humans.py attach_pro): their tournament maps, rated like the bots
+  const pr = p.pro;
+  const teamLink = p.teamSlug ? `<a href="#/team/${esc(p.teamSlug)}" style="color:var(--link)">${esc(p.team)}</a>` : '';
+  const sc = g=>g.score && g.score[0]!=null ? ` <span class="mono muted">${g.score[0]}-${g.score[1]}</span>` : '';
+  const proHtml = !pr ? '' : `
+    <h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>Pro
+      <span class="muted" style="font-size:11px">${teamLink?`${teamLink}${p.role?' · '+esc(p.role):''} · `:''}${pr.ratingPoints!=null?pr.ratingPoints+' pts · ':''}${pr.maps?`${pr.maps} tournament map${pr.maps===1?'':'s'}`:'no tournament maps yet'}</span></h2>
+    ${pr.maps ? `<div class="statgrid">
+      ${stat(pr.kills,"Kills")}${stat(pr.deaths,"Deaths")}${stat(pr.kdr.toFixed(2),"K/D Ratio",true)}${stat(pr.mvp,"MVPs")}
+      ${stat(pr.assists,"Assists")}${stat((pr.kills/pr.maps).toFixed(1),"Kills / Map")}${stat(pr.wins+'-'+pr.losses,"Record")}${stat(pct(pr.winrate),"Win Rate")}
+    </div>${advGridHtml(pr.adv, stat)}`
+    : `<p class="muted" style="font-size:13px;margin:0">${teamLink?`On ${teamLink}'s line-up${p.joined?` since ${esc(fmtDate(p.joined))}`:''}. `:''}Their tournament maps show up here once the BPL Bots app sends them.</p>`}
+    ${p.earnings?`<div class="muted" style="font-size:12px;margin-top:8px">Prize money: <b style="color:var(--text)">${fmtUSD(p.earnings)}</b>${(p.prizeHistory||[]).map(x=>` · ${esc(x.event)} (${placeOrd(x.place)}): ${fmtUSD(x.amount)}`).join('')}</div>`:''}
+    ${pr.games && pr.games.length ? `<h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Recent tournament maps</h2>
+    <div class="tablewrap"><table class="data"><thead><tr><th class="no-sort">Event</th><th class="no-sort">Opponent</th><th class="no-sort">Map</th><th class="no-sort">Result</th><th class="no-sort">K-D-A</th><th class="no-sort">MVP</th></tr></thead><tbody>
+    ${pr.games.map(g=>`<tr><td><a href="#/match/${esc(g.slug)}/${esc(g.ref)}">${esc(g.event)}</a></td><td>${esc(g.opp||'')}</td><td>${esc(g.map||'—')}</td>
+      <td>${g.won==null?'<span class="muted">—</span>':`<span class="form-dot ${g.won?'w':'l'}">${g.won?'W':'L'}</span>${sc(g)}`}</td>
+      <td class="mono">${g.k}-${g.d}-${g.a}</td><td class="mono">${g.mvp}</td></tr>`).join('')}</tbody></table></div>` : ''}`;
   app.innerHTML = `
     <div class="crumb"><a href="#/players">Players</a><span class="sep">/</span>${esc(p.name)}</div>
     <div class="profile-head">
       <div class="avatar" style="width:88px;height:88px;border-radius:14px;font-size:34px">${initials(p.name)}</div>
       <div class="ph-main">
         <h1>${flag(p.iso)}${esc(p.name)}${humanBadge(p)}</h1>
-        <div class="ph-sub">${p.kind==="admin"?'League admin':'Human player'} · Solo Queue only${p.ingame&&p.ingame.length?` · plays as “${esc(p.ingame.join('”, “'))}”`:''}</div>
+        <div class="ph-sub">${p.kind==="admin"?'League admin':'Human player'} · ${teamLink?`${teamLink}${p.role?' · '+esc(p.role):''}`:'Solo Queue only'}${p.ingame&&p.ingame.length?` · plays as “${esc(p.ingame.join('”, “'))}”`:''}</div>
         <div style="margin-top:10px">${p.level?`${levelChip(p.level)}<span class="levelchip" style="margin-left:8px">Level ${p.level}</span>`:'<span class="muted">Unranked</span>'}${p.provisional?'<span class="prov-badge" style="margin-left:8px">PROV</span>':''}</div>
       </div>
     </div>
+    ${proHtml}
     <h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>Solo Queue
       <span class="muted" style="font-size:11px">${p.ratingPoints!=null?p.ratingPoints+' pts · ':''}${place}</span></h2>
     <div class="statgrid">
@@ -915,7 +948,7 @@ function renderHuman(slug){
     ${p.playsWith?`<div class="hm-with" title="The teammate they've shared the most Solo Queue games with">🤝 <span class="muted">Most played with</span>
       ${p.playsWith.human?playerLink(p.playsWith):`<a href="#/player/${esc(p.playsWith.slug)}">${flag(p.playsWith.iso)}${esc(p.playsWith.name)}</a>`}
       <span class="muted">· ${p.playsWith.games} solo game${p.playsWith.games===1?'':'s'} together</span></div>`:''}
-    <p class="muted" style="font-size:12px;margin:10px 0 0">Humans are rated on the same scale as the bots, but kept off the bots' rankings and every other part of the site.</p>
+    <p class="muted" style="font-size:12px;margin:10px 0 0">Humans are rated on the same scale as the bots, but kept off the bots' rankings, awards and records.</p>
     <h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Recent Solo Queue games</h2>
     ${games ? `<div class="tablewrap"><table class="data"><thead><tr><th class="no-sort">Date</th><th class="no-sort">Map</th><th class="no-sort">Result</th><th class="no-sort">K-D-A</th><th class="no-sort">MVP</th><th class="no-sort" title="How the game moved their rating points">Pts</th></tr></thead><tbody>${games}</tbody></table></div>`
       : '<p class="muted">No games recorded yet.</p>'}`;
@@ -923,6 +956,8 @@ function renderHuman(slug){
 
 function renderPlayer(slug){
   const p = playerBySlug(slug);
+  // a human on a team line-up (roster popups, career teams) links here with their h- profile slug
+  if(!p && (DATA.soloHumans||[]).some(h=>h.slug===slug)){ renderHuman(slug); return; }
   if(!p){ app.innerHTML = notFound("Player"); return; }
   const t = teamByName(p.team);
   const pr = proRankOf(p);
@@ -2066,7 +2101,7 @@ function renderMatch(){
       : (r.teamSlug==null && !!name2 && normKey(r.team)===normKey(name2)));
     if(!row) return '';
     return `<div class="m-roster"><div class="m-roster-h">${esc(row.team)}</div>${row.players.map(p=>
-      `<div class="m-rp">${flag(p.iso)}${p.slug?`<a href="#/player/${p.slug}">${esc(p.name)}</a>`:esc(p.name)}${p.captain?'<span class="rp-c">C</span>':''}</div>`).join("")}</div>`;
+      `<div class="m-rp">${flag(p.iso)}${p.slug?`<a href="#/${p.human?'human':'player'}/${p.slug}">${esc(p.name)}</a>`:esc(p.name)}${p.human?humanBadge(p):''}${p.captain?'<span class="rp-c">C</span>':''}</div>`).join("")}</div>`;
   };
   const rosters = (match.aTeam||match.bTeam||match.a||match.b) ? `${rosterCol(match.aTeam, match.a)}${rosterCol(match.bTeam, match.b)}` : '';
 
@@ -2109,7 +2144,7 @@ function aggregateMaps(maps){
   const by = {};
   maps.forEach(mp=>mp.players.forEach(p=>{
     const key = (p.slug||"") + "|" + normKey(p.name) + "|" + normKey(p.team);
-    if(!by[key]) by[key] = {team:p.team, name:p.name, slug:p.slug, iso:p.iso, k:0, a:0, d:0, mvp:0, score:0, xk:0};
+    if(!by[key]) by[key] = {team:p.team, name:p.name, slug:p.slug, iso:p.iso, human:p.human, hslug:p.hslug, kind:p.kind, k:0, a:0, d:0, mvp:0, score:0, xk:0};
     const t = by[key]; t.k+=p.k||0; t.a+=p.a||0; t.d+=p.d||0; t.mvp+=p.mvp||0; t.score+=p.score||0;
     if(p.rnd>0){ XS_KEYS.forEach(k=>{ t[k]=(t[k]||0)+(p[k]||0); }); t.xk+=p.k||0; }   // xk: kills on recorded maps (HS%)
   }));
@@ -2487,7 +2522,7 @@ function renderScoreboard(){
           <th class="no-sort">+/–</th>${hasXs?'<th class="no-sort" title="Average damage per round">ADR</th><th class="no-sort" title="Rounds with a kill, assist, survival or trade">KAST</th><th class="no-sort" title="Headshot kills">HS%</th><th class="no-sort" title="Opening kills–deaths">FK–FD</th>':''}<th class="no-sort">MVP</th><th class="no-sort">Score</th>
           <th class="no-sort" title="BPL match rating (HLTV-style, ~1.00 = average)">RTG</th>${hasElo?`<th class="no-sort" title="Rating Points change from ${_sbTab==='all'?'this match':'this map'} (player Elo). Hover a number for before → after.">Δ Pts</th>`:''}</tr></thead>
         <tbody>${players.map(p=>{const pm=p.k-p.d; const rtg=matchRating(p.k,p.a,p.d,p.score,rounds); return `<tr>
-          <td class="name-cell">${flag(p.iso)}${p.slug?`<a href="#/player/${p.slug}">${esc(p.name)}</a>`:esc(p.name)}</td>
+          <td class="name-cell">${flag(p.iso)}${p.slug?`<a href="#/player/${p.slug}">${esc(p.name)}</a>`:p.hslug?`<a href="#/human/${esc(p.hslug)}">${esc(p.name)}</a>${humanBadge(p)}`:esc(p.name)}</td>
           <td class="mono">${p.k}</td><td class="mono">${p.a}</td><td class="mono">${p.d}</td>
           <td class="mono" style="color:${pm>0?'var(--good)':pm<0?'var(--accent2)':'var(--muted)'}">${pm>0?'+':''}${pm}</td>${xsCells(p)}
           <td class="mono">${p.mvp?'★'+p.mvp:'–'}</td><td class="mono">${p.score}</td>

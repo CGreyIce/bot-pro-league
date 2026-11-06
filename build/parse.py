@@ -672,6 +672,16 @@ def main():
     team_map = {t["key"]: {"name": t["name"], "slug": t["slug"]} for t in teams}
     team_alias = tourney_mod.load_team_alias(ROOT)  # norm(old team) -> norm(current team)
     tournaments = tourney_mod.process_all(team_map, team_alias)
+    # a provisional team that wins its named event is pro from then on (provisional_teams.json
+    # "untilChampion": Eiromancers and the Phase Shift Invitational I, the user's call 2026-11-06)
+    _until = (json.load(open(_prov_path, encoding="utf-8")).get("untilChampion") or {}) if os.path.exists(_prov_path) else {}
+    for _ts, _ev in _until.items():
+        _tr = next((x for x in tournaments if x["slug"] == _ev), None)
+        _tm = next((x for x in teams if x["slug"] == _ts), None)
+        if _tr and _tm and _tm.get("provisional") and _tr.get("champion") and (
+                _tr.get("championTeam") == _ts or norm_key(_tr["champion"]) == _tm["key"]):
+            _tm["provisional"] = False
+            print(f"provisional: {_tm['name']} won {_tr['name']}, so they're pro now")
     # prize pools set each S-Tier event's sub-tier ("S-Tier 2") and ranking weight (build/prizes.py)
     import prizes as prize_mod
     prize_mod.apply_tiers(tournaments, prize_mod.load(DATA))
@@ -971,6 +981,19 @@ def main():
             solo_game_stats.setdefault(str(gm["id"]), {})[norm_key(h["name"])] = {
                 "gain": h["ratingPoints"] - (points_for(r_before) or 0), "ratingPoints": h["ratingPoints"],
                 "soloRank": None, "human": h["kind"]}
+    # humans on a team: their tournament scoreboard lines -> their own Pro block (rated with the pro
+    # averages, no Elo), and the team page lists them beside the bots (t["humans"]).
+    _sh.attach_pro(solo_humans, tournaments, norm_key, _rating_value, pro_avg, points_for, tier_for, level_for,
+                   {norm_key(p["name"]) for p in pro + amateur + solo}, add_xs, adv_block)
+    for h in solo_humans:
+        tm = team_by_key.get(norm_key(h["team"])) if h.get("team") and not h.get("left") else None
+        if h.get("team") and not tm:
+            print(f"  ! solo_humans.json: {h['name']}'s team '{h['team']}' has no team page")
+        if tm:
+            h["teamSlug"] = tm["slug"]
+            h["team"] = tm["name"]
+            tm.setdefault("humans", []).append({"name": h["name"], "slug": h["slug"], "kind": h["kind"],
+                                                "iso": h.get("iso", ""), "role": h.get("role"), "joined": h.get("joined")})
 
     for pool in (pro, amateur, solo):
         for p in pool:
@@ -1280,6 +1303,13 @@ def main():
                     "players": [{"hist": rp["name"], "name": rp["name"], "slug": rp["slug"],
                                  "iso": rp.get("iso", ""), "captain": False} for rp in tm.get("roster", [])],
                 })
+            # a human on the team (solo_humans.json "team", from "joined"): on the line-up too, flagged
+            # "human" (the BPL Bots app plays them as the human; their slug is their h- profile)
+            for row in att:
+                for h in solo_humans:
+                    if _sh.on_team(h, norm_key(row["team"]), tr.get("date"), norm_key) and \
+                            not any(pl.get("slug") == h["slug"] for pl in row["players"]):
+                        row["players"].append(_sh.attending_entry(h))
         tr["attending"] = att
 
     # ---- events before their draw (manual "field"): Teams Attending = the field ----
@@ -1329,6 +1359,18 @@ def main():
     # and supersedes the placement-only compute_team_points() pass earlier in the build.
     # prize money: payouts by placement, split between each team's line-up (needs the rosters above)
     prize_mod.apply_earnings(tournaments, pro + amateur + solo, teams)
+    # a human on a paid line-up: their share (the split already counts them) goes on their profile
+    _h_slug = {h["slug"]: h for h in solo_humans}
+    for tr in tournaments:
+        for pz in tr.get("prizes") or []:
+            row = next((r for r in tr.get("attending", []) if (pz.get("teamSlug") and r.get("teamSlug") == pz["teamSlug"])
+                        or norm_key(r.get("team", "")) == norm_key(pz.get("name") or "")), None)
+            for pl in (row or {}).get("players", []):
+                h = _h_slug.get(pl.get("slug")) if pl.get("human") else None
+                if h and pz.get("perPlayer"):
+                    h["earnings"] = h.get("earnings", 0) + pz["perPlayer"]
+                    h.setdefault("prizeHistory", []).append({"event": tr["name"], "slug": tr["slug"], "date": tr.get("date"),
+                                                             "place": pz["rank"], "team": row["team"], "amount": pz["perPlayer"]})
     # market values, transfer fees and team budgets (build/economy.py)
     import economy
     economy.apply(pro, pro + amateur + solo, teams, tournaments, DATA)
@@ -1631,7 +1673,7 @@ def main():
             if not ts:
                 continue
             for pl in row["players"]:
-                if not pl.get("slug"):
+                if not pl.get("slug") or pl.get("human"):     # humans: their team is on their own profile
                     continue
                 e = team_seen[ts].setdefault(pl["slug"],
                         {"name": pl["name"], "iso": pl.get("iso", ""), "years": set()})

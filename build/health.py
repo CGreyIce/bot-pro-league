@@ -144,7 +144,7 @@ def run(data, data_dir):
                     for mi, mp in enumerate(maps):
                         typo_checks(h, tr, m, f"{st['id']}-{m['i']}", mi, mp)
                         for pl in mp.get("players", []):
-                            if not pl.get("slug") and tr.get("date", "") >= "2026":
+                            if not pl.get("slug") and not pl.get("human") and tr.get("date", "") >= "2026":   # humans: their own profile
                                 h.add("warning", "Scoreboards", f"{tr['name']}: scoreboard player '{pl.get('name')}' ({mp.get('map')}) "
                                       "doesn't match any profile, so their stats aren't counted.", f"#/tournament/{tr['slug']}")
 

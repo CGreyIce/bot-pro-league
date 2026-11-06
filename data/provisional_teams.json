@@ -2,5 +2,9 @@
   "_comment": "Teams that have a profile page but are NOT yet pro — excluded from the pro team leaderboard/rankings and the pro-team count. They still have a page, roster, and history. Values are team slugs.",
   "slugs": [
     "eiromancers"
-  ]
+  ],
+  "_untilChampion": "A provisional team that wins the event named here becomes pro (ranked) from that build on. Eiromancers: the user's call, 2026-11-06.",
+  "untilChampion": {
+    "eiromancers": "phase-shift-invitational-i"
+  }
 }
