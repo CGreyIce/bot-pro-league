@@ -1,41 +1,5 @@
 [
  {
-  "id": "milestone:sakami:kills:500",
-  "type": "milestone",
-  "ts": 1793388684,
-  "date": "2026-10-31",
-  "title": "Sakami: 500 career kills",
-  "text": "Sakami reached 500 career kills",
-  "link": "#/player/sakami"
- },
- {
-  "id": "milestone:joshiwahhh:kills:500",
-  "type": "milestone",
-  "ts": 1793388684,
-  "date": "2026-10-31",
-  "title": "Joshiwahhh: 500 career kills",
-  "text": "Joshiwahhh reached 500 career kills",
-  "link": "#/player/joshiwahhh"
- },
- {
-  "id": "milestone:kellyxleox:mvp:100",
-  "type": "milestone",
-  "ts": 1793391434,
-  "date": "2026-10-31",
-  "title": "_kellyxleox_: 100 MVP rounds",
-  "text": "_kellyxleox_ reached 100 MVP rounds",
-  "link": "#/player/kellyxleox"
- },
- {
-  "id": "milestone:pattsuu:kills:500",
-  "type": "milestone",
-  "ts": 1793395069,
-  "date": "2026-10-31",
-  "title": "Pattsuu: 500 career kills",
-  "text": "Pattsuu reached 500 career kills",
-  "link": "#/player/pattsuu"
- },
- {
   "id": "milestone:dumbo:kills:500",
   "type": "milestone",
   "ts": 1793398975,
@@ -1798,5 +1762,41 @@
   "title": "UtsuhoNull: 150 MVP rounds",
   "text": "UtsuhoNull reached 150 MVP rounds",
   "link": "#/player/utsuhonull"
+ },
+ {
+  "id": "milestone:teckiyo:maps:50",
+  "type": "milestone",
+  "ts": 1793934203,
+  "date": "2026-11-06",
+  "title": "teckiyo: 50 maps played",
+  "text": "teckiyo reached 50 maps played",
+  "link": "#/player/teckiyo"
+ },
+ {
+  "id": "milestone:ochakokiyomi:maps:50",
+  "type": "milestone",
+  "ts": 1793934203,
+  "date": "2026-11-06",
+  "title": "OchakoKiyomi: 50 maps played",
+  "text": "OchakoKiyomi reached 50 maps played",
+  "link": "#/player/ochakokiyomi"
+ },
+ {
+  "id": "milestone:carv:maps:50",
+  "type": "milestone",
+  "ts": 1793934203,
+  "date": "2026-11-06",
+  "title": "carv: 50 maps played",
+  "text": "carv reached 50 maps played",
+  "link": "#/player/carv"
+ },
+ {
+  "id": "milestone:nicsman:maps:50",
+  "type": "milestone",
+  "ts": 1793934203,
+  "date": "2026-11-06",
+  "title": "nicsman: 50 maps played",
+  "text": "nicsman reached 50 maps played",
+  "link": "#/player/nicsman"
  }
 ]
