@@ -375,9 +375,9 @@
    "mvp": 53
   },
   "tachibana-hinano": {
-   "maps": 63,
-   "kills": 1039,
-   "mvp": 158
+   "maps": 64,
+   "kills": 1066,
+   "mvp": 160
   },
   "shiranami-ramune": {
    "maps": 57,
@@ -385,9 +385,9 @@
    "mvp": 103
   },
   "remia-aotsuki": {
-   "maps": 53,
-   "kills": 812,
-   "mvp": 113
+   "maps": 54,
+   "kills": 836,
+   "mvp": 117
   },
   "tsumugi-kokage": {
    "maps": 57,
@@ -600,29 +600,29 @@
    "mvp": 133
   },
   "y-uuno": {
-   "maps": 62,
-   "kills": 1011,
-   "mvp": 153
+   "maps": 63,
+   "kills": 1032,
+   "mvp": 156
   },
   "spoods": {
-   "maps": 58,
-   "kills": 968,
-   "mvp": 159
+   "maps": 59,
+   "kills": 1004,
+   "mvp": 165
   },
   "laburi": {
-   "maps": 62,
-   "kills": 1055,
-   "mvp": 191
+   "maps": 63,
+   "kills": 1071,
+   "mvp": 193
   },
   "eroxis": {
-   "maps": 62,
-   "kills": 1068,
-   "mvp": 150
+   "maps": 63,
+   "kills": 1102,
+   "mvp": 154
   },
   "kitties258": {
-   "maps": 58,
-   "kills": 734,
-   "mvp": 87
+   "maps": 59,
+   "kills": 754,
+   "mvp": 89
   },
   "mike": {
    "maps": 40,
@@ -1535,9 +1535,9 @@
    "mvp": 174
   },
   "kogara-toto": {
-   "maps": 55,
-   "kills": 910,
-   "mvp": 141
+   "maps": 56,
+   "kills": 938,
+   "mvp": 146
   },
   "aranionja": {
    "maps": 60,
@@ -1800,9 +1800,9 @@
    "mvp": 69
   },
   "yumeno-akari": {
-   "maps": 43,
-   "kills": 651,
-   "mvp": 88
+   "maps": 44,
+   "kills": 673,
+   "mvp": 90
   },
   "voxslefthorn": {
    "maps": 27,
@@ -1890,9 +1890,9 @@
    "mvp": 60
   },
   "ginjo-saine": {
-   "maps": 49,
-   "kills": 780,
-   "mvp": 128
+   "maps": 50,
+   "kills": 809,
+   "mvp": 134
   },
   "hamzyy": {
    "maps": 29,
@@ -2439,6 +2439,7 @@
   "upset:bpl-conquerors-stage-2026:1-7",
   "upset:bpl-conquerors-stage-2026:2-10",
   "upset:bpl-conquerors-stage-2026:2-11",
+  "upset:bpl-conquerors-stage-2026:2-17",
   "upset:bpl-conquerors-stage-2026:2-2",
   "upset:bpl-conquerors-stage-2026:2-9",
   "upset:bpl-conquerors-stage-2026:3-1",

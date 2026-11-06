@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:xuehuavt:mvp:100",
-  "type": "milestone",
-  "ts": 1793421916,
-  "date": "2026-10-31",
-  "title": "XueHuaVT: 100 MVP rounds",
-  "text": "XueHuaVT reached 100 MVP rounds",
-  "link": "#/player/xuehuavt"
- },
- {
-  "id": "milestone:urnisa:kills:500",
-  "type": "milestone",
-  "ts": 1793421916,
-  "date": "2026-10-31",
-  "title": "urnisa_: 500 career kills",
-  "text": "urnisa_ reached 500 career kills",
-  "link": "#/player/urnisa"
- },
- {
   "id": "milestone:ginjo-saine:mvp:100",
   "type": "milestone",
   "ts": 1793421916,
@@ -1798,5 +1780,23 @@
   "title": "Eroxis: 150 MVP rounds",
   "text": "Eroxis reached 150 MVP rounds",
   "link": "#/player/eroxis"
+ },
+ {
+  "id": "milestone:spoods:kills:1000",
+  "type": "milestone",
+  "ts": 1793957645,
+  "date": "2026-11-06",
+  "title": "Spoods: 1000 career kills",
+  "text": "Spoods reached 1000 career kills",
+  "link": "#/player/spoods"
+ },
+ {
+  "id": "milestone:ginjo-saine:maps:50",
+  "type": "milestone",
+  "ts": 1793957645,
+  "date": "2026-11-06",
+  "title": "Ginjo Saine: 50 maps played",
+  "text": "Ginjo Saine reached 50 maps played",
+  "link": "#/player/ginjo-saine"
  }
 ]
