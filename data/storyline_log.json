@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:kiokocheiko:kills:1000",
-  "type": "milestone",
-  "ts": 1793444586,
-  "date": "2026-10-31",
-  "title": "KiokoCheiko: 1000 career kills",
-  "text": "KiokoCheiko reached 1000 career kills",
-  "link": "#/player/kiokocheiko"
- },
- {
-  "id": "milestone:yxie:kills:500",
-  "type": "milestone",
-  "ts": 1793444586,
-  "date": "2026-10-31",
-  "title": "yxie: 500 career kills",
-  "text": "yxie reached 500 career kills",
-  "link": "#/player/yxie"
- },
- {
   "id": "milestone:voidnw:kills:500",
   "type": "milestone",
   "ts": 1793453271,
@@ -1797,6 +1779,24 @@
   "date": "2026-11-06",
   "title": "rebebx: 150 MVP rounds",
   "text": "rebebx reached 150 MVP rounds",
+  "link": "#/player/rebebx"
+ },
+ {
+  "id": "milestone:luminmochi:kills:500",
+  "type": "milestone",
+  "ts": 1793966833,
+  "date": "2026-11-06",
+  "title": "luminmochi: 500 career kills",
+  "text": "luminmochi reached 500 career kills",
+  "link": "#/player/luminmochi"
+ },
+ {
+  "id": "milestone:rebebx:kills:1000",
+  "type": "milestone",
+  "ts": 1793966833,
+  "date": "2026-11-06",
+  "title": "rebebx: 1000 career kills",
+  "text": "rebebx reached 1000 career kills",
   "link": "#/player/rebebx"
  }
 ]
