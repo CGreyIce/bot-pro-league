@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:xyrolizea:kills:500",
-  "type": "milestone",
-  "ts": 1793408851,
-  "date": "2026-10-31",
-  "title": "Xyrolizea: 500 career kills",
-  "text": "Xyrolizea reached 500 career kills",
-  "link": "#/player/xyrolizea"
- },
- {
-  "id": "milestone:kogara-toto:mvp:100",
-  "type": "milestone",
-  "ts": 1793408851,
-  "date": "2026-10-31",
-  "title": "Kogara Toto: 100 MVP rounds",
-  "text": "Kogara Toto reached 100 MVP rounds",
-  "link": "#/player/kogara-toto"
- },
- {
   "id": "milestone:xuehuavt:mvp:100",
   "type": "milestone",
   "ts": 1793421916,
@@ -1798,5 +1780,23 @@
   "title": "Ryker_Sterling: 100 MVP rounds",
   "text": "Ryker_Sterling reached 100 MVP rounds",
   "link": "#/player/ryker-sterling"
+ },
+ {
+  "id": "milestone:y-uuno:kills:1000",
+  "type": "milestone",
+  "ts": 1793954068,
+  "date": "2026-11-06",
+  "title": "y.uuno: 1000 career kills",
+  "text": "y.uuno reached 1000 career kills",
+  "link": "#/player/y-uuno"
+ },
+ {
+  "id": "milestone:eroxis:mvp:150",
+  "type": "milestone",
+  "ts": 1793954068,
+  "date": "2026-11-06",
+  "title": "Eroxis: 150 MVP rounds",
+  "text": "Eroxis reached 150 MVP rounds",
+  "link": "#/player/eroxis"
  }
 ]
