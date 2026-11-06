@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:psystra:maps:50",
-  "type": "milestone",
-  "ts": 1793513250,
-  "date": "2026-11-01",
-  "title": "PSYSTRA: 50 maps played",
-  "text": "PSYSTRA reached 50 maps played",
-  "link": "#/player/psystra"
- },
- {
   "id": "promotion:northwind",
   "type": "promotion",
   "ts": 1793527690,
@@ -1798,5 +1789,14 @@
   "title": "hazielvamp: 500 career kills",
   "text": "hazielvamp reached 500 career kills",
   "link": "#/player/hazielvamp"
+ },
+ {
+  "id": "milestone:hakase:maps:50",
+  "type": "milestone",
+  "ts": 1793987968,
+  "date": "2026-11-07",
+  "title": "Hakase: 50 maps played",
+  "text": "Hakase reached 50 maps played",
+  "link": "#/player/hakase"
  }
 ]
