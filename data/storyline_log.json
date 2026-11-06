@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:jstarwolf:kills:500",
-  "type": "milestone",
-  "ts": 1793479897,
-  "date": "2026-11-01",
-  "title": "JStarWolf: 500 career kills",
-  "text": "JStarWolf reached 500 career kills",
-  "link": "#/player/jstarwolf"
- },
- {
   "id": "milestone:tortillaroll:kills:500",
   "type": "milestone",
   "ts": 1793493224,
@@ -1798,5 +1789,14 @@
   "title": "XueQiii: 150 MVP rounds",
   "text": "XueQiii reached 150 MVP rounds",
   "link": "#/player/xueqiii"
+ },
+ {
+  "id": "milestone:syrrith:kills:1000",
+  "type": "milestone",
+  "ts": 1793977621,
+  "date": "2026-11-06",
+  "title": "Syrrith: 1000 career kills",
+  "text": "Syrrith reached 1000 career kills",
+  "link": "#/player/syrrith"
  }
 ]
