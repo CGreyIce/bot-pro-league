@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:solaonix:mvp:100",
-  "type": "milestone",
-  "ts": 1793403281,
-  "date": "2026-10-31",
-  "title": "Solaonix: 100 MVP rounds",
-  "text": "Solaonix reached 100 MVP rounds",
-  "link": "#/player/solaonix"
- },
- {
   "id": "milestone:tachibana-hinano:maps:50",
   "type": "milestone",
   "ts": 1793408851,
@@ -1798,5 +1789,14 @@
   "title": "SkuxxNinja44: 50 maps played",
   "text": "SkuxxNinja44 reached 50 maps played",
   "link": "#/player/skuxxninja44"
+ },
+ {
+  "id": "milestone:xrela:kills:500",
+  "type": "milestone",
+  "ts": 1793949312,
+  "date": "2026-11-06",
+  "title": "Xrela: 500 career kills",
+  "text": "Xrela reached 500 career kills",
+  "link": "#/player/xrela"
  }
 ]
