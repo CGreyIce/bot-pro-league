@@ -787,8 +787,9 @@
      "round": 5,
      "a": "Sacred Raven",
      "b": "Setting Sun",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1793995439
     },
     {
      "id": 18,

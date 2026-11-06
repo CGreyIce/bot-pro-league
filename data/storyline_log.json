@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:yerm:kills:500",
-  "type": "milestone",
-  "ts": 1793575304,
-  "date": "2026-11-02",
-  "title": "yerm: 500 career kills",
-  "text": "yerm reached 500 career kills",
-  "link": "#/player/yerm"
- },
- {
   "id": "milestone:karoni:maps:50",
   "type": "milestone",
   "ts": 1793577383,
@@ -1798,5 +1789,14 @@
   "title": "rc_ia: 100 MVP rounds",
   "text": "rc_ia reached 100 MVP rounds",
   "link": "#/player/rc-ia"
+ },
+ {
+  "id": "milestone:jaelyo:mvp:150",
+  "type": "milestone",
+  "ts": 1793995442,
+  "date": "2026-11-07",
+  "title": "jaelyo: 150 MVP rounds",
+  "text": "jaelyo reached 150 MVP rounds",
+  "link": "#/player/jaelyo"
  }
 ]
