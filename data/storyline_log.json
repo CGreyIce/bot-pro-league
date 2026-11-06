@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:kisaragi-ren:kills:500",
-  "type": "milestone",
-  "ts": 1793493224,
-  "date": "2026-11-01",
-  "title": "Kisaragi Ren: 500 career kills",
-  "text": "Kisaragi Ren reached 500 career kills",
-  "link": "#/player/kisaragi-ren"
- },
- {
   "id": "champion:bpl-legends-stage-2026",
   "type": "champion",
   "ts": 1793513247,
@@ -1798,5 +1789,14 @@
   "title": "Jenakai: 50 maps played",
   "text": "Jenakai reached 50 maps played",
   "link": "#/player/jenakai"
+ },
+ {
+  "id": "milestone:cwstalvt:mvp:150",
+  "type": "milestone",
+  "ts": 1793982586,
+  "date": "2026-11-07",
+  "title": "cwstalVT: 150 MVP rounds",
+  "text": "cwstalVT reached 150 MVP rounds",
+  "link": "#/player/cwstalvt"
  }
 ]

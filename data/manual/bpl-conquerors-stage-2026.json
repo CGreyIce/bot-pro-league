@@ -590,8 +590,9 @@
      "round": 5,
      "a": "Crystal Laurels",
      "b": "Infernum E-Sports",
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1793982583
     },
     {
      "id": 19,
