@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:yumeno-akari:kills:500",
-  "type": "milestone",
-  "ts": 1793477259,
-  "date": "2026-11-01",
-  "title": "Yumeno Akari: 500 career kills",
-  "text": "Yumeno Akari reached 500 career kills",
-  "link": "#/player/yumeno-akari"
- },
- {
   "id": "milestone:jstarwolf:kills:500",
   "type": "milestone",
   "ts": 1793479897,
@@ -1798,5 +1789,14 @@
   "title": "Kojadayo: 100 MVP rounds",
   "text": "Kojadayo reached 100 MVP rounds",
   "link": "#/player/kojadayo"
+ },
+ {
+  "id": "milestone:xueqiii:mvp:150",
+  "type": "milestone",
+  "ts": 1793972335,
+  "date": "2026-11-06",
+  "title": "XueQiii: 150 MVP rounds",
+  "text": "XueQiii reached 150 MVP rounds",
+  "link": "#/player/xueqiii"
  }
 ]
