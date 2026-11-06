@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:tachibana-hinano:maps:50",
-  "type": "milestone",
-  "ts": 1793408851,
-  "date": "2026-10-31",
-  "title": "Tachibana Hinano: 50 maps played",
-  "text": "Tachibana Hinano reached 50 maps played",
-  "link": "#/player/tachibana-hinano"
- },
- {
   "id": "milestone:xyrolizea:kills:500",
   "type": "milestone",
   "ts": 1793408851,
@@ -1798,5 +1789,14 @@
   "title": "Xrela: 500 career kills",
   "text": "Xrela reached 500 career kills",
   "link": "#/player/xrela"
+ },
+ {
+  "id": "milestone:ryker-sterling:mvp:100",
+  "type": "milestone",
+  "ts": 1793951273,
+  "date": "2026-11-06",
+  "title": "Ryker_Sterling: 100 MVP rounds",
+  "text": "Ryker_Sterling reached 100 MVP rounds",
+  "link": "#/player/ryker-sterling"
  }
 ]
