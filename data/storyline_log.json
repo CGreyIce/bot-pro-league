@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:ginjo-saine:mvp:100",
-  "type": "milestone",
-  "ts": 1793421916,
-  "date": "2026-10-31",
-  "title": "Ginjo Saine: 100 MVP rounds",
-  "text": "Ginjo Saine reached 100 MVP rounds",
-  "link": "#/player/ginjo-saine"
- },
- {
-  "id": "milestone:y1jingg:mvp:100",
-  "type": "milestone",
-  "ts": 1793436382,
-  "date": "2026-10-31",
-  "title": "y1jingg: 100 MVP rounds",
-  "text": "y1jingg reached 100 MVP rounds",
-  "link": "#/player/y1jingg"
- },
- {
   "id": "milestone:dudriduo:kills:500",
   "type": "milestone",
   "ts": 1793436382,
@@ -1798,5 +1780,23 @@
   "title": "Ginjo Saine: 50 maps played",
   "text": "Ginjo Saine reached 50 maps played",
   "link": "#/player/ginjo-saine"
+ },
+ {
+  "id": "milestone:illus:mvp:150",
+  "type": "milestone",
+  "ts": 1793961081,
+  "date": "2026-11-06",
+  "title": "Illus: 150 MVP rounds",
+  "text": "Illus reached 150 MVP rounds",
+  "link": "#/player/illus"
+ },
+ {
+  "id": "milestone:kairi:kills:1000",
+  "type": "milestone",
+  "ts": 1793961081,
+  "date": "2026-11-06",
+  "title": "Kairi: 1000 career kills",
+  "text": "Kairi reached 1000 career kills",
+  "link": "#/player/kairi"
  }
 ]
