@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:rc-ia:maps:50",
-  "type": "milestone",
-  "ts": 1793473464,
-  "date": "2026-11-01",
-  "title": "rc_ia: 50 maps played",
-  "text": "rc_ia reached 50 maps played",
-  "link": "#/player/rc-ia"
- },
- {
-  "id": "milestone:zhiweiingg:maps:50",
-  "type": "milestone",
-  "ts": 1793473464,
-  "date": "2026-11-01",
-  "title": "zhiweiingg: 50 maps played",
-  "text": "zhiweiingg reached 50 maps played",
-  "link": "#/player/zhiweiingg"
- },
- {
   "id": "milestone:yumeno-akari:kills:500",
   "type": "milestone",
   "ts": 1793477259,
@@ -1798,5 +1780,23 @@
   "title": "Sketch: 100 MVP rounds",
   "text": "Sketch reached 100 MVP rounds",
   "link": "#/player/sketch"
+ },
+ {
+  "id": "milestone:astro-ruckus:kills:500",
+  "type": "milestone",
+  "ts": 1793970994,
+  "date": "2026-11-06",
+  "title": "Astro_Ruckus: 500 career kills",
+  "text": "Astro_Ruckus reached 500 career kills",
+  "link": "#/player/astro-ruckus"
+ },
+ {
+  "id": "milestone:kojadayo:mvp:100",
+  "type": "milestone",
+  "ts": 1793970994,
+  "date": "2026-11-06",
+  "title": "Kojadayo: 100 MVP rounds",
+  "text": "Kojadayo reached 100 MVP rounds",
+  "link": "#/player/kojadayo"
  }
 ]
