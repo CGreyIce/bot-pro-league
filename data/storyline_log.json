@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:zhiweiingg:mvp:100",
-  "type": "milestone",
-  "ts": 1793379534,
-  "date": "2026-10-31",
-  "title": "zhiweiingg: 100 MVP rounds",
-  "text": "zhiweiingg reached 100 MVP rounds",
-  "link": "#/player/zhiweiingg"
- },
- {
-  "id": "milestone:caarrietan:kills:500",
-  "type": "milestone",
-  "ts": 1793382475,
-  "date": "2026-10-31",
-  "title": "caarrietan: 500 career kills",
-  "text": "caarrietan reached 500 career kills",
-  "link": "#/player/caarrietan"
- },
- {
   "id": "milestone:elfy-mint:mvp:100",
   "type": "milestone",
   "ts": 1793385246,
@@ -1798,5 +1780,23 @@
   "title": "candybar_isblue: 1000 career kills",
   "text": "candybar_isblue reached 1000 career kills",
   "link": "#/player/candybar-isblue"
+ },
+ {
+  "id": "milestone:zhizyii:maps:50",
+  "type": "milestone",
+  "ts": 1793929889,
+  "date": "2026-11-06",
+  "title": "zhizyii: 50 maps played",
+  "text": "zhizyii reached 50 maps played",
+  "link": "#/player/zhizyii"
+ },
+ {
+  "id": "milestone:ssseiso:maps:50",
+  "type": "milestone",
+  "ts": 1793929889,
+  "date": "2026-11-06",
+  "title": "ssseiso: 50 maps played",
+  "text": "ssseiso reached 50 maps played",
+  "link": "#/player/ssseiso"
  }
 ]
