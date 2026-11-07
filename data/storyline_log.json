@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:akanersvt:kills:1000",
-  "type": "milestone",
-  "ts": 1793613167,
-  "date": "2026-11-02",
-  "title": "AkanersVT: 1000 career kills",
-  "text": "AkanersVT reached 1000 career kills",
-  "link": "#/player/akanersvt"
- },
- {
-  "id": "milestone:l1feless:maps:50",
-  "type": "milestone",
-  "ts": 1793618660,
-  "date": "2026-11-02",
-  "title": "l1feless: 50 maps played",
-  "text": "l1feless reached 50 maps played",
-  "link": "#/player/l1feless"
- },
- {
   "id": "milestone:l1feless:mvp:100",
   "type": "milestone",
   "ts": 1793620554,
@@ -1798,5 +1780,23 @@
   "title": "RaviasEir: 200 MVP rounds",
   "text": "RaviasEir reached 200 MVP rounds",
   "link": "#/player/raviaseir"
+ },
+ {
+  "id": "milestone:niamocha:kills:1000",
+  "type": "milestone",
+  "ts": 1794074928,
+  "date": "2026-11-08",
+  "title": "Niamocha: 1000 career kills",
+  "text": "Niamocha reached 1000 career kills",
+  "link": "#/player/niamocha"
+ },
+ {
+  "id": "milestone:tatsumaki-chise:kills:500",
+  "type": "milestone",
+  "ts": 1794074928,
+  "date": "2026-11-08",
+  "title": "Tatsumaki Chise: 500 career kills",
+  "text": "Tatsumaki Chise reached 500 career kills",
+  "link": "#/player/tatsumaki-chise"
  }
 ]
