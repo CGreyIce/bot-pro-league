@@ -32814,5 +32814,255 @@
     }
    ]
   }
+ ],
+ "phase-shift-invitational-i": [
+  {
+   "team": "Raven Song",
+   "teamSlug": "raven-song",
+   "players": [
+    {
+     "name": "CRex",
+     "captain": false,
+     "curSlug": "crex"
+    },
+    {
+     "name": "ebi",
+     "captain": false,
+     "curSlug": "ebi"
+    },
+    {
+     "name": "des506",
+     "captain": false,
+     "curSlug": "des506"
+    },
+    {
+     "name": "koen",
+     "captain": false,
+     "curSlug": "koen"
+    },
+    {
+     "name": "treblest",
+     "captain": false,
+     "curSlug": "treblest"
+    }
+   ]
+  },
+  {
+   "team": "Alcheministry",
+   "teamSlug": "alcheministry",
+   "players": [
+    {
+     "name": "tanykeat",
+     "captain": false,
+     "curSlug": "tanykeat"
+    },
+    {
+     "name": "d.chong",
+     "captain": false,
+     "curSlug": "d-chong"
+    },
+    {
+     "name": "EviKuroneko",
+     "captain": false,
+     "curSlug": "evikuroneko"
+    },
+    {
+     "name": "hikopiko_",
+     "captain": false,
+     "curSlug": "hikopiko"
+    },
+    {
+     "name": "NekoSoji",
+     "captain": false,
+     "curSlug": "nekosoji"
+    }
+   ]
+  },
+  {
+   "team": "DiamondOnes",
+   "teamSlug": "diamondones",
+   "players": [
+    {
+     "name": "notccillia",
+     "captain": false,
+     "curSlug": "notccillia"
+    },
+    {
+     "name": "midorissi",
+     "captain": false,
+     "curSlug": "midorissi"
+    },
+    {
+     "name": "xolalotl",
+     "captain": false,
+     "curSlug": "xolalotl"
+    },
+    {
+     "name": "lilraxxx",
+     "captain": false,
+     "curSlug": "lilraxxx"
+    },
+    {
+     "name": "emiiiyu",
+     "captain": false,
+     "curSlug": "emiiiyu"
+    }
+   ]
+  },
+  {
+   "team": "Team Neverseen",
+   "teamSlug": "team-neverseen",
+   "players": [
+    {
+     "name": "Niito",
+     "captain": false,
+     "curSlug": "niito"
+    },
+    {
+     "name": "jhjj80",
+     "captain": false,
+     "curSlug": "jhjj80"
+    },
+    {
+     "name": "pashionfruit18",
+     "captain": false,
+     "curSlug": "pashionfruit18"
+    },
+    {
+     "name": "HeyImKaiWen",
+     "captain": false,
+     "curSlug": "heyimkaiwen"
+    },
+    {
+     "name": "S.GT",
+     "captain": false,
+     "curSlug": "s-gt"
+    }
+   ]
+  },
+  {
+   "team": "Pastel Mocha",
+   "teamSlug": "pastel-mocha",
+   "players": [
+    {
+     "name": "Niamocha",
+     "captain": false,
+     "curSlug": "niamocha"
+    },
+    {
+     "name": "kenzieyii",
+     "captain": false,
+     "curSlug": "kenzieyii"
+    },
+    {
+     "name": "pastellows",
+     "captain": false,
+     "curSlug": "pastellows"
+    },
+    {
+     "name": "RDarius",
+     "captain": false,
+     "curSlug": "rdarius"
+    },
+    {
+     "name": "ItzSune",
+     "captain": false,
+     "curSlug": "itzsune"
+    }
+   ]
+  },
+  {
+   "team": "Aspire",
+   "teamSlug": "aspire",
+   "players": [
+    {
+     "name": "Mikuryne",
+     "captain": false,
+     "curSlug": "mikuryne"
+    },
+    {
+     "name": "TuxedoCat",
+     "captain": false,
+     "curSlug": "tuxedocat"
+    },
+    {
+     "name": "Chisa_Scarlett",
+     "captain": false,
+     "curSlug": "chisa-scarlett"
+    },
+    {
+     "name": "Hanarisu",
+     "captain": false,
+     "curSlug": "hanarisu"
+    },
+    {
+     "name": "caarrietan",
+     "captain": false,
+     "curSlug": "caarrietan"
+    }
+   ]
+  },
+  {
+   "team": "Eiromancers",
+   "teamSlug": "eiromancers",
+   "players": [
+    {
+     "name": "RaviasEir",
+     "captain": false,
+     "curSlug": "raviaseir"
+    },
+    {
+     "name": "twentyrosie",
+     "captain": false,
+     "curSlug": "twentyrosie"
+    },
+    {
+     "name": "Skiazelle",
+     "captain": false,
+     "curSlug": "skiazelle"
+    },
+    {
+     "name": "kaikaijins",
+     "captain": false,
+     "curSlug": "kaikaijins"
+    },
+    {
+     "name": "CGreyIce",
+     "captain": false,
+     "curSlug": "h-cgreyice"
+    }
+   ]
+  },
+  {
+   "team": "Lunar Cadence",
+   "teamSlug": "lunar-cadence",
+   "players": [
+    {
+     "name": "briant",
+     "captain": false,
+     "curSlug": "briant"
+    },
+    {
+     "name": "Eris Suzukami",
+     "captain": false,
+     "curSlug": "eris-suzukami"
+    },
+    {
+     "name": "Tsumugi Kokage",
+     "captain": false,
+     "curSlug": "tsumugi-kokage"
+    },
+    {
+     "name": "Shiranami Ramune",
+     "captain": false,
+     "curSlug": "shiranami-ramune"
+    },
+    {
+     "name": "Tatsumaki Chise",
+     "captain": false,
+     "curSlug": "tatsumaki-chise"
+    }
+   ]
+  }
  ]
 }
