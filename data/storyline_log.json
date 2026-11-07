@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:balililmao:kills:500",
-  "type": "milestone",
-  "ts": 1793594704,
-  "date": "2026-11-02",
-  "title": "balililmao: 500 career kills",
-  "text": "balililmao reached 500 career kills",
-  "link": "#/player/balililmao"
- },
- {
   "id": "milestone:vplh:kills:500",
   "type": "milestone",
   "ts": 1793597141,
@@ -1798,5 +1789,14 @@
   "title": "des506: 100 MVP rounds",
   "text": "des506 reached 100 MVP rounds",
   "link": "#/player/des506"
+ },
+ {
+  "id": "milestone:treblest:mvp:100",
+  "type": "milestone",
+  "ts": 1794016153,
+  "date": "2026-11-07",
+  "title": "treblest: 100 MVP rounds",
+  "text": "treblest reached 100 MVP rounds",
+  "link": "#/player/treblest"
  }
 ]
