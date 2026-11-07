@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:chiai-fujikawa:mvp:100",
-  "type": "milestone",
-  "ts": 1793594704,
-  "date": "2026-11-02",
-  "title": "Chiai Fujikawa: 100 MVP rounds",
-  "text": "Chiai Fujikawa reached 100 MVP rounds",
-  "link": "#/player/chiai-fujikawa"
- },
- {
-  "id": "milestone:sketch:kills:500",
-  "type": "milestone",
-  "ts": 1793594704,
-  "date": "2026-11-02",
-  "title": "Sketch: 500 career kills",
-  "text": "Sketch reached 500 career kills",
-  "link": "#/player/sketch"
- },
- {
   "id": "milestone:balililmao:kills:500",
   "type": "milestone",
   "ts": 1793594704,
@@ -1798,5 +1780,23 @@
   "title": "bluenerd8: 50 maps played",
   "text": "bluenerd8 reached 50 maps played",
   "link": "#/player/bluenerd8"
+ },
+ {
+  "id": "milestone:koen:mvp:100",
+  "type": "milestone",
+  "ts": 1794014507,
+  "date": "2026-11-07",
+  "title": "koen: 100 MVP rounds",
+  "text": "koen reached 100 MVP rounds",
+  "link": "#/player/koen"
+ },
+ {
+  "id": "milestone:des506:mvp:100",
+  "type": "milestone",
+  "ts": 1794014507,
+  "date": "2026-11-07",
+  "title": "des506: 100 MVP rounds",
+  "text": "des506 reached 100 MVP rounds",
+  "link": "#/player/des506"
  }
 ]
