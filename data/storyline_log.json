@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:kuro-mi:mvp:100",
-  "type": "milestone",
-  "ts": 1793610281,
-  "date": "2026-11-02",
-  "title": "kuro_mi: 100 MVP rounds",
-  "text": "kuro_mi reached 100 MVP rounds",
-  "link": "#/player/kuro-mi"
- },
- {
-  "id": "milestone:lumi-nyaa:mvp:100",
-  "type": "milestone",
-  "ts": 1793610281,
-  "date": "2026-11-02",
-  "title": "lumi.nyaa: 100 MVP rounds",
-  "text": "lumi.nyaa reached 100 MVP rounds",
-  "link": "#/player/lumi-nyaa"
- },
- {
-  "id": "milestone:akanersvt:mvp:150",
-  "type": "milestone",
-  "ts": 1793610281,
-  "date": "2026-11-02",
-  "title": "AkanersVT: 150 MVP rounds",
-  "text": "AkanersVT reached 150 MVP rounds",
-  "link": "#/player/akanersvt"
- },
- {
   "id": "milestone:sayupurin:kills:500",
   "type": "milestone",
   "ts": 1793610281,
@@ -1798,5 +1771,32 @@
   "title": "EviKuroneko: 100 MVP rounds",
   "text": "EviKuroneko reached 100 MVP rounds",
   "link": "#/player/evikuroneko"
+ },
+ {
+  "id": "milestone:hanarisu:mvp:100",
+  "type": "milestone",
+  "ts": 1794048317,
+  "date": "2026-11-07",
+  "title": "Hanarisu: 100 MVP rounds",
+  "text": "Hanarisu reached 100 MVP rounds",
+  "link": "#/player/hanarisu"
+ },
+ {
+  "id": "milestone:notccillia:kills:1000",
+  "type": "milestone",
+  "ts": 1794048317,
+  "date": "2026-11-07",
+  "title": "notccillia: 1000 career kills",
+  "text": "notccillia reached 1000 career kills",
+  "link": "#/player/notccillia"
+ },
+ {
+  "id": "milestone:mikuryne:kills:500",
+  "type": "milestone",
+  "ts": 1794048317,
+  "date": "2026-11-07",
+  "title": "Mikuryne: 500 career kills",
+  "text": "Mikuryne reached 500 career kills",
+  "link": "#/player/mikuryne"
  }
 ]

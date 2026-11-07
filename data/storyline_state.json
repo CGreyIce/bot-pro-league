@@ -350,14 +350,14 @@
    "mvp": 120
   },
   "tuxedocat": {
-   "maps": 42,
-   "kills": 673,
-   "mvp": 90
+   "maps": 43,
+   "kills": 706,
+   "mvp": 95
   },
   "hanarisu": {
-   "maps": 41,
-   "kills": 643,
-   "mvp": 97
+   "maps": 42,
+   "kills": 662,
+   "mvp": 100
   },
   "moira": {
    "maps": 32,
@@ -365,9 +365,9 @@
    "mvp": 64
   },
   "caarrietan": {
-   "maps": 42,
-   "kills": 568,
-   "mvp": 64
+   "maps": 43,
+   "kills": 585,
+   "mvp": 65
   },
   "stylus": {
    "maps": 33,
@@ -550,29 +550,29 @@
    "mvp": 68
   },
   "notccillia": {
-   "maps": 63,
-   "kills": 992,
-   "mvp": 158
+   "maps": 64,
+   "kills": 1011,
+   "mvp": 160
   },
   "xolalotl": {
-   "maps": 57,
-   "kills": 832,
-   "mvp": 117
+   "maps": 58,
+   "kills": 852,
+   "mvp": 120
   },
   "lilraxxx": {
-   "maps": 53,
-   "kills": 773,
-   "mvp": 105
+   "maps": 54,
+   "kills": 787,
+   "mvp": 106
   },
   "midorissi": {
-   "maps": 54,
-   "kills": 872,
-   "mvp": 114
+   "maps": 55,
+   "kills": 895,
+   "mvp": 118
   },
   "emiiiyu": {
-   "maps": 52,
-   "kills": 749,
-   "mvp": 90
+   "maps": 53,
+   "kills": 769,
+   "mvp": 92
   },
   "chreyll": {
    "maps": 52,
@@ -2210,9 +2210,9 @@
    "mvp": 21
   },
   "mikuryne": {
-   "maps": 28,
-   "kills": 491,
-   "mvp": 83
+   "maps": 29,
+   "kills": 508,
+   "mvp": 86
   },
   "chiyoaqua": {
    "maps": 10,
@@ -2235,9 +2235,9 @@
    "mvp": 25
   },
   "chisa-scarlett": {
-   "maps": 24,
-   "kills": 433,
-   "mvp": 52
+   "maps": 25,
+   "kills": 457,
+   "mvp": 56
   },
   "soslim": {
    "maps": 9,
@@ -2494,7 +2494,8 @@
   "upset:nations-cup-qualifier-singapore-2026:1-43",
   "upset:nova-initia-invitational-i:1-12",
   "upset:nova-initia-invitational-i:1-7",
-  "upset:nova-initia-invitational-i:1-9"
+  "upset:nova-initia-invitational-i:1-9",
+  "upset:phase-shift-invitational-i:1-4"
  ],
  "v": 1,
  "drafted": [
