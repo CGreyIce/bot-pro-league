@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:jenapoppins:kills:500",
-  "type": "milestone",
-  "ts": 1793600742,
-  "date": "2026-11-02",
-  "title": "jenapoppins: 500 career kills",
-  "text": "jenapoppins reached 500 career kills",
-  "link": "#/player/jenapoppins"
- },
- {
   "id": "milestone:kuro-mi:mvp:100",
   "type": "milestone",
   "ts": 1793610281,
@@ -1798,5 +1789,14 @@
   "title": "kenzieyii: 100 MVP rounds",
   "text": "kenzieyii reached 100 MVP rounds",
   "link": "#/player/kenzieyii"
+ },
+ {
+  "id": "milestone:evikuroneko:mvp:100",
+  "type": "milestone",
+  "ts": 1794041563,
+  "date": "2026-11-07",
+  "title": "EviKuroneko: 100 MVP rounds",
+  "text": "EviKuroneko reached 100 MVP rounds",
+  "link": "#/player/evikuroneko"
  }
 ]
