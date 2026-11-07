@@ -814,8 +814,9 @@
      "round": 5,
      "a": "Artisian",
      "b": "The Gigarage",
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1794010690
     }
    ],
    "roundTitles": {
@@ -833,22 +834,22 @@
    "format": "single_elim",
    "bestOf": 3,
    "teams": [
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""
+    "Astral Bloom",
+    "Nullpoint",
+    "Sacred Raven",
+    "Crystal Laurels",
+    "Moonlit Tempo",
+    "Flood Flashers",
+    "Technomancy",
+    "xPlosiv",
+    "Nightfang Covenant",
+    "Prism Divide",
+    "New Jade",
+    "Lemon Tree",
+    "Bluebird",
+    "entity",
+    "BeeHyve",
+    "Setting Sun"
    ],
    "matches": [
     {
@@ -1204,6 +1205,27 @@
   }
  ],
  "seeds": {
+  "Astral Bloom": 1,
+  "Nullpoint": 2,
+  "Sacred Raven": 3,
+  "Crystal Laurels": 4,
+  "Moonlit Tempo": 5,
+  "Flood Flashers": 6,
+  "Technomancy": 7,
+  "xPlosiv": 8,
+  "Nightfang Covenant": 9,
+  "Prism Divide": 10,
+  "New Jade": 11,
+  "Lemon Tree": 12,
+  "Bluebird": 13,
+  "entity": 14,
+  "BeeHyve": 15,
+  "Setting Sun": 16
+ },
+ "tiebreak": "maps",
+ "predictions": "playoffs",
+ "finalBestOf": 5,
+ "groupSeeds": {
   "Cosmos": 1,
   "Aimpunch": 2,
   "Opal": 3,
@@ -1237,7 +1259,5 @@
   "Bluebird": 31,
   "Technomancy": 32
  },
- "tiebreak": "maps",
- "predictions": "playoffs",
- "finalBestOf": 5
+ "predictionsLocked": false
 }

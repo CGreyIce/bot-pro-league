@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:plainyingying:mvp:100",
-  "type": "milestone",
-  "ts": 1793587034,
-  "date": "2026-11-02",
-  "title": "plainyingying: 100 MVP rounds",
-  "text": "plainyingying reached 100 MVP rounds",
-  "link": "#/player/plainyingying"
- },
- {
-  "id": "milestone:skuxxninja44:mvp:100",
-  "type": "milestone",
-  "ts": 1793587034,
-  "date": "2026-11-02",
-  "title": "SkuxxNinja44: 100 MVP rounds",
-  "text": "SkuxxNinja44 reached 100 MVP rounds",
-  "link": "#/player/skuxxninja44"
- },
- {
-  "id": "milestone:ochakokiyomi:mvp:100",
-  "type": "milestone",
-  "ts": 1793587034,
-  "date": "2026-11-02",
-  "title": "OchakoKiyomi: 100 MVP rounds",
-  "text": "OchakoKiyomi reached 100 MVP rounds",
-  "link": "#/player/ochakokiyomi"
- },
- {
   "id": "milestone:chiai-fujikawa:mvp:100",
   "type": "milestone",
   "ts": 1793594704,
@@ -1798,5 +1771,32 @@
   "title": "SanCtuary: 1000 career kills",
   "text": "SanCtuary reached 1000 career kills",
   "link": "#/player/sanctuary"
+ },
+ {
+  "id": "upset:bpl-conquerors-stage-2026:4-20",
+  "type": "upset",
+  "ts": 1794010690,
+  "date": "2026-11-07",
+  "title": "The Gigarage stun Artisian",
+  "text": "2-0 at BPL Conquerors Stage 2026",
+  "link": "#/match/bpl-conquerors-stage-2026/4-20"
+ },
+ {
+  "id": "milestone:yixl:kills:1000",
+  "type": "milestone",
+  "ts": 1794010693,
+  "date": "2026-11-07",
+  "title": "Yixl: 1000 career kills",
+  "text": "Yixl reached 1000 career kills",
+  "link": "#/player/yixl"
+ },
+ {
+  "id": "milestone:bluenerd8:maps:50",
+  "type": "milestone",
+  "ts": 1794010693,
+  "date": "2026-11-07",
+  "title": "bluenerd8: 50 maps played",
+  "text": "bluenerd8 reached 50 maps played",
+  "link": "#/player/bluenerd8"
  }
 ]

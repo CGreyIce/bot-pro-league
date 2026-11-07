@@ -325,29 +325,29 @@
    "mvp": 55
   },
   "sanctuary": {
-   "maps": 57,
-   "kills": 1000,
-   "mvp": 176
+   "maps": 58,
+   "kills": 1007,
+   "mvp": 177
   },
   "rebellioniite": {
-   "maps": 59,
-   "kills": 957,
-   "mvp": 130
+   "maps": 60,
+   "kills": 981,
+   "mvp": 133
   },
   "skyllabtw": {
-   "maps": 59,
-   "kills": 995,
+   "maps": 60,
+   "kills": 999,
    "mvp": 138
   },
   "yixl": {
-   "maps": 67,
-   "kills": 984,
-   "mvp": 122
+   "maps": 68,
+   "kills": 1000,
+   "mvp": 123
   },
   "ktenshi": {
-   "maps": 57,
-   "kills": 926,
-   "mvp": 117
+   "maps": 58,
+   "kills": 943,
+   "mvp": 120
   },
   "tuxedocat": {
    "maps": 41,
@@ -1075,29 +1075,29 @@
    "mvp": 99
   },
   "gigichiii": {
-   "maps": 64,
-   "kills": 968,
-   "mvp": 168
+   "maps": 65,
+   "kills": 982,
+   "mvp": 170
   },
   "yunaeyo": {
-   "maps": 63,
-   "kills": 961,
-   "mvp": 143
+   "maps": 64,
+   "kills": 973,
+   "mvp": 144
   },
   "mmirawr": {
-   "maps": 59,
-   "kills": 900,
-   "mvp": 129
+   "maps": 60,
+   "kills": 920,
+   "mvp": 132
   },
   "yojareddo": {
-   "maps": 57,
-   "kills": 886,
-   "mvp": 115
+   "maps": 58,
+   "kills": 905,
+   "mvp": 118
   },
   "bluenerd8": {
-   "maps": 49,
-   "kills": 621,
-   "mvp": 80
+   "maps": 50,
+   "kills": 639,
+   "mvp": 84
   },
   "rethnap": {
    "maps": 42,
@@ -2453,6 +2453,7 @@
   "upset:bpl-conquerors-stage-2026:4-10",
   "upset:bpl-conquerors-stage-2026:4-12",
   "upset:bpl-conquerors-stage-2026:4-13",
+  "upset:bpl-conquerors-stage-2026:4-20",
   "upset:bpl-conquerors-stage-2026:4-6",
   "upset:bpl-conquerors-stage-2026:4-8",
   "upset:bpl-conquerors-stage-2026:4-9",
@@ -2531,6 +2532,7 @@
   "upset:bpl-conquerors-stage-2026:2-18",
   "upset:bpl-conquerors-stage-2026:2-2",
   "upset:bpl-conquerors-stage-2026:2-9",
+  "upset:bpl-conquerors-stage-2026:4-20",
   "upset:bpl-legends-stage-2026:3-19",
   "upset:bpl-legends-stage-2026:4-20"
  ]
