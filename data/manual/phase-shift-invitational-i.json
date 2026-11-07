@@ -125,5 +125,6 @@
   }
  ],
  "formatLabel": "8-team single elimination",
- "formatNote": "8 teams outside the Conquerors Stage, picked across the BPL rankings (#22 to #55) plus Eiromancers. Single elimination, every match a Bo3, seeded by BPL ranking points: 1 plays 8, 2 plays 7, 3 plays 6, 4 plays 5."
+ "formatNote": "8 teams outside the Conquerors Stage, picked across the BPL rankings (#22 to #55) plus Eiromancers. Single elimination, every match a Bo3, seeded by BPL ranking points: 1 plays 8, 2 plays 7, 3 plays 6, 4 plays 5.",
+ "predictionsLocked": true
 }
