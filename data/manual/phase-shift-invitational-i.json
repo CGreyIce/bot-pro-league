@@ -122,8 +122,9 @@
      },
      "bestOf": null,
      "thirdPlace": true,
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1794090627
     }
    ],
    "roundTitles": {
