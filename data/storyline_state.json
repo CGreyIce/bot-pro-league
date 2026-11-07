@@ -380,9 +380,9 @@
    "mvp": 160
   },
   "shiranami-ramune": {
-   "maps": 60,
-   "kills": 823,
-   "mvp": 106
+   "maps": 61,
+   "kills": 828,
+   "mvp": 107
   },
   "remia-aotsuki": {
    "maps": 54,
@@ -390,14 +390,14 @@
    "mvp": 117
   },
   "tsumugi-kokage": {
-   "maps": 60,
-   "kills": 897,
+   "maps": 61,
+   "kills": 910,
    "mvp": 120
   },
   "eris-suzukami": {
-   "maps": 56,
-   "kills": 883,
-   "mvp": 126
+   "maps": 57,
+   "kills": 901,
+   "mvp": 127
   },
   "plainyingying": {
    "maps": 53,
@@ -1345,29 +1345,29 @@
    "mvp": 159
   },
   "niamocha": {
-   "maps": 52,
-   "kills": 960,
-   "mvp": 163
+   "maps": 53,
+   "kills": 973,
+   "mvp": 168
   },
   "rdarius": {
-   "maps": 25,
-   "kills": 340,
-   "mvp": 44
+   "maps": 26,
+   "kills": 353,
+   "mvp": 46
   },
   "pastellows": {
-   "maps": 67,
-   "kills": 1143,
-   "mvp": 181
+   "maps": 68,
+   "kills": 1154,
+   "mvp": 182
   },
   "kenzieyii": {
-   "maps": 41,
-   "kills": 690,
-   "mvp": 101
+   "maps": 42,
+   "kills": 712,
+   "mvp": 102
   },
   "itzsune": {
-   "maps": 25,
-   "kills": 348,
-   "mvp": 46
+   "maps": 26,
+   "kills": 371,
+   "mvp": 50
   },
   "tigeraxd": {
    "maps": 53,
@@ -1815,9 +1815,9 @@
    "mvp": 46
   },
   "briant": {
-   "maps": 39,
-   "kills": 663,
-   "mvp": 110
+   "maps": 40,
+   "kills": 679,
+   "mvp": 115
   },
   "thehidz": {
    "maps": 37,
@@ -2000,8 +2000,8 @@
    "mvp": 40
   },
   "tatsumaki-chise": {
-   "maps": 35,
-   "kills": 491,
+   "maps": 36,
+   "kills": 497,
    "mvp": 58
   },
   "ichinose-uruha": {
@@ -2495,6 +2495,7 @@
   "upset:nova-initia-invitational-i:1-12",
   "upset:nova-initia-invitational-i:1-7",
   "upset:nova-initia-invitational-i:1-9",
+  "upset:phase-shift-invitational-i:1-1",
   "upset:phase-shift-invitational-i:1-4"
  ],
  "v": 1,
