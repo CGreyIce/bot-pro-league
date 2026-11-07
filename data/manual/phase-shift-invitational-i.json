@@ -121,7 +121,9 @@
       "loserOf": 6
      },
      "bestOf": null,
-     "thirdPlace": true
+     "thirdPlace": true,
+     "sa": null,
+     "sb": null
     }
    ],
    "roundTitles": {
