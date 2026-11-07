@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:sayupurin:kills:500",
-  "type": "milestone",
-  "ts": 1793610281,
-  "date": "2026-11-02",
-  "title": "sayupurin: 500 career kills",
-  "text": "sayupurin reached 500 career kills",
-  "link": "#/player/sayupurin"
- },
- {
   "id": "milestone:akanersvt:kills:1000",
   "type": "milestone",
   "ts": 1793613167,
@@ -1798,5 +1789,14 @@
   "title": "Mikuryne: 500 career kills",
   "text": "Mikuryne reached 500 career kills",
   "link": "#/player/mikuryne"
+ },
+ {
+  "id": "milestone:raviaseir:mvp:200",
+  "type": "milestone",
+  "ts": 1794051476,
+  "date": "2026-11-07",
+  "title": "RaviasEir: 200 MVP rounds",
+  "text": "RaviasEir reached 200 MVP rounds",
+  "link": "#/player/raviaseir"
  }
 ]
