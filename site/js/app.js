@@ -556,6 +556,10 @@ function lineupTimelineHtml(t){
     rows.push({slug:hm.slug, human:true, kind:hm.kind, name:hm.name, iso:hm.iso, role:hm.role, years:new Set([jy]), other:new Set(), current:true});
   });
   (t.formerPlayers||[]).forEach(f=>{
+    if(f.human){   // a human who left (solo_humans.json "left"): their profile, a free agent now
+      rows.push({slug:f.slug, human:true, kind:f.kind, name:f.name, iso:f.iso, role:f.role||'', years:new Set((f.years||[]).map(Number)), other:new Set(), current:false, nowTeam:'Free agent'});
+      return;
+    }
     rows.push({slug:f.slug, name:f.name, iso:f.iso, role:'', years:new Set((f.years||[]).map(Number)), other:otherYears(f.slug), current:false, nowTeam:f.nowTeam, banned:f.status==='banned', replacedBy:f.replacedBy});
   });
   const withYears = rows.filter(r=>r.years.size);
@@ -722,10 +726,12 @@ function renderTeam(slug){
           const banned = f.status==='banned';
           const sub = banned
             ? `${yrs?esc(yrs)+' · ':''}<span class="fp-ban">Banned</span>${f.replacedBy?' · replaced by '+esc(f.replacedBy):''}`
+            : f.human ? `${f.joined&&f.left?esc(fmtDate(f.joined))+' – '+esc(fmtDate(f.left)):(yrs?esc(yrs):'')} · now: Free agent`
             : `${yrs?esc(yrs)+' · ':''}now: ${f.nowTeam?esc(f.nowTeam):'Teamless'}`;
           const inner = `<div class="avatar">${initials(f.name)}</div>
-            <div><div class="pm-name">${flag(f.iso)}${esc(f.name)}</div>
+            <div><div class="pm-name">${flag(f.iso)}${esc(f.name)}${f.human?humanBadge(f):''}</div>
             <div class="pm-sub">${sub}</div></div>`;
+          if(f.human) return `<a class="pcard-mini former" href="#/human/${esc(f.slug)}">${inner}</a>`;
           return f.slug ? `<a class="pcard-mini former" href="#/player/${f.slug}">${inner}</a>`
                         : `<div class="pcard-mini former noprofile">${inner}</div>`;
         }).join("")}</div>`:''}
@@ -912,10 +918,14 @@ function renderHuman(slug){
   // Pro: a human on a team (build/solo_humans.py attach_pro): their tournament maps, rated like the bots
   const pr = p.pro;
   const teamLink = p.teamSlug ? `<a href="#/team/${esc(p.teamSlug)}" style="color:var(--link)">${esc(p.team)}</a>` : '';
+  // left their team (solo_humans.json "left"): a free agent, with the old team linked
+  const ft = !p.teamSlug && p.formerTeam;
+  const ftLink = ft ? `<a href="#/team/${esc(ft.slug)}" style="color:var(--link)">${esc(ft.name)}</a>` : '';
+  const ftNote = ft ? `Free agent · formerly ${ftLink}${ft.role?' ('+esc(ft.role)+')':''}` : '';
   const sc = g=>g.score && g.score[0]!=null ? ` <span class="mono muted">${g.score[0]}-${g.score[1]}</span>` : '';
   const proHtml = !pr ? '' : `
     <h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>Pro
-      <span class="muted" style="font-size:11px">${teamLink?`${teamLink}${p.role?' · '+esc(p.role):''} · `:''}${pr.ratingPoints!=null?pr.ratingPoints+' pts · ':''}${pr.maps?`${pr.maps} tournament map${pr.maps===1?'':'s'}`:'no tournament maps yet'}</span></h2>
+      <span class="muted" style="font-size:11px">${teamLink?`${teamLink}${p.role?' · '+esc(p.role):''} · `:ft?'Free agent · ':''}${pr.ratingPoints!=null?pr.ratingPoints+' pts · ':''}${pr.maps?`${pr.maps} tournament map${pr.maps===1?'':'s'}`:'no tournament maps yet'}</span></h2>
     ${pr.maps ? `<div class="statgrid">
       ${stat(pr.kills,"Kills")}${stat(pr.deaths,"Deaths")}${stat(pr.kdr.toFixed(2),"K/D Ratio",true)}${stat(pr.mvp,"MVPs")}
       ${stat(pr.assists,"Assists")}${stat((pr.kills/pr.maps).toFixed(1),"Kills / Map")}${stat(pr.wins+'-'+pr.losses,"Record")}${stat(pct(pr.winrate),"Win Rate")}
@@ -933,7 +943,7 @@ function renderHuman(slug){
       <div class="avatar" style="width:88px;height:88px;border-radius:14px;font-size:34px">${initials(p.name)}</div>
       <div class="ph-main">
         <h1>${flag(p.iso)}${esc(p.name)}${humanBadge(p)}</h1>
-        <div class="ph-sub">${p.kind==="admin"?'League admin':'Human player'} · ${teamLink?`${teamLink}${p.role?' · '+esc(p.role):''}`:'Solo Queue only'}${p.ingame&&p.ingame.length?` · plays as “${esc(p.ingame.join('”, “'))}”`:''}</div>
+        <div class="ph-sub">${p.kind==="admin"?'League admin':'Human player'} · ${teamLink?`${teamLink}${p.role?' · '+esc(p.role):''}`:ftNote||'Solo Queue only'}${p.ingame&&p.ingame.length?` · plays as “${esc(p.ingame.join('”, “'))}”`:''}</div>
         <div style="margin-top:10px">${p.level?`${levelChip(p.level)}<span class="levelchip" style="margin-left:8px">Level ${p.level}</span>`:'<span class="muted">Unranked</span>'}${p.provisional?'<span class="prov-badge" style="margin-left:8px">PROV</span>':''}</div>
       </div>
     </div>

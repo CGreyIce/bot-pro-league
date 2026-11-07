@@ -1733,6 +1733,28 @@ def main():
             })
         t["formerPlayers"].sort(key=lambda x: (x["years"][-1] if x["years"] else "", x["name"].lower()), reverse=True)
 
+    # ---- humans who left their team (solo_humans.json "left", 8 Nov 2026: CGreyIce off Eiromancers) ----
+    # A former player on that team's page (flagged human, a free agent now) and h["formerTeam"] on
+    # their profile. "team" comes off the output so the boards show them teamless; the events they
+    # played before "left" keep them on those line-ups (on_team above), with their stats and prize money.
+    for h in solo_humans:
+        if not (h.get("team") and h.get("left")):
+            continue
+        tm = team_by_key.get(norm_key(h["team"]))
+        if not tm:
+            continue
+        y0, y1 = (h.get("joined") or h["left"])[:4], h["left"][:4]
+        yrs = [str(y) for y in range(int(y0), int(y1) + 1)]
+        h["formerTeam"] = {"name": tm["name"], "slug": tm["slug"], "joined": h.get("joined"), "left": h["left"],
+                           "role": h.get("role")}
+        tm.setdefault("formerPlayers", []).append({
+            "slug": h["slug"], "name": h["name"], "iso": h.get("iso", ""), "years": yrs,
+            "human": True, "kind": h["kind"], "role": h.get("role"), "joined": h.get("joined"), "left": h["left"],
+            "nowTeam": "", "nowTeamSlug": None})
+        tm["formerPlayers"].sort(key=lambda x: (x["years"][-1] if x["years"] else "", x["name"].lower()), reverse=True)
+        for k in ("team", "role", "joined", "left"):
+            h.pop(k, None)
+
     # ---- also-known-as (former names) per current player ----
     nc_raw = json.load(open(ncp, encoding="utf-8")) if os.path.exists(ncp) else {}
     aka = defaultdict(list)
