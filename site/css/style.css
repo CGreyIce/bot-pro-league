@@ -506,7 +506,7 @@ a.form-dot:hover{transform:translateY(-2px)}
 .cab-sub{font-size:11px;color:var(--muted);display:flex;align-items:center;gap:6px}
 /* lineup history timeline */
 .lineup-tl{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:10px 14px;overflow-x:auto}
-.lt-row{display:grid;grid-template-columns:170px 1fr;align-items:center;gap:12px;min-height:26px}
+.lt-row{display:grid;grid-template-columns:180px 1fr;align-items:center;gap:12px;min-height:26px}
 .lt-name{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:flex;align-items:center;gap:6px}
 .lt-name a{color:var(--text)}.lt-name a:hover{color:var(--link)}
 .lt-badge{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--bg);background:var(--good);border-radius:3px;padding:1px 4px;margin-left:2px}
@@ -517,6 +517,8 @@ a.form-dot:hover{transform:translateY(-2px)}
 .lt-cell.on{background:var(--muted2)}
 .lt-cell.on.cur{background:var(--accent)}
 .lt-badge.ban{background:var(--accent2,#ff6b6b)}
+.lt-name .human-badge{font-size:9px;padding:1px 4px;margin-left:0;line-height:1.3;flex:none}   /* a human on the team: ADMIN/HUMAN beside "now" */
+.lt-name .lt-badge{flex:none}
 .pcard-mini.noprofile{cursor:default}
 .fp-ban{color:var(--accent2,#ff6b6b);font-weight:700}
 .prov-badge{font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:5px;padding:2px 7px;vertical-align:middle}

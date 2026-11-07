@@ -550,6 +550,11 @@ function lineupTimelineHtml(t){
     if(!yrs.length) yrs = [new Date().getFullYear()];
     rows.push({slug:r.slug, name:r.name, iso:r.iso, role:r.role, years:new Set(yrs), other:otherYears(r.slug), current:true});
   });
+  // humans on the team (t.humans, data/solo_humans.json "team"): current, from the year they joined
+  (t.humans||[]).forEach(hm=>{
+    const jy = Number(String(hm.joined||'').slice(0,4)) || new Date().getFullYear();
+    rows.push({slug:hm.slug, human:true, kind:hm.kind, name:hm.name, iso:hm.iso, role:hm.role, years:new Set([jy]), other:new Set(), current:true});
+  });
   (t.formerPlayers||[]).forEach(f=>{
     rows.push({slug:f.slug, name:f.name, iso:f.iso, role:'', years:new Set((f.years||[]).map(Number)), other:otherYears(f.slug), current:false, nowTeam:f.nowTeam, banned:f.status==='banned', replacedBy:f.replacedBy});
   });
@@ -577,7 +582,8 @@ function lineupTimelineHtml(t){
       const cls = on ? (r.current?'on cur':'on') : 'off';
       return `<span class="lt-cell ${cls}"></span>`;
     }).join("");
-    const nm = r.slug ? `<a href="#/player/${r.slug}">${flag(r.iso)}${esc(r.name)}</a>` : `${flag(r.iso)}${esc(r.name)}`;
+    const nm = r.human ? `<a href="#/human/${esc(r.slug)}">${flag(r.iso)}${esc(r.name)}</a>${humanBadge(r)}`
+      : r.slug ? `<a href="#/player/${r.slug}">${flag(r.iso)}${esc(r.name)}</a>` : `${flag(r.iso)}${esc(r.name)}`;
     const ttl = esc(r.name)+(r.current?' · current':(r.banned?' · banned'+(r.replacedBy?', replaced by '+r.replacedBy:''):(r.nowTeam?' · now '+esc(r.nowTeam):'')));
     const tag = r.current?'<span class="lt-badge">now</span>':(r.banned?'<span class="lt-badge ban">banned</span>':'');
     return `<div class="lt-row"><div class="lt-name" title="${ttl}">${nm}${tag}</div><div class="lt-cells">${cells}</div></div>`;
