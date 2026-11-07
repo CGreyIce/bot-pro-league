@@ -173,6 +173,9 @@ def process_manual(raw, team_map, alias):
         "finalStandings": final_standings, "seeds": seeds_out,
         "predictionsLocked": bool(raw.get("predictionsLocked")),
         "predictionsMode": raw.get("predictionsMode"),
+        # the admin's "Complete" switch: the BPL Bots app keeps offering a crowned event's unplayed
+        # matches (a third-place match after the final) until it's completed
+        "completed": bool(raw.get("completed")),
         "noHonors": bool(raw.get("noHonors")),
         "nationTeam": raw.get("nationTeam"),
         "leaderboard": _lb_out(raw.get("leaderboard"), resolve),

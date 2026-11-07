@@ -1262,6 +1262,12 @@ def main():
                 k = norm_key(pl["name"])
                 tgt = old2new.get(k)
                 cur = pmap.get(norm_key(tgt) if tgt else k)
+                # a human on a frozen line-up (an event completed with them on it): their own entry,
+                # so they aren't a profile-less name (and aren't added a second time below)
+                hum = None if cur else (_h_by_key.get(k) or next((x for x in solo_humans if pl.get("curSlug") and x["slug"] == pl["curSlug"]), None))
+                if hum:
+                    pls.append(_sh.attending_entry(hum))
+                    continue
                 pls.append({
                     "hist": pl["name"],
                     "name": cur["name"] if cur else (tgt or pl["name"]),
