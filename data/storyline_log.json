@@ -1,14 +1,5 @@
 [
  {
-  "id": "upset:bpl-conquerors-stage-2026:2-2",
-  "type": "upset",
-  "ts": 1793600740,
-  "date": "2026-11-02",
-  "title": "New Jade stun division20",
-  "text": "2-1 at BPL Conquerors Stage 2026",
-  "link": "#/match/bpl-conquerors-stage-2026/2-2"
- },
- {
   "id": "milestone:jenapoppins:kills:500",
   "type": "milestone",
   "ts": 1793600742,
@@ -1798,5 +1789,14 @@
   "title": "ebi: 1000 career kills",
   "text": "ebi reached 1000 career kills",
   "link": "#/player/ebi"
+ },
+ {
+  "id": "milestone:kenzieyii:mvp:100",
+  "type": "milestone",
+  "ts": 1794038548,
+  "date": "2026-11-07",
+  "title": "kenzieyii: 100 MVP rounds",
+  "text": "kenzieyii reached 100 MVP rounds",
+  "link": "#/player/kenzieyii"
  }
 ]
