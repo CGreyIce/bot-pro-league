@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:l1feless:mvp:100",
-  "type": "milestone",
-  "ts": 1793620554,
-  "date": "2026-11-02",
-  "title": "l1feless: 100 MVP rounds",
-  "text": "l1feless reached 100 MVP rounds",
-  "link": "#/player/l1feless"
- },
- {
   "id": "milestone:nifela:kills:1000",
   "type": "milestone",
   "ts": 1793620554,
@@ -1798,5 +1789,14 @@
   "title": "Tatsumaki Chise: 500 career kills",
   "text": "Tatsumaki Chise reached 500 career kills",
   "link": "#/player/tatsumaki-chise"
+ },
+ {
+  "id": "champion:phase-shift-invitational-i",
+  "type": "champion",
+  "ts": 1794082973,
+  "date": "2026-11-08",
+  "title": "Pastel Mocha win Phase Shift Invitational I",
+  "text": "Champions of Phase Shift Invitational I, beating Eiromancers in the final",
+  "link": "#/tournament/phase-shift-invitational-i"
  }
 ]
