@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:rebellioniite:maps:50",
-  "type": "milestone",
-  "ts": 1793644393,
-  "date": "2026-11-03",
-  "title": "rebellioniite: 50 maps played",
-  "text": "rebellioniite reached 50 maps played",
-  "link": "#/player/rebellioniite"
- },
- {
   "id": "milestone:skyllabtw:maps:50",
   "type": "milestone",
   "ts": 1793644393,
@@ -1798,5 +1789,14 @@
   "title": "kyyltn: 100 MVP rounds",
   "text": "kyyltn reached 100 MVP rounds",
   "link": "#/player/kyyltn"
+ },
+ {
+  "id": "milestone:altheavt:maps:50",
+  "type": "milestone",
+  "ts": 1794117433,
+  "date": "2026-11-08",
+  "title": "AltheaVT: 50 maps played",
+  "text": "AltheaVT reached 50 maps played",
+  "link": "#/player/altheavt"
  }
 ]
