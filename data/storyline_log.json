@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:mmirawr:maps:50",
-  "type": "milestone",
-  "ts": 1793640108,
-  "date": "2026-11-03",
-  "title": "mmirawr_: 50 maps played",
-  "text": "mmirawr_ reached 50 maps played",
-  "link": "#/player/mmirawr"
- },
- {
   "id": "milestone:rebellioniite:maps:50",
   "type": "milestone",
   "ts": 1793644393,
@@ -1798,5 +1789,14 @@
   "title": "Sadgeboi: 1000 career kills",
   "text": "Sadgeboi reached 1000 career kills",
   "link": "#/player/sadgeboi"
+ },
+ {
+  "id": "milestone:kyyltn:mvp:100",
+  "type": "milestone",
+  "ts": 1794108045,
+  "date": "2026-11-08",
+  "title": "kyyltn: 100 MVP rounds",
+  "text": "kyyltn reached 100 MVP rounds",
+  "link": "#/player/kyyltn"
  }
 ]

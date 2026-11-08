@@ -451,29 +451,29 @@
    "mvp": 93
   },
   "lenette": {
-   "maps": 51,
-   "kills": 799,
-   "mvp": 128
+   "maps": 52,
+   "kills": 823,
+   "mvp": 132
   },
   "nyuii": {
-   "maps": 51,
-   "kills": 765,
-   "mvp": 121
+   "maps": 52,
+   "kills": 788,
+   "mvp": 126
   },
   "baer": {
-   "maps": 52,
-   "kills": 771,
-   "mvp": 110
+   "maps": 53,
+   "kills": 795,
+   "mvp": 114
   },
   "4-naru": {
-   "maps": 53,
-   "kills": 671,
-   "mvp": 83
+   "maps": 54,
+   "kills": 690,
+   "mvp": 84
   },
   "kyyltn": {
-   "maps": 56,
-   "kills": 751,
-   "mvp": 98
+   "maps": 57,
+   "kills": 761,
+   "mvp": 100
   },
   "sneakyyyyy": {
    "maps": 57,
@@ -1101,19 +1101,19 @@
    "mvp": 84
   },
   "rethnap": {
-   "maps": 44,
-   "kills": 754,
-   "mvp": 120
+   "maps": 45,
+   "kills": 768,
+   "mvp": 121
   },
   "luciddoob": {
-   "maps": 44,
-   "kills": 659,
-   "mvp": 87
+   "maps": 45,
+   "kills": 673,
+   "mvp": 89
   },
   "nikorasu": {
-   "maps": 54,
-   "kills": 847,
-   "mvp": 109
+   "maps": 55,
+   "kills": 867,
+   "mvp": 113
   },
   "redandb1ue": {
    "maps": 38,
@@ -1501,9 +1501,9 @@
    "mvp": 177
   },
   "sadgeboi": {
-   "maps": 53,
-   "kills": 1004,
-   "mvp": 141
+   "maps": 54,
+   "kills": 1028,
+   "mvp": 144
   },
   "xmeijixx": {
    "maps": 43,
@@ -1841,9 +1841,9 @@
    "mvp": 97
   },
   "l2strike": {
-   "maps": 38,
-   "kills": 630,
-   "mvp": 104
+   "maps": 39,
+   "kills": 654,
+   "mvp": 107
   },
   "swoopsy": {
    "maps": 26,
@@ -2497,7 +2497,8 @@
   "upset:nova-initia-invitational-i:1-7",
   "upset:nova-initia-invitational-i:1-9",
   "upset:phase-shift-invitational-i:1-1",
-  "upset:phase-shift-invitational-i:1-4"
+  "upset:phase-shift-invitational-i:1-4",
+  "upset:second-wind-invitational-i:1-2"
  ],
  "v": 1,
  "drafted": [
