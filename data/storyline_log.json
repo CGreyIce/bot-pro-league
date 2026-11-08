@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:uzuhii:maps:50",
-  "type": "milestone",
-  "ts": 1793646544,
-  "date": "2026-11-03",
-  "title": "Uzuhii: 50 maps played",
-  "text": "Uzuhii reached 50 maps played",
-  "link": "#/player/uzuhii"
- },
- {
-  "id": "milestone:sanctuary:maps:50",
-  "type": "milestone",
-  "ts": 1793648383,
-  "date": "2026-11-03",
-  "title": "SanCtuary: 50 maps played",
-  "text": "SanCtuary reached 50 maps played",
-  "link": "#/player/sanctuary"
- },
- {
-  "id": "milestone:ktenshi:maps:50",
-  "type": "milestone",
-  "ts": 1793648383,
-  "date": "2026-11-03",
-  "title": "KTenshi: 50 maps played",
-  "text": "KTenshi reached 50 maps played",
-  "link": "#/player/ktenshi"
- },
- {
   "id": "milestone:kyan:mvp:100",
   "type": "milestone",
   "ts": 1793652060,
@@ -1798,5 +1771,32 @@
   "title": "CRex: 150 MVP rounds",
   "text": "CRex reached 150 MVP rounds",
   "link": "#/player/crex"
+ },
+ {
+  "id": "milestone:tuxedocat:maps:50",
+  "type": "milestone",
+  "ts": 1794125762,
+  "date": "2026-11-08",
+  "title": "TuxedoCat: 50 maps played",
+  "text": "TuxedoCat reached 50 maps played",
+  "link": "#/player/tuxedocat"
+ },
+ {
+  "id": "milestone:caarrietan:maps:50",
+  "type": "milestone",
+  "ts": 1794125762,
+  "date": "2026-11-08",
+  "title": "caarrietan: 50 maps played",
+  "text": "caarrietan reached 50 maps played",
+  "link": "#/player/caarrietan"
+ },
+ {
+  "id": "milestone:mikuryne:mvp:100",
+  "type": "milestone",
+  "ts": 1794125762,
+  "date": "2026-11-08",
+  "title": "Mikuryne: 100 MVP rounds",
+  "text": "Mikuryne reached 100 MVP rounds",
+  "link": "#/player/mikuryne"
  }
 ]
