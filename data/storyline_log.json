@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:emily-melody:mvp:100",
-  "type": "milestone",
-  "ts": 1793655499,
-  "date": "2026-11-03",
-  "title": "Emily_melody: 100 MVP rounds",
-  "text": "Emily_melody reached 100 MVP rounds",
-  "link": "#/player/emily-melody"
- },
- {
-  "id": "milestone:komori-met:kills:500",
-  "type": "milestone",
-  "ts": 1793657467,
-  "date": "2026-11-03",
-  "title": "Komori Met: 500 career kills",
-  "text": "Komori Met reached 500 career kills",
-  "link": "#/player/komori-met"
- },
- {
   "id": "milestone:goonuyun:kills:500",
   "type": "milestone",
   "ts": 1793657467,
@@ -1798,5 +1780,23 @@
   "title": "Kyu: 500 career kills",
   "text": "Kyu reached 500 career kills",
   "link": "#/player/kyu"
+ },
+ {
+  "id": "milestone:yunaeyo:kills:1000",
+  "type": "milestone",
+  "ts": 1794129450,
+  "date": "2026-11-08",
+  "title": "yunaeyo: 1000 career kills",
+  "text": "yunaeyo reached 1000 career kills",
+  "link": "#/player/yunaeyo"
+ },
+ {
+  "id": "milestone:itzmaigo:mvp:100",
+  "type": "milestone",
+  "ts": 1794129450,
+  "date": "2026-11-08",
+  "title": "ItzMaigo: 100 MVP rounds",
+  "text": "ItzMaigo reached 100 MVP rounds",
+  "link": "#/player/itzmaigo"
  }
 ]
