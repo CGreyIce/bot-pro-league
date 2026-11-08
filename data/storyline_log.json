@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:froggiee:mvp:100",
-  "type": "milestone",
-  "ts": 1793671623,
-  "date": "2026-11-03",
-  "title": "_froggiee: 100 MVP rounds",
-  "text": "_froggiee reached 100 MVP rounds",
-  "link": "#/player/froggiee"
- },
- {
-  "id": "milestone:delphoxluna:kills:500",
-  "type": "milestone",
-  "ts": 1793672938,
-  "date": "2026-11-03",
-  "title": "DelphoxLuna: 500 career kills",
-  "text": "DelphoxLuna reached 500 career kills",
-  "link": "#/player/delphoxluna"
- },
- {
   "id": "milestone:kogara-toto:maps:50",
   "type": "milestone",
   "ts": 1793678348,
@@ -1798,5 +1780,23 @@
   "title": "Hanarisu: 50 maps played",
   "text": "Hanarisu reached 50 maps played",
   "link": "#/player/hanarisu"
+ },
+ {
+  "id": "milestone:zoweya:maps:50",
+  "type": "milestone",
+  "ts": 1794155855,
+  "date": "2026-11-09",
+  "title": "Zoweya: 50 maps played",
+  "text": "Zoweya reached 50 maps played",
+  "link": "#/player/zoweya"
+ },
+ {
+  "id": "milestone:anony:mvp:100",
+  "type": "milestone",
+  "ts": 1794155855,
+  "date": "2026-11-09",
+  "title": "Anony: 100 MVP rounds",
+  "text": "Anony reached 100 MVP rounds",
+  "link": "#/player/anony"
  }
 ]
