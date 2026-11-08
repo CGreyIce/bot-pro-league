@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:zuann:kills:1000",
-  "type": "milestone",
-  "ts": 1793682867,
-  "date": "2026-11-03",
-  "title": "zuann_: 1000 career kills",
-  "text": "zuann_ reached 1000 career kills",
-  "link": "#/player/zuann"
- },
- {
   "id": "milestone:spoods:maps:50",
   "type": "milestone",
   "ts": 1793685637,
@@ -1798,5 +1789,14 @@
   "title": "kokushi_vampir: 1000 career kills",
   "text": "kokushi_vampir reached 1000 career kills",
   "link": "#/player/kokushi-vampir"
+ },
+ {
+  "id": "milestone:inaxho:mvp:150",
+  "type": "milestone",
+  "ts": 1794172622,
+  "date": "2026-11-09",
+  "title": "inaxho: 150 MVP rounds",
+  "text": "inaxho reached 150 MVP rounds",
+  "link": "#/player/inaxho"
  }
 ]
