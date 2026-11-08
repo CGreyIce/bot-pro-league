@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:tiniibee:kills:500",
-  "type": "milestone",
-  "ts": 1793669680,
-  "date": "2026-11-03",
-  "title": "TiniiBee: 500 career kills",
-  "text": "TiniiBee reached 500 career kills",
-  "link": "#/player/tiniibee"
- },
- {
   "id": "milestone:froggiee:mvp:100",
   "type": "milestone",
   "ts": 1793671623,
@@ -1798,5 +1789,14 @@
   "title": "DelphoxLuna: 100 MVP rounds",
   "text": "DelphoxLuna reached 100 MVP rounds",
   "link": "#/player/delphoxluna"
+ },
+ {
+  "id": "milestone:hanarisu:maps:50",
+  "type": "milestone",
+  "ts": 1794154188,
+  "date": "2026-11-09",
+  "title": "Hanarisu: 50 maps played",
+  "text": "Hanarisu reached 50 maps played",
+  "link": "#/player/hanarisu"
  }
 ]
