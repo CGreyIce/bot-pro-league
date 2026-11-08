@@ -1,41 +1,5 @@
 [
  {
-  "id": "milestone:spoods:maps:50",
-  "type": "milestone",
-  "ts": 1793685637,
-  "date": "2026-11-03",
-  "title": "Spoods: 50 maps played",
-  "text": "Spoods reached 50 maps played",
-  "link": "#/player/spoods"
- },
- {
-  "id": "milestone:kitties258:maps:50",
-  "type": "milestone",
-  "ts": 1793685637,
-  "date": "2026-11-03",
-  "title": "kitties258: 50 maps played",
-  "text": "kitties258 reached 50 maps played",
-  "link": "#/player/kitties258"
- },
- {
-  "id": "milestone:idiot-angelcrutcher:kills:500",
-  "type": "milestone",
-  "ts": 1793687662,
-  "date": "2026-11-03",
-  "title": "[Idiot] AngelCrutcher: 500 career kills",
-  "text": "[Idiot] AngelCrutcher reached 500 career kills",
-  "link": "#/player/idiot-angelcrutcher"
- },
- {
-  "id": "milestone:appleorangepear:mvp:100",
-  "type": "milestone",
-  "ts": 1793689211,
-  "date": "2026-11-03",
-  "title": "AppleOrangePear: 100 MVP rounds",
-  "text": "AppleOrangePear reached 100 MVP rounds",
-  "link": "#/player/appleorangepear"
- },
- {
   "id": "milestone:rebebx:maps:50",
   "type": "milestone",
   "ts": 1793690770,
@@ -1798,5 +1762,41 @@
   "title": "inaxho: 150 MVP rounds",
   "text": "inaxho reached 150 MVP rounds",
   "link": "#/player/inaxho"
+ },
+ {
+  "id": "milestone:plainyingying:kills:1000",
+  "type": "milestone",
+  "ts": 1794178275,
+  "date": "2026-11-09",
+  "title": "plainyingying: 1000 career kills",
+  "text": "plainyingying reached 1000 career kills",
+  "link": "#/player/plainyingying"
+ },
+ {
+  "id": "milestone:plainyingying:mvp:150",
+  "type": "milestone",
+  "ts": 1794178275,
+  "date": "2026-11-09",
+  "title": "plainyingying: 150 MVP rounds",
+  "text": "plainyingying reached 150 MVP rounds",
+  "link": "#/player/plainyingying"
+ },
+ {
+  "id": "milestone:venicec:mvp:100",
+  "type": "milestone",
+  "ts": 1794178275,
+  "date": "2026-11-09",
+  "title": "VeniceC: 100 MVP rounds",
+  "text": "VeniceC reached 100 MVP rounds",
+  "link": "#/player/venicec"
+ },
+ {
+  "id": "milestone:mmirawr:kills:1000",
+  "type": "milestone",
+  "ts": 1794178275,
+  "date": "2026-11-09",
+  "title": "mmirawr_: 1000 career kills",
+  "text": "mmirawr_ reached 1000 career kills",
+  "link": "#/player/mmirawr"
  }
 ]
