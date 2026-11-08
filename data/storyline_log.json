@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:ssseiso:mvp:100",
-  "type": "milestone",
-  "ts": 1793662801,
-  "date": "2026-11-03",
-  "title": "ssseiso: 100 MVP rounds",
-  "text": "ssseiso reached 100 MVP rounds",
-  "link": "#/player/ssseiso"
- },
- {
-  "id": "milestone:airizu:maps:50",
-  "type": "milestone",
-  "ts": 1793664980,
-  "date": "2026-11-03",
-  "title": "Airizu: 50 maps played",
-  "text": "Airizu reached 50 maps played",
-  "link": "#/player/airizu"
- },
- {
-  "id": "milestone:keikatamori:mvp:150",
-  "type": "milestone",
-  "ts": 1793669680,
-  "date": "2026-11-03",
-  "title": "keikatamori: 150 MVP rounds",
-  "text": "keikatamori reached 150 MVP rounds",
-  "link": "#/player/keikatamori"
- },
- {
   "id": "milestone:tiniibee:kills:500",
   "type": "milestone",
   "ts": 1793669680,
@@ -1798,5 +1771,32 @@
   "title": "Jira Jisaki: 100 MVP rounds",
   "text": "Jira Jisaki reached 100 MVP rounds",
   "link": "#/player/jira-jisaki"
+ },
+ {
+  "id": "milestone:sneakyyyyy:mvp:150",
+  "type": "milestone",
+  "ts": 1794150908,
+  "date": "2026-11-08",
+  "title": "sneakyyyyy: 150 MVP rounds",
+  "text": "sneakyyyyy reached 150 MVP rounds",
+  "link": "#/player/sneakyyyyy"
+ },
+ {
+  "id": "milestone:azzuto:kills:1000",
+  "type": "milestone",
+  "ts": 1794150908,
+  "date": "2026-11-08",
+  "title": "azzuto: 1000 career kills",
+  "text": "azzuto reached 1000 career kills",
+  "link": "#/player/azzuto"
+ },
+ {
+  "id": "milestone:delphoxluna:mvp:100",
+  "type": "milestone",
+  "ts": 1794150908,
+  "date": "2026-11-08",
+  "title": "DelphoxLuna: 100 MVP rounds",
+  "text": "DelphoxLuna reached 100 MVP rounds",
+  "link": "#/player/delphoxluna"
  }
 ]
