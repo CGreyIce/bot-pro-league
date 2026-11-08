@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:skyllabtw:maps:50",
-  "type": "milestone",
-  "ts": 1793644393,
-  "date": "2026-11-03",
-  "title": "Skyllabtw: 50 maps played",
-  "text": "Skyllabtw reached 50 maps played",
-  "link": "#/player/skyllabtw"
- },
- {
   "id": "milestone:uzuhii:maps:50",
   "type": "milestone",
   "ts": 1793646544,
@@ -1798,5 +1789,14 @@
   "title": "AltheaVT: 50 maps played",
   "text": "AltheaVT reached 50 maps played",
   "link": "#/player/altheavt"
+ },
+ {
+  "id": "milestone:crex:mvp:150",
+  "type": "milestone",
+  "ts": 1794122044,
+  "date": "2026-11-08",
+  "title": "CRex: 150 MVP rounds",
+  "text": "CRex reached 150 MVP rounds",
+  "link": "#/player/crex"
  }
 ]
