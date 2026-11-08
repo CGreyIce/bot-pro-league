@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:kyan:mvp:100",
-  "type": "milestone",
-  "ts": 1793652060,
-  "date": "2026-11-03",
-  "title": "Kyan: 100 MVP rounds",
-  "text": "Kyan reached 100 MVP rounds",
-  "link": "#/player/kyan"
- },
- {
-  "id": "milestone:sashimigoesbloop:maps:50",
-  "type": "milestone",
-  "ts": 1793653600,
-  "date": "2026-11-03",
-  "title": "SashimiGoesBloop: 50 maps played",
-  "text": "SashimiGoesBloop reached 50 maps played",
-  "link": "#/player/sashimigoesbloop"
- },
- {
   "id": "milestone:emily-melody:mvp:100",
   "type": "milestone",
   "ts": 1793655499,
@@ -1798,5 +1780,23 @@
   "title": "Mikuryne: 100 MVP rounds",
   "text": "Mikuryne reached 100 MVP rounds",
   "link": "#/player/mikuryne"
+ },
+ {
+  "id": "milestone:gigichiii:kills:1000",
+  "type": "milestone",
+  "ts": 1794127729,
+  "date": "2026-11-08",
+  "title": "gigichiii_: 1000 career kills",
+  "text": "gigichiii_ reached 1000 career kills",
+  "link": "#/player/gigichiii"
+ },
+ {
+  "id": "milestone:kyu:kills:500",
+  "type": "milestone",
+  "ts": 1794127729,
+  "date": "2026-11-08",
+  "title": "Kyu: 500 career kills",
+  "text": "Kyu reached 500 career kills",
+  "link": "#/player/kyu"
  }
 ]
