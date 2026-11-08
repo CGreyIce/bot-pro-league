@@ -351,14 +351,14 @@
    "mvp": 120
   },
   "tuxedocat": {
-   "maps": 55,
-   "kills": 869,
-   "mvp": 120
+   "maps": 56,
+   "kills": 881,
+   "mvp": 121
   },
   "hanarisu": {
-   "maps": 54,
-   "kills": 853,
-   "mvp": 127
+   "maps": 55,
+   "kills": 871,
+   "mvp": 128
   },
   "moira": {
    "maps": 32,
@@ -366,9 +366,9 @@
    "mvp": 64
   },
   "caarrietan": {
-   "maps": 55,
-   "kills": 759,
-   "mvp": 88
+   "maps": 56,
+   "kills": 777,
+   "mvp": 93
   },
   "stylus": {
    "maps": 33,
@@ -476,28 +476,28 @@
    "mvp": 104
   },
   "sneakyyyyy": {
-   "maps": 62,
-   "kills": 1024,
-   "mvp": 162
+   "maps": 63,
+   "kills": 1042,
+   "mvp": 165
   },
   "inaxho": {
-   "maps": 63,
-   "kills": 956,
-   "mvp": 150
+   "maps": 64,
+   "kills": 973,
+   "mvp": 153
   },
   "azzuto": {
-   "maps": 63,
-   "kills": 1041,
+   "maps": 64,
+   "kills": 1053,
    "mvp": 147
   },
   "kokushi-vampir": {
-   "maps": 64,
-   "kills": 1029,
-   "mvp": 139
+   "maps": 65,
+   "kills": 1044,
+   "mvp": 142
   },
   "delphoxluna": {
-   "maps": 48,
-   "kills": 782,
+   "maps": 49,
+   "kills": 790,
    "mvp": 109
   },
   "ziweiv": {
@@ -2211,9 +2211,9 @@
    "mvp": 21
   },
   "mikuryne": {
-   "maps": 41,
-   "kills": 696,
-   "mvp": 113
+   "maps": 42,
+   "kills": 718,
+   "mvp": 118
   },
   "chiyoaqua": {
    "maps": 10,
@@ -2236,9 +2236,9 @@
    "mvp": 25
   },
   "chisa-scarlett": {
-   "maps": 37,
-   "kills": 647,
-   "mvp": 82
+   "maps": 38,
+   "kills": 665,
+   "mvp": 83
   },
   "soslim": {
    "maps": 9,
@@ -2499,6 +2499,7 @@
   "upset:phase-shift-invitational-i:1-1",
   "upset:phase-shift-invitational-i:1-4",
   "upset:second-wind-invitational-i:1-12",
+  "upset:second-wind-invitational-i:1-13",
   "upset:second-wind-invitational-i:1-2"
  ],
  "v": 1,
