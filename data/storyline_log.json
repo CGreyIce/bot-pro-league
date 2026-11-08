@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:awtoh:mvp:100",
-  "type": "milestone",
-  "ts": 1793660924,
-  "date": "2026-11-03",
-  "title": "awtoh: 100 MVP rounds",
-  "text": "awtoh reached 100 MVP rounds",
-  "link": "#/player/awtoh"
- },
- {
   "id": "milestone:ssseiso:mvp:100",
   "type": "milestone",
   "ts": 1793662801,
@@ -1798,5 +1789,14 @@
   "title": "Illus: 1000 career kills",
   "text": "Illus reached 1000 career kills",
   "link": "#/player/illus"
+ },
+ {
+  "id": "milestone:jira-jisaki:mvp:100",
+  "type": "milestone",
+  "ts": 1794144834,
+  "date": "2026-11-08",
+  "title": "Jira Jisaki: 100 MVP rounds",
+  "text": "Jira Jisaki reached 100 MVP rounds",
+  "link": "#/player/jira-jisaki"
  }
 ]
