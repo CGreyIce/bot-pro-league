@@ -107,8 +107,8 @@
   "flood-flashers",
   "division20",
   "raven-song",
-  "infernum-e-sports",
   "bluebird",
+  "infernum-e-sports",
   "pepegax",
   "bloom-e-sports",
   "divide-conquer",
@@ -401,28 +401,28 @@
    "mvp": 131
   },
   "plainyingying": {
-   "maps": 56,
-   "kills": 978,
-   "mvp": 145
+   "maps": 57,
+   "kills": 995,
+   "mvp": 149
   },
   "fleurcoz": {
-   "maps": 56,
-   "kills": 897,
-   "mvp": 122
+   "maps": 57,
+   "kills": 917,
+   "mvp": 125
   },
   "winda": {
-   "maps": 58,
-   "kills": 925,
-   "mvp": 147
+   "maps": 59,
+   "kills": 940,
+   "mvp": 150
   },
   "lumpydayo": {
-   "maps": 56,
-   "kills": 912,
-   "mvp": 138
+   "maps": 57,
+   "kills": 934,
+   "mvp": 141
   },
   "venicec": {
-   "maps": 60,
-   "kills": 916,
+   "maps": 61,
+   "kills": 924,
    "mvp": 99
   },
   "beyouna": {
@@ -726,29 +726,29 @@
    "mvp": 77
   },
   "elfy-mint": {
-   "maps": 61,
-   "kills": 974,
-   "mvp": 146
+   "maps": 62,
+   "kills": 988,
+   "mvp": 148
   },
   "illus": {
-   "maps": 62,
-   "kills": 1010,
-   "mvp": 163
+   "maps": 63,
+   "kills": 1023,
+   "mvp": 165
   },
   "kairi": {
-   "maps": 71,
-   "kills": 1069,
-   "mvp": 162
+   "maps": 72,
+   "kills": 1084,
+   "mvp": 164
   },
   "declaration": {
-   "maps": 62,
-   "kills": 911,
+   "maps": 63,
+   "kills": 916,
    "mvp": 106
   },
   "zuann": {
-   "maps": 71,
-   "kills": 1219,
-   "mvp": 175
+   "maps": 72,
+   "kills": 1234,
+   "mvp": 176
   },
   "luminmochi": {
    "maps": 37,
@@ -2498,6 +2498,7 @@
   "upset:nova-initia-invitational-i:1-9",
   "upset:phase-shift-invitational-i:1-1",
   "upset:phase-shift-invitational-i:1-4",
+  "upset:second-wind-invitational-i:1-12",
   "upset:second-wind-invitational-i:1-2"
  ],
  "v": 1,

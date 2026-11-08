@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:kojadayo:kills:500",
-  "type": "milestone",
-  "ts": 1793680815,
-  "date": "2026-11-03",
-  "title": "Kojadayo: 500 career kills",
-  "text": "Kojadayo reached 500 career kills",
-  "link": "#/player/kojadayo"
- },
- {
   "id": "milestone:illus:maps:50",
   "type": "milestone",
   "ts": 1793682867,
@@ -1798,5 +1789,14 @@
   "title": "yunaeyo: 150 MVP rounds",
   "text": "yunaeyo reached 150 MVP rounds",
   "link": "#/player/yunaeyo"
+ },
+ {
+  "id": "milestone:winda:mvp:150",
+  "type": "milestone",
+  "ts": 1794166389,
+  "date": "2026-11-09",
+  "title": "winda: 150 MVP rounds",
+  "text": "winda reached 150 MVP rounds",
+  "link": "#/player/winda"
  }
 ]
