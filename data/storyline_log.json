@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:wellson111:mvp:100",
-  "type": "milestone",
-  "ts": 1793640108,
-  "date": "2026-11-03",
-  "title": "Wellson111: 100 MVP rounds",
-  "text": "Wellson111 reached 100 MVP rounds",
-  "link": "#/player/wellson111"
- },
- {
   "id": "milestone:mmirawr:maps:50",
   "type": "milestone",
   "ts": 1793640108,
@@ -1798,5 +1789,14 @@
   "title": "L2Strike: 100 MVP rounds",
   "text": "L2Strike reached 100 MVP rounds",
   "link": "#/player/l2strike"
+ },
+ {
+  "id": "milestone:sadgeboi:kills:1000",
+  "type": "milestone",
+  "ts": 1794105292,
+  "date": "2026-11-08",
+  "title": "Sadgeboi: 1000 career kills",
+  "text": "Sadgeboi reached 1000 career kills",
+  "link": "#/player/sadgeboi"
  }
 ]
