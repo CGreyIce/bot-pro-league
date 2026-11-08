@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:cursiffe:kills:500",
-  "type": "milestone",
-  "ts": 1793623812,
-  "date": "2026-11-02",
-  "title": "Cursiffe: 500 career kills",
-  "text": "Cursiffe reached 500 career kills",
-  "link": "#/player/cursiffe"
- },
- {
-  "id": "milestone:resent:kills:500",
-  "type": "milestone",
-  "ts": 1793632477,
-  "date": "2026-11-02",
-  "title": "Resent: 500 career kills",
-  "text": "Resent reached 500 career kills",
-  "link": "#/player/resent"
- },
- {
   "id": "milestone:ice:mvp:100",
   "type": "milestone",
   "ts": 1793632477,
@@ -1798,5 +1780,23 @@
   "title": "Chisa_Scarlett: 500 career kills",
   "text": "Chisa_Scarlett reached 500 career kills",
   "link": "#/player/chisa-scarlett"
+ },
+ {
+  "id": "milestone:ziweiv:mvp:100",
+  "type": "milestone",
+  "ts": 1794101158,
+  "date": "2026-11-08",
+  "title": "Ziweiv: 100 MVP rounds",
+  "text": "Ziweiv reached 100 MVP rounds",
+  "link": "#/player/ziweiv"
+ },
+ {
+  "id": "milestone:soozy:mvp:100",
+  "type": "milestone",
+  "ts": 1794101158,
+  "date": "2026-11-08",
+  "title": "Soozy: 100 MVP rounds",
+  "text": "Soozy reached 100 MVP rounds",
+  "link": "#/player/soozy"
  }
 ]
