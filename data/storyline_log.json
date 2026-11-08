@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:ice:mvp:100",
-  "type": "milestone",
-  "ts": 1793632477,
-  "date": "2026-11-02",
-  "title": "Ice: 100 MVP rounds",
-  "text": "Ice reached 100 MVP rounds",
-  "link": "#/player/ice"
- },
- {
-  "id": "milestone:adrina-ii:kills:500",
-  "type": "milestone",
-  "ts": 1793632477,
-  "date": "2026-11-02",
-  "title": "adrina.ii: 500 career kills",
-  "text": "adrina.ii reached 500 career kills",
-  "link": "#/player/adrina-ii"
- },
- {
-  "id": "milestone:dirfun:mvp:100",
-  "type": "milestone",
-  "ts": 1793636816,
-  "date": "2026-11-03",
-  "title": "Dirfun: 100 MVP rounds",
-  "text": "Dirfun reached 100 MVP rounds",
-  "link": "#/player/dirfun"
- },
- {
   "id": "milestone:wellson111:mvp:100",
   "type": "milestone",
   "ts": 1793640108,
@@ -1798,5 +1771,32 @@
   "title": "Soozy: 100 MVP rounds",
   "text": "Soozy reached 100 MVP rounds",
   "link": "#/player/soozy"
+ },
+ {
+  "id": "milestone:lenette:maps:50",
+  "type": "milestone",
+  "ts": 1794103133,
+  "date": "2026-11-08",
+  "title": "lenette: 50 maps played",
+  "text": "lenette reached 50 maps played",
+  "link": "#/player/lenette"
+ },
+ {
+  "id": "milestone:nyuii:maps:50",
+  "type": "milestone",
+  "ts": 1794103133,
+  "date": "2026-11-08",
+  "title": "Nyuii: 50 maps played",
+  "text": "Nyuii reached 50 maps played",
+  "link": "#/player/nyuii"
+ },
+ {
+  "id": "milestone:l2strike:mvp:100",
+  "type": "milestone",
+  "ts": 1794103133,
+  "date": "2026-11-08",
+  "title": "L2Strike: 100 MVP rounds",
+  "text": "L2Strike reached 100 MVP rounds",
+  "link": "#/player/l2strike"
  }
 ]
