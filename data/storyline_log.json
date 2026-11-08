@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:kogara-toto:maps:50",
-  "type": "milestone",
-  "ts": 1793678348,
-  "date": "2026-11-03",
-  "title": "Kogara Toto: 50 maps played",
-  "text": "Kogara Toto reached 50 maps played",
-  "link": "#/player/kogara-toto"
- },
- {
   "id": "milestone:kojadayo:kills:500",
   "type": "milestone",
   "ts": 1793680815,
@@ -1798,5 +1789,14 @@
   "title": "Anony: 100 MVP rounds",
   "text": "Anony reached 100 MVP rounds",
   "link": "#/player/anony"
+ },
+ {
+  "id": "milestone:yunaeyo:mvp:150",
+  "type": "milestone",
+  "ts": 1794160130,
+  "date": "2026-11-09",
+  "title": "yunaeyo: 150 MVP rounds",
+  "text": "yunaeyo reached 150 MVP rounds",
+  "link": "#/player/yunaeyo"
  }
 ]
