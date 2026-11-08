@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:rebebx:maps:50",
-  "type": "milestone",
-  "ts": 1793690770,
-  "date": "2026-11-03",
-  "title": "rebebx: 50 maps played",
-  "text": "rebebx reached 50 maps played",
-  "link": "#/player/rebebx"
- },
- {
-  "id": "milestone:tokieshepherdvt:mvp:100",
-  "type": "milestone",
-  "ts": 1793694876,
-  "date": "2026-11-03",
-  "title": "TokieShepherdVT: 100 MVP rounds",
-  "text": "TokieShepherdVT reached 100 MVP rounds",
-  "link": "#/player/tokieshepherdvt"
- },
- {
   "id": "milestone:tapiyokaaa:mvp:100",
   "type": "milestone",
   "ts": 1793696995,
@@ -1798,5 +1780,23 @@
   "title": "mmirawr_: 1000 career kills",
   "text": "mmirawr_ reached 1000 career kills",
   "link": "#/player/mmirawr"
+ },
+ {
+  "id": "milestone:mmirawr:mvp:150",
+  "type": "milestone",
+  "ts": 1794180829,
+  "date": "2026-11-09",
+  "title": "mmirawr_: 150 MVP rounds",
+  "text": "mmirawr_ reached 150 MVP rounds",
+  "link": "#/player/mmirawr"
+ },
+ {
+  "id": "milestone:yojareddo:kills:1000",
+  "type": "milestone",
+  "ts": 1794180829,
+  "date": "2026-11-09",
+  "title": "YoJareddo: 1000 career kills",
+  "text": "YoJareddo reached 1000 career kills",
+  "link": "#/player/yojareddo"
  }
 ]
