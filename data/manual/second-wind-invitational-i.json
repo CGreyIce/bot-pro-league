@@ -11,21 +11,21 @@
    "bestOf": 3,
    "teams": [
     "Cosmos",
-    "Aimpunch",
-    "Opal",
     "The Gigarage",
-    "Artisian",
     "Kiedz",
-    "Neverland",
-    "Aetherline",
     "degree",
-    "division20",
     "Raven Song",
-    "Infernum E-Sports",
-    "PepegaX",
     "Bloom E-Sports",
-    "Divide&Conquer",
-    "Alcheministry"
+    "Alcheministry",
+    "The Nomads",
+    "Caelum Scala",
+    "Fruit Basket",
+    "Mourningstar",
+    "Aspire",
+    "Aeternum",
+    "0v3",
+    "Nightshade",
+    "Cyanide"
    ],
    "matches": [
     {
@@ -230,5 +230,5 @@
   }
  ],
  "formatLabel": "16-team single elimination",
- "formatNote": "The 16 highest-ranked BPL teams outside the Conquerors Stage 2026 playoffs, invited for a second shot at a title. Single elimination, every match a Bo3, seeded by BPL ranking points: 1 plays 16, 2 plays 15 and so on, with a third-place match."
+ "formatNote": "16 teams from outside the Conquerors Stage 2026 playoffs, picked across the whole BPL ranking (#1 to #54), so the lower-ranked teams get a shot too. Single elimination, every match a Bo3, seeded by BPL ranking points: 1 plays 16, 2 plays 15 and so on, with a third-place match."
 }
