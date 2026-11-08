@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:goonuyun:kills:500",
-  "type": "milestone",
-  "ts": 1793657467,
-  "date": "2026-11-03",
-  "title": "Goonuyun: 500 career kills",
-  "text": "Goonuyun reached 500 career kills",
-  "link": "#/player/goonuyun"
- },
- {
   "id": "milestone:itzmaigay:kills:500",
   "type": "milestone",
   "ts": 1793657467,
@@ -1798,5 +1789,14 @@
   "title": "ItzMaigo: 100 MVP rounds",
   "text": "ItzMaigo reached 100 MVP rounds",
   "link": "#/player/itzmaigo"
+ },
+ {
+  "id": "milestone:hakase:mvp:150",
+  "type": "milestone",
+  "ts": 1794135532,
+  "date": "2026-11-08",
+  "title": "Hakase: 150 MVP rounds",
+  "text": "Hakase reached 150 MVP rounds",
+  "link": "#/player/hakase"
  }
 ]
