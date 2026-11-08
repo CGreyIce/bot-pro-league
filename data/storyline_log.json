@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:illus:maps:50",
-  "type": "milestone",
-  "ts": 1793682867,
-  "date": "2026-11-03",
-  "title": "Illus: 50 maps played",
-  "text": "Illus reached 50 maps played",
-  "link": "#/player/illus"
- },
- {
-  "id": "milestone:declaration:maps:50",
-  "type": "milestone",
-  "ts": 1793682867,
-  "date": "2026-11-03",
-  "title": "declaration__: 50 maps played",
-  "text": "declaration__ reached 50 maps played",
-  "link": "#/player/declaration"
- },
- {
   "id": "milestone:zuann:kills:1000",
   "type": "milestone",
   "ts": 1793682867,
@@ -1798,5 +1780,23 @@
   "title": "winda: 150 MVP rounds",
   "text": "winda reached 150 MVP rounds",
   "link": "#/player/winda"
+ },
+ {
+  "id": "milestone:sneakyyyyy:kills:1000",
+  "type": "milestone",
+  "ts": 1794169963,
+  "date": "2026-11-09",
+  "title": "sneakyyyyy: 1000 career kills",
+  "text": "sneakyyyyy reached 1000 career kills",
+  "link": "#/player/sneakyyyyy"
+ },
+ {
+  "id": "milestone:kokushi-vampir:kills:1000",
+  "type": "milestone",
+  "ts": 1794169963,
+  "date": "2026-11-09",
+  "title": "kokushi_vampir: 1000 career kills",
+  "text": "kokushi_vampir reached 1000 career kills",
+  "link": "#/player/kokushi-vampir"
  }
 ]
