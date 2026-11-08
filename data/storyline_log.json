@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:itzmaigay:kills:500",
-  "type": "milestone",
-  "ts": 1793657467,
-  "date": "2026-11-03",
-  "title": "ItzMaigay: 500 career kills",
-  "text": "ItzMaigay reached 500 career kills",
-  "link": "#/player/itzmaigay"
- },
- {
   "id": "milestone:awtoh:mvp:100",
   "type": "milestone",
   "ts": 1793660924,
@@ -1798,5 +1789,14 @@
   "title": "Hakase: 150 MVP rounds",
   "text": "Hakase reached 150 MVP rounds",
   "link": "#/player/hakase"
+ },
+ {
+  "id": "milestone:illus:kills:1000",
+  "type": "milestone",
+  "ts": 1794141161,
+  "date": "2026-11-08",
+  "title": "Illus: 1000 career kills",
+  "text": "Illus reached 1000 career kills",
+  "link": "#/player/illus"
  }
 ]
