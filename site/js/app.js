@@ -4185,7 +4185,7 @@ async function openEditor(slug){
     const rk=Object.keys(byRound).sort((a,b)=>a-b);
     const rt=(rn)=>`<input class="ae-rt-in" data-sid="${st.id}" data-round="${rn}" value="${esc((st.roundTitles&&st.roundTitles[rn])||('Round '+rn))}">`;
     let body;
-    if(st.format==="single_elim"){
+    if(st.format==="single_elim"||st.format==="ext_gsl"){
       body=`<div class="ae-bracket">${rk.map(rn=>`<div class="ae-col">${rt(rn)}${byRound[rn].map(m=>matchRow(st.id,m,res[m.id])).join("")}</div>`).join("")}</div>`;
     } else {
       body=rk.map(rn=>`<div class="ae-rrround">${rt(rn)}${byRound[rn].map(m=>matchRow(st.id,m,res[m.id])).join("")}</div>`).join("")
@@ -4201,7 +4201,7 @@ async function openEditor(slug){
     return `<div class="ae-stage">
       <div class="ae-stage-head">
         <input class="ae-sname" data-sid="${st.id}" value="${esc(st.name)}">
-        <span class="muted" style="font-size:12px;text-transform:capitalize">${st.format.replace("_"," ")}</span>
+        <span class="muted" style="font-size:12px;text-transform:capitalize">${st.format==="ext_gsl"?"Extended GSL":st.format.replace("_"," ")}</span>
         <label class="muted" style="font-size:12px">Bo <input class="ae-bo" data-sid="${st.id}" type="number" min="1" value="${st.bestOf||1}"></label>
         ${st.format!=="swiss"?`<button class="ae-reseed" data-sid="${st.id}">edit teams</button>`:''}
         <button class="ae-delstage" data-sid="${st.id}" title="delete stage">✕ stage</button>
@@ -4225,7 +4225,8 @@ async function openEditor(slug){
         <div><label class="adm-l">Format</label><select id="as-fmt" class="adm-in">
           <option value="single_elim">Single Elim (bracket)</option>
           <option value="round_robin">Round Robin</option>
-          <option value="swiss">Swiss (add matches by hand)</option></select></div>
+          <option value="swiss">Swiss (add matches by hand)</option>
+          <option value="ext_gsl">Extended GSL (group of 6, in seed order)</option></select></div>
         <div><label class="adm-l">Best of</label><input id="as-bo" class="adm-in" type="number" min="1" value="1" style="width:70px"></div>
       </div>
       <label class="adm-l">Teams — one per line (seed order for a bracket)</label>
@@ -4265,6 +4266,7 @@ async function openEditor(slug){
     const name=$("#as-name").value.trim(), fmt=$("#as-fmt").value;
     const teams=$("#as-teams").value.split("\n").map(s=>s.trim()).filter(Boolean);
     if(fmt!=="swiss" && teams.length<2){ alert("Add at least 2 teams for this format."); return; }
+    if(fmt==="ext_gsl" && teams.length!==6){ alert("An Extended GSL group needs exactly 6 teams, in seed order."); return; }
     await apiPost("/api/stage/add",{slug, name, format:fmt, teams, bestOf:+$("#as-bo").value||1}); reload(); };
 }
 
@@ -4573,17 +4575,18 @@ function renderTournament(slug){
   // bracket matches: no hover popup — clicking the match opens an HLTV-style card instead
   const hovAttr = ()=> '';
   // --- tree bracket (single/double elim) ---
-  const treeTeam = (m, side)=>{
+  const treeTeam = (m, side, gsl)=>{
     const name = side==='a'?m.a:m.b, teamSlug = side==='a'?m.aTeam:m.bTeam;
     const score = side==='a'?m.sa:m.sb, win = m.w===(side==='a'?1:2);
     const t = teamSlug ? teamBySlug(teamSlug) : null;
     const logo = nationCrest(name,15) || (t&&t.logo ? `<img class="bt-logo" src="${esc(t.logo)}" alt="">` : '');
-    const nm = name ? (teamSlug ? `<a href="#/team/${teamSlug}">${esc(name)}</a>` : esc(name)) : '<span class="muted">TBD</span>';
+    const nm = name ? (teamSlug ? `<a href="#/team/${teamSlug}">${esc(name)}</a>` : esc(name)) : `<span class="muted">${esc((gsl&&gsl.tbd&&gsl.tbd[side==='a'?0:1])||'TBD')}</span>`;
     const sc = score!=null ? score : '';
-    return `<div class="bkt-team ${win?'win':''}"${hovAttr(m, side, name, teamSlug)}>${logo}${name?seedTag(name,teamSlug):''}<span class="bt-name">${nm}</span><span class="bt-score">${sc}</span></div>`;
+    const cls = win || (gsl&&gsl.box&&name) ? 'win' : gsl&&(m.w===1||m.w===2) ? 'lose' : '';
+    return `<div class="bkt-team ${cls}"${hovAttr(m, side, name, teamSlug)}>${logo}${name?seedTag(name,teamSlug):''}<span class="bt-name">${nm}</span><span class="bt-score">${sc}</span></div>`;
   };
   const mref = (m, pfx)=> (m.i!=null ? ` data-match="${pfx}${m.i}"` : '');
-  const treeMatch = (m, pfx="", slot, round)=>`<div class="bkt-match"${mref(m,pfx)}${slot!=null?` data-round="${round}" data-slot="${slot}"`:''}>${treeTeam(m,'a')}${treeTeam(m,'b')}</div>`;
+  const treeMatch = (m, pfx="", slot, round, gsl)=>`<div class="bkt-match"${mref(m,pfx)}${slot!=null?` data-round="${round}" data-slot="${slot}"`:''}>${treeTeam(m,'a',gsl)}${treeTeam(m,'b',gsl)}</div>`;
   const isByeMatch = m => m.a==="(bye)" || m.b==="(bye)";
   // placement deciders (3rd place, 5th-8th, 9th...) float on their own, pulled out of the main
   // tree and grouped under their label in match order
@@ -4641,15 +4644,30 @@ function renderTournament(slug){
       <tbody>${rows}</tbody></table>${fin?`<div class="grp-adv-note">${tr.leaderboard?`Top ${nAdv} go onto the final leaderboard`:`Top ${nAdv} advance to the playoffs`}</div>`:''}
       ${ch?`<div class="gc-note">${tr.leaderboard?`Top ${nAdv} chance`:'Playoff chance'}: the group's remaining matches played ${CHANCE_RUNS.toLocaleString('en-US')} times, each map priced from the two line-ups' Rating Points like the match odds. <b>✓ In</b>: through whatever happens. <b>Out</b>: can't make the top ${nAdv}.</div>`:''}</div>`;
   };
-  const fmtLabel = f => ({single_elim:"Single Elimination",round_robin:"Round Robin",swiss:"Swiss"}[f]||f);
+  const fmtLabel = f => ({single_elim:"Single Elimination",round_robin:"Round Robin",swiss:"Swiss",ext_gsl:"Extended GSL"}[f]||f);
+  // Extended GSL group (build/manual.py gen_ext_gsl, fixed match ids): rounds 1 and 3 are the upper bracket, 2, 4 and 5 the lower
+  const GSL_TBD = {4:['Upper R1 loser','Upper R1 loser'],5:['Upper R1 winner','Upper R1 winner'],6:['Lower R1 winner','Lower R1 winner'],7:['Lower R2 winner','Upper Final loser']};
+  const gslRound = (rd, pfx, drop)=>`<div class="bkt-round"><div class="bkt-round-title${drop?' gsl-drop':''}">${esc(rd.title)}</div>
+      <div class="bkt-round-matches">${rd.matches.map(m=>treeMatch(m,pfx,null,null,{tbd:GSL_TBD[m.i]})).join("")}</div></div>`;
+  // one group's card: upper bracket and who's through on top, the lower bracket under it (the arrows mark rounds teams drop into)
+  const gslCard = st=>{ const pfx=st.id+"-", rd=n=>(st.rounds||[]).find(r=>r.round===n),
+      won=x=>{ const m=x.matches[0]; return m.w===1?[m.a,m.aTeam]:m.w===2?[m.b,m.bTeam]:['',null]; },
+      [up,upT]=won(rd(3)), [lo,loT]=won(rd(5)), box={tbd:['Upper Final winner','Lower Final winner'], box:true};
+    return `<section class="gsl-card"><div class="gsl-card-h">${esc(st.name)}</div>
+      <div class="bkt-wrap"><div class="bkt"><svg class="bkt-svg"></svg>${gslRound(rd(1),pfx)}${gslRound(rd(3),pfx)}
+        <div class="bkt-round"><div class="bkt-round-title">To Playoffs</div><div class="bkt-round-matches"><div class="bkt-match gsl-qbox">${treeTeam({a:up,aTeam:upT},'a',box)}${treeTeam({b:lo,bTeam:loT},'b',box)}</div></div></div></div></div>
+      <div class="bkt-wrap"><div class="bkt"><svg class="bkt-svg"></svg>${gslRound(rd(2),pfx,true)}${gslRound(rd(4),pfx)}${gslRound(rd(5),pfx,true)}</div></div></section>`; };
 
   let bracketBlock;
   if(tr.stages && tr.stages.length){
-    bracketBlock = tr.stages.map(st=>{
+    bracketBlock = (tr.formatNote&&tr.stages.some(s=>s.format==="ext_gsl")?`<div class="gsl-note">${esc(tr.formatNote)}</div>`:'') + tr.stages.map(st=>{
       const pfx = st.id + "-";
       const head = `<h2 class="section-title" style="margin-top:20px"><span class="accent-bar"></span>${esc(st.name)}
         <span class="muted" style="font-size:11px">${fmtLabel(st.format)}${st.bestOf>1?' · Bo'+st.bestOf:''}</span></h2>`;
       if(st.format==="single_elim") return head + treeSection("", st.rounds, pfx, true) + thirdPlaceBox(st.rounds, pfx);
+      if(st.format==="ext_gsl"){ const gs=tr.stages.filter(s=>s.format==="ext_gsl"); if(st!==gs[0]) return '';   // all the groups share one grid
+        return `<h2 class="section-title" style="margin-top:20px"><span class="accent-bar"></span>Group Stage
+          <span class="muted" style="font-size:11px">${fmtLabel(st.format)}${st.bestOf>1?' · Bo'+st.bestOf:''}</span></h2><div class="gsl-grid">${gs.map(gslCard).join("")}</div>`; }
       return head + stageStandings(st) + listRounds(st.rounds, pfx);
     }).join("");
   } else if(isElim){

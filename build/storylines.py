@@ -546,7 +546,7 @@ class Storylines:
                     if sw is None or sl is None or sl - sw < UPSET_CARD:
                         continue
                 score = f"{m['sa']}-{m['sb']}" if m["w"] == 1 else f"{m['sb']}-{m['sa']}"
-                where = f"{st['name']}, {rtitle.lower()}" if st and st.get("format") == "swiss" else rtitle.lower()
+                where = f"{st['name']}, {rtitle.lower()}" if st and st.get("format") in ("swiss", "ext_gsl") else rtitle.lower()
                 out.append({"gap": round(sl - sw), "w": w, "l": l, "score": score, "event": tr["name"], "slug": tr["slug"],
                             "ref": ref, "round": where, "ts": m["ts"], "wa": round(sw), "la": round(sl), "m": m,
                             "chance": chance})
@@ -582,6 +582,13 @@ class Storylines:
             if tr["slug"] not in self.manual or tr.get("champion") or not tr.get("stages"):
                 continue
             man = _load(os.path.join(self.dir, "manual", tr["slug"] + ".json"), {})
+            # Extended GSL groups: the playoff fills one group at a time, so it isn't "on" until they're all done
+            gsl_left = sum(1 for st in tr["stages"] if st["format"] == "ext_gsl" for rd in st["rounds"] for m in rd["matches"] if not m.get("w"))
+            if gsl_left:
+                cards.append({"kind": "live", "label": "On now", "title": _clean(tr["name"]),
+                              "text": f"Group stage: {gsl_left} match{'es' if gsl_left != 1 else ''} to play. Two from each group reach the playoffs.",
+                              "link": f"#/tournament/{tr['slug']}"})
+                continue
             po = next((st for st in reversed(tr["stages"]) if st["format"] == "single_elim"), None)
             seeded = po and any((t[0] if isinstance(t, (list, tuple)) else t) for t in po.get("teams", []))
             if po and seeded:

@@ -5,6 +5,7 @@ A tournament is a list of stages; each stage has a format:
   single_elim   auto-advancing bracket (standard seeding, byes)
   round_robin   everyone plays everyone (circle method), standings by record
   swiss         a flat match list you add to by hand, standings by record
+  ext_gsl       Extended GSL group: 6 teams, double elimination, two qualify (see gen_ext_gsl)
 
 Group stage + playoffs = e.g. two round_robin stages ("Group A/B") + a
 single_elim stage ("Playoffs"). Editable master: data/manual/<slug>.json.
@@ -84,6 +85,24 @@ def gen_round_robin(teams):
         arr = [arr[0]] + [arr[-1]] + arr[1:-1]   # rotate keeping first fixed
     titles = {str(r + 1): f"Round {r + 1}" for r in range(rounds)}
     return matches, titles
+
+# Extended GSL (9 Nov 2026, first used at Maigo's Rookie Roulette): a six-team double-elimination group.
+# Seeds 1-4 start in the upper bracket, 5-6 in the lower. The upper final's winner and the lower final's
+# winner qualify. The match ids are fixed: site/js/app.js draws the group from them (GSL_TBD).
+EXT_GSL = "ext_gsl"
+GROUP_FORMATS = ("swiss", "round_robin", EXT_GSL)
+GSL_UPPER_FINAL, GSL_LOWER_R2, GSL_LOWER_FINAL = 5, 6, 7
+
+def gen_ext_gsl(teams):
+    if len(teams) != 6:
+        raise ValueError("An Extended GSL group needs exactly 6 teams, in seed order.")
+    plan = [(1, {"seed": 1}, {"seed": 4}), (1, {"seed": 2}, {"seed": 3}),          # upper round 1
+            (2, {"seed": 5}, {"seed": 6}), (2, {"loserOf": 1}, {"loserOf": 2}),    # lower round 1
+            (3, {"match": 1}, {"match": 2}),                                       # upper final
+            (4, {"match": 3}, {"match": 4}),                                       # lower round 2
+            (5, {"match": 6}, {"loserOf": 5})]                                     # lower final
+    matches = [{"id": i, "round": r, "fa": fa, "fb": fb, "sa": None, "sb": None} for i, (r, fa, fb) in enumerate(plan, 1)]
+    return matches, {"1": "Upper Round 1", "2": "Lower Round 1", "3": "Upper Final", "4": "Lower Round 2", "5": "Lower Final"}
 
 # ---------------- swiss auto-pairing ----------------
 SWISS_DEFAULT_ROUNDS = 5
@@ -217,7 +236,18 @@ def _flat_resolved(stage):
     return res
 
 def stage_resolved(stage):
-    return _elim_resolved(stage) if stage["format"] == "single_elim" else (_flat_resolved(stage), None)
+    return _elim_resolved(stage) if stage["format"] in ("single_elim", EXT_GSL) else (_flat_resolved(stage), None)
+
+def _winner_loser(r):
+    """(winner, loser) of a resolved match, (None, None) while it's undecided."""
+    a, b = r.get("a"), r.get("b")
+    return (a, b) if r.get("w") == 1 else (b, a) if r.get("w") == 2 else (None, None)
+
+def _ext_gsl_order(order, res):
+    """An Extended GSL group's table: who's qualified, then who's still in, then who's out (latest exit first)."""
+    top = [n for n in (_winner_loser(res[m])[0] for m in (GSL_UPPER_FINAL, GSL_LOWER_FINAL)) if n]
+    out = [n for n in (_winner_loser(res[m])[1] for m in (GSL_LOWER_FINAL, GSL_LOWER_R2, 4, 3)) if n]
+    return top + [n for n in order if n not in top and n not in out] + out
 
 def stage_standings(stage, res):
     rec = {}
@@ -258,6 +288,8 @@ def stage_standings(stage, res):
                 top.append(tr["b"] if tr["w"] == 1 else tr["a"])
         top = list(dict.fromkeys(n for n in top if n))
         order = top + [n for n in order if n not in top]
+    if stage["format"] == EXT_GSL:
+        order = _ext_gsl_order(order, res)
     return [{"name": n, "w": rec[n]["w"], "l": rec[n]["l"]} for n in order]
 
 # ---------------- to standard schema ----------------
@@ -473,21 +505,25 @@ def tournament_placements(man):
                     out.append({"rank": rank, "name": t, "result": label, "tie": tie}); placed.add(t)
     # teams that didn't reach the playoff bracket — rank by their group record. Not while the groups are
     # still being played (an unplayed match, or a swiss round still to draft): nobody's out yet.
-    grps = [s for s in stages if s["format"] in ("swiss", "round_robin")]
+    grps = [s for s in stages if s["format"] in GROUP_FORMATS]
     if any(m.get("sa") is None for s in grps for m in s["matches"]) or any(
             s["format"] == "swiss" and s.get("rounds") and not _group_complete(s) for s in grps):
         return out
-    grp_rec = {}
+    grp_rec, exit_tier = {}, {}
     for s in stages:
-        if s["format"] not in ("swiss", "round_robin"):
+        if s["format"] not in GROUP_FORMATS:
             continue
         r2, _ = stage_resolved(s)
+        if s["format"] == EXT_GSL:              # going out later in the lower bracket ranks higher
+            for tier, mids in enumerate(((GSL_LOWER_FINAL,), (GSL_LOWER_R2,), (4, 3))):
+                for mid in mids:
+                    exit_tier[_winner_loser(r2[mid])[1]] = tier
         for row in stage_standings(s, r2):
             nm = row["name"]
             if nm and nm not in grp_rec:
                 grp_rec[nm] = (row["w"], -row["l"])
     remaining = sorted((nm for nm in grp_rec if nm not in placed and nm not in in_bracket),
-                       key=lambda nm: (-grp_rec[nm][0], grp_rec[nm][1], nm.lower()))
+                       key=lambda nm: (exit_tier.get(nm, 0), -grp_rec[nm][0], grp_rec[nm][1], nm.lower()))
     rank = max(len(out), len(in_bracket)) + 1
     for nm in remaining:
         out.append({"rank": rank, "name": nm, "result": "Group Stage", "tie": True}); rank += 1
@@ -543,7 +579,7 @@ def to_standard(man):
     return {
         "slug": man["slug"], "name": man["name"], "date": man["date"], "tier": man["tier"],
         "type": "multi" if len(stages) != 1 else {"single_elim": "single elimination",
-                 "round_robin": "round robin", "swiss": "swiss"}[man["stages"][0]["format"]],
+                 "round_robin": "round robin", "swiss": "swiss", EXT_GSL: "extended gsl"}[man["stages"][0]["format"]],
         "manual": True, "champion": champion, "stages": stages,
         "participants": parts, "matches": flat, "roundTitles": {},
         "finalStandings": tournament_placements(man),
@@ -593,6 +629,8 @@ def ensure_third_place(man):
                        "bestOf": None, "thirdPlace": True})
 
 def _group_complete(st):
+    if st.get("format") == EXT_GSL:
+        return bool(st["matches"]) and all(m.get("sa") is not None and m.get("sb") is not None for m in st["matches"])
     total = st.get("rounds", SWISS_DEFAULT_ROUNDS)
     rounds = {m["round"] for m in st["matches"]}
     return (rounds == set(range(1, total + 1)) and
@@ -651,6 +689,27 @@ def _swiss_top2_seeds(man, groups, n):
             best = (cost, teams)
     return best[1]
 
+def ext_gsl_qualifiers(st):
+    """(upper final winner, lower final winner) of a finished Extended GSL group, else (None, None)."""
+    if not _group_complete(st):
+        return None, None
+    res, _ = _elim_resolved(st)
+    return _winner_loser(res[GSL_UPPER_FINAL])[0], _winner_loser(res[GSL_LOWER_FINAL])[0]
+
+def _seed_from_ext_gsl(man, po):
+    """Four Extended GSL groups feed an 8-team bracket, each group's two slots as soon as it ends. The
+    quarterfinals are A upper v B lower and C upper v D lower in one half, B upper v A lower and D upper v
+    C lower in the other, so two teams from one group can only meet in the final. Slot order is seed
+    order (gen_single_elim plays 1v8, 4v5, 2v7, 3v6). The seed badges stay the 24-team draw's."""
+    groups = [s for s in man["stages"] if s.get("format") == EXT_GSL]
+    if len(groups) != 4 or len(po["teams"]) != 8:
+        return
+    (au, al), (bu, bl), (cu, cl), (du, dl) = [ext_gsl_qualifiers(g) for g in groups]
+    was_seeded = all(po["teams"])
+    po["teams"] = [t or "" for t in (au, bu, du, cu, dl, cl, al, bl)]
+    if all(po["teams"]) and not was_seeded and man.get("predictions") == "playoffs":
+        man["predictionsLocked"] = False            # ▶ Start locked them for the groups
+
 def advance_per_group(man):
     """How many of each swiss group reach the self-seeding playoff (None without one)."""
     po = next((s for s in man.get("stages", []) if s.get("autoSeed")), None)
@@ -667,8 +726,11 @@ def auto_seed_playoffs(man):
     seeds 1..n from it (1 v n, ...). The board itself is never published.
     Re-evaluated on every save until a playoff score exists (so a corrected group score re-seeds);
     while groups are unfinished the slots stay TBD. Playoff-only predictions open the moment it seeds."""
-    po = next((s for s in man.get("stages", []) if s.get("autoSeed") in ("swiss_top2", "leaderboard")), None)
+    po = next((s for s in man.get("stages", []) if s.get("autoSeed") in ("swiss_top2", "leaderboard", EXT_GSL)), None)
     if not po or any(m.get("sa") is not None for m in po["matches"]):
+        return
+    if po["autoSeed"] == EXT_GSL:
+        _seed_from_ext_gsl(man, po)
         return
     groups = [s for s in man["stages"] if s.get("format") == "swiss"]
     n = len(po["teams"])
@@ -726,8 +788,12 @@ def team_finished(slug, team):
     n = lambda x: re.sub(r"[^a-z0-9]", "", (x or "").lower())
     k = n(team)
     for st in man.get("stages", []):
-        if st["format"] == "single_elim" and any(not t for t in st.get("teams", [])):
+        if st["format"] == "single_elim" and st.get("autoSeed") != EXT_GSL and any(not t for t in st.get("teams", [])):
             return False                                    # unseeded playoff: they might still qualify
+        if st["format"] == EXT_GSL and not _group_complete(st):
+            r_, _ = _elim_resolved(st)                      # through, but the playoff slot fills when the group ends
+            if k in {n(_winner_loser(r_[x])[0]) for x in (GSL_UPPER_FINAL, GSL_LOWER_FINAL)}:
+                return False
         if st["format"] == "swiss" and k in {n(t) for t in st.get("teams", [])} and not _group_complete(st):
             return False
         res, _ = stage_resolved(st)
@@ -789,6 +855,8 @@ def add_stage(slug, name, fmt, teams, best_of=1):
             matches[-1]["bestOf"] = int(man["finalBestOf"])
     elif fmt == "round_robin":
         matches, titles = gen_round_robin(teams)
+    elif fmt == EXT_GSL:
+        matches, titles = gen_ext_gsl(teams)
     else:  # swiss — start empty, add matches by hand
         matches, titles = [], {}
     man["stages"].append({"id": _next_stage_id(man), "name": name.strip() or fmt,
@@ -901,6 +969,8 @@ def reseed(slug, sid, teams):
         st["matches"], st["roundTitles"] = gen_single_elim(teams)
     elif st["format"] == "round_robin":
         st["matches"], st["roundTitles"] = gen_round_robin(teams)
+    elif st["format"] == EXT_GSL:
+        st["matches"], st["roundTitles"] = gen_ext_gsl(teams)
     save(man); return man
 
 def del_stage(slug, sid):

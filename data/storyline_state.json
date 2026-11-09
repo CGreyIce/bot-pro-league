@@ -99,8 +99,8 @@
   "aspire",
   "sacred-raven",
   "neverland",
-  "prism-divide",
   "new-jade",
+  "prism-divide",
   "degree",
   "setting-sun",
   "entity",
@@ -145,7 +145,7 @@
   "nightfang-covenant",
   "astral-bloom"
  ],
- "movesSeen": 119,
+ "movesSeen": 153,
  "top": {
   "player": "candybar-isblue",
   "team": "cosmos"
@@ -2532,6 +2532,7 @@
   "transfer:astralbloom:2026-09-29:ginjosaine+kogaratoto+yumenoakari",
   "transfer:eiromancers:2026-10-19:codedecho+twentyrosie",
   "transfer:eiromancers:2026-11-02:codedecho",
+  "transfer:eiromancers:2026-11-09:yuvirei",
   "transfer:lemontree:2026-10-19:kkayyteeee+rebebx",
   "transfer:lunarcadence:2026-09-29:erissuzukami+shiranamiramune+tsumugikokage",
   "transfer:masmark:2026-09-28:estellyy+hikariifloofie",

@@ -126,7 +126,7 @@ def run(data, data_dir):
                     h.add("error", "Event progress", f"{tname} · {st['name']}: round {cur} is complete but round {cur + 1} was never drafted.",
                           f"#/tournament/{slug}")
             if st.get("autoSeed") and not any(t for t in st.get("teams", [])):
-                groups = [g for g in man["stages"] if g.get("format") == "swiss"]
+                groups = [g for g in man["stages"] if g.get("format") in ("swiss", "ext_gsl")]
                 if groups and all(manual._group_complete(g) for g in groups):
                     h.add("error", "Event progress", f"{tname}: every group is complete but the {st['name']} bracket is still unseeded "
                           "(re-save any score to trigger seeding).", f"#/tournament/{slug}")

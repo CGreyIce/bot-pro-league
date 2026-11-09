@@ -72,6 +72,8 @@ def suggest(slug):
     if "challengers" in name:
         rules["champion_pro"] = {"tag": "", "logo": None}
         rules["seeds"] = {"target": f"BPL Legends Stage {year}", "count": min(15, len(st))}   # the top 3 of each of the 5 groups
+    elif "rookie roulette" in name:
+        rules["champion_pro"] = {"tag": "", "logo": None}         # the user's rule: the winner is promoted
     elif "pro cup" in name:
         rules["top_pro"] = {"n": 8, "teams": {}}
         rules["disband_rest"] = {"n": 8}

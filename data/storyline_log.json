@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:yuuschan:mvp:100",
-  "type": "milestone",
-  "ts": 1793708813,
-  "date": "2026-11-03",
-  "title": "yuuschan: 100 MVP rounds",
-  "text": "yuuschan reached 100 MVP rounds",
-  "link": "#/player/yuuschan"
- },
- {
   "id": "milestone:cassiopeiarawr:mvp:100",
   "type": "milestone",
   "ts": 1793712767,
@@ -1798,5 +1789,14 @@
   "title": "VeniceC: 1000 career kills",
   "text": "VeniceC reached 1000 career kills",
   "link": "#/player/venicec"
+ },
+ {
+  "id": "transfer:eiromancers:2026-11-09:yuvirei",
+  "type": "transfer",
+  "ts": 1794229566,
+  "date": "2026-11-09",
+  "title": "Eiromancers sign yuvirei",
+  "text": "in: yuvirei",
+  "link": "#/team/eiromancers"
  }
 ]

@@ -1,0 +1,574 @@
+{
+ "slug": "maigo-s-rookie-roulette",
+ "name": "Maigo's Rookie Roulette",
+ "tier": "a",
+ "date": "2026-11-09",
+ "stages": [
+  {
+   "id": 1,
+   "name": "Group A",
+   "format": "ext_gsl",
+   "bestOf": 3,
+   "teams": [
+    "Defiant Order",
+    "Starling Coven",
+    "Dreamstate",
+    "Gridlocked",
+    "Nightbloom",
+    "G.I. Jokes"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "fa": {
+      "seed": 1
+     },
+     "fb": {
+      "seed": 4
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "fa": {
+      "seed": 2
+     },
+     "fb": {
+      "seed": 3
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 3,
+     "round": 2,
+     "fa": {
+      "seed": 5
+     },
+     "fb": {
+      "seed": 6
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 2,
+     "fa": {
+      "loserOf": 1
+     },
+     "fb": {
+      "loserOf": 2
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 5,
+     "round": 3,
+     "fa": {
+      "match": 1
+     },
+     "fb": {
+      "match": 2
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 6,
+     "round": 4,
+     "fa": {
+      "match": 3
+     },
+     "fb": {
+      "match": 4
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 7,
+     "round": 5,
+     "fa": {
+      "match": 6
+     },
+     "fb": {
+      "loserOf": 5
+     },
+     "sa": null,
+     "sb": null
+    }
+   ],
+   "roundTitles": {
+    "1": "Upper Round 1",
+    "2": "Lower Round 1",
+    "3": "Upper Final",
+    "4": "Lower Round 2",
+    "5": "Lower Final"
+   }
+  },
+  {
+   "id": 2,
+   "name": "Group B",
+   "format": "ext_gsl",
+   "bestOf": 3,
+   "teams": [
+    "Eiromancers",
+    "Snowlit Temple",
+    "Maple Macabre",
+    "darkmatter",
+    "Perfectly Abnormal",
+    "Millefiore"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "fa": {
+      "seed": 1
+     },
+     "fb": {
+      "seed": 4
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "fa": {
+      "seed": 2
+     },
+     "fb": {
+      "seed": 3
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 3,
+     "round": 2,
+     "fa": {
+      "seed": 5
+     },
+     "fb": {
+      "seed": 6
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 2,
+     "fa": {
+      "loserOf": 1
+     },
+     "fb": {
+      "loserOf": 2
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 5,
+     "round": 3,
+     "fa": {
+      "match": 1
+     },
+     "fb": {
+      "match": 2
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 6,
+     "round": 4,
+     "fa": {
+      "match": 3
+     },
+     "fb": {
+      "match": 4
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 7,
+     "round": 5,
+     "fa": {
+      "match": 6
+     },
+     "fb": {
+      "loserOf": 5
+     },
+     "sa": null,
+     "sb": null
+    }
+   ],
+   "roundTitles": {
+    "1": "Upper Round 1",
+    "2": "Lower Round 1",
+    "3": "Upper Final",
+    "4": "Lower Round 2",
+    "5": "Lower Final"
+   }
+  },
+  {
+   "id": 3,
+   "name": "Group C",
+   "format": "ext_gsl",
+   "bestOf": 3,
+   "teams": [
+    "Hanabusa Estate",
+    "Boop Battalion",
+    "Mirai Fates",
+    "Invictus",
+    "Ashen Styx",
+    "From the Ashes"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "fa": {
+      "seed": 1
+     },
+     "fb": {
+      "seed": 4
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "fa": {
+      "seed": 2
+     },
+     "fb": {
+      "seed": 3
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 3,
+     "round": 2,
+     "fa": {
+      "seed": 5
+     },
+     "fb": {
+      "seed": 6
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 2,
+     "fa": {
+      "loserOf": 1
+     },
+     "fb": {
+      "loserOf": 2
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 5,
+     "round": 3,
+     "fa": {
+      "match": 1
+     },
+     "fb": {
+      "match": 2
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 6,
+     "round": 4,
+     "fa": {
+      "match": 3
+     },
+     "fb": {
+      "match": 4
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 7,
+     "round": 5,
+     "fa": {
+      "match": 6
+     },
+     "fb": {
+      "loserOf": 5
+     },
+     "sa": null,
+     "sb": null
+    }
+   ],
+   "roundTitles": {
+    "1": "Upper Round 1",
+    "2": "Lower Round 1",
+    "3": "Upper Final",
+    "4": "Lower Round 2",
+    "5": "Lower Final"
+   }
+  },
+  {
+   "id": 4,
+   "name": "Group D",
+   "format": "ext_gsl",
+   "bestOf": 3,
+   "teams": [
+    "Meiji Restoration",
+    "Ember Wolves",
+    "Lux Brumalis",
+    "Frostbyte",
+    "Crimson Meridian",
+    "Shiokarai"
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "fa": {
+      "seed": 1
+     },
+     "fb": {
+      "seed": 4
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "fa": {
+      "seed": 2
+     },
+     "fb": {
+      "seed": 3
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 3,
+     "round": 2,
+     "fa": {
+      "seed": 5
+     },
+     "fb": {
+      "seed": 6
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 2,
+     "fa": {
+      "loserOf": 1
+     },
+     "fb": {
+      "loserOf": 2
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 5,
+     "round": 3,
+     "fa": {
+      "match": 1
+     },
+     "fb": {
+      "match": 2
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 6,
+     "round": 4,
+     "fa": {
+      "match": 3
+     },
+     "fb": {
+      "match": 4
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 7,
+     "round": 5,
+     "fa": {
+      "match": 6
+     },
+     "fb": {
+      "loserOf": 5
+     },
+     "sa": null,
+     "sb": null
+    }
+   ],
+   "roundTitles": {
+    "1": "Upper Round 1",
+    "2": "Lower Round 1",
+    "3": "Upper Final",
+    "4": "Lower Round 2",
+    "5": "Lower Final"
+   }
+  },
+  {
+   "id": 5,
+   "name": "Playoffs",
+   "format": "single_elim",
+   "bestOf": 3,
+   "teams": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "matches": [
+    {
+     "id": 1,
+     "round": 1,
+     "fa": {
+      "seed": 1
+     },
+     "fb": {
+      "seed": 8
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 2,
+     "round": 1,
+     "fa": {
+      "seed": 4
+     },
+     "fb": {
+      "seed": 5
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 3,
+     "round": 1,
+     "fa": {
+      "seed": 2
+     },
+     "fb": {
+      "seed": 7
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 4,
+     "round": 1,
+     "fa": {
+      "seed": 3
+     },
+     "fb": {
+      "seed": 6
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 5,
+     "round": 2,
+     "fa": {
+      "match": 1
+     },
+     "fb": {
+      "match": 2
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 6,
+     "round": 2,
+     "fa": {
+      "match": 3
+     },
+     "fb": {
+      "match": 4
+     },
+     "sa": null,
+     "sb": null
+    },
+    {
+     "id": 7,
+     "round": 3,
+     "fa": {
+      "match": 5
+     },
+     "fb": {
+      "match": 6
+     },
+     "sa": null,
+     "sb": null
+    }
+   ],
+   "roundTitles": {
+    "1": "Quarterfinals",
+    "2": "Semifinals",
+    "3": "Final"
+   },
+   "autoSeed": "ext_gsl",
+   "perGroup": 2
+  }
+ ],
+ "formatLabel": "4 Groups (Extended GSL) + Playoffs",
+ "formatNote": "24 teams in 4 groups of 6, every match a Bo3. Each group is a double-elimination bracket: the four highest seeds (by their players' average Rating Points) start in the upper bracket and the other two in the lower. The winner of the upper final and the winner of the lower final go through, and the other four teams are out. The 8 qualifiers play a single-elimination playoff: each upper-bracket winner meets another group's lower-bracket winner in the quarterfinals, so two teams from one group can only meet again in the final. The champion is promoted to a pro team.",
+ "predictions": "playoffs",
+ "seeds": {
+  "Defiant Order": 1,
+  "Eiromancers": 2,
+  "Hanabusa Estate": 3,
+  "Meiji Restoration": 4,
+  "Ember Wolves": 5,
+  "Boop Battalion": 6,
+  "Snowlit Temple": 7,
+  "Starling Coven": 8,
+  "Dreamstate": 9,
+  "Maple Macabre": 10,
+  "Mirai Fates": 11,
+  "Lux Brumalis": 12,
+  "Frostbyte": 13,
+  "Invictus": 14,
+  "darkmatter": 15,
+  "Gridlocked": 16,
+  "Nightbloom": 17,
+  "Perfectly Abnormal": 18,
+  "Ashen Styx": 19,
+  "Crimson Meridian": 20,
+  "Shiokarai": 21,
+  "From the Ashes": 22,
+  "Millefiore": 23,
+  "G.I. Jokes": 24
+ }
+}

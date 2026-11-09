@@ -1625,6 +1625,9 @@ def main():
         for p in pool:
             slug_to_player.setdefault(p["slug"], p)
     transfers = []   # chronological roster-move feed (player left team A -> joined team B)
+    # a rebrand isn't a transfer (data/team_rebrands.json {old name: new name}; past events keep the old name)
+    _rb_p = os.path.join(DATA, "team_rebrands.json")
+    _rebrands = {(norm_key(a), norm_key(b)) for a, b in json.load(open(_rb_p, encoding="utf-8")).items()} if os.path.exists(_rb_p) else set()
     for slug, teams_map in player_teams.items():
         p = slug_to_player.get(slug)
         if not p:
@@ -1637,6 +1640,9 @@ def main():
         prev = None
         for name, e in ordered:
             entry = {"team": name, "teamSlug": e["teamSlug"], "isPro": e["isPro"], "date": e["first"]}
+            if prev and (norm_key(prev["team"]), norm_key(name)) in _rebrands:
+                prev = entry
+                continue
             transfers.append({
                 "type": "transfer" if prev else "debut",
                 "player": p["name"], "playerSlug": p["slug"], "iso": p.get("iso", ""),
@@ -1664,6 +1670,9 @@ def main():
             # drop any auto-generated entry this move supersedes (same player + same real destination)
             if toSlug:
                 transfers[:] = [t for t in transfers if not (t["playerSlug"] == p["slug"] and t.get("toSlug") == toSlug)]
+            elif toName:                      # a team with no page: the same move worked out from that day's event roster
+                transfers[:] = [t for t in transfers if not (t["playerSlug"] == p["slug"] and not t.get("toSlug") and t.get("date") == mv.get("date")
+                                                             and norm_key(t.get("toTeam") or "") == norm_key(toName))]
             transfers.append({
                 "type": "transfer", "player": p["name"], "playerSlug": p["slug"], "iso": p.get("iso", ""),
                 "fromTeam": fromName, "fromSlug": fromSlug, "toTeam": toName, "toSlug": toSlug,

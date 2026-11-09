@@ -138,10 +138,10 @@ def process_manual(raw, team_map, alias):
                                 "result": s["result"], "tie": s.get("tie", False)})
     overall = stages_out[-1]["standings"] if stages_out else []
     # collapse repeated stage formats: e.g. six swiss groups -> "6 Groups (Swiss)"
-    fmt_name = {"single_elim": "Single Elim", "round_robin": "Round Robin", "swiss": "Swiss"}
+    fmt_name = {"single_elim": "Single Elim", "round_robin": "Round Robin", "swiss": "Swiss", "ext_gsl": "Extended GSL"}
     from collections import Counter as _C
     stages = raw["stages"]
-    groups = [s for s in stages if s["format"] in ("swiss", "round_robin")]
+    groups = [s for s in stages if s["format"] in ("swiss", "round_robin", "ext_gsl")]
     elim   = [s for s in stages if s["format"] == "single_elim"]
     # group stage(s) + optional playoff bracket -> "6 Groups (Swiss) + Playoffs"
     if len(stages) > 1 and groups and len({s["format"] for s in groups}) == 1 \

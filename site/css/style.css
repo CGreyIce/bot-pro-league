@@ -1543,3 +1543,26 @@ tr:has(.gc-out) .name-cell{opacity:.75}
 .scrim-detail>td{padding:12px 10px 16px;background:rgba(255,255,255,.015);max-width:0}   /* its scoreboard scrolls inside, the table stays put */
 @media(max-width:760px){.scrim-maps,.scrim-bo,.scrim-chev{display:none}}
 @media(max-width:480px){.scrim-row td{padding:8px 5px}.scrim-row td:first-child{font-size:11px;white-space:normal;min-width:56px}}
+
+/* Extended GSL groups (six-team double elimination, Maigo's Rookie Roulette) */
+.gsl-note{font-size:13px;line-height:1.55;color:var(--muted);background:var(--panel);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:10px;padding:11px 15px;margin:18px 0 4px}
+.gsl-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:8px}
+@media(max-width:1000px){.gsl-grid{grid-template-columns:minmax(0,1fr)}}
+.gsl-card{background:var(--panel);border:1px solid var(--border);border-radius:8px;overflow:hidden;min-width:0}
+.gsl-card-h{font-family:'Chakra Petch';font-weight:700;font-size:15px;padding:9px 14px;background:rgba(0,0,0,.2);border-bottom:1px solid var(--border)}
+.gsl-card .bkt-wrap{padding:10px 12px 4px;overflow-y:hidden}
+.gsl-card .bkt-wrap+.bkt-wrap{padding:6px 12px 14px}
+.gsl-card .bkt{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;min-width:462px}
+.gsl-card .bkt-round{min-width:0}
+.gsl-card .bkt-round-title{position:relative;font-size:12px;font-weight:700;text-transform:none;letter-spacing:.2px;color:var(--text);padding-bottom:7px}
+.gsl-card .gsl-drop::before{content:"\2193";position:absolute;left:0;top:0;color:var(--muted);font-weight:400}
+.gsl-card .bkt-round-matches{gap:7px}
+.gsl-card .bkt-match{background:transparent;border:0;border-radius:3px}
+.gsl-card .bkt-match.is-live{outline:1px solid rgba(255,61,100,.65)}
+.gsl-card .bkt-match.gsl-qbox{cursor:default}
+.gsl-card .bkt-team{background:rgba(255,255,255,.04);border-left:3px solid rgba(255,255,255,.14);padding:4px 8px 4px 6px}
+.gsl-card .bkt-team+.bkt-team{border-top:1px solid rgba(0,0,0,.28)}
+.gsl-card .bkt-team.win{color:var(--text);background:rgba(255,255,255,.065);border-left-color:var(--good,#3ddc84)}
+.gsl-card .bkt-team.win .bt-score{color:var(--text)}
+.gsl-card .bkt-team.lose{border-left-color:var(--accent2,#ff3d64);color:var(--muted)}
+.gsl-card .bkt-team.lose .bt-name,.gsl-card .bkt-team.lose .bt-score,.gsl-card .bkt-team.lose .bt-logo{opacity:.55}
