@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:kiokocheiko:mvp:150",
-  "type": "milestone",
-  "ts": 1793696995,
-  "date": "2026-11-03",
-  "title": "KiokoCheiko: 150 MVP rounds",
-  "text": "KiokoCheiko reached 150 MVP rounds",
-  "link": "#/player/kiokocheiko"
- },
- {
   "id": "milestone:plushyoshii:kills:500",
   "type": "milestone",
   "ts": 1793696995,
@@ -1798,5 +1789,14 @@
   "title": "winda: 1000 career kills",
   "text": "winda reached 1000 career kills",
   "link": "#/player/winda"
+ },
+ {
+  "id": "milestone:delphoxluna:maps:50",
+  "type": "milestone",
+  "ts": 1794202458,
+  "date": "2026-11-09",
+  "title": "DelphoxLuna: 50 maps played",
+  "text": "DelphoxLuna reached 50 maps played",
+  "link": "#/player/delphoxluna"
  }
 ]

@@ -232,7 +232,9 @@
       "loserOf": 14
      },
      "bestOf": null,
-     "thirdPlace": true
+     "thirdPlace": true,
+     "sa": null,
+     "sb": null
     }
    ],
    "roundTitles": {
