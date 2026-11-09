@@ -1,32 +1,5 @@
 [
  {
-  "id": "milestone:plushyoshii:kills:500",
-  "type": "milestone",
-  "ts": 1793696995,
-  "date": "2026-11-03",
-  "title": "plushyoshii: 500 career kills",
-  "text": "plushyoshii reached 500 career kills",
-  "link": "#/player/plushyoshii"
- },
- {
-  "id": "milestone:cryingnutz:mvp:100",
-  "type": "milestone",
-  "ts": 1793698490,
-  "date": "2026-11-03",
-  "title": "CryingNutz: 100 MVP rounds",
-  "text": "CryingNutz reached 100 MVP rounds",
-  "link": "#/player/cryingnutz"
- },
- {
-  "id": "milestone:xaeela:kills:500",
-  "type": "milestone",
-  "ts": 1793698490,
-  "date": "2026-11-03",
-  "title": "xaeela: 500 career kills",
-  "text": "xaeela reached 500 career kills",
-  "link": "#/player/xaeela"
- },
- {
   "id": "milestone:joyyy-cheng:mvp:100",
   "type": "milestone",
   "ts": 1793699977,
@@ -1798,5 +1771,32 @@
   "title": "DelphoxLuna: 50 maps played",
   "text": "DelphoxLuna reached 50 maps played",
   "link": "#/player/delphoxluna"
+ },
+ {
+  "id": "milestone:azzuto:mvp:150",
+  "type": "milestone",
+  "ts": 1794204344,
+  "date": "2026-11-09",
+  "title": "azzuto: 150 MVP rounds",
+  "text": "azzuto reached 150 MVP rounds",
+  "link": "#/player/azzuto"
+ },
+ {
+  "id": "milestone:kokushi-vampir:mvp:150",
+  "type": "milestone",
+  "ts": 1794204344,
+  "date": "2026-11-09",
+  "title": "kokushi_vampir: 150 MVP rounds",
+  "text": "kokushi_vampir reached 150 MVP rounds",
+  "link": "#/player/kokushi-vampir"
+ },
+ {
+  "id": "milestone:gigichiii:mvp:200",
+  "type": "milestone",
+  "ts": 1794204344,
+  "date": "2026-11-09",
+  "title": "gigichiii_: 200 MVP rounds",
+  "text": "gigichiii_ reached 200 MVP rounds",
+  "link": "#/player/gigichiii"
  }
 ]
