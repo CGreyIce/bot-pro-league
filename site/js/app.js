@@ -217,7 +217,7 @@ const routes = {
   "players": renderPlayers, "player": renderPlayer, "human": renderHuman,
   "tournaments": renderTournaments, "tournament": renderTournament,
   "rankings": renderRankings,
-  "results": renderResults, "records": renderRecords, "compare": renderCompare,
+  "results": renderResults, "scrims": renderScrims, "records": renderRecords, "compare": renderCompare,
   "transfers": renderTransfers, "matches": renderMatches, "awards": renderAwards, "maps": renderMaps, "heatmaps": renderHeatmaps,
   "compareteams": renderTeamCompare, "stats": renderStats,
   "admin": renderAdmin, "match": renderMatch, "predict": renderPredict, "prophets": renderProphets, "fantasy": renderFantasy, "rivalries": renderRivalries, "dle": renderDle,
@@ -1209,6 +1209,81 @@ function renderResults(){
   app.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{resultsFilter.tier=b.dataset.rt;resultsShown=100;renderResults();});
   const qi=$("#results-q"); if(qi) qi.oninput=()=>{resultsFilter.q=qi.value.trim();resultsShown=100;renderResults();setTimeout(()=>{const e=$("#results-q");if(e){e.focus();e.setSelectionRange(e.value.length,e.value.length);}},0);};
   const mb=$("#results-more"); if(mb) mb.onclick=()=>{resultsShown+=100;renderResults();};
+}
+
+// ---------- Scrims (#/scrims): practice games picked as scrims in the BPL Bots app ----------
+// They're in site/scrims.json (bpl-bots lib/scrim.js), apart from data.json, and only this page reads
+// them, so they never reach a player's or team's stats, the rankings or the records.
+let _scrims = [], _scrimOpen = null, scrimQ = "", scrimsShown = 50, _scrimPeople = null;
+function renderScrims(){
+  app.innerHTML = `<h2 class="section-title"><span class="accent-bar"></span>Scrims</h2><p class="muted">Loading…</p>`;
+  fetch("scrims.json", {cache:"no-cache"}).then(r=>r.ok?r.json():[]).catch(()=>[]).then(list=>{
+    if(parseHash().route!=="scrims") return;
+    _scrims = (Array.isArray(list)?list:[]).slice().sort((a,b)=>(b.time||0)-(a.time||0));
+    drawScrims();
+  });
+}
+// Names to profiles, so the scoreboard links them the way a match page does.
+function scrimWithPeople(s){
+  if(!_scrimPeople){
+    _scrimPeople = {};
+    ["pro","amateur","solo"].forEach(k=>(DATA.players[k]||[]).forEach(p=>{ _scrimPeople[normKey(p.name)] = {slug:p.slug, iso:p.iso}; }));
+    (DATA.soloHumans||[]).forEach(h=>{
+      const me = {slug:null, hslug:h.slug, human:true, kind:h.kind, iso:h.iso};
+      _scrimPeople[normKey(h.name)] = me;
+      (h.ingame||[]).forEach(n=>{ if(!_scrimPeople[normKey(n)]) _scrimPeople[normKey(n)] = me; });
+    });
+  }
+  return {...s, maps:s.maps.map(m=>({...m, players:m.players.map(p=>({...p, ...(_scrimPeople[normKey(p.name)]||{})}))}))};
+}
+function drawScrims(){
+  const q = scrimQ.toLowerCase();
+  const list = q ? _scrims.filter(s=>s.a.toLowerCase().includes(q)||s.b.toLowerCase().includes(q)) : _scrims;
+  const shown = list.slice(0, scrimsShown);
+  const teamHtml = (name, win)=>{
+    const t = teamByName(name);
+    return `<span class="team-inline ${win?'rwin':''}">${t&&t.logo?`<img src="${esc(t.logo)}" alt="">`:''}<span>${t?`<a href="#/team/${t.slug}">${esc(name)}</a>`:esc(name)}</span></span>`;
+  };
+  const rows = shown.map(s=>{
+    // a single map shows its rounds, a series its maps won
+    const single = (s.bestOf||1)<2 && s.maps.length===1;
+    const sa = single ? s.maps[0].scoreA : s.maps.filter(m=>m.scoreA>m.scoreB).length;
+    const sb = single ? s.maps[0].scoreB : s.maps.filter(m=>m.scoreB>m.scoreA).length;
+    const open = s.id===_scrimOpen;
+    return `<tr class="scrim-row${open?' open':''}" data-scrim="${esc(s.id)}">
+      <td class="mono muted">${fmtDate(s.date)}</td>
+      <td class="muted scrim-bo">Bo${s.bestOf||1}</td>
+      <td style="text-align:right">${teamHtml(s.a, sa>sb)}</td>
+      <td class="mono rscore">${sa} <span class="muted">:</span> ${sb}</td>
+      <td>${teamHtml(s.b, sb>sa)}</td>
+      <td class="muted scrim-maps">${s.maps.map(m=>`${esc(m.map)} ${m.scoreA}–${m.scoreB}`).join(" · ")}</td>
+      <td class="scrim-chev"><button aria-expanded="${open}" aria-label="${open?'Hide':'Show'} the scoreboard">${open?'▾':'▸'}</button></td>
+    </tr>${open?`<tr class="scrim-detail"><td colspan="7"><div id="sb-container"></div></td></tr>`:''}`;
+  }).join("");
+  const nMaps = list.reduce((n,s)=>n+s.maps.length,0);
+  app.innerHTML = `
+    <h2 class="section-title"><span class="accent-bar"></span>Scrims <span class="muted" style="font-size:11px">(${list.length} scrim${list.length===1?'':'s'} · ${nMaps} map${nMaps===1?'':'s'})</span></h2>
+    <div class="tabs" style="align-items:center">
+      <span class="muted" style="font-size:13px">Practice games. They don't count towards any player or team stats, the rankings or the records.</span>
+      <input id="scrims-q" class="rq" type="text" placeholder="Filter by team…" value="${esc(scrimQ)}">
+    </div>
+    ${rows?`<div class="tablewrap"><table class="data results-table"><tbody>${rows}</tbody></table></div>`
+      :`<p class="muted">${_scrims.length?'No scrims for that team.':'No scrims yet. Pick Scrim in the BPL match menu of the BPL Bots app and the game shows up here.'}</p>`}
+    ${shown.length<list.length?`<div style="text-align:center;margin-top:14px"><button id="scrims-more" class="loadmore">Load more (${list.length-shown.length} left)</button></div>`:''}`;
+  app.querySelectorAll(".scrim-row").forEach(r=>r.onclick=e=>{
+    if(e.target.closest("a")) return;
+    _scrimOpen = _scrimOpen===r.dataset.scrim ? null : r.dataset.scrim;
+    drawScrims();
+  });
+  const qi=$("#scrims-q"); if(qi) qi.oninput=()=>{scrimQ=qi.value.trim();scrimsShown=50;drawScrims();const e=$("#scrims-q");if(e){e.focus();e.setSelectionRange(e.value.length,e.value.length);}};
+  const mb=$("#scrims-more"); if(mb) mb.onclick=()=>{scrimsShown+=50;drawScrims();};
+  const openS = shown.find(s=>s.id===_scrimOpen);
+  if(openS){   // the match page's scoreboard: map tabs, ADR, rating
+    const ta = teamByName(openS.a), tb = teamByName(openS.b);
+    _sbMatch = {a:openS.a, b:openS.b, aTeam:ta?ta.slug:null, bTeam:tb?tb.slug:null, stats:{maps:scrimWithPeople(openS).maps}};
+    _sbTab = openS.maps.length>1 ? 'all' : 0;
+    renderScoreboard();
+  }
 }
 
 // ---------- Records / Hall of Fame ----------
