@@ -1287,7 +1287,6 @@ function drawScrims(){
 }
 
 // ---------- Records / Hall of Fame ----------
-// scan every recorded scoreboard for single-map highs (most kills / best rating in one map)
 // overtime periods a map's final round score implies (mirrors build/parse.py): reaching 12-12
 // forces OT (MR3, first to 4), so the loser needs >=12 and the winner's rounds past 13 come in
 // blocks of 3 (tied OTs) plus the deciding 4.
@@ -1296,32 +1295,6 @@ function otPeriods(a,b){
   const hi=Math.max(a,b), lo=Math.min(a,b);
   if(lo<12||hi===lo) return 0;
   return Math.max(1, Math.round((hi-13)/3));
-}
-function singleMapRecords(){
-  let topK=null, topRtg=null, topOT=null, topMatchK=null;
-  (DATA.tournaments||[]).forEach(tr=>{
-    const scan=(matches,pfx)=>matches.forEach(m=>{
-      if(!m.stats||!m.stats.maps) return;
-      const ref=(m.i!=null?pfx+m.i:null);
-      let matchK=0, matchMaps=0;
-      m.stats.maps.forEach(mp=>{
-        const tot=(mp.scoreA||0)+(mp.scoreB||0); if(!tot) return;
-        matchMaps++;
-        const op=otPeriods(mp.scoreA,mp.scoreB);
-        if(op && (!topOT||op>topOT.val)) topOT={val:op, map:mp.map, score:`${mp.scoreA}-${mp.scoreB}`, event:tr.name, eventSlug:tr.slug, ref};
-        (mp.players||[]).forEach(pl=>{
-          matchK += pl.k||0;
-          if(pl.k!=null && (!topK||pl.k>topK.val)) topK={val:pl.k, name:pl.name, slug:pl.slug, map:mp.map, event:tr.name, eventSlug:tr.slug, ref};
-          const rtg=matchRating(pl.k,pl.a,pl.d,pl.score,tot);
-          if(rtg!=null && (!topRtg||rtg>topRtg.val)) topRtg={val:rtg, name:pl.name, slug:pl.slug, map:mp.map, event:tr.name, eventSlug:tr.slug, ref};
-        });
-      });
-      if(matchK && (!topMatchK||matchK>topMatchK.val)) topMatchK={val:matchK, a:m.a, b:m.b, maps:matchMaps, event:tr.name, eventSlug:tr.slug, ref};
-    });
-    if(tr.stages&&tr.stages.length) tr.stages.forEach(st=>st.rounds.forEach(rd=>scan(rd.matches, st.id+"-")));
-    else (tr.bracket||[]).forEach(rd=>scan(rd.matches, ""));
-  });
-  return {topK, topRtg, topOT, topMatchK};
 }
 // longest run of consecutive map wins by any single player, in real recorded order (by ts)
 function playerLongestStreak(){
@@ -1340,20 +1313,23 @@ function playerLongestStreak(){
     if(tr.stages&&tr.stages.length) tr.stages.forEach(st=>st.rounds.forEach(rd=>scan(rd.matches)));
     else (tr.bracket||[]).forEach(rd=>scan(rd.matches));
   });
-  let best=null;
+  let best=null; const all=[];
   Object.entries(byslug).forEach(([slug,lst])=>{
     lst.sort((a,b)=>a.ts-b.ts);
     let cur=0, mx=0;
     lst.forEach(x=>{ cur=x.won?cur+1:0; if(cur>mx) mx=cur; });
+    all.push({slug, name:lst[0].name, len:mx});
     if(!best||mx>best.len) best={slug, name:lst[0].name, len:mx};
   });
+  if(best) best.all=all;
   return best;
 }
 // The rest of the Records tab, worked out from every recorded match in one pass. recBest keeps the highest
 // value seen and everyone level with it; events are read oldest first, so a card's holder is the first to get there.
 function recBest(){
-  const b={val:null, rows:[], who:new Set()};
+  const b={val:null, rows:[], who:new Set(), all:[]};   // all: every entry, for the card's top 10
   b.add=(v,row,who)=>{ if(v==null||!isFinite(v)) return;
+    b.all.push({v,row,who});
     if(b.val==null||v>b.val){ b.val=v; b.rows=[row]; b.who=new Set([who]); }
     else if(v===b.val&&!b.who.has(who)){ b.who.add(who); b.rows.push(row); } };
   return b;
@@ -1362,7 +1338,7 @@ function extendedRecords(){
   const bests={}, best=k=>bests[k]||(bests[k]=recBest());
   const pos=(k,v,row,who)=>{ if(v>0) best(k).add(v,row,who); };
   const players=new Map(allPlayers().map(p=>[p.slug,p]));
-  const mapCount={}, overtime={}, veto={ban:{},pick:{},decider:{}}, titleYears={}, evCount={};
+  const mapCount={}, overtime={}, veto={ban:{},pick:{},decider:{}}, titleYears={}, evCount={}, byMap={};
   const bump=(o,k)=>{ if(k) o[k]=(o[k]||0)+1; };
   [...(DATA.tournaments||[])].sort((a,b)=>String(a.date||'').localeCompare(String(b.date||''))).forEach(tr=>{
     const ev={event:tr.name, eventSlug:tr.slug};
@@ -1388,15 +1364,27 @@ function extendedRecords(){
         const row={...at,name:p.name,slug}, d=vals[vals.length-1]-vals[0];
         pos('gain',d,row,slug); pos('drop',-d,row,slug); pos('peak',Math.max(...vals),row,slug);
       });
-      const tot={}; let seriesRounds=0, seriesMaps=0;
+      const tot={}; let seriesRounds=0, seriesMaps=0, matchK=0;
       ((m.stats&&m.stats.maps)||[]).forEach(mp=>{
         const rounds=(mp.scoreA||0)+(mp.scoreB||0); if(!rounds) return;
         seriesRounds+=rounds; seriesMaps++;
         bump(mapCount,mp.map);
         if(otPeriods(mp.scoreA,mp.scoreB)) bump(overtime,mp.map);
+        pos('mapOT',otPeriods(mp.scoreA,mp.scoreB),{...at,name:mp.map||'Map',score:`${mp.scoreA}-${mp.scoreB}`},`${tr.slug}|${ref}|${seriesMaps}`);
+        const M=mp.map?(byMap[mp.map]=byMap[mp.map]||{n:0,k:recBest(),rtg:recBest(),adr:recBest(),pl:{}}):null;
+        if(M) M.n++;
         (mp.players||[]).forEach(pl=>{
           const who=pl.slug||pl.hslug||pl.name, id={name:pl.name,slug:pl.slug,hslug:pl.hslug}, row={...id,...at,map:mp.map};
           const onA=normKey(pl.team)===normKey(m.a), lost=mp.scoreA!==mp.scoreB&&(onA?mp.scoreA<mp.scoreB:mp.scoreB<mp.scoreA);
+          const rtg=matchRating(pl.k,pl.a,pl.d,pl.score,rounds);
+          matchK+=pl.k||0; pos('mapK',pl.k,row,who); pos('mapRtg',rtg,row,who);
+          if(M){
+            if(pl.k>0) M.k.add(pl.k,row,who);
+            if(rtg>0) M.rtg.add(rtg,row,who);
+            if(pl.rnd>0) M.adr.add(Math.round(pl.dmg/pl.rnd*10)/10,row,who);
+            const c=M.pl[who]=M.pl[who]||{...id,k:0,a:0,d:0,score:0,rounds:0,maps:0};
+            c.k+=pl.k||0; c.a+=pl.a||0; c.d+=pl.d||0; c.score+=pl.score||0; c.rounds+=rounds; c.maps++;
+          }
           pos('spread',(pl.k||0)-(pl.d||0),row,who); pos('assists',pl.a,row,who); pos('stars',pl.mvp,row,who);
           if(lost) pos('lossK',pl.k,row,who);
           if(pl.rnd>0){
@@ -1408,6 +1396,7 @@ function extendedRecords(){
           const e=evK[who]=evK[who]||{...id,k:0}; e.k+=pl.k||0;
         });
       });
+      pos('matchK',matchK,{...at,name:`${m.a} vs ${m.b}`,maps:seriesMaps},`${tr.slug}|${ref}`);
       if(seriesMaps>=2){
         pos('seriesRounds',seriesRounds,{...at,name:`${m.a} vs ${m.b}`,maps:seriesMaps},`${tr.slug}|${ref}`);
         Object.entries(tot).forEach(([who,s])=>{ const row={...s,...at,maps:seriesMaps};
@@ -1422,11 +1411,41 @@ function extendedRecords(){
     if(tr.championTeam&&tr.year) bump(titleYears,`${tr.championTeam}|${tr.year}`);
     (tr.attending||[]).forEach(r=>(r.players||[]).forEach(p=>bump(evCount,p.slug)));
   });
-  return {best, mapCount, overtime, veto, titleYears, evCount};
+  return {best, mapCount, overtime, veto, titleYears, evCount, byMap};
 }
-const REC_TABS=[["all","All"],["teams","Teams"],["players","Players"],["advanced","Advanced"],["matches","Matches & Feats"],["money","Money"],["maps","Maps & Events"],["solo","Solo Queue"]];
+const REC_TABS=[["all","All"],["teams","Teams"],["players","Players"],["advanced","Advanced"],["matches","Matches & Feats"],["money","Money"],["maps","Maps & Events"],["bymap","By Map"],["weapons","Weapons"],["solo","Solo Queue"]];
 let _recTab='all';
+// The top 10 behind each record: a card registers a function that lists its entries, best first, and opens them on a click.
+let _recTop=[];
+function recTopAttr(title,fn){ _recTop.push({title,fn}); return ` data-top="${_recTop.length-1}" tabindex="0" role="button"`; }
+function recTopOpen(i,from){
+  const item=_recTop[i]; if(!item) return;
+  const old=document.getElementById("rec-ov"); if(old) old.remove();
+  const rows=item.fn(), top=rows.slice(0,10); let rank=0;
+  const body=top.map((r,j)=>{ if(j===0||r.raw!==top[j-1].raw) rank=j+1;
+    return `<tr><td class="rankcol">${rank}</td><td class="name-cell">${r.href?`<a href="${r.href}">${esc(r.name)}</a>`:esc(r.name)}${r.sub?`<div class="rec-pop-sub">${esc(r.sub)}</div>`:''}</td><td class="mono rec-pop-v">${esc(r.val)}</td></tr>`; }).join("");
+  const last=top[top.length-1], more=last?rows.slice(10).filter(r=>r.raw===last.raw).length:0;
+  app.insertAdjacentHTML("beforeend",`<div id="rec-ov" class="rec-ov"><div class="rec-pop" role="dialog" aria-modal="true" aria-label="${esc(item.title)}">
+    <div class="rec-pop-h"><span>${esc(item.title)}</span><button class="rec-pop-x" aria-label="Close">✕</button></div>
+    <div class="tablewrap rec-pop-b"><table class="data"><tbody>${body||'<tr><td class="muted">Nothing recorded yet.</td></tr>'}</tbody></table></div>
+    ${more?`<div class="rec-pop-f muted">and ${more} more on ${esc(last.val)}</div>`:''}</div></div>`);
+  const ov=document.getElementById("rec-ov"); ov._from=from; ov.querySelector(".rec-pop-x").focus();
+}
+function recTopClose(){ const ov=document.getElementById("rec-ov"); if(!ov) return; const f=ov._from; ov.remove(); if(f&&f.isConnected) f.focus(); }
+document.addEventListener("click",e=>{
+  if(e.target.closest(".rec-pop-x")||e.target.id==="rec-ov"){ recTopClose(); return; }
+  const c=e.target.closest("[data-top]"); if(!c||e.target.closest("a")) return;
+  recTopOpen(+c.dataset.top,c);
+});
+document.addEventListener("keydown",e=>{
+  if(e.key==="Escape") recTopClose();
+  else if((e.key==="Enter"||e.key===" ")&&e.target.matches&&e.target.matches("[data-top]")){ e.preventDefault(); recTopOpen(+e.target.dataset.top,e.target); }
+});
+// weapon records: site/weapons.json (build/heatmaps.py), kept out of data.json and only fetched here
+let _weaponsP=null;
+function loadWeapons(){ return _weaponsP=_weaponsP||fetch("weapons.json?x="+encodeURIComponent(DATA.builtAt||"")).then(r=>r.ok?r.json():null).catch(()=>null); }
 function renderRecords(){
+  _recTop=[];
   const pro = DATA.players.pro.filter(p=>p.rating!=null);
   const qualified = pro.filter(p=>p.maps>=12);
   const teams = DATA.teams;
@@ -1446,10 +1465,12 @@ function renderRecords(){
   const allTimeLoss = [...teams].filter(t=>t.longestLossStreak).sort((a,b)=>b.longestLossStreak.len-a.longestLossStreak.len)[0];
 
   const maxBy = (arr,key)=>[...arr].sort((a,b)=>b[key]-a[key])[0];
-  const recCard = (title, holder, val, href, sub) => `<div class="rec-card">
+  const topKey=(title,href)=>title+(href&&href.startsWith('#/team/')?' (team)':'');
+  const recCard = (title, holder, val, href, sub, list) => { const fn=list||tops[topKey(title,href)];
+    return `<div class="rec-card${fn?' rec-click':''}"${fn?recTopAttr(title,fn):''}>
       <div class="rec-title">${title}</div>
       <div class="rec-holder">${href?`<a href="${href}">${esc(holder)}</a>`:esc(holder)}</div>
-      <div class="rec-val">${val}</div>${sub?`<div class="rec-sub">${esc(sub)}</div>`:''}</div>`;
+      <div class="rec-val">${val}</div>${sub?`<div class="rec-sub">${esc(sub)}</div>`:''}</div>`; };
   const pl = p => recCard.bind(null);
   const topRating=maxBy(qualified,'rating'), topKills=maxBy(pro,'kills'), topMvp=maxBy(pro,'mvp'),
         topKdr=maxBy(qualified,'kdr'), topAssist=maxBy(pro,'assists'), topOT=maxBy(pro,'ot');
@@ -1462,7 +1483,6 @@ function renderRecords(){
         mostMajors=maxBy(teams,'major_wins'), mostPodiums=maxBy(teams,'podiums');
   const qTeams=teams.filter(t=>t.total_maps>=40);
   const topTeamWR=maxBy(qTeams.length?qTeams:teams,'wlr'), mostSTier=maxBy(teams,'s_tier_wins'), mostMapWins=maxBy(teams,'map_wins');
-  const smr=singleMapRecords();
   const mostATier=maxBy(teams,'a_tier_wins');
   const finalsCount=t=>(t.events||[]).filter(e=>(e.placement||99)<=2).length;
   const mostFinals=[...teams].sort((a,b)=>finalsCount(b)-finalsCount(a))[0];
@@ -1494,23 +1514,58 @@ function renderRecords(){
       +`${e.tagline?`<div class="hof-tag">${esc(e.tagline)}</div>`:''}<div class="hof-blurb">${esc(e.blurb||'')}</div>`
       +`${e.article?`<a class="hof-link" href="#/article/${e.article}">Read the full story →</a>`:''}</div>`; };
   const hofHtml=[...(hof.players||[]).map(hofPCard),...(hof.teams||[]).map(hofTCard)].filter(Boolean).join("");
-  const smLink=r=>r.slug?`#/player/${r.slug}`:(r.ref?`#/match/${r.eventSlug}/${r.ref}`:`#/tournament/${r.eventSlug}`);
   // ---- the newer records (extendedRecords): a shared record says so under the value
   const X=extendedRecords(), xb=X.best;
   const who=r=>r.slug?`#/player/${r.slug}`:r.hslug?`#/human/${r.hslug}`:r.teamSlug?`#/team/${r.teamSlug}`:(r.ref?`#/match/${r.eventSlug}/${r.ref}`:`#/tournament/${r.eventSlug}`);
   const subOf=(...x)=>x.filter(Boolean).join(' · ');
   const tieNote=b=>b.rows.length<2?'':b.rows.length===2?`tied with ${b.rows[1].name}`:`${b.rows.length-1} others tied`;
-  const bCard=(title,b,fmt=v=>v,sub=r=>subOf(r.map,r.event))=>{ if(!b.rows.length) return ''; const r=b.rows[0];
-    return recCard(title, r.name, fmt(b.val,r), who(r), subOf(sub(r),tieNote(b))); };
-  const feat=(title,k,fmt,sub)=>bCard(title,xb(k),fmt,sub);
+  const rowsOf=(arr,val,fmt=v=>v,href=()=>null,name=x=>x.name,sub=()=>'')=>()=>arr.map(x=>({x,v:val(x)})).filter(r=>r.v>0&&isFinite(r.v)).sort((p,q)=>q.v-p.v)
+    .map(r=>({name:name(r.x),href:href(r.x),val:String(fmt(r.v,r.x)),raw:r.v,sub:sub(r.x)}));
+  const bRows=(b,fmt,sub,unique)=>()=>{ const seen=new Set(); return [...b.all].sort((p,q)=>q.v-p.v).filter(e=>!unique||(!seen.has(e.who)&&seen.add(e.who)))
+    .map(e=>({name:e.row.name,href:who(e.row),val:String(fmt(e.v,e.row)),raw:e.v,sub:sub(e.row)})); };
+  const bCard=(title,b,fmt=v=>v,sub=r=>subOf(r.map,r.event),unique)=>{ if(!b.rows.length) return ''; const r=b.rows[0];
+    return recCard(title, r.name, fmt(b.val,r), who(r), subOf(sub(r),tieNote(b)), bRows(b,fmt,sub,unique)); };
+  const feat=(title,k,fmt,sub,unique)=>bCard(title,xb(k),fmt,sub,unique);
   const listCard=(title,base,arr,val,fmt=v=>v,sub=()=>'')=>{ const b=recBest(); arr.forEach(x=>{ const v=val(x); if(v>0) b.add(v,x,x.slug); });
     if(!b.rows.length) return ''; const x=b.rows[0];
-    return recCard(title, x.name, fmt(b.val,x), `#/${base}/${x.slug}`, subOf(sub(x),tieNote(b))); };
+    return recCard(title, x.name, fmt(b.val,x), `#/${base}/${x.slug}`, subOf(sub(x),tieNote(b)), rowsOf(arr,val,fmt,y=>`#/${base}/${y.slug}`,y=>y.name,sub)); };
   const tallyCard=(title,o,fmt,name=k=>k,href=()=>null,sub=()=>'',min=1)=>{ const e=Object.entries(o).sort((a,b)=>b[1]-a[1]); if(!e.length||e[0][1]<min) return '';
     const tied=e.filter(x=>x[1]===e[0][1]).length-1;
-    return recCard(title, name(e[0][0]), fmt(e[0][1]), href(e[0][0]), subOf(sub(e[0][0]), tied?`${tied} other${tied>1?'s':''} tied`:'')); };
+    return recCard(title, name(e[0][0]), fmt(e[0][1]), href(e[0][0]), subOf(sub(e[0][0]), tied?`${tied} other${tied>1?'s':''} tied`:''),
+      rowsOf(e.map(([k,n])=>({k,n})),x=>x.n,v=>fmt(v),x=>href(x.k),x=>name(x.k),x=>sub(x.k))); };
   const pName=s=>(playerBySlug(s)||{}).name||s, tName=s=>(teamBySlug(s)||{}).name||s, pHref=s=>`#/player/${s}`, tHref=s=>`#/team/${s}`;
   const x1=v=>v.toFixed(1), x2=v=>v.toFixed(2), times=v=>v+"×", pc1=v=>v.toFixed(1)+"%";
+  // the top 10 behind the original cards (the newer ones build theirs above)
+  const T=(val,fmt,arr=teams)=>rowsOf(arr,val,fmt,x=>`#/team/${x.slug}`), P=(val,fmt,arr=pro)=>rowsOf(arr,val,fmt,x=>`#/player/${x.slug}`);
+  const num=k=>x=>x[k]||0, usd=v=>fmtUSD(v), pv=v=>pct(v), run=k=>x=>(x[k]||{}).len||0;
+  const strk=c=>t=>t.streak&&t.streak[0]===c?parseInt(t.streak.slice(1)):0;
+  const ms2=x=>[...x].map(m=>({...m,marg:Math.abs(m.sa-m.sb),tot:m.sa+m.sb})), mapsAll=ms2(allMapScores());
+  const tops={
+    "Most Event Titles (team)":rowsOf(Object.entries(titles).map(([slug,n])=>({slug,n})),x=>x.n,times,x=>tHref(x.slug),x=>tName(x.slug)),
+    "Most Major Titles (team)":T(num('major_wins'),times), "Most Podiums (team)":T(num('podiums')), "Most Events Played (team)":T(num('events_played')),
+    "Most Maps Played (team)":T(num('total_maps')), "Highest Win Rate (team)":T(num('wlr'),pv,qTeams.length?qTeams:teams),
+    "Most S-Tier Titles (team)":T(num('s_tier_wins'),times), "Most A-Tier Titles (team)":T(num('a_tier_wins'),times),
+    "Highest-Earning Team (team)":T(num('earnings'),usd), "Most Finals Reached (team)":T(finalsCount,times), "Most Map Wins (team)":T(num('map_wins')),
+    "Longest Win Streak (all-time) (team)":T(run('longestWinStreak'),v=>v+" wins"), "Longest Win Streak (active) (team)":T(strk('W'),v=>'W'+v),
+    "Longest Loss Streak (all-time) (team)":T(run('longestLossStreak'),v=>v+" losses"), "Longest Loss Streak (active) (team)":T(strk('L'),v=>'L'+v),
+    "Most Rating Points":P(num('ratingPoints'),v=>v,qualified),
+    "Highest Earner":P(num('earnings'),usd,allPlayers()),
+    "Biggest Single Payday":rowsOf(allPlayers().flatMap(p=>(p.prizeHistory||[]).map(h=>({p,h}))),x=>x.h.amount,usd,x=>`#/player/${x.p.slug}`,x=>x.p.name,x=>x.h.event),
+    "Highest Market Value":P(num('marketValue'),usd),
+    "Biggest Transfer Fee":rowsOf((DATA.transfers||[]).filter(t=>t.fee),t=>t.fee,usd,t=>`#/player/${t.playerSlug}`,t=>t.player,t=>t.toTeam?`to ${t.toTeam}`:''),
+    "Best K/D Ratio":P(num('kdr'),x2,qualified), "Most Total Kills":P(num('kills')), "Most MVPs":P(num('mvp')), "Most Assists":P(num('assists')),
+    "Highest Kills / Map":P(p=>p.kills/p.maps,x1,qualified), "Highest Win Rate":P(num('winrate'),pv,qualified), "Most Wins":P(num('wins')),
+    "Most Maps Played":P(num('maps')), "Most Titles Won":P(nTitles,times), "Most Event MVPs":P(nMvp,times), "Most OT Games":P(num('ot')),
+    "Highest MVP Rate":P(p=>p.mvp/p.maps,v=>v.toFixed(2)+" /map",qualified),
+    "Longest Win Streak":pStreak?rowsOf(pStreak.all,x=>x.len,v=>v+" maps",x=>`#/player/${x.slug}`):null,
+    "Most Deaths":P(num('deaths')),
+    "Biggest Blowout":rowsOf(mapsAll,m=>m.marg,(v,m)=>`${Math.max(m.sa,m.sb)}–${Math.min(m.sa,m.sb)}`,m=>`#/tournament/${m.eventSlug}`,m=>`${m.sa>=m.sb?m.a:m.b} vs ${m.sa>=m.sb?m.b:m.a}`,m=>m.map),
+    "Highest-Scoring Map":rowsOf(mapsAll,m=>m.tot,(v,m)=>`${m.sa}–${m.sb}`,m=>`#/tournament/${m.eventSlug}`,m=>`${m.a} vs ${m.b}`,m=>m.map),
+    "Top Solo Rating":rowsOf(soloRated,num('ratingPoints'),v=>v+" pts",x=>`#/player/${x.slug}`),
+    "Most Solo Kills":rowsOf(soloAll,num('kills'),v=>v,x=>`#/player/${x.slug}`),
+    "Best Solo K/D":rowsOf(soloQ.length?soloQ:soloAll,num('kdr'),x2,x=>`#/player/${x.slug}`),
+    "Best Solo Win Rate":rowsOf(soloQ.length?soloQ:soloAll,num('winrate'),pv,x=>`#/player/${x.slug}`),
+  };
   // teams
   const mapRec=recBest();
   teams.forEach(t=>Object.entries(t.mapStats||{}).forEach(([mp,s])=>{ if(s.g>=10&&s.real!==false) mapRec.add(s.wr,{name:t.name,teamSlug:t.slug,map:mp,w:s.w,l:s.l},t.slug+mp); }));
@@ -1532,7 +1587,7 @@ function renderRecords(){
   // players
   const realTeams=p=>(p.teamHistory||[]).filter(h=>!nationIso(h.team)&&!/ Squad \d+$/.test(h.team)).length;
   const playerCards=[
-    feat("Highest Rating Points Ever","peak",v=>v+" pts",r=>r.event),
+    feat("Highest Rating Points Ever","peak",v=>v+" pts",r=>r.event,true),
     feat("Biggest Rating Gain in a Match","gain",v=>"+"+v,r=>r.event),
     feat("Biggest Rating Drop in a Match","drop",v=>"−"+v,r=>r.event),
     tallyCard("Most Events Played",X.evCount,v=>v,pName,pHref),
@@ -1614,11 +1669,47 @@ function renderRecords(){
     listCard("Most Solo Wins","player",soloAll,p=>p.wins),
     listCard("Most Solo MVPs","player",soloAll,p=>p.mvp),
   ].join("");
+  // one card per map: every line opens its own top 10
+  const perMapCards=Object.entries(X.byMap).filter(([m,d])=>d.n>=20).sort((a,b)=>b[1].n-a[1].n).map(([m,d])=>{
+    const careers=Object.values(d.pl).filter(c=>c.maps>=5).map(c=>({...c,rtg:matchRating(c.k,c.a,c.d,c.score,c.rounds)}));
+    const sides=teams.filter(t=>t.mapStats&&t.mapStats[m]&&t.mapStats[m].g>=5&&t.mapStats[m].real!==false).sort((a,b)=>b.mapStats[m].g-a.mapStats[m].g);
+    const line=(label,rows)=>{ const r=rows()[0]; if(!r) return '';
+      return `<div class="rec-mline"${recTopAttr(`${m}: ${label}`,rows)}><span class="rec-ml">${label}</span><span class="rec-mn">${r.href?`<a href="${r.href}">${esc(r.name)}</a>`:esc(r.name)}</span><span class="rec-mv">${esc(r.val)}</span></div>`; };
+    const game=r=>r.event;
+    return `<div class="rec-map">
+      <div class="rec-map-h"${VETO_IMG[m]?` style="background-image:linear-gradient(90deg,rgba(8,12,22,.92),rgba(8,12,22,.45)),url('assets/maps/${VETO_IMG[m]}')"`:''}><span>${esc(m)}</span><small>${d.n} maps recorded</small></div>
+      ${line("Top Player",rowsOf(careers,c=>c.rtg,x2,who,c=>c.name,c=>`${c.maps} maps on ${m}`))}
+      ${line("Top Team",rowsOf(sides,t=>t.mapStats[m].wr,v=>pct(v),t=>`#/team/${t.slug}`,t=>t.name,t=>`${t.mapStats[m].w}–${t.mapStats[m].l}`))}
+      ${line("Most Kills in a Game",bRows(d.k,v=>v,game))}
+      ${line("Best Game Rating",bRows(d.rtg,x2,game))}
+      ${line("Best Game ADR",bRows(d.adr,x1,game))}
+    </div>`; }).join("");
+  const weaponSection=W=>{
+    const by=new Map(allPlayers().map(p=>[normKey(p.name),p])), hum=new Map((DATA.soloHumans||[]).map(h=>[normKey(h.name),h]));
+    const link=n=>{ const p=by.get(normKey(n)), h=hum.get(normKey(n)); return p?`#/player/${p.slug}`:h?`#/human/${h.slug}`:null; };
+    const tied=rows=>{ const n=rows.filter(r=>r.raw===rows[0].raw).length-1; return !n?'':n===1?`tied with ${rows[1].name}`:`${n} others tied`; };
+    const show=(title,rows,sub='')=>rows.length?recCard(title,rows[0].name,esc(rows[0].val),rows[0].href,subOf(sub||rows[0].sub,tied(rows)),()=>rows):'';
+    const hsOf=(k,hs)=>`${Math.round(100*hs/k)}% headshots`;
+    const group=(title,key,noHs)=>show(title,((W.groups[key]||{}).players||[]).map(([n,k,hs])=>({name:n,href:link(n),val:String(k),raw:k,sub:noHs?'':hsOf(k,hs)})));
+    const inMap=(title,key)=>show(title,((W.groups[key]||{}).maps||[]).map(([k,n,mp,ev])=>({name:n,href:link(n),val:String(k),raw:k,sub:`${mp} · ${ev}`})));
+    const hsRate=(title,key,min)=>show(title,((W.groups[key]||{}).players||[]).filter(([n,k])=>k>=min).map(([n,k,hs])=>({name:n,href:link(n),raw:hs/k,val:pct(hs/k),sub:`${hs} of ${k} kills`})).sort((a,b)=>b.raw-a.raw));
+    const wRows=W.weapons.map(([n,k,hs])=>({name:n,val:k+" kills",raw:k,sub:`${(100*k/W.kills).toFixed(1)}% of all kills`}));
+    const hsRows=W.weapons.filter(([n,k])=>k>=100).map(([n,k,hs])=>({name:n,val:pct(hs/k),raw:hs/k,sub:`${hs} of ${k} kills`})).sort((a,b)=>b.raw-a.raw);
+    return `<h3 class="rec-group">Weapons <span class="muted" style="font-size:11px">from the ${W.kills.toLocaleString('en-US')} kills on ${W.maps} maps with a recorded kill feed</span></h3>
+    <div class="rec-grid">
+      ${show("Most Used Weapon",wRows)}${show("Best Headshot Weapon",hsRows)}
+      ${group("Most AK-47 Kills","AK-47")}${group("Most M4 Kills","M4")}${group("Most AWP Kills","AWP")}${group("Most Scout Kills","Scout")}
+      ${group("Most AUG & SG 553 Kills","AUG & SG")}${group("Most SMG Kills","SMGs")}${group("Most Pistol Kills","Pistols")}${group("Most Desert Eagle Kills","Desert Eagle")}
+      ${group("Most Pistol Round Kills","Pistol Rounds")}${group("Most Grenade & Fire Kills","Grenades",true)}${group("Most Knife Kills","Knife",true)}
+      ${hsRate("Best AK-47 Headshot %","AK-47",40)}
+      ${inMap("Most AK-47 Kills in a Map","AK-47")}${inMap("Most AWP Kills in a Map","AWP")}${inMap("Most Pistol Kills in a Map","Pistols")}
+    </div>`; };
   app.innerHTML = `
     <h2 class="section-title"><span class="accent-bar"></span>Records &amp; Hall of Fame</h2>
     ${hofHtml?`<h3 class="rec-group">Hall of Fame <span class="muted" style="font-size:11px">inducted legends</span></h3>
     <div class="hof-grid">${hofHtml}</div>`:''}
     <div class="tabs rec-tabs">${REC_TABS.map(([k,l])=>`<button data-rt="${k}">${esc(l)}</button>`).join("")}</div>
+    <div class="rec-hint muted">Click a record to see its top 10.</div>
     <section class="rec-sec" data-rg="teams"><h3 class="rec-group">Titles &amp; Teams</h3>
     <div class="rec-grid">
       ${recCard("Most Event Titles", mostTitles[0].name, mostTitles[0].n+"×", `#/team/${mostTitles[0].slug}`)}
@@ -1682,16 +1773,19 @@ function renderRecords(){
         `${Math.max(blow.m.sa,blow.m.sb)}–${Math.min(blow.m.sa,blow.m.sb)}${blow.m.map?` · ${esc(blow.m.map)}`:''}`, `#/tournament/${blow.m.eventSlug}`):''}
       ${highScore?recCard("Highest-Scoring Map", `${esc(highScore.m.a)} vs ${esc(highScore.m.b)}`,
         `${highScore.m.sa}–${highScore.m.sb} · ${highScore.tot} rds${highScore.m.map?` · ${esc(highScore.m.map)}`:''}`, `#/tournament/${highScore.m.eventSlug}`):''}
-      ${smr.topK?recCard("Most Kills in a Map", smr.topK.name, smr.topK.val+(smr.topK.map?' · '+esc(smr.topK.map):''), smLink(smr.topK)):''}
-      ${smr.topRtg?recCard("Best Single-Map Rating", smr.topRtg.name, smr.topRtg.val.toFixed(2)+(smr.topRtg.map?' · '+esc(smr.topRtg.map):''), smLink(smr.topRtg)):''}
-      ${smr.topOT?recCard("Most Overtimes in a Map", `${esc(smr.topOT.map||'Map')} · ${smr.topOT.score}`, smr.topOT.val+" OT"+(smr.topOT.val>1?"s":""), smLink(smr.topOT)):''}
-      ${smr.topMatchK?recCard("Most Kills in a Match", `${esc(smr.topMatchK.a)} vs ${esc(smr.topMatchK.b)}`, smr.topMatchK.val+" · "+smr.topMatchK.maps+" maps", smLink(smr.topMatchK)):''}
+      ${feat("Most Kills in a Map","mapK")}
+      ${feat("Best Single-Map Rating","mapRtg",x2)}
+      ${feat("Most Overtimes in a Map","mapOT",v=>v+" OT"+(v>1?"s":""),r=>subOf(r.score,r.event))}
+      ${feat("Most Kills in a Match","matchK",v=>v,r=>subOf(`${r.maps} map${r.maps===1?'':'s'}`,r.event))}
       ${matchCards}
     </div></section>
     <section class="rec-sec" data-rg="maps"><h3 class="rec-group">Maps &amp; Veto</h3>
     <div class="rec-grid">${mapCards}</div></section>
     <section class="rec-sec" data-rg="maps"><h3 class="rec-group">Events</h3>
     <div class="rec-grid">${eventCards}</div></section>
+    <section class="rec-sec" data-rg="bymap"><h3 class="rec-group">Best on Each Map <span class="muted" style="font-size:11px">top player and team need 5 recorded maps there</span></h3>
+    <div class="rec-maps">${perMapCards}</div></section>
+    <section class="rec-sec" data-rg="weapons"><div id="rec-weapons"></div></section>
     <section class="rec-sec" data-rg="solo"><h3 class="rec-group">Solo Queue <span class="muted" style="font-size:11px">(rate stats min 8 maps)</span></h3>
     <div class="rec-grid">
       ${soloTopRtg?recCard("Top Solo Rating", soloTopRtg.name, soloTopRtg.ratingPoints+" pts", `#/player/${soloTopRtg.slug}`):''}
@@ -1710,6 +1804,8 @@ function renderRecords(){
     app.querySelectorAll(".rec-tabs button").forEach(b=>b.classList.toggle("active",b.dataset.rt===_recTab)); };
   app.querySelectorAll(".rec-tabs button").forEach(b=>b.onclick=()=>{ _recTab=b.dataset.rt; recShow(); });
   recShow();
+  const wBox=document.getElementById("rec-weapons");
+  loadWeapons().then(W=>{ if(W&&wBox&&wBox.isConnected) wBox.innerHTML=weaponSection(W); });
 }
 // Top Earners on the Records page: all-time or one year (players from their prize history, teams from event payouts)
 let _earnYear = 'all';
