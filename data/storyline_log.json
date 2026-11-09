@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:tapiyokaaa:mvp:100",
-  "type": "milestone",
-  "ts": 1793696995,
-  "date": "2026-11-03",
-  "title": "tapiyokaaa: 100 MVP rounds",
-  "text": "tapiyokaaa reached 100 MVP rounds",
-  "link": "#/player/tapiyokaaa"
- },
- {
   "id": "milestone:kiokocheiko:mvp:150",
   "type": "milestone",
   "ts": 1793696995,
@@ -1798,5 +1789,14 @@
   "title": "YoJareddo: 1000 career kills",
   "text": "YoJareddo reached 1000 career kills",
   "link": "#/player/yojareddo"
+ },
+ {
+  "id": "milestone:winda:kills:1000",
+  "type": "milestone",
+  "ts": 1794192744,
+  "date": "2026-11-09",
+  "title": "winda: 1000 career kills",
+  "text": "winda reached 1000 career kills",
+  "link": "#/player/winda"
  }
 ]
