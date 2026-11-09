@@ -541,7 +541,7 @@ a.form-dot:hover{transform:translateY(-2px)}
 .sb-head img{height:22px;width:22px;object-fit:contain}
 .sb-table th,.sb-table td{padding:7px 8px}
 .sb-table .sb-rtg{font-weight:700}
-.sb-table th{text-align:right}.sb-table th:first-child{text-align:left}
+table.sb-table th{text-align:right}.sb-table th:first-child{text-align:left}   /* "table." so it outranks table.data th */
 .sb-table td{text-align:right}.sb-table td:first-child{text-align:left}
 .sb-table tbody tr:first-child td{color:var(--text)}
 .sb-table .name-cell a:hover{color:var(--link)}
@@ -777,7 +777,7 @@ span.nat-crest.flag-neutral{border-radius:3px}
 .sqgame-x:hover{color:var(--text)}
 .sqgame-body{max-height:60vh;overflow:auto}
 .sqgame-tbl{width:100%}
-.sqgame-tbl th,.sqgame-tbl td{text-align:right;padding:7px 10px;white-space:nowrap}
+table.sqgame-tbl th{text-align:right}.sqgame-tbl th,.sqgame-tbl td{text-align:right;padding:7px 10px;white-space:nowrap}
 .sqgame-tbl th:first-child,.sqgame-tbl td.sg-nm{text-align:left}
 .sqgame-tbl td.sg-nm{display:flex;align-items:center;gap:6px;font-weight:600}
 .sqgame-tbl tr.sg-w td:first-child{box-shadow:inset 3px 0 0 var(--good,#2ee6a6)}
