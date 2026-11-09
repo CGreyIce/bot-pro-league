@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:djassaulty:kills:500",
-  "type": "milestone",
-  "ts": 1793722148,
-  "date": "2026-11-04",
-  "title": "djassaulty: 500 career kills",
-  "text": "djassaulty reached 500 career kills",
-  "link": "#/player/djassaulty"
- },
- {
   "id": "milestone:yojareddo:mvp:100",
   "type": "milestone",
   "ts": 1793724266,
@@ -1798,5 +1789,14 @@
   "title": "Arya Kuroha: 100 MVP rounds",
   "text": "Arya Kuroha reached 100 MVP rounds",
   "link": "#/player/arya-kuroha"
+ },
+ {
+  "id": "milestone:hanabusa-lisa:mvp:100",
+  "type": "milestone",
+  "ts": 1794264378,
+  "date": "2026-11-10",
+  "title": "Hanabusa Lisa: 100 MVP rounds",
+  "text": "Hanabusa Lisa reached 100 MVP rounds",
+  "link": "#/player/hanabusa-lisa"
  }
 ]
