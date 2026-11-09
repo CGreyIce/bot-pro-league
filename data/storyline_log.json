@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:cassiopeiarawr:mvp:100",
-  "type": "milestone",
-  "ts": 1793712767,
-  "date": "2026-11-03",
-  "title": "cassiopeiarawr: 100 MVP rounds",
-  "text": "cassiopeiarawr reached 100 MVP rounds",
-  "link": "#/player/cassiopeiarawr"
- },
- {
-  "id": "milestone:shizuyaumiko:kills:500",
-  "type": "milestone",
-  "ts": 1793712767,
-  "date": "2026-11-03",
-  "title": "ShizuyaUmiko: 500 career kills",
-  "text": "ShizuyaUmiko reached 500 career kills",
-  "link": "#/player/shizuyaumiko"
- },
- {
   "id": "milestone:altheavt:kills:500",
   "type": "milestone",
   "ts": 1793718456,
@@ -1798,5 +1780,23 @@
   "title": "Eiromancers sign yuvirei",
   "text": "in: yuvirei",
   "link": "#/team/eiromancers"
+ },
+ {
+  "id": "milestone:afayctionate:maps:50",
+  "type": "milestone",
+  "ts": 1794238049,
+  "date": "2026-11-09",
+  "title": "afayctionate: 50 maps played",
+  "text": "afayctionate reached 50 maps played",
+  "link": "#/player/afayctionate"
+ },
+ {
+  "id": "milestone:yumezukiyomi:mvp:100",
+  "type": "milestone",
+  "ts": 1794238049,
+  "date": "2026-11-09",
+  "title": "yumezukiyomi: 100 MVP rounds",
+  "text": "yumezukiyomi reached 100 MVP rounds",
+  "link": "#/player/yumezukiyomi"
  }
 ]
