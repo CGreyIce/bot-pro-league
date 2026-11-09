@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:altheavt:kills:500",
-  "type": "milestone",
-  "ts": 1793718456,
-  "date": "2026-11-03",
-  "title": "AltheaVT: 500 career kills",
-  "text": "AltheaVT reached 500 career kills",
-  "link": "#/player/altheavt"
- },
- {
   "id": "milestone:leveti:maps:50",
   "type": "milestone",
   "ts": 1793720038,
@@ -1797,6 +1788,15 @@
   "date": "2026-11-09",
   "title": "yumezukiyomi: 100 MVP rounds",
   "text": "yumezukiyomi reached 100 MVP rounds",
+  "link": "#/player/yumezukiyomi"
+ },
+ {
+  "id": "milestone:yumezukiyomi:maps:50",
+  "type": "milestone",
+  "ts": 1794243053,
+  "date": "2026-11-10",
+  "title": "yumezukiyomi: 50 maps played",
+  "text": "yumezukiyomi reached 50 maps played",
   "link": "#/player/yumezukiyomi"
  }
 ]
