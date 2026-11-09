@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:leveti:maps:50",
-  "type": "milestone",
-  "ts": 1793720038,
-  "date": "2026-11-03",
-  "title": "Leveti: 50 maps played",
-  "text": "Leveti reached 50 maps played",
-  "link": "#/player/leveti"
- },
- {
   "id": "milestone:jaelyo:maps:50",
   "type": "milestone",
   "ts": 1793720038,
@@ -1798,5 +1789,14 @@
   "title": "yumezukiyomi: 50 maps played",
   "text": "yumezukiyomi reached 50 maps played",
   "link": "#/player/yumezukiyomi"
+ },
+ {
+  "id": "milestone:kaikaijins:kills:1000",
+  "type": "milestone",
+  "ts": 1794246804,
+  "date": "2026-11-10",
+  "title": "kaikaijins: 1000 career kills",
+  "text": "kaikaijins reached 1000 career kills",
+  "link": "#/player/kaikaijins"
  }
 ]
