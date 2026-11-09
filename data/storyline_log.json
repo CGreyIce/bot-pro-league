@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:syrrith:maps:50",
-  "type": "milestone",
-  "ts": 1793701264,
-  "date": "2026-11-03",
-  "title": "Syrrith: 50 maps played",
-  "text": "Syrrith reached 50 maps played",
-  "link": "#/player/syrrith"
- },
- {
-  "id": "milestone:dirfun:maps:50",
-  "type": "milestone",
-  "ts": 1793705082,
-  "date": "2026-11-03",
-  "title": "Dirfun: 50 maps played",
-  "text": "Dirfun reached 50 maps played",
-  "link": "#/player/dirfun"
- },
- {
   "id": "milestone:historia:mvp:100",
   "type": "milestone",
   "ts": 1793707429,
@@ -1797,6 +1779,24 @@
   "date": "2026-11-09",
   "title": "lumpydayo: 1000 career kills",
   "text": "lumpydayo reached 1000 career kills",
+  "link": "#/player/lumpydayo"
+ },
+ {
+  "id": "milestone:fleurcoz:kills:1000",
+  "type": "milestone",
+  "ts": 1794208839,
+  "date": "2026-11-09",
+  "title": "fleurcoz: 1000 career kills",
+  "text": "fleurcoz reached 1000 career kills",
+  "link": "#/player/fleurcoz"
+ },
+ {
+  "id": "milestone:lumpydayo:mvp:150",
+  "type": "milestone",
+  "ts": 1794208839,
+  "date": "2026-11-09",
+  "title": "lumpydayo: 150 MVP rounds",
+  "text": "lumpydayo reached 150 MVP rounds",
   "link": "#/player/lumpydayo"
  }
 ]
