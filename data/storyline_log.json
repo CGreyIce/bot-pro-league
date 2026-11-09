@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:yojareddo:mvp:100",
-  "type": "milestone",
-  "ts": 1793724266,
-  "date": "2026-11-04",
-  "title": "YoJareddo: 100 MVP rounds",
-  "text": "YoJareddo reached 100 MVP rounds",
-  "link": "#/player/yojareddo"
- },
- {
   "id": "milestone:kaito-oshino:maps:50",
   "type": "milestone",
   "ts": 1793726733,
@@ -1798,5 +1789,14 @@
   "title": "Hanabusa Lisa: 100 MVP rounds",
   "text": "Hanabusa Lisa reached 100 MVP rounds",
   "link": "#/player/hanabusa-lisa"
+ },
+ {
+  "id": "milestone:trpaki:maps:50",
+  "type": "milestone",
+  "ts": 1794267643,
+  "date": "2026-11-10",
+  "title": "TRPaki: 50 maps played",
+  "text": "TRPaki reached 50 maps played",
+  "link": "#/player/trpaki"
  }
 ]

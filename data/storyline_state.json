@@ -1637,9 +1637,9 @@
    "mvp": 90
   },
   "trpaki": {
-   "maps": 49,
-   "kills": 831,
-   "mvp": 128
+   "maps": 50,
+   "kills": 844,
+   "mvp": 130
   },
   "wushii": {
    "maps": 39,
@@ -1832,9 +1832,9 @@
    "mvp": 55
   },
   "hanabusa-lisa": {
-   "maps": 39,
-   "kills": 682,
-   "mvp": 100
+   "maps": 40,
+   "kills": 694,
+   "mvp": 101
   },
   "jira-jisaki": {
    "maps": 48,
@@ -1972,9 +1972,9 @@
    "mvp": 100
   },
   "juno-umezono": {
-   "maps": 30,
-   "kills": 427,
-   "mvp": 56
+   "maps": 31,
+   "kills": 446,
+   "mvp": 60
   },
   "itzmaigo": {
    "maps": 38,
@@ -2027,9 +2027,9 @@
    "mvp": 30
   },
   "iceenblue": {
-   "maps": 9,
-   "kills": 105,
-   "mvp": 12
+   "maps": 10,
+   "kills": 117,
+   "mvp": 14
   },
   "aoi-chibi": {
    "maps": 14,
@@ -2062,9 +2062,9 @@
    "mvp": 31
   },
   "miki-nakai": {
-   "maps": 28,
-   "kills": 462,
-   "mvp": 65
+   "maps": 29,
+   "kills": 476,
+   "mvp": 68
   },
   "yxie": {
    "maps": 34,
@@ -2197,9 +2197,9 @@
    "mvp": 19
   },
   "deedeepup-vt": {
-   "maps": 12,
-   "kills": 205,
-   "mvp": 26
+   "maps": 13,
+   "kills": 225,
+   "mvp": 30
   },
   "kineto46": {
    "maps": 15,
@@ -2272,9 +2272,9 @@
    "mvp": 38
   },
   "arctrooperfives2755555": {
-   "maps": 12,
-   "kills": 178,
-   "mvp": 23
+   "maps": 13,
+   "kills": 189,
+   "mvp": 26
   },
   "diabet0": {
    "maps": 22,
@@ -2317,9 +2317,9 @@
    "mvp": 33
   },
   "greatmoonaroma": {
-   "maps": 22,
-   "kills": 316,
-   "mvp": 50
+   "maps": 23,
+   "kills": 331,
+   "mvp": 51
   },
   "raivyrain": {
    "maps": 16,
@@ -2337,9 +2337,9 @@
    "mvp": 68
   },
   "colour": {
-   "maps": 26,
-   "kills": 365,
-   "mvp": 42
+   "maps": 27,
+   "kills": 381,
+   "mvp": 43
   },
   "renren": {
    "maps": 13,
@@ -2347,9 +2347,9 @@
    "mvp": 28
   },
   "nico": {
-   "maps": 17,
-   "kills": 262,
-   "mvp": 34
+   "maps": 18,
+   "kills": 277,
+   "mvp": 35
   },
   "icycrowvt": {
    "maps": 12,
@@ -2493,6 +2493,7 @@
   "upset:bpl-legends-stage-2026:4-21",
   "upset:bpl-legends-stage-2026:4-27",
   "upset:bpl-legends-stage-2026:4-5",
+  "upset:maigo-s-rookie-roulette:3-1",
   "upset:nations-cup-qualifier-singapore-2026:1-43",
   "upset:nova-initia-invitational-i:1-12",
   "upset:nova-initia-invitational-i:1-7",
