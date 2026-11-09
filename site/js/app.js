@@ -1349,6 +1349,83 @@ function playerLongestStreak(){
   });
   return best;
 }
+// The rest of the Records tab, worked out from every recorded match in one pass. recBest keeps the highest
+// value seen and everyone level with it; events are read oldest first, so a card's holder is the first to get there.
+function recBest(){
+  const b={val:null, rows:[], who:new Set()};
+  b.add=(v,row,who)=>{ if(v==null||!isFinite(v)) return;
+    if(b.val==null||v>b.val){ b.val=v; b.rows=[row]; b.who=new Set([who]); }
+    else if(v===b.val&&!b.who.has(who)){ b.who.add(who); b.rows.push(row); } };
+  return b;
+}
+function extendedRecords(){
+  const bests={}, best=k=>bests[k]||(bests[k]=recBest());
+  const pos=(k,v,row,who)=>{ if(v>0) best(k).add(v,row,who); };
+  const players=new Map(allPlayers().map(p=>[p.slug,p]));
+  const mapCount={}, overtime={}, veto={ban:{},pick:{},decider:{}}, titleYears={}, evCount={};
+  const bump=(o,k)=>{ if(k) o[k]=(o[k]||0)+1; };
+  [...(DATA.tournaments||[])].sort((a,b)=>String(a.date||'').localeCompare(String(b.date||''))).forEach(tr=>{
+    const ev={event:tr.name, eventSlug:tr.slug};
+    const ms=((tr.stages&&tr.stages.length) ? tr.stages.flatMap(st=>st.rounds.flatMap(rd=>rd.matches.map(m=>({m,ref:`${st.id}-${m.i}`}))))
+      : (tr.bracket||[]).flatMap(rd=>rd.matches.map(m=>({m,ref:m.i!=null?`${m.i}`:null})))).sort((x,y)=>(x.m.ts||0)-(y.m.ts||0));
+    const champ=normKey(tr.champion), evK={};
+    let mw=0, ml=0, played=0;
+    ms.forEach(({m,ref})=>{
+      const at={...ev, ref};
+      if((m.w===1||m.w===2)&&m.a!=="(bye)"&&m.b!=="(bye)"){
+        played++;
+        const pa=m.odds!=null?m.odds:m.tE;               // the same pre-match chance as the Best Upset award
+        if(pa!=null){ const c=m.w===1?pa:1-pa, [w,l,sw,sl]=m.w===1?[m.a,m.b,m.sa,m.sb]:[m.b,m.a,m.sb,m.sa];
+          best('upset').add(-c,{...at,name:`${w} over ${l}`,chance:c,score:sw!=null?`${sw}–${sl}`:''},`${tr.slug}|${ref}`); }
+        const onA=normKey(m.a)===champ, onB=normKey(m.b)===champ;
+        if(champ&&(onA||onB)&&!m.tp&&!m.pl&&m.sa!=null&&m.sb!=null){   // a series score, or one map's rounds
+          const series=Math.max(m.sa,m.sb)<=5, [x,y]=onA?[m.sa,m.sb]:[m.sb,m.sa];
+          mw+=series?x:(x>y?1:0); ml+=series?y:(y>x?1:0); }
+      }
+      (((m.stats&&m.stats.veto&&m.stats.veto.steps))||[]).forEach(s=>{ if(veto[s.action]) bump(veto[s.action],s.map); });
+      if(m.elo) Object.entries(m.elo).forEach(([slug,path])=>{
+        const p=players.get(slug), vals=(path||[]).filter(v=>v!=null); if(!p||vals.length<2) return;
+        const row={...at,name:p.name,slug}, d=vals[vals.length-1]-vals[0];
+        pos('gain',d,row,slug); pos('drop',-d,row,slug); pos('peak',Math.max(...vals),row,slug);
+      });
+      const tot={}; let seriesRounds=0, seriesMaps=0;
+      ((m.stats&&m.stats.maps)||[]).forEach(mp=>{
+        const rounds=(mp.scoreA||0)+(mp.scoreB||0); if(!rounds) return;
+        seriesRounds+=rounds; seriesMaps++;
+        bump(mapCount,mp.map);
+        if(otPeriods(mp.scoreA,mp.scoreB)) bump(overtime,mp.map);
+        (mp.players||[]).forEach(pl=>{
+          const who=pl.slug||pl.hslug||pl.name, id={name:pl.name,slug:pl.slug,hslug:pl.hslug}, row={...id,...at,map:mp.map};
+          const onA=normKey(pl.team)===normKey(m.a), lost=mp.scoreA!==mp.scoreB&&(onA?mp.scoreA<mp.scoreB:mp.scoreB<mp.scoreA);
+          pos('spread',(pl.k||0)-(pl.d||0),row,who); pos('assists',pl.a,row,who); pos('stars',pl.mvp,row,who);
+          if(lost) pos('lossK',pl.k,row,who);
+          if(pl.rnd>0){
+            pos('adr',Math.round(pl.dmg/pl.rnd*10)/10,row,who); pos('hs',pl.hs,row,who); pos('fk',pl.fk,row,who); pos('aces',pl.k5,row,who);
+            pos('multi',(pl.k2||0)+(pl.k3||0)+(pl.k4||0)+(pl.k5||0),row,who); pos('clutch',(pl.c1||0)+(pl.c2||0)+(pl.c3||0)+(pl.c4||0)+(pl.c5||0),row,who);
+          }
+          const s=tot[who]=tot[who]||{...id,k:0,a:0,d:0,score:0};
+          s.k+=pl.k||0; s.a+=pl.a||0; s.d+=pl.d||0; s.score+=pl.score||0;
+          const e=evK[who]=evK[who]||{...id,k:0}; e.k+=pl.k||0;
+        });
+      });
+      if(seriesMaps>=2){
+        pos('seriesRounds',seriesRounds,{...at,name:`${m.a} vs ${m.b}`,maps:seriesMaps},`${tr.slug}|${ref}`);
+        Object.entries(tot).forEach(([who,s])=>{ const row={...s,...at,maps:seriesMaps};
+          pos('seriesK',s.k,row,who); pos('seriesRtg',matchRating(s.k,s.a,s.d,s.score,seriesRounds),row,who); });
+      }
+    });
+    Object.entries(evK).forEach(([who,x])=>pos('eventK',x.k,{...x,...ev},who));
+    if(champ&&mw>=6) best('titleRun').add(mw-1000*ml,{...ev,name:tr.champion,teamSlug:tr.championTeam,mw,ml},tr.slug);
+    if(tr.mvp&&tr.mvp.rating!=null&&tr.mvp.maps>=6) best('evRtg').add(tr.mvp.rating,{...ev,name:tr.mvp.name,slug:tr.mvp.slug,maps:tr.mvp.maps},tr.mvp.slug);
+    (tr.prizes||[]).forEach(x=>{ if(x.teamSlug) pos('teamPrize',x.amount,{...ev,name:x.name,teamSlug:x.teamSlug},x.teamSlug); });
+    pos('pool',tr.prizePool,{...ev,name:tr.name},tr.slug); pos('teamsAt',tr.participantCount,{...ev,name:tr.name},tr.slug); pos('matchesAt',played,{...ev,name:tr.name},tr.slug);
+    if(tr.championTeam&&tr.year) bump(titleYears,`${tr.championTeam}|${tr.year}`);
+    (tr.attending||[]).forEach(r=>(r.players||[]).forEach(p=>bump(evCount,p.slug)));
+  });
+  return {best, mapCount, overtime, veto, titleYears, evCount};
+}
+const REC_TABS=[["all","All"],["teams","Teams"],["players","Players"],["advanced","Advanced"],["matches","Matches & Feats"],["money","Money"],["maps","Maps & Events"],["solo","Solo Queue"]];
+let _recTab='all';
 function renderRecords(){
   const pro = DATA.players.pro.filter(p=>p.rating!=null);
   const qualified = pro.filter(p=>p.maps>=12);
@@ -1369,10 +1446,10 @@ function renderRecords(){
   const allTimeLoss = [...teams].filter(t=>t.longestLossStreak).sort((a,b)=>b.longestLossStreak.len-a.longestLossStreak.len)[0];
 
   const maxBy = (arr,key)=>[...arr].sort((a,b)=>b[key]-a[key])[0];
-  const recCard = (title, holder, val, href) => `<div class="rec-card">
+  const recCard = (title, holder, val, href, sub) => `<div class="rec-card">
       <div class="rec-title">${title}</div>
       <div class="rec-holder">${href?`<a href="${href}">${esc(holder)}</a>`:esc(holder)}</div>
-      <div class="rec-val">${val}</div></div>`;
+      <div class="rec-val">${val}</div>${sub?`<div class="rec-sub">${esc(sub)}</div>`:''}</div>`;
   const pl = p => recCard.bind(null);
   const topRating=maxBy(qualified,'rating'), topKills=maxBy(pro,'kills'), topMvp=maxBy(pro,'mvp'),
         topKdr=maxBy(qualified,'kdr'), topAssist=maxBy(pro,'assists'), topOT=maxBy(pro,'ot');
@@ -1418,11 +1495,131 @@ function renderRecords(){
       +`${e.article?`<a class="hof-link" href="#/article/${e.article}">Read the full story →</a>`:''}</div>`; };
   const hofHtml=[...(hof.players||[]).map(hofPCard),...(hof.teams||[]).map(hofTCard)].filter(Boolean).join("");
   const smLink=r=>r.slug?`#/player/${r.slug}`:(r.ref?`#/match/${r.eventSlug}/${r.ref}`:`#/tournament/${r.eventSlug}`);
+  // ---- the newer records (extendedRecords): a shared record says so under the value
+  const X=extendedRecords(), xb=X.best;
+  const who=r=>r.slug?`#/player/${r.slug}`:r.hslug?`#/human/${r.hslug}`:r.teamSlug?`#/team/${r.teamSlug}`:(r.ref?`#/match/${r.eventSlug}/${r.ref}`:`#/tournament/${r.eventSlug}`);
+  const subOf=(...x)=>x.filter(Boolean).join(' · ');
+  const tieNote=b=>b.rows.length<2?'':b.rows.length===2?`tied with ${b.rows[1].name}`:`${b.rows.length-1} others tied`;
+  const bCard=(title,b,fmt=v=>v,sub=r=>subOf(r.map,r.event))=>{ if(!b.rows.length) return ''; const r=b.rows[0];
+    return recCard(title, r.name, fmt(b.val,r), who(r), subOf(sub(r),tieNote(b))); };
+  const feat=(title,k,fmt,sub)=>bCard(title,xb(k),fmt,sub);
+  const listCard=(title,base,arr,val,fmt=v=>v,sub=()=>'')=>{ const b=recBest(); arr.forEach(x=>{ const v=val(x); if(v>0) b.add(v,x,x.slug); });
+    if(!b.rows.length) return ''; const x=b.rows[0];
+    return recCard(title, x.name, fmt(b.val,x), `#/${base}/${x.slug}`, subOf(sub(x),tieNote(b))); };
+  const tallyCard=(title,o,fmt,name=k=>k,href=()=>null,sub=()=>'',min=1)=>{ const e=Object.entries(o).sort((a,b)=>b[1]-a[1]); if(!e.length||e[0][1]<min) return '';
+    const tied=e.filter(x=>x[1]===e[0][1]).length-1;
+    return recCard(title, name(e[0][0]), fmt(e[0][1]), href(e[0][0]), subOf(sub(e[0][0]), tied?`${tied} other${tied>1?'s':''} tied`:'')); };
+  const pName=s=>(playerBySlug(s)||{}).name||s, tName=s=>(teamBySlug(s)||{}).name||s, pHref=s=>`#/player/${s}`, tHref=s=>`#/team/${s}`;
+  const x1=v=>v.toFixed(1), x2=v=>v.toFixed(2), times=v=>v+"×", pc1=v=>v.toFixed(1)+"%";
+  // teams
+  const mapRec=recBest();
+  teams.forEach(t=>Object.entries(t.mapStats||{}).forEach(([mp,s])=>{ if(s.g>=10&&s.real!==false) mapRec.add(s.wr,{name:t.name,teamSlug:t.slug,map:mp,w:s.w,l:s.l},t.slug+mp); }));
+  const teamCards=[
+    tallyCard("Most Titles in a Year",X.titleYears,times,k=>tName(k.split('|')[0]),k=>tHref(k.split('|')[0]),k=>k.split('|')[1]),
+    feat("Most Dominant Title Run","titleRun",(v,r)=>`${r.mw}–${r.ml} maps`,r=>r.event),
+    listCard("Most Major Playoff Runs","team",teams,t=>t.major_playoffs,times),
+    listCard("Most Major Podiums","team",teams,t=>t.major_podiums,times),
+    listCard("Most Ranking Points","team",teams,t=>t.rank_points,v=>v+" pts"),
+    listCard("Highest Team Elo","team",teams,t=>t.teamElo),
+    bCard("Best Record on a Map",mapRec,v=>pct(v),r=>`${r.map} · ${r.w}–${r.l}`),
+    listCard("Most Former Players","team",teams,t=>(t.formerPlayers||[]).length),
+  ].join("");
+  const rivSeen=new Set(), rivP=recBest(), rivO=recBest();
+  teams.forEach(t=>(t.h2h||[]).forEach(h=>{ if(!h.opp) return; const k=[t.slug,h.opp].sort().join('|');
+    if(!rivSeen.has(k)){ rivSeen.add(k); rivP.add(h.w+h.l,{name:`${t.name} vs ${h.oppName}`,teamSlug:t.slug,
+      lead:h.w===h.l?`level at ${h.w}–${h.l}`:`${h.w>h.l?t.name:h.oppName} lead ${Math.max(h.w,h.l)}–${Math.min(h.w,h.l)}`},k); }
+    if(h.w>h.l) rivO.add(h.w-h.l,{name:`${t.name} over ${h.oppName}`,teamSlug:t.slug,w:h.w,l:h.l},k); }));
+  // players
+  const realTeams=p=>(p.teamHistory||[]).filter(h=>!nationIso(h.team)&&!/ Squad \d+$/.test(h.team)).length;
+  const playerCards=[
+    feat("Highest Rating Points Ever","peak",v=>v+" pts",r=>r.event),
+    feat("Biggest Rating Gain in a Match","gain",v=>"+"+v,r=>r.event),
+    feat("Biggest Rating Drop in a Match","drop",v=>"−"+v,r=>r.event),
+    tallyCard("Most Events Played",X.evCount,v=>v,pName,pHref),
+    listCard("Most Teams Played For","player",pro,realTeams,v=>v,()=>"not counting national squads"),
+    feat("Most Kills at One Event","eventK",v=>v,r=>r.event),
+    feat("Best Event MVP Rating","evRtg",x2,r=>`${r.maps} maps · ${r.event}`),
+  ].join("");
+  const roleTop=(title,f)=>listCard(title,"player",pro.filter(f),p=>p.ratingPoints,v=>v+" pts",p=>p.team||"Free agent");
+  const isIgl=p=>/igl/i.test(p.role||''), subIs=s=>p=>p.subRole===s&&!isIgl(p);
+  const roleCards=[roleTop("Top AWPer",p=>/awp/i.test(p.role||'')), roleTop("Top IGL",isIgl), roleTop("Top Entry",subIs('entry')),
+    roleTop("Top Lurker",subIs('lurker')), roleTop("Top Anchor",subIs('anchor')), roleTop("Top Support",subIs('support'))].join("");
+  const potm=DATA.playerOfMonth||[], potmN={}, poyN={}, toyN={}, ya=Object.entries(DATA.yearAwards||{});
+  const count=(o,k)=>{ if(k) o[k]=(o[k]||0)+1; };
+  potm.forEach(x=>count(potmN,x.slug));
+  ya.forEach(([y,a])=>{ if(a.poy) count(poyN,a.poy.slug); if(a.team) count(toyN,a.team.slug); });
+  const monthName=m=>{ const [y,mo]=String(m).split('-'); return `${["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][+mo-1]} ${y}`; };
+  const climbs=ya.filter(([y,a])=>a.improved).map(([y,a])=>({...a.improved,year:y}));
+  const awardCards=[
+    tallyCard("Most Player of the Year Awards",poyN,times,pName,pHref,undefined,2),   // shown once someone has won twice
+    tallyCard("Most Team of the Year Awards",toyN,times,tName,tHref),
+    tallyCard("Most Player of the Month Awards",potmN,times,pName,pHref,undefined,2),
+    listCard("Best Player of the Month Rating","player",potm,x=>x.rating,x2,x=>`${monthName(x.month)} · ${x.maps} maps`),
+    listCard("Biggest One-Year Rise","player",climbs,x=>x.from-x.to,v=>"▲"+v,x=>`#${x.from} to #${x.to} in ${x.year}`),
+  ].join("");
+  // advanced stats: rates need 12 recorded maps, like the other rate stats
+  const advAll=pro.filter(p=>p.adv&&p.adv.maps), advQ=advAll.filter(p=>p.adv.maps>=12);
+  const adv=(title,arr,val,fmt,sub)=>listCard(title,"player",arr,val,fmt,sub);
+  const advCards=[
+    adv("Highest ADR",advQ,p=>p.adv.adr,x1),
+    adv("Highest KAST",advQ,p=>p.adv.kast,pc1),
+    adv("Highest Headshot %",advQ,p=>p.adv.hs,pc1),
+    adv("Best Opening Duel Win Rate",advQ.filter(p=>p.adv.fk+p.adv.fd>=30),p=>p.adv.fk/(p.adv.fk+p.adv.fd),v=>pct(v),p=>`${p.adv.fk}–${p.adv.fd}`),
+    adv("Most Opening Kills",advAll,p=>p.adv.fk),
+    adv("Best Opening Kill Difference",advAll,p=>p.adv.fk-p.adv.fd,v=>"+"+v,p=>`${p.adv.fk}–${p.adv.fd}`),
+    adv("Most Trade Kills",advAll,p=>p.adv.tk),
+    adv("Highest Utility Damage / Round",advQ,p=>p.adv.udr,x1),
+    adv("Most 3K+ Rounds",advAll,p=>total(p.adv.multi.slice(1))),
+    adv("Most 4Ks",advAll,p=>p.adv.multi[2]),
+    adv("Most Aces",advAll,p=>p.adv.multi[3]),
+    adv("Most Clutches Won",advAll,p=>total(p.adv.clutch)),
+    adv("Most 1v3+ Clutches",advAll,p=>total(p.adv.clutch.slice(2))),
+  ].join("");
+  const moneyCards=[
+    feat("Biggest Team Prize","teamPrize",v=>fmtUSD(v),r=>r.event),
+    listCard("Biggest Budget","team",teams,t=>t.budget,v=>fmtUSD(v)),
+    listCard("Most Valuable Squad","team",teams,t=>t.squadValue,v=>fmtUSD(v)),
+    listCard("Biggest Spender on Transfers","team",teams,t=>t.feesOut,v=>fmtUSD(v)),
+  ].join("");
+  const matchCards=[
+    feat("Biggest Upset","upset",(v,r)=>`${Math.round(r.chance*100)}% chance`,r=>subOf(r.score,r.event)),
+    feat("Longest Series","seriesRounds",v=>v+" rounds",r=>subOf(`${r.maps} maps`,r.event)),
+    feat("Most Kills in a Series","seriesK",v=>v,r=>subOf(`${r.maps} maps`,r.event)),
+    feat("Best Series Rating","seriesRtg",x2,r=>subOf(`${r.maps} maps`,r.event)),
+    feat("Highest ADR in a Map","adr",x1),
+    feat("Biggest +/– in a Map","spread",v=>"+"+v),
+    feat("Most Kills in a Lost Map","lossK"),
+    feat("Most Assists in a Map","assists"),
+    feat("Most Headshots in a Map","hs"),
+    feat("Most Opening Kills in a Map","fk"),
+    feat("Most MVP Stars in a Map","stars",v=>"★"+v),
+    feat("Most Multi-Kill Rounds in a Map","multi"),
+    feat("Most Aces in a Map","aces"),
+    feat("Most Clutches in a Map","clutch"),
+  ].join("");
+  const mapCards=[
+    tallyCard("Most Played Map",X.mapCount,v=>v+" maps"),
+    tallyCard("Most Banned Map",X.veto.ban,v=>v+" bans"),
+    tallyCard("Most Picked Map",X.veto.pick,v=>v+" picks"),
+    tallyCard("Most Common Decider",X.veto.decider,v=>v+" deciders"),
+    tallyCard("Map Most Often in Overtime",X.overtime,v=>v+" times"),
+  ].join("");
+  const eventCards=[
+    feat("Biggest Prize Pool","pool",v=>fmtUSD(v),()=>''),
+    feat("Most Teams at an Event","teamsAt",v=>v,()=>''),
+    feat("Most Matches at an Event","matchesAt",v=>v,()=>''),
+  ].join("");
+  const soloCards=[
+    listCard("Most Solo Games","player",soloAll,p=>p.maps),
+    listCard("Most Solo Wins","player",soloAll,p=>p.wins),
+    listCard("Most Solo MVPs","player",soloAll,p=>p.mvp),
+  ].join("");
   app.innerHTML = `
     <h2 class="section-title"><span class="accent-bar"></span>Records &amp; Hall of Fame</h2>
     ${hofHtml?`<h3 class="rec-group">Hall of Fame <span class="muted" style="font-size:11px">inducted legends</span></h3>
     <div class="hof-grid">${hofHtml}</div>`:''}
-    <h3 class="rec-group">Titles &amp; Teams</h3>
+    <div class="tabs rec-tabs">${REC_TABS.map(([k,l])=>`<button data-rt="${k}">${esc(l)}</button>`).join("")}</div>
+    <section class="rec-sec" data-rg="teams"><h3 class="rec-group">Titles &amp; Teams</h3>
     <div class="rec-grid">
       ${recCard("Most Event Titles", mostTitles[0].name, mostTitles[0].n+"×", `#/team/${mostTitles[0].slug}`)}
       ${recCard("Most Major Titles", mostMajors.name, mostMajors.major_wins+"×", `#/team/${mostMajors.slug}`)}
@@ -1439,8 +1636,14 @@ function renderRecords(){
       ${recCard("Longest Win Streak (active)", bestStreak?bestStreak.name:'—', bestStreak?bestStreak.streak:'—', bestStreak?`#/team/${bestStreak.slug}`:null)}
       ${allTimeLoss?recCard("Longest Loss Streak (all-time)", allTimeLoss.name, allTimeLoss.longestLossStreak.len+" losses", `#/team/${allTimeLoss.slug}`):''}
       ${recCard("Longest Loss Streak (active)", worstStreak?worstStreak.name:'—', worstStreak?worstStreak.streak:'—', worstStreak?`#/team/${worstStreak.slug}`:null)}
-    </div>
-    <h3 class="rec-group">Players <span class="muted" style="font-size:11px">(pro; rate stats min 12 maps)</span></h3>
+      ${teamCards}
+    </div></section>
+    ${rivP.rows.length?`<section class="rec-sec" data-rg="teams"><h3 class="rec-group">Rivalries</h3>
+    <div class="rec-grid">
+      ${bCard("Most-Played Rivalry",rivP,v=>v+" matches",r=>r.lead)}
+      ${bCard("Most One-Sided Rivalry",rivO,(v,r)=>`${r.w}–${r.l}`,()=>'')}
+    </div></section>`:''}
+    <section class="rec-sec" data-rg="players"><h3 class="rec-group">Players <span class="muted" style="font-size:11px">(pro; rate stats min 12 maps)</span></h3>
     <div class="rec-grid">
       ${recCard("Most Rating Points", topRating.name, topRating.ratingPoints, `#/player/${topRating.slug}`)}
       ${topEarner?recCard("Highest Earner", topEarner.name, fmtUSD(topEarner.earnings), `#/player/${topEarner.slug}`):''}
@@ -1462,9 +1665,18 @@ function renderRecords(){
       ${pStreak&&pStreak.len?recCard("Longest Win Streak", pStreak.name, pStreak.len+" maps", `#/player/${pStreak.slug}`):''}
       ${climbRec&&climbRec.delta>0?recCard("Biggest Rank Climb", climbRec.name, "▲"+climbRec.delta, `#/player/${climbRec.slug}`):''}
       ${recCard("Most Deaths", topDeaths.name, topDeaths.deaths, `#/player/${topDeaths.slug}`)}
-    </div>
-    <div id="earn-box">${earnBoardHtml()}</div>
-    <h3 class="rec-group">Matches &amp; Single-Map Feats</h3>
+      ${playerCards}
+    </div></section>
+    <section class="rec-sec" data-rg="players"><h3 class="rec-group">Best by Role <span class="muted" style="font-size:11px">by Rating Points</span></h3>
+    <div class="rec-grid">${roleCards}</div></section>
+    <section class="rec-sec" data-rg="players"><h3 class="rec-group">Awards</h3>
+    <div class="rec-grid">${awardCards}</div></section>
+    <section class="rec-sec" data-rg="advanced"><h3 class="rec-group">Advanced Stats <span class="muted" style="font-size:11px">recorded since October 2026; rate stats min 12 recorded maps</span></h3>
+    <div class="rec-grid">${advCards}</div></section>
+    <section class="rec-sec" data-rg="money"><h3 class="rec-group">Money &amp; Market</h3>
+    <div class="rec-grid">${moneyCards}</div>
+    <div id="earn-box">${earnBoardHtml()}</div></section>
+    <section class="rec-sec" data-rg="matches"><h3 class="rec-group">Matches &amp; Single-Map Feats</h3>
     <div class="rec-grid">
       ${blow?recCard("Biggest Blowout", `${esc(blow.m.sa>=blow.m.sb?blow.m.a:blow.m.b)} vs ${esc(blow.m.sa>=blow.m.sb?blow.m.b:blow.m.a)}`,
         `${Math.max(blow.m.sa,blow.m.sb)}–${Math.min(blow.m.sa,blow.m.sb)}${blow.m.map?` · ${esc(blow.m.map)}`:''}`, `#/tournament/${blow.m.eventSlug}`):''}
@@ -1474,20 +1686,30 @@ function renderRecords(){
       ${smr.topRtg?recCard("Best Single-Map Rating", smr.topRtg.name, smr.topRtg.val.toFixed(2)+(smr.topRtg.map?' · '+esc(smr.topRtg.map):''), smLink(smr.topRtg)):''}
       ${smr.topOT?recCard("Most Overtimes in a Map", `${esc(smr.topOT.map||'Map')} · ${smr.topOT.score}`, smr.topOT.val+" OT"+(smr.topOT.val>1?"s":""), smLink(smr.topOT)):''}
       ${smr.topMatchK?recCard("Most Kills in a Match", `${esc(smr.topMatchK.a)} vs ${esc(smr.topMatchK.b)}`, smr.topMatchK.val+" · "+smr.topMatchK.maps+" maps", smLink(smr.topMatchK)):''}
-    </div>
-    <h3 class="rec-group">Solo Queue <span class="muted" style="font-size:11px">(rate stats min 8 maps)</span></h3>
+      ${matchCards}
+    </div></section>
+    <section class="rec-sec" data-rg="maps"><h3 class="rec-group">Maps &amp; Veto</h3>
+    <div class="rec-grid">${mapCards}</div></section>
+    <section class="rec-sec" data-rg="maps"><h3 class="rec-group">Events</h3>
+    <div class="rec-grid">${eventCards}</div></section>
+    <section class="rec-sec" data-rg="solo"><h3 class="rec-group">Solo Queue <span class="muted" style="font-size:11px">(rate stats min 8 maps)</span></h3>
     <div class="rec-grid">
       ${soloTopRtg?recCard("Top Solo Rating", soloTopRtg.name, soloTopRtg.ratingPoints+" pts", `#/player/${soloTopRtg.slug}`):''}
       ${soloTopK?recCard("Most Solo Kills", soloTopK.name, soloTopK.kills, `#/player/${soloTopK.slug}`):''}
       ${soloBestKD?recCard("Best Solo K/D", soloBestKD.name, (soloBestKD.kdr||0).toFixed(2), `#/player/${soloBestKD.slug}`):''}
       ${soloBestWR?recCard("Best Solo Win Rate", soloBestWR.name, pct(soloBestWR.winrate), `#/player/${soloBestWR.slug}`):''}
-    </div>
-    ${(()=>{ const inform=inFormPlayers(); if(!inform.length) return '';
+      ${soloCards}
+    </div></section>
+    <section class="rec-sec" data-rg="players">${(()=>{ const inform=inFormPlayers(); if(!inform.length) return '';
       return `<h3 class="rec-group">In-Form Players <span class="muted" style="font-size:11px">best recent match ratings · min 3 recent maps</span></h3>
       <div class="tablewrap" style="max-width:560px"><table class="data"><thead><tr><th class="no-sort rankcol">#</th><th class="no-sort">Player</th><th class="no-sort">Recent RTG</th><th class="no-sort">Form</th></tr></thead>
       <tbody>${inform.map((x,i)=>`<tr><td class="rankcol">${i+1}</td><td class="name-cell">${x.p?playerLink(x.p):esc(x.name)}</td>
         <td class="mono" style="color:${rtgColor(x.avg)}"><strong>${x.avg.toFixed(2)}</strong></td>
-        <td>${formDots(x.log)}</td></tr>`).join("")}</tbody></table></div>`; })()}`;
+        <td>${formDots(x.log)}</td></tr>`).join("")}</tbody></table></div>`; })()}</section>`;
+  const recShow=()=>{ app.querySelectorAll(".rec-sec").forEach(s=>{ s.hidden=_recTab!=='all'&&s.dataset.rg!==_recTab; });
+    app.querySelectorAll(".rec-tabs button").forEach(b=>b.classList.toggle("active",b.dataset.rt===_recTab)); };
+  app.querySelectorAll(".rec-tabs button").forEach(b=>b.onclick=()=>{ _recTab=b.dataset.rt; recShow(); });
+  recShow();
 }
 // Top Earners on the Records page: all-time or one year (players from their prize history, teams from event payouts)
 let _earnYear = 'all';

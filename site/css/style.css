@@ -333,6 +333,8 @@ a.form-dot:hover{transform:translateY(-2px)}
 .rec-holder{font-family:'Chakra Petch';font-weight:700;font-size:19px;margin:4px 0 2px}
 .rec-holder a:hover{color:var(--link)}
 .rec-val{font-family:'Chakra Petch';font-weight:700;font-size:26px;color:var(--accent)}
+.rec-sub{font-size:11.5px;line-height:1.35;color:var(--muted);margin-top:3px}
+.rec-tabs{margin:20px 0 0;flex-wrap:wrap}
 .hof-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
 .hof-card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:16px 16px 16px 18px;position:relative;overflow:hidden}
 .hof-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,#f5c451,#e0912a)}
