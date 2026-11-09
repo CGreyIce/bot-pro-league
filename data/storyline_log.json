@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:historia:mvp:100",
-  "type": "milestone",
-  "ts": 1793707429,
-  "date": "2026-11-03",
-  "title": "Historia: 100 MVP rounds",
-  "text": "Historia reached 100 MVP rounds",
-  "link": "#/player/historia"
- },
- {
-  "id": "milestone:siddnely:kills:500",
-  "type": "milestone",
-  "ts": 1793707429,
-  "date": "2026-11-03",
-  "title": "siddnely: 500 career kills",
-  "text": "siddnely reached 500 career kills",
-  "link": "#/player/siddnely"
- },
- {
   "id": "milestone:yuuschan:mvp:100",
   "type": "milestone",
   "ts": 1793708813,
@@ -1798,5 +1780,23 @@
   "title": "lumpydayo: 150 MVP rounds",
   "text": "lumpydayo reached 150 MVP rounds",
   "link": "#/player/lumpydayo"
+ },
+ {
+  "id": "champion:second-wind-invitational-i",
+  "type": "champion",
+  "ts": 1794210975,
+  "date": "2026-11-09",
+  "title": "Aspire win Second Wind Invitational I",
+  "text": "Champions of Second Wind Invitational I, beating Bloom E-Sports in the final",
+  "link": "#/tournament/second-wind-invitational-i"
+ },
+ {
+  "id": "milestone:venicec:kills:1000",
+  "type": "milestone",
+  "ts": 1794210978,
+  "date": "2026-11-09",
+  "title": "VeniceC: 1000 career kills",
+  "text": "VeniceC reached 1000 career kills",
+  "link": "#/player/venicec"
  }
 ]

@@ -37,6 +37,7 @@
   }
  },
  "champions": [
+  "second-wind-invitational-i",
   "phase-shift-invitational-i",
   "bpl-legends-stage-2026",
   "bpl-challengers-stage-2026",
@@ -89,58 +90,58 @@
  "proTeams": [
   "cosmos",
   "aimpunch",
-  "opal",
   "the-gigarage",
+  "opal",
   "nullpoint",
   "artisian",
   "kiedz",
+  "bloom-e-sports",
+  "aspire",
   "sacred-raven",
   "neverland",
   "prism-divide",
   "new-jade",
+  "degree",
   "setting-sun",
   "entity",
   "aetherline",
   "lemon-tree",
   "xplosiv",
-  "degree",
   "flood-flashers",
   "division20",
   "raven-song",
   "bluebird",
   "infernum-e-sports",
   "pepegax",
-  "bloom-e-sports",
   "divide-conquer",
   "moonlit-tempo",
+  "alcheministry",
   "technomancy",
   "masmark",
-  "alcheministry",
   "pastel-mocha",
   "the-nomads",
+  "caelum-scala",
+  "fruit-basket",
   "99lives",
   "round-loss-bonus",
-  "caelum-scala",
   "diamondones",
-  "fruit-basket",
   "unforgettable",
-  "ukiyo",
   "mourningstar",
+  "ukiyo",
   "team-neverseen",
   "beehyve",
   "northwind",
   "crystal-laurels",
-  "aspire",
   "wraithborne",
   "aeternum",
+  "0v3",
   "solstice",
   "5percent",
-  "0v3",
-  "special-forces",
   "nightshade",
+  "special-forces",
   "lunar-cadence",
-  "syzygy",
   "cyanide",
+  "syzygy",
   "nightfang-covenant",
   "astral-bloom"
  ],
@@ -351,14 +352,14 @@
    "mvp": 120
   },
   "tuxedocat": {
-   "maps": 58,
-   "kills": 915,
-   "mvp": 126
+   "maps": 59,
+   "kills": 937,
+   "mvp": 130
   },
   "hanarisu": {
-   "maps": 57,
-   "kills": 905,
-   "mvp": 135
+   "maps": 58,
+   "kills": 917,
+   "mvp": 137
   },
   "moira": {
    "maps": 32,
@@ -366,9 +367,9 @@
    "mvp": 64
   },
   "caarrietan": {
-   "maps": 58,
-   "kills": 807,
-   "mvp": 95
+   "maps": 59,
+   "kills": 817,
+   "mvp": 96
   },
   "stylus": {
    "maps": 33,
@@ -401,29 +402,29 @@
    "mvp": 131
   },
   "plainyingying": {
-   "maps": 61,
-   "kills": 1057,
-   "mvp": 155
+   "maps": 62,
+   "kills": 1078,
+   "mvp": 160
   },
   "fleurcoz": {
-   "maps": 61,
-   "kills": 1001,
-   "mvp": 139
+   "maps": 62,
+   "kills": 1011,
+   "mvp": 141
   },
   "winda": {
-   "maps": 63,
-   "kills": 1025,
-   "mvp": 166
+   "maps": 64,
+   "kills": 1039,
+   "mvp": 168
   },
   "lumpydayo": {
-   "maps": 61,
-   "kills": 1012,
+   "maps": 62,
+   "kills": 1027,
    "mvp": 151
   },
   "venicec": {
-   "maps": 65,
-   "kills": 988,
-   "mvp": 105
+   "maps": 66,
+   "kills": 1000,
+   "mvp": 106
   },
   "beyouna": {
    "maps": 53,
@@ -2211,9 +2212,9 @@
    "mvp": 21
   },
   "mikuryne": {
-   "maps": 44,
-   "kills": 761,
-   "mvp": 125
+   "maps": 45,
+   "kills": 781,
+   "mvp": 127
   },
   "chiyoaqua": {
    "maps": 10,
@@ -2236,9 +2237,9 @@
    "mvp": 25
   },
   "chisa-scarlett": {
-   "maps": 40,
-   "kills": 705,
-   "mvp": 89
+   "maps": 41,
+   "kills": 731,
+   "mvp": 93
   },
   "soslim": {
    "maps": 9,
@@ -2500,6 +2501,7 @@
   "upset:phase-shift-invitational-i:1-4",
   "upset:second-wind-invitational-i:1-12",
   "upset:second-wind-invitational-i:1-13",
+  "upset:second-wind-invitational-i:1-15",
   "upset:second-wind-invitational-i:1-2"
  ],
  "v": 1,
@@ -2507,6 +2509,7 @@
   "champion:bpl-challengers-stage-2026",
   "champion:bpl-legends-stage-2026",
   "champion:phase-shift-invitational-i",
+  "champion:second-wind-invitational-i",
   "promotion:beehyve",
   "promotion:crystal-laurels",
   "promotion:nightfang-covenant",
