@@ -249,5 +249,6 @@
  ],
  "formatLabel": "16-team single elimination",
  "formatNote": "16 teams from outside the Conquerors Stage 2026 playoffs, picked across the whole BPL ranking (#1 to #54), so the lower-ranked teams get a shot too. Single elimination, every match a Bo3, seeded by BPL ranking points: 1 plays 16, 2 plays 15 and so on, with a third-place match.",
- "predictionsLocked": true
+ "predictionsLocked": true,
+ "completed": true
 }
