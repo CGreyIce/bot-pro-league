@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:yojareddo:maps:50",
-  "type": "milestone",
-  "ts": 1793722148,
-  "date": "2026-11-04",
-  "title": "YoJareddo: 50 maps played",
-  "text": "YoJareddo reached 50 maps played",
-  "link": "#/player/yojareddo"
- },
- {
   "id": "milestone:djassaulty:kills:500",
   "type": "milestone",
   "ts": 1793722148,
@@ -1798,5 +1789,14 @@
   "title": "itswendy_: 100 MVP rounds",
   "text": "itswendy_ reached 100 MVP rounds",
   "link": "#/player/itswendy"
+ },
+ {
+  "id": "milestone:arya-kuroha:mvp:100",
+  "type": "milestone",
+  "ts": 1794251937,
+  "date": "2026-11-10",
+  "title": "Arya Kuroha: 100 MVP rounds",
+  "text": "Arya Kuroha reached 100 MVP rounds",
+  "link": "#/player/arya-kuroha"
  }
 ]
