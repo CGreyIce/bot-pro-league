@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:joyyy-cheng:mvp:100",
-  "type": "milestone",
-  "ts": 1793699977,
-  "date": "2026-11-03",
-  "title": "joyyy_cheng: 100 MVP rounds",
-  "text": "joyyy_cheng reached 100 MVP rounds",
-  "link": "#/player/joyyy-cheng"
- },
- {
   "id": "milestone:syrrith:maps:50",
   "type": "milestone",
   "ts": 1793701264,
@@ -1798,5 +1789,14 @@
   "title": "gigichiii_: 200 MVP rounds",
   "text": "gigichiii_ reached 200 MVP rounds",
   "link": "#/player/gigichiii"
+ },
+ {
+  "id": "milestone:lumpydayo:kills:1000",
+  "type": "milestone",
+  "ts": 1794207314,
+  "date": "2026-11-09",
+  "title": "lumpydayo: 1000 career kills",
+  "text": "lumpydayo reached 1000 career kills",
+  "link": "#/player/lumpydayo"
  }
 ]
