@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:jaelyo:maps:50",
-  "type": "milestone",
-  "ts": 1793720038,
-  "date": "2026-11-03",
-  "title": "jaelyo: 50 maps played",
-  "text": "jaelyo reached 50 maps played",
-  "link": "#/player/jaelyo"
- },
- {
-  "id": "milestone:gigichiii:mvp:150",
-  "type": "milestone",
-  "ts": 1793722148,
-  "date": "2026-11-04",
-  "title": "gigichiii_: 150 MVP rounds",
-  "text": "gigichiii_ reached 150 MVP rounds",
-  "link": "#/player/gigichiii"
- },
- {
   "id": "milestone:yojareddo:maps:50",
   "type": "milestone",
   "ts": 1793722148,
@@ -1798,5 +1780,23 @@
   "title": "kaikaijins: 1000 career kills",
   "text": "kaikaijins reached 1000 career kills",
   "link": "#/player/kaikaijins"
+ },
+ {
+  "id": "milestone:fumishiroyummy:kills:1000",
+  "type": "milestone",
+  "ts": 1794249879,
+  "date": "2026-11-10",
+  "title": "FumishiroYummy: 1000 career kills",
+  "text": "FumishiroYummy reached 1000 career kills",
+  "link": "#/player/fumishiroyummy"
+ },
+ {
+  "id": "milestone:itswendy:mvp:100",
+  "type": "milestone",
+  "ts": 1794249879,
+  "date": "2026-11-10",
+  "title": "itswendy_: 100 MVP rounds",
+  "text": "itswendy_ reached 100 MVP rounds",
+  "link": "#/player/itswendy"
  }
 ]
