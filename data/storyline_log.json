@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:kaito-oshino:maps:50",
-  "type": "milestone",
-  "ts": 1793726733,
-  "date": "2026-11-04",
-  "title": "Kaito_Oshino: 50 maps played",
-  "text": "Kaito_Oshino reached 50 maps played",
-  "link": "#/player/kaito-oshino"
- },
- {
   "id": "record:longestWinStreak:14",
   "type": "record",
   "ts": 1793729553,
@@ -1798,5 +1789,14 @@
   "title": "TRPaki: 50 maps played",
   "text": "TRPaki reached 50 maps played",
   "link": "#/player/trpaki"
+ },
+ {
+  "id": "milestone:higuvt:maps:50",
+  "type": "milestone",
+  "ts": 1794271779,
+  "date": "2026-11-10",
+  "title": "HiguVT: 50 maps played",
+  "text": "HiguVT reached 50 maps played",
+  "link": "#/player/higuvt"
  }
 ]
