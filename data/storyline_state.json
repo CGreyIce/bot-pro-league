@@ -362,9 +362,9 @@
    "mvp": 137
   },
   "moira": {
-   "maps": 34,
-   "kills": 495,
-   "mvp": 67
+   "maps": 35,
+   "kills": 508,
+   "mvp": 70
   },
   "caarrietan": {
    "maps": 59,
@@ -1222,9 +1222,9 @@
    "mvp": 68
   },
   "higuvt": {
-   "maps": 50,
-   "kills": 864,
-   "mvp": 144
+   "maps": 51,
+   "kills": 886,
+   "mvp": 150
   },
   "aurasinvt": {
    "maps": 53,
@@ -1632,9 +1632,9 @@
    "mvp": 92
   },
   "kimonra": {
-   "maps": 42,
-   "kills": 684,
-   "mvp": 96
+   "maps": 43,
+   "kills": 691,
+   "mvp": 97
   },
   "trpaki": {
    "maps": 50,
@@ -2017,9 +2017,9 @@
    "mvp": 76
   },
   "qebo": {
-   "maps": 28,
-   "kills": 469,
-   "mvp": 75
+   "maps": 29,
+   "kills": 484,
+   "mvp": 78
   },
   "hanyachi": {
    "maps": 21,
@@ -2072,9 +2072,9 @@
    "mvp": 64
   },
   "akiratsukiyono": {
-   "maps": 19,
-   "kills": 257,
-   "mvp": 32
+   "maps": 20,
+   "kills": 274,
+   "mvp": 34
   },
   "rihsuri": {
    "maps": 28,
@@ -2097,9 +2097,9 @@
    "mvp": 141
   },
   "boopydoopy": {
-   "maps": 44,
-   "kills": 623,
-   "mvp": 85
+   "maps": 45,
+   "kills": 633,
+   "mvp": 87
   },
   "kaikaijins": {
    "maps": 67,
@@ -2147,9 +2147,9 @@
    "mvp": 33
   },
   "soapbox-danny": {
-   "maps": 18,
-   "kills": 274,
-   "mvp": 34
+   "maps": 19,
+   "kills": 282,
+   "mvp": 35
   },
   "sportsocke": {
    "maps": 17,
@@ -2162,9 +2162,9 @@
    "mvp": 34
   },
   "voicethemirai": {
-   "maps": 13,
-   "kills": 185,
-   "mvp": 27
+   "maps": 14,
+   "kills": 199,
+   "mvp": 28
   },
   "rinamizuu": {
    "maps": 9,
@@ -2222,9 +2222,9 @@
    "mvp": 26
   },
   "reruzensky": {
-   "maps": 20,
-   "kills": 345,
-   "mvp": 46
+   "maps": 21,
+   "kills": 364,
+   "mvp": 48
   },
   "spicywolfie": {
    "maps": 19,
@@ -2242,9 +2242,9 @@
    "mvp": 93
   },
   "soslim": {
-   "maps": 11,
-   "kills": 195,
-   "mvp": 37
+   "maps": 12,
+   "kills": 210,
+   "mvp": 38
   },
   "nevesten": {
    "maps": 8,
@@ -2494,6 +2494,7 @@
   "upset:bpl-legends-stage-2026:4-27",
   "upset:bpl-legends-stage-2026:4-5",
   "upset:maigo-s-rookie-roulette:3-1",
+  "upset:maigo-s-rookie-roulette:3-2",
   "upset:nations-cup-qualifier-singapore-2026:1-43",
   "upset:nova-initia-invitational-i:1-12",
   "upset:nova-initia-invitational-i:1-7",

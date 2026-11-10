@@ -1,23 +1,5 @@
 [
  {
-  "id": "record:longestWinStreak:14",
-  "type": "record",
-  "ts": 1793729553,
-  "date": "2026-11-04",
-  "title": "New record: longest win streak",
-  "text": "Nullpoint: 14 wins in a row (BPL Conquerors Stage 2026)",
-  "link": "#/team/nullpoint"
- },
- {
-  "id": "milestone:kokushi-vampir:maps:50",
-  "type": "milestone",
-  "ts": 1793731262,
-  "date": "2026-11-04",
-  "title": "kokushi_vampir: 50 maps played",
-  "text": "kokushi_vampir reached 50 maps played",
-  "link": "#/player/kokushi-vampir"
- },
- {
   "id": "milestone:nipnip:maps:50",
   "type": "milestone",
   "ts": 1793733151,
@@ -1797,6 +1779,24 @@
   "date": "2026-11-10",
   "title": "HiguVT: 50 maps played",
   "text": "HiguVT reached 50 maps played",
+  "link": "#/player/higuvt"
+ },
+ {
+  "id": "milestone:moira:kills:500",
+  "type": "milestone",
+  "ts": 1794273669,
+  "date": "2026-11-10",
+  "title": "Moira: 500 career kills",
+  "text": "Moira reached 500 career kills",
+  "link": "#/player/moira"
+ },
+ {
+  "id": "milestone:higuvt:mvp:150",
+  "type": "milestone",
+  "ts": 1794273669,
+  "date": "2026-11-10",
+  "title": "HiguVT: 150 MVP rounds",
+  "text": "HiguVT reached 150 MVP rounds",
   "link": "#/player/higuvt"
  }
 ]
