@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:anndreika:maps:50",
-  "type": "milestone",
-  "ts": 1793735207,
-  "date": "2026-11-04",
-  "title": "Anndreika: 50 maps played",
-  "text": "Anndreika reached 50 maps played",
-  "link": "#/player/anndreika"
- },
- {
-  "id": "milestone:sneakyyyyy:maps:50",
-  "type": "milestone",
-  "ts": 1793735207,
-  "date": "2026-11-04",
-  "title": "sneakyyyyy: 50 maps played",
-  "text": "sneakyyyyy reached 50 maps played",
-  "link": "#/player/sneakyyyyy"
- },
- {
   "id": "milestone:keikatamori:kills:1000",
   "type": "milestone",
   "ts": 1793738225,
@@ -1798,5 +1780,23 @@
   "title": "wushii: 100 MVP rounds",
   "text": "wushii reached 100 MVP rounds",
   "link": "#/player/wushii"
+ },
+ {
+  "id": "milestone:afayctionate:mvp:150",
+  "type": "milestone",
+  "ts": 1794332229,
+  "date": "2026-11-11",
+  "title": "afayctionate: 150 MVP rounds",
+  "text": "afayctionate reached 150 MVP rounds",
+  "link": "#/player/afayctionate"
+ },
+ {
+  "id": "milestone:lukedefabio:maps:50",
+  "type": "milestone",
+  "ts": 1794332229,
+  "date": "2026-11-11",
+  "title": "lukedefabio: 50 maps played",
+  "text": "lukedefabio reached 50 maps played",
+  "link": "#/player/lukedefabio"
  }
 ]
