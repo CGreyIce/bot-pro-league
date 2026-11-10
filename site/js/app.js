@@ -5362,7 +5362,7 @@ async function livePushDirty(){
 // signed-in admin page is open it relays that to Firestore live/m--<slug>--<ref>; the match page
 // shows it as a LIVE panel. When the app sends a finished map to the match page, the event is
 // pushed live as usual, so the series score and map scoreboards update too.
-const LiveRelay = {key:null, statsKey:null, at:0, doc:null, upload:0, seen:false, timer:null, state:''};
+const LiveRelay = {key:null, statsKey:null, at:0, doc:null, upload:0, seen:false, timer:null, state:'', busy:0};
 function liveRelayOn(){ try{ return localStorage.getItem('bpl_live_relay')!=='0'; }catch(e){ return true; } }
 function botsPort(){ try{ return +localStorage.getItem('bpl_bots_port') || 8760; }catch(e){ return 8760; } }
 function liveRelayShow(text){ LiveRelay.state = text; const el = $("#lv-relay-state"); if(el) el.textContent = text; }
@@ -5406,7 +5406,21 @@ async function liveRelayTick(){
     liveRelayShow(/permission/i.test(e.message||'') ? 'Blocked: do step 2 below' : 'Relay failed: '+(e.message||e));
   }
 }
-function liveRelayStart(){ if(_adminOn && !LiveRelay.timer) LiveRelay.timer = setInterval(()=>liveRelayTick().catch(()=>{}), 4000); }
+// Chrome and Edge run a page's own timers only once a minute after it has been hidden for 5 minutes (say, CS:GO
+// in front of the admin window on a one-screen laptop), which stalled the relay. A worker's timer isn't slowed
+// like that, so a tiny worker sets the pace and the page does the work when it hears from it.
+function liveRelayStart(){
+  if(!_adminOn || LiveRelay.timer) return;
+  const tick = ()=>{
+    if(LiveRelay.busy && Date.now()-LiveRelay.busy < 30000) return;     // the last one is still waiting on the network
+    LiveRelay.busy = Date.now();
+    liveRelayTick().catch(()=>{}).finally(()=>{ LiveRelay.busy = 0; });
+  };
+  try{
+    const w = new Worker(URL.createObjectURL(new Blob(['setInterval(()=>postMessage(0), 4000)'], {type:'text/javascript'})));
+    w.onmessage = tick; LiveRelay.timer = w;
+  }catch(e){ LiveRelay.timer = setInterval(tick, 4000); }
+}
 
 // public match page: the LIVE panel
 let _liveMatchUnsub = null;
