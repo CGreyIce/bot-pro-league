@@ -1547,9 +1547,9 @@
    "mvp": 120
   },
   "rittan0x0": {
-   "maps": 42,
-   "kills": 694,
-   "mvp": 107
+   "maps": 43,
+   "kills": 702,
+   "mvp": 109
   },
   "justyoong": {
    "maps": 36,
@@ -1647,8 +1647,8 @@
    "mvp": 99
   },
   "nightveil-lycoris": {
-   "maps": 39,
-   "kills": 611,
+   "maps": 40,
+   "kills": 627,
    "mvp": 87
   },
   "arcimoon": {
@@ -1797,9 +1797,9 @@
    "mvp": 87
   },
   "strandedpond": {
-   "maps": 29,
-   "kills": 459,
-   "mvp": 69
+   "maps": 30,
+   "kills": 471,
+   "mvp": 70
   },
   "yumeno-akari": {
    "maps": 44,
@@ -1872,9 +1872,9 @@
    "mvp": 44
   },
   "yarimell": {
-   "maps": 32,
-   "kills": 451,
-   "mvp": 58
+   "maps": 33,
+   "kills": 463,
+   "mvp": 60
   },
   "kimmixd": {
    "maps": 32,
@@ -2052,9 +2052,9 @@
    "mvp": 36
   },
   "seaemv": {
-   "maps": 15,
-   "kills": 239,
-   "mvp": 34
+   "maps": 16,
+   "kills": 251,
+   "mvp": 36
   },
   "sakistars": {
    "maps": 18,
@@ -2382,28 +2382,28 @@
    "mvp": 43
   },
   "gei-gyattamori": {
-   "maps": 1,
-   "kills": 11,
-   "mvp": 2
+   "maps": 2,
+   "kills": 29,
+   "mvp": 7
   },
   "chritler": {
-   "maps": 1,
-   "kills": 17,
-   "mvp": 2
+   "maps": 2,
+   "kills": 34,
+   "mvp": 5
   },
   "mr-hakolympia": {
-   "maps": 1,
-   "kills": 12,
-   "mvp": 1
+   "maps": 2,
+   "kills": 18,
+   "mvp": 2
   },
   "c-m-tribute": {
-   "maps": 1,
-   "kills": 17,
-   "mvp": 3
+   "maps": 2,
+   "kills": 34,
+   "mvp": 7
   },
   "awtistoh": {
-   "maps": 1,
-   "kills": 22,
+   "maps": 2,
+   "kills": 40,
    "mvp": 5
   }
  },
