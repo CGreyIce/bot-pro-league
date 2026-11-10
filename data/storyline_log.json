@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:venicec:maps:50",
-  "type": "milestone",
-  "ts": 1793743440,
-  "date": "2026-11-04",
-  "title": "VeniceC: 50 maps played",
-  "text": "VeniceC reached 50 maps played",
-  "link": "#/player/venicec"
- },
- {
-  "id": "milestone:xjavyz:kills:500",
-  "type": "milestone",
-  "ts": 1793743440,
-  "date": "2026-11-04",
-  "title": "xJavyz: 500 career kills",
-  "text": "xJavyz reached 500 career kills",
-  "link": "#/player/xjavyz"
- },
- {
   "id": "milestone:winda:maps:50",
   "type": "milestone",
   "ts": 1793746653,
@@ -1797,6 +1779,24 @@
   "date": "2026-11-11",
   "title": "Skiazelle: 1000 career kills",
   "text": "Skiazelle reached 1000 career kills",
+  "link": "#/player/skiazelle"
+ },
+ {
+  "id": "milestone:arya-kuroha:maps:50",
+  "type": "milestone",
+  "ts": 1794338018,
+  "date": "2026-11-11",
+  "title": "Arya Kuroha: 50 maps played",
+  "text": "Arya Kuroha reached 50 maps played",
+  "link": "#/player/arya-kuroha"
+ },
+ {
+  "id": "milestone:skiazelle:mvp:150",
+  "type": "milestone",
+  "ts": 1794338018,
+  "date": "2026-11-11",
+  "title": "Skiazelle: 150 MVP rounds",
+  "text": "Skiazelle reached 150 MVP rounds",
   "link": "#/player/skiazelle"
  }
 ]
