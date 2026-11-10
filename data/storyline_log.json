@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:awtoh:maps:50",
-  "type": "milestone",
-  "ts": 1793733151,
-  "date": "2026-11-04",
-  "title": "awtoh: 50 maps played",
-  "text": "awtoh reached 50 maps played",
-  "link": "#/player/awtoh"
- },
- {
   "id": "milestone:babayaga:maps:50",
   "type": "milestone",
   "ts": 1793733151,
@@ -1798,5 +1789,14 @@
   "title": "itswendy_: 50 maps played",
   "text": "itswendy_ reached 50 maps played",
   "link": "#/player/itswendy"
+ },
+ {
+  "id": "milestone:penguchi:kills:500",
+  "type": "milestone",
+  "ts": 1794304061,
+  "date": "2026-11-10",
+  "title": "PenguChi: 500 career kills",
+  "text": "PenguChi reached 500 career kills",
+  "link": "#/player/penguchi"
  }
 ]
