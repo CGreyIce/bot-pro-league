@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:nipnip:mvp:150",
-  "type": "milestone",
-  "ts": 1793735207,
-  "date": "2026-11-04",
-  "title": "NipNip: 150 MVP rounds",
-  "text": "NipNip reached 150 MVP rounds",
-  "link": "#/player/nipnip"
- },
- {
   "id": "milestone:anndreika:maps:50",
   "type": "milestone",
   "ts": 1793735207,
@@ -1798,5 +1789,14 @@
   "title": "Dazeido: 500 career kills",
   "text": "Dazeido reached 500 career kills",
   "link": "#/player/dazeido"
+ },
+ {
+  "id": "milestone:wushii:mvp:100",
+  "type": "milestone",
+  "ts": 1794319479,
+  "date": "2026-11-10",
+  "title": "wushii: 100 MVP rounds",
+  "text": "wushii reached 100 MVP rounds",
+  "link": "#/player/wushii"
  }
 ]
