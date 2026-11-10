@@ -1292,9 +1292,9 @@
    "mvp": 137
   },
   "yumezukiyomi": {
-   "maps": 52,
-   "kills": 789,
-   "mvp": 111
+   "maps": 53,
+   "kills": 801,
+   "mvp": 112
   },
   "airizu": {
    "maps": 60,
@@ -1567,9 +1567,9 @@
    "mvp": 88
   },
   "bloodbane": {
-   "maps": 45,
-   "kills": 823,
-   "mvp": 120
+   "maps": 46,
+   "kills": 842,
+   "mvp": 122
   },
   "zarlard": {
    "maps": 50,
@@ -1702,8 +1702,8 @@
    "mvp": 80
   },
   "yukihimeowo": {
-   "maps": 42,
-   "kills": 649,
+   "maps": 43,
+   "kills": 659,
    "mvp": 75
   },
   "yano-kuromu": {
@@ -1767,9 +1767,9 @@
    "mvp": 44
   },
   "bajiru-en": {
-   "maps": 34,
-   "kills": 593,
-   "mvp": 96
+   "maps": 35,
+   "kills": 600,
+   "mvp": 97
   },
   "exact": {
    "maps": 46,
@@ -1862,9 +1862,9 @@
    "mvp": 86
   },
   "morisottovt": {
-   "maps": 32,
-   "kills": 415,
-   "mvp": 42
+   "maps": 33,
+   "kills": 429,
+   "mvp": 44
   },
   "loonatic": {
    "maps": 28,
@@ -2382,29 +2382,29 @@
    "mvp": 49
   },
   "gei-gyattamori": {
-   "maps": 2,
-   "kills": 29,
-   "mvp": 7
+   "maps": 3,
+   "kills": 42,
+   "mvp": 10
   },
   "chritler": {
-   "maps": 2,
-   "kills": 34,
-   "mvp": 5
-  },
-  "mr-hakolympia": {
-   "maps": 2,
-   "kills": 18,
-   "mvp": 2
-  },
-  "c-m-tribute": {
-   "maps": 2,
-   "kills": 34,
+   "maps": 3,
+   "kills": 53,
    "mvp": 7
   },
+  "mr-hakolympia": {
+   "maps": 3,
+   "kills": 30,
+   "mvp": 3
+  },
+  "c-m-tribute": {
+   "maps": 3,
+   "kills": 53,
+   "mvp": 11
+  },
   "awtistoh": {
-   "maps": 2,
-   "kills": 40,
-   "mvp": 5
+   "maps": 3,
+   "kills": 57,
+   "mvp": 8
   }
  },
  "upsetsSeen": [
