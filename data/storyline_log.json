@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:keikatamori:kills:1000",
-  "type": "milestone",
-  "ts": 1793738225,
-  "date": "2026-11-04",
-  "title": "keikatamori: 1000 career kills",
-  "text": "keikatamori reached 1000 career kills",
-  "link": "#/player/keikatamori"
- },
- {
-  "id": "milestone:miyaleile:mvp:100",
-  "type": "milestone",
-  "ts": 1793741185,
-  "date": "2026-11-04",
-  "title": "MiyaLeile: 100 MVP rounds",
-  "text": "MiyaLeile reached 100 MVP rounds",
-  "link": "#/player/miyaleile"
- },
- {
   "id": "milestone:venicec:maps:50",
   "type": "milestone",
   "ts": 1793743440,
@@ -1798,5 +1780,23 @@
   "title": "lukedefabio: 50 maps played",
   "text": "lukedefabio reached 50 maps played",
   "link": "#/player/lukedefabio"
+ },
+ {
+  "id": "milestone:twentyrosie:mvp:200",
+  "type": "milestone",
+  "ts": 1794335468,
+  "date": "2026-11-11",
+  "title": "twentyrosie: 200 MVP rounds",
+  "text": "twentyrosie reached 200 MVP rounds",
+  "link": "#/player/twentyrosie"
+ },
+ {
+  "id": "milestone:skiazelle:kills:1000",
+  "type": "milestone",
+  "ts": 1794335468,
+  "date": "2026-11-11",
+  "title": "Skiazelle: 1000 career kills",
+  "text": "Skiazelle reached 1000 career kills",
+  "link": "#/player/skiazelle"
  }
 ]
