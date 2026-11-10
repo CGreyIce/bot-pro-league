@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:azzuto:maps:50",
-  "type": "milestone",
-  "ts": 1793733151,
-  "date": "2026-11-04",
-  "title": "azzuto: 50 maps played",
-  "text": "azzuto reached 50 maps played",
-  "link": "#/player/azzuto"
- },
- {
   "id": "milestone:nipnip:mvp:150",
   "type": "milestone",
   "ts": 1793735207,
@@ -1798,5 +1789,14 @@
   "title": "Miki Nakai: 500 career kills",
   "text": "Miki Nakai reached 500 career kills",
   "link": "#/player/miki-nakai"
+ },
+ {
+  "id": "milestone:dazeido:kills:500",
+  "type": "milestone",
+  "ts": 1794313540,
+  "date": "2026-11-10",
+  "title": "Dazeido: 500 career kills",
+  "text": "Dazeido reached 500 career kills",
+  "link": "#/player/dazeido"
  }
 ]
