@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:babayaga:maps:50",
-  "type": "milestone",
-  "ts": 1793733151,
-  "date": "2026-11-04",
-  "title": "BaBaYaGa: 50 maps played",
-  "text": "BaBaYaGa reached 50 maps played",
-  "link": "#/player/babayaga"
- },
- {
   "id": "milestone:inaxho:maps:50",
   "type": "milestone",
   "ts": 1793733151,
@@ -1798,5 +1789,14 @@
   "title": "PenguChi: 500 career kills",
   "text": "PenguChi reached 500 career kills",
   "link": "#/player/penguchi"
+ },
+ {
+  "id": "milestone:qebo:kills:500",
+  "type": "milestone",
+  "ts": 1794308987,
+  "date": "2026-11-10",
+  "title": "qebo: 500 career kills",
+  "text": "qebo reached 500 career kills",
+  "link": "#/player/qebo"
  }
 ]
