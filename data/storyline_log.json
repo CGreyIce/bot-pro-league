@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:inaxho:maps:50",
-  "type": "milestone",
-  "ts": 1793733151,
-  "date": "2026-11-04",
-  "title": "inaxho: 50 maps played",
-  "text": "inaxho reached 50 maps played",
-  "link": "#/player/inaxho"
- },
- {
   "id": "milestone:azzuto:maps:50",
   "type": "milestone",
   "ts": 1793733151,
@@ -1798,5 +1789,14 @@
   "title": "qebo: 500 career kills",
   "text": "qebo reached 500 career kills",
   "link": "#/player/qebo"
+ },
+ {
+  "id": "milestone:miki-nakai:kills:500",
+  "type": "milestone",
+  "ts": 1794311297,
+  "date": "2026-11-10",
+  "title": "Miki Nakai: 500 career kills",
+  "text": "Miki Nakai reached 500 career kills",
+  "link": "#/player/miki-nakai"
  }
 ]
