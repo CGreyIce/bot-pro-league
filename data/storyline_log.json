@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:nipnip:maps:50",
-  "type": "milestone",
-  "ts": 1793733151,
-  "date": "2026-11-04",
-  "title": "NipNip: 50 maps played",
-  "text": "NipNip reached 50 maps played",
-  "link": "#/player/nipnip"
- },
- {
-  "id": "milestone:efreetsz:maps:50",
-  "type": "milestone",
-  "ts": 1793733151,
-  "date": "2026-11-04",
-  "title": "EfreetsZ: 50 maps played",
-  "text": "EfreetsZ reached 50 maps played",
-  "link": "#/player/efreetsz"
- },
- {
   "id": "milestone:anndreika:mvp:100",
   "type": "milestone",
   "ts": 1793733151,
@@ -1798,5 +1780,23 @@
   "title": "HiguVT: 150 MVP rounds",
   "text": "HiguVT reached 150 MVP rounds",
   "link": "#/player/higuvt"
+ },
+ {
+  "id": "milestone:zarlard:maps:50",
+  "type": "milestone",
+  "ts": 1794291034,
+  "date": "2026-11-10",
+  "title": "Zarlard: 50 maps played",
+  "text": "Zarlard reached 50 maps played",
+  "link": "#/player/zarlard"
+ },
+ {
+  "id": "milestone:miruaamaochi:kills:500",
+  "type": "milestone",
+  "ts": 1794291034,
+  "date": "2026-11-10",
+  "title": "miruaamaochi: 500 career kills",
+  "text": "miruaamaochi reached 500 career kills",
+  "link": "#/player/miruaamaochi"
  }
 ]
