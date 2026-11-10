@@ -110,8 +110,8 @@
   "flood-flashers",
   "division20",
   "raven-song",
-  "infernum-e-sports",
   "bluebird",
+  "infernum-e-sports",
   "pepegax",
   "divide-conquer",
   "moonlit-tempo",
@@ -1547,9 +1547,9 @@
    "mvp": 120
   },
   "rittan0x0": {
-   "maps": 41,
-   "kills": 680,
-   "mvp": 104
+   "maps": 42,
+   "kills": 694,
+   "mvp": 107
   },
   "justyoong": {
    "maps": 36,
@@ -1647,8 +1647,8 @@
    "mvp": 99
   },
   "nightveil-lycoris": {
-   "maps": 38,
-   "kills": 598,
+   "maps": 39,
+   "kills": 611,
    "mvp": 87
   },
   "arcimoon": {
@@ -1797,8 +1797,8 @@
    "mvp": 87
   },
   "strandedpond": {
-   "maps": 28,
-   "kills": 456,
+   "maps": 29,
+   "kills": 459,
    "mvp": 69
   },
   "yumeno-akari": {
@@ -1872,9 +1872,9 @@
    "mvp": 44
   },
   "yarimell": {
-   "maps": 31,
-   "kills": 440,
-   "mvp": 56
+   "maps": 32,
+   "kills": 451,
+   "mvp": 58
   },
   "kimmixd": {
    "maps": 32,
@@ -2052,8 +2052,8 @@
    "mvp": 36
   },
   "seaemv": {
-   "maps": 14,
-   "kills": 231,
+   "maps": 15,
+   "kills": 239,
    "mvp": 34
   },
   "sakistars": {
@@ -2382,29 +2382,29 @@
    "mvp": 43
   },
   "gei-gyattamori": {
-   "maps": 0,
-   "kills": 0,
-   "mvp": 0
+   "maps": 1,
+   "kills": 11,
+   "mvp": 2
   },
   "chritler": {
-   "maps": 0,
-   "kills": 0,
-   "mvp": 0
+   "maps": 1,
+   "kills": 17,
+   "mvp": 2
   },
   "mr-hakolympia": {
-   "maps": 0,
-   "kills": 0,
-   "mvp": 0
+   "maps": 1,
+   "kills": 12,
+   "mvp": 1
   },
   "c-m-tribute": {
-   "maps": 0,
-   "kills": 0,
-   "mvp": 0
+   "maps": 1,
+   "kills": 17,
+   "mvp": 3
   },
   "awtistoh": {
-   "maps": 0,
-   "kills": 0,
-   "mvp": 0
+   "maps": 1,
+   "kills": 22,
+   "mvp": 5
   }
  },
  "upsetsSeen": [
