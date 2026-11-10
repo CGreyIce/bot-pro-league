@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:anndreika:mvp:100",
-  "type": "milestone",
-  "ts": 1793733151,
-  "date": "2026-11-04",
-  "title": "Anndreika: 100 MVP rounds",
-  "text": "Anndreika reached 100 MVP rounds",
-  "link": "#/player/anndreika"
- },
- {
   "id": "milestone:awtoh:maps:50",
   "type": "milestone",
   "ts": 1793733151,
@@ -1798,5 +1789,14 @@
   "title": "miruaamaochi: 500 career kills",
   "text": "miruaamaochi reached 500 career kills",
   "link": "#/player/miruaamaochi"
+ },
+ {
+  "id": "milestone:itswendy:maps:50",
+  "type": "milestone",
+  "ts": 1794296997,
+  "date": "2026-11-10",
+  "title": "itswendy_: 50 maps played",
+  "text": "itswendy_ reached 50 maps played",
+  "link": "#/player/itswendy"
  }
 ]
