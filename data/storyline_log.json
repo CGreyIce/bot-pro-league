@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:winda:maps:50",
-  "type": "milestone",
-  "ts": 1793746653,
-  "date": "2026-11-04",
-  "title": "winda: 50 maps played",
-  "text": "winda reached 50 maps played",
-  "link": "#/player/winda"
- },
- {
   "id": "milestone:remia-aotsuki:mvp:100",
   "type": "milestone",
   "ts": 1793748548,
@@ -1798,5 +1789,14 @@
   "title": "Skiazelle: 150 MVP rounds",
   "text": "Skiazelle reached 150 MVP rounds",
   "link": "#/player/skiazelle"
+ },
+ {
+  "id": "milestone:mkakili:maps:50",
+  "type": "milestone",
+  "ts": 1794350461,
+  "date": "2026-11-11",
+  "title": "MKakili: 50 maps played",
+  "text": "MKakili reached 50 maps played",
+  "link": "#/player/mkakili"
  }
 ]
