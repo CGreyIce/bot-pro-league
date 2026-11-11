@@ -219,8 +219,9 @@
      "fb": {
       "loserOf": 5
      },
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1794379530
     }
    ],
    "roundTitles": {
@@ -464,13 +465,13 @@
    "bestOf": 3,
    "teams": [
     "Defiant Order",
-    "",
+    "Snowlit Temple",
     "",
     "",
     "",
     "",
     "G.I. Jokes",
-    ""
+    "Eiromancers"
    ],
    "matches": [
     {
