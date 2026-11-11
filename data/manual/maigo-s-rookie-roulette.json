@@ -333,8 +333,9 @@
      "fb": {
       "loserOf": 5
      },
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 1,
+     "ts": 1794388080
     }
    ],
    "roundTitles": {
@@ -467,9 +468,9 @@
     "Defiant Order",
     "Snowlit Temple",
     "",
+    "Mirai Fates",
     "",
-    "",
-    "",
+    "Hanabusa Estate",
     "G.I. Jokes",
     "Eiromancers"
    ],
