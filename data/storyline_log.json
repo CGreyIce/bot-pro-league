@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:remia-aotsuki:mvp:100",
-  "type": "milestone",
-  "ts": 1793748548,
-  "date": "2026-11-04",
-  "title": "Remia Aotsuki: 100 MVP rounds",
-  "text": "Remia Aotsuki reached 100 MVP rounds",
-  "link": "#/player/remia-aotsuki"
- },
- {
-  "id": "milestone:elfy-mint:maps:50",
-  "type": "milestone",
-  "ts": 1793748548,
-  "date": "2026-11-04",
-  "title": "Elfy Mint: 50 maps played",
-  "text": "Elfy Mint reached 50 maps played",
-  "link": "#/player/elfy-mint"
- },
- {
   "id": "upset:bpl-conquerors-stage-2026:2-9",
   "type": "upset",
   "ts": 1793750646,
@@ -1798,5 +1780,23 @@
   "title": "MKakili: 50 maps played",
   "text": "MKakili reached 50 maps played",
   "link": "#/player/mkakili"
+ },
+ {
+  "id": "milestone:just-ansel:mvp:100",
+  "type": "milestone",
+  "ts": 1794370122,
+  "date": "2026-11-11",
+  "title": "Just_Ansel: 100 MVP rounds",
+  "text": "Just_Ansel reached 100 MVP rounds",
+  "link": "#/player/just-ansel"
+ },
+ {
+  "id": "milestone:itswinter:mvp:100",
+  "type": "milestone",
+  "ts": 1794370122,
+  "date": "2026-11-11",
+  "title": "itswinter__: 100 MVP rounds",
+  "text": "itswinter__ reached 100 MVP rounds",
+  "link": "#/player/itswinter"
  }
 ]
