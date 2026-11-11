@@ -105,8 +105,9 @@
      "fb": {
       "loserOf": 5
      },
-     "sa": null,
-     "sb": null
+     "sa": 2,
+     "sb": 0,
+     "ts": 1794374104
     }
    ],
    "roundTitles": {
@@ -462,13 +463,13 @@
    "format": "single_elim",
    "bestOf": 3,
    "teams": [
+    "Defiant Order",
     "",
     "",
     "",
     "",
     "",
-    "",
-    "",
+    "G.I. Jokes",
     ""
    ],
    "matches": [
