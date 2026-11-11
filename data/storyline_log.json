@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:tachibana-hinano:mvp:150",
-  "type": "milestone",
-  "ts": 1793750649,
-  "date": "2026-11-04",
-  "title": "Tachibana Hinano: 150 MVP rounds",
-  "text": "Tachibana Hinano reached 150 MVP rounds",
-  "link": "#/player/tachibana-hinano"
- },
- {
-  "id": "milestone:remia-aotsuki:maps:50",
-  "type": "milestone",
-  "ts": 1793750649,
-  "date": "2026-11-04",
-  "title": "Remia Aotsuki: 50 maps played",
-  "text": "Remia Aotsuki reached 50 maps played",
-  "link": "#/player/remia-aotsuki"
- },
- {
   "id": "milestone:nutzeru:maps:50",
   "type": "milestone",
   "ts": 1793752626,
@@ -1798,5 +1780,23 @@
   "title": "nyxcatto: 100 MVP rounds",
   "text": "nyxcatto reached 100 MVP rounds",
   "link": "#/player/nyxcatto"
+ },
+ {
+  "id": "milestone:trpaki:mvp:150",
+  "type": "milestone",
+  "ts": 1794386243,
+  "date": "2026-11-11",
+  "title": "TRPaki: 150 MVP rounds",
+  "text": "TRPaki reached 150 MVP rounds",
+  "link": "#/player/trpaki"
+ },
+ {
+  "id": "milestone:juno-umezono:kills:500",
+  "type": "milestone",
+  "ts": 1794386243,
+  "date": "2026-11-11",
+  "title": "Juno Umezono: 500 career kills",
+  "text": "Juno Umezono reached 500 career kills",
+  "link": "#/player/juno-umezono"
  }
 ]
