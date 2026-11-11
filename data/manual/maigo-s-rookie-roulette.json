@@ -447,8 +447,9 @@
      "fb": {
       "loserOf": 5
      },
-     "sa": null,
-     "sb": null
+     "sa": 0,
+     "sb": 2,
+     "ts": 1794397690
     }
    ],
    "roundTitles": {
@@ -467,9 +468,9 @@
    "teams": [
     "Defiant Order",
     "Snowlit Temple",
-    "",
+    "Ember Wolves",
     "Mirai Fates",
-    "",
+    "Meiji Restoration",
     "Hanabusa Estate",
     "G.I. Jokes",
     "Eiromancers"
@@ -597,5 +598,6 @@
   "From The Ashes": 22,
   "Millefiore": 23,
   "G.I. Jokes": 24
- }
+ },
+ "predictionsLocked": false
 }

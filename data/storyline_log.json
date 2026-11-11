@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:jeribean:kills:500",
-  "type": "milestone",
-  "ts": 1793761207,
-  "date": "2026-11-04",
-  "title": "Jeribean: 500 career kills",
-  "text": "Jeribean reached 500 career kills",
-  "link": "#/player/jeribean"
- },
- {
   "id": "milestone:88exp:kills:500",
   "type": "milestone",
   "ts": 1793768554,
@@ -1798,5 +1789,14 @@
   "title": "CodedEcho: 500 career kills",
   "text": "CodedEcho reached 500 career kills",
   "link": "#/player/codedecho"
+ },
+ {
+  "id": "milestone:xmeijixx:maps:50",
+  "type": "milestone",
+  "ts": 1794397693,
+  "date": "2026-11-11",
+  "title": "xmeijixx: 50 maps played",
+  "text": "xmeijixx reached 50 maps played",
+  "link": "#/player/xmeijixx"
  }
 ]
