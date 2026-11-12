@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:capplecrow:maps:50",
-  "type": "milestone",
-  "ts": 1793789890,
-  "date": "2026-11-04",
-  "title": "capplecrow: 50 maps played",
-  "text": "capplecrow reached 50 maps played",
-  "link": "#/player/capplecrow"
- },
- {
   "id": "milestone:wellson111:maps:50",
   "type": "milestone",
   "ts": 1793789890,
@@ -1798,5 +1789,14 @@
   "title": "GreatMoonAroma: 500 career kills",
   "text": "GreatMoonAroma reached 500 career kills",
   "link": "#/player/greatmoonaroma"
+ },
+ {
+  "id": "milestone:twentyrosie:kills:1500",
+  "type": "milestone",
+  "ts": 1794504501,
+  "date": "2026-11-13",
+  "title": "twentyrosie: 1500 career kills",
+  "text": "twentyrosie reached 1500 career kills",
+  "link": "#/player/twentyrosie"
  }
 ]
