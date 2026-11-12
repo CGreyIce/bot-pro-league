@@ -74,8 +74,8 @@ bot_add "D1 lilraxxx"; bot_add "D1 notccillia"; bot_add "D1 xolalotl"; bot_add "
 bot_add_ct "D1 lilraxxx"; bot_add_ct "D1 notccillia"; bot_add_ct "D1 xolalotl"; bot_add_ct "D1 midorissi"; bot_add_ct "D1 emiiiyu";
 
 Divide&Conquer (BPL9 Winners) 
-bot_add "DNC Solec"; bot_add "DNC InfiniteBreaker"; bot_add "DNC chreyll"; bot_add "DNC LITA"; bot_add "DNC laavv._";
-bot_add_ct "DNC Solec"; bot_add_ct "DNC InfiniteBreaker"; bot_add_ct "DNC chreyll"; bot_add_ct "DNC LITA"; bot_add_ct "DNC laavv._";
+bot_add "DNC Solec"; bot_add "DNC InfiniteBreaker"; bot_add "DNC 4twnty"; bot_add "DNC LITA"; bot_add "DNC laavv._";
+bot_add_ct "DNC Solec"; bot_add_ct "DNC InfiniteBreaker"; bot_add_ct "DNC 4twnty"; bot_add_ct "DNC LITA"; bot_add_ct "DNC laavv._";
 
 division20 (2023 Promotional Team)
 bot_add "d20 Spoods"; bot_add "d20 laburi"; bot_add "d20 y.uuno"; bot_add "d20 kitties258"; bot_add "d20 Eroxis";
