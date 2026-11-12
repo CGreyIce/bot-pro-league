@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:phxebe:mvp:100",
-  "type": "milestone",
-  "ts": 1793778691,
-  "date": "2026-11-04",
-  "title": "Phxebe: 100 MVP rounds",
-  "text": "Phxebe reached 100 MVP rounds",
-  "link": "#/player/phxebe"
- },
- {
-  "id": "milestone:soapdax:kills:500",
-  "type": "milestone",
-  "ts": 1793785774,
-  "date": "2026-11-04",
-  "title": "soapdax: 500 career kills",
-  "text": "soapdax reached 500 career kills",
-  "link": "#/player/soapdax"
- },
- {
   "id": "milestone:sayucchi:kills:500",
   "type": "milestone",
   "ts": 1793787868,
@@ -1798,5 +1780,23 @@
   "title": "ostc.x: 150 MVP rounds",
   "text": "ostc.x reached 150 MVP rounds",
   "link": "#/player/ostc-x"
+ },
+ {
+  "id": "milestone:trpaki:kills:1000",
+  "type": "milestone",
+  "ts": 1794497720,
+  "date": "2026-11-12",
+  "title": "TRPaki: 1000 career kills",
+  "text": "TRPaki reached 1000 career kills",
+  "link": "#/player/trpaki"
+ },
+ {
+  "id": "milestone:hanabusa-lisa:maps:50",
+  "type": "milestone",
+  "ts": 1794497720,
+  "date": "2026-11-12",
+  "title": "Hanabusa Lisa: 50 maps played",
+  "text": "Hanabusa Lisa reached 50 maps played",
+  "link": "#/player/hanabusa-lisa"
  }
 ]
