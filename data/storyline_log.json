@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:wellson111:maps:50",
-  "type": "milestone",
-  "ts": 1793789890,
-  "date": "2026-11-04",
-  "title": "Wellson111: 50 maps played",
-  "text": "Wellson111 reached 50 maps played",
-  "link": "#/player/wellson111"
- },
- {
   "id": "milestone:skysbeautylai:maps:50",
   "type": "milestone",
   "ts": 1793789890,
@@ -1798,5 +1789,14 @@
   "title": "twentyrosie: 1500 career kills",
   "text": "twentyrosie reached 1500 career kills",
   "link": "#/player/twentyrosie"
+ },
+ {
+  "id": "champion:maigo-s-rookie-roulette",
+  "type": "champion",
+  "ts": 1794507896,
+  "date": "2026-11-13",
+  "title": "G.I. Jokes win Maigo's Rookie Roulette",
+  "text": "Champions of Maigo's Rookie Roulette, beating Eiromancers in the final",
+  "link": "#/tournament/maigo-s-rookie-roulette"
  }
 ]

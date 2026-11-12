@@ -37,6 +37,7 @@
   }
  },
  "champions": [
+  "maigo-s-rookie-roulette",
   "second-wind-invitational-i",
   "phase-shift-invitational-i",
   "bpl-legends-stage-2026",
@@ -1207,8 +1208,8 @@
    "mvp": 153
   },
   "raviaseir": {
-   "maps": 87,
-   "kills": 1408,
+   "maps": 88,
+   "kills": 1419,
    "mvp": 248
   },
   "ostc-x": {
@@ -1242,9 +1243,9 @@
    "mvp": 100
   },
   "twentyrosie": {
-   "maps": 98,
-   "kills": 1531,
-   "mvp": 219
+   "maps": 99,
+   "kills": 1542,
+   "mvp": 220
   },
   "obvmx": {
    "maps": 87,
@@ -2092,9 +2093,9 @@
    "mvp": 67
   },
   "skiazelle": {
-   "maps": 73,
-   "kills": 1170,
-   "mvp": 178
+   "maps": 74,
+   "kills": 1185,
+   "mvp": 182
   },
   "boopydoopy": {
    "maps": 47,
@@ -2102,9 +2103,9 @@
    "mvp": 89
   },
   "kaikaijins": {
-   "maps": 78,
-   "kills": 1204,
-   "mvp": 159
+   "maps": 79,
+   "kills": 1213,
+   "mvp": 160
   },
   "xyrren": {
    "maps": 43,
@@ -2207,8 +2208,8 @@
    "mvp": 44
   },
   "yuvirei": {
-   "maps": 30,
-   "kills": 434,
+   "maps": 31,
+   "kills": 440,
    "mvp": 49
   },
   "mikuryne": {
@@ -2382,29 +2383,29 @@
    "mvp": 68
   },
   "gei-gyattamori": {
-   "maps": 13,
-   "kills": 219,
-   "mvp": 41
+   "maps": 14,
+   "kills": 230,
+   "mvp": 44
   },
   "chritler": {
-   "maps": 13,
-   "kills": 222,
-   "mvp": 30
+   "maps": 14,
+   "kills": 245,
+   "mvp": 34
   },
   "mr-hakolympia": {
-   "maps": 13,
-   "kills": 157,
-   "mvp": 20
+   "maps": 14,
+   "kills": 167,
+   "mvp": 21
   },
   "c-m-tribute": {
-   "maps": 13,
-   "kills": 200,
-   "mvp": 32
+   "maps": 14,
+   "kills": 212,
+   "mvp": 33
   },
   "awtistoh": {
-   "maps": 13,
-   "kills": 206,
-   "mvp": 31
+   "maps": 14,
+   "kills": 232,
+   "mvp": 35
   }
  },
  "upsetsSeen": [
@@ -2500,6 +2501,7 @@
   "upset:maigo-s-rookie-roulette:3-2",
   "upset:maigo-s-rookie-roulette:3-4",
   "upset:maigo-s-rookie-roulette:4-4",
+  "upset:maigo-s-rookie-roulette:5-7",
   "upset:nations-cup-qualifier-singapore-2026:1-43",
   "upset:nova-initia-invitational-i:1-12",
   "upset:nova-initia-invitational-i:1-7",
@@ -2515,6 +2517,7 @@
  "drafted": [
   "champion:bpl-challengers-stage-2026",
   "champion:bpl-legends-stage-2026",
+  "champion:maigo-s-rookie-roulette",
   "champion:phase-shift-invitational-i",
   "champion:second-wind-invitational-i",
   "promotion:beehyve",
