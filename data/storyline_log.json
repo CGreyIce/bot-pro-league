@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:strigidaevt:kills:500",
-  "type": "milestone",
-  "ts": 1793770296,
-  "date": "2026-11-04",
-  "title": "StrigidaeVT: 500 career kills",
-  "text": "StrigidaeVT reached 500 career kills",
-  "link": "#/player/strigidaevt"
- },
- {
   "id": "milestone:jstarwolf:mvp:100",
   "type": "milestone",
   "ts": 1793772465,
@@ -1798,5 +1789,14 @@
   "title": "itzfrenzy: 500 career kills",
   "text": "itzfrenzy reached 500 career kills",
   "link": "#/player/itzfrenzy"
+ },
+ {
+  "id": "milestone:mkakili:mvp:150",
+  "type": "milestone",
+  "ts": 1794487075,
+  "date": "2026-11-12",
+  "title": "MKakili: 150 MVP rounds",
+  "text": "MKakili reached 150 MVP rounds",
+  "link": "#/player/mkakili"
  }
 ]
