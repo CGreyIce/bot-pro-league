@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:jstarwolf:mvp:100",
-  "type": "milestone",
-  "ts": 1793772465,
-  "date": "2026-11-04",
-  "title": "JStarWolf: 100 MVP rounds",
-  "text": "JStarWolf reached 100 MVP rounds",
-  "link": "#/player/jstarwolf"
- },
- {
   "id": "milestone:codiant:kills:1000",
   "type": "milestone",
   "ts": 1793776614,
@@ -1798,5 +1789,14 @@
   "title": "MKakili: 150 MVP rounds",
   "text": "MKakili reached 150 MVP rounds",
   "link": "#/player/mkakili"
+ },
+ {
+  "id": "milestone:kaikaijins:mvp:150",
+  "type": "milestone",
+  "ts": 1794492504,
+  "date": "2026-11-12",
+  "title": "kaikaijins: 150 MVP rounds",
+  "text": "kaikaijins reached 150 MVP rounds",
+  "link": "#/player/kaikaijins"
  }
 ]
