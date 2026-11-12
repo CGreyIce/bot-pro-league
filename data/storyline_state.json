@@ -108,8 +108,8 @@
   "lemon-tree",
   "xplosiv",
   "flood-flashers",
-  "division20",
   "raven-song",
+  "division20",
   "bluebird",
   "infernum-e-sports",
   "pepegax",
@@ -1207,9 +1207,9 @@
    "mvp": 153
   },
   "raviaseir": {
-   "maps": 86,
-   "kills": 1393,
-   "mvp": 243
+   "maps": 87,
+   "kills": 1408,
+   "mvp": 248
   },
   "ostc-x": {
    "maps": 64,
@@ -1242,9 +1242,9 @@
    "mvp": 100
   },
   "twentyrosie": {
-   "maps": 97,
-   "kills": 1513,
-   "mvp": 217
+   "maps": 98,
+   "kills": 1531,
+   "mvp": 219
   },
   "obvmx": {
    "maps": 87,
@@ -2092,9 +2092,9 @@
    "mvp": 67
   },
   "skiazelle": {
-   "maps": 72,
-   "kills": 1158,
-   "mvp": 177
+   "maps": 73,
+   "kills": 1170,
+   "mvp": 178
   },
   "boopydoopy": {
    "maps": 47,
@@ -2102,9 +2102,9 @@
    "mvp": 89
   },
   "kaikaijins": {
-   "maps": 77,
-   "kills": 1188,
-   "mvp": 157
+   "maps": 78,
+   "kills": 1204,
+   "mvp": 159
   },
   "xyrren": {
    "maps": 43,
@@ -2207,9 +2207,9 @@
    "mvp": 44
   },
   "yuvirei": {
-   "maps": 29,
-   "kills": 422,
-   "mvp": 46
+   "maps": 30,
+   "kills": 434,
+   "mvp": 49
   },
   "mikuryne": {
    "maps": 45,
@@ -2382,29 +2382,29 @@
    "mvp": 68
   },
   "gei-gyattamori": {
-   "maps": 12,
-   "kills": 210,
-   "mvp": 40
+   "maps": 13,
+   "kills": 219,
+   "mvp": 41
   },
   "chritler": {
-   "maps": 12,
-   "kills": 215,
-   "mvp": 29
+   "maps": 13,
+   "kills": 222,
+   "mvp": 30
   },
   "mr-hakolympia": {
-   "maps": 12,
-   "kills": 151,
+   "maps": 13,
+   "kills": 157,
    "mvp": 20
   },
   "c-m-tribute": {
-   "maps": 12,
-   "kills": 188,
+   "maps": 13,
+   "kills": 200,
    "mvp": 32
   },
   "awtistoh": {
-   "maps": 12,
-   "kills": 194,
-   "mvp": 29
+   "maps": 13,
+   "kills": 206,
+   "mvp": 31
   }
  },
  "upsetsSeen": [
