@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:asterisks:maps:50",
-  "type": "milestone",
-  "ts": 1793789890,
-  "date": "2026-11-04",
-  "title": "Asterisks: 50 maps played",
-  "text": "Asterisks reached 50 maps played",
-  "link": "#/player/asterisks"
- },
- {
   "id": "milestone:kyan:maps:50",
   "type": "milestone",
   "ts": 1793792026,
@@ -1798,5 +1789,14 @@
   "title": "G.I. Jokes join the pro ranks",
   "text": "New pro team [G.I.], 5 players",
   "link": "#/team/g-i-jokes"
+ },
+ {
+  "id": "promotion:eiromancers",
+  "type": "promotion",
+  "ts": 1794509617,
+  "date": "2026-11-13",
+  "title": "Eiromancers join the pro ranks",
+  "text": "New pro team [EIRO], 5 players",
+  "link": "#/team/eiromancers"
  }
 ]

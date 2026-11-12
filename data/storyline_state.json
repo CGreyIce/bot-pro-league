@@ -123,6 +123,7 @@
   "the-nomads",
   "caelum-scala",
   "fruit-basket",
+  "eiromancers",
   "99lives",
   "round-loss-bonus",
   "diamondones",
@@ -1508,6 +1509,21 @@
    "kills": 232,
    "mvp": 35
   },
+  "skiazelle": {
+   "maps": 74,
+   "kills": 1185,
+   "mvp": 182
+  },
+  "kaikaijins": {
+   "maps": 79,
+   "kills": 1213,
+   "mvp": 160
+  },
+  "yuvirei": {
+   "maps": 31,
+   "kills": 440,
+   "mvp": 49
+  },
   "choya-hanabi": {
    "maps": 64,
    "kills": 957,
@@ -2118,20 +2134,10 @@
    "kills": 503,
    "mvp": 67
   },
-  "skiazelle": {
-   "maps": 74,
-   "kills": 1185,
-   "mvp": 182
-  },
   "boopydoopy": {
    "maps": 47,
    "kills": 659,
    "mvp": 89
-  },
-  "kaikaijins": {
-   "maps": 79,
-   "kills": 1213,
-   "mvp": 160
   },
   "xyrren": {
    "maps": 43,
@@ -2232,11 +2238,6 @@
    "maps": 19,
    "kills": 295,
    "mvp": 44
-  },
-  "yuvirei": {
-   "maps": 31,
-   "kills": 440,
-   "mvp": 49
   },
   "mikuryne": {
    "maps": 45,
@@ -2523,6 +2524,7 @@
   "champion:second-wind-invitational-i",
   "promotion:beehyve",
   "promotion:crystal-laurels",
+  "promotion:eiromancers",
   "promotion:g-i-jokes",
   "promotion:nightfang-covenant",
   "promotion:northwind",

@@ -178,7 +178,7 @@ BeeHyve (BPL Challengers Stage 2026 3rd place) [core duo TiniiBee & Hyvred since
 bot_add "BHYV TiniiBee"; bot_add "BHYV Hyvred"; bot_add "BHYV Tigeraxd"; bot_add "BHYV _froggiee"; bot_add "BHYV keikatamori";
 bot_add_ct "BHYV TiniiBee"; bot_add_ct "BHYV Hyvred"; bot_add_ct "BHYV Tigeraxd"; bot_add_ct "BHYV _froggiee"; bot_add_ct "BHYV keikatamori";
 
-Eiromancers (Bot Pro Cup 2026) [RaviasEir & Skiazelle core since BPL13]
+Eiromancers (Maigo's Rookie Roulette) [RaviasEir & Skiazelle core since BPL13]
 bot_add "EIRO RaviasEir"; bot_add "EIRO Skiazelle"; bot_add "EIRO boopydoopy"; bot_add "EIRO kanarivt"; bot_add "EIRO kaikaijins"; bot_add "EIRO CodedEcho"; bot_add "EIRO twentyrosie"; bot_add "EIRO yuvirei";
 bot_add_ct "EIRO RaviasEir"; bot_add_ct "EIRO Skiazelle"; bot_add_ct "EIRO boopydoopy"; bot_add_ct "EIRO kanarivt"; bot_add_ct "EIRO kaikaijins"; bot_add_ct "EIRO CodedEcho"; bot_add_ct "EIRO twentyrosie"; bot_add_ct "EIRO yuvirei";
 

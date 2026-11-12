@@ -3704,8 +3704,9 @@ function matchVetoHtml(match){
 // For each played map, copyable bot_add lines: the CT team as bot_add_ct "<tag> name",
 // the T team as plain bot_add name. Needs a real roster (pro teams have one; ad-hoc/nation
 // map teams do not), so those show a note instead.
-// teams whose in-game bots carry no tag prefix (their bot names are just the player name)
-const VETO_NOTAG = new Set(["beehyve","eiromancers"]);
+// teams whose in-game bots carry no tag prefix (their bot names are just the player name);
+// Eiromancers got EIRO-tagged bots on 2026-11-13
+const VETO_NOTAG = new Set(["beehyve"]);
 // bot name for a player: "<tag> name" when the team uses a tag, else just the name; quoted if it has a space
 function vetoBotName(t,p){
   const nm = (t.tag && !VETO_NOTAG.has(t.slug) ? t.tag+" " : "") + p.name;
