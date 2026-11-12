@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:skysbeautylai:maps:50",
-  "type": "milestone",
-  "ts": 1793789890,
-  "date": "2026-11-04",
-  "title": "skysbeautylai: 50 maps played",
-  "text": "skysbeautylai reached 50 maps played",
-  "link": "#/player/skysbeautylai"
- },
- {
   "id": "milestone:asterisks:maps:50",
   "type": "milestone",
   "ts": 1793789890,
@@ -1798,5 +1789,14 @@
   "title": "G.I. Jokes win Maigo's Rookie Roulette",
   "text": "Champions of Maigo's Rookie Roulette, beating Eiromancers in the final",
   "link": "#/tournament/maigo-s-rookie-roulette"
+ },
+ {
+  "id": "promotion:g-i-jokes",
+  "type": "promotion",
+  "ts": 1794509308,
+  "date": "2026-11-13",
+  "title": "G.I. Jokes join the pro ranks",
+  "text": "New pro team [G.I.], 5 players",
+  "link": "#/team/g-i-jokes"
  }
 ]

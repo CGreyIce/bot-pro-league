@@ -34276,6 +34276,37 @@
      "curSlug": "awtistoh"
     }
    ]
+  },
+  {
+   "team": "Eiromancers",
+   "teamSlug": "eiromancers",
+   "players": [
+    {
+     "name": "RaviasEir",
+     "captain": false,
+     "curSlug": "raviaseir"
+    },
+    {
+     "name": "twentyrosie",
+     "captain": false,
+     "curSlug": "twentyrosie"
+    },
+    {
+     "name": "Skiazelle",
+     "captain": false,
+     "curSlug": "skiazelle"
+    },
+    {
+     "name": "kaikaijins",
+     "captain": false,
+     "curSlug": "kaikaijins"
+    },
+    {
+     "name": "yuvirei",
+     "captain": false,
+     "curSlug": "yuvirei"
+    }
+   ]
   }
  ]
 }

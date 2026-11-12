@@ -233,3 +233,7 @@ bot_add_ct "Nwd Airizu"; bot_add_ct "Nwd MizukiiMoon"; bot_add_ct "Nwd Millianna
 Special Forces (BPL Legends Stage 2026 13th place)
 bot_add "SF djassaulty"; bot_add "SF Spectrum Gabriel"; bot_add "SF Goonuyun"; bot_add "SF Icington the third"; bot_add "SF ItzMaigay";
 bot_add_ct "SF djassaulty"; bot_add_ct "SF Spectrum Gabriel"; bot_add_ct "SF Goonuyun"; bot_add_ct "SF Icington the third"; bot_add_ct "SF ItzMaigay";
+
+G.I. Jokes (Maigo's Rookie Roulette)
+bot_add "G.I. Gei Gyattamori"; bot_add "G.I. Chritler"; bot_add "G.I. Mr. Hakolympia"; bot_add "G.I. C*M Tribute"; bot_add "G.I. awtistoh";
+bot_add_ct "G.I. Gei Gyattamori"; bot_add_ct "G.I. Chritler"; bot_add_ct "G.I. Mr. Hakolympia"; bot_add_ct "G.I. C*M Tribute"; bot_add_ct "G.I. awtistoh";

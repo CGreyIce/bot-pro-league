@@ -133,6 +133,7 @@
   "beehyve",
   "northwind",
   "crystal-laurels",
+  "g-i-jokes",
   "wraithborne",
   "aeternum",
   "0v3",
@@ -146,7 +147,7 @@
   "nightfang-covenant",
   "astral-bloom"
  ],
- "movesSeen": 153,
+ "movesSeen": 200,
  "top": {
   "player": "candybar-isblue",
   "team": "cosmos"
@@ -1482,6 +1483,31 @@
    "kills": 676,
    "mvp": 96
   },
+  "gei-gyattamori": {
+   "maps": 14,
+   "kills": 230,
+   "mvp": 44
+  },
+  "chritler": {
+   "maps": 14,
+   "kills": 245,
+   "mvp": 34
+  },
+  "mr-hakolympia": {
+   "maps": 14,
+   "kills": 167,
+   "mvp": 21
+  },
+  "c-m-tribute": {
+   "maps": 14,
+   "kills": 212,
+   "mvp": 33
+  },
+  "awtistoh": {
+   "maps": 14,
+   "kills": 232,
+   "mvp": 35
+  },
   "choya-hanabi": {
    "maps": 64,
    "kills": 957,
@@ -2381,31 +2407,6 @@
    "maps": 26,
    "kills": 442,
    "mvp": 68
-  },
-  "gei-gyattamori": {
-   "maps": 14,
-   "kills": 230,
-   "mvp": 44
-  },
-  "chritler": {
-   "maps": 14,
-   "kills": 245,
-   "mvp": 34
-  },
-  "mr-hakolympia": {
-   "maps": 14,
-   "kills": 167,
-   "mvp": 21
-  },
-  "c-m-tribute": {
-   "maps": 14,
-   "kills": 212,
-   "mvp": 33
-  },
-  "awtistoh": {
-   "maps": 14,
-   "kills": 232,
-   "mvp": 35
   }
  },
  "upsetsSeen": [
@@ -2522,6 +2523,7 @@
   "champion:second-wind-invitational-i",
   "promotion:beehyve",
   "promotion:crystal-laurels",
+  "promotion:g-i-jokes",
   "promotion:nightfang-covenant",
   "promotion:northwind",
   "promotion:nullpoint",
