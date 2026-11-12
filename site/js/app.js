@@ -940,7 +940,7 @@ function renderHuman(slug){
   app.innerHTML = `
     <div class="crumb"><a href="#/players">Players</a><span class="sep">/</span>${esc(p.name)}</div>
     <div class="profile-head">
-      <div class="avatar" style="width:88px;height:88px;border-radius:14px;font-size:34px">${initials(p.name)}</div>
+      ${bigAvatar(p)}
       <div class="ph-main">
         <h1>${flag(p.iso)}${esc(p.name)}${humanBadge(p)}</h1>
         <div class="ph-sub">${p.kind==="admin"?'League admin':'Human player'} · ${teamLink?`${teamLink}${p.role?' · '+esc(p.role):''}`:ftNote||'Solo Queue only'}${p.ingame&&p.ingame.length?` · plays as “${esc(p.ingame.join('”, “'))}”`:''}</div>
@@ -969,6 +969,20 @@ function renderHuman(slug){
     ${games ? `<div class="tablewrap"><table class="data"><thead><tr><th class="no-sort">Date</th><th class="no-sort">Map</th><th class="no-sort">Result</th><th class="no-sort">K-D-A</th><th class="no-sort">MVP</th><th class="no-sort" title="How the game moved their rating points">Pts</th></tr></thead><tbody>${games}</tbody></table></div>`
       : '<p class="muted">No games recorded yet.</p>'}`;
 }
+// The big square on a player page: their picture (build/player_pictures.py), else their initials. A picture
+// that fails to load gives way to the initials.
+function bigAvatar(p){
+  const ini = initials(p.name);
+  return p.photo ? `<img class="avatar ph-photo" src="${esc(p.photo)}" alt="" data-ini="${esc(ini)}">`
+    : `<div class="avatar ph-ini">${ini}</div>`;
+}
+function avatarFallback(img){
+  const d = document.createElement('div');
+  d.className = 'avatar ph-ini'; d.textContent = img.dataset.ini || '?';
+  img.replaceWith(d);
+}
+// image errors don't bubble, so this listens in the capture phase (an inline onerror can't see this script's scope)
+document.addEventListener('error', e=>{ const t = e.target; if(t && t.tagName==='IMG' && t.classList.contains('ph-photo')) avatarFallback(t); }, true);
 
 function renderPlayer(slug){
   const p = playerBySlug(slug);
@@ -982,7 +996,7 @@ function renderPlayer(slug){
   app.innerHTML = `
     <div class="crumb"><a href="#/players">Players</a><span class="sep">/</span>${esc(p.name)}</div>
     <div class="profile-head">
-      <div class="avatar" style="width:88px;height:88px;border-radius:14px;font-size:34px">${initials(p.name)}</div>
+      ${bigAvatar(p)}
       <div class="ph-main">
         <h1>${flag(p.iso)}${esc(p.name)}</h1>
         <div class="ph-sub">${p.nat?esc(p.nat)+' · ':''}${p.role?esc(roleText(p))+' · ':''}${t?`<a href="#/team/${t.slug}" style="color:var(--link)">${esc(t.name)}</a>`:esc(p.team||'Teamless')} · ${poolName}</div>

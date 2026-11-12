@@ -2063,6 +2063,9 @@ def main():
     import extras
     extras.team_colors(teams, LOGO_DIR, SITE, DATA)
     extras.generations(pro + amateur + solo, tournaments)
+    # ---- player pictures (build/player_pictures.py): site/assets/players/<number>.webp ----
+    import player_pictures
+    player_pictures.attach(pro + amateur + solo, solo_humans, SITE, DATA)
     data["dle"] = extras.dle(pro, DATA)
     # build time (ms): live scores pushed from admin after this build are newer than this data.json
     data["builtAt"] = int(time.time() * 1000)
