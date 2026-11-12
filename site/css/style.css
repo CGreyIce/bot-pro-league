@@ -285,6 +285,9 @@ a.form-dot:hover{transform:translateY(-2px)}
 .pcard-mini.former{opacity:.7;background:transparent}
 .pcard-mini.former .avatar{background:var(--panel2,#1a2233);color:var(--muted);filter:grayscale(1)}
 .pcard-mini.former:hover{opacity:1}
+/* pictures on roster cards (build/player_pictures.py); former players' stay grey like the rest of the card, until hovered */
+.pcard-mini img.avatar{display:block;object-fit:cover;background:var(--panel2)}
+.pcard-mini.former:hover img.avatar{filter:none}
 
 /* playoff timeline */
 .playoff-table{width:100%;border-collapse:collapse;font-size:13px}

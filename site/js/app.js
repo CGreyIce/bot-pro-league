@@ -619,14 +619,14 @@ function renderTeam(slug){
   if(!t){ app.innerHTML = notFound("Team"); return; }
   const roster = t.roster||[];
   const rosterHtml = roster.map(p=>`<a class="pcard-mini" href="#/player/${p.slug}">
-      <div class="avatar">${initials(p.name)}</div>
+      ${miniAvatar(p.name, p.photo || photoOf(p.slug))}
       <div><div class="pm-name">${flag(p.iso)}${esc(p.name)}</div>
       <div class="pm-sub">${esc(roleText(p)||'—')} ${p.ratingPoints!=null?'· '+p.ratingPoints+' pts · Lvl '+p.level:''}</div></div>
     </a>`).join("") + (t.humans||[]).map(hm=>{
       // a human on the team (data/solo_humans.json): their own profile, their Pro block's points
       const h = (DATA.soloHumans||[]).find(x=>x.slug===hm.slug) || hm, pr = h.pro || {};
       return `<a class="pcard-mini" href="#/human/${esc(hm.slug)}">
-      <div class="avatar">${initials(hm.name)}</div>
+      ${miniAvatar(hm.name, h.photo)}
       <div><div class="pm-name">${flag(hm.iso)}${esc(hm.name)}${humanBadge(hm)}</div>
       <div class="pm-sub">${esc(hm.role||'—')} ${pr.ratingPoints!=null?'· '+pr.ratingPoints+' pts · Lvl '+pr.level:'· plays as the human'}</div></div>
     </a>`; }).join("");
@@ -728,7 +728,7 @@ function renderTeam(slug){
             ? `${yrs?esc(yrs)+' · ':''}<span class="fp-ban">Banned</span>${f.replacedBy?' · replaced by '+esc(f.replacedBy):''}`
             : f.human ? `${f.joined&&f.left?esc(fmtDate(f.joined))+' – '+esc(fmtDate(f.left)):(yrs?esc(yrs):'')} · now: Free agent`
             : `${yrs?esc(yrs)+' · ':''}now: ${f.nowTeam?esc(f.nowTeam):'Teamless'}`;
-          const inner = `<div class="avatar">${initials(f.name)}</div>
+          const inner = `${miniAvatar(f.name, f.slug ? photoOf(f.slug, f.human) : null)}
             <div><div class="pm-name">${flag(f.iso)}${esc(f.name)}${f.human?humanBadge(f):''}</div>
             <div class="pm-sub">${sub}</div></div>`;
           if(f.human) return `<a class="pcard-mini former" href="#/human/${esc(f.slug)}">${inner}</a>`;
@@ -973,16 +973,23 @@ function renderHuman(slug){
 // that fails to load gives way to the initials.
 function bigAvatar(p){
   const ini = initials(p.name);
-  return p.photo ? `<img class="avatar ph-photo" src="${esc(p.photo)}" alt="" data-ini="${esc(ini)}">`
+  return p.photo ? `<img class="avatar ph-photo" src="${esc(p.photo)}" alt="" data-ini="${esc(ini)}" data-cls="avatar ph-ini">`
     : `<div class="avatar ph-ini">${ini}</div>`;
 }
+// The small square on roster and former-player cards: the same picture, else the initials as before.
+function miniAvatar(name, photo){
+  const ini = initials(name);
+  return photo ? `<img class="avatar pm-photo" src="${esc(photo)}" alt="" loading="lazy" data-ini="${esc(ini)}" data-cls="avatar">`
+    : `<div class="avatar">${ini}</div>`;
+}
+const photoOf = (slug, human) => ((human ? (DATA.soloHumans||[]).find(h=>h.slug===slug) : playerBySlug(slug)) || {}).photo;
 function avatarFallback(img){
   const d = document.createElement('div');
-  d.className = 'avatar ph-ini'; d.textContent = img.dataset.ini || '?';
+  d.className = img.dataset.cls || 'avatar ph-ini'; d.textContent = img.dataset.ini || '?';
   img.replaceWith(d);
 }
 // image errors don't bubble, so this listens in the capture phase (an inline onerror can't see this script's scope)
-document.addEventListener('error', e=>{ const t = e.target; if(t && t.tagName==='IMG' && t.classList.contains('ph-photo')) avatarFallback(t); }, true);
+document.addEventListener('error', e=>{ const t = e.target; if(t && t.tagName==='IMG' && (t.classList.contains('ph-photo') || t.classList.contains('pm-photo'))) avatarFallback(t); }, true);
 
 function renderPlayer(slug){
   const p = playerBySlug(slug);
