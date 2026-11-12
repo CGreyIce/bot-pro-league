@@ -1646,11 +1646,16 @@ function renderRecords(){
     adv("Most Trade Kills",advAll,p=>p.adv.tk),
     adv("Highest Utility Damage / Round",advQ,p=>p.adv.udr,x1),
     adv("Most 3K+ Rounds",advAll,p=>total(p.adv.multi.slice(1))),
-    adv("Most 4Ks",advAll,p=>p.adv.multi[2]),
-    adv("Most Aces",advAll,p=>p.adv.multi[3]),
     adv("Most Clutches Won",advAll,p=>total(p.adv.clutch)),
     adv("Most 1v3+ Clutches",advAll,p=>total(p.adv.clutch.slice(2))),
   ].join("");
+  // multi-kill rounds and clutches won, by size (Players tab; scoreboards recorded since October 2026)
+  const mkCard=(title,val)=>adv(title,advAll,val,v=>v,p=>p.team||"Free agent");
+  const multiCards=[
+    mkCard("Most 2Ks",p=>p.adv.multi[0]), mkCard("Most 3Ks",p=>p.adv.multi[1]),
+    mkCard("Most 4Ks",p=>p.adv.multi[2]), mkCard("Most Aces (5Ks)",p=>p.adv.multi[3]),
+  ].join("");
+  const clutchCards=[1,2,3,4,5].map(n=>mkCard(`Most 1v${n} Clutches`,p=>p.adv.clutch[n-1])).join("");
   const moneyCards=[
     feat("Biggest Team Prize","teamPrize",v=>fmtUSD(v),r=>r.event),
     listCard("Biggest Budget","team",teams,t=>t.budget,v=>fmtUSD(v)),
@@ -1779,6 +1784,8 @@ function renderRecords(){
       ${recCard("Most Deaths", topDeaths.name, topDeaths.deaths, `#/player/${topDeaths.slug}`)}
       ${playerCards}
     </div></section>
+    <section class="rec-sec" data-rg="players"><h3 class="rec-group">Multi-Kills &amp; Clutches <span class="muted" style="font-size:11px">from scoreboards recorded since October 2026</span></h3>
+    <div class="rec-grid">${multiCards}${clutchCards}</div></section>
     <section class="rec-sec" data-rg="players"><h3 class="rec-group">Best by Role <span class="muted" style="font-size:11px">by Rating Points</span></h3>
     <div class="rec-grid">${roleCards}</div></section>
     <section class="rec-sec" data-rg="players"><h3 class="rec-group">Awards</h3>
