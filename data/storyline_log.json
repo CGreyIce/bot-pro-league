@@ -1,14 +1,5 @@
 [
  {
-  "id": "milestone:sayucchi:kills:500",
-  "type": "milestone",
-  "ts": 1793787868,
-  "date": "2026-11-04",
-  "title": "Sayucchi: 500 career kills",
-  "text": "Sayucchi reached 500 career kills",
-  "link": "#/player/sayucchi"
- },
- {
   "id": "milestone:capplecrow:maps:50",
   "type": "milestone",
   "ts": 1793789890,
@@ -1798,5 +1789,14 @@
   "title": "Hanabusa Lisa: 50 maps played",
   "text": "Hanabusa Lisa reached 50 maps played",
   "link": "#/player/hanabusa-lisa"
+ },
+ {
+  "id": "milestone:greatmoonaroma:kills:500",
+  "type": "milestone",
+  "ts": 1794501454,
+  "date": "2026-11-13",
+  "title": "GreatMoonAroma: 500 career kills",
+  "text": "GreatMoonAroma reached 500 career kills",
+  "link": "#/player/greatmoonaroma"
  }
 ]
