@@ -1637,9 +1637,9 @@
    "mvp": 99
   },
   "trpaki": {
-   "maps": 60,
-   "kills": 1008,
-   "mvp": 164
+   "maps": 61,
+   "kills": 1024,
+   "mvp": 167
   },
   "wushii": {
    "maps": 44,
@@ -1832,9 +1832,9 @@
    "mvp": 55
   },
   "hanabusa-lisa": {
-   "maps": 50,
-   "kills": 860,
-   "mvp": 132
+   "maps": 51,
+   "kills": 874,
+   "mvp": 133
   },
   "jira-jisaki": {
    "maps": 48,
@@ -2027,9 +2027,9 @@
    "mvp": 39
   },
   "iceenblue": {
-   "maps": 20,
-   "kills": 233,
-   "mvp": 29
+   "maps": 21,
+   "kills": 249,
+   "mvp": 33
   },
   "aoi-chibi": {
    "maps": 21,
@@ -2062,9 +2062,9 @@
    "mvp": 38
   },
   "miki-nakai": {
-   "maps": 39,
-   "kills": 657,
-   "mvp": 91
+   "maps": 40,
+   "kills": 669,
+   "mvp": 93
   },
   "yxie": {
    "maps": 39,
@@ -2317,9 +2317,9 @@
    "mvp": 37
   },
   "greatmoonaroma": {
-   "maps": 33,
-   "kills": 477,
-   "mvp": 67
+   "maps": 34,
+   "kills": 486,
+   "mvp": 70
   },
   "raivyrain": {
    "maps": 21,
@@ -2382,28 +2382,28 @@
    "mvp": 68
   },
   "gei-gyattamori": {
-   "maps": 9,
-   "kills": 172,
+   "maps": 10,
+   "kills": 179,
    "mvp": 36
   },
   "chritler": {
-   "maps": 9,
-   "kills": 157,
+   "maps": 10,
+   "kills": 167,
    "mvp": 23
   },
   "mr-hakolympia": {
-   "maps": 9,
-   "kills": 113,
+   "maps": 10,
+   "kills": 115,
    "mvp": 13
   },
   "c-m-tribute": {
-   "maps": 9,
-   "kills": 141,
-   "mvp": 23
+   "maps": 10,
+   "kills": 149,
+   "mvp": 24
   },
   "awtistoh": {
-   "maps": 9,
-   "kills": 159,
+   "maps": 10,
+   "kills": 164,
    "mvp": 25
   }
  },
