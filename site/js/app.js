@@ -1290,7 +1290,8 @@ function drawScrims(){
     </div>
     ${rows?`<div class="tablewrap"><table class="data results-table"><tbody>${rows}</tbody></table></div>`
       :`<p class="muted">${_scrims.length?'No scrims for that team.':'No scrims yet. Pick Scrim in the BPL match menu of the BPL Bots app and the game shows up here.'}</p>`}
-    ${shown.length<list.length?`<div style="text-align:center;margin-top:14px"><button id="scrims-more" class="loadmore">Load more (${list.length-shown.length} left)</button></div>`:''}`;
+    ${shown.length<list.length?`<div style="text-align:center;margin-top:14px"><button id="scrims-more" class="loadmore">Load more (${list.length-shown.length} left)</button></div>`:''}
+    ${scrimLeadersHtml()}`;
   app.querySelectorAll(".scrim-row").forEach(r=>r.onclick=e=>{
     if(e.target.closest("a")) return;
     _scrimOpen = _scrimOpen===r.dataset.scrim ? null : r.dataset.scrim;
@@ -1305,6 +1306,54 @@ function drawScrims(){
     _sbTab = openS.maps.length>1 ? 'all' : 0;
     renderScoreboard();
   }
+}
+
+// The scrims' top 10s, from every scrim on the page: players by rating, teams by map win rate.
+const SCRIM_MIN_MAPS = 4;
+function scrimLeadersHtml(){
+  const pl = {}, tm = {};
+  _scrims.forEach(s0=>{
+    const s = scrimWithPeople(s0);
+    s.maps.forEach(m=>{
+      const R = (m.scoreA||0)+(m.scoreB||0); if(!R) return;
+      [[s.a,m.scoreA,m.scoreB],[s.b,m.scoreB,m.scoreA]].forEach(([name,f,a])=>{
+        const t = tm[normKey(name)] = tm[normKey(name)] || {name, maps:0, w:0, l:0, rf:0, ra:0};
+        t.maps++; t.rf+=f||0; t.ra+=a||0; if(f>a) t.w++; else if(a>f) t.l++;
+      });
+      (m.players||[]).forEach(p=>{
+        const key = p.slug || p.hslug || normKey(p.name);
+        const x = pl[key] = pl[key] || {name:p.name, slug:p.slug, hslug:p.hslug, iso:p.iso, team:p.team, last:0, maps:0, k:0, a:0, d:0, score:0, R:0, dmg:0, rnd:0};
+        x.maps++; x.k+=p.k||0; x.a+=p.a||0; x.d+=p.d||0; x.score+=p.score||0; x.R+=R;
+        if(p.rnd>0){ x.dmg+=p.dmg||0; x.rnd+=p.rnd; }
+        if((s.time||0)>=x.last){ x.last=s.time||0; x.team=p.team; }   // the team they played their latest scrim for
+      });
+    });
+  });
+  const players = Object.values(pl).filter(x=>x.maps>=SCRIM_MIN_MAPS).map(x=>({...x, rtg:matchRating(x.k,x.a,x.d,x.score,x.R)}))
+    .sort((p,q)=>q.rtg-p.rtg||q.maps-p.maps).slice(0,10);
+  const teams = Object.values(tm).filter(t=>t.maps>=SCRIM_MIN_MAPS).map(t=>({...t, wr:t.w/t.maps, diff:t.rf-t.ra}))
+    .sort((p,q)=>q.wr-p.wr||q.diff-p.diff||q.maps-p.maps).slice(0,10);
+  if(!players.length && !teams.length) return '';
+  const pLink = x=>x.slug?`<a href="#/player/${esc(x.slug)}">${esc(x.name)}</a>`:x.hslug?`<a href="#/human/${esc(x.hslug)}">${esc(x.name)}</a>`:esc(x.name);
+  const tCell = name=>{ const t = teamByName(name);
+    return `<span class="team-inline">${t&&t.logo?`<img src="${esc(t.logo)}" alt="">`:''}<span>${t?`<a href="#/team/${t.slug}">${esc(name)}</a>`:esc(name)}</span></span>`; };
+  const sign = v=>v>0?`+${v}`:`${v}`;
+  const pRows = players.map((x,i)=>`<tr><td class="rankcol">${i+1}</td>
+      <td class="name-cell">${flag(x.iso)}${pLink(x)}${x.team?`<div class="scrim-lt muted">${esc(x.team)}</div>`:''}</td>
+      <td class="mono muted sl-hide">${x.maps}</td><td class="mono">${x.k}–${x.d}</td>
+      <td class="mono sl-hide">${x.rnd?(x.dmg/x.rnd).toFixed(1):'–'}</td>
+      <td class="mono" style="color:${rtgColor(x.rtg)}"><b>${x.rtg.toFixed(2)}</b></td></tr>`).join("");
+  const tRows = teams.map((t,i)=>`<tr><td class="rankcol">${i+1}</td><td>${tCell(t.name)}</td>
+      <td class="mono muted sl-hide">${t.maps}</td><td class="mono">${t.w}–${t.l}</td>
+      <td class="mono"><b>${Math.round(t.wr*100)}%</b></td>
+      <td class="mono" style="color:${t.diff>0?'var(--good)':t.diff<0?'var(--accent2, #ff6b6b)':'var(--muted)'}">${sign(t.diff)}</td></tr>`).join("");
+  const empty = `<p class="muted">Nobody has ${SCRIM_MIN_MAPS} scrim maps yet.</p>`;
+  return `<div class="stats2col scrim-leaders">
+    <div><h3 class="rec-group">Top 10 Players <span class="muted" style="font-size:11px">by rating · min ${SCRIM_MIN_MAPS} maps</span></h3>
+      ${pRows?`<div class="tablewrap"><table class="data"><thead><tr><th>#</th><th>Player</th><th class="sl-hide">Maps</th><th>K–D</th><th class="sl-hide">ADR</th><th>Rating</th></tr></thead><tbody>${pRows}</tbody></table></div>`:empty}</div>
+    <div><h3 class="rec-group">Top 10 Teams <span class="muted" style="font-size:11px">by map win rate · min ${SCRIM_MIN_MAPS} maps</span></h3>
+      ${tRows?`<div class="tablewrap"><table class="data"><thead><tr><th>#</th><th>Team</th><th class="sl-hide">Maps</th><th>W–L</th><th>Win %</th><th title="Round difference">+/−</th></tr></thead><tbody>${tRows}</tbody></table></div>`:empty}</div>
+  </div>`;
 }
 
 // ---------- Records / Hall of Fame ----------

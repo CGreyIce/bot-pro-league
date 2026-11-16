@@ -1570,6 +1570,9 @@ tr:has(.gc-out) .name-cell{opacity:.75}
 .scrim-bo{font-size:12px;white-space:nowrap}
 .scrim-maps{font-size:12px}
 .scrim-chev{width:30px;text-align:center}
+.scrim-leaders{margin-top:26px}
+.scrim-leaders td{padding-left:7px;padding-right:7px}.scrim-leaders .name-cell{white-space:normal}.scrim-lt{font-size:11px;line-height:1.2;margin-top:1px}
+@media(max-width:480px){.scrim-leaders .sl-hide{display:none}.scrim-leaders td,.scrim-leaders th{padding-left:5px;padding-right:5px}.scrim-leaders .team-inline span{white-space:normal}.scrim-leaders .team-inline{gap:6px}.scrim-leaders .team-inline img{width:18px;height:18px}.scrim-leaders th:first-child,.scrim-leaders td:first-child{padding-left:4px;padding-right:2px}}
 .scrim-chev button{background:none;border:0;color:var(--muted);font-size:13px;cursor:pointer;padding:2px 6px}
 .scrim-detail>td{padding:12px 10px 16px;background:rgba(255,255,255,.015);max-width:0}   /* its scoreboard scrolls inside, the table stays put */
 @media(max-width:760px){.scrim-maps,.scrim-bo,.scrim-chev{display:none}}
