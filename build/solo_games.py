@@ -4,9 +4,12 @@ Every game in data/solo_scoreboards.json, newest first, written to site/solo_gam
 tab reads the file (like site/scrims.json), so data.json doesn't grow with every game.
 
 The two sides of a solo game are random, so each is named after its highest-rated player going
-into the game: "team_<name>" (the user's pick). "Going in" = their Solo Queue rating points from
-their totals without this game and every later one, so an old game keeps its names as ratings move
-on. Humans (data/solo_humans.json) count by their own Solo Queue points, on the bots' scale.
+into the game: "team_<name>" (the user's pick). A game BPL Bots launched after 17 Nov 2026 carries the
+names it had in game ("teams": {won, lost}) and those are used as they are. Older games are worked out:
+"going in" = their Solo Queue rating points from their totals without this game and every later one,
+so an old game keeps its names as ratings move on (a player still in placements counts by the rating
+their maps so far give: most bots have only a few solo maps). Humans (data/solo_humans.json) count by
+their own Solo Queue points, on the bots' scale.
 
 The score isn't stored, so it comes from the MVP stars: a team's stars equal the rounds it won
 (this held on every recorded BPL map). With the rounds played recorded (BPL Bots' advanced stats),
@@ -55,7 +58,13 @@ def build(solo_sb, resolve, rating_fn, points_for, avg, gains, norm_key, site_di
                                t["wins"] - c[4], t["losses"] - c[5], avg)
             going_in[name] = points_for(before) if before is not None else None
         sides = {}
+        stored = g.get("teams") if isinstance(g.get("teams"), dict) else {}
         for won in (True, False):
+            given = stored.get("won" if won else "lost")
+            if given:                          # the name it had in game
+                cap = given[5:] if given.startswith("team_") else given
+                sides[won] = {"name": given, "cap": cap, "capPts": going_in.get(cap)}
+                continue
             side = [(pl, name) for pl, name, _ in lines if bool(pl.get("won")) == won]
             ranked = sorted(side, key=lambda x: (-(going_in.get(x[1]) or 0), x[1].lower()))
             cap = ranked[0][1] if ranked else "?"

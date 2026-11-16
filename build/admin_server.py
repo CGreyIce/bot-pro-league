@@ -247,7 +247,11 @@ class Handler(SimpleHTTPRequestHandler):
                             "won": bool(p.get("won")),
                             **({k: int(p.get(k, 0) or 0) for k in XS_KEYS} if int(p.get("rnd", 0) or 0) > 0 else {})}
                            for p in b.get("players", []) if (p.get("name") or "").strip()]
-                games.append({"id": nid, "map": b.get("map", ""), "date": b.get("date", ""), "players": players})
+                # the two sides' names as shown in game (BPL Bots, 17 Nov 2026): the Solo Queue tab uses them
+                tm = b.get("teams") if isinstance(b.get("teams"), dict) else {}
+                teams = {"won": str(tm["won"])[:48], "lost": str(tm["lost"])[:48]} if tm.get("won") and tm.get("lost") else None
+                games.append({"id": nid, "map": b.get("map", ""), "date": b.get("date", ""), "players": players,
+                              **({"teams": teams} if teams else {})})
                 save_solo(games); ok, msg = regenerate()
                 return self._json(200, {"ok": ok, "msg": msg, "id": nid})
             elif path == "/api/solo/delete":
