@@ -1235,8 +1235,32 @@ def main():
     sp = os.path.join(DATA, "stacks.json")
     _manual = json.load(open(sp, encoding="utf-8")) if os.path.exists(sp) else []
     _valid = {p["slug"] for pool in (pro, amateur, solo) for p in pool}
-    stacks = [s for s in _manual if all(x in _valid for x in s.get("players", []))]
+    # entry types (the user's, 17 Nov 2026), all read by BPL Bots:
+    #   duo / trio / full: a fixed premade
+    #   group: any 2, 3 or 5 of them ("sizes") queue together, at most one of each "alts" pair; "core" players are
+    #          in every premade it sends, and "team" (a team slug) adds that team's current roster to it
+    #   avoid (once "apart"): the two never queue together or play on one team
+    _roster_of = {t["slug"]: [p["slug"] for p in t.get("roster", [])] for t in teams}
+    stacks = []
+    for s in _manual:
+        if s.get("team"):
+            if s["team"] not in _roster_of:
+                print(f"  ! stacks.json: no team '{s['team']}' for {s.get('players')}")
+            s = {**s, "players": list(dict.fromkeys(s.get("players", []) + _roster_of.get(s["team"], [])))}
+        pl = [x for x in s.get("players", []) if x in _valid]
+        if s.get("type") == "group" and len(pl) >= 2:      # a group keeps the members that exist
+            stacks.append({**s, "players": pl, "alts": [a for a in s.get("alts", []) if all(x in _valid for x in a)],
+                           **({"core": [x for x in s["core"] if x in pl]} if s.get("core") else {})})
+        elif len(pl) >= 2 and len(pl) == len(s.get("players", [])):
+            stacks.append(s)
+        else:
+            print(f"  ! stacks.json: {s.get('type')} {s.get('players')} has players BPL doesn't know")
     _have = {frozenset(s["players"]) for s in stacks}
+    # pairs a hand-kept entry already covers (or keeps apart): never an extra auto duo. A group with core
+    # players only covers the pairs with one of them in.
+    _covered = {frozenset((a, b)) for s in stacks for a in s["players"] for b in s["players"]
+                if a != b and (not s.get("core") or a in s["core"] or b in s["core"])}
+    _apart = {frozenset(s["players"]) for s in stacks if s.get("type") in ("avoid", "apart")}
     hot = {pair for pair, c in co_play.items() if c >= STACKS_MIN}
     _hadj = defaultdict(set)
     for pair in hot:
@@ -1250,14 +1274,15 @@ def main():
                 a, b, c = _hnodes[i], _hnodes[j], _hnodes[k]
                 if frozenset((a, c)) in hot and frozenset((b, c)) in hot:
                     slugs = [_sl(a), _sl(b), _sl(c)]
-                    if all(slugs) and frozenset(slugs) not in _have:
+                    if all(slugs) and frozenset(slugs) not in _have and not any(
+                            frozenset(pr) in _apart for pr in ((slugs[0], slugs[1]), (slugs[0], slugs[2]), (slugs[1], slugs[2]))):
                         stacks.append({"type": "trio", "players": slugs, "source": "auto"})
                         _have.add(frozenset(slugs))
                         _trio_pairs |= {frozenset((a, b)), frozenset((a, c)), frozenset((b, c))}
     for pair in hot:                              # auto duos: hot pairs not folded into a trio/manual
         if pair in _trio_pairs: continue
         a, b = [_sl(x) for x in pair]
-        if a and b and frozenset((a, b)) not in _have:
+        if a and b and frozenset((a, b)) not in _have and frozenset((a, b)) not in _covered:
             stacks.append({"type": "duo", "players": [a, b], "source": "auto", "games": co_play[pair]})
             _have.add(frozenset((a, b)))
 

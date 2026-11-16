@@ -176,5 +176,915 @@
    "dumbo"
   ],
   "source": "manual"
+ },
+ {
+  "type": "group",
+  "players": [
+   "tortillaroll",
+   "ochakokiyomi",
+   "vanixevans",
+   "tuxedocat",
+   "ryker-sterling"
+  ],
+  "source": "manual",
+  "added": "2026-11-17",
+  "sizes": [
+   2,
+   3,
+   5
+  ]
+ },
+ {
+  "type": "group",
+  "players": [
+   "navikuun",
+   "ice",
+   "sashimigoesbloop",
+   "seireiix",
+   "y1jingg",
+   "xueqiii",
+   "joshiwahhh"
+  ],
+  "source": "manual",
+  "added": "2026-11-17",
+  "sizes": [
+   2,
+   3,
+   5
+  ],
+  "alts": [
+   [
+    "ice",
+    "xueqiii"
+   ],
+   [
+    "seireiix",
+    "joshiwahhh"
+   ]
+  ]
+ },
+ {
+  "type": "group",
+  "players": [
+   "milkenut",
+   "nataleste",
+   "tanykeat",
+   "le-pyrrhic",
+   "xyrren"
+  ],
+  "source": "manual",
+  "added": "2026-11-17",
+  "sizes": [
+   2,
+   3,
+   5
+  ]
+ },
+ {
+  "type": "group",
+  "players": [
+   "l1feless",
+   "beyouna",
+   "laburi",
+   "nikorasu",
+   "kn"
+  ],
+  "source": "manual",
+  "added": "2026-11-17",
+  "sizes": [
+   2,
+   3,
+   5
+  ]
+ },
+ {
+  "type": "group",
+  "players": [
+   "nikorasu",
+   "dumbo",
+   "hakop",
+   "somebodynewish",
+   "hyvred"
+  ],
+  "source": "manual",
+  "added": "2026-11-17",
+  "sizes": [
+   2,
+   3,
+   5
+  ]
+ },
+ {
+  "type": "duo",
+  "players": [
+   "eroxis",
+   "swoopsy"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "nipnip",
+   "sketch",
+   "dirfun"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "nipnip",
+   "sketch"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "full",
+  "players": [
+   "xolalotl",
+   "altheavt",
+   "tif2",
+   "xyrolizea",
+   "obvmx"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "xolalotl",
+   "altheavt"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "tif2",
+   "xyrolizea"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "xolalotl",
+   "altheavt",
+   "tif2"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "xolalotl",
+   "altheavt",
+   "ice"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "full",
+  "players": [
+   "laburi",
+   "ice",
+   "mike",
+   "dazeido",
+   "hamzyy"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "ice",
+   "mike",
+   "laburi"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "laburi",
+   "ice"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "laburi",
+   "dazeido"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "zuann",
+   "siddnely",
+   "xmeijixx"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "kael",
+   "babayaga",
+   "ice"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "nyxcatto",
+   "teckiyo"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "avoid",
+  "players": [
+   "nyxcatto",
+   "tif2"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "avoid",
+  "players": [
+   "teckiyo",
+   "tif2"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "full",
+  "players": [
+   "stitchkyui",
+   "goddessakane",
+   "acryii",
+   "anjuvalse",
+   "sayucchi"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "anjuvalse",
+   "sayucchi"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "caarrietan",
+   "rebebx",
+   "leachubby"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "winda",
+   "ice",
+   "dazeido"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "carv",
+   "yixl",
+   "surf"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "group",
+  "players": [
+   "yojareddo",
+   "hanarisu",
+   "milliannavt",
+   "aleaka",
+   "cursiffe"
+  ],
+  "source": "manual",
+  "added": "2026-11-17",
+  "sizes": [
+   2,
+   3,
+   5
+  ]
+ },
+ {
+  "type": "group",
+  "players": [
+   "joshiwahhh",
+   "y1jingg",
+   "tanykeat",
+   "zoweya",
+   "jenakai"
+  ],
+  "source": "manual",
+  "added": "2026-11-17",
+  "sizes": [
+   2,
+   3,
+   5
+  ]
+ },
+ {
+  "type": "trio",
+  "players": [
+   "codiant",
+   "nerfox",
+   "karoni"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "group",
+  "players": [
+   "jigglypingu",
+   "sketch",
+   "acroblaze",
+   "idiot-angelcrutcher",
+   "historia",
+   "ice",
+   "resent",
+   "leveti",
+   "niito",
+   "sakami",
+   "mango",
+   "astro-ruckus",
+   "dirfun"
+  ],
+  "source": "manual",
+  "added": "2026-11-17",
+  "sizes": [
+   2,
+   3,
+   5
+  ]
+ },
+ {
+  "type": "duo",
+  "players": [
+   "rebellioniite",
+   "joshiwahhh"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "group",
+  "players": [
+   "xrela",
+   "frozonemonke",
+   "nevesten",
+   "bodexx",
+   "yojareddo"
+  ],
+  "source": "manual",
+  "added": "2026-11-17",
+  "sizes": [
+   2,
+   3,
+   5
+  ]
+ },
+ {
+  "type": "full",
+  "players": [
+   "illus",
+   "kairi",
+   "crimsynflames",
+   "nifela",
+   "decrease"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "crimsynflames",
+   "decrease"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "zhiweiingg",
+   "pashionfruit18"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "ochakokiyomi",
+   "suzuyunn",
+   "yojareddo"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "group",
+  "players": [
+   "exact",
+   "mond33",
+   "appleorangepear",
+   "dla-wo",
+   "kyyltn",
+   "phxebe"
+  ],
+  "source": "manual",
+  "added": "2026-11-17",
+  "sizes": [
+   2,
+   3,
+   5
+  ]
+ },
+ {
+  "type": "duo",
+  "players": [
+   "ktenshi",
+   "kyu"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "group",
+  "players": [
+   "goddessakane",
+   "acryii",
+   "kaito-oshino",
+   "iceenblue",
+   "psystra"
+  ],
+  "source": "manual",
+  "added": "2026-11-17",
+  "sizes": [
+   2,
+   3,
+   5
+  ]
+ },
+ {
+  "type": "avoid",
+  "players": [
+   "gigichiii",
+   "altheavt"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "yinnzx",
+   "ostc-x",
+   "kitties258"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "daifuku-wu",
+   "chiyoriinn",
+   "yumezukiyomi"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "chiyoriinn",
+   "yumezukiyomi"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "arcimoon",
+   "leilamayadah"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "spinafex",
+   "kaito-oshino"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "akanersvt",
+   "wushii",
+   "venicec"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "shizuyaumiko",
+   "murasakibara-tsuki1"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "avoid",
+  "players": [
+   "shizuyaumiko",
+   "jasticar"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "avoid",
+  "players": [
+   "murasakibara-tsuki1",
+   "jasticar"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "sheep",
+   "soozy",
+   "ryujin"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "sheep",
+   "soozy"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "group",
+  "players": [
+   "vyphogrid",
+   "altheavt",
+   "xyrolizea",
+   "tif2",
+   "anndreika"
+  ],
+  "source": "manual",
+  "added": "2026-11-17",
+  "sizes": [
+   2,
+   3,
+   5
+  ]
+ },
+ {
+  "type": "duo",
+  "players": [
+   "applezxc",
+   "pearlim"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "avoid",
+  "players": [
+   "applezxc",
+   "jwqi"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "group",
+  "players": [
+   "kanarivt"
+  ],
+  "source": "manual",
+  "added": "2026-11-17",
+  "team": "eiromancers",
+  "sizes": [
+   2,
+   3
+  ],
+  "core": [
+   "kanarivt"
+  ]
+ },
+ {
+  "type": "avoid",
+  "players": [
+   "kanarivt",
+   "djsalty"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "candybar-isblue",
+   "codedecho"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "mominichi",
+   "luminmochi"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "yerm",
+   "kael",
+   "moonraika"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "rittan0x0",
+   "midorissi",
+   "tortillaroll"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "avoid",
+  "players": [
+   "rittan0x0",
+   "justyoong"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "fumishiroyummy",
+   "suzuyunn"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "spoods",
+   "nattyuwus"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "treblest",
+   "azzuto",
+   "hyvred"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "azzuto",
+   "treblest"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "lenette",
+   "rebebx",
+   "ice"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "lenette",
+   "rebebx"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "dianya",
+   "yojareddo"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "group",
+  "players": [
+   "keikatamori",
+   "dumbo",
+   "djsalty",
+   "ice",
+   "inaxho",
+   "itzmaigo",
+   "baer",
+   "suzuyunn"
+  ],
+  "source": "manual",
+  "added": "2026-11-17",
+  "sizes": [
+   2,
+   3,
+   5
+  ]
+ },
+ {
+  "type": "group",
+  "players": [
+   "ehsten"
+  ],
+  "source": "manual",
+  "added": "2026-11-17",
+  "team": "pepegax",
+  "sizes": [
+   2
+  ],
+  "core": [
+   "ehsten"
+  ]
+ },
+ {
+  "type": "trio",
+  "players": [
+   "nicsman",
+   "moonraika",
+   "nikorasu"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "lumi-nyaa",
+   "ryker-sterling"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "skyllabtw",
+   "joshiwahhh",
+   "xyrren"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "kaikaijins",
+   "suzuyunn"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "trio",
+  "players": [
+   "suzuyunn",
+   "crex",
+   "aweberry"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "group",
+  "players": [
+   "efreetsz",
+   "dumbo",
+   "djsalty",
+   "ice",
+   "nikorasu",
+   "baer",
+   "itzmaigo",
+   "suzuyunn",
+   "itswendy"
+  ],
+  "source": "manual",
+  "added": "2026-11-17",
+  "sizes": [
+   2,
+   3,
+   5
+  ]
+ },
+ {
+  "type": "full",
+  "players": [
+   "midorissi",
+   "idiot-angelcrutcher",
+   "acroblaze",
+   "historia",
+   "sketch"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "midorissi",
+   "idiot-angelcrutcher"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
+ },
+ {
+  "type": "duo",
+  "players": [
+   "laavv",
+   "jenapoppins"
+  ],
+  "source": "manual",
+  "added": "2026-11-17"
  }
 ]

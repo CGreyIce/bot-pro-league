@@ -4530,7 +4530,8 @@ function splitByStacks(players){
   const bySlug={}; players.forEach(p=>bySlug[p.slug]=p);
   const present=new Set(players.map(p=>p.slug));
   const adj={}; players.forEach(p=>adj[p.slug]=new Set());
-  (DATA.stacks||[]).forEach(st=>{ const inn=(st.players||[]).filter(s=>present.has(s));
+  (DATA.stacks||[]).forEach(st=>{ if(st.type==="avoid"||st.type==="apart") return;   // "never on one team", not a premade
+    const inn=(st.players||[]).filter(s=>present.has(s));
     for(let i=0;i<inn.length;i++) for(let j=i+1;j<inn.length;j++){ adj[inn[i]].add(inn[j]); adj[inn[j]].add(inn[i]); } });
   const seen=new Set(), comps=[];                 // connected components = groups that queue together
   players.forEach(p=>{ if(seen.has(p.slug)) return; const stk=[p.slug], members=[]; seen.add(p.slug);
