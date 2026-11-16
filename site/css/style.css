@@ -1577,6 +1577,9 @@ tr:has(.gc-out) .name-cell{opacity:.75}
 .scrim-detail>td{padding:12px 10px 16px;background:rgba(255,255,255,.015);max-width:0}   /* its scoreboard scrolls inside, the table stays put */
 @media(max-width:760px){.scrim-maps,.scrim-bo,.scrim-chev{display:none}}
 @media(max-width:480px){.scrim-row td{padding:8px 5px}.scrim-row td:first-child{font-size:11px;white-space:normal;min-width:56px}}
+/* Solo Queue tab (#/solo): team_<name> runs long, so on a phone the names wrap and the flags go */
+.solo-table .team-inline img.flag{width:20px;height:15px}
+@media(max-width:480px){.solo-table .team-inline{gap:5px}.solo-table .team-inline span{white-space:normal;overflow-wrap:break-word;font-size:12px}.solo-table .team-inline img.flag{display:none}.solo-table .scrim-row td:first-child{min-width:44px}}
 
 /* Extended GSL groups (six-team double elimination, Maigo's Rookie Roulette) */
 .gsl-note{font-size:13px;line-height:1.55;color:var(--muted);background:var(--panel);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:10px;padding:11px 15px;margin:18px 0 4px}

@@ -995,6 +995,19 @@ def main():
             tm.setdefault("humans", []).append({"name": h["name"], "slug": h["slug"], "kind": h["kind"],
                                                 "iso": h.get("iso", ""), "role": h.get("role"), "joined": h.get("joined")})
 
+    # ---- the Solo Queue tab's games (build/solo_games.py): site/solo_games.json, read only by that tab;
+    # each side named team_<its highest-rated player going in> (user, 17 Nov 2026) ----
+    import solo_games
+    def _solo_resolve(name):
+        k = norm_key(name); nn = old2new.get(k)
+        tgt = solo_by_name.get(norm_key(nn) if nn else k)
+        if tgt:
+            return tgt["name"], tgt
+        h = hum_by.get(k) or next((x for x in solo_humans if k in {norm_key(n) for n in x.get("ingame", [])}), None)
+        return (h["name"], h) if h else None
+    _n = solo_games.build(solo_sb, _solo_resolve, _solo_rating_value, points_for, solo_avg, solo_game_stats,
+                          norm_key, SITE)
+    print(f"Solo Queue games:    {_n} (site/solo_games.json)")
     for pool in (pro, amateur, solo):
         for p in pool:
             if "_xs" in p:

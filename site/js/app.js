@@ -220,7 +220,7 @@ const routes = {
   "results": renderResults, "scrims": renderScrims, "records": renderRecords, "compare": renderCompare,
   "transfers": renderTransfers, "matches": renderMatches, "awards": renderAwards, "maps": renderMaps, "heatmaps": renderHeatmaps,
   "compareteams": renderTeamCompare, "stats": renderStats,
-  "admin": renderAdmin, "match": renderMatch, "predict": renderPredict, "prophets": renderProphets, "fantasy": renderFantasy, "rivalries": renderRivalries, "dle": renderDle,
+  "admin": renderAdmin, "match": renderMatch, "predict": renderPredict, "prophets": renderProphets, "fantasy": renderFantasy, "rivalries": renderRivalries, "dle": renderDle, "solo": renderSoloGames,
   "news": renderNews, "article": renderArticle,
 };
 function parseHash(){
@@ -1245,6 +1245,10 @@ function renderScrims(){
   });
 }
 // Names to profiles, so the scoreboard links them the way a match page does.
+function scrimPerson(name){
+  scrimWithPeople({maps:[]});
+  return _scrimPeople[normKey(name)] || {};
+}
 function scrimWithPeople(s){
   if(!_scrimPeople){
     _scrimPeople = {};
@@ -1354,6 +1358,88 @@ function scrimLeadersHtml(){
     <div><h3 class="rec-group">Top 10 Teams <span class="muted" style="font-size:11px">by map win rate · min ${SCRIM_MIN_MAPS} maps</span></h3>
       ${tRows?`<div class="tablewrap"><table class="data"><thead><tr><th>#</th><th>Team</th><th class="sl-hide">Maps</th><th>W–L</th><th>Win %</th><th title="Round difference">+/−</th></tr></thead><tbody>${tRows}</tbody></table></div>`:empty}</div>
   </div>`;
+}
+
+// ---------- Solo Queue (#/solo, 17 Nov 2026): every recorded solo queue game ----------
+// From site/solo_games.json (build/solo_games.py), which only this page reads. The two sides are random,
+// so each is named team_<its highest-rated player going into the game>. BPL-dle moved off the menu to make
+// room; it's still on the home page.
+let _soloGames = [], _soloOpen = null, soloQ = "", soloShown = 50;
+function renderSoloGames(){
+  app.innerHTML = `<h2 class="section-title"><span class="accent-bar"></span>Solo Queue</h2><p class="muted">Loading…</p>`;
+  fetch("solo_games.json", {cache:"no-cache"}).then(r=>r.ok?r.json():[]).catch(()=>[]).then(list=>{
+    if(parseHash().route!=="solo") return;
+    _soloGames = Array.isArray(list) ? list : [];
+    drawSoloGames();
+  });
+}
+function drawSoloGames(){
+  const q = normKey(soloQ);
+  const list = q ? _soloGames.filter(g=>g.players.some(p=>normKey(p.name).includes(q))) : _soloGames;
+  const shown = list.slice(0, soloShown);
+  const teamHtml = (g, side)=>{
+    const [cap, pts] = side==='a' ? g.capA : g.capB;
+    const who = scrimPerson(cap);
+    const tip = `Named after ${cap}, the highest Solo Queue rating on this side going in${pts!=null?` (${pts} pts)`:''}`;
+    return `<span class="team-inline ${side==='a'?'rwin':''}" title="${esc(tip)}">${flag(who.iso)}<span>${esc(side==='a'?g.a:g.b).replace(/^team_/, 'team_<wbr>')}</span></span>`;   // a phone breaks the line there
+  };
+  const rows = shown.map(g=>{
+    const open = String(g.id)===_soloOpen;
+    return `<tr class="scrim-row${open?' open':''}" data-solo="${esc(g.id)}">
+      <td class="mono muted">${g.date?fmtDate(g.date):'–'}</td>
+      <td class="muted scrim-bo">${esc(g.map||'')}</td>
+      <td style="text-align:right">${teamHtml(g,'a')}</td>
+      <td class="mono rscore">${g.scoreA} <span class="muted">:</span> ${g.scoreB}</td>
+      <td>${teamHtml(g,'b')}</td>
+      <td class="scrim-chev"><button aria-expanded="${open}" aria-label="${open?'Hide':'Show'} the scoreboard">${open?'▾':'▸'}</button></td>
+    </tr>${open?`<tr class="scrim-detail"><td colspan="6">${soloScoreboardHtml(g)}</td></tr>`:''}`;
+  }).join("");
+  app.innerHTML = `
+    <h2 class="section-title"><span class="accent-bar"></span>Solo Queue <span class="muted" style="font-size:11px">(${list.length} game${list.length===1?'':'s'})</span></h2>
+    <div class="tabs" style="align-items:center">
+      <span class="muted" style="font-size:13px">Ten players split into two random teams. Each team is named after its highest-rated player going into the game. These count towards Solo Queue ratings only. <a href="#/players" id="solo-board" style="color:var(--link)">Solo Queue rankings →</a></span>
+      <input id="solo-q" class="rq" type="text" placeholder="Filter by player…" value="${esc(soloQ)}">
+    </div>
+    ${rows?`<div class="tablewrap"><table class="data results-table solo-table"><tbody>${rows}</tbody></table></div>`
+      :`<p class="muted">${_soloGames.length?'No games for that player.':'No solo queue games yet.'}</p>`}
+    ${shown.length<list.length?`<div style="text-align:center;margin-top:14px"><button id="solo-more" class="loadmore">Load more (${list.length-shown.length} left)</button></div>`:''}`;
+  app.querySelectorAll(".scrim-row").forEach(r=>r.onclick=e=>{
+    if(e.target.closest("a")) return;
+    _soloOpen = _soloOpen===r.dataset.solo ? null : r.dataset.solo;
+    drawSoloGames();
+  });
+  const qi=$("#solo-q"); if(qi) qi.oninput=()=>{soloQ=qi.value.trim();soloShown=50;drawSoloGames();const e=$("#solo-q");if(e){e.focus();e.setSelectionRange(e.value.length,e.value.length);}};
+  const mb=$("#solo-more"); if(mb) mb.onclick=()=>{soloShown+=50;drawSoloGames();};
+  const sb=$("#solo-board"); if(sb) sb.onclick=()=>{ playersPool="solo"; };
+}
+// One game's scoreboard: the winners, then the losers. No in-game score is recorded for solo games, so
+// there's no match rating; ±Pts is how the game moved each player's Solo Queue rating points.
+function soloScoreboardHtml(g){
+  const hasXs = g.players.some(p=>p.rnd>0);
+  const xsHead = hasXs ? '<th class="no-sort" title="Average damage per round">ADR</th><th class="no-sort" title="Rounds with a kill, assist, survival or trade">KAST</th><th class="no-sort" title="Headshot kills">HS%</th><th class="no-sort" title="Opening kills–deaths">FK–FD</th>' : '';
+  const xsCells = p => !hasXs ? '' : !(p.rnd>0) ? '<td class="mono muted">–</td>'.repeat(4) :
+    `<td class="mono">${(p.dmg/p.rnd).toFixed(0)}</td><td class="mono">${Math.round(100*p.kast/p.rnd)}%</td>
+     <td class="mono">${Math.round(100*p.hs/Math.max(1,p.xk!=null?p.xk:p.k))}%</td><td class="mono">${p.fk}–${p.fd}</td>`;
+  const block = (won)=>{
+    const ps = g.players.filter(p=>p.won===won).sort((a,b)=>b.k-a.k||a.d-b.d);
+    const name = won ? g.a : g.b;
+    return `<div class="sb-team">
+      <div class="sb-head"><strong>${esc(name)}</strong> <span class="muted" style="font-size:12px">${won?'won':'lost'} ${won?g.scoreA:g.scoreB}–${won?g.scoreB:g.scoreA}</span></div>
+      <div class="tablewrap"><table class="data sb-table">
+        <thead><tr><th class="no-sort">Player</th><th class="no-sort">K</th><th class="no-sort">A</th><th class="no-sort">D</th>
+          <th class="no-sort">+/–</th>${xsHead}<th class="no-sort">MVP</th>
+          <th class="no-sort" title="How this game moved their Solo Queue rating points">±Pts</th></tr></thead>
+        <tbody>${ps.map(p=>{ const who = scrimPerson(p.name), pm = p.k-p.d;
+          const nm = who.slug ? `<a href="#/player/${esc(who.slug)}">${esc(p.name)}</a>` : who.hslug ? `<a href="#/human/${esc(who.hslug)}">${esc(p.name)}</a>${humanBadge(who)}` : esc(p.name);
+          const gain = p.gain==null ? '<span class="muted">–</span>' : `<span style="color:var(${p.gain>=0?'--good':'--accent2'})">${p.gain>0?'+':''}${p.gain}</span>`;
+          return `<tr><td class="name-cell">${flag(who.iso)}${nm}</td>
+          <td class="mono">${p.k}</td><td class="mono">${p.a}</td><td class="mono">${p.d}</td>
+          <td class="mono" style="color:${pm>0?'var(--good)':pm<0?'var(--accent2)':'var(--muted)'}">${pm>0?'+':''}${pm}</td>${xsCells(p)}
+          <td class="mono">${p.mvp?'★'+p.mvp:'–'}</td><td class="mono">${gain}</td></tr>`; }).join("")}</tbody>
+      </table></div></div>`;
+  };
+  return `<div class="muted" style="font-size:12px;margin-bottom:8px">${esc(g.map||'')}${g.date?' · '+esc(fmtDate(g.date)):''}</div>
+    <div class="sb-wrap${hasXs?' sb-stack':''}">${block(true)}${block(false)}</div>`;
 }
 
 // ---------- Records / Hall of Fame ----------
