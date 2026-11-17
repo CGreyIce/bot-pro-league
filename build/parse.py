@@ -1238,7 +1238,8 @@ def main():
     # entry types (the user's, 17 Nov 2026), all read by BPL Bots:
     #   duo / trio / full: a fixed premade
     #   group: any 2, 3 or 5 of them ("sizes") queue together, at most one of each "alts" pair; "core" players are
-    #          in every premade it sends, and "team" (a team slug) adds that team's current roster to it
+    #          in every premade it sends, "team" (a team slug) adds that team's current roster to it, and
+    #          "clusters" (with "bias") make a member pick mates from their own cluster that often
     #   avoid (once "apart"): the two never queue together or play on one team
     _roster_of = {t["slug"]: [p["slug"] for p in t.get("roster", [])] for t in teams}
     stacks = []
@@ -1250,7 +1251,8 @@ def main():
         pl = [x for x in s.get("players", []) if x in _valid]
         if s.get("type") == "group" and len(pl) >= 2:      # a group keeps the members that exist
             stacks.append({**s, "players": pl, "alts": [a for a in s.get("alts", []) if all(x in _valid for x in a)],
-                           **({"core": [x for x in s["core"] if x in pl]} if s.get("core") else {})})
+                           **({"core": [x for x in s["core"] if x in pl]} if s.get("core") else {}),
+                           **({"clusters": [[x for x in c if x in pl] for c in s["clusters"]]} if s.get("clusters") else {})})
         elif len(pl) >= 2 and len(pl) == len(s.get("players", [])):
             stacks.append(s)
         else:
