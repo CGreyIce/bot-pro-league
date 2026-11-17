@@ -1125,8 +1125,39 @@ function renderPlayer(slug){
             <span class="muted" style="font-size:11px">${tally.join(' · ')}</span></h2>
             <div class="honors">${medHtml}</div>`;
         })()}
+        <h2 class="section-title" style="margin-top:22px"><span class="accent-bar"></span>Recent Solo Queue games</h2>
+        <div id="p-solo-games" data-slug="${esc(p.slug)}">${soloGamesTable(null)}</div>
       </div>
     </div>`;
+  // filled in from site/solo_games.json, which the page fetches once (it isn't in data.json)
+  loadSoloGames().then(list=>{
+    const box = document.getElementById("p-solo-games");
+    if(!box || box.dataset.slug!==p.slug) return;   // another profile opened meanwhile
+    const keys = new Set([p.name, ...(p.aka||[])].map(normKey)), gains = DATA.soloGameStats||{};
+    const rows = [];
+    list.forEach(g=>(g.players||[]).forEach(x=>{ if(!keys.has(normKey(x.name))) return;
+      const gs = (gains[String(g.id)]||{})[normKey(x.name)];
+      rows.push({id:g.id, date:g.date, map:g.map, won:x.won, k:x.k, d:x.d, a:x.a, mvp:x.mvp, gain:gs&&gs.gain!=null?gs.gain:x.gain}); }));
+    rows.sort((x,y)=>String(y.date||'').localeCompare(String(x.date||''))||(+y.id||0)-(+x.id||0));
+    box.innerHTML = soloGamesTable(rows.slice(0, 30));
+  });
+}
+// A bot's recent solo games, like the table on a human's page. null = still loading; [] = none yet
+// (the table stays, empty, as the user asked).
+let _soloGamesP = null;
+function loadSoloGames(){
+  return _soloGamesP = _soloGamesP || fetch("solo_games.json?x="+encodeURIComponent(DATA.builtAt||""))
+    .then(r=>r.ok?r.json():[]).then(l=>Array.isArray(l)?l:[]).catch(()=>[]);
+}
+function soloGamesTable(rows){
+  const body = rows==null ? '<tr><td colspan="6" class="muted">Loading…</td></tr>'
+    : !rows.length ? '<tr><td colspan="6" class="muted">No Solo Queue games yet.</td></tr>'
+    : rows.map(g=>{
+      const gain = g.gain!=null ? `<span style="color:var(${g.gain>=0?'--good':'--accent2'})">${g.gain>=0?'+':''}${g.gain}</span>` : '<span class="muted">—</span>';
+      return `<tr><td class="muted">${esc(g.date||'')}</td><td>${esc(g.map||'—')}</td>
+        <td><span class="form-dot ${g.won?'w':'l'}">${g.won?'W':'L'}</span></td>
+        <td class="mono">${g.k}-${g.d}-${g.a}</td><td class="mono">${g.mvp}</td><td class="mono">${gain}</td></tr>`; }).join("");
+  return `<div class="tablewrap"><table class="data"><thead><tr><th class="no-sort">Date</th><th class="no-sort">Map</th><th class="no-sort">Result</th><th class="no-sort">K-D-A</th><th class="no-sort">MVP</th><th class="no-sort" title="How the game moved their Solo Queue points">Pts</th></tr></thead><tbody>${body}</tbody></table></div>`;
 }
 
 function renderRankings(){
