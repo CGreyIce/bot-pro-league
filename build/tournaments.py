@@ -233,9 +233,28 @@ def process_one(raw, team_map, alias):
 
     # ---- standings ----
     order = sorted(rec.keys(), key=lambda n: (-rec[n]["w"], rec[n]["l"], -rec[n]["diff"], n.lower()))
+    elim_rank = {}
     if is_elim and champion:
-        order = [champion] + ([runner_up] if runner_up else []) + \
-                [n for n in order if n not in (champion, runner_up)]
+        # Challonge-style placement: champion, runner-up, then by the round a team was knocked out in
+        # (later = higher), and teams knocked out in the same round share a rank (5, 5, 7, 7, 9...).
+        # Sorting by win-loss put teams with byes or a short deep run below teams that went out earlier
+        # (Neverland were "12th" at the Audax Esse Invitational 2023 after losing a lower semi-final).
+        def out_depth(n):
+            lost = [m.get("r") or 0 for m in matches
+                    if m.get("w") in (1, 2) and (m.get("b") if m["w"] == 1 else m.get("a")) == n]
+            lower = [-r for r in lost if r < 0]
+            if lower:                                   # double elim: out in the losers bracket
+                return 1000 + max(lower)
+            return max((r for r in lost if r > 0), default=0)
+        rest = sorted((n for n in order if n not in (champion, runner_up)), key=lambda n: -out_depth(n))
+        order = [champion] + ([runner_up] if runner_up else []) + rest
+        top = 2 if runner_up else 1
+        elim_rank[champion] = 1
+        if runner_up:
+            elim_rank[runner_up] = 2
+        for i, n in enumerate(rest):
+            prev = rest[i - 1] if i else None
+            elim_rank[n] = elim_rank[prev] if prev is not None and out_depth(prev) == out_depth(n) else top + i + 1
     if not is_elim and not champion and order:   # Swiss/RR: top of standings is the winner
         champion = order[0]
         runner_up = order[1] if len(order) > 1 else None
@@ -252,7 +271,7 @@ def process_one(raw, team_map, alias):
     standings = []
     for i, n in enumerate(order):
         dn, sl = resolve(n)
-        standings.append({"rank": i + 1, "name": dn, "w": rec[n]["w"], "l": rec[n]["l"], "teamSlug": sl})
+        standings.append({"rank": elim_rank.get(n, i + 1), "name": dn, "w": rec[n]["w"], "l": rec[n]["l"], "teamSlug": sl})
 
     # ---- bracket, grouped & ordered by round (include pending matches so live brackets show TBD slots) ----
     by_round = defaultdict(list)

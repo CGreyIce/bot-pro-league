@@ -174,7 +174,9 @@ def run(tournaments, players, teams, articles):
         rank = {s: i + 1 for i, s in enumerate(ranked)}
         aw = {}
         name1 = _top20_no1(articles, y)
-        poy = next((s for s in ranked if name1 and _norm(by_slug[s]["name"]) == _norm(name1)), ranked[0])
+        # the article may use a later tag ("#1 chreyll" is 4twnty), so match former names too
+        poy = next((s for s in ranked if name1 and _norm(name1) in
+                    {_norm(by_slug[s]["name"]), *(_norm(a) for a in by_slug[s].get("aka") or [])}), ranked[0])
         aw["poy"] = {"slug": poy, "name": by_slug[poy]["name"]}
         rook = next((s for s in ranked if debut.get(s) == str(y)), None) if y != years[0] else None   # year one: everyone debuted
         if rook:
