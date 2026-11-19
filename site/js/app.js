@@ -1631,6 +1631,56 @@ document.addEventListener("keydown",e=>{
 // weapon records: site/weapons.json (build/heatmaps.py), kept out of data.json and only fetched here
 let _weaponsP=null;
 function loadWeapons(){ return _weaponsP=_weaponsP||fetch("weapons.json?x="+encodeURIComponent(DATA.builtAt||"")).then(r=>r.ok?r.json():null).catch(()=>null); }
+// ---- Play rating (20 Nov 2026): the one rating a player's bot plays at in BPL Bots, in team matches, scrims and solo
+// queue. A copy of bpl-bots lib/bpl.js (playAt) and lib/scrim.js (practiceBonuses), so the Records card shows the
+// same numbers as the app's line-ups: mostly the tournament rating, the Solo Queue rating mixed in by how much it's
+// been played (35% x solo maps / (solo maps + 10)), plus the scrim practice bonus, worked out from site/scrims.json.
+// It's only shown here; it never feeds a stat, a rank or a record of its own.
+const PLAY_SOLO_MAX=0.35, PLAY_SOLO_HALF=10;
+const PRACTICE={weight:0.25,mapMax:8,cap:50,fadePerWeek:0.95,scale:800,officialScale:2000,res:24,perf:30,edge:0.8};
+let _scrimsJsonP=null;
+function loadScrimsJson(){ return _scrimsJsonP=_scrimsJsonP||fetch("scrims.json",{cache:"no-cache"}).then(r=>r.ok?r.json():[]).catch(()=>[]).then(l=>Array.isArray(l)?l:[]); }
+function practiceBonuses(scrims){
+  const byName=new Map(); [...(DATA.players.pro||[]),...(DATA.players.solo||[])].forEach(p=>{ const k=p.name.toLowerCase(); if(!byName.has(k)) byName.set(k,p); });
+  const ptsOf=n=>(byName.get(String(n).toLowerCase())||{}).ratingPoints||0;
+  const win=(own,opp,sc)=>1/(1+Math.pow(10,(opp-own)/sc)), mean=l=>l.reduce((a,b)=>a+b,0)/l.length;
+  const mapRtg=(p,R)=>0.44*(p.k/R/0.707)+0.25*((R-p.d)/R/0.293)+0.24*(p.score/R/1.793)+0.07*(p.a/R/0.108);
+  const WEEK=7*86400, faded=(e,at)=>e.pts*Math.pow(PRACTICE.fadePerWeek,Math.max(0,at-e.at)/WEEK);
+  const held=new Map();
+  scrims.slice().sort((x,y)=>x.time-y.time).forEach(sc=>(sc.maps||[]).forEach(m=>{
+    const R=(m.scoreA||0)+(m.scoreB||0); if(!R) return;
+    const side={a:[],b:[]};
+    (m.players||[]).forEach(p=>side[p.team===sc.a?'a':'b'].push({name:p.name,rt:mapRtg(p,R),pts:ptsOf(p.name)}));
+    const rated=k=>side[k].filter(p=>p.pts>0);
+    if(!rated('a').length||!rated('b').length) return;
+    [['a','b'],['b','a']].forEach(([me,op])=>{
+      const oppPts=mean(rated(op).map(p=>p.pts)), oppRt=mean(side[op].map(p=>p.rt));
+      const won=me==='a'?m.scoreA>m.scoreB:m.scoreB>m.scoreA;
+      const result=won?PRACTICE.res*(1-win(mean(rated(me).map(p=>p.pts)),oppPts,PRACTICE.scale)):0;
+      rated(me).forEach(p=>{
+        const perf=PRACTICE.perf*(p.rt-oppRt-PRACTICE.edge*(win(p.pts,oppPts,PRACTICE.officialScale)-0.5));
+        const gain=Math.min(PRACTICE.mapMax,PRACTICE.weight*(result+Math.max(0,perf)));
+        if(!isFinite(gain)) return;
+        const slug=byName.get(p.name.toLowerCase()).slug, e=held.get(slug);
+        held.set(slug,{pts:Math.min(PRACTICE.cap,(e?faded(e,sc.time):0)+gain),at:sc.time});
+      });
+    });
+  }));
+  const now=Date.now()/1000, out=new Map(); held.forEach((e,k)=>out.set(k,faded(e,now))); return out;
+}
+// Every player's play rating, best first: {p, v, T (tournament), S (Solo Queue), share (% of S), b (scrim bonus)}
+function playRatings(scrims){
+  const bonus=practiceBonuses(scrims), seen=new Set(), out=[];
+  [...(DATA.players.pro||[]),...(DATA.players.solo||[])].forEach(p=>{
+    if(seen.has(p.slug)) return; seen.add(p.slug);
+    const T=p.ratingPoints||0, so=p.pool==='solo'?p:(p.soloStats||{});
+    const S=so.ratingPoints||0, maps=so.maps||0, b=T?(bonus.get(p.slug)||0):0;
+    const share=T&&S?PLAY_SOLO_MAX*maps/(maps+PLAY_SOLO_HALF):0;
+    const v=T?(1-share)*T+share*S+b:S;
+    if(v>0) out.push({p,v:Math.round(v),T,S,share:Math.round(share*100),b:Math.round(b)});
+  });
+  return out.sort((x,y)=>y.v-x.v);
+}
 function renderRecords(){
   _recTop=[];
   const pro = DATA.players.pro.filter(p=>p.rating!=null);
@@ -1929,6 +1979,7 @@ function renderRecords(){
     <section class="rec-sec" data-rg="players"><h3 class="rec-group">Players <span class="muted" style="font-size:11px">(pro; rate stats min 12 maps)</span></h3>
     <div class="rec-grid">
       ${recCard("Most Rating Points", topRating.name, topRating.ratingPoints, `#/player/${topRating.slug}`)}
+      <div id="rec-play" class="rec-card"><div class="rec-title">Highest Play Rating</div><div class="rec-sub muted">Working it out…</div></div>
       ${topEarner?recCard("Highest Earner", topEarner.name, fmtUSD(topEarner.earnings), `#/player/${topEarner.slug}`):''}
       ${payday?recCard("Biggest Single Payday", payday.p.name, `${fmtUSD(payday.h.amount)} · ${esc(payday.h.event)}`, `#/player/${payday.p.slug}`):''}
       ${topValue?recCard("Highest Market Value", topValue.name, fmtUSD(topValue.marketValue), `#/player/${topValue.slug}`):''}
@@ -2000,6 +2051,14 @@ function renderRecords(){
   recShow();
   const wBox=document.getElementById("rec-weapons");
   loadWeapons().then(W=>{ if(W&&wBox&&wBox.isConnected) wBox.innerHTML=weaponSection(W); });
+  const pBox=document.getElementById("rec-play");
+  loadScrimsJson().then(sc=>{ if(!pBox||!pBox.isConnected) return;
+    const rows=playRatings(sc); if(!rows.length){ pBox.remove(); return; }
+    const parts=x=>[x.T?`${x.T} tournament`:'', x.share?`${x.S} solo (${x.share}%)`:'', x.b?`+${x.b} scrims`:''].filter(Boolean).join(' · ');
+    const top=rows[0], tied=rows.filter(x=>x.v===top.v).length-1;
+    pBox.outerHTML=recCard("Highest Play Rating", top.p.name, top.v+" pts", `#/player/${top.p.slug}`,
+      subOf(parts(top), tied?`${tied} other${tied>1?'s':''} tied`:''),
+      ()=>rows.map(x=>({name:x.p.name, href:`#/player/${x.p.slug}`, val:x.v+" pts", raw:x.v, sub:parts(x)}))); });
 }
 // Top Earners on the Records page: all-time or one year (players from their prize history, teams from event payouts)
 let _earnYear = 'all';
