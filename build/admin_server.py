@@ -101,9 +101,47 @@ def save_prize_pools(updates):
     json.dump(dict(sorted(pools.items())), open(path, "w", encoding="utf-8"), indent=1)
     return changed
 
+# Files the build writes. When this PC and another both changed one, the merge keeps this PC's copy and the
+# rebuild after it writes the file again from the merged sources.
+BUILT_FILES = ("site/data.json", "site/solo_games.json", "site/index.html", "site/weapons.json",
+               "data/storyline_state.json", "data/dle_schedule.json", "data/player_bios.json", "data/rank_climb_record.json")
+
+def _built_file(path):
+    return path in BUILT_FILES or path.startswith("site/heatmaps/")
+
+def sync_with_github(run):
+    """After the local commit (20 Nov 2026): take what other PCs pushed since this one last pulled, and replay
+    this commit on top. Two PCs publish (the laptop's queue, code pushes from the other PC), and a push never
+    used to pull, so one PC's push could leave the other's publishes failing. A clash in a file the build
+    writes keeps this PC's copy (git_publish rebuilds after); a clash in anything else stops with the commit
+    kept here, untouched. Returns (ok, message, merged) where merged = other PCs' changes came in."""
+    fetch = run(["fetch", "--quiet"])
+    if fetch.returncode != 0:
+        return False, "couldn't reach GitHub: " + (fetch.stderr or fetch.stdout)[-200:], False
+    behind = run(["rev-list", "--count", "HEAD..@{u}"])
+    if behind.returncode != 0 or behind.stdout.strip() in ("", "0"):
+        return True, "", False
+    reb = run(["rebase", "@{u}"])
+    for _ in range(50):                          # one round per replayed commit that clashed
+        if reb.returncode == 0:
+            return True, "", True
+        clashes = [f for f in run(["diff", "--name-only", "--diff-filter=U"]).stdout.splitlines() if f.strip()]
+        if not clashes or not all(_built_file(f) for f in clashes):
+            run(["rebase", "--abort"])
+            src = [f for f in clashes if not _built_file(f)]
+            return False, ("GitHub has changes to the same files from another PC (" + ", ".join(src[:3]) +
+                           "), so it needs merging by hand" if src else "the merge with GitHub's changes failed: " +
+                           (reb.stderr or reb.stdout)[-200:]), False
+        for f in clashes:                        # during a rebase, "theirs" is this PC's commit
+            run(["checkout", "--theirs", "--", f])
+            run(["add", "--", f])
+        reb = run(["-c", "core.editor=true", "rebase", "--continue"])
+    run(["rebase", "--abort"])
+    return False, "the merge with GitHub's changes didn't finish", False
+
 def git_publish():
-    """Stage all changes, commit, and push to GitHub (which auto-deploys the site).
-    Returns (ok, human-readable message)."""
+    """Stage all changes, commit, take what other PCs pushed (sync_with_github), and push to GitHub (which
+    auto-deploys the site). Returns (ok, human-readable message)."""
     def run(args):
         return subprocess.run(["git"] + args, cwd=ROOT, capture_output=True, text=True)
     blocked = deploy_guard()
@@ -119,10 +157,27 @@ def git_publish():
         commit = run(["commit", "-m", "Update stats (via admin)"])
         if commit.returncode != 0:
             return False, "Commit failed: " + (commit.stderr or commit.stdout)[-300:]
-        push = run(["push"])
-        if push.returncode != 0:
-            return False, "Saved locally, but upload to GitHub failed: " + (push.stderr or push.stdout)[-300:]
-        return True, "Published! The live site will update in about a minute."
+        merged_any = False
+        for attempt in range(3):                 # another PC can push in the minute this takes
+            ok, why, merged = sync_with_github(run)
+            if not ok:
+                return False, "Saved locally, but " + why + "."
+            if merged:                           # rebuild, so the site has both PCs' changes
+                merged_any = True
+                rok, rmsg = regenerate()
+                if not rok:
+                    return False, "Merged GitHub's changes, but the rebuild failed: " + rmsg[-300:]
+                blocked = deploy_guard()
+                if blocked:
+                    return False, blocked
+                run(["add", "-A"])
+                if run(["status", "--porcelain"]).stdout.strip():
+                    run(["commit", "--amend", "--no-edit"])
+            push = run(["push"])
+            if push.returncode == 0:
+                return True, "Published!" + (" (with the changes another PC published first)" if merged_any else "") + \
+                    " The live site will update in about a minute."
+        return False, "Saved locally, but upload to GitHub failed: " + (push.stderr or push.stdout)[-300:]
     except FileNotFoundError:
         return False, "git is not installed or not on PATH — can't publish from here."
     except Exception as e:
