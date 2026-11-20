@@ -1,95 +1,5 @@
 [
  {
-  "id": "milestone:kyan:maps:50",
-  "type": "milestone",
-  "ts": 1793792026,
-  "date": "2026-11-04",
-  "title": "Kyan: 50 maps played",
-  "text": "Kyan reached 50 maps played",
-  "link": "#/player/kyan"
- },
- {
-  "id": "milestone:capplecrow:mvp:150",
-  "type": "milestone",
-  "ts": 1793792026,
-  "date": "2026-11-04",
-  "title": "capplecrow: 150 MVP rounds",
-  "text": "capplecrow reached 150 MVP rounds",
-  "link": "#/player/capplecrow"
- },
- {
-  "id": "milestone:celtsm:maps:50",
-  "type": "milestone",
-  "ts": 1793794105,
-  "date": "2026-11-04",
-  "title": "Celtsm: 50 maps played",
-  "text": "Celtsm reached 50 maps played",
-  "link": "#/player/celtsm"
- },
- {
-  "id": "milestone:sashimigoesbloop:mvp:150",
-  "type": "milestone",
-  "ts": 1793794105,
-  "date": "2026-11-04",
-  "title": "SashimiGoesBloop: 150 MVP rounds",
-  "text": "SashimiGoesBloop reached 150 MVP rounds",
-  "link": "#/player/sashimigoesbloop"
- },
- {
-  "id": "milestone:zoweya:mvp:100",
-  "type": "milestone",
-  "ts": 1793804179,
-  "date": "2026-11-04",
-  "title": "Zoweya: 100 MVP rounds",
-  "text": "Zoweya reached 100 MVP rounds",
-  "link": "#/player/zoweya"
- },
- {
-  "id": "milestone:anony:kills:500",
-  "type": "milestone",
-  "ts": 1793804179,
-  "date": "2026-11-04",
-  "title": "Anony: 500 career kills",
-  "text": "Anony reached 500 career kills",
-  "link": "#/player/anony"
- },
- {
-  "id": "milestone:candybar-isblue:maps:50",
-  "type": "milestone",
-  "ts": 1793808552,
-  "date": "2026-11-05",
-  "title": "candybar_isblue: 50 maps played",
-  "text": "candybar_isblue reached 50 maps played",
-  "link": "#/player/candybar-isblue"
- },
- {
-  "id": "milestone:hyvred:mvp:100",
-  "type": "milestone",
-  "ts": 1793808552,
-  "date": "2026-11-05",
-  "title": "Hyvred: 100 MVP rounds",
-  "text": "Hyvred reached 100 MVP rounds",
-  "link": "#/player/hyvred"
- },
- {
-  "id": "milestone:kaito-oshino:mvp:150",
-  "type": "milestone",
-  "ts": 1793809969,
-  "date": "2026-11-05",
-  "title": "Kaito_Oshino: 150 MVP rounds",
-  "text": "Kaito_Oshino reached 150 MVP rounds",
-  "link": "#/player/kaito-oshino"
- },
- {
-  "id": "milestone:tigeraxd:maps:50",
-  "type": "milestone",
-  "ts": 1793809969,
-  "date": "2026-11-05",
-  "title": "Tigeraxd: 50 maps played",
-  "text": "Tigeraxd reached 50 maps played",
-  "link": "#/player/tigeraxd"
- },
- {
   "id": "record:longestWinStreak:15",
   "type": "record",
   "ts": 1793811464,
@@ -1798,5 +1708,95 @@
   "title": "Eiromancers join the pro ranks",
   "text": "New pro team [EIRO], 5 players",
   "link": "#/team/eiromancers"
+ },
+ {
+  "id": "milestone:elfy-mint:kills:1000",
+  "type": "milestone",
+  "ts": 1795216672,
+  "date": "2026-11-21",
+  "title": "Elfy Mint: 1000 career kills",
+  "text": "Elfy Mint reached 1000 career kills",
+  "link": "#/player/elfy-mint"
+ },
+ {
+  "id": "milestone:nattyuwus:maps:50",
+  "type": "milestone",
+  "ts": 1795216672,
+  "date": "2026-11-21",
+  "title": "nattyuwus: 50 maps played",
+  "text": "nattyuwus reached 50 maps played",
+  "link": "#/player/nattyuwus"
+ },
+ {
+  "id": "milestone:meowcolmz:mvp:100",
+  "type": "milestone",
+  "ts": 1795216952,
+  "date": "2026-11-21",
+  "title": "Meowcolmz: 100 MVP rounds",
+  "text": "Meowcolmz reached 100 MVP rounds",
+  "link": "#/player/meowcolmz"
+ },
+ {
+  "id": "milestone:sashimigoesbloop:kills:1000",
+  "type": "milestone",
+  "ts": 1795217843,
+  "date": "2026-11-21",
+  "title": "SashimiGoesBloop: 1000 career kills",
+  "text": "SashimiGoesBloop reached 1000 career kills",
+  "link": "#/player/sashimigoesbloop"
+ },
+ {
+  "id": "milestone:zhizyii:kills:1000",
+  "type": "milestone",
+  "ts": 1795217843,
+  "date": "2026-11-21",
+  "title": "zhizyii: 1000 career kills",
+  "text": "zhizyii reached 1000 career kills",
+  "link": "#/player/zhizyii"
+ },
+ {
+  "id": "milestone:rebellioniite:kills:1000",
+  "type": "milestone",
+  "ts": 1795218203,
+  "date": "2026-11-21",
+  "title": "rebellioniite: 1000 career kills",
+  "text": "rebellioniite reached 1000 career kills",
+  "link": "#/player/rebellioniite"
+ },
+ {
+  "id": "milestone:skyllabtw:kills:1000",
+  "type": "milestone",
+  "ts": 1795218203,
+  "date": "2026-11-21",
+  "title": "Skyllabtw: 1000 career kills",
+  "text": "Skyllabtw reached 1000 career kills",
+  "link": "#/player/skyllabtw"
+ },
+ {
+  "id": "milestone:ktenshi:kills:1000",
+  "type": "milestone",
+  "ts": 1795218203,
+  "date": "2026-11-21",
+  "title": "KTenshi: 1000 career kills",
+  "text": "KTenshi reached 1000 career kills",
+  "link": "#/player/ktenshi"
+ },
+ {
+  "id": "milestone:hakase:kills:1000",
+  "type": "milestone",
+  "ts": 1795218203,
+  "date": "2026-11-21",
+  "title": "Hakase: 1000 career kills",
+  "text": "Hakase reached 1000 career kills",
+  "link": "#/player/hakase"
+ },
+ {
+  "id": "milestone:phxebe:kills:1000",
+  "type": "milestone",
+  "ts": 1795218203,
+  "date": "2026-11-21",
+  "title": "Phxebe: 1000 career kills",
+  "text": "Phxebe reached 1000 career kills",
+  "link": "#/player/phxebe"
  }
 ]

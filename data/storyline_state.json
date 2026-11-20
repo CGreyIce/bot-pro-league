@@ -130,9 +130,9 @@
   "diamondones",
   "ukiyo",
   "mourningstar",
-  "beehyve",
   "northwind",
   "team-neverseen",
+  "beehyve",
   "crystal-laurels",
   "g-i-jokes",
   "wraithborne",
@@ -160,24 +160,24 @@
    "mvp": 104
   },
   "zenn1sm": {
-   "maps": 41,
-   "kills": 637,
-   "mvp": 91
+   "maps": 42,
+   "kills": 646,
+   "mvp": 92
   },
   "potatodepresso": {
-   "maps": 43,
-   "kills": 600,
-   "mvp": 82
+   "maps": 44,
+   "kills": 616,
+   "mvp": 84
   },
   "pearlim": {
-   "maps": 41,
-   "kills": 562,
-   "mvp": 68
+   "maps": 42,
+   "kills": 579,
+   "mvp": 69
   },
   "milkenut": {
-   "maps": 42,
-   "kills": 578,
-   "mvp": 74
+   "maps": 43,
+   "kills": 591,
+   "mvp": 75
   },
   "solaonix": {
    "maps": 44,
@@ -235,14 +235,14 @@
    "mvp": 88
   },
   "applezxc": {
-   "maps": 41,
-   "kills": 651,
-   "mvp": 86
+   "maps": 44,
+   "kills": 698,
+   "mvp": 92
   },
   "crimsynflames": {
-   "maps": 41,
-   "kills": 689,
-   "mvp": 104
+   "maps": 44,
+   "kills": 747,
+   "mvp": 110
   },
   "suzuyunn": {
    "maps": 43,
@@ -250,9 +250,9 @@
    "mvp": 97
   },
   "perk": {
-   "maps": 42,
-   "kills": 619,
-   "mvp": 70
+   "maps": 45,
+   "kills": 697,
+   "mvp": 84
   },
   "nipnip": {
    "maps": 56,
@@ -330,29 +330,29 @@
    "mvp": 61
   },
   "sanctuary": {
-   "maps": 58,
-   "kills": 1007,
-   "mvp": 177
+   "maps": 61,
+   "kills": 1068,
+   "mvp": 184
   },
   "rebellioniite": {
-   "maps": 60,
-   "kills": 981,
-   "mvp": 133
+   "maps": 63,
+   "kills": 1053,
+   "mvp": 141
   },
   "skyllabtw": {
-   "maps": 60,
-   "kills": 999,
-   "mvp": 138
+   "maps": 63,
+   "kills": 1053,
+   "mvp": 144
   },
   "yixl": {
-   "maps": 68,
-   "kills": 1000,
-   "mvp": 123
+   "maps": 71,
+   "kills": 1092,
+   "mvp": 139
   },
   "ktenshi": {
-   "maps": 58,
-   "kills": 943,
-   "mvp": 120
+   "maps": 61,
+   "kills": 1012,
+   "mvp": 129
   },
   "tuxedocat": {
    "maps": 59,
@@ -455,18 +455,18 @@
    "mvp": 93
   },
   "lenette": {
-   "maps": 55,
-   "kills": 878,
+   "maps": 56,
+   "kills": 895,
    "mvp": 140
   },
   "nyuii": {
-   "maps": 55,
-   "kills": 830,
-   "mvp": 132
+   "maps": 56,
+   "kills": 843,
+   "mvp": 134
   },
   "baer": {
-   "maps": 56,
-   "kills": 848,
+   "maps": 57,
+   "kills": 856,
    "mvp": 122
   },
   "4-naru": {
@@ -475,9 +475,9 @@
    "mvp": 86
   },
   "kyyltn": {
-   "maps": 60,
-   "kills": 800,
-   "mvp": 104
+   "maps": 61,
+   "kills": 816,
+   "mvp": 106
   },
   "sneakyyyyy": {
    "maps": 65,
@@ -580,53 +580,53 @@
    "mvp": 92
   },
   "4twnty": {
-   "maps": 52,
-   "kills": 822,
-   "mvp": 130
+   "maps": 55,
+   "kills": 888,
+   "mvp": 143
   },
   "laavv": {
-   "maps": 52,
-   "kills": 815,
-   "mvp": 108
+   "maps": 55,
+   "kills": 870,
+   "mvp": 115
   },
   "infinitebreaker": {
-   "maps": 52,
-   "kills": 789,
-   "mvp": 104
+   "maps": 55,
+   "kills": 858,
+   "mvp": 112
   },
   "solec": {
-   "maps": 57,
-   "kills": 882,
-   "mvp": 132
+   "maps": 60,
+   "kills": 926,
+   "mvp": 138
   },
   "lita": {
-   "maps": 57,
-   "kills": 909,
-   "mvp": 133
+   "maps": 60,
+   "kills": 987,
+   "mvp": 143
   },
   "y-uuno": {
-   "maps": 63,
-   "kills": 1032,
-   "mvp": 156
+   "maps": 64,
+   "kills": 1053,
+   "mvp": 162
   },
   "spoods": {
-   "maps": 59,
-   "kills": 1004,
-   "mvp": 165
+   "maps": 60,
+   "kills": 1035,
+   "mvp": 169
   },
   "laburi": {
-   "maps": 63,
-   "kills": 1071,
-   "mvp": 193
+   "maps": 64,
+   "kills": 1104,
+   "mvp": 198
   },
   "eroxis": {
-   "maps": 63,
-   "kills": 1102,
-   "mvp": 154
+   "maps": 64,
+   "kills": 1120,
+   "mvp": 155
   },
   "kitties258": {
-   "maps": 59,
-   "kills": 754,
+   "maps": 60,
+   "kills": 765,
    "mvp": 89
   },
   "mike": {
@@ -680,34 +680,34 @@
    "mvp": 94
   },
   "hakase": {
-   "maps": 57,
-   "kills": 989,
-   "mvp": 155
+   "maps": 60,
+   "kills": 1058,
+   "mvp": 164
   },
   "phxebe": {
-   "maps": 66,
-   "kills": 928,
-   "mvp": 130
+   "maps": 69,
+   "kills": 1021,
+   "mvp": 144
   },
   "yuuschan": {
-   "maps": 58,
-   "kills": 922,
-   "mvp": 128
+   "maps": 61,
+   "kills": 982,
+   "mvp": 132
   },
   "cshhp": {
-   "maps": 56,
-   "kills": 751,
-   "mvp": 84
+   "maps": 59,
+   "kills": 833,
+   "mvp": 99
   },
   "mango": {
-   "maps": 56,
-   "kills": 766,
-   "mvp": 106
+   "maps": 59,
+   "kills": 849,
+   "mvp": 119
   },
   "historia": {
-   "maps": 39,
-   "kills": 698,
-   "mvp": 120
+   "maps": 40,
+   "kills": 722,
+   "mvp": 123
   },
   "soapdax": {
    "maps": 40,
@@ -715,69 +715,69 @@
    "mvp": 69
   },
   "chiyoriinn": {
-   "maps": 39,
-   "kills": 542,
-   "mvp": 63
+   "maps": 40,
+   "kills": 560,
+   "mvp": 64
   },
   "dirfun": {
-   "maps": 59,
-   "kills": 974,
-   "mvp": 122
+   "maps": 60,
+   "kills": 990,
+   "mvp": 125
   },
   "siddnely": {
-   "maps": 40,
-   "kills": 629,
-   "mvp": 77
+   "maps": 41,
+   "kills": 645,
+   "mvp": 80
   },
   "elfy-mint": {
-   "maps": 62,
-   "kills": 988,
-   "mvp": 148
+   "maps": 63,
+   "kills": 1003,
+   "mvp": 149
   },
   "illus": {
-   "maps": 63,
-   "kills": 1023,
-   "mvp": 165
+   "maps": 64,
+   "kills": 1048,
+   "mvp": 169
   },
   "kairi": {
-   "maps": 72,
-   "kills": 1084,
-   "mvp": 164
+   "maps": 73,
+   "kills": 1107,
+   "mvp": 167
   },
   "declaration": {
-   "maps": 63,
-   "kills": 916,
-   "mvp": 106
+   "maps": 64,
+   "kills": 937,
+   "mvp": 108
   },
   "zuann": {
-   "maps": 72,
-   "kills": 1234,
-   "mvp": 176
+   "maps": 73,
+   "kills": 1258,
+   "mvp": 180
   },
   "luminmochi": {
-   "maps": 37,
-   "kills": 501,
-   "mvp": 74
+   "maps": 38,
+   "kills": 528,
+   "mvp": 76
   },
   "meowcolmz": {
-   "maps": 40,
-   "kills": 685,
-   "mvp": 97
+   "maps": 41,
+   "kills": 703,
+   "mvp": 100
   },
   "moonraika": {
-   "maps": 36,
-   "kills": 520,
-   "mvp": 65
+   "maps": 37,
+   "kills": 546,
+   "mvp": 70
   },
   "kkayyteeee": {
-   "maps": 25,
-   "kills": 377,
-   "mvp": 45
+   "maps": 26,
+   "kills": 396,
+   "mvp": 47
   },
   "jwqi": {
-   "maps": 36,
-   "kills": 554,
-   "mvp": 66
+   "maps": 37,
+   "kills": 573,
+   "mvp": 68
   },
   "xyrolizea": {
    "maps": 40,
@@ -805,14 +805,14 @@
    "mvp": 68
   },
   "celtsm": {
-   "maps": 55,
-   "kills": 938,
-   "mvp": 158
+   "maps": 56,
+   "kills": 952,
+   "mvp": 161
   },
   "sashimigoesbloop": {
-   "maps": 60,
-   "kills": 997,
-   "mvp": 162
+   "maps": 63,
+   "kills": 1053,
+   "mvp": 169
   },
   "kyan": {
    "maps": 56,
@@ -855,29 +855,29 @@
    "mvp": 62
   },
   "vplh": {
-   "maps": 42,
-   "kills": 707,
-   "mvp": 138
+   "maps": 43,
+   "kills": 728,
+   "mvp": 142
   },
   "jenapoppins": {
-   "maps": 43,
-   "kills": 645,
-   "mvp": 88
+   "maps": 44,
+   "kills": 655,
+   "mvp": 89
   },
   "jeribean": {
-   "maps": 42,
-   "kills": 564,
-   "mvp": 69
+   "maps": 43,
+   "kills": 580,
+   "mvp": 72
   },
   "astro-ruckus": {
-   "maps": 42,
-   "kills": 514,
-   "mvp": 65
+   "maps": 43,
+   "kills": 536,
+   "mvp": 69
   },
   "crazywhoopies": {
-   "maps": 38,
-   "kills": 440,
-   "mvp": 41
+   "maps": 39,
+   "kills": 455,
+   "mvp": 45
   },
   "joyyy-cheng": {
    "maps": 49,
@@ -930,9 +930,9 @@
    "mvp": 141
   },
   "ebi": {
-   "maps": 67,
-   "kills": 1066,
-   "mvp": 190
+   "maps": 68,
+   "kills": 1083,
+   "mvp": 191
   },
   "koen": {
    "maps": 61,
@@ -945,8 +945,8 @@
    "mvp": 158
   },
   "treblest": {
-   "maps": 63,
-   "kills": 806,
+   "maps": 64,
+   "kills": 820,
    "mvp": 104
   },
   "des506": {
@@ -955,9 +955,9 @@
    "mvp": 115
   },
   "caturteer": {
-   "maps": 71,
-   "kills": 1239,
-   "mvp": 226
+   "maps": 72,
+   "kills": 1262,
+   "mvp": 228
   },
   "murasakibara-tsuki1": {
    "maps": 55,
@@ -1005,14 +1005,14 @@
    "mvp": 106
   },
   "leveti": {
-   "maps": 57,
-   "kills": 908,
-   "mvp": 143
+   "maps": 58,
+   "kills": 917,
+   "mvp": 144
   },
   "jaelyo": {
-   "maps": 57,
-   "kills": 971,
-   "mvp": 150
+   "maps": 58,
+   "kills": 985,
+   "mvp": 152
   },
   "uzuhii": {
    "maps": 60,
@@ -1020,13 +1020,13 @@
    "mvp": 136
   },
   "rc-ia": {
-   "maps": 62,
-   "kills": 848,
-   "mvp": 100
+   "maps": 63,
+   "kills": 863,
+   "mvp": 101
   },
   "zhiweiingg": {
-   "maps": 62,
-   "kills": 949,
+   "maps": 63,
+   "kills": 961,
    "mvp": 132
   },
   "niito": {
@@ -1105,29 +1105,29 @@
    "mvp": 90
   },
   "rethnap": {
-   "maps": 45,
-   "kills": 768,
-   "mvp": 121
+   "maps": 46,
+   "kills": 789,
+   "mvp": 127
   },
   "luciddoob": {
-   "maps": 45,
-   "kills": 673,
-   "mvp": 89
+   "maps": 46,
+   "kills": 684,
+   "mvp": 90
   },
   "nikorasu": {
-   "maps": 55,
-   "kills": 867,
-   "mvp": 113
+   "maps": 56,
+   "kills": 888,
+   "mvp": 116
   },
   "redandb1ue": {
-   "maps": 38,
-   "kills": 509,
-   "mvp": 56
+   "maps": 39,
+   "kills": 525,
+   "mvp": 57
   },
   "mominichi": {
-   "maps": 39,
-   "kills": 585,
-   "mvp": 64
+   "maps": 40,
+   "kills": 605,
+   "mvp": 69
   },
   "acryii": {
    "maps": 34,
@@ -1135,24 +1135,24 @@
    "mvp": 100
   },
   "kai": {
-   "maps": 39,
-   "kills": 671,
-   "mvp": 100
+   "maps": 40,
+   "kills": 702,
+   "mvp": 109
   },
   "nattyuwus": {
-   "maps": 49,
-   "kills": 842,
+   "maps": 50,
+   "kills": 866,
    "mvp": 116
   },
   "mugcowpaylucky": {
-   "maps": 40,
-   "kills": 644,
-   "mvp": 86
+   "maps": 41,
+   "kills": 662,
+   "mvp": 87
   },
   "kael": {
-   "maps": 40,
-   "kills": 571,
-   "mvp": 68
+   "maps": 41,
+   "kills": 594,
+   "mvp": 72
   },
   "dudriduo": {
    "maps": 35,
@@ -1160,14 +1160,14 @@
    "mvp": 86
   },
   "kellyxleox": {
-   "maps": 45,
-   "kills": 793,
-   "mvp": 120
+   "maps": 46,
+   "kills": 813,
+   "mvp": 124
   },
   "sakami": {
-   "maps": 44,
-   "kills": 576,
-   "mvp": 83
+   "maps": 45,
+   "kills": 604,
+   "mvp": 89
   },
   "wo4tk": {
    "maps": 36,
@@ -1175,9 +1175,9 @@
    "mvp": 95
   },
   "joshiwahhh": {
-   "maps": 43,
-   "kills": 601,
-   "mvp": 73
+   "maps": 44,
+   "kills": 623,
+   "mvp": 76
   },
   "tapiyokaaa": {
    "maps": 44,
@@ -1295,19 +1295,19 @@
    "mvp": 140
   },
   "yumezukiyomi": {
-   "maps": 54,
-   "kills": 812,
-   "mvp": 114
+   "maps": 55,
+   "kills": 829,
+   "mvp": 116
   },
   "airizu": {
-   "maps": 60,
-   "kills": 862,
-   "mvp": 110
+   "maps": 61,
+   "kills": 877,
+   "mvp": 112
   },
   "ryujin": {
-   "maps": 38,
-   "kills": 529,
-   "mvp": 65
+   "maps": 39,
+   "kills": 550,
+   "mvp": 66
   },
   "hikariifloofie": {
    "maps": 26,
@@ -1325,9 +1325,9 @@
    "mvp": 156
   },
   "zhizyii": {
-   "maps": 51,
-   "kills": 955,
-   "mvp": 130
+   "maps": 54,
+   "kills": 1015,
+   "mvp": 140
   },
   "candybar-isblue": {
    "maps": 55,
@@ -1660,9 +1660,9 @@
    "mvp": 56
   },
   "xueqiii": {
-   "maps": 65,
-   "kills": 1086,
-   "mvp": 156
+   "maps": 66,
+   "kills": 1107,
+   "mvp": 158
   },
   "dla-wo": {
    "maps": 48,
@@ -1825,9 +1825,9 @@
    "mvp": 73
   },
   "rach-elx": {
-   "maps": 26,
-   "kills": 442,
-   "mvp": 65
+   "maps": 27,
+   "kills": 457,
+   "mvp": 68
   },
   "aizawa-ema": {
    "maps": 39,
@@ -1835,8 +1835,8 @@
    "mvp": 91
   },
   "yinnzx": {
-   "maps": 42,
-   "kills": 610,
+   "maps": 43,
+   "kills": 619,
    "mvp": 87
   },
   "strandedpond": {
