@@ -1926,7 +1926,10 @@ function renderRecords(){
       ${line("Best Game Rating",bRows(d.rtg,x2,game))}
       ${line("Best Game ADR",bRows(d.adr,x1,game))}
     </div>`; }).join("");
-  const weaponSection=W=>{
+  // label: "" for the tournaments (site/weapons.json's top level), "Scrims" / "Solo Queue" for its scrims / solo blocks
+  const weaponSection=(W,label='')=>{
+    const head=label?`Weapons · ${label}`:'Weapons';
+    if(!W||!W.kills) return `<h3 class="rec-group">${esc(head)}</h3><p class="muted" style="font-size:13px;margin:4px 0 0">No ${label==='Scrims'?'scrim':'solo queue'} kill feeds recorded yet. BPL Bots saves one with every ${label==='Scrims'?'scrim':'solo game'} and fills in older ones from the kill files on the PC that played them.</p>`;
     const by=new Map(allPlayers().map(p=>[normKey(p.name),p])), hum=new Map((DATA.soloHumans||[]).map(h=>[normKey(h.name),h]));
     const link=n=>{ const p=by.get(normKey(n)), h=hum.get(normKey(n)); return p?`#/player/${p.slug}`:h?`#/human/${h.slug}`:null; };
     const tied=rows=>{ const n=rows.filter(r=>r.raw===rows[0].raw).length-1; return !n?'':n===1?`tied with ${rows[1].name}`:`${n} others tied`; };
@@ -1937,7 +1940,7 @@ function renderRecords(){
     const hsRate=(title,key,min)=>show(title,((W.groups[key]||{}).players||[]).filter(([n,k])=>k>=min).map(([n,k,hs])=>({name:n,href:link(n),raw:hs/k,val:pct(hs/k),sub:`${hs} of ${k} kills`})).sort((a,b)=>b.raw-a.raw));
     const wRows=W.weapons.map(([n,k,hs])=>({name:n,val:k+" kills",raw:k,sub:`${(100*k/W.kills).toFixed(1)}% of all kills`}));
     const hsRows=W.weapons.filter(([n,k])=>k>=100).map(([n,k,hs])=>({name:n,val:pct(hs/k),raw:hs/k,sub:`${hs} of ${k} kills`})).sort((a,b)=>b.raw-a.raw);
-    return `<h3 class="rec-group">Weapons <span class="muted" style="font-size:11px">from the ${W.kills.toLocaleString('en-US')} kills on ${W.maps} maps with a recorded kill feed</span></h3>
+    return `<h3 class="rec-group">${esc(head)} <span class="muted" style="font-size:11px">from the ${W.kills.toLocaleString('en-US')} kills on ${W.maps} ${label?(label==='Scrims'?'scrim ':'solo queue '):''}map${W.maps===1?'':'s'} with a recorded kill feed</span></h3>
     <div class="rec-grid">
       ${show("Most Used Weapon",wRows)}${show("Best Headshot Weapon",hsRows)}
       ${group("Most AK-47 Kills","AK-47")}${group("Most M4 Kills","M4")}${group("Most AWP Kills","AWP")}${group("Most Scout Kills","Scout")}
@@ -2031,6 +2034,8 @@ function renderRecords(){
     <section class="rec-sec" data-rg="bymap"><h3 class="rec-group">Best on Each Map <span class="muted" style="font-size:11px">top player and team need 5 recorded maps there</span></h3>
     <div class="rec-maps">${perMapCards}</div></section>
     <section class="rec-sec" data-rg="weapons"><div id="rec-weapons"></div></section>
+    <section class="rec-sec" data-rg="weapons" data-only="1"><div id="rec-weapons-scrims"></div></section>
+    <section class="rec-sec" data-rg="weapons" data-only="1"><div id="rec-weapons-solo"></div></section>
     <section class="rec-sec" data-rg="solo"><h3 class="rec-group">Solo Queue <span class="muted" style="font-size:11px">(rate stats min 8 maps)</span></h3>
     <div class="rec-grid">
       ${soloTopRtg?recCard("Top Solo Rating", soloTopRtg.name, soloTopRtg.ratingPoints+" pts", `#/player/${soloTopRtg.slug}`):''}
@@ -2045,12 +2050,14 @@ function renderRecords(){
       <tbody>${inform.map((x,i)=>`<tr><td class="rankcol">${i+1}</td><td class="name-cell">${x.p?playerLink(x.p):esc(x.name)}</td>
         <td class="mono" style="color:${rtgColor(x.avg)}"><strong>${x.avg.toFixed(2)}</strong></td>
         <td>${formDots(x.log)}</td></tr>`).join("")}</tbody></table></div>`; })()}</section>`;
-  const recShow=()=>{ app.querySelectorAll(".rec-sec").forEach(s=>{ s.hidden=_recTab!=='all'&&s.dataset.rg!==_recTab; });
+  // data-only: only on its own tab, not under All (the scrim and solo queue weapon records aren't official records)
+  const recShow=()=>{ app.querySelectorAll(".rec-sec").forEach(s=>{ s.hidden=_recTab==='all'?!!s.dataset.only:s.dataset.rg!==_recTab; });
     app.querySelectorAll(".rec-tabs button").forEach(b=>b.classList.toggle("active",b.dataset.rt===_recTab)); };
   app.querySelectorAll(".rec-tabs button").forEach(b=>b.onclick=()=>{ _recTab=b.dataset.rt; recShow(); });
   recShow();
-  const wBox=document.getElementById("rec-weapons");
-  loadWeapons().then(W=>{ if(W&&wBox&&wBox.isConnected) wBox.innerHTML=weaponSection(W); });
+  const wBoxes=[["rec-weapons",W=>W,""],["rec-weapons-scrims",W=>W.scrims,"Scrims"],["rec-weapons-solo",W=>W.solo,"Solo Queue"]]
+    .map(([id,pick,label])=>[document.getElementById(id),pick,label]);
+  loadWeapons().then(W=>{ if(W) wBoxes.forEach(([box,pick,label])=>{ if(box&&box.isConnected) box.innerHTML=weaponSection(pick(W),label); }); });
   const pBox=document.getElementById("rec-play");
   loadScrimsJson().then(sc=>{ if(!pBox||!pBox.isConnected) return;
     const rows=playRatings(sc); if(!rows.length){ pBox.remove(); return; }

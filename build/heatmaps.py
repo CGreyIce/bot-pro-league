@@ -107,63 +107,99 @@ def _groups_of(wpn, rnd):
     return out
 
 
-def weapon_records(root, tournaments):
-    """{"maps", "kills", "weapons": [[name, kills, headshots]], "groups": {group: {"players": [[name, kills, headshots]], "maps":
-    [[kills, name, map, event]]}}}: the top 50 players per group, and the top 15 single-map hauls."""
+def _tournament_kills(root, tournaments):
+    """(event name, maps) for every BPL match with a kill feed (data/kills/<event slug>/<ref>.json), in file order."""
     kdir = os.path.join(root, "data", "kills")
     names = {t["slug"]: t.get("name", t["slug"]) for t in tournaments or []}
-    weapons, players, hauls = {}, {}, {}
-    n_maps = n_kills = 0
     for slug in sorted(os.listdir(kdir)) if os.path.isdir(kdir) else []:
         sdir = os.path.join(kdir, slug)
         if not os.path.isdir(sdir):
             continue
         for fn in sorted(os.listdir(sdir)):
-            if not fn.endswith(".json"):
-                continue
+            if fn.endswith(".json"):
+                try:
+                    yield names.get(slug, slug), json.load(open(os.path.join(sdir, fn), encoding="utf-8")).get("maps", [])
+                except (OSError, ValueError):
+                    continue
+
+
+def _side_kills(root, folder, fallback):
+    """(label, maps) for each scrim / solo game kill feed BPL Bots saved (data/kills_scrims, data/kills_solo; 21 Nov 2026):
+    {"event", "date", "maps": [{"map", "kills": [[round, killer, weapon, headshot]]}]}. Never read by the heatmaps."""
+    d = os.path.join(root, "data", folder)
+    for fn in sorted(os.listdir(d)) if os.path.isdir(d) else []:
+        if fn.endswith(".json"):
             try:
-                maps = json.load(open(os.path.join(sdir, fn), encoding="utf-8")).get("maps", [])
+                doc = json.load(open(os.path.join(d, fn), encoding="utf-8"))
             except (OSError, ValueError):
                 continue
-            for i, mp in enumerate(maps):
-                if not mp.get("kills"):
-                    continue
-                n_maps += 1
-                for k in mp["kills"]:
-                    try:
+            yield doc.get("event") or fallback, doc.get("maps", [])
+
+
+def _weapon_doc(sources):
+    """{"maps", "kills", "weapons": [[name, kills, headshots]], "groups": {group: {"players": [[name, kills, headshots]], "maps":
+    [[kills, name, map, event]]}}}: the top 50 players per group, and the top 15 single-map hauls. sources: (event, maps).
+    A kill is a full kill-feed row (tournaments: [round, side, killer, ..., weapon, headshot]) or [round, killer, weapon, headshot]."""
+    weapons, players, hauls, where = {}, {}, {}, {}
+    n_maps = n_kills = 0
+    for h, (event, maps) in enumerate(sources):
+        for i, mp in enumerate(maps):
+            if not mp.get("kills"):
+                continue
+            n_maps += 1
+            where[(h, i)] = (mp.get("map") or "", event)
+            for k in mp["kills"]:
+                try:
+                    if len(k) >= 14:
                         rnd, _, kn, _, _, _, _, _, _, _, _, _, wpn, hs = k[:14]
-                    except ValueError:
-                        continue
-                    if not kn or not wpn:
-                        continue
-                    n_kills += 1
-                    hs = 1 if hs else 0
-                    w = weapons.setdefault(WEAPON_NAMES.get(wpn, wpn), [0, 0])
-                    w[0] += 1
-                    w[1] += hs
-                    for g in _groups_of(wpn, rnd):
-                        p = players.setdefault(g, {}).setdefault(kn, [0, 0])
-                        p[0] += 1
-                        p[1] += hs
-                        h = hauls.setdefault(g, {})
-                        key = (slug, fn, i, kn)
-                        h[key] = h.get(key, 0) + 1
-                        hauls[g] = h
+                    else:
+                        rnd, kn, wpn, hs = k[:4]
+                except (TypeError, ValueError):
+                    continue
+                if not kn or not wpn:
+                    continue
+                n_kills += 1
+                hs = 1 if hs else 0
+                w = weapons.setdefault(WEAPON_NAMES.get(wpn, wpn), [0, 0])
+                w[0] += 1
+                w[1] += hs
+                for g in _groups_of(wpn, rnd):
+                    p = players.setdefault(g, {}).setdefault(kn, [0, 0])
+                    p[0] += 1
+                    p[1] += hs
+                    hg = hauls.setdefault(g, {})
+                    key = (h, i, kn)
+                    hg[key] = hg.get(key, 0) + 1
     groups = {}
     for g, ps in players.items():
         top = sorted(([n, v[0], v[1]] for n, v in ps.items()), key=lambda x: (-x[1], x[0].lower()))[:50]
         best = sorted(hauls[g].items(), key=lambda kv: (-kv[1], kv[0]))[:15]
-        groups[g] = {"players": top, "maps": [[c, key[3], _map_name(kdir, key), names.get(key[0], key[0])] for key, c in best]}
-    doc = {"maps": n_maps, "kills": n_kills, "groups": groups,
-           "weapons": sorted(([n, v[0], v[1]] for n, v in weapons.items()), key=lambda x: -x[1])}
+        groups[g] = {"players": top, "maps": [[c, key[2], *where[key[:2]]] for key, c in best]}
+    return {"maps": n_maps, "kills": n_kills, "groups": groups,
+            "weapons": sorted(([n, v[0], v[1]] for n, v in weapons.items()), key=lambda x: -x[1])}
+
+
+def weapon_records(root, tournaments):
+    """site/weapons.json: the tournaments' weapon records at the top level (as before), plus "scrims" and "solo", the same
+    records from the scrims' and solo queue games' kill feeds (Records > Weapons, 21 Nov 2026). Scrims and solo games
+    never reach the heatmaps or anyone's stats: only this file reads their kills."""
+    doc = _weapon_doc(_tournament_kills(root, tournaments))
+    doc["scrims"] = _weapon_doc(_side_kills(root, "kills_scrims", "Scrim"))
+    doc["solo"] = _weapon_doc(_side_kills(root, "kills_solo", "Solo Queue"))
     with open(os.path.join(root, "site", "weapons.json"), "w", encoding="utf-8") as f:
         json.dump(doc, f, ensure_ascii=False, separators=(",", ":"))
     return doc
 
 
-def _map_name(kdir, key):
-    slug, fn, i, _ = key
-    try:
-        return json.load(open(os.path.join(kdir, slug, fn), encoding="utf-8"))["maps"][i].get("map") or ""
-    except (OSError, ValueError, IndexError, KeyError):
-        return ""
+if __name__ == "__main__":
+    # python build/heatmaps.py --weapons: site/weapons.json alone (BPL Bots runs it after a scrim, which doesn't rebuild
+    # the site). The event names come from the last build's site/data.json.
+    import sys
+    if "--weapons" in sys.argv:
+        root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        try:
+            tours = json.load(open(os.path.join(root, "site", "data.json"), encoding="utf-8")).get("tournaments", [])
+        except (OSError, ValueError):
+            tours = []
+        d = weapon_records(root, tours)
+        print(f"weapons.json: {d['kills']} tournament kills, {d['scrims']['kills']} scrim kills, {d['solo']['kills']} solo queue kills")
