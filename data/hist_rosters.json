@@ -5967,7 +5967,7 @@
    ]
   },
   {
-   "team": "5hellshockers",
+   "team": "5hellhockers",
    "teamSlug": null,
    "players": [
     {
@@ -19739,7 +19739,566 @@
    ]
   }
  ],
- "BPLTuscanBo1": [],
+ "BPLTuscanBo1": [
+  {
+   "team": "Aimpunch",
+   "teamSlug": "aimpunch",
+   "players": [
+    {
+     "name": "Sketch",
+     "captain": false,
+     "curSlug": "sketch"
+    },
+    {
+     "name": "[Idiot] Angelcrutcher",
+     "captain": false,
+     "curSlug": "idiot-angelcrutcher"
+    },
+    {
+     "name": "mond33__",
+     "captain": false,
+     "curSlug": "mond33"
+    },
+    {
+     "name": "baililmao",
+     "captain": false,
+     "curSlug": "balililmao"
+    },
+    {
+     "name": "Chiai Fujikawa",
+     "captain": false,
+     "curSlug": "chiai-fujikawa"
+    }
+   ]
+  },
+  {
+   "team": "Neverland",
+   "teamSlug": "neverland",
+   "players": [
+    {
+     "name": "Resent",
+     "captain": false,
+     "curSlug": "resent"
+    },
+    {
+     "name": "simply_perezoso",
+     "captain": false,
+     "curSlug": "simply-perezoso"
+    },
+    {
+     "name": "Ice",
+     "captain": false,
+     "curSlug": "ice"
+    },
+    {
+     "name": "adrina.ii",
+     "captain": false,
+     "curSlug": "adrina-ii"
+    },
+    {
+     "name": "ostc.x",
+     "captain": false,
+     "curSlug": "ostc-x"
+    }
+   ]
+  },
+  {
+   "team": "Opal",
+   "teamSlug": "opal",
+   "players": [
+    {
+     "name": "Scorpium",
+     "captain": false,
+     "curSlug": "scorpium"
+    },
+    {
+     "name": "Seireiix",
+     "captain": false,
+     "curSlug": "seireiix"
+    },
+    {
+     "name": "joyyy_cheng",
+     "captain": false,
+     "curSlug": "joyyy-cheng"
+    },
+    {
+     "name": "kuro_mi",
+     "captain": false,
+     "curSlug": "kuro-mi"
+    },
+    {
+     "name": "lumi.nyaa",
+     "captain": false,
+     "curSlug": "lumi-nyaa"
+    }
+   ]
+  },
+  {
+   "team": "Cyanide",
+   "teamSlug": "cyanide",
+   "players": [
+    {
+     "name": "Rosmontis__",
+     "captain": false,
+     "curSlug": "miorine"
+    },
+    {
+     "name": "Ziweiv",
+     "captain": false,
+     "curSlug": "ziweiv"
+    },
+    {
+     "name": "Soozy",
+     "captain": false,
+     "curSlug": "soozy"
+    },
+    {
+     "name": "leachubby",
+     "captain": false,
+     "curSlug": "leachubby-amateur"
+    },
+    {
+     "name": "Decrease",
+     "captain": false,
+     "curSlug": "decrease"
+    }
+   ]
+  },
+  {
+   "team": "Bluebird",
+   "teamSlug": "bluebird",
+   "players": [
+    {
+     "name": "l1felessm",
+     "captain": false,
+     "curSlug": "l1feless"
+    },
+    {
+     "name": "AppleOrangePear",
+     "captain": false,
+     "curSlug": "appleorangepear"
+    },
+    {
+     "name": "beyouna",
+     "captain": false,
+     "curSlug": "beyouna"
+    },
+    {
+     "name": "Volatus",
+     "captain": false,
+     "curSlug": "volatus"
+    },
+    {
+     "name": "Nutzeru",
+     "captain": false,
+     "curSlug": "nutzeru"
+    }
+   ]
+  },
+  {
+   "team": "Team Neverseen",
+   "teamSlug": "team-neverseen",
+   "players": [
+    {
+     "name": "AngelofTheEnd",
+     "captain": false,
+     "curSlug": "pashionfruit18"
+    },
+    {
+     "name": "Niito",
+     "captain": false,
+     "curSlug": "niito"
+    },
+    {
+     "name": "jhjj80",
+     "captain": false,
+     "curSlug": "jhjj80"
+    },
+    {
+     "name": "HeyImKaiWen",
+     "captain": false,
+     "curSlug": "heyimkaiwen"
+    },
+    {
+     "name": "S.GT",
+     "captain": false,
+     "curSlug": "s-gt"
+    }
+   ]
+  },
+  {
+   "team": "Artisian",
+   "teamSlug": "artisian",
+   "players": [
+    {
+     "name": "SanCtuary",
+     "captain": false,
+     "curSlug": "sanctuary"
+    },
+    {
+     "name": "rebellioniite",
+     "captain": false,
+     "curSlug": "rebellioniite"
+    },
+    {
+     "name": "Yixl",
+     "captain": false,
+     "curSlug": "yixl"
+    },
+    {
+     "name": "Skyllabtw",
+     "captain": false,
+     "curSlug": "skyllabtw"
+    },
+    {
+     "name": "KTenshi",
+     "captain": false,
+     "curSlug": "ktenshi"
+    }
+   ]
+  },
+  {
+   "team": "Divide&Conquer",
+   "teamSlug": "divide-conquer",
+   "players": [
+    {
+     "name": "Keyboard Rage",
+     "captain": false,
+     "curSlug": "solec"
+    },
+    {
+     "name": "InfiniteBreaker",
+     "captain": false,
+     "curSlug": "infinitebreaker"
+    },
+    {
+     "name": "LimitedMono",
+     "captain": false,
+     "curSlug": "chreyll"
+    },
+    {
+     "name": "winterkindlita",
+     "captain": false,
+     "curSlug": "lita"
+    },
+    {
+     "name": "laavv._",
+     "captain": false,
+     "curSlug": "laavv"
+    }
+   ]
+  },
+  {
+   "team": "Aeternum",
+   "teamSlug": "aeternum",
+   "players": [
+    {
+     "name": "mayday",
+     "captain": false,
+     "curSlug": "crimsynflames"
+    },
+    {
+     "name": "SashimiGoesBloop",
+     "captain": false,
+     "curSlug": "sashimigoesbloop"
+    },
+    {
+     "name": "drip",
+     "captain": false,
+     "curSlug": "drip"
+    },
+    {
+     "name": "Applezxc",
+     "captain": false,
+     "curSlug": "applezxc"
+    },
+    {
+     "name": "zhizyii",
+     "captain": false,
+     "curSlug": "zhizyii-amateur"
+    }
+   ]
+  },
+  {
+   "team": "Divinity-20",
+   "teamSlug": "division20",
+   "players": [
+    {
+     "name": "Spoods",
+     "captain": false,
+     "curSlug": "spoods"
+    },
+    {
+     "name": "laburi",
+     "captain": false,
+     "curSlug": "laburi"
+    },
+    {
+     "name": "y.uuno",
+     "captain": false,
+     "curSlug": "y-uuno"
+    },
+    {
+     "name": "kitties258",
+     "captain": false,
+     "curSlug": "kitties258"
+    },
+    {
+     "name": "Eroxis",
+     "captain": false,
+     "curSlug": "eroxis"
+    }
+   ]
+  },
+  {
+   "team": "Fruit Basket",
+   "teamSlug": "fruit-basket",
+   "players": [
+    {
+     "name": "JMang0",
+     "captain": false,
+     "curSlug": "mango"
+    },
+    {
+     "name": "Phxebe",
+     "captain": false,
+     "curSlug": "phxebe"
+    },
+    {
+     "name": "yuuschan",
+     "captain": false,
+     "curSlug": "yuuschan"
+    },
+    {
+     "name": "cshhp",
+     "captain": false,
+     "curSlug": "cshhp"
+    },
+    {
+     "name": "Hakase",
+     "captain": false,
+     "curSlug": "hakase"
+    }
+   ]
+  },
+  {
+   "team": "Infinity E-Sports",
+   "teamSlug": "infernum-e-sports",
+   "players": [
+    {
+     "name": "Snyxxel",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "Blendette",
+     "captain": false,
+     "curSlug": "historia"
+    },
+    {
+     "name": "Dirfun",
+     "captain": false,
+     "curSlug": "dirfun"
+    },
+    {
+     "name": "chiyoriinn",
+     "captain": false,
+     "curSlug": "chiyoriinn"
+    },
+    {
+     "name": "siddnely",
+     "captain": false,
+     "curSlug": "siddnely"
+    }
+   ]
+  },
+  {
+   "team": "Setting Sun",
+   "teamSlug": "setting-sun",
+   "players": [
+    {
+     "name": "WAZH",
+     "captain": false,
+     "curSlug": "leveti"
+    },
+    {
+     "name": "rc_ia",
+     "captain": false,
+     "curSlug": "rc-ia"
+    },
+    {
+     "name": "clueby",
+     "captain": false,
+     "curSlug": null
+    },
+    {
+     "name": "jaelyo",
+     "captain": false,
+     "curSlug": "jaelyo"
+    },
+    {
+     "name": "zhiweiingg",
+     "captain": false,
+     "curSlug": "zhiweiingg"
+    }
+   ]
+  },
+  {
+   "team": "Kiedz",
+   "teamSlug": "kiedz",
+   "players": [
+    {
+     "name": "Kairi",
+     "captain": false,
+     "curSlug": "kairi"
+    },
+    {
+     "name": "Illus",
+     "captain": false,
+     "curSlug": "illus"
+    },
+    {
+     "name": "Elfy Mint",
+     "captain": false,
+     "curSlug": "elfy-mint"
+    },
+    {
+     "name": "declaration__",
+     "captain": false,
+     "curSlug": "declaration"
+    },
+    {
+     "name": "zuann_",
+     "captain": false,
+     "curSlug": "zuann"
+    }
+   ]
+  },
+  {
+   "team": "Night Jasmine",
+   "teamSlug": "new-jade",
+   "players": [
+    {
+     "name": "VPLH",
+     "captain": false,
+     "curSlug": "vplh"
+    },
+    {
+     "name": "Jeribean",
+     "captain": false,
+     "curSlug": "jeribean"
+    },
+    {
+     "name": "Astro_Ruckus",
+     "captain": false,
+     "curSlug": "astro-ruckus"
+    },
+    {
+     "name": "jenapoppins",
+     "captain": false,
+     "curSlug": "jenapoppins"
+    },
+    {
+     "name": "crazywhoopies",
+     "captain": false,
+     "curSlug": "crazywhoopies"
+    }
+   ]
+  },
+  {
+   "team": "Team Luminescence",
+   "teamSlug": "lemon-tree",
+   "players": [
+    {
+     "name": "luminichi",
+     "captain": false,
+     "curSlug": "luminichi"
+    },
+    {
+     "name": "JWQI",
+     "captain": false,
+     "curSlug": "jwqi"
+    },
+    {
+     "name": "AshaZ",
+     "captain": false,
+     "curSlug": "moonraika"
+    },
+    {
+     "name": "meowcolmz",
+     "captain": false,
+     "curSlug": "meowcolmz"
+    },
+    {
+     "name": "_kaitinghaha_",
+     "captain": false,
+     "curSlug": "kkayyteeee"
+    }
+   ]
+  },
+  {
+   "team": "Unforgettable",
+   "teamSlug": "unforgettable",
+   "players": [
+    {
+     "name": "Sakami",
+     "captain": false,
+     "curSlug": "sakami"
+    },
+    {
+     "name": "Airizu",
+     "captain": false,
+     "curSlug": "airizu-amateur"
+    },
+    {
+     "name": "joshiwahhh",
+     "captain": false,
+     "curSlug": "joshiwahhh"
+    },
+    {
+     "name": "Kelly0",
+     "captain": false,
+     "curSlug": "kellyxleox"
+    },
+    {
+     "name": "Ryujin",
+     "captain": false,
+     "curSlug": "ryujin-amateur"
+    }
+   ]
+  },
+  {
+   "team": "Red Vines",
+   "teamSlug": "raven-song",
+   "players": [
+    {
+     "name": "ebi",
+     "captain": false,
+     "curSlug": "ebi"
+    },
+    {
+     "name": "caturteer",
+     "captain": false,
+     "curSlug": "caturteer"
+    },
+    {
+     "name": "Celtsm",
+     "captain": false,
+     "curSlug": "celtsm"
+    },
+    {
+     "name": "rach.elx_",
+     "captain": false,
+     "curSlug": "rach-elx-amateur"
+    },
+    {
+     "name": "treblest",
+     "captain": false,
+     "curSlug": "treblest"
+    }
+   ]
+  }
+ ],
  "BotProLeague15": [
   {
    "team": "ACoS",
