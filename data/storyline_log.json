@@ -1,23 +1,5 @@
 [
  {
-  "id": "milestone:ochakokiyomi:maps:50",
-  "type": "milestone",
-  "ts": 1793934203,
-  "date": "2026-11-06",
-  "title": "OchakoKiyomi: 50 maps played",
-  "text": "OchakoKiyomi reached 50 maps played",
-  "link": "#/player/ochakokiyomi"
- },
- {
-  "id": "milestone:carv:maps:50",
-  "type": "milestone",
-  "ts": 1793934203,
-  "date": "2026-11-06",
-  "title": "carv: 50 maps played",
-  "text": "carv reached 50 maps played",
-  "link": "#/player/carv"
- },
- {
   "id": "milestone:nicsman:maps:50",
   "type": "milestone",
   "ts": 1793934203,
@@ -1798,5 +1780,23 @@
   "title": "LITA: 1000 career kills",
   "text": "LITA reached 1000 career kills",
   "link": "#/player/lita"
+ },
+ {
+  "id": "transfer:degree:2026-11-23:lilraxxx",
+  "type": "transfer",
+  "ts": 1795387094,
+  "date": "2026-11-23",
+  "title": "degree sign lilraxxx",
+  "text": "in: lilraxxx",
+  "link": "#/team/degree"
+ },
+ {
+  "id": "transfer:diamondones:2026-11-23:altheavt",
+  "type": "transfer",
+  "ts": 1795387094,
+  "date": "2026-11-23",
+  "title": "DiamondOnes sign AltheaVT",
+  "text": "in: AltheaVT",
+  "link": "#/team/diamondones"
  }
 ]

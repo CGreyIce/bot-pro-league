@@ -66,12 +66,12 @@ bot_add "Cyn miorine"; bot_add "Cyn Ziweiv"; bot_add "Cyn Soozy"; bot_add "Cyn h
 bot_add_ct "Cyn miorine"; bot_add_ct "Cyn Ziweiv"; bot_add_ct "Cyn Soozy"; bot_add_ct "Cyn haniikyu"; bot_add_ct "Cyn Decrease";
 
 degree (BPL Legends Stage 2023) [thea and bluenerd8 swap]
-bot_add "dgr Anony"; bot_add "dgr AltheaVT"; bot_add "dgr VanixEvans"; bot_add "dgr Zoweya"; bot_add "dgr airawwr";
-bot_add_ct "dgr Anony"; bot_add_ct "dgr AltheaVT"; bot_add_ct "dgr VanixEvans"; bot_add_ct "dgr Zoweya"; bot_add_ct "dgr airawwr";
+bot_add "dgr Anony"; bot_add "dgr VanixEvans"; bot_add "dgr Zoweya"; bot_add "dgr airawwr"; bot_add "dgr lilraxxx";
+bot_add_ct "dgr Anony"; bot_add_ct "dgr VanixEvans"; bot_add_ct "dgr Zoweya"; bot_add_ct "dgr airawwr"; bot_add_ct "dgr lilraxxx";
 
 DiamondOnes (BPL Legends Stage 2023)
-bot_add "D1 lilraxxx"; bot_add "D1 notccillia"; bot_add "D1 xolalotl"; bot_add "D1 midorissi"; bot_add "D1 emiiiyu";
-bot_add_ct "D1 lilraxxx"; bot_add_ct "D1 notccillia"; bot_add_ct "D1 xolalotl"; bot_add_ct "D1 midorissi"; bot_add_ct "D1 emiiiyu";
+bot_add "D1 notccillia"; bot_add "D1 xolalotl"; bot_add "D1 midorissi"; bot_add "D1 emiiiyu"; bot_add "D1 AltheaVT";
+bot_add_ct "D1 notccillia"; bot_add_ct "D1 xolalotl"; bot_add_ct "D1 midorissi"; bot_add_ct "D1 emiiiyu"; bot_add_ct "D1 AltheaVT";
 
 Divide&Conquer (BPL9 Winners) 
 bot_add "DNC Solec"; bot_add "DNC InfiniteBreaker"; bot_add "DNC 4twnty"; bot_add "DNC LITA"; bot_add "DNC laavv._";
