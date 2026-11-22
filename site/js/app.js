@@ -49,7 +49,9 @@ function seasonMeta(id){ return (soloSeasonsMeta().seasons||[]).find(s=>s.id===i
 function seasonRec(rec, id){ return ((rec&&rec.seasons)||[]).find(s=>s.id===id) || null; }
 function soloSeasonNote(m){
   const min = soloSeasonsMeta().minMaps||5, span = `${m.start?fmtDate(m.start)+' – ':'until '}${fmtDate(m.end)}`;
-  if(m.status==="live") return `${esc(m.name)} · ${span} · players are ranked after ${min} games this season. Until then they show their placement: last season's final Level, one Level down, which fades the more they play.`;
+  if(m.status==="live") return m.reset
+    ? `${esc(m.name)} · ${span} · a fresh start: everyone begins at ${m.startPoints} pts and is ranked after ${min} games this season.`
+    : `${esc(m.name)} · ${span} · players are ranked after ${min} games this season. Until then they show their placement: last season's final Level, one Level down, which fades the more they play.`;
   if(m.status==="locking") return `${esc(m.name)} · ${span} · final standings, which lock on ${fmtDate(m.locks)} (until then, games from before it ended that arrive late still count).`;
   return `${esc(m.name)} · ${span} · final standings.`;
 }
@@ -84,16 +86,17 @@ function seasonBoxesHtml(s, m, human){
     `${when(s.peak.date)}${s.peak.rank!=null?`<div class="sq-peakrank">Peak rank <b>#${s.peak.rank}</b>${human?' among the bots':''} · ${when(s.peak.rankDate)}</div>`:''}`,
     'Their best rating points and best rank this season, each on the day it happened'));
   if(s.placement){ const pl=s.placement, prev=seasonMeta(m.id-1);
-    out.push(box("Placement", lv(pl.level, pl.ratingPoints),
-      pl.fromLevel?`${prev?esc(prev.name)+' ':''}Level ${pl.fromLevel} (${pl.fromPoints} pts), one Level down`:'',
-      `Where they started ${m.name}: it counts for less with every game they play`)); }
+    out.push(box(pl.reset?"Start":"Placement", lv(pl.level, pl.ratingPoints),
+      pl.reset ? `fresh start for everyone${pl.fromLevel?` · ${prev?esc(prev.name)+' ':''}Level ${pl.fromLevel} (${pl.fromPoints} pts)`:''}`
+        : pl.fromLevel?`${prev?esc(prev.name)+' ':''}Level ${pl.fromLevel} (${pl.fromPoints} pts), one Level down`:'',
+      pl.reset ? `${m.name} is a fresh start: everyone begins at ${pl.ratingPoints} pts` : `Where they started ${m.name}: it counts for less with every game they play`)); }
   return `<div class="sq-ranks">${out.join("")}</div>`;
 }
 function seasonLineHtml(s, m, human){
   const min = soloSeasonsMeta().minMaps||5;
   if(!s) return 'no games yet';
   if(s.ranked) return `Level ${s.level} · ${s.ratingPoints} pts${human?(s.place?` · would sit #${s.place}`:''):(s.rank?` · #${s.rank} of ${m.ranked}`:'')}`;
-  return `${m.status==="live"?'in placements':'unranked'} · ${s.maps}/${min} games${s.ratingPoints!=null?` · placed at Level ${s.level}`:''}`;
+  return `${m.status==="live"?'in placements':'unranked'} · ${s.maps}/${min} games${s.ratingPoints!=null?` · ${s.placement&&s.placement.reset&&!s.maps?'starting':'placed'} at Level ${s.level}`:''}`;
 }
 // A profile's Solo Queue section: a tab per season (current first, Preseason included) and Overall.
 // opts.human: a human profile; opts.top: the first section on the page; opts.place: the human's Overall place text.

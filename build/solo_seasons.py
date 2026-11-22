@@ -8,6 +8,10 @@ The rules, the same for everyone:
 - Placement: a player's final rating last season, one Level down, at the same spot inside the lower Level
   (Level 1 stays Level 1). Only players who were ranked last season get one; anyone else starts at the
   average.
+- A season marked "reset" in data/solo_seasons.json is a fresh start instead: everyone begins at its
+  "startPoints" (1150, the league average, unless set), with the same fade. Season 1 is one (user, 23 Nov
+  2026): the Preseason's stats were mostly played under older rules (headshot-only damage), so they don't
+  place anyone. Seasons after a reset place from it as usual.
 - Season rating: the usual solo formula on this season's own games, plus the placement, which fades as
   they play: rating = formula(season) + (placement - 1) * K / (games + K), K = 15. So the placement is
   half of it after 15 games and a quarter after 45.
@@ -48,7 +52,9 @@ def load_seasons(data_dir, today):
     cfg = json.load(open(path, encoding="utf-8")) if os.path.exists(path) else \
         {"months": 6, "seasons": [{"id": 0, "name": "Preseason"}, {"id": 1, "name": "Season 1", "start": today.isoformat()}]}
     months = int(cfg.get("months") or 6)
-    out = [{"id": s["id"], "name": s["name"], "start": s.get("start")} for s in cfg["seasons"]]
+    out = [{"id": s["id"], "name": s["name"], "start": s.get("start"),
+            **({"reset": True, "startPoints": int(s.get("startPoints") or 1150)} if s.get("reset") else {})}
+           for s in cfg["seasons"]]
     while True:
         last = out[-1]
         end = _add_months(_date(last["start"]), months) - dt.timedelta(days=1)
@@ -140,6 +146,7 @@ def run(data_dir, today, *, bots, base, humans, games, resolve, rating_fn, point
             r = dict(r, id=sid, name=s["name"], total=total, final=ended)
             records.setdefault(("human" if r.get("human") else "bot", key), []).append(r)
         meta.append({"id": sid, "name": s["name"], "start": s.get("start"), "end": s["end"], "ranked": total,
+                     **({"reset": True, "startPoints": s["startPoints"]} if s.get("reset") else {}),
                      "status": "live" if not ended else ("final" if (frozen or str(sid) in finals) else "locking"),
                      "locks": None if (frozen or str(sid) in finals) else lock_on, "games": len(by_season[sid])})
         prev_final = res
@@ -157,19 +164,21 @@ def _season(s, prev_final, games, bots, base, humans, resolve, rating_fn, points
     zero = lambda: {k: 0 for k in TOTALS}
     tot = {("bot", k): (dict(base.get(k) or zero()) if pre else zero()) for k in (bots if pre else ())}
     xs = {}
-    # placements, from last season's final standings (bots ranked there; humans with enough games)
+    # placements, from last season's final standings (bots ranked there; humans with enough games).
+    # A reset season starts everyone at its startPoints instead (start_r), placed or not.
+    start_r = 1.0 + (s["startPoints"] - 1150) / 3900 if s.get("reset") else None
     seed = {}
     if prev_final:
         for key, r in prev_final.items():
             if r.get("rating") is not None and (r.get("rank") or (r.get("human") and r.get("maps", 0) >= min_maps)):
                 who = ("human", key) if r.get("human") else ("bot", key)
                 if (who[0] == "bot" and key in bots) or (who[0] == "human" and key in humans):
-                    seed[who] = (drop_level(r["rating"], points_for), r)
+                    seed[who] = (start_r if start_r is not None else drop_level(r["rating"], points_for), r)
                     tot.setdefault(who, zero())
 
     def value(who, t, avg):
         n = t["wins"] + t["losses"]
-        prior = seed[who][0] if who in seed else None
+        prior = seed[who][0] if who in seed else start_r
         if n == 0:
             return prior
         if pre:
@@ -266,7 +275,7 @@ def _season(s, prev_final, games, bots, base, humans, resolve, rating_fn, points
             sr, last = seed[w]
             rec["placement"] = {"ratingPoints": points_for(sr), "level": level_for(sr),
                                 "fromPoints": last.get("ratingPoints"), "fromLevel": last.get("level"),
-                                "fromRank": last.get("rank")}
+                                "fromRank": last.get("rank"), **({"reset": True} if start_r is not None else {})}
         if w in peak:
             rec["peak"] = peak[w]
         if w in xs:

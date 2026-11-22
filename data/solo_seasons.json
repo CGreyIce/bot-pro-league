@@ -2,6 +2,6 @@
  "months": 6,
  "seasons": [
   {"id": 0, "name": "Preseason"},
-  {"id": 1, "name": "Season 1", "start": "2026-11-23"}
+  {"id": 1, "name": "Season 1", "start": "2026-11-23", "reset": true, "startPoints": 1150}
  ]
 }
