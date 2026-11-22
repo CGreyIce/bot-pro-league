@@ -865,6 +865,8 @@ def main():
         solo_by_name.setdefault(norm_key(p["name"]), p)
     ssp = os.path.join(DATA, "solo_scoreboards.json")
     solo_sb = json.load(open(ssp, encoding="utf-8")) if os.path.exists(ssp) else []
+    # the solo sheet's own totals, before any game: where the Preseason starts (build/solo_seasons.py)
+    solo_base = {k: {f: p[f] for f in ("kills", "deaths", "assists", "mvp", "wins", "losses")} for k, p in solo_by_name.items()}
     for g in solo_sb:
         for pl in g.get("players", []):
             k = norm_key(pl.get("name", "")); nn = old2new.get(k)
@@ -995,6 +997,31 @@ def main():
             tm.setdefault("humans", []).append({"name": h["name"], "slug": h["slug"], "kind": h["kind"],
                                                 "iso": h.get("iso", ""), "role": h.get("role"), "joined": h.get("joined")})
 
+    # ---- Solo Queue seasons (build/solo_seasons.py, 23 Nov 2026): each player's record per season, newest
+    # first ("seasons"), with placement, rank, peak and final standing. The season games' ±Pts in the game
+    # popups become season points. Career solo stats (and BPL Bots' play rating) stay as they are. ----
+    import solo_seasons
+    _hum_keys = {norm_key(h["name"]): h for h in solo_humans}
+    def _season_who(name):
+        k = norm_key(name); nn = old2new.get(k)
+        bk = norm_key(nn) if nn else k
+        if bk in solo_by_name:
+            return ("bot", bk)
+        return ("human", k) if k in _hum_keys else None
+    solo_season_meta, _seas = solo_seasons.run(
+        DATA, _date.today(), bots=solo_by_name, base=solo_base, humans=_hum_keys, games=solo_sb, resolve=_season_who,
+        rating_fn=_solo_rating_value, points_for=points_for, tier_for=tier_for, level_for=level_for,
+        min_maps=SOLO_MIN_MAPS, xs_keys=XS_KEYS, adv_block=adv_block, game_stats=solo_game_stats,
+        old2new=old2new, norm_key=norm_key,
+        extra=[{f: p[f] for f in ("kills", "deaths", "assists", "mvp", "wins", "losses")}
+               for p in solo if solo_by_name.get(norm_key(p["name"])) is not p])
+    for k, sp in solo_by_name.items():
+        sp["seasons"] = _seas.get(("bot", k), [])
+    for h in solo_humans:
+        h["seasons"] = _seas.get(("human", norm_key(h["name"])), [])
+    _cs = next(x for x in solo_season_meta["seasons"] if x["id"] == solo_season_meta["current"])
+    print(f"Solo Queue seasons:  {_cs['name']} (from {_cs['start']}): {_cs['games']} games, {_cs['ranked']} ranked")
+
     # ---- the Solo Queue tab's games (build/solo_games.py): site/solo_games.json, read only by that tab;
     # each side named team_<its highest-rated player going in> (user, 17 Nov 2026) ----
     import solo_games
@@ -1021,7 +1048,7 @@ def main():
                 "winrate": sp["winrate"], "rating": sp["rating"], "ratingPoints": sp.get("ratingPoints"),
                 "tier": sp["tier"], "level": sp["level"], "soloRank": sp.get("soloRank"), "soloTotal": len(solo_ranked),
                 "rankDelta": sp.get("rankDelta", 0), "provisional": sp.get("provisional", False),
-                "adv": sp.get("adv")}
+                "adv": sp.get("adv"), "seasons": sp.get("seasons", [])}
     tourney_names = {norm_key(p["name"]) for p in pro} | {norm_key(p["name"]) for p in amateur}
     for pool in (pro, amateur):
         for p in pool:
@@ -2096,6 +2123,7 @@ def main():
         "nationMapTeams": nation_map_teams,
         "qualifierMapTeams": qualifier_map_teams,
         "soloGameStats": solo_game_stats,
+        "soloSeasons": solo_season_meta,
         "soloHumans": solo_humans,
         "stacks": stacks,
     }

@@ -41,6 +41,90 @@ function soloLeague(){
   }));
   return _soloLeague=out;
 }
+// ---- Solo Queue seasons (build/solo_seasons.py, 23 Nov 2026) ----
+// Every solo record (DATA.players.solo, soloStats, DATA.soloHumans) has "seasons": one record per season,
+// newest first: that season's stats, rating, rank (bots) or place (humans), placement, peak and final flag.
+function soloSeasonsMeta(){ return DATA.soloSeasons || {current:null, seasons:[], minMaps:5}; }
+function seasonMeta(id){ return (soloSeasonsMeta().seasons||[]).find(s=>s.id===id) || null; }
+function seasonRec(rec, id){ return ((rec&&rec.seasons)||[]).find(s=>s.id===id) || null; }
+function soloSeasonNote(m){
+  const min = soloSeasonsMeta().minMaps||5, span = `${m.start?fmtDate(m.start)+' – ':'until '}${fmtDate(m.end)}`;
+  if(m.status==="live") return `${esc(m.name)} · ${span} · players are ranked after ${min} games this season. Until then they show their placement: last season's final Level, one Level down, which fades the more they play.`;
+  if(m.status==="locking") return `${esc(m.name)} · ${span} · final standings, which lock on ${fmtDate(m.locks)} (until then, games from before it ended that arrive late still count).`;
+  return `${esc(m.name)} · ${span} · final standings.`;
+}
+// Leaderboard rows for one season: the same players as the Overall board, with that season's numbers.
+// Only ranked players get rating points / a level / a # (placements show their placed points greyed out).
+function soloSeasonRows(id, human){
+  const src = human ? (DATA.soloHumans||[]) : soloLeague();
+  return src.map(p=>{
+    const s = seasonRec(p, id);
+    const row = {name:p.name, iso:p.iso, nat:p.nat, team:p.team, role:p.role, subRole:p.subRole, slug:p.slug, pool:"solo",
+      human:p.human, kind:p.kind, photo:p.photo, kills:0, assists:0, deaths:0, mvp:0, wins:0, losses:0, maps:0, kdr:0,
+      winrate:0, ratingPoints:null, level:null, rating:null, adv:null, rankDelta:0, _unranked:true, _s:null};
+    if(!s) return row;
+    return {...row, kills:s.kills, assists:s.assists, deaths:s.deaths, mvp:s.mvp, wins:s.wins, losses:s.losses,
+      maps:s.maps, kdr:s.kdr, winrate:s.winrate, adv:s.adv||null, rankDelta:s.rankDelta||0, _s:s, _unranked:!s.ranked,
+      ratingPoints:s.ranked?s.ratingPoints:null, level:s.ranked?s.level:null, rating:s.ranked?s.rating:null};
+  });
+}
+// One season's rank boxes on a profile: the rank now (or final), the peak, and where they were placed.
+function seasonBoxesHtml(s, m, human){
+  const min = soloSeasonsMeta().minMaps||5, live = m.status==="live";
+  const box = (lbl, main, sub, title)=>`<div class="sq-rank"${title?` title="${esc(title)}"`:''}><div class="lbl">${lbl}</div><div class="v">${main}</div>${sub?`<div class="sub">${sub}</div>`:''}</div>`;
+  const lv = (l, p, dim)=>`<span${dim?' style="opacity:.55"':''}>${levelChip(l)}</span><b class="mono">${p}</b><span class="muted" style="font-size:12px">pts</span>`;
+  const pos = x=>human ? (x.place?`would sit #${x.place} of ${m.ranked} bots`:'') : (x.rank?`#${x.rank} of ${m.ranked}`:'');
+  const out = [];
+  if(s.ranked) out.push(box(live?"Current rank":"Final rank", lv(s.level, s.ratingPoints), pos(s)));
+  else out.push(box(live?"In placements":"Unranked", s.ratingPoints!=null?lv(s.level, s.ratingPoints, true):'<span class="muted">—</span>',
+    `${s.maps}/${min} games${live?' to a rank':''}`, `Ranked after ${min} games in a season`));
+  // peak points with the day they were reached, then the peak rank and its own day (a human's: where they'd have sat)
+  const when = d=>d ? fmtDate(d) : 'before game-by-game records';
+  if(s.peak) out.push(box("Peak", lv(s.peak.level, s.peak.ratingPoints),
+    `${when(s.peak.date)}${s.peak.rank!=null?`<div class="sq-peakrank">Peak rank <b>#${s.peak.rank}</b>${human?' among the bots':''} · ${when(s.peak.rankDate)}</div>`:''}`,
+    'Their best rating points and best rank this season, each on the day it happened'));
+  if(s.placement){ const pl=s.placement, prev=seasonMeta(m.id-1);
+    out.push(box("Placement", lv(pl.level, pl.ratingPoints),
+      pl.fromLevel?`${prev?esc(prev.name)+' ':''}Level ${pl.fromLevel} (${pl.fromPoints} pts), one Level down`:'',
+      `Where they started ${m.name}: it counts for less with every game they play`)); }
+  return `<div class="sq-ranks">${out.join("")}</div>`;
+}
+function seasonLineHtml(s, m, human){
+  const min = soloSeasonsMeta().minMaps||5;
+  if(!s) return 'no games yet';
+  if(s.ranked) return `Level ${s.level} · ${s.ratingPoints} pts${human?(s.place?` · would sit #${s.place}`:''):(s.rank?` · #${s.rank} of ${m.ranked}`:'')}`;
+  return `${m.status==="live"?'in placements':'unranked'} · ${s.maps}/${min} games${s.ratingPoints!=null?` · placed at Level ${s.level}`:''}`;
+}
+// A profile's Solo Queue section: a tab per season (current first, Preseason included) and Overall.
+// opts.human: a human profile; opts.top: the first section on the page; opts.place: the human's Overall place text.
+function soloSectionHtml(rec, stat, opts={}){
+  const M = soloSeasonsMeta(), min = M.minMaps||5;
+  const shown = [...(M.seasons||[])].reverse().filter(m=>m.id===M.current || seasonRec(rec, m.id));
+  const tabs = [...shown.map(m=>({k:String(m.id), label:m.name, m})), {k:"all", label:"Overall"}];
+  const def = tabs[0].k, cur = seasonMeta(M.current);
+  const grid = s=>`<div class="statgrid">${stat(s.kills,"Kills")}${stat(s.deaths,"Deaths")}${stat(s.maps&&s.deaths?s.kdr.toFixed(2):'—',"K/D Ratio",true)}${stat(s.mvp,"MVPs")}${stat(s.assists,"Assists")}${stat(s.maps?(s.kills/s.maps).toFixed(1):'—',"Kills / Map")}${stat(s.wins+'-'+s.losses,"Record")}${stat(s.maps?pct(s.winrate):'—',"Win Rate")}</div>`;
+  const overall = ()=>{
+    const pos = opts.human ? (opts.place||'') : (rec.soloRank?`#${rec.soloRank}${rec.soloTotal?' of '+rec.soloTotal:''} all-time`:'');
+    return `<div class="sq-ranks"><div class="sq-rank" title="All-time Solo Queue rating: never resets"><div class="lbl">All-time rating</div><div class="v">${levelChip(rec.level)}<b class="mono">${rec.ratingPoints!=null?rec.ratingPoints:'—'}</b><span class="muted" style="font-size:12px">pts</span></div>${pos?`<div class="sub">${pos}</div>`:''}</div></div>
+      ${grid(rec)}${advGridHtml(rec.adv, stat)}`;
+  };
+  const body = t=>{
+    if(t.k==="all") return overall();
+    const s = seasonRec(rec, t.m.id);
+    if(!s) return `<p class="muted" style="font-size:13px">No ${esc(t.m.name)} games yet. They're ranked after ${min}.</p>`;
+    return `${seasonBoxesHtml(s, t.m, opts.human)}${grid(s)}${advGridHtml(s.adv, stat)}`;
+  };
+  return `<h2 class="section-title" style="margin-top:${opts.top?0:18}px"><span class="accent-bar"></span>Solo Queue
+      <span class="muted" style="font-size:11px">${cur?`${esc(cur.name)}: ${seasonLineHtml(seasonRec(rec, cur.id), cur, opts.human)}`:''}</span></h2>
+    <div class="tabs sq-tabs">${tabs.map(t=>`<button data-sqt="${t.k}" class="${t.k===def?'active':''}">${esc(t.label)}${t.m&&t.m.status==="live"?' <span class="sq-live">LIVE</span>':''}</button>`).join("")}</div>
+    ${tabs.map(t=>`<div class="sq-body" data-sqb="${t.k}"${t.k===def?'':' hidden'}>${body(t)}</div>`).join("")}`;
+}
+document.addEventListener('click', e=>{
+  const b = e.target.closest && e.target.closest('.sq-tabs button[data-sqt]'); if(!b) return;
+  const wrap = b.closest('.sq-tabs');
+  wrap.querySelectorAll('button').forEach(x=>x.classList.toggle('active', x===b));
+  for(let el=wrap.nextElementSibling; el && el.classList.contains('sq-body'); el=el.nextElementSibling) el.hidden = el.dataset.sqb!==b.dataset.sqt;
+});
 function teamLogo(t){ return t && t.logo ? `<img src="${esc(t.logo)}" alt="">` : ''; }
 function teamCell(name){ const t=teamByName(name); if(!t) return `<span class="team-inline"><span class="muted">${esc(name||"—")}</span></span>`;
   return `<a class="team-inline" href="#/team/${t.slug}">${teamLogo(t)}<span>${esc(t.name)}</span></a>`; }
@@ -779,6 +863,7 @@ function renderTeam(slug){
 }
 
 let playersPool = "pro", playersSort = {key:"Rating Points", dir:-1}, playersCountry = "";
+let soloView = null;   // the Solo Queue board's season id, or "all" (Overall); null = the current season
 function poolList(pk){ return pk==="solo" ? soloLeague() : (DATA.players[pk]||[]); }
 // Countries in a pool, most players first: [{iso, nat, n}]
 function countryList(list){
@@ -794,17 +879,26 @@ function renderPlayers(arg){
   // of their own so the bots' places don't move. Pro: the humans on a team (or with tournament
   // maps), with their Pro block (build/solo_humans.py attach_pro).
   const humans = pool==="solo" ? (DATA.soloHumans||[]) : proHumans();
-  const all = humans.length && showHumans ? [...poolList(pool), ...humans] : poolList(pool);
+  // Solo Queue: one season (the current one by default) or Overall (career, never resets)
+  const SQ = soloSeasonsMeta(), sqMin = SQ.minMaps||5;
+  const sqv = pool==="solo" ? (soloView==null ? (SQ.current!=null?SQ.current:"all") : soloView) : null;
+  const sqm = sqv!=null && sqv!=="all" ? seasonMeta(sqv) : null;
+  const base = sqm ? soloSeasonRows(sqm.id, false) : poolList(pool);
+  const all = humans.length && showHumans ? [...base, ...(sqm ? soloSeasonRows(sqm.id, true) : humans)] : base;
   const countries = countryList(all);
   const country = countries.find(c=>c.iso===playersCountry);
   const players = playersCountry ? all.filter(p=>p.iso===playersCountry) : all;
   const cols = [
-    ["#", (p,i)=>p.human?'<span class="muted" title="Humans aren\'t ranked against the bots">—</span>':(p._rk||i+1), "rankcol"],
-    ["Player", p=>`<span class="tm-rank">${playerLink(p)}${p.provisional?'<span class="prov-badge" title="Provisional — under 5 maps played">PROV</span>':''}${playersSort.key==="Rating Points"?rankDeltaBadge(p, pool==="solo"?"their last solo game":"their last match"):''}</span>`, "name-cell", p=>p.name],
+    ["#", (p,i)=>p.human?'<span class="muted" title="Humans aren\'t ranked against the bots">—</span>':p._unranked?'<span class="muted" title="Not ranked this season yet">—</span>':(p._rk||i+1), "rankcol"],
+    ["Player", p=>`<span class="tm-rank">${playerLink(p)}${p.provisional?'<span class="prov-badge" title="Provisional — under 5 maps played">PROV</span>':''}${p._s&&!p._s.ranked?`<span class="prov-badge" title="${sqm&&sqm.status==='live'?'In placements: ranked after '+sqMin+' games this season':'Unranked: under '+sqMin+' games that season'}">${sqm&&sqm.status==='live'?'PLACEMENT ':''}${p._s.maps}/${sqMin}</span>`:''}${playersSort.key==="Rating Points"?rankDeltaBadge(p, pool==="solo"?"their last solo game":"their last match"):''}</span>`, "name-cell", p=>p.name],
     ["Team", p=>teamCell(p.team), "", p=>p.team],
     ["Role", p=>roleShort(p)?`<span class="pill role-pill" title="${esc(roleText(p))}">${esc(roleShort(p))}</span>`:'—', "", p=>roleShort(p)],
-    ["Rating Points", p=>pointsBadge(p.ratingPoints), "mono", p=>p.ratingPoints==null?-1:p.ratingPoints],
-    ["Lvl", p=>levelChip(p.level), "", p=>p.level||0],
+    ["Rating Points", p=>p._s&&!p._s.ranked&&p._s.ratingPoints!=null?`<span class="muted mono" title="Placed here: ranked after ${sqMin} games">${p._s.ratingPoints}</span>`:pointsBadge(p.ratingPoints), "mono",
+      p=>p.ratingPoints!=null?p.ratingPoints:(p._s&&p._s.ratingPoints!=null?p._s.ratingPoints-1e6:-2e6)],
+    ["Lvl", p=>p._s&&!p._s.ranked&&p._s.level?`<span style="opacity:.55">${levelChip(p._s.level)}</span>`:levelChip(p.level), "", p=>p.level||0],
+    ...(sqm&&playersView!=="adv"?[["Peak", p=>{ const k=p._s&&p._s.peak; if(!k) return '<span class="muted">—</span>';
+      const d=x=>x?fmtDate(x):'before game-by-game records';
+      return `<span title="${esc(`Peak ${k.ratingPoints} pts on ${d(k.date)}${k.rank!=null?` · peak rank #${k.rank}${p.human?' among the bots':''} on ${d(k.rankDate)}`:''}`)}">${levelChip(k.level)} <span class="mono">${k.ratingPoints}</span>${k.rank!=null?` <span class="muted mono" style="font-size:11px">#${k.rank}</span>`:''}</span>`; }, "", p=>p._s&&p._s.peak?p._s.peak.ratingPoints:-1]]:[]),
     ...(playersView==="adv" ? (()=>{
       const a = (p,f,none)=>p.adv&&p.adv.maps?f(p.adv):none;
       return [
@@ -852,10 +946,12 @@ function renderPlayers(arg){
       return `<div class="country-head">${flag(playersCountry)}<b>${esc(name)}</b>
         <span class="muted">${players.length} player${players.length===1?'':'s'}${top?` · best: ${playerLink(top)} (${top.ratingPoints} pts)`:''}${avg!=null?` · average ${avg} pts`:''}</span>
         <a href="#/players" class="muted country-clear">✕ All countries</a></div>`; })() : ''}
-    ${pool==="solo"?'<p class="muted" style="font-size:12px;margin:-4px 0 12px">Whole league · under 5 maps stay provisional (unranked) at the bottom.</p>':''}
+    ${pool==="solo"?`<div class="tabs sq-view">${[...(SQ.seasons||[])].reverse().map(m=>`<button data-sqv="${m.id}" class="${sqm&&sqm.id===m.id?'active':''}">${esc(m.name)}${m.status==="live"?' <span class="sq-live">LIVE</span>':''}</button>`).join("")}<button data-sqv="all" class="${sqm?'':'active'}">Overall</button></div>
+    <p class="muted" style="font-size:12px;margin:-4px 0 12px">${sqm?soloSeasonNote(sqm):'Overall: all-time Solo Queue stats, which never reset · under 5 maps stay provisional (unranked) at the bottom.'}</p>`:''}
     ${playersView==="adv"?'<p class="muted" style="font-size:12px;margin:-4px 0 12px">Advanced stats only exist for maps played with the BPL Bots plugin since October 2026. “Rec. maps” is how many each player has.</p>':''}
     ${players.length ? '<div id="ptable"></div>' : `<p class="muted">No ${pool==="solo"?"solo queue":"pro"} players from ${esc(country?country.nat:playersCountry.toUpperCase())}.</p>`}`;
   app.querySelectorAll("[data-pool]").forEach(b=>b.onclick=()=>{playersPool=b.dataset.pool;playersSort={key:playersView==="adv"?"ADR":"Rating Points",dir:-1};renderPlayers();});
+  app.querySelectorAll("[data-sqv]").forEach(b=>b.onclick=()=>{ soloView = b.dataset.sqv==="all" ? "all" : +b.dataset.sqv; renderPlayers(); });
   app.querySelectorAll("[data-view]").forEach(b=>b.onclick=()=>{
     playersView=b.dataset.view; playersSort={key:playersView==="adv"?"ADR":"Rating Points",dir:-1};
     try { localStorage.setItem("bpl_players_view", playersView); } catch(e) {}
@@ -874,7 +970,7 @@ function proHumans(){
 function drawPlayerTable(players, cols){
   const sorted = sortData([...players], cols, playersSort);
   let rk = 0;
-  sorted.forEach(p=>{ if(!p.human) p._rk = ++rk; });   // the rank column counts the bots only
+  sorted.forEach(p=>{ if(!p.human && !p._unranked) p._rk = ++rk; });   // the rank column counts the ranked bots only
   $("#ptable").innerHTML = tableHtml(sorted, cols, playersSort);
   wireSort($("#ptable"), players, cols, playersSort, (s)=>{playersSort=s;drawPlayerTable(players,cols);});
 }
@@ -948,19 +1044,7 @@ function renderHuman(slug){
       </div>
     </div>
     ${proHtml}
-    <h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>Solo Queue
-      <span class="muted" style="font-size:11px">${p.ratingPoints!=null?p.ratingPoints+' pts · ':''}${place}</span></h2>
-    <div class="statgrid">
-      ${stat(p.kills,"Kills")}
-      ${stat(p.deaths,"Deaths")}
-      ${stat(p.maps?p.kdr.toFixed(2):'—',"K/D Ratio",true)}
-      ${stat(p.mvp,"MVPs")}
-      ${stat(p.assists,"Assists")}
-      ${stat((p.kills/Math.max(1,p.maps)).toFixed(1),"Kills / Map")}
-      ${stat(p.wins+'-'+p.losses,"Record")}
-      ${stat(p.maps?pct(p.winrate):'—',"Win Rate")}
-    </div>
-    ${advGridHtml(p.adv, stat)}
+    ${soloSectionHtml(p, stat, {human:true, place})}
     ${p.playsWith?`<div class="hm-with" title="The teammate they've shared the most Solo Queue games with">🤝 <span class="muted">Most played with</span>
       ${p.playsWith.human?playerLink(p.playsWith):`<a href="#/player/${esc(p.playsWith.slug)}">${flag(p.playsWith.iso)}${esc(p.playsWith.name)}</a>`}
       <span class="muted">· ${p.playsWith.games} solo game${p.playsWith.games===1?'':'s'} together</span></div>`:''}
@@ -1059,7 +1143,7 @@ function renderPlayer(slug){
       </div>` : ''}
       </div>
       <div>
-        ${p.soloStats?`<h2 class="section-title" style="margin-top:0"><span class="accent-bar"></span>Tournament
+        ${p.pool==="solo" ? soloSectionHtml(p, stat, {top:true}) : `${p.soloStats?`<h2 class="section-title" style="margin-top:0"><span class="accent-bar"></span>Tournament
           <span class="muted" style="font-size:11px">S-Tier &amp; Major</span></h2>`:''}
         <div class="statgrid">
           ${stat(p.kills,"Kills")}
@@ -1071,21 +1155,8 @@ function renderPlayer(slug){
           ${stat(p.ot,"OT Played")}
           ${stat(pct(p.winrate),"Win Rate")}
         </div>
-        ${advGridHtml(p.adv, stat)}
-        ${p.soloStats?(()=>{const s=p.soloStats;return `
-        <h2 class="section-title" style="margin-top:18px"><span class="accent-bar"></span>Solo Queue
-          <span class="muted" style="font-size:11px">${s.level?'Level '+s.level:''}${s.ratingPoints!=null?' · '+s.ratingPoints+' pts':''}${s.soloRank?' · #'+s.soloRank+' of '+s.soloTotal:''}</span></h2>
-        <div class="statgrid">
-          ${stat(s.kills,"Kills")}
-          ${stat(s.deaths,"Deaths")}
-          ${stat(s.kdr.toFixed(2),"K/D Ratio",true)}
-          ${stat(s.mvp,"MVPs")}
-          ${stat(s.assists,"Assists")}
-          ${stat((s.kills/Math.max(1,s.maps)).toFixed(1),"Kills / Map")}
-          ${stat(s.wins+'-'+s.losses,"Record")}
-          ${stat(pct(s.winrate),"Win Rate")}
-        </div>
-        ${advGridHtml(s.adv, stat)}`;})():''}
+        ${advGridHtml(p.adv, stat)}`}
+        ${p.soloStats ? soloSectionHtml(p.soloStats, stat) : ''}
         ${(()=>{ const log=playerFormLog(p.slug); if(!log.length) return '';
           const last=log.slice(-10); const w=last.filter(x=>x.won===true).length, l=last.filter(x=>x.won===false).length;
           const avg=last.reduce((a,x)=>a+x.rtg,0)/last.length;
@@ -1428,7 +1499,7 @@ function drawSoloGames(){
   app.innerHTML = `
     <h2 class="section-title"><span class="accent-bar"></span>Solo Queue <span class="muted" style="font-size:11px">(${list.length} game${list.length===1?'':'s'})</span></h2>
     <div class="tabs" style="align-items:center">
-      <span class="muted" style="font-size:13px">Ten players split into two random teams. Each team is named after its highest-rated player going into the game. These count towards Solo Queue ratings only. <a href="#/players" id="solo-board" style="color:var(--link)">Solo Queue rankings →</a></span>
+      <span class="muted" style="font-size:13px">Ten players split into two random teams. Each team is named after its highest-rated player going into the game. These count towards Solo Queue ratings only${(()=>{const m=seasonMeta(soloSeasonsMeta().current);return m&&m.start?`; from ${fmtDate(m.start)} they're ${esc(m.name)} games, so ±Pts are season points`:'';})()}. <a href="#/players" id="solo-board" style="color:var(--link)">Solo Queue rankings →</a></span>
       <input id="solo-q" class="rq" type="text" placeholder="Filter by player…" value="${esc(soloQ)}">
     </div>
     ${rows?`<div class="tablewrap"><table class="data results-table solo-table"><tbody>${rows}</tbody></table></div>`
@@ -1441,7 +1512,7 @@ function drawSoloGames(){
   });
   const qi=$("#solo-q"); if(qi) qi.oninput=()=>{soloQ=qi.value.trim();soloShown=50;drawSoloGames();const e=$("#solo-q");if(e){e.focus();e.setSelectionRange(e.value.length,e.value.length);}};
   const mb=$("#solo-more"); if(mb) mb.onclick=()=>{soloShown+=50;drawSoloGames();};
-  const sb=$("#solo-board"); if(sb) sb.onclick=()=>{ playersPool="solo"; };
+  const sb=$("#solo-board"); if(sb) sb.onclick=()=>{ playersPool="solo"; soloView=null; };
 }
 // One game's scoreboard: the winners, then the losers. No in-game score is recorded for solo games, so
 // there's no match rating; ±Pts is how the game moved each player's Solo Queue rating points.
@@ -4659,7 +4730,9 @@ function soloRandomLineup(n){
 function soloRankSnapshot(){
   // the WHOLE Solo Queue board (solo-only + pro/amateur who also queue), same as the tab —
   // not just DATA.players.solo, or games between tournament players would look rank-neutral.
-  const rated=soloLeague().filter(p=>p.rating!=null).slice().sort((a,b)=>b.rating-a.rating);
+  const cur=soloSeasonsMeta().current;   // the current season's board (ranked players), else the all-time one
+  const rated=(cur!=null ? soloSeasonRows(cur,false).filter(p=>!p._unranked) : soloLeague().filter(p=>p.rating!=null))
+    .slice().sort((a,b)=>b.rating-a.rating);
   const m={}; rated.forEach((p,i)=>{ m[normKey(p.name)]={rank:i+1, name:p.name, iso:p.iso}; });
   return m;
 }
