@@ -876,6 +876,8 @@ function countryList(list){
 }
 // #/players/<iso> shows one country's players, ranked among themselves.
 function renderPlayers(arg){
+  // #/players/solo and #/players/pro open that board (articles link to them); anything else is a country
+  if(arg==="solo" || arg==="pro"){ if(playersPool!==arg) playersSort={key:"Rating Points",dir:-1}; playersPool=arg; if(arg==="solo") soloView=null; arg=""; }
   if(arg !== undefined) playersCountry = /^[a-z]{2,8}$/.test(arg||'') ? arg : '';
   const pool = playersPool;
   // Solo Queue shows the bots; humans (DATA.soloHumans) only when switched on, with no rank number
@@ -899,9 +901,7 @@ function renderPlayers(arg){
     ["Rating Points", p=>p._s&&!p._s.ranked&&p._s.ratingPoints!=null?`<span class="muted mono" title="Placed here: ranked after ${sqMin} games">${p._s.ratingPoints}</span>`:pointsBadge(p.ratingPoints), "mono",
       p=>p.ratingPoints!=null?p.ratingPoints:(p._s&&p._s.ratingPoints!=null?p._s.ratingPoints-1e6:-2e6)],
     ["Lvl", p=>p._s&&!p._s.ranked&&p._s.level?`<span style="opacity:.55">${levelChip(p._s.level)}</span>`:levelChip(p.level), "", p=>p.level||0],
-    ...(sqm&&playersView!=="adv"?[["Peak", p=>{ const k=p._s&&p._s.peak; if(!k) return '<span class="muted">—</span>';
-      const d=x=>x?fmtDate(x):'before game-by-game records';
-      return `<span title="${esc(`Peak ${k.ratingPoints} pts on ${d(k.date)}${k.rank!=null?` · peak rank #${k.rank}${p.human?' among the bots':''} on ${d(k.rankDate)}`:''}`)}">${levelChip(k.level)} <span class="mono">${k.ratingPoints}</span>${k.rank!=null?` <span class="muted mono" style="font-size:11px">#${k.rank}</span>`:''}</span>`; }, "", p=>p._s&&p._s.peak?p._s.peak.ratingPoints:-1]]:[]),
+    // (a season's peak points and peak rank are on the profiles only, user 23 Nov 2026)
     ...(playersView==="adv" ? (()=>{
       const a = (p,f,none)=>p.adv&&p.adv.maps?f(p.adv):none;
       return [
