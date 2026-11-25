@@ -1656,15 +1656,6 @@
   "link": "#/player/frinjpeg"
  },
  {
-  "id": "upset:audax-esse-bpl-invitational-2026:7-11",
-  "type": "upset",
-  "ts": 1795638140,
-  "date": "2026-11-26",
-  "title": "Raven Song stun division20",
-  "text": "2-1 at Audax Esse BPL Invitational 2026",
-  "link": "#/match/audax-esse-bpl-invitational-2026/7-11"
- },
- {
   "id": "milestone:chiai-fujikawa:kills:1000",
   "type": "milestone",
   "ts": 1795638465,

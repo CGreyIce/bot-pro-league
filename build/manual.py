@@ -920,10 +920,15 @@ def set_score(slug, sid, mid, sa, sb):
     if not st: return None
     for m in st["matches"]:
         if m["id"] == int(mid):
+            was = (m.get("sa"), m.get("sb"))
             m["sa"] = None if sa in ("", None) else int(sa)
             m["sb"] = None if sb in ("", None) else int(sb)
             if m["sa"] is not None and m["sb"] is not None:
-                m["ts"] = int(time.time())      # when this result was recorded (surfaces recent matches)
+                # when this result was recorded (surfaces recent matches, orders the rating replay).
+                # Saving the same score again keeps the first time (2026-11-26: re-saving an August
+                # result stamped it as new, so it replayed last and posted a fresh "upset" card).
+                if not (m.get("ts") and was == (m["sa"], m["sb"])):
+                    m["ts"] = int(time.time())
             else:
                 m.pop("ts", None)
     if st.get("format") == "swiss":

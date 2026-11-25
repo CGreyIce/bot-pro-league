@@ -347,6 +347,8 @@ a.form-dot:hover{transform:translateY(-2px)}
 .rec-holder a:hover{color:var(--link)}
 .rec-val{font-family:'Chakra Petch';font-weight:700;font-size:26px;color:var(--accent)}
 .rec-sub{font-size:11.5px;line-height:1.35;color:var(--muted);margin-top:3px}
+.rec-min{font-size:10.5px;color:var(--muted);opacity:.8;margin-top:4px;letter-spacing:.02em}
+.rec-pop-min{font-family:inherit;font-weight:400;font-size:11px;color:var(--muted);margin-left:4px}
 .rec-tabs{margin:20px 0 0;flex-wrap:wrap}
 .rec-hint{font-size:12px;margin:10px 0 0}
 .rec-click{cursor:pointer;transition:border-color .12s}

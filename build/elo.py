@@ -110,13 +110,17 @@ def apply(pro, tournaments, avg, weights, tier_fn, level_cuts, contrib_fn, norm_
     # peak rank (osu!-style "Highest Rank"): the whole ladder is re-ranked after every recorded match,
     # so a player can peak when rivals lose too. Ties keep the FIRST date the rank was reached.
     peak = {}
-    def update_peaks(when):
+    def update_peaks(when, only=None):
         lad = sorted((s for s in order if s in elo), key=lambda s: (-round(elo[s]), idx[s]))
         for i, s in enumerate(lad):
+            if only is not None and s not in only:
+                continue
             if s not in peak or i + 1 < peak[s][0]:
                 peak[s] = (i + 1, when)
-    # tracking starts with the first match that has a real record time: a stray old scoreboard without
-    # one must not backdate the (career-seeded) starting ladder to years ago
+    # the full ladder is tracked from the first match that has a real record time: an old scoreboard
+    # without one must not backdate the (career-seeded) starting ladder to years ago. Old events typed in
+    # later (Audax Esse 2023 etc.) still count for the players who had played a recorded map by then,
+    # dated to that event (user, 2026-11-26: Sketch's Audax Esse 2023 peak showed 21 Aug 2026)
     start_n = next((i for i, (_, _, m) in enumerate(recorded) if m.get("ts")), None)
 
     cutoff = (now_ts - 7 * 86400) if now_ts else None
@@ -194,6 +198,8 @@ def apply(pro, tournaments, avg, weights, tier_fn, level_cuts, contrib_fn, norm_
                             "W" if w > l else "L" if l > w else "D"])
         if in_match and start_n is not None and n >= start_n:
             update_peaks(tr.get("date", ""))
+        elif in_match:
+            update_peaks(tr.get("date", ""), only=started)
         if n == len(recorded) - 1:                         # the most recent match drives the rank arrows
             last_prev, last_players = before, set(in_match)
 

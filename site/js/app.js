@@ -1678,7 +1678,7 @@ const REC_TABS=[["all","All"],["teams","Teams"],["players","Players"],["advanced
 let _recTab='all';
 // The top 10 behind each record: a card registers a function that lists its entries, best first, and opens them on a click.
 let _recTop=[];
-function recTopAttr(title,fn){ _recTop.push({title,fn}); return ` data-top="${_recTop.length-1}" tabindex="0" role="button"`; }
+function recTopAttr(title,fn,min){ _recTop.push({title,fn,min}); return ` data-top="${_recTop.length-1}" tabindex="0" role="button"`; }
 function recTopOpen(i,from){
   const item=_recTop[i]; if(!item) return;
   const old=document.getElementById("rec-ov"); if(old) old.remove();
@@ -1687,7 +1687,7 @@ function recTopOpen(i,from){
     return `<tr><td class="rankcol">${rank}</td><td class="name-cell">${r.href?`<a href="${r.href}">${esc(r.name)}</a>`:esc(r.name)}${r.sub?`<div class="rec-pop-sub">${esc(r.sub)}</div>`:''}</td><td class="mono rec-pop-v">${esc(r.val)}</td></tr>`; }).join("");
   const last=top[top.length-1], more=last?rows.slice(10).filter(r=>r.raw===last.raw).length:0;
   app.insertAdjacentHTML("beforeend",`<div id="rec-ov" class="rec-ov"><div class="rec-pop" role="dialog" aria-modal="true" aria-label="${esc(item.title)}">
-    <div class="rec-pop-h"><span>${esc(item.title)}</span><button class="rec-pop-x" aria-label="Close">✕</button></div>
+    <div class="rec-pop-h"><span>${esc(item.title)}${item.min?` <span class="rec-pop-min">${esc(item.min)}</span>`:''}</span><button class="rec-pop-x" aria-label="Close">✕</button></div>
     <div class="tablewrap rec-pop-b"><table class="data"><tbody>${body||'<tr><td class="muted">Nothing recorded yet.</td></tr>'}</tbody></table></div>
     ${more?`<div class="rec-pop-f muted">and ${more} more on ${esc(last.val)}</div>`:''}</div></div>`);
   const ov=document.getElementById("rec-ov"); ov._from=from; ov.querySelector(".rec-pop-x").focus();
@@ -1777,11 +1777,19 @@ function renderRecords(){
 
   const maxBy = (arr,key)=>[...arr].sort((a,b)=>b[key]-a[key])[0];
   const topKey=(title,href)=>title+(href&&href.startsWith('#/team/')?' (team)':'');
-  const recCard = (title, holder, val, href, sub, list) => { const fn=list||tops[topKey(title,href)];
-    return `<div class="rec-card${fn?' rec-click':''}"${fn?recTopAttr(title,fn):''}>
+  // records that only count a real sample say so on the card and in its top 10 (user, 26 Nov 2026: Nullpoint's
+  // 83.8% on 37 maps wasn't on the team win-rate record, and nothing said why)
+  const REC_MIN={"Highest Win Rate (team)":"min 40 maps", "Best Record on a Map (team)":"min 10 maps on the map",
+    "Most Rating Points":"min 12 maps", "Best K/D Ratio":"min 12 maps", "Highest Kills / Map":"min 12 maps",
+    "Highest Win Rate":"min 12 maps", "Highest MVP Rate":"min 12 maps", "Best Event MVP Rating":"min 6 maps",
+    "Highest ADR":"min 12 maps", "Highest KAST":"min 12 maps", "Highest Headshot %":"min 12 maps",
+    "Highest Utility Damage / Round":"min 12 maps", "Best Opening Duel Win Rate":"min 12 maps, 30 opening duels",
+    "Best Solo K/D":"min 8 maps", "Best Solo Win Rate":"min 8 maps"};
+  const recCard = (title, holder, val, href, sub, list) => { const key=topKey(title,href), fn=list||tops[key], mn=REC_MIN[key];
+    return `<div class="rec-card${fn?' rec-click':''}"${fn?recTopAttr(title,fn,mn):''}>
       <div class="rec-title">${title}</div>
       <div class="rec-holder">${href?`<a href="${href}">${esc(holder)}</a>`:esc(holder)}</div>
-      <div class="rec-val">${val}</div>${sub?`<div class="rec-sub">${esc(sub)}</div>`:''}</div>`; };
+      <div class="rec-val">${val}</div>${sub?`<div class="rec-sub">${esc(sub)}</div>`:''}${mn?`<div class="rec-min">${esc(mn)}</div>`:''}</div>`; };
   const pl = p => recCard.bind(null);
   const topRating=maxBy(qualified,'rating'), topKills=maxBy(pro,'kills'), topMvp=maxBy(pro,'mvp'),
         topKdr=maxBy(qualified,'kdr'), topAssist=maxBy(pro,'assists'), topOT=maxBy(pro,'ot');
