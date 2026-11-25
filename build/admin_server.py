@@ -109,6 +109,11 @@ BUILT_FILES = ("site/data.json", "site/solo_games.json", "site/index.html", "sit
 def _built_file(path):
     return path in BUILT_FILES or path.startswith("site/heatmaps/")
 
+# A Solo Queue season's locked final standings (build/solo_seasons.py, 26 Nov 2026): each PC's build locks them
+# on the same day, so when two PCs both did, the one GitHub already has stays (the first lock wins) and the
+# rebuild reads it. During a rebase, "ours" is GitHub's side.
+FIRST_WINS = ("data/solo_season_finals.json",)
+
 def sync_with_github(run):
     """After the local commit (20 Nov 2026): take what other PCs pushed since this one last pulled, and replay
     this commit on top. Two PCs publish (the laptop's queue, code pushes from the other PC), and a push never
@@ -126,14 +131,14 @@ def sync_with_github(run):
         if reb.returncode == 0:
             return True, "", True
         clashes = [f for f in run(["diff", "--name-only", "--diff-filter=U"]).stdout.splitlines() if f.strip()]
-        if not clashes or not all(_built_file(f) for f in clashes):
+        if not clashes or not all(_built_file(f) or f in FIRST_WINS for f in clashes):
             run(["rebase", "--abort"])
-            src = [f for f in clashes if not _built_file(f)]
+            src = [f for f in clashes if not _built_file(f) and f not in FIRST_WINS]
             return False, ("GitHub has changes to the same files from another PC (" + ", ".join(src[:3]) +
                            "), so it needs merging by hand" if src else "the merge with GitHub's changes failed: " +
                            (reb.stderr or reb.stdout)[-200:]), False
         for f in clashes:                        # during a rebase, "theirs" is this PC's commit
-            run(["checkout", "--theirs", "--", f])
+            run(["checkout", "--ours" if f in FIRST_WINS else "--theirs", "--", f])
             run(["add", "--", f])
         reb = run(["-c", "core.editor=true", "rebase", "--continue"])
     run(["rebase", "--abort"])

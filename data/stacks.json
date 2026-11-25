@@ -766,7 +766,7 @@
   "type": "trio",
   "players": [
    "sheep",
-   "soozy",
+   "sakuta",
    "ryujin"
   ],
   "source": "manual",
@@ -776,7 +776,7 @@
   "type": "duo",
   "players": [
    "sheep",
-   "soozy"
+   "sakuta"
   ],
   "source": "manual",
   "added": "2026-11-17"

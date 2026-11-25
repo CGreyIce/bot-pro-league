@@ -9,9 +9,27 @@ for the site's Heatmaps page, site/heatmaps/<Map>.json:
 side is the killer's (0 T, 1 CT); killer/victim/teams/event/weapon index the lists (-1: not a BPL
 player of that match). The floor comes from data/heatmap_nav/<Map>.json (bpl-bots
 tools/heatmap_nav.py, drawn from the map's nav, not Valve's radar images). site/heatmaps/index.json
-lists the maps with their kill counts. Kept out of data.json: the page loads one map at a time."""
+lists the maps with their kill counts. Kept out of data.json: the page loads one map at a time.
+
+Kill feeds keep the names a match was played under; players and teams are shown under today's names
+(data/name_changes.json, data/team_changes.json), so a renamed player isn't split in two (26 Nov 2026)."""
 import json
 import os
+import re
+import unicodedata
+
+
+def current_names(root):
+    """(player, team): functions giving today's name for a name a kill feed recorded (unchanged if never renamed)."""
+    def load(fname):
+        try:
+            return json.load(open(os.path.join(root, "data", fname), encoding="utf-8"))
+        except (OSError, ValueError):
+            return {}
+    key = lambda s: re.sub(r"[^a-z0-9]", "", unicodedata.normalize("NFKD", s or "").lower())
+    pl = {key(k): v for k, v in load("name_changes.json").items()}
+    tm = {key(k): v for k, v in load("team_changes.json").items()}
+    return (lambda n: pl.get(key(n), n) if n else n), (lambda t: tm.get(key(t), t) if t else t)
 
 
 def build(root, tournaments):
@@ -19,6 +37,7 @@ def build(root, tournaments):
     ndir = os.path.join(root, "data", "heatmap_nav")
     out = os.path.join(root, "site", "heatmaps")
     names = {t["slug"]: t.get("name", t["slug"]) for t in tournaments or []}
+    cur, cur_team = current_names(root)
     per = {}
 
     def index(lst, pos, key):
@@ -55,6 +74,7 @@ def build(root, tournaments):
                         r, side, kn, kt, vn, vt, kx, ky, kz, vx, vy, vz, wpn, hs = k[:14]
                     except ValueError:
                         continue
+                    kn, vn, kt, vt = cur(kn), cur(vn), cur_team(kt), cur_team(vt)
                     e["kills"].append([int(kx), int(ky), int(vx), int(vy), 1 if side == "CT" else 0,
                                        index(e["players"], e["_p"], kn), index(e["players"], e["_p"], vn),
                                        index(e["teams"], e["_t"], kt), index(e["teams"], e["_t"], vt),
@@ -136,7 +156,7 @@ def _side_kills(root, folder, fallback):
             yield doc.get("event") or fallback, doc.get("maps", [])
 
 
-def _weapon_doc(sources):
+def _weapon_doc(sources, cur=lambda n: n):
     """{"maps", "kills", "weapons": [[name, kills, headshots]], "groups": {group: {"players": [[name, kills, headshots]], "maps":
     [[kills, name, map, event]]}}}: the top 50 players per group, and the top 15 single-map hauls. sources: (event, maps).
     A kill is a full kill-feed row (tournaments: [round, side, killer, ..., weapon, headshot]) or [round, killer, weapon, headshot]."""
@@ -158,6 +178,7 @@ def _weapon_doc(sources):
                     continue
                 if not kn or not wpn:
                     continue
+                kn = cur(kn)                     # today's name (current_names)
                 n_kills += 1
                 hs = 1 if hs else 0
                 w = weapons.setdefault(WEAPON_NAMES.get(wpn, wpn), [0, 0])
@@ -183,9 +204,10 @@ def weapon_records(root, tournaments):
     """site/weapons.json: the tournaments' weapon records at the top level (as before), plus "scrims" and "solo", the same
     records from the scrims' and solo queue games' kill feeds (Records > Weapons, 21 Nov 2026). Scrims and solo games
     never reach the heatmaps or anyone's stats: only this file reads their kills."""
-    doc = _weapon_doc(_tournament_kills(root, tournaments))
-    doc["scrims"] = _weapon_doc(_side_kills(root, "kills_scrims", "Scrim"))
-    doc["solo"] = _weapon_doc(_side_kills(root, "kills_solo", "Solo Queue"))
+    cur = current_names(root)[0]
+    doc = _weapon_doc(_tournament_kills(root, tournaments), cur)
+    doc["scrims"] = _weapon_doc(_side_kills(root, "kills_scrims", "Scrim"), cur)
+    doc["solo"] = _weapon_doc(_side_kills(root, "kills_solo", "Solo Queue"), cur)
     with open(os.path.join(root, "site", "weapons.json"), "w", encoding="utf-8") as f:
         json.dump(doc, f, ensure_ascii=False, separators=(",", ":"))
     return doc

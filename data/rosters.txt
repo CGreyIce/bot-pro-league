@@ -62,8 +62,8 @@ bot_add "CsM inaxho"; bot_add "CsM DelphoxLuna"; bot_add "CsM sneakyyyyy"; bot_a
 bot_add_ct "CsM inaxho"; bot_add_ct "CsM DelphoxLuna"; bot_add_ct "CsM sneakyyyyy"; bot_add_ct "CsM azzuto"; bot_add_ct "CsM kokushi_vampir";
 
 Cyanide (BPL Legends Stage 2022) [leachubby to haniikyu (heavenweeps)]
-bot_add "Cyn miorine"; bot_add "Cyn Ziweiv"; bot_add "Cyn Soozy"; bot_add "Cyn heavenweeps"; bot_add "Cyn Decrease";
-bot_add_ct "Cyn miorine"; bot_add_ct "Cyn Ziweiv"; bot_add_ct "Cyn Soozy"; bot_add_ct "Cyn haniikyu"; bot_add_ct "Cyn Decrease";
+bot_add "Cyn miorine"; bot_add "Cyn Ziweiv"; bot_add "Cyn Sakuta"; bot_add "Cyn heavenweeps"; bot_add "Cyn Decrease";
+bot_add_ct "Cyn miorine"; bot_add_ct "Cyn Ziweiv"; bot_add_ct "Cyn Sakuta"; bot_add_ct "Cyn heavenweeps"; bot_add_ct "Cyn Decrease";
 
 degree (BPL Legends Stage 2023) [thea and bluenerd8 swap]
 bot_add "dgr Anony"; bot_add "dgr VanixEvans"; bot_add "dgr Zoweya"; bot_add "dgr airawwr"; bot_add "dgr lilraxxx";
@@ -162,8 +162,8 @@ bot_add "Tnm Rethnap"; bot_add "Tnm luciddoob"; bot_add "Tnm Sadgeboi"; bot_add 
 bot_add_ct "Tnm Rethnap"; bot_add_ct "Tnm luciddoob"; bot_add_ct "Tnm Sadgeboi"; bot_add_ct "Tnm L2Strike"; bot_add_ct "Tnm Nikorasu";
 
 Ukiyo (BPL10 Runners-up Special) [XueQiii switched with Acryii_]
-bot_add "uKy Kai"; bot_add "uKy MugCowPayLucky"; bot_add "uKy Acryii_"; bot_add "uKy nattyuwus"; bot_add "uKy kael";
-bot_add_ct "uKy Kai"; bot_add_ct "uKy MugCowPayLucky"; bot_add_ct "uKy Acryii_"; bot_add_ct "uKy nattyuwus"; bot_add_ct "uKy kael";
+bot_add "uKy Kai"; bot_add "uKy FrinJPEG"; bot_add "uKy Acryii_"; bot_add "uKy nattyuwus"; bot_add "uKy kael";
+bot_add_ct "uKy Kai"; bot_add_ct "uKy FrinJPEG"; bot_add_ct "uKy Acryii_"; bot_add_ct "uKy nattyuwus"; bot_add_ct "uKy kael";
 
 Unforgettable (BPL 8 Winners) [Nifela -> Airizu -> dudriduo_, Ryujin -> WO4TK]
 bot_add "UNF Sakami"; bot_add "UNF dudriduo_"; bot_add "UNF joshiwahhh"; bot_add "UNF _kellyxleox_"; bot_add "UNF WO4TK";
@@ -223,12 +223,12 @@ bot_add "CL Laurel"; bot_add "CL cwstalVT"; bot_add "CL CryingNutz"; bot_add "CL
 bot_add_ct "CL Laurel"; bot_add_ct "CL cwstalVT"; bot_add_ct "CL CryingNutz"; bot_add_ct "CL Jenakai"; bot_add_ct "CL xaeela";
 
 Nightfang Covenant (BPL Legends Stage 2026 14th place)
-bot_add "NfC KiokoCheiko"; bot_add "NfC JStarWolf"; bot_add "NfC plushyoshii"; bot_add "NfC hazielvamp"; bot_add "NfC SyberiaK";
-bot_add_ct "NfC KiokoCheiko"; bot_add_ct "NfC JStarWolf"; bot_add_ct "NfC plushyoshii"; bot_add_ct "NfC hazielvamp"; bot_add_ct "NfC SyberiaK";
+bot_add "NfC KiokoCheiko"; bot_add "NfC Luxivre"; bot_add "NfC plushyoshii"; bot_add "NfC hazielvamp"; bot_add "NfC SyberiaK";
+bot_add_ct "NfC KiokoCheiko"; bot_add_ct "NfC Luxivre"; bot_add_ct "NfC plushyoshii"; bot_add_ct "NfC hazielvamp"; bot_add_ct "NfC SyberiaK";
 
 Northwind (BPL Legends Stage 2026 8th place)
-bot_add "Nwd Airizu"; bot_add "Nwd MizukiiMoon"; bot_add "Nwd MilliannaVT"; bot_add "Nwd Karoni"; bot_add "Nwd MiyaLeile";
-bot_add_ct "Nwd Airizu"; bot_add_ct "Nwd MizukiiMoon"; bot_add_ct "Nwd MilliannaVT"; bot_add_ct "Nwd Karoni"; bot_add_ct "Nwd MiyaLeile";
+bot_add "Nwd Hybrid"; bot_add "Nwd MizukiiMoon"; bot_add "Nwd MilliannaVT"; bot_add "Nwd Karoni"; bot_add "Nwd MiyaLeile";
+bot_add_ct "Nwd Hybrid"; bot_add_ct "Nwd MizukiiMoon"; bot_add_ct "Nwd MilliannaVT"; bot_add_ct "Nwd Karoni"; bot_add_ct "Nwd MiyaLeile";
 
 Special Forces (BPL Legends Stage 2026 13th place)
 bot_add "SF djassaulty"; bot_add "SF Spectrum Gabriel"; bot_add "SF Goonuyun"; bot_add "SF Icington the third"; bot_add "SF ItzMaigay";
