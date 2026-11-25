@@ -1,599 +1,5 @@
 [
  {
-  "id": "milestone:nicsman:maps:50",
-  "type": "milestone",
-  "ts": 1793934203,
-  "date": "2026-11-06",
-  "title": "nicsman: 50 maps played",
-  "text": "nicsman reached 50 maps played",
-  "link": "#/player/nicsman"
- },
- {
-  "id": "milestone:skuxxninja44:maps:50",
-  "type": "milestone",
-  "ts": 1793936592,
-  "date": "2026-11-06",
-  "title": "SkuxxNinja44: 50 maps played",
-  "text": "SkuxxNinja44 reached 50 maps played",
-  "link": "#/player/skuxxninja44"
- },
- {
-  "id": "milestone:xrela:kills:500",
-  "type": "milestone",
-  "ts": 1793949312,
-  "date": "2026-11-06",
-  "title": "Xrela: 500 career kills",
-  "text": "Xrela reached 500 career kills",
-  "link": "#/player/xrela"
- },
- {
-  "id": "milestone:ryker-sterling:mvp:100",
-  "type": "milestone",
-  "ts": 1793951273,
-  "date": "2026-11-06",
-  "title": "Ryker_Sterling: 100 MVP rounds",
-  "text": "Ryker_Sterling reached 100 MVP rounds",
-  "link": "#/player/ryker-sterling"
- },
- {
-  "id": "milestone:y-uuno:kills:1000",
-  "type": "milestone",
-  "ts": 1793954068,
-  "date": "2026-11-06",
-  "title": "y.uuno: 1000 career kills",
-  "text": "y.uuno reached 1000 career kills",
-  "link": "#/player/y-uuno"
- },
- {
-  "id": "milestone:eroxis:mvp:150",
-  "type": "milestone",
-  "ts": 1793954068,
-  "date": "2026-11-06",
-  "title": "Eroxis: 150 MVP rounds",
-  "text": "Eroxis reached 150 MVP rounds",
-  "link": "#/player/eroxis"
- },
- {
-  "id": "milestone:spoods:kills:1000",
-  "type": "milestone",
-  "ts": 1793957645,
-  "date": "2026-11-06",
-  "title": "Spoods: 1000 career kills",
-  "text": "Spoods reached 1000 career kills",
-  "link": "#/player/spoods"
- },
- {
-  "id": "milestone:ginjo-saine:maps:50",
-  "type": "milestone",
-  "ts": 1793957645,
-  "date": "2026-11-06",
-  "title": "Ginjo Saine: 50 maps played",
-  "text": "Ginjo Saine reached 50 maps played",
-  "link": "#/player/ginjo-saine"
- },
- {
-  "id": "milestone:illus:mvp:150",
-  "type": "milestone",
-  "ts": 1793961081,
-  "date": "2026-11-06",
-  "title": "Illus: 150 MVP rounds",
-  "text": "Illus reached 150 MVP rounds",
-  "link": "#/player/illus"
- },
- {
-  "id": "milestone:kairi:kills:1000",
-  "type": "milestone",
-  "ts": 1793961081,
-  "date": "2026-11-06",
-  "title": "Kairi: 1000 career kills",
-  "text": "Kairi reached 1000 career kills",
-  "link": "#/player/kairi"
- },
- {
-  "id": "upset:bpl-conquerors-stage-2026:2-18",
-  "type": "upset",
-  "ts": 1793962729,
-  "date": "2026-11-06",
-  "title": "Bluebird stun Kiedz",
-  "text": "2-1 at BPL Conquerors Stage 2026",
-  "link": "#/match/bpl-conquerors-stage-2026/2-18"
- },
- {
-  "id": "milestone:declaration:mvp:100",
-  "type": "milestone",
-  "ts": 1793962731,
-  "date": "2026-11-06",
-  "title": "declaration__: 100 MVP rounds",
-  "text": "declaration__ reached 100 MVP rounds",
-  "link": "#/player/declaration"
- },
- {
-  "id": "milestone:moonraika:kills:500",
-  "type": "milestone",
-  "ts": 1793964513,
-  "date": "2026-11-06",
-  "title": "MoonRaika: 500 career kills",
-  "text": "MoonRaika reached 500 career kills",
-  "link": "#/player/moonraika"
- },
- {
-  "id": "milestone:rebebx:mvp:150",
-  "type": "milestone",
-  "ts": 1793964513,
-  "date": "2026-11-06",
-  "title": "rebebx: 150 MVP rounds",
-  "text": "rebebx reached 150 MVP rounds",
-  "link": "#/player/rebebx"
- },
- {
-  "id": "milestone:luminmochi:kills:500",
-  "type": "milestone",
-  "ts": 1793966833,
-  "date": "2026-11-06",
-  "title": "luminmochi: 500 career kills",
-  "text": "luminmochi reached 500 career kills",
-  "link": "#/player/luminmochi"
- },
- {
-  "id": "milestone:rebebx:kills:1000",
-  "type": "milestone",
-  "ts": 1793966833,
-  "date": "2026-11-06",
-  "title": "rebebx: 1000 career kills",
-  "text": "rebebx reached 1000 career kills",
-  "link": "#/player/rebebx"
- },
- {
-  "id": "milestone:sketch:mvp:100",
-  "type": "milestone",
-  "ts": 1793968473,
-  "date": "2026-11-06",
-  "title": "Sketch: 100 MVP rounds",
-  "text": "Sketch reached 100 MVP rounds",
-  "link": "#/player/sketch"
- },
- {
-  "id": "milestone:astro-ruckus:kills:500",
-  "type": "milestone",
-  "ts": 1793970994,
-  "date": "2026-11-06",
-  "title": "Astro_Ruckus: 500 career kills",
-  "text": "Astro_Ruckus reached 500 career kills",
-  "link": "#/player/astro-ruckus"
- },
- {
-  "id": "milestone:kojadayo:mvp:100",
-  "type": "milestone",
-  "ts": 1793970994,
-  "date": "2026-11-06",
-  "title": "Kojadayo: 100 MVP rounds",
-  "text": "Kojadayo reached 100 MVP rounds",
-  "link": "#/player/kojadayo"
- },
- {
-  "id": "milestone:xueqiii:mvp:150",
-  "type": "milestone",
-  "ts": 1793972335,
-  "date": "2026-11-06",
-  "title": "XueQiii: 150 MVP rounds",
-  "text": "XueQiii reached 150 MVP rounds",
-  "link": "#/player/xueqiii"
- },
- {
-  "id": "milestone:syrrith:kills:1000",
-  "type": "milestone",
-  "ts": 1793977621,
-  "date": "2026-11-06",
-  "title": "Syrrith: 1000 career kills",
-  "text": "Syrrith reached 1000 career kills",
-  "link": "#/player/syrrith"
- },
- {
-  "id": "milestone:jenakai:maps:50",
-  "type": "milestone",
-  "ts": 1793980595,
-  "date": "2026-11-06",
-  "title": "Jenakai: 50 maps played",
-  "text": "Jenakai reached 50 maps played",
-  "link": "#/player/jenakai"
- },
- {
-  "id": "milestone:cwstalvt:mvp:150",
-  "type": "milestone",
-  "ts": 1793982586,
-  "date": "2026-11-07",
-  "title": "cwstalVT: 150 MVP rounds",
-  "text": "cwstalVT reached 150 MVP rounds",
-  "link": "#/player/cwstalvt"
- },
- {
-  "id": "milestone:plushyoshii:mvp:100",
-  "type": "milestone",
-  "ts": 1793984728,
-  "date": "2026-11-07",
-  "title": "plushyoshii: 100 MVP rounds",
-  "text": "plushyoshii reached 100 MVP rounds",
-  "link": "#/player/plushyoshii"
- },
- {
-  "id": "milestone:hazielvamp:kills:500",
-  "type": "milestone",
-  "ts": 1793986355,
-  "date": "2026-11-07",
-  "title": "hazielvamp: 500 career kills",
-  "text": "hazielvamp reached 500 career kills",
-  "link": "#/player/hazielvamp"
- },
- {
-  "id": "milestone:hakase:maps:50",
-  "type": "milestone",
-  "ts": 1793987968,
-  "date": "2026-11-07",
-  "title": "Hakase: 50 maps played",
-  "text": "Hakase reached 50 maps played",
-  "link": "#/player/hakase"
- },
- {
-  "id": "milestone:cshhp:maps:50",
-  "type": "milestone",
-  "ts": 1793989912,
-  "date": "2026-11-07",
-  "title": "cshhp: 50 maps played",
-  "text": "cshhp reached 50 maps played",
-  "link": "#/player/cshhp"
- },
- {
-  "id": "milestone:mango:maps:50",
-  "type": "milestone",
-  "ts": 1793989912,
-  "date": "2026-11-07",
-  "title": "Mango: 50 maps played",
-  "text": "Mango reached 50 maps played",
-  "link": "#/player/mango"
- },
- {
-  "id": "milestone:simply-perezoso:mvp:100",
-  "type": "milestone",
-  "ts": 1793989912,
-  "date": "2026-11-07",
-  "title": "simply_perezoso: 100 MVP rounds",
-  "text": "simply_perezoso reached 100 MVP rounds",
-  "link": "#/player/simply-perezoso"
- },
- {
-  "id": "milestone:mango:mvp:100",
-  "type": "milestone",
-  "ts": 1793991964,
-  "date": "2026-11-07",
-  "title": "Mango: 100 MVP rounds",
-  "text": "Mango reached 100 MVP rounds",
-  "link": "#/player/mango"
- },
- {
-  "id": "milestone:resent:mvp:100",
-  "type": "milestone",
-  "ts": 1793991964,
-  "date": "2026-11-07",
-  "title": "Resent: 100 MVP rounds",
-  "text": "Resent reached 100 MVP rounds",
-  "link": "#/player/resent"
- },
- {
-  "id": "milestone:rc-ia:mvp:100",
-  "type": "milestone",
-  "ts": 1793993959,
-  "date": "2026-11-07",
-  "title": "rc_ia: 100 MVP rounds",
-  "text": "rc_ia reached 100 MVP rounds",
-  "link": "#/player/rc-ia"
- },
- {
-  "id": "milestone:jaelyo:mvp:150",
-  "type": "milestone",
-  "ts": 1793995442,
-  "date": "2026-11-07",
-  "title": "jaelyo: 150 MVP rounds",
-  "text": "jaelyo reached 150 MVP rounds",
-  "link": "#/player/jaelyo"
- },
- {
-  "id": "milestone:shinomiya-runa:maps:50",
-  "type": "milestone",
-  "ts": 1794000668,
-  "date": "2026-11-07",
-  "title": "Shinomiya Runa: 50 maps played",
-  "text": "Shinomiya Runa reached 50 maps played",
-  "link": "#/player/shinomiya-runa"
- },
- {
-  "id": "milestone:djassaulty:mvp:100",
-  "type": "milestone",
-  "ts": 1794004363,
-  "date": "2026-11-07",
-  "title": "djassaulty: 100 MVP rounds",
-  "text": "djassaulty reached 100 MVP rounds",
-  "link": "#/player/djassaulty"
- },
- {
-  "id": "milestone:sanctuary:kills:1000",
-  "type": "milestone",
-  "ts": 1794006480,
-  "date": "2026-11-07",
-  "title": "SanCtuary: 1000 career kills",
-  "text": "SanCtuary reached 1000 career kills",
-  "link": "#/player/sanctuary"
- },
- {
-  "id": "upset:bpl-conquerors-stage-2026:4-20",
-  "type": "upset",
-  "ts": 1794010690,
-  "date": "2026-11-07",
-  "title": "The Gigarage stun Artisian",
-  "text": "2-0 at BPL Conquerors Stage 2026",
-  "link": "#/match/bpl-conquerors-stage-2026/4-20"
- },
- {
-  "id": "milestone:yixl:kills:1000",
-  "type": "milestone",
-  "ts": 1794010693,
-  "date": "2026-11-07",
-  "title": "Yixl: 1000 career kills",
-  "text": "Yixl reached 1000 career kills",
-  "link": "#/player/yixl"
- },
- {
-  "id": "milestone:bluenerd8:maps:50",
-  "type": "milestone",
-  "ts": 1794010693,
-  "date": "2026-11-07",
-  "title": "bluenerd8: 50 maps played",
-  "text": "bluenerd8 reached 50 maps played",
-  "link": "#/player/bluenerd8"
- },
- {
-  "id": "milestone:koen:mvp:100",
-  "type": "milestone",
-  "ts": 1794014507,
-  "date": "2026-11-07",
-  "title": "koen: 100 MVP rounds",
-  "text": "koen reached 100 MVP rounds",
-  "link": "#/player/koen"
- },
- {
-  "id": "milestone:des506:mvp:100",
-  "type": "milestone",
-  "ts": 1794014507,
-  "date": "2026-11-07",
-  "title": "des506: 100 MVP rounds",
-  "text": "des506 reached 100 MVP rounds",
-  "link": "#/player/des506"
- },
- {
-  "id": "milestone:treblest:mvp:100",
-  "type": "milestone",
-  "ts": 1794016153,
-  "date": "2026-11-07",
-  "title": "treblest: 100 MVP rounds",
-  "text": "treblest reached 100 MVP rounds",
-  "link": "#/player/treblest"
- },
- {
-  "id": "milestone:ebi:kills:1000",
-  "type": "milestone",
-  "ts": 1794018211,
-  "date": "2026-11-07",
-  "title": "ebi: 1000 career kills",
-  "text": "ebi reached 1000 career kills",
-  "link": "#/player/ebi"
- },
- {
-  "id": "milestone:kenzieyii:mvp:100",
-  "type": "milestone",
-  "ts": 1794038548,
-  "date": "2026-11-07",
-  "title": "kenzieyii: 100 MVP rounds",
-  "text": "kenzieyii reached 100 MVP rounds",
-  "link": "#/player/kenzieyii"
- },
- {
-  "id": "milestone:evikuroneko:mvp:100",
-  "type": "milestone",
-  "ts": 1794041563,
-  "date": "2026-11-07",
-  "title": "EviKuroneko: 100 MVP rounds",
-  "text": "EviKuroneko reached 100 MVP rounds",
-  "link": "#/player/evikuroneko"
- },
- {
-  "id": "milestone:hanarisu:mvp:100",
-  "type": "milestone",
-  "ts": 1794048317,
-  "date": "2026-11-07",
-  "title": "Hanarisu: 100 MVP rounds",
-  "text": "Hanarisu reached 100 MVP rounds",
-  "link": "#/player/hanarisu"
- },
- {
-  "id": "milestone:notccillia:kills:1000",
-  "type": "milestone",
-  "ts": 1794048317,
-  "date": "2026-11-07",
-  "title": "notccillia: 1000 career kills",
-  "text": "notccillia reached 1000 career kills",
-  "link": "#/player/notccillia"
- },
- {
-  "id": "milestone:mikuryne:kills:500",
-  "type": "milestone",
-  "ts": 1794048317,
-  "date": "2026-11-07",
-  "title": "Mikuryne: 500 career kills",
-  "text": "Mikuryne reached 500 career kills",
-  "link": "#/player/mikuryne"
- },
- {
-  "id": "milestone:raviaseir:mvp:200",
-  "type": "milestone",
-  "ts": 1794051476,
-  "date": "2026-11-07",
-  "title": "RaviasEir: 200 MVP rounds",
-  "text": "RaviasEir reached 200 MVP rounds",
-  "link": "#/player/raviaseir"
- },
- {
-  "id": "milestone:niamocha:kills:1000",
-  "type": "milestone",
-  "ts": 1794074928,
-  "date": "2026-11-08",
-  "title": "Niamocha: 1000 career kills",
-  "text": "Niamocha reached 1000 career kills",
-  "link": "#/player/niamocha"
- },
- {
-  "id": "milestone:tatsumaki-chise:kills:500",
-  "type": "milestone",
-  "ts": 1794074928,
-  "date": "2026-11-08",
-  "title": "Tatsumaki Chise: 500 career kills",
-  "text": "Tatsumaki Chise reached 500 career kills",
-  "link": "#/player/tatsumaki-chise"
- },
- {
-  "id": "champion:phase-shift-invitational-i",
-  "type": "champion",
-  "ts": 1794082973,
-  "date": "2026-11-08",
-  "title": "Pastel Mocha win Phase Shift Invitational I",
-  "text": "Champions of Phase Shift Invitational I, beating Eiromancers in the final",
-  "link": "#/tournament/phase-shift-invitational-i"
- },
- {
-  "id": "milestone:tuxedocat:mvp:100",
-  "type": "milestone",
-  "ts": 1794088807,
-  "date": "2026-11-08",
-  "title": "TuxedoCat: 100 MVP rounds",
-  "text": "TuxedoCat reached 100 MVP rounds",
-  "link": "#/player/tuxedocat"
- },
- {
-  "id": "milestone:chisa-scarlett:kills:500",
-  "type": "milestone",
-  "ts": 1794088807,
-  "date": "2026-11-08",
-  "title": "Chisa_Scarlett: 500 career kills",
-  "text": "Chisa_Scarlett reached 500 career kills",
-  "link": "#/player/chisa-scarlett"
- },
- {
-  "id": "milestone:ziweiv:mvp:100",
-  "type": "milestone",
-  "ts": 1794101158,
-  "date": "2026-11-08",
-  "title": "Ziweiv: 100 MVP rounds",
-  "text": "Ziweiv reached 100 MVP rounds",
-  "link": "#/player/ziweiv"
- },
- {
-  "id": "milestone:soozy:mvp:100",
-  "type": "milestone",
-  "ts": 1794101158,
-  "date": "2026-11-08",
-  "title": "Soozy: 100 MVP rounds",
-  "text": "Soozy reached 100 MVP rounds",
-  "link": "#/player/soozy"
- },
- {
-  "id": "milestone:lenette:maps:50",
-  "type": "milestone",
-  "ts": 1794103133,
-  "date": "2026-11-08",
-  "title": "lenette: 50 maps played",
-  "text": "lenette reached 50 maps played",
-  "link": "#/player/lenette"
- },
- {
-  "id": "milestone:nyuii:maps:50",
-  "type": "milestone",
-  "ts": 1794103133,
-  "date": "2026-11-08",
-  "title": "Nyuii: 50 maps played",
-  "text": "Nyuii reached 50 maps played",
-  "link": "#/player/nyuii"
- },
- {
-  "id": "milestone:l2strike:mvp:100",
-  "type": "milestone",
-  "ts": 1794103133,
-  "date": "2026-11-08",
-  "title": "L2Strike: 100 MVP rounds",
-  "text": "L2Strike reached 100 MVP rounds",
-  "link": "#/player/l2strike"
- },
- {
-  "id": "milestone:sadgeboi:kills:1000",
-  "type": "milestone",
-  "ts": 1794105292,
-  "date": "2026-11-08",
-  "title": "Sadgeboi: 1000 career kills",
-  "text": "Sadgeboi reached 1000 career kills",
-  "link": "#/player/sadgeboi"
- },
- {
-  "id": "milestone:kyyltn:mvp:100",
-  "type": "milestone",
-  "ts": 1794108045,
-  "date": "2026-11-08",
-  "title": "kyyltn: 100 MVP rounds",
-  "text": "kyyltn reached 100 MVP rounds",
-  "link": "#/player/kyyltn"
- },
- {
-  "id": "milestone:altheavt:maps:50",
-  "type": "milestone",
-  "ts": 1794117433,
-  "date": "2026-11-08",
-  "title": "AltheaVT: 50 maps played",
-  "text": "AltheaVT reached 50 maps played",
-  "link": "#/player/altheavt"
- },
- {
-  "id": "milestone:crex:mvp:150",
-  "type": "milestone",
-  "ts": 1794122044,
-  "date": "2026-11-08",
-  "title": "CRex: 150 MVP rounds",
-  "text": "CRex reached 150 MVP rounds",
-  "link": "#/player/crex"
- },
- {
-  "id": "milestone:tuxedocat:maps:50",
-  "type": "milestone",
-  "ts": 1794125762,
-  "date": "2026-11-08",
-  "title": "TuxedoCat: 50 maps played",
-  "text": "TuxedoCat reached 50 maps played",
-  "link": "#/player/tuxedocat"
- },
- {
-  "id": "milestone:caarrietan:maps:50",
-  "type": "milestone",
-  "ts": 1794125762,
-  "date": "2026-11-08",
-  "title": "caarrietan: 50 maps played",
-  "text": "caarrietan reached 50 maps played",
-  "link": "#/player/caarrietan"
- },
- {
-  "id": "milestone:mikuryne:mvp:100",
-  "type": "milestone",
-  "ts": 1794125762,
-  "date": "2026-11-08",
-  "title": "Mikuryne: 100 MVP rounds",
-  "text": "Mikuryne reached 100 MVP rounds",
-  "link": "#/player/mikuryne"
- },
- {
   "id": "milestone:gigichiii:kills:1000",
   "type": "milestone",
   "ts": 1794127729,
@@ -1798,5 +1204,599 @@
   "title": "DiamondOnes sign AltheaVT",
   "text": "in: AltheaVT",
   "link": "#/team/diamondones"
+ },
+ {
+  "id": "milestone:yuuschan:kills:1000",
+  "type": "milestone",
+  "ts": 1795635468,
+  "date": "2026-11-26",
+  "title": "yuuschan: 1000 career kills",
+  "text": "yuuschan reached 1000 career kills",
+  "link": "#/player/yuuschan"
+ },
+ {
+  "id": "milestone:cshhp:mvp:100",
+  "type": "milestone",
+  "ts": 1795635468,
+  "date": "2026-11-26",
+  "title": "cshhp: 100 MVP rounds",
+  "text": "cshhp reached 100 MVP rounds",
+  "link": "#/player/cshhp"
+ },
+ {
+  "id": "milestone:scorpium:mvp:100",
+  "type": "milestone",
+  "ts": 1795635703,
+  "date": "2026-11-26",
+  "title": "Scorpium: 100 MVP rounds",
+  "text": "Scorpium reached 100 MVP rounds",
+  "link": "#/player/scorpium"
+ },
+ {
+  "id": "milestone:kuro-mi:kills:1000",
+  "type": "milestone",
+  "ts": 1795635703,
+  "date": "2026-11-26",
+  "title": "kuro_mi: 1000 career kills",
+  "text": "kuro_mi reached 1000 career kills",
+  "link": "#/player/kuro-mi"
+ },
+ {
+  "id": "milestone:beyouna:kills:1000",
+  "type": "milestone",
+  "ts": 1795635943,
+  "date": "2026-11-26",
+  "title": "beyouna: 1000 career kills",
+  "text": "beyouna reached 1000 career kills",
+  "link": "#/player/beyouna"
+ },
+ {
+  "id": "milestone:beyouna:mvp:150",
+  "type": "milestone",
+  "ts": 1795635943,
+  "date": "2026-11-26",
+  "title": "beyouna: 150 MVP rounds",
+  "text": "beyouna reached 150 MVP rounds",
+  "link": "#/player/beyouna"
+ },
+ {
+  "id": "milestone:nutzeru:mvp:150",
+  "type": "milestone",
+  "ts": 1795635943,
+  "date": "2026-11-26",
+  "title": "Nutzeru: 150 MVP rounds",
+  "text": "Nutzeru reached 150 MVP rounds",
+  "link": "#/player/nutzeru"
+ },
+ {
+  "id": "milestone:lyrazal:mvp:100",
+  "type": "milestone",
+  "ts": 1795635943,
+  "date": "2026-11-26",
+  "title": "Lyrazal: 100 MVP rounds",
+  "text": "Lyrazal reached 100 MVP rounds",
+  "link": "#/player/lyrazal"
+ },
+ {
+  "id": "milestone:vplh:maps:50",
+  "type": "milestone",
+  "ts": 1795635943,
+  "date": "2026-11-26",
+  "title": "VPLH: 50 maps played",
+  "text": "VPLH reached 50 maps played",
+  "link": "#/player/vplh"
+ },
+ {
+  "id": "milestone:jenapoppins:maps:50",
+  "type": "milestone",
+  "ts": 1795635943,
+  "date": "2026-11-26",
+  "title": "jenapoppins: 50 maps played",
+  "text": "jenapoppins reached 50 maps played",
+  "link": "#/player/jenapoppins"
+ },
+ {
+  "id": "milestone:jeribean:maps:50",
+  "type": "milestone",
+  "ts": 1795635943,
+  "date": "2026-11-26",
+  "title": "Jeribean: 50 maps played",
+  "text": "Jeribean reached 50 maps played",
+  "link": "#/player/jeribean"
+ },
+ {
+  "id": "milestone:astro-ruckus:maps:50",
+  "type": "milestone",
+  "ts": 1795635943,
+  "date": "2026-11-26",
+  "title": "Astro_Ruckus: 50 maps played",
+  "text": "Astro_Ruckus reached 50 maps played",
+  "link": "#/player/astro-ruckus"
+ },
+ {
+  "id": "milestone:phxebe:mvp:150",
+  "type": "milestone",
+  "ts": 1795636118,
+  "date": "2026-11-26",
+  "title": "Phxebe: 150 MVP rounds",
+  "text": "Phxebe reached 150 MVP rounds",
+  "link": "#/player/phxebe"
+ },
+ {
+  "id": "milestone:joshiwahhh:mvp:100",
+  "type": "milestone",
+  "ts": 1795636118,
+  "date": "2026-11-26",
+  "title": "Joshiwahhh: 100 MVP rounds",
+  "text": "Joshiwahhh reached 100 MVP rounds",
+  "link": "#/player/joshiwahhh"
+ },
+ {
+  "id": "milestone:luciddoob:mvp:100",
+  "type": "milestone",
+  "ts": 1795636349,
+  "date": "2026-11-26",
+  "title": "luciddoob: 100 MVP rounds",
+  "text": "luciddoob reached 100 MVP rounds",
+  "link": "#/player/luciddoob"
+ },
+ {
+  "id": "milestone:nikorasu:mvp:150",
+  "type": "milestone",
+  "ts": 1795636349,
+  "date": "2026-11-26",
+  "title": "Nikorasu: 150 MVP rounds",
+  "text": "Nikorasu reached 150 MVP rounds",
+  "link": "#/player/nikorasu"
+ },
+ {
+  "id": "milestone:appleorangepear:kills:1000",
+  "type": "milestone",
+  "ts": 1795636626,
+  "date": "2026-11-26",
+  "title": "AppleOrangePear: 1000 career kills",
+  "text": "AppleOrangePear reached 1000 career kills",
+  "link": "#/player/appleorangepear"
+ },
+ {
+  "id": "milestone:appleorangepear:mvp:150",
+  "type": "milestone",
+  "ts": 1795636626,
+  "date": "2026-11-26",
+  "title": "AppleOrangePear: 150 MVP rounds",
+  "text": "AppleOrangePear reached 150 MVP rounds",
+  "link": "#/player/appleorangepear"
+ },
+ {
+  "id": "milestone:l1feless:kills:1000",
+  "type": "milestone",
+  "ts": 1795636626,
+  "date": "2026-11-26",
+  "title": "l1feless: 1000 career kills",
+  "text": "l1feless reached 1000 career kills",
+  "link": "#/player/l1feless"
+ },
+ {
+  "id": "milestone:l1feless:mvp:150",
+  "type": "milestone",
+  "ts": 1795636626,
+  "date": "2026-11-26",
+  "title": "l1feless: 150 MVP rounds",
+  "text": "l1feless reached 150 MVP rounds",
+  "link": "#/player/l1feless"
+ },
+ {
+  "id": "milestone:4twnty:kills:1000",
+  "type": "milestone",
+  "ts": 1795636626,
+  "date": "2026-11-26",
+  "title": "4twnty: 1000 career kills",
+  "text": "4twnty reached 1000 career kills",
+  "link": "#/player/4twnty"
+ },
+ {
+  "id": "milestone:laavv:kills:1000",
+  "type": "milestone",
+  "ts": 1795636626,
+  "date": "2026-11-26",
+  "title": "laavv._: 1000 career kills",
+  "text": "laavv._ reached 1000 career kills",
+  "link": "#/player/laavv"
+ },
+ {
+  "id": "milestone:solec:kills:1000",
+  "type": "milestone",
+  "ts": 1795636626,
+  "date": "2026-11-26",
+  "title": "Solec: 1000 career kills",
+  "text": "Solec reached 1000 career kills",
+  "link": "#/player/solec"
+ },
+ {
+  "id": "milestone:solec:mvp:150",
+  "type": "milestone",
+  "ts": 1795636626,
+  "date": "2026-11-26",
+  "title": "Solec: 150 MVP rounds",
+  "text": "Solec reached 150 MVP rounds",
+  "link": "#/player/solec"
+ },
+ {
+  "id": "milestone:lita:mvp:150",
+  "type": "milestone",
+  "ts": 1795636626,
+  "date": "2026-11-26",
+  "title": "LITA: 150 MVP rounds",
+  "text": "LITA reached 150 MVP rounds",
+  "link": "#/player/lita"
+ },
+ {
+  "id": "milestone:historia:maps:50",
+  "type": "milestone",
+  "ts": 1795636777,
+  "date": "2026-11-26",
+  "title": "Historia: 50 maps played",
+  "text": "Historia reached 50 maps played",
+  "link": "#/player/historia"
+ },
+ {
+  "id": "milestone:chiyoriinn:maps:50",
+  "type": "milestone",
+  "ts": 1795636777,
+  "date": "2026-11-26",
+  "title": "chiyoriinn: 50 maps played",
+  "text": "chiyoriinn reached 50 maps played",
+  "link": "#/player/chiyoriinn"
+ },
+ {
+  "id": "milestone:dirfun:mvp:150",
+  "type": "milestone",
+  "ts": 1795636777,
+  "date": "2026-11-26",
+  "title": "Dirfun: 150 MVP rounds",
+  "text": "Dirfun reached 150 MVP rounds",
+  "link": "#/player/dirfun"
+ },
+ {
+  "id": "milestone:siddnely:maps:50",
+  "type": "milestone",
+  "ts": 1795636777,
+  "date": "2026-11-26",
+  "title": "siddnely: 50 maps played",
+  "text": "siddnely reached 50 maps played",
+  "link": "#/player/siddnely"
+ },
+ {
+  "id": "milestone:siddnely:mvp:100",
+  "type": "milestone",
+  "ts": 1795636777,
+  "date": "2026-11-26",
+  "title": "siddnely: 100 MVP rounds",
+  "text": "siddnely reached 100 MVP rounds",
+  "link": "#/player/siddnely"
+ },
+ {
+  "id": "milestone:simply-perezoso:maps:50",
+  "type": "milestone",
+  "ts": 1795636971,
+  "date": "2026-11-26",
+  "title": "simply_perezoso: 50 maps played",
+  "text": "simply_perezoso reached 50 maps played",
+  "link": "#/player/simply-perezoso"
+ },
+ {
+  "id": "milestone:resent:maps:50",
+  "type": "milestone",
+  "ts": 1795636971,
+  "date": "2026-11-26",
+  "title": "Resent: 50 maps played",
+  "text": "Resent reached 50 maps played",
+  "link": "#/player/resent"
+ },
+ {
+  "id": "milestone:adrina-ii:maps:50",
+  "type": "milestone",
+  "ts": 1795636971,
+  "date": "2026-11-26",
+  "title": "adrina.ii: 50 maps played",
+  "text": "adrina.ii reached 50 maps played",
+  "link": "#/player/adrina-ii"
+ },
+ {
+  "id": "milestone:lumi-nyaa:kills:1000",
+  "type": "milestone",
+  "ts": 1795636971,
+  "date": "2026-11-26",
+  "title": "lumi.nyaa: 1000 career kills",
+  "text": "lumi.nyaa reached 1000 career kills",
+  "link": "#/player/lumi-nyaa"
+ },
+ {
+  "id": "milestone:lumi-nyaa:mvp:150",
+  "type": "milestone",
+  "ts": 1795636971,
+  "date": "2026-11-26",
+  "title": "lumi.nyaa: 150 MVP rounds",
+  "text": "lumi.nyaa reached 150 MVP rounds",
+  "link": "#/player/lumi-nyaa"
+ },
+ {
+  "id": "milestone:sketch:maps:50",
+  "type": "milestone",
+  "ts": 1795637251,
+  "date": "2026-11-26",
+  "title": "Sketch: 50 maps played",
+  "text": "Sketch reached 50 maps played",
+  "link": "#/player/sketch"
+ },
+ {
+  "id": "milestone:balililmao:maps:50",
+  "type": "milestone",
+  "ts": 1795637251,
+  "date": "2026-11-26",
+  "title": "balililmao: 50 maps played",
+  "text": "balililmao reached 50 maps played",
+  "link": "#/player/balililmao"
+ },
+ {
+  "id": "milestone:idiot-angelcrutcher:maps:50",
+  "type": "milestone",
+  "ts": 1795637251,
+  "date": "2026-11-26",
+  "title": "[Idiot] AngelCrutcher: 50 maps played",
+  "text": "[Idiot] AngelCrutcher reached 50 maps played",
+  "link": "#/player/idiot-angelcrutcher"
+ },
+ {
+  "id": "milestone:mond33:maps:50",
+  "type": "milestone",
+  "ts": 1795637251,
+  "date": "2026-11-26",
+  "title": "mond33__: 50 maps played",
+  "text": "mond33__ reached 50 maps played",
+  "link": "#/player/mond33"
+ },
+ {
+  "id": "milestone:nattyuwus:kills:1000",
+  "type": "milestone",
+  "ts": 1795637251,
+  "date": "2026-11-26",
+  "title": "nattyuwus: 1000 career kills",
+  "text": "nattyuwus reached 1000 career kills",
+  "link": "#/player/nattyuwus"
+ },
+ {
+  "id": "milestone:historia:mvp:150",
+  "type": "milestone",
+  "ts": 1795637445,
+  "date": "2026-11-26",
+  "title": "Historia: 150 MVP rounds",
+  "text": "Historia reached 150 MVP rounds",
+  "link": "#/player/historia"
+ },
+ {
+  "id": "milestone:chiyoriinn:mvp:100",
+  "type": "milestone",
+  "ts": 1795637445,
+  "date": "2026-11-26",
+  "title": "chiyoriinn: 100 MVP rounds",
+  "text": "chiyoriinn reached 100 MVP rounds",
+  "link": "#/player/chiyoriinn"
+ },
+ {
+  "id": "milestone:kai:maps:50",
+  "type": "milestone",
+  "ts": 1795637445,
+  "date": "2026-11-26",
+  "title": "Kai: 50 maps played",
+  "text": "Kai reached 50 maps played",
+  "link": "#/player/kai"
+ },
+ {
+  "id": "milestone:frinjpeg:maps:50",
+  "type": "milestone",
+  "ts": 1795637445,
+  "date": "2026-11-26",
+  "title": "FrinJPEG: 50 maps played",
+  "text": "FrinJPEG reached 50 maps played",
+  "link": "#/player/frinjpeg"
+ },
+ {
+  "id": "milestone:kael:maps:50",
+  "type": "milestone",
+  "ts": 1795637445,
+  "date": "2026-11-26",
+  "title": "kael: 50 maps played",
+  "text": "kael reached 50 maps played",
+  "link": "#/player/kael"
+ },
+ {
+  "id": "milestone:kael:mvp:100",
+  "type": "milestone",
+  "ts": 1795637445,
+  "date": "2026-11-26",
+  "title": "kael: 100 MVP rounds",
+  "text": "kael reached 100 MVP rounds",
+  "link": "#/player/kael"
+ },
+ {
+  "id": "milestone:lyrazal:kills:1000",
+  "type": "milestone",
+  "ts": 1795637601,
+  "date": "2026-11-26",
+  "title": "Lyrazal: 1000 career kills",
+  "text": "Lyrazal reached 1000 career kills",
+  "link": "#/player/lyrazal"
+ },
+ {
+  "id": "milestone:kai:mvp:150",
+  "type": "milestone",
+  "ts": 1795637959,
+  "date": "2026-11-26",
+  "title": "Kai: 150 MVP rounds",
+  "text": "Kai reached 150 MVP rounds",
+  "link": "#/player/kai"
+ },
+ {
+  "id": "milestone:nattyuwus:mvp:150",
+  "type": "milestone",
+  "ts": 1795637959,
+  "date": "2026-11-26",
+  "title": "nattyuwus: 150 MVP rounds",
+  "text": "nattyuwus reached 150 MVP rounds",
+  "link": "#/player/nattyuwus"
+ },
+ {
+  "id": "milestone:frinjpeg:kills:1000",
+  "type": "milestone",
+  "ts": 1795637959,
+  "date": "2026-11-26",
+  "title": "FrinJPEG: 1000 career kills",
+  "text": "FrinJPEG reached 1000 career kills",
+  "link": "#/player/frinjpeg"
+ },
+ {
+  "id": "upset:audax-esse-bpl-invitational-2026:7-11",
+  "type": "upset",
+  "ts": 1795638140,
+  "date": "2026-11-26",
+  "title": "Raven Song stun division20",
+  "text": "2-1 at Audax Esse BPL Invitational 2026",
+  "link": "#/match/audax-esse-bpl-invitational-2026/7-11"
+ },
+ {
+  "id": "milestone:chiai-fujikawa:kills:1000",
+  "type": "milestone",
+  "ts": 1795638465,
+  "date": "2026-11-26",
+  "title": "Chiai Fujikawa: 1000 career kills",
+  "text": "Chiai Fujikawa reached 1000 career kills",
+  "link": "#/player/chiai-fujikawa"
+ },
+ {
+  "id": "milestone:chiai-fujikawa:mvp:150",
+  "type": "milestone",
+  "ts": 1795638465,
+  "date": "2026-11-26",
+  "title": "Chiai Fujikawa: 150 MVP rounds",
+  "text": "Chiai Fujikawa reached 150 MVP rounds",
+  "link": "#/player/chiai-fujikawa"
+ },
+ {
+  "id": "milestone:balililmao:mvp:100",
+  "type": "milestone",
+  "ts": 1795638465,
+  "date": "2026-11-26",
+  "title": "balililmao: 100 MVP rounds",
+  "text": "balililmao reached 100 MVP rounds",
+  "link": "#/player/balililmao"
+ },
+ {
+  "id": "milestone:idiot-angelcrutcher:mvp:100",
+  "type": "milestone",
+  "ts": 1795638465,
+  "date": "2026-11-26",
+  "title": "[Idiot] AngelCrutcher: 100 MVP rounds",
+  "text": "[Idiot] AngelCrutcher reached 100 MVP rounds",
+  "link": "#/player/idiot-angelcrutcher"
+ },
+ {
+  "id": "milestone:mond33:mvp:100",
+  "type": "milestone",
+  "ts": 1795638465,
+  "date": "2026-11-26",
+  "title": "mond33__: 100 MVP rounds",
+  "text": "mond33__ reached 100 MVP rounds",
+  "link": "#/player/mond33"
+ },
+ {
+  "id": "milestone:joyyy-cheng:kills:1000",
+  "type": "milestone",
+  "ts": 1795638465,
+  "date": "2026-11-26",
+  "title": "joyyy_cheng: 1000 career kills",
+  "text": "joyyy_cheng reached 1000 career kills",
+  "link": "#/player/joyyy-cheng"
+ },
+ {
+  "id": "milestone:joyyy-cheng:mvp:150",
+  "type": "milestone",
+  "ts": 1795638465,
+  "date": "2026-11-26",
+  "title": "joyyy_cheng: 150 MVP rounds",
+  "text": "joyyy_cheng reached 150 MVP rounds",
+  "link": "#/player/joyyy-cheng"
+ },
+ {
+  "id": "milestone:seireiix:kills:1000",
+  "type": "milestone",
+  "ts": 1795638688,
+  "date": "2026-11-26",
+  "title": "Seireiix: 1000 career kills",
+  "text": "Seireiix reached 1000 career kills",
+  "link": "#/player/seireiix"
+ },
+ {
+  "id": "milestone:scorpium:kills:1000",
+  "type": "milestone",
+  "ts": 1795638688,
+  "date": "2026-11-26",
+  "title": "Scorpium: 1000 career kills",
+  "text": "Scorpium reached 1000 career kills",
+  "link": "#/player/scorpium"
+ },
+ {
+  "id": "milestone:kai:kills:1000",
+  "type": "milestone",
+  "ts": 1795638688,
+  "date": "2026-11-26",
+  "title": "Kai: 1000 career kills",
+  "text": "Kai reached 1000 career kills",
+  "link": "#/player/kai"
+ },
+ {
+  "id": "milestone:frinjpeg:mvp:150",
+  "type": "milestone",
+  "ts": 1795638688,
+  "date": "2026-11-26",
+  "title": "FrinJPEG: 150 MVP rounds",
+  "text": "FrinJPEG reached 150 MVP rounds",
+  "link": "#/player/frinjpeg"
+ },
+ {
+  "id": "milestone:sketch:kills:1000",
+  "type": "milestone",
+  "ts": 1795639289,
+  "date": "2026-11-26",
+  "title": "Sketch: 1000 career kills",
+  "text": "Sketch reached 1000 career kills",
+  "link": "#/player/sketch"
+ },
+ {
+  "id": "milestone:sketch:mvp:150",
+  "type": "milestone",
+  "ts": 1795639289,
+  "date": "2026-11-26",
+  "title": "Sketch: 150 MVP rounds",
+  "text": "Sketch reached 150 MVP rounds",
+  "link": "#/player/sketch"
+ },
+ {
+  "id": "milestone:seireiix:mvp:150",
+  "type": "milestone",
+  "ts": 1795639289,
+  "date": "2026-11-26",
+  "title": "Seireiix: 150 MVP rounds",
+  "text": "Seireiix reached 150 MVP rounds",
+  "link": "#/player/seireiix"
+ },
+ {
+  "id": "milestone:scorpium:mvp:150",
+  "type": "milestone",
+  "ts": 1795639289,
+  "date": "2026-11-26",
+  "title": "Scorpium: 150 MVP rounds",
+  "text": "Scorpium reached 150 MVP rounds",
+  "link": "#/player/scorpium"
  }
 ]
